@@ -1,0 +1,589 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<BaseLayout
+  title="Kniha &bdquo;Vzhůru do (responzivního) webdesignu&ldquo;"
+  description="Kompletní průvodce návrhem a implementací responzivních uživatelských rozhraní."
+  ogType="book"
+  ogImage="https://www.vzhurudolu.cz/assets/img/content/src/socials/vd-soc-vdwd.jpg"
+  ogUrl="https://www.vzhurudolu.cz/kniha-responzivni-design/"
+  bodyClass="section-ebooks"
+>
+  <Header slot="header" />
+  <Footer slot="footer" />
+
+  <div class="page-head">
+    <h1>
+      Vzhůru do<br>(responziv&shy;ního)<br>webdesignu
+    </h1>
+
+    <p class="maxw-30em">
+      Kompletní průvodce návrhem a implementací
+      responzivních uživatelských rozhraní
+      v&nbsp;jedné&nbsp;knize.
+    </p>
+
+    <p class="mb-0">
+      <a href="https://form.simpleshop.cz/AaGbm/buy/" class="button button--primary">
+        Koupit
+      </a>
+    </p>
+  </div>
+
+  <main role="main" id="main" aria-label="Hlavní obsah">
+    <link rel="stylesheet" href="/assets/css/modules-standalone/min/pages/ebook.min.css" />
+    
+    <div class="article">
+      <div class="section">
+        <div class="content ta-c">
+          <p>
+            272 stránek praktických tipů, zkušeností a&nbsp;postupů vedoucích k&nbsp;tvorbě kvalitních responzivních webů. Kniha oslovuje široké spektrum čtenářů: Profesionální webové vývojáře, designéry, marketéry, ale i&nbsp;méně&nbsp;zkušené.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section section-taller bg-highlight ebook-order">
+      <div class="content ta-c">
+        <p class="ebook-order-booklet">
+          <a href="https://form.simpleshop.cz/AaGbm/buy/">
+            <img src="/assets/img/content/dest/x-small/vdwd-ebook.png"
+              alt="Vzhůru do (responzivního) webdesignu"
+              height="200" width="200">
+          </a>
+        </p>
+
+        <div class="ebook-order-form">
+          <p>
+            <a href="https://form.simpleshop.cz/AaGbm/buy/" class="button button--wide button--primary">
+              Koupit e-book
+            </a>
+          </p>
+          <p class="f-sm mb-0">
+            <span class="ebook-order-conditions-row">
+              272 stránek. Formáty EPUB, MOBI a PDF.
+            </span>
+            <span class="ebook-order-conditions-row">
+              Minor aktualizace dostávají majitelé licencí zdarma.<br>
+            </span>
+          </p>
+          <p class="f-sm">
+            <a href="/kniha-responzivni-design/info">Více o nákupu</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="article">
+      <div class="section">
+        <div class="content">
+          <h2 id="novinky" class="ta-c">
+            <a href="#novinky">Novinky ke knize</a>
+          </h2>
+
+          <ul class="list list--bordered list--block-hover list--spaced">
+            <li class="list__item">
+              <a href="/blog/128-vdwd-1-2" class="list__item-link">
+                Verze 1.2: Weby na chytrých hodinkách, tvorba breakpointů…
+                <span class="text-color-lightest">
+                  (26. 11. 2018)
+                </span>
+              </a>
+            </li>
+            <li class="list__item">
+              <a href="/blog/121-knihkupectvi" class="list__item-link">
+                Knížku je teď možné koupit v knihkupectvích a e-shopech
+                <span class="text-color-lightest">
+                  (20. 9. 2018)
+                </span>
+              </a>
+            </li>
+            <li class="list__item">
+              <a href="/blog/97-vdwd-ukazka" class="list__item-link">
+                Obrázky a další média: Stáhněte si kapitolu z knihy
+                <span class="text-color-lightest">
+                  (20. 11. 2017)
+                </span>
+              </a>
+            </li>
+            <li class="list__item">
+              <a href="/blog/94-kniha" class="list__item-link">
+                Teď si můžete objednat i tištěnou verzi knihy
+                <span class="text-color-lightest">
+                  (3. 8. 2017)
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="article">
+      <div class="section">
+        <div class="content">
+          <h2 id="co-obsahuje" class="ta-c">
+            <a href="#co-obsahuje">Co se naučíte?</a>
+          </h2>
+
+          <ol class="list list--numbered">
+            <li class="list__item mb-1">
+              Jak zlepšit návrh uživatelských rozhraní tak, aby dobře fungovala na všech&nbsp;zařízeních.
+            </li>
+            <li class="list__item mb-1">
+              Technické postupy pro snadnější řešení responzivní typografie, obrázků, &nbsp;layoutu a&nbsp;dalších.
+            </li>
+            <li class="list__item mb-1">
+              Proces návrhu responzivních webů, během něhož si vystačíte s&nbsp;tužkou, papírem a&nbsp;prohlížečem.
+            </li>
+            <li class="list__item mb-1">
+              Základy webdesignu v&nbsp;širším pojetí: Od grafiky a typografie až k&nbsp;rychlosti&nbsp;načítání.
+            </li>
+            <li class="list__item mb-1">
+              Aplikaci složitějších postupů a technologií na příkladu, který knihu&nbsp;provází.
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="section bg-dark" id="ukazky">
+      <div class="content-full">
+        <div class="row py-15 mx-0 gallery">
+          <p class="col mb-0 w-50 w-25-sm p-025">
+            <a href="/assets/img/content/src/ebook-vdwd/sample-1.jpg">
+              <img src="/assets/img/content/dest/small/ebook-vdwd/sample-1.jpg"
+                alt="" width="336" height="238" loading="lazy"
+                class="d-b b-1-inverted">
+            </a>
+          </p>
+          <p class="col mb-0 w-50 w-25-sm p-025">
+            <a href="/assets/img/content/src/ebook-vdwd/sample-2.jpg">
+              <img src="/assets/img/content/dest/small/ebook-vdwd/sample-2.jpg"
+                alt="" width="336" height="238" loading="lazy"
+                class="d-b b-1-inverted">
+            </a>
+          </p>
+          <p class="col mb-0 w-50 w-25-sm p-025">
+            <a href="/assets/img/content/src/ebook-vdwd/sample-3.jpg">
+              <img src="/assets/img/content/dest/small/ebook-vdwd/sample-3.jpg"
+                alt="" width="336" height="238" loading="lazy"
+                class="d-b b-1-inverted">
+            </a>
+          </p>
+          <p class="col mb-0 w-50 w-25-sm p-025">
+            <a href="/assets/img/content/src/ebook-vdwd/sample-4.jpg">
+              <img src="/assets/img/content/dest/small/ebook-vdwd/sample-4.jpg"
+                alt="" width="336" height="238" loading="lazy"
+                class="d-b b-1-inverted">
+            </a>
+          </p>
+          <p class="col mb-0 w-50 w-25-sm p-025">
+            <a href="/assets/img/content/src/ebook-vdwd/sample-5.jpg">
+              <img src="/assets/img/content/dest/small/ebook-vdwd/sample-5.jpg"
+                alt="" width="336" height="238" loading="lazy"
+                class="d-b b-1-inverted">
+            </a>
+          </p>
+          <p class="col mb-0 w-50 w-25-sm p-025">
+            <a href="/assets/img/content/src/ebook-vdwd/sample-6.jpg">
+              <img src="/assets/img/content/dest/small/ebook-vdwd/sample-6.jpg"
+                alt="" width="336" height="238" loading="lazy"
+                class="d-b b-1-inverted">
+            </a>
+          </p>
+          <p class="col mb-0 w-50 w-25-sm p-025">
+            <a href="/assets/img/content/src/ebook-vdwd/sample-7.jpg">
+              <img src="/assets/img/content/dest/small/ebook-vdwd/sample-7.jpg"
+                alt="" width="336" height="238" loading="lazy"
+                class="d-b b-1-inverted">
+            </a>
+          </p>
+          <p class="col mb-0 w-50 w-25-sm p-025">
+            <a href="/assets/img/content/src/ebook-vdwd/sample-8.jpg">
+              <img src="/assets/img/content/dest/small/ebook-vdwd/sample-8.jpg"
+                alt="" width="336" height="238" loading="lazy"
+                class="d-b b-1-inverted">
+            </a>
+          </p>
+          <p class="col mb-0 w-50 w-25-sm p-025">
+            <a href="/assets/img/content/src/ebook-vdwd/sample-9.jpg">
+              <img src="/assets/img/content/dest/small/ebook-vdwd/sample-9.jpg"
+                alt="" width="336" height="238" loading="lazy"
+                class="d-b b-1-inverted">
+            </a>
+          </p>
+          <p class="col mb-0 w-50 w-25-sm p-025">
+            <a href="/assets/img/content/src/ebook-vdwd/sample-10.jpg">
+              <img src="/assets/img/content/dest/small/ebook-vdwd/sample-10.jpg"
+                alt="" width="336" height="238" loading="lazy"
+                class="d-b b-1-inverted">
+            </a>
+          </p>
+          <p class="col mb-0 w-50 w-25-sm p-025">
+            <a href="/assets/img/content/src/ebook-vdwd/sample-11.jpg">
+              <img src="/assets/img/content/dest/small/ebook-vdwd/sample-11.jpg"
+                alt="" width="336" height="238" loading="lazy"
+                class="d-b b-1-inverted">
+            </a>
+          </p>
+          <p class="col mb-0 w-50 w-25-sm p-025">
+            <a href="/assets/img/content/src/ebook-vdwd/sample-12.jpg">
+              <img src="/assets/img/content/dest/small/ebook-vdwd/sample-12.jpg"
+                alt="" width="336" height="238" loading="lazy"
+                class="d-b b-1-inverted">
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="content" id="autor">
+      <div class="section">
+        <div class="article ta-c">
+          <a href="#autor" class="avatar mb-0 pb-0">
+            <img src="/assets/img/content/lectors/shoulders-martin-michalek.png" alt="Martin Michálek" width="200" height="200" loading="lazy" class="avatar__image">
+          </a>
+
+          <h2 class="mt-0 pt-0">
+            <a href="#autor">Martin Michálek</a>
+          </h2>
+          <p>
+            Autor je frontend designér na volné noze s takřka dvacetiletou praxí. Navrhuje, implementuje a radí s uživatelskými rozhraními responzivních webů. V poslední době spolupracoval se značkami, jako je Česká televize, VašeČočky.cz nebo Svobodná Evropa.
+          </p>
+          <p>
+            O moderních technologiích napsal e-book <a href="/ebook-css3">„Vzhůru do CSS3"</a>. Kromě blogu <a href="/">Vzhůru dolů</a> také příležitostně publikuje pro Zdroják.cz, Lupa.cz nebo slavném <a href="https://www.smashingmagazine.com/2016/10/how-to-poison-the-mobile-user/">na Smashing Magazine</a>.
+            Spoluzaložil a vede spolek <a href="http://frontendisti.cz">Frontendisti.cz</a>, který se zaměřuje na vzdělávání webařské komunity.
+          </p>
+          <p>
+            <small>
+              <a href="https://www.twitter.com/machal">Twitter</a> –
+              <a href="https://www.facebook.com/machal">Facebook</a> –
+              <a href="https://www.linkedin.com/in/martinmichalek/">LinkedIn</a>
+            </small>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="content" id="ohlasy">
+      <div class="section">
+        <div class="article">
+          <hr class="hr hr--small hr--spaced">
+
+          <h2 class="ta-c mb-2">
+            <a href="#ohlasy">Ohlasy &amp; recenze</a>
+          </h2>
+
+          <div class="row f-sm">
+            <link rel="stylesheet" href="/assets/css/modules-standalone/min/response.min.css" />
+            <article class="course-response response col w-50-xs mb-15 pt-0">
+              <blockquote class="response__text">
+                <p>Ze Vzhůru do (responzivního) webdesignu jsem opravdu nadšený.</p>
+              </blockquote>
+              <p class="mb-0 ml-2">
+                Martin Pešout v&nbsp;recenzi <a href="https://www.zdrojak.cz/clanky/recenze-knihy-vzhuru-responzivniho-webdesignu/">pro&nbsp;Zdroják.cz</a>
+              </p>
+            </article>
+            <article class="course-response response col w-50-xs mb-15 pt-0">
+              <blockquote class="response__text">
+                <p>Na knížce se mi moc líbí příklady a reálné ukázky, díky kterým čtenář ihned ví, jak je vše myšleno. Martin si s&nbsp;knihou opravdu&nbsp;vyhrál.</p>
+              </blockquote>
+              <p class="mb-0 ml-2">
+                Jan Kvasnička, UX designer
+                <br><a href="/kniha-responzivni-design/ohlas-kvasnicka">Plné znění</a>
+              </p>
+            </article>
+            <article class="course-response response col w-50-xs mb-15 pt-0">
+              <blockquote class="response__text">
+                <p>Hodně se mi líbila úprava knihy v její digitální podobě, ale papírová verze mě nadchla ještě mnohem více.</p>
+              </blockquote>
+              <p class="mb-0 ml-2">
+                Petr Václavek, grafik
+                <br><a href="http://petr.vaclavek.com/article/731/martin-michalek-vzhuru-do-responzivniho-webdesignu">Celá recenze</a>
+              </p>
+            </article>
+            <article class="course-response response col w-50-xs mb-15 pt-0">
+              <blockquote class="response__text">
+                <p>Kniha je úplně skvělá.</p>
+              </blockquote>
+              <p class="mb-0 ml-2">
+                Vladislav Musílek, WordPress expert
+                <br><a href="https://musilda.cz/vzhuru-do-webdesignu-jaka-je-kniha-o-moderni-webarine/">musilda.cz</a>
+              </p>
+            </article>
+            <article class="course-response response col w-50-xs mb-15 pt-0">
+              <blockquote class="response__text">
+                <p>Tahle knížka je fakt skvělá a moc za ni děkuji!</p>
+              </blockquote>
+              <p class="mb-0 ml-2">
+                David Grudl <a href="https://twitter.com/geekovo/status/923139453849350144">na Twitteru</a>
+              </p>
+            </article>
+            <article class="course-response response col w-50-xs mb-15 pt-0">
+              <blockquote class="response__text">
+                <p>Když jsem četl knihu, říkal jsem si: ‚Kdybych toto četl před rokem…', ‚Kdybych to věděl před projektem XYZ…'</p>
+              </blockquote>
+              <p class="mb-0 ml-2">
+                Michal Blažek, marketér
+                <br><a href="https://www.michalblazek.cz/konference-skoleni-novinky/recenze-knihy-vzhuru-responsivniho-webdesignu-od-martina-michalka">Celá recenze</a>
+              </p>
+            </article>
+          </div>
+
+          <p class="ta-c f-sm">
+            <a class="button" href="/kniha-responzivni-design/ohlasy">
+              Další ohlasy
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="article">
+      <div class="section mb-0 f-6">
+        <div class="content">
+          <div class="row">
+            <div class="col w-50-sm w-50-sm" id="pro-koho">
+              <h2 class="h3">
+                <a href="#pro-koho">Pro koho knížka je?</a>
+              </h2>
+
+              <dl>
+                <dt class="mb-05">
+                  <em>Vývojáři a&nbsp;kodéři</em>
+                </dt>
+                <dd class="mb-1 pl-0">
+                  Získáte přehled o postupech a technologiích používaných pro tvorbu dnešních responzivních webů.
+                </dd>
+
+                <dt class="mb-05">
+                  <em>Designéři, grafici,&nbsp;marketéři</em>
+                </dt>
+                <dd class="mb-1 pl-0">
+                  Pro vás jsou určené hlavně kapitoly o statistikách, rychlosti načítání a návrhu rozhraní v éře mobilů.
+                </dd>
+
+                <dt class="mb-05">
+                  <em>Méně&nbsp;zkušení</em>
+                </dt>
+                <dd class="mb-1 pl-0">
+                  Kniha se dá číst i jako učebnice tvorby webových uživatelských rozhraní pro začínající.
+                </dd>
+              </dl>
+            </div>
+
+            <div class="col w-50-sm" id="faq">
+              <h2 class="h3">
+                <a href="#faq">Časté otázky</a>
+              </h2>
+
+              <dl>
+                <dt class="mb-05">
+                  <em>Co musím&nbsp;umět?</em>
+                </dt>
+                <dd class="mb-1 pl-0">
+                  Pro orientaci v technických částech budete potřebovat jen  znalost HTML a CSS. Netechnické části předpokládají jen to, že máte základní povědomí o&nbsp;procesu návrhu&nbsp;webu.
+                </dd>
+
+                <dt class="mb-05">
+                  <em>Vyplatí se mi knihu pořídit, když už mám „Vzhůru do&nbsp;CSS3"?</em>
+                </dt>
+                <dd class="mb-1 pl-0">
+                  Myslím, že ano. Obě knihy se doplňují. <a href="/ebook-css3/">„Vzhůru do CSS3"</a> je více zaměřený na technologie a nástroje. „Vzhůru do (responzivního) webdesignu" zase na postupy a techniky&nbsp;práce.
+                </dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section margin-top-0">
+      <div class="content">
+        <div class="article">
+          <h2 id="obsah" class="section-heading">
+            <a href="#obsah">Kompletní obsah</a>
+          </h2>
+        </div>
+      </div>
+
+      <div class="content-full">
+        <link rel="stylesheet" href="/assets/css/modules-standalone/min/toc.min.css" />
+        <div class="toc toc--column-layout raised">
+          <h3>1) Proč vlastně responzivní webdesign?</h3>
+          <ul>
+            <li>Mobily, jsou tady mobily
+            <li>Pro péči o ty malé úplně zapomínáme na velké
+            <li>Vývoj: podíl konvenčních tabletů klesá, hybridy rostou
+            <li>CSS rozlišení
+            <li>Úroda prohlížečů
+            <li>Argumentace Googlem
+            <li>Zařízení z budoucnosti: co je po mobilech?
+            <li>Weby responzivní, adaptivní, mobilní
+          </ul>
+
+          <h3>2) Úvod do tvorby&nbsp;webu</h3>
+          <ul>
+            <li>Základy procesu tvorby webu
+            <li>User Centered Design&nbsp;Canvas
+            <li>Proces návrhu uživatelského rozhraní
+            <li>Příklad: E-shop pro děti z&nbsp;lesních&nbsp;školek
+            <li>Příklad: Obsah pro stránku detailu&nbsp;produktu
+          </ul>
+
+          <h3>3) Dokument jako&nbsp;základ</h3>
+          <ul>
+            <li>Vrstvení
+            <li>Grafický design
+            <li>Typografie na&nbsp;webu
+            <li>Zdroje elementů grafického&nbsp;designu
+            <li>Příklad: Barvy, písma a&nbsp;grafický&nbsp;styl
+            <li>Jednotky pro tvorbu webu: em, rem, %, px, vh,&nbsp;vw
+            <li>Autorský zoom dokumentu a&nbsp;komponent
+            <li>Elastická typografie
+            <li>Blanka a další nástroje pro dokumentovou vrstvu&nbsp;webu
+            <li>Příklad: hotový&nbsp;dokument
+          </ul>
+
+          <h3>4) Viewport na&nbsp;mobilech</h3>
+          <ul>
+            <li><a href="/prirucka/viewport-mobily">Viewporty na mobilních&nbsp;zařízeních</a>
+            <li><a href="/prirucka/viewport-meta">Meta značka pro&nbsp;viewport</a>
+          </ul>
+
+          <h3>5) Rychlost načítání</h3>
+          <ul>
+            <li>Rychlostní limity. A proč nedělat&nbsp;„optimalizace"?
+            <li><a href="/prirucka/rychlost-nacitani-proc">Proč řešit rychlost načítání&nbsp;webu?</a>
+            <li><a href="/prirucka/rychlost-nastroje">Nástroje pro analýzu rychlosti načtení&nbsp;stránky</a>
+            <li>Základní pravidla pro rychlé načtení&nbsp;webu
+            <li>Tipy pro rychlé načtení&nbsp;webu
+          </ul>
+
+          <h3>6) Obrázky a další média</h3>
+          <ul>
+            <li><a href="/prirucka/3-principy-rwd">Marcotteho responzivní&nbsp;design</a>
+            <li><a href="/prirucka/pruzna-media">Pružné vkládané elementy</a>
+            <li><a href="/prirucka/responzivni-obrazky">Responzivní obrázky</a>
+            <li><a href="/prirucka/srcset-sizes">Atributy srcset a&nbsp;sizes</a>
+            <li><a href="/prirucka/picture">Nová značka Picture</a>
+            <li><a href="/prirucka/responzivni-svg">Responzivní SVG</a>
+            <li><a href="/prirucka/responzivni-tabulky">Responzivní tabulky</a>
+            <li><a href="/prirucka/responzivni-grafy">Responzivní grafy</a>
+            <li>Příklad: dokument s přizpůsobivými&nbsp;médii
+          </ul>
+
+          <h3>7) Návrh rozhraní v&nbsp;éře&nbsp;mobilů</h3>
+          <ul>
+            <li>Čtyři principy návrhu responzivního&nbsp;rozhraní
+            <li>Filozofie „Mobile&nbsp;First"
+            <li>Lidé a&nbsp;zařízení: jak je ovládají a&nbsp;jak se&nbsp;chovají?
+            <li>Tipy, triky a&nbsp;časté chyby responzivních&nbsp;rozhraní
+            <li>Minimální plocha aktivní plochy: alespoň centimetr&nbsp;čtvereční
+            <li>Málo kliků a ještě méně (otravných)&nbsp;dotyků
+            <li>8 tipů pro jednodušší rozhraní na&nbsp;mobilech
+            <li>Opusťte desktopové&nbsp;zlozvyky
+            <li>Proč na mobilech neschovávat&nbsp;obsah?
+            <li>Vyhněte se častým&nbsp;chybám
+          </ul>
+
+          <h3>8) Design komponent&nbsp;rozhraní</h3>
+          <ul>
+            <li>Skicování
+            <li>HTML prototypy
+            <li>Příklad: návrh fotogalerie krok za&nbsp;krokem
+          </ul>
+
+          <h3>9) Media Queries a&nbsp;layout</h3>
+          <ul>
+            <li><a href="/prirucka/css3-media-queries">Media&nbsp;Queries</a>
+            <li>Tipy a triky k Media&nbsp;Queries
+            <li>Responzivní&nbsp;layout
+            <li>Příklad: rozvržení&nbsp;stránky
+          </ul>
+
+          <h3>10) Responzivní navigace</h3>
+          <ul>
+            <li>Mobilní navigace: potřebujeme&nbsp;hamburgery?
+            <li>Návrhové vzory responzivních&nbsp;navigací
+          </ul>
+
+          <h3>11) Testování responzivních&nbsp;webů</h3>
+          <ul>
+            <li>Testování responzivních&nbsp;webů
+            <li>Responzivní tipy a&nbsp;triky
+            <li>Další zdroje
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="section margin-top-0 ta-c">
+      <div class="content">
+        <div class="article">
+          <h2 id="ukazka" class="section-heading">
+            <a href="#ukazka">Ukázková kapitola</a>
+          </h2>
+
+          <p class="f-6">
+            Stáhněte 48 stránek šesté kapitoly „Obrázky a další&nbsp;média".
+            <br>
+            PDF obsahuje plnohodnotnou verzi dostupnou v&nbsp;tištěné knize.
+            EPUB a MOBI se zjednodušenou sazbou v této podobě dostanete při koupi&nbsp;e-booku.
+          </p>
+
+          <p class="mt-2 mb-2">
+            <a href="/assets/files/vdwd/vdwd-ukazka.pdf" class="button mb-05">
+              PDF <span class="text-small">(2&nbsp;MB)</span>
+            </a>
+
+            <a href="/assets/files/vdwd/vdwd-ukazka.epub" class="button mb-05">
+              EPUB <span class="text-small">(2&nbsp;MB)</span>
+            </a>
+
+            <a href="/assets/files/vdwd/vdwd-ukazka.mobi" class="button mb-05">
+              MOBI <span class="text-small">(5&nbsp;MB)</span>
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section section-taller bg-highlight ebook-order section-latest">
+      <div class="content ta-c">
+        <p class="ebook-order-booklet">
+          <a href="https://form.simpleshop.cz/AaGbm/buy/">
+            <img src="/assets/img/content/dest/x-small/vdwd-ebook.png"
+              alt="Vzhůru do (responzivního) webdesignu"
+              height="200" width="200">
+          </a>
+        </p>
+
+        <div class="ebook-order-form">
+          <p>
+            <a href="https://form.simpleshop.cz/AaGbm/buy/" class="button button--wide button--primary">
+              Koupit e-book
+            </a>
+          </p>
+          <p class="f-sm mb-0">
+            <span class="ebook-order-conditions-row">
+              272 stránek. Formáty EPUB, MOBI a PDF.
+            </span>
+            <span class="ebook-order-conditions-row">
+              Minor aktualizace dostávají majitelé licencí zdarma.<br>
+            </span>
+          </p>
+          <p class="f-sm">
+            <a href="/kniha-responzivni-design/info">Více o nákupu</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <script is:inline src="/assets/js/vrdl.min.js"></script>
+</BaseLayout>

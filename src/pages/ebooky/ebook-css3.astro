@@ -1,0 +1,152 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<BaseLayout
+  title="E-book &bdquo;Vzhůru do CSS3&ldquo;"
+  description="Změny frontend kodéřiny, nástroje, postupy a nové CSS3 vlastnosti v jednom e-booku."
+  ogType="book"
+  ogImage="https://www.vzhurudolu.cz/assets/img/content/src/socials/vd-soc-css3.jpg"
+  ogUrl="https://www.vzhurudolu.cz/ebook-css3"
+  bodyClass="section-ebooks"
+>
+  <Header slot="header" />
+  <Footer slot="footer" />
+
+  <div class="page-head">
+    <h1>
+      Vzhůru do CSS3
+    </h1>
+
+    <p class="maxw-30em">
+      Změny frontend kodéřiny, nástroje, postupy a nové CSS3 vlastnosti v jednom e-booku.
+    </p>
+
+    <p class="mb-0">
+      <a href="/assets/files/vdcss3/vdcss3-ebook.pdf" class="button button--primary">
+        Stáhnout zdarma
+      </a>
+    </p>
+  </div>
+
+  <main role="main" id="main" aria-label="Hlavní obsah">
+    <link rel="stylesheet" href="/assets/css/modules-standalone/min/pages/ebook.min.css" />
+    
+    <div class="article">
+      <div class="section">
+        <div class="content ta-c">
+          <p>
+            E-book o CSS3, který je zdarma ke stažení. Obsahuje přehled nových vlastností CSS3, nástrojů a postupů pro moderní webovou kodéřinu.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section section-taller bg-highlight ebook-order">
+      <div class="content ta-c">
+        <p class="ebook-order-booklet">
+          <a href="/assets/files/vdcss3/vdcss3-ebook.pdf">
+            <img src="/assets/img/content/dest/x-small/vdcss3-ebook.png"
+              alt="Vzhůru do CSS3"
+              height="200" width="200">
+          </a>
+        </p>
+
+        <div class="ebook-order-form">
+          <p>
+            <a href="/assets/files/vdcss3/vdcss3-ebook.pdf" class="button button--wide button--primary">
+              Stáhnout zdarma
+            </a>
+          </p>
+          <p class="f-sm mb-0">
+            <span class="ebook-order-conditions-row">
+              Formát PDF. Zdarma ke stažení.
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="article">
+      <div class="section">
+        <div class="content">
+          <h2 id="co-obsahuje" class="ta-c">
+            <a href="#co-obsahuje">Co v e-booku najdete?</a>
+          </h2>
+
+          <ol class="list list--numbered">
+            <li class="list__item mb-1">
+              Přehled nových CSS3 vlastností a jejich použití.
+            </li>
+            <li class="list__item mb-1">
+              Nástroje a postupy pro moderní frontend kodéřinu.
+            </li>
+            <li class="list__item mb-1">
+              Praktické příklady a ukázky kódu.
+            </li>
+            <li class="list__item mb-1">
+              Tipy a triky pro efektivní práci s CSS3.
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="content" id="autor">
+      <div class="section">
+        <div class="article ta-c">
+          <a href="#autor" class="avatar mb-0 pb-0">
+            <img src="/assets/img/content/lectors/shoulders-martin-michalek.png" alt="Martin Michálek" width="200" height="200" loading="lazy" class="avatar__image">
+          </a>
+
+          <h2 class="mt-0 pt-0">
+            <a href="#autor">Martin Michálek</a>
+          </h2>
+          <p>
+            Autor je frontend designér na volné noze s takřka dvacetiletou praxí. Navrhuje, implementuje a radí s uživatelskými rozhraními responzivních webů.
+          </p>
+          <p>
+            O moderních technologiích napsal také e-book <a href="/kniha-responzivni-design">„Vzhůru do (responzivního) webdesignu"</a>. Kromě blogu <a href="/">Vzhůru dolů</a> také příležitostně publikuje pro Zdroják.cz, Lupa.cz nebo <a href="https://www.smashingmagazine.com/2016/10/how-to-poison-the-mobile-user/">na Smashing Magazine</a>.
+            Spoluzaložil a vede spolek <a href="http://frontendisti.cz">Frontendisti.cz</a>, který se zaměřuje na vzdělávání webařské komunity.
+          </p>
+          <p>
+            <small>
+              <a href="https://www.twitter.com/machal">Twitter</a> –
+              <a href="https://www.facebook.com/machal">Facebook</a> –
+              <a href="https://www.linkedin.com/in/martinmichalek/">LinkedIn</a>
+            </small>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section section-taller bg-highlight ebook-order section-latest">
+      <div class="content ta-c">
+        <p class="ebook-order-booklet">
+          <a href="/assets/files/vdcss3/vdcss3-ebook.pdf">
+            <img src="/assets/img/content/dest/x-small/vdcss3-ebook.png"
+              alt="Vzhůru do CSS3"
+              height="200" width="200">
+          </a>
+        </p>
+
+        <div class="ebook-order-form">
+          <p>
+            <a href="/assets/files/vdcss3/vdcss3-ebook.pdf" class="button button--wide button--primary">
+              Stáhnout zdarma
+            </a>
+          </p>
+          <p class="f-sm mb-0">
+            <span class="ebook-order-conditions-row">
+              Formát PDF. Zdarma ke stažení.
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <script is:inline src="/assets/js/vrdl.min.js"></script>
+</BaseLayout>

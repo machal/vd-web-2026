@@ -6,6 +6,8 @@ import Footer from '../../components/Footer.astro';
 
 const podcasts = await getCollection('podcast');
 const sortedPodcasts = podcasts.sort((a, b) => new Date(b.data.date) - new Date(a.data.date));
+const latestPodcast = sortedPodcasts[0];
+const otherPodcasts = sortedPodcasts.slice(1);
 
 function formatDate(date: Date): string {
   return new Intl.DateTimeFormat('cs-CZ', {
@@ -17,35 +19,143 @@ function formatDate(date: Date): string {
 ---
 
 <BaseLayout
-  title="Podcast ze Vzhůru dolů"
-  description="Rozhovory se zajímavými lidmi kolem webového designu a vývoje."
+  title="Podcast"
+  description="Robin Pokorný a Martin Michálek vedou rozhovory se zajímavými lidmi kolem webového designu a vývoje."
   bodyClass="section-podcast"
 >
-  <Header />
-  
+  <Header slot="header" />
+  <Footer slot="footer" />
+
   <main role="main" id="main" aria-label="Hlavní obsah">
-    <div class="page-head page-head--line"></div>
-    <div class="section">
-      <div class="content">
-        {sortedPodcasts.map((podcast) => (
-          <article role="article" class="mb-15">
-            <h2 class="h4 mb-05">
-              <a href={`/podcast/${podcast.slug}`}>{podcast.data.title}</a>
-            </h2>
+      <div class="page-head page-head--lower">
+        <h1>Podcast</h1>
+        <div class="mb-0 maxw-30em">
+          <div class="maxw-30em">
             <p>
-              <span class="text-color-lightest">
-                {formatDate(podcast.data.date)}
-                —
-              </span>
-              {podcast.data.description}
+              <a href="https://robinpokorny.com/">Robin Pokorný</a> a <a href="https://www.vzhurudolu.cz/martin">Martin Michálek</a> vedou rozhovory se zajímavými lidmi kolem webového designu a vývoje.
             </p>
-          </article>
-        ))}
+            <p>
+              Nalaďte nás: <a href="https://itunes.apple.com/cz/podcast/vzhuru-dolu-podcast/id1176274658">iTunes</a> – <a href="https://open.spotify.com/show/1G2kH2YrIwD9BABg4L7xGC">Spotify</a> – <a href="https://tunein.com/podcasts/Technology-News/Vzhuru-dolu-podcast-p1177693/">TuneIn</a> – <a href="https://anchor.fm/s/82312eb4/podcast/rss">RSS podcastů</a>.
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
-  </main>
-  
-  <Footer />
+
+      <div class="section">
+        {latestPodcast && (
+          <div class="content-full">
+            <div class="row">
+              <div class="col mb-15 mb-0-md w-66-md mx-a-md ta-c">
+                <h2 class="mb-05 pb-0">
+                  <a href={`/podcast/${latestPodcast.slug}`}>{latestPodcast.data.title}</a>
+                </h2>
+                <p>
+                  <span class="article">
+                    <span class="text-color-lightest">
+                      {formatDate(latestPodcast.data.date)}
+                      —
+                    </span>
+                    {latestPodcast.data.description}
+                  </span>
+                </p>
+                <p class="mb-0 f-6">
+                  <a class="button" href={`/podcast/${latestPodcast.slug}`}>Pokračovat…</a>
+                </p>
+              </div>
+
+              <aside role="complementary" id="kurzy-top" aria-labelledby="promoTop-heading" class="col w-33-md">
+                <div class="rounded bg-highlight p-05 f-sm ta-c">
+                  <h2 class="h4 ml-05 mt-05 mb-025" id="promoTop-heading">
+                    CSS: moderní layout
+                  </h2>
+                  <a class="course-icon course-icon--ebook p-r" href="/css-layout/">
+                    <span class="course-icon__image">
+                      <img src="/assets/img/content/handmade/ebooks/vdlayout/vdlayout-model-both__760.webp" alt="Kniha a e-book „CSS: moderní layout"" loading="lazy" width="1540" height="1270">
+                    </span>
+                  </a>
+                  <p class="ml-05 mt-05 mp-0">
+                    Floaty už šly spát, ale tahle kniha ve vás probudí nadšence do CSS.
+                  </p>
+                  <p>
+                    <a class="button" href="/css-layout/">Více informací</a>
+                  </p>
+                </div>
+              </aside>
+            </div>
+          </div>
+        )}
+
+        <div class="content">
+          {otherPodcasts.length > 0 && (
+            <>
+              <hr class="hr--small hr--spaced" />
+              {otherPodcasts.map((podcast) => (
+                <article role="article" class="mb-15">
+                  <h2 class="h4 mb-05">
+                    <a href={`/podcast/${podcast.slug}`}>{podcast.data.title}</a>
+                  </h2>
+                  <p>
+                    <span class="text-color-lightest">
+                      {formatDate(podcast.data.date)}
+                      —
+                    </span>
+                    {podcast.data.description}
+                  </p>
+                </article>
+              ))}
+            </>
+          )}
+
+          {sortedPodcasts.length > 10 && (
+            <p class="ta-c mt-3">
+              <a class="button" href="/podcast/p=2">Další články</a>
+            </p>
+          )}
+        </div>
+      </div>
+
+      <div class="content mb-3" id="autori">
+        <div class="section">
+          <div class="article">
+            <h2 class="ta-c mb-2 mt-3">
+              <a href="#autori">Hostitelé podcastu</a>
+            </h2>
+
+            <div class="row f-sm">
+              <div class="col w-50-sm ta-c">
+                <span class="avatar mb-0 pb-0">
+                  <img src="/assets/img/content/lectors/shoulders-martin-michalek.png" alt="Martin Michálek" width="200" height="200" loading="lazy" class="avatar__image">
+                </span>
+                <h3 class="mt-05 mb-05 pt-0 ta-c h4">
+                  Martin Michálek
+                </h3>
+                <p>
+                  Webový expert na volné noze s více než dvacetiletou praxí, zaměřující se v rámci projektu PageSpeed.cz na optimalizace rychlosti webů. Píše blog Vzhůru dolů, je autorem několika knih. Vede spolek Frontendisti.cz. S rodinou žije u Milíčovského lesa v Praze.
+                  <small>
+                    <a href="https://vzhurudolu.cz/martin" target="_blank">vzhurudolu.cz/martin</a>
+                  </small>
+                </p>
+              </div>
+
+              <div class="col w-50-sm ta-c">
+                <span class="avatar mb-0 pb-0">
+                  <img src="/assets/img/content/lectors/shoulders-robin-pokorny.png" alt="Robin Pokorný" width="200" height="200" loading="lazy" class="avatar__image">
+                </span>
+                <h3 class="mt-05 mb-05 pt-0 ta-c h4">
+                  Robin Pokorný
+                </h3>
+                <p>
+                  Vývojář se zaměřením na strategický doménový design, TypeScript a funkcionální programování. Žije a pracuje v Berlíně, kde také organizuje srazy a přednáší. V letech 2013 a 2015 natáčel první český podcast o frontendu pod názvem Brus kódu. Spoluzaložil spolek Frontendisti.cz.
+                  <small>
+                    <a href="https://robinpokorny.com" target="_blank">robinpokorny.com</a>
+                  </small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
   
   <script is:inline src="/assets/js/vrdl.min.js"></script>
 </BaseLayout>

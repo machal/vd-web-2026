@@ -1,0 +1,193 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<BaseLayout
+  title="Knihy a e-booky ze Vzhůru dolů"
+  description="Martin Michálek píše knihy a e-booky o CSS3, responzivním designu a moderní webové kodéřině."
+  ogImage="https://www.vzhurudolu.cz/assets/img/content/src/socials/vd-soc-knihy.jpg"
+  ogUrl="https://www.vzhurudolu.cz/ebooky"
+  bodyClass="section-ebooks"
+>
+  <Header slot="header" />
+  <Footer slot="footer" />
+
+  <div class="page-head">
+      <h1>Knihy a e-booky</h1>
+      <p class="mb-0 maxw-30em">
+        Technologie moderní webové kodéřiny v&nbsp;průvodcích od autora textů na Vzhůru&nbsp;dolů.
+      </p>
+    </div>
+
+    <main role="main" id="main" aria-label="Hlavní obsah">
+      <div class="content pt-3">
+        <link rel="stylesheet" href="/assets/css/modules-standalone/min/course-icon.min.css" />
+        <link rel="stylesheet" href="/assets/css/modules-standalone/min/emblem.min.css" />
+        
+        <div class="row fd-c fd-r-xs">
+          <div class="col w-50-xs">
+            <p>
+              <a class="course-icon course-icon--ebook p-r" href="/css-layout">
+                <picture class="course-icon__image">
+                  <source type="image/avif" srcset="/assets/img/content/handmade/ebooks/vdlayout/vdlayout-front-both.avif">
+                  <img src="/assets/img/content/handmade/ebooks/vdlayout/vdlayout-front-both.webp"
+                       alt="CSS: moderní layout" width="130" height="130" loading="eager">
+                </picture>
+              </a>
+            </p>
+            <h3 class="h4 h-4 mb-05 d-f ai-fe">
+              <a href="/css-layout/">CSS: moderní layout</a>
+            </h3>
+            <div class="f-6">
+              <p class="mb-05">
+                Grid, flexbox a nové metody rozvržení webů v příkladech. E-book a tištěná kniha. Vydáno:&nbsp;2022.
+                <br>Cena: <strong>199-449&nbsp;Kč</strong>
+              </p>
+              <p>
+                <a class="button mx-1" href="/css-layout/">Více informací</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="col w-50-xs">
+            <p>
+              <a class="course-icon course-icon--ebook p-r" href="/kniha-responzivni-design">
+                <picture class="course-icon__image">
+                  <source type="image/avif" srcset="/assets/img/content/handmade/ebooks/vdwd/vdwd-ebook.avif">
+                  <img src="/assets/img/content/handmade/ebooks/vdwd/vdwd-ebook.webp"
+                       alt="Vzhůru do (responzivního) webdesignu" width="130" height="130" loading="eager">
+                </picture>
+              </a>
+            </p>
+            <h3 class="h4 h-4 mb-05 d-f ai-fe">
+              <a href="/kniha-responzivni-design/">Vzhůru do (responzivního) webdesignu</a>
+            </h3>
+            <div class="f-6">
+              <p class="mb-05">
+                Kompletní průvodce návrhem a&nbsp;implementací responzivních webů. Vydáno:&nbsp;2017.
+                <br>Cena: <strong>199&nbsp;Kč</strong>
+              </p>
+              <p>
+                <a class="button mx-1" href="/kniha-responzivni-design/">Více informací</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="col w-50-xs">
+            <p>
+              <a class="course-icon course-icon--ebook p-r" href="/ebook-amp">
+                <picture class="course-icon__image">
+                  <source type="image/avif" srcset="/assets/img/content/handmade/ebooks/vdamp/vdamp-ebook.avif">
+                  <img src="/assets/img/content/handmade/ebooks/vdamp/vdamp-ebook.webp"
+                       alt="Vzhůru do AMP" width="130" height="130" loading="eager">
+                </picture>
+              </a>
+            </p>
+            <h3 class="h4 h-4 mb-05 d-f ai-fe">
+              <a href="/ebook-amp/">Vzhůru do AMP</a>
+            </h3>
+            <div class="f-6 p-r">
+              <p class="mb-05">
+                Vše o technologii pro tvorbu bezkonkurenčně rychlých webů v jednom e-booku. Vydáno:&nbsp;2019.
+                <br>Cena:&nbsp;<strong>99&nbsp;Kč</strong>
+              </p>
+              <p>
+                <a class="button px-1" href="/ebook-amp/">Více informací</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="col w-50-xs">
+            <p>
+              <a class="course-icon course-icon--ebook p-r" href="/ebook-css3">
+                <picture class="course-icon__image">
+                  <source type="image/avif" srcset="/assets/img/content/handmade/ebooks/vdcss3/vdcss3-ebook.avif">
+                  <img src="/assets/img/content/handmade/ebooks/vdcss3/vdcss3-ebook.webp"
+                       alt="Vzhůru do CSS3" width="130" height="130" loading="eager">
+                </picture>
+              </a>
+            </p>
+            <h3 class="h4 h-4 mb-05 d-f ai-fe">
+              <a href="/ebook-css3/">Vzhůru do CSS3</a>
+            </h3>
+            <div class="f-6">
+              <p class="mb-05">
+                Změny frontend kodéřiny, nástroje, postupy a &nbsp;nové CSS3 vlastnosti v&nbsp;jednom e-booku. Vydáno:&nbsp;2015.
+                <br><strong>Zdarma ke stažení</strong>
+              </p>
+              <p>
+                <a class="button mx-1" href="/ebook-css3/">Více informací</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="content" id="ohlasy">
+          <div class="section">
+            <div class="article">
+              <hr class="hr hr--small hr--spaced">
+
+              <h2 class="ta-c mb-2">
+                <a href="#ohlasy">Ohlasy &amp; recenze na knížky</a>
+              </h2>
+
+              <div class="row f-sm">
+                <link rel="stylesheet" href="/assets/css/modules-standalone/min/response.min.css" />
+                <article class="course-response response col w-50-xs mb-15 pt-0">
+                  <blockquote class="response__text">
+                    <p>Ze Vzhůru do (responzivního) webdesignu jsem opravdu nadšený.</p>
+                  </blockquote>
+                  <p class="mb-0 ml-2">
+                    Martin Pešout v&nbsp;recenzi knihy na
+                    <a href="https://www.zdrojak.cz/clanky/recenze-knihy-vzhuru-responzivniho-webdesignu/">
+                      Zdroják.cz
+                    </a>
+                  </p>
+                </article>
+                <article class="course-response response col w-50-xs mb-15 pt-0">
+                  <blockquote class="response__text">
+                    <p>Hodně se mi líbilo provázání výkladu s funkčními příklady, které jsem si mohl ihned upravit a vyzkoušet.</p>
+                  </blockquote>
+                  <p class="mb-0 ml-2">
+                    Petr Václavek ke „Vzhůru do&nbsp;CSS3" na
+                    <a href="http://petr.vaclavek.com/article/721/martin-michalek-vzhuru-do-css3">
+                      Vaclavek.com
+                    </a>
+                  </p>
+                </article>
+                <article class="course-response response col w-50-xs mb-15 pt-0">
+                  <blockquote class="response__text">
+                    <p>Když jsem četl knihu, říkal jsem si: ‚Kdybych toto četl před rokem…', ‚Kdybych to věděl před projektem XYZ…'</p>
+                  </blockquote>
+                  <p class="mb-0 ml-2">
+                    Michal Blažek, marketér ke „Vzhůru do (responzivního) webdesignu" na
+                    <a href="https://www.michalblazek.cz/konference-skoleni-novinky/recenze-knihy-vzhuru-responsivniho-webdesignu-od-martina-michalka">
+                      MichalBlažek.cz
+                    </a>
+                  </p>
+                </article>
+                <article class="course-response response col w-50-xs mb-15 pt-0">
+                  <blockquote class="response__text">
+                    <p>Tahle knížka je fakt skvělá a moc za ni děkuji!</p>
+                  </blockquote>
+                  <p class="mb-0 ml-2">
+                    David Grudl ke „Vzhůru do (responzivního) webdesignu"
+                    na
+                    <a href="https://twitter.com/geekovo/status/923139453849350144">
+                      Twitteru
+                    </a>
+                  </p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  
+  <script is:inline src="/assets/js/vrdl.min.js"></script>
+</BaseLayout>

@@ -31,8 +31,9 @@ function formatDate(date: Date): string {
   ogUrl={`https://www.vzhurudolu.cz/blog/${post.slug}`}
   bodyClass="section-blog"
 >
-  <Header />
-  
+  <Header slot="header" />
+  <Footer slot="footer" />
+
   <main role="main" id="main" aria-label="Hlavní obsah">
     <div class="page-head page-head--subhead">
       <h1>{post.data.title}</h1>
@@ -57,8 +58,6 @@ function formatDate(date: Date): string {
       <Content />
     </article>
   </main>
-  
-  <Footer />
   
   <script is:inline src="/assets/js/vrdl.min.js"></script>
 </BaseLayout>

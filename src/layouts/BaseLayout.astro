@@ -73,6 +73,8 @@ const finalCanonicalUrl = canonicalUrl || ogUrl;
     <link rel="stylesheet" href="/assets/css/2-components.min.css" />
     <link rel="stylesheet" href="/assets/css/3-libraries.min.css" />
     <link rel="stylesheet" href="/assets/css/4-helpers.min.css" />
+    
+    <slot name="styles" />
 
     <script>
       // document.no-js -> document.js
@@ -83,6 +85,18 @@ const finalCanonicalUrl = canonicalUrl || ogUrl;
   </head>
 
   <body id="body" class={bodyClass}>
-    <slot />
+    <slot name="styles" />
+    
+    <a href="#main" class="skip-link">Přejít na hlavní obsah</a>
+    
+    <div class="container">
+      <slot name="header" />
+      
+      <div class="content-container">
+        <slot />
+      </div>
+      
+      <slot name="footer" />
+    </div>
   </body>
 </html>

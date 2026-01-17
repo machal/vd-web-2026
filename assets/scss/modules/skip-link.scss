@@ -16,10 +16,12 @@ Skip Link
   position: absolute;
   top: 0;
   // off the screen:
-  right: 100%;
+  left: -9999px;
+  z-index: 9999;
 }
 
 .skip-link:focus {
   // on the screen:
+  left: 0.5em;
   right: auto;
 }

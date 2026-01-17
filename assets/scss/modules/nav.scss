@@ -125,6 +125,12 @@ Navigation
   background-color: var(--vd-heading-color);
   border-color: var(--vd-heading-color);
   border-bottom: 1px solid var(--vd-heading-color); // Edge/IE hack
+
+  // Hover efekt pro aktivní položku (aby bylo jasné, že je klikatelná)
+  &:hover,
+  &:focus {
+    opacity: 0.9;
+  }
 }
 
 // Modification for secondary sections (like ebooks)
@@ -139,6 +145,12 @@ Navigation
     background-color: var(--vd-text-color);
     border-color: var(--vd-text-color);
     border-bottom: 1px solid var(--vd-text-color); // Edge/IE hack
+
+    // Hover efekt pro aktivní položku (aby bylo jasné, že je klikatelná)
+    &:hover,
+    &:focus {
+      opacity: 0.9;
+    }
   }
 }
 

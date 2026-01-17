@@ -1,0 +1,506 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { Fragment } from 'astro/jsx-runtime';
+
+// Data videí organizovaných do kategorií
+const videoCategories = [
+  {
+    id: 'rychlost',
+    title: 'Rychlost webu',
+    videos: [
+      {
+        title: 'Jak správně měřit rychlost webu?',
+        url: 'https://youtu.be/PtOi5w6m1pI',
+        icon: '/assets/img/icons/dest/kurzy/webinar-rychlost-mereni.svg?v=3',
+        lector: {
+          name: 'Martin Michálek',
+          slug: 'martin-michalek',
+          avatar: '/assets/img/content/lectors/shoulders-martin-michalek_100x100.png',
+        },
+        description: 'První chyby při optimalizaci rychlosti se dělají už v měřeních. Pomůže mít vhodné nástroje a umět interpretovat výsledky.',
+        difficulty: ['beginner', 'non-technical'],
+        difficultyLabel: 'Začínající i netechnici',
+        categories: ['rychlost-nacitani', 'nastroje', 'netechnicke'],
+      },
+      {
+        title: 'Ladíme rychlost v Chrome DevTools',
+        url: 'https://youtu.be/_2gNz-bZx40',
+        icon: '/assets/img/icons/dest/kurzy/webinar-devtools-rychlost.svg?v=3',
+        lector: {
+          name: 'Michal Matuška',
+          slug: 'michal-matuska',
+          avatar: '/assets/img/content/lectors/shoulders-michal-matuska_100x100.png',
+        },
+        description: 'Jeden web, jeden prohlížeč a jedna hodina času. Jak optimalizovat rychlost webu s pomocí DevTools?',
+        difficulty: ['advanced'],
+        difficultyLabel: 'Pokročilí',
+        categories: ['rychlost-nacitani', 'nastroje'],
+      },
+      {
+        title: 'PageSpeed Insights & Lighthouse: tipy a triky',
+        url: 'https://youtu.be/89KMX1ljzdU',
+        icon: '/assets/img/icons/dest/kurzy/webinar-lighthouse.svg?v=3',
+        lector: {
+          name: 'Martin Michálek',
+          slug: 'martin-michalek',
+          avatar: '/assets/img/content/lectors/shoulders-martin-michalek_100x100.png',
+        },
+        description: 'Ponor do hlubin nejznámějších nástrojů pro testování rychlosti. Co se skrývá za fasádou jejich základních reportů?',
+        difficulty: ['advanced'],
+        difficultyLabel: 'Pokročilí',
+        categories: ['rychlost-nacitani', 'nastroje'],
+      },
+      {
+        title: 'Měření a optimalizace CLS',
+        url: 'https://youtu.be/1pnPAqXdv3o',
+        icon: '/assets/img/icons/dest/kurzy/webinar-cls.svg?v=3',
+        lector: {
+          name: 'Martin Michálek',
+          slug: 'martin-michalek',
+          avatar: '/assets/img/content/lectors/shoulders-martin-michalek_100x100.png',
+        },
+        description: 'Optimalizace metriky Cumulative Layout Shift není tak snadná, jak by se mohlo zdát. Ideální téma pro video.',
+        difficulty: ['advanced'],
+        difficultyLabel: 'Pokročilí',
+        categories: ['css', 'rychlost-nacitani', 'webdesign'],
+      },
+      {
+        title: 'Měříme a optimalizujeme LCP',
+        url: 'https://youtu.be/qJwaeFfI-Ig',
+        icon: '/assets/img/icons/dest/kurzy/webinar-lcp.svg?v=3',
+        lector: {
+          name: 'Martin Michálek',
+          slug: 'martin-michalek',
+          avatar: '/assets/img/content/lectors/shoulders-martin-michalek_100x100.png',
+        },
+        description: 'Largest Contentful Paint je možná tou nejdůležitější ze sady metrik rychlosti webu Web Vitals.',
+        difficulty: ['advanced'],
+        difficultyLabel: 'Pokročilí',
+        categories: ['rychlost-nacitani'],
+      },
+      {
+        title: 'Zrychlete web pomocí lazy loadingu',
+        url: 'https://youtu.be/hf1BhpCxLcw',
+        icon: '/assets/img/icons/dest/kurzy/webinar-lazy-loading.svg?v=3',
+        lector: {
+          name: 'Martin Michálek',
+          slug: 'martin-michalek',
+          avatar: '/assets/img/content/lectors/shoulders-martin-michalek_100x100.png',
+        },
+        description: 'Odložení zpracování stránky patří mezi nejefektivnější techniky optimalizace rychlosti webu.',
+        difficulty: ['advanced'],
+        difficultyLabel: 'Pokročilí',
+        categories: ['rychlost-nacitani', 'nastroje'],
+      },
+      {
+        title: 'WebP, AVIF nebo JPEG?',
+        url: 'https://youtu.be/OCU9SfDEbJE',
+        icon: '/assets/img/icons/dest/kurzy/webinar-webp-avif.svg?v=3',
+        lector: {
+          name: 'Martin Michálek',
+          slug: 'martin-michalek',
+          avatar: '/assets/img/content/lectors/shoulders-martin-michalek_100x100.png',
+        },
+        description: 'Prohlížeče se mohou přetrhnout v přidávání podpory nových obrázkových formátů. Vyznejte se v nich.',
+        difficulty: ['intermediate'],
+        difficultyLabel: 'Středně pokročilí',
+        categories: ['rychlost-nacitani', 'html'],
+      },
+      {
+        title: 'Optimalizace CSS a JavaScriptu',
+        url: 'https://youtu.be/iEr22hi6Fds',
+        icon: '/assets/img/icons/dest/kurzy/webinar-rychlost-css-js.svg?v=3',
+        lector: {
+          name: 'Martin Michálek',
+          slug: 'martin-michalek',
+          avatar: '/assets/img/content/lectors/shoulders-martin-michalek_100x100.png',
+        },
+        description: 'Styly a skripty jsou při zvyšování rychlosti kritické. Naučte se hledat příležitosti a optimalizovat načítání CSS a JS.',
+        difficulty: ['beginner'],
+        difficultyLabel: 'Začínající',
+        categories: ['css', 'rychlost-nacitani', 'javascript'],
+      },
+      {
+        title: 'Optimalizace obrázků a webfontů',
+        url: 'https://youtu.be/Ukfo_jTRuzU',
+        icon: '/assets/img/icons/dest/kurzy/webinar-rychlost-obrazky-webfonty.svg?v=3',
+        lector: {
+          name: 'Martin Michálek',
+          slug: 'martin-michalek',
+          avatar: '/assets/img/content/lectors/shoulders-martin-michalek_100x100.png',
+        },
+        description: 'Bez optimalizace obrázků a webfontů weby nezrychlíme. Webinář vám ukáže možnosti optimalizací.',
+        difficulty: ['beginner'],
+        difficultyLabel: 'Začínající',
+        categories: ['rychlost-nacitani'],
+      },
+    ],
+  },
+  {
+    id: 'css',
+    title: 'CSS',
+    videos: [
+      {
+        title: 'CSS grid: mřížka v kostce',
+        url: 'https://youtu.be/MJ3r82FLxsY',
+        icon: '/assets/img/icons/dest/kurzy/webinar-css-grid.svg?v=3',
+        lector: {
+          name: 'Martin Michálek',
+          slug: 'martin-michalek',
+          avatar: '/assets/img/content/lectors/shoulders-martin-michalek_100x100.png',
+        },
+        description: 'Praktické video postavené na živém kódování, kde se naučíte nebo si osvěžíte základní i pokročilejší vlastnosti gridu.',
+        difficulty: ['beginner', 'intermediate'],
+        difficultyLabel: 'Začínající a mírně pokročilí',
+        categories: ['css'],
+      },
+      {
+        title: 'Atomické CSS a Tailwind',
+        url: 'https://youtu.be/gVtMhu-oY3w',
+        icon: '/assets/img/icons/dest/kurzy/webinar-tailwind-atomicke-css.svg?v=3',
+        lector: {
+          name: 'Martin Michálek',
+          slug: 'martin-michalek',
+          avatar: '/assets/img/content/lectors/shoulders-martin-michalek_100x100.png',
+        },
+        description: 'Podle celosvětové ankety State of CSS byl rok 2020 rokem nástupu popularity systémů atomického CSS.',
+        difficulty: ['beginner', 'intermediate'],
+        difficultyLabel: 'Začínající a mírně pokročilí',
+        categories: ['nastroje', 'organizace-css'],
+      },
+    ],
+  },
+  {
+    id: 'javascript',
+    title: 'JavaScript',
+    videos: [
+      {
+        title: 'Praktický úvod do Vue',
+        url: 'https://youtu.be/Ul164PpFYBI',
+        icon: '/assets/img/icons/dest/kurzy/webinar-vue-uvod.svg?v=3',
+        lector: {
+          name: 'Riki Fridrich',
+          slug: 'riki-fridrich',
+          avatar: '/assets/img/content/lectors/shoulders-riki-fridrich_100x100.png',
+        },
+        description: 'Vstup do populárního javascriptového frameworku s vysvětlením skrytých principů od povolaného lektora.',
+        difficulty: ['beginner'],
+        difficultyLabel: 'Začínající',
+        categories: ['javascript', 'nastroje'],
+      },
+      {
+        title: 'NPM a Yarn',
+        url: 'https://youtu.be/hxvyJnpEqZk',
+        icon: '/assets/img/icons/dest/kurzy/webinar-npm-yarn.svg?v=3',
+        lector: {
+          name: 'Riki Fridrich',
+          slug: 'riki-fridrich',
+          avatar: '/assets/img/content/lectors/shoulders-riki-fridrich_100x100.png',
+        },
+        description: 'NPM a Yarn jsou vnímány hlavně jako správci balíčků, ale byla by škoda je používat jen tak málo.',
+        difficulty: ['beginner', 'intermediate'],
+        difficultyLabel: 'Začínající a středně pokročilí',
+        categories: ['javascript', 'nastroje'],
+      },
+      {
+        title: 'Principy Webpacku',
+        url: 'https://youtu.be/31fBZegxCUA',
+        icon: '/assets/img/icons/dest/kurzy/webinar-webpack.svg?v=3',
+        lector: {
+          name: 'Riki Fridrich',
+          slug: 'riki-fridrich',
+          avatar: '/assets/img/content/lectors/shoulders-riki-fridrich_100x100.png',
+        },
+        description: 'Webpack je nejdůležitější nástroj pro zpracování javascriptového, ale i jiného frontendového kódu. Poznejte jej více.',
+        difficulty: ['beginner', 'intermediate'],
+        difficultyLabel: 'Začínající a středně pokročilí',
+        categories: ['javascript', 'nastroje'],
+      },
+      {
+        title: 'Píšeme testy JS kódu',
+        url: 'https://youtu.be/UCei3vQJtzU',
+        icon: '/assets/img/icons/dest/kurzy/webinar-js-testy.svg?v=3',
+        lector: {
+          name: 'Riki Fridrich',
+          slug: 'riki-fridrich',
+          avatar: '/assets/img/content/lectors/shoulders-riki-fridrich_100x100.png',
+        },
+        description: 'Psát testy je jednoduché pokud umíte psát testovatelný kód. V tomto webináři si ukazujeme jak na to.',
+        difficulty: ['intermediate'],
+        difficultyLabel: 'Středně pokročilí',
+        categories: ['javascript', 'nastroje'],
+      },
+      {
+        title: 'Nástroje pro testování JS kódu',
+        url: 'https://youtu.be/l32efUi4BJs',
+        icon: '/assets/img/icons/dest/kurzy/webinar-js-testy-nastroje.svg?v=3',
+        lector: {
+          name: 'Riki Fridrich',
+          slug: 'riki-fridrich',
+          avatar: '/assets/img/content/lectors/shoulders-riki-fridrich_100x100.png',
+        },
+        description: 'Jaký nástroj vybrat pro testování javascriptového kódu? Webinář vám ukáže rozdíly a lektor nasdílí zkušenosti.',
+        difficulty: ['intermediate'],
+        difficultyLabel: 'Středně pokročilí',
+        categories: ['javascript', 'nastroje'],
+      },
+    ],
+  },
+  {
+    id: 'atd',
+    title: 'A tak dále…',
+    videos: [
+      {
+        title: 'Variabilní fonty prakticky',
+        url: 'https://youtu.be/cwWWHclYrJw',
+        icon: '/assets/img/icons/dest/kurzy/webinar-variabilni-fonty.svg?v=3',
+        lector: {
+          name: 'Michal Matuška',
+          slug: 'michal-matuska',
+          avatar: '/assets/img/content/lectors/shoulders-michal-matuska_100x100.png',
+        },
+        description: 'Variable fonts přinesly do webové typografie zásadní inovaci. Podívejme se na ně prakticky.',
+        difficulty: ['advanced'],
+        difficultyLabel: 'Pokročilí',
+        categories: ['css', 'rychlost-nacitani'],
+      },
+      {
+        title: 'Jak správně vkládat SVG na web',
+        url: 'https://youtu.be/RQT0f7vTRC0',
+        icon: '/assets/img/icons/dest/kurzy/webinar-svg-optimalizace.svg?v=3',
+        lector: {
+          name: 'Michal Matuška',
+          slug: 'michal-matuska',
+          avatar: '/assets/img/content/lectors/shoulders-michal-matuska_100x100.png',
+        },
+        description: 'Zjistěte, jak vkládat SVG do stránky, optimalizovat soubory a na co si dát pozor v podkladech.',
+        difficulty: ['advanced'],
+        difficultyLabel: 'Pokročilí',
+        categories: ['rychlost-nacitani', 'svg'],
+      },
+    ],
+  },
+];
+
+const lectors = [
+  {
+    name: 'Martin Michálek',
+    slug: 'martin-michalek',
+    avatar: '/assets/img/content/lectors/shoulders-martin-michalek.png',
+    description: 'Seniorní konzultant v <a href="https://www.pagespeed.cz/">PageSpeed.cz</a>.',
+  },
+  {
+    name: 'Riki Fridrich',
+    slug: 'riki-fridrich',
+    avatar: '/assets/img/content/lectors/shoulders-riki-fridrich.png',
+    description: 'Senior JavaScript vývojář v&nbsp;<a href="https://www.outreach.io/">Outreach</a>.',
+  },
+  {
+    name: 'Michal Matuška',
+    slug: 'michal-matuska',
+    avatar: '/assets/img/content/lectors/shoulders-michal-matuska.png',
+    description: 'Seniorní konzultant v <a href="https://www.pagespeed.cz/">PageSpeed.cz</a>.',
+  },
+  {
+    name: 'Tomáš Krejčí',
+    slug: 'tomas-krejci',
+    avatar: '/assets/img/content/lectors/shoulders-tomas-krejci.png',
+    description: 'Vedoucí vývoje v&nbsp;<a href="https://superkoders.com/">SUPERKODERS</a>.',
+  },
+];
+
+---
+
+<BaseLayout
+  title="Videa ze Vzhůru dolů: CSS, JavaScript, rychlost webů…"
+  description="Hodina času, nízká cena, vysoká úroveň znalostí."
+  bodyClass="section-video"
+  ogImage="https://www.vzhurudolu.cz/assets/img/content/src/socials/vd-video.png"
+  ogUrl="https://www.vzhurudolu.cz/video"
+>
+  <Fragment slot="styles">
+    <link rel="stylesheet" href="/assets/css/modules-standalone/min/topbar.min.css" />
+    <link rel="stylesheet" href="/assets/css/modules-standalone/min/courses-list.min.css" />
+    <link rel="stylesheet" href="/assets/css/modules-standalone/min/course-icon.min.css" />
+    <link rel="stylesheet" href="/assets/css/modules-standalone/min/course-avatar.min.css" />
+    <link rel="stylesheet" href="/assets/css/modules-standalone/min/emblem.min.css" />
+  </Fragment>
+
+  <Header slot="header" activeSection="video" />
+  <Footer slot="footer" />
+
+  <div class="page-head">
+    <h1>Video</h1>
+    <p class="mb-0 maxw-30em">
+      V letech 2020 - 23 jsme zde prodávali vzdělávací videa.
+      Nyní je již nabízíme zdarma na YouTube.
+      <br /><br />
+      <a href="https://www.youtube.com/channel/UCOrzIFsC4ks484LbT_BO7gQ" class="button button--white">Přejít na YouTube</a>
+    </p>
+  </div>
+
+  <main role="main" id="main" aria-label="Hlavní obsah">
+    <div class="content-full">
+      <h2 class="p-r ta-c sr-only">Záznamy webinářů</h2>
+      
+      {videoCategories.map((category) => (
+        <Fragment>
+          <div class="row jc-c article">
+            <h2 class="p-r ta-c mb-0" id={category.id}>
+              <a href={`#${category.id}`}>{category.title}</a>
+            </h2>
+          </div>
+
+          <div class="row jc-c">
+            {category.videos.map((video) => (
+              <div class={`course col w-33-md f-6 mb-1 ${video.categories.map(c => `category-${c}`).join(' ')}`}>
+                <h3 class="h4 mb-05 heading-tall-md">
+                  <a href={video.url}>{video.title}</a>
+                </h3>
+                <div class="course__wrapper d-f fw-w ai-fs">
+                  <div class="course__image-wrapper bs-bb p-r [ w-100 mb-05 ] [ w-33-xs  mb-0-xs ] [ w-100-md mb-05-md ]">
+                    <p class="course__image mb-0">
+                      <a class="course-icon rounded" href={video.url}>
+                        <span class="course-icon__image">
+                          <img src={video.icon} alt height="130" width="130" loading="lazy" />
+                        </span>
+                      </a>
+                    </p>
+                    <p class="course__avatar course-avatar mb-0">
+                      <a
+                        href={`/lektori/${video.lector.slug}`}
+                        class="course-avatar__image avatar avatar--xs avatar--inline avatar--brown bs-bb"
+                        title={`Lektor: ${video.lector.name}`}
+                      >
+                        <img
+                          src={video.lector.avatar}
+                          alt={video.lector.name}
+                          width="100"
+                          height="100"
+                          loading="lazy"
+                          class="avatar__image"
+                        />
+                      </a>
+                    </p>
+                  </div>
+                  <div class="course__text bs-bb mb-05 [ w-100 ] [ w-66-xs pl-1-xs ] [ w-100-md pl-0-md ]">
+                    <p class="mb-0">{video.description}</p>
+                    <p class="grid grid--2-col-auto-1fr gap-05 ai-c mb-0 f-6">
+                      <span>
+                        {(() => {
+                          // Určíme počet ikon podle obtížnosti
+                          const hasBeginner = video.difficulty.includes('beginner') || video.difficulty.includes('non-technical');
+                          const hasIntermediate = video.difficulty.includes('intermediate');
+                          const hasAdvanced = video.difficulty.includes('advanced');
+                          
+                          // Začínající: 1 plný + 2 prázdné
+                          if (hasBeginner && !hasAdvanced) {
+                            return (
+                              <>
+                                <svg viewBox="0 0 100 100" class="w-05 h-05">
+                                  <path d="M50,97.5 C23.766,97.5 2.5,76.234 2.5,50 C2.5,23.766 23.766,2.5 50,2.5 C76.234,2.5 97.5,23.766 97.5,50 C97.5,76.234 76.234,97.5 50,97.5 z" fill="currentColor" />
+                                  <path d="M50,2.5 C76.234,2.5 97.5,23.766 97.5,50 C97.5,76.234 76.234,97.5 50,97.5 C23.766,97.5 2.5,76.234 2.5,50 C2.5,23.766 23.766,2.5 50,2.5 z M50,9.5 C27.632,9.5 9.5,27.632 9.5,50 C9.5,72.368 27.632,90.5 50,90.5 C72.368,90.5 90.5,72.368 90.5,50 C90.5,27.632 72.368,9.5 50,9.5 z" fill="currentColor" />
+                                </svg>
+                                <svg viewBox="0 0 100 100" class="w-05 h-05">
+                                  <path d="M50,97.5 C23.766,97.5 2.5,76.234 2.5,50 C2.5,23.766 23.766,2.5 50,2.5 C76.234,2.5 97.5,23.766 97.5,50 C97.5,76.234 76.234,97.5 50,97.5 z" fill="transparent" />
+                                  <path d="M50,2.5 C76.234,2.5 97.5,23.766 97.5,50 C97.5,76.234 76.234,97.5 50,97.5 C23.766,97.5 2.5,76.234 2.5,50 C2.5,23.766 23.766,2.5 50,2.5 z M50,9.5 C27.632,9.5 9.5,27.632 9.5,50 C9.5,72.368 27.632,90.5 50,90.5 C72.368,90.5 90.5,72.368 90.5,50 C90.5,27.632 72.368,9.5 50,9.5 z" fill="currentColor" />
+                                </svg>
+                                <svg viewBox="0 0 100 100" class="w-05 h-05">
+                                  <path d="M50,97.5 C23.766,97.5 2.5,76.234 2.5,50 C2.5,23.766 23.766,2.5 50,2.5 C76.234,2.5 97.5,23.766 97.5,50 C97.5,76.234 76.234,97.5 50,97.5 z" fill="transparent" />
+                                  <path d="M50,2.5 C76.234,2.5 97.5,23.766 97.5,50 C97.5,76.234 76.234,97.5 50,97.5 C23.766,97.5 2.5,76.234 2.5,50 C2.5,23.766 23.766,2.5 50,2.5 z M50,9.5 C27.632,9.5 9.5,27.632 9.5,50 C9.5,72.368 27.632,90.5 50,90.5 C72.368,90.5 90.5,72.368 90.5,50 C90.5,27.632 72.368,9.5 50,9.5 z" fill="currentColor" />
+                                </svg>
+                              </>
+                            );
+                          }
+                          // Pokročilí: 1 prázdný + 2 plné
+                          else if (hasAdvanced) {
+                            return (
+                              <>
+                                <svg viewBox="0 0 100 100" class="w-05 h-05">
+                                  <path d="M50,97.5 C23.766,97.5 2.5,76.234 2.5,50 C2.5,23.766 23.766,2.5 50,2.5 C76.234,2.5 97.5,23.766 97.5,50 C97.5,76.234 76.234,97.5 50,97.5 z" fill="transparent" />
+                                  <path d="M50,2.5 C76.234,2.5 97.5,23.766 97.5,50 C97.5,76.234 76.234,97.5 50,97.5 C23.766,97.5 2.5,76.234 2.5,50 C2.5,23.766 23.766,2.5 50,2.5 z M50,9.5 C27.632,9.5 9.5,27.632 9.5,50 C9.5,72.368 27.632,90.5 50,90.5 C72.368,90.5 90.5,72.368 90.5,50 C90.5,27.632 72.368,9.5 50,9.5 z" fill="currentColor" />
+                                </svg>
+                                <svg viewBox="0 0 100 100" class="w-05 h-05">
+                                  <path d="M50,97.5 C23.766,97.5 2.5,76.234 2.5,50 C2.5,23.766 23.766,2.5 50,2.5 C76.234,2.5 97.5,23.766 97.5,50 C97.5,76.234 76.234,97.5 50,97.5 z" fill="currentColor" />
+                                  <path d="M50,2.5 C76.234,2.5 97.5,23.766 97.5,50 C97.5,76.234 76.234,97.5 50,97.5 C23.766,97.5 2.5,76.234 2.5,50 C2.5,23.766 23.766,2.5 50,2.5 z M50,9.5 C27.632,9.5 9.5,27.632 9.5,50 C9.5,72.368 27.632,90.5 50,90.5 C72.368,90.5 90.5,72.368 90.5,50 C90.5,27.632 72.368,9.5 50,9.5 z" fill="currentColor" />
+                                </svg>
+                                <svg viewBox="0 0 100 100" class="w-05 h-05">
+                                  <path d="M50,97.5 C23.766,97.5 2.5,76.234 2.5,50 C2.5,23.766 23.766,2.5 50,2.5 C76.234,2.5 97.5,23.766 97.5,50 C97.5,76.234 76.234,97.5 50,97.5 z" fill="currentColor" />
+                                  <path d="M50,2.5 C76.234,2.5 97.5,23.766 97.5,50 C97.5,76.234 76.234,97.5 50,97.5 C23.766,97.5 2.5,76.234 2.5,50 C2.5,23.766 23.766,2.5 50,2.5 z M50,9.5 C27.632,9.5 9.5,27.632 9.5,50 C9.5,72.368 27.632,90.5 50,90.5 C72.368,90.5 90.5,72.368 90.5,50 C90.5,27.632 72.368,9.5 50,9.5 z" fill="currentColor" />
+                                </svg>
+                              </>
+                            );
+                          }
+                          // Středně pokročilí: kombinace
+                          else if (hasIntermediate) {
+                            return (
+                              <>
+                                <svg viewBox="0 0 100 100" class="w-05 h-05">
+                                  <path d="M50,97.5 C23.766,97.5 2.5,76.234 2.5,50 C2.5,23.766 23.766,2.5 50,2.5 C76.234,2.5 97.5,23.766 97.5,50 C97.5,76.234 76.234,97.5 50,97.5 z" fill="transparent" />
+                                  <path d="M50,2.5 C76.234,2.5 97.5,23.766 97.5,50 C97.5,76.234 76.234,97.5 50,97.5 C23.766,97.5 2.5,76.234 2.5,50 C2.5,23.766 23.766,2.5 50,2.5 z M50,9.5 C27.632,9.5 9.5,27.632 9.5,50 C9.5,72.368 27.632,90.5 50,90.5 C72.368,90.5 90.5,72.368 90.5,50 C90.5,27.632 72.368,9.5 50,9.5 z" fill="currentColor" />
+                                </svg>
+                                <svg viewBox="0 0 100 100" class="w-05 h-05">
+                                  <path d="M50,97.5 C23.766,97.5 2.5,76.234 2.5,50 C2.5,23.766 23.766,2.5 50,2.5 C76.234,2.5 97.5,23.766 97.5,50 C97.5,76.234 76.234,97.5 50,97.5 z" fill="currentColor" />
+                                  <path d="M50,2.5 C76.234,2.5 97.5,23.766 97.5,50 C97.5,76.234 76.234,97.5 50,97.5 C23.766,97.5 2.5,76.234 2.5,50 C2.5,23.766 23.766,2.5 50,2.5 z M50,9.5 C27.632,9.5 9.5,27.632 9.5,50 C9.5,72.368 27.632,90.5 50,90.5 C72.368,90.5 90.5,72.368 90.5,50 C90.5,27.632 72.368,9.5 50,9.5 z" fill="currentColor" />
+                                </svg>
+                                <svg viewBox="0 0 100 100" class="w-05 h-05">
+                                  <path d="M50,97.5 C23.766,97.5 2.5,76.234 2.5,50 C2.5,23.766 23.766,2.5 50,2.5 C76.234,2.5 97.5,23.766 97.5,50 C97.5,76.234 76.234,97.5 50,97.5 z" fill="transparent" />
+                                  <path d="M50,2.5 C76.234,2.5 97.5,23.766 97.5,50 C97.5,76.234 76.234,97.5 50,97.5 C23.766,97.5 2.5,76.234 2.5,50 C2.5,23.766 23.766,2.5 50,2.5 z M50,9.5 C27.632,9.5 9.5,27.632 9.5,50 C9.5,72.368 27.632,90.5 50,90.5 C72.368,90.5 90.5,72.368 90.5,50 C90.5,27.632 72.368,9.5 50,9.5 z" fill="currentColor" />
+                                </svg>
+                              </>
+                            );
+                          }
+                          return null;
+                        })()}
+                      </span>
+                      <span class="f-6 ellipsis">{video.difficultyLabel}</span>
+                    </p>
+                    <p class="mt-05 mb-0">
+                      <a class="button px-1" href={video.url}>Přejít na YouTube</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </Fragment>
+      ))}
+
+      <div class="content" id="lektori">
+        <div class="article">
+          <h2 class="ta-c">
+            <a href="#lektori">Lektoři z videí</a>
+          </h2>
+          <p class="mb-15 ta-c f-6">Za spolupráci na videích děkujeme těmto lektorům z praxe:</p>
+        </div>
+
+        <div class="f-6">
+          <div class="row mb-1 jc-c">
+            {lectors.map((lector) => (
+              <article class="col w-50 w-25-sm px-05 ta-c">
+                <a class="avatar" href={`/lektori/${lector.slug}`}>
+                  <img
+                    src={lector.avatar}
+                    alt={lector.name}
+                    width="200"
+                    height="200"
+                    loading="lazy"
+                    class="avatar__image"
+                  />
+                </a>
+                <h3 class="h6 mb-0">
+                  <a href={`/lektori/${lector.slug}`}>{lector.name}</a>
+                </h3>
+                <p class="f-6" set:html={lector.description} />
+              </article>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script is:inline src="/assets/js/vrdl.min.js"></script>
+</BaseLayout>

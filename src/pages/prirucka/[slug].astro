@@ -23,8 +23,9 @@ const { Content } = await item.render();
   ogUrl={`https://www.vzhurudolu.cz/prirucka/${item.slug}`}
   bodyClass="section-prirucka"
 >
-  <Header />
-  
+  <Header slot="header" />
+  <Footer slot="footer" />
+
   <main role="main" id="main" aria-label="Hlavní obsah">
     <div class="page-head page-head--subhead">
       <h1>{item.data.title}</h1>
@@ -34,8 +35,6 @@ const { Content } = await item.render();
       <Content />
     </article>
   </main>
-  
-  <Footer />
   
   <script is:inline src="/assets/js/vrdl.min.js"></script>
 </BaseLayout>

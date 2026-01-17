@@ -1,0 +1,516 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<BaseLayout
+  title="Kniha a e-book &bdquo;CSS: moderní layout&ldquo;"
+  description="Grid, flexbox a nové metody rozvržení webů ve 170 ukázkách."
+  ogType="book"
+  ogImage={[
+    'https://www.vzhurudolu.cz/assets/img/content/src/socials/css-layout-soc-1.jpg',
+    'https://www.vzhurudolu.cz/assets/img/content/src/socials/css-layout-soc-2.jpg',
+    'https://www.vzhurudolu.cz/assets/img/content/src/socials/css-layout-soc-3.jpg',
+  ]}
+  ogUrl="https://www.vzhurudolu.cz/css-layout/"
+  bodyClass="section-ebooks"
+>
+  <Header slot="header" />
+  <Footer slot="footer" />
+
+  <div class="page-head ebook-head ebook-vdlayout">
+      <link rel="stylesheet" href="/assets/css/modules-standalone/min/pages/ebook.min.css" />
+      <div class="ebook-head__image">
+        <picture class="course-icon__image">
+          <source srcset="/assets/img/content/handmade/ebooks/vdlayout/vdlayout-model-both__1540.webp" media="(min-width: 800px)">
+          <img src="/assets/img/content/handmade/ebooks/vdlayout/vdlayout-model-both__760.webp"
+            alt="Kniha a e-book „CSS: moderní layout""
+            loading="eager" fetchpriority="high"
+            width="1540" height="1270">
+        </picture>
+      </div>
+
+      <div class="ebook-head__text">
+        <h1>
+          <strong class="ebook-head__title-sup">CSS</strong>
+          <span class="ebook-head__title-sub">moderní layout</span>
+        </h1>
+
+        <p class="f-4 mb-15 ebook-head__text-perex">
+          Grid, flexbox a nové metody rozvržení webů
+          ve 170 ukázkách.
+        </p>
+
+        <p>
+          <a href="https://form.simpleshop.cz/oPqmx/buy/" class="button button--primary">
+            Koupit
+          </a>
+        </p>
+
+        <p class="f-sm">
+          440 stránek tištěné knihy.
+          <br>
+          E-book v EPUB, MOBI a PDF.
+        </p>
+      </div>
+    </div>
+
+    <main role="main" id="main" aria-label="Hlavní obsah" class="ebook-vdlayout">
+      <div class="article">
+        <div class="section">
+          <div class="content ta-c maxw-30em">
+            <p>
+              Zapomeňte na staré přístupy a pusťte se s pomocí
+              příkladů do moderních metod, které vám ušetří spoustu
+              času a poskytnou nové možnosti jak tvořit design webů.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section section-taller bg-highlight-neutral ta-c">
+        <div class="content-full">
+          <div id="objednavka" class="row mb-2 mt-0">
+            <div class="col w-50-sm px-1 maxw-30em">
+              <div class="py-1 px-15 active">
+                <a class="d-b ta-c" href="/css-layout/">
+                  <picture>
+                    <source type="image/avif" srcset="/assets/img/content/handmade/ebooks/vdlayout/vdlayout-front-both.avif">
+                    <img src="/assets/img/content/handmade/ebooks/vdlayout/vdlayout-front-both.webp"
+                        alt="Moderní layout v CSS: kniha s e-bookem" width="130" height="130"
+                        loading="lazy">
+                  </picture>
+                </a>
+                <br>
+                <strong class="mb-0">Kniha a e-book</strong>
+                <p class="mb-0">
+                  <strong class="badge badge--brown tt-n">449 Kč</strong>
+                  <span class="suppress f-6">s DPH</span>
+                </p>
+                <p class="mb-1 f-sm maxw-20em px-0">
+                  349 Kč kniha a e-book, 100 Kč balné a doprava Zásilkovnou.
+                </p>
+                <p>
+                  <a href="https://form.simpleshop.cz/oPqmx/buy/" class="button button--primary f-6">
+                    Koupit
+                  </a>
+                </p>
+              </div>
+            </div>
+
+            <div class="col w-50-sm px-1 maxw-30em">
+              <div class="py-1 px-15">
+                <a class="d-b ta-c" href="/css-layout/default-ebook">
+                  <picture>
+                    <source type="image/avif" srcset="/assets/img/content/handmade/ebooks/vdlayout/vdlayout-front-ebook.avif">
+                    <img src="/assets/img/content/handmade/ebooks/vdlayout/vdlayout-front-ebook.webp"
+                        alt="Moderní layout v CSS: e-book" width="130" height="130"
+                        loading="lazy">
+                  </picture>
+                </a>
+                <br>
+                <strong class="mb-0">E-book</strong>
+                <p class="mb-0">
+                  <strong class="badge badge--brown tt-n">199 Kč</strong>
+                  <span class="suppress f-6">s DPH</span>
+                </p>
+                <p class="mb-1 f-sm maxw-20em px-0">
+                  199 Kč e-book ve formátech EPUB, MOBI a&nbsp;PDF.
+                </p>
+                <p>
+                  <a href="https://form.simpleshop.cz/oPqmx/buy/" class="button button--primary f-6">
+                    Koupit
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <p class="f-sm ta-c">
+            Tištěnou knihu si můžete nyní koupit také <a href="https://knihy.heureka.cz/css-moderni-layout-martin-michalek/">v knihkupectvích</a>.
+            <br class="visible-block-medium-up">
+            Balné a doprava Zásilkovnou po ČR&nbsp;&amp;&nbsp;SR je v ceně.
+            <br class="visible-block-medium-up">
+            Licence e-booku platí pro jednu fyzickou osobu a neomezený počet zařízení.<br>
+          </p>
+
+          <p class="f-sm ta-c f-6">
+            <a href="/css-layout/info" class="button">Více o nákupu</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="article">
+        <div class="section">
+          <div class="content">
+            <h2 id="co" class="ta-c">
+              <a href="#co">Co v knize najdete?</a>
+            </h2>
+
+            <ol class="list list--numbered">
+              <li class="list__item mb-1">
+                CSS Grid, Flexbox, Box Align a Multicolumn.
+              </li>
+              <li class="list__item mb-1">
+                Novinky jako Container Queries, subgrid, masonry layout.
+              </li>
+              <li class="list__item mb-1">
+                Podrobné referenční příručky všech vlastností layoutů.
+              </li>
+              <li class="list__item mb-1">
+                Související vlastnosti jako je calc(), logické vlastnosti, proměnné.
+              </li>
+              <li class="list__item mb-1">
+                Devítka příkladů použití layoutů z praxe v podobě tutoriálů.
+              </li>
+              <li class="list__item mb-1">
+                Téměř 170 praktických ukázek k vyzkoušení.
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-full" id="ohlasy">
+        <div class="section">
+          <div class="article">
+            <hr class="hr hr--small hr--spaced">
+
+            <h2 class="ta-c mb-2">
+              <a href="#ohlasy">Ohlasy &amp; recenze</a>
+            </h2>
+
+            <div class="row f-sm">
+              <link rel="stylesheet" href="/assets/css/modules-standalone/min/response.min.css" />
+              <article class="course-response response col w-50-xs w-33-md mb-15 pt-0">
+                <blockquote class="response__text">
+                  <p>
+                    Jde opravdu do hloubky a do detailů. Doporučil bych ji všem front-end vývojářům a kodérům.
+                  </p>
+                </blockquote>
+                <p class="mb-0 ml-2">
+                  Vojtěch Semecký na
+                  <a href="https://zdrojak.cz/clanky/css-moderni-layout-recenze-knihy/">Zdroják.cz</a>
+                </p>
+              </article>
+              <article class="course-response response col w-50-xs w-33-md mb-15 pt-0">
+                <blockquote class="response__text">
+                  <p>
+                    Skvělý počin. Sazba precizní, tisk rovněž a obsah jakbysmet. Tištěná kniha je tištěná kniha.
+                  </p>
+                </blockquote>
+                <p class="mb-0 ml-2">
+                  Jan Rybařík na
+                  <a href="https://twitter.com/rybajz1/status/1529056259407749121">Twitteru</a>
+                </p>
+              </article>
+              <article class="course-response response col w-50-xs w-33-md mb-15 pt-0">
+                <blockquote class="response__text">
+                  <p>Třeba jako já zjistíte, že řada věcí lze dnes v CSS udělat velmi jednoduše a rychleji.</p>
+                </blockquote>
+                <p class="mb-0 ml-2">
+                  Jan Polzer na
+                  <a href="https://www.maxiorel.cz/recenze-knihy-css-moderni-layout-od-martina-michalka">Maxiorel.cz</a>
+                </p>
+              </article>
+              <article class="course-response response col w-50-xs w-33-md mb-15 pt-0">
+                <blockquote class="response__text">
+                  <p>U knihy „CSS: moderní layout" jsem se přesvědčil, že humor a vývoj webů jde spojit dohromady.</p>
+                </blockquote>
+                <p class="mb-0 ml-2">
+                  Miroslav Bartík na
+                  <a href="https://webspecialista.cz/css-moderni-layout-martin-michalek/">Webspecialista.cz</a>
+                </p>
+              </article>
+              <article class="course-response response col w-50-xs w-33-md mb-15 pt-0">
+                <blockquote class="response__text">
+                  <p>
+                    Skvěle vysvětlené. Jiní autoři knih o programovacích jazycích by si z toho měli vzít příklad.
+                  </p>
+                </blockquote>
+                <p class="mb-0 ml-2">
+                  Jan Michálek na
+                  <a href="https://www.linkedin.com/feed/update/urn:li:activity:6930063924121726977/?commentUrn=urn%3Ali%3Acomment%3A(activity%3A6930063924121726977%2C6934780139029315584)">LinkedIn</a>
+                </p>
+              </article>
+              <article class="course-response response col w-50-xs w-33-md mb-15 pt-0">
+                <blockquote class="response__text">
+                  <p>
+                    Kniha je doplněná o vysvětlující obrázky, tabulky a příklady, které je možné si snadno vyzkoušet.
+                  </p>
+                </blockquote>
+                <p class="mb-0 ml-2">
+                  Miroslav Holec na
+                  <a href="https://www.miroslavholec.cz/blog/kniha-css-moderni-layout-martin-michalek">MiroslavHolec.cz</a>
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section margin-top-0">
+        <div class="content">
+          <div class="article">
+            <h2 id="obsah" class="section-heading">
+              <a href="#obsah">Obsah knihy</a>
+            </h2>
+          </div>
+        </div>
+
+        <div class="content">
+          <p class="f-sm ta-c maxw-30em mb-3">
+            Kniha je cílena na širokou vývojářskou veřejnost. Od začátečníků, studentů a hobbíků, až po
+            zkušené vývojáře a vývojářky.
+          </p>
+
+          <link rel="stylesheet" href="/assets/css/modules-standalone/min/accordion.min.css" />
+          <div class="raised accordion px-0 py-05">
+            <section class="accordion__item">
+              <input type="checkbox" id="acc1" class="accordion__item-toggle">
+              <label class="accordion__item-title" for="acc1">
+                <h3>Kapitola 1: Začínáme s layouty</h3>
+              </label>
+              <div class="accordion__item-content">
+                <p>
+                  Seznamka – Grid vs. flex (vs. multicol) – Velmi stručná historie layoutů v CSS – Moderní a nemoderní layouty.
+                </p>
+              </div>
+            </section>
+
+            <section class="accordion__item">
+              <input type="checkbox" id="acc2" class="accordion__item-toggle">
+              <label class="accordion__item-title" for="acc2">
+                <h3>Kapitola 2: Layoutové dotazy</h3>
+              </label>
+              <div class="accordion__item-content">
+                <p>
+                  Media Queries – Container Queries – No Queries.
+                </p>
+              </div>
+            </section>
+
+            <section class="accordion__item">
+              <input type="checkbox" id="acc3" class="accordion__item-toggle">
+              <label class="accordion__item-title" for="acc3">
+                <h3>Kapitola 3: Příklady použití</h3>
+              </label>
+              <div class="accordion__item-content">
+                <p>
+                  Seznam ukázek – Boční panel – Hromada lívanců – Svatý grál – Responzivní fotogalerie – Mřížka jako v Bootstrapu – Centrování boxu – Formulář pro vyhledávání – Galerie bez Media Queries – Krkavčí technika.
+                </p>
+              </div>
+            </section>
+
+            <section class="accordion__item">
+              <input type="checkbox" id="acc4" class="accordion__item-toggle">
+              <label class="accordion__item-title" for="acc4">
+                <h3>Kapitola 4: Flexbox</h3>
+              </label>
+              <div class="accordion__item-content">
+                <p>
+                  Všechny vlastnosti flexboxu – Co je dobré vědět – Flex-wrap – Flex-direction – Flex-flow – Flex-grow – Flex-shrink – Flex-basis – Flex.
+                </p>
+              </div>
+            </section>
+
+            <section class="accordion__item">
+              <input type="checkbox" id="acc5" class="accordion__item-toggle">
+              <label class="accordion__item-title" for="acc5">
+                <h3>Kapitola 5: Grid</h3>
+              </label>
+              <div class="accordion__item-content">
+                <p>
+                  Úvod a rozcestník – Vychytávky gridu – Linka, buňka, oblast – Mřížka explicitní a implicitní – Formátovací kontext mřížky – Grid v Internet Exploreru – Grid-template-rows/columns – Grid-template-areas – Grid-template – Grid-auto-rows/columns – Grid-auto-flow – Grid – Grid-row/column – Grid-area – Jednotka fr – Repeat(), auto-fill, auto-fit – Minmax(), fit-content(), max/min-content – Subgrid – Masonry.
+                </p>
+              </div>
+            </section>
+
+            <section class="accordion__item">
+              <input type="checkbox" id="acc6" class="accordion__item-toggle">
+              <label class="accordion__item-title" for="acc6">
+                <h3>Kapitola 6: Vícesloupcový</h3>
+              </label>
+              <div class="accordion__item-content">
+                <p>
+                  Úvod a rozcestník – Column-width, column-count a columns – Column-gap a column-rule – Column-fill – Break-before, break-after a break-inside – Column-span.
+                </p>
+              </div>
+            </section>
+
+            <section class="accordion__item">
+              <input type="checkbox" id="acc7" class="accordion__item-toggle">
+              <label class="accordion__item-title" for="acc7">
+                <h3>Kapitola 7: Zarovnání boxů</h3>
+              </label>
+              <div class="accordion__item-content">
+                <p>
+                  Úvod a rozcestník – Nutná teorie – Justify-items – Align-items – Place-items – Justify-self – Align-self – Place-self – Gap – Justify-content – Align-content – Place-content – Order.
+                </p>
+              </div>
+            </section>
+
+            <section class="accordion__item">
+              <input type="checkbox" id="acc8" class="accordion__item-toggle">
+              <label class="accordion__item-title" for="acc8">
+                <h3>Kapitola 8: Co ještě vědět?</h3>
+              </label>
+              <div class="accordion__item-content">
+                <p>
+                  Internet Explorer (je už mrtvý?) – Podpora layoutů v prohlížečích – Přístupnost – Rychlost – DevTools.
+                </p>
+              </div>
+            </section>
+
+            <section class="accordion__item">
+              <input type="checkbox" id="acc9" class="accordion__item-toggle">
+              <label class="accordion__item-title" for="acc9">
+                <h3>Kapitola 9: Související</h3>
+              </label>
+              <div class="accordion__item-content">
+                <p>
+                  Vlastnost display – Logické vlastnosti – Jednotky v CSS – Autorské vlastnosti (proměnné) – Funkce calc() – Funkce min(), max() a clamp() – @supports – Autoprefixer.
+                </p>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+
+      <div class="section margin-top-0 ta-c-sm">
+        <div class="content">
+          <div class="article">
+            <h2 id="ukazka" class="section-heading mb-1">
+              <a href="#ukazka">Ukázková kapitola</a>
+            </h2>
+
+            <p class="maxw-35em px-0">
+              Stáhněte si 36 stránek osmé kapitoly „Co byste ještě měli vědět?".
+              <br class="visible-block-medium-up">
+              PDF obsahuje plnou verzi dostupnou v&nbsp;tištěné knize nebo pro čtení na počítači.
+              EPUB je určen pro čtečky e-booků a zjednodušená verze MOBI pro čtení na černobílých zařízeních typu Kindle.
+            </p>
+
+            <p class="mb-2 f-6">
+              <a href="/assets/files/vdlayout/CSS-moderni-layout-ukazka.pdf" class="button mb-05 px-05">
+                PDF <span class="suppress f-6">(5&nbsp;MB)</span>
+              </a>
+
+              <a href="/assets/files/vdlayout/CSS-moderni-layout-ukazka.epub" class="button mb-05 px-05">
+                EPUB <span class="suppress f-6">(4&nbsp;MB)</span>
+              </a>
+
+              <a href="/assets/files/vdlayout/CSS-moderni-layout-ukazka.mobi" class="button mb-05 px-05">
+                MOBI <span class="suppress f-6">(2&nbsp;MB)</span>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="content" id="autor">
+        <div class="section">
+          <div class="article">
+            <a href="#autor" class="avatar mb-0-5 pb-0">
+              <img src="/assets/img/content/lectors/shoulders-martin-michalek.png" alt="Martin Michálek" width="200" height="200" loading="lazy" class="avatar__image">
+            </a>
+
+            <h2 class="pt-0 ta-c">
+              <a href="#autor">Martin Michálek</a>
+            </h2>
+
+            <p class="maxw-35em px-0 ta-c-sm">
+              Autor je webový expert s více než dvacetiletou praxí,
+              který se zaměřuje na CSS a rychlost webů.
+              Píše blog <a href="https://www.vzhurudolu.cz/">Vzhůru dolů</a>.
+              Vede spolek <a href="https://frontendisti.cz/">Frontendisti.cz</a>.
+              V rámci projektu <a href="https://www.pagespeed.cz/">PageSpeed.cz</a>
+              pomáhá zlepšovat rychlost webů. Se ženou a dvěma syny žije v Praze.
+            </p>
+
+            <p class="ta-c">
+              <small>
+                <a href="https://www.twitter.com/machal">Twitter</a> –
+                <a href="https://www.linkedin.com/in/martinmichalek/">LinkedIn</a>
+              </small>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section section-taller bg-highlight-neutral ta-c section-latest">
+        <div class="content-full">
+          <div id="objednavka" class="row mb-2 mt-0">
+            <div class="col w-50-sm px-1 maxw-30em">
+              <div class="py-1 px-15 active">
+                <a class="d-b ta-c" href="/css-layout/">
+                  <picture>
+                    <source type="image/avif" srcset="/assets/img/content/handmade/ebooks/vdlayout/vdlayout-front-both.avif">
+                    <img src="/assets/img/content/handmade/ebooks/vdlayout/vdlayout-front-both.webp"
+                        alt="Moderní layout v CSS: kniha s e-bookem" width="130" height="130"
+                        loading="lazy">
+                  </picture>
+                </a>
+                <br>
+                <strong class="mb-0">Kniha a e-book</strong>
+                <p class="mb-0">
+                  <strong class="badge badge--brown tt-n">449 Kč</strong>
+                  <span class="suppress f-6">s DPH</span>
+                </p>
+                <p class="mb-1 f-sm maxw-20em px-0">
+                  349 Kč kniha a e-book, 100 Kč balné a doprava Zásilkovnou.
+                </p>
+                <p>
+                  <a href="https://form.simpleshop.cz/oPqmx/buy/" class="button button--primary f-6">
+                    Koupit
+                  </a>
+                </p>
+              </div>
+            </div>
+
+            <div class="col w-50-sm px-1 maxw-30em">
+              <div class="py-1 px-15">
+                <a class="d-b ta-c" href="/css-layout/default-ebook">
+                  <picture>
+                    <source type="image/avif" srcset="/assets/img/content/handmade/ebooks/vdlayout/vdlayout-front-ebook.avif">
+                    <img src="/assets/img/content/handmade/ebooks/vdlayout/vdlayout-front-ebook.webp"
+                        alt="Moderní layout v CSS: e-book" width="130" height="130"
+                        loading="lazy">
+                  </picture>
+                </a>
+                <br>
+                <strong class="mb-0">E-book</strong>
+                <p class="mb-0">
+                  <strong class="badge badge--brown tt-n">199 Kč</strong>
+                  <span class="suppress f-6">s DPH</span>
+                </p>
+                <p class="mb-1 f-sm maxw-20em px-0">
+                  199 Kč e-book ve formátech EPUB, MOBI a&nbsp;PDF.
+                </p>
+                <p>
+                  <a href="https://form.simpleshop.cz/oPqmx/buy/" class="button button--primary f-6">
+                    Koupit
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <p class="f-sm ta-c">
+            Tištěnou knihu si můžete nyní koupit také <a href="https://knihy.heureka.cz/css-moderni-layout-martin-michalek/">v knihkupectvích</a>.
+            <br class="visible-block-medium-up">
+            Balné a doprava Zásilkovnou po ČR&nbsp;&amp;&nbsp;SR je v ceně.
+            <br class="visible-block-medium-up">
+            Licence e-booku platí pro jednu fyzickou osobu a neomezený počet zařízení.<br>
+          </p>
+
+          <p class="f-sm ta-c f-6">
+            <a href="/css-layout/info" class="button">Více o nákupu</a>
+          </p>
+        </div>
+      </div>
+    </main>
+  
+  <script is:inline src="/assets/js/vrdl.min.js"></script>
+</BaseLayout>

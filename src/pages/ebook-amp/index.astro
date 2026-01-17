@@ -1,0 +1,489 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<BaseLayout
+  title="E-book &bdquo;Vzhůru do AMP&ldquo;"
+  description="Vše o technologii pro tvorbu bezkonkurenčně rychlých webů v jednom e-booku."
+  ogType="book"
+  ogImage={[
+    'https://www.vzhurudolu.cz/assets/img/content/src/socials/vd-soc-vdamp-1.png',
+    'https://www.vzhurudolu.cz/assets/img/content/src/socials/vd-soc-vdamp-2.png',
+    'https://www.vzhurudolu.cz/assets/img/content/src/socials/vd-soc-vdamp-3.png',
+  ]}
+  ogUrl="https://www.vzhurudolu.cz/ebook-amp/"
+  bodyClass="section-ebooks"
+>
+  <Header slot="header" />
+  <Footer slot="footer" />
+
+  <div class="page-head ebook-head ebook-amp">
+      <link rel="stylesheet" href="/assets/css/modules-standalone/min/pages/ebook.min.css" />
+      <div class="ebook-head__image">
+        <picture class="course-icon__image">
+          <source type="image/avif" srcset="/assets/img/content/handmade/ebooks/vdamp/vdamp-ebook-header.avif">
+          <img src="/assets/img/content/handmade/ebooks/vdamp/vdamp-ebook-header.webp"
+            alt="Vzhůru do AMP"
+            width="1024" height="1822">
+        </picture>
+      </div>
+
+      <div class="ebook-head__text">
+        <h1>
+          Vzhůru do&nbsp;AMP
+        </h1>
+
+        <p class="f-4 mb-15">
+          Vše o technologii pro tvorbu
+          bezkonkurenčně rychlých webů
+          v jednom e-booku.
+        </p>
+
+        <p>
+          <a href="https://form.simpleshop.cz/a07k4/buy/" class="button button--primary">
+            Koupit e-book
+          </a>
+        </p>
+
+        <p class="f-sm">
+          Formáty EPUB, MOBI a PDF.
+          <br>
+          304 stránek.
+        </p>
+      </div>
+    </div>
+
+    <main role="main" id="main" aria-label="Hlavní obsah" class="ebook-amp">
+      <div class="article">
+        <div class="section mt-0">
+          <div class="maxw-35em">
+            <div class="content ta-c f-4">
+              <p>
+                E-kniha pro webové vývojáře, marketéry
+                a majitele webů, kteří chtějí efektivní vývoj rychlých webů.
+              </p>
+
+              <p>
+                Na 304 stránkách zjistíte, proč
+                a jak AMP nasadit na obsahové weby, ale
+                také například e-shopy.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="article">
+        <div class="section">
+          <div class="content">
+            <h2 id="co-obsahuje" class="ta-c">
+              <a href="#co-obsahuje">Co s e-bookem získáte?</a>
+            </h2>
+
+            <ol class="list list--numbered">
+              <li class="list__item mb-1">
+                Hluboké znalosti o fungování AMP a jeho principech.
+              </li>
+              <li class="list__item mb-1">
+                Přehled AMP komponent a ukázky těch nejdůležitějších.
+              </li>
+              <li class="list__item mb-1">
+                Odpovědi na kritiku a mýty kolem této nevídané technologie.
+              </li>
+              <li class="list__item mb-1">
+                Dva tutoriály o implementaci v článku a v produktu e-shopu.
+              </li>
+              <li class="list__item mb-1">
+                Rady, jak vybrat projekt nebo jeho část, vhodné pro nasazení AMP.
+              </li>
+              <li class="list__item mb-1">
+                Tipy, jak AMP měřit a jak se vyhnout chybám ve vyhodnocování.
+              </li>
+              <li class="list__item mb-1">
+                Text o AMP, který svou komplexností i aktuálností nemá obdoby.
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <div class="section bg-dark" id="ukazky">
+        <div class="content-full">
+          <div class="row py-15 mx-0 gallery">
+            <p class="col mb-0 w-50 w-25-sm p-025">
+              <a href="/assets/img/content/src/ebook-vdamp/sample-1.png">
+                <img src="/assets/img/content/dest/small/ebook-vdamp/sample-1.png"
+                  alt="" width="336" height="238" loading="lazy"
+                  class="d-b b-1-inverted">
+              </a>
+            </p>
+            <p class="col mb-0 w-50 w-25-sm p-025">
+              <a href="/assets/img/content/src/ebook-vdamp/sample-2.png">
+                <img src="/assets/img/content/dest/small/ebook-vdamp/sample-2.png"
+                  alt="" width="336" height="238" loading="lazy"
+                  class="d-b b-1-inverted">
+              </a>
+            </p>
+            <p class="col mb-0 w-50 w-25-sm p-025">
+              <a href="/assets/img/content/src/ebook-vdamp/sample-3.png">
+                <img src="/assets/img/content/dest/small/ebook-vdamp/sample-3.png"
+                  alt="" width="336" height="238" loading="lazy"
+                  class="d-b b-1-inverted">
+              </a>
+            </p>
+            <p class="col mb-0 w-50 w-25-sm p-025">
+              <a href="/assets/img/content/src/ebook-vdamp/sample-4.png">
+                <img src="/assets/img/content/dest/small/ebook-vdamp/sample-4.png"
+                  alt="" width="336" height="238" loading="lazy"
+                  class="d-b b-1-inverted">
+              </a>
+            </p>
+            <p class="col mb-0 w-50 w-25-sm p-025">
+              <a href="/assets/img/content/src/ebook-vdamp/sample-5.png">
+                <img src="/assets/img/content/dest/small/ebook-vdamp/sample-5.png"
+                  alt="" width="336" height="238" loading="lazy"
+                  class="d-b b-1-inverted">
+              </a>
+            </p>
+            <p class="col mb-0 w-50 w-25-sm p-025">
+              <a href="/assets/img/content/src/ebook-vdamp/sample-6.png">
+                <img src="/assets/img/content/dest/small/ebook-vdamp/sample-6.png"
+                  alt="" width="336" height="238" loading="lazy"
+                  class="d-b b-1-inverted">
+              </a>
+            </p>
+            <p class="col mb-0 w-50 w-25-sm p-025">
+              <a href="/assets/img/content/src/ebook-vdamp/sample-7.png">
+                <img src="/assets/img/content/dest/small/ebook-vdamp/sample-7.png"
+                  alt="" width="336" height="238" loading="lazy"
+                  class="d-b b-1-inverted">
+              </a>
+            </p>
+            <p class="col mb-0 w-50 w-25-sm p-025">
+              <a href="/assets/img/content/src/ebook-vdamp/sample-8.png">
+                <img src="/assets/img/content/dest/small/ebook-vdamp/sample-8.png"
+                  alt="" width="336" height="238" loading="lazy"
+                  class="d-b b-1-inverted">
+              </a>
+            </p>
+            <p class="col mb-0 w-50 w-25-sm p-025">
+              <a href="/assets/img/content/src/ebook-vdamp/sample-9.png">
+                <img src="/assets/img/content/dest/small/ebook-vdamp/sample-9.png"
+                  alt="" width="336" height="238" loading="lazy"
+                  class="d-b b-1-inverted">
+              </a>
+            </p>
+            <p class="col mb-0 w-50 w-25-sm p-025">
+              <a href="/assets/img/content/src/ebook-vdamp/sample-10.png">
+                <img src="/assets/img/content/dest/small/ebook-vdamp/sample-10.png"
+                  alt="" width="336" height="238" loading="lazy"
+                  class="d-b b-1-inverted">
+              </a>
+            </p>
+            <p class="col mb-0 w-50 w-25-sm p-025">
+              <a href="/assets/img/content/src/ebook-vdamp/sample-11.png">
+                <img src="/assets/img/content/dest/small/ebook-vdamp/sample-11.png"
+                  alt="" width="336" height="238" loading="lazy"
+                  class="d-b b-1-inverted">
+              </a>
+            </p>
+            <p class="col mb-0 w-50 w-25-sm p-025">
+              <a href="/assets/img/content/src/ebook-vdamp/sample-12.png">
+                <img src="/assets/img/content/dest/small/ebook-vdamp/sample-12.png"
+                  alt="" width="336" height="238" loading="lazy"
+                  class="d-b b-1-inverted">
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section margin-top-0">
+        <div class="content">
+          <div class="article">
+            <h2 id="obsah" class="section-heading">
+              <a href="#obsah">Obsah šesti kapitol</a>
+            </h2>
+          </div>
+        </div>
+
+        <div class="content">
+          <link rel="stylesheet" href="/assets/css/modules-standalone/min/accordion.min.css" />
+          <div class="raised accordion px-0 py-05">
+            <section class="accordion__item">
+              <input type="checkbox" id="acc1" class="accordion__item-toggle">
+              <label class="accordion__item-title" for="acc1">
+                <h3>1) Co to je a proč se tím zabývat?</h3>
+              </label>
+              <div class="accordion__item-content">
+                <p>
+                  Vysvětlení motivace za AMP, detailní rozebrání fungování této technologie. První kapitola je pro techniky i netechniky:
+                  Co je AMP a jaké výhody přináší – Rychlost webů je nedostatečná – AMP je rychlost – AMP jako framework pro tvorbu webů
+                  – AMP omezuje složitost webdesignu – Opravená reklama a analytika – Upravené fungování prohlížečů
+                  – Co firmám přineslo nasazení AMP – AMP Cache a URL stránky – AMP Viewer
+                  – Rychlost AMP stránky v různých fázích distribuce – Kde je možné potkat AMP
+                  – Kritika AMP – AMP a standardy – Časté mýty spojené s AMP
+                </p>
+              </div>
+            </section>
+
+            <section class="accordion__item">
+              <input type="checkbox" id="acc2" class="accordion__item-toggle">
+              <label class="accordion__item-title" for="acc2">
+                <h3>2) AMP očima techniků</h3>
+              </label>
+              <div class="accordion__item-content">
+                <p>
+                  AMP v kódu, hlavně pro webové vývojáře a frontend kodéry:
+                  AMP v kontextu frontendu – AMP HTML – CSS a webfonty
+                  – JavaScript v AMP – Validace –  Systém rozvržení – Atribut layout
+                  – Atributy width, height, sizes, heights… – Placeholder a fallback
+                  – Tutoriál: Blogpost – Komponenty – Předávání stavu mezi AMP a non-AMP
+                  – Tutoriál: Detail produktu e-shopu
+                </p>
+              </div>
+            </section>
+
+            <section class="accordion__item">
+              <input type="checkbox" id="acc3" class="accordion__item-toggle">
+              <label class="accordion__item-title" for="acc3">
+                <h3>3) Vazby mezi AMP a vaším webem</h3>
+              </label>
+              <div class="accordion__item-content">
+                <p>
+                  Možnosti nasazení AMP do současného nebo nového webu:
+                  Dvě oddělené verze webu –  Nejprve HTML – Nejprve AMP
+                  – Jen AMP: Kanonické AMP stránky – AMP a PWA
+                  – Pluginy redakčních systémů
+                </p>
+              </div>
+            </section>
+
+            <section class="accordion__item">
+              <input type="checkbox" id="acc4" class="accordion__item-toggle">
+              <label class="accordion__item-title" for="acc4">
+                <h3>4) AMP v různých oborech webařiny</h3>
+              </label>
+              <div class="accordion__item-content">
+                <p>
+                  Inspirační katalog českých a slovenských webů:
+                  Malé prezentační weby – Blogy – Větší obsahové weby – E-shopy
+                </p>
+              </div>
+            </section>
+
+            <section class="accordion__item">
+              <input type="checkbox" id="acc5" class="accordion__item-toggle">
+              <label class="accordion__item-title" for="acc5">
+                <h3>5) Nasazení, měření a vyhodnocování</h3>
+              </label>
+              <div class="accordion__item-content">
+                <p>
+                  Shrnutí, zda se AMP hodí pro váš projekt a jak jej měřit:
+                  Dává pro vás AMP smysl? – Měření návštěvnosti v AMP
+                </p>
+              </div>
+            </section>
+
+            <section class="accordion__item">
+              <input type="checkbox" id="acc6" class="accordion__item-toggle">
+              <label class="accordion__item-title" for="acc6">
+                <h3>6) Ads, E-mail, Stories</h3>
+              </label>
+              <div class="accordion__item-content">
+                <p>
+                  Nové oblasti působení AMP:
+                  AMP Ads – AMP Email – AMP Stories
+                </p>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+
+      <div class="content" id="autori">
+        <div class="section">
+          <div class="article">
+            <h2 class="ta-c">
+              <a href="#autori">Autoři</a>
+            </h2>
+
+            <div class="row f-sm">
+              <div class="col w-50-sm">
+                <span class="avatar mb-0 pb-0">
+                  <img src="/assets/img/content/lectors/shoulders-martin-michalek.png" alt="Martin Michálek" width="200" height="200" loading="lazy" class="avatar__image">
+                </span>
+                <h3 class="mt-05 mb-05 pt-0 ta-c">
+                  Martin Michálek
+                </h3>
+                <p>
+                  Webový expert na volné noze s více než dvacetiletou praxí, zaměřující se v rámci projektu PageSpeed.cz na optimalizace rychlosti webů. Píše blog Vzhůru dolů, je autorem několika knih. Vede spolek Frontendisti.cz. S rodinou žije u Milíčovského lesa v Praze.
+                  <small>
+                    <a href="https://vzhurudolu.cz/martin" target="_blank">vzhurudolu.cz/martin</a>
+                  </small>
+                </p>
+              </div>
+
+              <div class="col w-50-sm">
+                <span class="avatar mb-0 pb-0">
+                  <img src="/assets/img/content/lectors/shoulders-robin-pokorny.png" alt="Robin Pokorný" width="200" height="200" loading="lazy" class="avatar__image">
+                </span>
+                <h3 class="mt-05 mb-05 pt-0 ta-c">
+                  Robin Pokorný
+                </h3>
+                <p>
+                  Vývojář se zaměřením na strategický doménový design, TypeScript a funkcionální programování. Žije a pracuje v Berlíně, kde také organizuje srazy a přednáší. V letech 2013 a 2015 natáčel první český podcast o frontendu pod názvem Brus kódu. Spoluzaložil spolek Frontendisti.cz.
+                  <small>
+                    <a href="https://robinpokorny.com" target="_blank">robinpokorny.com</a>
+                  </small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="article">
+        <div class="section">
+          <div class="content">
+            <h2 id="co-obsahuje" class="ta-c">
+              <a href="#co-obsahuje">Co je to AMP a proč e-book zrovna o něm?</a>
+            </h2>
+
+            <p>
+              AMP je technologie, která inovuje distribuci obsahu webů mezi jeho majitelem a uživateli.
+              Jedná se také o framework napsaný v HTML, CSS a trochu také v JavaScriptu, který umožňuje
+              umístění stránky na speciálních serverech AMP Cache. Díky tomu se stránka může zobrazit
+              bezkonkurenčně rychle. Více informací najdete na webu <a href="https://amp.dev/" target="_blank">amp.dev</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="content" id="ohlasy">
+        <div class="section">
+          <div class="article">
+            <h2 class="ta-c mb-2">
+              <a href="#ohlasy">Ohlasy</a>
+            </h2>
+
+            <div class="row f-sm">
+              <link rel="stylesheet" href="/assets/css/modules-standalone/min/response.min.css" />
+              <article class="course-response response col w-50-xs mb-15 pt-0">
+                <blockquote class="response__text">
+                  <p>
+                    Díky knížce mohu dávat svým klientům zas
+                    o něco poučenější doporučení.
+                  </p>
+                </blockquote>
+                <p class="mb-0 ml-2">
+                  Marek Prokop, marketér na volné noze
+                  <br><a href="/ebook-amp/ohlas-prokop">Plné znění</a>
+                </p>
+              </article>
+              <article class="course-response response col w-50-xs mb-15 pt-0">
+                <blockquote class="response__text">
+                  <p>
+                    Hodí se těm, kteří o AMP slyšeli, ale netuší, zda by jej měli chtít.
+                    (Spoiler: Měli by chtít. AMP i knihu.)
+                  </p>
+                </blockquote>
+                <p class="mb-0 ml-2">
+                  Luděk Roleček, senior lektor webových technologií, Czechitas
+                  <br><a href="/ebook-amp/ohlas-rolecek">Plné znění</a>
+                </p>
+              </article>
+              <article class="course-response response col w-50-xs mb-15 pt-0">
+                <blockquote class="response__text">
+                  <p>
+                    Díky knize jsem mimo jiné zjistil, na jaké typy projektů se dá AMP nasadit.
+                    A že jich není málo.
+                  </p>
+                </blockquote>
+                <p class="mb-0 ml-2">
+                  Michal Voják, UX lead, Designers &amp; Developers
+                  <br><a href="/ebook-amp/ohlas-vojak">Plné znění</a>
+                </p>
+              </article>
+              <article class="course-response response col w-50-xs mb-15 pt-0">
+                <blockquote class="response__text">
+                  <p>
+                    Myslel jsem, že o AMP vím relativně dost, ale díky e-booku
+                    jsem odhalil velikost svého omylu.
+                  </p>
+                </blockquote>
+                <p class="mb-0 ml-2">
+                  Martin Kocourek, marketér, Sazka.cz
+                </p>
+              </article>
+              <article class="course-response response col w-50-xs mb-15 pt-0">
+                <blockquote class="response__text">
+                  <p>
+                    Asi momentálně nenajdete lepší zdroj informací v češtině.
+                  </p>
+                </blockquote>
+                <p class="mb-0 ml-2">
+                  Jan Polzer
+                  <a href="https://www.maxiorel.cz/vzhuru-do-amp-nova-kniha-od-martina-michalka-robina-pokorneho">
+                    v recenzi na Maxiorel.cz
+                  </a>
+                </p>
+              </article>
+              <article class="course-response response col w-50-xs mb-15 pt-0">
+                <blockquote class="response__text">
+                  <p>
+                    Knihu bych doporučil všem analytikům a marketérům.
+                  </p>
+                </blockquote>
+                <p class="mb-0 ml-2">
+                  Michal Blažek
+                  <a href="https://www.michalblazek.cz/nazory/vzhuru-do-amp-kniha-ktera-zvitezila-nad-grand-canyonem">
+                    v recenzi na MichalBlažek.cz
+                  </a>
+                </p>
+              </article>
+            </div>
+
+            <p class="ta-c f-6">
+              <a class="button" href="/ebook-amp/ohlasy">Další ohlasy</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section section-taller bg-highlight ebook-order mb-0">
+        <div class="content ta-c">
+          <p class="ebook-order-booklet">
+            <a href="https://form.simpleshop.cz/a07k4/buy/">
+              <img src="/assets/img/content/dest/x-small/vdamp-ebook.png"
+                alt="Vzhůru do AMP"
+                height="200" width="200">
+            </a>
+          </p>
+
+          <div class="ebook-order-form">
+            <p>
+              <a href="https://form.simpleshop.cz/a07k4/buy/" class="button button--wide button--primary">
+                Koupit e-book
+              </a>
+            </p>
+            <p class="f-sm mb-0">
+              <span class="ebook-order-conditions-row">
+                304 stránek. Formáty EPUB, MOBI a PDF.
+              </span>
+              <span class="ebook-order-conditions-row">
+                Minor aktualizace dostávají majitelé licencí zdarma.<br>
+              </span>
+            </p>
+            <p class="f-sm">
+              <a href="/ebook-amp/info">Více o nákupu</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+  
+  <script is:inline src="/assets/js/vrdl.min.js"></script>
+</BaseLayout>

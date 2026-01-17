@@ -4,6 +4,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { getCollection } from 'astro:content';
+import { Fragment } from 'astro/jsx-runtime';
 
 // Načtení článků z Markdown souborů
 const blogPosts = await getCollection('blog');
@@ -39,68 +40,302 @@ function getSlug(entry: any): string {
   description="HTML5, CSS3, responzivní design v textech a na školeních Martina Michálka."
   bodyClass="section-home"
 >
-  <Header />
-  
+  <Fragment slot="styles">
+    <link rel="stylesheet" href="/assets/css/modules-standalone/min/topbar.min.css" />
+    <link rel="stylesheet" href="/assets/css/modules-standalone/min/course-avatar.min.css" />
+    <link rel="stylesheet" href="/assets/css/modules-standalone/min/course-icon.min.css" />
+    <link rel="stylesheet" href="/assets/css/modules-standalone/min/emblem.min.css" />
+    <link rel="stylesheet" href="/assets/css/modules-standalone/min/photo-link.min.css" />
+    <link rel="stylesheet" href="/assets/css/modules-standalone/min/toc.min.css" />
+  </Fragment>
+
+  <Header slot="header" />
+  <Footer slot="footer" />
+
   <main role="main" id="main" aria-label="Hlavní obsah">
-    <div class="page-head page-head--line"></div>
-    <div class="section">
-      <div class="content-full pt-3-md">
-        <div class="row">
-          {latestPost && (
-            <div class="col mb-15 mb-0-md w-66-md">
-              <h2 class="mb-05 pb-0">
-                <a href={getSlug(latestPost)}>{latestPost.data.title}</a>
+      <div class="page-head page-head--line"></div>
+
+      <div class="section">
+        <div class="content-full pt-3-md">
+          <div class="row">
+            {latestPost && (
+              <div class="col mb-15 mb-0-md w-66-md">
+                <h2 class="mb-05 pb-0">
+                  <a href={getSlug(latestPost)}>{latestPost.data.title}</a>
+                </h2>
+                <p>
+                  <span class="article">
+                    <span class="text-color-lightest">
+                      {formatDate(latestPost.data.date)}
+                      —
+                    </span>
+                    {latestPost.data.description}
+                  </span>
+                </p>
+                <p class="mb-0 f-6">
+                  <a class="button" href={getSlug(latestPost)}>Pokračovat…</a>
+                </p>
+              </div>
+            )}
+
+            <aside role="complementary" id="kurzy-top" aria-labelledby="promoTop-heading" class="col w-33-md">
+              <div class="rounded bg-highlight p-05 f-sm ta-c">
+                <h2 class="h4 ml-05 mt-05 mb-025" id="promoTop-heading">
+                  CSS: moderní layout
+                </h2>
+                <a class="course-icon course-icon--ebook p-r" href="/css-layout/">
+                  <span class="course-icon__image">
+                    <img src="/assets/img/content/handmade/ebooks/vdlayout/vdlayout-model-both__760.webp" alt="Kniha a e-book „CSS: moderní layout"" loading="lazy" width="1540" height="1270">
+                  </span>
+                </a>
+                <p class="ml-05 mt-05 mp-0">
+                  Floaty už šly spát, ale tahle kniha ve vás probudí nadšence do CSS.
+                </p>
+                <p>
+                  <a class="button" href="/css-layout/">Více informací</a>
+                </p>
+              </div>
+            </aside>
+          </div>
+        </div>
+
+        <div class="content">
+          <hr class="hr--small hr--spaced" />
+          
+          {paginatedPosts.slice(1).map((post) => (
+            <article role="article" class="mb-15">
+              <h2 class="h4 mb-05">
+                {post.collection === 'podcast' && (
+                  <>
+                    <a href="/podcast">PODCAST:</a>{' '}
+                  </>
+                )}
+                <a href={getSlug(post)}>{post.data.title}</a>
               </h2>
               <p>
-                <span class="article">
-                  <span class="text-color-lightest">
-                    {formatDate(latestPost.data.date)}
-                    —
-                  </span>
-                  {latestPost.data.description}
+                <span class="text-color-lightest">
+                  {formatDate(post.data.date)}
+                  —
                 </span>
+                {post.data.description}
               </p>
-              <p class="mb-0 f-6">
-                <a class="button" href={getSlug(latestPost)}>Pokračovat…</a>
-              </p>
-            </div>
+            </article>
+          ))}
+
+          {allContent.length > postsPerPage && (
+            <p class="ta-c mt-3">
+              <a class="button" href="/p=2">Další články</a>
+            </p>
           )}
         </div>
       </div>
 
-      <div class="content">
-        <hr class="hr--small hr--spaced" />
-        
-        {paginatedPosts.slice(1).map((post) => (
-          <article role="article" class="mb-15">
-            <h2 class="h4 mb-05">
-              {post.collection === 'podcast' && (
-                <>
-                  <a href="/podcast">PODCAST:</a>{' '}
-                </>
-              )}
-              <a href={getSlug(post)}>{post.data.title}</a>
-            </h2>
-            <p>
-              <span class="text-color-lightest">
-                {formatDate(post.data.date)}
-                —
-              </span>
-              {post.data.description}
-            </p>
-          </article>
-        ))}
+      <div id="podcast-youtube" class="section mb-0">
+        <div class="content-full">
+          <div class="row jc-c">
+            <div class="course col w-50-sm f-6 mt-1 mb-1">
+              <h3 class="mb-0">
+                <a href="/podcast">Podcast ze Vzhůru dolů</a>
+              </h3>
+              <p class="mb-05">
+                Uvádí Robin Pokorný a Martin Michálek.
+              </p>
+              <div class="d-f fw-w ai-fs">
+                <p class="mb-0 p-r">
+                  <a class="d-ib o-h rounded bg-darkgreen-0 photo-link" href="/podcast">
+                    <img src="/assets/img/content/dest/original/martin-robin-webexpo.jpg" alt="Robin a Martin na WebExpo" height="180" loading="lazy">
+                  </a>
+                </p>
+              </div>
+              <div class="bs-bb [ w-100 ] [ w-100-md pl-0-md ]">
+                <p class="mb-0">
+                  Rozhovory se zajímavými lidmi kolem webového designu a vývoje.
+                </p>
+              </div>
+            </div>
 
-        {allContent.length > postsPerPage && (
-          <p class="ta-c mt-3">
-            <a class="button" href="/p=2">Další články</a>
-          </p>
-        )}
+            <div class="course col w-50-sm f-6 mt-1 mb-1">
+              <h3 class="mb-0">
+                <a href="https://www.youtube.com/channel/UCOrzIFsC4ks484LbT_BO7gQ">YouTube kanál</a>
+              </h3>
+              <p class="mb-05">
+                Nestačí vám články?
+              </p>
+              <div class="d-f fw-w ai-fs">
+                <p class="mb-0 p-r">
+                  <a class="d-ib o-h rounded bg-darkgreen-0 photo-link" href="https://www.youtube.com/channel/UCOrzIFsC4ks484LbT_BO7gQ">
+                    <img src="/assets/img/content/dest/original/machal-youtube.jpg" alt="Martin Michálek na YouTube" height="180" loading="lazy">
+                  </a>
+                </p>
+              </div>
+              <div class="bs-bb [ w-100 ] [ w-100-md pl-0-md ]">
+                <p class="mb-0">
+                  Vzdělávací videa na téma CSS, JS nebo rychlosti webů.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </main>
-  
-  <Footer />
+
+      <div id="ebooky" class="section section-tall hidden-print mt-0 mb-0">
+        <div class="content">
+          <h2 class="section-heading heading-anchored">
+            <a href="#e-booky">E-booky</a>
+          </h2>
+          <div class="row fd-c fd-r-xs">
+            <div class="col w-50-xs">
+              <p>
+                <a class="course-icon course-icon--ebook p-r" href="/css-layout">
+                  <picture class="course-icon__image">
+                    <source type="image/avif" srcset="/assets/img/content/handmade/ebooks/vdlayout/vdlayout-front-both.avif">
+                    <img src="/assets/img/content/handmade/ebooks/vdlayout/vdlayout-front-both.webp" alt="CSS: moderní layout" width="130" height="130" loading="lazy">
+                  </picture>
+                </a>
+              </p>
+              <h3 class="h4 h-4 mb-05 d-f ai-fe">
+                <a href="/css-layout/">CSS: moderní layout</a>
+              </h3>
+              <div class="f-6">
+                <p class="mb-05">
+                  Grid, flexbox a nové metody rozvržení webů v příkladech. E-book a tištěná kniha. Vydáno:&nbsp;2022.
+                  <br>Cena: <strong>199-449&nbsp;Kč</strong>
+                </p>
+                <p>
+                  <a class="button mx-1" href="/css-layout/">Více informací</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="col w-50-xs">
+              <p>
+                <a class="course-icon course-icon--ebook p-r" href="/kniha-responzivni-design">
+                  <picture class="course-icon__image">
+                    <source type="image/avif" srcset="/assets/img/content/handmade/ebooks/vdwd/vdwd-ebook.avif">
+                    <img src="/assets/img/content/handmade/ebooks/vdwd/vdwd-ebook.webp" alt="Vzhůru do (responzivního) webdesignu" width="130" height="130" loading="lazy">
+                  </picture>
+                </a>
+              </p>
+              <h3 class="h4 h-4 mb-05 d-f ai-fe">
+                <a href="/kniha-responzivni-design/">Vzhůru do (responzivního) webdesignu</a>
+              </h3>
+              <div class="f-6">
+                <p class="mb-05">
+                  Kompletní průvodce návrhem a&nbsp;implementací responzivních webů. Vydáno:&nbsp;2017.
+                  <br>Cena: <strong>199&nbsp;Kč</strong>
+                </p>
+                <p>
+                  <a class="button mx-1" href="/kniha-responzivni-design/">Více informací</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="col w-50-xs">
+              <p>
+                <a class="course-icon course-icon--ebook p-r" href="/ebook-amp">
+                  <picture class="course-icon__image">
+                    <source type="image/avif" srcset="/assets/img/content/handmade/ebooks/vdamp/vdamp-ebook.avif">
+                    <img src="/assets/img/content/handmade/ebooks/vdamp/vdamp-ebook.webp" alt="Vzhůru do AMP" width="130" height="130" loading="lazy">
+                  </picture>
+                </a>
+              </p>
+              <h3 class="h4 h-4 mb-05 d-f ai-fe">
+                <a href="/ebook-amp/">Vzhůru do AMP</a>
+              </h3>
+              <div class="f-6 p-r">
+                <p class="mb-05">
+                  Vše o technologii pro tvorbu bezkonkurenčně rychlých webů v jednom e-booku. Vydáno:&nbsp;2019.
+                  <br>Cena:&nbsp;<strong>99&nbsp;Kč</strong>
+                </p>
+                <p>
+                  <a class="button px-1" href="/ebook-amp/">Více informací</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="col w-50-xs">
+              <p>
+                <a class="course-icon course-icon--ebook p-r" href="/ebook-css3">
+                  <picture class="course-icon__image">
+                    <source type="image/avif" srcset="/assets/img/content/handmade/ebooks/vdcss3/vdcss3-ebook.avif">
+                    <img src="/assets/img/content/handmade/ebooks/vdcss3/vdcss3-ebook.webp" alt="Vzhůru do CSS3" width="130" height="130" loading="lazy">
+                  </picture>
+                </a>
+              </p>
+              <h3 class="h4 h-4 mb-05 d-f ai-fe">
+                <a href="/ebook-css3/">Vzhůru do CSS3</a>
+              </h3>
+              <div class="f-6">
+                <p class="mb-05">
+                  Změny frontend kodéřiny, nástroje, postupy a &nbsp;nové CSS3 vlastnosti v&nbsp;jednom e-booku. Vydáno:&nbsp;2015.
+                  <br><strong>Zdarma ke stažení</strong>
+                </p>
+                <p>
+                  <a class="button mx-1" href="/ebook-css3/">Více informací</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="temata" class="section section-tall section-latest bg-highlight">
+        <div class="content-full ta-c">
+          <h2 class="section-heading heading-anchored">
+            <a href="#temata">Témata článků</a>
+          </h2>
+
+          <p>
+            <a href="/css" class="button m-025">CSS</a>
+            <a href="/rychlost-nacitani" class="button m-025">Rychlost načítání webu</a>
+            <a href="/nastroje" class="button m-025">Nástroje</a>
+            <a href="/podcast" class="button m-025">Podcast</a>
+            <a href="/dovednosti" class="button m-025">Dovednosti</a>
+          </p>
+
+          <p class="f-6 ta-c maxw-30em">
+            Mimo hlavní témata jsem také psal o:
+            <span><a href="/responzivni-design">Responzivní design</a>,&nbsp;</span>
+            <span><a href="/javascript">JavaScript</a>,&nbsp;</span>
+            <span><a href="/html">HTML</a>,&nbsp;</span>
+            <span><a href="/svg">SVG</a>,&nbsp;</span>
+            <span><a href="/bootstrap">Bootstrap</a>,&nbsp;</span>
+            <span><a href="/prohlizece">Prohlížeče</a>,&nbsp;</span>
+            <span><a href="/netechnicke">Netechnické</a>,&nbsp;</span>
+            <span><a href="/skoleni">Školení</a>,&nbsp;</span>
+            <span><a href="/pristupnost">Přístupnost</a>,&nbsp;</span>
+            <span><a href="/organizace-css">Organizace CSS</a>,&nbsp;</span>
+            <span><a href="/wordpress">WordPress</a>,&nbsp;</span>
+            <span><a href="/amp">AMP</a>,&nbsp;</span>
+            <span><a href="/webdesign">Design</a>,&nbsp;</span>.
+          </p>
+
+          <h3 class="h4">
+            <a href="#top-clanky">Nejzajímavější texty</a>
+          </h3>
+
+          <div class="toc raised">
+            <ul>
+              <li><a href="/prirucka/jednotky">CSS jednotky</a></li>
+              <li><a href="/prirucka/css-selektory">CSS selektory</a></li>
+              <li><a href="/prirucka/css-display">CSS display</a></li>
+              <li><a href="/prirucka/css-flexbox">CSS flexbox</a></li>
+              <li><a href="/prirucka/css-grid">CSS grid</a></li>
+              <li><a href="/prirucka/css-multicolumn">CSS Multiple Column</a></li>
+              <li><a href="/prirucka/css-box-alignment">CSS Box Alignment</a></li>
+              <li><a href="/prirucka/css3-media-queries">CSS Media Queries</a></li>
+              <li><a href="/prirucka/bem">CSS metodika BEM</a></li>
+              <li><a href="/prirucka/meta-open-graph">Open Graph</a></li>
+              <li><a href="/prirucka/metrika-inp">Metrika INP</a></li>
+              <li><a href="/prirucka/metrika-lcp">Metrika LCP</a></li>
+              <li><a href="/prirucka/metrika-cls">Metrika CLS</a></li>
+              <li><a href="/prirucka/psani">Psaní</a></li>
+              <li><a href="/prirucka/inbox-zero">Inbox Zero</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
   
   <script is:inline src="/assets/js/vrdl.min.js"></script>
 </BaseLayout>
