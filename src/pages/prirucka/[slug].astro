@@ -5,6 +5,8 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import ArticleHeader from '../../components/ArticleHeader.astro';
+import ArticleFooter from '../../components/ArticleFooter.astro';
+import { categories, type CategoryConfig } from '../../data/categories';
 
 export async function getStaticPaths() {
   try {
@@ -33,6 +35,15 @@ const { Content } = await item.render();
 
 // Use id from frontmatter for URL
 const urlId = item.data.id;
+
+// Najít kategorie, které odpovídají tagům článku
+function getCategoriesForPost(postTags: string[] = []): CategoryConfig[] {
+  return categories.filter(category => {
+    return category.tags.some(catTag => postTags.includes(catTag));
+  });
+}
+
+const postCategories = getCategoriesForPost(item.data.tags || []);
 ---
 
 <BaseLayout
@@ -46,6 +57,7 @@ const urlId = item.data.id;
   <Footer slot="footer" />
 
   <Fragment slot="styles">
+    <link rel="stylesheet" href="/assets/css/modules-standalone/min/article-foot.min.css" />
     <style>
       /* Anchor links in headings - show "#" on hover */
       @media only screen and (min-width: 740px) {
@@ -102,6 +114,8 @@ const urlId = item.data.id;
         <Content />
       </div>
     </div>
+
+    <ArticleFooter post={item} categories={postCategories} />
   </main>
   
   <script is:inline src="/assets/js/vrdl.min.js"></script>

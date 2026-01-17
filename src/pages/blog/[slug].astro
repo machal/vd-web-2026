@@ -5,6 +5,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import ArticleHeader from '../../components/ArticleHeader.astro';
+import ArticleFooter from '../../components/ArticleFooter.astro';
 import { categories, type CategoryConfig } from '../../data/categories';
 
 export async function getStaticPaths() {
@@ -39,6 +40,7 @@ const postCategories = getCategoriesForPost(post.data.tags);
   <Footer slot="footer" />
 
   <Fragment slot="styles">
+    <link rel="stylesheet" href="/assets/css/modules-standalone/min/article-foot.min.css" />
     <style>
       /* Anchor links in headings - show "#" on hover */
       @media only screen and (min-width: 740px) {
@@ -96,27 +98,7 @@ const postCategories = getCategoriesForPost(post.data.tags);
       </div>
     </div>
 
-    {postCategories.length > 0 && (
-      <div class="content-full">
-        <div class="row">
-          <div class="col">
-            <p class="ta-c f-sm mb-05">
-              Další články v tématech:
-            </p>
-            <p class="ta-c f-sm mb-0">
-              {postCategories.map((category, index) => (
-                <>
-                  {index > 0 && ' – '}
-                  <a href={`/${category.slug}`}>
-                    {category.title}
-                  </a>
-                </>
-              ))}
-            </p>
-          </div>
-        </div>
-      </div>
-    )}
+    <ArticleFooter post={post} categories={postCategories} />
   </main>
   
   <script is:inline src="/assets/js/vrdl.min.js"></script>

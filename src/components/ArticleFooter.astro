@@ -1,0 +1,86 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import type { CategoryConfig } from '../data/categories';
+
+interface Props {
+  post: CollectionEntry<'blog' | 'podcast' | 'prirucka'>;
+  categories: CategoryConfig[];
+}
+
+const { post, categories } = Astro.props;
+
+// URL článku pro sdílení
+const articleUrl = post.collection === 'blog' 
+  ? `https://www.vzhurudolu.cz/blog/${post.slug}`
+  : post.collection === 'podcast'
+  ? `https://www.vzhurudolu.cz/podcast/${post.slug}`
+  : `https://www.vzhurudolu.cz/prirucka/${post.data.id}`;
+---
+
+<div class="content-full">
+  <div class="article-foot hidden-print f-6">
+    <svg class="vd-logo" viewBox="0 0 28 25" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <use class="vd-logo-svg" xlink:href="#vd-symbol" x="0" y="0"></use>
+    </svg>
+
+    {categories.length > 0 && (
+      <div class="row">
+        <div class="col">
+          <p class="ta-c f-sm mb-05">
+            Zařazeno v tématech:
+          </p>
+          <p class="ta-c f-sm mb-0">
+            {categories.map((category, index) => (
+              <>
+                {index > 0 && ' '}
+                <a href={`/${category.slug}`} class="button">
+                  {category.title}
+                </a>
+              </>
+            ))}
+          </p>
+        </div>
+      </div>
+    )}
+
+    <div class="row">
+      <div class="col">
+        <p class="share share--footer f-sm mb-0">
+          <strong>Sdílení potěší:</strong>
+
+          <a href={`https://www.facebook.com/sharer.php?u=${encodeURIComponent(articleUrl)}`}>
+            <svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" class="share__icon">
+              <title>Facebook</title>
+              <path d="M15,0C6.716,0,0,6.716,0,15s6.716,15,15,15s15-6.716,15-15S23.284,0,15,0z M19.233,12.764l-0.002,2.969
+                h-2.938v7.617h-3.065V15.73h-2.563v-2.968h2.563v-2.188c0-2.542,1.553-3.924,3.817-3.924l2.29,0.004v2.769h0.002l-1.573,0.001
+                c-1.232,0-1.47,0.585-1.47,1.445v1.895H19.233z"></path>
+            </svg>
+          </a>
+          <a href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(articleUrl)}&via=vzhurudolu`} class="share__icon">
+            <svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+              <title>Twitter</title>
+              <path d="M15,0C6.717,0,0,6.717,0,15s6.717,15,15,15s15-6.717,15-15S23.283,0,15,0z M21.848,11.695
+                c0.008,0.148,0.01,0.296,0.01,0.445c0,4.549-3.463,9.795-9.795,9.795l0,0l0,0c-1.944,0-3.754-0.569-5.276-1.547
+                c0.269,0.032,0.543,0.049,0.821,0.049c1.613,0,3.098-0.551,4.275-1.475c-1.507-0.027-2.777-1.023-3.216-2.393
+                c0.21,0.041,0.426,0.063,0.647,0.063c0.313,0,0.619-0.043,0.908-0.122c-1.576-0.314-2.763-1.707-2.763-3.375
+                c0-0.016,0-0.029,0-0.044c0.464,0.258,0.994,0.413,1.56,0.431c-0.924-0.617-1.533-1.671-1.533-2.866
+                c0-0.631,0.171-1.222,0.467-1.731c1.697,2.083,4.234,3.454,7.098,3.598c-0.06-0.252-0.09-0.515-0.09-0.785
+                c0-1.901,1.542-3.442,3.443-3.442c0.99,0,1.885,0.418,2.514,1.087c0.784-0.154,1.521-0.441,2.188-0.835
+                c-0.258,0.804-0.805,1.478-1.516,1.904c0.696-0.083,1.36-0.268,1.979-0.542C23.105,10.603,22.521,11.209,21.848,11.695z"></path>
+            </svg>
+          </a>
+          <a href={`https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(articleUrl)}`} class="share__icon">
+            <svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+              <title>LinkedIn</title>
+              <path d="M15,0C6.717,0,0,6.717,0,15s6.717,15,15,15s15-6.717,15-15S23.283,0,15,0z M10.641,22.676H6.988V11.685
+                h3.652V22.676z M8.814,10.184H8.791c-1.227,0-2.02-0.844-2.02-1.899c0-1.079,0.817-1.899,2.067-1.899s2.019,0.82,2.042,1.899
+                C10.881,9.34,10.089,10.184,8.814,10.184z M23.813,22.676h-3.651v-5.88c0-1.478-0.528-2.485-1.851-2.485
+                c-1.01,0-1.61,0.68-1.875,1.335c-0.097,0.235-0.121,0.563-0.121,0.893v6.139h-3.652c0,0,0.048-9.959,0-10.992h3.652v1.556
+                c0.486-0.749,1.354-1.814,3.293-1.814c2.402,0,4.205,1.57,4.205,4.946V22.676L23.813,22.676z"></path>
+            </svg>
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
