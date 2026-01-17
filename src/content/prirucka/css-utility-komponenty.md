@@ -1,7 +1,6 @@
 ---
 id: css-utility-komponenty
 heading: ''
-slug: css-utility-komponenty
 perex: ''
 published: true
 category: []

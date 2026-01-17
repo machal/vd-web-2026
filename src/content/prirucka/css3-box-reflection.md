@@ -1,7 +1,6 @@
 ---
 id: css3-box-reflection
 heading: 'CSS3 Box Reflection'
-slug: css3-box-reflection
 date: 2013-08-01
 perex: 'Prohlížeč vykreslí zrcadlový odlesk pod objektem nebo z jeho strany. Nestandardizovaná vlastnost.'
 published: false

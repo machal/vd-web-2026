@@ -1,7 +1,6 @@
 ---
 id: temp
 heading: ''
-slug: temp
 perex: ''
 published: false
 category: []

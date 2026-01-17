@@ -1,7 +1,6 @@
 ---
 id: budoucnost
 heading: ''
-slug: budoucnost
 perex: ''
 published: false
 category: []

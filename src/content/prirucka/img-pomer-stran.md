@@ -1,7 +1,6 @@
 ---
 id: img-pomer-stran
 heading: ''
-slug: img-pomer-stran
 perex: ''
 published: true
 category: []

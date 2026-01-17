@@ -1,7 +1,6 @@
 ---
 id: css-size-adjust
 heading: ''
-slug: css-size-adjust
 perex: ''
 published: true
 category: []

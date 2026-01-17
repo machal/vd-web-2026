@@ -1,7 +1,6 @@
 ---
 id: responzivni-grafy
 heading: 'Responzivní grafy'
-slug: responzivni-grafy
 date: 2017-08-31
 perex: 'Podívejme se na tři nejpoužívanější knihovny pro tvorbu responzivních grafů.'
 published: true

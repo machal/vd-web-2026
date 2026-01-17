@@ -1,7 +1,6 @@
 ---
 id: google-analytics-pridani
 heading: ''
-slug: google-analytics-pridani
 perex: ''
 published: true
 category: []

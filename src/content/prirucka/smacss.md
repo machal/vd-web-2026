@@ -1,7 +1,6 @@
 ---
 id: smacss
 heading: 'SMACSS'
-slug: smacss
 date: 2014-02-22
 perex: 'Scalable and Modular Architecture for CSS. Style guide od Jonathana Snooka.'
 published: true

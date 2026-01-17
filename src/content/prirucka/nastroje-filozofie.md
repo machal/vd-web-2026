@@ -1,7 +1,6 @@
 ---
 id: nastroje-filozofie
 heading: ''
-slug: nastroje-filozofie
 perex: ''
 published: true
 category: []

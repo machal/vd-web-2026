@@ -1,7 +1,6 @@
 ---
 id: jak-testovat-responzivni-weby
 heading: ''
-slug: jak-testovat-responzivni-weby
 perex: ''
 published: true
 category: []

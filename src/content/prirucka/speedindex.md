@@ -1,7 +1,6 @@
 ---
 id: speedindex
 heading: ''
-slug: speedindex
 perex: ''
 published: true
 category: []

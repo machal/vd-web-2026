@@ -1,7 +1,6 @@
 ---
 id: weby-watchos
 heading: ''
-slug: weby-watchos
 perex: ''
 published: true
 category: []

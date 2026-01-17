@@ -1,7 +1,6 @@
 ---
 id: pwa
 heading: ''
-slug: pwa
 perex: ''
 published: true
 category: []

@@ -1,7 +1,6 @@
 ---
 id: amp-wordpress
 heading: ''
-slug: amp-wordpress
 perex: ''
 published: true
 category: []

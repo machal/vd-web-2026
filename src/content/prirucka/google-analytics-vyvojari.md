@@ -1,7 +1,6 @@
 ---
 id: google-analytics-vyvojari
 heading: ''
-slug: google-analytics-vyvojari
 perex: ''
 published: true
 category: []

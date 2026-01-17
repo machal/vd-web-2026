@@ -1,7 +1,6 @@
 ---
 id: css-tisk-knih
 heading: ''
-slug: css-tisk-knih
 perex: ''
 published: true
 category: []

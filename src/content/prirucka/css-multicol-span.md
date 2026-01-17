@@ -1,7 +1,6 @@
 ---
 id: css-multicol-span
 heading: ''
-slug: css-multicol-span
 perex: ''
 published: true
 category: []

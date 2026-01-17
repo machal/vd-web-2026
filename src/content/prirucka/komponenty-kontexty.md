@@ -1,7 +1,6 @@
 ---
 id: komponenty-kontexty
 heading: ''
-slug: komponenty-kontexty
 perex: ''
 published: true
 category: []

@@ -1,7 +1,6 @@
 ---
 id: rozcestnik-css
 heading: ''
-slug: rozcestnik-css
 perex: ''
 published: false
 category: []

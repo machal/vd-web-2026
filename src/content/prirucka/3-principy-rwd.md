@@ -1,7 +1,6 @@
 ---
 id: principy-rwd
 heading: ''
-slug: principy-rwd
 perex: ''
 published: false
 category: []

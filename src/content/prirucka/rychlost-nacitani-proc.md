@@ -1,7 +1,6 @@
 ---
 id: rychlost-nacitani-proc
 heading: ''
-slug: rychlost-nacitani-proc
 perex: ''
 published: true
 category: []

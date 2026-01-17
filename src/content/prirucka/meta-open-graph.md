@@ -1,7 +1,6 @@
 ---
 id: meta-open-graph
 heading: ''
-slug: meta-open-graph
 perex: ''
 published: true
 category: []

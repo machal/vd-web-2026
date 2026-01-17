@@ -1,7 +1,6 @@
 ---
 id: polyfill
 heading: 'Polyfill'
-slug: polyfill
 date: 2013-12-27
 perex: 'V kontextu webového front-endu jde o javascriptový kód co vám HTML5 fíčuru rozchodí i v prohlížečích, které ji neumí.'
 published: true

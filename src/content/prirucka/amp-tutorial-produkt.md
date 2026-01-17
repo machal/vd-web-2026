@@ -1,7 +1,6 @@
 ---
 id: amp-tutorial-produkt
 heading: ''
-slug: amp-tutorial-produkt
 perex: ''
 published: false
 category: []

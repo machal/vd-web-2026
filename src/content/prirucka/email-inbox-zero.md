@@ -1,7 +1,6 @@
 ---
 id: email-inbox-zero
 heading: ''
-slug: email-inbox-zero
 perex: ''
 published: true
 category: []

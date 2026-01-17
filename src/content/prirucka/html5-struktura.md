@@ -1,7 +1,6 @@
 ---
 id: html5-struktura
 heading: ''
-slug: html5-struktura
 perex: ''
 published: true
 category: []

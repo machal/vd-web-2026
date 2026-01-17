@@ -1,7 +1,6 @@
 ---
 id: proces-navrhu-ui
 heading: ''
-slug: proces-navrhu-ui
 perex: ''
 published: false
 category: []

@@ -1,7 +1,6 @@
 ---
 id: css-pseudotridy
 heading: ''
-slug: css-pseudotridy
 perex: ''
 published: true
 category: []

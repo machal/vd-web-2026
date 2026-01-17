@@ -1,7 +1,6 @@
 ---
 id: css-flex-flow
 heading: ''
-slug: css-flex-flow
 perex: ''
 published: true
 category: []

@@ -1,7 +1,6 @@
 ---
 id: prefix
 heading: 'Prefix'
-slug: prefix
 date: 2013-12-27
 perex: 'Podivná věc, která nás nutí psát jeden CSS kód vícekrát.'
 published: true

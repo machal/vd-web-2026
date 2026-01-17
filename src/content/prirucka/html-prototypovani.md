@@ -1,7 +1,6 @@
 ---
 id: html-prototypovani
 heading: ''
-slug: html-prototypovani
 perex: ''
 published: false
 category: []

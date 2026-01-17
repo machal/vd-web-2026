@@ -1,7 +1,6 @@
 ---
 id: package-json
 heading: ''
-slug: package-json
 perex: ''
 published: true
 category: []

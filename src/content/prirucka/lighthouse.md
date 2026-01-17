@@ -1,7 +1,6 @@
 ---
 id: lighthouse
 heading: 'Lighthouse: audit webu od Google'
-slug: lighthouse-audit-webu-od-google
 date: 2021-11-16
 perex: '[Aktualizace po vydání Lighthouse 9] Proč a jak Lighthouse používat. Co umí a jak funguje. Podíváme se taky na použití pomocí příkazové řádky a pravidelné spouštění.'
 published: true

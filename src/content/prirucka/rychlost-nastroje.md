@@ -1,7 +1,6 @@
 ---
 id: rychlost-nastroje
 heading: ''
-slug: rychlost-nastroje
 perex: ''
 published: true
 category: []

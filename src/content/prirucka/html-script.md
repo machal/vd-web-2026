@@ -1,7 +1,6 @@
 ---
 id: html-script
 heading: ''
-slug: html-script
 perex: ''
 published: true
 category: []

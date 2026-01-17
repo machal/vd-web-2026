@@ -1,7 +1,6 @@
 ---
 id: dark-mode
 heading: ''
-slug: dark-mode
 perex: ''
 published: true
 category: []

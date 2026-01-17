@@ -1,7 +1,6 @@
 ---
 id: semver
 heading: 'SemVer: Sémantické verzování'
-slug: semver-semanticke-verzovani
 date: 2018-11-01
 perex: 'Jaké informace můžeme vyčíst z verze software typu 1.2.3. No a hlavně – jak to souvisí s frontendovým vývojem a konkrétně package.json.'
 published: true

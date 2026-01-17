@@ -1,7 +1,6 @@
 ---
 id: metrika-cls
 heading: ''
-slug: metrika-cls
 perex: ''
 published: true
 category: []

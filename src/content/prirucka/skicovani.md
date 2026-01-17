@@ -1,7 +1,6 @@
 ---
 id: skicovani
 heading: ''
-slug: skicovani
 perex: ''
 published: false
 category: []

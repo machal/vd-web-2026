@@ -1,7 +1,6 @@
 ---
 id: load
 heading: ''
-slug: load
 perex: ''
 published: true
 category: []

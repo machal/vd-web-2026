@@ -1,7 +1,6 @@
 ---
 id: css3-box-sizing
 heading: 'CSS3 Box Sizing'
-slug: css3-box-sizing
 date: 2013-08-01
 perex: 'Změna způsobu počítání šířky a výšky elementu, jinak též řečeno box-modelu.'
 published: true

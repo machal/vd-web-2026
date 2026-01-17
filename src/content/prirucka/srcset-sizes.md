@@ -1,7 +1,6 @@
 ---
 id: srcset-sizes
 heading: ''
-slug: srcset-sizes
 perex: ''
 published: true
 category: []

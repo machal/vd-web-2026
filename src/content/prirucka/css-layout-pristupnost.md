@@ -1,7 +1,6 @@
 ---
 id: css-layout-pristupnost
 heading: ''
-slug: css-layout-pristupnost
 perex: ''
 published: true
 category: []

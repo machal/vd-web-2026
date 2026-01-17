@@ -1,7 +1,6 @@
 ---
 id: css3-box-shadow
 heading: 'CSS3 Box Shadow'
-slug: css3-box-shadow
 date: 2013-08-01
 perex: 'Nejen obvyklý stín pod elementem, ale i uvnitř elementu nebo plastický efekt přes element.'
 published: true

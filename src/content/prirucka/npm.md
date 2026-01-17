@@ -1,7 +1,6 @@
 ---
 id: rozcestnik-npm-node
 heading: 'NPM a Node.js: Rozcestník odkazů'
-slug: npm-a-nodejs-rozcestnik-odkazu
 date: 2018-11-21
 perex: 'Nový formát textu, rozcestník, se v prvním výskytu na Vzhůru dolů soustředí na svět Node.js a nástrojů pro automatizaci.'
 published: true

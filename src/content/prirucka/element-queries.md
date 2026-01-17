@@ -1,7 +1,6 @@
 ---
 id: element-queries
 heading: ''
-slug: element-queries
 perex: ''
 published: true
 category: []

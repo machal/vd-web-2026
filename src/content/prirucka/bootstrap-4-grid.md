@@ -1,7 +1,6 @@
 ---
 id: bootstrap-4-grid
 heading: ''
-slug: bootstrap-4-grid
 perex: ''
 published: true
 category: []

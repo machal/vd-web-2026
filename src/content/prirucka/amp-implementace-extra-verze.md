@@ -1,7 +1,6 @@
 ---
 id: amp-implementace-extra-verze
 heading: ''
-slug: amp-implementace-extra-verze
 perex: ''
 published: false
 category: []

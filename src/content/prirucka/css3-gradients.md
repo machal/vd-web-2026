@@ -1,7 +1,6 @@
 ---
 id: css3-gradients
 heading: 'CSS3 Gradients'
-slug: css3-gradients
 date: 2013-08-05
 perex: 'Lineární a kruhové barevné přechody.'
 published: true

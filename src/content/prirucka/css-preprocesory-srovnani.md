@@ -1,7 +1,6 @@
 ---
 id: css-preprocesory-srovnani
 heading: ''
-slug: css-preprocesory-srovnani
 perex: ''
 published: false
 category: []

@@ -1,7 +1,6 @@
 ---
 id: amp-co-je-prohlizece
 heading: ''
-slug: amp-co-je-prohlizece
 perex: ''
 published: false
 category: []

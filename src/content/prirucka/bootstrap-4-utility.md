@@ -1,7 +1,6 @@
 ---
 id: bootstrap-4-utility
 heading: ''
-slug: bootstrap-4-utility
 perex: ''
 published: true
 category: []

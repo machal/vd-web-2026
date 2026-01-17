@@ -1,7 +1,6 @@
 ---
 id: css-supports
 heading: ''
-slug: css-supports
 perex: ''
 published: true
 category: []

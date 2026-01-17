@@ -1,7 +1,6 @@
 ---
 id: css3-flexbox
 heading: ''
-slug: css3-flexbox
 perex: ''
 published: false
 category: []

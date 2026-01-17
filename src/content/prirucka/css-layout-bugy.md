@@ -1,7 +1,6 @@
 ---
 id: css-layout-bugy
 heading: ''
-slug: css-layout-bugy
 perex: ''
 published: true
 category: []

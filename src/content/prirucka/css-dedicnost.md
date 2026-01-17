@@ -1,7 +1,6 @@
 ---
 id: css-dedicnost
 heading: ''
-slug: css-dedicnost
 perex: ''
 published: true
 category: []

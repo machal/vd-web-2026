@@ -1,7 +1,6 @@
 ---
 id: weby-vs-aplikace
 heading: ''
-slug: weby-vs-aplikace
 perex: ''
 published: true
 category: []

@@ -1,7 +1,6 @@
 ---
 id: css-grid-msie-autoplacement
 heading: ''
-slug: css-grid-msie-autoplacement
 perex: ''
 published: true
 category: []

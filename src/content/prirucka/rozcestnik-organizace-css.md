@@ -1,7 +1,6 @@
 ---
 id: rozcestnik-organizace-css
 heading: ''
-slug: rozcestnik-organizace-css
 perex: ''
 published: false
 category: []

@@ -1,7 +1,6 @@
 ---
 id: amp-co-je-pripadovky
 heading: ''
-slug: amp-co-je-pripadovky
 perex: ''
 published: true
 category: []

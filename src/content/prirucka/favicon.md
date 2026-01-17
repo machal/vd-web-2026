@@ -1,7 +1,6 @@
 ---
 id: favicon
 heading: ''
-slug: favicon
 perex: ''
 published: true
 category: []

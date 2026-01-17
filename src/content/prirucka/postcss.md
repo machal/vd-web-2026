@@ -1,7 +1,6 @@
 ---
 id: postcss
 heading: 'PostCSS jako jednoduchá náhrada preprocesoru'
-slug: postcss-jako-jednoducha-nahrada-preprocesoru
 date: 2017-02-16
 perex: 'Jak PostCSS využít jako jednoduchý a rychlý preprocesor, který vám na spoustu projektů výborně poslouží. A proč ne CSSnext?'
 published: true

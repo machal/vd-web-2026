@@ -1,7 +1,6 @@
 ---
 id: amp-fungovani
 heading: ''
-slug: amp-fungovani
 perex: ''
 published: false
 category: []

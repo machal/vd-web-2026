@@ -1,7 +1,6 @@
 ---
 id: css-promenne-priklady
 heading: ''
-slug: css-promenne-priklady
 perex: ''
 published: true
 category: []

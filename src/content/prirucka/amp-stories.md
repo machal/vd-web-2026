@@ -1,7 +1,6 @@
 ---
 id: amp-stories
 heading: ''
-slug: amp-stories
 perex: ''
 published: false
 category: []

@@ -1,7 +1,6 @@
 ---
 id: css-grid-auto-flow
 heading: ''
-slug: css-grid-auto-flow
 perex: ''
 published: true
 category: []

@@ -1,7 +1,6 @@
 ---
 id: google-search-console
 heading: ''
-slug: google-search-console
 perex: ''
 published: true
 category: []

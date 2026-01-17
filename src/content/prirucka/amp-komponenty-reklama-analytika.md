@@ -1,7 +1,6 @@
 ---
 id: amp-komponenty-reklama-analytika
 heading: ''
-slug: amp-komponenty-reklama-analytika
 perex: ''
 published: false
 category: []

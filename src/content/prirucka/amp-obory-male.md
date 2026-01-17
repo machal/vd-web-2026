@@ -1,7 +1,6 @@
 ---
 id: amp-obory-male
 heading: ''
-slug: amp-obory-male
 perex: ''
 published: false
 category: []

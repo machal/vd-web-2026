@@ -1,7 +1,6 @@
 ---
 id: button
 heading: ''
-slug: button
 perex: ''
 published: true
 category: []

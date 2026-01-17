@@ -1,7 +1,6 @@
 ---
 id: html5-history
 heading: 'HTML5 History'
-slug: html5-history
 date: 2013-09-01
 perex: 'Zjednodušeně řečeno umožňuje měnit část URL za doménou na libovolnou hodnotu. V kombinaci s AJAXem tak dokáže velmi zrychlit procházení webu nebo aplikace.'
 published: true

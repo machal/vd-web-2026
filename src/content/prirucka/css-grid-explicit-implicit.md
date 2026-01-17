@@ -1,7 +1,6 @@
 ---
 id: css-grid-explicit-implicit
 heading: ''
-slug: css-grid-explicit-implicit
 perex: ''
 published: false
 category: []

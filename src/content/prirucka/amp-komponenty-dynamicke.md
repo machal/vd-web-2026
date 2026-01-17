@@ -1,7 +1,6 @@
 ---
 id: amp-komponenty-dynamicke
 heading: ''
-slug: amp-komponenty-dynamicke
 perex: ''
 published: false
 category: []

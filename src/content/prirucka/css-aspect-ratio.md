@@ -1,7 +1,6 @@
 ---
 id: css-aspect-ratio
 heading: ''
-slug: css-aspect-ratio
 perex: ''
 published: true
 category: []

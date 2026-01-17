@@ -1,7 +1,6 @@
 ---
 id: metriky-fcp
 heading: ''
-slug: metriky-fcp
 perex: ''
 published: false
 category: []

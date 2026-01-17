@@ -1,7 +1,6 @@
 ---
 id: css-layout-grid-vs-flex
 heading: ''
-slug: css-layout-grid-vs-flex
 perex: ''
 published: false
 category: []

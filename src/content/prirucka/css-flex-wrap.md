@@ -1,7 +1,6 @@
 ---
 id: css-flex-wrap
 heading: ''
-slug: css-flex-wrap
 perex: ''
 published: true
 category: []

@@ -1,7 +1,6 @@
 ---
 id: gdpr
 heading: 'GDPR pro weby: Všechno, co o tom vím (pod dohledem advokáta)'
-slug: 'gdpr-pro-weby-vsechno-co-o-tom-vim-pod-dohledem-advokata'
 date: 2018-08-12
 perex: 'Jak se GDPR týká frontendistů, jak designérů a backendistů. Na co si musí dát pozor majitelé webů. A jak je to nově s cookie lištou?'
 published: true

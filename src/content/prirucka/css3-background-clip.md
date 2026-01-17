@@ -1,7 +1,6 @@
 ---
 id: css3-background-clip
 heading: 'CSS3 Background Clip'
-slug: css3-background-clip
 date: 2013-12-16
 perex: 'Určuje kde všude se uvnitř elementu vykresluje obrázek na pozadí.'
 published: true

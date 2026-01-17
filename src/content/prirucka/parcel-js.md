@@ -1,7 +1,6 @@
 ---
 id: parcel-js
 heading: ''
-slug: parcel-js
 perex: ''
 published: true
 category: []

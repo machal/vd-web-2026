@@ -1,7 +1,6 @@
 ---
 id: picturefill
 heading: 'Picturefill'
-slug: picturefill
 date: 2015-01-13
 perex: 'Polyfill, který dokáže zařídit podporu nově standardizovaných responzivních obrázků.'
 published: true

@@ -1,7 +1,6 @@
 ---
 id: css-flex-grow
 heading: ''
-slug: css-flex-grow
 perex: ''
 published: true
 category: []

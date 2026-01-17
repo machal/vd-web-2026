@@ -1,7 +1,6 @@
 ---
 id: e2e-testy-cypress
 heading: ''
-slug: e2e-testy-cypress
 perex: ''
 published: true
 category: []

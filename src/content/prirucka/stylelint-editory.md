@@ -1,7 +1,6 @@
 ---
 id: stylelint-editory
 heading: ''
-slug: stylelint-editory
 perex: ''
 published: true
 category: []

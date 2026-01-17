@@ -1,7 +1,6 @@
 ---
 id: avif
 heading: 'AVIF, nová generace obrázků pro web je tady'
-slug: avif-nova-generace-obrazku-pro-web-je-tady
 date: 2021-01-27
 perex: '(Aktualizováno o chystanou podporu AVIF ve Firefoxu.) 10 let po WebP přichází datově ještě úspornější AVIF. Podpora zatím silná není, ale výhledově to vypadá dobře a náhradní řešení umíme.'
 published: true

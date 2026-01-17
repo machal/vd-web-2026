@@ -1,7 +1,6 @@
 ---
 id: css-justify-self
 heading: ''
-slug: css-justify-self
 perex: ''
 published: true
 category: []

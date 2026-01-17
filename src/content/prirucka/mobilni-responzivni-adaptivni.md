@@ -1,7 +1,6 @@
 ---
 id: mobilni-responzivni-adaptivni
 heading: ''
-slug: mobilni-responzivni-adaptivni
 perex: ''
 published: false
 category: []

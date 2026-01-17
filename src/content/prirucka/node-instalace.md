@@ -1,7 +1,6 @@
 ---
 id: node-instalace
 heading: ''
-slug: node-instalace
 perex: ''
 published: true
 category: []

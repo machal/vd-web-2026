@@ -1,7 +1,6 @@
 ---
 id: rychlost-myty
 heading: ''
-slug: rychlost-myty
 perex: ''
 published: true
 category: []

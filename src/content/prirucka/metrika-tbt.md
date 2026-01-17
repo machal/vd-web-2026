@@ -1,7 +1,6 @@
 ---
 id: metrika-tbt
 heading: ''
-slug: metrika-tbt
 perex: ''
 published: true
 category: []

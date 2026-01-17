@@ -1,7 +1,6 @@
 ---
 id: udalost-dcl
 heading: ''
-slug: udalost-dcl
 perex: ''
 published: true
 category: []

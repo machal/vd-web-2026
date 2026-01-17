@@ -1,7 +1,6 @@
 ---
 id: amp-co-je-email-stories
 heading: ''
-slug: amp-co-je-email-stories
 perex: ''
 published: false
 category: []

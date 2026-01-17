@@ -1,7 +1,6 @@
 ---
 id: reseni-svg-vyrezy
 heading: ''
-slug: reseni-svg-vyrezy
 perex: ''
 published: true
 category: []

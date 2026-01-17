@@ -1,7 +1,6 @@
 ---
 id: metrika-fp
 heading: ''
-slug: metrika-fp
 perex: ''
 published: true
 category: []

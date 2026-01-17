@@ -1,7 +1,6 @@
 ---
 id: google-page-experience
 heading: ''
-slug: google-page-experience
 perex: ''
 published: true
 category: []

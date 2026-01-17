@@ -1,7 +1,6 @@
 ---
 id: metriky-rychlosti
 heading: 'Me­t­ri­ky rych­los­ti webů: Prů­vod­ce s de­tail­ním vy­svět­le­ním'
-slug: 'metriky-rychlosti-webu-pruvodce-s-detailnim-vysvetlenim'
 date: 2019-04-16
 perex: 'Nově přepsaný text příručky. Syntetická měření, RUM a vysvětlení spousty zkratek: TTFB, DCL, FP, FCP…'
 published: true

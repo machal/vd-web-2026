@@ -1,7 +1,6 @@
 ---
 id: css3-transforms
 heading: 'CSS3 Transforms'
-slug: css3-transforms
 date: 2013-09-05
 perex: 'Transformace tvaru objektu ve 2D i 3D prostoru pomocí CSS.'
 published: true

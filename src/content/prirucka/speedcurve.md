@@ -1,7 +1,6 @@
 ---
 id: speedcurve
 heading: 'SpeedCurve: Nástroj pro průběžnou analýzu rychlosti webu'
-slug: 'speedcurve-nastroj-pro-prubeznou-analyzu-rychlosti-webu'
 date: 2019-05-29
 perex: 'Pro mě nástroj číslo jedna pro průběžnou optimalizaci a měření rychlosti webu, který hlídá rychlostní limity, porovnává s konkurencí a mnoho dalšího.'
 published: true

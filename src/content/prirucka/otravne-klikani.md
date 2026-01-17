@@ -1,7 +1,6 @@
 ---
 id: otravne-klikani
 heading: ''
-slug: otravne-klikani
 perex: ''
 published: false
 category: []

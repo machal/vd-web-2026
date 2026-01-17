@@ -1,7 +1,6 @@
 ---
 id: css3-transitions
 heading: 'CSS3 Transitions'
-slug: css3-transitions
 date: 2013-08-01
 perex: 'Animace přechodů mezi stavy vlastností elementu.'
 published: true

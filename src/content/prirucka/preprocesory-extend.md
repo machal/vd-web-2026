@@ -1,7 +1,6 @@
 ---
 id: preprocesory-extend
 heading: ''
-slug: preprocesory-extend
 perex: ''
 published: true
 category: []

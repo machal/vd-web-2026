@@ -1,7 +1,6 @@
 ---
 id: cookie-lista-2022
 heading: ''
-slug: cookie-lista-2022
 perex: ''
 published: true
 category: []

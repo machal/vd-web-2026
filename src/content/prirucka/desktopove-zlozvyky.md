@@ -1,7 +1,6 @@
 ---
 id: desktopove-zlozvyky
 heading: ''
-slug: desktopove-zlozvyky
 perex: ''
 published: false
 category: []

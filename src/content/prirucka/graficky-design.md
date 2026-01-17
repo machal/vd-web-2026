@@ -1,7 +1,6 @@
 ---
 id: graficky-design
 heading: ''
-slug: graficky-design
 perex: ''
 published: false
 category: []

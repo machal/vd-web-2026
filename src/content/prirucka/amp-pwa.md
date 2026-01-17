@@ -1,7 +1,6 @@
 ---
 id: amp-pwa
 heading: ''
-slug: amp-pwa
 perex: ''
 published: false
 category: []

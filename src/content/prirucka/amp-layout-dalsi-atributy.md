@@ -1,7 +1,6 @@
 ---
 id: amp-layout-dalsi-atributy
 heading: ''
-slug: amp-layout-dalsi-atributy
 perex: ''
 published: false
 category: []

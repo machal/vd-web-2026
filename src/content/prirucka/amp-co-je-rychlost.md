@@ -1,7 +1,6 @@
 ---
 id: amp-co-je-rychlost
 heading: ''
-slug: amp-co-je-rychlost
 perex: ''
 published: false
 category: []

@@ -1,7 +1,6 @@
 ---
 id: amp-predavani
 heading: ''
-slug: amp-predavani
 perex: ''
 published: false
 category: []

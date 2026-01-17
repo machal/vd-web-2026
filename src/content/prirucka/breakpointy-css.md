@@ -1,7 +1,6 @@
 ---
 id: breakpointy-css
 heading: ''
-slug: breakpointy-css
 perex: ''
 published: true
 category: []

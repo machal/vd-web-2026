@@ -1,7 +1,6 @@
 ---
 id: oocss
 heading: 'OOCSS: objektové psaní CSS'
-slug: oocss-objektove-psani-css
 date: 2017-05-11
 perex: 'Object Oriented CSS je koncept organizace kódu, který je často vykládán mylně. Přepsal jsem proto starší článek a vezmu to do podrobna.'
 published: true

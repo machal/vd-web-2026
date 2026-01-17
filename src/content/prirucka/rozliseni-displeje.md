@@ -1,7 +1,6 @@
 ---
 id: rozliseni-displeje
 heading: ''
-slug: rozliseni-displeje
 perex: ''
 published: true
 category: []

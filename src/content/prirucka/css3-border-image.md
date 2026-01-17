@@ -1,7 +1,6 @@
 ---
 id: css3-border-image
 heading: 'CSS3 Border Image'
-slug: css3-border-image
 date: 2013-12-16
 perex: 'Obrázkový rámeček. Způsob jak namísto nativních rámečků kolem elementu vykreslit pomocí obrázku naše vlastní.'
 published: true

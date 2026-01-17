@@ -1,7 +1,6 @@
 ---
 id: modularni-stupnice
 heading: ''
-slug: modularni-stupnice
 perex: ''
 published: false
 category: []

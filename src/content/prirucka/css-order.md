@@ -1,7 +1,6 @@
 ---
 id: css-order
 heading: ''
-slug: css-order
 perex: ''
 published: true
 category: []

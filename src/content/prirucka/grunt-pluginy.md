@@ -1,7 +1,6 @@
 ---
 id: grunt-pluginy
 heading: ''
-slug: grunt-pluginy
 perex: ''
 published: true
 category: []

@@ -1,7 +1,6 @@
 ---
 id: webovy-koder
 heading: ''
-slug: webovy-koder
 perex: ''
 published: true
 category: []

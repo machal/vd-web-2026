@@ -1,7 +1,6 @@
 ---
 id: amp-javascript
 heading: ''
-slug: amp-javascript
 perex: ''
 published: true
 category: []

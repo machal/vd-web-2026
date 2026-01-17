@@ -1,7 +1,6 @@
 ---
 id: js-async-defer-module
 heading: ''
-slug: js-async-defer-module
 perex: ''
 published: true
 category: []

@@ -1,7 +1,6 @@
 ---
 id: responzivni-layout
 heading: ''
-slug: responzivni-layout
 perex: ''
 published: false
 category: []

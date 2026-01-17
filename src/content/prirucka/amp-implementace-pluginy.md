@@ -1,7 +1,6 @@
 ---
 id: amp-implementace-pluginy
 heading: ''
-slug: amp-implementace-pluginy
 perex: ''
 published: false
 category: []

@@ -1,7 +1,6 @@
 ---
 id: krkavci-technika
 heading: ''
-slug: krkavci-technika
 perex: ''
 published: false
 category: []

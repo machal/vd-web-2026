@@ -1,7 +1,6 @@
 ---
 id: schovavani-obsahu
 heading: ''
-slug: schovavani-obsahu
 perex: ''
 published: false
 category: []

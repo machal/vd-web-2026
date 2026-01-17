@@ -1,7 +1,6 @@
 ---
 id: amp-faze
 heading: ''
-slug: amp-faze
 perex: ''
 published: true
 category: []

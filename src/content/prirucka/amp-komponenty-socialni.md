@@ -1,7 +1,6 @@
 ---
 id: amp-komponenty-socialni
 heading: ''
-slug: amp-komponenty-socialni
 perex: ''
 published: false
 category: []

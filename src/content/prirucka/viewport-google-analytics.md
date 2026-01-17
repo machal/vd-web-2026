@@ -1,7 +1,6 @@
 ---
 id: viewport-google-analytics
 heading: ''
-slug: viewport-google-analytics
 perex: ''
 published: true
 category: []

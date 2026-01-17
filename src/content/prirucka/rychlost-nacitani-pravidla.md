@@ -1,7 +1,6 @@
 ---
 id: rychlost-nacitani-pravidla
 heading: ''
-slug: rychlost-nacitani-pravidla
 perex: ''
 published: false
 category: []

@@ -1,7 +1,6 @@
 ---
 id: css-font-display
 heading: ''
-slug: css-font-display
 perex: ''
 published: true
 category: []

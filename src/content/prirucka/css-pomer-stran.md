@@ -1,7 +1,6 @@
 ---
 id: css-pomer-stran
 heading: ''
-slug: css-pomer-stran
 perex: ''
 published: true
 category: []

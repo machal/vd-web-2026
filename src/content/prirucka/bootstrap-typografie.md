@@ -1,7 +1,6 @@
 ---
 id: bootstrap-typografie
 heading: ''
-slug: bootstrap-typografie
 perex: ''
 published: true
 category: []

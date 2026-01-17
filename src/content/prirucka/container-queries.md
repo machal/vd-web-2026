@@ -1,7 +1,6 @@
 ---
 id: container-queries
 heading: 'Container Queries přicházejí'
-slug: container-queries-prichazeji
 date: 2023-02-05
 perex: 'Dotazy na kontejnery nám na rozdíl od dotazů na média (Media Queries) umožňují tázat se na rozměry konkrétní komponenty, nikoliv celé stránky. Je to užitečné. Je to důležité. UPDATE: V únoru už s plnou podporou v prohlížečích.'
 published: true

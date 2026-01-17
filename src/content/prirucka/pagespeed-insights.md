@@ -1,7 +1,6 @@
 ---
 id: pagespeed-insights
 heading: 'PageSpeed Insights: Kompletní průvodce testem rychlosti webu'
-slug: 'pagespeed-insights-kompletni-pruvodce-testem-rychlosti-webu'
 date: 2021-03-20
 perex: 'Po aktualizaci koncem roku 2018 se z tohoto nástroje stal vynikající pomocník i pro nás, zkušenější. Proto nastal čas pro přepsání textu.'
 published: true

@@ -1,7 +1,6 @@
 ---
 id: css-grid-area
 heading: ''
-slug: css-grid-area
 perex: ''
 published: true
 category: []

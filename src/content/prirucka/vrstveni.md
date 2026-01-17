@@ -1,7 +1,6 @@
 ---
 id: vrstveni
 heading: ''
-slug: vrstveni
 perex: ''
 published: false
 category: []

@@ -1,7 +1,6 @@
 ---
 id: breakpointy
 heading: 'Breakpointy v responzivním designu: Detailně a do hloubky'
-slug: 'breakpointy-v-responzivnim-designu-detailne-a-do-hloubky'
 date: 2018-12-09
 perex: 'Velký článek o breakpointech: Jak je vymýšlet podle designu webu a také jeho cílové skupiny, jak je pojmenovávat a čemu se rozhodně vyhnout.'
 published: true

@@ -1,7 +1,6 @@
 ---
 id: priority-hints
 heading: 'Priority Hints a atribut fetchpriority: jak vytunit rychlost načtení prvků stránky'
-slug: 'priority-hints-a-atribut-fetchpriority-jak-vytunit-rychlost-nacteni-prvku-stranky'
 date: 2022-08-29
 perex: 'S pomocí Priority Hints můžete zrychlit načtení webu jen pomocí přidání pár řádků kódu. Má to ale pár „ale“…'
 published: true

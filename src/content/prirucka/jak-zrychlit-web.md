@@ -1,7 +1,6 @@
 ---
 id: jak-zrychlit-web
 heading: 'Jak zrychlit web v roce 2021?'
-slug: jak-zrychlit-web-v-roce-2021
 date: 2021-04-07
 perex: 'Pojďme si připomenout metody, které jsou relativně nové, které se mi osvědčily při práci pro klienty, a o kterých jsem psal na Vzhůru dolů. Je jich jen osm, takže je slupnete k ranní kávě.'
 published: true

@@ -1,7 +1,6 @@
 ---
 id: css-flexbox-dobre-vedet
 heading: ''
-slug: css-flexbox-dobre-vedet
 perex: ''
 published: false
 category: []

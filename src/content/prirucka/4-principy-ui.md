@@ -1,7 +1,6 @@
 ---
 id: principy-ui
 heading: ''
-slug: principy-ui
 perex: ''
 published: false
 category: []

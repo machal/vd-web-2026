@@ -1,7 +1,6 @@
 ---
 id: reseni-elasticka-typografie
 heading: ''
-slug: reseni-elasticka-typografie
 perex: ''
 published: true
 category: []

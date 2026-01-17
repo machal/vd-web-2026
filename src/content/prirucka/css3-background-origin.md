@@ -1,7 +1,6 @@
 ---
 id: css3-background-origin
 heading: 'CSS3 Background Origin'
-slug: css3-background-origin
 date: 2015-11-25
 perex: 'Určí, kde se v rámci elementu nachází začátek osy pro počítání rozměrů a pozic vlastností.'
 published: true

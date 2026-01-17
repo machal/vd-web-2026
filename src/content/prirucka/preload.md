@@ -1,7 +1,6 @@
 ---
 id: preload
 heading: 'Preload: Přednačtení prvků stránky detailně a do hloubky'
-slug: 'preload-prednacteni-prvku-stranky-detailne-a-do-hloubky'
 date: 2020-05-26
 perex: 'Hlavičková deklarace PRELOAD vyvolává dřívější stažení prvku stránky a v případě JavaScriptu odděluje stažení od spuštění.'
 published: true

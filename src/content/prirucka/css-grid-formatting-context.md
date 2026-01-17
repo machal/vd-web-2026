@@ -1,7 +1,6 @@
 ---
 id: css-grid-formatting-context
 heading: ''
-slug: css-grid-formatting-context
 perex: ''
 published: false
 category: []

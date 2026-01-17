@@ -1,7 +1,6 @@
 ---
 id: responzivni-ui-schovavani-obsahu
 heading: ''
-slug: responzivni-ui-schovavani-obsahu
 perex: ''
 published: false
 category: []

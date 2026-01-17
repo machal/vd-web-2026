@@ -1,7 +1,6 @@
 ---
 id: knihy
 heading: 'Knihy pro frontendisty a frontendistky. Co číst o CSS, JS, designu, rychlosti nebo přístupnosti?'
-slug: 'knihy-pro-frontendisty-a-frontendistky-co-cist-o-css-js-designu-rychlosti-nebo-pristupnosti'
 date: 2021-03-24
 perex: 'Více než dvě desítky knih, které mě nějak odborně posunuly. Plus další, doporučené od čtenářů.'
 published: true

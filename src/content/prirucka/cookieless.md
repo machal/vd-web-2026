@@ -1,7 +1,6 @@
 ---
 id: cookieless
 heading: ''
-slug: cookieless
 perex: ''
 published: true
 category: []

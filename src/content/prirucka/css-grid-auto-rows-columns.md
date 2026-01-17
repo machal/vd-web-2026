@@ -1,7 +1,6 @@
 ---
 id: css-grid-auto-rows-columns
 heading: ''
-slug: css-grid-auto-rows-columns
 perex: ''
 published: true
 category: []

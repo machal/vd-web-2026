@@ -1,7 +1,6 @@
 ---
 id: rychlost-nastroje
 heading: 'Nástroje pro analýzu rychlosti načtení stránky'
-slug: nastroje-pro-analyzu-rychlosti-nacteni-stranky
 date: 2016-04-27
 perex: 'Začněte s Google PageSpeed Insights, pokračujte na WebPageTest.org. Budou se vám také hodit vývojářské nástroje v Chrome nebo jiných prohlížečích.'
 published: true

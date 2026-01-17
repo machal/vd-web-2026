@@ -1,7 +1,6 @@
 ---
 id: amp-implementace-vyjimky
 heading: ''
-slug: amp-implementace-vyjimky
 perex: ''
 published: false
 category: []

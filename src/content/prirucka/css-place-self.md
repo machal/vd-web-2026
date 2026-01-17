@@ -1,7 +1,6 @@
 ---
 id: css-place-self
 heading: ''
-slug: css-place-self
 perex: ''
 published: true
 category: []

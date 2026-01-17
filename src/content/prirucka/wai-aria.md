@@ -1,7 +1,6 @@
 ---
 id: wai-aria
 heading: ''
-slug: wai-aria
 perex: ''
 published: true
 category: []

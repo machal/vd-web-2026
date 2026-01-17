@@ -1,7 +1,6 @@
 ---
 id: css-metodiky
 heading: ''
-slug: css-metodiky
 perex: ''
 published: true
 category: []

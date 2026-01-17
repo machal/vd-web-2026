@@ -1,7 +1,6 @@
 ---
 id: zaklady-procesu
 heading: ''
-slug: zaklady-procesu
 perex: ''
 published: false
 category: []

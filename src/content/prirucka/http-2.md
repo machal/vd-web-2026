@@ -1,7 +1,6 @@
 ---
 id: http-2
 heading: ''
-slug: http-2
 perex: ''
 published: true
 category: []

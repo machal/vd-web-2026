@@ -1,7 +1,6 @@
 ---
 id: web-vitals
 heading: 'Web Vitals: Co jsou zač ty nové metriky rychlosti webu od Googlu?'
-slug: 'web-vitals-co-jsou-zac-ty-nove-metriky-rychlosti-webu-od-googlu'
 date: 2020-06-02
 perex: 'Lidé z Googlu přišli s novou sadou metrik rychlosti webu, kterou by podle nich měl znát a sledovat úplně každý. Tentokrát navíc jasně řekli, že budou mít vliv na SEO.'
 published: true

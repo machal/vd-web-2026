@@ -1,7 +1,6 @@
 ---
 id: devstack-boilerplate-kit
 heading: ''
-slug: devstack-boilerplate-kit
 perex: ''
 published: true
 category: []

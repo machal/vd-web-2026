@@ -1,7 +1,6 @@
 ---
 id: amp-email
 heading: 'AMP Email: Přinese dynamický e-mail revoluci v tvorbě newsletterů?'
-slug: 'amp-email-prinese-dynamicky-e-mail-revoluci-v-tvorbe-newsletteru'
 date: 2019-11-28
 perex: 'AMP Email je podmnožina frameworku, která slouží ke tvorbě interaktivních e-mailů.'
 published: true

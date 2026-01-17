@@ -1,7 +1,6 @@
 ---
 id: tipy-responzivni-ui
 heading: ''
-slug: tipy-responzivni-ui
 perex: ''
 published: false
 category: []

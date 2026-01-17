@@ -1,7 +1,6 @@
 ---
 id: amp-webari-preload
 heading: ''
-slug: amp-webari-preload
 perex: ''
 published: true
 category: []

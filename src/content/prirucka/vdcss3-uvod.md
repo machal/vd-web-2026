@@ -1,7 +1,6 @@
 ---
 id: vdcss3-uvod
 heading: ''
-slug: vdcss3-uvod
 perex: ''
 published: true
 category: []

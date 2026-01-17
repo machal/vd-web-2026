@@ -1,7 +1,6 @@
 ---
 id: css-grid-pojmy
 heading: ''
-slug: css-grid-pojmy
 perex: ''
 published: false
 category: []

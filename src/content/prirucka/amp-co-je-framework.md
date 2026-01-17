@@ -1,7 +1,6 @@
 ---
 id: amp-co-je-framework
 heading: ''
-slug: amp-co-je-framework
 perex: ''
 published: false
 category: []

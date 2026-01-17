@@ -1,7 +1,6 @@
 ---
 id: velikost-aktivni-plochy
 heading: ''
-slug: velikost-aktivni-plochy
 perex: ''
 published: false
 category: []

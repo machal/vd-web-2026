@@ -1,7 +1,6 @@
 ---
 id: css-flex-shrink
 heading: ''
-slug: css-flex-shrink
 perex: ''
 published: true
 category: []

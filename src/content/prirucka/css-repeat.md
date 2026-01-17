@@ -1,7 +1,6 @@
 ---
 id: css-repeat
 heading: ''
-slug: css-repeat
 perex: ''
 published: true
 category: []

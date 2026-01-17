@@ -1,7 +1,6 @@
 ---
 id: amp-kritika-myty
 heading: ''
-slug: amp-kritika-myty
 perex: ''
 published: true
 category: []

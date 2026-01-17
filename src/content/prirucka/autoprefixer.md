@@ -1,7 +1,6 @@
 ---
 id: autoprefixer
 heading: ''
-slug: autoprefixer
 perex: ''
 published: true
 category: []

@@ -1,7 +1,6 @@
 ---
 id: css3-jednotky
 heading: 'CSS3 jednotky'
-slug: css3-jednotky
 date: 2013-09-05
 perex: 'Rozměr, který odpovídá hodnotě font-size na root elementu, tedy &lt;html&gt;. Jsou to root-emka, tedy varianta známé jednotky em, která nevychází z velikosti fontu rodičovského elementu.'
 published: true

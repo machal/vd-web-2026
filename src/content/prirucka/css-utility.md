@@ -1,7 +1,6 @@
 ---
 id: css-utility
 heading: ''
-slug: css-utility
 perex: ''
 published: true
 category: []

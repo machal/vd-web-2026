@@ -1,7 +1,6 @@
 ---
 id: prohlizece
 heading: 'Prohlížeče v Česku: Webdesignérův průvodce pro rok 2018'
-slug: 'prohlizece-v-cesku-webdesigneruv-pruvodce-pro-rok-2018'
 date: 2018-09-26
 perex: 'Prohlížečů je prostě dneska jako malých myší a pro webaře může být tohle prostředí trochu nepřehledné. Pojďme na něj zaostřit v tomhle textu.'
 published: true

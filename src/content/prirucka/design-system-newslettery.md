@@ -1,7 +1,6 @@
 ---
 id: design-system-newslettery
 heading: ''
-slug: design-system-newslettery
 perex: ''
 published: true
 category: []

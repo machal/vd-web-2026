@@ -1,7 +1,6 @@
 ---
 id: bower
 heading: 'Bower'
-slug: bower
 date: 2014-09-17
 perex: 'Bower je správce frontend balíčků. jQuery, Bootstrap… Prostě balíčků.'
 published: true

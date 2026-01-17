@@ -1,7 +1,6 @@
 ---
 id: rozcestnik-responzivni-design
 heading: ''
-slug: rozcestnik-responzivni-design
 perex: ''
 published: false
 category: []

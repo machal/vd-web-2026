@@ -1,7 +1,6 @@
 ---
 id: responzivni-tabulky
 heading: ''
-slug: responzivni-tabulky
 perex: ''
 published: true
 category: []

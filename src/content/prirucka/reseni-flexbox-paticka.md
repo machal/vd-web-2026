@@ -1,7 +1,6 @@
 ---
 id: reseni-flexbox-paticka
 heading: ''
-slug: reseni-flexbox-paticka
 perex: ''
 published: true
 category: []

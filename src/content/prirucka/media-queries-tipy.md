@@ -1,7 +1,6 @@
 ---
 id: media-queries-tipy
 heading: ''
-slug: media-queries-tipy
 perex: ''
 published: false
 category: []

@@ -1,7 +1,6 @@
 ---
 id: amp-css
 heading: ''
-slug: amp-css
 perex: ''
 published: true
 category: []

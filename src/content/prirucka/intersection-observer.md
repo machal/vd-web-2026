@@ -1,7 +1,6 @@
 ---
 id: intersection-observer
 heading: 'Intersection Observer: Jak zjistit, že je prvek vidět?'
-slug: 'intersection-observer-jak-zjistit-ze-je-prvek-videt'
 date: 2018-02-26
 perex: 'API, které umožní hlídat protnutí plochy prvku s plochou jiného prvku. Hodí se pro lazy loading, animace nebo implementaci „nekonečné stránky“.'
 published: true

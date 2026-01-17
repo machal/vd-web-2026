@@ -1,7 +1,6 @@
 ---
 id: webp
 heading: 'WebP obrázky: datově úsporná alternativa k JPEG, PNG i GIF'
-slug: 'webp-obrazky-datove-usporna-alternativa-k-jpeg-png-i-gif'
 date: 2024-07-07
 perex: '[Update článku] WebP je formát bitmapových obrázků, který se v posledních letech stal na webu velmi populárním.'
 published: true

@@ -1,7 +1,6 @@
 ---
 id: css3-text-shadow
 heading: 'CSS3 Text Shadow'
-slug: css3-text-shadow
 date: 2013-08-01
 perex: 'Vnitřní nebo vnější stín textu.'
 published: true

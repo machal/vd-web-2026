@@ -1,7 +1,6 @@
 ---
 id: css-multicol-columns
 heading: ''
-slug: css-multicol-columns
 perex: ''
 published: true
 category: []

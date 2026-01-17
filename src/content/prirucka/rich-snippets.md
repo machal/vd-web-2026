@@ -1,7 +1,6 @@
 ---
 id: rich-snippets
 heading: ''
-slug: rich-snippets
 perex: ''
 published: true
 category: []

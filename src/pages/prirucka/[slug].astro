@@ -14,11 +14,11 @@ export async function getStaticPaths() {
       return entry.data.title && entry.data.id && entry.data.published === true;
     });
     return prirucka.map((item) => {
-      // Remove subdirectory prefix from slug (e.g., "content/lazy-loading" -> "lazy-loading")
-      // This handles files in subdirectories like content/, content-vdwd/, etc.
-      const cleanSlug = item.slug.replace(/^(content|content-ebook|content-vdamp|content-vdlayout|content-vdwd)\//, '');
+      // Use id from frontmatter instead of slug (file name)
+      // This ensures URLs are based on id, not file name or frontmatter slug
+      const urlId = item.data.id;
       return {
-        params: { slug: cleanSlug },
+        params: { slug: urlId },
         props: { item },
       };
     });
@@ -31,15 +31,15 @@ export async function getStaticPaths() {
 const { item } = Astro.props;
 const { Content } = await item.render();
 
-// Remove subdirectory prefix from slug for clean URLs
-const cleanSlug = item.slug.replace(/^(content|content-ebook|content-vdamp|content-vdlayout|content-vdwd)\//, '');
+// Use id from frontmatter for URL
+const urlId = item.data.id;
 ---
 
 <BaseLayout
   title={item.data.title}
   description={item.data.description || item.data.title}
   ogType="article"
-  ogUrl={`https://www.vzhurudolu.cz/prirucka/${cleanSlug}`}
+  ogUrl={`https://www.vzhurudolu.cz/prirucka/${urlId}`}
   bodyClass="section-prirucka"
 >
   <Header slot="header" />

@@ -1,7 +1,6 @@
 ---
 id: amp-layout-placeholder
 heading: ''
-slug: amp-layout-placeholder
 perex: ''
 published: false
 category: []

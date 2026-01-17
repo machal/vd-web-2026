@@ -1,7 +1,6 @@
 ---
 id: weby-bez-css
 heading: 'Weby bez CSS: Existuje to vůbec? A jak to testovat?'
-slug: weby-bez-css-existuje-to-vubec-a-jak-to-testovat
 date: 2018-03-04
 perex: 'I váš web se možná někde zobrazuje bez vašich pečlivě připravených CSS.'
 published: true

@@ -1,7 +1,6 @@
 ---
 id: reseni-zeldmanovo-zatrzitko
 heading: ''
-slug: reseni-zeldmanovo-zatrzitko
 perex: ''
 published: true
 category: []

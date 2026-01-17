@@ -1,7 +1,6 @@
 ---
 id: preconnect
 heading: ''
-slug: preconnect
 perex: ''
 published: true
 category: []

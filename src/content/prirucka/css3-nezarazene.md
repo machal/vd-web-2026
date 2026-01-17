@@ -1,7 +1,6 @@
 ---
 id: css3-nezarazene
 heading: ''
-slug: css3-nezarazene
 perex: ''
 published: false
 category: []

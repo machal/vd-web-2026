@@ -1,7 +1,6 @@
 ---
 id: bem
 heading: 'BEM: Pojmenovávací konvence pro třídy v CSS'
-slug: bem-pojmenovavaci-konvence-pro-tridy-v-css
 date: 2017-06-05
 perex: 'Block, Element, Modifier. Nově přepsaný článek o metodice pro pojmenovávání tříd v komponentách.'
 published: true

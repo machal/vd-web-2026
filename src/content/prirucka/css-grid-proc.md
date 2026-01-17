@@ -1,7 +1,6 @@
 ---
 id: css-grid-proc
 heading: ''
-slug: css-grid-proc
 perex: ''
 published: true
 category: []

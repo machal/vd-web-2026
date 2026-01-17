@@ -1,7 +1,6 @@
 ---
 id: ikonfonty-vs-svg
 heading: ''
-slug: ikonfonty-vs-svg
 perex: ''
 published: true
 category: []

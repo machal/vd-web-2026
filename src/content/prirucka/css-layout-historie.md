@@ -1,7 +1,6 @@
 ---
 id: css-layout-historie
 heading: ''
-slug: css-layout-historie
 perex: ''
 published: false
 category: []

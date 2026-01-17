@@ -1,7 +1,6 @@
 ---
 id: css-content-visibility
 heading: ''
-slug: css-content-visibility
 perex: ''
 published: true
 category: []

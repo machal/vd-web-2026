@@ -1,7 +1,6 @@
 ---
 id: js-priority
 heading: ''
-slug: js-priority
 perex: ''
 published: true
 category: []

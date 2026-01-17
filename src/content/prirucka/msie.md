@@ -1,7 +1,6 @@
 ---
 id: msie
 heading: ''
-slug: msie
 perex: ''
 published: true
 category: []

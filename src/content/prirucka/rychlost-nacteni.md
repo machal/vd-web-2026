@@ -1,7 +1,6 @@
 ---
 id: rychlost-nacteni
 heading: ''
-slug: rychlost-nacteni
 perex: ''
 published: true
 category: []

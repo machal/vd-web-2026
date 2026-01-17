@@ -1,7 +1,6 @@
 ---
 id: amp-layout-atribut
 heading: ''
-slug: amp-layout-atribut
 perex: ''
 published: false
 category: []

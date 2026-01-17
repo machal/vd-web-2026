@@ -1,7 +1,6 @@
 ---
 id: typografie
 heading: 'Typografie na webu'
-slug: typografie-na-webu
 date: 2024-03-01
 perex: 'Písmo v nás vyvolává emoce a špatná typografie může odradit čtenáře nebo zákazníka. Proto je typografie důležitá i na webu.'
 published: true

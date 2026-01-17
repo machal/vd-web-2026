@@ -1,7 +1,6 @@
 ---
 id: third-party
 heading: ''
-slug: third-party
 perex: ''
 published: true
 category: []

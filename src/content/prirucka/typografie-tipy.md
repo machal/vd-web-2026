@@ -1,7 +1,6 @@
 ---
 id: typografie-tipy
 heading: ''
-slug: typografie-tipy
 perex: ''
 published: false
 category: []

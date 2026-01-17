@@ -1,7 +1,6 @@
 ---
 id: amp-validace
 heading: ''
-slug: amp-validace
 perex: ''
 published: false
 category: []

@@ -1,7 +1,6 @@
 ---
 id: browsersync
 heading: 'Browsersync: proč a jak používat automatický reload v prohlížečích'
-slug: 'browsersync-proc-a-jak-pouzivat-automaticky-reload-v-prohlizecich'
 date: 2020-07-28
 perex: 'Aktualizovaný podrobný text o velmi užitečném nástroji pro lokální vývoj webů. Browsersync umí živě promítat změny v HTML, CSS a JS souborech.'
 published: true

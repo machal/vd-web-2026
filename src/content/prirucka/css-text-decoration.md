@@ -1,7 +1,6 @@
 ---
 id: css-text-decoration
 heading: ''
-slug: css-text-decoration
 perex: ''
 published: true
 category: []

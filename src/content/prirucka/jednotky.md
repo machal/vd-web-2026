@@ -1,7 +1,6 @@
 ---
 id: jednotky
 heading: 'Jednotky pro tvorbu webu (em, rem, %, px, vh, vw): Kde použít jakou?'
-slug: 'jednotky-pro-tvorbu-webu-em-rem-px-vh-vw-kde-pouzit-jakou'
 date: 2018-12-03
 perex: 'Pojďme si tady shrnout všechny CSS jednotky použitelné v dnešním webdesignu. A na příkladu ukázat, k čemu se která hodí.'
 published: true

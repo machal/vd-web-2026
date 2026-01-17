@@ -1,7 +1,6 @@
 ---
 id: css-box-alignment
 heading: ''
-slug: css-box-alignment
 perex: ''
 published: true
 category: []

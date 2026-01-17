@@ -1,7 +1,6 @@
 ---
 id: kontrast
 heading: ''
-slug: kontrast
 perex: ''
 published: true
 category: []

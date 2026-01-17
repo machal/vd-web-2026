@@ -1,7 +1,6 @@
 ---
 id: lide-a-zarizeni
 heading: 'Lidé a zařízení: jak je používají a jaký to má vliv na návrh rozhraní?'
-slug: 'lide-a-zarizeni-jak-je-pouzivaji-a-jaky-to-ma-vliv-na-navrh-rozhrani'
 date: 2018-02-11
 perex: 'Další ukázka z knihy. Dozvíte se, že je vhodné považovat všechna zařízení za dotyková. Že lidé palci používají i hybridní notebooky. A že snadno dosažitelná plocha chytrých telefonů se stále zmenšuje.'
 published: true

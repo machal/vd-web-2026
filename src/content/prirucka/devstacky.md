@@ -1,7 +1,6 @@
 ---
 id: devstacky
 heading: 'Devstac­ky: In­spi­rač­ní ka­ta­log nástrojových zá­kla­den'
-slug: devstacky-inspiracni-katalog-nastrojovych-zakladen
 date: 2019-03-26
 perex: 'Nástrojářské základny postavené na nejrozšířenějších nástrojích pro automatizaci.'
 published: true

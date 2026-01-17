@@ -1,7 +1,6 @@
 ---
 id: webpack
 heading: 'Webpack: Úplné základy a tutoriál k tomu'
-slug: webpack-uplne-zaklady-a-tutorial-k-tomu
 date: 2019-10-09
 perex: 'Pořád jste Webpack nevyzkoušeli? Anebo ano, ale stále mu nerozumíte? Pak tohle je text právě pro vás.'
 published: true

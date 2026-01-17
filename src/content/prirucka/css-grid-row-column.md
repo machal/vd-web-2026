@@ -1,7 +1,6 @@
 ---
 id: css-grid-row-column
 heading: ''
-slug: css-grid-row-column
 perex: ''
 published: true
 category: []

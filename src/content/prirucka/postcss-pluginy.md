@@ -1,7 +1,6 @@
 ---
 id: postcss-pluginy
 heading: ''
-slug: postcss-pluginy
 perex: ''
 published: false
 category: []

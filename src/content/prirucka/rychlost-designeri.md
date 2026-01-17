@@ -1,7 +1,6 @@
 ---
 id: rychlost-designeri
 heading: ''
-slug: rychlost-designeri
 perex: ''
 published: true
 category: []

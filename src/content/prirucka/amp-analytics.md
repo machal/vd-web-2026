@@ -1,7 +1,6 @@
 ---
 id: amp-analytics
 heading: ''
-slug: amp-analytics
 perex: ''
 published: false
 category: []

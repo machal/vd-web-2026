@@ -1,7 +1,6 @@
 ---
 id: rychlost-designeri
 heading: 'Rychlost načítání: Úvod pro designéry, marketéry a majitele webů'
-slug: 'rychlost-nacitani-uvod-pro-designery-marketery-a-majitele-webu'
 date: 2017-05-02
 perex: 'Rychlost nemůžete nechat jen na vývojářích. V článku si shrneme, proč je fajn mít rychlé weby. Povíme si také o nejdůležitějších nástrojích a optimalizačních technikách.'
 published: true

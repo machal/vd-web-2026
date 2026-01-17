@@ -1,7 +1,6 @@
 ---
 id: lazy-loading-obrazku
 heading: 'Lazy loading obrázků a iframe: Kompletní průvodce implementací (včetně nativní podpory v prohlížečích)'
-slug: 'lazy-loading-obrazku-a-iframe-kompletni-pruvodce-implementaci-vcetne-nativni-podpory-v-prohlizecich'
 date: 2019-08-14
 perex: 'Velký text, ve kterém se podíváme na konkrétní možnosti implementace lazy loadingu do vašich webů. Od nativní podpory v prohlížečích po knihovny nebo vliv na SEO a UX.'
 published: true

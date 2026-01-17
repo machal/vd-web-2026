@@ -1,7 +1,6 @@
 ---
 id: css-display
 heading: ''
-slug: css-display
 perex: ''
 published: true
 category: []

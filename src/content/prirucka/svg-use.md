@@ -1,7 +1,6 @@
 ---
 id: svg-use
 heading: ''
-slug: svg-use
 perex: ''
 published: true
 category: []

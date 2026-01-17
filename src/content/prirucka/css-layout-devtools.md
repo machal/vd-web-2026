@@ -1,7 +1,6 @@
 ---
 id: css-layout-devtools
 heading: ''
-slug: css-layout-devtools
 perex: ''
 published: false
 category: []

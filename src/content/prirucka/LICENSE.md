@@ -1,7 +1,6 @@
 ---
 id: LICENSE
 heading: ''
-slug: LICENSE
 perex: ''
 published: false
 category: []

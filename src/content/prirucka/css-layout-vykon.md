@@ -1,7 +1,6 @@
 ---
 id: css-layout-vykon
 heading: ''
-slug: css-layout-vykon
 perex: ''
 published: false
 category: []

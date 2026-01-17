@@ -1,7 +1,6 @@
 ---
 id: plne-responzivni-typografie
 heading: ''
-slug: plne-responzivni-typografie
 perex: ''
 published: false
 category: []

@@ -1,7 +1,6 @@
 ---
 id: gutenberg
 heading: 'Gutenberg: Co je zač ten emoce vyvolávající editor (nejen) pro WordPress?'
-slug: 'gutenberg-co-je-zac-ten-emoce-vyvolavajici-editor-nejen-pro-wordpress'
 date: 2018-11-08
 perex: 'Gutenberg je plugin pro vizuální tvorbu strukturovaného obsahu, který může přinést výraznou inovaci do tvorby webů nejen prostřednictvím WordPressu.'
 published: true

@@ -1,7 +1,6 @@
 ---
 id: rem-em-zoom
 heading: ''
-slug: rem-em-zoom
 perex: ''
 published: false
 category: []

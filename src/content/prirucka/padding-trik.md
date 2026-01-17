@@ -1,7 +1,6 @@
 ---
 id: padding-trik
 heading: ''
-slug: padding-trik
 perex: ''
 published: true
 category: []

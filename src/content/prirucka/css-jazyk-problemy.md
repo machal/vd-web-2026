@@ -1,7 +1,6 @@
 ---
 id: css-jazyk-problemy
 heading: ''
-slug: css-jazyk-problemy
 perex: ''
 published: true
 category: []

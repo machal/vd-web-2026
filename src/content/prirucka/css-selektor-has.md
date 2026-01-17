@@ -1,7 +1,6 @@
 ---
 id: css-selektor-has
 heading: ''
-slug: css-selektor-has
 perex: ''
 published: true
 category: []

@@ -1,7 +1,6 @@
 ---
 id: css-image-set
 heading: ''
-slug: css-image-set
 perex: ''
 published: true
 category: []

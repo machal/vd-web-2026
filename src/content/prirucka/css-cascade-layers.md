@@ -1,7 +1,6 @@
 ---
 id: css-cascade-layers
 heading: 'CSS Cascade Layers: budou vrstvy revolucí organizace stylů?'
-slug: 'css-cascade-layers-budou-vrstvy-revoluci-organizace-stylu'
 date: 2022-11-24
 perex: 'Styly máme všichni rádi, ale jejich organizace nám občas působí těžkosti. Nové pravidlo @layer a vrstvení stylů nám může pomoci. Že by to byl konec těžkopádného přetěžování specificity? Uvidíme.'
 published: true

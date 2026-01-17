@@ -1,7 +1,6 @@
 ---
 id: amp-obory-obsahove
 heading: ''
-slug: amp-obory-obsahove
 perex: ''
 published: false
 category: []

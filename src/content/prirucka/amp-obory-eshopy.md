@@ -1,7 +1,6 @@
 ---
 id: amp-obory-eshopy
 heading: ''
-slug: amp-obory-eshopy
 perex: ''
 published: false
 category: []

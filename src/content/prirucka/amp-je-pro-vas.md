@@ -1,7 +1,6 @@
 ---
 id: amp-je-pro-vas
 heading: ''
-slug: amp-je-pro-vas
 perex: ''
 published: false
 category: []

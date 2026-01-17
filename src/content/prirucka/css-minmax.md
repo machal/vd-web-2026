@@ -1,7 +1,6 @@
 ---
 id: css-minmax
 heading: ''
-slug: css-minmax
 perex: ''
 published: true
 category: []

@@ -1,7 +1,6 @@
 ---
 id: amp-html-css-komponenty
 heading: ''
-slug: amp-html-css-komponenty
 perex: ''
 published: false
 category: []

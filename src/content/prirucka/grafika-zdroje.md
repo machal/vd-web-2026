@@ -1,7 +1,6 @@
 ---
 id: grafika-zdroje
 heading: ''
-slug: grafika-zdroje
 perex: ''
 published: false
 category: []

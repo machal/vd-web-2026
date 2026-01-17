@@ -1,7 +1,6 @@
 ---
 id: css-all-inherit-initial-unset-revert
 heading: ''
-slug: css-all-inherit-initial-unset-revert
 perex: ''
 published: true
 category: []

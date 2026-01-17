@@ -1,7 +1,6 @@
 ---
 id: amp-platformy
 heading: 'AMP: Odkud vám přinese návštěvnost pro web?'
-slug: amp-odkud-vam-prinese-navstevnost-pro-web
 date: 2019-07-04
 perex: 'Platformy, které využívají AMP. Není to jen vyhledávání na Google, ale také třeba LinkedIn, Pinterest, Bing a trochu i Twitter.'
 published: true

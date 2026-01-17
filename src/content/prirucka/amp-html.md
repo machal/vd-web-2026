@@ -1,7 +1,6 @@
 ---
 id: amp-html
 heading: 'AMP HTML: Čím se liší oproti HTML, co zakazuje a co nového přináší?'
-slug: 'amp-html-cim-se-lisi-oproti-html-co-zakazuje-a-co-noveho-prinasi'
 date: 2019-07-19
 perex: 'AMP HTML je norma vycházející z HTML 5 – upravuje si ji ale směrem k cílům této technologie: k rychlosti a použitelnosti.'
 published: true

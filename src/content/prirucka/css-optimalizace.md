@@ -1,7 +1,6 @@
 ---
 id: css-optimalizace
 heading: 'CSS: Optimalizace datové velikosti'
-slug: css-optimalizace-datove-velikosti
 date: 2019-06-12
 perex: 'Velký článek o krocích, které je potřeba udělat ke zmenšení datového objemu stylů. Datová velikost CSS je totiž důležitá a každý bajt se počítá.'
 published: true

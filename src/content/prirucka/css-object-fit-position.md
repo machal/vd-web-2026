@@ -1,7 +1,6 @@
 ---
 id: css-object-fit-position
 heading: ''
-slug: css-object-fit-position
 perex: ''
 published: true
 category: []

@@ -1,7 +1,6 @@
 ---
 id: css-grid-inspirace
 heading: ''
-slug: css-grid-inspirace
 perex: ''
 published: true
 category: []

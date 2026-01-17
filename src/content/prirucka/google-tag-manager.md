@@ -1,7 +1,6 @@
 ---
 id: google-tag-manager
 heading: 'Google Tag Manager: návod na přežití pro vývojáře'
-slug: google-tag-manager-navod-na-preziti-pro-vyvojare
 date: 2021-04-14
 perex: 'Cenu popularity by GTM u vývojářů nevyhrál. Přesto si naši pozornost zaslouží, protože zodpovědnost za jeho fungování na webu sdílíme s marketéry. Martin Kolář v textu vysvětluje detaily a rozebírá pojmy jako dataLayer, trigger, workspace a to vše ve'
 published: true

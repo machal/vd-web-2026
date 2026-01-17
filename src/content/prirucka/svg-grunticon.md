@@ -1,7 +1,6 @@
 ---
 id: svg-grunticon
 heading: ''
-slug: svg-grunticon
 perex: ''
 published: true
 category: []

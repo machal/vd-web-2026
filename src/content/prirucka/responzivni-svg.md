@@ -1,7 +1,6 @@
 ---
 id: responzivni-svg
 heading: 'Responzivní SVG'
-slug: responzivni-svg
 date: 2017-06-26
 perex: 'Další ukázka z e-booku „Vzhůru do (responzivního) webdesignu“. Jak bez hacků zařídit pružné zobrazování SVG ve všech prohlížečích? A jak na plně responzivní SVG s přizpůsobivým obsahem?'
 published: true

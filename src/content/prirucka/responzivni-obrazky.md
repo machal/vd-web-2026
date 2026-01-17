@@ -1,7 +1,6 @@
 ---
 id: responzivni-obrazky
 heading: ''
-slug: responzivni-obrazky
 perex: ''
 published: true
 category: []

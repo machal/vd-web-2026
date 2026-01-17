@@ -1,7 +1,6 @@
 ---
 id: chrome-ux-report
 heading: 'Chrome UX Report: Data o rychlosti webu přímo od uživatelů'
-slug: 'chrome-ux-report-data-o-rychlosti-webu-primo-od-uzivatelu'
 date: 2019-12-12
 perex: 'Stáhněte si údaje z databáze dat o rychlosti uživatelského prožitku, kterou o webech sbírají všechny verze prohlížeče Chrome.'
 published: true

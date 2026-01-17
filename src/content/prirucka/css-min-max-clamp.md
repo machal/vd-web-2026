@@ -1,7 +1,6 @@
 ---
 id: css-min-max-clamp
 heading: ''
-slug: css-min-max-clamp
 perex: ''
 published: true
 category: []

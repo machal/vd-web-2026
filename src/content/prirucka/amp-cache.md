@@ -1,7 +1,6 @@
 ---
 id: amp-cache
 heading: 'AMP Cache: Servery, které dělají zázraky s rychlostí AMP stránek'
-slug: 'amp-cache-servery-ktere-delaji-zazraky-s-rychlosti-amp-stranek'
 date: 2019-11-11
 perex: 'V další ukázce z e-booku „Vzhůru do AMP“ se budeme bavit o úložišti pro AMP stránky, kam se stahují, aby byly blíž uživateli.'
 published: true

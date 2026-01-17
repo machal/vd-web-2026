@@ -1,7 +1,6 @@
 ---
 id: viewport-windows
 heading: 'Viewport na Windows 8 a 8.1'
-slug: viewport-na-windows-8-a-81
 date: 2015-02-03
 perex: 'S viewportem jsou jen problémy. A Internet Explorer na Windows Phone 8 a 8.1 dal téhle větě nový rozměr.'
 published: true

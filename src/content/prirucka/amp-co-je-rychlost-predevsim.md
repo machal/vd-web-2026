@@ -1,7 +1,6 @@
 ---
 id: amp-co-je-rychlost-predevsim
 heading: ''
-slug: amp-co-je-rychlost-predevsim
 perex: ''
 published: false
 category: []

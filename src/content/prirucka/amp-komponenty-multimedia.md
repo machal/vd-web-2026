@@ -1,7 +1,6 @@
 ---
 id: amp-komponenty-multimedia
 heading: ''
-slug: amp-komponenty-multimedia
 perex: ''
 published: false
 category: []

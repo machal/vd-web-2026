@@ -1,7 +1,6 @@
 ---
 id: velikost-okna-css-js
 heading: ''
-slug: velikost-okna-css-js
 perex: ''
 published: true
 category: []

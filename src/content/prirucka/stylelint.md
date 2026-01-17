@@ -1,7 +1,6 @@
 ---
 id: stylelint
 heading: 'Stylelint, protože pořádek musí být. I v CSS kódu'
-slug: stylelint-protoze-poradek-musi-byt-i-v-css-kodu
 date: 2018-05-21
 perex: 'Lintujete už CSS? Měli byste. V článku se dozvíte, jak na to.'
 published: true

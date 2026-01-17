@@ -1,7 +1,6 @@
 ---
 id: testovani-odecitace
 heading: ''
-slug: testovani-odecitace
 perex: ''
 published: true
 category: []

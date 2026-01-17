@@ -1,7 +1,6 @@
 ---
 id: amp-co-reklama-analytika
 heading: ''
-slug: amp-co-reklama-analytika
 perex: ''
 published: false
 category: []

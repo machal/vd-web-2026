@@ -1,7 +1,6 @@
 ---
 id: css-kaskada
 heading: ''
-slug: css-kaskada
 perex: ''
 published: true
 category: []

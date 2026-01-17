@@ -1,7 +1,6 @@
 ---
 id: amp-co-je-webdesign
 heading: ''
-slug: amp-co-je-webdesign
 perex: ''
 published: false
 category: []

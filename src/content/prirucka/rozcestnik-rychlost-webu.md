@@ -1,7 +1,6 @@
 ---
 id: rozcestnik-rychlost-webu
 heading: ''
-slug: rozcestnik-rychlost-webu
 perex: ''
 published: false
 category: []

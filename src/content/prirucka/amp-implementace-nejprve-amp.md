@@ -1,7 +1,6 @@
 ---
 id: amp-implementace-nejprve-amp
 heading: ''
-slug: amp-implementace-nejprve-amp
 perex: ''
 published: false
 category: []

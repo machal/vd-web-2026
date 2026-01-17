@@ -1,7 +1,6 @@
 ---
 id: https
 heading: 'HTTPS: 4 důvody proč přejít a pár zkušeností k tomu'
-slug: https-4-duvody-proc-prejit-a-par-zkusenosti-k-tomu
 date: 2017-11-02
 perex: 'Zkušenosti s nedávným přesunem Vzhůru dolů na zabezpečený protokol.'
 published: true

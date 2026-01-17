@@ -1,7 +1,6 @@
 ---
 id: iphone-x
 heading: 'iPhone X: jak si pro něj nastavit weby a proč je potřeba to udělat?'
-slug: 'iphone-x-jak-si-pro-nej-nastavit-weby-a-proc-je-potreba-to-udelat'
 date: 2018-01-16
 perex: 'Nový iPhone je první rozšířené zařízení s jinou než hranatou obrazovkou. Pojďme se podívat, jak nastavit a otestovat weby nejen pro tyto typy přístrojů.'
 published: true

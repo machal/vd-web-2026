@@ -1,7 +1,6 @@
 ---
 id: viewport-meta
 heading: ''
-slug: viewport-meta
 perex: ''
 published: true
 category: []

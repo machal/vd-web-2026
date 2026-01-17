@@ -1,7 +1,6 @@
 ---
 id: rychlost-nacitani-jak
 heading: ''
-slug: rychlost-nacitani-jak
 perex: ''
 published: false
 category: []

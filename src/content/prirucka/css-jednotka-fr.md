@@ -1,7 +1,6 @@
 ---
 id: css-jednotka-fr
 heading: ''
-slug: css-jednotka-fr
 perex: ''
 published: true
 category: []

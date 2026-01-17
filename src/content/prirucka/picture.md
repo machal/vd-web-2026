@@ -1,7 +1,6 @@
 ---
 id: picture
 heading: 'Picture, nová značka pro vkládání obrázků'
-slug: picture-nova-znacka-pro-vkladani-obrazku
 date: 2017-06-21
 perex: 'Aktualiace textu o novém tagu, umožňujícím definování variant obrázku pro různé stavy v responzivním webdesignu.'
 published: true

@@ -1,7 +1,6 @@
 ---
 id: css3-background-size
 heading: 'CSS3 Background Size'
-slug: css3-background-size
 date: 2013-09-05
 perex: 'Změna velikosti obrázku na pozadí elementu.'
 published: true

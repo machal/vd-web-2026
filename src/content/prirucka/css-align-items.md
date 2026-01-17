@@ -1,7 +1,6 @@
 ---
 id: css-align-items
 heading: ''
-slug: css-align-items
 perex: ''
 published: true
 category: []

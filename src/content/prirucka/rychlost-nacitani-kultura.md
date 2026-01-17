@@ -1,7 +1,6 @@
 ---
 id: rychlost-nacitani-kultura
 heading: ''
-slug: rychlost-nacitani-kultura
 perex: ''
 published: false
 category: []

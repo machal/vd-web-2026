@@ -1,7 +1,6 @@
 ---
 id: css-pixel
 heading: 'CSS pixel'
-slug: css-pixel
 date: 2014-09-10
 perex: 'CSS pixel. Referenční pixel.'
 published: true

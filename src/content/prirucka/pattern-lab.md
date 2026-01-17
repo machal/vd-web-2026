@@ -1,7 +1,6 @@
 ---
 id: pattern-lab
 heading: ''
-slug: pattern-lab
 perex: ''
 published: true
 category: []

@@ -1,7 +1,6 @@
 ---
 id: amp-kritika
 heading: ''
-slug: amp-kritika
 perex: ''
 published: false
 category: []

@@ -1,7 +1,6 @@
 ---
 id: design-canvas
 heading: ''
-slug: design-canvas
 perex: ''
 published: false
 category: []

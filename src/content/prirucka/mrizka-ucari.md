@@ -1,7 +1,6 @@
 ---
 id: mrizka-ucari
 heading: ''
-slug: mrizka-ucari
 perex: ''
 published: false
 category: []

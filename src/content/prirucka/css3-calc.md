@@ -1,7 +1,6 @@
 ---
 id: css3-calc
 heading: ''
-slug: css3-calc
 perex: ''
 published: true
 category: []

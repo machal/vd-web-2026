@@ -1,7 +1,6 @@
 ---
 id: rozcestnik-npm-node
 heading: ''
-slug: rozcestnik-npm-node
 perex: ''
 published: true
 category: []

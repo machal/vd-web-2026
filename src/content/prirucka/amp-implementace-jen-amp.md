@@ -1,7 +1,6 @@
 ---
 id: amp-implementace-jen-amp
 heading: ''
-slug: amp-implementace-jen-amp
 perex: ''
 published: false
 category: []

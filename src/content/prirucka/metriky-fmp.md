@@ -1,7 +1,6 @@
 ---
 id: metriky-fmp
 heading: ''
-slug: metriky-fmp
 perex: ''
 published: false
 category: []

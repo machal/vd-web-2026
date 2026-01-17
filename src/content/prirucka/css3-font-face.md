@@ -1,7 +1,6 @@
 ---
 id: css3-font-face
 heading: 'CSS3 Font Face'
-slug: css3-font-face
 date: 2013-08-01
 perex: 'Vlastní fonty v CSS.'
 published: true

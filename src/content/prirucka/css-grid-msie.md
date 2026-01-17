@@ -1,7 +1,6 @@
 ---
 id: css-grid-msie
 heading: ''
-slug: css-grid-msie
 perex: ''
 published: true
 category: []

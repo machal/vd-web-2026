@@ -1,7 +1,6 @@
 ---
 id: lazy-loading
 heading: 'Lazy loading v kontextu webového frontendu: co to je a proč to dělat?'
-slug: 'lazy-loading-v-kontextu-weboveho-frontendu-co-to-je-a-proc-to-delat'
 date: 2019-08-12
 perex: 'Obecně o principu líného načtení obrázků, iframe a dalších prvků, který může zrychlit načtení stránky.'
 published: true

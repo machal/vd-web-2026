@@ -1,7 +1,6 @@
 ---
 id: viewport-windows
 heading: ''
-slug: viewport-windows
 perex: ''
 published: true
 category: []

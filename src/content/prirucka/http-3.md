@@ -1,7 +1,6 @@
 ---
 id: http-3
 heading: ''
-slug: http-3
 perex: ''
 published: true
 category: []

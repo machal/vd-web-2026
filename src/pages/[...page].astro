@@ -61,7 +61,8 @@ function getSlug(entry: any): string {
   } else if (entry.collection === 'podcast') {
     return `/podcast/${entry.slug}`;
   } else if (entry.collection === 'prirucka') {
-    return `/prirucka/${entry.slug}`;
+    // Use id from frontmatter instead of slug for prirucka
+    return `/prirucka/${entry.data.id}`;
   }
   return '#';
 }

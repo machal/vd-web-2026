@@ -1,7 +1,6 @@
 ---
 id: css-contain
 heading: ''
-slug: css-contain
 perex: ''
 published: true
 category: []

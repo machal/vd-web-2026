@@ -1,7 +1,6 @@
 ---
 id: css-box-alignment-teorie
 heading: ''
-slug: css-box-alignment-teorie
 perex: ''
 published: false
 category: []

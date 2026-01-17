@@ -1,7 +1,6 @@
 ---
 id: dokument-nastroje
 heading: ''
-slug: dokument-nastroje
 perex: ''
 published: false
 category: []

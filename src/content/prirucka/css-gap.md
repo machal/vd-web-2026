@@ -1,7 +1,6 @@
 ---
 id: css-gap
 heading: ''
-slug: css-gap
 perex: ''
 published: true
 category: []

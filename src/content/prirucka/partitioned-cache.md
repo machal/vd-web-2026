@@ -1,7 +1,6 @@
 ---
 id: partitioned-cache
 heading: ''
-slug: partitioned-cache
 perex: ''
 published: true
 category: []

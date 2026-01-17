@@ -1,7 +1,6 @@
 ---
 id: style-queries
 heading: 'Style Queries v CSS: zeptejte se na styl prvku'
-slug: style-queries-v-css-zeptejte-se-na-styl-prvku
 date: 2023-03-01
 perex: 'Po dotazech na média a na kontejner zde máme první implementaci dotazů na styl. Chrome od verze 111 umožní dotazovat se na hodnotu custom properties v konkrétním prvku. To se může hodit.'
 published: true

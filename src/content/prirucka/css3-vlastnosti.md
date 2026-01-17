@@ -1,7 +1,6 @@
 ---
 id: css3-vlastnosti
 heading: ''
-slug: css3-vlastnosti
 perex: ''
 published: false
 category: []

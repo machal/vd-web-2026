@@ -1,7 +1,6 @@
 ---
 id: css3-flexbox-polozky
 heading: ''
-slug: css3-flexbox-polozky
 perex: ''
 published: true
 category: []

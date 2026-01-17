@@ -1,7 +1,6 @@
 ---
 id: css-multicol-gap-rule
 heading: ''
-slug: css-multicol-gap-rule
 perex: ''
 published: true
 category: []

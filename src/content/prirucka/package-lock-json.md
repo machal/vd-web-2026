@@ -1,7 +1,6 @@
 ---
 id: package-lock-json
 heading: ''
-slug: package-lock-json
 perex: ''
 published: true
 category: []

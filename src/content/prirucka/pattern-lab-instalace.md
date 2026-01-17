@@ -1,7 +1,6 @@
 ---
 id: pattern-lab-instalace
 heading: ''
-slug: pattern-lab-instalace
 perex: ''
 published: false
 category: []

@@ -1,7 +1,6 @@
 ---
 id: rcss-zasady
 heading: ''
-slug: rcss-zasady
 perex: ''
 published: true
 category: []

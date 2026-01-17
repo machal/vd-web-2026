@@ -1,7 +1,6 @@
 ---
 id: css-flex-direction
 heading: ''
-slug: css-flex-direction
 perex: ''
 published: true
 category: []

@@ -1,7 +1,6 @@
 ---
 id: css3-multiple-backgrounds
 heading: 'CSS3 Multiple Backgrounds'
-slug: css3-multiple-backgrounds
 date: 2013-09-05
 perex: 'Vrstvení více obrázků nebo barev na pozadí jednoho elementu.'
 published: true

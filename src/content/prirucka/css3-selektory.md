@@ -1,7 +1,6 @@
 ---
 id: css3-selektory
 heading: 'CSS3 selektory'
-slug: css3-selektory
 date: 2013-08-07
 perex: 'CSS3 přichází s armádou nových selektorů. Nejjednodušší bude podívat se na ně optikou toho jakou verzi Internet Exploreru na svých projektech musíte podporovat, abyste je mohli použít.'
 published: true

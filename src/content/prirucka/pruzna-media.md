@@ -1,7 +1,6 @@
 ---
 id: pruzna-media
 heading: ''
-slug: pruzna-media
 perex: ''
 published: true
 category: []

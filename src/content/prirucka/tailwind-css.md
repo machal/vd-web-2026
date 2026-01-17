@@ -1,7 +1,6 @@
 ---
 id: tailwind-css
 heading: 'Tailwind CSS: další evoluční krok pro CSS frameworky'
-slug: 'tailwind-css-dalsi-evolucni-krok-pro-css-frameworky'
 date: 2021-07-21
 perex: 'Tailwind je velmi zajímavý CSS framework, postavený na atomických třídách, ale zároveň ponoukající k vytváření komponent. Pro spoustu lidí může konečně o framework jejich gusta a i mě se velmi líbí.'
 published: true

@@ -1,7 +1,6 @@
 ---
 id: css-grid-vlastnosti
 heading: ''
-slug: css-grid-vlastnosti
 perex: ''
 published: false
 category: []

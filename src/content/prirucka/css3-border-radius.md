@@ -1,7 +1,6 @@
 ---
 id: css3-border-radius
 heading: 'CSS3 Border Radius'
-slug: css3-border-radius
 date: 2013-08-01
 perex: 'Zakulacení rohů elementu.'
 published: true

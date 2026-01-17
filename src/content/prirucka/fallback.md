@@ -1,7 +1,6 @@
 ---
 id: fallback
 heading: 'Fallback'
-slug: fallback
 date: 2013-12-27
 perex: 'Ve světě webového front-endu se jedná o náhradní řešení pro prohlížeče, které neznají určitou technologii.'
 published: true

@@ -1,7 +1,6 @@
 ---
 id: speed-budget
 heading: ''
-slug: speed-budget
 perex: ''
 published: false
 category: []

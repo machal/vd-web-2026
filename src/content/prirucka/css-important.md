@@ -1,7 +1,6 @@
 ---
 id: css-important
 heading: ''
-slug: css-important
 perex: ''
 published: false
 category: []

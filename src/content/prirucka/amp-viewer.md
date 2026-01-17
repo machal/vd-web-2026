@@ -1,7 +1,6 @@
 ---
 id: amp-viewer
 heading: ''
-slug: amp-viewer
 perex: ''
 published: false
 category: []

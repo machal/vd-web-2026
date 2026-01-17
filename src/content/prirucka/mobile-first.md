@@ -1,7 +1,6 @@
 ---
 id: mobile-first
 heading: ''
-slug: mobile-first
 perex: ''
 published: true
 category: []

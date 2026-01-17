@@ -1,7 +1,6 @@
 ---
 id: css-todo
 heading: ''
-slug: css-todo
 perex: ''
 published: false
 category: []

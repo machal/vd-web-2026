@@ -1,7 +1,6 @@
 ---
 id: checklist
 heading: 'Checklist pro frontendisty před spuštěním webu (update 2021)'
-slug: 'checklist-pro-frontendisty-pred-spustenim-webu-update-2021'
 date: 2021-08-30
 perex: '[Aktualizováno] Proč dělat weby blbě, když je můžeme dělat dobře? Třeba podle checklistu ze Vzhůru dolů.'
 published: true

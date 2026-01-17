@@ -1,7 +1,6 @@
 ---
 id: argument-googlem
 heading: ''
-slug: argument-googlem
 perex: ''
 published: false
 category: []

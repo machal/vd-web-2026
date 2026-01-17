@@ -1,7 +1,6 @@
 ---
 id: ttfb
 heading: ''
-slug: ttfb
 perex: ''
 published: true
 category: []

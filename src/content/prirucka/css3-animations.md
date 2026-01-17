@@ -1,7 +1,6 @@
 ---
 id: css3-animations
 heading: 'CSS3 Animations'
-slug: css3-animations
 date: 2013-08-05
 perex: 'Možná se budete divit, ale tohle jsou první pořádné nativní webové animace vůbec. Překvapující? Všechny existující způsoby animace jsou buď zapouzdřené ve vlastním technologickém kontejneru (Gif, Flash, Silverlight …) nebo animují prostředkem, který'
 published: true

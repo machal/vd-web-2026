@@ -1,7 +1,6 @@
 ---
 id: css-grid-zkratka
 heading: ''
-slug: css-grid-zkratka
 perex: ''
 published: true
 category: []

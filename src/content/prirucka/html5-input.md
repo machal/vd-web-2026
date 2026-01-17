@@ -1,7 +1,6 @@
 ---
 id: html5-input
 heading: ''
-slug: html5-input
 perex: ''
 published: false
 category: []

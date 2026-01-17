@@ -1,7 +1,6 @@
 ---
 id: css-layout-versus
 heading: ''
-slug: css-layout-versus
 perex: ''
 published: false
 category: []

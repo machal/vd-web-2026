@@ -1,7 +1,6 @@
 ---
 id: amp-obory-blogy
 heading: ''
-slug: amp-obory-blogy
 perex: ''
 published: false
 category: []

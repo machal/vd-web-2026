@@ -1,7 +1,6 @@
 ---
 id: obrazky-formaty
 heading: ''
-slug: obrazky-formaty
 perex: ''
 published: true
 category: []

@@ -1,7 +1,6 @@
 ---
 id: rozcestnik-nastroje
 heading: ''
-slug: rozcestnik-nastroje
 perex: ''
 published: false
 category: []

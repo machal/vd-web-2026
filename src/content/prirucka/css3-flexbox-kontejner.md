@@ -1,7 +1,6 @@
 ---
 id: css3-flexbox-kontejner
 heading: ''
-slug: css3-flexbox-kontejner
 perex: ''
 published: true
 category: []

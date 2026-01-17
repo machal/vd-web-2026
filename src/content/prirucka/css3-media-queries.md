@@ -1,7 +1,6 @@
 ---
 id: css3-media-queries
 heading: 'CSS3 Media Queries'
-slug: css3-media-queries
 date: 2013-08-01
 perex: 'Dotazy na média. Podmínka, která se zajistí platnost CSS pravidel jen po svém splnění.'
 published: true

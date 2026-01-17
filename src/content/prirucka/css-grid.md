@@ -1,7 +1,6 @@
 ---
 id: css-grid-msie
 heading: 'CSS Grid v Internet Exploreru: Jde to!'
-slug: css-grid-v-internet-exploreru-jde-to
 date: 2019-01-03
 perex: 'Na vědomí se tímto dává, že díky zásadním aktualizacím v Autoprefixeru je možné Grid používat v daleko více případech než tomu bylo dosud.'
 published: true

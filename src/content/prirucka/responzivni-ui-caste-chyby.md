@@ -1,7 +1,6 @@
 ---
 id: responzivni-ui-caste-chyby
 heading: ''
-slug: responzivni-ui-caste-chyby
 perex: ''
 published: false
 category: []

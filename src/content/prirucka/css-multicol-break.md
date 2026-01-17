@@ -1,7 +1,6 @@
 ---
 id: css-multicol-break
 heading: ''
-slug: css-multicol-break
 perex: ''
 published: true
 category: []

@@ -1,7 +1,6 @@
 ---
 id: css-multicol-fill
 heading: ''
-slug: css-multicol-fill
 perex: ''
 published: true
 category: []

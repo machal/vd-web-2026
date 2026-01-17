@@ -1,7 +1,6 @@
 ---
 id: reseni-svg-hodnoceni
 heading: ''
-slug: reseni-svg-hodnoceni
 perex: ''
 published: true
 category: []

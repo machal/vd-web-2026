@@ -1,7 +1,6 @@
 ---
 id: css-subgrid
 heading: 'CSS subgrid: grid uvnitř gridu'
-slug: css-subgrid-grid-uvnitr-gridu
 date: 2023-09-20
 perex: '[AKTUALIZACE] Nově tuto velmi zajímavou část CSS gridu můžeme používat ve všech prohlížečích. V ukázce z knížky „CSS: moderní layout“ se podmřížce podíváme na zub.'
 published: true

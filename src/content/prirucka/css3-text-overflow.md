@@ -1,7 +1,6 @@
 ---
 id: css3-text-overflow
 heading: 'CSS3 Text Overflow'
-slug: css3-text-overflow
 date: 2013-09-05
 perex: 'Vytečkování textu, který přesahuje šířku elementu.'
 published: true

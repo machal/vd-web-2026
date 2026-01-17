@@ -1,7 +1,6 @@
 ---
 id: js-moduly
 heading: ''
-slug: js-moduly
 perex: ''
 published: true
 category: []

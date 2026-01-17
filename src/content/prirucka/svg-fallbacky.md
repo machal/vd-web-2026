@@ -1,7 +1,6 @@
 ---
 id: svg-fallbacky
 heading: 'SVG fallbacky'
-slug: svg-fallbacky
 date: 2016-03-08
 perex: 'Pojďme prozkoumat náhradní řešení pro prohlížeče, které neumí SVG.'
 published: true

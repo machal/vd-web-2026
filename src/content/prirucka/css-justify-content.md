@@ -1,7 +1,6 @@
 ---
 id: css-justify-content
 heading: ''
-slug: css-justify-content
 perex: ''
 published: true
 category: []

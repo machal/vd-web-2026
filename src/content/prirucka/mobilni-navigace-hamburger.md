@@ -1,7 +1,6 @@
 ---
 id: mobilni-navigace-hamburger
 heading: ''
-slug: mobilni-navigace-hamburger
 perex: ''
 published: true
 category: []

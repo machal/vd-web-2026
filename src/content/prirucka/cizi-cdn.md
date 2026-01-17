@@ -1,7 +1,6 @@
 ---
 id: cizi-cdn
 heading: ''
-slug: cizi-cdn
 perex: ''
 published: false
 category: []

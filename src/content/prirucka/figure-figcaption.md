@@ -1,7 +1,6 @@
 ---
 id: figure-figcaption
 heading: ''
-slug: figure-figcaption
 perex: ''
 published: true
 category: []

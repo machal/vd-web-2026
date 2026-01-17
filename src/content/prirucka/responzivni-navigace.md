@@ -1,7 +1,6 @@
 ---
 id: responzivni-navigace
 heading: ''
-slug: responzivni-navigace
 perex: ''
 published: true
 category: []

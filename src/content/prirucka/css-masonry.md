@@ -1,7 +1,6 @@
 ---
 id: css-masonry
 heading: ''
-slug: css-masonry
 perex: ''
 published: true
 category: []

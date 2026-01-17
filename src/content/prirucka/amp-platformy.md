@@ -1,7 +1,6 @@
 ---
 id: amp-platformy
 heading: ''
-slug: amp-platformy
 perex: ''
 published: true
 category: []
