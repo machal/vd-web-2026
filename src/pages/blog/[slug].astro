@@ -57,7 +57,45 @@ const postCategories = getCategoriesForPost(post.data.tags);
 
   <Fragment slot="styles">
     <link rel="stylesheet" href="/assets/css/modules-standalone/min/article-foot.min.css" />
+    <link rel="stylesheet" href="/assets/css/modules-standalone/min/related.min.css" />
     <style>
+      /* Related articles/links */
+      .related {
+        margin: 2rem 0;
+        padding: 1rem;
+        background: var(--vd-box-bg-color);
+        border-left: 3px solid var(--vd-link-color);
+        border-radius: 0.25rem;
+      }
+      
+      .related ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      
+      .related li {
+        margin-bottom: 0.5rem;
+      }
+      
+      .related li:last-child {
+        margin-bottom: 0;
+      }
+      
+      .related a {
+        color: var(--vd-text-color);
+        text-decoration: none;
+      }
+      
+      .related a:hover,
+      .related a:focus,
+      .related a:active {
+        color: var(--vd-link-color);
+        text-decoration: underline;
+        text-decoration-color: var(--vd-link-color);
+      }
+      
+      /* Anchor links in headings - show "#" on hover */
       /* Anchor links in headings - show "#" on hover */
       @media only screen and (min-width: 740px) {
         .article h1[id] > a,

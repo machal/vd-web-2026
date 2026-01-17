@@ -1,0 +1,45 @@
+// Related articles/links
+// ======================
+//
+// Styling for .related blocks in articles (související články)
+//
+// It is standalone, so it needs core variables and mixins:
+
+@use "../core/core";
+
+// Related block
+// -------------
+
+.related {
+  margin: 2rem 0;
+  padding: 1rem;
+  background: var(--vd-box-bg-color);
+  border-left: 3px solid var(--vd-link-color);
+  border-radius: core.$vd-border-radius;
+  
+  ul {
+    @include core.reset-list;
+    margin: 0;
+  }
+  
+  li {
+    margin-bottom: 0.5rem;
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  
+  a {
+    color: var(--vd-text-color);
+    text-decoration: none;
+    
+    &:hover,
+    &:focus,
+    &:active {
+      color: var(--vd-link-color);
+      text-decoration: underline;
+      text-decoration-color: var(--vd-link-color);
+    }
+  }
+}
