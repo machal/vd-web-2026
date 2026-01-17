@@ -49,7 +49,7 @@ const articleUrl = post.collection === 'blog'
 
     <div class="row">
       <div class="col">
-        <p class="share share--footer f-sm mb-0">
+        <p class="share share--footer f-sm mt-1 mb-0">
           <strong>Sdílení potěší:</strong>
 
           <a href={`https://www.facebook.com/sharer.php?u=${encodeURIComponent(articleUrl)}`}>
@@ -60,17 +60,10 @@ const articleUrl = post.collection === 'blog'
                 c-1.232,0-1.47,0.585-1.47,1.445v1.895H19.233z"></path>
             </svg>
           </a>
-          <a href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(articleUrl)}&via=vzhurudolu`} class="share__icon">
-            <svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
-              <title>Twitter</title>
-              <path d="M15,0C6.717,0,0,6.717,0,15s6.717,15,15,15s15-6.717,15-15S23.283,0,15,0z M21.848,11.695
-                c0.008,0.148,0.01,0.296,0.01,0.445c0,4.549-3.463,9.795-9.795,9.795l0,0l0,0c-1.944,0-3.754-0.569-5.276-1.547
-                c0.269,0.032,0.543,0.049,0.821,0.049c1.613,0,3.098-0.551,4.275-1.475c-1.507-0.027-2.777-1.023-3.216-2.393
-                c0.21,0.041,0.426,0.063,0.647,0.063c0.313,0,0.619-0.043,0.908-0.122c-1.576-0.314-2.763-1.707-2.763-3.375
-                c0-0.016,0-0.029,0-0.044c0.464,0.258,0.994,0.413,1.56,0.431c-0.924-0.617-1.533-1.671-1.533-2.866
-                c0-0.631,0.171-1.222,0.467-1.731c1.697,2.083,4.234,3.454,7.098,3.598c-0.06-0.252-0.09-0.515-0.09-0.785
-                c0-1.901,1.542-3.442,3.443-3.442c0.99,0,1.885,0.418,2.514,1.087c0.784-0.154,1.521-0.441,2.188-0.835
-                c-0.258,0.804-0.805,1.478-1.516,1.904c0.696-0.083,1.36-0.268,1.979-0.542C23.105,10.603,22.521,11.209,21.848,11.695z"></path>
+          <a href={`https://x.com/intent/post?url=${encodeURIComponent(articleUrl)}&via=vzhurudolu`} class="share__icon">
+            <svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" class="share__icon">
+              <title>X</title>
+              <path d="M15,0C6.716,0,0,6.716,0,15s6.716,15,15,15s15-6.716,15-15S23.284,0,15,0z M22.8,9.4l-1.4,1.4l-4.4,4.4l-4.4-4.4l-1.4-1.4L7.2,10l4.4,4.4L7.2,18.8l1.4,1.4l4.4-4.4l4.4,4.4l1.4-1.4l-4.4-4.4L22.8,9.4z"></path>
             </svg>
           </a>
           <a href={`https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(articleUrl)}`} class="share__icon">
