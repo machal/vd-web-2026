@@ -19,14 +19,30 @@ export async function getStaticPaths() {
 const { post } = Astro.props;
 const { Content } = await post.render();
 
+// Normalizace tagu (odstranění diakritiky pro porovnávání)
+function normalizeTag(tag: string): string {
+  return tag
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '');
+}
+
 // Najít kategorie, které odpovídají tagům článku
 function getCategoriesForPost(postTags: string[] = []): CategoryConfig[] {
+  const normalizedPostTags = postTags.map(normalizeTag);
   return categories.filter(category => {
-    return category.tags.some(catTag => postTags.includes(catTag));
+    return category.tags.some(catTag => {
+      const normalizedCatTag = normalizeTag(catTag);
+      return normalizedPostTags.includes(normalizedCatTag);
+    });
   });
 }
 
 const postCategories = getCategoriesForPost(post.data.tags);
+
+// Debug: zobrazit tagy a kategorie
+// console.log('Post tags:', post.data.tags);
+// console.log('Post categories:', postCategories);
 ---
 
 <BaseLayout

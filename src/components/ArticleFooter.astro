@@ -15,6 +15,10 @@ const articleUrl = post.collection === 'blog'
   : post.collection === 'podcast'
   ? `https://www.vzhurudolu.cz/podcast/${post.slug}`
   : `https://www.vzhurudolu.cz/prirucka/${post.data.id}`;
+
+// Debug: zobrazit kategorie i když jsou prázdné (pro testování)
+// console.log('ArticleFooter - categories:', categories);
+// console.log('ArticleFooter - post tags:', post.data.tags);
 ---
 
 <div class="content-full">

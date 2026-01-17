@@ -36,10 +36,22 @@ const { Content } = await item.render();
 // Use id from frontmatter for URL
 const urlId = item.data.id;
 
+// Normalizace tagu (odstranění diakritiky pro porovnávání)
+function normalizeTag(tag: string): string {
+  return tag
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '');
+}
+
 // Najít kategorie, které odpovídají tagům článku
 function getCategoriesForPost(postTags: string[] = []): CategoryConfig[] {
+  const normalizedPostTags = postTags.map(normalizeTag);
   return categories.filter(category => {
-    return category.tags.some(catTag => postTags.includes(catTag));
+    return category.tags.some(catTag => {
+      const normalizedCatTag = normalizeTag(catTag);
+      return normalizedPostTags.includes(normalizedCatTag);
+    });
   });
 }
 
