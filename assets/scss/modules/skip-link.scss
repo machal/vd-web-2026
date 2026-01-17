@@ -1,0 +1,25 @@
+@use "../core/core";
+
+/** @define skip-link
+
+Skip Link
+=========
+
+"Skip to main content" - first link in the document
+
+*/
+
+.skip-link {
+  color: white;
+  background: rgba(core.$vd-brown-color, 0.5);
+  padding: 0.5em 1em;
+  position: absolute;
+  top: 0;
+  // off the screen:
+  right: 100%;
+}
+
+.skip-link:focus {
+  // on the screen:
+  right: auto;
+}

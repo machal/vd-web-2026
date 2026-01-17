@@ -1,0 +1,49 @@
+// VD modul boxik s barevnym pozadim
+
+// TODO
+// - section narrow zpet
+// - patri i na <pre>?
+
+// It is standalone, so it needs core variables and mixins:
+
+@use "../core/core";
+
+@mixin box-base {
+  @include core.section;
+  border-top: 1px solid var(--vd-border-color);
+  border-bottom: 1px solid var(--vd-border-color);
+  margin-top: 2.5rem;
+  margin-bottom: 1.25rem;
+}
+
+// Jednoduchy boxik v textu
+.box {
+  @include box-base;
+  padding: 1.5rem 1rem 0.5rem;
+}
+
+h2 + .box {
+  margin-top: 0;
+}
+
+// Varianta: Velky boxik ukryvajici cele bloky, napr. pro formular v objednavce
+.box--higher {
+  padding-top: 2.5rem;
+  padding-bottom: 1.5rem;
+}
+
+// Varianta: Boxik je posledni element v .conten-container,
+// takze sezere jeho spodni padding a zezdola nebude mit ramecek
+.box--latest {
+  border-bottom: 0;
+  padding-bottom: 3rem;
+  margin-bottom: -2rem;
+
+  @media only screen and (min-width: core.$vd-screen-sm) {
+    border-radius: 0 0 core.$vd-border-radius core.$vd-border-radius;
+  }
+}
+
+.article .box h2 {
+  margin-top: 0;
+}

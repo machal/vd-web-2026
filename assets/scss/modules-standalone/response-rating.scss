@@ -1,0 +1,66 @@
+/** @define response-rating
+
+Response rating
+===============
+
+Course rating (stars 1-5).
+
+Using here:
+
+- /kurzy
+
+Structure:
+
+(div).response-rating
+ div.response-rating__stars
+ p.response-rating__text
+
+*/
+
+// It is standalone, so it needs core variables and mixins:
+
+@use "../core/core";
+
+// Response rating
+// ---------------
+
+.response-rating {
+
+  // stylelint-disable plugin/selector-bem-pattern
+  // IE11 fix
+  svg {
+    display: inline-block;
+    vertical-align: top;
+  }
+  // stylelint-enable
+
+}
+
+// Response rating stars - source SVG
+// ----------------------------------
+
+.response-rating__source {
+  position: absolute;
+  width: 0;
+  top: 0;
+}
+
+// Response rating stars - star item
+// ---------------------------------
+
+// [1] We need more aggresive color than $vd-yellow-color
+
+.response-rating__star {
+  fill: #ffcf36;  // [1]
+  stroke: var(--vd-text-color);
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+
+// Response rating text
+// --------------------
+
+.response-rating__text {
+  margin-top: 0.75rem;
+  font-size: 0.75rem;
+}

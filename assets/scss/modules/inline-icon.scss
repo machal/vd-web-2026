@@ -1,0 +1,36 @@
+/** @define inline-icon
+
+Inline Icon
+===========
+
+Icon inlined with text.
+
+For example: „Package“ icon for two day courses. Visible in:
+- Homepage
+- Courses homepage
+- All table lists of courses
+
+
+Good to know:
+
+1) Uses inline <svg> defined in symbol inside HTML.
+2) Always in height and color of the text.
+3) Vertical centering old-way. It is not possible to use
+   flexbox on the parent, because of smaller screens.
+
+Markup looks like:
+
+<svg class="inline-icon">
+  <use class="inline-icon__symbol"> [1]
+
+*/
+
+.inline-icon {
+  height: 1em; // [2]
+  position: relative; // [3]
+  bottom: -0.125em; // [3]
+}
+
+.inline-icon__symbol {
+  fill: currentColor; // [2]
+}

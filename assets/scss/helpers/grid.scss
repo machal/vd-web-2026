@@ -1,0 +1,48 @@
+@use "../core/core";
+
+/** @define grid
+
+Grid
+====
+
+Grid layout similar to flexbox layout: https://www.vzhurudolu.cz/style/helpers#layout
+
+*/
+
+.grid {
+  display: grid;
+  gap: 1rem;
+  // autoprefixer: off
+  grid-auto-rows: auto;
+}
+
+.grid--2-col {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid--2-col-md {
+  @media #{core.$vd-screen-md-up} {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.grid--4-col-md {
+  @media #{core.$vd-screen-md-up} {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.grid--2-col-auto-1fr {
+  grid-template-columns: auto 1fr;
+}
+
+// Gap
+
+.gap-05 {
+  gap: 0.5rem;
+}
+
+.gap-025 {
+  gap: 0.25rem;
+}
+

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="1000" height="575" viewBox="0, 0, 1000, 575">
+  <g id="Background">
+    <rect x="0" y="0" width="1000" height="575" fill="#CFCEC0"/>
+  </g>
+  <g id="legenda">
+    <path d="M588,108 L612.667,108 L612.667,132 L588,132 L588,108 z" fill="#5FA316"/>
+    <path d="M192.5,108.5 L216.5,108.5 L216.5,132.5 L192.5,132.5 L192.5,108.5 z" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+    <text transform="matrix(1, 0, 0, 1, 506.5, 96)">
+      <tspan x="-157.806" y="-12" font-family="Foro-ExtraBold" font-size="36" fill="#48440E">device-pixel-ratio</tspan>
+      <tspan x="-280.998" y="34" font-family="Foro-Light" font-size="36" fill="#48440E">hardwarové pixely  /       css pixely</tspan>
+    </text>
+  </g>
+  <g id="devices">
+    <text transform="matrix(1, 0, 0, 1, 249, 461.5)">
+      <tspan x="-138" y="-31.5" font-family="Foro-Light" font-size="14" fill="#48440E">iPhone 3GS-</tspan>
+      <tspan x="-138" y="-13.5" font-family="Foro-Light" font-size="14" fill="#48440E">iPad 2-</tspan>
+      <tspan x="-138" y="4.5" font-family="Foro-Light" font-size="14" fill="#48440E">Samsung Galaxy Ace</tspan>
+      <tspan x="-138" y="22.5" font-family="Foro-Light" font-size="14" fill="#48440E">Laptop, desktop …</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 467, 461.5)">
+      <tspan x="-138" y="-31.5" font-family="Foro-Light" font-size="14" fill="#48440E">Samsung Galaxy S II</tspan>
+      <tspan x="-138" y="-13.5" font-family="Foro-Light" font-size="14" fill="#48440E">Nokia Lumia 900</tspan>
+      <tspan x="-138" y="4.5" font-family="Foro-Light" font-size="14" fill="#48440E">HTC Nexus One</tspan>
+      <tspan x="-138" y="22.5" font-family="Foro-Light" font-size="14" fill="#48440E">Kindle Fire HD …</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 683, 461.5)">
+      <tspan x="-138" y="-31.5" font-family="Foro-Light" font-size="14" fill="#48440E">iPhone 4-5S</tspan>
+      <tspan x="-138" y="-13.5" font-family="Foro-Light" font-size="14" fill="#48440E">iPad 3+</tspan>
+      <tspan x="-138" y="4.5" font-family="Foro-Light" font-size="14" fill="#48440E">Google Nexus 1 gen</tspan>
+      <tspan x="-138" y="22.5" font-family="Foro-Light" font-size="14" fill="#48440E">Samsung Galaxy SIII  …</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 899, 461.5)">
+      <tspan x="-138" y="-31.5" font-family="Foro-Light" font-size="14" fill="#48440E">iPhone 6 Plus</tspan>
+      <tspan x="-138" y="-13.5" font-family="Foro-Light" font-size="14" fill="#48440E">Google Nexus 5</tspan>
+      <tspan x="-138" y="4.5" font-family="Foro-Light" font-size="14" fill="#48440E">HTC One</tspan>
+      <tspan x="-138" y="22.5" font-family="Foro-Light" font-size="14" fill="#48440E">Samsung Galaxy SIV …</tspan>
+    </text>
+  </g>
+  <g id="device-pixel">
+    <text transform="matrix(1, 0, 0, 1, 182, 196)">
+      <tspan x="-12.172" y="8" font-family="Foro-Light" font-size="24" fill="#48440E">1</tspan>
+      <tspan x="1.076" y="8" font-family="Helvetica" font-size="19" fill="#48440E">×</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 406.086, 196)">
+      <tspan x="-20.584" y="8" font-family="Foro-Light" font-size="24" fill="#48440E">1.5</tspan>
+      <tspan x="9.488" y="8" font-family="Helvetica" font-size="19" fill="#48440E">×</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 616, 196)">
+      <tspan x="-12.172" y="8" font-family="Foro-Light" font-size="24" fill="#48440E">2</tspan>
+      <tspan x="1.076" y="8" font-family="Helvetica" font-size="19" fill="#48440E">×</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 832, 196)">
+      <tspan x="-12.172" y="8" font-family="Foro-Light" font-size="24" fill="#48440E">3</tspan>
+      <tspan x="1.076" y="8" font-family="Helvetica" font-size="19" fill="#48440E">×</tspan>
+    </text>
+  </g>
+  <g id="px_1x">
+    <path d="M109,228 L133.667,228 L133.667,252 L109,252 L109,228 z" fill="#5FA316"/>
+  </g>
+  <g id="px_2x">
+    <path d="M543,228 L592.333,228 L592.333,276 L543,276 L543,228 z" fill="#5FA316"/>
+  </g>
+  <g id="px_2x_Copy">
+    <path d="M758,228 L832,228 L832,300 L758,300 L758,228 z" fill="#5FA316"/>
+  </g>
+  <g id="px_1.5x">
+    <path d="M326,228 L362.833,228 L362.833,267 L326,267 L326,228 z" fill="#5FA316"/>
+  </g>
+  <g id="Layer_1"/>
+  <g id="Layer_2">
+    <g>
+      <path d="M134.5,228.5 L134.5,372.5" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+      <path d="M158.5,228.5 L158.5,372.5" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+      <path d="M182.5,228.5 L182.5,372.5" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+      <path d="M206.5,228.5 L206.5,372.5" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+      <path d="M230.5,228.5 L230.5,372.5" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+      <path d="M108.5,276.5 L256.5,276.5" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+      <path d="M108.5,252.5 L256.5,252.5" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+      <path d="M108.5,300.5 L256.5,300.5" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+      <path d="M108.5,324.5 L256.5,324.5" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+      <path d="M108.5,348.5 L256.5,348.5" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+    </g>
+  </g>
+  <g id="Layer_3">
+    <g>
+      <path d="M352.5,228.5 L352.5,372.5" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+      <path d="M376.5,228.5 L376.5,372.5" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+      <path d="M400.5,228.5 L400.5,372.5" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+      <path d="M424.5,228.5 L424.5,372.5" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+      <path d="M448.5,228.5 L448.5,372.5" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+      <path d="M326.5,276.5 L474.5,276.5" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+      <path d="M326.5,252.5 L474.5,252.5" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+      <path d="M326.5,300.5 L474.5,300.5" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+      <path d="M326.5,324.5 L474.5,324.5" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+      <path d="M326.5,348.5 L474.5,348.5" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+    </g>
+  </g>
+  <g id="Layer_3_Copy">
+    <g>
+      <path d="M568.5,228.5 L568.5,372.5" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+      <path d="M592.5,228.5 L592.5,372.5" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+      <path d="M616.5,228.5 L616.5,372.5" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+      <path d="M640.5,228.5 L640.5,372.5" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+      <path d="M664.5,228.5 L664.5,372.5" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+      <path d="M542.5,276.5 L690.5,276.5" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+      <path d="M542.5,252.5 L690.5,252.5" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+      <path d="M542.5,300.5 L690.5,300.5" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+      <path d="M542.5,324.5 L690.5,324.5" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+      <path d="M542.5,348.5 L690.5,348.5" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+    </g>
+  </g>
+  <g id="Layer_3_Copy_Copy">
+    <g>
+      <path d="M784.5,228.5 L784.5,372.5" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+      <path d="M808.5,228.5 L808.5,372.5" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+      <path d="M832.5,228.5 L832.5,372.5" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+      <path d="M856.5,228.5 L856.5,372.5" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+      <path d="M880.5,228.5 L880.5,372.5" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+      <path d="M758.5,276.5 L906.5,276.5" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+      <path d="M758.5,252.5 L906.5,252.5" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+      <path d="M758.5,300.5 L906.5,300.5" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+      <path d="M758.5,324.5 L906.5,324.5" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+      <path d="M758.5,348.5 L906.5,348.5" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+    </g>
+  </g>
+  <g id="HW_pix"/>
+</svg>

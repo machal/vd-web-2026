@@ -1,0 +1,44 @@
+@use "sass:color";
+@use "sass:meta";
+@use "../core/core";
+
+/* Code samples */
+
+// Base settings (target direct tags)
+pre {
+  overflow: auto;
+  max-width: 100%;
+  white-space: pre;
+  line-height: 1.15;
+}
+
+pre {
+  padding-bottom: 1.25rem; // no margin because of scroolbar
+  margin-bottom: 0;
+}
+
+code, kbd {
+  font-family: Inconsolata, Consolas, monospace;
+  color: var(--vd-code-color);
+  letter-spacing: -0.01rem;
+  white-space: nowrap; // mainly because of living inside <table>, /prirucka/css-box-alignment
+}
+
+pre code {
+  white-space: pre;
+}
+
+// Code inside link
+a code {
+  color: var(--vd-code-color);
+}
+
+// Code inside headings
+h1, h2, h3, h4 {
+  code {
+    color: var(--vd-text-color-lighter);
+  }
+}
+
+// Import code theme (based on e-books)
+@include meta.load-css("hljs");

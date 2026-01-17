@@ -1,0 +1,30 @@
+{
+  "name": "vzhuru-dolu",
+  "description": "Vzhůru dolů",
+  "version": "0.7.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@superkoders/modal": "^1.7",
+    "jquery": "^3.7.1",
+    "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "astro": "^4.15.0",
+    "@astrojs/sitemap": "^3.4.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/machal/vd-web-2026.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/machal/vd-web-2026#readme"
+}

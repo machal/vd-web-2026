@@ -1,0 +1,258 @@
+.b-modal {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 0.3s, z-index 0s 0.3s, visibility 0s 0.3s;
+	&__wrapper {
+		display: grid;
+		grid-template-columns: 60px 1fr 60px;
+		grid-template-rows: 50px 1fr auto auto auto;
+		grid-template-areas:
+			'header header header'
+			'prev content next'
+			'nav nav nav'
+			'title title title'
+			'desc desc desc';
+		flex-grow: 1;
+		height: 100%;
+		overflow: hidden;
+	}
+	&__header {
+		position: relative;
+		z-index: 11;
+		display: flex;
+		grid-area: header;
+		justify-content: flex-end;
+	}
+	&__title {
+		z-index: 2;
+		grid-area: title;
+		color: #ffffff;
+		text-align: center;
+	}
+	&__description {
+		z-index: 2;
+		grid-area: desc;
+		color: #ffffff;
+		text-align: center;
+	}
+	&__prev {
+		z-index: 3;
+		grid-area: 1 / 1 / 4 / 2;
+	}
+	&__next {
+		z-index: 3;
+		grid-area: 1 / 3 / 4 / 4;
+	}
+	&__content {
+		position: relative;
+		z-index: 2;
+		grid-area: 1 / 1 / 4 / 4;
+		min-height: 140px;
+		overflow: hidden;
+	}
+	&__slide {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		transition: opacity 0.3s, z-index 0s 0.3s;
+		&.is-active {
+			z-index: 2;
+			opacity: 1;
+			transition: opacity 0.3s, z-index 0s;
+		}
+	}
+	&__image,
+	&__video {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 100%;
+		> * {
+			flex: 0 0 auto;
+			width: auto;
+			max-width: 100%;
+			height: auto;
+			max-height: 100%;
+		}
+		&--multiple {
+			> * {
+				max-width: 50%;
+			}
+		}
+	}
+	&__image img {
+		user-select: none;
+	}
+	&__inner {
+		width: 100%;
+		padding: 20px;
+		background: #ffffff;
+	}
+	&__iframe {
+		height: 100%;
+		padding: 20px;
+		background: #ffffff;
+		iframe {
+			width: 100%;
+			height: 100%;
+		}
+	}
+	&__embed {
+		width: 100%;
+		height: 100%;
+		iframe {
+			width: 100%;
+			height: 100%;
+		}
+	}
+	&__nav {
+		z-index: 2;
+		display: flex;
+		grid-area: nav;
+		justify-content: center;
+		align-items: center;
+		height: 40px;
+		&:empty {
+			height: 0;
+		}
+	}
+	&__nav-item {
+		display: block;
+		width: 12px;
+		height: 12px;
+		margin: 0 8px;
+		border-radius: 50%;
+		background: #eeeeee;
+		transition: transform 0.3s;
+		cursor: pointer;
+		&.is-active {
+			transform: scale(1.2);
+		}
+	}
+	&__loader {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: 10;
+		display: none;
+		align-items: center;
+		color: #ffffff;
+		font-size: 30px;
+		justify-items: center;
+		& .icon-load {
+			width: 40px;
+			animation-name: loader;
+			animation-duration: 1s;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+		}
+	}
+	&__loader-icon {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 40px;
+		border-radius: 50%;
+		background: rgba(0, 0, 0, 0.3);
+		animation-name: loader;
+		animation-duration: 1s;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+		& > span {
+			width: 40px;
+			height: 40px;
+			line-height: 40px;
+			text-align: center;
+		}
+	}
+	&__bg {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: 1;
+		background-color: rgba(0, 0, 0, 0.8);
+	}
+	&__prev,
+	&__next {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		pointer-events: none;
+	}
+	&__prev-btn,
+	&__next-btn {
+		align-self: center;
+		width: 50px;
+		height: 50px;
+		padding: 10px;
+		border: none;
+		background-color: rgba(0, 0, 0, 0.5);
+		color: #ffffff;
+		font-size: 20px;
+		cursor: pointer;
+		pointer-events: all;
+		justify-self: center;
+	}
+	&__close {
+		width: 50px;
+		padding: 10px;
+		border: none;
+		background: none;
+		background-color: rgba(0, 0, 0, 0.5);
+		color: #ffffff;
+		font-size: 30px;
+		cursor: pointer;
+	}
+
+	&.is-opened {
+		z-index: 100;
+		visibility: visible;
+		opacity: 1;
+		transition: opacity 0.3s, z-index 0s, visibility 0s;
+	}
+	&.is-loading {
+		& .b-modal__loader {
+			display: grid;
+		}
+	}
+	&.is-first {
+		& .b-modal__prev {
+			display: none;
+		}
+	}
+	&.is-last {
+		& .b-modal__next {
+			display: none;
+		}
+	}
+}
+
+@keyframes loader {
+	from {
+		transform: rotate(360deg);
+	}
+	to {
+		transform: rotate(0deg);
+	}
+}

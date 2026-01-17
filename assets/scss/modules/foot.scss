@@ -1,0 +1,46 @@
+@use "../core/core";
+
+// VzhuruDolu.cz newsletter, socialky + paticka
+
+// --- VzhuruDolu.cz newsletter + odkazy na RSS a socialky ---
+
+.be-in-touch {
+  @include core.layout-element-limited;
+  @include core.section;
+  color: var(--vd-text-color-lighter);
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+
+  @media print {
+    display: none;
+  }
+}
+
+// --- Paticka VD ---
+
+.foot {
+  text-align: center;
+  margin-top: 0;
+
+  > hr {
+    display: none;
+  }
+
+  @media only screen and (min-width: 400px) {
+    max-width: 26rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+// logo symbol, use SVG from header
+.foot__symbol {
+  width: 20px;
+  height: 18px;
+  margin-top: 2rem;
+
+  .vd-symbol {
+    fill: #b5b397;
+  }
+}

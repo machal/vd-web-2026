@@ -1,0 +1,68 @@
+// VzhuruDolu.cz Components for AMP
+// ================================
+
+
+// Variables and mixins
+// --------------------
+
+@use "../core/core";
+
+// Components
+// ----------
+
+// UI components:
+
+// @use "../modules/ad";
+@use "../modules/active";
+@use "../modules/button";
+@use "../modules/course";
+// @use "../modules/course-avatar";
+// @use "../modules/courses-list";
+@use "../modules/figure";
+@use "../modules/foot";
+// @use "../modules/form";
+// @use "../modules/heading-tall";
+// @use "../modules/hover-highlighter";
+// @use "../modules/inflatable";
+@use "../modules/inline-icon";
+// @use "../modules/items-list";
+@use "../modules/list";
+@use "../modules/media-object";
+// @use "../modules/raised";
+@use "../modules/rwd-media";
+// @use "../modules/scheme-item";
+// @use "../modules/select";
+@use "../modules/skip-link";
+// @use "../modules/steps";
+@use "../modules/table";
+// @use "../modules/topbar";
+
+// Standalone modules:
+
+// In normal version distributed as <link> in PHP component
+
+// @use "../modules-standalone/accordion";
+@use "../modules-standalone/box";
+@use "../modules-standalone/buybar";
+@use "../modules-standalone/article";
+@use "../modules-standalone/article-foot";
+@use "../modules-standalone/course-icon";
+@use "../modules-standalone/inner-box";
+@use "../modules-standalone/emblem";
+@use "../modules-standalone/newsletter";
+// @use "../modules-standalone/response-rating";
+// @use "../modules-standalone/response";
+@use "../modules-standalone/toc";
+
+
+// Derived components:
+
+// (Overwriting UI components, because here depends on the order)
+
+@use "../modules-standalone/ad-snippet";
+
+// Page UI components:
+
+// @use "modules-standalone/pages/ebook";
+// @use "modules/pages/jobs";
+// @use "modules/pages/lector";

@@ -1,0 +1,476 @@
+@use "../core/core";
+
+// Margins and paddings helper classes
+// ===================================
+
+// We didn't generate all the classes for all the breakpoints
+// like Bootstrap for example. Bellow are handcrafted classes,
+// we really use in the code.
+
+// TODO: Everything is #body prefix now. Reasons
+// are in specificity issues.
+// Particular shits:
+// - .block-grid > li
+// - .cards p
+// - lot of elements on /lektori/michal-matuska
+// …and AMP which forbids !important.
+// When those are fixed, let's remove #body prefix and have fun. ;)
+
+// Naming
+// ------
+
+// Shortcuts:
+// like in Emmet, for example:
+// .m-    = margin
+// .pt-   = padding-top
+// .mx-   = margin-left & margin-right
+
+// Values scale:
+// 025  = .25rem
+// 05   = .5rem
+// 1    = 1rem
+// 15   = 1.5rem
+// 2    = 2rem
+// 3    = 3rem
+// a    = auto
+
+// Negative values:
+// minus-1   = -1rem
+
+// Responsive suffixes
+// -xs, -sm, -md, -lg
+
+// Examples:
+// .p-0     = padding: 0
+// .ml-1-md = margin-left: 1rem for medium breakpoint and up
+
+// stylelint-disable selector-max-specificity, selector-max-id
+
+#body {
+
+  // Margins
+  // -------
+
+  // Resetting:
+
+  .mt-0 {
+    margin-top: 0;
+  }
+
+  .mb-0 {
+    margin-bottom: 0;
+  }
+
+  .mr-0 {
+    margin-right: 0;
+  }
+
+  // Auto:
+
+  .ml-a {
+    margin-left: auto;
+  }
+
+  .mr-a {
+    margin-right: auto;
+  }
+
+  .mx-a {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  // Scale:
+
+  .m-025 {
+    margin: 0.25rem;
+  }
+
+  .mb-025 {
+    margin-bottom: 0.25rem;
+  }
+
+  .m-05 {
+    margin: 0.5rem;
+  }
+
+  .mb-05 {
+    margin-bottom: 0.5rem;
+  }
+
+  .mb-1 {
+    margin-bottom: 1rem;
+  }
+
+  .mr-025 {
+    margin-right: 0.25rem;
+  }
+
+  .mr-05 {
+    margin-right: 0.5rem;
+  }
+
+  .mr-1 {
+    margin-right: 1rem;
+  }
+
+  .mb-15 {
+    margin-bottom: 1.5rem;
+  }
+
+  .mb-2 {
+    margin-bottom: 2rem;
+  }
+
+  .mb-3 {
+    margin-bottom: 3rem;
+  }
+
+  .mt-05 {
+    margin-top: 0.5rem;
+  }
+
+  .mt-1 {
+    margin-top: 1rem;
+  }
+
+  .mt-15 {
+    margin-top: 1.5rem;
+  }
+
+  .mt-2 {
+    margin-top: 2rem;
+  }
+
+  .mt-3 {
+    margin-top: 3rem;
+  }
+
+  .ml-0125 {
+    margin-left: 0.125rem;
+  }
+
+  .ml-025 {
+    margin-left: 0.25rem;
+  }
+
+  .ml-05 {
+    margin-left: 0.5rem;
+  }
+
+  .ml-1 {
+    margin-left: 1rem;
+  }
+
+  .ml-15 {
+    margin-left: 1.5rem;
+  }
+
+  .ml-2 {
+    margin-left: 2rem;
+  }
+
+  .mx-0 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  // Minus:
+
+  // Ie. for "layout row" ("d-f mx-minus1")
+
+  .ml-minus-1 {
+    margin-left: -1rem;
+  }
+
+  .mx-minus-1 {
+    margin-left: -1rem;
+    margin-right: -1rem;
+  }
+
+  .mt-minus-2 {
+    margin-top: -2rem;
+  }
+
+  .mt-minus-1 {
+    margin-top: -1rem;
+  }
+
+  .mt-minus-15 {
+    margin-top: -1.5rem;
+  }
+
+  .mt-minus-025 {
+    margin-top: -0.25rem;
+  }
+
+  .mb-minus-15 {
+    margin-bottom: -1.5rem;
+  }
+
+  .mb-minus-2 {
+    margin-bottom: -2rem;
+  }
+
+  .mb-minus-3 {
+    margin-bottom: -3rem;
+  }
+
+  // Breakpoints:
+
+
+  .mb-0-xs {
+    @media #{core.$vd-screen-xs-up} {
+      margin-bottom: 0;
+    }
+  }
+
+  .mb-0-sm {
+    @media #{core.$vd-screen-sm-up} {
+      margin-bottom: 0;
+    }
+  }
+
+  .mb-0-md {
+    @media #{core.$vd-screen-md-up} {
+      margin-bottom: 0;
+    }
+  }
+
+  .mb-0-lg {
+    @media #{core.$vd-screen-lg-up} {
+      margin-bottom: 0;
+    }
+  }
+
+  .mr-1-xs {
+    @media #{core.$vd-screen-xs-up} {
+      margin-right: 1rem;
+    }
+  }
+
+  .mr-0-xs {
+    @media #{core.$vd-screen-xs-up} {
+      margin-right: 0;
+    }
+  }
+
+  .mr-0-sm {
+    @media #{core.$vd-screen-sm-up} {
+      margin-right: 0;
+    }
+  }
+
+  .ml-a-sm {
+    @media #{core.$vd-screen-sm-up} {
+      margin-left: auto;
+    }
+  }
+
+  .mr-a-sm {
+    @media #{core.$vd-screen-sm-up} {
+      margin-right: auto;
+    }
+  }
+
+  .mb-05-md {
+    @media #{core.$vd-screen-md-up} {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  .mr-0-md {
+    @media #{core.$vd-screen-md-up} {
+      margin-right: 0;
+    }
+  }
+
+  .mt-3-md {
+    @media #{core.$vd-screen-md-up} {
+      margin-top: 3rem;
+    }
+  }
+
+  .mx-a-md {
+    @media #{core.$vd-screen-md-up} {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  // Paddings
+  // --------
+
+  // Resetting:
+
+  .p-0 {
+    padding: 0;
+  }
+
+  .pt-0 {
+    padding-top: 0;
+  }
+
+  .pb-0 {
+    padding-bottom: 0;
+  }
+
+  .pl-0 {
+    padding-left: 0;
+  }
+
+  .pr-0 {
+    padding-right: 0;
+  }
+
+  .px-0 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  // Scale
+
+  .p-025 {
+    padding: 0.25rem;
+  }
+
+  .p-05 {
+    padding: 0.5rem;
+  }
+
+  .px-05 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .p-1 {
+    padding: 1rem;
+  }
+
+  .pt-1 {
+    padding-top: 1rem;
+  }
+
+  .pl-1 {
+    padding-left: 1rem;
+  }
+
+  .pr-1 {
+    padding-right: 1rem;
+  }
+
+  .pt-2 {
+    padding-top: 2rem;
+  }
+
+  .pt-3 {
+    padding-top: 3rem;
+  }
+
+  .pb-1 {
+    padding-bottom: 1rem;
+  }
+
+  .pb-2 {
+    padding-bottom: 2rem;
+  }
+
+  .px-1 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .px-15 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .py-05 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .py-1 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .py-15 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .py-3 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+
+  // Breakpoints:
+
+  .pr-1-xs {
+    @media #{core.$vd-screen-xs-up} {
+      padding-right: 1rem;
+    }
+  }
+
+  .pl-1-xs {
+    @media #{core.$vd-screen-xs-up} {
+      padding-left: 1rem;
+    }
+  }
+
+  .pr-0-sm {
+    @media #{core.$vd-screen-sm-up} {
+      padding-right: 0;
+    }
+  }
+
+  .pl-0-md {
+    @media #{core.$vd-screen-md-up} {
+      padding-left: 0;
+    }
+  }
+
+  .px-3-md {
+    @media #{core.$vd-screen-md-up} {
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+  }
+
+  .pt-3-md {
+    @media #{core.$vd-screen-md-up} {
+      padding-top: 3rem;
+    }
+  }
+
+  .py-15-md {
+    @media #{core.$vd-screen-md-up} {
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+    }
+  }
+
+  .py-3-md {
+    @media #{core.$vd-screen-md-up} {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+    }
+  }
+
+  // In padding-left zero:
+  // No padding variant mainly for lists
+  // (/video/webinar-rychlost-mereni)
+
+  .in-pl-075 {
+    @media #{core.$vd-screen-sm-up} {
+      ol, ul {
+        padding-left: 0.75rem;
+      }
+    }
+  }
+
+}
+
+// stylelint-enable

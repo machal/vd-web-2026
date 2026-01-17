@@ -1,0 +1,20 @@
+// 3rd Party Embeds
+// ----------------
+
+// Twitter - twitterwidget
+// Youtube, Slideshare - iframe
+// Codepen.io embed - [id^="cp_embed"]
+
+// !important because of style="" defs
+// https://www.vzhurudolu.cz/blog/101-2017
+// https://www.vzhurudolu.cz/prirucka/rychlost-designeri
+
+.article twitterwidget,
+.article iframe,
+.article [id^="cp_embed"] {
+  margin-bottom: 1.5rem !important;
+
+  @media print {
+    display: none;
+  }
+}

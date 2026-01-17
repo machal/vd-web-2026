@@ -1,0 +1,32 @@
+// Helpers for Printing
+// ====================
+
+// Let's icrease specificity.
+// There are many complicated selectors in the code
+// and AMP forbids !important.
+
+// stylelint-disable selector-max-specificity, selector-max-id
+
+#body {
+
+  // Hidden for printing
+
+  .hidden-print {
+    @media print {
+      display: none;
+    }
+  }
+
+  // Visible in print only
+
+  .print-only {
+    display: none;
+
+    @media print {
+      display: block;
+    }
+  }
+
+}
+
+// stylelint-enable

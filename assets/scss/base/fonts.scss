@@ -1,0 +1,106 @@
+// VD webfonty
+// ===========
+
+// Nejprve nadpisy, to clovek vidi jako prvni
+
+@font-face {
+  font-family: "Foro Extra Bold";
+  font-display: fallback;
+  src:
+    url(/assets/fonts/foro-extra-bold.woff2) format("woff2"),
+    url(/assets/fonts/foro-extra-bold.woff) format("woff");
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+// Pak textove pismo
+
+@font-face {
+  font-family: Capita;
+  font-display: fallback;
+  src:
+    url(/assets/fonts/CapitaReg-webfont.woff2) format("woff2"),
+    url(/assets/fonts/CapitaReg-webfont.woff) format("woff");
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+@font-face {
+  font-family: Capita;
+  font-display: fallback;
+  src:
+    url(/assets/fonts/CapitaIta-webfont.woff2) format("woff2"),
+    url(/assets/fonts/CapitaIta-webfont.woff) format("woff");
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Capita;
+  font-display: fallback;
+  src:
+    url(/assets/fonts/CapitaBol-webfont.woff2) format("woff2"),
+    url(/assets/fonts/CapitaBol-webfont.woff) format("woff");
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  font-weight: bold;
+}
+
+// Pismo pro kod
+
+@font-face {
+  font-family: Inconsolata;
+  font-display: fallback;
+  src:
+    url(/assets/fonts/inconsolata-regular.woff2?v=2) format("woff2"),
+    url(/assets/fonts/inconsolata-regular.woff?v=2) format("woff");
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+@font-face {
+  font-family: Inconsolata;
+  font-display: fallback;
+  src:
+    url(/assets/fonts/inconsolata-bold.woff2?v=2) format("woff2"),
+    url(/assets/fonts/inconsolata-bold.woff?v=2) format("woff");
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  font-weight: bold;
+}
+
+
+// Nakonec doplnkove pismo
+
+@font-face {
+  font-family: Foro;
+  font-display: fallback;
+  src:
+    url(/assets/fonts/foro-light.woff2) format("woff2"),
+    url(/assets/fonts/foro-light.woff) format("woff");
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+@font-face {
+  font-family: Foro;
+  font-display: fallback;
+  src:
+    url(/assets/fonts/foro-light-italic.woff2) format("woff2"),
+    url(/assets/fonts/foro-light-italic.woff) format("woff");
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Foro;
+  font-display: fallback;
+  src:
+    url(/assets/fonts/foro-bold.woff2) format("woff2"),
+    url(/assets/fonts/foro-bold.woff) format("woff");
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  font-weight: bold;
+}

@@ -1,0 +1,169 @@
+// VD ebook
+// =========
+
+// It is standalone, so it needs core variables and mixins:
+
+@use "sass:math";
+@use "../../core/core";
+
+
+// Hlavička
+// --------
+
+.ebook-perex {
+  margin-bottom: 1rem;
+}
+
+
+// ### Hlavička na nejmenších mobilech
+
+.ebook-perex-sentence-2 {
+  display: none;
+}
+
+@media only screen and (min-width: 300px) {
+  .ebook-perex {
+    max-width: 20rem;
+  }
+}
+
+
+@media only screen and (min-width: core.$vd-screen-sm) {
+  .ebook-perex-sentence-2 {
+    display: inline;
+  }
+}
+
+// Sekce s objednávkou a bookletem
+// -------------------------------
+
+// Layout:
+// .ebook-order
+//   .ebook-order-booklet
+//   .ebook-order-form
+
+.ebook-order {
+  .content > p:last-child {
+    margin-bottom: 0;
+  }
+
+  @media print {
+    display: none;
+  }
+}
+
+.ebook-order-booklet {
+  img {
+    max-height: 250px;
+    width: auto;
+  }
+}
+
+.ebook-order-form {
+  margin-bottom: 2rem;
+}
+
+.ebook-order-conditions {
+  margin-left: auto;
+  margin-right: auto;
+
+  @media only screen and (min-width: 480px) {
+    max-width: 32em; // Ano, em. Podle lokální velikosti
+  }
+
+  @media only screen and (min-width: 768px) {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+}
+
+.ebook-order-conditions-row {
+  display: block;
+  margin-bottom: 0.25rem;
+
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none;
+  }
+}
+
+// Loga platebnich metod
+
+.ebook-order-conditions-payments {
+  margin-bottom: 1rem;
+
+  img {
+    height: 1rem;
+    margin-right: 0.5rem;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+// Layout na velkých
+
+@media only screen and (min-width: 768px) {
+  .ebook-order {
+    @include core.clearfix;
+  }
+
+  .ebook-order-booklet {
+    float: left;
+    width: 33%;
+
+    img {
+      max-height: none;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .ebook-order-form {
+    float: right;
+    width: 66%;
+    margin-bottom: 0;
+    padding-top: 2.25rem;
+  }
+}
+
+// Firemní a skupinové licence
+// ---------------------------
+
+// TODO refactor to .row and .col
+
+.ebook-licences-references {
+  @include core.clearfix;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.ebook-licences-references > li {
+  float: left;
+  width: math.percentage(math.div(1, 3));
+  margin: 0;
+  padding: 0;
+}
+
+.ebook-licences-references [class^="image-"] {
+  padding-bottom: 100%;
+}
+
+
+// Přihlášení k odběru
+// -------------------
+
+.ebook-newsletter {
+  margin-top: -1.25rem;
+}
+
+// Objednávkový formulář
+// ---------------------
+
+.ebook-form {
+  margin-top: -2.5rem;
+}
+

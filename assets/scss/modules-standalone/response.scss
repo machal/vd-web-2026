@@ -1,0 +1,57 @@
+/** @define response
+
+Response
+========
+
+Student's review for course.
+
+Using here:
+
+- /ebooky
+- /kurzy
+
+Structure:
+
+(article).response(.response--inverse)
+ (blockquote).response__text
+    p
+  (p).mb-0.ml-2
+
+*/
+
+// It is standalone, so it needs core variables and mixins:
+
+@use "../core/core";
+
+// Response Text
+// -------------
+
+// [1] Arrow. Using EM instead of REM because of size (part of design). You
+//     can use CSS triangle generator:
+//     http://apps.eky.hk/css-triangle-generator/
+// [2] Overlap of arrow - for eliminating white line.
+
+.response__text {
+  // <blockquote> reset
+  border-left: 0;
+  color: var(--vd-text-color-lighter);
+  // Styles
+  position: relative;
+  margin: 0 0 1rem 0;
+  padding: 1.1rem 1.5rem 0.3rem 1.5rem;
+  background-color: var(--vd-box-bg-color);
+  border-radius: core.$vd-border-radius;
+
+  &::before { // [1]
+    position: absolute;
+    bottom: -0.9em; // [2]
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 1em 1em 0 1em;
+    border-color: var(--vd-box-bg-color) transparent transparent transparent;
+  }
+}
+

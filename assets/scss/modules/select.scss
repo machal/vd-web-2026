@@ -1,0 +1,24 @@
+@use "../core/core";
+
+// Styled <select>
+// ===============
+
+// Having only modifier here isn't great idea.
+// Because we have modifier, we need block too.
+// So do not style <select> directly, use .select instead.
+
+.select--inverted {
+  color: core.$vd-white-color;
+  background-color: transparent;
+  background-image: url(/assets/img/icons/select-arrow-down-white.svg);
+
+  &:active,
+  &:focus,
+  &:hover {
+    border-color: #5fa316;
+  }
+}
+
+.select--inverted option {
+  color: #2e2c09;
+}

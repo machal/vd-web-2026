@@ -1,0 +1,22 @@
+// Inflatable Image
+// ================
+
+// Increases on hover
+
+// Example: /lektori/martin-michalek
+
+.inflatable {
+  overflow: hidden;
+
+  img {
+    transition: 0.1s;
+  }
+}
+
+.inflatable:hover,
+.inflatable:active,
+.inflatable:focus {
+  img {
+    transform: scale(1.15);
+  }
+}

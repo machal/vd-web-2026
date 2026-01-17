@@ -1,0 +1,110 @@
+// Article: text článku
+// ====================
+
+// Jakykoliv delsi text. Líp formátujeme odkazy, nadpisy atd.
+
+// It is standalone, so it needs core variables and mixins:
+
+@use "../core/core";
+
+// Velikost pisma u nadpisu
+// ------------------------
+
+.article {
+  h2 {
+    @include core.f-3;
+  }
+  h3, h4, h5, h6 {
+    @include core.f-5;
+  }
+}
+
+// Nadpisy maji u clanku mirne odsazeni zezhora, aby byl
+// patrny zacatek sekce.
+// Horni padding je mensi, pokud nasleduji za pre, protoze ten
+// pouziva padding-bottom kvuli scrollovatku.
+
+.article h2 {
+  padding-top: 0.5rem;
+}
+
+.article pre + h2 {
+  padding-top: 0.25;
+}
+
+.article h3 {
+  padding-top: 0.25rem;
+}
+
+.article pre + h3 {
+  padding-top: 0;
+}
+
+// Kod za nadpisem
+// Potrebuje vice mista zezhora.
+
+.article h2 + pre,
+.article h3 + pre {
+  padding-top: 0.5rem;
+}
+
+
+// Video za nadpisem
+// Potrebuje vice mista zezhora.
+
+.article h2 + .rwd-media,
+.article h3 + .rwd-media {
+  margin-top: 0.5rem;
+}
+
+// Links in article
+// ----------------
+
+.article a {
+  text-decoration-color: core.$vd-link-underline-color;
+
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration-color: core.$vd-link-color;
+  }
+}
+
+// Links in article's headings
+// ---------------------------
+
+.article h1,
+.article h2,
+.article h3,
+.article h4,
+.article h5,
+.heading-anchored {
+  a {
+    color: inherit;
+
+    @media print {
+      text-decoration: none;
+      color: black;
+    }
+  }
+
+  a:hover,
+  a:focus,
+  a:active {
+    color: core.$vd-heading-color-active;
+
+    // Showing "#" as indicator:
+
+    @media only screen and (min-width: 740px) {
+      position: relative;
+
+      &::before {
+        content: "#";
+        position: absolute;
+        left: -1.25rem;
+        color: rgba(core.$vd-heading-color-active, 0.3);
+      }
+    }
+  }
+}
+

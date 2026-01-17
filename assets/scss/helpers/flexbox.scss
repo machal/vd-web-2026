@@ -1,0 +1,115 @@
+@use "../core/core";
+
+// Flexbox helper classes
+// ======================
+
+// Let's icrease specificity.
+// There are many complicated selectors in the code
+// and AMP forbids !important.
+
+// stylelint-disable selector-max-specificity, selector-max-id
+
+#body {
+
+  // display: flex
+  // -------------
+
+  .d-f {
+    display: flex;
+  }
+
+  .d-if {
+    display: inline-flex;
+  }
+
+  .d-f-md {
+    @media #{core.$vd-screen-md-up} {
+      display: flex;
+    }
+  }
+
+  // flex-wrap
+  // ---------
+
+  .fw-w {
+    flex-wrap: wrap;
+  }
+
+  // flex-direction:
+  // ---------------
+
+  .fd-c {
+    flex-direction: column;
+  }
+
+  .fd-r {
+    flex-direction: row;
+  }
+
+  // flex-direction on breakpoints:
+
+  .fd-c-xs {
+    @media #{core.$vd-screen-xs-up} {
+      flex-direction: column;
+    }
+  }
+
+  .fd-c-sm {
+    @media #{core.$vd-screen-sm-up} {
+      flex-direction: column;
+    }
+  }
+
+  .fd-r-xs {
+    @media #{core.$vd-screen-xs-up} {
+      flex-direction: row;
+    }
+  }
+
+  .fd-r-sm {
+    @media #{core.$vd-screen-sm-up} {
+      flex-direction: row;
+    }
+  }
+
+
+  // align-items:
+  // ------------
+
+  .ai-fe {
+    align-items: flex-end;
+  }
+
+  .ai-fs {
+    align-items: flex-start;
+  }
+
+  .ai-c {
+    align-items: center;
+  }
+
+  .ai-c-md {
+    @media #{core.$vd-screen-md-up} {
+      align-items: center;
+    }
+  }
+
+  // align-content
+  // -------------
+
+  .ac-c {
+    align-content: center;
+  }
+
+
+
+  // justify-content:
+  // ----------------
+
+  .jc-c {
+    justify-content: center;
+  }
+
+}
+
+// stylelint-enable

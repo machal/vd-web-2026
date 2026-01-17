@@ -1,0 +1,175 @@
+/*
+  Component Inner Box
+  ===================
+
+  e.g. video in the article: /prirucka/jak-testovat-responzivni-weby or /prirucka/http-2
+*/
+
+// It is standalone, so it needs core variables and mixins:
+
+@use "sass:color";
+@use "sass:math";
+@use "../core/core";
+
+
+// Main block base
+// ---------------
+
+// [1] Using secondary font to differentiate from main content.
+
+.inner-box {
+  background: var(--vd-box-bg-color);
+  font-size: 0.66rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border-radius: 3px;
+  box-shadow: 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+.inner-box {
+  a {
+    color: var(--vd-text-color);
+  }
+}
+
+// Element: Heading
+// ----------------
+
+// [1] There is something like h2, .h2 { line-height: 1.7rem; } Uuuugh!
+
+.inner-box__heading {
+  font-family: core.$vd-font-family-secondary; // [1]
+  font-size: 1em;
+  line-height: 1.4; // [1]
+  margin: 0;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+
+// Element: List of Items
+// ----------------------
+
+// (ie. job positions list)
+
+.inner-box__list {
+  @include core.reset-list;
+  margin-bottom: 1em;
+
+  @media only screen and (min-width: 340px) {
+    margin-bottom: 0;
+  }
+}
+
+
+// Element: List Item
+// ------------------
+
+// [1] Always one-liner
+
+.inner-box__list-item {
+  display: block;
+  padding: 0.3rem;
+  @include core.text-overflow; // [1]
+}
+
+// ### Borders
+
+.inner-box__list-item {
+  border-bottom: 1px solid var(--vd-border-color);
+
+  li:first-child & {
+    border-top: 1px solid var(--vd-border-color);
+  }
+}
+
+.inner-box__list-item {
+  &:hover,
+  &:focus,
+  &:active {
+    background: var(--vd-box-bg-color);
+    text-decoration: none;
+  }
+}
+
+
+// Modifier: Media Content
+// -----------------------
+
+// Picture on left, text on right.
+// (ie. video on article's end)
+
+// .inner-box--media {}
+
+// ### Base:
+
+// [1] Because of videos with white thumbnail
+// [2] Placeholder color
+
+.inner-box__video {
+  border: 1px solid var(--vd-border-color); // [1]
+  background: var(--vd-box-bg-color); // [2]
+}
+
+.inner-box--media .inner-box__medium {
+  margin-bottom: 0.5rem;
+}
+
+.inner-box--media .inner-box__heading {
+  margin-bottom: 0.5rem;
+}
+
+.inner-box--media .inner-box__text {
+  p {
+    margin-bottom: 0.5rem;
+  }
+}
+
+// ### Layout on bigger screens
+
+// Video left, text right
+
+@media only screen and (min-width: core.$vd-screen-sm) {
+
+  .inner-box--media {
+    display: flex;
+  }
+
+  .inner-box--media .inner-box__medium {
+    flex: 2.5;
+    margin-right: 1rem;
+    margin-bottom: 0;
+  }
+
+  .inner-box--media .inner-box__text {
+    flex: 1;
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+}
+
+// Modifier: Side
+// --------------
+
+.inner-box--side {
+
+  .inner-box__heading {
+    margin-bottom: 0.25rem;
+  }
+
+  @media #{core.$vd-screen-xs-up} {
+    width: math.percentage(math.div(1, 3));
+    float: right;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  @media #{core.$vd-screen-lg-up} {
+    margin-right: (math.percentage(math.div(1, 6)) * -1);
+  }
+}
+

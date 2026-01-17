@@ -1,0 +1,186 @@
+@use "sass:color";
+@use "../core/core";
+
+/**
+
+Button
+======
+
+TODO refactor
+
+*/
+
+input[type="submit"],
+button,
+.button {
+  @include core.vd-input-base;
+  color: var(--vd-text-color);
+  border-color: var(--vd-border-color);
+  background: transparent;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none; // <a> styles reset
+}
+
+// Stavy
+// -----
+
+// TODO .container kvuli specificnosti
+// napr. ".article a" -- ale mel by byt .article tam kde jsou tlacitka
+// a dalsi funkcni prvky?
+
+.button {
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none;
+    border-color: core.$vd-green-color;
+    color: core.$vd-green-color;
+  }
+}
+
+// Primární call-to-action tlačítko
+// --------------------------------
+
+input[type="submit"],
+button,
+.button {
+  &.button--primary {
+    transition: all 0.1s;
+    background: core.$vd-green-color;
+    border-color: var(--vd-text-color);
+    color: white;
+    text-shadow: none;
+    box-shadow:
+      1px 1px 2px rgba(0, 0, 0, 0.25),
+      inset -1px -1px 1px rgba(0, 0, 0, 0.25);
+
+    &:hover,
+    &:focus {
+      background: color.adjust(core.$vd-green-color, $lightness: -5%);
+      color: white;
+      border-color: var(--vd-text-color);
+    }
+
+    &:active {
+      background: color.adjust(core.$vd-green-color, $lightness: -5%);
+      color: white;
+      border-color: var(--vd-text-color);
+      box-shadow:
+        1px 1px 2px rgba(0, 0, 0, 0.25),
+        inset 1px 1px 1px rgba(0, 0, 0, 0.25);
+    }
+
+    &:disabled {
+      box-shadow: none;
+      background-color: var(--vd-text-color-lightest);
+      cursor: auto;
+    }
+  }
+}
+
+// Ostatní varianty
+// ----------------
+
+input[type="submit"],
+button,
+.button {
+  // Varianta na celou sirku
+  &.button--full {
+    display: block;
+    width: 100%;
+  }
+
+  // Siroka varianta
+  &.button--wide {
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media only screen and (min-width: 320px) {
+      width: 80%;
+    }
+
+    @media only screen and (min-width: 480px) {
+      width: 60%;
+    }
+  }
+}
+
+// Modifier: Inverted
+// ------------------
+
+// i.e. for .page-head
+
+// .container to increase specificity because of
+// the ".page-head a" declaration
+
+.container .button--inverted {
+  border-color: var(--vd-content-bg-color);
+  color: var(--vd-content-bg-color);
+  background-color: transparent;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: core.$vd-green-color;
+    border-color: core.$vd-green-color;
+  }
+}
+
+// Modifier: White
+// For /video head and so on…
+
+.container .button--white {
+  border-color: core.$vd-white-color;
+  color: core.$vd-white-color;
+  background-color: transparent;
+}
+
+// Modifier: Loading state
+// -----------------------
+
+// Impossible to combine with .button--wide
+
+.button--loading {
+  display: flex;
+  align-items: center;
+}
+
+// Added with JS:
+
+.button--loading::before {
+  content: " ";
+  width: 0.75em;
+  height: 0.75em;
+  margin-right: 0.5em;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: loading-spinner-animation 1s linear infinite;
+}
+
+// Animation:
+
+@keyframes loading-spinner-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+// Tisk
+// ----
+
+input[type="submit"],
+button,
+.button {
+  @media print {
+    display: none;
+  }
+}
+

@@ -1,0 +1,72 @@
+/** @define badge
+
+Badge
+=====
+
+*/
+
+// It is standalone, so it needs core variables and mixins:
+
+@use "../core/core";
+
+// Icon
+// ----
+
+.badge {
+  // Do not wrap inside
+  white-space: nowrap;
+  // etc:
+  font-size: 0.75em;
+  padding: 0.25em 0.5em;
+  font-weight: normal;
+  font-family: core.$vd-font-family-headings;
+  border-radius: core.$vd-border-radius-sm;
+  background: var(--vd-badge-color);
+  color: var(--vd-content-bg-color);
+  // In the case of being inside <em>
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+// Modifier: alternate, brown, color
+// ---------------------------------
+
+// i.e. in /kniha-responzivni-design
+
+.badge--brown {
+  background: var(--vd-text-color-lighter);
+}
+
+// Modifier: - yellow
+// Smaller variant to the "new" badge in .emblem component
+
+.badge--yellow {
+  background: core.$vd-yellow-color;
+}
+
+// Modifier: Small
+// ---------------
+
+.badge--sm {
+  padding: 0.175em;
+}
+
+// Modifier: White
+// ---------------
+
+// i.e. for "Nový" in /kurzy
+
+.badge--white {
+  color: core.$vd-white-color;
+}
+
+// Modifier: White
+// ---------------
+
+// i.e. for "Nový" in /video
+
+.badge--inverted {
+  border: 1px solid white;
+  background: none;
+}
+

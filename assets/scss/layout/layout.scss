@@ -1,0 +1,119 @@
+@use "../core/core";
+
+// VzhuruDolu.cz layout
+// ====================
+
+// TODO v layout systemu je trochu bordel, refaktorovat a zdokumentovat
+
+// Layout je slozeny takto:
+//   .container
+//     .logo
+//     .nav
+//     .content-container
+//       .page-head
+//         .section (nekdy)
+//           .content nebo .content-full
+//             .article (nekdy, jen formatuje typosku jako odkazy a nadpisy)
+//       .share (nekdy)
+//       .comments (nekdy)
+//       .similar-courses (nekdy)
+//     .be-in-touch // TODO rename
+//     .foot
+
+
+//  TODO nemelo by byt vse proste .content-full ?
+.full-layout-element,
+.content-full {
+  @include core.layout-element-base;
+}
+
+// Medium layout containter
+
+// 800px width because of photogallery in /amp/kurzy/javascript
+// imgs should not be bigger than its physicak size - 200px
+
+.content-medium {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.container {
+  max-width: core.$vd-screen-lg; // Aby siroke obrazky mely 1024px sirku
+  position: relative; // Kvuli .ad atd.
+  padding-top: 0.5rem;
+  padding-bottom: 0;
+  width: auto;
+  margin: 0 auto;
+
+  // Container has full-page with
+  // till iPhoneX landscape (812px)
+  // https://github.com/machal/prirucka/blob/master/content/iphone-x.md
+
+  @media screen and (min-width: 813px) {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  @media #{core.$vd-screen-lg-up} {
+    margin: 1rem auto;
+  }
+
+  // Starting at 1600px the layout is
+  // 25% bigger, including font and elements size
+
+  @media #{core.$vd-screen-xl-up} {
+    max-width: 1375px;
+  }
+
+  // Vyjimka pro stare krapoidni IE9-
+  // Proste linearni design se zamerenim na optimalni typo-radek.
+  // Obsah je pak 600 px siroky.
+  .lt-ie9 & {
+    width: 640px;
+  }
+}
+
+.content-container {
+  background: var(--vd-content-bg-color);
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.1);
+  padding-bottom: 2rem;
+
+  // Border radius on 768px+
+  // 820px = 768px + side paddings
+  // (Computed by hand)
+
+  @media only screen and (min-width: 820px) {
+    border-radius: core.$vd-border-radius;
+    overflow: hidden;
+  }
+
+  @media print {
+    box-shadow: none; // reset block shadow
+  }
+}
+
+.content {
+  @include core.layout-element-limited;
+  @include core.section;
+}
+
+
+// Simple flexbox layout (2017)
+// ----------------------------
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+
+.col {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  box-sizing: border-box;
+  width: 100%;
+}

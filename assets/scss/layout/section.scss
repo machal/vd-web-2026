@@ -1,0 +1,84 @@
+@use "../core/core";
+
+// Section - sekce v layoutu
+// =========================
+
+// Section je samostatna jednotka v obsahu odsazena zezhora a zezdola.
+// Pripadne i obarvena.
+
+// Napr. tabulka s kurzy nebo jednotlive informace
+// na strance kurzu (cena, pro koho…).
+
+.section {
+  @include core.section;
+}
+
+.section-narrower {
+  @media only screen and (min-width: 46.625rem) {
+    margin-left: 7rem;
+    margin-right: 7rem;
+  }
+}
+
+.section-first {
+  margin-top: 1rem;
+}
+
+// Vysoká sekce s nadpisem uvnitř
+
+.section-tall {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+// Vyšší (např. objednávka na /ebook)
+
+.section-taller {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+
+// Poslední na stránce
+
+.section-latest {
+  border-bottom: 0;
+  padding-bottom: 3rem;
+  margin-bottom: -2rem;
+  @media only screen and (min-width: core.$vd-screen-sm) {
+    border-radius: 0 0 core.$vd-border-radius core.$vd-border-radius;
+  }
+}
+
+// Podobjekt nadpis
+
+.section-heading {
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+// Modifikator: skryta sekce
+// -------------------------
+
+// Rozklikava se pomoci JS a .section-opener
+// [1] Animujeme max-height, height nelze
+//     http://stackoverflow.com/questions/3508605/how-can-i-transition-height-0-to-height-auto-using-css
+
+.js .section--openable {
+  transition: 0.5s;
+  height: auto; // [1]
+}
+
+.js .section--openable-hidden {
+  max-height: 0;
+  overflow: hidden;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.js .section--openable-opened {
+  max-height: 100em; // [1]
+  overflow: auto;
+}
+

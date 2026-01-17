@@ -1,0 +1,36 @@
+// VzhuruDolu.cz Components Standalone
+// ===================================
+
+// (for all.css distribution)
+
+
+// Variables and mixins
+// --------------------
+
+@use "core/core";
+
+// Components
+// ----------
+
+// UI components:
+
+@use "modules-standalone/pages/ebook";
+@use "modules-standalone/pages/lector";
+
+@use "modules-standalone/accordion";
+@use "modules-standalone/ad-snippet";
+@use "modules-standalone/article";
+@use "modules-standalone/box";
+@use "modules-standalone/buybar";
+@use "modules-standalone/course-avatar";
+@use "modules-standalone/course-icon";
+@use "modules-standalone/courses-list";
+@use "modules-standalone/comments";
+@use "modules-standalone/form";
+@use "modules-standalone/inner-box";
+@use "modules-standalone/photo-link";
+@use "modules-standalone/response-rating";
+@use "modules-standalone/response";
+@use "modules-standalone/steps";
+@use "modules-standalone/toc";
+@use "modules-standalone/topbar";

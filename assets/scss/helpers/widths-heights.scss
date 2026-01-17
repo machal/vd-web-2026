@@ -1,0 +1,243 @@
+@use "sass:math";
+@use "../core/core";
+
+// Width and height helper classes
+// ===============================
+
+// Specificity must be two classes now, because of
+// .article h2 etc. But you know… I don't like it.
+
+.container {
+
+  // Widths
+  // ------
+
+  // Auto
+
+  .w-a {
+    width: auto;
+  }
+
+  // Percentages
+
+  .w-100 {
+    width: 100%;
+  }
+
+  .w-66 {
+    width: math.percentage(math.div(2,3));
+  }
+
+  .w-50 {
+    width: 50%;
+  }
+
+  .w-33 {
+    width: math.percentage(math.div(1, 3));
+  }
+
+  .w-25 {
+    width: math.percentage(math.div(1, 4));
+  }
+
+  .w-20 {
+    width: math.percentage(math.div(1, 5));
+  }
+
+  // Breakpoints
+
+  .w-66-xs {
+    @media #{core.$vd-screen-xs-up} {
+      width: math.percentage(math.div(2, 3));
+    }
+  }
+
+  .w-75-xs {
+    @media #{core.$vd-screen-xs-up} {
+      width: math.percentage(math.div(3, 4));
+    }
+  }
+
+  .w-66-xs {
+    @media #{core.$vd-screen-xs-up} {
+      width: math.percentage(math.div(2, 3));
+    }
+  }
+
+  .w-50-xs {
+    @media #{core.$vd-screen-xs-up} {
+      width: 50%;
+    }
+  }
+
+  .w-33-xs {
+    @media #{core.$vd-screen-xs-up} {
+      width: math.percentage(math.div(1, 3));
+    }
+  }
+
+  .w-25-xs {
+    @media #{core.$vd-screen-xs-up} {
+      width: math.percentage(math.div(1, 4));
+    }
+  }
+
+  .w-20-xs {
+    @media #{core.$vd-screen-xs-up} {
+      width: math.percentage(math.div(1, 5));
+    }
+  }
+
+  .w-10-xs {
+    @media #{core.$vd-screen-xs-up} {
+      width: math.percentage(math.div(1, 10));
+    }
+  }
+
+  .w-100-sm {
+    @media #{core.$vd-screen-sm-up} {
+      width: 100%;
+    }
+  }
+
+  .w-50-sm {
+    @media #{core.$vd-screen-sm-up} {
+      width: 50%;
+    }
+  }
+
+
+  .w-33-sm {
+    @media #{core.$vd-screen-sm-up} {
+      width: math.percentage(math.div(1, 3));
+    }
+  }
+
+
+  .w-25-sm {
+    @media #{core.$vd-screen-sm-up} {
+      width: math.percentage(math.div(1, 4));
+    }
+  }
+
+  .w-100-md {
+    @media #{core.$vd-screen-md-up} {
+      width: 100%;
+    }
+  }
+
+  .w-66-sm {
+    @media #{core.$vd-screen-sm-up} {
+      width: math.percentage(math.div(2, 3));
+    }
+  }
+
+  .w-66-md {
+    @media #{core.$vd-screen-md-up} {
+      width: math.percentage(math.div(2, 3));
+    }
+  }
+
+  .w-50-md {
+    @media #{core.$vd-screen-md-up} {
+      width: math.percentage(math.div(1, 2));
+    }
+  }
+
+  .w-33-md {
+    @media #{core.$vd-screen-md-up} {
+      width: math.percentage(math.div(1, 3));
+    }
+  }
+
+  .w-25-md {
+    @media #{core.$vd-screen-md-up} {
+      width: math.percentage(math.div(1, 4));
+    }
+  }
+
+  // Ems
+
+  .w-5em {
+    width: 5em;
+  }
+
+  // Maximum widths
+
+  .maxw-5em {
+    max-width: 5em;
+  }
+
+  .maxw-7em {
+    max-width: 7em;
+  }
+
+  .maxw-40em {
+    max-width: 40em;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 2em;
+    padding-left: 2em;
+  }
+
+  .maxw-40em-md {
+    @media #{core.$vd-screen-md-up} {
+      max-width: 40em;
+      margin-right: auto;
+      margin-left: auto;
+      padding-right: 2em;
+      padding-left: 2em;
+    }
+  }
+
+  .maxw-35em {
+    max-width: 35em;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 2em;
+    padding-left: 2em;
+  }
+
+  .maxw-30em {
+    max-width: 30em;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 2em;
+    padding-left: 2em;
+  }
+
+  .maxw-20em {
+    max-width: 20em;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 2em;
+    padding-left: 2em;
+  }
+
+  // Basic widths
+
+  .w-05 {
+    width: 0.5rem;
+  }
+
+  // Basic heights
+
+  // Ie. for "card" headings ("h4 h-3")
+
+  .h-05 {
+    height: 0.5rem;
+  }
+
+  .h-4 {
+    height: 4rem;
+  }
+
+  .h-3 {
+    height: 3rem;
+  }
+
+  .h-1 {
+    height: 1rem;
+  }
+
+}

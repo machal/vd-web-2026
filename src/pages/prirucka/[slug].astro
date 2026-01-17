@@ -1,0 +1,41 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+
+export async function getStaticPaths() {
+  const prirucka = await getCollection('prirucka');
+  return prirucka.map((item) => ({
+    params: { slug: item.slug },
+    props: { item },
+  }));
+}
+
+const { item } = Astro.props;
+const { Content } = await item.render();
+---
+
+<BaseLayout
+  title={item.data.title}
+  description={item.data.description || item.data.title}
+  ogType="article"
+  ogUrl={`https://www.vzhurudolu.cz/prirucka/${item.slug}`}
+  bodyClass="section-prirucka"
+>
+  <Header />
+  
+  <main role="main" id="main" aria-label="Hlavní obsah">
+    <div class="page-head page-head--subhead">
+      <h1>{item.data.title}</h1>
+    </div>
+
+    <article class="content">
+      <Content />
+    </article>
+  </main>
+  
+  <Footer />
+  
+  <script is:inline src="/assets/js/vrdl.min.js"></script>
+</BaseLayout>

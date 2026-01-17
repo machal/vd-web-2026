@@ -1,0 +1,8 @@
+@use "../core/core";
+
+// Helpers for font properties
+// ===========================
+
+.ff-h {
+  font-family: core.$vd-font-family-headings;
+}

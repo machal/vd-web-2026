@@ -1,0 +1,169 @@
+@use "../core/core";
+
+// Color helper classes
+// ====================
+
+
+// Base colors
+// ------------
+
+.daintree-bg {
+  background: var(--vd-badge-color);
+  color: var(--vd-text-color);
+}
+
+.brown-bg {
+  background: var(--vd-text-color-lighter);
+  color: var(--vd-content-bg-color);
+}
+
+.green-bg {
+  background: core.$vd-green-color;
+  color: white;
+}
+
+.red-bg {
+  background: core.$vd-red-color;
+  color: white;
+}
+
+.yellow-bg {
+  background: core.$vd-yellow-color;
+  color: var(--vd-text-color);
+}
+
+// Text colors
+// -----------
+
+.text-color {
+  color: var(--vd-text-color);
+}
+
+.text-color-lighter {
+  color: var(--vd-text-color-lighter);
+}
+
+.text-color-lightest {
+  color: var(--vd-text-color-lightest);
+}
+
+.text-heading {
+  color: core.$vd-heading-color;
+}
+
+.text-white {
+  color: core.$vd-white-color;
+
+  @media print {
+    color: black;
+  }
+}
+
+.text-link {
+  color: core.$vd-link-color;
+}
+
+
+// Background colors
+// -----------------
+
+.bg-interactive {
+  background: var(--vd-interactive-bg-color);
+}
+
+.bg-message {
+  background: core.$vd-bg-message;
+  color: core.$vd-text-color;
+
+  a,
+  h2, h3 {
+    color: core.$vd-text-color;
+  }
+
+  a {
+    text-decoration-color: core.$vd-text-color;
+  }
+}
+
+.bg-dark {
+  background: var(--vd-text-color-lighter);
+  color: var(--vd-content-bg-color);
+
+  a,
+  h2, h3 {
+    color: var(--vd-content-bg-color);
+  }
+
+  a {
+    text-decoration-color: var(--vd-content-bg-color);
+  }
+}
+
+// White like content background
+
+.bg-content-bg {
+  background: var(--vd-content-bg-color);
+}
+
+// Always white
+
+.bg-white {
+  background: core.$vd-white-color;
+}
+
+
+// "Greys"
+// -------
+
+.grey-eee {
+  background: var(--vd-box-bg-color);
+}
+
+
+// Dark greens
+// -----------
+
+.bg-darkgreen-0 {
+  background-color: core.$vd-darkgreen-color-0;
+}
+
+.bg-darkgreen-33 {
+  background-color: core.$vd-darkgreen-color-33;
+}
+
+.bg-darkgreen-66 {
+  background-color: core.$vd-darkgreen-color-66;
+}
+
+.bg-darkgreen-100 {
+  background-color: core.$vd-darkgreen-color-100;
+}
+
+
+// Gradients
+// ---------
+
+.bg-highlight {
+  background: var(--vd-highlight-bg-color);
+}
+
+.bg-highlight-neutral {
+  background: var(--vd-highlight-neutral-bg-color);
+}
+
+// Reset
+
+.bg-transparent {
+  background: transparent;
+}
+
+
+// Suppressed text
+// ---------------
+
+.suppressed,
+.suppress {
+  opacity: 0.66;
+}
+
+

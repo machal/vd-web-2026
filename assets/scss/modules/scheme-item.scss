@@ -1,0 +1,14 @@
+// Scheme Item
+// ===========
+
+// Colored block for /style/colors
+
+.scheme-item {
+  padding: 1rem;
+  margin-bottom: 1px;
+
+  & + h2,
+  & + h3 {
+    margin-top: 1.5rem;
+  }
+}

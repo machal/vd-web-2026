@@ -1,0 +1,152 @@
+/** @define nav
+
+Navigation
+==========
+
+- Main navigation (/)
+- Innner tabs (/prirucka/css3-flexbox)
+
+*/
+
+// stylelint disable plugin/selector-bem-pattern
+
+// Structure
+// ---------
+
+// .nav
+//   (h2).nav__heading.sr-only
+//   (ul).nav__list
+//     (li).nav__item(.nav__item--active)
+//       (strong)
+//         (a|strong).nav__item-in
+
+// It is standalone, so it needs core variables and mixins:
+
+@use "../core/core";
+
+// Block
+// -----
+
+.nav {
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--vd-border-color);
+
+  @media print {
+    display: none;
+  }
+}
+
+
+// Element: List
+// -------------
+
+// Usually <ul>
+
+.nav__list {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+
+// Element: Item
+// -------------
+
+// <li>
+// Layout container
+
+.nav__item {
+  text-align: center;
+  margin: 0 0.1rem 0 0;
+  padding: 0;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+// <a> or <strong> inside <li>
+// Look and feel
+
+.nav__item-in {
+  display: block;
+  font-weight: normal;
+  padding: 0.5rem 1.25rem;
+  border-radius: core.$vd-border-radius core.$vd-border-radius 0 0;
+  border: 1px solid var(--vd-border-color-light);
+  border-bottom: 0;
+  margin-bottom: -1px; // Fix for Chrome on smaller screens, FF OK
+  transition: core.$vd-transition;
+  text-decoration: none;
+}
+
+// <a> hovers
+
+.nav__item-in {
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none;
+  }
+}
+
+// 360-600px: tiniest width
+
+.nav__item-in {
+  @media only screen and (max-width: core.$vd-screen-sm) {
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+  }
+}
+
+// Active item
+
+.nav__item--active .nav__item-in {
+  border-bottom: 1px solid white;
+}
+
+
+// Modifier: Main site navigation
+// ------------------------------
+
+.nav--site {
+  margin-bottom: 0;
+  border-bottom: 0;
+}
+
+.nav--site .nav__item-in {
+  text-decoration: none; // <a>
+}
+
+.nav--site .nav__item--active .nav__item-in {
+  color: var(--vd-background-color);
+  background-color: var(--vd-heading-color);
+  border-color: var(--vd-heading-color);
+  border-bottom: 1px solid var(--vd-heading-color); // Edge/IE hack
+}
+
+// Modification for secondary sections (like ebooks)
+// we need brown colour here so target with body class
+
+// stylelint disable selector-max-compound-selectors
+
+.section-ebooks,
+.section-kurzy,
+.section-video {
+  .nav--site .nav__item--active .nav__item-in {
+    background-color: var(--vd-text-color);
+    border-color: var(--vd-text-color);
+    border-bottom: 1px solid var(--vd-text-color); // Edge/IE hack
+  }
+}
+
+// stylelint enable
+
+// Small screens
+
+.nav--site .nav__item-in {
+  border-bottom: 0;
+  margin-bottom: 0;
+}

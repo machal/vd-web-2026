@@ -1,0 +1,47 @@
+@use "../core/core";
+
+// Media Object
+// ============
+
+// Ie. list of courses
+// /lektori/martin-michalek#kurzy
+
+.media-object {
+  display: flex;
+  margin-bottom: 1em;
+}
+
+.media-object__heading {
+  margin-bottom: 0.25rem;
+}
+
+.media-object__perex {
+  font-size: 0.8rem;
+  line-height: 1.35;
+}
+
+// Layout on larger screens
+
+@media #{core.$vd-screen-xs-up} {
+
+  .media-object__image {
+    flex: 1;
+    margin-right: 1rem;
+  }
+
+  .media-object__content {
+    flex: 3;
+  }
+
+}
+
+// Layout on smaller than XS screen
+
+@media #{core.$vd-screen-xs-down} {
+
+  .media-object {
+    display: block;
+    text-align: center;
+  }
+
+}

@@ -1,0 +1,21 @@
+//  @define photo-link; weak
+
+// Full photo link
+// ================
+
+// Transparency from start, removed on hover.
+
+.photo-link {
+  img {
+    display: block; // fill box without spaces
+    opacity: 0.6;
+    transition: opacity 0.3s;
+  }
+}
+
+.photo-link:hover,
+.photo-link:focus {
+  img {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,99 @@
+/** @define buybar
+
+Buy Bar
+=======
+
+Ad on the bottom of the page.
+For book marketing purposes.
+
+
+Structure
+---------
+
+.buybar
+  .buybar__content
+    .buybar__heading
+    .buybar__image
+      .buybar__image-img
+    .buybar__text
+    .buybar__button
+
+*/
+
+// It is standalone, so it needs core variables and mixins:
+
+@use "../core/core";
+
+// Block
+// -----
+
+.buybar {
+  background: var(--vd-text-color);
+  color: var(--vd-content-bg-color);
+  text-align: center;
+  padding-bottom: 1rem;
+  margin-top: 0;
+}
+
+@media print {
+  .buybar {
+    display: none;
+  }
+}
+
+
+// Modifier: Indented from the top
+// -------------------------------
+
+.buybar--intended {
+  margin-top: 2rem;
+}
+
+
+// Element: Image
+// --------------
+
+.buybar__image {
+  margin-bottom: 0;
+}
+
+.buybar__image-img {
+  margin-top: -2rem;
+  max-height: 5rem;
+}
+
+
+// Large Screens
+// -------------
+
+@media only screen and (min-width: 768px) {
+
+  .buybar {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .buybar__content {
+    display: flex;
+  }
+
+  .buybar__image {
+    flex: 1;
+    text-align: left;
+  }
+
+  .buybar__text {
+    flex: 3;
+    align-self: center;
+    text-align: left;
+    margin: 0;
+  }
+
+  .buybar__button {
+    flex: 2;
+    align-self: center;
+    margin: 0;
+    text-align: right;
+  }
+
+}

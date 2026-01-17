@@ -1,0 +1,141 @@
+@use "../core/core";
+
+// Reklamni buttonek na spodni hrane clanku
+
+// TODO: Lepe by mel byt standalone, ale je potreba vyresit PHP slozitosti kolem $AMPActive v sablone
+
+// -- Vzhled --
+
+.ad {
+  display: flex;
+  align-items: center;
+  font-size: core.$vd-font-size-7;
+  line-height: core.$vd-line-height-1;
+  width: 12em;
+  height: 12em;
+  text-align: center;
+  background: var(--vd-box-bg-color);
+  border-radius: 50%;
+  box-sizing: border-box;
+  transition: opacity 0.25s;
+  box-shadow: 1px 1px rgba(0, 0, 0, 0.25);
+
+  @media (max-width: 600px) {
+    font-size: 9px;
+  }
+}
+
+// -- Pozice reklamy ---
+
+.ad {
+  z-index: 50;
+  margin: 0;
+  position: absolute;
+  right: 0.5rem;
+  top: 20rem;
+  transform: translateZ(0);
+
+  @media (min-width: 1024px) {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -6rem;
+    margin-left: 21rem;
+  }
+
+  @media (min-width: 1240px) {
+    margin-left: 25.5rem;
+  }
+}
+
+// Na nejmenších to prostě nezobrazíme,
+// překrývalo to tam text nebo nadpis
+// TODO hotfix, udělat pořádně i v JS
+//   (nebo prostě zahodit, až bude lepší systém reklam)
+@media (max-width: 600px) {
+  .ad {
+    display: none !important;
+  }
+}
+
+
+// -- Vnitrni struktura --
+
+.ad {
+  a {
+    display: block;
+    border: 0;
+    color: var(--vd-text-color);
+    text-decoration: none;
+  }
+}
+
+// Stavy
+// -----
+
+.ad {
+  &:hover,
+  &:focus,
+  &:active {
+    transform: scale(1.1);
+
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+// Když je funkční JS
+// ------------------
+
+// Animujeme zobrazení a schování.
+
+.js {
+  // Zpocatku schovavame
+  .ad {
+    display: none;
+    opacity: 0;
+  }
+
+  // Pripravime k zobrazovani
+  .ad-ready {
+    display: flex;
+  }
+
+  // A nakonec zobrazime
+  .ad-visible {
+    opacity: 1;
+  }
+}
+
+
+// Varianta pro reklamu na ebook
+// -----------------------------
+
+// .ad-ebook {
+//   @media (max-width: 1023px) {
+//     top: 21rem;
+//   }
+// }
+
+.ad-ebook img {
+  height: 7em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -5em;
+
+  @media (min-width: 1024px) {
+    margin-bottom: 0.1875rem;
+  }
+}
+
+// Tisk
+// ----
+
+
+@media print {
+  .ad {
+    display: none !important;
+  }
+}

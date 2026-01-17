@@ -1,0 +1,9 @@
+@use "../core/core";
+
+// VD active
+// =========
+
+.active {
+  border: 1px solid var(--vd-border-color)-accented;
+  border-radius: core.$vd-border-radius;
+}

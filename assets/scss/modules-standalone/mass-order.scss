@@ -1,0 +1,131 @@
+// Mass order
+// ==========
+
+// Use as single component in mass course order for each month.
+
+// article.mass-order
+//  p.mass-order__form
+//    label.mass-order__checkbox
+//      input
+//  h4.mass-order__name
+//  p.mass-order__date
+//  p.mass-order__place -- docasne pryc, vse je online
+//  p.mass-order__price
+//    span.mass-order__tax
+
+// It is standalone, so it needs core variables and mixins:
+
+@use "../core/core";
+
+
+// Main block
+// ----------
+
+.mass-order {
+  position: relative;
+  display: grid;
+  align-items: center;
+  grid-column-gap: 0.5rem;
+  grid-template-columns: 5fr 30fr 30fr;
+  grid-template-areas:
+    "checkbox heading heading"
+    "checkbox date price";
+  padding: 0.5rem;
+  font-size: 0.85rem;
+  border-top: 1px solid var(--vd-border-color);
+
+  @media #{core.$vd-screen-sm-up} {
+    grid-template-columns: 5fr 20fr 65fr 15fr;
+    grid-template-areas: "checkbox date heading price";
+  }
+
+  @media #{core.$vd-screen-xl-up} {
+    font-size: 0.75rem;
+  }
+}
+
+// Element
+// -------
+// Form wrap with checkbox inside.
+
+.mass-order__form {
+  grid-area: checkbox;
+  margin: 0;
+}
+
+// Element
+// -------
+// Checkbox inside with bigger clickable area.
+// [1] Bigger clickable area solution, absolute centering with overlap.
+// [2] 10% of row + .mass-order grid-column-gap (small displays).
+// [3] 5% of row + .mass-order grid-column-gap.
+
+.mass-order__checkbox {
+  position: absolute; // [1]
+  top: 0; // [1]
+  left: 0; // [1]
+  bottom: 0; // [1]
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc( 10% + 0.5rem ); // [2]
+  cursor: pointer;
+
+  @media #{core.$vd-screen-sm-up} {
+    width: calc( 5% + 0.75rem ); // [3]
+  }
+}
+
+// Element
+// -------
+// Course name with link.
+
+.mass-order__name {
+  grid-area: heading;
+  margin: 0;
+  font-size: 0.85rem;
+  font-weight: 400;
+
+  @media #{core.$vd-screen-xl-up} {
+    font-size: 0.75rem;
+  }
+}
+
+// Element
+// -------
+// Date (j. n. Y).
+
+.mass-order__date {
+  grid-area: date;
+  margin: 0;
+}
+
+// Element
+// -------
+// Place (Praha, Brno, online...).
+
+.mass-order__place {
+  grid-area: place;
+  margin: 0;
+}
+
+// Element
+// -------
+// Price, right aligned.
+
+.mass-order__price {
+  grid-area: price;
+  margin: 0;
+  white-space: nowrap;
+  text-align: right;
+}
+
+// Element
+// -------
+// Price without tax (DPH), smaller with less focus, single line.
+
+.mass-order__tax {
+  display: block;
+  color: var(--vd-text-color-lightest);
+  font-size: 0.65rem;
+}

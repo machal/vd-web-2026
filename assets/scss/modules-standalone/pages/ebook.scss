@@ -1,0 +1,12 @@
+// VD ebook
+// =========
+
+// It is standalone, so it needs core variables and mixins:
+
+@use "../../core/core";
+
+@use "ebook-base";
+@use "ebook-head";
+@use "ebook-vdamp";
+@use "ebook-vdlayout";
+

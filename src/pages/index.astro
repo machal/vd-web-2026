@@ -1,0 +1,106 @@
+---
+// Homepage - první stránka seznamu článků
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { getCollection } from 'astro:content';
+
+// Načtení článků z Markdown souborů
+const blogPosts = await getCollection('blog');
+const podcasts = await getCollection('podcast');
+const allContent = [...blogPosts, ...podcasts]
+  .sort((a, b) => new Date(b.data.date) - new Date(a.data.date));
+
+const currentPage = 1;
+const postsPerPage = 20;
+const paginatedPosts = allContent.slice(0, postsPerPage);
+const latestPost = paginatedPosts[0];
+
+function formatDate(date: Date): string {
+  return new Intl.DateTimeFormat('cs-CZ', {
+    day: 'numeric',
+    month: 'numeric',
+    year: 'numeric',
+  }).format(date);
+}
+
+function getSlug(entry: any): string {
+  if (entry.collection === 'blog') {
+    return `/blog/${entry.slug}`;
+  } else if (entry.collection === 'podcast') {
+    return `/podcast/${entry.slug}`;
+  }
+  return '#';
+}
+---
+
+<BaseLayout
+  title="Vzhůru dolů – webová kodéřina ze všech stran"
+  description="HTML5, CSS3, responzivní design v textech a na školeních Martina Michálka."
+  bodyClass="section-home"
+>
+  <Header />
+  
+  <main role="main" id="main" aria-label="Hlavní obsah">
+    <div class="page-head page-head--line"></div>
+    <div class="section">
+      <div class="content-full pt-3-md">
+        <div class="row">
+          {latestPost && (
+            <div class="col mb-15 mb-0-md w-66-md">
+              <h2 class="mb-05 pb-0">
+                <a href={getSlug(latestPost)}>{latestPost.data.title}</a>
+              </h2>
+              <p>
+                <span class="article">
+                  <span class="text-color-lightest">
+                    {formatDate(latestPost.data.date)}
+                    —
+                  </span>
+                  {latestPost.data.description}
+                </span>
+              </p>
+              <p class="mb-0 f-6">
+                <a class="button" href={getSlug(latestPost)}>Pokračovat…</a>
+              </p>
+            </div>
+          )}
+        </div>
+      </div>
+
+      <div class="content">
+        <hr class="hr--small hr--spaced" />
+        
+        {paginatedPosts.slice(1).map((post) => (
+          <article role="article" class="mb-15">
+            <h2 class="h4 mb-05">
+              {post.collection === 'podcast' && (
+                <>
+                  <a href="/podcast">PODCAST:</a>{' '}
+                </>
+              )}
+              <a href={getSlug(post)}>{post.data.title}</a>
+            </h2>
+            <p>
+              <span class="text-color-lightest">
+                {formatDate(post.data.date)}
+                —
+              </span>
+              {post.data.description}
+            </p>
+          </article>
+        ))}
+
+        {allContent.length > postsPerPage && (
+          <p class="ta-c mt-3">
+            <a class="button" href="/p=2">Další články</a>
+          </p>
+        )}
+      </div>
+    </div>
+  </main>
+  
+  <Footer />
+  
+  <script is:inline src="/assets/js/vrdl.min.js"></script>
+</BaseLayout>

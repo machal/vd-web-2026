@@ -1,0 +1,162 @@
+// Page Head: typograhic heading
+// =============================
+
+// Using is sooo simple…
+
+// <div class="page-head">
+//   Your content here…
+// </div>
+
+// It is standalone, so it needs core variables and mixins:
+
+@use "../core/core";
+
+
+// Variables
+// ---------
+
+// Needed something in between darkest
+// and lightest color
+
+$page-head-bg: core.$vd-darkgreen-color-33;
+
+// Main block
+// ----------
+
+.page-head {
+  position: relative; // for absolute positioning .page-head__meta
+  border-top: core.$vd-border-radius solid var(--vd-heading-color);
+  background: $page-head-bg;
+  background-image: url(/assets/img/style/vd-trianglify-bright-2.svg);
+  background-position: center center;
+  background-size: cover;
+  text-align: center;
+  color: core.$vd-white-color;
+  padding: 4rem 1rem;
+  margin-bottom: 1.5rem;
+
+  @media #{core.$vd-screen-md-up} {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
+  @media #{core.$vd-screen-lg-up} {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  @media print {
+    padding: 0;
+    box-shadow: none;
+  }
+}
+
+// Element: Heading
+
+// [1] Exception for mobile and this component
+// [2] Switch margin because of .page-subhead and centering
+
+.page-head h1 {
+  margin-bottom: 0; // [2]
+
+  @media #{core.$vd-screen-sm-down} {
+    font-size: core.$vd-font-size-2; // [1]
+  }
+}
+
+.page-head h1 + p {
+  margin-top: 1rem; // [2]
+}
+
+
+// Modifier: submenu is inside
+// ---------------------------
+// Bottom padding is bigger because of pushed .page-subhead
+
+.page-head--subhead {
+  padding-bottom: 7.3rem;
+
+  @media #{core.$vd-screen-lg-up} {
+    padding-bottom: 9.3rem;
+  }
+}
+
+
+// Secondary version of head (brown for books and other sections)
+// we can use it separately with modificator class or target with body class
+
+.page-head--secondary,
+.section-ebooks .page-head,
+.section-kurzy .page-head,
+.section-autor .page-head,
+.section-video .page-head {
+  border-top: core.$vd-border-radius solid var(--vd-text-color);
+  background: core.$vd-brown-color;
+  background-image: url(/assets/img/style/vd-trianglify-brown.svg);
+}
+
+.page-head--tertiary,
+.section-user .page-head {
+  border-top: core.$vd-border-radius solid var(--vd-text-color);
+  background: #353434;
+  background-image: url(/assets/img/style/vd-trianglify-gray.svg);
+}
+
+// Link
+
+.page-head a {
+  text-decoration-color: rgba(core.$vd-white-color, 0.66);
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: core.$vd-white-color;
+    text-decoration-color: core.$vd-white-color;
+  }
+}
+
+// Modifier: line without content
+// ------------------------------
+
+// for homepage and lists of articles
+
+.page-head--line {
+  padding: 0;
+  height: 0;
+}
+
+
+// Modifier: lower
+// ----------------
+
+// for course detail
+
+.page-head--lower {
+  @media #{core.$vd-screen-lg-up} {
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+  }
+}
+
+// Block
+// -----
+
+.page-head__meta {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  padding: 0.6rem 1rem;
+  font-size: 0.9rem;
+  background-color: rgba( 46, 44, 9, 0.6 );
+}
+
+// Block
+// -----
+
+.page-head__author {
+  display: flex;
+  align-items: center;
+}

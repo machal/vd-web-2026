@@ -1,0 +1,75 @@
+@use "../core/core";
+
+/**
+
+Reference Items
+===============
+
+Item in CSS/JS reference guides.
+
+For example:
+- /prirucka/css-flexbox
+- /prirucka/css-grid
+
+Markup looks like:
+
+<div class="reference-items">
+
+  <div role="article" class="reference-items-item">
+    <h4><a href="css-align-items.md"><code>align-items</code></a></h4>
+    <p><a href="css-align-items.md"><img src="../dist/images/small/vdlayout/css-align-items-schema.png" alt="Vlastnost align-items" /></a></p>
+    <p>Zarovnání na blokové ose (obvykle svisle). <br> Např. <code>align-items: end</code> zarovná položky ke spodní hraně kontejneru.</p>
+  </div>
+
+</div>
+
+*/
+
+.reference-items {
+  border-top: 1px solid var(--vd-border-color);
+  page-break-inside: avoid;
+  margin-bottom: 1.5rem;
+}
+
+.reference-items-item {
+  padding: 0.75em 1em 0.75em 0;
+  border-bottom: 1px solid var(--vd-border-color);
+}
+
+.reference-items img {
+  display: block;
+}
+
+.reference-items a img {
+  border: 0;
+}
+
+.reference-items h4,
+.reference-items h5 {
+  font-weight: bold;
+}
+
+@media #{core.$vd-screen-xs-up} {
+
+  .reference-items p {
+    font-size: core.$vd-font-size-6;
+    margin-bottom: 0;
+  }
+
+  .reference-items h4,
+  .reference-items h5 {
+    margin-bottom: 0;
+  }
+
+  .reference-items-item {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    gap: 0.5rem 1rem;
+  }
+
+  .reference-items-item h4,
+  .reference-items-item h5 {
+    grid-column: 1 / 3;
+  }
+
+}

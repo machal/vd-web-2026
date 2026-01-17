@@ -1,0 +1,47 @@
+.share {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin-left: auto;
+}
+.share a {
+  display: block;
+  width: 1.6rem;
+  height: 1.6rem;
+  margin-left: 0.3rem;
+  text-decoration: none;
+}
+.share a:hover, .share a:focus {
+  opacity: 0.7;
+}
+.share strong {
+  margin-right: 0.7em;
+  font-weight: 400;
+}
+@media (max-width: 599px) {
+  .share strong {
+    display: none;
+  }
+}
+
+.share--footer {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.share--footer strong {
+  width: 100%;
+  margin-right: 0;
+  text-align: center;
+}
+.share--footer a {
+  margin: 0.5rem 0.3rem;
+}
+.share--footer .share__icon {
+  fill: #2e2c09;
+}
+
+.share__icon {
+  fill: #fff;
+}
+
+/*# sourceMappingURL=share.css.map */

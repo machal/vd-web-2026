@@ -1,0 +1,29 @@
+/** @define topbar */
+
+/*
+Top Bar – most important information on top of the page
+=======================================================
+*/
+
+// It is standalone, so it needs core variables and mixins:
+
+@use "../core/core";
+
+.topbar {
+  background: core.$vd-bg-dark;
+  color: white;
+  text-align: center;
+  padding: 0.5rem 1.5rem;
+  font-size: 0.8em;
+  margin-bottom: 1.5rem;
+}
+
+.topbar a {
+  text-decoration: underline;
+}
+
+@media print {
+  .topbar {
+    display: none;
+  }
+}

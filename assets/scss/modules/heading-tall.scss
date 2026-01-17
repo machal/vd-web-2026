@@ -1,0 +1,13 @@
+@use "../core/core";
+
+// Heading with height of two rows, aligned to the bottom
+
+.heading-tall-md {
+  @media #{core.$vd-screen-md-up} {
+    display: flex;
+    height: 5rem;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+}
+

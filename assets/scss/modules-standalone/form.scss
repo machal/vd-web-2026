@@ -1,0 +1,223 @@
+// VzhuruDolu.cz form
+// ==================
+
+// Struktura:
+
+// .form
+//   .form-row
+//     .form-label
+//     .form-controls
+// .form-send
+
+// It is standalone, so it needs core variables and mixins:
+
+@use "../core/core";
+
+// Řádek formuláře
+
+.form-row {
+  max-width: 34rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+}
+
+// Sloupec s názvem políčka
+
+.form-label {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+
+// Slupec s formulářovým políčkem
+// ------------------------------
+
+// TODO není to do vd-base.scss a vd-helpers.scss?
+
+// ### Šířky políček
+
+// Ve výchozím stavu (např. mobily) máme border-box
+// se stopro šířkou
+
+.form-controls {
+  textarea,
+  select,
+  input[type="text"],
+  input[type="url"],
+  input[type="tel"],
+  input[type="email"],
+  input[type="password"],
+  input[type="search"],
+  input[type="number"] {
+    box-sizing: border-box;
+    width: 100%;
+  }
+}
+
+// Maximální šířky
+
+.size-xl {
+  max-width: 15rem;
+}
+
+.size-lplus {
+  max-width: 12.5rem;
+}
+
+.size-l {
+  max-width: 10rem;
+}
+
+.size-xm {
+  max-width: 7rem;
+}
+
+.size-m {
+  max-width: 5rem;
+}
+
+.size-s {
+  max-width: 3.5rem;
+}
+
+.size-xs {
+  max-width: 2.5rem;
+}
+
+
+.form-controls {
+
+  // Radiobuttony uvnitř sloupce
+  // (např. řádek s Termíny)
+
+  label {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+
+// Označení pro povinnou položku
+
+.form-required {
+  opacity: 0.33;
+  font-size: 2rem;
+  line-height: 1rem;
+}
+
+// Nápověda
+
+.form-label small {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--vd-text-color-lighter);
+}
+
+// Inline chybová hláška z Nette
+// [1]
+// - zobecnit https://coolors.co/app/002c3a-5fa316-48440e-b43b18-ede29f
+// [2]
+// - because of .form-error small
+// [3]
+// - backend: impossible to change
+
+.form-error,
+.vd-form-error { // [3]
+  display: block;
+  font-style: italic;
+  color: #b43b18; // [1]
+  margin-top: 0.25rem;
+
+  small {
+    color: #b43b18; // [2]
+  }
+}
+
+// Řádek s odesílacím tlačítkem
+
+.form-send {
+  margin-top: 1rem;
+}
+
+
+// Layout na větších displejích
+// ----------------------------
+
+@media only screen and (min-width: 480px) {
+
+  .form-row {
+    display: flex;
+    align-items: baseline;
+  }
+
+  // Popisky formulářových polí
+
+  .form-label {
+    flex: 1.5;
+    text-align: right;
+    margin-top: 0.25rem;
+    margin-bottom: 0;
+    margin-right: 1rem;
+  }
+
+  // Varianta: uzší
+  // (např. První část v  /prace/pridat)
+
+  .form-label--narrower {
+    flex: 1;
+  }
+
+  // Formulářová políčka
+
+  .form-controls {
+    flex: 2;
+  }
+
+  // Varianta: dvousloupcový layout
+  // (např. Místo v  /prace/pridat)
+
+  .form-controls--twocol {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form-controls--twocol > label {
+    width: 50%;
+  }
+
+  // Labely políček s textarou je potřeba zarovnávat k horní hraně
+  // TODO je to moc konkrétní - řešíme tady konkrétní pole v objednávce
+  // ebooku i kurzů. Vymyslet univerzálně.
+  .form-label[for="frm-orderForm-note"],
+  .form-label[for="frm-certificatesForm-coursePersons"],
+  .form-label[for="inpt_note"],
+  .form-label[for="frm-feedbackForm-course_opinion"],
+  .form-label[for="frm-feedbackForm-course_proposals"],
+  .form-label[for="frm-newEntryForm-content"],
+  .form-label[for="frm-newEntryForm-title"],
+  .form-label[for="frm-companyForm-text"],
+  .form-label[for="frm-orderFormEbook-note"],
+  .form-label[for="frm-orderFormEbookAndBook-note"],
+  .form-label[for="frm-orderFormBook-note"],
+  .form-label[for="frm-orderFormBookCharge-note"] {
+    align-self: flex-start;
+  }
+
+}
+
+// Varianta: polozky formulare serazene pod sebou i na velkych
+// -----------------------------------------------------------
+
+.form-row--block {
+
+  @media only screen and (min-width: 480px) {
+
+    .form-label {
+      text-align: left;
+      max-width: 20rem;
+    }
+
+  }
+
+}

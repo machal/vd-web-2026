@@ -1,0 +1,106 @@
+/** @define newsletter
+
+Newsletter
+=======
+
+Signup form for MailChimp newsletter.
+Ad on the bottom of the page.
+HTML markup is from MailChimp, we just add our classes and values.
+
+
+Structure
+---------
+
+.newsletter
+  .newsletter__title
+  .newsletter__input
+  .newsletter__submit
+  .newsletter__info
+
+*/
+
+// It is standalone, so it needs core variables and mixins:
+
+
+@use "../core/core";
+
+// Block
+// -----
+
+.newsletter {
+  color: core.$vd-white-color;
+  background-color: core.$vd-brown-color;
+
+  @media print {
+    display: none;
+  }
+}
+
+// Modifier: Negate margin for courses
+// -----------------------------------
+
+.newsletter--courses {
+  margin-bottom: -2rem;
+}
+
+// Modifier: Transparent background for single page
+// ------------------------------------------------
+
+.newsletter--transparent {
+  background-color: transparent;
+}
+
+// Element: Title
+// --------------
+
+.newsletter__title {
+  color: core.$vd-white-color;
+}
+
+// Element: Input field
+// --------------------
+
+.newsletter__input[type="email"] {
+  display: inline;
+  margin: 0;
+  padding-left: 0.5em;
+  border-color: core.$vd-white-color;
+  border-radius: core.$vd-border-radius 0 0 core.$vd-border-radius;
+
+  @media only screen and (max-width: core.$vd-screen-sm) {
+    width: 10rem;
+  }
+
+  &:hover, &:focus {
+    border-color: core.$vd-white-color;
+  }
+}
+
+// Element: Submit field
+// ---------------------
+
+.newsletter__submit[type="submit"] {
+  border-radius: 0 core.$vd-border-radius core.$vd-border-radius 0;
+  border-left: 0;
+  margin: 0 0 0 -0.3rem;
+  color: core.$vd-white-color;
+  border-color: core.$vd-white-color;
+
+  @media only screen and (max-width: core.$vd-screen-sm) {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  &:hover, &:focus {
+    border-color: core.$vd-white-color;
+  }
+}
+
+// Element: More informations (optiona, e.g. partners)
+// ---------------------------------------------------
+
+.newsletter__info {
+  a {
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,96 @@
+/* @define avatar
+
+Avatar
+======
+
+*/
+
+@use "../core/core";
+
+// Main block
+// ----------
+
+// [1] img tag is inside and we have border radius here
+
+.avatar {
+  overflow: hidden; // [1]
+  display: block;
+  width: 8rem;
+  height: 8rem;
+  border: 2px solid var(--vd-text-color-lighter);
+  margin: 0 auto 0.5rem;
+  border-radius: 50%; // [1]
+  background-color: var(--vd-content-bg-color);
+
+  @media print {
+    display: none;
+  }
+}
+
+// Hover - in case of link
+// -----------------------
+
+a.avatar:hover,
+a.avatar:focus,
+a.avatar:active {
+  background-color: var(--vd-text-color);
+  border-color: var(--vd-text-color);
+}
+
+// Modifier: small avatar
+// ----------------------
+
+.avatar--sm {
+  width: 4rem;
+  height: 4rem;
+}
+
+// Modifier: extra small avatar
+// ---------------------------
+
+.avatar--xs {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+// Modifier: tiny avatar
+// ---------------------
+
+.avatar--tiny {
+  width: 1.9rem;
+  height: 1.9rem;
+}
+
+// Modifier: inline avatar
+// -----------------------
+
+.avatar--inline {
+  display: inline-block;
+  margin: 0;
+}
+
+// Modifier: with brown background
+// -------------------------------
+
+// Should have brown, not transparent background, because it is possible to have
+// two lectors, which avatars partially overflow.
+
+.avatar--brown {
+  background-color: var(--vd-text-color);
+  border-color: var(--vd-text-color-lighter);
+}
+
+a.avatar--brown:hover,
+a.avatar--brown:focus,
+a.avatar--brown:active {
+  border-color: var(--vd-content-bg-color);
+}
+
+// Element: Image
+// --------------
+
+// Small margin position tunning here.
+
+.avatar__image {
+  margin-top: 5%;
+}

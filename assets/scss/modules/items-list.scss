@@ -1,0 +1,28 @@
+@use "sass:color";
+@use "../core/core";
+
+// VzhuruDolu.cz seznam polozek (napr. /prirucka)
+
+.items-list {
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  a {
+    display: block;
+    @include core.text-overflow;
+    text-decoration: none;
+    border-radius: core.$vd-border-radius;
+    border: 1px solid var(--vd-border-color);
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    transition: 0.2s;
+  }
+  a:hover,
+  a:focus,
+  a:active {
+    color: var(--vd-link-color);
+    border-color: var(--vd-link-color);
+  }
+}

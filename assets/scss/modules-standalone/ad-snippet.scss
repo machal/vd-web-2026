@@ -1,0 +1,180 @@
+/*
+  Component Ad Snippet
+  ====================
+
+  Ads inside article text. e.g.
+  - paid job board
+  - e-book
+  - courses
+
+  https://www.vzhurudolu.cz/style/modules#ad-snippet
+*/
+
+// Structure
+// ---------
+
+// .ad-snippet
+//   .ad-snippet__scissors-top
+//   .ad-snippet__heading
+//   .ad-snippet__container
+//     .ad-snippet__image
+//     .ad-snippet__text
+//       .ad-snippet__text-heading
+//       .ad-snippet__text-content
+//   .ad-snippet__scissors-bottom
+
+// It is standalone, so it needs core variables and mixins:
+
+@use "sass:color";
+@use "../core/core";
+
+// Variables
+// ---------
+
+// Border style
+// TODO: should be globally defined
+$ad-snippet-border: 1px dashed var(--vd-border-color-light);
+
+// Scissor position Y = icon height / 2 (half height) + 1px (border), in pixels for better control
+$ad-snippet-scissors-position-y: -10px;
+
+// Scissor position X
+$ad-snippet-scissors-position-x: 8px;
+
+
+// Block
+// -----
+
+.ad-snippet {
+  position: relative;
+  border-top: $ad-snippet-border;
+  border-bottom: $ad-snippet-border;
+  padding: 0.66em;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: core.$vd-font-size-6;
+
+  @media print {
+    display: none;
+  }
+}
+
+
+// Scissors icons
+// --------------
+
+.ad-snippet__scissors {
+  display: block;
+  position: absolute;
+  width: 22px;
+  height: 18px;
+  background: var(--vd-content-bg-color);
+}
+
+.ad-snippet__scissors-svg {
+  fill: var(--vd-border-color-light);
+}
+
+.ad-snippet__scissors-top {
+  top: $ad-snippet-scissors-position-y;
+  left: $ad-snippet-scissors-position-x;
+}
+
+.ad-snippet__scissors-bottom {
+  bottom: $ad-snippet-scissors-position-y;
+  right: $ad-snippet-scissors-position-x;
+  transform: rotate(180deg); // invert scissors (to left)
+}
+
+
+// Container
+// ---------
+
+// (<a> in markup)
+
+.ad-snippet__container {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: var(--vd-text-color-lighter);
+  padding: 0.5em;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--vd-text-color-lighter);
+    background-color: var(--vd-bg-hover);
+  }
+}
+
+.ad-snippet__image {
+  max-width: 3.75em; // ~ 60px
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+// Text Heading
+// ------------
+
+.ad-snippet__text-heading {
+  font-size: core.$vd-font-size-6;
+  line-height: core.$vd-line-height-base;
+  margin-bottom: 0;
+  color: core.$vd-green-color;
+  text-decoration-color: core.$vd-green-color;
+}
+
+
+// Text Content
+// ------------
+
+.ad-snippet__text-content {
+  text-decoration: none;
+  margin-bottom: 0;
+}
+
+
+// Medium and Large Screens: Layout
+// --------------------------------
+
+@media #{core.$vd-screen-sm-up} {
+
+  .ad-snippet__container {
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: left;  // Reset for small screen style
+  }
+
+  .ad-snippet__image {
+    width: 3.75em;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin: 0; // Reset for small screen style
+  }
+
+  .ad-snippet__text {
+    flex: auto;
+    padding-right: 1rem;
+    // Vertical centering:
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+}
+
+// Modifier: Image first, then text
+// --------------------------------
+
+.ad-snippet--reverse {
+  @media #{core.$vd-screen-sm-up} {
+    .ad-snippet__container {
+      flex-direction: row;
+    }
+
+    .ad-snippet__text {
+      padding-left: 1rem;
+    }
+  }
+}

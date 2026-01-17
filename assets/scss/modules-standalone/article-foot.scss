@@ -1,0 +1,40 @@
+// Article footer
+// ==============
+
+// Use at bottom of article - share, comments and related articles are inside.
+
+// div.article-foot
+
+// It is standalone, so it needs core variables and mixins:
+
+@use "../core/core";
+
+
+// Element
+// -------
+
+// Divider with VD logo is above this block.
+
+.article-foot {
+  position: relative;
+  margin: 5rem auto 0 auto;
+  padding-top: 2.5rem;
+  font-size: 0.9rem;
+  border-top: 1px dotted var(--vd-text-color-lighter);
+}
+
+.article-foot .vd-logo {
+  display: block;
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  right: 50%;
+  width: 22px;
+  height: 16px;
+  margin-left: -11px;
+  background: var(--vd-content-bg-color);
+}
+
+.article-foot .vd-logo-svg {
+  fill: var(--vd-text-color-lighter);
+}

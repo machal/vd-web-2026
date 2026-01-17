@@ -1,0 +1,122 @@
+/** @define newsletter
+
+Newsletter
+=======
+
+Signup form for MailChimp newsletter.
+Ad on the bottom of the page.
+HTML markup is from MailChimp, we just add our classes and values.
+
+
+Structure
+---------
+
+.newsletter
+  .newsletter__title
+  .newsletter__input
+  .newsletter__submit
+  .newsletter__info
+
+*/
+:root {
+  --vd-text-color-rgb: 46, 44, 9;
+  --vd-text-color: rgb(var(--vd-text-color-rgb));
+  --vd-text-color-lighter: rgba(var(--vd-text-color-rgb), 0.8);
+  --vd-text-color-lightest: rgba(var(--vd-text-color-rgb), 0.5);
+  --vd-background-color: #e5e3df;
+  --vd-content-bg-color: #fcfcf7;
+  --vd-border-color: rgba(var(--vd-text-color-rgb));
+  --vd-border-color-light: rgba(var(--vd-text-color-rgb), 0.5);
+  --vd-highlight-bg-color: #d8f5b8;
+  --vd-highlight-neutral-bg-color: #f2f0ed;
+  --vd-link-color: #5fa316;
+  --vd-heading-color: #2b490a;
+  --vd-code-color: hsl(25, 74%, 23%);
+  --vd-code-color-1: hsl(25, 74%, 32%);
+  --vd-code-color-2: hsl(25, 74%, 37%);
+  --vd-code-color-3: hsl(25, 24%, 73%);
+  --vd-code-color-4: hsl(42, 16%, 32%);
+  --vd-bg-hover: rgba(var(--vd-text-color-rgb), 0.1);
+  --vd-box-bg-color: hsl(43, 21%, 94%);
+  --vd-interactive-bg-color: hsl(44, 81%, 94%);
+  --vd-badge-color: #002c3a;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --vd-text-color-rgb: 252, 252, 247;
+    --vd-background-color: #201f06;
+    --vd-content-bg-color: #171605;
+    --vd-highlight-bg-color: #3A3F26;
+    --vd-highlight-neutral-bg-color: #3A3F26;
+    --vd-heading-color: #d1f4ab;
+    --vd-code-color: hsl(25, 74%, 83%);
+    --vd-code-color-1: hsl(25, 74%, 82%);
+    --vd-code-color-2: hsl(25, 74%, 77%);
+    --vd-code-color-3: hsl(25, 24%, 93%);
+    --vd-code-color-4: hsl(42, 16%, 62%);
+    --vd-box-bg-color: hsl(43, 21%, 14%);
+    --vd-interactive-bg-color: hsl(44, 81%, 6%);
+    --vd-badge-color: hsl(194, 100%, 89%);
+  }
+}
+.newsletter {
+  color: #fcfcf7;
+  background-color: #2e2c09;
+}
+@media print {
+  .newsletter {
+    display: none;
+  }
+}
+
+.newsletter--courses {
+  margin-bottom: -2rem;
+}
+
+.newsletter--transparent {
+  background-color: transparent;
+}
+
+.newsletter__title {
+  color: #fcfcf7;
+}
+
+.newsletter__input[type=email] {
+  display: inline;
+  margin: 0;
+  padding-left: 0.5em;
+  border-color: #fcfcf7;
+  border-radius: 4px 0 0 4px;
+}
+@media only screen and (max-width: 600px) {
+  .newsletter__input[type=email] {
+    width: 10rem;
+  }
+}
+.newsletter__input[type=email]:hover, .newsletter__input[type=email]:focus {
+  border-color: #fcfcf7;
+}
+
+.newsletter__submit[type=submit] {
+  border-radius: 0 4px 4px 0;
+  border-left: 0;
+  margin: 0 0 0 -0.3rem;
+  color: #fcfcf7;
+  border-color: #fcfcf7;
+}
+@media only screen and (max-width: 600px) {
+  .newsletter__submit[type=submit] {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+.newsletter__submit[type=submit]:hover, .newsletter__submit[type=submit]:focus {
+  border-color: #fcfcf7;
+}
+
+.newsletter__info a {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=newsletter.css.map */

@@ -1,0 +1,64 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+
+export async function getStaticPaths() {
+  const blogPosts = await getCollection('blog');
+  return blogPosts.map((post) => ({
+    params: { slug: post.slug },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await post.render();
+
+function formatDate(date: Date): string {
+  return new Intl.DateTimeFormat('cs-CZ', {
+    day: 'numeric',
+    month: 'numeric',
+    year: 'numeric',
+  }).format(date);
+}
+---
+
+<BaseLayout
+  title={post.data.title}
+  description={post.data.description}
+  ogType="article"
+  ogUrl={`https://www.vzhurudolu.cz/blog/${post.slug}`}
+  bodyClass="section-blog"
+>
+  <Header />
+  
+  <main role="main" id="main" aria-label="Hlavní obsah">
+    <div class="page-head page-head--subhead">
+      <h1>{post.data.title}</h1>
+    </div>
+
+    <div class="page-subhead">
+      <p class="mb-0 page-subhead__meta">
+        <a class="page-subhead__author" href="/martin">
+          <span class="avatar avatar--tiny avatar--inline mr-05">
+            <img src="/assets/img/content/lectors/shoulders-martin-michalek_50x50.png" alt="Martin Michálek" width="50" height="50" class="avatar__image" />
+          </span>
+          {post.data.author}
+        </a>
+        <span class="page-subhead__date">
+          &nbsp;&ndash;
+          {formatDate(post.data.date)}
+        </span>
+      </p>
+    </div>
+
+    <article class="content">
+      <Content />
+    </article>
+  </main>
+  
+  <Footer />
+  
+  <script is:inline src="/assets/js/vrdl.min.js"></script>
+</BaseLayout>

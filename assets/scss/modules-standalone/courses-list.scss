@@ -1,0 +1,80 @@
+// Courses List - homepage kurzů
+// ================================
+
+// It is standalone, so it needs core variables and mixins:
+
+@use "../core/core";
+
+// Co je vidět na url /kurzy
+
+// Konaná školení
+// --------------
+
+.courses-list-held {
+  padding-bottom: 1rem;
+}
+
+
+// Newsletter
+// ----------
+
+// Vzhled sekce
+
+.courses-list-newsletter {
+  text-align: center;
+  margin-bottom: -2rem;
+  margin-top: 0;
+  border-top: 1px solid #fff;
+
+  h2 {
+    font-size: 1.1rem; // jako h3
+    margin-bottom: 1rem;
+  }
+
+  @media print {
+    display: none;
+  }
+}
+
+// Formulare
+
+.courses-list-newsletter-form {
+  margin-bottom: 1rem;
+}
+
+.courses-list-newsletter-form {
+
+  input {
+    border-color: #fff;
+  }
+
+  input:hover,
+  input:focus,
+  input:active {
+    border-color: #fff;
+  }
+
+  input[type="submit"] {
+    color: #fff;
+  }
+
+  input[type="submit"]:hover,
+  input[type="submit"]:focus,
+  input[type="submit"]:active {
+    color: #fff;
+  }
+
+}
+
+
+// Text pod formulářem a partneři
+
+.courses-list-newsletter-info,
+.courses-list-partners {
+  @media only screen and (min-width: 480px) {
+    max-width: 26rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+

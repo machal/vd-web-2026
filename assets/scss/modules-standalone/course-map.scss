@@ -1,0 +1,56 @@
+/** @define course-map
+
+Course map
+==========
+
+Map of course places, SVG IMG, adding overlays for clickable areas.
+
+
+Structure
+---------
+
+.course-map
+  .course-map__link
+
+*/
+
+// It is standalone, so it needs core variables and mixins:
+
+
+@use "../core/core";
+
+// Block
+// -----
+// [1] for absolute positioning of links
+
+.course-map {
+  position: relative; // [1]
+}
+
+// Element: links above image - clickable areas
+// --------------------------------------------
+// [1] hide text inside block solution
+// [2] clickable area for links (half of image)
+
+.course-map__link {
+  overflow: hidden; // [1]
+  position: absolute; // [2]
+  top: 0; // [2]
+  bottom: 0; // [2]
+  left: auto; // [2]
+  right: 0; // [2]
+  width: 50%;
+  text-indent: -9999px; // [1]
+
+  &:hover, &:focus {
+    background-color: rgba( 255, 255, 255, 0.1 );
+  }
+}
+
+// Modifier: first link
+// --------------------
+
+.course-map__link--first {
+  left: 0;
+  right: auto;
+}

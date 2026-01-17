@@ -1,0 +1,72 @@
+@use "../core/core";
+
+// Helpers for text properties
+// ===========================
+
+// Text Align
+// ----------
+
+.ta-c {
+  text-align: center;
+}
+
+.text-right,
+.ta-r {
+  text-align: right;
+}
+
+.text-left,
+.ta-l {
+  text-align: left;
+}
+
+.va-t {
+  vertical-align: top;
+}
+
+.va-m {
+  vertical-align: middle;
+}
+
+// Responsive
+
+.ta-c-sm {
+  @media #{core.$vd-screen-sm-up} {
+    text-align: center;
+  }
+}
+
+// Text Decoration
+// ---------------
+
+.td-n {
+  text-decoration: none;
+}
+
+// Headings in style guide (/style)
+// to distinguish them from others
+
+.td-u {
+  text-decoration: underline;
+}
+
+// Text Transform
+// --------------
+
+.tt-n {
+  text-transform: none;
+}
+
+// Letter Spacing
+
+.ls-xs {
+  letter-spacing: -0.01rem;
+}
+
+.ls-sm {
+  letter-spacing: -0.05rem;
+}
+
+.ellipsis {
+  @include core.text-overflow;
+}

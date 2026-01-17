@@ -1,0 +1,64 @@
+// Page Subhead: heading with meta
+// ===============================
+
+// Block with article base informations - author with photo (avatar), date.
+// Share block on right side.
+
+// div.page-subhead
+//  p.mb-0 > a.page-subhead__author
+//  p.mb-0.mr-1
+//  p.share.mb-0
+
+// It is standalone, so it needs core variables and mixins:
+
+@use "../core/core";
+
+
+// Main block
+// ----------
+// [1] Negative margin - we have transparent background here, but component is outside .page-head
+
+.page-subhead {
+  position: relative; // [1]
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -4.8rem; // [1]
+  padding: 0.6rem;
+  font-size: 0.9rem;
+  color: core.$vd-white-color;
+  background-color: rgba( 46, 44, 9, 0.6 );
+
+  @media #{core.$vd-screen-sm-up} {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+// Block - author + date
+// ---------------------
+
+.page-subhead__meta {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+// Block - author
+// --------------
+
+.page-subhead__author {
+  display: flex;
+  align-items: center;
+  margin-right: 0.3rem;
+  white-space: nowrap;
+}
+
+// Block - date
+// ------------
+
+.page-subhead__date {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

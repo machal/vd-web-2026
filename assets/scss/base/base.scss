@@ -1,0 +1,296 @@
+@use "../core/core";
+
+// VzhuruDolu.cz typograficka zakladna
+// ===================================
+
+// Typo reset
+// ----------
+
+h1, h2, h3, h4, h5, h6,
+p, ul, ol, dl, table,
+blockquote, pre, hr, figure {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+ul ul,
+ul ol,
+ol ul,
+ol ol {
+  margin-bottom: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+hr {
+  border: 0;
+  border-bottom: 1px solid var(--vd-border-color);
+}
+
+.hr--small {
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.hr--spaced {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+fieldset {
+  border: 1px solid var(--vd-border-color);
+  border-radius: core.$vd-border-radius;
+  padding: 1rem;
+  margin-bottom: core.$vd-line-height-computed;
+}
+
+legend {
+  font-weight: bold;
+  color: var(--vd-heading-color);
+  padding: 0 0.5rem;
+  font-size: core.$vd-font-size-3;
+}
+
+// Font sizes
+// ----------
+
+// Sizes of all elements are computed from
+// these numbers
+
+// 20px in % (20/16*100)
+html {
+  font-size: 125%;
+  line-height: 1.5;
+
+  // On 1600px and bigger viewports: the layout is
+  // 25% bigger, including font and elements size
+  // font-size is 25px in % (25/16*100)
+  @media #{core.$vd-screen-xl-up} {
+    font-size: 156.25%;
+  }
+
+  // On 600px and smaller viewports: the layout is
+  // 25% smaller, including font and elements size
+  // font-size is 18px
+  @media #{core.$vd-screen-sm-down} {
+    font-size: 112.5%;
+  }
+
+  @media print {
+    font-size: 100%;
+  }
+}
+
+body {
+  overflow-x: hidden;
+  color: var(--vd-text-color);
+  background: var(--vd-background-color);
+  font-family: core.$vd-font-family;
+
+  @media print {
+    color: black;
+    background: white;
+  }
+}
+
+// Headings
+// --------
+
+// For more info visit /style/base
+// Based on vd-core.scss and vd-core.scss
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include core.heading-font;
+}
+
+// Text color for headings
+// With exception for h1, because we use it
+// in dark green background within .page-head
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--vd-heading-color);
+}
+
+h1 { @include core.f-1; }
+h2 { @include core.f-2; }
+h3 { @include core.f-3; }
+h4 { @include core.f-4; }
+h5 { @include core.f-5; }
+h6 { @include core.f-6; }
+
+h1, h2, h3 {
+  font-family: core.$vd-font-family-headings;
+}
+
+
+// Tabulky
+// -------
+
+// - Jednotky v opravdu v `em`, protoze muze byt uvnitr .text-small.
+// - Viz jeste .table. TODO sjednotit to do komponenty, zrusit tuto base.
+
+table {
+  margin-bottom: 1.25em;
+  width: 100%;
+  border-top: 1px solid var(--vd-border-color);
+  border-collapse: collapse;
+
+  th,
+  td {
+    vertical-align: top;
+    text-align: left;
+    padding: 0.75em 1em 0.75em 0;
+    border-bottom: 1px solid var(--vd-border-color);
+  }
+
+  // Obrazek v tabulce, napr. /prirucka/css-box-alignment
+
+  img {
+    max-width: 100px;
+  }
+
+  caption {
+    font-weight: bold;
+    text-align: center;
+    padding: 0.75em 0;
+  }
+}
+
+
+// UL/OL
+// -----
+
+// Hezci by bylo 1rem, ale Safari ma velkou mezeru mezi odrazkou
+// a textem. Viz "Jak to funguje" tady:
+// http://www.vzhurudolu.cz/checklist/o3g7bu
+
+ul,
+ol,
+dd {
+  padding-left: 1.5rem;
+  margin-left: 0;
+}
+
+// Blockquote
+// ----------
+
+// Same padding-left as for ul/ol
+
+blockquote {
+  padding-top: 0;
+  padding-left: 1.25rem;
+  margin-left: 0;
+  border-left: 0.25rem solid var(--vd-text-color-lighter);
+  color: var(--vd-text-color-lighter);
+  font-weight: bold;
+}
+
+
+// Formulare
+// ---------
+
+// TODO defaultně nestylovat, viz Bootstrap
+
+input, select, textarea, button {
+  font-family: core.$vd-font-family;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="url"],
+input[type="search"],
+input[type="number"],
+input[type="password"],
+select,
+textarea {
+  @include core.vd-input-base;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 0.5em;
+}
+
+select {
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: contain;
+  background-image: url(/assets/img/icons/select-arrow-down.svg);
+
+  @media (prefers-color-scheme: dark) {
+    background-image: url(/assets/img/icons/select-arrow-down-white.svg);
+  }
+}
+
+small,
+.small {
+  @include core.font-small;
+}
+
+
+// Odkazy
+// ------
+
+a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-skip: auto;
+  text-decoration-color: var(--vd-text-color-lighter);
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--vd-link-color);
+    text-decoration-color: var(--vd-link-color);
+  }
+
+  @media print {
+    color: black;
+  }
+}
+
+// figure/figcaption
+// -----------------
+
+// Blanka.css
+figure {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+figure > table,
+figure > img,
+figure > picture {
+  margin-bottom: 0;
+}
+
+// Look and feel:
+figcaption {
+  @include core.font-small;
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
+// Inline elements
+// ---------------
+
+// Normalize.scss rewrite because of Chrome existing styling:
+abbr {
+  border-bottom: none;
+}

@@ -1,0 +1,41 @@
+// Helpers for position properties
+// ===============================
+
+.p-r {
+  position: relative;
+}
+
+.p-a {
+  position: absolute;
+}
+
+.t-05 {
+  top: 0.5rem;
+}
+
+.r-05 {
+  right: 0.5rem;
+}
+
+// Don't like it.
+// Using on only one place.
+// Generally it does not make sense to have positon:relative in helper class and position:absolute in component's CSS.
+
+.p-a-tl {
+  position: absolute;
+  top: 1em;
+  left: 1em;
+}
+
+.p-a-br {
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+}
+
+.p-a-tr-minus {
+  position: absolute;
+  top: -1em;
+  right: -1em;
+}
+

@@ -1,0 +1,97 @@
+/*
+  Component Accordion
+  ===================
+
+  - e.g. ebook TOC: /ebook-amp/
+  - inspired by https://codepen.io/vinsongrant/pen/qbGKed
+  - CSS only solution because of AMP/non-AMP versions
+  - but it is not accessible I think – need to rethink
+  - after AMP/Bento rewrite it to AMP
+*/
+
+// It is standalone, so it needs core variables and mixins:
+
+@use "../core/core";
+
+// Item
+
+.accordion__item {
+  position: relative;
+}
+
+// Transitions for title and content
+// Hw accelerated
+
+.accordion__item-title,
+.accordion__item-content {
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  transition: all 0.2s;
+}
+
+// Title
+
+.accordion__item-title {
+  cursor: pointer;
+  display: block;
+  background: transparent;
+  padding: 0.75em 1em;
+
+  // There is heading inside obviously,
+  // so we need to style it like normal text
+  > * {
+    margin-bottom: 0;
+    font-weight: normal;
+    font-size: 1rem;
+  }
+
+  // Hovered/focused headings text color
+
+  &:hover > *,
+  &:focus > * {
+    color: var(--vd-link-color);
+  }
+
+}
+
+// +/- symbols and it animation
+
+.accordion__item-title::after,
+.accordion__item-title::before {
+  content: '';
+  position: absolute;
+  right: 1.25em;
+  top: 1em;
+  width: 2px;
+  height: 0.75em;
+  background-color: var(--vd-text-color-lighter);
+  transition: all 0.2s;
+}
+
+.accordion__item-title::after {
+  transform: rotate(90deg);
+}
+
+// Content
+
+.accordion__item-content {
+  max-height: 0;
+  overflow: hidden;
+  margin: 0 1.25rem 0 1rem;
+  font-size: core.$vd-font-size-6;
+}
+
+// Checkbox for CSS-only interaction only
+
+.accordion__item-toggle {
+  display: none;
+}
+
+.accordion__item-toggle:checked {
+  & + .accordion__item-title + .accordion__item-content {
+    max-height: 1000px;
+  }
+  & + .accordion__item-title::before {
+    transform: rotate(90deg);
+  }
+}

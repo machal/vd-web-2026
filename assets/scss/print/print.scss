@@ -1,0 +1,26 @@
+// Print file - global definitions
+// ===============================
+
+// Let's icrease specificity.
+// There are many complicated selectors in the code
+// and AMP forbids !important.
+
+#body {
+
+  @media print {
+    // all objects
+    *,
+    .container * {
+      color: black;
+      background: white;
+    }
+
+    // links
+    a,
+    .container a {
+      color: black;
+      text-decoration: underline;
+    }
+  }
+
+}

@@ -1,0 +1,216 @@
+// List – specific style for UL/OL lists
+// =====================================
+
+// Usual structure:
+
+// <ul class="list">
+//   <li class="list__item">
+//     <a href="#">
+//       …
+//     </a>
+//   </li>
+// </ul>
+
+// Docs: /style/modules#list
+
+// It is standalone, so it needs core variables and mixins:
+
+@use "../core/core";
+
+
+// Block base
+// ----------
+
+.list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+
+// Element: list item (usually <li>)
+// -------------------------
+
+.list__item {
+  display: block;
+  padding: 0.25em 0;
+}
+
+
+// Element: link inside list
+// -------------------------
+
+.list__item-link {
+  display: block;
+  padding: 0.25em 0;
+}
+
+// Element: logo inside list
+// -------------------------
+
+// [1] Watch variant with "Částečný úvazek" badge
+
+.list__logo {
+  float: right;
+  margin: 0 0 0 1.5em;
+  height: 1.4em; // [1]
+  overflow: hidden;
+  position: relative;
+  width: 3.5em;
+
+  img {
+    position: absolute;
+    height: 4em;
+    width: 4em;
+    top: -1.5em; // [1]
+    left: -0.25em;
+  }
+}
+
+
+// Modifier: border between items
+// ------------------------------
+
+.list--bordered {
+  border-top: 1px solid var(--vd-border-color);
+}
+
+.list--bordered .list__item {
+  border-bottom: 1px solid var(--vd-border-color);
+}
+
+
+// Modifier: block hover
+// ---------------------
+
+// <li class="list__item">
+//   <a href="#">
+//     <h3 class="list__heading"> … </h3>
+//     <p class="list__content"> … </p>
+//   </a>
+// </li>
+
+.list--block-hover .list__item {
+  padding: 0;
+}
+
+.list--block-hover .list__item-link {
+  padding: 0.25em;
+  text-decoration: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background: var(--vd-bg-hover);
+  }
+}
+
+// ### Heading
+
+.list--block-hover .list__heading {
+  font-size: 1em;
+  margin-bottom: 0;
+  color: var(--vd-heading-color);
+
+  @media print {
+    color: black;
+  }
+}
+
+// One-liner on large screens:
+
+.list--block-hover .list__heading {
+  @media #{core.$vd-screen-sm-up} {
+    display: block;
+    @include core.text-overflow;
+  }
+}
+
+// Redefining default h2, h3 style:
+
+.list--block-hover .list__heading {
+  a {
+    color: var(--vd-heading-color);
+  }
+}
+
+// ### Content
+
+// It hasn't bottom margin
+
+.list--block-hover .list__content {
+  margin-top: 0.25em;
+  margin-bottom: 0;
+
+  small {
+    margin-bottom: 0;
+  }
+}
+
+
+// Modifier: spaced, higher items
+// ------------------------------
+
+.list--spaced .list__item {
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+}
+
+.list--block-hover.list--spaced .list__item {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.list--block-hover.list--spaced .list__item-link {
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+}
+
+
+// Modifier: list with numbers in a circle
+// ---------------------------------------
+
+// [1] CSS counter https://css-tricks.com/almanac/properties/c/counter-increment/
+
+.list--numbered {
+  counter-reset: section; // [1]
+}
+
+.list--numbered .list__item {
+  display: flex;
+  align-items: baseline;
+}
+
+// Generated numbers, such as (1), (2)…
+
+.list--numbered .list__item::before {
+  flex: none;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  line-height: 1;
+  padding: 0.5rem;
+  margin-right: 1em;
+  text-align: center;
+  color: var(--vd-text-color-lighter);
+  border: 1px solid var(--vd-text-color-lighter);
+  border-radius: 50%;
+  counter-increment: section; // [1]
+  content: counter(section); // [1]
+}
+
+// Modifier: second list in list of lists :)
+// ---------------------------------------
+
+.list--sticked {
+  border-top: 0;
+  margin-top: -1rem;
+}
+
+
+// Modifier: item with external link
+
+.list__item--external-link {
+  background: url(/assets/img/icons/src/external-link-arrow.svg) no-repeat;
+  background-position: calc(100% - 0.25em) 0.5em;
+  background-size: 0.5em;
+}

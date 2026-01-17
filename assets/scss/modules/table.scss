@@ -1,0 +1,55 @@
+@use "../core/core";
+
+// Table – stylovana tabulka
+// =========================
+
+// Navazuje na zakladni stylovanou <table> ve vd-base
+
+// TODO:
+// - Lepsi by bylo v zakladu nestylovat a pridavat tridu .table.
+//   PHPkem pak vsem <table> v clancich tu tridu pridavat.
+
+// Varianta pro aktivni radek
+// --------------------------
+
+// Radek s hoverem a klikatelnou celou plochou
+
+.table--active-row {
+
+  td {
+    padding: 0;
+  }
+
+  td.date {
+    padding-right: 0.5em; // fix for long dates on small resolutions, target "date" only
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  tr:hover,
+  tr:focus,
+  tr:active {
+    a {
+      color: core.$vd-link-color;
+    }
+  }
+
+}
+
+.table--active-row a {
+  padding: 0.75em 1em;
+  display: block;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: inherit;
+  }
+
+  @media only screen and (max-width: core.$vd-screen-sm) {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}

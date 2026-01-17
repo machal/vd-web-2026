@@ -1,0 +1,159 @@
+// VD ebook: VdLayout
+// ==================
+
+// It is standalone, so it needs core variables and mixins:
+
+@use "sass:color";
+@use "../../core/core";
+
+// Do not show background image
+// in the .page-head
+
+.page-head.ebook-vdlayout {
+  background: transparent;
+}
+
+
+// VdLayout ebook colors
+// Hight specificity because of input[type="submit"].button--wide etc.
+
+.container .ebook-vdlayout {
+
+  // Variables
+
+  $ebook-vdlayout-color-primary: #f89b1d;
+  $ebook-vdlayout-color-secondary: #F6CA4D;
+  $ebook-vdlayout-gradient: linear-gradient(
+    225deg,
+    $ebook-vdlayout-color-secondary 0,
+    $ebook-vdlayout-color-primary 75%
+  );
+  $ebook-vdlayout-gradient-darker: linear-gradient(
+    225deg,
+    color.adjust($ebook-vdlayout-color-secondary, $lightness: -5%) 0,
+    color.adjust($ebook-vdlayout-color-primary, $lightness: -5%) 75%
+  );
+  $ebook-vdlayout-gradient-light: linear-gradient(
+    225deg,
+    color.adjust($ebook-vdlayout-color-secondary, $lightness: 50%) 0,
+    color.adjust($ebook-vdlayout-color-primary, $lightness: 50%) 75%
+  );
+
+  .button {
+    &:hover,
+    &:focus,
+    &:active {
+      border-color: $ebook-vdlayout-color-primary;
+    }
+  }
+
+  .button--primary {
+    background-color: $ebook-vdlayout-color-primary;
+    background-image: $ebook-vdlayout-gradient;
+    color: core.$vd-text-color;
+    border-color: var(--vd-text-color-lightest);
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: var(--vd-text-color);
+      background-image: $ebook-vdlayout-gradient-darker;
+      border-color: var(--vd-text-color);
+    }
+  }
+
+  h2, h3, h4,
+  .h2, .h3, .h4,
+  legend {
+    color: var(--vd-text-color);
+
+    a {
+      color: var(--vd-text-color);
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: var(--vd-text-color-lighter);
+      }
+    }
+  }
+
+  a {
+    text-decoration-color: $ebook-vdlayout-color-primary;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $ebook-vdlayout-color-primary;
+      text-decoration-color: $ebook-vdlayout-color-primary;
+    }
+  }
+
+  // Layout etc.
+
+  &.ebook-head {
+    @media #{core.$vd-screen-md-up} {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 2rem;
+      padding: 1.5rem 1.5rem 0 0.5rem;
+    }
+
+    @media only screen and (min-width: 1024px) {
+      padding: 4rem 3rem 0 1rem;
+    }
+  }
+
+  .ebook-head__image {
+    width: auto;
+    min-width: auto;
+
+    // Anti-subpixel: exact sizes
+
+    // Obrazek 760px:
+    max-width: 380px;
+
+    @media only screen and (min-width: 800px) {
+      max-width: 550px;
+    }
+
+    @media #{core.$vd-screen-lg-up} {
+      max-width: 620px;
+    }
+
+    // Obrazek 1540px:
+    @media #{core.$vd-screen-xl-up} {
+      max-width: 770px;
+    }
+
+  }
+
+  .ebook-head__text {
+    width: auto;
+    max-width: none;
+    min-width: auto;
+  }
+
+  .ebook-head__text-perex {
+    max-width: 12em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  // Title is special:
+  // CSS / moderni layout
+
+  .ebook-head__title-sup {
+    display: block;
+    font-weight: normal;
+    font-size: 3em;
+    line-height: 0.9;
+  }
+
+  .ebook-head__title-sub {
+    display: block;
+    text-transform: uppercase;
+    font-size: 0.55em;
+  }
+
+}

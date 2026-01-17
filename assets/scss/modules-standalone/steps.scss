@@ -1,0 +1,47 @@
+/** @define steps
+
+Steps
+=====
+
+Steps in "ordering" process.
+i.e. /prace/pridat
+
+*/
+
+// It is standalone, so it needs core variables and mixins:
+
+@use "sass:color";
+@use "../core/core";
+
+.steps {
+  display: flex;
+  flex-basis: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+// Element: Step
+// -------------
+
+.steps__step {
+  flex: 1;
+  margin: 0;
+  padding: 0 1rem 0.5rem;
+  list-style-position: inside;
+  text-align: center;
+  margin-right: 0.5rem;
+  border-bottom: 0.5rem color.mix(core.$vd-bg-dark, white, 50%) solid;
+
+  &--active {
+    border-color: core.$vd-bg-dark;
+  }
+}
+
+// Small screens: without numbers
+// ------------------------------
+
+.steps {
+  @media only screen and (max-width: 500px) {
+    list-style-type: none;
+  }
+}

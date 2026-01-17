@@ -1,0 +1,31 @@
+@use "../core/core";
+
+// Helpers for float properties
+// ============================
+
+// Not using so often. Do we really need this shis?
+// TODO: review and refactor.
+
+.clearfix {
+  @include core.clearfix;
+}
+
+// Let's icrease specificity.
+// There are many complicated selectors in the code
+// and AMP forbids !important.
+
+// stylelint-disable selector-max-specificity, selector-max-id
+
+#body {
+
+  .pull-left {
+    float: left;
+  }
+
+  .pull-right {
+    float: right;
+  }
+
+}
+
+// stylelint-enable

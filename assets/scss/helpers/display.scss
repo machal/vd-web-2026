@@ -1,0 +1,67 @@
+@use "../core/core";
+
+// Helpers for Display Properties
+// ==============================
+
+// stylelint-disable selector-max-specificity, selector-max-id
+
+#body {
+
+  .d-b {
+    display: block;
+  }
+
+  .d-ib {
+    display: inline-block;
+  }
+
+  .d-n {
+    display: none;
+  }
+
+  // Breakpoints visibility
+  // ----------------------
+
+  .visible-block-small-up {
+    display: none;
+
+    @media #{core.$vd-screen-sm-up} {
+      display: block;
+    }
+  }
+
+  .visible-block-medium-up {
+    display: none;
+
+    @media #{core.$vd-screen-md-up} {
+      display: block;
+    }
+  }
+
+  .visible-inline-small-up {
+    display: none;
+
+    @media #{core.$vd-screen-sm-up} {
+      display: inline;
+    }
+  }
+
+  .visible-inline-block-small-up {
+    display: none;
+
+    @media #{core.$vd-screen-sm-up} {
+      display: inline-block;
+    }
+  }
+
+  .hidden-inline-sm {
+    display: inline;
+
+    @media #{core.$vd-screen-sm-up} {
+      display: none;
+    }
+  }
+
+}
+
+// stylelint-enable

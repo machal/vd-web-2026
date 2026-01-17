@@ -1,0 +1,53 @@
+@use "../core/mixins" as core;
+
+// Other helpers
+// =============
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.o-h {
+  overflow: hidden;
+}
+
+// Logotype for dark mode
+// is it helper or component?
+
+.logotype {
+  // dark mode
+  @media (prefers-color-scheme:dark) {
+    filter: brightness(100);
+  }
+}
+
+// Toggle hide/show
+// ----------------
+
+// Usage:
+//   <div class="is-hidden">
+//   and add .is-visible with JS
+
+// TODO: It's more "state" than "helper"
+
+
+.is-hidden {
+  max-height: 0;
+  transition: max-height 0.2s;
+  overflow: hidden;
+
+}
+
+.is-visible {
+  max-height: 50rem;
+}
+
+// Reset <ul>, <ol> layout
+
+.reset-list {
+  @include core.reset-list;
+}

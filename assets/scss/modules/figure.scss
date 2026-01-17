@@ -1,0 +1,48 @@
+@use "../core/mixins";
+@use "../core/core";
+
+/*
+
+Figure
+======
+
+Širší verze obrázku zobrazovaného v obsahu.
+
+// [1] because of absolute position of icon
+
+*/
+
+
+figure {
+  position: relative; // [1]
+  border-bottom: 1px dotted var(--vd-border-color-light);
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+// VD icon
+// -------
+// absolute positioning (bottom right) with white background (for masking dotted line)
+
+figure .vd-logo {
+  display: block;
+  position: absolute;
+  bottom: -8px;
+  right: 10px;
+  width: 22px;
+  height: 16px;
+  background: var(--vd-content-bg-color);
+}
+
+figure .vd-logo-svg {
+  fill: var(--vd-border-color-light);
+}
+
+figcaption {
+  @include core.font-small;
+  font-style: italic;
+}
+
+figcaption p {
+  margin-top: 1rem;
+}

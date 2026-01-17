@@ -1,0 +1,31 @@
+// VD raised
+// =========
+
+// Vystouply - stinovany boxik.
+
+// Napr. obrazky u ebooku nebo obsah u ebooku.
+
+// TODO - sjednotit s .box?
+
+.raised {
+  border-top: 1px solid rgba(var(--vd-text-color-rgb), 0.05);
+  border-left: 1px solid rgba(var(--vd-text-color-rgb), 0.05);
+  border-right: 1px solid rgba(var(--vd-text-color-rgb), 0.1);
+  border-bottom: 1px solid rgba(var(--vd-text-color-rgb), 0.1);
+  margin: -1px -1px; // Zachovavame rozmery
+  box-shadow: 2px 2px rgba(var(--vd-text-color-rgb), 0.05);
+  padding: 3rem;
+  margin-bottom: 1rem;
+}
+
+.raised--image {
+  padding: 0;
+
+  // Obrazek uvnitr by mel mit porad puvodni sirku
+  // napr. 1024 na desktopu (viz /ebook)
+  margin: -4px -4px;
+
+  > img {
+    display: block;
+  }
+}

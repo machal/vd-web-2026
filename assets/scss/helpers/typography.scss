@@ -1,0 +1,93 @@
+@use "../core/core";
+
+// Typography helper classes
+// =========================
+
+// Font sizes and line heights
+// ---------------------------
+
+// Specificity must be two classes now, because of
+// .article h2 etc. But you know… I don't like it.
+
+.container {
+
+  .f-1,
+  .h1 {
+    @include core.f-1;
+  }
+
+  .f-2,
+  .h2 {
+    @include core.f-2;
+  }
+
+  .f-3,
+  .h3 {
+    @include core.f-3;
+  }
+
+  .f-4,
+  .h4 {
+    @include core.f-4;
+  }
+
+  .f-5,
+  .h5 {
+    @include core.f-5;
+  }
+
+  .f-6,
+  .h6,
+  .f-sm {
+    @include core.f-6;
+  }
+
+  .f-7,
+  .h7,
+  .f-xs {
+    @include core.f-7;
+  }
+
+}
+
+// Headings classes styles like for headings
+// -----------------------------------------
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  @include core.heading-font;
+}
+
+.h1 {
+  font-family: core.$vd-font-family-headings;
+}
+
+// List for Course Set
+// -------------------
+
+// List with space between items and without left padding.
+// Useful for double column layout in course set templates:
+// - /balicky-kurzu/rychlost-webu
+// - /balicky-kurzu/kompletni-javascript
+// Or for webinar's video page
+
+.list-toc {
+
+  // Numbers (or bullets) are positoned out of layout:
+
+  @media #{core.$vd-screen-sm-up} {
+    ol, ul {
+      padding-left: 0;
+    }
+  }
+
+  // Space between items:
+
+  li {
+    margin-bottom: 0.5rem;
+  }
+}

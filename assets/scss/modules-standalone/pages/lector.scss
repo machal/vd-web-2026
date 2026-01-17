@@ -1,0 +1,158 @@
+// Lectors: lectors page
+// =====================
+
+// i.e. /lektori/martin-michalek
+
+// It is standalone, so it needs core variables and mixins:
+
+@use "../../core/core";
+
+.lector__head {
+  position: relative;
+
+  // Paddings overwrite for .page--head:
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+  @media #{core.$vd-screen-md-up} and #{core.$vd-screen-lg-down} {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  @media #{core.$vd-screen-lg-up} {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+// Layout base and small screens
+// -----------------------------
+
+// Small screen layout (and HTML source):
+
+// .lector__head-name
+// .lector__head-image
+// .lector__head-perex
+// .lector__head-buttons
+
+// Lector's name
+// -------------
+
+.lector__head-name {
+  // always wrap: http://stackoverflow.com/a/18891911/889682:
+  word-spacing: 50rem;
+
+  // Large screens:
+  @media #{core.$vd-screen-md-up} {
+    margin-top: 2rem;
+  }
+}
+
+// Perex
+// -----
+
+.lector__head-perex {
+  margin-bottom: 1rem;
+
+  > p {
+    max-width: 15em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+// Links
+// -----
+
+.lector__head-links {
+  font-size: core.$vd-font-size-6;
+}
+
+// Buttons on the bottom
+// ---------------------
+
+.lector__head-buttons {
+  font-size: core.$vd-font-size-6;
+
+  > hr {
+    $hr-width: 3em;
+    width: $hr-width;
+    left: calc(50% - (#{$hr-width} / 2)); // half of the width
+    height: 1px;
+    border-bottom: 1px solid white;
+    opacity: 0.5;
+    margin-bottom: 2rem;
+  }
+
+  > p {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+// Buttons
+// -------
+
+.lector__head-buttons {
+  .button {
+    padding-left: 1em;
+    padding-right: 1em;
+
+    &:first-child {
+      margin-right: 1em;
+      margin-bottom: 0.5em;
+    }
+  }
+}
+
+// Image
+// -----
+
+.lector__head-image {
+  img {
+    max-height: 8rem;
+  }
+}
+
+// Layout for large screens
+// ------------------------
+
+//                             .lector__head-name
+//                             .lector__head-perex
+// .lector__head-image         .lector__head-buttons
+
+@media #{core.$vd-screen-md-up} {
+  // Typography to the left:
+
+  .lector__head {
+    padding-left: 50%;
+  }
+
+  // Lector's photo to the right:
+
+  .lector__head-image {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 0;
+    width: 50%;
+    height: 100%;
+
+    // Create full with and height parent for <img>:
+
+    picture {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    img {
+      position: absolute;
+      max-height: 90%;
+      width: auto;
+      bottom: 0;
+      right: 0;
+    }
+  }
+}

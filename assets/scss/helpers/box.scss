@@ -1,0 +1,9 @@
+// Helpers for Box Properties
+// ==========================
+
+// TODO: Hotfix to have layouts done with flexbox helpers classes
+// But I don't like it. Should be declared on all elements? (* {…})
+
+.bs-bb {
+  box-sizing: border-box;
+}

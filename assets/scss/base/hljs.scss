@@ -1,0 +1,34 @@
+/*
+Syntax highlighting
+--------------------
+
+Based on color theme from coolors.co:
+https://coolors.co/64320f-8c4615-a35218-cab6a8-5e5644
+*/
+
+// Parameters, attributes, keywords, functions
+pre .hljs-attribute,
+pre .hljs-attr,
+pre .hljs-keyword,
+pre .hljs-built_in {
+  // color: #8c4615;
+  color: var(--vd-code-color-1);
+}
+
+// Stings
+pre .hljs-string {
+  // color: #a35218;
+  color: var(--vd-code-color-2);
+}
+
+// Special chars
+pre .op {
+  // color: #cab6a8;
+  color: var(--vd-code-color-3);
+}
+
+// Text, comments
+pre .hljs-comment {
+  // color: #5e5644;
+  color: var(--vd-code-color-4);
+}

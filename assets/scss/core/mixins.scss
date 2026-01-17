@@ -1,0 +1,153 @@
+@use "variables" as core;
+
+// VzhuruDolu.cz mixiny
+
+@mixin clearfix {
+  &::before,
+  &::after {
+    content: " ";
+    display: table;
+  }
+
+  &::after {
+    clear: both;
+  }
+}
+
+// CSS3
+
+@mixin text-overflow {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+// Typography
+// ----------
+
+// (Size like top heading)
+@mixin f-1 {
+  font-size: core.$vd-font-size-1;
+  line-height: core.$vd-line-height-4;
+}
+
+@mixin f-2 {
+  font-size: core.$vd-font-size-2;
+  line-height: core.$vd-line-height-4;
+}
+
+// (Size like H2 in article)
+@mixin f-3 {
+  font-size: core.$vd-font-size-3;
+  line-height: core.$vd-line-height-3;
+}
+
+@mixin f-4 {
+  font-size: core.$vd-font-size-4;
+  line-height: core.$vd-line-height-3;
+}
+
+// (Size like base font)
+@mixin f-5 {
+  font-size: core.$vd-font-size-5;
+}
+
+// (Size like smaller font)
+@mixin f-6 {
+  font-size: core.$vd-font-size-6;
+}
+
+// (Size like TOC for e-books font size)
+@mixin f-7 {
+  font-size: core.$vd-font-size-7;
+}
+
+// Reset List Visual Style
+// -----------------------
+
+// Clearing all <ul>,<ol> default settings
+
+@mixin reset-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    margin: 0;
+    padding: 0;
+    display: block;
+  }
+}
+
+// Base
+
+@mixin vd-input-base {
+  appearance: none;
+  display: inline-block;
+  line-height: 1.5;
+  padding: 0.25rem 2rem;
+  background: var(--vd-content-bg-color);
+  color: var(--vd-text-color);
+  border: 1px solid var(--vd-border-color-light);
+  border-radius: core.$vd-border-radius;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    border-color: var(--vd-text-color);
+    outline: none;
+  }
+
+  .article &.button:hover,
+  .article &.button:focus,
+  .article &.button:active {
+    border-style: solid;
+  }
+
+  &::placeholder {
+    color: var(--vd-text-color-lighter);
+  }
+}
+
+// Mixin for h2-h4 headings
+
+@mixin heading-font {
+  font-weight: normal;
+
+  a {
+    text-decoration: none;
+
+    &:hover,
+    &:focus,
+    &:active {
+      text-decoration: none;
+    }
+  }
+
+  @media print {
+    color: black;
+  }
+}
+
+
+// Mensi pismo nez obvykle, navic sedive
+
+@mixin font-small {
+  // Zkousim block only, hlavne pro /checklist
+  display: block;
+  @include f-6;
+  color: var(--vd-text-color-lighter);
+  text-decoration-color: rgba(var(--vd-text-color-lighter), 0.5);
+  margin-bottom: 0.5rem;
+
+  a {
+    &:hover,
+    &:focus,
+    &:active {
+      color: var(--vd-link-color);
+      text-decoration: underline;
+    }
+  }
+}
+

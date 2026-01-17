@@ -1,0 +1,96 @@
+// VD ebook
+// =========
+
+// It is standalone, so it needs core variables and mixins:
+
+@use "sass:color";
+@use "../../core/core";
+
+// Do not show background image
+// in the .page-head
+
+.page-head.ebook-amp {
+  background: transparent;
+}
+
+// AMP ebook colors
+// Hight specificity because of input[type="submit"].button--wide etc.
+
+.container .ebook-amp {
+
+  $ebook-amp-color-primary: #005af0;
+  $ebook-amp-color-secondary: #00dcc0;
+  $ebook-amp-gradient: linear-gradient(
+    225deg,
+    $ebook-amp-color-secondary 0,
+    $ebook-amp-color-primary 75%
+  );
+  $ebook-amp-gradient-darker: linear-gradient(
+    225deg,
+    color.adjust($ebook-amp-color-secondary, $lightness: -5%) 0,
+    color.adjust($ebook-amp-color-primary, $lightness: -5%) 75%
+  );
+  $ebook-amp-gradient-light: linear-gradient(
+    225deg,
+    color.adjust($ebook-amp-color-secondary, $lightness: 50%) 0,
+    color.adjust($ebook-amp-color-primary, $lightness: 50%) 75%
+  );
+
+  .button {
+    &:hover,
+    &:focus,
+    &:active {
+      border-color: $ebook-amp-color-primary;
+    }
+  }
+
+  .button--primary {
+    background-color: $ebook-amp-color-primary;
+    background-image: $ebook-amp-gradient;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: white;
+      background-image: $ebook-amp-gradient-darker;
+      border-color: var(--vd-badge-color);
+    }
+  }
+
+  h2, h3, h4,
+  .h2, .h3, .h4,
+  legend {
+    color: var(--vd-text-color);
+
+    a {
+      color: var(--vd-text-color);
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: var(--vd-text-color-lighter);
+      }
+    }
+  }
+
+  a {
+    text-decoration-color: #6291F5;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $ebook-amp-color-primary;
+      text-decoration-color: $ebook-amp-color-primary;
+    }
+  }
+
+  .bg-highlight {
+    background: $ebook-amp-gradient-light;
+
+    // Exception for dark mode
+    @media (prefers-color-scheme: dark) {
+      background: var(--vd-highlight-neutral-bg-color);
+    }
+  }
+
+}

@@ -1,0 +1,51 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+
+const podcasts = await getCollection('podcast');
+const sortedPodcasts = podcasts.sort((a, b) => new Date(b.data.date) - new Date(a.data.date));
+
+function formatDate(date: Date): string {
+  return new Intl.DateTimeFormat('cs-CZ', {
+    day: 'numeric',
+    month: 'numeric',
+    year: 'numeric',
+  }).format(date);
+}
+---
+
+<BaseLayout
+  title="Podcast ze Vzhůru dolů"
+  description="Rozhovory se zajímavými lidmi kolem webového designu a vývoje."
+  bodyClass="section-podcast"
+>
+  <Header />
+  
+  <main role="main" id="main" aria-label="Hlavní obsah">
+    <div class="page-head page-head--line"></div>
+    <div class="section">
+      <div class="content">
+        {sortedPodcasts.map((podcast) => (
+          <article role="article" class="mb-15">
+            <h2 class="h4 mb-05">
+              <a href={`/podcast/${podcast.slug}`}>{podcast.data.title}</a>
+            </h2>
+            <p>
+              <span class="text-color-lightest">
+                {formatDate(podcast.data.date)}
+                —
+              </span>
+              {podcast.data.description}
+            </p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </main>
+  
+  <Footer />
+  
+  <script is:inline src="/assets/js/vrdl.min.js"></script>
+</BaseLayout>

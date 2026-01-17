@@ -1,0 +1,46 @@
+@use "../core/core";
+
+// Table helper classes
+// ====================
+
+// Let's icrease specificity.
+// There are many complicated selectors in the code
+// and AMP forbids !important.
+
+// stylelint-disable selector-max-specificity, selector-max-id, selector-max-compound-selectors
+
+#body {
+
+  // Property tables, ie for
+  // https://www.vzhurudolu.cz/prirucka/css-multicolumn
+  // or https://www.vzhurudolu.cz/prirucka/css-box-alignment
+  // Defined on parent element: <div class="prop-table"><table>…
+
+  .prop-table tr > td:nth-child(1) {
+    width: 25%;
+  }
+
+  @media #{core.$vd-screen-sm-up} {
+    .prop-table tr > td:nth-child(1) {
+      width: 20%;
+    }
+  }
+
+  // Table widths
+  // See ebook-generator
+
+  .table-1-third tr > td:nth-child(1) {
+    width: 33.3%;
+  }
+
+  .table-1-quarter tr > td:nth-child(1) {
+    width: 25%;
+  }
+
+  .table-1-half tr > td:nth-child(1) {
+    width: 50%;
+  }
+
+}
+
+// stylelint-enable

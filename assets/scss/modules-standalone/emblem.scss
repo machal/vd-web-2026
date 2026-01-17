@@ -1,0 +1,62 @@
+/** @define emblem
+
+Emblem
+======
+
+*/
+
+// It is standalone, so it needs core variables and mixins:
+
+@use "../core/core";
+
+// Emblem
+// ------
+
+.emblem {
+  // Layout:
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transform: rotate(-18deg);
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  // Colors:
+  color: #2e2c09;
+  background: #eecf6d;
+  // Text:
+  border: 4px solid mix(core.$vd-yellow-color, black, 85%);
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.25);
+  font-family: core.$vd-font-family-headings;
+  font-size: core.$vd-font-size-7;
+  line-height: 1.2;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-style: normal;
+  // Better in Safari at least:
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// Modifier: Top Right
+// -------------------
+
+.emblem--top-right {
+  position: absolute;
+  top: -0.225rem;
+  right: -0.225rem;
+}
+
+// Modifier: For E-books
+// ---------------------
+
+// ie for /ebooky
+
+.emblem--for-ebooks {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -3rem;
+  margin-left: 2rem;
+}

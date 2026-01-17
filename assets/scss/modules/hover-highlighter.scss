@@ -1,0 +1,30 @@
+@use "../core/core";
+
+/** @define hover-highlighter
+
+Hover Highliter
+===============
+
+Used for hightlighting block boxed on hover.
+In example for courses listing on homepage.
+
+Typical markup looks like:
+
+<article role="article">
+  <a class="hover-highlighter">
+    Some markup including <h3>, <p>… but not <a>
+
+*/
+
+.hover-highlighter {
+  display: block;
+  padding: 0.5rem;
+  text-decoration: none;
+}
+
+.hover-highlighter:hover,
+.hover-highlighter:focus,
+.hover-highlighter:active {
+  background-color: var(--vd-bg-hover);
+  color: inherit;
+}

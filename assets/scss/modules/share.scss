@@ -1,0 +1,73 @@
+// Share: social sharing
+// =====================
+
+// Simple sharer, just links with icons.
+// Usable for header and footer mainly.
+
+// p.share
+//  a
+
+// It is standalone, so it needs core variables and mixins:
+
+@use "../core/core";
+
+
+// Main block
+// ----------
+
+.share {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin-left: auto; // on right side in header
+
+  a {
+    display: block;
+    width: 1.6rem;
+    height: 1.6rem;
+    margin-left: 0.3rem;
+    text-decoration: none;
+  }
+
+  a:hover, a:focus {
+    opacity: 0.7;
+  }
+
+  strong {
+    margin-right: 0.7em;
+    font-weight: 400;
+
+    @media #{core.$vd-screen-sm-down} {
+      display: none; // hidden on small resolution
+    }
+  }
+}
+
+// Modifier: in footer
+// -------------------
+
+.share--footer {
+  flex-wrap: wrap;
+  justify-content: center;
+
+  strong {
+    width: 100%;
+    margin-right: 0;
+    text-align: center;
+  }
+
+  a {
+    margin: 0.5rem 0.3rem;
+  }
+
+  .share__icon {
+    fill: var(--vd-text-color-lighter);
+  }
+}
+
+// Element
+// -------
+
+.share__icon {
+  fill: core.$vd-white-color;
+}

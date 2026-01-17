@@ -1,0 +1,77 @@
+/** @define course-icon
+
+Course Icon
+===========
+
+*/
+
+// It is standalone, so it needs core variables and mixins:
+
+@use "sass:math";
+@use "../core/core";
+
+// Markup:
+// -------
+//
+// <a class="course-icon rounded" href="#">
+//   <span class="course-icon__image">
+//     <img src="/assets/img/icons/dest/kurzy/webinar-rychlost-mereni.svg?v=2" alt=""
+//       height="130" loading="lazy">
+//   </span>
+// </a>
+
+.course-icon {
+  position: relative; // absolute icon centering
+  display: block; // because A tag using
+  height: 0;
+  padding-bottom: math.percentage(math.div(9, 16)); // 16:9 padding hack;
+  background: core.$vd-bg-dark;
+}
+
+// Ebook icon specific styles
+// --------------------------------
+
+.course-icon--ebook {
+  background: transparent; // no background for ebooks
+
+  // stylelint disable plugin/selector-bem-pattern
+
+  .course-icon__image img,
+  .course-icon__image amp-img {
+    height: 90%; // bigger icons for ebooks
+    width: auto; // reset rwd image declaration, now with width/height attributes on <img>
+  }
+}
+
+// X/Y centered SVG document inside
+// --------------------------------
+
+.course-icon__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover, &:focus {
+    img, amp-img {
+      transform: scale(1.1);
+    }
+  }
+
+  // stylelint disable plugin/selector-bem-pattern
+
+  img, amp-img {
+    height: 50%;
+    transition: 0.1s;
+    transform: scale(1);
+  }
+
+  amp-img {
+    width: 100%; // AMP bug fix - https://github.com/ampproject/amphtml/issues/7144
+  }
+}
+

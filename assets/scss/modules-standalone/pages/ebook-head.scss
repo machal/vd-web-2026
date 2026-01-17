@@ -1,0 +1,68 @@
+/*
+  Component E-book Head
+  =====================
+
+  e.g. VdAMP ebook: /ebook-amp/
+*/
+
+// It is standalone, so it needs core variables and mixins:
+
+@use "../../core/core";
+
+// Removing .page-head styles:
+// Specificity high because of page-head.scss selectors
+
+.section-ebooks .ebook-head {
+  background: transparent;
+  color: var(--vd-text-color);
+  padding: 1.5rem 1.5rem 0;
+}
+
+.ebook-head__image {
+  max-width: 6rem;
+  margin: 0 auto;
+}
+
+.ebook-head__text {
+  text-align: center;
+  max-width: 23rem;
+  margin: 0 auto;
+}
+
+@media #{core.$vd-screen-md-up} {
+
+  .section-ebooks .ebook-head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ebook-head__image {
+    flex: auto;
+    min-width: 12rem;
+    padding: 0;
+    margin: 0 1.5rem 0 0;
+  }
+
+  .ebook-head__text {
+    flex: auto;
+    min-width: 23rem; // Optimized for good typography
+    padding: 0;
+    margin: 0;
+  }
+
+}
+
+// Custom breakpoint
+
+@media only screen and (min-width: 1024px) {
+
+  .section-ebooks .ebook-head {
+    padding: 4rem 3rem 0;
+  }
+
+  .ebook-head__image {
+    min-width: 16rem;
+  }
+
+}

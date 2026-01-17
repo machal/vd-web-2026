@@ -1,0 +1,88 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  bodyClass?: string;
+  ogType?: 'website' | 'article' | 'book' | 'profile';
+  ogUrl?: string;
+  ogImage?: string | string[];
+  canonicalUrl?: string;
+}
+
+const {
+  title,
+  description,
+  bodyClass = '',
+  ogType = 'website',
+  ogUrl = Astro.url.href,
+  ogImage = [
+    'https://www.vzhurudolu.cz/assets/img/content/src/socials/vd-soc-uni-1.jpg',
+    'https://www.vzhurudolu.cz/assets/img/content/src/socials/vd-soc-uni-2.jpg',
+  ],
+  canonicalUrl,
+} = Astro.props;
+
+const finalOgImage = Array.isArray(ogImage) ? ogImage : [ogImage];
+const finalCanonicalUrl = canonicalUrl || ogUrl;
+---
+
+<!DOCTYPE html>
+<html class="no-js" lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{title}</title>
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, viewport-fit=cover" />
+    <meta name="description" content={description} />
+
+    <!-- Socials -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    {finalOgImage.map((img) => (
+      <meta property="og:image" content={img} />
+    ))}
+    <meta property="fb:pages" content="280644995384985" />
+    <meta property="fb:app_id" content="201909440432114" />
+    <meta property="og:url" content={finalCanonicalUrl} />
+    <meta property="og:site_name" content="Vzhůru dolů" />
+    <meta property="og:type" content={ogType} />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@vzhurudolu" />
+    <meta name="twitter:dnt" content="on" />
+
+    <!-- English version -->
+    <link rel="alternate" hreflang="en-us" href="https://www.cssmine.com" />
+
+    <!-- Favicony/touchicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="/favicon/manifest.json" />
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#3d6a0d" />
+    <link rel="shortcut icon" href="/favicon/favicon.ico" />
+    <meta name="msapplication-config" content="/favicon/browserconfig.xml" />
+    <meta name="application-name" content="Vzhůru dolů" />
+    <meta name="theme-color" content="#3d6a0d" />
+
+    <link rel="alternate" type="application/rss+xml" title="Vzhůru dolů" href="/rss" />
+
+    <!-- Scripts and styles -->
+    <link rel="preload" href="/assets/fonts/foro-extra-bold.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="/assets/css/1-base.min.css" />
+    <link rel="stylesheet" href="/assets/css/2-components.min.css" />
+    <link rel="stylesheet" href="/assets/css/3-libraries.min.css" />
+    <link rel="stylesheet" href="/assets/css/4-helpers.min.css" />
+
+    <script>
+      // document.no-js -> document.js
+      document.documentElement.className = document.documentElement.className.replace("no-js", "js");
+    </script>
+
+    <link rel="author" href="/humans.txt" />
+  </head>
+
+  <body id="body" class={bodyClass}>
+    <slot />
+  </body>
+</html>

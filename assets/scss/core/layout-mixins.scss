@@ -1,0 +1,40 @@
+@use "variables" as core;
+
+// VzhuruDolu.cz mixiny pro layout
+// ===============================
+
+// Zakladna pro elementy layoutu - na velkych v maximalni sirce
+@mixin layout-element-base {
+  clear: both;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  @media only screen and (min-width: 741px) {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+// Element layoutu, ktery se na velkych centruje
+@mixin layout-element-limited {
+  @include layout-element-base;
+  max-width: 34rem;
+  @media only screen and (max-width: core.$vd-screen-sm), print {
+    max-width: none;
+  }
+}
+
+// Mixin se pouziva i jinde, napr. pro .box
+// TODO
+// - opravdu mixin? kdyz je to komponenta, staci pridat tridu, ne?
+
+@mixin section {
+  margin-bottom: 1.25rem;
+  margin-top: 2.5rem;
+  // Section inside section TODO potrebujeme?
+  .section & {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
