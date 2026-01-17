@@ -4,8 +4,15 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 
-const podcasts = await getCollection('podcast');
-const sortedPodcasts = podcasts.sort((a, b) => new Date(b.data.date) - new Date(a.data.date));
+const podcasts = await getCollection('podcast', (entry) => {
+  // Filtrovat jen publikované podcasty
+  return entry.data.published !== false;
+});
+const sortedPodcasts = podcasts.sort((a, b) => {
+  const dateA = a.data.date || new Date(0);
+  const dateB = b.data.date || new Date(0);
+  return dateB.getTime() - dateA.getTime();
+});
 const latestPodcast = sortedPodcasts[0];
 const otherPodcasts = sortedPodcasts.slice(1);
 

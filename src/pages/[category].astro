@@ -40,6 +40,13 @@ const priruckaPosts = await getCollection('prirucka');
 // Zahrnuje články s odpovídajícími tagy nebo články z příručky, které mají kategorii v slug
 const allContent = [...blogPosts, ...podcasts, ...priruckaPosts]
   .filter(post => {
+    // Filtrovat jen publikované články
+    if (post.collection === 'prirucka') {
+      if (post.data.published !== true) return false;
+    } else {
+      if (post.data.published === false) return false;
+    }
+    
     const tags = post.data.tags || [];
     const hasMatchingTag = categoryConfig.tags.some(catTag => tags.includes(catTag));
     

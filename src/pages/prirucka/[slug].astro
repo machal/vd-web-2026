@@ -4,13 +4,14 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
+import ArticleHeader from '../../components/ArticleHeader.astro';
 
 export async function getStaticPaths() {
   try {
     const prirucka = await getCollection('prirucka', (entry) => {
-      // Only include entries that have required fields (title and id)
-      // This filters out files without proper frontmatter
-      return entry.data.title && entry.data.id;
+      // Only include entries that have required fields (title and id) and are published
+      // This filters out files without proper frontmatter and unpublished entries
+      return entry.data.title && entry.data.id && entry.data.published === true;
     });
     return prirucka.map((item) => {
       // Remove subdirectory prefix from slug (e.g., "content/lazy-loading" -> "lazy-loading")
@@ -32,15 +33,6 @@ const { Content } = await item.render();
 
 // Remove subdirectory prefix from slug for clean URLs
 const cleanSlug = item.slug.replace(/^(content|content-ebook|content-vdamp|content-vdlayout|content-vdwd)\//, '');
-
-function formatDate(date: Date | undefined): string {
-  if (!date) return '';
-  return new Intl.DateTimeFormat('cs-CZ', {
-    day: 'numeric',
-    month: 'numeric',
-    year: 'numeric',
-  }).format(date);
-}
 ---
 
 <BaseLayout
@@ -99,30 +91,11 @@ function formatDate(date: Date | undefined): string {
   </Fragment>
 
   <main role="main" id="main" aria-label="Hlavní obsah">
-    <div class="page-head page-head--subhead">
-      <h1>{item.data.title}</h1>
-    </div>
-
-    {(item.data.author || item.data.date) && (
-      <div class="page-subhead">
-        <p class="mb-0 page-subhead__meta">
-          {item.data.author && (
-            <a class="page-subhead__author" href="/martin">
-              <span class="avatar avatar--tiny avatar--inline mr-05">
-                <img src="/assets/img/content/lectors/shoulders-martin-michalek_50x50.png" alt="Martin Michálek" width="50" height="50" class="avatar__image" />
-              </span>
-              {item.data.author}
-            </a>
-          )}
-          {item.data.date && (
-            <span class="page-subhead__date">
-              {item.data.author && ' &nbsp;&ndash;'}
-              {formatDate(item.data.date)}
-            </span>
-          )}
-        </p>
-      </div>
-    )}
+    <ArticleHeader 
+      title={item.data.title}
+      author={item.data.author || 'Martin Michálek'}
+      date={item.data.date}
+    />
 
     <div class="content">
       <div class="article">

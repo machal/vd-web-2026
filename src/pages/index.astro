@@ -16,6 +16,10 @@ const priruckaPosts = await getCollection('prirucka');
 const allContent = [...blogPosts, ...podcasts, ...priruckaPosts]
   .filter(post => {
     // Filtrovat jen publikované články
+    // Pro blog/podcast: postStatus !== 'Draft', pro příručku: published === true
+    if (post.collection === 'prirucka') {
+      return post.data.published === true;
+    }
     return post.data.published !== false;
   })
   .sort((a, b) => {
