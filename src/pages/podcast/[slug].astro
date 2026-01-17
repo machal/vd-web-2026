@@ -1,4 +1,5 @@
 ---
+import { Fragment } from 'astro/jsx-runtime';
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Header from '../../components/Header.astro';
@@ -34,6 +35,51 @@ function formatDate(date: Date): string {
   <Header slot="header" />
   <Footer slot="footer" />
 
+  <Fragment slot="styles">
+    <style>
+      /* Anchor links in headings - show "#" on hover */
+      @media only screen and (min-width: 740px) {
+        .article h1[id] > a,
+        .article h2[id] > a,
+        .article h3[id] > a,
+        .article h4[id] > a,
+        .article h5[id] > a {
+          position: relative;
+        }
+        
+        .article h1[id] > a:hover::before,
+        .article h1[id] > a:focus::before,
+        .article h1[id] > a:active::before,
+        .article h2[id] > a:hover::before,
+        .article h2[id] > a:focus::before,
+        .article h2[id] > a:active::before,
+        .article h3[id] > a:hover::before,
+        .article h3[id] > a:focus::before,
+        .article h3[id] > a:active::before,
+        .article h4[id] > a:hover::before,
+        .article h4[id] > a:focus::before,
+        .article h4[id] > a:active::before,
+        .article h5[id] > a:hover::before,
+        .article h5[id] > a:focus::before,
+        .article h5[id] > a:active::before {
+          content: "#";
+          position: absolute;
+          left: -1.25rem;
+          color: rgba(53, 91, 12, 0.3);
+        }
+        
+        .article h1[id],
+        .article h2[id],
+        .article h3[id],
+        .article h4[id],
+        .article h5[id] {
+          padding-left: 1.5rem;
+          margin-left: -1.5rem;
+        }
+      }
+    </style>
+  </Fragment>
+
   <main role="main" id="main" aria-label="Hlavní obsah">
     <div class="page-head page-head--subhead">
       <h1>{podcast.data.title}</h1>
@@ -63,9 +109,11 @@ function formatDate(date: Date): string {
       </div>
     )}
 
-    <article class="content">
-      <Content />
-    </article>
+    <div class="content">
+      <div class="article">
+        <Content />
+      </div>
+    </div>
   </main>
   
   <script is:inline src="/assets/js/vrdl.min.js"></script>

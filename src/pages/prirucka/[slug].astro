@@ -1,39 +1,134 @@
 ---
+import { Fragment } from 'astro/jsx-runtime';
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 
 export async function getStaticPaths() {
-  const prirucka = await getCollection('prirucka');
-  return prirucka.map((item) => ({
-    params: { slug: item.slug },
-    props: { item },
-  }));
+  try {
+    const prirucka = await getCollection('prirucka', (entry) => {
+      // Only include entries that have required fields (title and id)
+      // This filters out files without proper frontmatter
+      return entry.data.title && entry.data.id;
+    });
+    return prirucka.map((item) => {
+      // Remove subdirectory prefix from slug (e.g., "content/lazy-loading" -> "lazy-loading")
+      // This handles files in subdirectories like content/, content-vdwd/, etc.
+      const cleanSlug = item.slug.replace(/^(content|content-ebook|content-vdamp|content-vdlayout|content-vdwd)\//, '');
+      return {
+        params: { slug: cleanSlug },
+        props: { item },
+      };
+    });
+  } catch (error) {
+    console.error('Error loading prirucka collection:', error);
+    return [];
+  }
 }
 
 const { item } = Astro.props;
 const { Content } = await item.render();
+
+// Remove subdirectory prefix from slug for clean URLs
+const cleanSlug = item.slug.replace(/^(content|content-ebook|content-vdamp|content-vdlayout|content-vdwd)\//, '');
+
+function formatDate(date: Date | undefined): string {
+  if (!date) return '';
+  return new Intl.DateTimeFormat('cs-CZ', {
+    day: 'numeric',
+    month: 'numeric',
+    year: 'numeric',
+  }).format(date);
+}
 ---
 
 <BaseLayout
   title={item.data.title}
   description={item.data.description || item.data.title}
   ogType="article"
-  ogUrl={`https://www.vzhurudolu.cz/prirucka/${item.slug}`}
+  ogUrl={`https://www.vzhurudolu.cz/prirucka/${cleanSlug}`}
   bodyClass="section-prirucka"
 >
   <Header slot="header" />
   <Footer slot="footer" />
+
+  <Fragment slot="styles">
+    <style>
+      /* Anchor links in headings - show "#" on hover */
+      @media only screen and (min-width: 740px) {
+        .article h1[id] > a,
+        .article h2[id] > a,
+        .article h3[id] > a,
+        .article h4[id] > a,
+        .article h5[id] > a {
+          position: relative;
+        }
+        
+        .article h1[id] > a:hover::before,
+        .article h1[id] > a:focus::before,
+        .article h1[id] > a:active::before,
+        .article h2[id] > a:hover::before,
+        .article h2[id] > a:focus::before,
+        .article h2[id] > a:active::before,
+        .article h3[id] > a:hover::before,
+        .article h3[id] > a:focus::before,
+        .article h3[id] > a:active::before,
+        .article h4[id] > a:hover::before,
+        .article h4[id] > a:focus::before,
+        .article h4[id] > a:active::before,
+        .article h5[id] > a:hover::before,
+        .article h5[id] > a:focus::before,
+        .article h5[id] > a:active::before {
+          content: "#";
+          position: absolute;
+          left: -1.25rem;
+          color: rgba(53, 91, 12, 0.3);
+        }
+        
+        .article h1[id],
+        .article h2[id],
+        .article h3[id],
+        .article h4[id],
+        .article h5[id] {
+          padding-left: 1.5rem;
+          margin-left: -1.5rem;
+        }
+      }
+    </style>
+  </Fragment>
 
   <main role="main" id="main" aria-label="Hlavní obsah">
     <div class="page-head page-head--subhead">
       <h1>{item.data.title}</h1>
     </div>
 
-    <article class="content">
-      <Content />
-    </article>
+    {(item.data.author || item.data.date) && (
+      <div class="page-subhead">
+        <p class="mb-0 page-subhead__meta">
+          {item.data.author && (
+            <a class="page-subhead__author" href="/martin">
+              <span class="avatar avatar--tiny avatar--inline mr-05">
+                <img src="/assets/img/content/lectors/shoulders-martin-michalek_50x50.png" alt="Martin Michálek" width="50" height="50" class="avatar__image" />
+              </span>
+              {item.data.author}
+            </a>
+          )}
+          {item.data.date && (
+            <span class="page-subhead__date">
+              {item.data.author && ' &nbsp;&ndash;'}
+              {formatDate(item.data.date)}
+            </span>
+          )}
+        </p>
+      </div>
+    )}
+
+    <div class="content">
+      <div class="article">
+        <Content />
+      </div>
+    </div>
   </main>
   
   <script is:inline src="/assets/js/vrdl.min.js"></script>

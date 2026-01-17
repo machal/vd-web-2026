@@ -7,16 +7,30 @@ import ArticleListItem from '../components/ArticleListItem.astro';
 import { getCollection } from 'astro:content';
 import { Fragment } from 'astro/jsx-runtime';
 
-// Načtení článků z Markdown souborů
+// Načtení článků z Markdown souborů - všechny tři entity
 const blogPosts = await getCollection('blog');
 const podcasts = await getCollection('podcast');
-const allContent = [...blogPosts, ...podcasts]
-  .sort((a, b) => new Date(b.data.date) - new Date(a.data.date));
+const priruckaPosts = await getCollection('prirucka');
+
+// Spojit všechny články a seřadit podle data od nejnovějšího
+const allContent = [...blogPosts, ...podcasts, ...priruckaPosts]
+  .filter(post => {
+    // Filtrovat jen publikované články
+    return post.data.published !== false;
+  })
+  .sort((a, b) => {
+    const dateA = a.data.date || new Date(0);
+    const dateB = b.data.date || new Date(0);
+    return dateB.getTime() - dateA.getTime();
+  });
 
 const currentPage = 1;
-const postsPerPage = 20;
-const paginatedPosts = allContent.slice(0, postsPerPage);
+const postsPerPage = 5; // Homepage zobrazí jen 5 článků
+const startIndex = (currentPage - 1) * postsPerPage;
+const endIndex = startIndex + postsPerPage;
+const paginatedPosts = allContent.slice(startIndex, endIndex);
 const latestPost = paginatedPosts[0];
+const totalPages = Math.ceil(allContent.length / postsPerPage);
 
 function formatDate(date: Date): string {
   return new Intl.DateTimeFormat('cs-CZ', {
@@ -107,7 +121,7 @@ function getSlug(entry: any): string {
             <ArticleListItem post={post} />
           ))}
 
-          {allContent.length > postsPerPage && (
+          {totalPages > 1 && (
             <p class="ta-c mt-3">
               <a class="button" href="/p=2">Další články</a>
             </p>
