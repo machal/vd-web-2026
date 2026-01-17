@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
+import { categories, type CategoryConfig } from '../../data/categories';
 
 export async function getStaticPaths() {
   const blogPosts = await getCollection('blog');
@@ -22,6 +23,15 @@ function formatDate(date: Date): string {
     year: 'numeric',
   }).format(date);
 }
+
+// Najít kategorie, které odpovídají tagům článku
+function getCategoriesForPost(postTags: string[] = []): CategoryConfig[] {
+  return categories.filter(category => {
+    return category.tags.some(catTag => postTags.includes(catTag));
+  });
+}
+
+const postCategories = getCategoriesForPost(post.data.tags);
 ---
 
 <BaseLayout
@@ -57,6 +67,28 @@ function formatDate(date: Date): string {
     <article class="content">
       <Content />
     </article>
+
+    {postCategories.length > 0 && (
+      <div class="content-full">
+        <div class="row">
+          <div class="col">
+            <p class="ta-c f-sm mb-05">
+              Další články v tématech:
+            </p>
+            <p class="ta-c f-sm mb-0">
+              {postCategories.map((category, index) => (
+                <>
+                  {index > 0 && ' – '}
+                  <a href={`/${category.slug}`}>
+                    {category.title}
+                  </a>
+                </>
+              ))}
+            </p>
+          </div>
+        </div>
+      </div>
+    )}
   </main>
   
   <script is:inline src="/assets/js/vrdl.min.js"></script>

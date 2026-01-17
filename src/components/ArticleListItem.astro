@@ -1,0 +1,47 @@
+---
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  post: CollectionEntry<'blog' | 'podcast' | 'prirucka'>;
+}
+
+const { post } = Astro.props;
+
+function formatDate(date: Date | undefined): string {
+  if (!date) return '';
+  return new Intl.DateTimeFormat('cs-CZ', {
+    day: 'numeric',
+    month: 'numeric',
+    year: 'numeric',
+  }).format(date);
+}
+
+function getSlug(entry: CollectionEntry<'blog' | 'podcast' | 'prirucka'>): string {
+  if (entry.collection === 'blog') {
+    return `/blog/${entry.slug}`;
+  } else if (entry.collection === 'podcast') {
+    return `/podcast/${entry.slug}`;
+  } else if (entry.collection === 'prirucka') {
+    return `/prirucka/${entry.slug}`;
+  }
+  return '#';
+}
+---
+
+<article role="article" class="mb-15">
+  <h2 class="h4 mb-05">
+    {post.collection === 'podcast' && (
+      <>
+        <a href="/podcast">PODCAST:</a>{' '}
+      </>
+    )}
+    <a href={getSlug(post)}>{post.data.title}</a>
+  </h2>
+  <p>
+    <span class="text-color-lightest">
+      {formatDate(post.data.date)}
+      {post.data.date && ' —'}
+    </span>
+    {post.data.description && ` ${post.data.description}`}
+  </p>
+</article>

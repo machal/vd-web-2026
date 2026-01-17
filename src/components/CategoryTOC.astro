@@ -1,0 +1,17 @@
+---
+interface Props {
+  category: string;
+}
+
+const { category } = Astro.props;
+---
+
+<link rel="stylesheet" href="/assets/css/modules-standalone/min/toc.min.css" />
+
+<div class="catCatalogue">
+  <div class="content-full">
+    <div class="toc raised">
+      <slot />
+    </div>
+  </div>
+</div>

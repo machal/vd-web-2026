@@ -178,7 +178,7 @@ $vd-badge-color-dark: hsl(194deg 100% 89%);
   --vd-text-color-rgb: #{$vd-brown-color-rgb};
   --vd-text-color: rgb(var(--vd-text-color-rgb));
   --vd-text-color-lighter: rgba(var(--vd-text-color-rgb), 0.8);
-  --vd-text-color-lightest: rgba(var(--vd-text-color-rgb), 0.5);
+  --vd-text-color-lightest: rgba(var(--vd-text-color-rgb), 0.7);
   --vd-background-color: #{$vd-bg-color};
   --vd-content-bg-color: #{$vd-white-color};
   --vd-border-color: rgba(var(--vd-text-color-rgb));

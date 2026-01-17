@@ -1,0 +1,130 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import CategoryTOC from '../components/CategoryTOC.astro';
+import CategoryTOCResponzivniDesign from '../components/categories/CategoryTOCResponzivniDesign.astro';
+import CategoryTOCOrganizaceCSS from '../components/categories/CategoryTOCOrganizaceCSS.astro';
+import CategoryTOCNastroje from '../components/categories/CategoryTOCNastroje.astro';
+import CategoryTOCRychlostNacitani from '../components/categories/CategoryTOCRychlostNacitani.astro';
+import CategoryTOCCSS from '../components/categories/CategoryTOCCSS.astro';
+import ArticleListItem from '../components/ArticleListItem.astro';
+import { getCollection } from 'astro:content';
+import { getCategoryBySlug, categories } from '../data/categories';
+import { Fragment } from 'astro/jsx-runtime';
+
+export async function getStaticPaths() {
+  return categories.map((category) => ({
+    params: { category: category.slug },
+  }));
+}
+
+const { category } = Astro.params;
+
+if (!category) {
+  return Astro.redirect('/404');
+}
+
+const categoryConfig = getCategoryBySlug(category);
+
+if (!categoryConfig) {
+  return Astro.redirect('/404');
+}
+
+// Načtení všech článků
+const blogPosts = await getCollection('blog');
+const podcasts = await getCollection('podcast');
+const priruckaPosts = await getCollection('prirucka');
+
+// Filtrování článků podle tagů kategorie
+// Zahrnuje články s odpovídajícími tagy nebo články z příručky, které mají kategorii v slug
+const allContent = [...blogPosts, ...podcasts, ...priruckaPosts]
+  .filter(post => {
+    const tags = post.data.tags || [];
+    const hasMatchingTag = categoryConfig.tags.some(catTag => tags.includes(catTag));
+    
+    // Pro příručku také zahrneme články, které mají kategorii v slug
+    // Např. pro CSS kategorii zahrneme články s "css" v slug
+    if (post.collection === 'prirucka') {
+      const slugMatches = categoryConfig.tags.some(catTag => {
+        const normalizedTag = catTag.replace('-', '');
+        return post.slug.includes(normalizedTag) || post.slug.startsWith(catTag.split('-')[0]);
+      });
+      return hasMatchingTag || slugMatches;
+    }
+    
+    return hasMatchingTag;
+  })
+  .sort((a, b) => {
+    const dateA = a.data.date || new Date(0);
+    const dateB = b.data.date || new Date(0);
+    return dateB.getTime() - dateA.getTime();
+  });
+
+const currentPage = 1;
+const postsPerPage = 20;
+const paginatedPosts = allContent.slice(0, postsPerPage);
+
+function getTOCComponent(categorySlug: string) {
+  switch (categorySlug) {
+    case 'responzivni-design':
+      return CategoryTOCResponzivniDesign;
+    case 'organizace-css':
+      return CategoryTOCOrganizaceCSS;
+    case 'nastroje':
+      return CategoryTOCNastroje;
+    case 'rychlost-nacitani':
+      return CategoryTOCRychlostNacitani;
+    case 'css':
+      return CategoryTOCCSS;
+    default:
+      return null;
+  }
+}
+
+const TOCComponent = getTOCComponent(category);
+---
+
+<BaseLayout
+  title={`Téma „${categoryConfig.title}" na Vzhůru dolů`}
+  description={categoryConfig.description}
+  bodyClass="section-home"
+  ogUrl={`https://www.vzhurudolu.cz/${category}`}
+>
+  <Fragment slot="styles">
+    <link rel="stylesheet" href="/assets/css/modules-standalone/min/topbar.min.css" />
+    <link rel="stylesheet" href="/assets/css/modules-standalone/min/toc.min.css" />
+  </Fragment>
+
+  <Header slot="header" />
+  <Footer slot="footer" />
+
+  <main role="main" id="main" aria-label="Hlavní obsah">
+    <div class="page-head page-head--lower">
+      <h1>{categoryConfig.title}</h1>
+      <div class="mb-0 maxw-30em">
+        <p>{categoryConfig.description}</p>
+      </div>
+    </div>
+
+    {categoryConfig.hasTOC && TOCComponent && (
+      <CategoryTOC category={category}>
+        <TOCComponent />
+      </CategoryTOC>
+    )}
+
+    <div class="section">
+      <div class="content">
+        {paginatedPosts.map((post) => (
+          <ArticleListItem post={post} />
+        ))}
+
+        {allContent.length > postsPerPage && (
+          <p class="ta-c mt-3">
+            <a class="button" href={`/${category}/p=2`}>Další články</a>
+          </p>
+        )}
+      </div>
+    </div>
+  </main>
+</BaseLayout>

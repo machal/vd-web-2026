@@ -3,6 +3,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import ArticleListItem from '../components/ArticleListItem.astro';
 import { getCollection } from 'astro:content';
 import { Fragment } from 'astro/jsx-runtime';
 
@@ -103,23 +104,7 @@ function getSlug(entry: any): string {
           <hr class="hr--small hr--spaced" />
           
           {paginatedPosts.slice(1).map((post) => (
-            <article role="article" class="mb-15">
-              <h2 class="h4 mb-05">
-                {post.collection === 'podcast' && (
-                  <>
-                    <a href="/podcast">PODCAST:</a>{' '}
-                  </>
-                )}
-                <a href={getSlug(post)}>{post.data.title}</a>
-              </h2>
-              <p>
-                <span class="text-color-lightest">
-                  {formatDate(post.data.date)}
-                  —
-                </span>
-                {post.data.description}
-              </p>
-            </article>
+            <ArticleListItem post={post} />
           ))}
 
           {allContent.length > postsPerPage && (

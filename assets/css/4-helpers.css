@@ -2,7 +2,7 @@
   --vd-text-color-rgb: 46, 44, 9;
   --vd-text-color: rgb(var(--vd-text-color-rgb));
   --vd-text-color-lighter: rgba(var(--vd-text-color-rgb), 0.8);
-  --vd-text-color-lightest: rgba(var(--vd-text-color-rgb), 0.5);
+  --vd-text-color-lightest: rgba(var(--vd-text-color-rgb), 0.7);
   --vd-background-color: #e5e3df;
   --vd-content-bg-color: #fcfcf7;
   --vd-border-color: rgba(var(--vd-text-color-rgb));
