@@ -1,0 +1,841 @@
+
+<!DOCTYPE html>
+<html   class="no-js" lang="cs">
+
+  <head>
+    <meta charset="UTF-8">
+
+    <title>Kniha a e-book „CSS: moderní layout“</title>
+
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, viewport-fit=cover">
+
+    <meta name="description" content="Grid, flexbox a nové metody rozvržení webů ve 170 ukázkách.">
+
+
+
+    <!-- Socials -->
+    <meta property="og:title" content="Kniha a e-book „CSS: moderní layout“">
+    <meta property="og:description" content="Grid, flexbox a nové metody rozvržení webů ve 170 ukázkách.">
+
+
+
+
+        <meta property="og:image" content="https://www.vzhurudolu.cz/assets/img/content/src/socials/css-layout-soc-1.jpg">
+        <meta property="og:image" content="https://www.vzhurudolu.cz/assets/img/content/src/socials/css-layout-soc-2.jpg">
+        <meta property="og:image" content="https://www.vzhurudolu.cz/assets/img/content/src/socials/css-layout-soc-3.jpg">
+
+    <meta property="fb:pages" content="280644995384985">
+    <meta property="fb:app_id" content="201909440432114">
+
+    <meta property="og:url" content="https://www.vzhurudolu.cz/css-layout/">
+    <meta property="og:site_name" content="Vzhůru dolů">
+    <meta property="og:type" content="book">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@vzhurudolu">
+    <meta name="twitter:dnt" content="on">
+
+        <link rel="amphtml" href="https://www.vzhurudolu.cz/amp/css-layout/">
+
+    <!-- English version -->
+    <link rel="alternate" hreflang="en-us" href="https://www.cssmine.com">
+
+    <!-- Favicony/touchicons  -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/manifest.json">
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#3d6a0d">
+    <link rel="shortcut icon" href="/favicon/favicon.ico">
+    <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+    <meta name="application-name" content="Vzhůru dolů">
+    <meta name="theme-color" content="#3d6a0d">
+
+      <link rel="alternate" type="application/rss+xml" title="Vzhůru dolů" href="/rss">
+
+    <!-- Scripts and styles -->
+
+      <link rel="preload" href="/assets/fonts/foro-extra-bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="/assets/css/1-base.min.css?1710496182">
+  <link rel="stylesheet" href="/assets/css/2-components.min.css?1710496180">
+  <link rel="stylesheet" href="/assets/css/3-libraries.min.css?1710496181">
+  <link rel="stylesheet" href="/assets/css/4-helpers.min.css?1710496182">
+<script>
+    // document.no-js -> document.js
+    document.documentElement.className =
+       document.documentElement.className.replace("no-js","js");
+</script>
+
+       
+
+    <link rel="author" href="/humans.txt">
+
+  <script data-cfasync="false" nonce="29e922e0-ac98-469b-82b9-1bfdd839c89b">try{(function(w,d){!function(j,k,l,m){if(j.zaraz)console.error("zaraz is loaded twice");else{j[l]=j[l]||{};j[l].executed=[];j.zaraz={deferred:[],listeners:[]};j.zaraz._v="5874";j.zaraz._n="29e922e0-ac98-469b-82b9-1bfdd839c89b";j.zaraz.q=[];j.zaraz._f=function(n){return async function(){var o=Array.prototype.slice.call(arguments);j.zaraz.q.push({m:n,a:o})}};for(const p of["track","set","ecommerce","debug"])j.zaraz[p]=j.zaraz._f(p);j.zaraz.init=()=>{var q=k.getElementsByTagName(m)[0],r=k.createElement(m),s=k.getElementsByTagName("title")[0];s&&(j[l].t=k.getElementsByTagName("title")[0].text);j[l].x=Math.random();j[l].w=j.screen.width;j[l].h=j.screen.height;j[l].j=j.innerHeight;j[l].e=j.innerWidth;j[l].l=j.location.href;j[l].r=k.referrer;j[l].k=j.screen.colorDepth;j[l].n=k.characterSet;j[l].o=(new Date).getTimezoneOffset();if(j.dataLayer)for(const t of Object.entries(Object.entries(dataLayer).reduce((u,v)=>({...u[1],...v[1]}),{})))zaraz.set(t[0],t[1],{scope:"page"});j[l].q=[];for(;j.zaraz.q.length;){const w=j.zaraz.q.shift();j[l].q.push(w)}r.defer=!0;for(const x of[localStorage,sessionStorage])Object.keys(x||{}).filter(z=>z.startsWith("_zaraz_")).forEach(y=>{try{j[l]["z_"+y.slice(7)]=JSON.parse(x.getItem(y))}catch{j[l]["z_"+y.slice(7)]=x.getItem(y)}});r.referrerPolicy="origin";r.src="/cdn-cgi/zaraz/s.js?z="+btoa(encodeURIComponent(JSON.stringify(j[l])));q.parentNode.insertBefore(r,q)};["complete","interactive"].includes(k.readyState)?zaraz.init():j.addEventListener("DOMContentLoaded",zaraz.init)}}(w,d,"zarazData","script");window.zaraz._p=async d$=>new Promise(ea=>{if(d$){d$.e&&d$.e.forEach(eb=>{try{const ec=d.querySelector("script[nonce]"),ed=ec?.nonce||ec?.getAttribute("nonce"),ee=d.createElement("script");ed&&(ee.nonce=ed);ee.innerHTML=eb;ee.onload=()=>{d.head.removeChild(ee)};d.head.appendChild(ee)}catch(ef){console.error(`Error executing script: ${eb}\n`,ef)}});Promise.allSettled((d$.f||[]).map(eg=>fetch(eg[0],eg[1])))}ea()});zaraz._p({"e":["(function(w,d){})(window,document)"]});})(window,document)}catch(e){throw fetch("/cdn-cgi/zaraz/t"),e;};</script></head>
+
+  <body id="body" class="section-ebooks">
+
+<!-- SpeedCurve LUX Settings -->
+
+
+    <a href="#main" class="skip-link">Přejít na hlavní obsah</a>
+
+<svg viewBox="0 0 28 25" class="sr-only">
+  <symbol id="vd-symbol" aria-label="Logo Vzhůru dolů: Mlátek a želízko">
+    <path d="M27.975,11.038c0,0-0.755-3.782-1.198-4.24l-1.689-1.744l0.249-0.256l0.025-0.027
+      c0.231-0.243,0.231-0.632,0-0.872l-0.633-0.654l-0.634-0.654c-0.257-0.241-0.534-0.323-0.845,0l-0.278,0.285l-2.421-2.501
+      c-0.16-0.164-0.418-0.164-0.576,0L17.109,3.33c-0.073,0.08-0.114,0.187-0.114,0.297c0,0.11,0.041,0.216,0.114,0.294l2.427,2.5
+      l-5.584,5.758L8.27,6.322c0.977-0.931,2.004-1.81,3.073-2.629c0.164-0.125,0.2-0.357,0.081-0.527
+      C10.71,2.151,9.994,1.138,9.28,0.123C9.214,0.039,9.121-0.013,9.019-0.022C8.917-0.032,8.813,0,8.736,0.067
+      C7.491,1.02,6.301,2.041,5.169,3.125L4.881,2.829L4.684,2.692c-0.228-0.004-0.111,0-0.352-0.016
+      C4.205,2.692,4.139,2.752,4.037,2.829L3.403,3.481L2.769,4.135c-0.234,0.241-0.234,0.631,0,0.871l0.289,0.298
+      C2.004,6.473,1.011,7.701,0.088,8.986C0.022,9.067-0.01,9.174,0.002,9.278c0.009,0.106,0.059,0.203,0.14,0.27
+      c0.984,0.738,1.967,1.475,2.95,2.212c0.165,0.12,0.393,0.083,0.512-0.085C4.4,10.568,5.254,9.51,6.156,8.5l5.682,5.856l-7.607,7.847
+      c-0.467,0.481-0.467,1.262,0,1.743l0.212,0.217l0.21,0.22c0.466,0.481,1.223,0.481,1.69,0l7.607-7.846l7.836,8.08
+      c0.465,0.479,1.223,0.479,1.69,0l0.212-0.219l0.212-0.217c0.466-0.48,0.466-1.263,0-1.743l-7.836-8.082L21.65,8.6l1.689,1.744
+      c0.366,0.379,4.122,1.225,4.122,1.225c0.153,0.05,0.322,0.028,0.456-0.059C28,11.367,28.023,11.195,27.975,11.038"></path>
+  </symbol>
+</svg>
+
+<svg viewBox="0 0 100 100" class="sr-only" aria-label="Balíček kurzů">
+  <symbol id="vd-icon-package">
+    <path d="M50 60.2L2.9 40.8V19.5L50 .7l47.1 19.2v21L50 60.1zM9 36.9l41 16.7L91 37v-13L50 7l-41 17v13z"></path>
+    <path d="M50 99.4L6 81.6V40.8h6.2v36.6L50 92.7l37.8-15.3V40.8H94v40.6z"></path>
+    <path d="M50 42.2L5.1 23.9l1.7-4.3L50 37.2l43.2-17.6 1.6 4.3z"></path>
+    <path d="M47.7 39.8h4.6v17h-4.6zm0 18.3h4.6v38.2h-4.6z"></path>
+  </symbol>
+</svg>
+
+<svg viewBox="0 0 64 64" class="sr-only" aria-label="Hromadná objednávka">
+  <symbol id="vd-icon-bulk-sale">
+    <path d="M43.52 35.334a5.63 5.63 0 00-4.06-1.69c-1.54 0-2.98.59-4.06 1.69a5.63 5.63 0 00-1.69 4.06c0 3.12 2.63 5.76 5.75 5.76 1.54 0 2.98-.6 4.06-1.69 1.1-1.08 1.69-2.53 1.69-4.07s-.59-2.98-1.69-4.06zm-2.247 5.881a2.515 2.515 0 01-1.813.758c-1.396 0-2.571-1.18-2.571-2.577 0-.693.265-1.337.758-1.819a2.51 2.51 0 011.813-.752c.693 0 1.337.265 1.819.758a2.51 2.51 0 01.752 1.813c0 .693-.265 1.337-.758 1.819zM28.6 20.536a5.63 5.63 0 00-4.06-1.69c-1.54 0-2.98.59-4.06 1.69a5.63 5.63 0 00-1.69 4.06c0 3.12 2.63 5.76 5.75 5.76 1.54 0 2.98-.6 4.06-1.69 1.1-1.08 1.69-2.53 1.69-4.07s-.59-2.98-1.69-4.06zm-2.247 5.881a2.515 2.515 0 01-1.813.758c-1.396 0-2.571-1.18-2.571-2.577 0-.693.265-1.337.758-1.819a2.51 2.51 0 011.813-.752c.693 0 1.337.265 1.819.758a2.51 2.51 0 01.752 1.813c0 .693-.265 1.337-.758 1.819zM44.376 19.631l-.005-.005a1.746 1.746 0 00-1.284-.48c-.479.007-.915.18-1.188.47l-22.28 22.28a1.72 1.72 0 00-.49 1.21c0 .444.177.863.538 1.257.298.291.732.457 1.191.457.473 0 .925-.175 1.242-.483L44.377 22.06a1.75 1.75 0 00-.001-2.429z"></path>
+    <path d="M40.751 62.407a3.454 3.454 0 01-1.993-.629L32 57.05l-6.76 4.729a3.501 3.501 0 01-3.064.458 3.494 3.494 0 01-2.21-2.17l-2.688-7.8-8.246-.15a3.496 3.496 0 01-2.745-1.43 3.495 3.495 0 01-.514-3.054l2.401-7.892-6.58-4.971a3.488 3.488 0 01-1.379-2.771 3.49 3.49 0 011.38-2.771l6.579-4.972-2.401-7.892c-.315-1.035-.123-2.177.514-3.053s1.663-1.411 2.746-1.43l8.246-.151 2.689-7.798a3.488 3.488 0 012.211-2.171 3.49 3.49 0 013.063.458L32 6.949l6.759-4.73a3.498 3.498 0 013.066-.457 3.492 3.492 0 012.209 2.17l2.688 7.799 8.246.151a3.496 3.496 0 012.746 1.429 3.49 3.49 0 01.513 3.055l-2.399 7.89 6.577 4.971a3.49 3.49 0 011.381 2.771 3.487 3.487 0 01-1.381 2.771l-6.578 4.972 2.4 7.892a3.486 3.486 0 01-.514 3.053 3.493 3.493 0 01-2.744 1.431l-8.247.15-2.688 7.799a3.498 3.498 0 01-2.21 2.171c-.348.113-.708.17-1.073.17zM23.248 4.592a.473.473 0 00-.446.318l-3.031 8.79c-.205.596-.761 1-1.391 1.011l-9.295.17a.475.475 0 00-.444.611l2.706 8.894a1.5 1.5 0 01-.531 1.633l-7.415 5.604a.475.475 0 000 .754l7.415 5.604a1.5 1.5 0 01.531 1.633l-2.706 8.894a.474.474 0 00.445.61l9.294.17c.63.012 1.186.416 1.391 1.011l3.03 8.79a.471.471 0 00.718.233l7.621-5.332a1.501 1.501 0 011.72 0l7.62 5.331a.492.492 0 00.419.063.476.476 0 00.3-.297l3.03-8.789a1.501 1.501 0 011.391-1.011l9.295-.17a.474.474 0 00.444-.609l-2.706-8.895a1.497 1.497 0 01.53-1.633l7.415-5.604a.471.471 0 000-.753l-.001-.001-7.414-5.604a1.5 1.5 0 01-.531-1.633l2.705-8.894a.473.473 0 00-.443-.611l-9.295-.17a1.499 1.499 0 01-1.391-1.011l-3.03-8.79a.474.474 0 00-.721-.232l-7.618 5.331a1.501 1.501 0 01-1.72 0l-7.62-5.332a.477.477 0 00-.271-.084z"></path>
+  </symbol>
+</svg>
+
+<svg viewBox="0 0 18 14" class="sr-only" aria-label="Oddělovač nůžky">
+  <symbol id="vd-icon-scissors">
+    <path d="M4.587,13.503c0.837-0.48,1.45-1.248,1.683-2.103c0.159-0.582,0.129-1.173-0.079-1.688l2.634-1.509
+    c2.457,1.34,6.092,3.326,6.53,3.578c1.069,0.613,2.258-0.394,2.307-0.436L18,11.052L10.925,7L18,2.947l-0.339-0.292
+    c-0.051-0.043-1.238-1.05-2.31-0.437C14.916,2.47,11.28,4.456,8.824,5.796L6.188,4.289C6.397,3.773,6.426,3.183,6.27,2.6
+    C6.037,1.744,5.423,0.977,4.585,0.497c-1.576-0.903-3.487-0.54-4.259,0.812C0.11,1.686,0,2.104,0,2.551
+    c0,0.246,0.019,0.501,0.102,0.744c0.492,1.449,1.674,2.191,2.888,2.547c0.052,0.015,2.942,0.729,3.571,1.127
+    c0,0,0.022,0.013,0.058,0.031C6.583,7.018,6.561,7.031,6.561,7.031C5.932,7.43,3.041,8.145,2.989,8.16
+    c-1.214,0.355-2.396,1.098-2.888,2.545C0.019,10.949,0,11.203,0,11.449c0,0.447,0.11,0.865,0.326,1.244
+    C1.099,14.043,3.011,14.406,4.587,13.503L4.587,13.503z M2.452,4.228C1.93,3.929,1.535,3.447,1.398,2.942
+    C1.362,2.81,1.345,2.678,1.345,2.554c0-0.209,0.052-0.402,0.149-0.575c0.403-0.707,1.491-0.846,2.425-0.313
+    c0.529,0.304,0.912,0.774,1.053,1.286c0.094,0.35,0.064,0.688-0.095,0.964C4.474,4.624,3.385,4.763,2.452,4.228L2.452,4.228z
+    M1.494,12.02c-0.1-0.171-0.149-0.364-0.149-0.574c0-0.125,0.018-0.256,0.054-0.389c0.137-0.504,0.531-0.987,1.054-1.286
+    c0.933-0.535,2.021-0.396,2.425,0.31c0.158,0.278,0.188,0.616,0.094,0.966c-0.14,0.511-0.523,0.981-1.052,1.286
+    C2.985,12.867,1.896,12.728,1.494,12.02L1.494,12.02z M1.494,12.02"></path>
+  </symbol>
+</svg>
+
+<link rel="stylesheet" href="/assets/css/modules-standalone/min/topbar.min.css?1710496180" /><script> </script>
+    <div class="container">
+
+      <header class="logo" role="banner" aria-label="Logo">
+        <a href="/">
+          <span class="logo__sign">
+            <svg class="logo__symbol" viewBox="0 0 28 25" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <use class="vd-symbol" xlink:href="#vd-symbol" x="0" y="0"></use>
+            </svg>
+          </span><br>
+          Vzhůru<br>dolů
+        </a>
+      </header>
+
+      <nav class="nav nav--site p-r" aria-labelledby="nav-heading" role="navigation">
+        <h2 class="nav__heading sr-only" id="nav-heading">
+          Hlavní navigace
+        </h2>
+        <ul class="nav__list">
+
+
+                        <li class="nav__item f-6">
+                            <a class="nav__item-in color-home "
+                             href="/">
+                                                        Články
+
+                            </a>
+                        </li>
+
+
+                        <li class="nav__item f-6">
+                            <a class="nav__item-in color-podcast "
+                             href="/podcast">
+                                                        Podcast
+
+                            </a>
+                        </li>
+
+
+                        <li class="nav__item nav__item--active f-6">
+                                <strong>
+                                <a
+                                    class="nav__item-in color-ebook "
+                                 href="/ebooky">
+                                                            Knihy
+
+                                </a>
+                                </strong>
+                        </li>
+
+
+                        <li class="nav__item f-6">
+                            <a class="nav__item-in color-video "
+                             href="/video">
+                                                        Video
+
+                            </a>
+                        </li>
+        </ul>
+
+<div class="p-a t-05 r-05" aria-labelledby="head-user-heading" id="head-user">
+  <h2 class="sr-only" id="head-user-heading">
+    Uživatel
+  </h2>
+  <p class="mb-0">
+      <a class="td-n d-if ai-c f-6" href="/prihlaseni">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+        </svg>
+        <span class="visible-inline-block-small-up ml-0125">
+          Přihlášení
+        </span>
+      </a>
+  </p>
+</div>
+
+      </nav><!-- .nav -->
+
+    <div class="content-container">
+
+
+        <div class="page-head ebook-head ebook-vdlayout">
+          
+<link rel="stylesheet" href="/assets/css/modules-standalone/min/pages/ebook.min.css?1710496181" /><script> </script>
+<div class="ebook-head__image">
+
+  <picture class="course-icon__image">
+    <source srcset="/assets/img/content/handmade/ebooks/vdlayout/vdlayout-model-both__1540.webp" media="(min-width: 800px)">
+    <img src="/assets/img/content/handmade/ebooks/vdlayout/vdlayout-model-both__760.webp"
+      alt="Kniha a e-book „CSS: moderní layout“"
+      loading="eager" fetchpriority="high"
+      width="1540" height="1270">
+  </picture>
+
+</div>
+
+<div class="ebook-head__text">
+
+  <h1>
+    <strong class="ebook-head__title-sup">CSS</strong>
+    <span class="ebook-head__title-sub">moderní layout</span>
+  </h1>
+
+  <p class="f-4 mb-15 ebook-head__text-perex">
+    Grid, flexbox a nové metody rozvržení webů
+    ve 170 ukázkách.
+  </p>
+
+  <p>
+    <a href="https://form.simpleshop.cz/oPqmx/buy/" class="button button--primary">
+      Koupit
+    </a>
+  </p>
+
+  <p class="f-sm">
+
+    440 stránek tištěné knihy.
+    <br>
+    E-book v EPUB, MOBI a PDF.
+
+  </p>
+
+</div>
+
+        </div>
+
+
+      <main role="main" id="main" aria-label="Hlavní obsah" class="ebook-vdlayout">
+        
+<div class="article">
+
+  <div class="section">
+
+    <div class="content ta-c maxw-30em">
+
+      <p>
+        Zapomeňte na staré přístupy a pusťte se s pomocí
+        příkladů do moderních metod, které vám ušetří spoustu
+        času a poskytnou nové možnosti jak tvořit design webů.
+      </p>
+
+    </div>
+
+  </div><!-- .section -->
+
+</div><!-- .article -->
+
+<div class="section section-taller bg-highlight-neutral ta-c ">
+
+  <div class="content-full">
+
+    <div id="objednavka" class="row mb-2 mt-0">
+
+      <div class="col w-50-sm px-1 maxw-30em">
+        <div class="py-1 px-15 active">
+          <a class="d-b ta-c" href="/css-layout/">
+            <picture>
+              <source type="image/avif"
+                srcset="/assets/img/content/handmade/ebooks/vdlayout/vdlayout-front-both.avif">
+              <img src="/assets/img/content/handmade/ebooks/vdlayout/vdlayout-front-both.webp"
+                  alt="Moderní layout v CSS: kniha s e-bookem" width="130" height="130"
+                  loading="lazy">
+            </picture>
+          </a>
+          <br>
+          <strong class="mb-0">
+            Kniha a e-book
+          </strong>
+          <p class="mb-0">
+            <strong class="badge badge--brown tt-n">449 Kč</strong>
+            <span class="suppress f-6">s DPH</span>
+          </p>
+          <p class="mb-1 f-sm maxw-20em px-0">
+            349 Kč kniha a e-book, 100 Kč balné a doprava Zásilkovnou.
+          </p>
+          <p>
+            <a href="https://form.simpleshop.cz/oPqmx/buy/" class="button button--primary f-6">
+              Koupit
+            </a>
+          </p>
+        </div>
+      </div><!-- .col -->
+
+      <div class="col w-50-sm px-1 maxw-30em">
+        <div class="py-1 px-15">
+          <a class="d-b ta-c" href="/css-layout/default-ebook">
+            <picture>
+              <source type="image/avif"
+                srcset="/assets/img/content/handmade/ebooks/vdlayout/vdlayout-front-ebook.avif">
+              <img src="/assets/img/content/handmade/ebooks/vdlayout/vdlayout-front-ebook.webp"
+                  alt="Moderní layout v CSS: e-book" width="130" height="130"
+                  loading="lazy">
+            </picture>
+          </a>
+          <br>
+          <strong class="mb-0">
+            E-book
+          </strong>
+          <p class="mb-0">
+            <strong class="badge badge--brown tt-n">199 Kč</strong>
+            <span class="suppress f-6">s DPH</span>
+          </p>
+          <p class="mb-1 f-sm maxw-20em px-0">
+            199 Kč e-book ve formátech EPUB, MOBI a&nbsp;PDF.
+          </p>
+          <p>
+            <a href="https://form.simpleshop.cz/oPqmx/buy/" class="button button--primary f-6">
+              Koupit
+            </a>
+          </p>
+        </div>
+      </div><!-- .col -->
+
+    </div><!-- .row -->
+
+    <p class="f-sm ta-c">
+      Tištěnou knihu si můžete nyní koupit také <a href="https://knihy.heureka.cz/css-moderni-layout-martin-michalek/">v knihkupectvích</a>.
+      <br class="visible-block-medium-up">
+      Balné a doprava Zásilkovnou po ČR&nbsp;&amp;&nbsp;SR je v ceně.
+      <br class="visible-block-medium-up">
+      Licence e-booku platí pro jednu fyzickou osobu a neomezený počet zařízení.<br>
+    </p>
+
+    <p class="f-sm ta-c f-6">
+      <a href="/css-layout/info" class="button">Více o nákupu</a>
+    </p>
+
+  </div><!-- /.content -->
+
+</div><!-- .section -->
+
+
+<div class="article">
+  <div class="section">
+    <div class="content">
+
+      <h2 id="co" class="ta-c">
+        <a href="#co">
+          Co v knize najdete?
+        </a>
+      </h2>
+
+      <ol class="list list--numbered">
+        <li class="list__item mb-1">
+          CSS Grid, Flexbox, Box Align a Multicolumn.
+        <li class="list__item mb-1">
+          Novinky jako Container Queries, subgrid, masonry layout.
+        <li class="list__item mb-1">
+          Podrobné referenční příručky všech vlastností layoutů.
+        <li class="list__item mb-1">
+          Související vlastnosti jako je calc(), logické vlastnosti, proměnné.
+        <li class="list__item mb-1">
+          Devítka příkladů použití layoutů z praxe v podobě tutoriálů.
+        <li class="list__item mb-1">
+          Téměř 170 praktických ukázek k vyzkoušení.
+      </ol>
+
+    </div>
+  </div><!-- .section -->
+</div><!-- .article -->
+
+<div class="content-full" id="ohlasy">
+  <div class="section">
+    <div class="article">
+
+      <hr class="hr hr--small hr--spaced">
+
+      <h2 class="ta-c mb-2">
+        <a href="#ohlasy">Ohlasy &amp; recenze</a>
+      </h2>
+
+      <div class="row f-sm">
+
+<link rel="stylesheet" href="/assets/css/modules-standalone/min/response.min.css?1710496181" /><script> </script>
+        <article class="course-response response col w-50-xs w-33-md mb-15 pt-0">
+          <blockquote class="response__text">
+            <p>
+              Jde opravdu do hloubky a do detailů. Doporučil bych ji všem front-end vývojářům a kodérům.
+            </p>
+          </blockquote>
+          <p class="mb-0 ml-2">
+            Vojtěch Semecký na
+            <a href="https://zdrojak.cz/clanky/css-moderni-layout-recenze-knihy/">Zdroják.cz</a>
+          </p>
+        </article>
+        <article class="course-response response col w-50-xs w-33-md mb-15 pt-0">
+          <blockquote class="response__text">
+            <p>
+              Skvělý počin. Sazba precizní, tisk rovněž a obsah jakbysmet. Tištěná kniha je tištěná kniha.
+            </p>
+          </blockquote>
+          <p class="mb-0 ml-2">
+            Jan Rybařík na
+            <a href="https://twitter.com/rybajz1/status/1529056259407749121">Twitteru</a>
+          </p>
+        </article>
+        <article class="course-response response col w-50-xs w-33-md mb-15 pt-0">
+          <blockquote class="response__text">
+            <p>Třeba jako já zjistíte, že řada věcí lze dnes v CSS udělat velmi jednoduše a rychleji.</p>
+          </blockquote>
+          <p class="mb-0 ml-2">
+            Jan Polzer na
+            <a href="https://www.maxiorel.cz/recenze-knihy-css-moderni-layout-od-martina-michalka">Maxiorel.cz</a>
+          </p>
+        </article>
+        <article class="course-response response col w-50-xs w-33-md mb-15 pt-0">
+          <blockquote class="response__text">
+            <p>U knihy „CSS: moderní layout“ jsem se přesvědčil, že humor a vývoj webů jde spojit dohromady.</p>
+          </blockquote>
+          <p class="mb-0 ml-2">
+            Miroslav Bartík na
+            <a href="https://webspecialista.cz/css-moderni-layout-martin-michalek/">Webspecialista.cz</a>
+          </p>
+        </article>
+        <article class="course-response response col w-50-xs w-33-md mb-15 pt-0">
+          <blockquote class="response__text">
+            <p>
+              Skvěle vysvětlené. Jiní autoři knih o programovacích jazycích by si z toho měli vzít příklad.
+            </p>
+          </blockquote>
+          <p class="mb-0 ml-2">
+            Jan Michálek na
+            <a href="https://www.linkedin.com/feed/update/urn:li:activity:6930063924121726977/?commentUrn=urn%3Ali%3Acomment%3A(activity%3A6930063924121726977%2C6934780139029315584)">LinkedIn</a>
+          </p>
+        </article>
+        <article class="course-response response col w-50-xs w-33-md mb-15 pt-0">
+          <blockquote class="response__text">
+            <p>
+              Kniha je doplněná o vysvětlující obrázky, tabulky a příklady, které je možné si snadno vyzkoušet.
+            </p>
+          </blockquote>
+          <p class="mb-0 ml-2">
+            Miroslav Holec na
+            <a href="https://www.miroslavholec.cz/blog/kniha-css-moderni-layout-martin-michalek">MiroslavHolec.cz</a>
+          </p>
+        </article>
+
+      </div><!-- /.row -->
+
+    </div><!-- /.article -->
+  </div>
+</div>
+
+<div class="section margin-top-0">
+
+  <div class="content">
+    <div class="article">
+      <h2 id="obsah" class="section-heading">
+        <a href="#obsah">Obsah knihy</a>
+      </h2>
+    </div><!-- /.article -->
+  </div><!-- /.content -->
+
+  <div class="content">
+
+    <p class="f-sm ta-c maxw-30em mb-3">
+      Kniha je cílena na širokou vývojářskou veřejnost. Od začátečníků, studentů a hobbíků, až po
+      zkušené vývojáře a vývojářky.
+    </p>
+
+<link rel="stylesheet" href="/assets/css/modules-standalone/min/accordion.min.css?1710496182" /><script> </script>
+  <div class="raised accordion px-0 py-05">
+
+      <section class="accordion__item">
+        <input type="checkbox" id="acc1" class="accordion__item-toggle">
+        <label class="accordion__item-title" for="acc1">
+          <h3>Kapitola 1: Začínáme s layouty</h3>
+        </label>
+        <div class="accordion__item-content">
+          <p>
+            Seznamka – Grid vs. flex (vs. multicol) – Velmi stručná historie layoutů v CSS – Moderní a nemoderní layouty.
+          </p>
+        </div>
+      </section>
+
+      <section class="accordion__item">
+        <input type="checkbox" id="acc2" class="accordion__item-toggle">
+        <label class="accordion__item-title" for="acc2">
+          <h3>Kapitola 2: Layoutové dotazy</h3>
+        </label>
+        <div class="accordion__item-content">
+          <p>
+            Media Queries – Container Queries – No Queries.
+          </p>
+        </div>
+      </section>
+
+      <section class="accordion__item">
+        <input type="checkbox" id="acc3" class="accordion__item-toggle">
+        <label class="accordion__item-title" for="acc3">
+          <h3>Kapitola 3: Příklady použití</h3>
+        </label>
+        <div class="accordion__item-content">
+          <p>
+            Seznam ukázek – Boční panel – Hromada lívanců – Svatý grál – Responzivní fotogalerie – Mřížka jako v Bootstrapu – Centrování boxu – Formulář pro vyhledávání – Galerie bez Media Queries – Krkavčí technika.
+          </p>
+        </div>
+      </section>
+
+      <section class="accordion__item">
+        <input type="checkbox" id="acc4" class="accordion__item-toggle">
+        <label class="accordion__item-title" for="acc4">
+          <h3>Kapitola 4: Flexbox</h3>
+        </label>
+        <div class="accordion__item-content">
+          <p>
+            Všechny vlastnosti flexboxu – Co je dobré vědět – Flex-wrap – Flex-direction – Flex-flow – Flex-grow – Flex-shrink – Flex-basis – Flex.
+          </p>
+        </div>
+      </section>
+
+      <section class="accordion__item">
+        <input type="checkbox" id="acc5" class="accordion__item-toggle">
+        <label class="accordion__item-title" for="acc5">
+          <h3>Kapitola 5: Grid</h3>
+        </label>
+        <div class="accordion__item-content">
+          <p>
+            Úvod a rozcestník – Vychytávky gridu – Linka, buňka, oblast – Mřížka explicitní a implicitní – Formátovací kontext mřížky – Grid v Internet Exploreru – Grid-template-rows/columns – Grid-template-areas – Grid-template – Grid-auto-rows/columns – Grid-auto-flow – Grid – Grid-row/column – Grid-area – Jednotka fr – Repeat(), auto-fill, auto-fit – Minmax(), fit-content(), max/min-content – Subgrid – Masonry.
+          </p>
+        </div>
+      </section>
+
+      <section class="accordion__item">
+        <input type="checkbox" id="acc6" class="accordion__item-toggle">
+        <label class="accordion__item-title" for="acc6">
+          <h3>Kapitola 6: Vícesloupcový</h3>
+        </label>
+        <div class="accordion__item-content">
+          <p>
+            Úvod a rozcestník – Column-width, column-count a columns – Column-gap a column-rule – Column-fill – Break-before, break-after a break-inside – Column-span.
+          </p>
+        </div>
+      </section>
+
+      <section class="accordion__item">
+        <input type="checkbox" id="acc7" class="accordion__item-toggle">
+        <label class="accordion__item-title" for="acc7">
+          <h3>Kapitola 7: Zarovnání boxů</h3>
+        </label>
+        <div class="accordion__item-content">
+          <p>
+            Úvod a rozcestník – Nutná teorie – Justify-items – Align-items – Place-items – Justify-self – Align-self – Place-self – Gap – Justify-content – Align-content – Place-content – Order.
+          </p>
+        </div>
+      </section>
+
+      <section class="accordion__item">
+        <input type="checkbox" id="acc8" class="accordion__item-toggle">
+        <label class="accordion__item-title" for="acc8">
+          <h3>Kapitola 8: Co ještě vědět?</h3>
+        </label>
+        <div class="accordion__item-content">
+          <p>
+            Internet Explorer (je už mrtvý?) – Podpora layoutů v prohlížečích – Přístupnost – Rychlost – DevTools.
+          </p>
+        </div>
+      </section>
+
+      <section class="accordion__item">
+        <input type="checkbox" id="acc9" class="accordion__item-toggle">
+        <label class="accordion__item-title" for="acc9">
+          <h3>Kapitola 9: Související</h3>
+        </label>
+        <div class="accordion__item-content">
+          <p>
+            Vlastnost display – Logické vlastnosti – Jednotky v CSS – Autorské vlastnosti (proměnné) – Funkce calc() – Funkce min(), max() a clamp() – @supports – Autoprefixer.
+          </p>
+        </div>
+      </section>
+
+  </div>
+
+  </div><!-- .content-full -->
+
+</div><!-- .section -->
+
+<div class="section margin-top-0 ta-c-sm">
+
+    <div class="content">
+      <div class="article">
+
+        <h2 id="ukazka" class="section-heading mb-1">
+          <a href="#ukazka">Ukázková kapitola</a>
+        </h2>
+
+        <p class="maxw-35em px-0">
+          Stáhněte si 36 stránek osmé kapitoly „Co byste ještě měli vědět?“.
+          <br class="visible-block-medium-up">
+          PDF obsahuje plnou verzi dostupnou v&nbsp;tištěné knize nebo pro čtení na počítači.
+          EPUB je určen pro čtečky e-booků a zjednodušená verze MOBI pro čtení na černobílých zařízeních typu Kindle.
+        </p>
+
+        <p class="mb-2 f-6">
+          <a href="/assets/files/vdlayout/CSS-moderni-layout-ukazka.pdf"
+            class="button mb-05 px-05">
+            PDF <span class="suppress f-6">(5&nbsp;MB)</span>
+          </a>
+
+          <a href="/assets/files/vdlayout/CSS-moderni-layout-ukazka.epub"
+            class="button mb-05 px-05">
+            EPUB <span class="suppress f-6">(4&nbsp;MB)</span>
+          </a>
+
+          <a href="/assets/files/vdlayout/CSS-moderni-layout-ukazka.mobi"
+            class="button mb-05 px-05">
+            MOBI <span class="suppress f-6">(2&nbsp;MB)</span>
+          </a>
+        </p>
+
+
+
+      </div><!-- .article -->
+    </div><!-- .content -->
+
+</div><!-- .section -->
+
+<div class="content" id="autor">
+  <div class="section">
+    <div class="article">
+
+      <a href="#autor" class="avatar mb-0-5 pb-0">
+        <img src="/assets/img/content/lectors/shoulders-martin-michalek.png" alt="Martin Michálek" width="200" height="200" loading="lazy" class="avatar__image">
+      </a>
+
+      <h2 class="pt-0 ta-c">
+        <a href="#autor">Martin Michálek</a>
+      </h2>
+
+      <p class="maxw-35em px-0 ta-c-sm">
+        Autor je webový expert s více než dvacetiletou praxí,
+        který se zaměřuje na CSS a rychlost webů.
+        Píše blog <a href="https://www.vzhurudolu.cz/">Vzhůru dolů</a>.
+        Vede spolek <a href="https://frontendisti.cz/">Frontendisti.cz</a>.
+        V rámci projektu <a href="https://www.pagespeed.cz/">PageSpeed.cz</a>
+        pomáhá zlepšovat rychlost webů. Se ženou a dvěma syny žije v Praze.
+      </p>
+
+      <p class="ta-c">
+        <small>
+          <a href="https://www.twitter.com/machal">Twitter</a> –
+          <a href="https://www.linkedin.com/in/martinmichalek/">LinkedIn</a>
+        </small>
+      </p>
+
+    </div>
+    <!-- /.article -->
+  </div>
+</div>
+
+<div class="section section-taller bg-highlight-neutral ta-c section-latest">
+
+  <div class="content-full">
+
+    <div id="objednavka" class="row mb-2 mt-0">
+
+      <div class="col w-50-sm px-1 maxw-30em">
+        <div class="py-1 px-15 active">
+          <a class="d-b ta-c" href="/css-layout/">
+            <picture>
+              <source type="image/avif"
+                srcset="/assets/img/content/handmade/ebooks/vdlayout/vdlayout-front-both.avif">
+              <img src="/assets/img/content/handmade/ebooks/vdlayout/vdlayout-front-both.webp"
+                  alt="Moderní layout v CSS: kniha s e-bookem" width="130" height="130"
+                  loading="lazy">
+            </picture>
+          </a>
+          <br>
+          <strong class="mb-0">
+            Kniha a e-book
+          </strong>
+          <p class="mb-0">
+            <strong class="badge badge--brown tt-n">449 Kč</strong>
+            <span class="suppress f-6">s DPH</span>
+          </p>
+          <p class="mb-1 f-sm maxw-20em px-0">
+            349 Kč kniha a e-book, 100 Kč balné a doprava Zásilkovnou.
+          </p>
+          <p>
+            <a href="https://form.simpleshop.cz/oPqmx/buy/" class="button button--primary f-6">
+              Koupit
+            </a>
+          </p>
+        </div>
+      </div><!-- .col -->
+
+      <div class="col w-50-sm px-1 maxw-30em">
+        <div class="py-1 px-15">
+          <a class="d-b ta-c" href="/css-layout/default-ebook">
+            <picture>
+              <source type="image/avif"
+                srcset="/assets/img/content/handmade/ebooks/vdlayout/vdlayout-front-ebook.avif">
+              <img src="/assets/img/content/handmade/ebooks/vdlayout/vdlayout-front-ebook.webp"
+                  alt="Moderní layout v CSS: e-book" width="130" height="130"
+                  loading="lazy">
+            </picture>
+          </a>
+          <br>
+          <strong class="mb-0">
+            E-book
+          </strong>
+          <p class="mb-0">
+            <strong class="badge badge--brown tt-n">199 Kč</strong>
+            <span class="suppress f-6">s DPH</span>
+          </p>
+          <p class="mb-1 f-sm maxw-20em px-0">
+            199 Kč e-book ve formátech EPUB, MOBI a&nbsp;PDF.
+          </p>
+          <p>
+            <a href="https://form.simpleshop.cz/oPqmx/buy/" class="button button--primary f-6">
+              Koupit
+            </a>
+          </p>
+        </div>
+      </div><!-- .col -->
+
+    </div><!-- .row -->
+
+    <p class="f-sm ta-c">
+      Tištěnou knihu si můžete nyní koupit také <a href="https://knihy.heureka.cz/css-moderni-layout-martin-michalek/">v knihkupectvích</a>.
+      <br class="visible-block-medium-up">
+      Balné a doprava Zásilkovnou po ČR&nbsp;&amp;&nbsp;SR je v ceně.
+      <br class="visible-block-medium-up">
+      Licence e-booku platí pro jednu fyzickou osobu a neomezený počet zařízení.<br>
+    </p>
+
+    <p class="f-sm ta-c f-6">
+      <a href="/css-layout/info" class="button">Více o nákupu</a>
+    </p>
+
+  </div><!-- /.content -->
+
+</div><!-- .section -->
+
+
+      </main>
+    </div><!-- .content-container -->
+
+<div class="be-in-touch f-sm" id="touch">
+
+  <footer class="foot" role="contentinfo" aria-labelledby="foot-heading">
+
+    <h2 class="sr-only" id="foot-heading">
+      Patička webu
+    </h2>
+
+    <p>
+      <a href="/">Články</a> –
+      <a href="/video">Videa</a> –
+      <a href="/kurzy">Kurzy</a> –
+      <a href="/ebooky">E-booky</a> –
+      <a href="/podcast">Podcast</a>
+    </p>
+
+    <p>
+      <a href="/email">Novinky e-mailem</a> –
+      <a href="/o-webu">O webu</a>
+      <br>
+      <a href="/podminky">Obchodní podmínky</a> –
+      <a href="/osobni-udaje">Osobní údaje</a> –
+      <a href="/cookies">Cookies</a>
+    </p>
+
+    <p>
+      Tvoří a provozuje <a href="/martin">Martin&nbsp;Michálek</a>.
+      <br>
+      <a href="/cdn-cgi/l/email-protection#b2dfd3c0c6dbdcf2c4c8dac7c0c7d6dddec79cd1c8"><span class="__cf_email__" data-cfemail="4f222e3d3b26210f3935273a3d3a2b20233a612c35">[email&#160;protected]</span></a>
+    </p>
+
+    <p class="rss-socials">
+      <a href="https://www.facebook.com/VzhuruDolu">
+        Facebook
+      </a>
+      <span class="suppress">–</span>
+      <a href="https://twitter.com/vzhurudolu">
+        Twitter
+      </a>
+      <span class="suppress">–</span>
+      <a href="https://instagram.com/vzhurudolu">
+        Instagram
+      </a>
+      <span class="suppress">–</span>
+      <a href="https://feeds.feedburner.com/vzhurudolu">
+        RSS
+      </a>
+      <br>
+      <a href="http://www.cssmine.com" hreflang="en" title="Also in English">
+        CSS Mine
+      </a>
+    </p>
+
+    <p>
+      <svg class="foot__symbol" viewBox="0 0 28 25" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <use class="vd-symbol" xlink:href="#vd-symbol" x="0" y="0"></use>
+      </svg>
+    </p>
+
+  </footer><!-- .foot -->
+</div><!-- /be-in-touch -->
+
+  </div><!-- /container -->
+
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/assets/js/vrdl.min.js?1710496181"></script>
+    
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"fffd6b8b52b64697966c54986c1c1544","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+
+</html>
