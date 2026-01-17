@@ -1,0 +1,215 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<BaseLayout
+  title="Informace k nákupu knihy „Vzhůru do AMP"
+  description="Informace o prodejci, postupu objednávky a storno podmínkách."
+  ogType="book"
+  ogImage={[
+    'https://www.vzhurudolu.cz/assets/img/content/src/socials/vd-soc-vdamp-1.png',
+    'https://www.vzhurudolu.cz/assets/img/content/src/socials/vd-soc-vdamp-2.png',
+    'https://www.vzhurudolu.cz/assets/img/content/src/socials/vd-soc-vdamp-3.png',
+  ]}
+  ogUrl="https://www.vzhurudolu.cz/ebook-amp/info"
+  bodyClass="section-ebooks"
+>
+  <Header slot="header" />
+  <Footer slot="footer" />
+
+  <div class="page-head">
+    <h1 class="mb-0">
+      Informace k&nbsp;nákupu<br>
+      e-booku „Vzhůru do&nbsp;AMP"
+    </h1>
+  </div>
+
+  <main role="main" id="main" aria-label="Hlavní obsah" class="ebook-amp">
+    <link rel="stylesheet" href="/assets/css/modules-standalone/min/pages/ebook.min.css" />
+    <link rel="stylesheet" href="/assets/css/modules-standalone/min/pages/ebook-vdamp.min.css" />
+
+    <div class="content">
+      <div class="article">
+        <p class="mb-15 ta-c">
+          <a href="#dostanete">Co dostanete?</a>
+          <span class="suppress">—</span>
+          <a href="#postup">Postup objednávky</a>
+          <br>
+          <a href="#licence">Multilicence</a>
+          <span class="suppress">—</span>
+          <a href="#slovensko">Prodej do zahraničí</a>
+          <span class="suppress">—</span>
+          <a href="#reklamace">Reklamace</a>
+          <br>
+          <a href="#verze">Historie verzí</a>
+          <span class="suppress">—</span>
+          <a href="#prodejce">Prodejce</a>
+          <span class="suppress">—</span>
+          <a href="#o-knize">O knize</a>
+        </p>
+
+        <hr class="hr hr--spaced hr--small">
+
+        <h2 id="dostanete" class="ta-c mt-2">
+          <a href="#dostanete">Co dostanete?</a>
+        </h2>
+
+        <ul>
+          <li class="mb-05">
+            Licenci aktuální verze e-booku, která je určená jedné fyzické osobě na neomezeném počtu zařízení. Do firmy pak můžete dokoupit <a href="#licence">multilicenci</a>.
+          </li>
+          <li class="mb-05">
+            Součástí balíčku jsou formáty EPUB (např. pro iPad, iPhone), MOBI (např. pro Kindle) a&nbsp;PDF.
+          </li>
+          <li class="mb-05">
+            Soubory ke každé verzi si můžete stáhnout maximálně pětkrát.
+          </li>
+        </ul>
+
+        <h2 id="postup" class="ta-c mt-2">
+          <a href="#postup">Postup objednávky přes web Vzhůru dolů</a>
+        </h2>
+
+        <ol class="list list--numbered">
+          <li class="list__item mb-1">
+            <span>
+              <a href="./#objednavka">Přes formulář</a> na prodejní stránce
+              pošlete objednávku knihy „Vzhůru do AMP".
+            </span>
+          </li>
+
+          <li class="list__item mb-1">
+            <span>
+              Dorazí vám zálohová (proforma) faktura vygenerovaná
+              službou&nbsp;<a href="https://www.fakturoid.cz/">Fakturoid</a>.
+            </span>
+          </li>
+
+          <li class="list__item mb-1">
+            <span>
+              Fakturu můžete zaplatit kartou přes GoPay, převodem na účet nebo&nbsp;PayPalem.
+            </span>
+          </li>
+
+          <li class="list__item mb-1">
+            <span>
+              Po připsání peněz na účet vám z Fakturoidu dorazí e-mailem faktura
+              jako daňový&nbsp;doklad.
+            </span>
+          </li>
+
+          <li class="list__item mb-1">
+            <span>
+              Do e-mailu vám poté přijde odkaz na soubory e-booku ke stažení
+              ze služby&nbsp;<a href="https://www.fetchapp.com/">Fetchapp.com</a>.
+            </span>
+          </li>
+        </ol>
+
+        <hr class="hr hr--spaced hr--small">
+
+        <h2 id="slovensko" class="ta-c mt-2">
+          <a href="#slovensko">Prodej na Slovensko a do dalších&nbsp;zemí</a>
+        </h2>
+
+        <p>
+          Na Slovensko je e-book možné objednat, běžně přes formulář pro objednávku. Mimo Česko a Slovensko to zatím není možné.
+        </p>
+
+        <h2 id="reklamace" class="ta-c mt-2">
+          <a href="#reklamace">Reklamace a nárok na vrácení peněz</a>
+        </h2>
+
+        <p>
+          Do 14 dnů od objednání máte ze zákona právo požádat o vrácení peněz
+          bez udání&nbsp;důvodu.
+        </p>
+
+        <p>
+          Nestává se to, ale pro jistotu – pokud nebudete s knihou spokojení,
+          vrátíme vám peníze v plné výši. Jen nám to prosím i s odůvodněním
+          napište do jednoho měsíce od&nbsp;zaplacení.
+        </p>
+
+        <h2 id="o-knize" class="ta-c">
+          <a href="#o-knize">Technické údaje</a>
+        </h2>
+
+        <table class="f-sm">
+          <tbody>
+            <tr>
+              <th class="ta-l va-t">Název:</th>
+              <td class="ta-l">Vzhůru do AMP</td>
+            </tr>
+            <tr>
+              <th class="ta-l va-t">Autoři:</th>
+              <td class="ta-l">Martin Michálek, Robin Pokorný</td>
+            </tr>
+            <tr>
+              <th class="ta-l va-t">Nakladatel:</th>
+              <td class="ta-l">Michálek Martin – Vzhůru dolů</td>
+            </tr>
+            <tr>
+              <th class="ta-l va-t">ISBN:</th>
+              <td class="ta-l">
+                PDF: 978-80-88253-04-4<br>
+                MOBI: 978-80-88253-05-1<br>
+                EPUB: 978-80-88253-06-8
+              </td>
+            </tr>
+            <tr>
+              <th class="ta-l va-t">E-book:</th>
+              <td class="ta-l">
+                Formáty PDF, EPUB (Apple atd.) a MOBI (Kindle atd.).
+              </td>
+            </tr>
+            <tr>
+              <th class="ta-l va-t">Počet stránek</th>
+              <td class="ta-l">
+                304 (v&nbsp;PDF).
+              </td>
+            </tr>
+            <tr>
+              <th class="ta-l va-t">Počet ilustrací</th>
+              <td class="ta-l">
+                87
+              </td>
+            </tr>
+            <tr>
+              <th class="ta-l va-t">Vydání:</th>
+              <td class="ta-l">
+                Červen 2019
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="ta-c">
+          <h2 id="prodejce"><a href="#prodejce">Prodejce e-booku</a></h2>
+
+          <p>
+            <a href="/martin">Martin Michálek</a><br>
+            Jurkovičova 988/26<br>
+            149 00, Praha 11<br>
+          </p>
+
+          <p>
+            IČ: 68168861<br>
+            DIČ: 7708304956
+          </p>
+
+          <p>
+            E <a href="mailto:martin@vzhurudolu.cz">martin@vzhurudolu.cz</a><br>
+            T 724&nbsp;071&nbsp;700
+          </p>
+        </div>
+
+        <p>
+          <a href="https://form.simpleshop.cz/a07k4/buy/" class="button button--wide button--primary ta-c">Chci objednat e-book</a>
+        </p>
+      </div>
+    </div>
+  </main>
+</BaseLayout>

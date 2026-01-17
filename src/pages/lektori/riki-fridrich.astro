@@ -1,0 +1,534 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { Fragment } from 'astro/jsx-runtime';
+---
+
+<BaseLayout
+  title="Riki Fridrich"
+  description="Lektor pro školení JavaScriptu,  nástrojů JavaScriptu a Vue.js. Vývojář v Outreach."
+  ogType="profile"
+  ogImage="https://www.vzhurudolu.cz/assets/img/content/src/socials/vd-soc-skoleni.jpg"
+  ogUrl="https://www.vzhurudolu.cz/lektori/riki-fridrich"
+  bodyClass="section-kurzy"
+>
+  <Fragment slot="styles">
+    <link rel="stylesheet" href="/assets/css/modules-standalone/min/pages/lector.min.css" />
+    <link rel="stylesheet" href="/assets/css/modules-standalone/min/course-icon.min.css" />
+    <link rel="stylesheet" href="/assets/css/modules-standalone/min/emblem.min.css" />
+  </Fragment>
+
+  <Header slot="header" />
+  <Footer slot="footer" />
+
+  <div class="page-head lector__head">
+    <h1 class="lector__head-name">
+      Riki Fridrich
+    </h1>
+    <p class="lector__head-image">
+      <picture>
+        <source media="(min-width: 768px)"
+         srcset="
+           /assets/img/content/lectors/riki-fridrich_200.png 200w,
+           /assets/img/content/lectors/riki-fridrich_500.png 500w,
+           /assets/img/content/lectors/riki-fridrich_820.png 820w,
+          "
+         sizes="calc((80vw - 4rem) * .5)"
+         >
+        <img src="/assets/img/content/lectors/shoulders-riki-fridrich.png"
+          alt="Riki Fridrich" height="200">
+      </picture>
+    </p>
+    <div class="lector__head-perex">
+      <p>Lektor pro školení <a href="/kurzy/javascript">JavaScriptu</a>,  <a href="/kurzy/nastroje-javascriptu">nástrojů JavaScriptu</a> a <a href="/kurzy/vue-js">Vue.js</a>. Vývojář v Outreach.</p>
+
+      <div class="lector__head-links">
+        <a href="http://content.fczbkk.com/">Web</a>
+        &ndash;
+        <a href="https://www.linkedin.com/in/fczbkk">LinkedIn</a>
+        &ndash;
+        <a href="https://twitter.com/fczbkk">Twitter</a>
+        &ndash;
+        <a href="https://www.facebook.com/fczbkk">Facebook</a>
+      </div>
+    </div>
+    <div class="lector__head-buttons">
+      <hr>
+      <p>
+        <a href="#videa" class="button button--inverted">Videa</a>
+      </p>
+    </div>
+  </div>
+
+  <main role="main" id="main" aria-label="Hlavní obsah" class="">
+    <div id="info" class="section">
+      <div class="content">
+        <div class="article">
+          <p>Riki je jedním z nejzkušenějších česko-slovenských specialistů na JavaScript, ekosystém nástrojů kolem něj (NPM, Yarn…) a framework Vue.js. Je dostupný pro školení ve firmách.</p>
+
+          <p>Zkušenosti právě teď zúročuje <a href="https://www.outreach.io/">v&nbsp;Outreach</a>, dříve pak v Mall.cz, TopMonks, vydavatelství Economia nebo agentuře&nbsp;Etnetera.</p>
+
+          <p>Riki moc rád vaří, pěstuje a&nbsp;experimentuje.</p>
+
+          <p>Své kurzy vede v krásné slovenštině.</p>
+        </div>
+      </div>
+    </div>
+
+    <hr class="hr--small hr--spaced">
+
+    <div id="prednasky" class="section">
+      <div class="content">
+        <div class="article">
+          <h2 class="section-heading">
+            <a href="#prednasky">
+              Vybrané přednášky
+            </a>
+          </h2>
+        </div>
+      </div>
+
+      <div class="content-full">
+        <div class="row f-6">
+          <div class="col w-33-sm">
+            <a href="https://www.youtube.com/watch?v=BwNFo8imDTI" class="rounded o-h mb-05">
+              <img src="/assets/img/content/lectors/talks/riki-1.jpg"
+                alt="Ako zarábať vyvojom pre Chrome"
+                loading="lazy">
+            </a>
+            <p>
+              <strong>
+                <a href="https://www.youtube.com/watch?v=BwNFo8imDTI">
+                  Ako zarábať vyvojom pre Chrome
+                </a>
+              </strong><br>
+              <span class="suppress">
+                DevFest Praha&nbsp;2013
+              </span>
+            </p>
+          </div>
+
+          <div class="col w-33-sm">
+            <a href="https://www.youtube.com/watch?v=USC3o2FLts0" class="rounded o-h mb-05">
+              <img src="/assets/img/content/lectors/talks/riki-2.jpg"
+                alt="NPM pre lenivých kóderov"
+                loading="lazy">
+            </a>
+            <p>
+              <strong>
+                <a href="https://www.youtube.com/watch?v=USC3o2FLts0">
+                  NPM pre lenivých kóderov
+                </a>
+              </strong><br>
+              <span class="suppress">
+                Barcamp Hradec Králové 2016
+              </span>
+            </p>
+          </div>
+
+          <div class="col w-33-sm">
+            <a href="https://www.youtube.com/watch?v=guPUtQbFkl0" class="rounded o-h mb-05">
+              <img src="/assets/img/content/lectors/talks/riki-3.jpg"
+                alt="Osobná produktivita pomocou vlastných rozšírení do prehliadača"
+                loading="lazy">
+            </a>
+            <p>
+              <strong>
+                <a href="https://www.youtube.com/watch?v=guPUtQbFkl0">
+                  Produktivita a rozšírení do prehliadača
+                </a>
+              </strong><br>
+              <span class="suppress">
+                Devel
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="videa" class="section section-tall margin-top-0 mb-0">
+      <div class="content">
+        <div class="article">
+          <h2 class="section-heading">
+            <a href="#videa">
+              Videa
+            </a>
+          </h2>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="media-object">
+          <p class="media-object__image p-r">
+            <a class="course-icon rounded" href="/video/webinar-vue-uvod">
+              <span class="course-icon__image">
+                <img src="/assets/img/icons/dest/kurzy/webinar-vue-uvod.svg?v=3" alt="Praktický úvod do Vue" height="130" width="130" loading="lazy">
+              </span>
+            </a>
+          </p>
+
+          <div class="media-object__content">
+            <h3 class="media-object__heading h5">
+              <a href="/video/webinar-vue-uvod">Praktický úvod do Vue</a>
+            </h3>
+
+            <div class="media-object__perex">
+              <p class="mb-0">
+                Vstup do populárního javascriptového frameworku s vysvětlením skrytých principů od povolaného lektora.
+              </p>
+              <p class="grid grid--2-col-auto-1fr gap-05 ai-c mb-0 f-6">
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0, 0, 100, 100" class="w-05 h-05">
+                    <path d="M50,97.5 C23.766,97.5 2.5,76.234 2.5,50 C2.5,23.766 23.766,2.5 50,2.5 C76.234,2.5 97.5,23.766 97.5,50 C97.5,76.234 76.234,97.5 50,97.5 z" fill="currentColor"></path>
+                    <path d="M50,2.5 C76.234,2.5 97.5,23.766 97.5,50 C97.5,76.234 76.234,97.5 50,97.5 C23.766,97.5 2.5,76.234 2.5,50 C2.5,23.766 23.766,2.5 50,2.5 z M50,9.5 C27.632,9.5 9.5,27.632 9.5,50 C9.5,72.368 27.632,90.5 50,90.5 C72.368,90.5 90.5,72.368 90.5,50 C90.5,27.632 72.368,9.5 50,9.5 z" fill="currentColor"></path>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0, 0, 100, 100" class="w-05 h-05">
+                    <path d="M50,97.5 C23.766,97.5 2.5,76.234 2.5,50 C2.5,23.766 23.766,2.5 50,2.5 C76.234,2.5 97.5,23.766 97.5,50 C97.5,76.234 76.234,97.5 50,97.5 z" fill="transparent"></path>
+                    <path d="M50,2.5 C76.234,2.5 97.5,23.766 97.5,50 C97.5,76.234 76.234,97.5 50,97.5 C23.766,97.5 2.5,76.234 2.5,50 C2.5,23.766 23.766,2.5 50,2.5 z M50,9.5 C27.632,9.5 9.5,27.632 9.5,50 C9.5,72.368 27.632,90.5 50,90.5 C72.368,90.5 90.5,72.368 90.5,50 C90.5,27.632 72.368,9.5 50,9.5 z" fill="currentColor"></path>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0, 0, 100, 100" class="w-05 h-05">
+                    <path d="M50,97.5 C23.766,97.5 2.5,76.234 2.5,50 C2.5,23.766 23.766,2.5 50,2.5 C76.234,2.5 97.5,23.766 97.5,50 C97.5,76.234 76.234,97.5 50,97.5 z" fill="transparent"></path>
+                    <path d="M50,2.5 C76.234,2.5 97.5,23.766 97.5,50 C97.5,76.234 76.234,97.5 50,97.5 C23.766,97.5 2.5,76.234 2.5,50 C2.5,23.766 23.766,2.5 50,2.5 z M50,9.5 C27.632,9.5 9.5,27.632 9.5,50 C9.5,72.368 27.632,90.5 50,90.5 C72.368,90.5 90.5,72.368 90.5,50 C90.5,27.632 72.368,9.5 50,9.5 z" fill="currentColor"></path>
+                  </svg>
+                </span>
+                <span class="f-6 ellipsis">
+                  Začínající
+                </span>
+              </p>
+              <p class="mb-0">
+                <span title="Cena s DPH. Cena bez DPH: 164 Kč">
+                  Cena:
+                  <strong>199 Kč</strong>
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="media-object">
+          <p class="media-object__image p-r">
+            <a class="course-icon rounded" href="/video/webinar-npm-yarn">
+              <span class="course-icon__image">
+                <img src="/assets/img/icons/dest/kurzy/webinar-npm-yarn.svg?v=3" alt="NPM a Yarn" height="130" width="130" loading="lazy">
+              </span>
+            </a>
+          </p>
+
+          <div class="media-object__content">
+            <h3 class="media-object__heading h5">
+              <a href="/video/webinar-npm-yarn">NPM a Yarn</a>
+            </h3>
+
+            <div class="media-object__perex">
+              <p class="mb-0">
+                NPM a Yarn jsou vnímány hlavně jako správci balíčků, ale byla by škoda je používat jen tak málo.
+              </p>
+              <p class="grid grid--2-col-auto-1fr gap-05 ai-c mb-0 f-6">
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0, 0, 100, 100" class="w-05 h-05">
+                    <path d="M50,97.5 C23.766,97.5 2.5,76.234 2.5,50 C2.5,23.766 23.766,2.5 50,2.5 C76.234,2.5 97.5,23.766 97.5,50 C97.5,76.234 76.234,97.5 50,97.5 z" fill="currentColor"></path>
+                    <path d="M50,2.5 C76.234,2.5 97.5,23.766 97.5,50 C97.5,76.234 76.234,97.5 50,97.5 C23.766,97.5 2.5,76.234 2.5,50 C2.5,23.766 23.766,2.5 50,2.5 z M50,9.5 C27.632,9.5 9.5,27.632 9.5,50 C9.5,72.368 27.632,90.5 50,90.5 C72.368,90.5 90.5,72.368 90.5,50 C90.5,27.632 72.368,9.5 50,9.5 z" fill="currentColor"></path>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0, 0, 100, 100" class="w-05 h-05">
+                    <path d="M50,97.5 C23.766,97.5 2.5,76.234 2.5,50 C2.5,23.766 23.766,2.5 50,2.5 C76.234,2.5 97.5,23.766 97.5,50 C97.5,76.234 76.234,97.5 50,97.5 z" fill="currentColor"></path>
+                    <path d="M50,2.5 C76.234,2.5 97.5,23.766 97.5,50 C97.5,76.234 76.234,97.5 50,97.5 C23.766,97.5 2.5,76.234 2.5,50 C2.5,23.766 23.766,2.5 50,2.5 z M50,9.5 C27.632,9.5 9.5,27.632 9.5,50 C9.5,72.368 27.632,90.5 50,90.5 C72.368,90.5 90.5,72.368 90.5,50 C90.5,27.632 72.368,9.5 50,9.5 z" fill="currentColor"></path>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0, 0, 100, 100" class="w-05 h-05">
+                    <path d="M50,97.5 C23.766,97.5 2.5,76.234 2.5,50 C2.5,23.766 23.766,2.5 50,2.5 C76.234,2.5 97.5,23.766 97.5,50 C97.5,76.234 76.234,97.5 50,97.5 z" fill="transparent"></path>
+                    <path d="M50,2.5 C76.234,2.5 97.5,23.766 97.5,50 C97.5,76.234 76.234,97.5 50,97.5 C23.766,97.5 2.5,76.234 2.5,50 C2.5,23.766 23.766,2.5 50,2.5 z M50,9.5 C27.632,9.5 9.5,27.632 9.5,50 C9.5,72.368 27.632,90.5 50,90.5 C72.368,90.5 90.5,72.368 90.5,50 C90.5,27.632 72.368,9.5 50,9.5 z" fill="currentColor"></path>
+                  </svg>
+                </span>
+                <span class="f-6 ellipsis">
+                  Začínající a středně pokročilí
+                </span>
+              </p>
+              <p class="mb-0">
+                <span title="Cena s DPH. Cena bez DPH: 206 Kč">
+                  Cena:
+                  <strong>249 Kč</strong>
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="media-object">
+          <p class="media-object__image p-r">
+            <a class="course-icon rounded" href="/video/webinar-webpack">
+              <span class="course-icon__image">
+                <img src="/assets/img/icons/dest/kurzy/webinar-webpack.svg?v=3" alt="Principy Webpacku" height="130" width="130" loading="lazy">
+              </span>
+            </a>
+          </p>
+
+          <div class="media-object__content">
+            <h3 class="media-object__heading h5">
+              <a href="/video/webinar-webpack">Principy Webpacku</a>
+            </h3>
+
+            <div class="media-object__perex">
+              <p class="mb-0">
+                Webpack je nejdůležitější nástroj pro zpracování javascriptového, ale i jiného frontendového kódu. Poznejte jej více.
+              </p>
+              <p class="grid grid--2-col-auto-1fr gap-05 ai-c mb-0 f-6">
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0, 0, 100, 100" class="w-05 h-05">
+                    <path d="M50,97.5 C23.766,97.5 2.5,76.234 2.5,50 C2.5,23.766 23.766,2.5 50,2.5 C76.234,2.5 97.5,23.766 97.5,50 C97.5,76.234 76.234,97.5 50,97.5 z" fill="currentColor"></path>
+                    <path d="M50,2.5 C76.234,2.5 97.5,23.766 97.5,50 C97.5,76.234 76.234,97.5 50,97.5 C23.766,97.5 2.5,76.234 2.5,50 C2.5,23.766 23.766,2.5 50,2.5 z M50,9.5 C27.632,9.5 9.5,27.632 9.5,50 C9.5,72.368 27.632,90.5 50,90.5 C72.368,90.5 90.5,72.368 90.5,50 C90.5,27.632 72.368,9.5 50,9.5 z" fill="currentColor"></path>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0, 0, 100, 100" class="w-05 h-05">
+                    <path d="M50,97.5 C23.766,97.5 2.5,76.234 2.5,50 C2.5,23.766 23.766,2.5 50,2.5 C76.234,2.5 97.5,23.766 97.5,50 C97.5,76.234 76.234,97.5 50,97.5 z" fill="currentColor"></path>
+                    <path d="M50,2.5 C76.234,2.5 97.5,23.766 97.5,50 C97.5,76.234 76.234,97.5 50,97.5 C23.766,97.5 2.5,76.234 2.5,50 C2.5,23.766 23.766,2.5 50,2.5 z M50,9.5 C27.632,9.5 9.5,27.632 9.5,50 C9.5,72.368 27.632,90.5 50,90.5 C72.368,90.5 90.5,72.368 90.5,50 C90.5,27.632 72.368,9.5 50,9.5 z" fill="currentColor"></path>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0, 0, 100, 100" class="w-05 h-05">
+                    <path d="M50,97.5 C23.766,97.5 2.5,76.234 2.5,50 C2.5,23.766 23.766,2.5 50,2.5 C76.234,2.5 97.5,23.766 97.5,50 C97.5,76.234 76.234,97.5 50,97.5 z" fill="transparent"></path>
+                    <path d="M50,2.5 C76.234,2.5 97.5,23.766 97.5,50 C97.5,76.234 76.234,97.5 50,97.5 C23.766,97.5 2.5,76.234 2.5,50 C2.5,23.766 23.766,2.5 50,2.5 z M50,9.5 C27.632,9.5 9.5,27.632 9.5,50 C9.5,72.368 27.632,90.5 50,90.5 C72.368,90.5 90.5,72.368 90.5,50 C90.5,27.632 72.368,9.5 50,9.5 z" fill="currentColor"></path>
+                  </svg>
+                </span>
+                <span class="f-6 ellipsis">
+                  Začínající a středně pokročilí
+                </span>
+              </p>
+              <p class="mb-0">
+                <span title="Cena s DPH. Cena bez DPH: 206 Kč">
+                  Cena:
+                  <strong>249 Kč</strong>
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="media-object">
+          <p class="media-object__image p-r">
+            <a class="course-icon rounded" href="/video/webinar-vue-3">
+              <span class="course-icon__image">
+                <img src="/assets/img/icons/dest/kurzy/webinar-vue-3.svg?v=3" alt="Vue 3 prakticky" height="130" width="130" loading="lazy">
+              </span>
+            </a>
+          </p>
+
+          <div class="media-object__content">
+            <h3 class="media-object__heading h5">
+              <a href="/video/webinar-vue-3">Vue 3 prakticky</a>
+            </h3>
+
+            <div class="media-object__perex">
+              <p class="mb-0">
+                Populární framework Vue.js čerstvě přešel na třetí verzi. To je velká událost, která si zaslouží webinář s praktickými ukázkami.
+              </p>
+              <p class="grid grid--2-col-auto-1fr gap-05 ai-c mb-0 f-6">
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0, 0, 100, 100" class="w-05 h-05">
+                    <path d="M50,97.5 C23.766,97.5 2.5,76.234 2.5,50 C2.5,23.766 23.766,2.5 50,2.5 C76.234,2.5 97.5,23.766 97.5,50 C97.5,76.234 76.234,97.5 50,97.5 z" fill="transparent"></path>
+                    <path d="M50,2.5 C76.234,2.5 97.5,23.766 97.5,50 C97.5,76.234 76.234,97.5 50,97.5 C23.766,97.5 2.5,76.234 2.5,50 C2.5,23.766 23.766,2.5 50,2.5 z M50,9.5 C27.632,9.5 9.5,27.632 9.5,50 C9.5,72.368 27.632,90.5 50,90.5 C72.368,90.5 90.5,72.368 90.5,50 C90.5,27.632 72.368,9.5 50,9.5 z" fill="currentColor"></path>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0, 0, 100, 100" class="w-05 h-05">
+                    <path d="M50,97.5 C23.766,97.5 2.5,76.234 2.5,50 C2.5,23.766 23.766,2.5 50,2.5 C76.234,2.5 97.5,23.766 97.5,50 C97.5,76.234 76.234,97.5 50,97.5 z" fill="currentColor"></path>
+                    <path d="M50,2.5 C76.234,2.5 97.5,23.766 97.5,50 C97.5,76.234 76.234,97.5 50,97.5 C23.766,97.5 2.5,76.234 2.5,50 C2.5,23.766 23.766,2.5 50,2.5 z M50,9.5 C27.632,9.5 9.5,27.632 9.5,50 C9.5,72.368 27.632,90.5 50,90.5 C72.368,90.5 90.5,72.368 90.5,50 C90.5,27.632 72.368,9.5 50,9.5 z" fill="currentColor"></path>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0, 0, 100, 100" class="w-05 h-05">
+                    <path d="M50,97.5 C23.766,97.5 2.5,76.234 2.5,50 C2.5,23.766 23.766,2.5 50,2.5 C76.234,2.5 97.5,23.766 97.5,50 C97.5,76.234 76.234,97.5 50,97.5 z" fill="transparent"></path>
+                    <path d="M50,2.5 C76.234,2.5 97.5,23.766 97.5,50 C97.5,76.234 76.234,97.5 50,97.5 C23.766,97.5 2.5,76.234 2.5,50 C2.5,23.766 23.766,2.5 50,2.5 z M50,9.5 C27.632,9.5 9.5,27.632 9.5,50 C9.5,72.368 27.632,90.5 50,90.5 C72.368,90.5 90.5,72.368 90.5,50 C90.5,27.632 72.368,9.5 50,9.5 z" fill="currentColor"></path>
+                  </svg>
+                </span>
+                <span class="f-6 ellipsis">
+                  Středně pokročilí
+                </span>
+              </p>
+              <p class="mb-0">
+                <span title="Cena s DPH. Cena bez DPH: 206 Kč">
+                  Cena:
+                  <strong>249 Kč</strong>
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="media-object">
+          <p class="media-object__image p-r">
+            <a class="course-icon rounded" href="/video/webinar-js-testy">
+              <span class="course-icon__image">
+                <img src="/assets/img/icons/dest/kurzy/webinar-js-testy.svg?v=3" alt="Píšeme testy JS kódu" height="130" width="130" loading="lazy">
+              </span>
+            </a>
+          </p>
+
+          <div class="media-object__content">
+            <h3 class="media-object__heading h5">
+              <a href="/video/webinar-js-testy">Píšeme testy JS kódu</a>
+            </h3>
+
+            <div class="media-object__perex">
+              <p class="mb-0">
+                Psát testy je jednoduché pokud umíte psát testovatelný kód. V tomto webináři si ukazujeme jak na to.
+              </p>
+              <p class="grid grid--2-col-auto-1fr gap-05 ai-c mb-0 f-6">
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0, 0, 100, 100" class="w-05 h-05">
+                    <path d="M50,97.5 C23.766,97.5 2.5,76.234 2.5,50 C2.5,23.766 23.766,2.5 50,2.5 C76.234,2.5 97.5,23.766 97.5,50 C97.5,76.234 76.234,97.5 50,97.5 z" fill="transparent"></path>
+                    <path d="M50,2.5 C76.234,2.5 97.5,23.766 97.5,50 C97.5,76.234 76.234,97.5 50,97.5 C23.766,97.5 2.5,76.234 2.5,50 C2.5,23.766 23.766,2.5 50,2.5 z M50,9.5 C27.632,9.5 9.5,27.632 9.5,50 C9.5,72.368 27.632,90.5 50,90.5 C72.368,90.5 90.5,72.368 90.5,50 C90.5,27.632 72.368,9.5 50,9.5 z" fill="currentColor"></path>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0, 0, 100, 100" class="w-05 h-05">
+                    <path d="M50,97.5 C23.766,97.5 2.5,76.234 2.5,50 C2.5,23.766 23.766,2.5 50,2.5 C76.234,2.5 97.5,23.766 97.5,50 C97.5,76.234 76.234,97.5 50,97.5 z" fill="currentColor"></path>
+                    <path d="M50,2.5 C76.234,2.5 97.5,23.766 97.5,50 C97.5,76.234 76.234,97.5 50,97.5 C23.766,97.5 2.5,76.234 2.5,50 C2.5,23.766 23.766,2.5 50,2.5 z M50,9.5 C27.632,9.5 9.5,27.632 9.5,50 C9.5,72.368 27.632,90.5 50,90.5 C72.368,90.5 90.5,72.368 90.5,50 C90.5,27.632 72.368,9.5 50,9.5 z" fill="currentColor"></path>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0, 0, 100, 100" class="w-05 h-05">
+                    <path d="M50,97.5 C23.766,97.5 2.5,76.234 2.5,50 C2.5,23.766 23.766,2.5 50,2.5 C76.234,2.5 97.5,23.766 97.5,50 C97.5,76.234 76.234,97.5 50,97.5 z" fill="transparent"></path>
+                    <path d="M50,2.5 C76.234,2.5 97.5,23.766 97.5,50 C97.5,76.234 76.234,97.5 50,97.5 C23.766,97.5 2.5,76.234 2.5,50 C2.5,23.766 23.766,2.5 50,2.5 z M50,9.5 C27.632,9.5 9.5,27.632 9.5,50 C9.5,72.368 27.632,90.5 50,90.5 C72.368,90.5 90.5,72.368 90.5,50 C90.5,27.632 72.368,9.5 50,9.5 z" fill="currentColor"></path>
+                  </svg>
+                </span>
+                <span class="f-6 ellipsis">
+                  Středně pokročilí
+                </span>
+              </p>
+              <p class="mb-0">
+                <span title="Cena s DPH. Cena bez DPH: 206 Kč">
+                  Cena:
+                  <strong>249 Kč</strong>
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="media-object">
+          <p class="media-object__image p-r">
+            <a class="course-icon rounded" href="/video/webinar-js-testy-nastroje">
+              <span class="course-icon__image">
+                <img src="/assets/img/icons/dest/kurzy/webinar-js-testy-nastroje.svg?v=3" alt="Nástroje pro testování JS kódu" height="130" width="130" loading="lazy">
+              </span>
+            </a>
+          </p>
+
+          <div class="media-object__content">
+            <h3 class="media-object__heading h5">
+              <a href="/video/webinar-js-testy-nastroje">Nástroje pro testování JS kódu</a>
+            </h3>
+
+            <div class="media-object__perex">
+              <p class="mb-0">
+                Jaký nástroj vybrat pro testování javascriptového kódu? Webinář vám ukáže rozdíly a lektor nasdílí zkušenosti.
+              </p>
+              <p class="grid grid--2-col-auto-1fr gap-05 ai-c mb-0 f-6">
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0, 0, 100, 100" class="w-05 h-05">
+                    <path d="M50,97.5 C23.766,97.5 2.5,76.234 2.5,50 C2.5,23.766 23.766,2.5 50,2.5 C76.234,2.5 97.5,23.766 97.5,50 C97.5,76.234 76.234,97.5 50,97.5 z" fill="transparent"></path>
+                    <path d="M50,2.5 C76.234,2.5 97.5,23.766 97.5,50 C97.5,76.234 76.234,97.5 50,97.5 C23.766,97.5 2.5,76.234 2.5,50 C2.5,23.766 23.766,2.5 50,2.5 z M50,9.5 C27.632,9.5 9.5,27.632 9.5,50 C9.5,72.368 27.632,90.5 50,90.5 C72.368,90.5 90.5,72.368 90.5,50 C90.5,27.632 72.368,9.5 50,9.5 z" fill="currentColor"></path>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0, 0, 100, 100" class="w-05 h-05">
+                    <path d="M50,97.5 C23.766,97.5 2.5,76.234 2.5,50 C2.5,23.766 23.766,2.5 50,2.5 C76.234,2.5 97.5,23.766 97.5,50 C97.5,76.234 76.234,97.5 50,97.5 z" fill="currentColor"></path>
+                    <path d="M50,2.5 C76.234,2.5 97.5,23.766 97.5,50 C97.5,76.234 76.234,97.5 50,97.5 C23.766,97.5 2.5,76.234 2.5,50 C2.5,23.766 23.766,2.5 50,2.5 z M50,9.5 C27.632,9.5 9.5,27.632 9.5,50 C9.5,72.368 27.632,90.5 50,90.5 C72.368,90.5 90.5,72.368 90.5,50 C90.5,27.632 72.368,9.5 50,9.5 z" fill="currentColor"></path>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0, 0, 100, 100" class="w-05 h-05">
+                    <path d="M50,97.5 C23.766,97.5 2.5,76.234 2.5,50 C2.5,23.766 23.766,2.5 50,2.5 C76.234,2.5 97.5,23.766 97.5,50 C97.5,76.234 76.234,97.5 50,97.5 z" fill="transparent"></path>
+                    <path d="M50,2.5 C76.234,2.5 97.5,23.766 97.5,50 C97.5,76.234 76.234,97.5 50,97.5 C23.766,97.5 2.5,76.234 2.5,50 C2.5,23.766 23.766,2.5 50,2.5 z M50,9.5 C27.632,9.5 9.5,27.632 9.5,50 C9.5,72.368 27.632,90.5 50,90.5 C72.368,90.5 90.5,72.368 90.5,50 C90.5,27.632 72.368,9.5 50,9.5 z" fill="currentColor"></path>
+                  </svg>
+                </span>
+                <span class="f-6 ellipsis">
+                  Středně pokročilí
+                </span>
+              </p>
+              <p class="mb-0">
+                <span title="Cena s DPH. Cena bez DPH: 206 Kč">
+                  Cena:
+                  <strong>249 Kč</strong>
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="firmy" class="section mt-0">
+      <div class="content">
+        <div class="article">
+          <h2 class="section-heading mb-1-5 mt-0">
+            <a href="#firmy">
+              Firemní spolupráce
+            </a>
+          </h2>
+        </div>
+
+        <div class="row">
+          <a class="col w-50 w-25-sm" href="https://www.generali.cz/">
+            <p class="rounded inflatable logotype">
+              <img src="/assets/img/content/src/logos/generali.svg"
+                title=""
+                width="200" height="200"
+                alt="Generali">
+            </p>
+          </a>
+
+          <a class="col w-50 w-25-sm" href="http://www.cd.cz/">
+            <p class="rounded inflatable logotype">
+              <img src="/assets/img/content/src/logos/ceske-drahy.svg"
+                title=""
+                width="200" height="200"
+                alt="České dráhy">
+            </p>
+          </a>
+
+          <a class="col w-50 w-25-sm" href="https://www.moneta.cz/">
+            <p class="rounded inflatable logotype">
+              <img src="/assets/img/content/src/logos/moneta.svg"
+                title=""
+                width="200" height="200"
+                alt="Moneta">
+            </p>
+          </a>
+
+          <a class="col w-50 w-25-sm" href="https://www.avast.com/">
+            <p class="rounded inflatable logotype">
+              <img src="/assets/img/content/src/logos/avast.svg"
+                title=""
+                width="200" height="200"
+                alt="Avast">
+            </p>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <hr class="hr hr--small hr--spaced">
+
+    <div id="lektori" class="section section-tall margin-top-0 section-latest">
+      <div class="content ta-c f-sm">
+        <div class="row mb-1 jc-c">
+          <article class="col w-33-xs px-05 ta-c">
+            <a class="avatar" href="/lektori/martin-michalek">
+              <img src="/assets/img/content/lectors/shoulders-martin-michalek.png" alt="Martin Michálek" width="200" height="200" loading="lazy" class="avatar__image">
+            </a>
+            <h3 class="h5 mb-0">
+              <a href="/lektori/martin-michalek">
+                Martin
+                Michálek
+              </a>
+            </h3>
+            <p class="f-6">
+              Freelance expert na CSS a&nbsp;rychlost.
+            </p>
+          </article>
+
+          <article class="col w-33-xs px-05 ta-c">
+            <a class="avatar" href="/lektori/michal-matuska">
+              <img src="/assets/img/content/lectors/shoulders-michal-matuska.png" alt="Michal Matuška" width="200" height="200" loading="lazy" class="avatar__image">
+            </a>
+            <h3 class="h5 mb-0">
+              <a href="/lektori/michal-matuska">
+                Michal Matuška
+              </a>
+            </h3>
+            <p class="f-6">
+              Technický šéf v&nbsp;SUPERKODERS.
+            </p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </main>
+</BaseLayout>

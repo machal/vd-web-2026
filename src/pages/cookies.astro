@@ -1,0 +1,98 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout
+  title={'Zásady užívání „cookies"'}
+  description={'Co jsou „cookies" a jaké využíváme? Jak dáváte souhlas s ukládáním cookies?'}
+  ogUrl="https://www.vzhurudolu.cz/cookies"
+  bodyClass="section-static"
+>
+  <Header slot="header" />
+  <Footer slot="footer" />
+
+  <div class="page-head">
+    <h1>Zásady užívání „cookies"</h1>
+    <p class="maxw-40em">Tyto Zásady používání souborů cookie byly naposledy aktualizovány dne
+    12. 1. 2022 a vztahují se na občany a osoby s trvalým bydlištěm v
+    Evropském hospodářském prostoru.</p>
+  </div>
+
+  <main role="main" id="main" aria-label="Hlavní obsah" class="">
+    <link rel="stylesheet" href="/assets/css/modules-standalone/min/article.min.css" />
+    
+    <div class="section article">
+      <div class="content">
+        <h2 id="úvod">1. Úvod</h2>
+        <p>Naše webové stránky <a
+        href="https://www.vzhurudolu.cz/">www.vzhurudolu.cz</a> (dále jen „web")
+        používají cookies a další související technologie jako jsou pixelové
+        značky, nebo skripty (pro usnadnění jsou všechny technologie označovány
+        jako „cookies").</p>
+        <p>Cookies také vkládají třetí strany, které jsme zapojili. V níže
+        uvedeném dokumentu vás informujeme o používání cookies na našem webu.
+        Informace, které tímto způsobem můžeme shromažďovat, zahrnují např. IP
+        adresu, unikátní identifikátor zařízení, vlastnosti prohlížeče,
+        vlastnosti zařízení, operační systém, jazykové preference, odkazující
+        adresy URL, informace o aktivitě na našich stránkách, data a časy
+        návštěv našich stránek a další uživatelské statistiky.</p>
+        
+        <h2 id="co-jsou-soubory-cookies">2. Co jsou soubory cookies?</h2>
+        <p>Soubor cookie je malý jednoduchý soubor, který je odeslán spolu se
+        stránkami tohoto webu a uložen prohlížečem na pevný disk počítače nebo
+        jiného zařízení. Informace v nich uložené mohou být vráceny našim
+        serverům nebo serverům příslušných třetích stran během následné
+        návštěvy.</p>
+        
+        <h2 id="co-jsou-skripty">3. Co jsou skripty?</h2>
+        <p>Skript je část programového kódu, který slouží k tomu, aby naše
+        webové stránky fungovaly správně a interaktivně. Tento kód je spuštěn na
+        našem serveru nebo na vašem zařízení.</p>
+        
+        <h2 id="co-je-to-pixelová-značka">4. Co je to pixelová značka?</h2>
+        <p>Pixelová značky je malý, neviditelný kus textu nebo obrázku na webu,
+        který se používá ke sledování provozu na webu. Za tímto účelem jsou
+        různá data o vás ukládána pomocí webových majáků.</p>
+        
+        <h2 id="cookies">5. Cookies</h2>
+        <h3 id="funkční-soubory-cookies">5.1 Funkční soubory cookies</h3>
+        <p>Některé soubory cookies zajišťují, že určité části webu fungují
+        správně a že vaše uživatelské preference zůstávají známé. Umístěním
+        funkčních souborů cookies usnadňujeme návštěvu našich webových
+        stránek.</p>
+        <p>Tímto způsobem nemusíte při návštěvě našich webových stránek
+        opakovaně zadávat stejné informace a například položky zůstanou v
+        nákupním košíku, dokud nezaplatíte. Tyto cookies můžeme umístit bez
+        vašeho souhlasu.</p>
+        
+        <h2 id="umístěné-cookies">6. Umístěné cookies</h2>
+        <ul>
+          <li><code>PHPSESSID</code> - Funkční soubor cookie pro relaci sloužící
+          pro zachování informace o každé návštěvě webové stránky a umožňující
+          základní funkce webu.Tento soubor cookie neobsahuje žádné osobní údaje a
+          jeho platnost je dočasná – pouze po dobu trvání vaší návštěvy stránky <a
+          href="https://www.vzhurudolu.cz/">www.vzhurudolu.cz</a>.</li>
+        </ul>
+        
+        <h2 id="vaše-práva-týkající-se-osobních-údajů">7. Vaše práva týkající se
+        osobních údajů</h2>
+        <p>Pokud jde o vaše osobní údaje, máte následující práva:</p>
+        <ul>
+          <li>Máte právo vědět, proč jsou vaše osobní údaje potřebné, co se s nimi
+          stane a jak dlouho budou uchovány.</li>
+          <li>Právo na přístup: Máte právo na přístup k vašim osobním údajům,
+          které jsou nám známy.</li>
+          <li>Právo na opravu: Máte právo doplnit, opravit, odstranit nebo
+          zablokovat vaše osobní údaje, kdykoli budete chtít.</li>
+          <li>Pokud nám udělíte souhlas se zpracováním vašich údajů, máte právo
+          tento souhlas odvolat a nechat vaše osobní údaje smazat.</li>
+          <li>Právo</li>
+        </ul>
+
+        <p>Viz také <a href="/osobni-udaje">Obecné zásady ochrany osobních údajů</a>.</p>
+      </div>
+    </div>
+  </main>
+</BaseLayout>

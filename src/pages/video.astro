@@ -370,7 +370,7 @@ const lectors = [
                     </p>
                     <p class="course__avatar course-avatar mb-0">
                       <a
-                        href={`/lektori/${video.lector.slug}`}
+                        href={video.lector.slug === 'martin-michalek' ? '/martin' : `/lektori/${video.lector.slug}`}
                         class="course-avatar__image avatar avatar--xs avatar--inline avatar--brown bs-bb"
                         title={`Lektor: ${video.lector.name}`}
                       >
@@ -480,7 +480,7 @@ const lectors = [
           <div class="row mb-1 jc-c">
             {lectors.map((lector) => (
               <article class="col w-50 w-25-sm px-05 ta-c">
-                <a class="avatar" href={`/lektori/${lector.slug}`}>
+                <a class="avatar" href={lector.slug === 'martin-michalek' ? '/martin' : `/lektori/${lector.slug}`}>
                   <img
                     src={lector.avatar}
                     alt={lector.name}
@@ -491,7 +491,7 @@ const lectors = [
                   />
                 </a>
                 <h3 class="h6 mb-0">
-                  <a href={`/lektori/${lector.slug}`}>{lector.name}</a>
+                  <a href={lector.slug === 'martin-michalek' ? '/martin' : `/lektori/${lector.slug}`}>{lector.name}</a>
                 </h3>
                 <p class="f-6" set:html={lector.description} />
               </article>

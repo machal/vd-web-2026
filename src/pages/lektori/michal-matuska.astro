@@ -1,0 +1,451 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { Fragment } from 'astro/jsx-runtime';
+---
+
+<BaseLayout
+  title="Michal Matuška"
+  description="Konzultant rychlosti webů v PageSpeed.cz."
+  ogType="profile"
+  ogImage="https://www.vzhurudolu.cz/assets/img/content/src/socials/vd-soc-skoleni.jpg"
+  ogUrl="https://www.vzhurudolu.cz/lektori/michal-matuska"
+  bodyClass="section-kurzy"
+>
+  <Fragment slot="styles">
+    <link rel="stylesheet" href="/assets/css/modules-standalone/min/pages/lector.min.css" />
+    <link rel="stylesheet" href="/assets/css/modules-standalone/min/course-icon.min.css" />
+    <link rel="stylesheet" href="/assets/css/modules-standalone/min/emblem.min.css" />
+  </Fragment>
+
+  <Header slot="header" />
+  <Footer slot="footer" />
+
+  <div class="page-head lector__head">
+    <h1 class="lector__head-name">
+      Michal Matuška
+    </h1>
+    <p class="lector__head-image">
+      <picture>
+        <source media="(min-width: 768px)"
+         srcset="
+           /assets/img/content/lectors/michal-matuska_200.png 200w,
+           /assets/img/content/lectors/michal-matuska_500.png 500w,
+           /assets/img/content/lectors/michal-matuska_820.png 820w,
+          "
+         sizes="calc((80vw - 4rem) * .5)"
+         >
+        <img src="/assets/img/content/lectors/shoulders-michal-matuska.png"
+          alt="Michal Matuška" height="200">
+      </picture>
+    </p>
+    <div class="lector__head-perex">
+      <p>Konzultant rychlosti webů v PageSpeed.cz.</p>
+
+      <div class="lector__head-links">
+        <a href="https://superkoders.com/">Web</a>
+        &ndash;
+        <a href="https://www.linkedin.com/in/fireball">LinkedIn</a>
+        &ndash;
+        <a href="https://twitter.com/fireball_">Twitter</a>
+        &ndash;
+        <a href="https://www.facebook.com/michal.matuska.9674">Facebook</a>
+      </div>
+    </div>
+    <div class="lector__head-buttons">
+      <hr>
+      <p>
+        <a href="#videa" class="button button--inverted">Videa</a>
+      </p>
+    </div>
+  </div>
+
+  <main role="main" id="main" aria-label="Hlavní obsah" class="">
+    <div id="info" class="section">
+      <div class="content">
+        <div class="article">
+          <p>
+            Michal je špičkový specialista na rychlost webu, SVG, animace a JavaScript. Je dostupný pro
+            konzultace a školení ve firmách.
+          </p>
+
+          <p>
+            Michal technicky vede uznávané
+            <a href="https://superkoders.com/">SUPERKODERS</a>, kde se podílí na tvorbě
+            frontendu pro největší české firmy. S kolegy také organizuje brněnskou
+            komunitu&nbsp;<a href="http://www.frontendisti.cz/">Frontendisti.cz</a>.
+          </p>
+
+          <p>A když mu to čas dovolí, hned vyráží cestovat nebo&nbsp;lyžovat.</p>
+        </div>
+      </div>
+    </div>
+
+    <hr class="hr--small hr--spaced">
+
+    <div id="prednasky" class="section">
+      <div class="content">
+        <div class="article">
+          <h2 class="section-heading">
+            <a href="#prednasky">
+              Vybrané přednášky
+            </a>
+          </h2>
+        </div>
+      </div>
+
+      <div class="content-full">
+        <div class="row f-6">
+          <div class="col w-33-sm">
+            <p class="rounded o-h rwd-media mb-05">
+              <a href="https://www.youtube.com/watch?v=pl3qMBqZSgc" class="rounded mb-05">
+                <img src="/assets/img/content/lectors/talks/michal-1.jpg"
+                  alt="SVG: případová studie" loading="lazy">
+              </a>
+            </p>
+            <p>
+              <strong>
+                <a href="https://www.youtube.com/watch?v=pl3qMBqZSgc">
+                  SVG: případová studie
+                </a>
+              </strong><br>
+              <span class="suppress">
+                Frontendisti.cz, prosinec&nbsp;2014
+              </span>
+            </p>
+          </div>
+
+          <div class="col w-33-sm">
+            <p class="rounded o-h rwd-media mb-05">
+              <a href="https://slideslive.com/38892079/vse-o-css-animacich">
+                <img src="/assets/img/content/lectors/talks/michal-2.jpg"
+                  alt="Vše o CSS animacích" loading="lazy">
+              </a>
+            </p>
+            <p>
+              <strong>
+                <a href="https://slideslive.com/38892079/vse-o-css-animacich">
+                  Vše o CSS animacích
+                </a>
+              </strong><br>
+              <span class="suppress">
+                WebExpo 2014
+              </span>
+            </p>
+          </div>
+
+          <div class="col w-33-sm">
+            <p class="rounded o-h rwd-media mb-05">
+              <a href="https://www.youtube.com/watch?v=pl3qMBqZSgc">
+                <img src="/assets/img/content/lectors/talks/michal-3b.jpg"
+                  alt="Jak fungují prohlížeče?" loading="lazy">
+              </a>
+            </p>
+            <p>
+              <strong>
+                <a href="https://www.youtube.com/watch?v=TAyp19NBLdA">
+                  Jak fungují prohlížeče?
+                </a>
+              </strong><br>
+              <span class="suppress">
+                Frontendisti.cz, listopad&nbsp;2016
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="videa" class="section section-tall margin-top-0 mb-0">
+      <div class="content">
+        <div class="article">
+          <h2 class="section-heading">
+            <a href="#videa">
+              Videa
+            </a>
+          </h2>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="media-object">
+          <p class="media-object__image p-r">
+            <a class="course-icon rounded" href="/video/webinar-devtools-rychlost">
+              <span class="course-icon__image">
+                <img src="/assets/img/icons/dest/kurzy/webinar-devtools-rychlost.svg?v=3" alt="Ladíme rychlost v Chrome DevTools" height="130" width="130" loading="lazy">
+              </span>
+            </a>
+          </p>
+
+          <div class="media-object__content">
+            <h3 class="media-object__heading h5">
+              <a href="/video/webinar-devtools-rychlost">Ladíme rychlost v Chrome DevTools</a>
+            </h3>
+
+            <div class="media-object__perex">
+              <p class="mb-0">
+                Jeden web, jeden prohlížeč a jedna hodina času. Jak optimalizovat rychlost webu s pomocí DevTools?
+              </p>
+              <p class="grid grid--2-col-auto-1fr gap-05 ai-c mb-0 f-6">
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0, 0, 100, 100" class="w-05 h-05">
+                    <path d="M50,97.5 C23.766,97.5 2.5,76.234 2.5,50 C2.5,23.766 23.766,2.5 50,2.5 C76.234,2.5 97.5,23.766 97.5,50 C97.5,76.234 76.234,97.5 50,97.5 z" fill="transparent"></path>
+                    <path d="M50,2.5 C76.234,2.5 97.5,23.766 97.5,50 C97.5,76.234 76.234,97.5 50,97.5 C23.766,97.5 2.5,76.234 2.5,50 C2.5,23.766 23.766,2.5 50,2.5 z M50,9.5 C27.632,9.5 9.5,27.632 9.5,50 C9.5,72.368 27.632,90.5 50,90.5 C72.368,90.5 90.5,72.368 90.5,50 C90.5,27.632 72.368,9.5 50,9.5 z" fill="currentColor"></path>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0, 0, 100, 100" class="w-05 h-05">
+                    <path d="M50,97.5 C23.766,97.5 2.5,76.234 2.5,50 C2.5,23.766 23.766,2.5 50,2.5 C76.234,2.5 97.5,23.766 97.5,50 C97.5,76.234 76.234,97.5 50,97.5 z" fill="currentColor"></path>
+                    <path d="M50,2.5 C76.234,2.5 97.5,23.766 97.5,50 C97.5,76.234 76.234,97.5 50,97.5 C23.766,97.5 2.5,76.234 2.5,50 C2.5,23.766 23.766,2.5 50,2.5 z M50,9.5 C27.632,9.5 9.5,27.632 9.5,50 C9.5,72.368 27.632,90.5 50,90.5 C72.368,90.5 90.5,72.368 90.5,50 C90.5,27.632 72.368,9.5 50,9.5 z" fill="currentColor"></path>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0, 0, 100, 100" class="w-05 h-05">
+                    <path d="M50,97.5 C23.766,97.5 2.5,76.234 2.5,50 C2.5,23.766 23.766,2.5 50,2.5 C76.234,2.5 97.5,23.766 97.5,50 C97.5,76.234 76.234,97.5 50,97.5 z" fill="currentColor"></path>
+                    <path d="M50,2.5 C76.234,2.5 97.5,23.766 97.5,50 C97.5,76.234 76.234,97.5 50,97.5 C23.766,97.5 2.5,76.234 2.5,50 C2.5,23.766 23.766,2.5 50,2.5 z M50,9.5 C27.632,9.5 9.5,27.632 9.5,50 C9.5,72.368 27.632,90.5 50,90.5 C72.368,90.5 90.5,72.368 90.5,50 C90.5,27.632 72.368,9.5 50,9.5 z" fill="currentColor"></path>
+                  </svg>
+                </span>
+                <span class="f-6 ellipsis">
+                  Pokročilí
+                </span>
+              </p>
+              <p class="mb-0">
+                <span title="Cena s DPH. Cena bez DPH: 247 Kč">
+                  Cena:
+                  <strong>299 Kč</strong>
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="media-object">
+          <p class="media-object__image p-r">
+            <a class="course-icon rounded" href="/video/webinar-variabilni-fonty">
+              <span class="course-icon__image">
+                <img src="/assets/img/icons/dest/kurzy/webinar-variabilni-fonty.svg?v=3" alt="Variabilní fonty prakticky" height="130" width="130" loading="lazy">
+              </span>
+            </a>
+          </p>
+
+          <div class="media-object__content">
+            <h3 class="media-object__heading h5">
+              <a href="/video/webinar-variabilni-fonty">Variabilní fonty prakticky</a>
+            </h3>
+
+            <div class="media-object__perex">
+              <p class="mb-0">
+                Variable fonts přinesly do webové typografie zásadní inovace. Ale buzzwordů vás ušetříme, pojďme na ně prakticky.
+              </p>
+              <p class="grid grid--2-col-auto-1fr gap-05 ai-c mb-0 f-6">
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0, 0, 100, 100" class="w-05 h-05">
+                    <path d="M50,97.5 C23.766,97.5 2.5,76.234 2.5,50 C2.5,23.766 23.766,2.5 50,2.5 C76.234,2.5 97.5,23.766 97.5,50 C97.5,76.234 76.234,97.5 50,97.5 z" fill="transparent"></path>
+                    <path d="M50,2.5 C76.234,2.5 97.5,23.766 97.5,50 C97.5,76.234 76.234,97.5 50,97.5 C23.766,97.5 2.5,76.234 2.5,50 C2.5,23.766 23.766,2.5 50,2.5 z M50,9.5 C27.632,9.5 9.5,27.632 9.5,50 C9.5,72.368 27.632,90.5 50,90.5 C72.368,90.5 90.5,72.368 90.5,50 C90.5,27.632 72.368,9.5 50,9.5 z" fill="currentColor"></path>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0, 0, 100, 100" class="w-05 h-05">
+                    <path d="M50,97.5 C23.766,97.5 2.5,76.234 2.5,50 C2.5,23.766 23.766,2.5 50,2.5 C76.234,2.5 97.5,23.766 97.5,50 C97.5,76.234 76.234,97.5 50,97.5 z" fill="currentColor"></path>
+                    <path d="M50,2.5 C76.234,2.5 97.5,23.766 97.5,50 C97.5,76.234 76.234,97.5 50,97.5 C23.766,97.5 2.5,76.234 2.5,50 C2.5,23.766 23.766,2.5 50,2.5 z M50,9.5 C27.632,9.5 9.5,27.632 9.5,50 C9.5,72.368 27.632,90.5 50,90.5 C72.368,90.5 90.5,72.368 90.5,50 C90.5,27.632 72.368,9.5 50,9.5 z" fill="currentColor"></path>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0, 0, 100, 100" class="w-05 h-05">
+                    <path d="M50,97.5 C23.766,97.5 2.5,76.234 2.5,50 C2.5,23.766 23.766,2.5 50,2.5 C76.234,2.5 97.5,23.766 97.5,50 C97.5,76.234 76.234,97.5 50,97.5 z" fill="currentColor"></path>
+                    <path d="M50,2.5 C76.234,2.5 97.5,23.766 97.5,50 C97.5,76.234 76.234,97.5 50,97.5 C23.766,97.5 2.5,76.234 2.5,50 C2.5,23.766 23.766,2.5 50,2.5 z M50,9.5 C27.632,9.5 9.5,27.632 9.5,50 C9.5,72.368 27.632,90.5 50,90.5 C72.368,90.5 90.5,72.368 90.5,50 C90.5,27.632 72.368,9.5 50,9.5 z" fill="currentColor"></path>
+                  </svg>
+                </span>
+                <span class="f-6 ellipsis">
+                  Pokročilí
+                </span>
+              </p>
+              <p class="mb-0">
+                <span title="Cena s DPH. Cena bez DPH: 247 Kč">
+                  Cena:
+                  <strong>299 Kč</strong>
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="media-object">
+          <p class="media-object__image p-r">
+            <a class="course-icon rounded" href="/video/webinar-svg-optimalizace">
+              <span class="course-icon__image">
+                <img src="/assets/img/icons/dest/kurzy/webinar-svg-optimalizace.svg?v=3" alt="Jak správně vkládat SVG na web" height="130" width="130" loading="lazy">
+              </span>
+            </a>
+          </p>
+
+          <div class="media-object__content">
+            <h3 class="media-object__heading h5">
+              <a href="/video/webinar-svg-optimalizace">Jak správně vkládat SVG na web</a>
+            </h3>
+
+            <div class="media-object__perex">
+              <p class="mb-0">
+                Zjistěte, jak vkládat SVG do stránky, optimalizovat soubory a na co si dát pozor v podkladech.
+              </p>
+              <p class="grid grid--2-col-auto-1fr gap-05 ai-c mb-0 f-6">
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0, 0, 100, 100" class="w-05 h-05">
+                    <path d="M50,97.5 C23.766,97.5 2.5,76.234 2.5,50 C2.5,23.766 23.766,2.5 50,2.5 C76.234,2.5 97.5,23.766 97.5,50 C97.5,76.234 76.234,97.5 50,97.5 z" fill="transparent"></path>
+                    <path d="M50,2.5 C76.234,2.5 97.5,23.766 97.5,50 C97.5,76.234 76.234,97.5 50,97.5 C23.766,97.5 2.5,76.234 2.5,50 C2.5,23.766 23.766,2.5 50,2.5 z M50,9.5 C27.632,9.5 9.5,27.632 9.5,50 C9.5,72.368 27.632,90.5 50,90.5 C72.368,90.5 90.5,72.368 90.5,50 C90.5,27.632 72.368,9.5 50,9.5 z" fill="currentColor"></path>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0, 0, 100, 100" class="w-05 h-05">
+                    <path d="M50,97.5 C23.766,97.5 2.5,76.234 2.5,50 C2.5,23.766 23.766,2.5 50,2.5 C76.234,2.5 97.5,23.766 97.5,50 C97.5,76.234 76.234,97.5 50,97.5 z" fill="currentColor"></path>
+                    <path d="M50,2.5 C76.234,2.5 97.5,23.766 97.5,50 C97.5,76.234 76.234,97.5 50,97.5 C23.766,97.5 2.5,76.234 2.5,50 C2.5,23.766 23.766,2.5 50,2.5 z M50,9.5 C27.632,9.5 9.5,27.632 9.5,50 C9.5,72.368 27.632,90.5 50,90.5 C72.368,90.5 90.5,72.368 90.5,50 C90.5,27.632 72.368,9.5 50,9.5 z" fill="currentColor"></path>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0, 0, 100, 100" class="w-05 h-05">
+                    <path d="M50,97.5 C23.766,97.5 2.5,76.234 2.5,50 C2.5,23.766 23.766,2.5 50,2.5 C76.234,2.5 97.5,23.766 97.5,50 C97.5,76.234 76.234,97.5 50,97.5 z" fill="currentColor"></path>
+                    <path d="M50,2.5 C76.234,2.5 97.5,23.766 97.5,50 C97.5,76.234 76.234,97.5 50,97.5 C23.766,97.5 2.5,76.234 2.5,50 C2.5,23.766 23.766,2.5 50,2.5 z M50,9.5 C27.632,9.5 9.5,27.632 9.5,50 C9.5,72.368 27.632,90.5 50,90.5 C72.368,90.5 90.5,72.368 90.5,50 C90.5,27.632 72.368,9.5 50,9.5 z" fill="currentColor"></path>
+                  </svg>
+                </span>
+                <span class="f-6 ellipsis">
+                  Pokročilí
+                </span>
+              </p>
+              <p class="mb-0">
+                <span title="Cena s DPH. Cena bez DPH: 206 Kč">
+                  Cena:
+                  <strong>249 Kč</strong>
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="media-object">
+          <p class="media-object__image p-r">
+            <a class="course-icon rounded" href="/video/webinar-gsap">
+              <span class="course-icon__image">
+                <img src="/assets/img/icons/dest/kurzy/webinar-gsap.svg?v=3" alt="Animace naplno s knihovnou GSAP" height="130" width="130" loading="lazy">
+              </span>
+            </a>
+          </p>
+
+          <div class="media-object__content">
+            <h3 class="media-object__heading h5">
+              <a href="/video/webinar-gsap">Animace naplno s knihovnou GSAP</a>
+            </h3>
+
+            <div class="media-object__perex">
+              <p class="mb-0">
+                Animovat pomocí jQuery nebo CSS vám rychle přestane stačit. Kam jít dál? Co švýcarský nožík pro animace – GSAP?
+              </p>
+              <p class="grid grid--2-col-auto-1fr gap-05 ai-c mb-0 f-6">
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0, 0, 100, 100" class="w-05 h-05">
+                    <path d="M50,97.5 C23.766,97.5 2.5,76.234 2.5,50 C2.5,23.766 23.766,2.5 50,2.5 C76.234,2.5 97.5,23.766 97.5,50 C97.5,76.234 76.234,97.5 50,97.5 z" fill="currentColor"></path>
+                    <path d="M50,2.5 C76.234,2.5 97.5,23.766 97.5,50 C97.5,76.234 76.234,97.5 50,97.5 C23.766,97.5 2.5,76.234 2.5,50 C2.5,23.766 23.766,2.5 50,2.5 z M50,9.5 C27.632,9.5 9.5,27.632 9.5,50 C9.5,72.368 27.632,90.5 50,90.5 C72.368,90.5 90.5,72.368 90.5,50 C90.5,27.632 72.368,9.5 50,9.5 z" fill="currentColor"></path>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0, 0, 100, 100" class="w-05 h-05">
+                    <path d="M50,97.5 C23.766,97.5 2.5,76.234 2.5,50 C2.5,23.766 23.766,2.5 50,2.5 C76.234,2.5 97.5,23.766 97.5,50 C97.5,76.234 76.234,97.5 50,97.5 z" fill="currentColor"></path>
+                    <path d="M50,2.5 C76.234,2.5 97.5,23.766 97.5,50 C97.5,76.234 76.234,97.5 50,97.5 C23.766,97.5 2.5,76.234 2.5,50 C2.5,23.766 23.766,2.5 50,2.5 z M50,9.5 C27.632,9.5 9.5,27.632 9.5,50 C9.5,72.368 27.632,90.5 50,90.5 C72.368,90.5 90.5,72.368 90.5,50 C90.5,27.632 72.368,9.5 50,9.5 z" fill="currentColor"></path>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0, 0, 100, 100" class="w-05 h-05">
+                    <path d="M50,97.5 C23.766,97.5 2.5,76.234 2.5,50 C2.5,23.766 23.766,2.5 50,2.5 C76.234,2.5 97.5,23.766 97.5,50 C97.5,76.234 76.234,97.5 50,97.5 z" fill="transparent"></path>
+                    <path d="M50,2.5 C76.234,2.5 97.5,23.766 97.5,50 C97.5,76.234 76.234,97.5 50,97.5 C23.766,97.5 2.5,76.234 2.5,50 C2.5,23.766 23.766,2.5 50,2.5 z M50,9.5 C27.632,9.5 9.5,27.632 9.5,50 C9.5,72.368 27.632,90.5 50,90.5 C72.368,90.5 90.5,72.368 90.5,50 C90.5,27.632 72.368,9.5 50,9.5 z" fill="currentColor"></path>
+                  </svg>
+                </span>
+                <span class="f-6 ellipsis">
+                  Začínající a mírně pokročilí
+                </span>
+              </p>
+              <p class="mb-0">
+                <span title="Cena s DPH. Cena bez DPH: 206 Kč">
+                  Cena:
+                  <strong>249 Kč</strong>
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="firmy" class="section mt-0">
+      <div class="content">
+        <div class="article">
+          <h2 class="section-heading mb-1-5 mt-0">
+            <a href="#firmy">
+              Firemní spolupráce
+            </a>
+          </h2>
+        </div>
+
+        <div class="row">
+          <a class="col w-50 w-25-sm" href="http://www.rozhlas.cz/">
+            <p class="rounded inflatable logotype">
+              <img src="/assets/img/content/src/logos/cesky-rozhlas.svg"
+                title=""
+                width="200" height="200"
+                alt="Český rozhlas">
+            </p>
+          </a>
+
+          <a class="col w-50 w-25-sm" href="http://www.cd.cz/">
+            <p class="rounded inflatable logotype">
+              <img src="/assets/img/content/src/logos/ceske-drahy.svg"
+                title=""
+                width="200" height="200"
+                alt="České dráhy">
+            </p>
+          </a>
+
+          <a class="col w-50 w-25-sm" href="http://www.kentico.com/">
+            <p class="rounded inflatable logotype">
+              <img src="/assets/img/content/src/logos/kentico.svg?2"
+                title=""
+                width="200" height="200"
+                alt="Kentico">
+            </p>
+          </a>
+
+          <a class="col w-50 w-25-sm" href="https://www.avast.com/">
+            <p class="rounded inflatable logotype">
+              <img src="/assets/img/content/src/logos/avast.svg"
+                title=""
+                width="200" height="200"
+                alt="Avast">
+            </p>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <hr class="hr hr--small hr--spaced">
+
+    <div id="lektori" class="section section-tall margin-top-0 section-latest">
+      <div class="content ta-c f-sm">
+        <div class="row mb-1 jc-c">
+          <article class="col w-33-xs px-05 ta-c">
+            <a class="avatar" href="/lektori/martin-michalek">
+              <img src="/assets/img/content/lectors/shoulders-martin-michalek.png" alt="Martin Michálek" width="200" height="200" loading="lazy" class="avatar__image">
+            </a>
+            <h3 class="h5 mb-0">
+              <a href="/lektori/martin-michalek">
+                Martin
+                Michálek
+              </a>
+            </h3>
+            <p class="f-6">
+              Freelance expert na CSS a&nbsp;rychlost.
+            </p>
+          </article>
+
+          <article class="col w-33-xs px-05 ta-c">
+            <a class="avatar" href="/lektori/michal-matuska">
+              <img src="/assets/img/content/lectors/shoulders-michal-matuska.png" alt="Michal Matuška" width="200" height="200" loading="lazy" class="avatar__image">
+            </a>
+            <h3 class="h5 mb-0">
+              <a href="/lektori/michal-matuska">
+                Michal Matuška
+              </a>
+            </h3>
+            <p class="f-6">
+              Technický šéf v&nbsp;SUPERKODERS.
+            </p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <script is:inline src="/assets/js/vrdl.min.js"></script>
+</BaseLayout>

@@ -1,0 +1,60 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { Fragment } from 'astro/jsx-runtime';
+---
+
+<BaseLayout
+  title="Novinky ze Vzhůru dolů do e-mailu"
+  description="Souhrn nejzajímavějších článků, událostí, nástrojů a videí ze světa webové kodéřiny. Nebo novinky ze školení?"
+  ogType="website"
+  ogImage={[
+    'https://www.vzhurudolu.cz/assets/img/content/src/socials/vd-soc-uni-1.jpg',
+    'https://www.vzhurudolu.cz/assets/img/content/src/socials/vd-soc-uni-2.jpg',
+  ]}
+  ogUrl="https://www.vzhurudolu.cz/email"
+  bodyClass="section-static"
+>
+  <Fragment slot="styles">
+    <link rel="stylesheet" href="/assets/css/modules-standalone/min/newsletter.min.css" />
+  </Fragment>
+
+  <Header slot="header" />
+  <Footer slot="footer" />
+
+  <div class="page-head">
+    <h1>
+      Novinky ze Vzhůru dolů do vašeho&nbsp;emailu
+    </h1>
+  </div>
+
+  <main role="main" id="main" aria-label="Hlavní obsah" class="">
+    <div class="section section-tall">
+      <div class="content ta-c">
+        <p>
+          Souhrn nejzajímavějších článků ze světa webové kodéřiny. Exkluzivní nabídky ke školením a e-bookům.
+          Vychází maximálně jednou za měsíc.<br>
+          <a href="http://us2.campaign-archive2.com/home/?u=d6be2f1899eba6a7651157403&id=3189eb2248">Minulá&nbsp;vydání</a>.
+        </p>
+
+        <!-- Begin MailChimp Signup Form -->
+        <div id="mc_embed_signup" class="newsletter newsletter--transparent">
+          <form action="https://vzhurudolu.us2.list-manage.com/subscribe/post?u=d6be2f1899eba6a7651157403&amp;id=3189eb2248" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <p>
+              <input type="email" value="" name="EMAIL" class="email-input" id="mce-EMAIL" placeholder="Vaše e-mailová adresa" required>
+              <input type="submit" value="Přihlásit" name="subscribe" id="mc-embedded-subscribe" class="bdc email-button">
+            </p>
+          </form>
+        </div>
+        <!--End mc_embed_signup-->
+
+        <p>
+          <br><small>Po vyplnění vás přesměrujeme na MailChimp.com, kde dokončíte&nbsp;přihlášení.</small>
+        </p>
+      </div>
+    </div>
+  </main>
+  
+  <script is:inline src="/assets/js/vrdl.min.js"></script>
+</BaseLayout>

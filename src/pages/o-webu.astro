@@ -1,0 +1,183 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { Fragment } from 'astro/jsx-runtime';
+---
+
+<BaseLayout
+  title='O webu „Vzhůru dolů"'
+  description="Web je zaměřený na frontend kodéřinu: CSS a související technologie. Najdete zde blog, trvaleji platný obsah v příručce nebo ebooku. Začínáme s videoobsahem. Pořádáme kurzy pro webové vývojáře. Vzhůru dolů provozuje Martin Michálek."
+  ogType="website"
+  ogImage={[
+    'https://www.vzhurudolu.cz/assets/img/content/src/socials/vd-soc-uni-1.jpg',
+    'https://www.vzhurudolu.cz/assets/img/content/src/socials/vd-soc-uni-2.jpg',
+  ]}
+  ogUrl="https://www.vzhurudolu.cz/o-webu"
+  bodyClass="section-static"
+>
+  <Fragment slot="styles">
+    <link rel="stylesheet" href="/assets/css/modules-standalone/min/topbar.min.css" />
+  </Fragment>
+
+  <Header slot="header" />
+  <Footer slot="footer" />
+
+  <div class="page-head">
+    <h1>
+      O webu
+    </h1>
+    <p class="mb-0 maxw-30em">
+      Web „Vzhůru dolů" je zaměřený na frontend kodéřinu: CSS a související technologie.
+      Najdete zde <a href="/blog">blog</a>, trvaleji platný obsah
+      pak <a href="/prirucka/css3">v příručce</a>. Vydáváme <a href="/ebook-css3/">e-booky a knihy</a>.
+      Pořádáme
+      <a href="/kurzy">kurzy</a>
+      a točíme
+      <a href="/video">videa</a>
+      pro webové&nbsp;vývojáře.<br>
+      Vzhůru dolů provozuje <a href="/martin">Martin&nbsp;Michálek</a>.
+    </p>
+  </div>
+
+  <main role="main" id="main" aria-label="Hlavní obsah" class="">
+    <div class="section">
+      <div class="content">
+        <div class="article">
+          <h2 id="obsah" class="ta-c">
+            <a href="#obsah">Obsah</a>
+          </h2>
+
+          <p>
+            Články jsou publikovány pod Creative Commons licencí
+            <a href="https://creativecommons.org/licenses/by-nc/3.0/cz/">Uveďte autora, neužívejte komerčně 3.0&nbsp;Česko</a>.<br>
+          </p>
+
+          <h2 id="lide" class="ta-c">
+            <a href="#lide">Lidé</a>
+          </h2>
+
+          <ul>
+            <li>
+              <a href="/martin">
+                Martin Michálek
+              </a>
+              <span class="suppress">
+                (obsah, design, frontend)</span>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/kocis/">
+                Jan Kočiš
+              </a>
+              (<a href="https://superkoders.com/">SUPERKODERS</a>)
+              <span class="suppress">
+                (PHP/Nette vývoj)</span>
+            </li>
+          </ul>
+
+          <p>
+            S webem pomohli a pomáhají mnozí další. Intenzivněji například
+            <a href="https://www.danielstrelec.cz/">Daniel Střelec</a>,
+            <a href="https://www.linkedin.com/in/premekkoch">Přemek Koch</a>,
+            <a href="https://vladimirzapletal.cz/">Vladimír Zapletal</a>,
+            <a href="http://www.martinpesout.cz/">Martin Pešout</a>,
+            <a href="http://martinstanek.cz/">Martin Staněk</a> nebo
+            <a href="http://raist.cz">Petr Šťastný</a>.
+            Patří jim můj dík!
+          </p>
+
+          <h2 id="technologie" class="ta-c">
+            <a href="#technologie">Technologie</a>
+          </h2>
+
+          <ul>
+            <li>
+              <a href="https://grabaperch.com/">
+                Perch CMS
+              </a>
+              <span class="suppress">
+                (redakční systém)</span>
+            </li>
+            <li>
+              <a href="https://nette.org/cs/">
+                Nette
+              </a>
+              <span class="suppress">
+                (PHP framework)</span>
+            </li>
+            <li>
+              <a href="/prirucka/nastroje">
+                Nástroje pro frontend kodéřinu
+              </a>
+            </li>
+          </ul>
+
+          <h2 id="pisma" class="ta-c">
+            <a href="#pisma">Písma</a>
+          </h2>
+
+          <p>
+            Používám písma <a href="http://www.hoftype.de/">Dietera Hofrichtera</a>: základní řezy písma <a href="https://www.fontspring.com/fonts/hoftype/capita">Capita</a> pro texty,
+            pro titulky Foro Extra Bold
+            a jako doplňkové písmo pak další řezy písma&nbsp;<a href="https://www.fontspring.com/fonts/hoftype/foro">Foro</a>.
+          </p>
+
+          <p>
+            Jako písmo pro ukázky kódu pak <a href="http://levien.com/type/myfonts/inconsolata.html">Inconsolata</a> od Rapha Leviena.
+          </p>
+
+          <h2 id="historie" class="ta-c">
+            <a href="#historie">Historie</a>
+          </h2>
+
+          <ul>
+            <li>
+              Autor začal blogovat už v roce 2002 na druhém českém blogu o&nbsp;webdesignu –
+              <a href="https://www.vzhurudolu.cz/archiv/machal.creativity.cz/2002_11_03_archiv.php">machal.creativity.cz</a>. Nebýt dvouleté přestávky, píše v kuse celou tu dobu.
+            </li>
+            <li>
+              <a href="https://www.vzhurudolu.cz/archiv/">Vzhůru dolů</a>
+              <span class="suppress">
+                (2005–2008)
+              </span>
+            </li>
+            <li>
+              <a href="http://kratce.vzhurudolu.cz/">Krátce</a>
+              <span class="suppress">
+                (2009–2013)
+              </span>
+            </li>
+            <li>
+              <a href="/">Nové Vzhůru dolů</a>
+              <span class="suppress">
+                (2014–dodnes)
+              </span>
+            </li>
+          </ul>
+
+          <h2 id="proc" class="ta-c">
+            <a href="#proc">…a proč proboha „Vzhůru&nbsp;dolů"?</a>
+          </h2>
+
+          <p>
+            Je to jednoduché. Autor je pražák, původem <a href="https://www.google.cz/search?q=fryčovice">z&nbsp;Fryčovic</a>, dědiny na
+            severní Moravě obklopené havíři a doly. „Vzhůru dolů" je hornický
+            pozdrav před zfáráním. Moderní havíři ovšem fárají od počítače. Do&nbsp;kódů.
+          </p>
+
+          <p>
+            Havířské je <a href="https://www.google.cz/search?q=okd&amp;biw=1440&amp;bih=801&amp;tbm=isch&amp;source=lnms&amp;sa=X&amp;ved=0ahUKEwi_tO-8yPzNAhUEPRQKHSGfAUEQ_AUIBygC">i barevné schéma</a>.
+          </p>
+
+          <p class="ta-c">
+            <i>Zdař bůh!</i>
+          </p>
+
+          <p class="ta-c">
+            <img src="/assets/img/style/ico-footer.svg" alt="Vzhůru dolů">
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+</BaseLayout>

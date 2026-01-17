@@ -1,0 +1,215 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<BaseLayout
+  title="Informace k nákupu knihy „Vzhůru do (responzivního) webdesignu"
+  description="Informace o prodejci, postupu objednávky a storno podmínkách."
+  ogUrl="https://www.vzhurudolu.cz/kniha-responzivni-design/info"
+  bodyClass="section-ebooks"
+>
+  <Header slot="header" />
+  <Footer slot="footer" />
+
+  <div class="page-head">
+    <h1>
+      Informace k&nbsp;nákupu „Vzhůru do (respon&shy;zivního) webdesignu"
+    </h1>
+  </div>
+
+  <main role="main" id="main" aria-label="Hlavní obsah" class="">
+    <div class="content">
+      <div class="article">
+        <p class="mb-15 ta-c">
+          <a href="#dostanete">Co dostanete?</a>
+          <span class="suppress">—</span>
+          <a href="#postup">Postup objednávky</a>
+          <span class="suppress">—</span>
+          <a href="#licence">Multilicence</a>
+          <br>
+          <a href="#reklamace">Reklamace</a>
+          <span class="suppress">—</span>
+          <a href="#o-knize">O knize</a>
+          <span class="suppress">—</span>
+          <a href="#verze">Verze</a>
+          <span class="suppress">—</span>
+          <a href="#prodejce">Prodejce</a>
+        </p>
+
+        <h2 id="dostanete" class="ta-c mt-2">
+          <a href="#dostanete">Co dostanete?</a>
+        </h2>
+
+        <ul>
+          <li class="mb-05">
+            Licenci aktuální verze e-booku, která je určená jedné fyzické osobě na neomezeném počtu zařízení. Do firmy pak můžete dokoupit <a href="#licence">multilicenci</a>.
+          </li>
+          <li class="mb-05">
+            Součástí balíčku jsou formáty EPUB (např. pro iPad, iPhone), MOBI (např. pro Kindle) a&nbsp;PDF.
+          </li>
+          <li class="mb-05">
+            Soubory ke každé verzi si můžete stáhnout maximálně pětkrát.
+          </li>
+        </ul>
+
+        <h2 id="postup" class="ta-c mt-2">
+          <a href="#postup">Postup objednávky přes web Vzhůru dolů</a>
+        </h2>
+
+        <ol class="list list--numbered">
+          <li class="list__item mb-1">
+            <span>
+              <a href="./#objednavka">Přes formulář</a> na prodejní stránce
+              pošlete objednávku knihy „Vzhůru do (responzivního) webdesignu".
+            </span>
+          </li>
+
+          <li class="list__item mb-1">
+            <span>
+              Dorazí vám zálohová (proforma) faktura vygenerovaná
+              službou&nbsp;<a href="https://www.fakturoid.cz/">Fakturoid</a>.
+            </span>
+          </li>
+
+          <li class="list__item mb-1">
+            <span>
+              Fakturu můžete zaplatit kartou přes GoPay, převodem na účet nebo&nbsp;PayPalem.
+            </span>
+          </li>
+
+          <li class="list__item mb-1">
+            <span>
+              Po připsání peněz na účet vám z Fakturoidu dorazí e-mailem faktura
+              jako daňový&nbsp;doklad.
+            </span>
+          </li>
+
+          <li class="list__item mb-1">
+            <span>
+              Do e-mailu vám poté přijde odkaz na soubory e-booku ke stažení
+              ze služby&nbsp;<a href="https://www.fetchapp.com/">Fetchapp.com</a>.
+            </span>
+          </li>
+        </ol>
+
+        <hr class="hr hr--spaced hr--small">
+
+        <h2 id="slovensko" class="ta-c mt-2">
+          <a href="#slovensko">Prodej na Slovensko a do dalších&nbsp;zemí</a>
+        </h2>
+
+        <p>
+          Na Slovensko je e-book možné objednat, běžně přes formulář pro objednávku. Mimo Česko a Slovensko to zatím není možné.
+        </p>
+
+        <h2 id="reklamace" class="ta-c mt-2">
+          <a href="#reklamace">Reklamace a nárok na vrácení peněz</a>
+        </h2>
+
+        <p>
+          Do 14 dnů od objednání máte ze zákona právo požádat o vrácení peněz
+          bez udání&nbsp;důvodu.
+        </p>
+
+        <p>
+          Nestává se to, ale pro jistotu – pokud nebudete s knihou spokojení,
+          vrátíme vám peníze v plné výši. Jen nám to prosím i s odůvodněním
+          napište do jednoho měsíce od&nbsp;zaplacení.
+        </p>
+
+        <h2 id="verze" class="ta-c mt-2">
+          <a href="#verze">Historie verzí</a>
+        </h2>
+
+        <h3 id="v1-2"><a href="#v1-2">Aktualizace e-booku na verzi 1.2 (26. listopadu 2018)</a></h3>
+
+        <ul class="f-sm">
+          <li>Nový text: Zobrazování webů na chytrých hodinkách Apple Watch.</li>
+          <li>Nový text: Jak nastavovat breakpointy?</li>
+          <li>Nový text: Breakpointy v CSS.</li>
+          <li>Přepsaná kapitola o viewportech: Viewporty, meta značka pro viewport a nový text o zjištění velikosti okna.</li>
+          <li>Přepsaný text o jednotkách v CSS.</li>
+          <li>Requiem za mrtvé technologie: V e-booku už nepíšu o Internet Exploreru 10 a starších, prohlížeči Android Browser, nebo operačním systému Windows Phone.</li>
+          <li>Opravdu hodně drobných úprav, vylepšení a vyleštění.</li>
+        </ul>
+
+        <h2 id="o-knize" class="ta-c">
+          <a href="#o-knize">Technické údaje</a>
+        </h2>
+
+        <table class="f-sm">
+          <tbody>
+            <tr>
+              <th class="ta-l va-t">Název:</th>
+              <td class="ta-l">Vzhůru do (responzivního) webdesignu</td>
+            </tr>
+            <tr>
+              <th class="ta-l va-t">Autor:</th>
+              <td class="ta-l">Martin Michálek</td>
+            </tr>
+            <tr>
+              <th class="ta-l va-t">Nakladatel:</th>
+              <td class="ta-l">Michálek Martin – Vzhůru dolů</td>
+            </tr>
+            <tr>
+              <th class="ta-l va-t">ISBN:</th>
+              <td class="ta-l">
+                978-80-88253-00-6 (tištěná)<br>
+                978-80-88253-01-3 (PDF)<br>
+                978-80-88253-02-0 (MOBI)<br>
+                978-80-88253-03-7 (EPUB)
+              </td>
+            </tr>
+            <tr>
+              <th class="ta-l va-t">Tištěná:</th>
+              <td class="ta-l">
+                Celobarevná, brožovaná obálka, formát A5 (14,8&nbsp;×&nbsp;21&nbsp;cm), 272&nbsp;stránek
+              </td>
+            </tr>
+            <tr>
+              <th class="ta-l va-t">E-book:</th>
+              <td class="ta-l">
+                Formáty PDF, EPUB (Apple atd.) a MOBI (Kindle atd.). 311 stránek v&nbsp;PDF.
+              </td>
+            </tr>
+            <tr>
+              <th class="ta-l va-t">Vydání:</th>
+              <td class="ta-l">
+                Květen 2017
+                (E-book <a href="#verze">aktualizován v listopadu 2018</a>)
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="ta-c">
+          <h2 id="prodejce"><a href="#prodejce">Prodejce e-booku</a></h2>
+
+          <p>
+            <a href="/martin">Martin Michálek</a><br>
+            Jurkovičova 988/26<br>
+            149 00, Praha 11<br>
+          </p>
+
+          <p>
+            IČ: 68168861<br>
+            DIČ: 7708304956
+          </p>
+
+          <p>
+            E <a href="mailto:martin@vzhurudolu.cz">martin@vzhurudolu.cz</a><br>
+            T 724&nbsp;071&nbsp;700
+          </p>
+        </div>
+
+        <br>
+
+        <p class="ta-c">
+          <a class="button button--primary" href="/kniha-responzivni-design/">Zpět na stránku knihy</a>
+        </p>
+      </div>
+    </div>
+  </main>
+</BaseLayout>

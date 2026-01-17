@@ -1,0 +1,261 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<BaseLayout
+  title="Informace k nákupu knihy „CSS: moderní layout"
+  description="Postup objednávky, co dostanete, doprava, technické údaje, verze, reklamace a prodejce."
+  ogUrl="https://www.vzhurudolu.cz/css-layout/info"
+  bodyClass="section-ebooks"
+>
+  <Header slot="header" />
+  <Footer slot="footer" />
+
+  <div class="page-head">
+    <h1>
+      Informace k nákupu knihy<br>
+      „CSS: moderní layout"
+    </h1>
+  </div>
+
+  <main role="main" id="main" aria-label="Hlavní obsah" class="">
+    <div class="content">
+      <div class="article">
+        <p class="mb-15 ta-c">
+          <a href="#postup">Postup objednávky</a>
+          <span class="suppress">—</span>
+          <a href="#dostanete">Co dostanete?</a>
+          <span class="suppress">—</span>
+          <a href="#doprava">Doprava</a>
+          <span class="suppress">—</span>
+          <a href="#tech">Technické údaje</a>
+          <span class="suppress">—</span>
+          <a href="#verze">Verze</a>
+          <span class="suppress">—</span>
+          <a href="#reklamace">Reklamace</a>
+          <span class="suppress">—</span>
+          <a href="#prodejce">Prodejce</a>
+        </p>
+
+        <h2 id="postup" class="ta-c mt-2">
+          <a href="#postup">Postup objednávky přes web Vzhůru dolů</a>
+        </h2>
+
+        <ol class="list list--numbered">
+          <li class="list__item mb-1">
+            <span>
+              <a href="./#objednavka">Přes formulář</a> na prodejní stránce
+              pošlete objednávku knihy „CSS: moderní layout".
+            </span>
+          </li>
+
+          <li class="list__item mb-1">
+            <span>
+              Dorazí vám zálohová (proforma) faktura vygenerovaná
+              službou&nbsp;<a href="https://www.fakturoid.cz/">Fakturoid</a>.
+            </span>
+          </li>
+
+          <li class="list__item mb-1">
+            <span>
+              Fakturu můžete zaplatit kartou přes GoPay, převodem na účet nebo&nbsp;PayPalem.
+            </span>
+          </li>
+
+          <li class="list__item mb-1">
+            <span>
+              Po připsání peněz na účet vám z Fakturoidu dorazí e-mailem faktura
+              jako daňový&nbsp;doklad.
+            </span>
+          </li>
+
+          <li class="list__item mb-1">
+            <span>
+              Do e-mailu vám poté přijde odkaz na soubory e-booku ke stažení
+              ze služby&nbsp;<a href="https://www.fetchapp.com/">Fetchapp.com</a>.
+            </span>
+          </li>
+
+          <li class="list__item mb-1">
+            <span>
+              A samozřejmě – pokud si objednáte tištěnou kopii, během několika dní vám ji doručí Zásilkovna.
+            </span>
+          </li>
+        </ol>
+
+        <h2 id="dostanete" class="ta-c mt-2">
+          <a href="#dostanete">Co dostanete?</a>
+        </h2>
+
+        <ul>
+          <li class="mb-05">
+            Licenci aktuální verze e-booku, která je určená jedné fyzické osobě na neomezeném počtu zařízení. Do firmy pak můžete dokoupit <a href="#licence">multilicenci</a>.
+          </li>
+          <li class="mb-05">
+            Součástí balíčku jsou formáty EPUB (např. pro iPad, iPhone), MOBI (např. pro Kindle) a&nbsp;PDF.
+          </li>
+          <li class="mb-05">
+            Soubory ke každé verzi si můžete stáhnout maximálně pětkrát.
+          </li>
+          <li class="mb-05">
+            A samozřejmě také tištěnou kopii knihy „CSS: moderní layout", pokud si ji objednáte.
+          </li>
+        </ul>
+
+        <h2 id="knihkupectvi" class="ta-c mt-2">
+          <a href="#knihkupectvi">Tištěná kniha v knihkupectvích</a>
+        </h2>
+
+        <p>
+          Samostatná tištěná kniha je v dostání také v běžné distribuční síti, v e-shopech a knihkupectvích.
+          Jde o nejrychlejší způsob, jak tištěnou knihu dostat do ruky.
+          Distribuci zajišťuje <a href="https://www.kosmas.cz/knihy/513330/css.-moderni-layout/">Kosmas.cz</a>.
+          Alternativní prodejce najdete na <a href="https://knihy.heureka.cz/css-moderni-layout-martin-michalek/">Heureka.cz</a>.
+        </p>
+
+        <h2 id="doprava" class="ta-c mt-2">
+          <a href="#doprava">Expedice knihy z Milíčova</a>
+        </h2>
+
+        <p>
+          Pokud si tištěnou knihu objednáte přímo u autora, bude expedována z jeho domova v Milíčově (Praha 11).
+          Doručení očekávejte zhruba do týdne až dvou od objednání.
+          Rychlejší a preferovaná možnost dopravy je přes Zásilkovnu.
+        </p>
+
+        <h2 id="doprava-slovensko" class="ta-c mt-2">
+          <a href="#doprava-slovensko">Slovensko a jiné zahraničí</a>
+        </h2>
+
+        <p>
+          Na Slovensko je možné tištěnou knihu také objednat, běžně přes formulář pro objednávku. Mimo Česko a Slovensko to zatím není možné.
+        </p>
+
+        <h2 id="venovani" class="ta-c mt-2">
+          <a href="#venovani">Věnování</a>
+        </h2>
+
+        <p>
+          Věnování vám do tištěné knížky rádi přidáme.
+          Pokud si kupujete novou knížku, stačí do poznámky v objednávkovém formuláři připsat, že chcete věnování.
+        </p>
+
+        <h2 id="tech" class="ta-c mt-2">
+          <a href="#tech">Technické údaje</a>
+        </h2>
+
+        <table class="f-sm">
+          <tbody>
+            <tr>
+              <th class="ta-l va-t">Název:</th>
+              <td class="ta-l">CSS: moderní layout</td>
+            </tr>
+            <tr>
+              <th class="ta-l va-t">Autor:</th>
+              <td class="ta-l">Martin Michálek</td>
+            </tr>
+            <tr>
+              <th class="ta-l va-t">Nakladatel:</th>
+              <td class="ta-l">Michálek Martin – Vzhůru dolů</td>
+            </tr>
+            <tr>
+              <th class="ta-l va-t">Počet stránek tištěné knihy:</th>
+              <td class="ta-l">440</td>
+            </tr>
+            <tr>
+              <th class="ta-l va-t">Počet ilustrací:</th>
+              <td class="ta-l">216</td>
+            </tr>
+            <tr>
+              <th class="ta-l va-t">Vazba tištěné knihy:</th>
+              <td class="ta-l">Pevná se záložkou</td>
+            </tr>
+            <tr>
+              <th class="ta-l va-t">Velikost tištěné knihy:</th>
+              <td class="ta-l">V8 (165 × 225 mm)</td>
+            </tr>
+            <tr>
+              <th class="ta-l va-t">ISBN:</th>
+              <td class="ta-l">
+                Tištěná: 978-80-88253-07-5<br>
+                PDF: 978-80-88253-08-2<br>
+                MOBI: 978-80-88253-09-9<br>
+                EPUB: 978-80-88253-10-5
+              </td>
+            </tr>
+            <tr>
+              <th class="ta-l va-t">Formáty e-knihy:</th>
+              <td class="ta-l">
+                PDF, EPUB (Apple atd.) a MOBI (Kindle atd.)
+              </td>
+            </tr>
+            <tr>
+              <th class="ta-l va-t">Vydání:</th>
+              <td class="ta-l">
+                Květen 2022
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2 id="verze" class="ta-c mt-2">
+          <a href="#verze">Historie verzí</a>
+        </h2>
+
+        <h3 class="h4 ta-c" id="v1-1"><a href="#v1-1">E-book verze 1.1 (listopad 2022)</a></h3>
+
+        <ul class="f-sm">
+          <li>Nový text: CSS vlastnost contain.</li>
+          <li>Aktualizace: CSS Container Queries.</li>
+          <li>Aktualizace: CSS Subgrid.</li>
+          <li>Aktualizace: podpora vlastností v prohlížečích.</li>
+          <li>Přepracování formátů EPUB a MOBI kvůli špatné funkčnosti v některých čtečkách.</li>
+          <li>Drobné úpravy, opravy, vylepšení a vyleštění.</li>
+        </ul>
+
+        <h2 id="reklamace" class="ta-c mt-2">
+          <a href="#reklamace">Reklamace a nárok na vrácení peněz</a>
+        </h2>
+
+        <p>
+          Do 14 dnů od objednání máte ze zákona právo požádat o vrácení peněz
+          bez udání&nbsp;důvodu.
+        </p>
+
+        <p>
+          Nestává se to, ale pro jistotu – pokud nebudete s knihou spokojení,
+          vrátíme vám peníze v plné výši. Jen nám to prosím i s odůvodněním
+          napište do jednoho měsíce od&nbsp;zaplacení.
+        </p>
+
+        <div class="ta-c">
+          <h2 id="prodejce"><a href="#prodejce">Prodejce e-booku</a></h2>
+
+          <p>
+            <a href="/martin">Martin Michálek</a><br>
+            Jurkovičova 988/26<br>
+            149 00, Praha 11<br>
+          </p>
+
+          <p>
+            IČ: 68168861<br>
+            DIČ: 7708304956
+          </p>
+
+          <p>
+            E <a href="mailto:martin@vzhurudolu.cz">martin@vzhurudolu.cz</a><br>
+            T 724&nbsp;071&nbsp;700
+          </p>
+        </div>
+
+        <br>
+
+        <p class="ta-c">
+          <a class="button button--primary" href="/css-layout/">Přejít na stránku knihy</a>
+        </p>
+      </div>
+    </div>
+  </main>
+</BaseLayout>

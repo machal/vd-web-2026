@@ -1,0 +1,394 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { Fragment } from 'astro/jsx-runtime';
+---
+
+<BaseLayout
+  title="Martin Michálek — optimalizace rychlosti webu"
+  description="Ahoj! Jsem konzultant rychlosti webu a tvůrce obsahu pro frontendové vývojáře. Vedu spolek Frontendisti.cz."
+  ogType="profile"
+  ogImage={[
+    'https://www.vzhurudolu.cz/assets/img/content/src/socials/vd-soc-uni-1.jpg',
+    'https://www.vzhurudolu.cz/assets/img/content/src/socials/vd-soc-uni-2.jpg',
+  ]}
+  ogUrl="https://www.vzhurudolu.cz/martin"
+  bodyClass="section-autor"
+>
+  <Fragment slot="styles">
+    <link rel="stylesheet" href="/assets/css/modules-standalone/min/pages/lector.min.css" />
+    <link rel="stylesheet" href="/assets/css/modules-standalone/min/accordion.min.css" />
+    <link rel="stylesheet" href="/assets/css/modules-standalone/min/course-icon.min.css" />
+    <link rel="stylesheet" href="/assets/css/modules-standalone/min/emblem.min.css" />
+  </Fragment>
+
+  <Header slot="header" />
+  <Footer slot="footer" />
+
+  <div class="page-head lector__head">
+    <h1 class="lector__head-name">
+      Martin Michálek
+    </h1>
+    <p class="lector__head-image">
+      <picture>
+        <source media="(min-width: 768px)"
+         srcset="
+           /assets/img/content/lectors/martin-michalek_200.png 200w,
+           /assets/img/content/lectors/martin-michalek_500.png 500w,
+           /assets/img/content/lectors/martin-michalek_820.png 820w,
+          "
+         sizes="calc((80vw - 4rem) * .5)"
+         >
+        <img src="/assets/img/content/lectors/shoulders-martin-michalek.png"
+          alt="Martin Michálek" height="200">
+      </picture>
+    </p>
+    <div class="lector__head-perex">
+      <p>
+        Ahoj! Jsem <a href="#rychlost">konzultant</a> k rychlosti webu
+        a <a href="#publikace">tvůrce obsahu</a> pro frontendové vývojáře.
+        <a href="#frontendisti">Vedu spolek</a> Frontendisti.cz.
+      </p>
+
+      <p class="lector__head-links">
+        <a href="https://www.linkedin.com/in/martinmichalek">LinkedIn</a>
+        &ndash;
+        <a href="https://twitter.com/machal">Twitter</a>
+      </p>
+    </div>
+  </div>
+
+  <main role="main" id="main" aria-label="Hlavní obsah" class="">
+    <div class="content">
+      <div class="article">
+        <h2 class="ta-c mb-2" id="rychlost">
+          <a href="#rychlost">Rychlost webu</a>
+        </h2>
+
+        <p class="f-6 ta-c maxw-30em">
+          Rychlé stránky
+          <a href="/prirucka/rychlost-nacitani-proc">plní lépe své cíle</a>.
+          I proto jsem se po více než dvacetileté praxi frontendového designéra
+          zaměřil na rychlost webu.
+          Souvistející služby nyní s kolegy nabízíme pod značkou <a href="https://www.pagespeed.cz/">PageSpeed.cz</a>.
+        </p>
+
+        <div class="raised accordion px-0 py-05 mt-15 mb-15">
+          <section class="accordion__item">
+            <input type="checkbox" id="acc1" class="accordion__item-toggle">
+            <label class="accordion__item-title" for="acc1">
+              <h3>
+                Školení pro vývojáře
+              </h3>
+            </label>
+            <div class="accordion__item-content">
+              <p>
+                Vývojářům ukážeme celý náš optimalizační proces.
+                Nástroje a postupy, které nám pomáhají najít příčinu problému
+                a přijít s efektivním řešením.
+                <br>
+                Viz naše <a href="https://www.pagespeed.cz/skoleni-a-workshopy-o-rychlosti-webu">školení a workshopy o rychlosti webu</a>
+                na PageSpeed.cz.
+              </p>
+            </div>
+          </section>
+
+          <section class="accordion__item">
+            <input type="checkbox" id="acc2" class="accordion__item-toggle">
+            <label class="accordion__item-title" for="acc2">
+              <h3>
+                Audit rychlosti webu
+              </h3>
+            </label>
+            <div class="accordion__item-content">
+              <p>
+                Zanalyzujeme stav vašeho webu, změříme konkurenci, nastavíme dlouhodobá
+                měření a pravidelný reporting z nástrojů. Dostanete strategická doporučení
+                a vývojáři také popis konkrétních
+                příležitostí i s návodem na opravu. <br>
+                Viz <a href="https://pagespeed.cz/audit/">audit rychlosti webu</a> na PageSpeed.cz.
+              </p>
+            </div>
+          </section>
+
+          <section class="accordion__item">
+            <input type="checkbox" id="acc3" class="accordion__item-toggle">
+            <label class="accordion__item-title" for="acc3">
+              <h3>
+                Konzultace a další služby
+              </h3>
+            </label>
+            <div class="accordion__item-content">
+              <p>
+                Máte konkrétní problém s rychlostí webu? Nebo stojíte o dlouhodobou spolupráci
+                či snad o pomoc s vyřešením konkrétního problému, například s metrikami Web Vitals?
+                S rychlostí pomáháme malým i velkým klientům.
+                <br>
+                Podívejte se na další <a href="https://www.pagespeed.cz/sluzby">služby na PageSpeed.cz</a>.
+              </p>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="article" id="publikace">
+        <h2 class="ta-c">
+          <a href="#publikace">Publikace</a>
+        </h2>
+      </div>
+    </div>
+
+    <p class="f-6 ta-c maxw-30em">
+      Cíl mise? Dostupné vzdělání pro širokou webařskou komunitu. A tak píšu články, e-booky a knížky.
+    </p>
+
+    <div class="content pt-3">
+      <div class="row fd-c fd-r-xs">
+        <div class="col w-50-xs">
+          <p>
+            <a class="course-icon course-icon--ebook p-r" href="/css-layout">
+              <picture class="course-icon__image">
+                <source type="image/avif"
+                        srcset="/assets/img/content/handmade/ebooks/vdlayout/vdlayout-front-both.avif">
+                <img src="/assets/img/content/handmade/ebooks/vdlayout/vdlayout-front-both.webp"
+                     alt="CSS: moderní layout" width="130" height="130" loading="lazy">
+              </picture>
+            </a>
+          </p>
+          <h3 class="h4 h-4 mb-05 d-f ai-fe">
+            <a href="/css-layout/">
+              CSS: moderní layout
+            </a>
+          </h3>
+          <div class="f-6">
+            <p class="mb-05">
+              Grid, flexbox a nové metody rozvržení webů v příkladech. E-book a tištěná kniha. Vydáno:&nbsp;2022.
+              <br>Cena: <strong>199-449&nbsp;Kč</strong>
+            </p>
+            <p>
+              <a class="button mx-1" href="/css-layout/">Více informací</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="col w-50-xs">
+          <p>
+            <a class="course-icon course-icon--ebook p-r" href="/kniha-responzivni-design">
+              <picture class="course-icon__image">
+                <source type="image/avif"
+                  srcset="/assets/img/content/handmade/ebooks/vdwd/vdwd-ebook.avif">
+                <img src="/assets/img/content/handmade/ebooks/vdwd/vdwd-ebook.webp"
+                  alt="Vzhůru do (responzivního) webdesignu" width="130" height="130" loading="lazy">
+              </picture>
+            </a>
+          </p>
+          <h3 class="h4 h-4 mb-05 d-f ai-fe">
+            <a href="/kniha-responzivni-design/">
+              Vzhůru do (responzivního) webdesignu
+            </a>
+          </h3>
+          <div class="f-6">
+            <p class="mb-05">
+              Kompletní průvodce návrhem a&nbsp;implementací responzivních webů.  Vydáno:&nbsp;2017.
+              <br>Cena: <strong>199&nbsp;Kč</strong>
+            </p>
+            <p>
+              <a class="button mx-1" href="/kniha-responzivni-design/">Více informací</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="col w-50-xs">
+          <p>
+            <a class="course-icon course-icon--ebook p-r" href="/ebook-amp">
+              <picture class="course-icon__image">
+                <source type="image/avif"
+                  srcset="/assets/img/content/handmade/ebooks/vdamp/vdamp-ebook.avif">
+                <img src="/assets/img/content/handmade/ebooks/vdamp/vdamp-ebook.webp"
+                  alt="Vzhůru do AMP" width="130" height="130" loading="lazy">
+              </picture>
+            </a>
+          </p>
+          <h3 class="h4 h-4 mb-05 d-f ai-fe">
+            <a href="/ebook-amp/">
+              Vzhůru do AMP
+            </a>
+          </h3>
+          <div class="f-6 p-r">
+            <p class="mb-05">
+              Vše o technologii pro tvorbu bezkonkurenčně rychlých webů v jednom e-booku. Vydáno:&nbsp;2019.
+              <br>Cena:&nbsp;<strong>99&nbsp;Kč</strong>
+            </p>
+            <p>
+              <a class="button px-1" href="/ebook-amp/">Více informací</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="col w-50-xs">
+          <p>
+            <a class="course-icon course-icon--ebook p-r" href="/ebook-css3">
+              <picture class="course-icon__image">
+                <source type="image/avif"
+                  srcset="/assets/img/content/handmade/ebooks/vdcss3/vdcss3-ebook.avif">
+                <img src="/assets/img/content/handmade/ebooks/vdcss3/vdcss3-ebook.webp"
+                  alt="Vzhůru do CSS3" width="130" height="130" loading="lazy">
+              </picture>
+            </a>
+          </p>
+          <h3 class="h4 h-4 mb-05 d-f ai-fe">
+            <a href="/ebook-css3/">
+              Vzhůru do CSS3
+            </a>
+          </h3>
+          <div class="f-6">
+            <p class="mb-05">
+              Změny frontend kodéřiny, nástroje, postupy a &nbsp;nové CSS3 vlastnosti v&nbsp;jednom e-booku. Vydáno:&nbsp;2015.
+              <br><strong>Zdarma ke stažení</strong>
+            </p>
+            <p>
+              <a class="button mx-1" href="/ebook-css3/">Více informací</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="article">
+        <p class="f-6 ta-c maxw-40em">
+          A články? Nějaký ten blog o webdesignu píšu od roku
+          <a href="/archiv/machal.creativity.cz/2002_11_03_archiv.php">2002</a>, v poslední době pod značkou
+          <a href="https://www.vzhurudolu.cz">Vzhůru dolů</a>. Občas publikuji
+          <a href="https://www.lupa.cz/autori/martin-michalek/">na Lupě</a>,
+          <a href="https://tyinternety.cz/author/martin-michalek/">TyInternety.cz</a>, kdysi hodně na
+          <a href="https://www.zdrojak.cz/autori/martin-michalek/">Zdrojáku</a> a
+          v pradávnu na
+          <a href="https://www.zive.cz/autori/sc-44/default.aspx?author=378&fname=Mich%u00e1lek+Martin">Živě.cz</a>.
+          Občas i v zahraničí, například pro
+          <a href="https://www.smashingmagazine.com/2016/10/how-to-poison-the-mobile-user/">Smashing Magazine</a>
+          nebo
+          <a href="https://uxdesign.cc/bootstraps-biggest-problem-missing-style-guide-b91e37e899cc">UX Collective</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="article" id="prednasky">
+        <h2 class="ta-c mb-2">
+          <a href="#prednasky">Přednášky</a>
+        </h2>
+      </div>
+    </div>
+
+    <div class="content-full">
+      <div class="row f-6">
+        <div class="col w-33-sm">
+          <p class="rounded o-h rwd-media mb-05">
+            <a href="https://webexpo.cz/praha2016/prednaska/10-praktickych-css3-a-svg-reseni/">
+              <img src="/assets/img/content/lectors/talks/martin-3.jpg"
+                alt="10 praktických CSS3 a SVG řešení" loading="lazy">
+            </a>
+          </p>
+          <p>
+            <strong>
+              <a href="https://webexpo.cz/praha2016/prednaska/10-praktickych-css3-a-svg-reseni/">
+                10 praktických CSS3 a SVG řešení
+              </a>
+            </strong><br>
+            <span class="suppress">
+              WebExpo 2016
+            </span>
+          </p>
+        </div>
+
+        <div class="col w-33-sm">
+          <p class="rounded o-h rwd-media mb-05">
+            <a href="https://www.youtube.com/watch?v=7p80_AJEb34">
+              <img src="https://img.youtube.com/vi/7p80_AJEb34/maxresdefault.jpg"
+                alt="Proč si myslím, že AMP je super?" loading="lazy">
+            </a>
+          </p>
+          <p>
+            <strong>
+              <a href="https://www.youtube.com/watch?v=7p80_AJEb34">
+                Proč si myslím, že AMP je super?
+              </a>
+            </strong><br>
+            <span class="suppress">
+              WebElement&nbsp;2019
+            </span>
+          </p>
+        </div>
+
+        <div class="col w-33-sm">
+          <p class="rounded o-h rwd-media mb-05">
+            <a href="https://www.youtube.com/watch?v=u0UhPmLpZnc">
+              <img src="https://img.youtube.com/vi/u0UhPmLpZnc/maxresdefault.jpg"
+                alt="Blbosti kolem webové rychlosti" loading="lazy">
+            </a>
+          </p>
+          <p>
+            <strong>
+              <a href="https://www.youtube.com/watch?v=u0UhPmLpZnc">
+                Blbosti kolem webové rychlosti
+              </a>
+            </strong><br>
+            <span class="suppress">
+              Frontendisti.cz,&nbsp;2019
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="content mt-0">
+      <div class="article">
+        <p class="f-6 ta-c maxw-40em mb-3">
+          Další přednášky najdete na
+          <a href="https://www.slideshare.net/machal">SlideShare</a>, nebo na
+          <a href="https://www.youtube.com/playlist?list=PLOs14ZGnaZuvmYRYnRd9qXXLQXTKPfOyj">YouTube</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="content-full bg-dark py-3">
+      <div class="article ta-c py-3" id="frontendisti">
+        <p class="mb-1-5">
+          <a href="https://www.frontendisti.cz/"><img src="/assets/img/content/dest/original/logos/frontendisti.svg" alt="Frontendisti" width="250" height="91" loading="lazy"></a>
+        </p>
+        <p class="f-6 maxw-30em">
+          Spoluzaložil jsem a vedu spolek
+          <a href="https://www.frontendisti.cz/">Frontendisti.cz</a>, který se
+          zaměřuje na vzdělávání frontendové komunity. S kolegy a kolegyněmi organizujeme srazy
+          v Praze a v Brně.
+        </p>
+      </div>
+    </div>
+
+    <div class="content">
+      <h2 class="ta-c" id="kontakt">
+        <a href="#kontakt">Kontakt</a>
+      </h2>
+
+      <p class="ta-c hovered-anchors article mb-2">
+        E <a href="mailto:martin@vzhurudolu.cz">martin@vzhurudolu.cz</a> –
+        T <a href="tel:724071700">724 071 700</a>
+        <br>
+        <a href="https://twitter.com/machal">Twitter</a> –
+        <a href="http://www.linkedin.com/in/martinmichalek">LinkedIn</a>
+      </p>
+
+      <div class="small ta-c">
+        Fyzická osoba zapsaná v živnostenském rejstříku.<br>
+        Jurkovičova 988/26<br>
+        149 00, Praha 11<br>
+        IČ: 68168861<br>
+        DIČ: 7708304956
+      </div>
+    </div>
+  </main>
+</BaseLayout>

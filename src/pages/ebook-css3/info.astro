@@ -1,0 +1,182 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<BaseLayout
+  title='Informace k nákupu e-booku „Vzhůru do CSS3"'
+  description="Informace o prodejci, postupu objednávky a storno podmínkách."
+  ogType="book"
+  ogImage="https://www.vzhurudolu.cz/assets/img/content/src/socials/vd-soc-vdcss3.jpg"
+  ogUrl="https://www.vzhurudolu.cz/ebook-css3/info"
+  bodyClass="section-ebooks"
+>
+  <Header slot="header" />
+  <Footer slot="footer" />
+
+  <div class="page-head">
+    <h1>
+      Informace o
+      e-booku „Vzhůru do&nbsp;CSS3"
+    </h1>
+
+    <p class="mb-0">
+      <a href="/ebook-css3/">Informace o&nbsp;e-booku</a>
+    </p>
+  </div>
+
+  <main role="main" id="main" aria-label="Hlavní obsah" class="">
+    <div class="content">
+      <div class="article">
+        <p class="mb-15 ta-c">
+          <a href="#dostanete">Co dostanete?</a>
+          <span class="suppress">—</span>
+          <a href="#postup">Postup objednávky</a>
+          <br>
+          <a href="#licence">Multilicence</a>
+          <span class="suppress">—</span>
+          <a href="#slovensko">Prodej do zahraničí</a>
+          <span class="suppress">—</span>
+          <a href="#reklamace">Reklamace</a>
+          <br>
+          <a href="#verze">Historie verzí</a>
+          <span class="suppress">—</span>
+          <a href="#prodejce">Prodejce</a>
+          <span class="suppress">—</span>
+          <a href="#o-knize">O knize</a>
+        </p>
+
+        <hr class="hr hr--spaced hr--small">
+
+        <h2 id="dostanete" class="ta-c mt-2">
+          <a href="#dostanete">Co dostanete?</a>
+        </h2>
+
+        <ul>
+          <li class="mb-05">
+            Licenci aktuální verze e-booku, která je určená jedné fyzické osobě na neomezeném počtu zařízení. Do firmy pak můžete dokoupit <a href="#licence">multilicenci</a>.
+          </li>
+          <li class="mb-05">
+            Součástí balíčku jsou formáty EPUB (např. pro iPad, iPhone), MOBI (např. pro Kindle) a&nbsp;PDF.
+          </li>
+          <li class="mb-05">
+            Soubory ke každé verzi si můžete stáhnout maximálně pětkrát.
+          </li>
+        </ul>
+
+        <hr class="hr hr--spaced hr--small">
+
+        <h2 id="reklamace" class="ta-c mt-2">
+          <a href="#reklamace">Reklamace a nárok na vrácení peněz</a>
+        </h2>
+
+        <p>
+          Do 14 dnů od objednání máte ze zákona právo požádat o vrácení peněz
+          bez udání&nbsp;důvodu.
+        </p>
+
+        <p>
+          Nestává se to, ale pro jistotu – pokud nebudete s knihou spokojení,
+          vrátíme vám peníze v plné výši. Jen nám to prosím i s odůvodněním
+          napište do jednoho měsíce od&nbsp;zaplacení.
+        </p>
+
+        <h2 id="o-knize" class="ta-c mt-2">
+          <a href="#o-knize">Technické údaje</a>
+        </h2>
+
+        <table class="f-sm">
+          <tbody>
+            <tr>
+              <th class="ta-l va-t">Název:</th>
+              <td class="ta-l">Vzhůru do CSS3</td>
+            </tr>
+            <tr>
+              <th class="ta-l va-t">Autor:</th>
+              <td class="ta-l">Martin Michálek</td>
+            </tr>
+            <tr>
+              <th class="ta-l va-t">Nakladatel:</th>
+              <td class="ta-l">Michálek Martin – Vzhůru dolů</td>
+            </tr>
+            <tr>
+              <th class="ta-l va-t">ISBN:</th>
+              <td class="ta-l">
+                978-80-260-8440-2 (PDF)<br>
+                978-80-260-8439-6 (MOBI)<br>
+                978-80-260-8438-9 (EPUB)
+              </td>
+            </tr>
+            <tr>
+              <th class="ta-l va-t">E-book:</th>
+              <td class="ta-l">
+                Formáty PDF, EPUB (Apple atd.) a MOBI (Kindle atd.). 175 stránek v&nbsp;PDF.
+              </td>
+            </tr>
+            <tr>
+              <th class="ta-l va-t">Vydání:</th>
+              <td class="ta-l">
+                Červenec 2015
+              </td>
+            </tr>
+            <tr>
+              <th class="ta-l va-t">Poslední aktualizace:</th>
+              <td class="ta-l">
+                Červenec 2017
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2 id="verze" class="ta-c">
+          <a href="#verze">Aktuální verze</a>
+        </h2>
+
+        <h3 id="v1-4"><a href="#v1-4">1.4 (9. ledna 2017)</a></h3>
+
+        <ul class="f-sm">
+          <li>Zgruntu přepsaná kapitola o Media Queries.</li>
+          <li>Přepsaná a aktualizovaná kapitola o prohlížečích.</li>
+          <li>CSS pixel a „Retina" displeje podrobněji.</li>
+          <li>Přepsaná kapitola o CSS prefixech.</li>
+          <li>Dlouhé odkazy ven z e-booku jsou prohnané zkracovačem, aby nerušily text.</li>
+          <li>Lepší kontrast písma v Kindle čtečkách.</li>
+          <li>Drobné opravy a aktualizace (včetně odstranění pitomé chyby se špatným směrem <code>flex-direction</code> u <a href="/prirucka/css3-flexbox-kontejner">flexboxu</a>).</li>
+        </ul>
+
+        <p class="ta-c">
+          <a class="button" href="/ebook-css3/verze">Historie verzí</a>
+        </p>
+
+        <div class="ta-c">
+          <hr class="hr--spaced hr--small">
+
+          <h2 id="prodejce"><a href="#prodejce">Prodejce e-booku</a></h2>
+
+          <p>
+            <a href="/martin">Martin Michálek</a><br>
+            Jurkovičova 988/26<br>
+            149 00, Praha 11<br>
+          </p>
+
+          <p>
+            IČ: 68168861<br>
+            DIČ: 7708304956
+          </p>
+
+          <p>
+            E <a href="mailto:martin@vzhurudolu.cz">martin@vzhurudolu.cz</a><br>
+            T 724&nbsp;071&nbsp;700
+          </p>
+        </div>
+
+        <br>
+
+        <p>
+          <a href="https://form.simpleshop.cz/OD7zL/buy/" class="button button--wide button--primary ta-c">Stáhnout zdarma</a>
+        </p>
+      </div>
+    </div>
+  </main>
+</BaseLayout>

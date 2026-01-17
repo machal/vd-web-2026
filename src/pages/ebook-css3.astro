@@ -5,11 +5,11 @@ import Footer from '../components/Footer.astro';
 ---
 
 <BaseLayout
-  title="E-book &bdquo;Vzhůru do CSS3&ldquo;"
-  description="Změny frontend kodéřiny, nástroje, postupy a nové CSS3 vlastnosti v jednom e-booku."
+  title="E-book „Vzhůru do CSS3"
+  description="22 nových CSS vlastností od kulatých rohů po Flexbox layouty. Názorně v tutoriálech a podrobně v referenčních příručkách."
   ogType="book"
-  ogImage="https://www.vzhurudolu.cz/assets/img/content/src/socials/vd-soc-css3.jpg"
-  ogUrl="https://www.vzhurudolu.cz/ebook-css3"
+  ogImage="https://www.vzhurudolu.cz/assets/img/content/src/socials/vd-soc-vdcss3.jpg"
+  ogUrl="https://www.vzhurudolu.cz/ebook-css3/"
   bodyClass="section-ebooks"
 >
   <Header slot="header" />
@@ -17,28 +17,31 @@ import Footer from '../components/Footer.astro';
 
   <div class="page-head">
     <h1>
-      Vzhůru do CSS3
+      Vzhůru do&nbsp;CSS3
     </h1>
 
     <p class="maxw-30em">
-      Změny frontend kodéřiny, nástroje, postupy a nové CSS3 vlastnosti v jednom e-booku.
+      Vylepšete své znalosti webové kodéřiny
+      přehledem nástrojů a&nbsp;nových CSS3&nbsp;vlastností
+      v&nbsp;jednom&nbsp;e-booku.
     </p>
 
     <p class="mb-0">
-      <a href="/assets/files/vdcss3/vdcss3-ebook.pdf" class="button button--primary">
+      <a href="https://form.simpleshop.cz/OD7zL/buy/" class="button button--primary">
         Stáhnout zdarma
       </a>
     </p>
   </div>
 
-  <main role="main" id="main" aria-label="Hlavní obsah">
+  <main role="main" id="main" aria-label="Hlavní obsah" class="">
     <link rel="stylesheet" href="/assets/css/modules-standalone/min/pages/ebook.min.css" />
     
     <div class="article">
+      <!-- Proč? -->
       <div class="section">
-        <div class="content ta-c">
-          <p>
-            E-book o CSS3, který je zdarma ke stažení. Obsahuje přehled nových vlastností CSS3, nástrojů a postupů pro moderní webovou kodéřinu.
+        <div class="content">
+          <p class="ta-c">
+            E-book byl vydán v roce 2015 a naposledy aktualizován v roce 2017. Méně zkušeným nebo těm, kteří nemají kódování webů jako hlavní obživu, ale text pomůže jako každodenní pomocník při používání CSS3 vlastností. I zkušenější ale mohou ocenit velmi podrobný text o <a href="/prirucka/css3-flexbox">flexboxu</a>.
           </p>
         </div>
       </div>
@@ -47,7 +50,7 @@ import Footer from '../components/Footer.astro';
     <div class="section section-taller bg-highlight ebook-order">
       <div class="content ta-c">
         <p class="ebook-order-booklet">
-          <a href="/assets/files/vdcss3/vdcss3-ebook.pdf">
+          <a href="https://form.simpleshop.cz/OD7zL/buy/">
             <img src="/assets/img/content/dest/x-small/vdcss3-ebook.png"
               alt="Vzhůru do CSS3"
               height="200" width="200">
@@ -56,13 +59,19 @@ import Footer from '../components/Footer.astro';
 
         <div class="ebook-order-form">
           <p>
-            <a href="/assets/files/vdcss3/vdcss3-ebook.pdf" class="button button--wide button--primary">
+            <a href="https://form.simpleshop.cz/OD7zL/buy/" class="button button--wide button--primary">
               Stáhnout zdarma
             </a>
           </p>
-          <p class="f-sm mb-0">
+          <p class="f-sm">
             <span class="ebook-order-conditions-row">
-              Formát PDF. Zdarma ke stažení.
+              179 stránek. EPUB (iPad), MOBI (Kindle) a&nbsp;PDF.
+            </span>
+            <span class="ebook-order-conditions-row">
+              Verze: 1.4.<br>
+            </span>
+            <span class="ebook-order-conditions-row">
+              <a href="/ebook-css3/info">Více o nákupu</a>
             </span>
           </p>
         </div>
@@ -71,25 +80,276 @@ import Footer from '../components/Footer.astro';
 
     <div class="article">
       <div class="section">
-        <div class="content">
-          <h2 id="co-obsahuje" class="ta-c">
-            <a href="#co-obsahuje">Co v e-booku najdete?</a>
+        <div class="content-full ta-c">
+          <h2 id="obrazky" class="mt-15 mb-1">
+            <a href="#obrazky">Spousta obrázků a schémat</a>
           </h2>
 
-          <ol class="list list--numbered">
-            <li class="list__item mb-1">
-              Přehled nových CSS3 vlastností a jejich použití.
-            </li>
-            <li class="list__item mb-1">
-              Nástroje a postupy pro moderní frontend kodéřinu.
-            </li>
-            <li class="list__item mb-1">
-              Praktické příklady a ukázky kódu.
-            </li>
-            <li class="list__item mb-1">
-              Tipy a triky pro efektivní práci s CSS3.
-            </li>
-          </ol>
+          <p class="raised raised--image">
+            <img alt="Vzhůru do CSS3 - obrázky"
+              srcset="
+                /assets/img/content/dest/small/ebook/vzhuru-do-css3-obrazky.png  600w,
+                /assets/img/content/dest/medium/ebook/vzhuru-do-css3-obrazky.png  800w,
+                /assets/img/content/dest/large/ebook/vzhuru-do-css3-obrazky.png  1024w,"
+              sizes="
+                (min-width: 1100px) 1024px,
+                (min-width: 756px) calc(100vw - 2*2em),
+                calc(100vw - 2*1em)"
+              width="1024" height="576">
+          </p>
+        </div>
+
+        <div class="content mt-0 pt-0 ta-c f-sm">
+          <p class="mt-1">
+            Aby se informace vstřebávaly snáze,
+            text je prokládán obrázky, screenshoty
+            a&nbsp;vysvětlujícími&nbsp;schématy.
+          </p>
+        </div>
+
+        <div class="content-full ta-c">
+          <h2 id="tipy" class="mt-15 mb-1">
+            <a href="#tipy">Tipy, triky a příklady z praxe</a>
+          </h2>
+
+          <p class="raised raised--image">
+            <img alt="Vzhůru do CSS3 - tipy"
+              srcset="
+                /assets/img/content/dest/small/ebook/vzhuru-do-css3-tipy.png  600w,
+                /assets/img/content/dest/medium/ebook/vzhuru-do-css3-tipy.png  800w,
+                /assets/img/content/dest/large/ebook/vzhuru-do-css3-tipy.png  1024w,"
+              sizes="
+                (min-width: 1100px) 1024px,
+                (min-width: 756px) calc(100vw - 2*2em),
+                calc(100vw - 2*1em)"
+              width="1024" height="576">
+          </p>
+        </div>
+      </div>
+
+      <div class="content mt-0 pt-0 ta-c f-sm">
+        <p class="mt-1">
+          Teorie je hezká, ale co praxe? V obsahu nezapomínám
+          na časté špeky. Důležité vlastnosti
+          obsahují příklady, které si můžete naživo zkusit
+          <a href="https://codepen.io/machal/pen/cdyfx">na Codepen.io</a>.
+        </p>
+      </div>
+
+      <div class="content-full ta-c">
+        <h2 id="flexbox" class="mt-15 mb-1">
+          <a href="#flexbox">Podrobně rozpracovaný flexbox</a>
+        </h2>
+
+        <p class="raised raised--image">
+          <img alt="Vzhůru do CSS3 - flexbox"
+            srcset="
+              /assets/img/content/dest/small/ebook/vzhuru-do-css3-flexbox.png  600w,
+              /assets/img/content/dest/medium/ebook/vzhuru-do-css3-flexbox.png  800w,
+              /assets/img/content/dest/large/ebook/vzhuru-do-css3-flexbox.png  1024w,"
+            sizes="
+              (min-width: 1100px) 1024px,
+              (min-width: 756px) calc(100vw - 2*2em),
+              calc(100vw - 2*1em)"
+            width="1024" height="576">
+        </p>
+      </div>
+
+      <div class="content mt-0 pt-0 ta-c f-sm">
+        <p class="mt-1">
+          Relativně nový layoutovací systém – <a href="/prirucka/css3-flexbox">flexbox</a>
+          – si zaslouží opravdu zásadní pozornost. Ve e-booku „Vzhůru do CSS3" je rozpracován do hloubky a s&nbsp;mnoha praktickými příklady&nbsp;využití.
+        </p>
+      </div>
+
+      <div class="section section-tall" id="recenze">
+        <div class="content">
+          <div class="article">
+            <h2 class="ta-c mb-15">
+              <a href="#recenze">Recenze</a>
+            </h2>
+
+            <div class="row f-sm">
+              <link rel="stylesheet" href="/assets/css/modules-standalone/min/response.min.css" />
+              <article class="course-response response col w-50-xs mb-15 pt-0">
+                <blockquote class="response__text">
+                  <p>Ačkoliv by se mohlo zdát, že značná část obsahu e-booku se dá najít jinde, pro nastudování současných CSS3 postupů půjde v&nbsp;češtině těžko najít lepší kompletní přehled.</p>
+                </blockquote>
+                <p class="mb-0 ml-2">
+                  <a href="https://jecas.cz/vzhuru-do-css3">Bohumil Jahoda</a> v červenci 2016
+                </p>
+              </article>
+              <article class="course-response response col w-50-xs mb-15 pt-0">
+                <blockquote class="response__text">
+                  <p>Kniha není jen referenční příručkou CSS3, ale seznámí vás i&nbsp;s&nbsp;preprocesory LESS, SASS a&nbsp;vychytávkami jako je Gulp nebo Browsersync.</p>
+                </blockquote>
+                <p class="mb-0 ml-2">
+                  <a href="https://www.ebooky.cz/soutez-o-e-knihu-vzhuru-do-css3/">Petr Vytlačil</a> v srpnu 2015
+                </p>
+              </article>
+              <article class="course-response response col w-50-xs mb-15 pt-0">
+                <blockquote class="response__text">
+                  <p>Naprosto jasně je zde vidět praxe a&nbsp;získáte i&nbsp;informace, jenž z&nbsp;dokumentace nevyčtete.</p>
+                </blockquote>
+                <p class="mb-0 ml-2">
+                  <a href="https://musilda.cz/ebook-vzhuru-do-css3-od-martina-michalka/">Vladimír Musílek</a> v březnu 2018
+                </p>
+              </article>
+              <article class="course-response response col w-50-xs mb-15 pt-0">
+                <blockquote class="response__text">
+                  <p>Rozhodně koupit! Je to jediná pořádná česká kniha o&nbsp;CSS3, o&nbsp;které vím.</p>
+                </blockquote>
+                <p class="mb-0 ml-2">
+                  <a href="https://www.webmistr.wtf/vzhuru-do-css3/">Jan Bien</a> v září 2015
+                </p>
+              </article>
+              <article class="course-response response col w-50-xs mb-15 pt-0">
+                <blockquote class="response__text">
+                  <p>Hodně se mi líbilo provázání výkladu s&nbsp;funkčními příklady, které jsem si mohl ihned upravit a&nbsp;vyzkoušet.</p>
+                </blockquote>
+                <p class="mb-0 ml-2">
+                  <a href="http://petr.vaclavek.com/article/721/martin-michalek-vzhuru-do-css3">Petr Václavek</a> v srpnu 2015
+                </p>
+              </article>
+              <article class="course-response response col w-50-xs mb-15 pt-0">
+                <blockquote class="response__text">
+                  <p>Martin úhledně shrnuje všechny překotné změny, jež se v oboru udály za velice krátkou dobu a&nbsp;které není možné zcela ignorovat.</p>
+                </blockquote>
+                <p class="mb-0 ml-2">
+                  <a href="http://blog.singha.cz/clanky/vzhuru-css3-recenze-knihy-martin-michalek">René Kostka</a> v srpnu 2015
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Obsah -->
+      <div class="section">
+        <div class="content">
+          <div class="article">
+            <h2 id="obsah" class="section-heading">
+              <a href="#obsah">Kompletní obsah</a>
+            </h2>
+          </div>
+        </div>
+
+        <div class="content-full">
+          <link rel="stylesheet" href="/assets/css/modules-standalone/min/toc.min.css" />
+          <div class="toc raised">
+            <h3>1) O dnešním kódování webů</h3>
+            <h4>Proměny kódeřiny</h4>
+
+            <ul>
+              <li>Příchod mobilů</li>
+              <li>Responzivní webdesign =&nbsp;webdesign</li>
+              <li>Mnoho prohlížečů, kodérova&nbsp;smrt</li>
+              <li>CSS pixel&nbsp;přichází</li>
+              <li>SVG a srcset/sizes, nové výzvy pro vkládání&nbsp;obrázků</li>
+              <li>Pruda s prefixovanými&nbsp;vlastnostmi</li>
+              <li>Méně Photoshopu, více&nbsp;kódu</li>
+              <li>Od ornamentů k&nbsp;typografii</li>
+            </ul>
+            <h4>Nástroje, postupy,&nbsp;technologie</h4>
+            <ul>
+              <li>CSS preprocesory</li>
+              <li>Invaze Node.js&nbsp;ekosystému</li>
+              <li>Správa balíčků: NPM a&nbsp;Bower</li>
+              <li>Buildování: Prepros, Grunt,&nbsp;Gulp</li>
+              <li>Postprocesing: Autoprefixer, Pixrem a&nbsp;další</li>
+              <li><a href="/prirucka/oocss">Udržitelný kód pomocí&nbsp;OOCSS</a></li>
+              <li>Bootstrap a hotové UI&nbsp;knihovny</li>
+              <li>Browserstack: testování v alternativních&nbsp;prohlížečích</li>
+              <li>Efektivita převodu grafického návrhu: Avocode,
+                Brackets,&nbsp;CSSHat…</li>
+              <li><a href="/prirucka/browsersync">Browsersync: živý náhled webu a ladění na&nbsp;zařízeních</a>
+              </li>
+              <li>Další nástroje a weby</li>
+            </ul>
+
+            <h4>Fallback strategie pro starší&nbsp;prohlížeče</h4>
+            <ul>
+              <li>V každém prohlížeči by měl být dostupný hlavní obsah
+                nebo&nbsp;funkčnost</li>
+              <li>Progressive enhancement, postupné&nbsp;vylepšování</li>
+              <li>Křápovzdorné technické řešení v&nbsp;CSS3</li>
+            </ul>
+
+            <h3>2) Referenční příručka CSS3</h3>
+
+            <h4>Vlastnosti textu</h4>
+            <ul>
+              <li><a href="/prirucka/css3-text-overflow">Text Overflow: způsob přetékání&nbsp;textu</a></li>
+              <li><a href="/prirucka/css3-text-shadow">Text Shadow: stín&nbsp;textu</a></li>
+              <li><a href="/prirucka/css3-font-face">Font Face: vlastní&nbsp;fonty</a></li>
+              <li>Font Face: tipy a&nbsp;triky</li>
+              <li>Font Face: netechnické&nbsp;aspekty</li>
+            </ul>
+            <h4>Vlastnosti pozadí</h4>
+            <ul>
+              <li><a href="/prirucka/css3-background-clip">Background Clip: míra roztažení&nbsp;pozadí</a></li>
+              <li><a href="/prirucka/css3-background-origin">Background Origin: pozice začátku&nbsp;pozadí</a></li>
+              <li><a href="/prirucka/css3-background-size">Background Size: velikost obrázku na&nbsp;pozadí</a></li>
+              <li><a href="/prirucka/css3-gradients">Gradients: barevné&nbsp;přechody</a></li>
+              <li><a href="/prirucka/css3-multiple-backgorunds">Multiple Backgrounds: více obrázků na&nbsp;pozadí</a></li>
+            </ul>
+            <h4>Vlastnosti rámečků</h4>
+            <ul>
+              <li><a href="/prirucka/css3-border-image">Border Image: rámeček vykreslený&nbsp;obrázkem</a></li>
+              <li><a href="/prirucka/css3-border-radius">Border Radius: poloměr rohu&nbsp;rámečku</a></li>
+            </ul>
+
+            <h4>Vlastnosti boxu</h4>
+            <ul>
+              <li><a href="/prirucka/css3-box-shadow">Box Shadow: stínování&nbsp;elementu</a></li>
+              <li><a href="/prirucka/css3-box-sizing">Box Sizing: způsob počítání velikosti&nbsp;boxu</a></li>
+            </ul>
+            <h4>Media Queries</h4>
+            <ul>
+              <li><a href="/prirucka/css3-media-queries">Media Queries</a></li>
+            </ul>
+            <h4>Transformace</h4>
+            <ul>
+              <li><a href="/prirucka/css3-transforms">Transforms: proměny&nbsp;objektu</a></li>
+            </ul>
+            <h4>Animace</h4>
+            <ul>
+              <li><a href="/prirucka/css3-transitions">Transitions: jednoduché animace&nbsp;přechodu</a></li>
+              <li><a href="/prirucka/css3-animations">Animations: plnohodnotné&nbsp;animace</a></li>
+              <li>Tipy, triky a&nbsp;odkazy k&nbsp;animacím</li>
+              <li>Animace na&nbsp;příkladech</li>
+            </ul>
+            <h4>Layout</h4>
+            <ul>
+              <li><a href="/prirucka/css3-multicolumn">Multi-column Layout: vícesloupcová sazba&nbsp;textu</a></li>
+              <li><a href="/prirucka/css3-flexbox">Flexbox</a></li>
+              <li><a href="/prirucka/css3-flexbox-kontejner">Flexbox: vlastnosti kontejneru</a></li>
+              <li><a href="/prirucka/css3-flexbox-polozky">Flexbox: vlastnosti položky</a></li>
+              <li>Flexbox v příkladech</li>
+              <li>Flexbox: co je dobré zapsat si za uši</li>
+              <li>Flexbox: podpora v prohlížečích</li>
+              <li>Flexbox: zajímavé odkazy</li>
+            </ul>
+            <h4>Další</h4>
+            <ul>
+              <li><a href="/prirucka/css3-jednotky">Nové CSS3 jednotky: rem, vw,&nbsp;vh</a></li>
+              <li><a href="/prirucka/css3-rgba">RGBa: barva s&nbsp;poloprůhledností</a></li>
+              <li><a href="/prirucka/css3-selektory">Selektory</a></li>
+              <li>Funkce calc()</li>
+              <li>Funkce calc(): kdy ji využít a kdy ne?</li>
+              <li><a href="/prirucka/css3-box-reflection">Box Reflection: odlesk&nbsp;objektu</a></li>
+              <li>Vlastnosti nezařazené</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="content ta-c f-sm">
+          <p>
+            „Vzhůru do CSS3" má dvě části. V první shrnuji aktuální stav
+            prostředí webového kodéra a procházím nové nástroje, které mu pomáhají
+            s&nbsp;jeho prací. Ve druhé části se zabývám více než dvaceti novými CSS vlastnostmi.
+            To vše na 179 stránkách obsahu, počítaje pro PDF verzi.
+          </p>
         </div>
       </div>
     </div>
@@ -105,10 +365,10 @@ import Footer from '../components/Footer.astro';
             <a href="#autor">Martin Michálek</a>
           </h2>
           <p>
-            Autor je frontend designér na volné noze s takřka dvacetiletou praxí. Navrhuje, implementuje a radí s uživatelskými rozhraními responzivních webů.
+            Autor je frontend designér na volné noze s takřka dvacetiletou praxí. Navrhuje, implementuje a radí s uživatelskými rozhraními responzivních webů. V poslední době spolupracoval se značkami, jako je Česká televize, VašeČočky.cz nebo Svobodná Evropa.
           </p>
           <p>
-            O moderních technologiích napsal také e-book <a href="/kniha-responzivni-design">„Vzhůru do (responzivního) webdesignu"</a>. Kromě blogu <a href="/">Vzhůru dolů</a> také příležitostně publikuje pro Zdroják.cz, Lupa.cz nebo <a href="https://www.smashingmagazine.com/2016/10/how-to-poison-the-mobile-user/">na Smashing Magazine</a>.
+            O moderních technologiích napsal e-book <a href="/ebook">„Vzhůru do CSS3"</a>. Kromě blogu <a href="/">Vzhůru dolů</a> také příležitostně publikuje pro Zdroják.cz, Lupa.cz nebo slavném <a href="https://www.smashingmagazine.com/2016/10/how-to-poison-the-mobile-user/">na Smashing Magazine</a>.
             Spoluzaložil a vede spolek <a href="http://frontendisti.cz">Frontendisti.cz</a>, který se zaměřuje na vzdělávání webařské komunity.
           </p>
           <p>
@@ -125,7 +385,7 @@ import Footer from '../components/Footer.astro';
     <div class="section section-taller bg-highlight ebook-order section-latest">
       <div class="content ta-c">
         <p class="ebook-order-booklet">
-          <a href="/assets/files/vdcss3/vdcss3-ebook.pdf">
+          <a href="https://form.simpleshop.cz/OD7zL/buy/">
             <img src="/assets/img/content/dest/x-small/vdcss3-ebook.png"
               alt="Vzhůru do CSS3"
               height="200" width="200">
@@ -134,13 +394,19 @@ import Footer from '../components/Footer.astro';
 
         <div class="ebook-order-form">
           <p>
-            <a href="/assets/files/vdcss3/vdcss3-ebook.pdf" class="button button--wide button--primary">
+            <a href="https://form.simpleshop.cz/OD7zL/buy/" class="button button--wide button--primary">
               Stáhnout zdarma
             </a>
           </p>
-          <p class="f-sm mb-0">
+          <p class="f-sm">
             <span class="ebook-order-conditions-row">
-              Formát PDF. Zdarma ke stažení.
+              179 stránek. EPUB (iPad), MOBI (Kindle) a&nbsp;PDF.
+            </span>
+            <span class="ebook-order-conditions-row">
+              Verze: 1.4.<br>
+            </span>
+            <span class="ebook-order-conditions-row">
+              <a href="/ebook-css3/info">Více o nákupu</a>
             </span>
           </p>
         </div>
