@@ -1,9 +1,11 @@
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
+import rehypeRaw from 'rehype-raw';
 import { remarkHeadingIds } from './src/utils/remark-heading-ids.ts';
 import { rehypeRemoveFirstH1 } from './src/utils/rehype-remove-first-h1.ts';
 import { rehypeHeadingAnchors } from './src/utils/rehype-heading-anchors.ts';
 import { rehypePriruckaLinks } from './src/utils/rehype-prirucka-links.ts';
+import { rehypeMarkdownAttribute } from './src/utils/rehype-markdown-attribute.ts';
 
 // https://astro.build/config
 export default defineConfig({
@@ -16,7 +18,19 @@ export default defineConfig({
   ],
   markdown: {
     remarkPlugins: [remarkHeadingIds],
-    rehypePlugins: [rehypeRemoveFirstH1, rehypeHeadingAnchors, rehypePriruckaLinks],
+    // Povolit raw HTML v Markdownu (nutné pro markdown="1" atributy)
+    remarkRehype: {
+      allowDangerousHtml: true,
+    },
+    // rehype-raw musí být PRVNÍ, aby převedl raw HTML na HAST uzly
+    // rehypeMarkdownAttribute musí být PO rehype-raw, aby mohl zpracovat HTML elementy
+    rehypePlugins: [
+      rehypeRaw, // Převod raw HTML na HAST uzly
+      rehypeMarkdownAttribute, // Zpracování markdown="1" atributů
+      rehypeRemoveFirstH1,
+      rehypeHeadingAnchors,
+      rehypePriruckaLinks,
+    ],
   },
   vite: {
     css: {
