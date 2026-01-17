@@ -3,6 +3,7 @@ import sitemap from '@astrojs/sitemap';
 import { remarkHeadingIds } from './src/utils/remark-heading-ids.ts';
 import { rehypeRemoveFirstH1 } from './src/utils/rehype-remove-first-h1.ts';
 import { rehypeHeadingAnchors } from './src/utils/rehype-heading-anchors.ts';
+import { rehypePriruckaLinks } from './src/utils/rehype-prirucka-links.ts';
 
 // https://astro.build/config
 export default defineConfig({
@@ -15,7 +16,7 @@ export default defineConfig({
   ],
   markdown: {
     remarkPlugins: [remarkHeadingIds],
-    rehypePlugins: [rehypeRemoveFirstH1, rehypeHeadingAnchors],
+    rehypePlugins: [rehypeRemoveFirstH1, rehypeHeadingAnchors, rehypePriruckaLinks],
   },
   vite: {
     css: {
