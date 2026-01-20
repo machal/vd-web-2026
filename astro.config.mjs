@@ -6,6 +6,8 @@ import { rehypeRemoveFirstH1 } from './src/utils/rehype-remove-first-h1.ts';
 import { rehypeHeadingAnchors } from './src/utils/rehype-heading-anchors.ts';
 import { rehypePriruckaLinks } from './src/utils/rehype-prirucka-links.ts';
 import { rehypeMarkdownAttribute } from './src/utils/rehype-markdown-attribute.ts';
+import { rehypePriruckaImages } from './src/utils/rehype-prirucka-images.ts';
+import { vitePluginPriruckaImages } from './vite-plugin-prirucka-images.ts';
 
 // https://astro.build/config
 export default defineConfig({
@@ -24,15 +26,20 @@ export default defineConfig({
     },
     // rehype-raw musí být PRVNÍ, aby převedl raw HTML na HAST uzly
     // rehypeMarkdownAttribute musí být PO rehype-raw, aby mohl zpracovat HTML elementy
+    // rehypePriruckaImages musí být PO rehype-raw, aby mohl zpracovat HTML elementy
     rehypePlugins: [
       rehypeRaw, // Převod raw HTML na HAST uzly
       rehypeMarkdownAttribute, // Zpracování markdown="1" atributů
+      rehypePriruckaImages, // Transformace cest k obrázkům příručky
       rehypeRemoveFirstH1,
       rehypeHeadingAnchors,
       rehypePriruckaLinks,
     ],
   },
   vite: {
+    plugins: [
+      vitePluginPriruckaImages(), // Automatická konverze obrázků příručky
+    ],
     css: {
       preprocessorOptions: {
         scss: {

@@ -20,7 +20,10 @@
   },
   "devDependencies": {
     "@astrojs/sitemap": "^3.4.0",
-    "astro": "^4.15.0"
+    "astro": "^4.15.0",
+    "chokidar": "^3.6.0",
+    "sharp": "^0.33.0",
+    "tsx": "^4.7.0"
   },
   "repository": {
     "type": "git",
