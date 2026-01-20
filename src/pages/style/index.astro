@@ -1,0 +1,57 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import StyleSubnav from '../../components/StyleSubnav.astro';
+import { Fragment } from 'astro/jsx-runtime';
+
+// Vyloučení ze sitemapy
+export const sitemap = false;
+---
+
+<BaseLayout
+  title="Systém designu pro Vzhůru dolů"
+  description="Knihovna stylů a design systém webu Vzhůru dolů"
+  bodyClass="section-style"
+>
+  <Header slot="header" />
+  <Footer slot="footer" />
+
+  <div class="page-head">
+    <h1>Systém designu pro Vzhůru dolů</h1>
+  </div>
+
+  <main role="main" id="main" aria-label="Hlavní obsah">
+    <div class="content">
+      <StyleSubnav activeSlug="intro" />
+    </div>
+
+    <div class="content">
+      <div class="article">
+        <p>
+          Tato sekce obsahuje dokumentaci design systému webu Vzhůru dolů. 
+          Najdete zde informace o typografii, barvách, modulech a helper třídách.
+        </p>
+        
+        <h2 id="sekce" class="ta-c">
+          <a href="#sekce">Sekce</a>
+        </h2>
+        
+        <ul>
+          <li>
+            <a href="/style/base">Typografie</a> – stupnice velikostí písma, řádkování, fonty
+          </li>
+          <li>
+            <a href="/style/colors">Barvy</a> – barevná paleta webu
+          </li>
+          <li>
+            <a href="/style/modules">Moduly</a> – komponenty a moduly design systému
+          </li>
+          <li>
+            <a href="/style/helpers">Helpery</a> – pomocné třídy pro rychlý vývoj
+          </li>
+        </ul>
+      </div>
+    </div>
+  </main>
+</BaseLayout>

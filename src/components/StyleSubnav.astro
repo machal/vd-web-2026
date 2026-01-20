@@ -1,0 +1,76 @@
+---
+// Subnavigace pro style sekci
+interface Props {
+  activeSlug?: string;
+}
+
+const { activeSlug } = Astro.props;
+
+// Automatická detekce aktivního slug podle URL
+function detectActiveSlug(url: URL): string | null {
+  const pathname = url.pathname;
+  
+  if (pathname === '/style') {
+    return 'intro';
+  }
+  
+  const match = pathname.match(/^\/style\/([^/]+)/);
+  if (match) {
+    return match[1];
+  }
+  
+  return null;
+}
+
+// Použij explicitní hodnotu, pokud je poskytnuta, jinak automatická detekce
+const currentSlug = activeSlug !== undefined ? activeSlug : detectActiveSlug(Astro.url);
+
+// Definice navigačních položek
+const navItems = [
+  {
+    id: 'intro',
+    label: 'Úvod',
+    href: '/style',
+  },
+  {
+    id: 'base',
+    label: 'Typografie',
+    href: '/style/base',
+  },
+  {
+    id: 'colors',
+    label: 'Barvy',
+    href: '/style/colors',
+  },
+  {
+    id: 'modules',
+    label: 'Moduly',
+    href: '/style/modules',
+  },
+  {
+    id: 'helpers',
+    label: 'Helpery',
+    href: '/style/helpers',
+  },
+];
+---
+
+<nav class="nav nav--site" aria-labelledby="style-nav-heading" role="navigation">
+  <h2 class="sr-only" id="style-nav-heading">Kapitoly knihovny stylů</h2>
+  <ul class="nav__list">
+    {navItems.map((item) => {
+      const isActive = currentSlug === item.id;
+      return (
+        <li class={`nav__item ${isActive ? 'nav__item--active' : ''}`}>
+          {isActive ? (
+            <strong class="nav__item-in" aria-current="page">{item.label}</strong>
+          ) : (
+            <a class="nav__item-in" href={item.href}>
+              {item.label}
+            </a>
+          )}
+        </li>
+      );
+    })}
+  </ul>
+</nav>
