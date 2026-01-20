@@ -1,0 +1,28 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const title = 'Stránka nebyla nalezena';
+const description = 'Stránka, na kterou se dotazujete nebyla nalezena. Zkontrolujte, jestli je adresa správně zadána.';
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  ogUrl="https://www.vzhurudolu.cz/404"
+  bodyClass="section-"
+>
+  <Header slot="header" />
+  <Footer slot="footer" />
+
+  <main role="main" id="main" aria-label="Hlavní obsah" class="">
+    <div class="page-head page-head--line"></div>
+
+    <div class="content py-3-md ta-c">
+      <h1>Stránka nebyla nalezena</h1>
+      <p>Stránka, na kterou se dotazujete nebyla nalezena. Zkontrolujte, jestli je adresa správně zadána.</p>
+      <p><small>chyba 404</small></p>
+    </div>
+  </main>
+</BaseLayout>
