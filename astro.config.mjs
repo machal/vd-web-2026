@@ -4,11 +4,13 @@ import rehypeRaw from 'rehype-raw';
 import remarkGfm from 'remark-gfm';
 import { remarkHeadingIds } from './src/utils/remark-heading-ids.ts';
 import { remarkMarkdownAttribute } from './src/utils/remark-markdown-attribute.ts';
+import { remarkPriruckaImages } from './src/utils/remark-prirucka-images.ts';
 import { rehypeRemoveFirstH1 } from './src/utils/rehype-remove-first-h1.ts';
 import { rehypeHeadingAnchors } from './src/utils/rehype-heading-anchors.ts';
 import { rehypePriruckaLinks } from './src/utils/rehype-prirucka-links.ts';
 import { rehypeMarkdownAttribute } from './src/utils/rehype-markdown-attribute.ts';
 import { rehypePriruckaImages } from './src/utils/rehype-prirucka-images.ts';
+import { rehypeAdSnippets } from './src/utils/rehype-ad-snippets.ts';
 import { vitePluginPriruckaImages } from './vite-plugin-prirucka-images.ts';
 
 // https://astro.build/config
@@ -21,7 +23,7 @@ export default defineConfig({
     }),
   ],
   markdown: {
-    remarkPlugins: [remarkGfm, remarkHeadingIds, remarkMarkdownAttribute],
+    remarkPlugins: [remarkGfm, remarkHeadingIds, remarkMarkdownAttribute, remarkPriruckaImages],
     // Povolit raw HTML v Markdownu (nutné pro markdown="1" atributy)
     remarkRehype: {
       allowDangerousHtml: true,
@@ -33,6 +35,7 @@ export default defineConfig({
       rehypeRaw, // Převod raw HTML na HAST uzly
       rehypeMarkdownAttribute, // Zpracování markdown="1" atributů
       rehypePriruckaImages, // Transformace cest k obrázkům příručky
+      rehypeAdSnippets(), // Nahrazení <!-- AdSnippet --> komentářů HTML snippety podle kategorií
       rehypeRemoveFirstH1,
       rehypeHeadingAnchors,
       rehypePriruckaLinks,

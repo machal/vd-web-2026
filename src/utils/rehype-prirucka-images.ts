@@ -6,10 +6,11 @@ import type { Root } from 'hast';
  * 
  * Transformuje cesty z markdown souborů (které zůstávají nezměněné):
  * - <img src="../dist/images/original/typografie-16.jpg"> -> <img src="/prirucka/images/typografie-16.webp">
- * - <img src="../dist/images/original/vdlayout/flexbox.jpg"> -> <img src="/prirucka/images/vdlayout/flexbox.webp">
+ * - <img src="../dist/images/medium/vdlayout/schema.jpg"> -> <img src="/prirucka/images/vdlayout/schema.webp">
+ * - <img src="../dist/images/small/vdlayout/schema.jpg"> -> <img src="/prirucka/images/vdlayout/schema.webp">
  * - ![alt](../dist/images/original/obrazek.jpg) -> <img src="/prirucka/images/obrazek.webp">
  * 
- * Změní cestu z ../dist/images/original/ na /prirucka/images/ a příponu na .webp
+ * Změní cestu z ../dist/images/{original|medium|small}/ na /prirucka/images/ a příponu na .webp
  * Markdown soubory zůstávají nezměněné - transformace probíhá pouze při renderování.
  */
 export const rehypePriruckaImages: Plugin<[], Root> = () => {
@@ -19,10 +20,11 @@ export const rehypePriruckaImages: Plugin<[], Root> = () => {
       if (node.type === 'element' && node.tagName === 'img' && node.properties?.src) {
         const src = node.properties.src as string;
         
-        // Transformovat pouze cesty začínající na ../dist/images/original/
-        if (src.startsWith('../dist/images/original/')) {
-          // Odstranit prefix ../dist/images/original/
-          const relativePath = src.replace(/^\.\.\/dist\/images\/original\//, '');
+        // Transformovat cesty začínající na ../dist/images/{original|medium|small}/
+        const imagePathMatch = src.match(/^\.\.\/dist\/images\/(original|medium|small)\/(.+)$/);
+        if (imagePathMatch) {
+          // imagePathMatch[2] obsahuje relativní cestu k obrázku (např. "vdlayout/schema.jpg")
+          const relativePath = imagePathMatch[2];
           
           // Změnit příponu na .webp (odstranit query parametry pokud existují)
           const newPath = relativePath.replace(/\.(jpg|jpeg|png)(\?.*)?$/i, '.webp');
