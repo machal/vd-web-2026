@@ -1,7 +1,9 @@
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 import rehypeRaw from 'rehype-raw';
+import remarkGfm from 'remark-gfm';
 import { remarkHeadingIds } from './src/utils/remark-heading-ids.ts';
+import { remarkMarkdownAttribute } from './src/utils/remark-markdown-attribute.ts';
 import { rehypeRemoveFirstH1 } from './src/utils/rehype-remove-first-h1.ts';
 import { rehypeHeadingAnchors } from './src/utils/rehype-heading-anchors.ts';
 import { rehypePriruckaLinks } from './src/utils/rehype-prirucka-links.ts';
@@ -19,7 +21,7 @@ export default defineConfig({
     }),
   ],
   markdown: {
-    remarkPlugins: [remarkHeadingIds],
+    remarkPlugins: [remarkGfm, remarkHeadingIds, remarkMarkdownAttribute],
     // Povolit raw HTML v Markdownu (nutné pro markdown="1" atributy)
     remarkRehype: {
       allowDangerousHtml: true,
