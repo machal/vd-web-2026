@@ -121,10 +121,11 @@ const podcast = defineCollection({
 });
 
 // Příručka collection - struktura odpovídá exportovaným souborům
+// id je volitelné, protože některé soubory (např. v content-ebook) nemají front matter
 const prirucka = defineCollection({
   type: 'content',
   schema: z.object({
-    id: z.string(),
+    id: z.string().optional(),
     heading: z.string().optional(),
     slug: z.string().optional(),
     date: z.union([z.string(), z.date()]).optional().transform((val) => {
@@ -151,7 +152,7 @@ const prirucka = defineCollection({
     tags: z.array(z.string()).optional(),
   }).transform((data) => {
     // Pokud je heading prázdný, použijeme id nebo title
-    const title = data.title || (data.heading && data.heading.trim() !== '' ? data.heading : data.id) || data.id;
+    const title = data.title || (data.heading && data.heading.trim() !== '' ? data.heading : data.id) || data.id || '';
     const published = typeof data.published === 'boolean' ? data.published : data.published === 'Publikováno' || data.published === true;
     return {
       ...data,

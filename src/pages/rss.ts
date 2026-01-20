@@ -31,7 +31,8 @@ export async function GET(context: APIContext) {
   // Načtení všech kolekcí
   const blogPosts = await getCollection('blog');
   const podcasts = await getCollection('podcast');
-  const priruckaPosts = await getCollection('prirucka');
+  // Filtrovat pouze články s front matter (mají id)
+  const priruckaPosts = await getCollection('prirucka', (entry) => !!entry.data.id);
 
   // Filtrování a spojení všech článků
   const allContent = [...blogPosts, ...podcasts, ...priruckaPosts]

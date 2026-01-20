@@ -1,6 +1,6 @@
 ---
 import { Fragment } from 'astro/jsx-runtime';
-import { getCollection } from 'astro:content';
+import { getCollection, type CollectionEntry } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
@@ -10,11 +10,14 @@ import { categories, type CategoryConfig } from '../../data/categories';
 
 export async function getStaticPaths() {
   try {
-    const prirucka = await getCollection('prirucka', (entry) => {
-      // Only include entries that have required fields (title and id) and are published
-      // This filters out files without proper frontmatter and unpublished entries
-      return entry.data.title && entry.data.id && entry.data.published === true;
+    // Načíst všechny soubory z kolekce s filtrem, který zachytí pouze validní soubory s front matter
+    // Soubory bez front matter budou automaticky vyfiltrovány, protože nemají povinné pole 'id'
+    const prirucka = await getCollection('prirucka', (entry): entry is CollectionEntry<'prirucka'> & { data: { id: string } } => {
+      // Pouze soubory s povinnými poli (id) a publikované
+      // Soubory bez front matter nemají 'id', takže budou vyfiltrovány
+      return !!entry.data.id && entry.data.published === true;
     });
+    
     return prirucka.map((item) => {
       // Use id from frontmatter instead of slug (file name)
       // This ensures URLs are based on id, not file name or frontmatter slug
@@ -30,11 +33,15 @@ export async function getStaticPaths() {
   }
 }
 
-const { item } = Astro.props;
+interface Props {
+  item: CollectionEntry<'prirucka'> & { data: { id: string } };
+}
+
+const { item } = Astro.props as Props;
 const { Content } = await item.render();
 
 // Use id from frontmatter for URL
-const urlId = item.data.id;
+const urlId = item.data.id; // TypeScript ví, že id existuje díky type guardu výše
 
 // Normalizace tagu (odstranění diakritiky pro porovnávání)
 function normalizeTag(tag: string): string {

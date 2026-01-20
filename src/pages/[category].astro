@@ -34,7 +34,8 @@ if (!categoryConfig) {
 // Načtení všech článků
 const blogPosts = await getCollection('blog');
 const podcasts = await getCollection('podcast');
-const priruckaPosts = await getCollection('prirucka');
+// Filtrovat pouze články s front matter (mají id)
+const priruckaPosts = await getCollection('prirucka', (entry) => !!entry.data.id);
 
 // Filtrování článků podle tagů kategorie
 // Zahrnuje články s odpovídajícími tagy nebo články z příručky, které mají kategorii v slug

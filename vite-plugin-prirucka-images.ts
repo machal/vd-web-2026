@@ -5,7 +5,7 @@ import { readdir, stat, mkdir } from 'fs/promises';
 import { join, dirname, relative, extname, basename } from 'path';
 import { existsSync } from 'fs';
 
-const SOURCE_DIR = 'content/prirucka/src/images';
+const SOURCE_DIR = 'src/content/prirucka/assets/images';
 const OUTPUT_DIR = 'public/prirucka/images';
 const MAX_WIDTH = 1600;
 const WEBP_QUALITY = 85;
