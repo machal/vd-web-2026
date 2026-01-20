@@ -11,13 +11,16 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/rss": "^4.0.15",
     "@superkoders/modal": "^1.7",
     "jquery": "^3.7.1",
-    "normalize.css": "^8.0.1"
+    "markdown-it": "^14.1.0",
+    "normalize.css": "^8.0.1",
+    "sanitize-html": "^2.17.0"
   },
   "devDependencies": {
-    "astro": "^4.15.0",
-    "@astrojs/sitemap": "^3.4.0"
+    "@astrojs/sitemap": "^3.4.0",
+    "astro": "^4.15.0"
   },
   "repository": {
     "type": "git",

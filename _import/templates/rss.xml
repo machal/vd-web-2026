@@ -1,0 +1,1077 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+	<channel>
+		<title>Vzhůru dolů</title>
+		<link>https://www.vzhurudolu.cz</link>
+		<description>Současný webový frontend.</description>
+		<atom:link href="https://www.vzhurudolu.cz/rss" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Můj rok 2025: podnikatelský, strategický, úspěšný, ale taky úzkostný a hledající formu</title>
+				<link>https://www.vzhurudolu.cz/blog/261-rok-2025</link>
+				<guid>https://www.vzhurudolu.cz/blog/261-rok-2025</guid>
+					<description>Můj rok 2025 byl obratový, takže zásadní. A kdyby byl jen pozitivní, není o čem psát, není se z čeho učit a byla by s tím rokem strašná nuda.
+Trošku úzkost ze světa tam venku
+Začnu s tou úzkostí v názvu. Určitě ten rozpor někteří z vás zažívají taky, hlavně vy starší. V osobní rovině máte krásný život, vlastně čím dál krásnější, ale stále více vás přepadají chmury nebo dokonce úzkost z dění ve světě, v geopolitice, v širší společnosti. 
+Začalo to napadením Ukrajiny, pokračuje druhým Trumpovým obdobím, ledy ve společnosti se silně hýbou i u nás. Světlo na konci tunelu je stále slabší. Můj otec na tyhle situace vždycky říká „svět se v prdel obraca“. Smál jsem se, ale teď to sedí. Nebudu se tomu zde dále moc věnovat, ale snažím se tu být upřímný a tohle zarámování mi tady nemůže chybět.
+Pojďme raději zaměřit na to, co jsem loni zažíval v osobní a hlavně pracovní rovině. 
+Z freelancera podnikatelem
+Předně jsem se nejspíš už proměnil z freelancera na podnikatele. 
+Neberte mě špatně, je to jen jedna z mých rolí. Dále zůstávám autorem obsahu, nadšencem do performance a webu, šéfem a spolumajitelem firmy, produkťákem, komunitním týpkem a hlavně tátou od rodiny.
+V roce 2025 se u mě proměnilo vnímání sebe sama z pohledu vydělávání peněz. Na volné noze jsem strávil hodně přes dvacet let a setrvačnost tohodle mindsetu je velká. 
+
+Být podnikatel na volné noze a podnikatel s vlastní firmou a lidmi v ní je ovšem úplně jiná liga. Mentální a dovednostní přerod z prvního do druhého u mě zabral odhadem pět let. 
+Pravidelně jsem si během téhle doby pokládal otázku: Co budeš dělat, pokud tvoje podnikání selže nebo tě prostě přestane bavit?
+Vždycky jsem si odpovídal, že se prostě vrátím na volnou nohu. Až do druhé poloviny roku 2025, kdy jsem si začal odpovídat, že v takovém případě začnu hledat tvořit podnikání. Slušný, tohle bych do sebe neřekl.
+PageSpeed.ONE: poradenství skvěle jede, ale chceme více máknout na produktu
+Podnikání, to je pro mě samozřejmě PageSpeed.ONE, skvělý tým lidí, kteří pomáhají firmám zrychlovat jejich weby a zlepšovat tím konverze nebo třeba návštěvnost. 
+Loni jsme měli výborný rok, kdy jsme i díky novému kolegovi Tomášovi šli i směrem k poradenství ohledně backendu, infrastruktury (trošku nás potrápili v Cloudflare) nebo konkrétně WordPressu. Hodně jsme se zaměřovali i na další platformy, hlavně Shoptet nebo Shopify. 
+Já se přitom velmi zaměřoval na sales, což vidíme na číslech. A překvapilo mě, jak mě to dokáže bavit.
+Pracovali jsme odhadem pro dalších 30-40 nových klientů, nově mezi nimi je například Česká spořitelna, více jsme také loni makali pro Heureku nebo Datart. Boží.
+Zároveň jsme budovali naší SaaS službu monitoringu rychlosti. Ten jsme vývojově hezky posunuli, ale neměli jsme na něj tolik času, kolik bychom chtěli. Nejsme první, kdo bolestně zjišťuje, že čas a pozornost je jen jedna a přerod z agenturního na produktové fungování je vždy velmi těžký. Tohle bude hlavní cíl na rok 2026.
+FrontKon a Frontendisti.cz: od komunitního k firemnímu uvažování
+Další velkým mentální přerod proběhl u Frontendistů. Hodně jsme řešili, jak zajistit budoucí fungování komunity i konference FrontKon, které dosud stálo na velkém dobrovolnickém vkladu mě, Tomáše a Břetíka a mnohých dalších. Řeknu upřímně, že v prvním kvartále jsem byl jednou nohou na odchodu, minimálně z organizace FrontKonu. Zde byla ale potřeba změna mindsetu. 
+Dostali jsme myslím nový drajv, minimálně já, hlavně do dalších ročníků FrontKonu, který se v roce 2025 stal vlastně větším než celí Frontendisti. Je to akce, která už teď přerůstá komunitu. V hlavách máme věci, které to budou v příštích letech stále více ukazovat. Teda doufám!
+Pod Frontendisty jsme s Robinem dostali i náš podcast, a to pod novým názvem FrontKec. Tématicky i strategicky patří ke komunitě, zatímco projekt Vzhůru dolů postupně utlumuju, jak jste si už určitě všimli.
+To je samý přerod, samý růst, samé změny a řešení náročných manažerských úkolů. To by bylo divný, kdyby nepřišla nějaká krizička, že? Přišla, to si pište, že jo.
+Krizička
+Zpětně vidím, že krizička trvala téměř polovinu roku. Krize z přetížení, příliš velkého množství velký témat (nejen pracovních, ale i osobních), nedostatku hluboké práce, následné zvýšené nespavosti, což jsou alarmy, které když bzučí, je potřeba rychle něco měnit. 
+Už jsem to v kariéře zažil několikrát, obvykle v době svých různých freelancerských přerodů. Bylo to například v době, kdy jsem začal prodávat školení, psal jsem některou z knížek nebo když přišel covid a velkou část mé obživy přizabil. 
+Vím, že vždy existuje cesta ven (meta pohled na svůj čas, sebeanalýza s knížkami v ruce, změna způsobu organizace, razantní ukončení některých činností), ale tentokrát jsem reagoval docela pomalu, takže jsem se trápil zbytečně dlouho. Nevím proč, ale řekl bych, že tentokrát to přetížení bylo tak velké, že blokovalo alarmy. Jo, a taky už jsem pěkně starej. 
+(Ne)forma
+Když se dívám na to, co jsem chtěl v roce 2025 změnit, posunout nebo čeho dosáhnout, můžu být hodně spokojený. Až na jednu věc a to je moje fyzická forma.
+Stres dělá svoje, věk taky, metabolismus už není co býval a moje klasické údržbové aktivity (kratší běhání, chůze do práce a z práce) evidentně přestaly stačit. 
+Toto budu letos muset taky vyřešit, takže jsem se poprvé v životě přidal k haldě trapáků, kteří chtějí od ledna zhubnout a zlepšit si formu.
+Mimochodem, pokud vás zajímají kulturní tipy na četbu, poslech nebo třeba koukání, mrkněte se na moje osobní nebo pracovní doporučení za roku 2025.
+„Rok 2025 byl skvělý!“
+Jeden z projektů roku bylo dostat staršího syna na střední školu. Pokud nemáte děti na konci základky nebo nejste v Praze, neumíte si představit, co to obnáší. Zájemců o gymply je hodně, míst velmi málo. 
+Nakonec to dopadlo skvěle, dostal se na školu druhé volby, je tam hodně spokojený a taky prošel jakýmsi přerodem, když se tam velmi dobře chytl a je celkově z pohledu přípravy na školu samostatný.
+Na Silvestra ráno se Honza probudil a volá „Rok 2025 byl skvělý!“. Se ženou na sebe mrkneme. To je fakt super, domýšlíme si, jak to celé dokáže ocenit. Jak dokáže ocenit, že se s vypětím svých i našich sil dostal na gympl, i to, že si tam docela dobře vede. 
+„Rok 2025 byl skvělý“, volá znovu a dodává: „…protože jsem začal konečně chlastat a hulit trávu!“
+Takže i vám, milé čtenářky, milí čtenáři, do roka 2026 přeju, abyste si vždy plnili sny svoje a ne sny jiných lidí.
+
+Chcete komentovat, vynadat mi nebo mě pochválit? Pište ideálně k postu na LinkedInu, na X nebo na Facebooku. Díky!</description>
+					<content:encoded><![CDATA[
+						<p>Můj rok 2025 byl obratový, takže zásadní. A kdyby byl jen pozitivní, není o čem psát, není se z čeho učit a byla by s tím rokem strašná nuda.</p>
+<h2 id="uzkost">Trošku úzkost ze světa tam venku</h2>
+<p>Začnu s tou úzkostí v názvu. Určitě ten rozpor někteří z vás zažívají taky, hlavně vy starší. V osobní rovině máte krásný život, vlastně čím dál krásnější, ale stále více vás přepadají chmury nebo dokonce úzkost z dění ve světě, v geopolitice, v širší společnosti. </p>
+<p>Začalo to napadením Ukrajiny, pokračuje druhým Trumpovým obdobím, ledy ve společnosti se silně hýbou i u nás. Světlo na konci tunelu je stále slabší. Můj otec na tyhle situace vždycky říká „svět se v prdel obraca“. Smál jsem se, ale teď to sedí. Nebudu se tomu zde dále moc věnovat, ale snažím se tu být upřímný a tohle zarámování mi tady nemůže chybět.</p>
+<p>Pojďme raději zaměřit na to, co jsem loni zažíval v osobní a hlavně pracovní rovině. </p>
+<h2 id="podnikatelem">Z freelancera podnikatelem</h2>
+<p>Předně jsem se nejspíš už proměnil z freelancera na podnikatele. </p>
+<p>Neberte mě špatně, je to jen jedna z mých rolí. Dále zůstávám autorem obsahu, nadšencem do performance a webu, šéfem a spolumajitelem firmy, produkťákem, komunitním týpkem a hlavně tátou od rodiny.</p>
+<p>V roce 2025 se u mě proměnilo vnímání sebe sama z pohledu vydělávání peněz. Na volné noze jsem strávil <a href="https://www.vzhurudolu.cz/blog/192-volna-noha-20">hodně přes dvacet let</a> a setrvačnost tohodle mindsetu je velká. </p>
+<p><img src="https://res.cloudinary.com/vzhurudolu-cz/image/upload/v1767688556/vzhurudolu-blog/evoluce_keryv9.jpg" alt="Evoluce" /></p>
+<p>Být podnikatel na volné noze a podnikatel s vlastní firmou a lidmi v ní je ovšem úplně jiná liga. Mentální a dovednostní přerod z prvního do druhého u mě zabral odhadem pět let. </p>
+<p>Pravidelně jsem si během téhle doby pokládal otázku: Co budeš dělat, pokud tvoje podnikání selže nebo tě prostě přestane bavit?</p>
+<p>Vždycky jsem si odpovídal, že se prostě vrátím na volnou nohu. Až do druhé poloviny roku 2025, kdy jsem si začal odpovídat, že v takovém případě začnu hledat tvořit podnikání. Slušný, tohle bych do sebe neřekl.</p>
+<h2 id="pagespeed">PageSpeed.ONE: poradenství skvěle jede, ale chceme více máknout na produktu</h2>
+<p>Podnikání, to je pro mě samozřejmě <a href="https://pagespeed.cz/">PageSpeed.ONE</a>, skvělý tým lidí, kteří pomáhají firmám zrychlovat jejich weby a zlepšovat tím konverze nebo třeba návštěvnost. </p>
+<p>Loni jsme měli výborný rok, kdy jsme i díky novému kolegovi Tomášovi šli i směrem k poradenství ohledně backendu, infrastruktury (trošku nás potrápili v Cloudflare) nebo konkrétně <a href="https://pagespeed.cz/wordpress">WordPressu</a>. Hodně jsme se zaměřovali i na další platformy, hlavně <a href="https://pagespeed.cz/shoptet">Shoptet</a> nebo Shopify. </p>
+<p>Já se přitom velmi zaměřoval na sales, což vidíme na číslech. A překvapilo mě, jak mě to dokáže bavit.</p>
+<p>Pracovali jsme odhadem pro dalších 30-40 nových klientů, nově mezi nimi je například Česká spořitelna, více jsme také loni makali pro Heureku nebo Datart. Boží.</p>
+<p>Zároveň jsme budovali naší SaaS službu <a href="https://pagespeed.cz/monitoring-plus">monitoringu rychlosti</a>. Ten jsme vývojově hezky posunuli, ale neměli jsme na něj tolik času, kolik bychom chtěli. Nejsme první, kdo bolestně zjišťuje, že čas a pozornost je jen jedna a přerod z agenturního na produktové fungování je vždy velmi těžký. Tohle bude hlavní cíl na rok 2026.</p>
+<h2 id="frontendisti">FrontKon a Frontendisti.cz: od komunitního k firemnímu uvažování</h2>
+<p>Další velkým mentální přerod proběhl u <a href="https://www.frontendisti.cz/">Frontendistů</a>. Hodně jsme řešili, jak zajistit budoucí fungování komunity i konference <a href="https://www.frontkon.cz/">FrontKon</a>, které dosud stálo na velkém dobrovolnickém vkladu mě, Tomáše a Břetíka a mnohých dalších. Řeknu upřímně, že v prvním kvartále jsem byl jednou nohou na odchodu, minimálně z organizace FrontKonu. Zde byla ale potřeba změna mindsetu. </p>
+<p>Dostali jsme myslím nový drajv, minimálně já, hlavně do dalších ročníků FrontKonu, který se v roce 2025 stal vlastně větším než celí Frontendisti. Je to akce, která už teď přerůstá komunitu. V hlavách máme věci, které to budou v příštích letech stále více ukazovat. Teda doufám!</p>
+<p>Pod Frontendisty jsme s Robinem dostali i náš <a href="https://www.vzhurudolu.cz/podcast">podcast</a>, a to pod novým názvem <a href="https://www.frontendisti.cz/frontkec">FrontKec</a>. Tématicky i strategicky patří ke komunitě, zatímco projekt Vzhůru dolů postupně utlumuju, jak jste si už určitě všimli.</p>
+<p>To je samý přerod, samý růst, samé změny a řešení náročných manažerských úkolů. To by bylo divný, kdyby nepřišla nějaká krizička, že? Přišla, to si pište, že jo.</p>
+<h2 id="krizicka">Krizička</h2>
+<p>Zpětně vidím, že krizička trvala téměř polovinu roku. Krize z přetížení, příliš velkého množství velký témat (nejen pracovních, ale i osobních), nedostatku hluboké práce, následné zvýšené nespavosti, což jsou alarmy, které když bzučí, je potřeba rychle něco měnit. </p>
+<p>Už jsem to v kariéře zažil několikrát, obvykle v době svých různých freelancerských přerodů. Bylo to například v době, kdy jsem začal prodávat školení, psal jsem některou z knížek nebo když přišel covid a velkou část mé obživy přizabil. </p>
+<p>Vím, že vždy existuje cesta ven (meta pohled na svůj čas, sebeanalýza s knížkami v ruce, změna způsobu organizace, razantní ukončení některých činností), ale tentokrát jsem reagoval docela pomalu, takže jsem se trápil zbytečně dlouho. Nevím proč, ale řekl bych, že tentokrát to přetížení bylo tak velké, že blokovalo alarmy. Jo, a taky už jsem pěkně starej. </p>
+<h2 id="neforma">(Ne)forma</h2>
+<p>Když se dívám na to, co jsem chtěl v roce 2025 změnit, posunout nebo čeho dosáhnout, můžu být hodně spokojený. Až na jednu věc a to je moje fyzická forma.</p>
+<p>Stres dělá svoje, věk taky, metabolismus už není co býval a moje klasické údržbové aktivity (kratší běhání, chůze do práce a z práce) evidentně přestaly stačit. </p>
+<p>Toto budu letos muset taky vyřešit, takže jsem se poprvé v životě přidal k haldě trapáků, kteří chtějí od ledna zhubnout a zlepšit si formu.</p>
+<p><em>Mimochodem, pokud vás zajímají kulturní tipy na četbu, poslech nebo třeba koukání, mrkněte se na moje <a href="https://www.facebook.com/machal/posts/pfbid02Gs2HieoNRL1DPyQTa3EmohDidVzsokxcr8P9GdYhJQ2rQzuvtdTJWZVXwSb8JgJPl">osobní</a> nebo <a href="https://www.linkedin.com/posts/martinmichalek_p%C4%9Bt-kulturn%C3%ADch-zdroj%C5%AF-kter%C3%A9-v-roce-2025-activity-7412773472722116608-aPhu">pracovní</a> doporučení za roku 2025.</em></p>
+<h2 id="honza">„Rok 2025 byl skvělý!“</h2>
+<p>Jeden z projektů roku bylo dostat staršího syna na střední školu. Pokud nemáte děti na konci základky nebo nejste v Praze, neumíte si představit, co to <a href="https://www.facebook.com/machal/posts/pfbid07VGapCiGY9KYyd87jmwim3BYDAq7DiTLwu8bn7yKzMhjWLcPayjabDSrpVVw8w2Jl">obnáší</a>. Zájemců o gymply je hodně, míst velmi málo. </p>
+<p>Nakonec to dopadlo skvěle, dostal se na školu druhé volby, je tam hodně spokojený a taky prošel jakýmsi přerodem, když se tam velmi dobře chytl a je celkově z pohledu přípravy na školu samostatný.</p>
+<p>Na Silvestra ráno se Honza probudil a volá „Rok 2025 byl skvělý!“. Se ženou na sebe mrkneme. To je fakt super, domýšlíme si, jak to celé dokáže ocenit. Jak dokáže ocenit, že se s vypětím svých i našich sil dostal na gympl, i to, že si tam docela dobře vede. </p>
+<p>„Rok 2025 byl skvělý“, volá znovu a dodává: „…protože jsem začal konečně chlastat a hulit trávu!“</p>
+<p>Takže i vám, milé čtenářky, milí čtenáři, do roka 2026 přeju, abyste si vždy plnili sny svoje a ne sny jiných lidí.</p>
+<hr />
+<p><em>Chcete komentovat, vynadat mi nebo mě pochválit? Pište ideálně k postu na <a href="https://www.linkedin.com/posts/martinmichalek_m%C5%AFj-rok-2025-podnikatelsk%C3%BD-strategick%C3%BD-activity-7414227564833075200-gHpL/?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAAAIYHJYBZSP9siKk6AdjAqLpr14snue9t7g">LinkedInu</a>, na <a href="https://x.com/machal/status/2008460943244599687">X</a> nebo na <a href="https://www.facebook.com/machal/posts/pfbid06sLcSHmKGGVJeZNTW1YBxdFoJCLgZMGwyf2FHnNC3MJ1ymiZZyC5hfb9BV8ArcFml">Facebooku</a>. Díky!</em></p>
+					]]></content:encoded>
+				<pubDate>Tue, 06 Jan 2026 00:00:00</pubDate>
+			</item>
+			<item>
+				<title>Pozvánka do Brna, na FrontKon 2025: AI ve vývoji, superschopnosti CSS, Tanstack, Svelte atd.</title>
+				<link>https://www.vzhurudolu.cz/blog/260-frontkon-2025</link>
+				<guid>https://www.vzhurudolu.cz/blog/260-frontkon-2025</guid>
+					<description>FrontKon se vrací do Brna a 1. října proběhne něco, co bude, doufám, zajímavé pro každého frontendistu a každou frontendistku. Přednášky, setkávání nebo prostě zážitky z Brna.
+Letos jsme v organizačním štábu myslím opět udělali pár krůčků směrem ke kvalitní středoevropské odborné konferenci.
+Organizační štáb jsme mimo jiné rozšířili o programovou komisi, které předsedám, takže vás teď jdu s velkou radostí na FrontKon pozvat.
+
+Dvě hlavní témata: stav AI ve vývoji a úžasné možnosti CSS
+V programu najdete kolem 30 přednášek na třech stagích. Témat, které komunita přinesla, bude opravdu hodně, ale dvě jsme předem cíleně vytáhli a zaměřili na ně pozornost přednášejících.
+AI ve webovém vývoji už není jen science fiction, ale každodenní (někdy fantastická, někdy trpká) realita. A aktuální stav CSS nabízí možnosti, které jsme si ještě před pár lety ani neuměli představit.
+
+AI nástroje zásadně mění způsob, jak píšeme kód, debugujeme a navrhujeme aplikace. Je čas se podívat, co všechno už dnes můžeme využít a co nás čeká v nejbližší době.  
+CSS prošlo za poslední roky obrovským vývojem. Container Queries, selektor has(), custom properties na steroidech – je toho ještě daleko více a stojí za to si udělat aktuální přehled.
+
+Vyberu nyní několik přednášek, na které bych vás rád upozornil.
+Zahraniční hvězdy
+Letos jsme si, hlavně díky Liborovi Vaňkovi z programové komise, dovolili, hledat řečníky kromě českých luhů a slovenských skalistek, také v zahraničí.
+Letos do Brna míří světové know-how a tato zajímavá frontendová jména:
+
+
+Artem Zakharchenko: 10 Things Nobody Told You About Service Workers
+Artem je borec přes Service Workery, jednu z nejzajímavějších prohlížečových fíčur současnosti a autor knihovny Mock Service Worker. Těště se na jeho přednášku.  
+
+
+Paolo Ricciuti: Progressively enhanced apps with Svelte
+Paolo je Svelte Ambassador a přiletí z Itálie ukázat krásy a novinky tohoto velmi oblíbeného frameworku.
+
+Danny Moerkerke: The State Of PWAs
+Tvůrce What PWA Can Do Today zhodnotí současný stav Progressive Web Apps, dá vám tipy k použití, ale i ukáže co nám stále chybí.
+
+
+Artem, Paolo, Danny, ale i třicet dalších přednášejících se na vás těší.
+Česká špička
+Z domácích řečníků bych rád vyzdvihl několik zajímavých jmen a témat:
+
+
+Pavel Ungr: Vývojářův průvodce testováním technického SEO
+Česká špička přes SEO vám ukáže, jak testovat technické aspekty přímo během vývoje.
+
+
+Michal Špaček: Pomoz password managerům pomáhat lidem
+Michal poradí, jak správně implementovat formuláře, aby s nimi password managery dokonale spolupracovaly.
+
+
+Michal Matuška: Co můžete vyčíst z CrUX dat
+Jeden z nejoblíbenějších spíkrů FrontKonu ukáže, jak využít Chrome UX Report pro optimalizaci výkonu vašich webů.
+
+
+Markéta Willis: 3D ve webovém vývoji
+Markéta, kterou znají především junioři, představí možnosti 3D grafiky na webu a praktické tipy pro implementaci.  
+
+
+Adam Kulhánek: Smart &amp;amp; Kind: psychologie IT mozku
+Adam se podívá na psychologické aspekty práce vývojářů. Jak si v tom všem udržet zdravou mysl?  
+
+Ondřej Velíšek: TanStack Start: Nová konkurence Next.js
+Ondřej představí nový framework, který by mohl zamíchat kartami v JS ekosystému.
+
+Na webu už máme kompletní program:
+→ Program
+
+Praktické informace
+
+Kde: Hotel Passage, Brno  
+Kdy: 1. října 2025 od 10:00 (otevřeno od 9:00)
+
+Dvě třešničky z letošních novinek
+
+Afterparty přímo v hotelu, kterou zajišťují SUPERKODERS.  
+FrontKon vlak z Prahy nebo po cestě. Odjezd: Praha hl.n. 5:42, Vlak: EC Metropolitan, vůz 366, Cena: 150 Kč, kupte si ji předem.  Více ve FAQ na webu.
+
+Bacha, vstupenky nám pomalu mizí
+Přijďte se inspirovat, popovídat si a probrat radosti i výzvy současného webového frontendu. Budu se na vás těšit.
+Uvidíme se?
+→ Koupit vstupenku</description>
+					<content:encoded><![CDATA[
+						<p><a href="https://www.frontkon.cz/">FrontKon</a> se vrací do Brna a 1. října proběhne něco, co bude, doufám, zajímavé pro každého frontendistu a každou frontendistku. Přednášky, setkávání nebo prostě zážitky z Brna.</p>
+<p>Letos jsme v organizačním štábu myslím opět udělali pár krůčků směrem ke kvalitní středoevropské odborné konferenci.</p>
+<p>Organizační štáb jsme mimo jiné rozšířili o programovou komisi, které předsedám, takže vás teď jdu s velkou radostí na FrontKon pozvat.</p>
+<p><img src="https://res.cloudinary.com/vzhurudolu-cz/image/upload/v1757314734/vzhurudolu-blog/frontkon-24_tdi3yj.jpg" alt="FrontKon" /></p>
+<h2 id="temata">Dvě hlavní témata: stav AI ve vývoji a úžasné možnosti CSS</h2>
+<p>V programu najdete kolem 30 přednášek na třech stagích. Témat, které komunita přinesla, bude opravdu hodně, ale dvě jsme předem cíleně vytáhli a zaměřili na ně pozornost přednášejících.</p>
+<p><strong>AI ve webovém vývoji</strong> už není jen science fiction, ale každodenní (někdy fantastická, někdy trpká) realita. A <strong>aktuální stav CSS</strong> nabízí možnosti, které jsme si ještě před pár lety ani neuměli představit.</p>
+<ul>
+<li>AI nástroje zásadně mění způsob, jak píšeme kód, debugujeme a navrhujeme aplikace. Je čas se podívat, co všechno už dnes můžeme využít a co nás čeká v nejbližší době.  </li>
+<li>CSS prošlo za poslední roky obrovským vývojem. <a href="/prirucka/container-queries">Container Queries</a>, <a href="/prirucka/css-selektor-has">selektor has()</a>, <a href="/prirucka/css-promenne">custom properties</a> na steroidech – je toho ještě daleko více a stojí za to si udělat aktuální přehled.</li>
+</ul>
+<p>Vyberu nyní několik přednášek, na které bych vás rád upozornil.</p>
+<h2 id="temata">Zahraniční hvězdy</h2>
+<p>Letos jsme si, hlavně díky Liborovi Vaňkovi z programové komise, dovolili, hledat řečníky kromě českých luhů a slovenských skalistek, také v zahraničí.</p>
+<p>Letos do Brna míří světové know-how a tato zajímavá frontendová jména:</p>
+<ul>
+<li>
+<p><strong>Artem Zakharchenko: 10 Things Nobody Told You About Service Workers</strong><br />
+<a href="https://github.com/kettanaito">Artem</a> je borec přes Service Workery, jednu z nejzajímavějších prohlížečových fíčur současnosti a autor knihovny Mock Service Worker. Těště se na jeho přednášku.  </p>
+</li>
+<li>
+<p><strong>Paolo Ricciuti: Progressively enhanced apps with Svelte</strong><br />
+<a href="https://ricciuti.me/">Paolo</a> je Svelte Ambassador a přiletí z Itálie ukázat krásy a novinky tohoto velmi oblíbeného frameworku.</p>
+</li>
+<li><strong>Danny Moerkerke: The State Of PWAs</strong><br />
+Tvůrce <a href="https://whatpwacando.today/">What PWA Can Do Today</a> zhodnotí současný stav Progressive Web Apps, dá vám tipy k použití, ale i ukáže co nám stále chybí.</li>
+</ul>
+<p><img src="https://res.cloudinary.com/vzhurudolu-cz/image/upload/v1757314736/vzhurudolu-blog/frontkon_25-speakers-en_dwu9x4.png" alt="Artem, Paolo, Danny na FrontKonu" /><br />
+<em>Artem, Paolo, Danny, ale i třicet dalších přednášejících se na vás těší.</em></p>
+<h2 id="cz">Česká špička</h2>
+<p>Z domácích řečníků bych rád vyzdvihl několik zajímavých jmen a témat:</p>
+<ul>
+<li>
+<p><strong>Pavel Ungr: Vývojářův průvodce testováním technického SEO</strong><br />
+Česká špička přes SEO vám ukáže, jak testovat technické aspekty přímo během vývoje.</p>
+</li>
+<li>
+<p><strong>Michal Špaček: Pomoz password managerům pomáhat lidem</strong><br />
+Michal poradí, jak správně implementovat formuláře, aby s nimi password managery dokonale spolupracovaly.</p>
+</li>
+<li>
+<p><strong>Michal Matuška: Co můžete vyčíst z CrUX dat</strong><br />
+Jeden z nejoblíbenějších spíkrů FrontKonu ukáže, jak využít Chrome UX Report pro optimalizaci výkonu vašich webů.</p>
+</li>
+<li>
+<p><strong>Markéta Willis: 3D ve webovém vývoji</strong><br />
+Markéta, kterou znají především junioři, představí možnosti 3D grafiky na webu a praktické tipy pro implementaci.  </p>
+</li>
+<li>
+<p><strong>Adam Kulhánek: Smart &amp; Kind: psychologie IT mozku</strong><br />
+Adam se podívá na psychologické aspekty práce vývojářů. Jak si v tom všem udržet zdravou mysl?  </p>
+</li>
+<li><strong>Ondřej Velíšek: TanStack Start: Nová konkurence Next.js</strong><br />
+Ondřej představí nový framework, který by mohl zamíchat kartami v JS ekosystému.</li>
+</ul>
+<p>Na webu už máme kompletní program:</p>
+<p>→ <a href="https://www.frontkon.cz/#program">Program</a></p>
+<p><img src="https://res.cloudinary.com/vzhurudolu-cz/image/upload/v1757314734/vzhurudolu-blog/frontkon_25_yobxif.png" alt="FrontKon" /></p>
+<h2 id="temata">Praktické informace</h2>
+<ul>
+<li><strong>Kde:</strong> Hotel Passage, Brno  </li>
+<li><strong>Kdy:</strong> 1. října 2025 od 10:00 (otevřeno od 9:00)</li>
+</ul>
+<h2 id="tresnicky">Dvě třešničky z letošních novinek</h2>
+<ul>
+<li>Afterparty přímo v hotelu, kterou zajišťují <a href="https://www.superkoders.com/">SUPERKODERS</a>.  </li>
+<li>FrontKon vlak z Prahy nebo po cestě. Odjezd: Praha hl.n. 5:42, Vlak: EC Metropolitan, vůz 366, Cena: 150 Kč, kupte si ji předem.  Více ve FAQ <a href="https://www.frontkon.cz/">na webu</a>.</li>
+</ul>
+<h2 id="vstupenky">Bacha, vstupenky nám pomalu mizí</h2>
+<p>Přijďte se inspirovat, popovídat si a probrat radosti i výzvy současného webového frontendu. Budu se na vás těšit.</p>
+<p>Uvidíme se?</p>
+<p>→ <a href="https://form.simpleshop.cz/V5lPb/buy/"><strong>Koupit vstupenku</strong></a></p>
+					]]></content:encoded>
+				<pubDate>Mon, 08 Sep 2025 00:00:00</pubDate>
+			</item>
+			<item>
+				<title>Podcast ze Vzhůru dolů končí, FrontKec začíná</title>
+				<link>https://www.vzhurudolu.cz/podcast/259-podcast-konci-frontkec</link>
+				<guid>https://www.vzhurudolu.cz/podcast/259-podcast-konci-frontkec</guid>
+					<description>Milé posluchačky, milí posluchači,
+po 59 dílech podcastu ze Vzhůru dolů jsme s Robinem dokroutili ciferníky. Nesmutněte však, není to konec. Podcast se v inovovaném formátu přesunuje pod křídla komunity Frontendisti.cz a značku FrontKec.
+
+
+
+Pokec frontendistů
+Důvodem změny je hlavně snadnější organizační a technické zabezpečení, ale také lepší provázání obsahu s komunitou, kam podcast zaměřením tak či tak patřil.
+FrontKec má nyní jednotnou vizuální identitu s konferencí FrontKon a komunitou Frontendisti.cz.
+Vzniká tím i prostor pro nové formáty, které jsme v původním podcastu neměli kapacitu dlouhodobě rozvíjet. 
+Zůstává to, co fungovalo. Odborný obsah podaný s nadhledem a moderátoři Robin Pokorný a Martin Michálek.
+Co rozhodně udělejte?
+
+Přihlaste si nový podcast na Spotify, Apple Podcasts nebo přes RSS.  
+Odebírejte také Frontendisty na LinkedIn, Instagramu, Facebooku, X a YouTube.
+
+Všechny staré epizody podcastu ze Vzhůru dolů zůstanou dále dostupné.
+PS: Rovnou vychází první díl FrontKecu, a to na Spotify nebo na YouTube.
+
+
+</description>
+					<content:encoded><![CDATA[
+						<p>Milé posluchačky, milí posluchači,</p>
+<p>po 59 dílech <a href="https://www.vzhurudolu.cz/podcast">podcastu ze Vzhůru dolů</a> jsme s Robinem dokroutili ciferníky. Nesmutněte však, není to konec. Podcast se v inovovaném formátu přesunuje pod křídla komunity Frontendisti.cz a <a href="https://www.frontendisti.cz/frontkec">značku FrontKec</a>.</p>
+<div class="rwd-media">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8TTGsYHXdxc?si=PhbOO3JRTtQO59Rh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+<h2 id="pokec">Pokec frontendistů</h2>
+<p>Důvodem změny je hlavně snadnější organizační a technické zabezpečení, ale také lepší provázání obsahu s komunitou, kam podcast zaměřením tak či tak patřil.</p>
+<p>FrontKec má nyní jednotnou vizuální identitu s <a href="https://www.frontkon.cz/">konferencí FrontKon</a> a <a href="https://www.frontendisti.cz/">komunitou Frontendisti.cz</a>.</p>
+<p>Vzniká tím i prostor pro nové formáty, které jsme v původním podcastu neměli kapacitu dlouhodobě rozvíjet. </p>
+<p>Zůstává to, co fungovalo. Odborný obsah podaný s nadhledem a moderátoři <a href="https://robinpokorny.com/">Robin Pokorný</a> a <a href="https://www.vzhurudolu.cz/martin">Martin Michálek</a>.</p>
+<h2 id="todo">Co rozhodně udělejte?</h2>
+<ul>
+<li>Přihlaste si nový podcast na <a href="https://open.spotify.com/show/1Eo2sxfbDhiOTnRXDbsBYT">Spotify</a>, <a href="https://podcasts.apple.com/us/podcast/frontkec-podcast/id1836574580">Apple Podcasts</a> nebo přes <a href="https://anchor.fm/s/108d0600c/podcast/rss%20">RSS</a>.  </li>
+<li>Odebírejte také Frontendisty na <a href="https://www.linkedin.com/company/frontendisti/">LinkedIn</a>, <a href="https://www.instagram.com/frontendisti/">Instagramu</a>, <a href="https://www.facebook.com/frontendisti/">Facebooku</a>, <a href="https://x.com/Frontendisti">X</a> a <a href="https://www.youtube.com/@FrontendistiCz">YouTube</a>.</li>
+</ul>
+<p>Všechny staré epizody podcastu ze Vzhůru dolů zůstanou dále dostupné.</p>
+<p>PS: Rovnou vychází první díl FrontKecu, a to na <a href="https://open.spotify.com/episode/4RGOiRiJRMsrBqbsdUfxUr?si=ea68b93f17b0464c">Spotify</a> nebo na <a href="https://www.youtube.com/watch?v=OWPIfC-ALSE">YouTube</a>.</p>
+<div class="rwd-media">
+<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/episode/4RGOiRiJRMsrBqbsdUfxUr/video?utm_source=generator&amp;theme=0" width="624" height="351" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+</div>
+					]]></content:encoded>
+				<pubDate>Mon, 01 Sep 2025 00:00:00</pubDate>
+			</item>
+			<item>
+				<title>AI prý zvládne 80 % psaní a programování… říkají zatím hlavně ti, co nikdy nepsali a neprogramovali</title>
+				<link>https://www.vzhurudolu.cz/blog/258-ai-programovani-psani</link>
+				<guid>https://www.vzhurudolu.cz/blog/258-ai-programovani-psani</guid>
+					<description>Nevěřte lidem, kteří váš obor neznají a věští jeho budoucnost. Nadšení jasnozřivci se často soustředí jen na výkonnostní a řemeslný kontext vaší práce.
+Největší výhodou lidí proti AI je offline.
+Píšu. Ale má v době AI tahle práce ještě smysl?
+Kromě jiného píšu technické texty. Napsal jsem jich stovky a několik knížek k tomu.
+V poslední době se na nás valí jeden úžasný AI nástroj za druhým. Všechny umí hlavně dobře psát.
+Zkuste se teď cvičně zamyslet, jestli tato část mojí práce ještě vůbec dává smysl. Proč bych měl něco psát, když AI umí tvořit texty tak dobře?
+
+
+
+Tvá práce je zbytečná, takže jsi tady možná navíc, příteli.
+
+
+Už jste zamyšlení?
+Mohli byste odhadnout, že tato část mé práce už moc smyslu nemá. AI totiž místo mě:
+
+vygeneruje nápady na články,
+připraví strukturu textu,
+na základě zdrojů ten text napíše,
+na základě jiných zdrojů napodobí můj styl psaní,
+AI mi dá také feedback, opraví chyby,
+další AI  připraví ilustrační obrázky.
+
+Moje práce? Podepsat text, který jsem nenapsal?
+Ve výčtu nahoře jsme ale udělali jednu velkou chybu. Neodhadli jsme správně, co přesně dělá člověk, který píše texty. Zredukovali jsme jeho roli do té řemeslné nebo výkonnostní části.
+Psaní totiž není jen o ťukání do klávesnice.
+Největší výhoda člověka nad AI? Offline
+Pojďme si teď rozebrat, na co jsme zapomněli, když jsme posuzovali, zda roli člověka, který píše texty, kompletně nahradí AI.
+Jako autor textů se musím oborem zabývat. K tomu mi nestačí Googlení, používání AI, musím být napřed. Kdysi jsem hodně školil a přednášel. Mluvil jsem přitom s lidmi, to byste nečekali.
+Mluvením s lidmi jsem nacházel témata, problémy, radosti nebo frustrace jiných. Tím jsem si vytvářel ohromnou databanku znalostí a příběhů. Takhle databanka je u mě v hlavě a i když budu opravdu hodně psát, nikdy ji celou v online světě nenajdete.
+Jako autor žiju život, tomu také možná neuvěříte. Naprostá většina kontextu mého života se odehrává mimo online svět, mezi lidmi. Stávají se mi historky, zažívám příběhy, formují mě.
+Jako autor jsem si díky tomu vybudoval svůj styl psaní a i ten je důvod, proč lidé mé texty rádi čtou. Lidé umí poznat Martina Michálka od generického textu vygenerovaného AI.
+Cizí práci máme tendenci redukovat jen na vnější projevy
+Pokud bychom tedy o psaní přemýšleli jako o ťukání do klávesnice, vynechali bychom z této práce velkou část jejího obsahu a kontextů, ve kterých autor žije.
+Viděli bychom kontext řemeslný, ale scházel by nám další kontexty – sociální, kreativní, strategický a další, ve kterých nejspíš ještě dlouho nebudou roboti tak silní jako lidé.
+Troufli bychom si odhadovat něco, k čemu nám schází informace.
+Stejnou chybu dělají různí CEO startupů, nadšení AI konzultanti a jim podobní, když odhadují budoucnost vývojařiny během aktuální vlny AI nástrojů s bezpochyby impozantními výsledky při psaní kódu.
+
+
+
+Vidím zářnou budoucnost, ve které létající auta vozí programátory na smetiště dějin.
+
+
+A co vy, vývojáři? Taky jenom ťukáte do klávesnice?
+
+80 % programování prý bude pomocí AI.
+…říkají zatím hlavně ti, co nikdy neprogramovali.
+
+Tohle jsem napsal na různé sociální sítě. Někde to mělo až stovky tisíc shlédnutí a stovky reakcí. Tak si pojďme říct, proč to není tak jednoduché.
+Platí tady to samé jako u psaní. Psaní kódu, které jistě AI velmi ovlivní, není celá vývojařina.
+Pokud si myslíte, že programování je jen o psaní kódu, o programování toho moc nevíte.
+Pro AI bude těžké komunikovat s ostatními členy týmu, nést v hlavě kontext firmy nebo týmu, nést zodpovědnost a rozhodovat se v tomto kontextu, řešit etiku nebo bezpečnost v kontextu týmu, firmy nebo společnosti. Chodit na školení, konference nebo se nechat mentorovat od člověka…
+Stejně tak jiné profese, se kterými nepřicházíte do styku:
+
+Copywriteři nejsou stroje na psaní textu.
+UXáci nejsou stroje na kreslení wireframů.
+SEO experti nejsou stroje na tvorbu analýz klíčových slov.
+Fotografové nejsou stroje na vytváření hezkých fotek.
+
+Ano, někteří z nich stroje jsou nebo se jim blíží. Schází jim lidská a expertní přidaná hodnota. A ano, stroje vezmou práci strojům.
+Nevěřte lidem, kteří váš obor neznají a věští jeho budoucnost.</description>
+					<content:encoded><![CDATA[
+						<p>Nevěřte lidem, kteří váš obor neznají a věští jeho budoucnost. Nadšení jasnozřivci se často soustředí jen na výkonnostní a řemeslný kontext vaší práce.</p>
+<p>Největší výhodou lidí proti AI je offline.</p>
+<h2 id="psani">Píšu. Ale má v době AI tahle práce ještě smysl?</h2>
+<p>Kromě jiného píšu technické texty. Napsal jsem jich stovky a <a href="https://www.vzhurudolu.cz/ebooky">několik knížek</a> k tomu.</p>
+<p>V poslední době se na nás valí jeden úžasný AI nástroj za druhým. Všechny umí <em>hlavně</em> dobře psát.</p>
+<p>Zkuste se teď cvičně zamyslet, jestli tato část mojí práce ještě vůbec dává smysl. Proč bych měl něco psát, když AI umí tvořit texty tak dobře?</p>
+<figure>
+<img src="https://res.cloudinary.com/vzhurudolu-cz/image/upload/v1744616161/vzhurudolu-blog/ai-smrtka_xtxipr.jpg" width="1600" height="900" alt="AI smrtka nad psavcem">
+<figcaption>
+<p><em>Tvá práce je zbytečná, takže jsi tady možná navíc, příteli.</em></p>
+</figcaption>
+</figure>
+<p>Už jste zamyšlení?</p>
+<p>Mohli byste odhadnout, že tato část mé práce už moc smyslu nemá. AI totiž místo mě:</p>
+<ul>
+<li>vygeneruje nápady na články,</li>
+<li>připraví strukturu textu,</li>
+<li>na základě zdrojů ten text napíše,</li>
+<li>na základě jiných zdrojů napodobí můj styl psaní,</li>
+<li>AI mi dá také feedback, opraví chyby,</li>
+<li>další AI  připraví ilustrační obrázky.</li>
+</ul>
+<p>Moje práce? Podepsat text, který jsem nenapsal?</p>
+<p>Ve výčtu nahoře jsme ale udělali jednu velkou chybu. Neodhadli jsme správně, co přesně dělá člověk, který píše texty. Zredukovali jsme jeho roli do té řemeslné nebo výkonnostní části.</p>
+<p>Psaní totiž není jen o ťukání do klávesnice.</p>
+<h2 id="web">Největší výhoda člověka nad AI? Offline</h2>
+<p>Pojďme si teď rozebrat, na co jsme zapomněli, když jsme posuzovali, zda roli člověka, který píše texty, kompletně nahradí AI.</p>
+<p>Jako autor textů se musím oborem zabývat. K tomu mi nestačí Googlení, používání AI, musím být napřed. Kdysi jsem hodně školil a přednášel. Mluvil jsem přitom s lidmi, to byste nečekali.</p>
+<p>Mluvením s lidmi jsem nacházel témata, problémy, radosti nebo frustrace jiných. Tím jsem si vytvářel ohromnou databanku znalostí a příběhů. Takhle databanka je u mě v hlavě a i když budu opravdu hodně psát, nikdy ji celou v online světě nenajdete.</p>
+<p>Jako autor žiju život, tomu také možná neuvěříte. Naprostá většina kontextu mého života se odehrává mimo online svět, mezi lidmi. Stávají se mi historky, zažívám příběhy, formují mě.</p>
+<p>Jako autor jsem si díky tomu vybudoval svůj styl psaní a i ten je důvod, proč lidé mé texty rádi čtou. Lidé umí poznat Martina Michálka od generického textu vygenerovaného AI.</p>
+<h2 id="cizi">Cizí práci máme tendenci redukovat jen na vnější projevy</h2>
+<p>Pokud bychom tedy o psaní přemýšleli jako o ťukání do klávesnice, vynechali bychom z této práce velkou část jejího obsahu a kontextů, ve kterých autor žije.</p>
+<p>Viděli bychom kontext řemeslný, ale scházel by nám další kontexty – sociální, kreativní, strategický a další, ve kterých nejspíš ještě dlouho nebudou roboti tak silní jako lidé.</p>
+<p>Troufli bychom si odhadovat něco, k čemu nám schází informace.</p>
+<p>Stejnou chybu dělají různí CEO startupů, nadšení AI konzultanti a jim podobní, když odhadují budoucnost vývojařiny během aktuální vlny AI nástrojů s bezpochyby impozantními výsledky při psaní kódu.</p>
+<figure>
+<img src="https://res.cloudinary.com/vzhurudolu-cz/image/upload/v1744616161/vzhurudolu-blog/ai-kravatak_jajmmb.jpg" width="1600" height="900" alt="Kravaťák věští">
+<figcaption>
+<p><em>Vidím zářnou budoucnost, ve které létající auta vozí programátory na smetiště dějin.</em></p>
+</figcaption>
+</figure>
+<h2 id="tukate">A co vy, vývojáři? Taky jenom ťukáte do klávesnice?</h2>
+<blockquote>
+<p>80 % programování prý bude pomocí AI.
+…říkají zatím hlavně ti, co nikdy neprogramovali.</p>
+</blockquote>
+<p>Tohle jsem napsal na různé <a href="https://www.linkedin.com/posts/martinmichalek_ai-webdev-activity-7313147396157321217-c1_d?utm_source=share\&amp;utm_medium=member_desktop\&amp;rcm=ACoAAAIYHJYBZSP9siKk6AdjAqLpr14snue9t7g">sociální</a> <a href="https://x.com/machal/status/1907381161241792865">sítě</a>. Někde to mělo až stovky tisíc shlédnutí a stovky reakcí. Tak si pojďme říct, proč to není tak jednoduché.</p>
+<p>Platí tady to samé jako u psaní. Psaní kódu, které jistě AI velmi ovlivní, není celá vývojařina.</p>
+<p>Pokud si myslíte, že programování je jen o psaní kódu, o programování toho moc nevíte.</p>
+<p>Pro AI bude těžké komunikovat s ostatními členy týmu, nést v hlavě kontext firmy nebo týmu, nést zodpovědnost a rozhodovat se v tomto kontextu, řešit etiku nebo bezpečnost v kontextu týmu, firmy nebo společnosti. Chodit na školení, konference nebo se nechat mentorovat od člověka…</p>
+<p>Stejně tak jiné profese, se kterými nepřicházíte do styku:</p>
+<ul>
+<li>Copywriteři nejsou stroje na psaní textu.</li>
+<li>UXáci nejsou stroje na kreslení wireframů.</li>
+<li>SEO experti nejsou stroje na tvorbu analýz klíčových slov.</li>
+<li>Fotografové nejsou stroje na vytváření hezkých fotek.</li>
+</ul>
+<p>Ano, někteří z nich stroje jsou nebo se jim blíží. Schází jim lidská a expertní přidaná hodnota. A ano, stroje vezmou práci strojům.</p>
+<p>Nevěřte lidem, kteří váš obor neznají a věští jeho budoucnost.</p>
+					]]></content:encoded>
+				<pubDate>Mon, 14 Apr 2025 00:00:00</pubDate>
+			</item>
+			<item>
+				<title>S Petrem Burianem o sabatiklu</title>
+				<link>https://www.vzhurudolu.cz/podcast/257-podcast-petr-burian-sabatikl</link>
+				<guid>https://www.vzhurudolu.cz/podcast/257-podcast-petr-burian-sabatikl</guid>
+					<description>Milé posluchačky, milí posluchači, 59. díl podcastu ze Vzhůru dolů je v mnohém speciální. Za prvé vychází s ehm… menším zpožděním. Natáčeli jsme totiž už před Vánoci v Productboardu. Na druhou stranu trošku doufáme, že na vás atmosféru na místě přesuneme i v aprílovém počasí.
+Za druhé je to poslední díl před větším přerodem našeho podcastu (který zatím tajíme a o kterém si více řekneme příště).
+A za třetí? Máme zde speciálního hosta se speciálním tématem.
+Jaké to je dát si po šestnácti letech intenzivní práce roční pauzu?
+Petr Burian, bývalý CTO Livesportu, popisuje v podcastu svůj roční odpočinek od práce, zvaný též sabatikl. Dozvíte se, proč se pro něj rozhodl, jak si ho rozplánoval a co mu přinesl.
+V podcastu Petr zmiňuje, jaké fáze odpočinku a objevování prožil, co mu pomohlo překonat pochyby a co doporučuje těm, kteří o podobném kroku uvažují.
+Podcast
+
+
+
+Video
+
+
+
+Tipy na sabatikl podle Petra Buriana
+
+
+Proč do sabatiklu jít?.
+Pokud cítíte dlouhodobou únavu, ztrátu motivace nebo chuť přehodnotit směr svého života, sabatikl může být přesně to, co potřebujete. Už samotná myšlenka na pauzu je signál, že vám tělo nebo hlava něco říkají. Pauza není slabost, je to investice do dlouhodobé energie, zdraví a spokojenosti.
+
+
+Vezměte si časový polštář.
+Opravdová regenerace nepřichází po týdnu volna. Petr doporučuje minimálně půl roku, ideálně rok, pokud si to můžete dovolit. První týdny často nestačí ani na to, abyste si všimli, jak moc jste byli unavení. Teprve po několika měsících se může začít objevovat energie a kreativita.
+
+
+Odolejte pochybám okolí..
+Mnozí, zejména mimo IT bublinu, nebudou sabatiklu rozumět. Můžete se setkat s nepochopením, otázkami typu „Proč nepracuješ?“ nebo „Nebojíš se, že vypadneš z oboru?“. Buďte připravení to klidně a opakovaně vysvětlovat – sobě i ostatním. Vědomí, že je to vaše svobodné rozhodnutí, vám pak pomůže ustát tlak z okolí.
+
+
+Dejte si jasný záměr..
+Zamyslete se, co si ze sabatiklu chcete odnést. Může to být hluboký odpočinek, restart kariéry, osobní růst nebo jen čas pro sebe a rodinu. Záměr nemusí být rigidní plán, ale jakási vnitřní kotva, která vám pomůže neztratit směr a nepropadnout pocitu, že „jen prokrastinujete“.
+
+
+Rozdělte si sabatikl do fází..
+Petr si sabatikl rozdělil na čtvrtiny: odpočinek, domácí resty, objevování a návrat. Pomáhá to nejen udržet rytmus, ale i předejít úzkosti z nečinnosti. Rámec vám dá pocit struktury, i když většinu času třeba jen „plujete na vlnce“.
+
+
+Stanovte si období bez závazků..
+Na začátku si určete období – například půl roku – během kterého nebudete přijímat žádné pracovní nabídky, ani kdyby vypadaly lákavě. Zabráníte tím tomu, že skočíte do dalšího zaměstnání ze zvyku nebo strachu. Dejte si čas, aby mohly vzniknout nové nápady a směry.
+
+Připravte se na návrat..
+Návrat do pracovního režimu není samozřejmost. I zkušený profík si musí znovu zvyknout na tempo, zodpovědnost, denní rutinu nebo práci v angličtině. Počítejte s tím, že budete „zarezlí“ — a dejte si čas na rozcvičení. Pomáhá vracet se postupně a ideálně do prostředí, kde si můžete sami určovat tempo.
+
+Tentokrát máme k dispozici i automatizovaný kompletní přepis podcastu.
+Host: Petr Burian
+
+
+
+
+
+Petr byl dlouhá léta CTO v Livesportu, kde vybudoval přes 25 vývojových týmů a podílel se na globálních produktech, které používají stovky milionů sportovních fanoušků. Po 16 letech si dal roční sabatikl. Dnes je VP of Engineering v Deepnote. Petr má dvě dcery a žije s rodinou v Praze.
+LinkedIn – X – Web
+
+
+Děkujeme za spolupráci na tomto díle: Jiří Nečas, Productboard (prostory, organizace), Vladimír Příhoda, Productboard (technika, střih, záznamy), Tomáš Kout (moderování).
+Odebírejte podcast ze Vzhůru dolů
+Spotify – Apple Podcasts – TuneIn – RSS podcastů
+Nápad? Chyba? Připomínka? Pochvala? Pište nám na e-mail podcast@vzhurudolu.cz nebo kamkoliv jinam. Hlavně, aby se to k nám dostalo.
+Přejeme vám příjemný poslech!</description>
+					<content:encoded><![CDATA[
+						<p>Milé posluchačky, milí posluchači, 59. díl podcastu ze Vzhůru dolů je v mnohém speciální. Za prvé vychází s ehm… <em>menším zpožděním</em>. Natáčeli jsme totiž už před Vánoci v Productboardu. Na druhou stranu trošku doufáme, že na vás atmosféru na místě přesuneme i v aprílovém počasí.</p>
+<p>Za druhé je to poslední díl před větším přerodem našeho podcastu (který zatím tajíme a o kterém si více řekneme příště).</p>
+<p>A za třetí? Máme zde speciálního hosta se speciálním tématem.</p>
+<p>Jaké to je dát si po šestnácti letech intenzivní práce roční pauzu?</p>
+<p>Petr Burian, bývalý CTO Livesportu, popisuje v podcastu svůj roční odpočinek od práce, zvaný též <a href="https://cs.wikipedia.org/wiki/Sabatikl">sabatikl</a>. Dozvíte se, proč se pro něj rozhodl, jak si ho rozplánoval a co mu přinesl.</p>
+<p>V podcastu Petr zmiňuje, jaké fáze odpočinku a objevování prožil, co mu pomohlo překonat pochyby a co doporučuje těm, kteří o podobném kroku uvažují.</p>
+<h2 id="podcast">Podcast</h2>
+<div class="rwd-media">
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/3QyHp2SceGDFSqUz1P6PmD?utm_source=generator" width="100%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+</div>
+<h2 id="video">Video</h2>
+<div class="rwd-media">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ySwa8ieN8pQ?si=8TXjjG0F2o64Nb2-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+<h2 id="tipy">Tipy na sabatikl podle Petra Buriana</h2>
+<ol>
+<li>
+<p><strong>Proč do sabatiklu jít?</strong>.
+Pokud cítíte dlouhodobou únavu, ztrátu motivace nebo chuť přehodnotit směr svého života, sabatikl může být přesně to, co potřebujete. Už samotná myšlenka na pauzu je signál, že vám tělo nebo hlava něco říkají. Pauza není slabost, je to investice do dlouhodobé energie, zdraví a spokojenosti.</p>
+</li>
+<li>
+<p><strong>Vezměte si časový polštář</strong>.
+Opravdová regenerace nepřichází po týdnu volna. Petr doporučuje <em>minimálně půl roku</em>, ideálně <em>rok</em>, pokud si to můžete dovolit. První týdny často nestačí ani na to, abyste si všimli, jak moc jste byli unavení. Teprve po několika měsících se může začít objevovat energie a kreativita.</p>
+</li>
+<li>
+<p><strong>Odolejte pochybám okolí.</strong>.
+Mnozí, zejména mimo IT bublinu, nebudou sabatiklu rozumět. Můžete se setkat s nepochopením, otázkami typu „Proč nepracuješ?“ nebo „Nebojíš se, že vypadneš z oboru?“. Buďte připravení to klidně a opakovaně vysvětlovat – sobě i ostatním. Vědomí, že je to vaše svobodné rozhodnutí, vám pak pomůže ustát tlak z okolí.</p>
+</li>
+<li>
+<p><strong>Dejte si jasný záměr.</strong>.
+Zamyslete se, co si ze sabatiklu chcete odnést. Může to být hluboký odpočinek, restart kariéry, osobní růst nebo jen čas pro sebe a rodinu. Záměr nemusí být rigidní plán, ale jakási vnitřní kotva, která vám pomůže neztratit směr a nepropadnout pocitu, že „jen prokrastinujete“.</p>
+</li>
+<li>
+<p><strong>Rozdělte si sabatikl do fází.</strong>.
+Petr si sabatikl rozdělil na čtvrtiny: odpočinek, domácí resty, objevování a návrat. Pomáhá to nejen udržet rytmus, ale i předejít úzkosti z nečinnosti. Rámec vám dá pocit struktury, i když většinu času třeba jen „plujete na vlnce“.</p>
+</li>
+<li>
+<p><strong>Stanovte si období bez závazků.</strong>.
+Na začátku si určete období – například půl roku – během kterého nebudete přijímat žádné pracovní nabídky, ani kdyby vypadaly lákavě. Zabráníte tím tomu, že skočíte do dalšího zaměstnání ze zvyku nebo strachu. Dejte si čas, aby mohly vzniknout nové nápady a směry.</p>
+</li>
+<li><strong>Připravte se na návrat.</strong>.<br />
+Návrat do pracovního režimu není samozřejmost. I zkušený profík si musí znovu zvyknout na tempo, zodpovědnost, denní rutinu nebo práci v angličtině. Počítejte s tím, že budete „zarezlí“ — a dejte si čas na rozcvičení. Pomáhá vracet se postupně a ideálně do prostředí, kde si můžete sami určovat tempo.</li>
+</ol>
+<p>Tentokrát máme k dispozici i <a href="https://docs.google.com/document/d/1Ou-iBb9XHM34uRY1YZWZ-5i9A0h8i4-DMbg6_am58jc/edit?tab=t.0">automatizovaný kompletní přepis podcastu</a>.</p>
+<h2 id="host">Host: Petr Burian</h2>
+<div class="row f-6 mt-3 mb-3">
+<div class="col w-25-xs">
+<p><img src="https://res.cloudinary.com/vzhurudolu-cz/image/upload/v1744007518/vzhurudolu-podcast/petr-burian_uppxij.jpg" alt="Petr Burian" /></p>
+</div>
+<div class="col w-75-xs">
+<p>Petr byl dlouhá léta CTO v <a href="https://www.livesport.eu/">Livesportu</a>, kde vybudoval přes 25 vývojových týmů a podílel se na globálních produktech, které používají stovky milionů sportovních fanoušků. Po 16 letech si dal roční sabatikl. Dnes je VP of Engineering v <a href="https://deepnote.com/">Deepnote</a>. Petr má dvě dcery a žije s rodinou v Praze.</p>
+<p><a href="https://www.linkedin.com/in/burian-petr/">LinkedIn</a> – <a href="https://x.com/petrburian">X</a> – <a href="https://www.petrburian.com/">Web</a></p>
+</div>
+</div>
+<p>Děkujeme za spolupráci na tomto díle: Jiří Nečas, <a href="https://www.productboard.com/">Productboard</a> (prostory, organizace), Vladimír Příhoda, Productboard (technika, střih, záznamy), Tomáš Kout (moderování).</p>
+<h2 id="odber">Odebírejte podcast ze Vzhůru dolů</h2>
+<p><a href="https://open.spotify.com/show/1G2kH2YrIwD9BABg4L7xGC">Spotify</a> – <a href="https://itunes.apple.com/cz/podcast/vzhuru-dolu-podcast/id1176274658">Apple Podcasts</a> – <a href="https://tunein.com/podcasts/Technology-News/Vzhuru-dolu-podcast-p1177693/">TuneIn</a> – <a href="https://anchor.fm/s/82312eb4/podcast/rss">RSS podcastů</a></p>
+<p>Nápad? Chyba? Připomínka? Pochvala? Pište nám na e-mail <a href="mailto:podcast@vzhurudolu.cz">podcast@vzhurudolu.cz</a> nebo kamkoliv jinam. Hlavně, aby se to k nám dostalo.</p>
+<p>Přejeme vám příjemný poslech!</p>
+					]]></content:encoded>
+				<pubDate>Mon, 07 Apr 2025 00:00:00</pubDate>
+			</item>
+			<item>
+				<title>Pozvánka na WebExpo 2025: Bramus Van Damme, Tomáš Čupr, Jan Řezáb, Tammy Everts, Tim Kadlec a další</title>
+				<link>https://www.vzhurudolu.cz/blog/256-webexpo-2025</link>
+				<guid>https://www.vzhurudolu.cz/blog/256-webexpo-2025</guid>
+					<description>Prošel jsem si program letošního WebExpa a už se začal těšit. Jako každý rok. Přináším vám svůj výběr přednášek, které byste podle mě neměli minout.
+Letos mě to táhne nejen k tématům rychlosti webu (to je asi jasné) ale daleko víc se dívám i do byznysu (viz moje transformace). Vývojařinu, CSS a webařinu jako takovou ale po očku stále sleduji, takže v mých tipech nebudou chybět.
+WebExpo je pro mě každoročně must. Zde nasaju inspiraci, potkám kolegy a kolegyně a taky se dozvím, co je nového ve webovém světě.
+
+Pojďme se teď podívat na to, co mě v programu WebExpo 2025 zaujalo.
+Performance
+
+
+Tammy Everts: Connecting the dots between site speed, user happiness, and business success
+Talk Tammy ze SpeedCurve cílí na propojení rychlosti webu s reálnou spokojeností uživatelů, což je přesně to, co se snažím klientům v poslední době vysvětlovat.
+
+Tim Kadlec: One step ahead
+Tim Kadlec bude mluvit o nových nástrojích a postupech, které dokážou naše weby zrychlit. Weby se sice zrychlují, ale nároky uživatelů rostou.
+
+
+Vývoj, UI, CSS
+
+
+Bramus Van Damme: Supercharge web UX with view transitions!
+Bramus je kouzelník přes CSS, takže se moc těším na jeho triky pro plynulejší a efektnější přechody, které posunou vnímání webu zase o kus dál.
+
+
+Vitaly Friedman: Design patterns for search UX in 2025
+K tomuhle už snad nemusím nic dodávat. Vitaly vždycky naservíruje spoustu praktických tipů a patří už neoddělitelně ke značce WebExpa.
+
+
+Krasimir Tsonev: React in Patterns (workshop)
+Krasimir možná u nás není tak známý, ale kdo viděl jeho loňskou přednášku, ví, že má v malíku React a umí skvěle vysvětlovat, jak psát přehledný kód.
+
+
+Darko Bozhinovski: Future-proof your UI: Building with Web Components
+Web Components se už nějakou dobu chystají být „další velká věc“, ale však víte… zatím se jim to zase tak nedaří. Další přednášku z praxe vítám. 
+
+
+Shruti Balasa: Flex, Grid, and beyond: Mastering layouts with Tailwind CSS
+Shruti se věnuje Tailwindu dlouhodobě, takže jsem zvědavý, jak nám ukáže kombinaci jeho utilit se současnými layoutovými možnostmi v CSS. Tailwind a grid, to je kombinace, kterou můžu.
+
+
+Rowdy Rabouw: Fugu: Possibilities with web capabilities
+Jsem hodně zvědavý, jak se JavaScript a webové API rozšiřují dál do oblastí, kam dřív patřily spíš nativní aplikace – a Rowdy údajně chystá pěkný přehled toho, co se chystá.
+
+Karel Navrátil: Dark patterns: Where does motivation end and illegal manipulation begin?
+Kódujícího advokáta Karla jsme už několikrát měli na Frontendistech a je to rostoucí talent, na který se vyplatí zaměřit.
+
+Byznys
+
+
+Tomáš Čupr: Startup founder story
+Když se někdo podílí na tolika úspěšných startupech, chci ho poslouchat.
+
+Jan Řezáb: How AI can revolutionise startup growth
+Umělá inteligence je momentálně strašně žhavé téma a Jan prý ukáže, jak ji reálně zapojit do škálování byznysu, což mě zajímá.
+
+Natáčení podcastu přímo na WebExpu
+Jestli chcete podebatovat o přednáškách přímo v centru dění, doražte na živé nahrávání podcastu. 
+Spolu Robinem Pokorným se tam pustíme do diskuzí o webovém vývoji, nových technologiích a shrneme taky největší pecky z prvního dne WebExpa.
+Slibuju, že to bude neformální povídání – přesně takové, jaké od našeho podcastu znáte.
+Slevičku…?
+Kódíček na 20% slevu pro čtenáře Vzhůru dolů? Tak jasně!
+Při objednávce prostě uveďte vzhurudolu25 (neplatí na premium workshopy).
+</description>
+					<content:encoded><![CDATA[
+						<p>Prošel jsem si <a href="https://webexpo.net/prague2025/program/#day1">program letošního WebExpa</a> a už se začal těšit. Jako každý rok. Přináším vám svůj výběr přednášek, které byste podle mě neměli minout.</p>
+<p>Letos mě to táhne nejen k tématům rychlosti webu (to je asi jasné) ale daleko víc se dívám i do byznysu (viz moje <a href="https://www.vzhurudolu.cz/blog/253-2024">transformace</a>). Vývojařinu, CSS a webařinu jako takovou ale po očku stále sleduji, takže v mých tipech nebudou chybět.</p>
+<p>WebExpo je pro mě každoročně <em>must</em>. Zde nasaju inspiraci, potkám kolegy a kolegyně a taky se dozvím, co je nového ve webovém světě.</p>
+<p><img src="https://res.cloudinary.com/vzhurudolu-cz/image/upload/v1742532209/vzhurudolu-blog/WebExpo_2025_banner_apfqes.jpg" alt="WebExpo 2025" /></p>
+<p>Pojďme se teď podívat na to, co mě v programu WebExpo 2025 zaujalo.</p>
+<h2 id="perf">Performance</h2>
+<ol>
+<li>
+<p><a href="https://webexpo.net/prague2025/sessions/connecting-the-dots-between-site-speed-user-happiness-business-success/"><strong>Tammy Everts: Connecting the dots between site speed, user happiness, and business success</strong></a><br />
+Talk Tammy ze SpeedCurve cílí na propojení rychlosti webu s reálnou spokojeností uživatelů, což je přesně to, co se snažím klientům v poslední době vysvětlovat.</p>
+</li>
+<li><a href="https://webexpo.net/prague2025/sessions/tim-kadlec-web-performance-2025/"><strong>Tim Kadlec: One step ahead</strong></a><br />
+Tim Kadlec bude mluvit o nových nástrojích a postupech, které dokážou naše weby zrychlit. Weby se sice zrychlují, ale nároky uživatelů rostou.</li>
+</ol>
+<p><img src="https://res.cloudinary.com/vzhurudolu-cz/image/upload/v1742532210/vzhurudolu-blog/First_Stage__Lucerna_Great_Hall_-_Nathan_W._Pyle2_immvql.jpg" alt="WebExpo 2024" /></p>
+<h2 id="dev">Vývoj, UI, CSS</h2>
+<ol>
+<li>
+<p><a href="https://webexpo.net/prague2025/sessions/supercharge-web-ux-with-view-transitions/"><strong>Bramus Van Damme: Supercharge web UX with view transitions!</strong></a><br />
+Bramus je kouzelník přes CSS, takže se moc těším na jeho triky pro plynulejší a efektnější přechody, které posunou vnímání webu zase o kus dál.</p>
+</li>
+<li>
+<p><a href="https://webexpo.net/prague2025/sessions/vitaly-friedman-web-design-2025/"><strong>Vitaly Friedman: Design patterns for search UX in 2025</strong></a><br />
+K tomuhle už snad nemusím nic dodávat. Vitaly vždycky naservíruje spoustu praktických tipů a patří už neoddělitelně ke značce WebExpa.</p>
+</li>
+<li>
+<p><a href="https://webexpo.net/prague2025/sessions/premium-workshop-react-in-patterns/"><strong>Krasimir Tsonev: React in Patterns (workshop)</strong></a><br />
+Krasimir možná u nás není tak známý, ale kdo viděl jeho <a href="https://webexpo.net/blog/krasimir-tsonev-revealing-6-signs-you-suffer-from-senior-developer-syndrome/">loňskou přednášku</a>, ví, že má v malíku React a umí skvěle vysvětlovat, jak psát přehledný kód.</p>
+</li>
+<li>
+<p><a href="https://webexpo.net/prague2025/sessions/future-proof-your-ui-building-with-web-components/"><strong>Darko Bozhinovski: Future-proof your UI: Building with Web Components</strong></a><br />
+Web Components se už nějakou dobu chystají být „další velká věc“, ale však víte… zatím se jim to zase tak nedaří. Další přednášku z praxe vítám. </p>
+</li>
+<li>
+<p><a href="https://webexpo.net/prague2025/sessions/mastering-layouts-with-tailwind-css-flex-grid-and-beyond/"><strong>Shruti Balasa: Flex, Grid, and beyond: Mastering layouts with Tailwind CSS</strong></a><br />
+Shruti se věnuje Tailwindu dlouhodobě, takže jsem zvědavý, jak nám ukáže kombinaci jeho utilit se současnými layoutovými možnostmi v CSS. Tailwind a grid, to je kombinace, kterou můžu.</p>
+</li>
+<li>
+<p><a href="https://webexpo.net/prague2025/sessions/rowdy-rabouw-web-development-2025/"><strong>Rowdy Rabouw: Fugu: Possibilities with web capabilities</strong></a><br />
+Jsem hodně zvědavý, jak se JavaScript a webové API rozšiřují dál do oblastí, kam dřív patřily spíš nativní aplikace – a Rowdy údajně chystá pěkný přehled toho, co se chystá.</p>
+</li>
+<li><a href="https://webexpo.net/prague2025/sessions/dark-patterns-where-does-motivation-end-and-illegal-manipulation-begin/"><strong>Karel Navrátil: Dark patterns: Where does motivation end and illegal manipulation begin?</strong></a><br />
+Kódujícího advokáta Karla jsme už několikrát měli na Frontendistech a je to rostoucí talent, na který se vyplatí zaměřit.</li>
+</ol>
+<h2 id="byz">Byznys</h2>
+<ol>
+<li>
+<p><a href="https://webexpo.net/prague2025/sessions/tomas-cupr-talk-2025/"><strong>Tomáš Čupr: Startup founder story</strong></a><br />
+Když se někdo podílí na tolika úspěšných startupech, chci ho poslouchat.</p>
+</li>
+<li><a href="https://webexpo.net/prague2025/sessions/jan-rezab-talk-2025/"><strong>Jan Řezáb: How AI can revolutionise startup growth</strong></a><br />
+Umělá inteligence je momentálně strašně žhavé téma a Jan prý ukáže, jak ji reálně zapojit do škálování byznysu, což mě zajímá.</li>
+</ol>
+<h2 id="pod">Natáčení podcastu přímo na WebExpu</h2>
+<p>Jestli chcete podebatovat o přednáškách přímo v centru dění, doražte na <a href="https://webexpo.net/prague2025/sessions/live-recording-of-the-podcast-vzhuru-dolu-in-czech-2025/">živé nahrávání podcastu</a>. </p>
+<p>Spolu Robinem Pokorným se tam pustíme do diskuzí o webovém vývoji, nových technologiích a shrneme taky největší pecky z prvního dne WebExpa.</p>
+<p>Slibuju, že to bude neformální povídání – přesně takové, jaké od našeho podcastu znáte.</p>
+<h2 id="pod">Slevičku…?</h2>
+<p>Kódíček na 20% slevu pro čtenáře Vzhůru dolů? Tak jasně!</p>
+<p>Při objednávce prostě uveďte <code>vzhurudolu25</code> (neplatí na premium workshopy).</p>
+<p><img src="https://res.cloudinary.com/vzhurudolu-cz/image/upload/v1742532208/vzhurudolu-blog/vzhuru-dolu_opengraph_dark_knstux.jpg" alt="WebExpo slevička" /></p>
+					]]></content:encoded>
+				<pubDate>Fri, 21 Mar 2025 00:00:00</pubDate>
+			</item>
+			<item>
+				<title>S Rikim Fridrichem o stavu JavaScriptu, testování a post‑SPA budoucnosti frontendu</title>
+				<link>https://www.vzhurudolu.cz/podcast/255-podcast-js-58</link>
+				<guid>https://www.vzhurudolu.cz/podcast/255-podcast-js-58</guid>
+					<description>Hello world! Se zpožděním vydáváme první ze dvou epizod natočených před Vánoci v kancelářích Productboardu. Hostem 58. epizody je Riki Fridrich, zkušený JavaScript vývojář.
+Povídáme si o tom, proč je React už občas vnímán jako „nové jQuery“. Diskutujeme také o TurboPacku a dalších buildovacích nástrojích, které zatím nepřinášejí tolik vytouženou revoluci. Končí už konečně éra masivních single‑page aplikací a vracíme se k silnějšímu server‑side renderingu? A jak to má Riki s AI při vývoji?
+Podcast
+
+
+
+Video
+
+
+
+Host
+
+
+
+
+
+Riki Fridrich píše JavaScript ve firmě Outreach. Učí ostatní, jak psát Javascript. Přednáší na konferencích a meetupech. Většinou o Javascriptu. Riki je z Ládví.
+LinkedIn – X – Github – Web
+
+
+O čem mluvíme?
+
+Průzkum State of JS a rostoucí komplexita\
+Věnujeme se datům, která ukazují stagnaci u zavedených frameworků. Vývojáři stále hledají čerstvé nástroje, protože složitost roste. Může to znamenat posun ve vývoji front‑endového ekosystému.
+React v roli „nového jQuery“\
+Debatujeme o oblibě Reactu, který se stal těžko sesaditelným standardem. Zároveň ale narůstá únava z jeho rozsáhlého ekosystému. Někteří vývojáři proto hledají minimalističtější řešení.
+Problémy testovacích nástrojů\
+Probíráme překážky při testování, zejména pokud nechceme využívat React‑specific technologie. Mnohé knihovny jsou navržené především pro virtuální DOM. Testování reálného DOMu tak může být komplikovanější.
+Skutečný DOM vs. virtuální náhrady\
+Narážíme na potřebu testů, které reflektují skutečné rozměry a pozici elementů. Virtuální prostředí často takové údaje neposkytuje. Pro specifické případy to znamená nutnost vlastního řešení.
+TypeScript a ústup TSC CLI\
+Přichází řeč na to, proč se většina lidí přiklání k automatizovaným buildům TypeScriptu. Samotný TSC CLI už mnozí nepotřebují. Vývojáři stále více spoléhají na integrované nástroje v ekosystému.
+Stav buildovacích nástrojů a TurboPack\
+Diskutujeme o tom, že TurboPack nenabídl takovou revoluci, v jakou se doufalo. Mnoho lidí proto setrvává u zaběhnutých řešení jako Webpack, i když jim už leze na nervy. Hledání něčeho opravdu lepšího pokračuje.
+Server‑side rendering a nová podoba aplikací\
+Zvažujeme, že obliba masivních single‑page aplikací může klesat. V popředí se ocitá silnější server‑side rendering a lehčí klientská vrstva. Může jít o návrat k modelu, který dříve převládal.
+Role AI v současném vývoji\
+Probíráme, jak nám AI pomáhá se snippetem kódu nebo řešením neznámé syntaxe. U složitějších projektů zatím přináší jen částečné ulehčení. Přesto se stává běžnou součástí pracovních nástrojů.
+Možnosti AI jako našeptávače a konzultanta\
+Zamýšlíme se, v čem AI skutečně usnadňuje práci a jak rychle naráží na limity ve velkých kódech. Pro mnoho rutinních úkolů je však k nezaplacení. Pomáhá šetřit čas a zpřístupňuje technologie i méně zkušeným.
+Post‑SPA éra a budoucí scénáře\
+Shrnujeme, že SPA se možná blíží ke svým hranicím a do popředí se dostávají nová paradigmata. Leccos ukazuje na menší množství klientského JavaScriptu a větší roli serveru. Budoucí vývoj může přinést zásadní změnu ve stavbě front‑endů.
+
+Odebírejte podcast ze Vzhůru dolů
+Spotify – Apple Podcasts – TuneIn – RSS podcastů
+Nápad? Chyba? Připomínka? Pochvala? Pište nám na e-mail podcast@vzhurudolu.cz nebo kamkoliv jinam. Hlavně, aby se to k nám dostalo.
+Přejeme vám příjemný poslech!
+Děkujeme za spolupráci: Jiří Nečas, Productboard (prostory, organizace), Vladimír Příhoda, Productboard (technika, střih, záznamy), Tomáš Kout (moderování).</description>
+					<content:encoded><![CDATA[
+						<p>Hello world! Se zpožděním vydáváme první ze dvou epizod natočených před Vánoci v kancelářích Productboardu. Hostem 58. epizody je Riki Fridrich, zkušený JavaScript vývojář.</p>
+<p>Povídáme si o tom, proč je React už občas vnímán jako „nové jQuery“. Diskutujeme také o TurboPacku a dalších buildovacích nástrojích, které zatím nepřinášejí tolik vytouženou revoluci. Končí už konečně éra masivních single‑page aplikací a vracíme se k silnějšímu server‑side renderingu? A jak to má Riki s AI při vývoji?</p>
+<h2 id="podcast">Podcast</h2>
+<div class="rwd-media">
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/4DnbYVUJQEeuwh1hssLkzG?utm_source=generator" width="100%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+</div>
+<h2 id="video">Video</h2>
+<div class="rwd-media">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/k9R_fJBeW7M?si=IF2E0EUKImtfsPiv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+<h2 id="host">Host</h2>
+<div class="row f-6 mt-3 mb-3">
+<div class="col w-25-xs">
+<p><img src="https://res.cloudinary.com/vzhurudolu-cz/image/upload/v1678779102/vzhurudolu-podcast/riki-fridrich_vpcb8k.jpg" alt="Riki Fridrich" /></p>
+</div>
+<div class="col w-75-xs">
+<p>Riki Fridrich píše JavaScript ve firmě <a href="https://www.outreach.io/">Outreach</a>. Učí ostatní, jak psát Javascript. Přednáší na konferencích a meetupech. Většinou o Javascriptu. Riki je z Ládví.</p>
+<p><a href="https://www.linkedin.com/in/fczbkk/">LinkedIn</a> – <a href="https://twitter.com/fczbkk">X</a> – <a href="https://github.com/fczbkk">Github</a> – <a href="https://fczbkk.com/">Web</a></p>
+</div>
+</div>
+<h2 id="obsah">O čem mluvíme?</h2>
+<ul>
+<li><strong>Průzkum State of JS a rostoucí komplexita</strong>\
+Věnujeme se datům, která ukazují stagnaci u zavedených frameworků. Vývojáři stále hledají čerstvé nástroje, protože složitost roste. Může to znamenat posun ve vývoji front‑endového ekosystému.</li>
+<li><strong>React v roli „nového jQuery“</strong>\
+Debatujeme o oblibě Reactu, který se stal těžko sesaditelným standardem. Zároveň ale narůstá únava z jeho rozsáhlého ekosystému. Někteří vývojáři proto hledají minimalističtější řešení.</li>
+<li><strong>Problémy testovacích nástrojů</strong>\
+Probíráme překážky při testování, zejména pokud nechceme využívat React‑specific technologie. Mnohé knihovny jsou navržené především pro virtuální DOM. Testování reálného DOMu tak může být komplikovanější.</li>
+<li><strong>Skutečný DOM vs. virtuální náhrady</strong>\
+Narážíme na potřebu testů, které reflektují skutečné rozměry a pozici elementů. Virtuální prostředí často takové údaje neposkytuje. Pro specifické případy to znamená nutnost vlastního řešení.</li>
+<li><strong>TypeScript a ústup TSC CLI</strong>\
+Přichází řeč na to, proč se většina lidí přiklání k automatizovaným buildům TypeScriptu. Samotný TSC CLI už mnozí nepotřebují. Vývojáři stále více spoléhají na integrované nástroje v ekosystému.</li>
+<li><strong>Stav buildovacích nástrojů a TurboPack</strong>\
+Diskutujeme o tom, že TurboPack nenabídl takovou revoluci, v jakou se doufalo. Mnoho lidí proto setrvává u zaběhnutých řešení jako Webpack, i když jim už leze na nervy. Hledání něčeho opravdu lepšího pokračuje.</li>
+<li><strong>Server‑side rendering a nová podoba aplikací</strong>\
+Zvažujeme, že obliba masivních single‑page aplikací může klesat. V popředí se ocitá silnější server‑side rendering a lehčí klientská vrstva. Může jít o návrat k modelu, který dříve převládal.</li>
+<li><strong>Role AI v současném vývoji</strong>\
+Probíráme, jak nám AI pomáhá se snippetem kódu nebo řešením neznámé syntaxe. U složitějších projektů zatím přináší jen částečné ulehčení. Přesto se stává běžnou součástí pracovních nástrojů.</li>
+<li><strong>Možnosti AI jako našeptávače a konzultanta</strong>\
+Zamýšlíme se, v čem AI skutečně usnadňuje práci a jak rychle naráží na limity ve velkých kódech. Pro mnoho rutinních úkolů je však k nezaplacení. Pomáhá šetřit čas a zpřístupňuje technologie i méně zkušeným.</li>
+<li><strong>Post‑SPA éra a budoucí scénáře</strong>\
+Shrnujeme, že SPA se možná blíží ke svým hranicím a do popředí se dostávají nová paradigmata. Leccos ukazuje na menší množství klientského JavaScriptu a větší roli serveru. Budoucí vývoj může přinést zásadní změnu ve stavbě front‑endů.</li>
+</ul>
+<h2 id="odber">Odebírejte podcast ze Vzhůru dolů</h2>
+<p><a href="https://open.spotify.com/show/1G2kH2YrIwD9BABg4L7xGC">Spotify</a> – <a href="https://itunes.apple.com/cz/podcast/vzhuru-dolu-podcast/id1176274658">Apple Podcasts</a> – <a href="https://tunein.com/podcasts/Technology-News/Vzhuru-dolu-podcast-p1177693/">TuneIn</a> – <a href="https://anchor.fm/s/82312eb4/podcast/rss">RSS podcastů</a></p>
+<p>Nápad? Chyba? Připomínka? Pochvala? Pište nám na e-mail <a href="mailto:podcast@vzhurudolu.cz">podcast@vzhurudolu.cz</a> nebo kamkoliv jinam. Hlavně, aby se to k nám dostalo.</p>
+<p>Přejeme vám příjemný poslech!</p>
+<p>Děkujeme za spolupráci: Jiří Nečas, <a href="https://www.productboard.com/">Productboard</a> (prostory, organizace), Vladimír Příhoda, Productboard (technika, střih, záznamy), Tomáš Kout (moderování).</p>
+					]]></content:encoded>
+				<pubDate>Wed, 12 Mar 2025 00:00:00</pubDate>
+			</item>
+			<item>
+				<title>O umění říkat NE</title>
+				<link>https://www.vzhurudolu.cz/blog/254-ne</link>
+				<guid>https://www.vzhurudolu.cz/blog/254-ne</guid>
+					<description>Máte toho hodně? Míval jsem to stejně. Pořád s tím bojuju. Ale jedno jsem se naučil už docela bezpečně.
+Schopnosti mnoha schopných lidí totiž zlikviduje nezvládnutí umění říkat NE.
+Jsi schopný? Dostaneš víc práce.
+Pořád to zvládaš? Dostaneš jí ještě víc.
+A tak pořád dokola. Dokud se nezlomíte pod tíhou vlastních závazků.
+Nebo dokud nezačnete ve velkém odmítat.
+
+Někdo neumí odmítnout šéfa, někdo kolegy, někdo neodmítne kamarády, partnera, děti. Někdo si na sebe bič uplete sám. Říká si věci jako „Nic není nemožné“ nebo „Nikdy se nevzdávej“, ale nakonec vzdává jen kvalitu ve prospěch kvantity. Končí vyhořením nebo jej jen prostě přestává bavit jeho práce. Zapomněl, že nemůže dělat vše. Zapomněl, jak je NE osvobozující.
+NE je potřeba říkat i sám sobě. Svým nápadům, svým projektům, svým myšlenkám. Je to těžké, protože nápady jsou jako děti. Milujeme je. Ale zabíjení nápadů se říká prioritizace.
+Odmítnutí není snadné, já vím. Může znít drsně, můžete působit arogantně. Proto se mnozí bojí, že kvůli NE je přestanou mít lidé rádi. Ale být oblíbený jen proto, že nikdy neřeknete NE, znamená, že ostatní žijí na váš úkor. Čí je to život? Jejich nebo váš?
+NE je pro někoho možná příliš arogantní. Nemusí být. Stačí se naučit konstruktivní NE:
+„Tohle dělat nebudu, ale můžu ti doporučit třeba támhle Pepíka – nebo ti pošlu materiály, které ti pomůžou.“
+Časem se naučíte i suché ne, stačí trochu empatie. „Nezlob se, ale už toho mám hodně.“
+Často totiž říct NE znamená říct ANO sobě.
+
+Váš názor? Šup s ním na LinkedIn, Facebook nebo X.</description>
+					<content:encoded><![CDATA[
+						<p>Máte toho hodně? Míval jsem to stejně. Pořád s tím bojuju. Ale jedno jsem se naučil už docela bezpečně.</p>
+<p>Schopnosti mnoha schopných lidí totiž zlikviduje nezvládnutí umění říkat <em>NE</em>.</p>
+<p>Jsi schopný? Dostaneš víc práce.</p>
+<p>Pořád to zvládaš? Dostaneš jí ještě víc.</p>
+<p>A tak pořád dokola. Dokud se nezlomíte pod tíhou vlastních závazků.</p>
+<p>Nebo dokud nezačnete ve velkém odmítat.</p>
+<p><img src="https://res.cloudinary.com/vzhurudolu-cz/image/upload/v1741590750/vzhurudolu-blog/ano-ne_l4q8ty.webp" alt="Ano a NE v lese" /></p>
+<p>Někdo neumí odmítnout šéfa, někdo kolegy, někdo neodmítne kamarády, partnera, děti. Někdo si na sebe bič uplete sám. Říká si věci jako „Nic není nemožné“ nebo „Nikdy se nevzdávej“, ale nakonec vzdává jen kvalitu ve prospěch kvantity. Končí vyhořením nebo jej jen prostě přestává bavit jeho práce. Zapomněl, že nemůže dělat vše. Zapomněl, jak je <em>NE</em> osvobozující.</p>
+<p><em>NE</em> je potřeba říkat i sám sobě. Svým nápadům, svým projektům, svým myšlenkám. Je to těžké, protože nápady jsou jako děti. Milujeme je. Ale zabíjení nápadů se říká prioritizace.</p>
+<p>Odmítnutí není snadné, já vím. Může znít drsně, můžete působit arogantně. Proto se mnozí bojí, že kvůli <em>NE</em> je přestanou mít lidé rádi. Ale být oblíbený jen proto, že nikdy neřeknete <em>NE</em>, znamená, že ostatní žijí na váš úkor. Čí je to život? Jejich nebo váš?</p>
+<p><em>NE</em> je pro někoho možná příliš arogantní. Nemusí být. Stačí se naučit <em>konstruktivní NE:</em></p>
+<p>„Tohle dělat nebudu, ale můžu ti doporučit třeba támhle Pepíka – nebo ti pošlu materiály, které ti pomůžou.“</p>
+<p>Časem se naučíte i suché ne, stačí trochu empatie. „Nezlob se, ale už toho mám hodně.“</p>
+<p>Často totiž říct <em>NE</em> znamená říct <em>ANO</em> sobě.</p>
+<hr />
+<p><em>Váš názor? Šup s ním na <a href="https://www.linkedin.com/feed/update/urn:li:activity:7304762566965186560">LinkedIn</a>, <a href="https://www.facebook.com/VzhuruDolu/posts/pfbid024wzW6WEzCTDsTbTGpLKmrfW9pprrKYrs27JmUStpBXfzPxRTsCDkhi6Cf5GrKRBel">Facebook</a> nebo <a href="https://x.com/vzhurudolu/status/1898998587612127727">X</a>.</em></p>
+					]]></content:encoded>
+				<pubDate>Mon, 10 Mar 2025 00:00:00</pubDate>
+			</item>
+			<item>
+				<title>Přechod z tvůrce na manažera: můj přelomový rok 2024</title>
+				<link>https://www.vzhurudolu.cz/blog/253-2024</link>
+				<guid>https://www.vzhurudolu.cz/blog/253-2024</guid>
+					<description>Vzpomínám si na své webařské začátky. Na přelomu tisíciletí jsem nadšeně kódoval weby, dokud mi v agentuře nějaký „menežr“ nezaklepal na rameno. „Potřebuji jen drobnost“, řekl, a zkazil mi celý den. Zlí, zlí manažeři. Zlaté kodérské časy!
+O dvacet let později sám přijímám roli, která mě kdysi štvala, a přestávám se stydět za to, že jsem manažerem.
+Z kodéra a tvůrce obsahu manažerem
+V roce 2024 jsem se definitivně rozhodl, že další část mé kariéry bude manažerská a podnikatelská.
+Bolelo to. Stále někde hluboko přetrvává otázka: „Nezrazuješ tím sebe a celé webařské řemeslo?“
+V životě jsou ale situace, kdy lpění na řemeslu znamená stagnaci. A jestli v práci něco fakt nesnáším, je to nuda.
+Loni jsme založili firmu pro PageSpeed.cz a z jedné z mých aktivit se stalo to hlavní, co v pracovním životě dělám.
+Potřebu strategického, ale i každodenního řízení už léta vnímám u všech svých projektů – PageSpeed.cz, Frontendistů i podcastu. Dělal jsem to, ale tak nějak z donucení.
+Kdo jiný než ty?
+Tvůrci nebo řemeslníci to znají. „Nebudu to řešit, dělám si dobře svou práci, ono to nějak dopadne.“
+Jenže pak má přijít velmi správná otázka „Kdo jiný, když než ty?“. A jak říká Spider-Man: „S velkou dovedností přichází velká zodpovědnost.“ Pokud člověk vidí problém a má dovednosti jej opravit, prostě musí. Když máš v ruce kladivo a vidíš nezatlučený hřebík… No však víte.
+Okolnosti a svými dovednostmi jsem byl donucen stát se manažerem. Zlý, zlý život, který si na mě připravil takovou lest!
+V roce 2024 ale přišel zlom. Našel jsem tom zálibu.
+Začaly přicházet konzistentní úspěchy. Postupné delegování velké části mé původní práce v PageSpeedu, skvělá týmová práce s parťákem Michalem a dalšími členy týmu. Rychlá iterace nad problémy, zlepšování procesů… v kontextu velikosti týmu i slušný tah na branku a při tom všem udržování vize a strategického směru.
+Ve Frontendistech jsme zase díky skvělému týmu a nové kolegyni Kačce Macháčkové mohli posunout konferenci FrontKon na úroveň, o které se nám dříve ani nesnilo.
+Nové prostředí
+Během přelaďování hlavy jsem také pochopil, že se musím obklopit novým prostředím.
+Začal jsem poslouchat byznysové podcasty, číst knížky, profiltroval sociální sítě. Hlava potřebuje nejen informace, ale i dobré prostředí. To mi dělali hlavně tito lidé a jejich značky:
+
+Skvělý podcast Scale Up od Romana Stupky.
+Cinkátko od Michaly Gregorové.
+Lenny’s newsletter od Lenny Rachitskyho.
+
+Nové vnitřní miminko
+Moje podnikatelsko-manažerská část hlavy je takové moje nové miminko. Hýčkám si ho, krmím ho znalostmi. Vidím jak roste, první krůčky má za sebou, už leccos ustojí. Je fajn ho sledovat.
+Přeju vám v roce 2025 mnoho takových vnitřních nových miminek, ať jste jakkoliv staří!
+Tento text vznikl jako první výstup z mé retrospektivy roku 2024. Vím bezpečně, že ty další už nenapíšu, ale víte, co? Odložím si je sem alespoň stručně
+Co dalšího mi přinesl rok 2024?
+
+Stále píšu, to si nemyslete. Loni jsem napsal desítky textů, hlavně pro nápovědu PageSpeed.cz, velký text o psaní na Vzhůru dolů, článek o INP na Lupě nebo po čase anglický text pro WebPerf Calendar. Hodně taky píšu na LinkedIn, který se zároveň snažím zkrotit, aby mi nabízel méně bullshitu a více obsahu. Psát na socsítě mě baví. Třeba se to jednou bude dát i číst.
+Udělal jsem 8 přednášek a byl hostem 3 rozhovorů. Vyzdvihl bych hlavně přednášky pro SEO Restart o INP, talk na našem FrontKon 2024 a povídání pro Socials podcast. Vzal jsem skoro všechna pozvánky a bylo jich hodně. Letos bych si rád více zalezl do ulity, více psal, vyvíjel. A manažoval a podnikal, jasně.
+V PageSpeed.cz jsme loni pro poradenství získali kolem 30 nových klientů včetně značek jako je SIKO nebo Heureka.cz. Oficiálně jsme začali prodávat placenou verzi monitoringu PLUS a vydali 5 nových verzí. Máme plány, které mají ambici a tým skvěle šlape.
+S rodinou jsme strávili 14 dní na vlastní pěst v Tanzanii, odkud jsme si přivezli desítky historek, někdy fakt dobrodružných. Stal se mi tam obří kulturní šok, i přes to, že jsem celý rok trénoval ježděním do Brna.
+Pořídil jsem si gravela, což byla nejlepší investice do sebe celého roku.
+Přečetl jsem skoro všech šest dílů Duny, které napsal Frank Herbert, a jsem z toho nadšený. Viděl jsem minimálně dva těžce deptající filmy (Zóna zájmu a Prezidentka). Můj přehnaný životní optimismus tohle docela potřebuje.
+
+Ne všechno se mi povedlo, to je jasné. Plánovaný skokový posun podcastu odkládáme na letošek. Sportování, v míře, které dělám, přestává stačit u týpka, kterému táhne na padesát, takže se zdá, že v téhle životní fázi budu muset trošku zintenzivnit péči o sebe. Pořád taky pořádně nevím, co udělám se Vzhůru dolů, když už tady tolik nepíšu.
+Celkově vzato mám ovšem za to, že rok 2024 pro mě byl velmi úspěšný a přelomový. Jsem zvědavý, co mi přinese letošek.
+Článek můžete komentovat na LinkedInu, Facebooku nebo síti X. Děkuji partnerům Vzhůru dolů. Aktuálně hledají tyto lidi: .</description>
+					<content:encoded><![CDATA[
+						<p>Vzpomínám si na své webařské začátky. Na přelomu tisíciletí jsem nadšeně kódoval weby, dokud mi v agentuře nějaký „menežr“ nezaklepal na rameno. „Potřebuji jen drobnost“, řekl, a zkazil mi celý den. Zlí, zlí manažeři. Zlaté kodérské časy!</p>
+<p>O dvacet let později sám přijímám roli, která mě kdysi štvala, a přestávám se stydět za to, že jsem manažerem.</p>
+<h2 id="koder">Z kodéra a tvůrce obsahu manažerem</h2>
+<p>V roce 2024 jsem se definitivně rozhodl, že další část mé kariéry bude manažerská a podnikatelská.</p>
+<p>Bolelo to. Stále někde hluboko přetrvává otázka: „Nezrazuješ tím sebe a celé webařské řemeslo?“</p>
+<p>V životě jsou ale situace, kdy lpění na řemeslu znamená stagnaci. A jestli v práci něco fakt nesnáším, je to nuda.</p>
+<p>Loni jsme založili firmu pro <a href="https://pagespeed.cz/">PageSpeed.cz</a> a z jedné z mých aktivit se stalo to hlavní, co v pracovním životě dělám.</p>
+<p>Potřebu strategického, ale i každodenního řízení už léta vnímám u všech svých projektů – PageSpeed.cz, Frontendistů i podcastu. Dělal jsem to, ale tak nějak z donucení.</p>
+<h2 id="kdo">Kdo jiný než ty?</h2>
+<p>Tvůrci nebo řemeslníci to znají. „Nebudu to řešit, dělám si dobře svou práci, ono to nějak dopadne.“</p>
+<p>Jenže pak má přijít velmi správná otázka „Kdo jiný, když než ty?“. A jak říká Spider-Man: „S velkou dovedností přichází velká zodpovědnost.“ Pokud člověk vidí problém a má dovednosti jej opravit, prostě musí. Když máš v ruce kladivo a vidíš nezatlučený hřebík… No však víte.</p>
+<p>Okolnosti a svými dovednostmi jsem byl donucen stát se manažerem. Zlý, zlý život, který si na mě připravil takovou lest!</p>
+<p>V roce 2024 ale přišel zlom. Našel jsem tom zálibu.</p>
+<p>Začaly přicházet konzistentní úspěchy. Postupné delegování velké části mé původní práce v PageSpeedu, skvělá týmová práce s parťákem Michalem a dalšími členy týmu. Rychlá iterace nad problémy, zlepšování procesů… v kontextu velikosti týmu i slušný tah na branku a při tom všem udržování vize a strategického směru.</p>
+<p>Ve Frontendistech jsme zase díky skvělému týmu a nové kolegyni Kačce Macháčkové mohli posunout konferenci <a href="https://www.frontkon.cz/">FrontKon</a> na úroveň, o které se nám dříve ani nesnilo.</p>
+<h2 id="nove">Nové prostředí</h2>
+<p>Během přelaďování hlavy jsem také pochopil, že se musím obklopit novým prostředím.</p>
+<p>Začal jsem poslouchat byznysové podcasty, číst knížky, profiltroval sociální sítě. Hlava potřebuje nejen informace, ale i dobré prostředí. To mi dělali hlavně tito lidé a jejich značky:</p>
+<ul>
+<li>Skvělý podcast <a href="https://scaleupboard.com/scale-up-podcast/">Scale Up</a> od Romana Stupky.</li>
+<li><a href="https://open.spotify.com/show/1pN2i5xR6Enif894StTWzt">Cinkátko</a> od Michaly Gregorové.</li>
+<li><a href="https://www.lennysnewsletter.com/">Lenny’s newsletter</a> od Lenny Rachitskyho.</li>
+</ul>
+<h2 id="mimi">Nové vnitřní miminko</h2>
+<p>Moje podnikatelsko-manažerská část hlavy je takové moje nové miminko. Hýčkám si ho, krmím ho znalostmi. Vidím jak roste, první krůčky má za sebou, už leccos ustojí. Je fajn ho sledovat.</p>
+<p>Přeju vám v roce 2025 mnoho takových vnitřních nových miminek, ať jste jakkoliv staří!</p>
+<p>Tento text vznikl jako první výstup z mé retrospektivy roku 2024. Vím bezpečně, že ty další už nenapíšu, ale víte, co? Odložím si je sem alespoň stručně</p>
+<h2 id="dalsi">Co dalšího mi přinesl rok 2024?</h2>
+<ul>
+<li>Stále píšu, to si nemyslete. Loni jsem napsal desítky textů, hlavně pro nápovědu PageSpeed.cz, velký <a href="https://www.vzhurudolu.cz/prirucka/psani">text o psaní</a> na Vzhůru dolů, článek <a href="https://www.lupa.cz/clanky/nova-metrika-rychlosti-webu-inp-jak-zlepsit-uzivatelskou-zkusenost-a-treba-i-zvysit-konverze/">o INP na Lupě</a> nebo po čase anglický <a href="https://calendar.perfplanet.com/2024/dont-let-your-redesign-ruin-performance-a-case-study/">text pro WebPerf Calendar</a>. Hodně taky <a href="https://www.linkedin.com/in/martinmichalek/">píšu na LinkedIn</a>, který se zároveň snažím zkrotit, aby mi nabízel méně bullshitu a více obsahu. Psát na socsítě mě baví. Třeba se to jednou bude dát i číst.</li>
+<li>Udělal jsem 8 <a href="https://www.youtube.com/playlist?list=PLOs14ZGnaZuvmYRYnRd9qXXLQXTKPfOyj">přednášek</a> a byl hostem 3 rozhovorů. Vyzdvihl bych hlavně přednášky pro <a href="https://www.slideshare.net/slideshow/seo-restart-2024-martin-michalek-nova-metrika-rychlosti-inp-a-prakticke-tipy-jak-ji-zlepsit/266887596">SEO Restart o INP</a>, talk na našem <a href="https://www.youtube.com/watch?v=xem_YPyB-zQ\&amp;list=PLOs14ZGnaZuvmYRYnRd9qXXLQXTKPfOyj\&amp;index=4\&amp;t=3s">FrontKon 2024</a> a povídání pro <a href="https://www.youtube.com/watch?v=yXzQThSLfHE\&amp;list=PLOs14ZGnaZuvmYRYnRd9qXXLQXTKPfOyj\&amp;index=1\&amp;t=240s">Socials podcast</a>. Vzal jsem skoro všechna pozvánky a bylo jich hodně. Letos bych si rád více zalezl do ulity, více psal, vyvíjel. A manažoval a podnikal, jasně.</li>
+<li>V PageSpeed.cz jsme loni pro poradenství získali kolem 30 nových klientů včetně značek jako je SIKO nebo Heureka.cz. Oficiálně jsme začali prodávat <a href="https://app.pagespeed.cz/plus">placenou verzi monitoringu PLUS</a> a vydali <a href="https://docs.pagespeed.cz/blog">5 nových verzí</a>. Máme plány, které mají ambici a tým skvěle šlape.</li>
+<li>S rodinou jsme strávili 14 dní na vlastní pěst v <a href="https://www.linkedin.com/posts/martinmichalek_2fa-activity-7221046698767192064-xKUv?utm_source=share\&amp;utm_medium=member_desktop">Tanzanii</a>, odkud jsme si přivezli desítky historek, někdy fakt dobrodružných. Stal se mi tam obří kulturní šok, i přes to, že jsem celý rok trénoval ježděním do Brna.</li>
+<li>Pořídil jsem si gravela, což byla nejlepší investice do sebe celého roku.</li>
+<li>Přečetl jsem skoro všech šest dílů <a href="https://www.databazeknih.cz/serie/duna-86">Duny</a>, které napsal Frank Herbert, a jsem z toho nadšený. Viděl jsem minimálně dva těžce deptající filmy (Zóna zájmu a Prezidentka). Můj přehnaný životní optimismus tohle docela potřebuje.</li>
+</ul>
+<p>Ne všechno se mi povedlo, to je jasné. Plánovaný skokový posun podcastu odkládáme na letošek. Sportování, v míře, které dělám, přestává stačit u týpka, kterému táhne na padesát, takže se zdá, že v téhle životní fázi budu muset trošku zintenzivnit péči o sebe. Pořád taky pořádně nevím, co udělám se Vzhůru dolů, když už tady tolik nepíšu.</p>
+<p>Celkově vzato mám ovšem za to, že rok 2024 pro mě byl velmi úspěšný a přelomový. Jsem zvědavý, co mi přinese letošek.</p>
+<p><em>Článek můžete komentovat na <a href="https://www.linkedin.com/posts/martinmichalek_p%C5%99echod-z-tv%C5%AFrce-na-mana%C5%BEera-m%C5%AFj-p%C5%99elomov%C3%BD-activity-7281943575162982400-1nke/?utm_source=share&amp;utm_medium=member_desktop">LinkedInu</a>, <a href="https://www.facebook.com/machal/posts/pfbid0w1JrK8gFet9uy68g4zeuH35hAc61xx4iLmY8GCqtLMRjiyu9o4KWc7wLnoGFBfvyl">Facebooku</a> nebo síti <a href="https://x.com/machal/status/1876178545493647845">X</a>.</em></p><hr /><small><em>Děkuji partnerům Vzhůru dolů. Aktuálně hledají tyto lidi: .</em></small>
+					]]></content:encoded>
+				<pubDate>Mon, 06 Jan 2025 00:00:00</pubDate>
+			</item>
+			<item>
+				<title>S Terezou Kosnarovou o inkluzivním designu</title>
+				<link>https://www.vzhurudolu.cz/podcast/252-tereza-kosnarova</link>
+				<guid>https://www.vzhurudolu.cz/podcast/252-tereza-kosnarova</guid>
+					<description>Hostem 57. epizody podcastu ze Vzhůru dolů je Tereza Kosnarová, která sama o sobě na svém (aktuálním) webu říká, že je „průvodkyně na cestě k tvorbě přístupných a smysluplných služeb“.
+Probereme témata jako je cesta k designu služeb, zašmodrchané pojmy jako je UX, CX a service design. O přístupnosti mluvíme jako o základním standardu. Klademe si otázku, zda je univerzální produkt, přístupný všem, vůbec možný.
+V této epizodě se dozvíte, jak přístupnost a inkluzivní design služeb, jako je Rohlik.cz nebo Drmax.cz, pozitivně ovlivňují jejich uživatele.
+Diskutujeme také o motivaci lidí investovat do inkluzivního designu, blížícím se European Accessibility Act (EAA) a možnostech vzdělávání se v této oblasti.
+Níže přidáváme tipy na knihy, videa i inspirativní osobnosti.
+
+Živý podcast Vzhůru dolů! Doražte na Vánoční speciál a natáčení dvou dílů s Rikim Fridrichem a Petrem Burianem do pražského Productboardu. 20. 12. 17:30. Více informací a registrace.
+
+Podcast
+
+
+
+Celá epizoda na videu
+
+
+
+Host: Tereza Kosnarová
+
+
+
+
+
+Tereza Kosnarová je zkušená výzkumnice a designérka služeb. S více než 15 lety praxe v oboru uživatelského výzkumu a designu pomáhá organizacím zlepšovat jejich designové procesy a vytvářet přístupné a smysluplné služby. Tereza je certifikovanou specialistkou na přístupnost (CPACC) a ve své práci klade důraz na inkluzivní design. Aktivně se podílí na vzdělávání designérů prostřednictvím platformy UXworkshopy.cz. 
+terezakosnarova.cz – LinkedIn
+
+
+Odkazy k tématu přístupnosti a inkluzivního designu od Terezy
+Lidé na Linkedinu, kteří se tématu v ČR věnují:
+
+Tereza Kosnarová
+Radek Pavlíček
+Ondřej Pohl
+Mariana Chytilová
+Dominika Potužáková
+Petra Kutálková
+Kristýna Marková
+
+Vzdělávání a kurzy:
+
+Materiály k přístupnosti od IAAP
+Microsoft Inclusive Design Framework
+Workshop inkluzivního designu (Praha, On-line)
+
+IAAP certifikace (pokud to myslíte s přístupností vážně):
+
+Informace o certifikacích
+Přípravné kurzy
+
+Accessibility maturity:
+
+The Universal Score
+DOGA inclusive design assessment
+W3C Accessibility Maturity Model
+
+Obsah po minutách
+
+Robinův ostrý tip: knizeWeb ostrý jako břitva je 10 let (1:55)
+Martinův tip:videa z FrontKonu (4:20)
+Tereza Kosnarová (7:00)
+Cesta Terezy k designu služeb a inkluzivnímu designu (8:30)
+Pojmy: UX, CX, service design (13:30)
+Přístupnost a inkluzivní design (15:50)
+Co je „univerzální produkt“ a je možné jej dosáhnout? (18:00)
+Ještě zpět k přístupnosti a inkluzivním design (22:20)
+„Přístupnost je naprostá baseline“ (23:40)
+Může být počáteční nepřístupnost validní? (začátky Instagramu) (28:00)
+Rohlík.cz a doručovací služby a přístupnost (31:00)
+Parkovací místa a kupé pro ženy (35:30)
+Motivace lidí investovat čas a peníze do inkluzivního designu (37:00)
+The European Accessibility Act (EAA) (41:00)
+Typy argumentace pro přístupnost a inkluzivní design (45:00)
+Vzdělávání v oblasti (CPACC atd.) a koho sledovat? (49:00)
+Nad dopisy a sekačkami posluchačů (58:30)
+
+Odebírejte podcast ze Vzhůru dolů
+Spotify – Apple Podcasts – TuneIn – RSS podcastů
+Nápad? Chyba? Připomínka? Pochvala? Pište nám na e-mail podcast@vzhurudolu.cz nebo kamkoliv jinam. Hlavně, aby se to k nám dostalo.
+Přejeme vám příjemný poslech!</description>
+					<content:encoded><![CDATA[
+						<p>Hostem 57. epizody podcastu ze Vzhůru dolů je Tereza Kosnarová, která sama o sobě na svém (aktuálním) webu říká, že je „průvodkyně na cestě k tvorbě přístupných a smysluplných služeb“.</p>
+<p>Probereme témata jako je cesta k designu služeb, zašmodrchané pojmy jako je UX, CX a service design. O přístupnosti mluvíme jako o základním standardu. Klademe si otázku, zda je univerzální produkt, přístupný všem, vůbec možný.</p>
+<p>V této epizodě se dozvíte, jak přístupnost a inkluzivní design služeb, jako je Rohlik.cz nebo Drmax.cz, pozitivně ovlivňují jejich uživatele.</p>
+<p>Diskutujeme také o motivaci lidí investovat do inkluzivního designu, blížícím se European Accessibility Act (EAA) a možnostech vzdělávání se v této oblasti.</p>
+<p>Níže přidáváme tipy na knihy, videa i inspirativní osobnosti.</p>
+<div class="box bg-interactive ta-c">
+<p><strong>Živý podcast Vzhůru dolů!</strong> Doražte na Vánoční speciál a natáčení dvou dílů s Rikim Fridrichem a Petrem Burianem do pražského Productboardu. 20. 12. 17:30. <a href="https://talkbase.io/event/vzhuru-dolu-podcast-zive-3/productboard">Více informací a registrace</a>.</p>
+</div>
+<h2 id="podcast">Podcast</h2>
+<div class="rwd-media">
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/6S1W7PNggoPyNsR9PMsVY4?utm_source=generator&amp;theme=0" width="100%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+</div>
+<h2 id="video">Celá epizoda na videu</h2>
+<div class="rwd-media">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IgLQdtDtTDs?si=zC6Yc4CFq1THTyso" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+<h2 id="host">Host: Tereza Kosnarová</h2>
+<div class="row f-6 mt-0 mb-1-5">
+<div class="col w-25-xs">
+<p><img src="https://res.cloudinary.com/vzhurudolu-cz/image/upload/v1733994837/tereza_dvculw.jpg" alt="Tereza Kosnarová" /></p>
+</div>
+<div class="col w-75-xs">
+<p>Tereza Kosnarová je zkušená výzkumnice a designérka služeb. S více než 15 lety praxe v oboru uživatelského výzkumu a designu pomáhá organizacím zlepšovat jejich designové procesy a vytvářet přístupné a smysluplné služby. Tereza je certifikovanou specialistkou na přístupnost (<a href="https://www.accessibilityassociation.org/s/certified-professional">CPACC</a>) a ve své práci klade důraz na inkluzivní design. Aktivně se podílí na vzdělávání designérů prostřednictvím platformy <a href="https://www.uxworkshopy.cz/">UXworkshopy.cz</a>. </p>
+<p><a href="https://www.terezakosnarova.cz/">terezakosnarova.cz</a> –<a href="https://www.linkedin.com/in/tkosnarova/"> LinkedIn</a></p>
+</div>
+</div>
+<h2 id="h.eh78fvqoiqgw">Odkazy k tématu přístupnosti a inkluzivního designu od Terezy</h2>
+<p>Lidé na Linkedinu, kteří se tématu v ČR věnují:</p>
+<ul>
+<li><a href="https://www.linkedin.com/in/tkosnarova/">Tereza Kosnarová</a></li>
+<li><a href="https://www.linkedin.com/in/radekpavlicek/">Radek Pavlíček</a></li>
+<li><a href="https://www.linkedin.com/in/ondrejpohl/">Ondřej Pohl</a></li>
+<li><a href="https://www.linkedin.com/in/mariana-chytilova-155581172/">Mariana Chytilová</a></li>
+<li><a href="https://www.linkedin.com/in/dominikapotuzakova/">Dominika Potužáková</a></li>
+<li><a href="https://www.linkedin.com/in/kutalkovain/">Petra Kutálková</a></li>
+<li><a href="https://www.linkedin.com/in/kristy-em/">Kristýna Marková</a></li>
+</ul>
+<p>Vzdělávání a kurzy:</p>
+<ul>
+<li><a href="https://www.accessibilityassociation.org/resource/CPACCBokv3">Materiály k přístupnosti od IAAP</a></li>
+<li><a href="https://inclusive.microsoft.design/">Microsoft Inclusive Design Framework</a></li>
+<li><a href="https://www.uxworkshopy.cz/inkluzivni-design">Workshop inkluzivního designu</a> (Praha, On-line)</li>
+</ul>
+<p>IAAP certifikace (pokud to myslíte s přístupností vážně):</p>
+<ul>
+<li><a href="https://www.accessibilityassociation.org/s/certification">Informace o certifikacích</a></li>
+<li><a href="https://dequeuniversity.com/class/iaap-certification-quick-guide/introduction">Přípravné kurzy</a></li>
+</ul>
+<p>Accessibility maturity:</p>
+<ul>
+<li><a href="https://www.universalscore.global/">The Universal Score</a></li>
+<li><a href="https://inclusive-design-assessment.doga.no/">DOGA inclusive design assessment</a></li>
+<li><a href="https://www.w3.org/TR/maturity-model/">W3C Accessibility Maturity Model</a></li>
+</ul>
+<h2 id="obsah">Obsah po minutách</h2>
+<ul>
+<li>Robinův ostrý tip: knize<a href="https://www.houseofrezac.com/kniha">Web ostrý jako břitva</a> je 10 let <strong>(1:55)</strong></li>
+<li>Martinův tip:<a href="https://www.youtube.com/@FrontendistiCz/playlists">videa z FrontKonu</a> <strong>(4:20)</strong></li>
+<li><a href="https://www.terezakosnarova.cz/">Tereza Kosnarová</a> <strong>(7:00)</strong></li>
+<li>Cesta Terezy k designu služeb a inkluzivnímu designu <strong>(8:30)</strong></li>
+<li>Pojmy: UX, CX, service design <strong>(13:30)</strong></li>
+<li>Přístupnost a inkluzivní design <strong>(15:50)</strong></li>
+<li>Co je „univerzální produkt“ a je možné jej dosáhnout? <strong>(18:00)</strong></li>
+<li>Ještě zpět k přístupnosti a inkluzivním design <strong>(22:20)</strong></li>
+<li>„Přístupnost je naprostá baseline“ <strong>(23:40)</strong></li>
+<li>Může být počáteční nepřístupnost validní? (začátky Instagramu) <strong>(28:00)</strong></li>
+<li><a href="https://www.rohlik.cz">Rohlík.cz</a> a doručovací služby a přístupnost <strong>(31:00)</strong></li>
+<li>Parkovací místa a kupé pro ženy <strong>(35:30)</strong></li>
+<li>Motivace lidí investovat čas a peníze do inkluzivního designu <strong>(37:00)</strong></li>
+<li><a href="https://ec.europa.eu/social/main.jsp?catId=1202\&amp;intPageId=5581\&amp;langId=en">The European Accessibility Act (EAA)</a> <strong>(41:00)</strong></li>
+<li>Typy argumentace pro přístupnost a inkluzivní design <strong>(45:00)</strong></li>
+<li>Vzdělávání v oblasti (<a href="https://www.accessibilityassociation.org/s/certified-professional">CPACC</a> atd.) a koho sledovat? <strong>(49:00)</strong></li>
+<li>Nad dopisy a sekačkami posluchačů <strong>(58:30)</strong></li>
+</ul>
+<h2 id="h.i2t9kodjz6b">Odebírejte podcast ze Vzhůru dolů</h2>
+<p><a href="https://open.spotify.com/show/1G2kH2YrIwD9BABg4L7xGC">Spotify</a> – <a href="https://itunes.apple.com/cz/podcast/vzhuru-dolu-podcast/id1176274658">Apple Podcasts</a> – <a href="https://tunein.com/podcasts/Technology-News/Vzhuru-dolu-podcast-p1177693/">TuneIn</a> – <a href="https://anchor.fm/s/82312eb4/podcast/rss">RSS podcastů</a></p>
+<p>Nápad? Chyba? Připomínka? Pochvala? Pište nám na e-mail <a href="mailto:podcast@vzhurudolu.cz">podcast@vzhurudolu.cz</a> nebo kamkoliv jinam. Hlavně, aby se to k nám dostalo.</p>
+<p>Přejeme vám příjemný poslech!</p>
+					]]></content:encoded>
+				<pubDate>Thu, 12 Dec 2024 00:00:00</pubDate>
+			</item>
+	</channel>
+</rss>
