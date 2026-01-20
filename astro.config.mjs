@@ -11,6 +11,7 @@ import { rehypePriruckaLinks } from './src/utils/rehype-prirucka-links.ts';
 import { rehypeMarkdownAttribute } from './src/utils/rehype-markdown-attribute.ts';
 import { rehypePriruckaImages } from './src/utils/rehype-prirucka-images.ts';
 import { rehypeAdSnippets } from './src/utils/rehype-ad-snippets.ts';
+import { rehypeRemoveEbookOnly } from './src/utils/rehype-remove-ebook-only.ts';
 import { vitePluginPriruckaImages } from './vite-plugin-prirucka-images.ts';
 
 // https://astro.build/config
@@ -29,10 +30,12 @@ export default defineConfig({
       allowDangerousHtml: true,
     },
     // rehype-raw musí být PRVNÍ, aby převedl raw HTML na HAST uzly
+    // rehypeRemoveEbookOnly musí být PO rehype-raw, ale PŘED rehypeMarkdownAttribute, aby odstranil elementy před zpracováním markdown
     // rehypeMarkdownAttribute musí být PO rehype-raw, aby mohl zpracovat HTML elementy
     // rehypePriruckaImages musí být PO rehype-raw, aby mohl zpracovat HTML elementy
     rehypePlugins: [
       rehypeRaw, // Převod raw HTML na HAST uzly
+      rehypeRemoveEbookOnly, // Odstranění elementů s třídou "ebook-only" (slouží jen pro generování ebooků) - MUSÍ BÝT PŘED rehypeMarkdownAttribute
       rehypeMarkdownAttribute, // Zpracování markdown="1" atributů
       rehypePriruckaImages, // Transformace cest k obrázkům příručky
       rehypeAdSnippets(), // Nahrazení <!-- AdSnippet --> komentářů HTML snippety podle kategorií
