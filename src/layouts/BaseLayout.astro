@@ -5,6 +5,8 @@ interface Props {
   bodyClass?: string;
   ogType?: 'website' | 'article' | 'book' | 'profile';
   ogUrl?: string;
+  ogTitle?: string;
+  ogDescription?: string;
   ogImage?: string | string[];
   canonicalUrl?: string;
 }
@@ -15,6 +17,8 @@ const {
   bodyClass = '',
   ogType = 'website',
   ogUrl = Astro.url.href,
+  ogTitle,
+  ogDescription,
   ogImage = [
     'https://www.vzhurudolu.cz/assets/img/content/src/socials/vd-soc-uni-1.jpg',
     'https://www.vzhurudolu.cz/assets/img/content/src/socials/vd-soc-uni-2.jpg',
@@ -24,6 +28,8 @@ const {
 
 const finalOgImage = Array.isArray(ogImage) ? ogImage : [ogImage];
 const finalCanonicalUrl = canonicalUrl || ogUrl;
+const finalOgTitle = ogTitle || title;
+const finalOgDescription = ogDescription || description;
 ---
 
 <!DOCTYPE html>
@@ -35,8 +41,8 @@ const finalCanonicalUrl = canonicalUrl || ogUrl;
     <meta name="description" content={description} />
 
     <!-- Socials -->
-    <meta property="og:title" content={title} />
-    <meta property="og:description" content={description} />
+    <meta property="og:title" content={finalOgTitle} />
+    <meta property="og:description" content={finalOgDescription} />
     {finalOgImage.map((img) => (
       <meta property="og:image" content={img} />
     ))}

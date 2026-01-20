@@ -7,6 +7,9 @@ import Footer from '../../components/Footer.astro';
 import ArticleHeader from '../../components/ArticleHeader.astro';
 import ArticleFooter from '../../components/ArticleFooter.astro';
 import { categories, type CategoryConfig } from '../../data/categories';
+import { enrichPriruckaEntry } from '../../utils/extract-content-fallback';
+import { readFileSync } from 'fs';
+import { join } from 'path';
 
 export async function getStaticPaths() {
   try {
@@ -38,6 +41,31 @@ interface Props {
 }
 
 const { item } = Astro.props as Props;
+
+// Načíst raw markdown obsah pro extrakci informací
+let enrichedData = item.data;
+try {
+  // Použít slug (název souboru) místo id pro nalezení souboru
+  const filePath = join(process.cwd(), 'src/content/prirucka', `${item.slug}.md`);
+  const rawContent = readFileSync(filePath, 'utf-8');
+  // Odstranit front matter z raw contentu
+  const frontMatterEnd = rawContent.indexOf('---', 3);
+  const markdownContent = frontMatterEnd !== -1 ? rawContent.substring(frontMatterEnd + 3) : rawContent;
+  
+  // Obohacení dat o extrahované informace z markdownu
+  enrichedData = await enrichPriruckaEntry(item, markdownContent);
+  
+  // Debug: zobrazit extrahované hodnoty
+  if (process.env.NODE_ENV === 'development') {
+    console.log(`[${item.slug}] Extracted H1:`, enrichedData.heading);
+    console.log(`[${item.slug}] Extracted perex:`, enrichedData.perex?.substring(0, 50));
+    console.log(`[${item.slug}] Final title:`, enrichedData.title);
+  }
+} catch (error) {
+  // Pokud se nepodaří načíst soubor, použijeme původní data
+  console.warn(`Could not enrich entry ${item.slug}:`, error);
+}
+
 const { Content } = await item.render();
 
 // Use id from frontmatter for URL
@@ -63,12 +91,22 @@ function getCategoriesForPost(postTags: string[] = []): CategoryConfig[] {
 }
 
 const postCategories = getCategoriesForPost(item.data.tags || []);
+
+// Použít obohacená data pro zobrazení
+// Priorita: enrichedData.heading > enrichedData.title > item.data.title
+const displayTitle = enrichedData.heading || enrichedData.title || item.data.title;
+const displayDescription = enrichedData.description || item.data.description || displayTitle;
+// Pro OG title použít heading nebo title (ne id jako fallback)
+const displayOgTitle = enrichedData.og_title || enrichedData.heading || enrichedData.title || displayTitle;
+const displayOgDescription = enrichedData.og_description || enrichedData.description || displayDescription;
 ---
 
 <BaseLayout
-  title={item.data.title}
-  description={item.data.description || item.data.title}
+  title={displayTitle}
+  description={displayDescription}
   ogType="article"
+  ogTitle={displayOgTitle}
+  ogDescription={displayOgDescription}
   ogUrl={`https://www.vzhurudolu.cz/prirucka/${urlId}`}
   bodyClass="section-prirucka"
 >
@@ -161,7 +199,7 @@ const postCategories = getCategoriesForPost(item.data.tags || []);
 
   <main role="main" id="main" aria-label="Hlavní obsah">
     <ArticleHeader 
-      title={item.data.title}
+      title={displayTitle || enrichedData.heading || item.data.title}
       author={item.data.author || 'Martin Michálek'}
       date={item.data.date}
     />

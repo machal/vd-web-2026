@@ -2,7 +2,7 @@
 id: principy-rwd
 heading: ''
 perex: ''
-published: false
+published: true
 category: []
 category_highlight: false
 include_rss: false
