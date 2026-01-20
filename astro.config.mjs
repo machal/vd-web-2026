@@ -3,15 +3,15 @@ import sitemap from '@astrojs/sitemap';
 import rehypeRaw from 'rehype-raw';
 import remarkGfm from 'remark-gfm';
 import { remarkHeadingIds } from './src/utils/remark-heading-ids.ts';
-import { remarkMarkdownAttribute } from './src/utils/remark-markdown-attribute.ts';
+import { remarkProcessMarkdownAttributes } from './src/utils/remark-process-markdown-attributes.ts';
 import { remarkPriruckaImages } from './src/utils/remark-prirucka-images.ts';
 import { rehypeRemoveFirstH1 } from './src/utils/rehype-remove-first-h1.ts';
+import { rehypeRemoveEbookOnly } from './src/utils/rehype-remove-ebook-only.ts';
 import { rehypeHeadingAnchors } from './src/utils/rehype-heading-anchors.ts';
 import { rehypePriruckaLinks } from './src/utils/rehype-prirucka-links.ts';
-import { rehypeMarkdownAttribute } from './src/utils/rehype-markdown-attribute.ts';
 import { rehypePriruckaImages } from './src/utils/rehype-prirucka-images.ts';
 import { rehypeAdSnippets } from './src/utils/rehype-ad-snippets.ts';
-import { rehypeRemoveEbookOnly } from './src/utils/rehype-remove-ebook-only.ts';
+import { rehypeConnectedElements } from './src/utils/rehype-connected-elements.ts';
 import { vitePluginPriruckaImages } from './vite-plugin-prirucka-images.ts';
 
 // https://astro.build/config
@@ -24,24 +24,30 @@ export default defineConfig({
     }),
   ],
   markdown: {
-    remarkPlugins: [remarkGfm, remarkHeadingIds, remarkMarkdownAttribute, remarkPriruckaImages],
+    // FÁZE 1: Základní HTML generování z markdownu
+    // Pouze základní parsování markdownu a zpracování markdown="1" atributů
+    remarkPlugins: [
+      remarkGfm, // GitHub Flavored Markdown (standardní rozšíření)
+      remarkPriruckaImages, // Transformace cest k obrázkům - nutné před zpracováním Astro assets (pouze úprava cest, ne transformace obsahu)
+      remarkProcessMarkdownAttributes, // Zpracování markdown="1" atributů - potřebné pro generování základního HTML
+      // VYPNUTO - transformace budou až na hotovém HTML:
+      // remarkHeadingIds, // Přesunuto do rehype fáze (rehypeHeadingAnchors)
+    ],
     // Povolit raw HTML v Markdownu (nutné pro markdown="1" atributy)
     remarkRehype: {
       allowDangerousHtml: true,
     },
-    // rehype-raw musí být PRVNÍ, aby převedl raw HTML na HAST uzly
-    // rehypeRemoveEbookOnly musí být PO rehype-raw, ale PŘED rehypeMarkdownAttribute, aby odstranil elementy před zpracováním markdown
-    // rehypeMarkdownAttribute musí být PO rehype-raw, aby mohl zpracovat HTML elementy
-    // rehypePriruckaImages musí být PO rehype-raw, aby mohl zpracovat HTML elementy
+    // FÁZE 2: Transformace na hotovém HTML
     rehypePlugins: [
-      rehypeRaw, // Převod raw HTML na HAST uzly
-      rehypeRemoveEbookOnly, // Odstranění elementů s třídou "ebook-only" (slouží jen pro generování ebooků) - MUSÍ BÝT PŘED rehypeMarkdownAttribute
-      rehypeMarkdownAttribute, // Zpracování markdown="1" atributů
-      rehypePriruckaImages, // Transformace cest k obrázkům příručky
-      rehypeAdSnippets(), // Nahrazení <!-- AdSnippet --> komentářů HTML snippety podle kategorií
-      rehypeRemoveFirstH1,
-      rehypeHeadingAnchors,
-      rehypePriruckaLinks,
+      rehypeRaw, // Převod raw HTML na HAST uzly (nutné pro zobrazení HTML v markdownu)
+      rehypePriruckaImages, // Transformace cest k obrázkům v HTML elementech (z ../dist/images/ na /prirucka/images/)
+      rehypeRemoveEbookOnly, // Odstranění elementů s třídou "ebook-only" (včetně jejich dětí)
+      rehypeConnectedElements, // Transformace elementů s třídou "connected" (přidání tříd, úprava obrázků)
+      rehypeHeadingAnchors, // Přidání anchorů k nadpisům (odstraní {#id} z textu, opraví duplikované ID)
+      // Ostatní transformace jsou vypnuté pro testování
+      // rehypeAdSnippets(), // Nahrazení <!-- AdSnippet --> komentářů HTML snippety podle kategorií
+      // rehypeRemoveFirstH1, // Odstranění prvního H1
+      // rehypePriruckaLinks, // Transformace odkazů příručky
     ],
   },
   vite: {

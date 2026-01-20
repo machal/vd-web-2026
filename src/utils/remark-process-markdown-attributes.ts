@@ -11,14 +11,17 @@ import { remarkHeadingIds } from './remark-heading-ids.ts';
 
 /**
  * Remark plugin, který zpracovává HTML elementy s atributem markdown="1"
- * v markdown AST a zpracovává jejich obsah jako Markdown.
+ * a zpracovává jejich obsah jako Markdown PŘED převodem na rehype.
+ * 
+ * Tento plugin běží v remark fázi, aby zajistil, že markdown="1" je zpracováno
+ * jako součást generování základního HTML, ne jako transformace.
  * 
  * Transformuje:
  * <div markdown="1">- [Link](url.md)</div>
  * 
- * Na: markdown AST s zpracovaným obsahem
+ * Na: HTML s zpracovaným obsahem (v remark fázi jako HTML string)
  */
-export const remarkMarkdownAttribute: Plugin<[], Root> = () => {
+export const remarkProcessMarkdownAttributes: Plugin<[], Root> = () => {
   return (tree) => {
     // Vytvořit unified pipeline pro zpracování Markdownu
     const processor = unified()
@@ -28,15 +31,13 @@ export const remarkMarkdownAttribute: Plugin<[], Root> = () => {
       .use(remarkRehype, { allowDangerousHtml: true })
       .use(rehypeStringify, { allowDangerousHtml: true });
 
-    // Projít všechny HTML elementy v markdown AST
+    // Najít všechny HTML uzly v markdown AST
     visit(tree, 'html', (node: any, index: number | undefined, parent: any) => {
       if (!parent || index === undefined) return;
       
-      // Zkontrolovat, zda HTML obsahuje element s markdown="1" atributem
       const htmlContent = node.value || '';
       
       // Najít všechny elementy s markdown="1" atributem
-      // Použijeme jednodušší přístup - najdeme otevírací tag a pak najdeme odpovídající uzavírací tag
       const markdownAttrRegex = /<(\w+)([^>]*?)\s+markdown=["']1["']([^>]*?)>/gi;
       let match;
       const replacements: Array<{ start: number; end: number; replacement: string }> = [];

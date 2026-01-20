@@ -1,10 +1,12 @@
 import type { Plugin } from 'unified';
 import type { Root } from 'hast';
-import { visitParents } from 'unist-util-visit-parents';
+import { visit } from 'unist-util-visit';
 
 /**
  * Rehype plugin, který odstraní všechny elementy s třídou "ebook-only" z HTML.
  * Tyto elementy slouží pouze pro generování ebooků a neměly by se zobrazovat na webu.
+ * 
+ * Odstraní celý element včetně všech jeho dětí.
  */
 export const rehypeRemoveEbookOnly: Plugin<[], Root> = () => {
   return (tree) => {
@@ -40,19 +42,14 @@ export const rehypeRemoveEbookOnly: Plugin<[], Root> = () => {
       return false;
     }
 
-    // Shromáždit všechny uzly k odstranění s jejich rodiči a indexy
+    // Shromáždit všechny uzly k odstranění
     const nodesToRemove: Array<{ node: any; parent: any; index: number }> = [];
 
-    // Najít všechny uzly s třídou ebook-only pomocí visitParents
-    visitParents(tree, (node: any, ancestors: any[]) => {
-      if (node.type === 'element' && hasEbookOnlyClass(node)) {
-        // Najít rodiče - poslední v ancestors je přímý rodič, nebo tree pokud není žádný
-        const parent = ancestors.length > 0 ? ancestors[ancestors.length - 1] : tree;
-        if (parent && parent.children && Array.isArray(parent.children)) {
-          const index = parent.children.indexOf(node);
-          if (index !== -1) {
-            nodesToRemove.push({ node, parent, index });
-          }
+    // Najít všechny uzly s třídou ebook-only
+    visit(tree, 'element', (node: any, index: number | undefined, parent: any) => {
+      if (hasEbookOnlyClass(node)) {
+        if (parent && parent.children && Array.isArray(parent.children) && index !== undefined) {
+          nodesToRemove.push({ node, parent, index });
         }
       }
     });
