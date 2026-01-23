@@ -6,6 +6,7 @@ perex: 'Určí, kde se v rámci elementu nachází začátek osy pro počítán�
 published: true
 category:
   - css3
+  - css
 og_title: 'CSS3 Background Origin'
 og_description: 'Určí, kde se v rámci elementu nachází začátek osy pro počítání rozměrů a pozic vlastností.'
 og_type: article

@@ -6,6 +6,7 @@ perex: 'Transformace tvaru objektu ve 2D i 3D prostoru pomocí CSS.'
 published: true
 category:
   - css3
+  - css
 og_title: 'CSS3 Transforms'
 og_description: 'Transformace tvaru objektu ve 2D i 3D prostoru pomocí CSS.'
 og_type: article

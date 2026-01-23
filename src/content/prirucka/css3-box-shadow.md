@@ -6,6 +6,7 @@ perex: 'Nejen obvyklý stín pod elementem, ale i uvnitř elementu nebo plastick
 published: true
 category:
   - css3
+  - css
 og_title: 'CSS3 Box Shadow'
 og_description: 'Nejen obvyklý stín pod elementem, ale i uvnitř elementu nebo plastický efekt přes element.'
 og_type: article

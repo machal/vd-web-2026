@@ -4,7 +4,8 @@ heading: 'Weby bez CSS: Existuje to vůbec? A jak to testovat?'
 date: 2018-03-04
 perex: 'I váš web se možná někde zobrazuje bez vašich pečlivě připravených CSS.'
 published: true
-category: []
+category:
+  - css
 no_ads: false
 og_title: 'Weby bez CSS: Existuje to vůbec? A jak to testovat?'
 og_description: 'I váš web se možná někde zobrazuje bez vašich pečlivě připravených CSS.'

@@ -6,6 +6,7 @@ perex: 'Obrázkový rámeček. Způsob jak namísto nativních rámečků kolem 
 published: true
 category:
   - css3
+  - css
 og_title: 'CSS3 Border Image'
 og_description: 'Obrázkový rámeček. Způsob jak namísto nativních rámečků kolem elementu vykreslit pomocí obrázku naše vlastní.'
 og_type: article

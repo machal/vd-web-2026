@@ -6,6 +6,7 @@ perex: 'Vnitřní nebo vnější stín textu.'
 published: true
 category:
   - css3
+  - css
 og_title: 'CSS3 Text Shadow'
 og_description: 'Vnitřní nebo vnější stín textu.'
 og_type: article

@@ -6,6 +6,7 @@ perex: 'Změna velikosti obrázku na pozadí elementu.'
 published: true
 category:
   - css3
+  - css
 og_title: 'CSS3 Background Size'
 og_description: 'Změna velikosti obrázku na pozadí elementu.'
 og_type: article

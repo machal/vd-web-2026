@@ -7,7 +7,8 @@ excerpt: 'Minule jsme si s preprocesory poprvé podali ruku a dneska je necháme
 postStatus: Published
 authorID: 1
 sectionID: 1
-category: []
+category:
+  - css
 no_ads: false
 include_rss: true
 category_highlight: true

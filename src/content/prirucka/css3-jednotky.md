@@ -6,6 +6,7 @@ perex: 'Rozměr, který odpovídá hodnotě font-size na root elementu, tedy &lt
 published: true
 category:
   - css3
+  - css
 og_title: 'CSS3 jednotky'
 og_description: 'Rozměr, který odpovídá hodnotě font-size na root elementu, tedy &lt;html&gt;. Jsou to root-emka, tedy varianta známé jednotky em, která nevychází z velikosti fontu rodičovského elementu.'
 og_type: article

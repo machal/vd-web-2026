@@ -6,6 +6,7 @@ perex: 'CSS3 přichází s armádou nových selektorů. Nejjednodušší bude po
 published: true
 category:
   - css3
+  - css
 og_title: 'CSS3 selektory'
 og_description: 'CSS3 přichází s armádou nových selektorů. Nejjednodušší bude podívat se na ně optikou toho jakou verzi Internet Exploreru na svých projektech musíte podporovat, abyste je mohli použít.'
 og_type: article

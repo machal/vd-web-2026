@@ -6,6 +6,7 @@ perex: 'Vrstvení více obrázků nebo barev na pozadí jednoho elementu.'
 published: true
 category:
   - css3
+  - css
 og_title: 'CSS3 Multiple Backgrounds'
 og_description: 'Vrstvení více obrázků nebo barev na pozadí jednoho elementu.'
 og_type: article

@@ -7,6 +7,7 @@ published: true
 category:
   - rwd
   - etc
+  - css
 category_highlight: true
 include_rss: true
 no_ads: false

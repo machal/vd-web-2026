@@ -7,7 +7,8 @@ excerpt: 'Volné pokračování mého 6 let starého článku o udržovatelném 
 postStatus: Published
 authorID: 1
 sectionID: 1
-category: []
+category:
+  - css
 no_ads: false
 og_title: 'Organizace CSS, verze 2014'
 og_description: 'Volné pokračování mého 6 let starého článku o udržovatelném stylopise na Zdrojáku. Ten jsem psal v roce kdy Obamu inaugurovali prezidentem a zemřel Michael Jackson. 2009. Toto letí!'

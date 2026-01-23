@@ -6,6 +6,7 @@ perex: 'Zakulacení rohů elementu.'
 published: true
 category:
   - css3
+  - css
 og_title: 'CSS3 Border Radius'
 og_description: 'Zakulacení rohů elementu.'
 og_type: article

@@ -3,7 +3,8 @@ id: css-grid-formatting-context
 heading: ''
 perex: ''
 published: false
-category: []
+category:
+  - css
 category_highlight: false
 include_rss: false
 no_ads: false

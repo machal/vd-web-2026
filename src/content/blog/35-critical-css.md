@@ -7,6 +7,8 @@ excerpt: 'Vkládání nezbytného CSS v inline podobě přímo do HTML kódu je 
 postStatus: Published
 authorID: 1
 sectionID: 1
+category:
+  - css
 og_title: 'Critical CSS a zrychlení zobrazení stránky'
 og_description: 'Vkládání nezbytného CSS v inline podobě přímo do HTML kódu je způsob jak urychlit zobrazení stránky.'
 og_type: article

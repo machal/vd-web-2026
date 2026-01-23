@@ -7,7 +7,8 @@ excerpt: 'Keith J. Grant napsal moc hezký článek o komentářích v CSS: „T
 postStatus: Published
 authorID: 0
 sectionID: 1
-category: []
+category:
+  - css
 no_ads: false
 og_title: 'Pár poznámek ke komentářům v CSS'
 og_description: 'Keith J. Grant napsal moc hezký článek o komentářích v CSS: „Thoughts on Self-Documenting CSS“. Tady je to nejdůležitější doplněné o mé poznámky.'

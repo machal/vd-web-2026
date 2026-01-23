@@ -6,6 +6,7 @@ perex: 'Vytečkování textu, který přesahuje šířku elementu.'
 published: true
 category:
   - css3
+  - css
 og_title: 'CSS3 Text Overflow'
 og_description: 'Vytečkování textu, který přesahuje šířku elementu.'
 og_type: article

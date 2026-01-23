@@ -7,6 +7,8 @@ excerpt: 'Myslím, že ano. Některé důvody pro preprocesory se totiž vytrati
 postStatus: Published
 authorID: 1
 sectionID: 1
+category:
+  - css
 og_title: 'Směřuje CSS od preprocesingu k postprocesingu?'
 og_description: 'Myslím, že ano. Některé důvody pro preprocesory se totiž vytratily.'
 og_type: article

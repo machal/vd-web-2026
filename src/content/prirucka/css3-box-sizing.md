@@ -6,6 +6,7 @@ perex: 'Změna způsobu počítání šířky a výšky elementu, jinak též ř
 published: true
 category:
   - css3
+  - css
 og_title: 'CSS3 Box Sizing'
 og_description: 'Změna způsobu počítání šířky a výšky elementu, jinak též řečeno box-modelu.'
 og_type: article

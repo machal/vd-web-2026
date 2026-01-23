@@ -7,6 +7,8 @@ excerpt: 'S Robinem jsme Martina pozvali, protože nás zajímaly zkušenosti tv
 postStatus: Published
 authorID: 1
 sectionID: 1
+category:
+  - css
 no_ads: true
 og_title: 'Podcast: S Martinem Držkou z Fakturoidu o utility třídách v CSS'
 og_description: 'S Robinem jsme Martina pozvali, protože nás zajímaly zkušenosti tvůrců oblíbeného fakturačního software s utility třídami.'

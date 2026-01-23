@@ -7,6 +7,8 @@ excerpt: 'Čtete poslední díl seriálu o CSS preprocesorech. Pokusím se vám 
 postStatus: Published
 authorID: 1
 sectionID: 1
+category:
+  - css
 og_title: 'Průvodce CSS preprocesory: který vybrat?'
 og_description: 'Čtete poslední díl seriálu o CSS preprocesorech. Pokusím se vám poradit, zda vybrat LESS, SASS nebo Stylus.'
 og_type: article

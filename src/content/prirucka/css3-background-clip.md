@@ -6,6 +6,7 @@ perex: 'Určuje kde všude se uvnitř elementu vykresluje obrázek na pozadí.'
 published: true
 category:
   - css3
+  - css
 og_title: 'CSS3 Background Clip'
 og_description: 'Určuje kde všude se uvnitř elementu vykresluje obrázek na pozadí.'
 og_type: article

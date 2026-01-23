@@ -7,6 +7,8 @@ excerpt: 'Hlavička na celou výšku okna, video na pozadí a centrované. Na mo
 postStatus: Published
 authorID: 0
 sectionID: 1
+category:
+  - css
 og_title: 'CSS řešení: hlavička s videem na pozadí'
 og_description: 'Hlavička na celou výšku okna, video na pozadí a centrované. Na mobilech video není. Jak na to?'
 og_type: article

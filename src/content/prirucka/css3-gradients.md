@@ -6,6 +6,7 @@ perex: 'Lineární a kruhové barevné přechody.'
 published: true
 category:
   - css3
+  - css
 og_title: 'CSS3 Gradients'
 og_description: 'Lineární a kruhové barevné přechody.'
 og_type: article

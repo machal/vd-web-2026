@@ -7,7 +7,8 @@ excerpt: 'Během spolupráce na nové verzi eshopového řešení ShopSys dělá
 postStatus: Published
 authorID: 0
 sectionID: 1
-category: []
+category:
+  - css
 no_ads: false
 include_rss: true
 category_highlight: true

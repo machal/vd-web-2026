@@ -7,7 +7,8 @@ excerpt: 'Po měsících příprav vám to konečně můžu říct. Můžeme se 
 postStatus: Published
 authorID: 1
 sectionID: 1
-category: []
+category:
+  - css
 no_ads: true
 include_rss: true
 category_highlight: true

@@ -7,6 +7,8 @@ excerpt: 'V článcích o CSS preprocesorech je obvykle argumetováno jejich tec
 postStatus: Published
 authorID: 1
 sectionID: 1
+category:
+  - css
 og_title: 'Průvodce CSS preprocesory: jak vám vylepší pracovní postupy'
 og_description: 'V článcích o CSS preprocesorech je obvykle argumetováno jejich technickými vlastnostmi. Ty jsme rozebrali v minulém díle seriálu.'
 og_type: article

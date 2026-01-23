@@ -3,7 +3,8 @@ id: css-grid-template-rows-columns
 heading: ''
 perex: ''
 published: true
-category: []
+category:
+  - css
 category_highlight: false
 include_rss: false
 no_ads: false

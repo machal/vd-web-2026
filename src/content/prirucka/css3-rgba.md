@@ -6,6 +6,7 @@ perex: 'RGB barva se čtvrtým číslem jež nese informaci o průhlednosti v al
 published: true
 category:
   - css3
+  - css
 og_title: 'CSS3 RGBa'
 og_description: 'RGB barva se čtvrtým číslem jež nese informaci o průhlednosti v alfa kanále.'
 og_type: article

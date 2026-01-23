@@ -6,6 +6,7 @@ perex: 'Prohlížeč vykreslí zrcadlový odlesk pod objektem nebo z jeho strany
 published: false
 category:
   - css3
+  - css
 category_highlight: true
 include_rss: true
 no_ads: false

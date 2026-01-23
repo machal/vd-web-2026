@@ -3,7 +3,8 @@ id: css3-flexbox
 heading: ''
 perex: ''
 published: false
-category: []
+category:
+  - css
 category_highlight: false
 include_rss: false
 no_ads: false

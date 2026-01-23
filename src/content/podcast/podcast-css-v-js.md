@@ -7,6 +7,8 @@ excerpt: 'V dalším podcastu ze Vzhůru dolů jsme se s Robinem zaměřili na t
 postStatus: Published
 authorID: 0
 sectionID: 1
+category:
+  - css
 no_ads: false
 og_title: 'Podcast: S Robinem Pokorným o CSS v Javascriptu'
 og_description: 'V dalším podcastu ze Vzhůru dolů jsme se s Robinem zaměřili na téma tepající mezi frontend kodéry i javascriptovými vývojáři – CSS uvnitř Javascriptu.'

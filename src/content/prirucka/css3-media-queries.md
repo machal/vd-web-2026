@@ -6,6 +6,7 @@ perex: 'Dotazy na média. Podmínka, která se zajistí platnost CSS pravidel je
 published: true
 category:
   - rwd
+  - css
 no_ads: false
 og_title: 'CSS3 Media Queries'
 og_description: 'Dotazy na média. Podmínka, která se zajistí platnost CSS pravidel jen po svém splnění.'

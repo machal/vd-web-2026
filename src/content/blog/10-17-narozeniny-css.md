@@ -7,6 +7,8 @@ excerpt: 'Tohle je fajn vánoční téma, co říkáte? S jedním ze základníc
 postStatus: Published
 authorID: 1
 sectionID: 1
+category:
+  - css
 og_title: 'CSS slaví 17. narozeniny'
 og_description: 'Tohle je fajn vánoční téma, co říkáte? S jedním ze základních stavebních kamenů front-end technologií právě tříská těžká puberta a John Allsopp mu ke sladkým sedmnáctinám napsal moc fajn přání.'
 og_type: article

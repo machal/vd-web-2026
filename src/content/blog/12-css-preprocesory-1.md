@@ -7,6 +7,8 @@ excerpt: 'Co preprocesory jsou, zda jsou pro vás,  jak s nimi začít a pozasta
 postStatus: Published
 authorID: 1
 sectionID: 1
+category:
+  - css
 og_title: 'Průvodce CSS preprocesory: co a jak?'
 og_description: 'Co preprocesory jsou, zda jsou pro vás,  jak s nimi začít a pozastavíme se u oblíbené výmluvy, proč je používat – debugování. První díl seriálu.'
 og_type: article
