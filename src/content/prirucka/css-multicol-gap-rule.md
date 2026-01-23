@@ -56,7 +56,31 @@ A co teď? No, co by…? Vzhůru na jednotlivé vlastnosti.
 
 Šířka výchozí mezery je `1em`. Pokud ji chcete změnit, je pro její definici možné použít vlastnost `column-gap`.
 
-<!-- AdSnippet -->
+<link rel="stylesheet" href="/assets/css/modules-standalone/min/ad-snippet.min.css?1710496181" /><script> </script>
+<aside role="complementary" class="ad-snippet ad-snippet--reverse" aria-labelledby="ad-snippet-ebook">
+  <h2 id="ad-snippet-ebook" class="ad-snippet__heading sr-only">Reklama</h2>
+<svg class="ad-snippet__scissors ad-snippet__scissors-top" viewBox="0 0 18 14" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <use class="ad-snippet__scissors-svg" xlink:href="#vd-icon-scissors" x="0" y="0"></use>
+</svg>
+  <a class="ad-snippet__container" href="/css-layout/">
+    <div class="ad-snippet__image maxw-7em">
+      <img src="/assets/img/content/handmade/ebooks/vdlayout/vdlayout-model-both__760.webp" alt="Kniha a e-book „CSS: moderní layout"" loading="lazy" width="1540" height="1270">
+    </div>
+    <div class="ad-snippet__text">
+      <h3 class="ad-snippet__text-heading" style="color:#f89b1d">
+        Kniha „CSS: moderní layout"
+      </h3>
+      <p class="ad-snippet__text-content">
+        Floaty šly spát, ale takhle kniha ve vás probudí CSS kodéra.
+        <span class="td-u">Více</span> →
+      </p>
+    </div>
+  </a>
+<svg class="ad-snippet__scissors ad-snippet__scissors-bottom" viewBox="0 0 18 14" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <use class="ad-snippet__scissors-svg" xlink:href="#vd-icon-scissors" x="0" y="0"></use>
+</svg>
+</aside>
+
 
 Mezeru můžeme definovat také pomocí obecné [vlastnosti `gap`](css-gap.md), kterou už asi všichni znáte z flexboxu nebo CSS gridu. Ta ale v kontextu vícesloupcového layoutu nebude fungovat v Internet Exploreru, což vás nepřekvapí, a ke dni psaní tohoto textu ani v Safari, což vás taky ne… ale nic…
 

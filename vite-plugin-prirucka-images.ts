@@ -5,8 +5,10 @@ import { readdir, stat, mkdir } from 'fs/promises';
 import { join, dirname, relative, extname, basename } from 'path';
 import { existsSync } from 'fs';
 
-const SOURCE_DIR = 'src/content/prirucka/assets/images';
-const OUTPUT_DIR = 'public/prirucka/images';
+const SOURCE_DIR_REL = 'src/content/prirucka/assets/images';
+const OUTPUT_DIR_REL = 'public/prirucka/images';
+const SOURCE_DIR = join(process.cwd(), SOURCE_DIR_REL);
+const OUTPUT_DIR = join(process.cwd(), OUTPUT_DIR_REL);
 const MAX_WIDTH = 1600;
 const WEBP_QUALITY = 85;
 
@@ -80,7 +82,7 @@ async function findImages(dir: string, baseDir: string = dir): Promise<ImageFile
           
           images.push({
             inputPath: fullPath,
-            outputPath: join(process.cwd(), OUTPUT_DIR, outputRelativePath),
+            outputPath: join(OUTPUT_DIR, outputRelativePath),
             relativePath: outputRelativePath,
           });
         }
@@ -113,9 +115,9 @@ async function needsConversion(inputPath: string, outputPath: string): Promise<b
 }
 
 /**
- * Konvertuje všechny obrázky
+ * Konvertuje všechny obrázky (volatelné i mimo Vite plugin)
  */
-async function convertAllImages(): Promise<void> {
+export async function convertAllImages(): Promise<void> {
   console.log('🖼️  Konverze obrázků příručky...');
   
   const images = await findImages(SOURCE_DIR);
@@ -155,7 +157,7 @@ export function vitePluginPriruckaImages(): Plugin {
       convertAllImages();
       
       // V dev módu nastavit watch pro automatickou konverzi při změnách
-      watcher = watch(`${SOURCE_DIR}/**/*.{jpg,jpeg,png}`, {
+      watcher = watch(`${SOURCE_DIR_REL}/**/*.{jpg,jpeg,png}`, {
         ignored: /node_modules/,
         persistent: true,
         ignoreInitial: true, // Ignorovat počáteční soubory, už jsme je zpracovali
@@ -163,7 +165,7 @@ export function vitePluginPriruckaImages(): Plugin {
       
       const handleImageChange = async (path: string) => {
         // Zkontrolovat, zda je soubor v našem source adresáři
-        if (!path.includes(SOURCE_DIR)) {
+        if (!path.startsWith(SOURCE_DIR)) {
           return;
         }
         
@@ -177,7 +179,7 @@ export function vitePluginPriruckaImages(): Plugin {
             ? `${nameWithoutExt}.webp`
             : `${relativeDir}/${nameWithoutExt}.webp`;
           
-          const outputPath = join(process.cwd(), OUTPUT_DIR, outputRelativePath);
+          const outputPath = join(OUTPUT_DIR, outputRelativePath);
           await convertImage(path, outputPath);
         } catch (error) {
           console.error(`Chyba při zpracování změny ${path}:`, error);

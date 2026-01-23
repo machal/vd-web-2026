@@ -51,7 +51,31 @@ Představme si triviální třísloupcový layout:
 
 HTML je jednoduché. O to přísnější máme požadavky na design. A víte co? Ukážeme si rovnou, jak je splnit pomocí flexboxu.
 
-<!-- AdSnippet -->
+<link rel="stylesheet" href="/assets/css/modules-standalone/min/ad-snippet.min.css?1710496181" /><script> </script>
+<aside role="complementary" class="ad-snippet ad-snippet--reverse" aria-labelledby="ad-snippet-ebook">
+  <h2 id="ad-snippet-ebook" class="ad-snippet__heading sr-only">Reklama</h2>
+<svg class="ad-snippet__scissors ad-snippet__scissors-top" viewBox="0 0 18 14" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <use class="ad-snippet__scissors-svg" xlink:href="#vd-icon-scissors" x="0" y="0"></use>
+</svg>
+  <a class="ad-snippet__container" href="/css-layout/">
+    <div class="ad-snippet__image maxw-7em">
+      <img src="/assets/img/content/handmade/ebooks/vdlayout/vdlayout-model-both__760.webp" alt="Kniha a e-book „CSS: moderní layout"" loading="lazy" width="1540" height="1270">
+    </div>
+    <div class="ad-snippet__text">
+      <h3 class="ad-snippet__text-heading" style="color:#f89b1d">
+        Kniha „CSS: moderní layout"
+      </h3>
+      <p class="ad-snippet__text-content">
+        Floaty šly spát, ale takhle kniha ve vás probudí CSS kodéra.
+        <span class="td-u">Více</span> →
+      </p>
+    </div>
+  </a>
+<svg class="ad-snippet__scissors ad-snippet__scissors-bottom" viewBox="0 0 18 14" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <use class="ad-snippet__scissors-svg" xlink:href="#vd-icon-scissors" x="0" y="0"></use>
+</svg>
+</aside>
+
 
 1. **Všechny sloupce stejně vysoké.** Ano, i v případech kdy má ten jeden delší obsah než zbylé dva. To je to nejjednodušší. Stačí z rodiče udělat kontejner flexboxu – `.container { display: flex; }`.
 2. **Chceme pětinovou mřížku**. První a třetí sloupec má zabírat jednu pětinu – `.mandatory-1, .mandatory-2 { flex: 1; }`. A druhý pak tři pětiny – `.content { flex: 3 }`. Všimli jste si, že jsme nemuseli počítat s procenty? A že bychom nemuseli procenta přepočítávat, kdybychom přidali další sloupec?

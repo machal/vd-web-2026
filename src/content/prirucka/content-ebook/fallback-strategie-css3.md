@@ -1,3 +1,8 @@
+---
+category:
+  - css
+---
+
 # Křápovzdorné technické řešení v CSS3
 
 Máme pět možných strategií: nulový nebo definovaný fallback, detekci vlastností nebo polyfilly, a pak speciální kategorii generovaných fallbacků.

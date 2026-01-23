@@ -1,3 +1,8 @@
+---
+category:
+  - css
+---
+
 # CSS rozlišení 
 
 Na školeních se stále setkávám se strachem mnohých webových tvůrců z ohromných rozlišení displejů posledních modelů mobilů. Výrobci dnes udávají až FullHD plochu pro zobrazování. To je 1920 × 1080 pixelů. Znamená to, že se na pětipalcových displejích budou weby zobrazovat stejně jako na velkých monitorech a budou jen zmenšené do trpasličí velikosti?

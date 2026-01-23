@@ -10,7 +10,6 @@ import { rehypeRemoveEbookOnly } from './src/utils/rehype-remove-ebook-only.ts';
 import { rehypeHeadingAnchors } from './src/utils/rehype-heading-anchors.ts';
 import { rehypePriruckaLinks } from './src/utils/rehype-prirucka-links.ts';
 import { rehypePriruckaImages } from './src/utils/rehype-prirucka-images.ts';
-import { rehypeAdSnippets } from './src/utils/rehype-ad-snippets.ts';
 import { rehypeConnectedElements } from './src/utils/rehype-connected-elements.ts';
 import { vitePluginPriruckaImages } from './vite-plugin-prirucka-images.ts';
 
@@ -46,8 +45,6 @@ export default defineConfig({
       rehypeHeadingAnchors, // Přidání anchorů k nadpisům (odstraní {#id} z textu, opraví duplikované ID)
       rehypePriruckaLinks, // Transformace odkazů příručky (css-grid.md -> /prirucka/css-grid)
       rehypeRemoveFirstH1, // Odstranění prvního H1 z HTML (nadpis je už v zelené ploše nahoře)
-      // Ostatní transformace jsou vypnuté pro testování
-      // rehypeAdSnippets(), // Nahrazení <!-- AdSnippet --> komentářů HTML snippety podle kategorií
     ],
   },
   vite: {

@@ -1,3 +1,8 @@
+---
+category:
+  - css
+---
+
 # Udržitelný kód pomocí OOCSS
 
 OOCSS je zkratka pro „Object Oriented CSS”. Je to koncept organizace kódu od Nicole Sullivan.
