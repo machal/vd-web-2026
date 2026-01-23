@@ -1,0 +1,163 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout
+  title="Školení Vzhůru dolů"
+  description="Prezenční školení webového vývoje probíhala v letech 2015–2023. Děkujeme všem účastníkům!"
+  ogType="website"
+  ogImage="https://www.vzhurudolu.cz/assets/img/content/src/socials/vd-soc-skoleni.jpg"
+  ogUrl="https://www.vzhurudolu.cz/kurzy"
+  bodyClass="section-kurzy"
+>
+  <link slot="styles" rel="stylesheet" href="/assets/css/modules-standalone/min/pages/lector.min.css" />
+
+  <Header slot="header" />
+  <Footer slot="footer" />
+
+  <div class="page-head">
+    <h1>Školení Vzhůru dolů</h1>
+  </div>
+
+  <main role="main" id="main" aria-label="Hlavní obsah">
+    <div class="content">
+      <div class="article">
+        <p class="f-lg ta-c maxw-40em mb-2">
+          Prezenční školení webového vývoje pod značkou Vzhůru dolů probíhala 
+          v&nbsp;letech <strong>2015–2023</strong>. Za tu dobu jsme proškolili 
+          stovky vývojářů a vývojářek v&nbsp;oblasti CSS, JavaScriptu, 
+          rychlosti webu a&nbsp;dalších témat.
+        </p>
+
+        <p class="f-lg ta-c maxw-40em mb-3">
+          <strong>Děkujeme všem účastníkům za vaši účast, podporu a&nbsp;skvělou energii!</strong>
+        </p>
+
+        <hr class="hr--small hr--spaced">
+
+        <h2 class="ta-c mb-2" id="zajem">
+          <a href="#zajem">Máte zájem o školení?</a>
+        </h2>
+
+        <p class="ta-c maxw-40em mb-1">
+          I když prezenční kurzy Vzhůru dolů již neprobíhají, stále máte možnost 
+          se vzdělávat:
+        </p>
+
+        <div class="row jc-c mb-3">
+          <div class="col w-50-sm ta-c">
+            <p class="mb-05">
+              <a href="https://pagespeed.cz/workshops" class="button">
+                Školení rychlosti webu
+              </a>
+            </p>
+            <p class="f-6">
+              Workshopy a školení rychlosti webu<br>
+              na <a href="https://pagespeed.cz/workshops">PageSpeed.cz</a>
+            </p>
+          </div>
+
+          <div class="col w-50-sm ta-c">
+            <p class="mb-05">
+              <a href="/video" class="button">
+                Videokurzy a webináře
+              </a>
+            </p>
+            <p class="f-6">
+              Nahrávky z webinářů a videokurzy<br>
+              na Vzhůru dolů
+            </p>
+          </div>
+        </div>
+
+        <hr class="hr--small hr--spaced">
+
+        <h2 class="ta-c mb-2" id="lektori">
+          <a href="#lektori">Lektoři</a>
+        </h2>
+
+        <p class="ta-c maxw-40em mb-2">
+          Na kurzech Vzhůru dolů přednášeli tito odborníci:
+        </p>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="row jc-c mb-3">
+        <article class="col w-50-xs w-25-sm ta-c px-05">
+          <a class="avatar" href="/martin">
+            <img 
+              src="/assets/img/content/lectors/shoulders-martin-michalek.png" 
+              alt="Martin Michálek" 
+              width="200" height="200" 
+              loading="lazy" 
+              class="avatar__image"
+            >
+          </a>
+          <h3 class="h5 mb-0">
+            <a href="/martin">Martin Michálek</a>
+          </h3>
+          <p class="f-6">
+            Freelance expert na CSS a&nbsp;rychlost webu.
+          </p>
+        </article>
+
+        <article class="col w-50-xs w-25-sm ta-c px-05">
+          <a class="avatar" href="/lektori/michal-matuska">
+            <img 
+              src="/assets/img/content/lectors/shoulders-michal-matuska.png" 
+              alt="Michal Matuška" 
+              width="200" height="200" 
+              loading="lazy" 
+              class="avatar__image"
+            >
+          </a>
+          <h3 class="h5 mb-0">
+            <a href="/lektori/michal-matuska">Michal Matuška</a>
+          </h3>
+          <p class="f-6">
+            Konzultant rychlosti webů v&nbsp;PageSpeed.cz.
+          </p>
+        </article>
+
+        <article class="col w-50-xs w-25-sm ta-c px-05">
+          <a class="avatar" href="/lektori/riki-fridrich">
+            <img 
+              src="/assets/img/content/lectors/shoulders-riki-fridrich.png" 
+              alt="Riki Fridrich" 
+              width="200" height="200" 
+              loading="lazy" 
+              class="avatar__image"
+            >
+          </a>
+          <h3 class="h5 mb-0">
+            <a href="/lektori/riki-fridrich">Riki Fridrich</a>
+          </h3>
+          <p class="f-6">
+            Lektor JavaScriptu a&nbsp;Vue.js.
+          </p>
+        </article>
+
+        <article class="col w-50-xs w-25-sm ta-c px-05">
+          <a class="avatar" href="/lektori/tomas-krejci">
+            <img 
+              src="/assets/img/content/lectors/shoulders-tomas-krejci.png" 
+              alt="Tomáš Krejčí" 
+              width="200" height="200" 
+              loading="lazy" 
+              class="avatar__image"
+            >
+          </a>
+          <h3 class="h5 mb-0">
+            <a href="/lektori/tomas-krejci">Tomáš Krejčí</a>
+          </h3>
+          <p class="f-6">
+            Lektor kódování newsletterů, SUPERKODERS.
+          </p>
+        </article>
+      </div>
+    </div>
+  </main>
+</BaseLayout>
