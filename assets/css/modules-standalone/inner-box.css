@@ -106,6 +106,17 @@ li:first-child .inner-box__list-item {
   text-decoration: none;
 }
 
+.inner-box__list-item--active {
+  padding: 0.3rem 0.3rem 0.3rem 0;
+  border-bottom: none;
+  color: var(--vd-text-color);
+  text-decoration: none;
+}
+
+.inner-box__list-item--active:first-child {
+  border-top: none;
+}
+
 .inner-box__video {
   border: 1px solid var(--vd-border-color);
   background: var(--vd-box-bg-color);

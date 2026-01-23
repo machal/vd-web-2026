@@ -11,6 +11,7 @@ import { rehypeHeadingAnchors } from './src/utils/rehype-heading-anchors.ts';
 import { rehypePriruckaLinks } from './src/utils/rehype-prirucka-links.ts';
 import { rehypePriruckaImages } from './src/utils/rehype-prirucka-images.ts';
 import { rehypeConnectedElements } from './src/utils/rehype-connected-elements.ts';
+import { rehypeRelatedToInnerBox } from './src/utils/rehype-related-to-inner-box.ts';
 import { vitePluginPriruckaImages } from './vite-plugin-prirucka-images.ts';
 
 // https://astro.build/config
@@ -46,6 +47,7 @@ export default defineConfig({
       rehypePriruckaImages, // Transformace cest k obrázkům v HTML elementech (z ../dist/images/ na /prirucka/images/)
       rehypeRemoveEbookOnly, // Odstranění elementů s třídou "ebook-only" (včetně jejich dětí)
       rehypeConnectedElements, // Transformace elementů s třídou "connected" (přidání tříd, úprava obrázků)
+      rehypeRelatedToInnerBox, // Transformace elementů s třídou "related" na inner-box inner-box--side
       rehypeHeadingAnchors, // Přidání anchorů k nadpisům (odstraní {#id} z textu, opraví duplikované ID)
       rehypePriruckaLinks, // Transformace odkazů příručky (css-grid.md -> /prirucka/css-grid)
       rehypeRemoveFirstH1, // Odstranění prvního H1 z HTML (nadpis je už v zelené ploše nahoře)

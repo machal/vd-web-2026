@@ -93,6 +93,28 @@
   }
 }
 
+// Active item (without link)
+// -------------------------
+
+// [1] Active item has no link, so it's styled directly on <li>
+// [2] No bottom border for active item
+// [3] Less padding to align with heading (same as heading, which has no padding)
+// [4] Darker color, no underline
+
+.inner-box__list-item--active {
+  padding: 0.3rem 0.3rem 0.3rem 0; // [3] No left padding to align with heading
+  border-bottom: none; // [2]
+  color: var(--vd-text-color); // [4]
+  
+  // Ensure text is not underlined
+  text-decoration: none;
+  
+  // Remove top border if it's the first item
+  &:first-child {
+    border-top: none;
+  }
+}
+
 
 // Modifier: Media Content
 // -----------------------
