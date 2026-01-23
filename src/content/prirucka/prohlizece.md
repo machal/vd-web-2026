@@ -1,5 +1,6 @@
 ---
 id: prohlizece
+title: 'Prohlížeče v Česku: Webdesignérův průvodce pro rok 2018'
 heading: 'Prohlížeče v Česku: Webdesignérův průvodce pro rok 2018'
 date: 2018-09-26
 perex: 'Prohlížečů je prostě dneska jako malých myší a pro webaře může být tohle prostředí trochu nepřehledné. Pojďme na něj zaostřit v tomhle textu.'
@@ -12,7 +13,6 @@ og_title: 'Prohlížeče v Česku: Webdesignérův průvodce pro rok 2018'
 og_description: 'Prohlížečů je prostě dneska jako malých myší a pro webaře může být tohle prostředí trochu nepřehledné. Pojďme na něj zaostřit v tomhle textu.'
 og_type: article
 ---
-
 # Prohlížeče v Česku: Webdesignérův průvodce pro rok 2018
 
 Vstupem Chrome na desktop a nástupem mobilů začaly nové „Browser Wars“. Od roku 2017 ale rostou i další nové prohlížeče – ty od Samsungu a od Seznamu.

@@ -1,6 +1,7 @@
 ---
 id: css3-vlastnosti
-heading: ''
+title: 'Seznam CSS3 vlastností'
+heading: 'Seznam CSS3 vlastností'
 perex: ''
 published: false
 category:
@@ -12,7 +13,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Seznam CSS3 vlastností
 
 ## Vlastnosti textu

@@ -1,18 +1,17 @@
 ---
 id: pruzna-media
-heading: ''
+title: 'Vkládaná média se zachováním poměru stran'
+heading: 'Vkládaná média se zachováním poměru stran'
 perex: ''
 published: true
-category: []
+category: ['responzivni-design']
 category_highlight: false
 include_rss: false
 no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----
-
-# Vkládaná média se zachováním poměru stran
+---# Vkládaná média se zachováním poměru stran
 
 Jak zařídit, aby se obrázky, video a prvky vkládané přes `<iframe>` přizpůsobovaly šířce rodičovského elementu a ještě k tomu zachovaly [poměr stran](css-pomer-stran.md)?
 

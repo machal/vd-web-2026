@@ -1,6 +1,7 @@
 ---
 id: amp-co-je-prohlizece
-heading: ''
+title: 'Upravené fungování prohlížečů'
+heading: 'Upravené fungování prohlížečů'
 perex: ''
 published: false
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Upravené fungování prohlížečů
 
 Pokud bychom chtěli aplikovat na současné weby stejný způsob distribuce jako u AMP – tedy nahrání do Cache a například také přednačtení –, chyběly by nám kromě už uvedeného určité vlastnosti prohlížečů. Zde udáváme nejdůležitější tři.

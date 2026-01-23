@@ -1,5 +1,7 @@
 ---
 id: jak-zrychlit-web
+tags: ['rychlost-nacitani']
+title: 'Jak zrychlit web?'
 heading: 'Jak zrychlit web v roce 2021?'
 date: 2021-04-07
 perex: 'Pojďme si připomenout metody, které jsou relativně nové, které se mi osvědčily při práci pro klienty, a o kterých jsem psal na Vzhůru dolů. Je jich jen osm, takže je slupnete k ranní kávě.'
@@ -12,9 +14,7 @@ no_ads: false
 og_title: 'Jak zrychlit web v roce 2021?'
 og_description: 'Pojďme si připomenout metody, které jsou relativně nové, které se mi osvědčily při práci pro klienty, a o kterých jsem psal na Vzhůru dolů. Je jich jen osm, takže je slupnete k ranní kávě.'
 og_type: article
----
-
-# Jak zrychlit web?
+---# Jak zrychlit web?
 
 V letech 2021-2022 proběhla ve vyhledávání Googlu aktualizace zvaná [Page Experience](google-page-experience.md), kde mají nový význam ukazatele uživatelského prožitku, včetně metrik rychlosti webu zvaných [Core Web Vitals](web-vitals.md).
 

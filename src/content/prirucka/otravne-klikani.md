@@ -1,6 +1,7 @@
 ---
 id: otravne-klikani
-heading: ''
+title: 'Málo kliků a ještě méně (otravných) dotyků'
+heading: 'Málo kliků a ještě méně (otravných) dotyků'
 perex: ''
 published: false
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Málo kliků a ještě méně (otravných) dotyků
 
 Víte, my webdesignéři si problémy (jako všichni lidé) občas až moc zjednodušujeme. Díky tomu asi před patnácti lety vzniklo „Pravidlo tří kliků“. Doporučovalo, aby veškeré informace byly na vašem webu dostupné maximálně na tři kliknutí myši.

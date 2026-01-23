@@ -1,6 +1,7 @@
 ---
 id: devstack-boilerplate-kit
-heading: ''
+title: 'Devstack vs. Boilerplate vs. Starter Kit: Co je co?'
+heading: 'Devstack vs. Boilerplate vs. Starter Kit: Co je co?'
 perex: ''
 published: true
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Devstack vs. Boilerplate vs. Starter Kit: Co je co?
 
 [V aktuálním textu](devstacky.md) jsem chtěl poskytnout rozcestník po hotových výchozích nastaveních frontendových projektů. Jenže přitom – jako už tradičně – narážím na to, že každý si pod slovem „devstack" představuje něco jiného.

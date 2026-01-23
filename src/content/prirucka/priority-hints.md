@@ -1,5 +1,7 @@
 ---
 id: priority-hints
+tags: ['rychlost-nacitani']
+title: 'Priority Hints a atribut fetchpriority: jak vytunit rychlost načtení prvků stránky'
 heading: 'Priority Hints a atribut fetchpriority: jak vytunit rychlost načtení prvků stránky'
 date: 2022-08-29
 perex: 'S pomocí Priority Hints můžete zrychlit načtení webu jen pomocí přidání pár řádků kódu. Má to ale pár „ale“…'
@@ -13,9 +15,7 @@ no_ads: false
 og_title: 'Priority Hints a atribut fetchpriority: jak vytunit rychlost načtení prvků stránky'
 og_description: 'S pomocí Priority Hints můžete zrychlit načtení webu jen pomocí přidání pár řádků kódu. Má to ale pár „ale“…'
 og_type: article
----
-
-# Priority Hints a atribut fetchpriority: jak vytunit rychlost načtení prvků stránky
+---# Priority Hints a atribut fetchpriority: jak vytunit rychlost načtení prvků stránky
 
 Priority Hints jsou prostředkem k úpravě prioritizace stahování souborů do prohlížeče.
 

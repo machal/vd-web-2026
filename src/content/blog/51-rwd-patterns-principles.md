@@ -10,8 +10,8 @@ sectionID: 1
 og_title: 'Jaká je kniha Responsive Design: Patterns & Principles?'
 og_description: 'To, že čtete Vzhůru dolů může znamenat, že knížka není pro vás. I tak vám ji ale doporučím koupit – někomu jinému. Čtěte dále, vše se dozvíte.'
 og_type: article
+tags: ['responzivni-design']
 ---
-
 # Jaká je kniha Responsive Design: Patterns & Principles?
 
 Autor pojmu „responzivní design“ napsal [novou knihu](http://abookapart.com/products/responsive-design-patterns-principles).

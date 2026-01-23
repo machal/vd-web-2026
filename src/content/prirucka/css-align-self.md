@@ -1,6 +1,7 @@
 ---
 id: css-align-self
-heading: ''
+title: 'Vlastnost align-self: Zarovnání položky na příčné ose'
+heading: 'Vlastnost align-self: Zarovnání položky na příčné ose'
 perex: ''
 published: true
 category:
@@ -12,7 +13,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Vlastnost align-self: Zarovnání položky na příčné ose
 
 Vlastnost `align-self` nastavuje zarovnání položky na příčné (jinak též blokové) ose layoutu.

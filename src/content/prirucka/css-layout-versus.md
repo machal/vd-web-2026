@@ -1,6 +1,7 @@
 ---
 id: css-layout-versus
-heading: ''
+title: 'Moderní a nemoderní layouty'
+heading: 'Moderní a nemoderní layouty'
 perex: ''
 published: false
 category:
@@ -12,7 +13,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Moderní a nemoderní layouty
 
 „Musíš se teď odnaučit, co tě dřív učili,“ říká mistr Yoda Lukovi Skywalkerovi v páté epizodě kultovních Star Wars.

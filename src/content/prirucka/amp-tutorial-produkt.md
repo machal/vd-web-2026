@@ -1,6 +1,7 @@
 ---
 id: amp-tutorial-produkt
-heading: ''
+title: 'Tutoriál: Detail produktu e-shopu'
+heading: 'Tutoriál: Detail produktu e-shopu'
 perex: ''
 published: false
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Tutoriál: Detail produktu e-shopu
 
 Na tuhle část knížky jsme se obzvlášť těšili. Ukazuje dynamickou část AMP, tu, která je zatím vývojářům málo známá.

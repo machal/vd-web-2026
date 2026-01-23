@@ -1,5 +1,7 @@
 ---
 id: tailwind-css
+tags: ['organizace-css']
+title: 'Tailwind CSS'
 heading: 'Tailwind CSS: další evoluční krok pro CSS frameworky'
 date: 2021-07-21
 perex: 'Tailwind je velmi zajímavý CSS framework, postavený na atomických třídách, ale zároveň ponoukající k vytváření komponent. Pro spoustu lidí může konečně o framework jejich gusta a i mě se velmi líbí.'
@@ -15,9 +17,7 @@ no_ads: false
 og_title: 'Tailwind CSS: další evoluční krok pro CSS frameworky'
 og_description: 'Tailwind je velmi zajímavý CSS framework, postavený na atomických třídách, ale zároveň ponoukající k vytváření komponent. Pro spoustu lidí může konečně o framework jejich gusta a i mě se velmi líbí.'
 og_type: article
----
-
-# Tailwind CSS
+---# Tailwind CSS
 
 CSS framework, který má vcelku slušnou šanci změnit mnohým z nás způsoby, jakými jsme zvyklí psát HTML a CSS kód.
 

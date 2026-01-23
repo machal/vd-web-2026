@@ -1,6 +1,7 @@
 ---
 id: css-grid-area
-heading: ''
+title: 'Vlastnost grid-area'
+heading: 'Vlastnost grid-area'
 perex: ''
 published: true
 category:
@@ -12,7 +13,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Vlastnost grid-area
 
 CSS vlastnost `grid-area` slouží k umísťování položek v definovaném CSS gridu.

@@ -1,6 +1,8 @@
 ---
 id: css-size-adjust
-heading: ''
+tags: ['css']
+title: 'CSS deskriptor size-adjust'
+heading: 'CSS deskriptor size-adjust'
 perex: ''
 published: true
 category:
@@ -11,9 +13,7 @@ no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----
-
-# CSS deskriptor size-adjust
+---# CSS deskriptor size-adjust
 
 Deskriptor `size-adjust` definuje změnu velikosti pro znaky písma a pro metriky spojené s tímto písmem. Cílem je upravit vykreslení písma v prohlížeči.  
 

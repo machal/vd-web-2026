@@ -1,6 +1,7 @@
 ---
 id: amp-layout-placeholder
-heading: ''
+title: 'Atributy placeholder a fallback'
+heading: 'Atributy placeholder a fallback'
 perex: ''
 published: false
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Atributy placeholder a fallback
 
 Z nekonečného počtu opakování ve zdejších textech už víme, že AMP rovná se rychlost. Jenže rychlost je široký pojem.

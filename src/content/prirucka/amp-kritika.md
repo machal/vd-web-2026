@@ -1,6 +1,7 @@
 ---
 id: amp-kritika
-heading: ''
+title: 'Kritika AMP'
+heading: 'Kritika AMP'
 perex: ''
 published: false
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Kritika AMP
 
 _„AMP je pro budoucnost webu dobré asi tak jako Trump pro zeměkouli,“_ napsal nám jeden z kritiků.

@@ -1,6 +1,7 @@
 ---
 id: vrstveni
-heading: ''
+title: 'Vrstvení'
+heading: 'Vrstvení'
 perex: ''
 published: false
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Vrstvení
 
 Tak bych jedním slovem popsal svůj proces návrhu a implementace webových rozhraní. První z vrstev je dokumentový základ.

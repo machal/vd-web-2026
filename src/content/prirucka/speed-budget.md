@@ -1,6 +1,7 @@
 ---
 id: speed-budget
-heading: ''
+title: 'Rychlostní limity. A proč nedělat „optimalizace“?'
+heading: 'Rychlostní limity. A proč nedělat „optimalizace“?'
 perex: ''
 published: false
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Rychlostní limity. A proč nedělat „optimalizace“?
 
 Rychlostní limit je metrika, která říká, jaké maximální hodnoty parametrů rychlosti mají mít vaše vstupní stránky. V anglických textech se mluví o „Speed Budgetu“ nebo „Performance Budgetu“.

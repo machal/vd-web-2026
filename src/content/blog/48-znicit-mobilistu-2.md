@@ -7,7 +7,7 @@ excerpt: 'Pokud vám na webu řádí obzvlášť odolný mobilní uživatel a p�
 postStatus: Published
 authorID: 1
 sectionID: 1
-category: []
+category: ['responzivni-design']
 no_ads: false
 include_rss: true
 category_highlight: true
@@ -15,7 +15,6 @@ og_title: 'Jak zničit mobilní uživatele podruhé: zakažte zoomování nebo s
 og_description: 'Pokud vám na webu řádí obzvlášť odolný mobilní uživatel a přežil všech devět kroků z přechozího návodu, nevěšte hlavu. Přináším sedm kroků, které vás těch otravných potvůrek nadobro zbaví.'
 og_type: article
 ---
-
 # Jak zničit mobilní uživatele podruhé: zakažte zoomování nebo schovejte obsah
 
 Pokud vám na webu řádí obzvlášť odolný mobilní uživatel a přežil [všech devět kroků z přechozího návodu](/blog/47-znicit-mobilistu-1), nevěšte hlavu. Přináším sedm kroků, které vás těch otravných potvůrek nadobro zbaví.

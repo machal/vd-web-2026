@@ -1,6 +1,7 @@
 ---
 id: amp-komponenty-layout
-heading: ''
+title: 'Komponenty pro uživatelské rozhraní'
+heading: 'Komponenty pro uživatelské rozhraní'
 perex: ''
 published: false
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Komponenty pro uživatelské rozhraní
 
 Tyto komponenty zajišťují kromě rozvržení stránky také nejrůznější prvky uživatelského rozhraní, jako jsou karusely nebo lightboxy.

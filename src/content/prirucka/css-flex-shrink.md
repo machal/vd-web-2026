@@ -1,6 +1,7 @@
 ---
 id: css-flex-shrink
-heading: ''
+title: 'CSS vlastnost flex-shrink: faktor smršťování položky flexboxu'
+heading: 'CSS vlastnost flex-shrink: faktor smršťování položky flexboxu'
 perex: ''
 published: true
 category:
@@ -12,7 +13,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # CSS vlastnost flex-shrink: faktor smršťování položky flexboxu
 
 Jakým podílem se může položka flexboxu zmenšovat, pokud v rodičovském kontejneru místo ubylo? Od toho máme vlastnost `flex-shrink`.

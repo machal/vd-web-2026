@@ -1,6 +1,8 @@
 ---
 id: css-grid-proc
-heading: ''
+tags: ['css']
+title: 'Proč preferuji grid před flexboxem?'
+heading: 'Proč preferuji grid před flexboxem?'
 perex: ''
 published: true
 category:
@@ -11,9 +13,7 @@ no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----
-
-# Proč preferuji grid před flexboxem?
+---# Proč preferuji grid před flexboxem?
 
 Pořád se něco učíme.
 Abych se naučil layouty v CSS, napsal jsem o nich [knížku](https://www.vzhurudolu.cz/css-layout/).

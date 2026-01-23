@@ -1,18 +1,17 @@
 ---
 id: metrika-cls
-heading: ''
+title: 'Metrika „Kumulativní posun layoutu“ (Cumulative Layout Shift, CLS)'
+heading: 'Metrika „Kumulativní posun layoutu“ (Cumulative Layout Shift, CLS)'
 perex: ''
 published: true
-category: []
+category: ['rychlost-nacitani']
 category_highlight: false
 include_rss: false
 no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----
-
-# Metrika „Kumulativní posun layoutu“ (Cumulative Layout Shift, CLS)
+---# Metrika „Kumulativní posun layoutu“ (Cumulative Layout Shift, CLS)
 
 Metrika, která udává stabilitu vzhledu stránky během vykreslování.
 

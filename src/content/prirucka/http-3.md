@@ -1,18 +1,17 @@
 ---
 id: http-3
-heading: ''
+title: 'HTTP/3'
+heading: 'HTTP/3'
 perex: ''
 published: true
-category: []
+category: ['rychlost-nacitani']
 category_highlight: false
 include_rss: false
 no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----
-
-# HTTP/3
+---# HTTP/3
 
 Třetí verze protokolu HTTP vypadá slibně. Zatím ji lze z pohledu webaře spíše jen po očku sledovat, na reálné použití si totiž na většině našich projektů zatím kvůli slabé podpoře asi počkáme.
 

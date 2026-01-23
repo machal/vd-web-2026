@@ -1,6 +1,7 @@
 ---
 id: css-grid-template-areas
-heading: ''
+title: 'Vlastnost grid-template-areas: Pojmenovávaní oblastí gridu'
+heading: 'Vlastnost grid-template-areas: Pojmenovávaní oblastí gridu'
 perex: ''
 published: true
 category:
@@ -12,7 +13,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Vlastnost grid-template-areas: Pojmenovávaní oblastí gridu
 
 Vlastnost `grid-template-areas` slouží k pojmenovávání obdélníkových oblastí definovaných CSS gridem.

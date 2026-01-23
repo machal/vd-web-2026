@@ -1,6 +1,7 @@
 ---
 id: css-layout-devtools
-heading: ''
+title: 'CSS layout a DevTools'
+heading: 'CSS layout a DevTools'
 perex: ''
 published: false
 category:
@@ -12,7 +13,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # CSS layout a DevTools
 
 <div class="book-index" data-book-index="DevTools"></div>

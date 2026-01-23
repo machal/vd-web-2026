@@ -1,6 +1,7 @@
 ---
 id: email-inbox-zero
-heading: ''
+title: 'Inbox Zero: jak se zbavit e-mailového chaosu'
+heading: 'Inbox Zero: jak se zbavit e-mailového chaosu'
 perex: ''
 published: true
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Inbox Zero: jak se zbavit e-mailového chaosu  
 
 E-mail nemusí být zlo. Elektronickou poštu nemusíte mít plnou reklamních newsletterů, ani ji nemusíte mít plnou nevyřízených a nerelevantních zpráv. Nemusíte ji mít plnou vůbec. Nemusíte pořád na něco nebo na někoho zapomínat.

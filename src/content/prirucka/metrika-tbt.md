@@ -1,18 +1,17 @@
 ---
 id: metrika-tbt
-heading: ''
+title: 'Metrika „Celkový čas blokování“ (Total Blocking Time, TBT)'
+heading: 'Metrika „Celkový čas blokování“ (Total Blocking Time, TBT)'
 perex: ''
 published: true
-category: []
+category: ['rychlost-nacitani']
 category_highlight: false
 include_rss: false
 no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----
-
-# Metrika „Celkový čas blokování“ (Total Blocking Time, TBT)
+---# Metrika „Celkový čas blokování“ (Total Blocking Time, TBT)
 
 TBT je [metrika rychlosti webu](metriky-rychlosti.md), udávající celkový čas, ve kterém není vykreslená stránka schopná reagovat na vstupy uživatele.
 

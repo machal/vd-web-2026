@@ -1,5 +1,7 @@
 ---
 id: smacss
+tags: ['organizace-css']
+title: 'SMACSS'
 heading: 'SMACSS'
 date: 2014-02-22
 perex: 'Scalable and Modular Architecture for CSS. Style guide od Jonathana Snooka.'
@@ -11,9 +13,7 @@ no_ads: false
 og_title: 'SMACSS'
 og_description: 'Scalable and Modular Architecture for CSS. Style guide od Jonathana Snooka.'
 og_type: article
----
-
-# SMACSS
+---# SMACSS
 
 Starší style guide pro psaní CSS od Jonathana Snooka.
 

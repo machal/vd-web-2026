@@ -1,6 +1,7 @@
 ---
 id: rich-snippets
-heading: ''
+title: 'Strukturovaná data (aneb Rich Snippets): Kódem za atraktivnější výsledky vyhledávání pro váš web'
+heading: 'Strukturovaná data (aneb Rich Snippets): Kódem za atraktivnější výsledky vyhledávání pro váš web'
 perex: ''
 published: true
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Strukturovaná data (aneb Rich Snippets): Kódem za atraktivnější výsledky vyhledávání pro váš web
 
 Strukturovaná data (nebo také „strukturované úryvky“) umí zajistit vizuálně zajímavý formát zobrazení ve výsledcích vyhledávání Google – „Rich Snippets“.

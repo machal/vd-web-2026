@@ -1,6 +1,7 @@
 ---
 id: rem-em-zoom
-heading: ''
+title: 'Autorský zoom dokumentu a komponent'
+heading: 'Autorský zoom dokumentu a komponent'
 perex: ''
 published: false
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Autorský zoom dokumentu a komponent
 
 Jednotky `em` a `rem` jsou pružné, a tak je možné s jejich pomocí zvětšovat či zmenšovat celý web nebo jeho jednotlivé komponenty.

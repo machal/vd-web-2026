@@ -1,6 +1,7 @@
 ---
 id: svg-use
-heading: ''
+title: 'USE v SVG: klonování šetří čas a data'
+heading: 'USE v SVG: klonování šetří čas a data'
 perex: ''
 published: true
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # USE v SVG: klonování šetří čas a data
 
 Značka `<use>` uvnitř SVG dokáže element duplikovat a na jiném místě použít třeba s jinými vlastnostmi.

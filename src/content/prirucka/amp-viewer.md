@@ -1,6 +1,7 @@
 ---
 id: amp-viewer
-heading: ''
+title: 'AMP Viewer'
+heading: 'AMP Viewer'
 perex: ''
 published: false
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # AMP Viewer
 
 Když to zjednodušíme, AMP Viewer je vlastně HTML stránka, která zobrazuje AMP stránky. Je to zkrátka něco jako lightbox, ale pro AMP stránky.

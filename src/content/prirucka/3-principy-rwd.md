@@ -1,18 +1,17 @@
 ---
 id: 3-principy-rwd
-heading: ''
+title: 'Marcotteho responzivní design'
+heading: 'Marcotteho responzivní design'
 perex: ''
 published: true
-category: []
+category: ['responzivni-design']
 category_highlight: false
 include_rss: false
 no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----
-
-# Marcotteho responzivní design
+---# Marcotteho responzivní design
 
 Původní definice responzivního designu pochází z roku 2010, hlavy a pera Ethana Marcotteho. A je to nadmíru jednoduchá, technicistní myšlenka.
 

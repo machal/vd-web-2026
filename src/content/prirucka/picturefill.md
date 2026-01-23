@@ -1,5 +1,6 @@
 ---
 id: picturefill
+title: 'Picturefill'
 heading: 'Picturefill'
 date: 2015-01-13
 perex: 'Polyfill, který dokáže zařídit podporu nově standardizovaných responzivních obrázků.'
@@ -14,7 +15,6 @@ og_title: 'Picturefill'
 og_description: 'Polyfill, který dokáže zařídit podporu nově standardizovaných responzivních obrázků.'
 og_type: article
 ---
-
 # Picturefill
 
 [Polyfill](polyfill.md), který dokáže zařídit podporu nově standardizovaných [rozšíření obrázků pro responzivní účely](responzivni-obrazky.md) – atributů `srcset` a `sizes` a nové značky `<picture>` – ve všech prohlížečích. 

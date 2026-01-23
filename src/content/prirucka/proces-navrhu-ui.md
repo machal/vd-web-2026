@@ -1,6 +1,7 @@
 ---
 id: proces-navrhu-ui
-heading: ''
+title: 'Proces návrhu uživatelského rozhraní'
+heading: 'Proces návrhu uživatelského rozhraní'
 perex: ''
 published: false
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Proces návrhu uživatelského rozhraní
 
 V knize a na příkladu ukazuji proces tvorby webů, o kterém by mnozí profesionální kolegové řekli, že je „exotický“. Nevyužívám nástroje pro tvorbu předběžných návrhů webů a skoro neotevírám Photoshop a jiné kreslicí programy. Velkou část práce dělám přímo v prohlížeči. Pojďme si říct, jak přesně budeme v knize postupovat a proč vlastně takto specificky.

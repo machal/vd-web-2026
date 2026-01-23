@@ -1,6 +1,7 @@
 ---
 id: modularni-stupnice
-heading: ''
+title: 'Modulární stupnice velikostí písma (Modular Scale)'
+heading: 'Modulární stupnice velikostí písma (Modular Scale)'
 perex: ''
 published: false
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Modulární stupnice velikostí písma (Modular Scale)
 
 Modular Scale je způsob jak sjednotit velikosti prvků rozhraní a odstupňovat je nějakým „racionálním“ způsobem. 

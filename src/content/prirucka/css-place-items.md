@@ -1,6 +1,7 @@
 ---
 id: css-place-items
-heading: ''
+title: 'Vlastnost place-items: Zarovnání všech položek na obou osách'
+heading: 'Vlastnost place-items: Zarovnání všech položek na obou osách'
 perex: ''
 published: true
 category:
@@ -12,7 +13,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Vlastnost place-items: Zarovnání všech položek na obou osách
 
 Vlastnost `place-items` definuje na kontejneru layoutu zarovnání položek na hlavní i příčné ose.

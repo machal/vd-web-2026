@@ -1,6 +1,7 @@
 ---
 id: amp-stories
-heading: ''
+title: 'AMP Stories'
+heading: 'AMP Stories'
 perex: ''
 published: false
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # AMP Stories
 
 Je možné, že formát Stories nebo prostě příběhů znáte z mobilního Instagramu a Facebooku nebo původně ze Snapchatu.

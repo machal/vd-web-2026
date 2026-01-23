@@ -1,5 +1,7 @@
 ---
 id: css-pixel
+tags: ['css']
+title: '„Retina“ displeje a CSS pixel'
 heading: 'CSS pixel'
 date: 2014-09-10
 perex: 'CSS pixel. Referenční pixel.'
@@ -14,9 +16,7 @@ no_ads: false
 og_title: 'CSS pixel'
 og_description: 'CSS pixel. Referenční pixel.'
 og_type: article
----
-
-# „Retina“ displeje a CSS pixel
+---# „Retina“ displeje a CSS pixel
 
 CSS pixel. Referenční pixel. Ať už tomu říkáme jakkoliv, pixel už hold není co za našeho mládí býval.
 

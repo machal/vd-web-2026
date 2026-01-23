@@ -1,6 +1,7 @@
 ---
 id: amp-obory-eshopy
-heading: ''
+title: 'E-shopy'
+heading: 'E-shopy'
 perex: ''
 published: false
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # E-shopy
 
 Jak už padlo na jiných místech, ono „Pages“ v AMP ukazuje na původní záměr nasazení hlavně na statické obsahové stránky.

@@ -12,8 +12,8 @@ category:
 og_title: 'Critical CSS a zrychlení zobrazení stránky'
 og_description: 'Vkládání nezbytného CSS v inline podobě přímo do HTML kódu je způsob jak urychlit zobrazení stránky.'
 og_type: article
+tags: ['rychlost-nacitani']
 ---
-
 # Critical CSS a zrychlení zobrazení stránky
 
 Vkládání nezbytného CSS v inline podobě přímo do HTML kódu. 

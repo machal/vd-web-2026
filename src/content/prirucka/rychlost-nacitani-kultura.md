@@ -1,6 +1,7 @@
 ---
 id: rychlost-nacitani-kultura
-heading: ''
+title: 'Rychlost načítání jako součást kultury vývoje'
+heading: 'Rychlost načítání jako součást kultury vývoje'
 perex: ''
 published: false
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Rychlost načítání jako součást kultury vývoje
 
 Začněme citátem:

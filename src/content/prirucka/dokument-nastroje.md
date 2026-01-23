@@ -1,6 +1,7 @@
 ---
 id: dokument-nastroje
-heading: ''
+title: 'Blanka a další nástroje pro dokumentovou vrstvu webu'
+heading: 'Blanka a další nástroje pro dokumentovou vrstvu webu'
 perex: ''
 published: false
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Blanka a další nástroje pro dokumentovou vrstvu webu
 
 Při formování dokumentu, nevyhnutelném základu každého webu, se může hodit pár nástrojů. Předpokládejme, že máme hotový obsah ve strukturovaném HTML. Co teď?

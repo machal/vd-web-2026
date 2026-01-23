@@ -1,5 +1,6 @@
 ---
 id: checklist
+title: 'Checklist pro frontendisty před spuštěním webu'
 heading: 'Checklist pro frontendisty před spuštěním webu (update 2021)'
 date: 2021-08-30
 perex: '[Aktualizováno] Proč dělat weby blbě, když je můžeme dělat dobře? Třeba podle checklistu ze Vzhůru dolů.'
@@ -15,7 +16,6 @@ og_title: 'Checklist pro frontendisty před spuštěním webu (update 2021)'
 og_description: '[Aktualizováno] Proč dělat weby blbě, když je můžeme dělat dobře? Třeba podle checklistu ze Vzhůru dolů.'
 og_type: article
 ---
-
 # Checklist pro frontendisty před spuštěním webu
 
 Proč dělat weby blbě, když je můžeme dělat dobře? Třeba podle checklistu ze Vzhůru dolů.

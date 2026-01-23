@@ -1,5 +1,6 @@
 ---
 id: viewport-windows
+title: 'Viewport ve webdesignu: layoutový, vizuální a ideální'
 heading: 'Viewport na Windows 8 a 8.1'
 date: 2015-02-03
 perex: 'S viewportem jsou jen problémy. A Internet Explorer na Windows Phone 8 a 8.1 dal téhle větě nový rozměr.'
@@ -11,7 +12,6 @@ og_title: 'Viewport na Windows 8 a 8.1'
 og_description: 'S viewportem jsou jen problémy. A Internet Explorer na Windows Phone 8 a 8.1 dal téhle větě nový rozměr.'
 og_type: article
 ---
-
 # Viewport ve webdesignu: layoutový, vizuální a ideální
 
 Dozvíte se, co je layoutový, co vizuální a co ideální viewport. A také proč je jich tolik.

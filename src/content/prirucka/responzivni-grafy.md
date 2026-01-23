@@ -1,17 +1,16 @@
 ---
 id: responzivni-grafy
+title: 'Responzivní grafy'
 heading: 'Responzivní grafy'
 date: 2017-08-31
 perex: 'Podívejme se na tři nejpoužívanější knihovny pro tvorbu responzivních grafů.'
 published: true
-category: []
+category: ['responzivni-design']
 no_ads: false
 og_title: 'Responzivní grafy'
 og_description: 'Podívejme se na tři nejpoužívanější knihovny pro tvorbu responzivních grafů.'
 og_type: article
----
-
-# Responzivní grafy
+---# Responzivní grafy
 
 Responzivní grafy nacházejí využití hlavně v rukou demagogických politiků. Grafy, které používají, se *přizpůsobují* jejich vidění světa.
 

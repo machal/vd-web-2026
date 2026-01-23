@@ -1,6 +1,7 @@
 ---
 id: viewport-windows
-heading: ''
+title: 'Viewport na Windows 8 a 8.1'
+heading: 'Viewport na Windows 8 a 8.1'
 perex: ''
 published: true
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Viewport na Windows 8 a 8.1
 
 *Aktualizace pro rok 2023: Článek už není relevantní, mrkněte se na text o [meta značce pro viewport](viewport-meta.md).*

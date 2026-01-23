@@ -1,5 +1,7 @@
 ---
 id: semver
+tags: ['nastroje']
+title: 'SemVer: Sémantické verzování'
 heading: 'SemVer: Sémantické verzování'
 date: 2018-11-01
 perex: 'Jaké informace můžeme vyčíst z verze software typu 1.2.3. No a hlavně – jak to souvisí s frontendovým vývojem a konkrétně package.json.'
@@ -13,9 +15,7 @@ no_ads: false
 og_title: 'SemVer: Sémantické verzování'
 og_description: 'Jaké informace můžeme vyčíst z verze software typu 1.2.3. No a hlavně – jak to souvisí s frontendovým vývojem a konkrétně package.json.'
 og_type: article
----
-
-# SemVer: Sémantické verzování
+---# SemVer: Sémantické verzování
 
 SemVer je specifikace, jejímž cílem je sjednocení způsobu verzování software.
 

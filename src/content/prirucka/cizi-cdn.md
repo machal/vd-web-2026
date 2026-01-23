@@ -1,6 +1,7 @@
 ---
 id: cizi-cdn
-heading: ''
+title: 'Proč nestahovat JS a CSS z cizích CDN?'
+heading: 'Proč nestahovat JS a CSS z cizích CDN?'
 perex: ''
 published: false
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Proč nestahovat JS a CSS z cizích CDN?
 
 Na webech to ještě často vídám:

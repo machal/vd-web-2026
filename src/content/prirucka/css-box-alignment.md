@@ -1,6 +1,8 @@
 ---
 id: css-box-alignment
-heading: ''
+tags: ['css']
+title: 'Zarovnání boxů v CSS (Box Alignment Module)'
+heading: 'Zarovnání boxů v CSS (Box Alignment Module)'
 perex: ''
 published: true
 category:
@@ -11,9 +13,7 @@ no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----
-
-# Zarovnání boxů v CSS (Box Alignment Module)
+---# Zarovnání boxů v CSS (Box Alignment Module)
 
 „Box Alignment“ je modul specifikace CSS, který definuje zarovnání boxů v různých modelech rozvržení CSS: blokovém, tabulkovém, vícesloupcovém, flexboxu nebo gridu.
 

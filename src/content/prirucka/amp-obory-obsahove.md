@@ -1,6 +1,7 @@
 ---
 id: amp-obory-obsahove
-heading: ''
+title: 'Větší obsahové weby'
+heading: 'Větší obsahové weby'
 perex: ''
 published: false
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Větší obsahové weby
 
 Z pohledu někoho, kdo vás chce přesvědčit o užitečnosti AMP, to už tady začíná být opravdu zajímavé.

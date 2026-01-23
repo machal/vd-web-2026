@@ -1,6 +1,7 @@
 ---
 id: css-grid-msie-autoplacement
-heading: ''
+title: 'CSS grid v MSIE: Mů­že­te mít i au­to­ma­tic­ké umís­ťo­vá­ní do mříž­ky'
+heading: 'CSS grid v MSIE: Mů­že­te mít i au­to­ma­tic­ké umís­ťo­vá­ní do mříž­ky'
 perex: ''
 published: true
 category:
@@ -12,7 +13,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # CSS grid v MSIE: Mů­že­te mít i au­to­ma­tic­ké umís­ťo­vá­ní do mříž­ky
 
 Text je přesunutý do článku [o řešení gridu v MSIE pomocí Autoprefixeru](css-grid-msie.md)

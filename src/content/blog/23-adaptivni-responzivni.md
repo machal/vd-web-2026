@@ -10,8 +10,8 @@ sectionID: 1
 og_title: 'Proč adaptivní, ne responzivní. A proč to responzivní zůstane'
 og_description: 'Obor, o kterém v poslední době píšu, školím a přednáším se nejmenuje responzivní webdesign. Je to webdesign adaptivní.'
 og_type: article
+tags: ['responzivni-design']
 ---
-
 # Proč adaptivní, ne responzivní. A proč to responzivní zůstane
 
 Obor, o kterém v poslední době [píšu](http://www.vzhurudolu.cz/blog/8-responzivni-technikalie), [školím](http://www.vzhurudolu.cz/kurzy/responzivni-webdesign) a [přednáším](http://www.slideshare.net/machal/ms-fest-pdf) se nejmenuje *responzivní* webdesign. Je to webdesign *adaptivní*.

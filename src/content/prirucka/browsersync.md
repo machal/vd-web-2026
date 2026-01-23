@@ -1,5 +1,7 @@
 ---
 id: browsersync
+tags: ['nastroje']
+title: 'Browsersync'
 heading: 'Browsersync: proč a jak používat automatický reload v prohlížečích'
 date: 2020-07-28
 perex: 'Aktualizovaný podrobný text o velmi užitečném nástroji pro lokální vývoj webů. Browsersync umí živě promítat změny v HTML, CSS a JS souborech.'
@@ -14,9 +16,7 @@ no_ads: false
 og_title: 'Browsersync: proč a jak používat automatický reload v prohlížečích'
 og_description: 'Aktualizovaný podrobný text o velmi užitečném nástroji pro lokální vývoj webů. Browsersync umí živě promítat změny v HTML, CSS a JS souborech.'
 og_type: article
----
-
-# Browsersync
+---# Browsersync
 
 Browsersync je velmi užitečný nástroj pro lokální vývoj webů. Pomáhá se dvěma důležitými úkoly:
 

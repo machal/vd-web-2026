@@ -7,13 +7,12 @@ excerpt: 'Vyhrál to tedy package.json a je asi jedno, jestli ho budete ovládat
 postStatus: Published
 authorID: 0
 sectionID: 1
-category: []
+category: ['nastroje']
 no_ads: false
 og_title: 'Konec Boweru: Na nové projekty už jej nepoužívejte'
 og_description: 'Vyhrál to tedy package.json a je asi jedno, jestli ho budete ovládat NPM nebo Yarnem.'
 og_type: article
 ---
-
 # Konec Boweru: Na nové projekty už jej nepoužívejte
 
 Přátelé, takže poté, co někteří členové javascriptové komunity zaživa pohřbili jQuery, Grunt, Gulp, NPM a další, dočkali jsme se první skutečné mrtvoly: je to [Bower](http://www.vzhurudolu.cz/prirucka/bower).

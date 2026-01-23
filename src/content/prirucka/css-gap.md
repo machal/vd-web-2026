@@ -1,6 +1,8 @@
 ---
 id: css-gap
-heading: ''
+tags: ['css']
+title: 'CSS vlastnost gap'
+heading: 'CSS vlastnost gap'
 perex: ''
 published: true
 category:
@@ -11,9 +13,7 @@ no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----
-
-# CSS vlastnost gap
+---# CSS vlastnost gap
 
 Pomocí CSS vlastnosti `gap` můžeme definovat mezery v rozvrženích vytvářených pomocí CSS layoutů. Téhle mezeře se občas i v češtině podle anglického originálu říká „gutter“. A brzy také možná „gap“.
 

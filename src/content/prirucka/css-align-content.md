@@ -1,6 +1,7 @@
 ---
 id: css-align-content
-heading: ''
+title: 'Vlastnost align-content: Rozdělení prostoru mezi položkami na příčné ose'
+heading: 'Vlastnost align-content: Rozdělení prostoru mezi položkami na příčné ose'
 perex: ''
 published: true
 category:
@@ -12,7 +13,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Vlastnost align-content: Rozdělení prostoru mezi položkami na příčné ose
 
 Vlastnost `align-content` definuje, jak prohlížeč distribuuje prostor mezi položkami obsahu podél příčné (nebo blokové) osy kontejneru layoutu.

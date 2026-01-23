@@ -1,19 +1,18 @@
 ---
 id: iphone-x
+title: 'iPhone X: jak si pro něj nastavit weby a proč je potřeba to udělat?'
 heading: 'iPhone X: jak si pro něj nastavit weby a proč je potřeba to udělat?'
 date: 2018-01-16
 perex: 'Nový iPhone je první rozšířené zařízení s jinou než hranatou obrazovkou. Pojďme se podívat, jak nastavit a otestovat weby nejen pro tyto typy přístrojů.'
 published: true
-category: []
+category: ['responzivni-design']
 category_highlight: true
 include_rss: true
 no_ads: false
 og_title: 'iPhone X: jak si pro něj nastavit weby a proč je potřeba to udělat?'
 og_description: 'Nový iPhone je první rozšířené zařízení s jinou než hranatou obrazovkou. Pojďme se podívat, jak nastavit a otestovat weby nejen pro tyto typy přístrojů.'
 og_type: article
----
-
-# iPhone X: jak si pro něj nastavit weby a proč je potřeba to udělat?
+---# iPhone X: jak si pro něj nastavit weby a proč je potřeba to udělat?
 
 Schválně jsem text nenazval „jak *optimalizovat* weby pro iPhone X“. To, co zde ukazuji je totiž běžný a ve standardech W3C zanesený způsob přípravy webů na zařízení, která mají jiný než hranatý tvar obrazovky. 
 

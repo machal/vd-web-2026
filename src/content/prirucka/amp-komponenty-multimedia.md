@@ -1,6 +1,7 @@
 ---
 id: amp-komponenty-multimedia
-heading: ''
+title: 'Komponenty pro multimediální obsah'
+heading: 'Komponenty pro multimediální obsah'
 perex: ''
 published: false
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Komponenty pro multimediální obsah
 
 Obstarávají vkládání externího multimediálního obsahu – obrázky, video a audio.

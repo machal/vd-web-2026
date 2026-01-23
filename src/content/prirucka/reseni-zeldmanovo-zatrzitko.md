@@ -1,18 +1,17 @@
 ---
 id: reseni-zeldmanovo-zatrzitko
-heading: ''
+title: 'CSS řešení: Zeldmanovo zatržítko'
+heading: 'CSS řešení: Zeldmanovo zatržítko'
 perex: ''
 published: true
-category: []
+category: ['css']
 category_highlight: false
 include_rss: false
 no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----
-
-# CSS řešení: Zeldmanovo zatržítko
+---# CSS řešení: Zeldmanovo zatržítko
 
 Podíváme se na další z řešení, které jsem ukazoval v přednášce [na WebExpo 2016](https://www.vzhurudolu.cz/prednaska/webexpo-2016-246).
 

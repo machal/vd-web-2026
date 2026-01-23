@@ -1,6 +1,7 @@
 ---
 id: krkavci-technika
-heading: ''
+title: 'Krkavčí technika'
+heading: 'Krkavčí technika'
 perex: ''
 published: false
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Krkavčí technika
 
 <div class="book-index" data-book-index="Krkavčí technika"></div>

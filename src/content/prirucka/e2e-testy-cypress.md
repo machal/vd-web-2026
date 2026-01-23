@@ -1,18 +1,17 @@
 ---
 id: e2e-testy-cypress
-heading: ''
+title: 'Cypress.js'
+heading: 'Cypress.js'
 perex: ''
 published: true
-category: []
+category: ['nastroje']
 category_highlight: false
 include_rss: false
 no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----
-
-# Cypress.js
+---# Cypress.js
 
 <!-- 
 _[Tomáš Smetka](https://twitter.com/TSmetka) z [Pilulka.cz](https://www.pracevpilulce.cz/) vám v dnešním textu představí end-to-end testování s Cypress.js._

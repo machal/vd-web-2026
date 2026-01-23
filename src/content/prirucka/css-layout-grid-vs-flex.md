@@ -1,6 +1,7 @@
 ---
 id: css-layout-grid-vs-flex
-heading: ''
+title: 'Grid vs. flex (vs. multicol)'
+heading: 'Grid vs. flex (vs. multicol)'
 perex: ''
 published: false
 category:
@@ -12,7 +13,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Grid vs. flex (vs. multicol)
 
 Nyní se zaměříme na jednotlivé systémy rozvržení a povíme si více o rozdílech mezi nimi. Začneme vícesloupcovým layoutem, který se z těch tří trochu vyjímá.

@@ -1,6 +1,7 @@
 ---
 id: temp
-heading: ''
+title: 'Dočasný dokument pro testování prázdných kapitol'
+heading: 'Dočasný dokument pro testování prázdných kapitol'
 perex: ''
 published: false
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Dočasný dokument pro testování prázdných kapitol
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod

@@ -1,6 +1,7 @@
 ---
 id: css-place-self
-heading: ''
+title: 'Vlastnost place-self: Zarovnání položky na obou osách'
+heading: 'Vlastnost place-self: Zarovnání položky na obou osách'
 perex: ''
 published: true
 category:
@@ -12,7 +13,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Vlastnost place-self: Zarovnání položky na obou osách
 
 Vlastnost `place-self` určí zarovnání položky na hlavní i příčné ose pro layouty v CSS.

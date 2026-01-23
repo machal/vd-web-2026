@@ -1,6 +1,7 @@
 ---
 id: figure-figcaption
-heading: ''
+title: 'Ilustrace ve stránce: figure a figcaption'
+heading: 'Ilustrace ve stránce: figure a figcaption'
 perex: ''
 published: true
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Ilustrace ve stránce: figure a figcaption
 
 Značka `<figure>` slouží k vložení ilustrací vztahujících se k  hlavnímu obsahu:

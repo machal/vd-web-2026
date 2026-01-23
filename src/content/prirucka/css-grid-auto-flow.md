@@ -1,6 +1,7 @@
 ---
 id: css-grid-auto-flow
-heading: ''
+title: 'Vlastnost grid-auto-flow'
+heading: 'Vlastnost grid-auto-flow'
 perex: ''
 published: true
 category:
@@ -12,7 +13,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Vlastnost grid-auto-flow
 
 Vlastnost `grid-auto-flow` určuje, jak bude fungovat algoritmus automatického umísťování prvků do mřížky.

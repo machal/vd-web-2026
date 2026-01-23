@@ -15,7 +15,16 @@ export async function getStaticPaths() {
   const priruckaPosts = await getCollection('prirucka', (entry) => !!entry.data.id);
   
   const allContent = [...blogPosts, ...podcasts, ...priruckaPosts]
-    .filter(post => post.data.published !== false)
+    .filter(post => {
+      // Filtrovat jen publikované články
+      if (post.collection === 'prirucka') {
+        if (post.data.published !== true) return false;
+        // Filtrovat nehotové snippety - pokud title === id, pak to není hotový článek
+        if (post.data.title === post.data.id) return false;
+        return true;
+      }
+      return post.data.published !== false;
+    })
     .sort((a, b) => {
       const dateA = a.data.date || new Date(0);
       const dateB = b.data.date || new Date(0);

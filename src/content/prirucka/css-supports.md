@@ -1,6 +1,8 @@
 ---
 id: css-supports
-heading: ''
+tags: ['css']
+title: 'Feature Queries v CSS: @supports'
+heading: 'Feature Queries v CSS: @supports'
 perex: ''
 published: true
 category:
@@ -11,9 +13,7 @@ no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----
-
-# Feature Queries v CSS: @supports
+---# Feature Queries v CSS: @supports
 
 V CSS nebo JavaScriptu se nám občas hodí napsat kód, který rozlišuje varianty podle podpory určitých CSS vlastností.
 

@@ -7,13 +7,12 @@ excerpt: 'David Berner prostřednictvím bezva článku na Smashing Magazine boj
 postStatus: Published
 authorID: 1
 sectionID: 1
-category: []
+category: ['organizace-css']
 no_ads: false
 og_title: 'BEM CSS: Jak se vyhnout častým chybám?'
 og_description: 'David Berner prostřednictvím bezva článku na Smashing Magazine bojuje s častými problémy při používání BEM metodiky.'
 og_type: article
 ---
-
 # BEM CSS: Jak se vyhnout častým chybám?
 
 David Berner prostřednictvím bezva článku [na Smashing Magazine](https://www.smashingmagazine.com/2016/06/battling-bem-extended-edition-common-problems-and-how-to-avoid-them/) bojuje s častými problémy při používání [BEM metodiky](http://www.vzhurudolu.cz/prirucka/bem). Dovolil jsem si některé z nich ořezat na kost a doplnit svými komentáři. 

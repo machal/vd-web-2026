@@ -1,6 +1,7 @@
 ---
 id: css-justify-content
-heading: ''
+title: 'Vlastnost justify-content: Rozdělení prostoru mezi položkami na hlavní ose'
+heading: 'Vlastnost justify-content: Rozdělení prostoru mezi položkami na hlavní ose'
 perex: ''
 published: true
 category:
@@ -12,7 +13,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Vlastnost justify-content: Rozdělení prostoru mezi položkami na hlavní ose
 
 Vlastnost CSS `justify-content` definuje, jak prohlížeč distribuuje prostor mezi položkami obsahu podél hlavní (nebo řádkové) osy kontejneru layoutu.

@@ -1,6 +1,7 @@
 ---
 id: amp-layout-dalsi-atributy
-heading: ''
+title: 'Atributy width, height, sizes, heights, media'
+heading: 'Atributy width, height, sizes, heights, media'
 perex: ''
 published: false
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Atributy width, height, sizes, heights, media
 
 Podívejme se teď na další důležitou součást layoutu externího obsahu v AMP – atributy, které definují rozměry prvků mezi jednotlivými breakpointy v responzivním layoutu.

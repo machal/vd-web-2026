@@ -1,6 +1,7 @@
 ---
 id: css-multicol-span
-heading: ''
+title: 'Vlastnost column-span: Překlenutí ve vícesloupcovém rozložení'
+heading: 'Vlastnost column-span: Překlenutí ve vícesloupcovém rozložení'
 perex: ''
 published: true
 category:
@@ -12,7 +13,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Vlastnost column-span: Překlenutí ve vícesloupcovém rozložení
 
 Vlastnost `column-span` umožňuje, aby se prvek rozprostřel přes několik sloupců ve vícesloupcovém rozvržení.

@@ -1,5 +1,6 @@
 ---
 id: gdpr
+title: 'GDPR pro webaře: Všechno, co o tom vím (pod dohledem advokáta)'
 heading: 'GDPR pro weby: Všechno, co o tom vím (pod dohledem advokáta)'
 date: 2018-08-12
 perex: 'Jak se GDPR týká frontendistů, jak designérů a backendistů. Na co si musí dát pozor majitelé webů. A jak je to nově s cookie lištou?'
@@ -12,7 +13,6 @@ og_title: 'GDPR pro weby: Všechno, co o tom vím (pod dohledem advokáta)'
 og_description: 'Jak se GDPR týká frontendistů, jak designérů a backendistů. Na co si musí dát pozor majitelé webů. A jak je to nově s cookie lištou?'
 og_type: article
 ---
-
 # GDPR pro webaře: Všechno, co o tom vím (pod dohledem advokáta)
 
 O GDPR toho bylo napsáno hodně, zavedení do praxe už je za námi a hlavní vlna zájmu tedy opadla. Proč další článek o GDPR? Je to jednoduché – pořád vidím weby, které tu věc nijak neřeší.

@@ -1,5 +1,6 @@
 ---
 id: svg-fallbacky
+title: 'SVG fallbacky'
 heading: 'SVG fallbacky'
 date: 2016-03-08
 perex: 'Pojďme prozkoumat náhradní řešení pro prohlížeče, které neumí SVG.'
@@ -11,7 +12,6 @@ og_title: 'SVG fallbacky'
 og_description: 'Pojďme prozkoumat náhradní řešení pro prohlížeče, které neumí SVG.'
 og_type: article
 ---
-
 # SVG fallbacky
 
 Pojďme prozkoumat náhradní řešení pro prohlížeče, které neumí [SVG](svg.md). Aktuálně se to týká jen Internet Exploreru ve verzi 8 a Android Browseru 2.3 a starších. V ČR to budou 2 - 4 % uživatelů.

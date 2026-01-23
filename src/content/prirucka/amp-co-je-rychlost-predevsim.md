@@ -1,6 +1,7 @@
 ---
 id: amp-co-je-rychlost-predevsim
-heading: ''
+title: 'AMP, rychlost především'
+heading: 'AMP, rychlost především'
 perex: ''
 published: false
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # AMP, rychlost především
 
 Jak dostat rychlost vykreslení jakéhokoliv webu z vteřin na požadované nízké stovky milisekund, abychom se dostali do mezí lidského vnímání „okamžitého zobrazení“? AMP stránce se to může za jistých okolností podařit.

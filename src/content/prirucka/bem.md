@@ -1,5 +1,7 @@
 ---
 id: bem
+tags: ['organizace-css']
+title: 'BEM: Pojmenovávací konvence pro třídy v CSS'
 heading: 'BEM: Pojmenovávací konvence pro třídy v CSS'
 date: 2017-06-05
 perex: 'Block, Element, Modifier. Nově přepsaný článek o metodice pro pojmenovávání tříd v komponentách.'
@@ -11,9 +13,7 @@ no_ads: false
 og_title: 'BEM: Pojmenovávací konvence pro třídy v CSS'
 og_description: 'Block, Element, Modifier. Nově přepsaný článek o metodice pro pojmenovávání tříd v komponentách.'
 og_type: article
----
-
-# BEM: Pojmenovávací konvence pro třídy v CSS
+---# BEM: Pojmenovávací konvence pro třídy v CSS
 
 BEM je způsob, jak pojmenovávat třídy v CSS tak, aby se vám nepletly jejich různé typy. 
 

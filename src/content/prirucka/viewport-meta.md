@@ -1,18 +1,17 @@
 ---
 id: viewport-meta
-heading: ''
+title: 'Meta značka pro viewport: Vše, co o ní potřebujete vědět'
+heading: 'Meta značka pro viewport: Vše, co o ní potřebujete vědět'
 perex: ''
 published: true
-category: []
+category: ['responzivni-design']
 category_highlight: false
 include_rss: false
 no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----
-
-# Meta značka pro viewport: Vše, co o ní potřebujete vědět
+---# Meta značka pro viewport: Vše, co o ní potřebujete vědět
 
 Meta značka „viewport“ se používá hlavně pro mobily [v responzivním designu](https://www.vzhurudolu.cz/responzivni-design).
 

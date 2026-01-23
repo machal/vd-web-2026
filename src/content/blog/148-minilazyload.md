@@ -16,9 +16,8 @@ category_highlight: true
 og_title: 'MiniLazyload: Minimalistická knihovna pro líné načtení obrázků a IFRAME (aktualizováno pro verzi 2.3.0)'
 og_description: 'Šimon z Pilulka.cz vám v dnešním textu představí svou miniaturní, ale chytře navrženou knihovnu pro líné načtení obrázků a iframe.'
 og_type: article
----
-
-# MiniLazyload: Minimalistická knihovna pro líné načtení obrázků a IFRAME (aktualizováno pro verzi 2.3.0)
+tags: ['nastroje', 'rychlost-nacitani']
+---# MiniLazyload: Minimalistická knihovna pro líné načtení obrázků a IFRAME (aktualizováno pro verzi 2.3.0)
 
 _[Šimon Raichl](http://rs.9e.cz/) z [Pilulka.cz](https://www.pracevpilulce.cz) vám v dnešním textu představí svou miniaturní, ale chytře navrženou knihovnu pro líné načtení obrázků a iframe._
 

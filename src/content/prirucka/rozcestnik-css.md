@@ -1,6 +1,7 @@
 ---
 id: rozcestnik-css
-heading: ''
+title: 'Rozcestník k CSS'
+heading: 'Rozcestník k CSS'
 perex: ''
 published: false
 category:
@@ -12,7 +13,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Rozcestník k CSS
 
 ## Základy CSS

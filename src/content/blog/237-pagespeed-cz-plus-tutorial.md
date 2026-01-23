@@ -15,8 +15,8 @@ category_highlight: true
 og_title: 'PageSpeed.cz tester PLUS pro vývojáře: jak monitorovat a ladit rychlost webu'
 og_description: 'Po letech vývoje přicházíme s tarifem PLUS, navržený pro vývojáře, kteří chtějí zlepšit rychlost svých webů. V článku ukážu, jak PLUS odhaluje a pomáhá opravit nejčastější problémy, s praktickým příkladem na webu Goldea.cz.'
 og_type: article
+tags: ['rychlost-nacitani']
 ---
-
 # PageSpeed.cz tester PLUS pro vývojáře: jak monitorovat a ladit rychlost webu
 
 V PageSpeed.cz jsme po několika letech práce na [testeru pro měření rychlosti](https://app.pagespeed.cz/) spustili také jeho placenou variantu, [tarif PLUS](https://app.pagespeed.cz/plus).

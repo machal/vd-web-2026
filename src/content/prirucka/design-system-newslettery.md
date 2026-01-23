@@ -1,18 +1,17 @@
 ---
 id: design-system-newslettery
-heading: ''
+title: 'Systém designu v newsletterech'
+heading: 'Systém designu v newsletterech'
 perex: ''
 published: true
-category: []
+category: ['organizace-css']
 category_highlight: false
 include_rss: false
 no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----
-
-# Systém designu v newsletterech
+---# Systém designu v newsletterech
 
 _[Tomáš Krejčí](https://www.vzhurudolu.cz/lektori/tomas-krejci) ze [SUPERKODERS](https://superkoders.com/) vám v dnešním textu ukáže svou práci na knihovně UI komponent pro newslettery úspěšného českého startupu._
 

@@ -1,18 +1,17 @@
 ---
 id: third-party
-heading: ''
+title: 'Optimalizace rychlosti komponent třetích stran'
+heading: 'Optimalizace rychlosti komponent třetích stran'
 perex: ''
 published: true
-category: []
+category: ['rychlost-nacitani']
 category_highlight: false
 include_rss: false
 no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----
-
-# Optimalizace rychlosti komponent třetích stran
+---# Optimalizace rychlosti komponent třetích stran
 
 Komponenty třetích stran (third parties nebo také 3P)  nám zpomalují weby. To víme. Ale skutečně jsme jako vývojáři proti nim tak bezbranní, jak si občas myslíme?
 

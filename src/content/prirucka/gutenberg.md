@@ -1,5 +1,6 @@
 ---
 id: gutenberg
+title: 'Gutenberg: Co je zač ten emoce vyvolávající editor (nejen) pro WordPress?'
 heading: 'Gutenberg: Co je zač ten emoce vyvolávající editor (nejen) pro WordPress?'
 date: 2018-11-08
 perex: 'Gutenberg je plugin pro vizuální tvorbu strukturovaného obsahu, který může přinést výraznou inovaci do tvorby webů nejen prostřednictvím WordPressu.'
@@ -13,7 +14,6 @@ og_title: 'Gutenberg: Co je zač ten emoce vyvolávající editor (nejen) pro Wo
 og_description: 'Gutenberg je plugin pro vizuální tvorbu strukturovaného obsahu, který může přinést výraznou inovaci do tvorby webů nejen prostřednictvím WordPressu.'
 og_type: article
 ---
-
 # Gutenberg: Co je zač ten emoce vyvolávající editor (nejen) pro WordPress?
 
 [Gutenberg](https://wordpress.org/gutenberg/) je plugin pro vizuální tvorbu strukturovaného obsahu. Myslím, že může přinést výraznou inovaci do tvorby webů nejen prostřednictvím WordPressu.

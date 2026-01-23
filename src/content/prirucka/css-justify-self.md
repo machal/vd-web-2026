@@ -1,6 +1,7 @@
 ---
 id: css-justify-self
-heading: ''
+title: 'Vlastnost justify-self: Zarovnání položky na hlavní ose'
+heading: 'Vlastnost justify-self: Zarovnání položky na hlavní ose'
 perex: ''
 published: true
 category:
@@ -12,7 +13,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Vlastnost justify-self: Zarovnání položky na hlavní ose
 
 Vlastnost `justify-self` určuje zarovnání položky na hlavní ose (jinak též řádkové ose).

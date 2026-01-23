@@ -10,8 +10,8 @@ sectionID: 1
 og_title: 'Tim Kadlec: Responzivní design profesionálně - recenze českého vydání'
 og_description: 'V originále s drobnými výhradami výborný text. V češtině výrazně zabugovaná knížka. I tak vám ale doporučím si ji koupit. Je to totiž první a zatím jediná česká publikace o responzivním webdesignu.'
 og_type: article
+tags: ['responzivni-design']
 ---
-
 # Tim Kadlec: Responzivní design profesionálně - recenze českého vydání
 
 *Psáno pro [Zdroják.cz](http://www.zdrojak.cz/clanky/tim-kadlec-responzivni-design-profesionalne-recenze-ceskeho-vydani/).*

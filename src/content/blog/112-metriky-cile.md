@@ -7,7 +7,7 @@ excerpt: 'Zkusme si je vypočíst podle interních hodnot nástroje Lighthouse.'
 postStatus: Published
 authorID: 1
 sectionID: 1
-category: []
+category: ['rychlost-nacitani']
 no_ads: false
 include_rss: true
 category_highlight: true
@@ -15,7 +15,6 @@ og_title: 'Ideální hodnoty metrik rychlosti načítání'
 og_description: 'Zkusme si je vypočíst podle interních hodnot nástroje Lighthouse.'
 og_type: article
 ---
-
 # Ideální hodnoty metrik rychlosti načítání
 
 Jaké jsou cílové hodnoty [metrik](/prirucka/metriky-rychlosti) jako Speed Index nebo Time To Interactive?

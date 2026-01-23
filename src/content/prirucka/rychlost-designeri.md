@@ -1,18 +1,17 @@
 ---
 id: rychlost-designeri
-heading: ''
+title: 'Rychlost načítání: Úvod pro designéry, marketéry a majitele webů'
+heading: 'Rychlost načítání: Úvod pro designéry, marketéry a majitele webů'
 perex: ''
 published: true
-category: []
+category: ['rychlost-nacitani']
 category_highlight: false
 include_rss: false
 no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----
-
-# Rychlost načítání: Úvod pro designéry, marketéry a majitele webů
+---# Rychlost načítání: Úvod pro designéry, marketéry a majitele webů
 
 Rychlost nemůžete nechat jen na vývojářích. Tohle je textová podoba mé přednášky pro [UX & CRO Summit 2017](https://www.uxcrosummit.cz/), kde jsem neprogramátorům ukazoval postupy a techniky pro zvýšení kultury rychlosti v jejich týmech.
 

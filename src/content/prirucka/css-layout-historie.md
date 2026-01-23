@@ -1,6 +1,7 @@
 ---
 id: css-layout-historie
-heading: ''
+title: 'Velmi stručná historie layoutů v CSS'
+heading: 'Velmi stručná historie layoutů v CSS'
 perex: ''
 published: false
 category:
@@ -12,7 +13,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Velmi stručná historie layoutů v CSS
 
 <div class="book-index" data-book-index="Historie"></div>

@@ -1,6 +1,8 @@
 ---
 id: css-image-set
-heading: ''
+tags: ['css']
+title: 'image-set() v CSS'
+heading: 'image-set() v CSS'
 perex: ''
 published: true
 category:
@@ -11,9 +13,7 @@ no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----
-
-# image-set() v CSS
+---# image-set() v CSS
 
 Zápis `image-set()` umožňuje nechat prohlížeč vybrat nejvhodnější obrázek, definovaný v rámci vlastnosti `background-image`, ze sady, kterou mu připravíme.
 

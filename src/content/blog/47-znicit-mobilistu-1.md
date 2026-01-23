@@ -7,7 +7,7 @@ excerpt: 'Zničit krtka, vydání 2016. Dnes si zahubíme uživatele mobilního 
 postStatus: Published
 authorID: 1
 sectionID: 1
-category: []
+category: ['responzivni-design']
 no_ads: false
 include_rss: true
 category_highlight: true
@@ -15,7 +15,6 @@ og_title: 'Jak zničit mobilní uživatele? Pomalým načítáním, karusely neb
 og_description: 'Zničit krtka, vydání 2016. Dnes si zahubíme uživatele mobilního webu. Postupujte podle mého návodu.'
 og_type: article
 ---
-
 # Jak zničit mobilní uživatele? Pomalým načítáním, karusely nebo schováním navigace
 
 [Zničit krtka](http://imgur.com/EMBHUVE), vydání 2016. Dnes si zahubíme uživatele mobilního webu. Postupujte podle mého návodu.

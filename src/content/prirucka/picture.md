@@ -1,5 +1,6 @@
 ---
 id: picture
+title: 'Nová značka Picture'
 heading: 'Picture, nová značka pro vkládání obrázků'
 date: 2017-06-21
 perex: 'Aktualiace textu o novém tagu, umožňujícím definování variant obrázku pro různé stavy v responzivním webdesignu.'
@@ -15,7 +16,6 @@ og_title: 'Picture, nová značka pro vkládání obrázků'
 og_description: 'Aktualiace textu o novém tagu, umožňujícím definování variant obrázku pro různé stavy v responzivním webdesignu.'
 og_type: article
 ---
-
 # Nová značka Picture
 
 `<picture>` umožňuje definovat varianty obrázku pro různé stavy v responzivním webdesignu. 

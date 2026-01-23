@@ -1,6 +1,7 @@
 ---
 id: amp-je-pro-vas
-heading: ''
+title: 'Dává pro vás AMP smysl?'
+heading: 'Dává pro vás AMP smysl?'
 perex: ''
 published: false
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Dává pro vás AMP smysl?
 
 I když působnost AMP omezíme na statičtější weby, tedy ty obsahové a částečně i e-shopy, je potřeba říct, že nasazení této technologie nemusí být vhodné úplně pro všechny.

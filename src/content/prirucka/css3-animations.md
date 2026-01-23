@@ -1,5 +1,6 @@
 ---
 id: css3-animations
+tags: ['css']
 heading: 'CSS3 Animations'
 date: 2013-08-05
 perex: 'Možná se budete divit, ale tohle jsou první pořádné nativní webové animace vůbec. Překvapující? Všechny existující způsoby animace jsou buď zapouzdřené ve vlastním technologickém kontejneru (Gif, Flash, Silverlight …) nebo animují prostředkem, který'
@@ -15,7 +16,6 @@ og_title: 'CSS3 Animations'
 og_description: 'Možná se budete divit, ale tohle jsou první pořádné nativní webové animace vůbec. Překvapující? Všechny existující způsoby animace jsou buď zapouzdřené ve vlastním technologickém kontejneru (Gif, Flash, Silverlight …) nebo animují prostředkem, který'
 og_type: article
 ---
-
 CSS3 Animations: plnohodnotné animace
 =====================================
 

@@ -1,6 +1,7 @@
 ---
 id: amp-tutorial-blogpost
-heading: ''
+title: 'Tutoriál: Blogpost do AMP'
+heading: 'Tutoriál: Blogpost do AMP'
 perex: ''
 published: false
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Tutoriál: Blogpost do AMP
 
 Představu o AMP už máte. Teď nastal čas si ho pořádně vyzkoušet. Prostě se ponořit do příkladu a vyzkoušet teorii v praxi.

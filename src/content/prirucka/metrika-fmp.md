@@ -1,6 +1,7 @@
 ---
 id: metrika-fmp
-heading: ''
+title: 'Metrika „První smysluplné vykreslení“ (First Meaningful Paint, FMP)'
+heading: 'Metrika „První smysluplné vykreslení“ (First Meaningful Paint, FMP)'
 perex: ''
 published: true
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Metrika „První smysluplné vykreslení“ (First Meaningful Paint, FMP)
 
 [Metrika rychlosti webu](metriky-rychlosti.md), která informuje, kdy začne být viditelný primární obsah stránky.

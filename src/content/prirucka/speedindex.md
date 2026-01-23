@@ -1,6 +1,7 @@
 ---
 id: speedindex
-heading: ''
+title: 'Metrika „Index rychlosti“ (Speed Index, SI)'
+heading: 'Metrika „Index rychlosti“ (Speed Index, SI)'
 perex: ''
 published: true
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Metrika „Index rychlosti“ (Speed Index, SI)
 
 [Metrika rychlosti webu](metriky-rychlosti.md), která ukazuje jak rychle je viditelný obsah stránky naplněn do stavu stoprocentního vykreslení.

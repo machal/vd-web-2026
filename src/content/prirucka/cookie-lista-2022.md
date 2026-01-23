@@ -1,6 +1,7 @@
 ---
 id: cookie-lista-2022
-heading: ''
+title: 'Cookie lišta'
+heading: 'Cookie lišta'
 perex: ''
 published: true
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Cookie lišta
 
 Od ledna 2022 je i v Česku nutné od uživatelů žádat souhlas s ukládáním personalizačních a analytických cookies do jejich prohlížečů.

@@ -1,6 +1,7 @@
 ---
 id: responzivni-ui-schovavani-obsahu
-heading: ''
+title: 'Proč na mobilech neschovávat obsah?'
+heading: 'Proč na mobilech neschovávat obsah?'
 perex: ''
 published: false
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Proč na mobilech neschovávat obsah? 
 
 Jako příklad si vezmeme tabulku fotbalové ligy.

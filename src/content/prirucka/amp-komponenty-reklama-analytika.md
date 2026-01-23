@@ -1,6 +1,7 @@
 ---
 id: amp-komponenty-reklama-analytika
-heading: ''
+title: 'Komponenty pro reklamu a analytiku'
+heading: 'Komponenty pro reklamu a analytiku'
 perex: ''
 published: false
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Komponenty pro reklamu a analytiku
 
 Jak asi čekáte, u reklamních komponent půjde o vkládání bannerů do stránky a jejich ovládání:

@@ -1,6 +1,8 @@
 ---
 id: css-tisk-knih
-heading: ''
+tags: ['css']
+title: 'CSS pro tisk, aneb jak jsem sázel knihu „CSS: moderní layout“'
+heading: 'CSS pro tisk, aneb jak jsem sázel knihu „CSS: moderní layout“'
 perex: ''
 published: true
 category:
@@ -11,9 +13,7 @@ no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----
-
-# CSS pro tisk, aneb jak jsem sázel knihu „CSS: moderní layout“
+---# CSS pro tisk, aneb jak jsem sázel knihu „CSS: moderní layout“
 
 Přečtěte si, jak jsem se stal sazečem své vlastní [knihy](https://www.vzhurudolu.cz/css-layout/). Stalo se tak s pomocí webových technologií, knihovny Paged.js a několika přesně mířených ručních zásahů do výstupního PDF v Adobe Acrobatu.
 

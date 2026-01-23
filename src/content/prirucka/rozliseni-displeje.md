@@ -1,18 +1,17 @@
 ---
 id: rozliseni-displeje
-heading: ''
+title: 'Rozlišení obrazovky ve webdesignu'
+heading: 'Rozlišení obrazovky ve webdesignu'
 perex: ''
 published: true
-category: []
+category: ['responzivni-design']
 category_highlight: false
 include_rss: false
 no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----
-
-# Rozlišení obrazovky ve webdesignu
+---# Rozlišení obrazovky ve webdesignu
 
 Rozlišení displeje z pohledu webaře moc zajímavé není, protože weby vykreslujeme a přizpůsobujeme [velikosti okna prohlížeče](velikost-okna-css-js.md). Nicméně – občas se to hodí a možnosti jak rozlišení změřit pochopitelně máme.
 

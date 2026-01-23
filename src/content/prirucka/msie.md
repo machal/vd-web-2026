@@ -1,6 +1,7 @@
 ---
 id: msie
-heading: ''
+title: 'Internet Explorer (je už mrtvý?)'
+heading: 'Internet Explorer (je už mrtvý?)'
 perex: ''
 published: true
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Internet Explorer (je už mrtvý?)
 
 Microsoft Internet Explorer (MSIE) dělá vývojářům starosti. Používat moderní vlastnosti jako [CSS grid](css-grid.md) je složitější a někdy i nemožné, pokud je na projektu nutné podporovat tento starý prohlížeč od Microsoftu.

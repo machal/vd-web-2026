@@ -1,6 +1,7 @@
 ---
 id: plne-responzivni-typografie
-heading: ''
+title: 'Elastická typografie'
+heading: 'Elastická typografie'
 perex: ''
 published: false
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Elastická typografie
 
 Měnit velikost stránky i jednotlivých komponent už umíme díky předchozí podkapitole a díky jednotkám `em` a `rem`. Při změně velikosti okna se to děje *skokově*.

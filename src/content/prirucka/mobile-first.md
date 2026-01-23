@@ -1,18 +1,17 @@
 ---
 id: mobile-first
-heading: ''
+title: 'Filozofie „Mobile First“'
+heading: 'Filozofie „Mobile First“'
 perex: ''
 published: true
-category: []
+category: ['responzivni-design']
 category_highlight: false
 include_rss: false
 no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----
-
-# Filozofie „Mobile First“
+---# Filozofie „Mobile First“
 
 Mobile First je způsob návrhu uživatelského rozhraní, který z pohledu důležitosti staví mobilní zařízení minimálně na úroveň tradičních počítačů s velkými obrazovkami. 
 

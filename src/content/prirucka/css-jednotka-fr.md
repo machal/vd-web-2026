@@ -1,6 +1,7 @@
 ---
 id: css-jednotka-fr
-heading: ''
+title: 'Jednotka fr v CSS'
+heading: 'Jednotka fr v CSS'
 perex: ''
 published: true
 category:
@@ -12,7 +13,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Jednotka fr v CSS
 
 Jedná se o flexibilní jednotku, která reprezentuje podíl na volném prostoru v CSS gridu. Proto `fr`, jako fraction unit.

@@ -1,6 +1,8 @@
 ---
 id: css-display
-heading: ''
+tags: ['css']
+title: 'Vlastnost CSS display'
+heading: 'Vlastnost CSS display'
 perex: ''
 published: true
 category:
@@ -11,9 +13,7 @@ no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----
-
-# Vlastnost CSS display
+---# Vlastnost CSS display
 
 <div class="book-index" data-book-index="display"></div>
 

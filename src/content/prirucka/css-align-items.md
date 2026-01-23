@@ -1,6 +1,7 @@
 ---
 id: css-align-items
-heading: ''
+title: 'Vlastnost align-items: Zarovnání všech položek na příčné ose'
+heading: 'Vlastnost align-items: Zarovnání všech položek na příčné ose'
 perex: ''
 published: true
 category:
@@ -12,7 +13,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Vlastnost align-items: Zarovnání všech položek na příčné ose
 
 Vlastnost `align-items` definuje na kontejneru layoutu zarovnání položek na příčné ose (jinak též blokové ose).

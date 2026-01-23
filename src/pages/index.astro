@@ -19,7 +19,10 @@ const allContent = [...blogPosts, ...podcasts, ...priruckaPosts]
     // Filtrovat jen publikované články
     // Pro blog/podcast: postStatus !== 'Draft', pro příručku: published === true
     if (post.collection === 'prirucka') {
-      return post.data.published === true;
+      if (post.data.published !== true) return false;
+      // Filtrovat nehotové snippety - pokud title === id, pak to není hotový článek
+      if (post.data.title === post.data.id) return false;
+      return true;
     }
     return post.data.published !== false;
   })

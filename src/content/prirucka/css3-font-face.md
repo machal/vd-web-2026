@@ -1,5 +1,6 @@
 ---
 id: css3-font-face
+tags: ['css']
 heading: 'CSS3 Font Face'
 date: 2013-08-01
 perex: 'Vlastní fonty v CSS.'
@@ -15,7 +16,6 @@ og_title: 'CSS3 Font Face'
 og_description: 'Vlastní fonty v CSS.'
 og_type: article
 ---
-
 CSS3 Font Face: vlastní fonty
 =============================
 

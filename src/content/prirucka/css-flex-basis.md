@@ -1,6 +1,7 @@
 ---
 id: css-flex-basis
-heading: ''
+title: 'CSS vlastnost flex-basis: velikost položky flexboxu'
+heading: 'CSS vlastnost flex-basis: velikost položky flexboxu'
 perex: ''
 published: true
 category:
@@ -12,7 +13,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # CSS vlastnost flex-basis: velikost položky flexboxu
 
 Vlastnost `flex-basis` určuje výchozí velikost prvku v rámci rozvržení postaveného na flexboxu.

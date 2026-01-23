@@ -1,19 +1,18 @@
 ---
 id: metriky-rychlosti
+title: 'Metriky rychlosti webu'
 heading: 'Me­t­ri­ky rych­los­ti webů: Prů­vod­ce s de­tail­ním vy­svět­le­ním'
 date: 2019-04-16
 perex: 'Nově přepsaný text příručky. Syntetická měření, RUM a vysvětlení spousty zkratek: TTFB, DCL, FP, FCP…'
 published: true
-category: []
+category: ['rychlost-nacitani']
 category_highlight: true
 include_rss: true
 no_ads: false
 og_title: 'Me­t­ri­ky rych­los­ti webů: Prů­vod­ce s de­tail­ním vy­svět­le­ním'
 og_description: 'Nově přepsaný text příručky. Syntetická měření, RUM a vysvětlení spousty zkratek: TTFB, DCL, FP, FCP…'
 og_type: article
----
-
-# Metriky rychlosti webu
+---# Metriky rychlosti webu
 
 V metrikách a událostech, které se týkají načítání a vykreslování stránky je děsný nepořádek. Pokusím se trochu uklidit.
 

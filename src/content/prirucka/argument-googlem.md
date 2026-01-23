@@ -1,6 +1,7 @@
 ---
 id: argument-googlem
-heading: ''
+title: 'Argumentace Googlem'
+heading: 'Argumentace Googlem'
 perex: ''
 published: false
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Argumentace Googlem
 
 Občas se stává, že statistiky jako přesvědčovací technika nezabírají. Je tu ale ještě jeden způsob, jak váhavé přesvědčit o nutnosti změn při tvorbě webů. Říkám mu „argumentace Googlem“.

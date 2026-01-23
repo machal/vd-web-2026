@@ -1,18 +1,17 @@
 ---
 id: viewport-google-analytics
-heading: ''
+title: 'Google Analytics: S jakými viewporty navštěvují uživatelé můj web?'
+heading: 'Google Analytics: S jakými viewporty navštěvují uživatelé můj web?'
 perex: ''
 published: true
-category: []
+category: ['responzivni-design']
 category_highlight: false
 include_rss: false
 no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----
-
-# Google Analytics: S jakými viewporty navštěvují uživatelé můj web?
+---# Google Analytics: S jakými viewporty navštěvují uživatelé můj web?
 
 Data o velikostech okna (nebo viewportu) dodávají na rozdíl od [rozlišení displeje](rozliseni-displeje.md) do [responzivního designu](https://www.vzhurudolu.cz/responzivni-design) informaci, bez které se nedá rozumně vymýšlet design webu.
 

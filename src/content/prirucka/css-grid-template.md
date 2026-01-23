@@ -1,6 +1,7 @@
 ---
 id: css-grid-template
-heading: ''
+title: 'Vlastnost grid-template'
+heading: 'Vlastnost grid-template'
 perex: ''
 published: true
 category:
@@ -12,7 +13,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Vlastnost grid-template
 
 Vlastnost `grid-template` slouží k definování mřížky v CSS gridu.

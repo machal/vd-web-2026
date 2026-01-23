@@ -1,6 +1,7 @@
 ---
 id: budoucnost
-heading: ''
+title: 'Zařízení z budoucnosti: co je po mobilech?'
+heading: 'Zařízení z budoucnosti: co je po mobilech?'
 perex: ''
 published: false
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Zařízení z budoucnosti: co je po mobilech?
 
 K internetu jsou prý už připojené i stromy v Amazonii, takže lednička s webovým prohlížečem by nás překvapovat neměla. Je to ale použitelné? Máme s tím jako autoři webů počítat? 

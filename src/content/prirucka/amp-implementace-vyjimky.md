@@ -1,6 +1,7 @@
 ---
 id: amp-implementace-vyjimky
-heading: ''
+title: 'Nejprve HTML, pak AMP'
+heading: 'Nejprve HTML, pak AMP'
 perex: ''
 published: false
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Nejprve HTML, pak AMP
 
 Tohle je tak trochu hybridní řešení: Vezmete stávající web, a pokud zjistíte, že by validací AMP neprošly jen jeho konkrétní části, upravíte je pomocí výjimek v kódu na serverové straně.

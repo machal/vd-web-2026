@@ -1,6 +1,7 @@
 ---
 id: css-layout-bugy
-heading: ''
+title: 'Podpora layoutů v prohlížečích'
+heading: 'Podpora layoutů v prohlížečích'
 perex: ''
 published: true
 category:
@@ -12,7 +13,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Podpora layoutů v prohlížečích
 
 <div class="book-index" data-book-index="Internet Explorer (MSIE)"></div>

@@ -1,6 +1,7 @@
 ---
 id: amp-komponenty-socialni
-heading: ''
+title: 'Komponenty pro sociální sítě'
+heading: 'Komponenty pro sociální sítě'
 perex: ''
 published: false
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Komponenty pro sociální sítě
 
 Sdílecí tlačítka. Ani bez nich nedokáže spousta webů existovat. I pro ně má proto AMP vlastní komponenty.

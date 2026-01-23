@@ -1,6 +1,7 @@
 ---
 id: css-grid-formatting-context
-heading: ''
+title: 'Formátovací kontext CSS gridu'
+heading: 'Formátovací kontext CSS gridu'
 perex: ''
 published: false
 category:
@@ -12,7 +13,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Formátovací kontext CSS gridu
 
 <div class="book-index" data-book-index="Formátovací kontext"></div>

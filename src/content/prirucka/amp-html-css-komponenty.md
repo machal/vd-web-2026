@@ -1,6 +1,7 @@
 ---
 id: amp-html-css-komponenty
-heading: ''
+title: 'AMP v kontextu frontendu'
+heading: 'AMP v kontextu frontendu'
 perex: ''
 published: false
 category:
@@ -12,7 +13,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # AMP v kontextu frontendu
 
 Co vlastně obnáší AMP z pohledu frontendistů, frontendistek, anebo prostě webových vývojářů a vývojářek?

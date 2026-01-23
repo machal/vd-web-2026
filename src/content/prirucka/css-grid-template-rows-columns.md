@@ -1,6 +1,7 @@
 ---
 id: css-grid-template-rows-columns
-heading: ''
+title: 'Vlastnosti grid-template-rows a grid-template-columns: definice explicitního gridu'
+heading: 'Vlastnosti grid-template-rows a grid-template-columns: definice explicitního gridu'
 perex: ''
 published: true
 category:
@@ -12,7 +13,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Vlastnosti grid-template-rows a grid-template-columns: definice explicitního gridu
 
 Vlastnosti `grid-template-rows` a `grid-template-columns` slouží k nastavení explicitní (tedy námi výslovně definované) mřížky v CSS gridu.

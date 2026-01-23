@@ -1,5 +1,6 @@
 ---
 id: css-cascade-layers
+title: 'CSS Cascade Layers: budou vrstvy revolucí organizace stylů?'
 heading: 'CSS Cascade Layers: budou vrstvy revolucí organizace stylů?'
 date: 2022-11-24
 perex: 'Styly máme všichni rádi, ale jejich organizace nám občas působí těžkosti. Nové pravidlo @layer a vrstvení stylů nám může pomoci. Že by to byl konec těžkopádného přetěžování specificity? Uvidíme.'
@@ -15,7 +16,6 @@ og_title: 'CSS Cascade Layers: budou vrstvy revolucí organizace stylů?'
 og_description: 'Styly máme všichni rádi, ale jejich organizace nám občas působí těžkosti. Nové pravidlo @layer a vrstvení stylů nám může pomoci. Že by to byl konec těžkopádného přetěžování specificity? Uvidíme.'
 og_type: article
 ---
-
 # CSS Cascade Layers: budou vrstvy revolucí organizace stylů?
 
 Kaskádové vrstvy jsou novinka, která webařům umožňuje měnit platnost deklarací bez nutnosti uvádět je na konkrétní místo v CSS souboru a v konkrétním pořadí.

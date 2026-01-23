@@ -1,5 +1,6 @@
 ---
 id: css3-jednotky
+tags: ['css']
 heading: 'CSS3 jednotky'
 date: 2013-09-05
 perex: 'Rozměr, který odpovídá hodnotě font-size na root elementu, tedy &lt;html&gt;. Jsou to root-emka, tedy varianta známé jednotky em, která nevychází z velikosti fontu rodičovského elementu.'
@@ -11,7 +12,6 @@ og_title: 'CSS3 jednotky'
 og_description: 'Rozměr, který odpovídá hodnotě font-size na root elementu, tedy &lt;html&gt;. Jsou to root-emka, tedy varianta známé jednotky em, která nevychází z velikosti fontu rodičovského elementu.'
 og_type: article
 ---
-
 Nové CSS3 jednotky: rem, vw, vh
 ===============================
 

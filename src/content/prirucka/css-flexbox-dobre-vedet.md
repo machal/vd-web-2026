@@ -1,6 +1,7 @@
 ---
 id: css-flexbox-dobre-vedet
-heading: ''
+title: 'CSS flexbox: co je dobré o něm vědět'
+heading: 'CSS flexbox: co je dobré o něm vědět'
 perex: ''
 published: false
 category:
@@ -12,7 +13,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # CSS flexbox: co je dobré o něm vědět
 
 ## 1. Flex je nová hodnota vlastnosti display

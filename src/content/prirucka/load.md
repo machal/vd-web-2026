@@ -1,6 +1,7 @@
 ---
 id: load
-heading: ''
+title: 'Událost Load'
+heading: 'Událost Load'
 perex: ''
 published: true
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Událost Load
 
 Poslední událost, která indikuje, že prohlížeč stáhl celé  HTML i všechny v něm odkazované prvky - CSS, JS, obrázky nebo `<iframe>`.

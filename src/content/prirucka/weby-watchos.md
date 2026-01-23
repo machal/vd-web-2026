@@ -1,18 +1,17 @@
 ---
 id: weby-watchos
-heading: ''
+title: 'Weby na chytrých hodinkách Apple Watch'
+heading: 'Weby na chytrých hodinkách Apple Watch'
 perex: ''
 published: true
-category: []
+category: ['responzivni-design']
 category_highlight: false
 include_rss: false
 no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----
-
-# Weby na chytrých hodinkách Apple Watch
+---# Weby na chytrých hodinkách Apple Watch
 
 Mezi zařízeními, které nějak zobrazují weby, už určitou dobu figurují i chytré hodinky. Ale má smysl se jimi v responzivním designu zabývat? Ano, má, minimálně těmi od Apple.
 

@@ -1,6 +1,7 @@
 ---
 id: amp-co-je-pripadovky
-heading: ''
+title: 'Co přineslo firmám nasazení AMP?'
+heading: 'Co přineslo firmám nasazení AMP?'
 perex: ''
 published: true
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Co přineslo firmám nasazení AMP?
 
 <div class="web-only" markdown="1">

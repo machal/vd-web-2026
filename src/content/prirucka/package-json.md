@@ -1,18 +1,17 @@
 ---
 id: package-json
-heading: ''
+title: 'package.json: Manifest závislostí projektu'
+heading: 'package.json: Manifest závislostí projektu'
 perex: ''
 published: true
-category: []
+category: ['nastroje']
 category_highlight: false
 include_rss: false
 no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----
-
-# package.json: Manifest závislostí projektu
+---# package.json: Manifest závislostí projektu
 
 Dneska o tomhle populárním souboru, o NPM skriptech a taky o závislostech.
 

@@ -1,18 +1,17 @@
 ---
 id: bootstrap-4-utility
-heading: ''
+title: 'To nejlepší z Bootstrapu 4: utility třídy'
+heading: 'To nejlepší z Bootstrapu 4: utility třídy'
 perex: ''
 published: true
-category: []
+category: ['organizace-css']
 category_highlight: false
 include_rss: false
 no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----
-
-# To nejlepší z Bootstrapu 4: utility třídy
+---# To nejlepší z Bootstrapu 4: utility třídy
 
 O novinkách v Bootstrapu 4 jsem [už psal](/blog/39-bootstrap-4). Dneska vám ale chci ukázat věc, která se mi na čtyřce líbí nejvíc. Utility třídy.
 

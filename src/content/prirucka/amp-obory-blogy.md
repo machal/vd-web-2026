@@ -1,6 +1,7 @@
 ---
 id: amp-obory-blogy
-heading: ''
+title: 'Blogy'
+heading: 'Blogy'
 perex: ''
 published: false
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Blogy
 
 Článek je úplně ideální formát obsahu pro nasazení AMP. Ostatně – rychlá distribuce textového obsahu je prapůvodní důvod, proč naše oblíbená technologie vůbec vznikla.

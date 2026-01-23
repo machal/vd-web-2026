@@ -1,6 +1,7 @@
 ---
 id: css-todo
-heading: ''
+title: 'Codetags: štítky pro úkoly v CSS kódu'
+heading: 'Codetags: štítky pro úkoly v CSS kódu'
 perex: ''
 published: false
 category:
@@ -12,7 +13,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Codetags: štítky pro úkoly v CSS kódu
 
 Občas je potřeba kód opravit rychle, jindy zase z drobné úpravy vyjde potřeba vytvoření velkého úkolu. Nežijeme prostě v ideálním světě a nemáme nekonečné množství času a pozornosti.

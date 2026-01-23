@@ -1,5 +1,6 @@
 ---
 id: css3-border-radius
+tags: ['css']
 heading: 'CSS3 Border Radius'
 date: 2013-08-01
 perex: 'Zakulacení rohů elementu.'
@@ -11,7 +12,6 @@ og_title: 'CSS3 Border Radius'
 og_description: 'Zakulacení rohů elementu.'
 og_type: article
 ---
-
 CSS3 Border Radius: poloměr rohu rámečku
 ========================================
 

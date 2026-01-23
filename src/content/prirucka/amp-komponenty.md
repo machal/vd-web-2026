@@ -1,6 +1,7 @@
 ---
 id: amp-komponenty
-heading: ''
+title: 'Komponenty v AMP'
+heading: 'Komponenty v AMP'
 perex: ''
 published: false
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Komponenty v AMP
 
 V dokumentaci na amp.dev je ve dnech psaní tohoto textu k dispozici stovka komponent.

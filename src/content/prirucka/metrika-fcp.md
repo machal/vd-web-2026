@@ -1,18 +1,17 @@
 ---
 id: metrika-fcp
-heading: ''
+title: 'Metrika „První vykreslení obsahu“ (First Contentful Paint, FCP)'
+heading: 'Metrika „První vykreslení obsahu“ (First Contentful Paint, FCP)'
 perex: ''
 published: true
-category: []
+category: ['rychlost-nacitani']
 category_highlight: false
 include_rss: false
 no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----
-
-# Metrika „První vykreslení obsahu“ (First Contentful Paint, FCP)
+---# Metrika „První vykreslení obsahu“ (First Contentful Paint, FCP)
 
 [Metrika rychlosti webu](metriky-rychlosti.md), která vzniká v okamžiku vykreslení prvního textu nebo obrázku (včetně těch natahovaných přes CSS vlastnost `background`).
 

@@ -1,6 +1,7 @@
 ---
 id: rozcestnik-responzivni-design
-heading: ''
+title: 'Rozcestník k responzivnímu webdesignu'
+heading: 'Rozcestník k responzivnímu webdesignu'
 perex: ''
 published: false
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Rozcestník k responzivnímu webdesignu
 
 ## Obecně

@@ -1,18 +1,17 @@
 ---
 id: rozcestnik-npm-node
-heading: ''
+title: 'NPM a Node.js: Rozcestník odkazů'
+heading: 'NPM a Node.js: Rozcestník odkazů'
 perex: ''
 published: true
-category: []
+category: ['nastroje']
 category_highlight: false
 include_rss: false
 no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----
-
-# NPM a Node.js: Rozcestník odkazů
+---# NPM a Node.js: Rozcestník odkazů
 
 Node.js, serverový javascript, přinesl díky nástrojům pro příkazovou řádku možnost efektivně pracovat i nám frontendistům a frontendistkám.
 

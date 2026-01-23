@@ -1,5 +1,6 @@
 ---
 id: css3-multiple-backgrounds
+tags: ['css']
 heading: 'CSS3 Multiple Backgrounds'
 date: 2013-09-05
 perex: 'Vrstvení více obrázků nebo barev na pozadí jednoho elementu.'
@@ -11,7 +12,6 @@ og_title: 'CSS3 Multiple Backgrounds'
 og_description: 'Vrstvení více obrázků nebo barev na pozadí jednoho elementu.'
 og_type: article
 ---
-
 CSS3 Multiple Backgrounds: více obrázků na pozadí
 =================================================
 

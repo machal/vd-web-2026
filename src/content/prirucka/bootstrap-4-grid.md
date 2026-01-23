@@ -1,6 +1,7 @@
 ---
 id: bootstrap-4-grid
-heading: ''
+title: 'Detailně: layout v Bootstrapu 4'
+heading: 'Detailně: layout v Bootstrapu 4'
 perex: ''
 published: true
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Detailně: layout v Bootstrapu 4
 
 Pojďme se spolu podívat na nový systém pro tvorbu rozvržení stránky v chystané verzi Bootstrapu. Pořádně do hloubky. 

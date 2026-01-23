@@ -1,6 +1,7 @@
 ---
 id: udalost-dcl
-heading: ''
+title: 'Událost DOM Content Loaded (DCL)'
+heading: 'Událost DOM Content Loaded (DCL)'
 perex: ''
 published: true
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Událost DOM Content Loaded (DCL)
 
 Událost `DOMContentLoaded` v JavaScriptu vzniká, když byl hlavní HTML dokument stažen a rozparsován. Nečeká se na žádné další prvky – CSS, JS, obrázky nebo `<iframe>`.

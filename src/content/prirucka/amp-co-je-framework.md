@@ -1,6 +1,7 @@
 ---
 id: amp-co-je-framework
-heading: ''
+title: 'AMP, framework pro tvorbu webů'
+heading: 'AMP, framework pro tvorbu webů'
 perex: ''
 published: false
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # AMP, framework pro tvorbu webů
 
 AMP nabízí ke dnešku kolem stovky komponent, které by měly plně stačit na vše, co potřebujete na běžných obsahových webech nebo e-shopech.

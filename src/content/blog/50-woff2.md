@@ -13,8 +13,8 @@ category:
 og_title: 'Jednodušší vkládání webfontů pomocí WOFF a WOFF2'
 og_description: 'Formát WOFF2 už má slušnou podporu – Firefox, Chrome, Opera mohou tvořit něco kolem třetiny až poloviny vaší návštěvnosti.'
 og_type: article
+tags: ['rychlost-nacitani']
 ---
-
 # Jednodušší vkládání webfontů pomocí WOFF a WOFF2
 
 Formát WOFF2 už má slušnou podporu – Firefox, Chrome, Opera mohou tvořit něco kolem třetiny až poloviny vaší návštěvnosti.

@@ -1,5 +1,6 @@
 ---
 id: css3-rgba
+tags: ['css']
 heading: 'CSS3 RGBa'
 date: 2013-08-07
 perex: 'RGB barva se čtvrtým číslem jež nese informaci o průhlednosti v alfa kanále.'
@@ -11,7 +12,6 @@ og_title: 'CSS3 RGBa'
 og_description: 'RGB barva se čtvrtým číslem jež nese informaci o průhlednosti v alfa kanále.'
 og_type: article
 ---
-
 CSS3 RGBa: barva s poloprůhledností
 ===================================
 

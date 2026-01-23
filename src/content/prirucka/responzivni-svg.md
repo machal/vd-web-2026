@@ -1,5 +1,7 @@
 ---
 id: responzivni-svg
+tags: ['responzivni-design']
+title: 'Responzivní SVG'
 heading: 'Responzivní SVG'
 date: 2017-06-26
 perex: 'Další ukázka z e-booku „Vzhůru do (responzivního) webdesignu“. Jak bez hacků zařídit pružné zobrazování SVG ve všech prohlížečích? A jak na plně responzivní SVG s přizpůsobivým obsahem?'
@@ -13,9 +15,7 @@ no_ads: false
 og_title: 'Responzivní SVG'
 og_description: 'Další ukázka z e-booku „Vzhůru do (responzivního) webdesignu“. Jak bez hacků zařídit pružné zobrazování SVG ve všech prohlížečích? A jak na plně responzivní SVG s přizpůsobivým obsahem?'
 og_type: article
----
-
-# Responzivní SVG
+---# Responzivní SVG
 
 <div class="ebook-only" markdown="1">
   Vektorové obrázky jsou fajn. Asi tady není potřeba zahltit vás celou řadou argumentů pro využívání SVG. Ty si případně nastudujte na Vzhůru dolů. [vrdl.cz/p/svg](https://www.vzhurudolu.cz/prirucka/svg)

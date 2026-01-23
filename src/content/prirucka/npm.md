@@ -1,5 +1,7 @@
 ---
 id: rozcestnik-npm-node
+tags: ['nastroje']
+title: 'NPM: Úplné začátky a základní příkazy'
 heading: 'NPM a Node.js: Rozcestník odkazů'
 date: 2018-11-21
 perex: 'Nový formát textu, rozcestník, se v prvním výskytu na Vzhůru dolů soustředí na svět Node.js a nástrojů pro automatizaci.'
@@ -13,9 +15,7 @@ no_ads: false
 og_title: 'NPM a Node.js: Rozcestník odkazů'
 og_description: 'Nový formát textu, rozcestník, se v prvním výskytu na Vzhůru dolů soustředí na svět Node.js a nástrojů pro automatizaci.'
 og_type: article
----
-
-# NPM: Úplné začátky a základní příkazy
+---# NPM: Úplné začátky a základní příkazy
 
 NPM (Node Package Manager) je správce javascriptových balíčků. Usnadňuje jejich instalaci a následnou údržbu. Jde tedy o obdobu například [Composeru](https://getcomposer.org/) ze světa PHP.
 

@@ -1,5 +1,7 @@
 ---
 id: avif
+tags: ['rychlost-nacitani']
+title: 'Obrázkový formát AVIF'
 heading: 'AVIF, nová generace obrázků pro web je tady'
 date: 2021-01-27
 perex: '(Aktualizováno o chystanou podporu AVIF ve Firefoxu.) 10 let po WebP přichází datově ještě úspornější AVIF. Podpora zatím silná není, ale výhledově to vypadá dobře a náhradní řešení umíme.'
@@ -14,9 +16,7 @@ no_ads: false
 og_title: 'AVIF, nová generace obrázků pro web je tady'
 og_description: '(Aktualizováno o chystanou podporu AVIF ve Firefoxu.) 10 let po WebP přichází datově ještě úspornější AVIF. Podpora zatím silná není, ale výhledově to vypadá dobře a náhradní řešení umíme.'
 og_type: article
----
-
-# Obrázkový formát AVIF
+---# Obrázkový formát AVIF
 
 Prohlížeče Chrome, Firefox a (brzy i Safari) podporují nový obrázkový formát AVIF.
 

@@ -16,8 +16,8 @@ category_highlight: true
 og_title: 'UX pro vývojáře: pokročilé techniky'
 og_description: 'Pokročilejší UX postupy, které jsou obsahem tohoto článku, vám pomohou s řešením komplikovaných problémů. Abyste je použili, musíte překročit svou komfortní zónu. Někdy vyžadují soft skills, někdy prostou zvídavost.'
 og_type: article
+tags: ['responzivni-design']
 ---
-
 # UX pro vývojáře: pokročilé techniky
 
 Jednoduché problémy v UX snadno jako vývojáři vyřešíte sami nebo pomocí best-practice, jako například v předchozím článku [21 tipů pro lepší UX](https://www.vzhurudolu.cz/blog/166-ux-tipy).

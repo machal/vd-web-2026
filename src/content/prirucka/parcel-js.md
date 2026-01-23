@@ -1,18 +1,17 @@
 ---
 id: parcel-js
-heading: ''
+title: 'Parcel.js'
+heading: 'Parcel.js'
 perex: ''
 published: true
-category: []
+category: ['nastroje']
 category_highlight: false
 include_rss: false
 no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----
-
-# Parcel.js
+---# Parcel.js
 
 <!-- Autor: Tomáš Smetka (smetka.tomas90@gmail.com) -->
 

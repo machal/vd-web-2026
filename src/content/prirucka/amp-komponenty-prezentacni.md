@@ -1,6 +1,7 @@
 ---
 id: amp-komponenty-prezentacni
-heading: ''
+title: 'Prezentační komponenty'
+heading: 'Prezentační komponenty'
 perex: ''
 published: false
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Prezentační komponenty
 
 Tato kategorie působí trochu jako „atakdále“, směska menších věcí, které se jinam nevešly. Očekávejte komponenty pro animování, vkládání webfontů, vizualizací, nebo třeba odpočet času a data.

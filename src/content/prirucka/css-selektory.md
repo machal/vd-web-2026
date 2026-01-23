@@ -1,6 +1,8 @@
 ---
 id: css-selektory
-heading: ''
+tags: ['css']
+title: 'CSS selektory'
+heading: 'CSS selektory'
 perex: ''
 published: true
 category:
@@ -11,9 +13,7 @@ no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----
-
-# CSS selektory
+---# CSS selektory
 
 Tímto textem v příručce doplňuji mezery, které mám na Vzhůru dolů v oblasti pokrytí základů [CSS](https://www.vzhurudolu.cz/css).
 

@@ -1,6 +1,7 @@
 ---
 id: bootstrap-typografie
-heading: ''
+title: 'Jak správně navázat na typografické principy Bootstrapu'
+heading: 'Jak správně navázat na typografické principy Bootstrapu'
 perex: ''
 published: true
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Jak správně navázat na typografické principy Bootstrapu
 
 Rozhraní webů nebo aplikací stavěné na Bootstrapu můžete budovat dvěma způsoby. V prvním si přidáte vlastní CSS a bez velkého uvažování píšete kód nových komponent.

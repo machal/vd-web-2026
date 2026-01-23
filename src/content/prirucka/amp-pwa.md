@@ -1,6 +1,7 @@
 ---
 id: amp-pwa
-heading: ''
+title: 'AMP a PWA'
+heading: 'AMP a PWA'
 perex: ''
 published: false
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # AMP a PWA
 
 Hodně zajímavé možnosti nabízí kombinace technologií AMP s PWA, progresivními webovými aplikacemi.

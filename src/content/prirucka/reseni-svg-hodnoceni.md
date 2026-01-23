@@ -1,6 +1,7 @@
 ---
 id: reseni-svg-hodnoceni
-heading: ''
+title: 'SVG řešení: hvězdičkové hodnocení'
+heading: 'SVG řešení: hvězdičkové hodnocení'
 perex: ''
 published: true
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # SVG řešení: hvězdičkové hodnocení
 
 Hvězdičkové hodnocení se na webu používá poměrně často. Před časem jsem kápl na moc pěkné řešení postavené na [SVG](svg.md) vloženém do HTML. 

@@ -1,6 +1,7 @@
 ---
 id: css-important
-heading: ''
+title: 'CSS !important'
+heading: 'CSS !important'
 perex: ''
 published: false
 category:
@@ -12,7 +13,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # CSS !important
 
 <!-- Obsah zatím jen přebrán z css-cascade-layers.md -->

@@ -1,5 +1,6 @@
 ---
 id: test
+title: 'Testovací stránka pro všechny komponenty'
 heading: 'Testovací stránka pro všechny komponenty'
 perex: 'Tato stránka obsahuje všechny možné komponenty z příručky pro testování transformací markdownu do HTML.'
 published: true
@@ -12,7 +13,6 @@ og_title: 'Testovací stránka pro všechny komponenty'
 og_description: 'Tato stránka obsahuje všechny možné komponenty z příručky pro testování transformací markdownu do HTML.'
 og_type: article
 ---
-
 # Testovací stránka pro všechny komponenty
 
 Tato stránka obsahuje všechny možné komponenty z příručky pro testování transformací markdownu do HTML.

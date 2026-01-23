@@ -1,18 +1,17 @@
 ---
 id: komponenty-kontexty
-heading: ''
+title: 'Komponenty vs. kontexty v CSS'
+heading: 'Komponenty vs. kontexty v CSS'
 perex: ''
 published: true
-category: []
+category: ['organizace-css']
 category_highlight: false
 include_rss: false
 no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----
-
-# Komponenty vs. kontexty v CSS
+---# Komponenty vs. kontexty v CSS
 
 Pokud používáte BEM nebo jinou komponentovou metodiku v CSS, byl by zázrak když byste nenarazili na problém stylování přes rodiče. Takřka filozofický problém.
 

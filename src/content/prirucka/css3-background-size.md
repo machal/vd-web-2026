@@ -1,5 +1,6 @@
 ---
 id: css3-background-size
+tags: ['css']
 heading: 'CSS3 Background Size'
 date: 2013-09-05
 perex: 'Změna velikosti obrázku na pozadí elementu.'
@@ -11,7 +12,6 @@ og_title: 'CSS3 Background Size'
 og_description: 'Změna velikosti obrázku na pozadí elementu.'
 og_type: article
 ---
-
 CSS3 Background Size: velikost obrázku na pozadí
 ================================================
 

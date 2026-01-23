@@ -12,8 +12,8 @@ category:
 og_title: 'Houdini: specifikace co může radikálně zrychlit přidávání CSS vlastností do prohlížečů'
 og_description: 'Představte si třeba, že stáhnete polyfill pro Flexbox, který bude konzistentně fungovat ve všech prohlížečích. A bez přehnaných nároků na výkon.'
 og_type: article
+tags: ['css']
 ---
-
 # Houdini: specifikace co může radikálně zrychlit přidávání CSS vlastností do prohlížečů
 
 [Phillip Walton pro Smashing Magazine napsal](https://www.smashingmagazine.com/2016/03/houdini-maybe-the-most-exciting-development-in-css-youve-never-heard-of/) vynikající materiál o vznikající W3 specifikaci, která může dramaticky změnit vývoj CSS. [Houdini](https://wiki.css-houdini.org/).

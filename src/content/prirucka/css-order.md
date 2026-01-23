@@ -1,6 +1,8 @@
 ---
 id: css-order
-heading: ''
+tags: ['css']
+title: 'CSS vlastnost order'
+heading: 'CSS vlastnost order'
 perex: ''
 published: true
 category:
@@ -11,9 +13,7 @@ no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----
-
-# CSS vlastnost order
+---# CSS vlastnost order
 
 Vlastnost `order` nastavuje pořadí položky v kontejneru rozvržení v CSS.
 

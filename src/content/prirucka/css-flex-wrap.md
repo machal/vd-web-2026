@@ -1,6 +1,7 @@
 ---
 id: css-flex-wrap
-heading: ''
+title: 'CSS vlastnost flex-wrap: zalamování položek flexboxu'
+heading: 'CSS vlastnost flex-wrap: zalamování položek flexboxu'
 perex: ''
 published: true
 category:
@@ -12,7 +13,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # CSS vlastnost flex-wrap: zalamování položek flexboxu
 
 Vlastnost `flex-wrap` aplikujeme na kontejner flexboxu, abychom definovali, zda se položky rozvržení mohou zalamovat na více řádků, nebo nikoliv.

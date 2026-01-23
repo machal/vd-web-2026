@@ -1,5 +1,7 @@
 ---
 id: devstacky
+tags: ['nastroje']
+title: 'Devstac­ky: In­spi­rač­ní ka­ta­log fron­ten­do­vých zá­kla­den'
 heading: 'Devstac­ky: In­spi­rač­ní ka­ta­log nástrojových zá­kla­den'
 date: 2019-03-26
 perex: 'Nástrojářské základny postavené na nejrozšířenějších nástrojích pro automatizaci.'
@@ -14,9 +16,7 @@ no_ads: false
 og_title: 'Devstac­ky: In­spi­rač­ní ka­ta­log nástrojových zá­kla­den'
 og_description: 'Nástrojářské základny postavené na nejrozšířenějších nástrojích pro automatizaci.'
 og_type: article
----
-
-# Devstac­ky: In­spi­rač­ní ka­ta­log fron­ten­do­vých zá­kla­den
+---# Devstac­ky: In­spi­rač­ní ka­ta­log fron­ten­do­vých zá­kla­den
 
 Cílem je poskytnout méně zkušeným inspiraci pro práci na vlastním [devstacku](devstack-boilerplate-kit.md). Proto kladu důraz na česky zdokumentované zástupce, ale pro pořádek uvádím i známé světové balíčky.
 

@@ -1,5 +1,6 @@
 ---
 id: pagespeed-insights
+title: 'PageSpeed Insights: Kompletní průvodce testem rychlosti webu'
 heading: 'PageSpeed Insights: Kompletní průvodce testem rychlosti webu'
 date: 2021-03-20
 perex: 'Po aktualizaci koncem roku 2018 se z tohoto nástroje stal vynikající pomocník i pro nás, zkušenější. Proto nastal čas pro přepsání textu.'
@@ -13,7 +14,6 @@ og_title: 'PageSpeed Insights: Kompletní průvodce testem rychlosti webu'
 og_description: 'Po aktualizaci koncem roku 2018 se z tohoto nástroje stal vynikající pomocník i pro nás, zkušenější. Proto nastal čas pro přepsání textu.'
 og_type: article
 ---
-
 # PageSpeed Insights: Kompletní průvodce testem rychlosti webu
 
 [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/?hl=cs) (PSI) od Google je asi nejznámější nástroj pro testování a analýzu rychlosti webů.

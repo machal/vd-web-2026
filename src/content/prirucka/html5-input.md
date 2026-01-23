@@ -1,6 +1,7 @@
 ---
 id: html5-input
-heading: ''
+title: 'Nové typy inputů v HTML5: email, tel, number'
+heading: 'Nové typy inputů v HTML5: email, tel, number'
 perex: ''
 published: false
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Nové typy inputů v HTML5: email, tel, number 
 
 Všechny nové typy inputů nemají dostatečnou podporu v prohlížečích, ale ty hlavní je velmi dobré používat. Proč?

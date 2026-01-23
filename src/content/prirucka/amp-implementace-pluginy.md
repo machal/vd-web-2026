@@ -1,6 +1,7 @@
 ---
 id: amp-implementace-pluginy
-heading: ''
+title: 'Pluginy redakčních systémů'
+heading: 'Pluginy redakčních systémů'
 perex: ''
 published: false
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Pluginy redakčních systémů
 
 Pokud používáte známé redakční systémy jako WordPress nebo Drupal, vytvoření AMP stránek pro vás může být relativně snadné. Jsou zde totiž pluginy, které práci převezmou alespoň částečně za vás.

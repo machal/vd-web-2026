@@ -1,5 +1,7 @@
 ---
 id: google-tag-manager
+tags: ['nastroje']
+title: 'Google Tag Manager (GTM)'
 heading: 'Google Tag Manager: návod na přežití pro vývojáře'
 date: 2021-04-14
 perex: 'Cenu popularity by GTM u vývojářů nevyhrál. Přesto si naši pozornost zaslouží, protože zodpovědnost za jeho fungování na webu sdílíme s marketéry. Martin Kolář v textu vysvětluje detaily a rozebírá pojmy jako dataLayer, trigger, workspace a to vše ve'
@@ -13,9 +15,7 @@ no_ads: true
 og_title: 'Google Tag Manager: návod na přežití pro vývojáře'
 og_description: 'Cenu popularity by GTM u vývojářů nevyhrál. Přesto si naši pozornost zaslouží, protože zodpovědnost za jeho fungování na webu sdílíme s marketéry. Martin Kolář v textu vysvětluje detaily a rozebírá pojmy jako dataLayer, trigger, workspace a to vše ve'
 og_type: article
----
-
-# Google Tag Manager (GTM)
+---# Google Tag Manager (GTM)
 
 _[Martin Kolář](https://martinkolar.eu/) pro Vzhůru dolů píše o nástroji, který u vývojářů není právě populární. Přesto se bez Google Tag Manageru na většině dnešních webů nedá obejít. Po rychlém úvodu si v textu vysvětlíme, proč je GTM tak důležitý a proč by se vývojáři neměli vzdávat zodpovědnosti za správu značek na svých webech._
 

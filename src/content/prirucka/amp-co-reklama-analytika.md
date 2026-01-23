@@ -1,6 +1,7 @@
 ---
 id: amp-co-reklama-analytika
-heading: ''
+title: 'Opravená reklama a analytika'
+heading: 'Opravená reklama a analytika'
 perex: ''
 published: false
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Opravená reklama a analytika
 
 Představte si, že máte vyladěnou stránku. Je rychlá? Hurá!

@@ -1,18 +1,17 @@
 ---
 id: rychlost-nacitani-proc
-heading: ''
+title: 'Proč řešit rychlost načítání webu?'
+heading: 'Proč řešit rychlost načítání webu?'
 perex: ''
 published: true
-category: []
+category: ['rychlost-nacitani']
 category_highlight: false
 include_rss: false
 no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----
-
-# Proč řešit rychlost načítání webu?
+---# Proč řešit rychlost načítání webu?
 
 V Google mají jasno. Tohle prohlásil v roce 2010 Eric Schmidt, tehdejší šéf firmy:
 

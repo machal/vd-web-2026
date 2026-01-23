@@ -1,18 +1,17 @@
 ---
 id: obrazky-formaty
-heading: ''
+title: 'Formáty obrázků pro web: JPEG, WebP, AVIF, PNG, GIF a SVG'
+heading: 'Formáty obrázků pro web: JPEG, WebP, AVIF, PNG, GIF a SVG'
 perex: ''
 published: true
-category: []
+category: ['rychlost-nacitani']
 category_highlight: false
 include_rss: false
 no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----
-
-# Formáty obrázků pro web: JPEG, WebP, AVIF, PNG, GIF a SVG
+---# Formáty obrázků pro web: JPEG, WebP, AVIF, PNG, GIF a SVG
 
 Nedávno jsem si dělal rešerši obrázkových formátů. Které je možné používat v dnešních prohlížečích nebo minimálně byl učiněn pokus o to, abychom je používat mohli?
 

@@ -1,6 +1,7 @@
 ---
 id: amp-co-je-rychlost
-heading: ''
+title: 'Rychlost webů? Stále nedostatečná'
+heading: 'Rychlost webů? Stále nedostatečná'
 perex: ''
 published: false
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Rychlost webů? Stále nedostatečná
 
 AMP je především pokus radikálně zrychlit vykreslování webů v prohlížečích uživatelů. Dostupné studie totiž v posledním desetiletí ukazují na neuspokojivou rychlost webů.

@@ -1,6 +1,7 @@
 ---
 id: rychlost-nacitani-pravidla
-heading: ''
+title: 'Tipy pro rychlé načtení webu'
+heading: 'Tipy pro rychlé načtení webu'
 perex: ''
 published: false
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Tipy pro rychlé načtení webu
 
 Vytvoření rychlého webu vyžaduje širokou škálu dovedností a znalostí. V tomto textu si jen vykolíkujeme základní obrysy. 

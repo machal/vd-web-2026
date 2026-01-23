@@ -1,18 +1,17 @@
 ---
 id: http-2
-heading: ''
+title: 'Rychlý protokol HTTP/2: S nasazením na weby už na nic nečekejte'
+heading: 'Rychlý protokol HTTP/2: S nasazením na weby už na nic nečekejte'
 perex: ''
 published: true
-category: []
+category: ['rychlost-nacitani']
 category_highlight: false
 include_rss: false
 no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----
-
-# Rychlý protokol HTTP/2: S nasazením na weby už na nic nečekejte
+---# Rychlý protokol HTTP/2: S nasazením na weby už na nic nečekejte
 
 HTTP/2 je nová verze protokolu, díky které můžeme urychlit načítání vašich webů. Možná i hodně.
 

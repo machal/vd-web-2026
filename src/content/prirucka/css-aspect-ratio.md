@@ -1,6 +1,8 @@
 ---
 id: css-aspect-ratio
-heading: ''
+tags: ['css']
+title: 'Vlastnost aspect-ratio v CSS'
+heading: 'Vlastnost aspect-ratio v CSS'
 perex: ''
 published: true
 category:
@@ -11,9 +13,7 @@ no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----
-
-# Vlastnost aspect-ratio v CSS
+---# Vlastnost aspect-ratio v CSS
 
 Od září 2021 můžeme v prohlížečích používat vlastnost `aspect-ratio`, která v CSS zajistí držení poměru stran pro element ve stránce.
 

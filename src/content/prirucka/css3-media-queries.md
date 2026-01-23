@@ -1,5 +1,7 @@
 ---
 id: css3-media-queries
+tags: ['css']
+title: 'Media Queries'
 heading: 'CSS3 Media Queries'
 date: 2013-08-01
 perex: 'Dotazy na média. Podmínka, která se zajistí platnost CSS pravidel jen po svém splnění.'
@@ -11,9 +13,7 @@ no_ads: false
 og_title: 'CSS3 Media Queries'
 og_description: 'Dotazy na média. Podmínka, která se zajistí platnost CSS pravidel jen po svém splnění.'
 og_type: article
----
-
-# Media Queries
+---# Media Queries
 
 Jde o podmínky, které umožňují aplikovat různá CSS pravidla v různých technických kontextech.
 

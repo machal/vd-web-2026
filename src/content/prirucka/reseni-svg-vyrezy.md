@@ -1,6 +1,7 @@
 ---
 id: reseni-svg-vyrezy
-heading: ''
+title: 'Řešení: Vlastní výřezy obrázků pomocí SVG'
+heading: 'Řešení: Vlastní výřezy obrázků pomocí SVG'
 perex: ''
 published: true
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Řešení: Vlastní výřezy obrázků pomocí SVG
 
 Mám fotku a chci ji udělat specifický výřez v přímo v kódu. Pomocí CSS snadno zařídím kulatý, jenže co vlastní tvar? 

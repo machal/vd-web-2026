@@ -1,5 +1,6 @@
 ---
 id: meta-open-graph
+title: 'Open Graph a oEmbed: meta značky pro sociální sítě (Facebook, Twitter, LinkedIn, Slack…)'
 heading: 'Open Graph a oEmbed: meta značky pro sociální sítě (Facebook, Twitter, LinkedIn, Slack…)'
 perex: ''
 published: true
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Open Graph a oEmbed: meta značky pro sociální sítě (Facebook, Twitter, LinkedIn, Slack…)
 
 V tomto článku si budeme povídat o starých dobrých HTML značkách postavený na specifikaci Open Graph od Facebooku.

@@ -1,6 +1,7 @@
 ---
 id: css-flex-grow
-heading: ''
+title: 'CSS vlastnost flex-grow: faktor zvětšování položky flexboxu'
+heading: 'CSS vlastnost flex-grow: faktor zvětšování položky flexboxu'
 perex: ''
 published: true
 category:
@@ -12,7 +13,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # CSS vlastnost flex-grow: faktor zvětšování položky flexboxu
 
 Jak moc může položka růst relativně k dalším položkám, pokud je k dispozici volné místo – například když uživatel zvětší okno prohlížeče? To určuje vlastnost `flex-grow`.

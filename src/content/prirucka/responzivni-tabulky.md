@@ -1,18 +1,17 @@
 ---
 id: responzivni-tabulky
-heading: ''
+title: 'Responzivní tabulky'
+heading: 'Responzivní tabulky'
 perex: ''
 published: true
-category: []
+category: ['responzivni-design']
 category_highlight: false
 include_rss: false
 no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----
-
-# Responzivní tabulky
+---# Responzivní tabulky
 
 Chuck Norris toho zvládne hodně, třeba i rozbrečí cibuli, ale tabulky na webu by mu daly zabrat. No vážně. Však čtěte.
 

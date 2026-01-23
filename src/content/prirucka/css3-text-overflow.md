@@ -1,5 +1,6 @@
 ---
 id: css3-text-overflow
+tags: ['css']
 heading: 'CSS3 Text Overflow'
 date: 2013-09-05
 perex: 'Vytečkování textu, který přesahuje šířku elementu.'
@@ -11,7 +12,6 @@ og_title: 'CSS3 Text Overflow'
 og_description: 'Vytečkování textu, který přesahuje šířku elementu.'
 og_type: article
 ---
-
 CSS3 Text Overflow: způsob přetékání textu
 ==========================================
 

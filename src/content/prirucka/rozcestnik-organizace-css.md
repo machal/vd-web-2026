@@ -1,6 +1,7 @@
 ---
 id: rozcestnik-organizace-css
-heading: ''
+title: 'Rozcestník článků k organizaci CSS'
+heading: 'Rozcestník článků k organizaci CSS'
 perex: ''
 published: false
 category:
@@ -12,7 +13,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Rozcestník článků k organizaci CSS
 
 ## Zásadní a základní

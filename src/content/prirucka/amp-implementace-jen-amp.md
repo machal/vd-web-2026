@@ -1,6 +1,7 @@
 ---
 id: amp-implementace-jen-amp
-heading: ''
+title: 'Jen AMP: Kanonické AMP stránky'
+heading: 'Jen AMP: Kanonické AMP stránky'
 perex: ''
 published: false
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Jen AMP: Kanonické AMP stránky
 
 Pojďme teď rozebrat způsob tvorby webu s AMP, který by mohl být do budoucna dlouhodobě nejudržitelnější. Zatím má však jeden háček.

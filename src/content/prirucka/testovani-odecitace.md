@@ -1,6 +1,7 @@
 ---
 id: testovani-odecitace
-heading: ''
+title: 'Testování přístupnosti webů v odečítačích obrazovky'
+heading: 'Testování přístupnosti webů v odečítačích obrazovky'
 perex: ''
 published: true
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Testování přístupnosti webů v odečítačích obrazovky 
 
 Jak nainstalovat, spustit a používat screen readery? Pojďme si ukázat, jak testovat weby přímo tak jak je „vidí“ zrakově handicapovaní uživatelé.

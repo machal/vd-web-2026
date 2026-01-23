@@ -1,18 +1,17 @@
 ---
 id: responzivni-navigace
-heading: ''
+title: 'Návrhové vzory responzivních navigací'
+heading: 'Návrhové vzory responzivních navigací'
 perex: ''
 published: true
-category: []
+category: ['responzivni-design']
 category_highlight: false
 include_rss: false
 no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----
-
-# Návrhové vzory responzivních navigací
+---# Návrhové vzory responzivních navigací
 
 Projdeme si osm možností, jak navrhnout navigaci na responzivních webech. Od uživatelsky složitých a implementačně jednoduchých až po ty, ehm, dobré.
 

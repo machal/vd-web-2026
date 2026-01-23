@@ -1,19 +1,18 @@
 ---
 id: intersection-observer
+title: 'Intersection Observer: Jak zjistit, že je prvek vidět?'
 heading: 'Intersection Observer: Jak zjistit, že je prvek vidět?'
 date: 2018-02-26
 perex: 'API, které umožní hlídat protnutí plochy prvku s plochou jiného prvku. Hodí se pro lazy loading, animace nebo implementaci „nekonečné stránky“.'
 published: true
-category: []
+category: ['rychlost-nacitani']
 category_highlight: true
 include_rss: true
 no_ads: false
 og_title: 'Intersection Observer: Jak zjistit, že je prvek vidět?'
 og_description: 'API, které umožní hlídat protnutí plochy prvku s plochou jiného prvku. Hodí se pro lazy loading, animace nebo implementaci „nekonečné stránky“.'
 og_type: article
----
-
-# Intersection Observer: Jak zjistit, že je prvek vidět?
+---# Intersection Observer: Jak zjistit, že je prvek vidět?
 
 Intersection Observer je javascriptové API, které umožní asynchronně hlídat protnutí plochy konkrétního prvku s plochou jiného prvku nebo viewportu. To se hodí hlavně pro potřeby [odloženého načtení (lazy loadingu)](lazy-loading.md) obrázků nebo jiných prvků.
 

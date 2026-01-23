@@ -1,5 +1,6 @@
 ---
 id: css3-transforms
+tags: ['css']
 heading: 'CSS3 Transforms'
 date: 2013-09-05
 perex: 'Transformace tvaru objektu ve 2D i 3D prostoru pomocí CSS.'
@@ -11,7 +12,6 @@ og_title: 'CSS3 Transforms'
 og_description: 'Transformace tvaru objektu ve 2D i 3D prostoru pomocí CSS.'
 og_type: article
 ---
-
 CSS3 Transforms: proměny objektu
 ================================
 

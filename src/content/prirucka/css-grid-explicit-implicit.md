@@ -1,6 +1,7 @@
 ---
 id: css-grid-explicit-implicit
-heading: ''
+title: 'CSS grid: Explicitní a implicitní mřížka'
+heading: 'CSS grid: Explicitní a implicitní mřížka'
 perex: ''
 published: false
 category:
@@ -12,7 +13,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # CSS grid: Explicitní a implicitní mřížka
 
 <div class="book-index" data-book-index="Explicitní mřížka"></div>

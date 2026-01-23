@@ -1,6 +1,8 @@
 ---
 id: css-logical
-heading: ''
+tags: ['css']
+title: 'Logické vlastnosti a rozměry v CSS (Logical Properties and Values)'
+heading: 'Logické vlastnosti a rozměry v CSS (Logical Properties and Values)'
 perex: ''
 published: true
 category:
@@ -11,9 +13,7 @@ no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----
-
-# Logické vlastnosti a rozměry v CSS (Logical Properties and Values)
+---# Logické vlastnosti a rozměry v CSS (Logical Properties and Values)
 
 <div class="book-index" data-book-index="Logické vlastnosti"></div>
 

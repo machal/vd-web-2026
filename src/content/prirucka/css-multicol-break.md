@@ -1,6 +1,7 @@
 ---
 id: css-multicol-break
-heading: ''
+title: 'Vlastnosti break-before, break-after a break-inside: zalamování ve vícesloupcovém rozložení'
+heading: 'Vlastnosti break-before, break-after a break-inside: zalamování ve vícesloupcovém rozložení'
 perex: ''
 published: true
 category:
@@ -12,7 +13,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Vlastnosti break-before, break-after a break-inside: zalamování ve vícesloupcovém rozložení
 
 Uvnitř vícesloupcového layoutu můžete mít prvky, které si nepřejete zalamovat při přechodu z jednoho sloupce do druhého.

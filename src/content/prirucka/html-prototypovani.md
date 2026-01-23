@@ -1,6 +1,7 @@
 ---
 id: html-prototypovani
-heading: ''
+title: 'HTML prototypy'
+heading: 'HTML prototypy'
 perex: ''
 published: false
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # HTML prototypy
 
 Když vyslovíme slovo „prototyp“ v hospodě – a nebude přitom zrovna plná webařů –, asi si okolo sedící představí testovací model nějakého výrobku.

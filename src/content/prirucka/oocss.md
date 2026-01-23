@@ -1,5 +1,7 @@
 ---
 id: oocss
+tags: ['organizace-css']
+title: 'OOCSS: objektové psaní CSS'
 heading: 'OOCSS: objektové psaní CSS'
 date: 2017-05-11
 perex: 'Object Oriented CSS je koncept organizace kódu, který je často vykládán mylně. Přepsal jsem proto starší článek a vezmu to do podrobna.'
@@ -11,9 +13,7 @@ no_ads: false
 og_title: 'OOCSS: objektové psaní CSS'
 og_description: 'Object Oriented CSS je koncept organizace kódu, který je často vykládán mylně. Přepsal jsem proto starší článek a vezmu to do podrobna.'
 og_type: article
----
-
-# OOCSS: objektové psaní CSS
+---# OOCSS: objektové psaní CSS
 
 OOCSS je zkratka pro [Object Oriented CSS](https://github.com/stubbornella/oocss/wiki). Je to koncept psaní kódu od Nicole Sullivan zaměřený na „komponentovou“ část CSS kódu.
 

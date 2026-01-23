@@ -1,6 +1,7 @@
 ---
 id: favicon
-heading: ''
+title: 'Favikony webu s RealFaviconGenerator'
+heading: 'Favikony webu s RealFaviconGenerator'
 perex: ''
 published: true
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Favikony webu s RealFaviconGenerator
 
 Ikona webu. Kromě tradiční `favicon.ico`, ikony na záložce rozhraní prohlížeče, se dnes „favikony“ zobrazují v celé řadě dalších kontextů: na ploše mobilních operačního systémů, ve vyhledávání Googlu nebo jako součást širšího nastavení zobrazování na dlaždicích novějších Windows.

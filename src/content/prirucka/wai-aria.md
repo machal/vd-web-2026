@@ -1,6 +1,7 @@
 ---
 id: wai-aria
-heading: ''
+title: 'Orientační body WAI-ARIA pro přístupnější web'
+heading: 'Orientační body WAI-ARIA pro přístupnější web'
 perex: ''
 published: true
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Orientační body WAI-ARIA pro přístupnější web
 
 [WAI-ARIA](https://www.w3.org/TR/wai-aria/) je technologie umožňující popsat obsah nebo chování webů tak, aby byly snadno dostupné i zrakově nebo jinak postiženým uživatelům.

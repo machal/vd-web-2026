@@ -1,18 +1,17 @@
 ---
 id: metrika-lps
-heading: ''
+title: 'Lighthouse Performance Score'
+heading: 'Lighthouse Performance Score'
 perex: ''
 published: true
-category: []
+category: ['rychlost-nacitani']
 category_highlight: false
 include_rss: false
 no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----
-
-# Lighthouse Performance Score
+---# Lighthouse Performance Score
 
 Co je Lighthouse Performance Score? Jednoduše řečeno jde o číslo, kterým rychlost vaší stránky zhodnotí testery vycházející z nástroje [Lighthouse](lighthouse.md).
 

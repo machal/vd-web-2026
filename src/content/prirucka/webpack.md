@@ -1,5 +1,7 @@
 ---
 id: webpack
+tags: ['nastroje']
+title: 'Webpack: Úplné základy a tutoriál k tomu'
 heading: 'Webpack: Úplné základy a tutoriál k tomu'
 date: 2019-10-09
 perex: 'Pořád jste Webpack nevyzkoušeli? Anebo ano, ale stále mu nerozumíte? Pak tohle je text právě pro vás.'
@@ -14,9 +16,7 @@ no_ads: false
 og_title: 'Webpack: Úplné základy a tutoriál k tomu'
 og_description: 'Pořád jste Webpack nevyzkoušeli? Anebo ano, ale stále mu nerozumíte? Pak tohle je text právě pro vás.'
 og_type: article
----
-
-# Webpack: Úplné základy a tutoriál k tomu
+---# Webpack: Úplné základy a tutoriál k tomu
 
 Webpack je nástroj pro zpracování souborů a usnadnění práci vývojářů. Jde o kombinaci balíčkovače (*module bundler* jako je Browserify) se spouštěčem úloh (*task runner* jako jsou Gulp nebo Grunt.
 

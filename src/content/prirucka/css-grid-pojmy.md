@@ -1,6 +1,7 @@
 ---
 id: css-grid-pojmy
-heading: ''
+title: 'Pojmy v CSS gridu'
+heading: 'Pojmy v CSS gridu'
 perex: ''
 published: false
 category:
@@ -12,7 +13,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Pojmy v CSS gridu
 
 V gridu se to hemží pojmy, které si musíme vyjasnit. Jsou totiž důležité pro pochopení tohoto typu rozvržení a náchylné na záměnu, což nám může způsobit nejednu malou katastrofu.

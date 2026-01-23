@@ -1,5 +1,6 @@
 ---
 id: svg-inspirace
+title: 'SVG inspirace: efekty, animace, interakce, přechody a další udělátka'
 heading: 'SVG inspirace: efekty, animace, interakce, přechody a další udělátka'
 date: 2018-11-01
 perex: 'SVG posouvá hranice možností webdesignu, ale trápí mě jak málo se to ví. V tomto textu budu proto shromažďovat ukázky možností, které SVG nabízí.'
@@ -14,7 +15,6 @@ og_title: 'SVG inspirace: efekty, animace, interakce, přechody a další uděl�
 og_description: 'SVG posouvá hranice možností webdesignu, ale trápí mě jak málo se to ví. V tomto textu budu proto shromažďovat ukázky možností, které SVG nabízí.'
 og_type: article
 ---
-
 # SVG inspirace: efekty, animace, interakce, přechody a další udělátka
 
 [SVG](svg.md) posouvá hranice možností webdesignu, ale trápí mě jak málo se to ví. V tomto textu budu proto shromažďovat ukázky možností, které SVG nabízí.

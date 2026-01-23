@@ -1,6 +1,7 @@
 ---
 id: metrika-fp
-heading: ''
+title: 'Událost „První vykreslení“ (First Paint, FP)'
+heading: 'Událost „První vykreslení“ (First Paint, FP)'
 perex: ''
 published: true
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Událost „První vykreslení“ (First Paint, FP)
 
 [Metrika rychlosti webu](metriky-rychlosti.md). Moment, kdy po kliknutí uživatele prohlížeč vyrenderuje cokoliv, co je vizuálně odlišné od stávající obrazovky.

@@ -13,8 +13,8 @@ no_ads: false
 og_title: 'Organizace CSS, verze 2014'
 og_description: 'Volné pokračování mého 6 let starého článku o udržovatelném stylopise na Zdrojáku. Ten jsem psal v roce kdy Obamu inaugurovali prezidentem a zemřel Michael Jackson. 2009. Toto letí!'
 og_type: article
+tags: ['organizace-css']
 ---
-
 # Organizace CSS, verze 2014
 
 Zčásti reakce na [diskuzi u Frontendistů](https://www.facebook.com/groups/frontendisti/permalink/1551757828369069/). Zčásti volné pokračování [článku](http://www.zdrojak.cz/clanky/udrzovatelny-stylopis-poradek-hacky-important/) o udržovatelném stylopise na Zdrojáku.

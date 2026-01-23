@@ -1,18 +1,17 @@
 ---
 id: metrika-tti
-heading: ''
+title: 'Metrika „Čas do interaktivity“ (Time To Interactive, TTI)'
+heading: 'Metrika „Čas do interaktivity“ (Time To Interactive, TTI)'
 perex: ''
 published: true
-category: []
+category: ['rychlost-nacitani']
 category_highlight: false
 include_rss: false
 no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----
-
-# Metrika „Čas do interaktivity“ (Time To Interactive, TTI)
+---# Metrika „Čas do interaktivity“ (Time To Interactive, TTI)
 
 [Metrika rychlosti webu](metriky-rychlosti.md), která říká kdy je stránka renderovaná a zároveň schopná spolehlivě reagovat na uživatelský vstup.
 

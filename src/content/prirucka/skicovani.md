@@ -1,6 +1,7 @@
 ---
 id: skicovani
-heading: ''
+title: 'Skicování'
+heading: 'Skicování'
 perex: ''
 published: false
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Skicování
 
 Skicování je metoda rychlého zhmotnění myšlenky. Skicuji velmi rád, skicuji tužkou na papír, skicuji v různých situacích a fázích projektu. 

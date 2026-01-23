@@ -12,9 +12,8 @@ category:
 og_title: 'Průvodce CSS preprocesory: co a jak?'
 og_description: 'Co preprocesory jsou, zda jsou pro vás,  jak s nimi začít a pozastavíme se u oblíbené výmluvy, proč je používat – debugování. První díl seriálu.'
 og_type: article
----
-
-# Průvodce CSS preprocesory: co a jak?
+tags: ['css', 'nastroje']
+---# Průvodce CSS preprocesory: co a jak?
 
 Tohle je první část čtyřdílného seriálu o CSS preprocesorech podle obsahu [mé přednášky](http://www.slideshare.net/machal/css-preprocesorywordcamppdf) z WordCamp Prague. O [CSS preprocesorech](http://kratce.vzhurudolu.cz/post/56084086629/css-preprocesory) jsem se už na Vzhůru dolů zmiňoval, psal o nich [i David Grudl](http://phpfashion.com/sass-less-stylus-nebo-ciste-css-1), ale přednáška dala příležitost pojmout téma více zeširoka. 
 

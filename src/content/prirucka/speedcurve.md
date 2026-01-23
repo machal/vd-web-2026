@@ -1,5 +1,7 @@
 ---
 id: speedcurve
+tags: ['nastroje']
+title: 'SpeedCurve: Nástroj pro průběžnou analýzu rychlosti webu'
 heading: 'SpeedCurve: Nástroj pro průběžnou analýzu rychlosti webu'
 date: 2019-05-29
 perex: 'Pro mě nástroj číslo jedna pro průběžnou optimalizaci a měření rychlosti webu, který hlídá rychlostní limity, porovnává s konkurencí a mnoho dalšího.'
@@ -12,9 +14,7 @@ no_ads: false
 og_title: 'SpeedCurve: Nástroj pro průběžnou analýzu rychlosti webu'
 og_description: 'Pro mě nástroj číslo jedna pro průběžnou optimalizaci a měření rychlosti webu, který hlídá rychlostní limity, porovnává s konkurencí a mnoho dalšího.'
 og_type: article
----
-
-# SpeedCurve: Nástroj pro průběžnou analýzu rychlosti webu
+---# SpeedCurve: Nástroj pro průběžnou analýzu rychlosti webu
 
 Pojďme si dnes něco povědět o hlavním nástroji, který u klientů používám pro analýzu rychlosti webu.
 

@@ -1,5 +1,7 @@
 ---
 id: container-queries
+tags: ['css']
+title: 'Container Queries'
 heading: 'Container Queries přicházejí'
 date: 2023-02-05
 perex: 'Dotazy na kontejnery nám na rozdíl od dotazů na média (Media Queries) umožňují tázat se na rozměry konkrétní komponenty, nikoliv celé stránky. Je to užitečné. Je to důležité. UPDATE: V únoru už s plnou podporou v prohlížečích.'
@@ -16,9 +18,7 @@ no_ads: false
 og_title: 'Container Queries přicházejí'
 og_description: 'Dotazy na kontejnery nám na rozdíl od dotazů na média (Media Queries) umožňují tázat se na rozměry konkrétní komponenty, nikoliv celé stránky. Je to užitečné. Je to důležité. UPDATE: V únoru už s plnou podporou v prohlížečích.'
 og_type: article
----
-
-# Container Queries
+---# Container Queries
 
 <div class="book-index" data-book-index="Container Queries"></div>
 

@@ -1,6 +1,7 @@
 ---
 id: dark-mode
-heading: ''
+title: 'Dark mode, tmavý režim webů'
+heading: 'Dark mode, tmavý režim webů'
 perex: ''
 published: true
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Dark mode, tmavý režim webů
 
 Dark mode je mezi uživateli, ale i ve webařské komunitě velmi populární. Hodí se na weby, kde uživatelé čtou nebo prostě tráví více času.

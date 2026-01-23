@@ -1,18 +1,17 @@
 ---
 id: preprocesory-extend
-heading: ''
+title: '@extend v preprocesorech: Bacha na něj!'
+heading: '@extend v preprocesorech: Bacha na něj!'
 perex: ''
 published: true
-category: []
+category: ['organizace-css']
 category_highlight: false
 include_rss: false
 no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----
-
-# @extend v preprocesorech: Bacha na něj!
+---# @extend v preprocesorech: Bacha na něj!
 
 V CSS preprocesorech jako LESS a Sass můžete použít direktivu `@extend`. Asi tak ve dvou případech z tisíce to může být užitečné, ale v textu se vás od toho chystám odradit.
 

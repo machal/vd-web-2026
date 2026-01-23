@@ -16,8 +16,8 @@ category_highlight: true
 og_title: 'Jsou weby na WordPressu skutečně pomalé? Pár poznámek ke studii Dannyho Richmana'
 og_description: 'Weby na WordPressu z principu pomalé být nemusí. Je to chyba implementátorů, nikoliv tohoto nejpopulárnějšího systému pro správu webů.'
 og_type: article
+tags: ['rychlost-nacitani']
 ---
-
 # Jsou weby na WordPressu skutečně pomalé? Pár poznámek ke studii Dannyho Richmana
 
 Weby na WordPressu z principu pomalé být nemusí. Je to chyba implementátorů, nikoliv tohoto nejpopulárnějšího systému pro správu webů. 

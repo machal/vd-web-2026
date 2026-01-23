@@ -1,6 +1,7 @@
 ---
 id: rozcestnik-rychlost-webu
-heading: ''
+title: 'Rozcestník pro rychlost webu'
+heading: 'Rozcestník pro rychlost webu'
 perex: ''
 published: false
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Rozcestník pro rychlost webu
 
 ## Obecně o rychlosti webů

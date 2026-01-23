@@ -1,6 +1,7 @@
 ---
 id: css-grid-row-column
-heading: ''
+title: 'Vlastnosti grid-column a grid-row'
+heading: 'Vlastnosti grid-column a grid-row'
 perex: ''
 published: true
 category:
@@ -12,7 +13,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Vlastnosti grid-column a grid-row
 
 V textu se zaměříme na vlastnosti `grid-column` a `grid-row`, které slouží k umísťování položek v definované mřížce.

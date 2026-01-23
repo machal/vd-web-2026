@@ -1,6 +1,7 @@
 ---
 id: responzivni-ui-caste-chyby
-heading: ''
+title: 'Vyhněte se častým chybám'
+heading: 'Vyhněte se častým chybám'
 perex: ''
 published: false
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Vyhněte se častým chybám
 
 Shrňme si tady problémy, kterým se důsledněji věnuji v jiných kapitolách, ale které mají společné jmenovatele v četnosti výskytu na českém a slovenském webu.

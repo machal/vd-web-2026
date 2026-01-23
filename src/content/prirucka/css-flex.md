@@ -1,6 +1,7 @@
 ---
 id: css-flex
-heading: ''
+title: 'CSS vlastnost flex: nastavení pružnosti položky flexboxu'
+heading: 'CSS vlastnost flex: nastavení pružnosti položky flexboxu'
 perex: ''
 published: true
 category:
@@ -12,7 +13,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # CSS vlastnost flex: nastavení pružnosti položky flexboxu
 
 Vlastnost `flex` nastaví výchozí velikost elementu a způsob, jakým se smí zvětšovat a zmenšovat v rámci flexboxového layoutu.

@@ -1,6 +1,7 @@
 ---
 id: amp-co-je-webdesign
-heading: ''
+title: 'Omezení složitosti webdesignu'
+heading: 'Omezení složitosti webdesignu'
 perex: ''
 published: false
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Omezení složitosti webdesignu
 
 _Webmaster obecný_ už dávno vymřel. V záplavě specialistek a specialistů na marketing, design, grafiku, frontendový a backendový vývoj, servery a kdovíco ještě je stále vzácnější najít někoho s přesahem do vedlejších oborů. A zcela nemožné je najít někoho, kdo rozumí všemu, a může tedy převzít odpovědnost za celek.

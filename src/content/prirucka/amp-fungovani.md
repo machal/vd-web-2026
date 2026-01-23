@@ -1,6 +1,7 @@
 ---
 id: amp-fungovani
-heading: ''
+title: 'Jak funguje distribuce AMP stránky?'
+heading: 'Jak funguje distribuce AMP stránky?'
 perex: ''
 published: false
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Jak funguje distribuce AMP stránky?
 
 Proces mezi publikováním a momentem dostupnosti stránky na platformách, které používají AMP, mírně zjednodušíme a technické detaily si necháme na později. Podívejte se nejprve na schéma:

@@ -1,6 +1,7 @@
 ---
 id: css3-nezarazene
-heading: ''
+title: 'CSS3 vlastnosti nezařazené v tomto textu'
+heading: 'CSS3 vlastnosti nezařazené v tomto textu'
 perex: ''
 published: false
 category:
@@ -12,7 +13,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # CSS3 vlastnosti nezařazené v tomto textu
 
 Většinou jde o technologie, které zatím nemají širokou podporu prohlížečů a hodí se jen pro speciální případy případy. Přidávám i ty, které sice stojí za pozornost, ale zatím jsem je nezdokumentoval.

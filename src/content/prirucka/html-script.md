@@ -1,6 +1,7 @@
 ---
 id: html-script
-heading: ''
+title: 'Značka SCRIPT: Vložení JavaScriptu do HTML'
+heading: 'Značka SCRIPT: Vložení JavaScriptu do HTML'
 perex: ''
 published: true
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Značka SCRIPT: Vložení JavaScriptu do HTML
 
 Tentokrát to v příručce vezmeme opravdu od základů, ale do hloubky. Pojďme se zaměřit na vkládání JavaScriptu do stránky.

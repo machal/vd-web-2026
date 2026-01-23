@@ -1,6 +1,7 @@
 ---
 id: amp-implementace
-heading: ''
+title: 'Možnosti implementace AMP do webů'
+heading: 'Možnosti implementace AMP do webů'
 perex: ''
 published: false
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Možnosti implementace AMP do webů
 
 Z pohledu vývojářů existuje několik přístup, jak AMP naimplementovat do současných webů. Liší se samozřejmě náročností, dlouhodobou udržitelností, ale i výhodností pro uživatele.

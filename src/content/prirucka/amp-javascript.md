@@ -1,6 +1,7 @@
 ---
 id: amp-javascript
-heading: ''
+title: 'JavaScript v AMP'
+heading: 'JavaScript v AMP'
 perex: ''
 published: true
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # JavaScript v AMP
 
 <div class="web-only" markdown="1">

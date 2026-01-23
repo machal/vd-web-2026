@@ -1,6 +1,7 @@
 ---
 id: zaklady-procesu
-heading: ''
+title: 'Základy procesu tvorby webu'
+heading: 'Základy procesu tvorby webu'
 perex: ''
 published: false
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Základy procesu tvorby webu
 
 V dalších kapitolách budeme navrhovat a psát kód jednoduché responzivní webové stránky. Při návrhu, ale i implementaci budeme dělat rozhodnutí, která by v praxi vycházela z předchozích fází procesu návrhu webu. 

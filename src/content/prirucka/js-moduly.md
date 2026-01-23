@@ -1,6 +1,7 @@
 ---
 id: js-moduly
-heading: ''
+title: 'ECMAScript moduly'
+heading: 'ECMAScript moduly'
 perex: ''
 published: true
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # ECMAScript moduly
 
 ES modul (občas budu název zjednodušovat jako _javascriptový modul_) je soubor obsahující javascriptový kód, který se vkládá do jiného souboru, obsahujícího javascriptový kód.

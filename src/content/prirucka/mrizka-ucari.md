@@ -1,6 +1,7 @@
 ---
 id: mrizka-ucari
-heading: ''
+title: 'Mřížka účaří (Baseline grid)'
+heading: 'Mřížka účaří (Baseline grid)'
 perex: ''
 published: false
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Mřížka účaří (Baseline grid)
 
 Layout vysázený v pravidelné vodorovné mřížce asi znáte, protože jej velmi zpopularizoval framework Bootstrap. Mřížka účaří je vlastně totéž ve svislém směru. Je to svislá mřížka, jinak též typografický rytmus.

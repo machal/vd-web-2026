@@ -1,6 +1,7 @@
 ---
 id: amp-wordpress
-heading: ''
+title: 'AMP ve WordPressu s oficiálním pluginem: Bleskurychlé stránky za málo práce'
+heading: 'AMP ve WordPressu s oficiálním pluginem: Bleskurychlé stránky za málo práce'
 perex: ''
 published: true
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # AMP ve WordPressu s oficiálním pluginem: Bleskurychlé stránky za málo práce
 
 Na [WordCampu 2020](https://2020.prague.wordcamp.org/session/bleskurychle-nacteni-webovych-stranek-na-mobilu-i-bez-rychleho-pripojeni-s-technologii-amp-to-neni-sci-fi/) jsem povídal o AMPu ve WordPressu a konkrétně o oficiálním pluginu „AMP for WordPress“.

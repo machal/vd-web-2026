@@ -1,6 +1,7 @@
 ---
 id: responzivni-layout
-heading: ''
+title: 'Responzivní layout'
+heading: 'Responzivní layout'
 perex: ''
 published: false
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Responzivní layout
 
 Pro rozvržení celé stránky nebo jednotlivých komponent máme několik technických možností. Jako výchozí vám doporučím používat flexbox, ale projdeme si je všechny. Používáte rozvržení do mřížky? Za momentík vám povím něco i o něm.

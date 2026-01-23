@@ -1,6 +1,7 @@
 ---
 id: schovavani-obsahu
-heading: ''
+title: 'Skrytí obsahu v CSS a HTML'
+heading: 'Skrytí obsahu v CSS a HTML'
 perex: ''
 published: false
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Skrytí obsahu v CSS a HTML
 
 ## Googlebot

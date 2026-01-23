@@ -1,18 +1,17 @@
 ---
 id: ttfb
-heading: ''
+title: 'Co je „Doba do načtení prvního bajtu“ (aneb „Time To First Byte“ aneb TTFB)?'
+heading: 'Co je „Doba do načtení prvního bajtu“ (aneb „Time To First Byte“ aneb TTFB)?'
 perex: ''
 published: true
-category: []
+category: ['rychlost-nacitani']
 category_highlight: false
 include_rss: false
 no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----
-
-# Co je „Doba do načtení prvního bajtu“ (aneb „Time To First Byte“ aneb TTFB)?
+---# Co je „Doba do načtení prvního bajtu“ (aneb „Time To First Byte“ aneb TTFB)?
 
 [Metrika rychlosti webu](metriky-rychlosti.md), která vzniká ve chvíli, kdy prohlížeč stáhne první bajt z vašeho HTML.
 

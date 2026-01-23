@@ -1,6 +1,7 @@
 ---
 id: css-place-content
-heading: ''
+title: 'Vlastnost place-content: Rozdělení prostoru mezi položkami na obou osách'
+heading: 'Vlastnost place-content: Rozdělení prostoru mezi položkami na obou osách'
 perex: ''
 published: true
 category:
@@ -12,7 +13,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Vlastnost place-content: Rozdělení prostoru mezi položkami na obou osách
 
 Úkolem vlastnosti `place-content` je specifikovat rozdělení prostoru mezi položkami na hlavní i příčné ose kontejneru pro layouty v CSS.

@@ -1,6 +1,7 @@
 ---
 id: css-layout-pristupnost
-heading: ''
+title: 'Přístupnost a CSS layout: pozor na vizuální pořadí'
+heading: 'Přístupnost a CSS layout: pozor na vizuální pořadí'
 perex: ''
 published: true
 category:
@@ -12,7 +13,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Přístupnost a CSS layout: pozor na vizuální pořadí
 
 <div class="book-index" data-book-index="Přístupnost"></div>

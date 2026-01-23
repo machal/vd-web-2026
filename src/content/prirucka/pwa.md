@@ -1,18 +1,17 @@
 ---
 id: pwa
-heading: ''
+title: 'Progresivní webové aplikace: Co to je? A jak webu zařídit plné hodnocení PWA v Lighthouse'
+heading: 'Progresivní webové aplikace: Co to je? A jak webu zařídit plné hodnocení PWA v Lighthouse'
 perex: ''
 published: true
-category: []
+category: ['rychlost-nacitani']
 category_highlight: false
 include_rss: false
 no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----
-
-# Progresivní webové aplikace: Co to je? A jak webu zařídit plné hodnocení PWA v Lighthouse
+---# Progresivní webové aplikace: Co to je? A jak webu zařídit plné hodnocení PWA v Lighthouse
 
 PWA (progresivní webové aplikace) je označení pro weby, které přebírají některé vlastnosti nativních aplikací: umí například běžet offline, mají přístup k hardwaru a posílají notifikace uživateli.
 

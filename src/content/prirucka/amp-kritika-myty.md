@@ -1,6 +1,7 @@
 ---
 id: amp-kritika-myty
-heading: ''
+title: 'Kritika a časté mýty kolem AMP'
+heading: 'Kritika a časté mýty kolem AMP'
 perex: ''
 published: true
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Kritika a časté mýty kolem AMP
 
 _„AMP je pro budoucnost webu dobré asi tak jako Trump pro zeměkouli,“_ napsal nám jeden z kritiků.

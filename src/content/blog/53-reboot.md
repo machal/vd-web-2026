@@ -15,8 +15,8 @@ category_highlight: true
 og_title: 'Reboot je další evoluční krok pro resetovací CSS'
 og_description: 'Bootstrap 4 přichází kromě jiného s náhradou Normalize.css. vlastním kódem pro sjednocení výchozích nastavení prohlížeče – Reboot.'
 og_type: article
+tags: ['css']
 ---
-
 # Reboot je další evoluční krok pro resetovací CSS
 
 [Bootstrap 4](/blog/39-bootstrap-4) přichází kromě jiného s náhradou Normalize.css. Vlastním kódem pro sjednocení výchozích nastavení prohlížeče – [Reboot](http://v4-alpha.getbootstrap.com/content/reboot/).

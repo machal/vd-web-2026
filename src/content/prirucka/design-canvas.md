@@ -1,6 +1,7 @@
 ---
 id: design-canvas
-heading: ''
+title: 'User Centered Design Canvas'
+heading: 'User Centered Design Canvas'
 perex: ''
 published: false
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # User Centered Design Canvas
 
 Správný designér hledá řešení, jež pomáhá uživatelům, ale také cílům člověka, firmy nebo instituce, pro kterou web navrhuje.

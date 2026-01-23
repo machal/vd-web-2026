@@ -1,6 +1,7 @@
 ---
 id: grafika-zdroje
-heading: ''
+title: 'Zdroje elementů grafického designu'
+heading: 'Zdroje elementů grafického designu'
 perex: ''
 published: false
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Zdroje elementů grafického designu 
 
 U jednodušších webů nebo webových aplikací je možné k návrhu [grafického designu](graficky-design.md) přistoupit jako ke skládance. 

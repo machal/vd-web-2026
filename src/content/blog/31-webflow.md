@@ -7,7 +7,7 @@ excerpt: 'Ale u mikrosajt nebo jednodušších prezentačních webů si designé
 postStatus: Published
 authorID: 1
 sectionID: 1
-category: []
+category: ['nastroje']
 no_ads: false
 include_rss: true
 category_highlight: true
@@ -15,7 +15,6 @@ og_title: 'Vyzkoušel jsem WebFlow. Je to velká věc, ale práci kóderům jen 
 og_description: 'Ale u mikrosajt nebo jednodušších prezentačních webů si designéři už dneska opravdu vystačí s malým nebo vůbec žádným dohledem kódera.'
 og_type: article
 ---
-
 # Vyzkoušel jsem WebFlow. Je to velká věc, ale práci kóderům jen tak nevezme
 
 [Dreamweavery responzivního věku](http://www.smashingmagazine.com/2014/05/23/next-generation-responsive-web-design-tools-webflow-edge-reflow-macaw/) mají ambice zkrátit cestu mezi webovým designérem a publikovaným webem. Jinak řečeno ušetřit za Photoshop a kódera. 

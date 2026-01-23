@@ -1,5 +1,7 @@
 ---
 id: css-flexbox
+tags: ['css']
+title: 'Flexbox: referenční příručka všech vlastností'
 heading: 'CSS flexbox: Průvodce všemi vlastnostmi'
 date: 2021-02-12
 perex: 'Flexbox je layout pomocí pružných boxů. V této aktualizované příručce přibyly texty s příklady pro všechny vlastnosti, které ve flexboxu můžete používat.'
@@ -15,9 +17,7 @@ no_ads: false
 og_title: 'CSS flexbox: Průvodce všemi vlastnostmi'
 og_description: 'Flexbox je layout pomocí pružných boxů. V této aktualizované příručce přibyly texty s příklady pro všechny vlastnosti, které ve flexboxu můžete používat.'
 og_type: article
----
-
-# Flexbox: referenční příručka všech vlastností
+---# Flexbox: referenční příručka všech vlastností
 
 <div class="book-index" data-book-index="Flexbox"></div>
 

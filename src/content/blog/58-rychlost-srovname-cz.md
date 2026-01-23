@@ -13,8 +13,8 @@ no_ads: false
 og_title: 'Případová studie Srovname.cz: jaký vliv má zrychlení webu na konverzní poměr?'
 og_description: 'Srovname.cz jsem pomáhal se zrychlením webu. Na mobilech se tím povedlo zvýšit konverzní poměr o jednu čtvrtinu.'
 og_type: article
+tags: ['rychlost-nacitani']
 ---
-
 # Případová studie Srovname.cz: jaký vliv má zrychlení webu na konverzní poměr?
 
 [Srovname.cz](http://www.srovname.cz/) jsem pomáhal se zrychlením webu. Na mobilech se tím povedlo zvýšit konverzní poměr o jednu čtvrtinu.

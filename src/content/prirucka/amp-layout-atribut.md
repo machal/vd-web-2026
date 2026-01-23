@@ -1,6 +1,7 @@
 ---
 id: amp-layout-atribut
-heading: ''
+title: 'Atribut layout a komponenta amp-layout'
+heading: 'Atribut layout a komponenta amp-layout'
 perex: ''
 published: false
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Atribut layout a komponenta amp-layout
 
 Atribut `layout` v AMP HTML definuje způsob, jakým se má při vykreslování stránky rezervovat prostor externímu obsahu – obrázkům, videím, ale i složitějším komponentám, jako je karusel.

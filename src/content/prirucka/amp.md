@@ -1,5 +1,6 @@
 ---
 id: amp-platformy
+title: 'AMP weby: Co to je a proč nás to má vůbec zajímat?'
 heading: 'AMP: Odkud vám přinese návštěvnost pro web?'
 date: 2019-07-04
 perex: 'Platformy, které využívají AMP. Není to jen vyhledávání na Google, ale také třeba LinkedIn, Pinterest, Bing a trochu i Twitter.'
@@ -13,7 +14,6 @@ og_title: 'AMP: Odkud vám přinese návštěvnost pro web?'
 og_description: 'Platformy, které využívají AMP. Není to jen vyhledávání na Google, ale také třeba LinkedIn, Pinterest, Bing a trochu i Twitter.'
 og_type: article
 ---
-
 # AMP weby: Co to je a proč nás to má vůbec zajímat?
 
 Delší, hlubší a propracovanější odpověď na otázku „Co je AMP a proč mě má zajímat?“ samozřejmě najdete [v e-booku](https://www.vzhurudolu.cz/ebook-amp/). V tomhle textu se pokusím o úvod pro ty z vás, kteří AMP zatím moc neznáte.

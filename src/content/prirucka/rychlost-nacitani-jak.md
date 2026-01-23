@@ -1,6 +1,7 @@
 ---
 id: rychlost-nacitani-jak
-heading: ''
+title: 'Jak vylepšit rychlost načítání webu'
+heading: 'Jak vylepšit rychlost načítání webu'
 perex: ''
 published: false
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Jak vylepšit rychlost načítání webu
 
 ## Proč ji řešit? Uživatelský prožitek, ale také obchod

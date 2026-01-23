@@ -1,6 +1,7 @@
 ---
 id: css3-flexbox-polozky
-heading: ''
+title: 'Flexbox: vlastnosti položky'
+heading: 'Flexbox: vlastnosti položky'
 perex: ''
 published: true
 category:
@@ -12,7 +13,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Flexbox: vlastnosti položky
 
 <div class="nav web-only">

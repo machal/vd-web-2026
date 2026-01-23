@@ -1,6 +1,7 @@
 ---
 id: amp-webari-preload
-heading: ''
+title: 'Jak AMP chrání rychlost před webaři. A co je jeho největší přínos?'
+heading: 'Jak AMP chrání rychlost před webaři. A co je jeho největší přínos?'
 perex: ''
 published: true
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Jak AMP chrání rychlost před webaři. A co je jeho největší přínos?
 
 Za pomalé weby nemohou technologie, ale zase jenom lidé. 

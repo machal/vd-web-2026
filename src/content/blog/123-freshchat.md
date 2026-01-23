@@ -15,8 +15,8 @@ category_highlight: true
 og_title: 'Konzultujte vždy prosím nasazení nových komponent pro web s vývojáři (Případ FreshChat)'
 og_description: 'Snadno se stane, že i vyladěný web zničí jedno dobře míněné přidání komponenty.'
 og_type: article
+tags: ['rychlost-nacitani']
 ---
-
 # Konzultujte vždy prosím nasazení nových komponent pro web s vývojáři (Případ FreshChat)
 
 Řekněme, že jste marketéři, designéři nebo majitelé webů. A že chcete [rychlý web](/rychlost-nacitani). Je možné, že pro to leccos děláte.

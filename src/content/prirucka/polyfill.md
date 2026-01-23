@@ -1,5 +1,6 @@
 ---
 id: polyfill
+tags: ['nastroje']
 heading: 'Polyfill'
 date: 2013-12-27
 perex: 'V kontextu webového front-endu jde o javascriptový kód co vám HTML5 fíčuru rozchodí i v prohlížečích, které ji neumí.'
@@ -11,7 +12,6 @@ og_title: 'Polyfill'
 og_description: 'V kontextu webového front-endu jde o javascriptový kód co vám HTML5 fíčuru rozchodí i v prohlížečích, které ji neumí.'
 og_type: article
 ---
-
 Polyfill
 ========
 

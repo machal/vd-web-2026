@@ -1,6 +1,7 @@
 ---
 id: velikost-aktivni-plochy
-heading: ''
+title: 'Minimální plocha aktivní plochy: alespoň centimetr čtvereční'
+heading: 'Minimální plocha aktivní plochy: alespoň centimetr čtvereční'
 perex: ''
 published: false
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Minimální plocha aktivní plochy: alespoň centimetr čtvereční
 
 Robert Wadlow byl podle Wikipedie nejvyšším člověkem v historii. Přezdívalo se mu Obr z Altonu. Když navrhuji rozhraní, dost na něj myslím. Hned vysvětlím proč. 

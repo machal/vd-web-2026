@@ -1,6 +1,7 @@
 ---
 id: css-justify-items
-heading: ''
+title: 'Vlastnost justify-items: Zarovnání všech položek na hlavní ose'
+heading: 'Vlastnost justify-items: Zarovnání všech položek na hlavní ose'
 perex: ''
 published: true
 category:
@@ -12,7 +13,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Vlastnost justify-items: Zarovnání všech položek na hlavní ose
 
 Vlastnost `justify-items` definuje na kontejneru layoutu zarovnání položek na hlavní (jinak též řádkové) ose.

@@ -1,6 +1,7 @@
 ---
 id: vdcss3-pred-uvod
-heading: ''
+title: 'Co je nového?'
+heading: 'Co je nového?'
 perex: ''
 published: true
 category:
@@ -12,7 +13,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Co je nového? 
 
 Čtete „Vzhůru do CSS3“ verze 1.4 z 5. ledna 2017. Tady je seznam obsahových novinek:

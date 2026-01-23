@@ -1,6 +1,7 @@
 ---
 id: tipy-responzivni-ui
-heading: ''
+title: '8 tipů pro jednodušší rozhraní na mobilech'
+heading: '8 tipů pro jednodušší rozhraní na mobilech'
 perex: ''
 published: false
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # 8 tipů pro jednodušší rozhraní na mobilech
 
 Odstraňte zbytečnosti, šetřete ikonkami a rozbalovacími nabídkami. Otevírejte správné klávesnice, používejte našeptávače. Ale mám i další. Jen čtěte.

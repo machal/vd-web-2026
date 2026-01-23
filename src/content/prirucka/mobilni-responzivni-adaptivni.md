@@ -1,6 +1,7 @@
 ---
 id: mobilni-responzivni-adaptivni
-heading: ''
+title: 'Weby responzivní, adaptivní, mobilní'
+heading: 'Weby responzivní, adaptivní, mobilní'
 perex: ''
 published: false
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Weby responzivní, adaptivní, mobilní
 
 Vlastně dnes máme jen dvě možnosti, jak udělat web pro všechna zařízení: adaptivní web, nebo zvláštní verzi webu pro mobilní zařízení. Kam zmizely weby responzivní? Víte, většina z nich dnes patří do kategorie webů *adaptivních*, ale budeme jim dále říkat responzivní. Asi bych vám měl něco vysvětlit, že? Čtěte dále.

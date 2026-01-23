@@ -1,6 +1,7 @@
 ---
 id: amp-obory-male
-heading: ''
+title: 'Malé prezentační weby'
+heading: 'Malé prezentační weby'
 perex: ''
 published: false
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Malé prezentační weby
 
 Všichni víme, že z několikastránkových webů průkazné případové studie nedostaneme. Na druhou stranu se na nich nové technologie zkouší nejlépe. Pojďme tedy začít s nimi.

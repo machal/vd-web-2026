@@ -1,6 +1,7 @@
 ---
 id: amp-implementace-extra-verze
-heading: ''
+title: 'Dvě oddělené verze webu'
+heading: 'Dvě oddělené verze webu'
 perex: ''
 published: false
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Dvě oddělené verze webu
 
 Po tomhle řešení sáhnou nejspíš ti, kteří z nějakého důvodu nemohou nebo nechtějí radikálně upravovat stávající web.

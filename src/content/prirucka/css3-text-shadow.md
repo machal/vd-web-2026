@@ -1,5 +1,6 @@
 ---
 id: css3-text-shadow
+tags: ['css']
 heading: 'CSS3 Text Shadow'
 date: 2013-08-01
 perex: 'Vnitřní nebo vnější stín textu.'
@@ -11,7 +12,6 @@ og_title: 'CSS3 Text Shadow'
 og_description: 'Vnitřní nebo vnější stín textu.'
 og_type: article
 ---
-
 CSS3 Text Shadow: stín textu
 ============================
 

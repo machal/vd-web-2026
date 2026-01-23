@@ -1,6 +1,7 @@
 ---
 id: amp-kritika-standardy
-heading: ''
+title: 'Kritika AMP vzhledem ke standardům'
+heading: 'Kritika AMP vzhledem ke standardům'
 perex: ''
 published: false
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Kritika AMP vzhledem ke standardům 
 
 Chyby, které autoři AMP udělali hned na začátku, přivedly část odborné veřejnosti v lednu 2018 k  publikování otevřeného dopisu, jenž vyjadřuje rozladění z projektu.

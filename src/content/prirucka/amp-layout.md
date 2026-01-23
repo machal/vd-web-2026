@@ -1,6 +1,7 @@
 ---
 id: amp-layout
-heading: ''
+title: 'Systém rozvržení v AMP'
+heading: 'Systém rozvržení v AMP'
 perex: ''
 published: false
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Systém rozvržení v AMP
 
 Layout se v AMP dělá trochu jinak než na běžných stránkách. Každá AMP stránka totiž používá dva různé layouty:

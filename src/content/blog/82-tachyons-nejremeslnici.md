@@ -7,13 +7,12 @@ excerpt: 'Matouš Borák z NejŘemeslníci.cz popisuje zkušenosti svého týmu 
 postStatus: Published
 authorID: 0
 sectionID: 1
-category: []
+category: ['organizace-css']
 no_ads: true
 og_title: 'Jak v NejŘemeslníci.cz používají Tachyons'
 og_description: 'Matouš Borák z NejŘemeslníci.cz popisuje zkušenosti svého týmu s Tachyons, knihovnou atomických stylů.'
 og_type: article
 ---
-
 # Jak v NejŘemeslníci.cz používají Tachyons
 
 *Nedávno jsem se zúčastnil [facebookové](https://www.facebook.com/groups/frontendisti/permalink/1824455287765987/) a následně i e-mailové diskuze o „atomickém CSS“. O co jde? CSS třídy v něm představují konkrétní vlastnosti stylů. Nepleťte prosím [s atomickým designem](http://www.vzhurudolu.cz/prirucka/pattern-lab))* 

@@ -1,6 +1,7 @@
 ---
 id: desktopove-zlozvyky
-heading: ''
+title: 'Opusťte desktopové zlozvyky'
+heading: 'Opusťte desktopové zlozvyky'
 perex: ''
 published: false
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Opusťte desktopové zlozvyky
 
 S pozvolným přechodem většiny uživatelů od myši k dotykovému ovládání přibývá  adeptů na zápis do „Červené knihy ohrožených návrhových vzorů“. Pojďme na krátký výlet do pavilonu designérské ZOO, kde je všechny vystavují.

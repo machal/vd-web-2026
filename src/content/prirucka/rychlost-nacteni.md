@@ -1,18 +1,17 @@
 ---
 id: rychlost-nacteni
-heading: ''
+title: 'Co je „rychlost načtení“ webu?'
+heading: 'Co je „rychlost načtení“ webu?'
 perex: ''
 published: true
-category: []
+category: ['rychlost-nacitani']
 category_highlight: false
 include_rss: false
 no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----
-
-# Co je „rychlost načtení“ webu?
+---# Co je „rychlost načtení“ webu?
 
 Vlastně nic. Taková věc totiž neexistuje.
 

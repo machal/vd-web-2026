@@ -1,6 +1,7 @@
 ---
 id: css-box-alignment-teorie
-heading: ''
+title: 'Teorie k zarovnání boxů v CSS (Box Alignment Module)'
+heading: 'Teorie k zarovnání boxů v CSS (Box Alignment Module)'
 perex: ''
 published: false
 category:
@@ -12,7 +13,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Teorie k zarovnání boxů v CSS (Box Alignment Module)
 
 Zde si představíme pár konceptů k CSS Box Alignment Module.

@@ -10,8 +10,8 @@ sectionID: 1
 og_title: 'Tipy a triky pro Chrome DevTools'
 og_description: 'Vsadím se, že minimálně některé z nich neznáte.'
 og_type: article
+tags: ['nastroje']
 ---
-
 # Tipy a triky pro Chrome DevTools
 
 DevTools přidávají novinky tak rychle, že už dávno přestalo být možné do svého pracovního procesu všechny zařazovat. Vsadím se, že minimálně některé z následujících tipů a triků neznáte. V Chrome si  otevřete DevTools a pojďme hned moje tvrzení ověřit. 

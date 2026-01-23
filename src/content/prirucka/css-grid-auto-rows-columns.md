@@ -1,6 +1,7 @@
 ---
 id: css-grid-auto-rows-columns
-heading: ''
+title: 'Vlastnosti grid-auto-rows a grid-auto-columns: definice implicitního gridu'
+heading: 'Vlastnosti grid-auto-rows a grid-auto-columns: definice implicitního gridu'
 perex: ''
 published: true
 category:
@@ -12,7 +13,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Vlastnosti grid-auto-rows a grid-auto-columns: definice implicitního gridu
 
 Vlastnosti `grid-auto-rows` a `grid-auto-columns` použijete pro tvorbu implicitního, čili výslovně nedefinovaného gridu v CSS.

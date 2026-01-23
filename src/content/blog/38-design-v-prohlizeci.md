@@ -10,8 +10,8 @@ sectionID: 1
 og_title: 'Design webů v prohlížeči'
 og_description: 'V posledních letech jsem opustil standardní postupy s wireframy a Photoshopem. Vystačím si s papírem, tužkou a prohlížečem.'
 og_type: article
+tags: ['responzivni-design']
 ---
-
 # Design webů v prohlížeči
 
 *Textová verze [přednášky pro WebExpo 2015](http://www.vzhurudolu.cz/prednaska/design-webu-v-prohlizeci-149 "").*

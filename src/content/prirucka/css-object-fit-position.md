@@ -1,6 +1,8 @@
 ---
 id: css-object-fit-position
-heading: ''
+tags: ['css']
+title: 'CSS vlastnosti object-fit a object-position'
+heading: 'CSS vlastnosti object-fit a object-position'
 perex: ''
 published: true
 category:
@@ -11,9 +13,7 @@ no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----
-
-# CSS vlastnosti object-fit a object-position
+---# CSS vlastnosti object-fit a object-position
 
 Vlastnosti `object-fit` a `object-position` slouží k upřesnění rozměru a pozice u externích médií vkládaných do HTML, takže především obrázků ve značce `<img>`, ale také obsahu prvků `<video>`, `<iframe>` nebo `<embed>`.
 

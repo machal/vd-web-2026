@@ -1,6 +1,7 @@
 ---
 id: amp-implementace-nejprve-amp
-heading: ''
+title: 'Nejprve AMP, pak HTML'
+heading: 'Nejprve AMP, pak HTML'
 perex: ''
 published: false
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Nejprve AMP, pak HTML
 
 Buďme teď alespoň na chvíli trochu jako Donald Trump. Že je to strašná představa? No tak, zkuste to. Půjde to lépe, když nacionalismus a fokus na Ameriku vyměníme za víru v naši technologii. Zvolejme: „AMP především!“

@@ -1,6 +1,7 @@
 ---
 id: amp-ads
-heading: ''
+title: 'AMP Ads'
+heading: 'AMP Ads'
 perex: ''
 published: false
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # AMP Ads
 
 Ať se nám to líbí, nebo ne, reklama je aktuálně nejdůležitějším zdrojem příjmů pro větší obsahové weby. A reklamní systémy jsou závislé na JavaScriptu, který je v AMP na černé listině.

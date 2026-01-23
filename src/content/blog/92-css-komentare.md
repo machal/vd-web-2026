@@ -13,8 +13,8 @@ no_ads: false
 og_title: 'Pár poznámek ke komentářům v CSS'
 og_description: 'Keith J. Grant napsal moc hezký článek o komentářích v CSS: „Thoughts on Self-Documenting CSS“. Tady je to nejdůležitější doplněné o mé poznámky.'
 og_type: article
+tags: ['organizace-css']
 ---
-
 # Pár poznámek ke komentářům v CSS
 
 Keith J. Grant napsal moc hezký článek o komentářích v CSS: [„Thoughts on Self-Documenting CSS“](http://keithjgrant.com/posts/2017/06/self-documenting-css/). Tady je to nejdůležitější doplněné o mé poznámky.

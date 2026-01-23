@@ -1,6 +1,7 @@
 ---
 id: css-multicol-fill
-heading: ''
+title: 'Vlastnost column-fill: vyvažování výšky sloupců ve vícesloupcovém rozvržení'
+heading: 'Vlastnost column-fill: vyvažování výšky sloupců ve vícesloupcovém rozvržení'
 perex: ''
 published: true
 category:
@@ -12,7 +13,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Vlastnost column-fill: vyvažování výšky sloupců ve vícesloupcovém rozvržení
 
 Vlastnost `column-fill` umožňuje rozdělit obsah vícesloupcového rozložení do několika sloupečků tak, aby všechny zabíraly přibližně stejnou výšku.

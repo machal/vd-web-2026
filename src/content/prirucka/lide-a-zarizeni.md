@@ -1,19 +1,18 @@
 ---
 id: lide-a-zarizeni
+title: 'Lidé a zařízení: jak je ovládají a jak se chovají?'
 heading: 'Lidé a zařízení: jak je používají a jaký to má vliv na návrh rozhraní?'
 date: 2018-02-11
 perex: 'Další ukázka z knihy. Dozvíte se, že je vhodné považovat všechna zařízení za dotyková. Že lidé palci používají i hybridní notebooky. A že snadno dosažitelná plocha chytrých telefonů se stále zmenšuje.'
 published: true
-category: []
+category: ['responzivni-design']
 category_highlight: true
 include_rss: true
 no_ads: false
 og_title: 'Lidé a zařízení: jak je používají a jaký to má vliv na návrh rozhraní?'
 og_description: 'Další ukázka z knihy. Dozvíte se, že je vhodné považovat všechna zařízení za dotyková. Že lidé palci používají i hybridní notebooky. A že snadno dosažitelná plocha chytrých telefonů se stále zmenšuje.'
 og_type: article
----
-
-# Lidé a zařízení: jak je ovládají a jak se chovají?
+---# Lidé a zařízení: jak je ovládají a jak se chovají?
 
 <div class="ebook-only" markdown="1">
 Jak vlastně lidé ta nová zařízení drží, jak je osahávají? Vítejte u mobilní, tabletové a desktopové Kámasútry!

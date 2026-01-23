@@ -16,8 +16,8 @@ category_highlight: true
 og_title: '21 tipů pro lepší uživatelské rozhraní od UX designéra'
 og_description: 'Jeden tip, jeden obrázek. Budou se hodit hlavně webovým vývojářům a dalším účastníkům procesu vývoje webu, kteří se designem neživí.'
 og_type: article
+tags: ['responzivni-design']
 ---
-
 # 21 tipů pro lepší uživatelské rozhraní od UX designéra
 
 _[Instagram firmy Liquid Design](https://www.instagram.com/lqdcz/) patří odborně k těm nejužitečnějším v Česku. Jsem proto rád, že [Marek Čevelíček](https://www.lqd.cz/nas-tym/marek-cevelicek), CEO & UX designér tohoto brněnského studia, přijal mou pozvánku k publikaci podobného formátu tipů zde, na Vzhůru dolů._

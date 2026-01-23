@@ -1,18 +1,17 @@
 ---
 id: google-page-experience
-heading: ''
+title: 'Google Page Experience'
+heading: 'Google Page Experience'
 perex: ''
 published: true
-category: []
+category: ['rychlost-nacitani']
 category_highlight: false
 include_rss: false
 no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----
-
-# Google Page Experience
+---# Google Page Experience
 
 „Page Experience“ bylo pojmové zarámování snah Googlu o zhodnocení uživatelské zkušenosti (UX) se stránkou.
 

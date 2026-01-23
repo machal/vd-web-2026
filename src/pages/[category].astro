@@ -37,31 +37,21 @@ const podcasts = await getCollection('podcast');
 // Filtrovat pouze články s front matter (mají id)
 const priruckaPosts = await getCollection('prirucka', (entry) => !!entry.data.id);
 
-// Filtrování článků podle tagů kategorie
-// Zahrnuje články s odpovídajícími tagy nebo články z příručky, které mají kategorii v slug
+// Filtrování článků podle tagů kategorie - pouze podle tags
 const allContent = [...blogPosts, ...podcasts, ...priruckaPosts]
   .filter(post => {
     // Filtrovat jen publikované články
     if (post.collection === 'prirucka') {
       if (post.data.published !== true) return false;
+      // Filtrovat nehotové snippety - pokud title === id, pak to není hotový článek
+      if (post.data.title === post.data.id) return false;
     } else {
       if (post.data.published === false) return false;
     }
     
+    // Filtrování pouze podle tags
     const tags = post.data.tags || [];
-    const hasMatchingTag = categoryConfig.tags.some(catTag => tags.includes(catTag));
-    
-    // Pro příručku také zahrneme články, které mají kategorii v slug
-    // Např. pro CSS kategorii zahrneme články s "css" v slug
-    if (post.collection === 'prirucka') {
-      const slugMatches = categoryConfig.tags.some(catTag => {
-        const normalizedTag = catTag.replace('-', '');
-        return post.slug.includes(normalizedTag) || post.slug.startsWith(catTag.split('-')[0]);
-      });
-      return hasMatchingTag || slugMatches;
-    }
-    
-    return hasMatchingTag;
+    return categoryConfig.tags.some(catTag => tags.includes(catTag));
   })
   .sort((a, b) => {
     const dateA = a.data.date || new Date(0);
@@ -71,7 +61,10 @@ const allContent = [...blogPosts, ...podcasts, ...priruckaPosts]
 
 const currentPage = 1;
 const postsPerPage = 20;
-const paginatedPosts = allContent.slice(0, postsPerPage);
+const totalPages = Math.ceil(allContent.length / postsPerPage);
+const startIndex = (currentPage - 1) * postsPerPage;
+const endIndex = startIndex + postsPerPage;
+const paginatedPosts = allContent.slice(startIndex, endIndex);
 
 function getTOCComponent(categorySlug: string) {
   switch (categorySlug) {
@@ -127,10 +120,19 @@ const TOCComponent = getTOCComponent(category);
           <ArticleListItem post={post} />
         ))}
 
-        {allContent.length > postsPerPage && (
-          <p class="ta-c mt-3">
-            <a class="button" href={`/${category}/p=2`}>Další články</a>
-          </p>
+        {/* Navigace stránkování */}
+        {totalPages > 1 && (
+          <nav class="ta-c mt-3" aria-label="Stránkování">
+            <span class="mx-1 f-6">
+              Stránka {currentPage} z {totalPages}
+            </span>
+            
+            {currentPage < totalPages && (
+              <a class="button" href={`/${category}/p=${currentPage + 1}`}>
+                Další stránka →
+              </a>
+            )}
+          </nav>
         )}
       </div>
     </div>

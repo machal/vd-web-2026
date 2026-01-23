@@ -1,6 +1,7 @@
 ---
 id: amp-css
-heading: ''
+title: 'CSS a webfonty v AMP'
+heading: 'CSS a webfonty v AMP'
 perex: ''
 published: true
 category:
@@ -12,7 +13,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # CSS a webfonty v AMP
 
 <div class="web-only" markdown="1">

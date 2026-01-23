@@ -1,6 +1,7 @@
 ---
 id: css-selektor-has
-heading: ''
+title: 'CSS selektor :has'
+heading: 'CSS selektor :has'
 perex: ''
 published: true
 category:
@@ -12,7 +13,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # CSS selektor :has
 
 `:has()` je funkční selektor, který můžeme mimo jiné použít jako _selektor rodiče_, tedy vybrat rodičovské prvky, obsahující potomky určitého typu:

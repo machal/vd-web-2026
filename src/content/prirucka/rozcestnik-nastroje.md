@@ -1,6 +1,7 @@
 ---
 id: rozcestnik-nastroje
-heading: ''
+title: 'Rozcestník článků k nástrojům pro frontendové vývojáře'
+heading: 'Rozcestník článků k nástrojům pro frontendové vývojáře'
 perex: ''
 published: false
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Rozcestník článků k nástrojům pro frontendové vývojáře
 
 ## Obecně

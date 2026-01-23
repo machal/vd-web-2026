@@ -1,18 +1,17 @@
 ---
 id: img-pomer-stran
-heading: ''
+title: 'Poměr stran obrázků jednoduše (pomocí atributů WITH a HEIGHT ve značce IMG)'
+heading: 'Poměr stran obrázků jednoduše (pomocí atributů WITH a HEIGHT ve značce IMG)'
 perex: ''
 published: true
-category: []
+category: ['css']
 category_highlight: false
 include_rss: false
 no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----
-
-# Poměr stran obrázků jednoduše (pomocí atributů WITH a HEIGHT ve značce IMG)
+---# Poměr stran obrázků jednoduše (pomocí atributů WITH a HEIGHT ve značce IMG)
 
 Nedávno jsem na Vzhůru dolů publikoval [text o nastavení poměru stran](css-pomer-stran.md) pro obrázky, video, iframy a další obsah vkládaný do HTML zvenčí. Říkejme mu média.
 

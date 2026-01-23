@@ -1,18 +1,17 @@
 ---
 id: preconnect
-heading: ''
+title: 'Preconnect a dns-prefetch'
+heading: 'Preconnect a dns-prefetch'
 perex: ''
 published: true
-category: []
+category: ['rychlost-nacitani']
 category_highlight: false
 include_rss: false
 no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----
-
-# Preconnect a dns-prefetch
+---# Preconnect a dns-prefetch
 
 Docela často se stává, že na stránce potřebujeme stahovat prvky z jiných domén než je ta hlavní, na které web běží.
 

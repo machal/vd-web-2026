@@ -1,5 +1,7 @@
 ---
 id: lighthouse
+tags: ['nastroje']
+title: 'Lighthouse: audit webu od Google'
 heading: 'Lighthouse: audit webu od Google'
 date: 2021-11-16
 perex: '[Aktualizace po vydání Lighthouse 9] Proč a jak Lighthouse používat. Co umí a jak funguje. Podíváme se taky na použití pomocí příkazové řádky a pravidelné spouštění.'
@@ -14,9 +16,7 @@ no_ads: false
 og_title: 'Lighthouse: audit webu od Google'
 og_description: '[Aktualizace po vydání Lighthouse 9] Proč a jak Lighthouse používat. Co umí a jak funguje. Podíváme se taky na použití pomocí příkazové řádky a pravidelné spouštění.'
 og_type: article
----
-
-# Lighthouse: audit webu od Google
+---# Lighthouse: audit webu od Google
 
 Lighthouse je velmi důležitý nástroj. Chcete vědět proč? Google jeho prostřednictvím totiž webařům radí jak weby technicky zlepšit.
 

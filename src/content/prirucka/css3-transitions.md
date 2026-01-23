@@ -1,5 +1,6 @@
 ---
 id: css3-transitions
+tags: ['css']
 heading: 'CSS3 Transitions'
 date: 2013-08-01
 perex: 'Animace přechodů mezi stavy vlastností elementu.'
@@ -15,7 +16,6 @@ og_title: 'CSS3 Transitions'
 og_description: 'Animace přechodů mezi stavy vlastností elementu.'
 og_type: article
 ---
-
 CSS3 Transitions: jednoduché animace přechodu
 =============================================
 

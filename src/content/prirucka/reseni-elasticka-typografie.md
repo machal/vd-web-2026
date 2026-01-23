@@ -1,18 +1,17 @@
 ---
 id: reseni-elasticka-typografie
-heading: ''
+title: 'CSS řešení: Elastická typografie počítaná v procentech z výšky komponenty'
+heading: 'CSS řešení: Elastická typografie počítaná v procentech z výšky komponenty'
 perex: ''
 published: true
-category: []
+category: ['css']
 category_highlight: false
 include_rss: false
 no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----
-
-# CSS řešení: Elastická typografie počítaná v procentech z výšky komponenty
+---# CSS řešení: Elastická typografie počítaná v procentech z výšky komponenty
 
 Pojďme si rozebrat jedno z řešení, které jsem ukazoval v přednášce [na WebExpo 2016](https://www.vzhurudolu.cz/prednaska/webexpo-2016-246).
 

@@ -1,6 +1,7 @@
 ---
 id: graficky-design
-heading: ''
+title: 'Grafický design'
+heading: 'Grafický design'
 perex: ''
 published: false
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Grafický design
 
 Grafický designér navrhuje firemní identitu, reklamní plochy, obaly, aplikace nebo (chvíle napětí!) weby.

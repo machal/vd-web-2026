@@ -1,6 +1,7 @@
 ---
 id: css-flex-direction
-heading: ''
+title: 'CSS vlastnost flex-direction: směr vyskládání položek flexboxu'
+heading: 'CSS vlastnost flex-direction: směr vyskládání položek flexboxu'
 perex: ''
 published: true
 category:
@@ -12,7 +13,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # CSS vlastnost flex-direction: směr vyskládání položek flexboxu
 
 Vlastnost `flex-direction` se aplikuje na kontejner flexboxu a určí způsob vyskládání položek tím, že nastaví směr hlavní osy flexboxu.

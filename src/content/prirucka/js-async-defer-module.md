@@ -1,18 +1,17 @@
 ---
 id: js-async-defer-module
-heading: ''
+title: 'Vkládání JavaScriptu jako async, defer a type="module" versus rychlost webu'
+heading: 'Vkládání JavaScriptu jako async, defer a type="module" versus rychlost webu'
 perex: ''
 published: true
-category: []
+category: ['rychlost-nacitani']
 category_highlight: false
 include_rss: false
 no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----
-
-# Vkládání JavaScriptu jako async, defer a type="module" versus rychlost webu
+---# Vkládání JavaScriptu jako async, defer a type="module" versus rychlost webu
 
 Existuje několik možností, jak vložit JavaScript do HTML kódu. Z pohledu [rychlosti načítání](https://www.vzhurudolu.cz/rychlost-nacitani) je ale u statických webů jeden úplně nejhorší – vkládání do `<head>` bez jakéhokoliv dalšího nastavení:
 

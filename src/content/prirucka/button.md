@@ -1,6 +1,7 @@
 ---
 id: button
-heading: ''
+title: 'Vše o prvku BUTTON a tlačítkách v HTML'
+heading: 'Vše o prvku BUTTON a tlačítkách v HTML'
 perex: ''
 published: true
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Vše o prvku BUTTON a tlačítkách v HTML
 
 Prvek `<button>` reprezentuje tlačítko. Tím bychom mohli skončit a jít na pivo, že jo? To byste ale byli na špatném blogu. My půjdeme do hloubky.

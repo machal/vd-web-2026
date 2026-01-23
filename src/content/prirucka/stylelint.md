@@ -1,5 +1,7 @@
 ---
 id: stylelint
+tags: ['css']
+title: 'Stylelint, protože pořádek musí být. I v CSS kódu'
 heading: 'Stylelint, protože pořádek musí být. I v CSS kódu'
 date: 2018-05-21
 perex: 'Lintujete už CSS? Měli byste. V článku se dozvíte, jak na to.'
@@ -12,9 +14,7 @@ no_ads: false
 og_title: 'Stylelint, protože pořádek musí být. I v CSS kódu'
 og_description: 'Lintujete už CSS? Měli byste. V článku se dozvíte, jak na to.'
 og_type: article
----
-
-# Stylelint, protože pořádek musí být. I v CSS kódu
+---# Stylelint, protože pořádek musí být. I v CSS kódu
 
 [Stylelint](https://stylelint.io/) je nástroj pro automatickou kontrolu CSS. Usnadní vám psaní jednotnějšího a kvalitnějšího kódu. Hlavně na větších projektech, nebo na takových, kde se styly snaží *rozbít* více lidí najednou. Prostě linter.
 

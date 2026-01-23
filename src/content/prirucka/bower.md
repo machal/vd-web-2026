@@ -1,5 +1,7 @@
 ---
 id: bower
+tags: ['nastroje']
+title: 'Bower'
 heading: 'Bower'
 date: 2014-09-17
 perex: 'Bower je správce frontend balíčků. jQuery, Bootstrap… Prostě balíčků.'
@@ -10,9 +12,7 @@ category:
 og_title: 'Bower'
 og_description: 'Bower je správce frontend balíčků. jQuery, Bootstrap… Prostě balíčků.'
 og_type: article
----
-
-# Bower
+---# Bower
 
 Bower je správce frontend balíčků.
 

@@ -1,5 +1,6 @@
 ---
 id: css3-background-clip
+tags: ['css']
 heading: 'CSS3 Background Clip'
 date: 2013-12-16
 perex: 'Určuje kde všude se uvnitř elementu vykresluje obrázek na pozadí.'
@@ -11,7 +12,6 @@ og_title: 'CSS3 Background Clip'
 og_description: 'Určuje kde všude se uvnitř elementu vykresluje obrázek na pozadí.'
 og_type: article
 ---
-
 CSS3 Background Clip: míra roztažení pozadí
 ===========================================
 

@@ -1,6 +1,7 @@
 ---
 id: amp-komponenty-dynamicke
-heading: ''
+title: 'Dynamické komponenty'
+heading: 'Dynamické komponenty'
 perex: ''
 published: false
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Dynamické komponenty
 
 Důležitá a pro leckoho překvapivá směsice komponent, které nějakým způsobem pracují na dynamičnosti uživatelského prožitku.

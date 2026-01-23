@@ -1,6 +1,7 @@
 ---
 id: cookieless
-heading: ''
+title: 'Jak jsem web zbavoval šmírovacích cookies'
+heading: 'Jak jsem web zbavoval šmírovacích cookies'
 perex: ''
 published: true
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Jak jsem web zbavoval šmírovacích cookies
 
 Sledovací cookies jsou všude. Překvapilo mě, že i na menším webu není vlastně úplně jednoduché se jich zbavit.

@@ -1,6 +1,8 @@
 ---
 id: css-content-visibility
-heading: ''
+tags: ['css']
+title: 'CSS vlastnost content-visibility'
+heading: 'CSS vlastnost content-visibility'
 perex: ''
 published: true
 category:
@@ -11,9 +13,7 @@ no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----
-
-# CSS vlastnost content-visibility
+---# CSS vlastnost content-visibility
 
 Už víme, že cílem CSS containmentu (a [vlastnosti `contain`](css-contain.md)) je umožnit vylepšení výkonu prohlížeče poskytnutím předvídatelné izolace části DOMu od zbytku stránky.
 

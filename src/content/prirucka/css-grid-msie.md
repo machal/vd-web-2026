@@ -1,6 +1,8 @@
 ---
 id: css-grid-msie
-heading: ''
+tags: ['css']
+title: 'CSS grid v Internet Exploreru'
+heading: 'CSS grid v Internet Exploreru'
 perex: ''
 published: true
 category:
@@ -11,9 +13,7 @@ no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----
-
-# CSS grid v Internet Exploreru
+---# CSS grid v Internet Exploreru
 
 <div class="book-index" data-book-index="Internet Explorer (MSIE)"></div>
 

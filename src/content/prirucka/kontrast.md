@@ -1,6 +1,7 @@
 ---
 id: kontrast
-heading: ''
+title: 'Barevný kontrast na webu a nástroje, které s ním pomohou'
+heading: 'Barevný kontrast na webu a nástroje, které s ním pomohou'
 perex: ''
 published: true
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Barevný kontrast na webu a nástroje, které s ním pomohou
 
 Nedostatečným kontrastem na webech jsme  postižení úplně všichni, bez ohledu na nastavení našich očí, displejů nebo momentální nálady slunce.

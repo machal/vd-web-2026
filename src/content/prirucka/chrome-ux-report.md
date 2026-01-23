@@ -1,5 +1,7 @@
 ---
 id: chrome-ux-report
+tags: ['nastroje']
+title: 'Chrome UX Report'
 heading: 'Chrome UX Report: Data o rychlosti webu přímo od uživatelů'
 date: 2019-12-12
 perex: 'Stáhněte si údaje z databáze dat o rychlosti uživatelského prožitku, kterou o webech sbírají všechny verze prohlížeče Chrome.'
@@ -12,9 +14,7 @@ no_ads: false
 og_title: 'Chrome UX Report: Data o rychlosti webu přímo od uživatelů'
 og_description: 'Stáhněte si údaje z databáze dat o rychlosti uživatelského prožitku, kterou o webech sbírají všechny verze prohlížeče Chrome.'
 og_type: article
----
-
-# Chrome UX Report
+---# Chrome UX Report
 
 Chrome UX Report (nebo také CrUX, v běžné mluvě klidně „krux“) je databáze dat o kvalitě uživatelského prožitku, kterou o webech sbírají všechny verze prohlížeče Chrome.
 

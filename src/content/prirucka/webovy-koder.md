@@ -3,7 +3,7 @@ id: webovy-koder
 heading: ''
 perex: ''
 published: true
-category: []
+category: ['css']
 category_highlight: false
 include_rss: false
 no_ads: false
@@ -11,7 +11,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 Co by měl umět webový kodér?
 ============================
 

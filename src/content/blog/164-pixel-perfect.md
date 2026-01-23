@@ -15,8 +15,8 @@ category_highlight: true
 og_title: '„Pixel perfect“ by měl být zakázaný výraz'
 og_description: 'Je to výraz zastaralý, nesmyslný a degradující dobré designéry i kodéry. Nahraďme ho čím chceme, třeba slovem „precizní“.'
 og_type: article
+tags: ['responzivni-design']
 ---
-
 # „Pixel perfect“ by měl být zakázaný výraz
 
 Nepoužívejme prosím ve webdesignu spojení „pixel perfect“, když mluvíme o kvalitách návrhu nebo kódování webu. Je to výraz zastaralý, nesmyslný a degradující dobré designéry i kodéry.

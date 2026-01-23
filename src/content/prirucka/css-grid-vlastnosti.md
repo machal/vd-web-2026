@@ -1,6 +1,7 @@
 ---
 id: css-grid-vlastnosti
-heading: ''
+title: 'Principy a vlastnosti CSS gridu'
+heading: 'Principy a vlastnosti CSS gridu'
 perex: ''
 published: false
 category:
@@ -12,7 +13,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Principy a vlastnosti CSS gridu
 
 CSS grid má mnoho skvělých vlastností. Ne všechny jsou unikátní, některé jste totiž mohli vidět už [u flexboxu](css-flexbox.md), ale mřížka jejich seznam dále rozšiřuje.

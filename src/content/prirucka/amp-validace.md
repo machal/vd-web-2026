@@ -1,6 +1,7 @@
 ---
 id: amp-validace
-heading: ''
+title: 'Validace AMP stránek'
+heading: 'Validace AMP stránek'
 perex: ''
 published: false
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Validace AMP stránek
 
 „AMP stránka musí být validní“ není ani zdaleka ekvivalentem starého „HTML stránka musí být validní“.

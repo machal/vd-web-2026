@@ -1,5 +1,6 @@
 ---
 id: https
+title: 'HTTPS: 4 důvody proč přejít a pár zkušeností k tomu'
 heading: 'HTTPS: 4 důvody proč přejít a pár zkušeností k tomu'
 date: 2017-11-02
 perex: 'Zkušenosti s nedávným přesunem Vzhůru dolů na zabezpečený protokol.'
@@ -12,7 +13,6 @@ og_title: 'HTTPS: 4 důvody proč přejít a pár zkušeností k tomu'
 og_description: 'Zkušenosti s nedávným přesunem Vzhůru dolů na zabezpečený protokol.'
 og_type: article
 ---
-
 # HTTPS: 4 důvody proč přejít a pár zkušeností k tomu
 
 V textu shrnu zkušenosti s nedávným přesunem Vzhůru dolů na zabezpečený protokol. 

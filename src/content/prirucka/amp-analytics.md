@@ -1,6 +1,7 @@
 ---
 id: amp-analytics
-heading: ''
+title: 'Měření návštěvnosti v AMP'
+heading: 'Měření návštěvnosti v AMP'
 perex: ''
 published: false
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Měření návštěvnosti v AMP
 
 V AMP je možné sledovat chování návštěvníků mnoha způsoby, podobně jako u běžných stránek. Předpokládáme, že měříte pomocí Google Analytics, jehož nastavení je hlavním obsahem tohoto textu. Nejdříve se ale mrkneme na všechny možnosti.

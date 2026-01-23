@@ -1,6 +1,7 @@
 ---
 id: media-queries-tipy
-heading: ''
+title: 'Tipy a triky k Media Queries'
+heading: 'Tipy a triky k Media Queries'
 perex: ''
 published: false
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Tipy a triky k Media Queries
 
 V produkčním kódu byste měli u Media Queries mít jednotku `em`. Podíváme se na způsob psaní Mobile First a povíme si něco o budoucnosti – o Element Queries.

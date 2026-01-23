@@ -1,18 +1,17 @@
 ---
 id: ikonfonty-vs-svg
-heading: ''
+title: 'Ikonfonty: Vykašlete se už na ně. Máme přece SVG!'
+heading: 'Ikonfonty: Vykašlete se už na ně. Máme přece SVG!'
 perex: ''
 published: true
-category: []
+category: ['rychlost-nacitani']
 category_highlight: false
 include_rss: false
 no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----
-
-# Ikonfonty: Vykašlete se už na ně. Máme přece SVG!
+---# Ikonfonty: Vykašlete se už na ně. Máme přece SVG!
 
 Ikonfonty jsou jako vši. Člověk by čekal, že si s nimi lidstvo už dávno nějak poradilo. Že prostě nejsou. Jenže ono to chvilku vypadá dobře, ale za chvíli na vás zase někde vyskočí.
 

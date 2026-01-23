@@ -1,6 +1,7 @@
 ---
 id: pattern-lab-instalace
-heading: ''
+title: 'Jak nasadit Pattern Lab a nepřijít přitom o rozum?'
+heading: 'Jak nasadit Pattern Lab a nepřijít přitom o rozum?'
 perex: ''
 published: false
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Jak nasadit Pattern Lab a nepřijít přitom o rozum?
 
 [Pattern Lab](http://patternlab.io/) je nástroj pro tvorbu a prezentaci knihoven uživatelských rozhraní. Prostě toho co asi znáte pod pojmy *style guide* nebo *pattern library*. 

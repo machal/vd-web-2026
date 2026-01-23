@@ -1,6 +1,7 @@
 ---
 id: css-multicol-gap-rule
-heading: ''
+title: 'Vlastnosti column-gap a column-rule: Mezery a oddělovače ve vícesloupcovém rozložení'
+heading: 'Vlastnosti column-gap a column-rule: Mezery a oddělovače ve vícesloupcovém rozložení'
 perex: ''
 published: true
 category:
@@ -12,7 +13,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Vlastnosti column-gap a column-rule: Mezery a oddělovače ve vícesloupcovém rozložení
 
 Ve vícesloupcovém rozvržení (CSS Multi-column Layout) je většinou potřeba změnit výchozí mezeru mezi sloupci nebo přidat oddělovač. K tomu slouží následující vlastnosti.

@@ -1,6 +1,7 @@
 ---
 id: principy-ui
-heading: ''
+title: 'Čtyři principy návrhu responzivního rozhraní'
+heading: 'Čtyři principy návrhu responzivního rozhraní'
 perex: ''
 published: false
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Čtyři principy návrhu responzivního rozhraní
 
 My, dnešní webdesignéři, musíme předpokládat, že: 

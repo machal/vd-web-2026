@@ -12,8 +12,8 @@ category:
 og_title: 'CSS řešení: hlavička s videem na pozadí'
 og_description: 'Hlavička na celou výšku okna, video na pozadí a centrované. Na mobilech video není. Jak na to?'
 og_type: article
+tags: ['css']
 ---
-
 # CSS řešení: hlavička s videem na pozadí
 
 Na posledním firemním školení [v Creoxu](http://www.creox.cz/) jsme otevřeli kodérský oříšek, který s dovolením sdílím, protože obsahuje hned tři zajímavosti.

@@ -1,6 +1,7 @@
 ---
 id: amp-co-je-email-stories
-heading: ''
+title: 'Nová pole inovací: E-mail, Stories, Ads'
+heading: 'Nová pole inovací: E-mail, Stories, Ads'
 perex: ''
 published: false
 category: []
@@ -11,7 +12,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # Nová pole inovací: E-mail, Stories, Ads
 
 Když už máme takhle silný nástroj, asi dojdeme k tomu, že obsahové weby a e-shopy nemusí být jediným polem jeho působnosti. Stačí se podívat, kde všude se dnes používá HTML a CSS.

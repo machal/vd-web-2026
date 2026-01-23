@@ -1,6 +1,7 @@
 ---
 id: css-flex-flow
-heading: ''
+title: 'CSS vlastnost flex-flow: zkratka pro určení směru a zalamování flexboxu'
+heading: 'CSS vlastnost flex-flow: zkratka pro určení směru a zalamování flexboxu'
 perex: ''
 published: true
 category:
@@ -12,7 +13,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # CSS vlastnost flex-flow: zkratka pro určení směru a zalamování flexboxu
 
 Vlastnost `flex-flow` určuje směr a způsob zalamování položek flexboxu.

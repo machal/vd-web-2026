@@ -1,6 +1,7 @@
 ---
 id: css-repeat
-heading: ''
+title: 'CSS funkce repeat()'
+heading: 'CSS funkce repeat()'
 perex: ''
 published: true
 category:
@@ -12,7 +13,6 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-
 # CSS funkce repeat()
 
 Funkce (nebo přesněji řečeno „zápis“) `repeat()` slouží k usnadnění opakujících se předpisů pro sloupce nebo řádky mřížky v CSS gridu.
