@@ -1,0 +1,40 @@
+/*
+Shiki syntax highlighting - mapování na VD barvy
+-------------------------------------------------
+
+Používá se pro Astro/Shiki syntax highlighting s theme: 'css-variables'.
+Definuje CSS proměnné, které Shiki očekává, a mapuje je na původní VD barvy.
+
+Based on color theme from coolors.co:
+https://coolors.co/64320f-8c4615-a35218-cab6a8-5e5644
+*/
+
+// Shiki s theme: 'css-variables' renderuje tokeny jako:
+//   style="color:var(--astro-code-token-xyz)"
+// Takže stačí definovat tyhle CSS proměnné.
+//
+// Záměrně to vážeme na existující VD custom properties, ať funguje i dark mode
+// (VD je přepíná přes `prefers-color-scheme` už v `assets/scss/core/variables.scss`).
+
+:root {
+  /* Base */
+  --astro-code-color-text: var(--vd-code-color);
+  --astro-code-color-background: var(--vd-content-bg-color);
+
+  /* Tokens (Astro docs list) */
+  --astro-code-token-keyword: var(--vd-code-color-1);
+  --astro-code-token-string: var(--vd-code-color-2);
+  --astro-code-token-comment: var(--vd-code-color-4);
+  --astro-code-token-parameter: var(--vd-code-color-1);
+  --astro-code-token-function: var(--vd-code-color-1);
+  --astro-code-token-string-expression: var(--vd-code-color-2);
+  --astro-code-token-punctuation: var(--vd-code-color-3);
+  --astro-code-token-constant: var(--vd-code-color-1);
+  --astro-code-token-link: var(--vd-link-color);
+}
+
+/* Safety net: ať background/text sedí i kdyby Shiki style spadlo */
+pre.astro-code {
+  background-color: var(--astro-code-color-background);
+  color: var(--astro-code-color-text);
+}

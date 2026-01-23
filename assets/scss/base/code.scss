@@ -41,4 +41,5 @@ h1, h2, h3, h4 {
 }
 
 // Import code theme (based on e-books)
-@include meta.load-css("hljs");
+@include meta.load-css("hljs"); // Pro staré highlight.js
+@include meta.load-css("shiki"); // Pro nové Shiki/Astro

@@ -23,6 +23,10 @@ export default defineConfig({
     }),
   ],
   markdown: {
+    // Shiki syntax highlighting - používáme css-variables pro možnost přepsání barev
+    shikiConfig: {
+      theme: 'css-variables',
+    },
     // FÁZE 1: Základní HTML generování z markdownu
     // Pouze základní parsování markdownu a zpracování markdown="1" atributů
     remarkPlugins: [
