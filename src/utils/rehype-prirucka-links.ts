@@ -2,12 +2,13 @@ import type { Plugin } from 'unified';
 import type { Root } from 'hast';
 
 /**
- * Rehype plugin, který převádí odkazy na .md soubory na odkazy příručky.
+ * Rehype plugin, který převádí odkazy na .md soubory na odkazy příručky v hotovém HTML.
  * 
- * Transformuje: <a href="css-jazyk-problemy.md"> -> <a href="/prirucka/css-jazyk-problemy">
- * Transformuje: <a href="bem.md"> -> <a href="/prirucka/bem">
+ * Transformuje: <a href="css-grid-auto-rows-columns.md"> -> <a href="/prirucka/css-grid-auto-rows-columns">
+ * Transformuje: <a href="css-grid.md"> -> <a href="/prirucka/css-grid">
  * 
- * Jednoduchá textová transformace - odstraní .md příponu a přidá /prirucka/ prefix.
+ * Odstraní .md příponu a přidá /prirucka/ prefix.
+ * Nezmění absolutní URL (http://, https://, //) ani odkazy, které už začínají na /.
  */
 export const rehypePriruckaLinks: Plugin<[], Root> = () => {
   return (tree) => {
@@ -17,9 +18,16 @@ export const rehypePriruckaLinks: Plugin<[], Root> = () => {
         const href = node.properties.href as string;
         
         // Zkontrolovat, zda odkaz končí na .md a není absolutní URL
-        if (href.endsWith('.md') && !href.startsWith('http') && !href.startsWith('//') && !href.startsWith('/')) {
-          // Odstranit .md příponu a případné cesty
-          const filename = href.replace(/\.md$/, '').split('/').pop() || '';
+        // Ignorovat odkazy začínající na http, https, // nebo /
+        if (href.endsWith('.md') && 
+            !href.startsWith('http') && 
+            !href.startsWith('//') && 
+            !href.startsWith('/')) {
+          // Odstranit .md příponu
+          const withoutExtension = href.replace(/\.md$/, '');
+          
+          // Vzít jen název souboru (bez cesty, pokud je v cestě)
+          const filename = withoutExtension.split('/').pop() || withoutExtension;
           
           // Převést na URL příručky
           node.properties.href = `/prirucka/${filename}`;

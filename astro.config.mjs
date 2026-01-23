@@ -44,10 +44,10 @@ export default defineConfig({
       rehypeRemoveEbookOnly, // Odstranění elementů s třídou "ebook-only" (včetně jejich dětí)
       rehypeConnectedElements, // Transformace elementů s třídou "connected" (přidání tříd, úprava obrázků)
       rehypeHeadingAnchors, // Přidání anchorů k nadpisům (odstraní {#id} z textu, opraví duplikované ID)
+      rehypePriruckaLinks, // Transformace odkazů příručky (css-grid.md -> /prirucka/css-grid)
+      rehypeRemoveFirstH1, // Odstranění prvního H1 z HTML (nadpis je už v zelené ploše nahoře)
       // Ostatní transformace jsou vypnuté pro testování
       // rehypeAdSnippets(), // Nahrazení <!-- AdSnippet --> komentářů HTML snippety podle kategorií
-      // rehypeRemoveFirstH1, // Odstranění prvního H1
-      // rehypePriruckaLinks, // Transformace odkazů příručky
     ],
   },
   vite: {
