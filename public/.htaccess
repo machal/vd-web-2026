@@ -84,6 +84,21 @@ RedirectMatch 301 ^/kurzy/pokrocily-responzivni-design$ /kurzy
 RedirectMatch 301 ^/kurzy/rychlost-nacitani$ /kurzy
 
 # -----------------------------------------------------------------------------
+# Prirucka rozcestniky (redirect na kategorie)
+# -----------------------------------------------------------------------------
+
+RedirectMatch 301 ^/prirucka/amp/?$ /amp/
+RedirectMatch 301 ^/prirucka/css-grid/?$ /css/
+RedirectMatch 301 ^/prirucka/css3/?$ /css/
+RedirectMatch 301 ^/prirucka/nastroje/?$ /nastroje/
+RedirectMatch 301 ^/prirucka/npm/?$ /prirucka/rozcestnik-npm-node
+RedirectMatch 301 ^/prirucka/ostatni/?$ /
+RedirectMatch 301 ^/prirucka/picrights/?$ /
+RedirectMatch 301 ^/prirucka/psani/?$ /
+RedirectMatch 301 ^/prirucka/svg/?$ /svg/
+RedirectMatch 301 ^/prirucka/viewport/?$ /prirucka/viewport-meta
+
+# -----------------------------------------------------------------------------
 # CSS prejmenovani (css3-* -> css-*)
 # -----------------------------------------------------------------------------
 

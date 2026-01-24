@@ -13,10 +13,14 @@ export function customSitemap(): AstroIntegration {
       'astro:build:done': async ({ dir, pages }) => {
         const site = 'https://www.vzhurudolu.cz';
         
-        // Filtrovat style guide stránky
-        const filteredPages = pages.filter(
-          (page) => !page.pathname.includes('/style/')
-        );
+        // Filtrovat stránky, které nemají být v sitemap
+        const filteredPages = pages.filter((page) => {
+          const path = page.pathname;
+          // Vyřadit style guide a 404 stránku
+          if (path.includes('style/')) return false;
+          if (path.includes('404')) return false;
+          return true;
+        });
 
         // Generovat XML
         const urls = filteredPages.map((page) => {
@@ -33,20 +37,9 @@ export function customSitemap(): AstroIntegration {
 ${urls.join('\n')}
 </urlset>`;
 
-        // Zapsat soubor
-        const sitemapPath = join(dir.pathname, 'sitemap-0.xml');
+        // Zapsat sitemap.xml přímo do rootu
+        const sitemapPath = join(dir.pathname, 'sitemap.xml');
         writeFileSync(sitemapPath, sitemap);
-        
-        // Zapsat sitemap index
-        const sitemapIndex = `<?xml version="1.0" encoding="UTF-8"?>
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <sitemap>
-    <loc>${site}/sitemap-0.xml</loc>
-  </sitemap>
-</sitemapindex>`;
-        
-        const indexPath = join(dir.pathname, 'sitemap-index.xml');
-        writeFileSync(indexPath, sitemapIndex);
         
         console.log(`✓ Sitemap vygenerován: ${filteredPages.length} URL`);
       },
