@@ -60,7 +60,7 @@ const allContent = [...blogPosts, ...podcasts, ...priruckaPosts]
   });
 
 const currentPage = 1;
-const postsPerPage = 20;
+const postsPerPage = 10;
 const totalPages = Math.ceil(allContent.length / postsPerPage);
 const startIndex = (currentPage - 1) * postsPerPage;
 const endIndex = startIndex + postsPerPage;

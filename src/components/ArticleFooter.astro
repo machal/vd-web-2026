@@ -25,6 +25,9 @@ function getArticleUrl(article: ArticleEntry): string {
   if (article.collection === 'prirucka') {
     return `/prirucka/${article.data.id}`;
   }
+  if (article.collection === 'podcast') {
+    return `/podcast/${article.data.postID}-${article.slug}`;
+  }
   return `/${article.collection}/${article.slug}`;
 }
 
@@ -37,7 +40,7 @@ function truncateTitle(title: string, maxLength: number = 70): string {
 const articleUrl = post.collection === 'blog' 
   ? `https://www.vzhurudolu.cz/blog/${post.slug}`
   : post.collection === 'podcast'
-  ? `https://www.vzhurudolu.cz/podcast/${post.slug}`
+  ? `https://www.vzhurudolu.cz/podcast/${post.data.postID}-${post.slug}`
   : `https://www.vzhurudolu.cz/prirucka/${post.data.id}`;
 
 // Debug: zobrazit kategorie i když jsou prázdné (pro testování)

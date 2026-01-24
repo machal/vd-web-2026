@@ -13,8 +13,15 @@ const sortedPodcasts = podcasts.sort((a, b) => {
   const dateB = b.data.date || new Date(0);
   return dateB.getTime() - dateA.getTime();
 });
+
+// Stránkování - 10 položek na stránku
+const postsPerPage = 10;
+const totalPages = Math.ceil(sortedPodcasts.length / postsPerPage);
+const currentPage = 1;
+
 const latestPodcast = sortedPodcasts[0];
-const otherPodcasts = sortedPodcasts.slice(1);
+// Na první stránce zobrazit 19 dalších (celkem 20 s latestPodcast)
+const otherPodcasts = sortedPodcasts.slice(1, postsPerPage);
 
 function formatDate(date: Date): string {
   return new Intl.DateTimeFormat('cs-CZ', {
@@ -54,7 +61,7 @@ function formatDate(date: Date): string {
             <div class="row">
               <div class="col mb-15 mb-0-md w-66-md mx-a-md ta-c">
                 <h2 class="mb-05 pb-0">
-                  <a href={`/podcast/${latestPodcast.slug}`}>{latestPodcast.data.title}</a>
+                  <a href={`/podcast/${latestPodcast.data.postID}-${latestPodcast.slug}`}>{latestPodcast.data.title}</a>
                 </h2>
                 <p>
                   <span class="article">
@@ -66,7 +73,7 @@ function formatDate(date: Date): string {
                   </span>
                 </p>
                 <p class="mb-0 f-6">
-                  <a class="button" href={`/podcast/${latestPodcast.slug}`}>Pokračovat…</a>
+                  <a class="button" href={`/podcast/${latestPodcast.data.postID}-${latestPodcast.slug}`}>Pokračovat…</a>
                 </p>
               </div>
 
@@ -99,7 +106,7 @@ function formatDate(date: Date): string {
               {otherPodcasts.map((podcast) => (
                 <article role="article" class="mb-15">
                   <h2 class="h4 mb-05">
-                    <a href={`/podcast/${podcast.slug}`}>{podcast.data.title}</a>
+                    <a href={`/podcast/${podcast.data.postID}-${podcast.slug}`}>{podcast.data.title}</a>
                   </h2>
                   <p>
                     <span class="text-color-lightest">
@@ -113,10 +120,17 @@ function formatDate(date: Date): string {
             </>
           )}
 
-          {sortedPodcasts.length > 10 && (
-            <p class="ta-c mt-3">
-              <a class="button" href="/podcast/p=2">Další články</a>
-            </p>
+          {/* Navigace stránkování */}
+          {totalPages > 1 && (
+            <nav class="ta-c mt-3" aria-label="Stránkování">
+              <span class="mx-1 f-6">
+                Stránka {currentPage} z {totalPages}
+              </span>
+              
+              <a class="button" href="/podcast/p=2">
+                Další stránka →
+              </a>
+            </nav>
           )}
         </div>
       </div>

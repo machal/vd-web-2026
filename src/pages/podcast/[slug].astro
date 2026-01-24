@@ -11,7 +11,7 @@ import { getRelatedArticles } from '../../utils/get-related-articles';
 export async function getStaticPaths() {
   const podcasts = await getCollection('podcast');
   return podcasts.map((podcast) => ({
-    params: { slug: podcast.slug },
+    params: { slug: `${podcast.data.postID}-${podcast.slug}` },
     props: { podcast },
   }));
 }
@@ -60,7 +60,7 @@ const relatedArticles = await getRelatedArticles(
   title={podcast.data.title}
   description={podcast.data.description}
   ogType="article"
-  ogUrl={`https://www.vzhurudolu.cz/podcast/${podcast.slug}`}
+  ogUrl={`https://www.vzhurudolu.cz/podcast/${podcast.data.postID}-${podcast.slug}`}
   bodyClass="section-podcast"
 >
   <Header slot="header" />

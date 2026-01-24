@@ -11,7 +11,7 @@ function getArticleUrl(entry: any, site: string): string {
   if (entry.collection === 'blog') {
     return `/blog/${entry.slug}`;
   } else if (entry.collection === 'podcast') {
-    return `/podcast/${entry.slug}`;
+    return `/podcast/${entry.data.postID}-${entry.slug}`;
   } else if (entry.collection === 'prirucka') {
     return `/prirucka/${entry.data.id}`;
   }

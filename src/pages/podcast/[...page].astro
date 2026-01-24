@@ -1,0 +1,116 @@
+---
+// Stránkování podcastů - /podcast/p=2, /podcast/p=3, atd.
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+
+export async function getStaticPaths() {
+  const podcasts = await getCollection('podcast', (entry) => {
+    return entry.data.published !== false;
+  });
+
+  const sortedPodcasts = podcasts.sort((a, b) => {
+    const dateA = a.data.date || new Date(0);
+    const dateB = b.data.date || new Date(0);
+    return dateB.getTime() - dateA.getTime();
+  });
+
+  const postsPerPage = 10;
+  const totalPages = Math.ceil(sortedPodcasts.length / postsPerPage);
+
+  // Vytvořit statické cesty pro všechny stránky (kromě první, ta je na index.astro)
+  return Array.from({ length: totalPages - 1 }, (_, i) => {
+    const pageNum = i + 2; // Začínáme od stránky 2
+    return {
+      params: { page: `p=${pageNum}` },
+      props: {
+        currentPage: pageNum,
+        totalPages,
+        sortedPodcasts,
+        postsPerPage,
+      },
+    };
+  });
+}
+
+const { page } = Astro.params;
+const { currentPage, totalPages, sortedPodcasts, postsPerPage } = Astro.props;
+
+const startIndex = (currentPage - 1) * postsPerPage;
+const endIndex = startIndex + postsPerPage;
+const paginatedPodcasts = sortedPodcasts.slice(startIndex, endIndex);
+
+function formatDate(date: Date): string {
+  return new Intl.DateTimeFormat('cs-CZ', {
+    day: 'numeric',
+    month: 'numeric',
+    year: 'numeric',
+  }).format(date);
+}
+---
+
+<BaseLayout
+  title={`Podcast – stránka ${currentPage}`}
+  description="Robin Pokorný a Martin Michálek vedou rozhovory se zajímavými lidmi kolem webového designu a vývoje."
+  bodyClass="section-podcast"
+>
+  <Header slot="header" />
+  <Footer slot="footer" />
+
+  <main role="main" id="main" aria-label="Hlavní obsah">
+    <div class="page-head page-head--lower">
+      <h1>Podcast</h1>
+      <div class="mb-0 maxw-30em">
+        <div class="maxw-30em">
+          <p>
+            <a href="https://robinpokorny.com/">Robin Pokorný</a> a <a href="https://www.vzhurudolu.cz/martin">Martin Michálek</a> vedou rozhovory se zajímavými lidmi kolem webového designu a vývoje.
+          </p>
+          <p>
+            Nalaďte nás: <a href="https://itunes.apple.com/cz/podcast/vzhuru-dolu-podcast/id1176693658">iTunes</a> – <a href="https://open.spotify.com/show/1G2kH2YrIwD9BABg4L7xGC">Spotify</a> – <a href="https://tunein.com/podcasts/Technology-News/Vzhuru-dolu-podcast-p1177693/">TuneIn</a> – <a href="https://anchor.fm/s/82312eb4/podcast/rss">RSS podcastů</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="content">
+        {paginatedPodcasts.map((podcast) => (
+          <article role="article" class="mb-15">
+            <h2 class="h4 mb-05">
+              <a href={`/podcast/${podcast.data.postID}-${podcast.slug}`}>{podcast.data.title}</a>
+            </h2>
+            <p>
+              <span class="text-color-lightest">
+                {formatDate(podcast.data.date)}
+                —
+              </span>
+              {podcast.data.description}
+            </p>
+          </article>
+        ))}
+
+        {/* Navigace stránkování */}
+        <nav class="ta-c mt-3" aria-label="Stránkování">
+          {currentPage > 1 && (
+            <a class="button" href={currentPage === 2 ? '/podcast' : `/podcast/p=${currentPage - 1}`}>
+              ← Předchozí stránka
+            </a>
+          )}
+          
+          <span class="mx-1 f-6">
+            Stránka {currentPage} z {totalPages}
+          </span>
+          
+          {currentPage < totalPages && (
+            <a class="button" href={`/podcast/p=${currentPage + 1}`}>
+              Další stránka →
+            </a>
+          )}
+        </nav>
+      </div>
+    </div>
+  </main>
+  
+  <script is:inline src="/assets/js/vrdl.min.js"></script>
+</BaseLayout>

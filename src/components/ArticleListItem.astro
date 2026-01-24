@@ -20,7 +20,7 @@ function getSlug(entry: CollectionEntry<'blog' | 'podcast' | 'prirucka'>): strin
   if (entry.collection === 'blog') {
     return `/blog/${entry.slug}`;
   } else if (entry.collection === 'podcast') {
-    return `/podcast/${entry.slug}`;
+    return `/podcast/${entry.data.postID}-${entry.slug}`;
   } else if (entry.collection === 'prirucka') {
     // Use id from frontmatter instead of slug for prirucka
     return `/prirucka/${entry.data.id}`;

@@ -21,7 +21,7 @@ export async function getStaticPaths() {
   // Filtrovat pouze články s front matter (mají id)
   const priruckaPosts = await getCollection('prirucka', (entry) => !!entry.data.id);
 
-  const postsPerPage = 20;
+  const postsPerPage = 10;
   const paths: Array<{
     params: { category: string; page: string };
     props: {

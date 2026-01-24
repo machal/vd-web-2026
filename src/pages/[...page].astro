@@ -31,7 +31,7 @@ export async function getStaticPaths() {
       return dateB.getTime() - dateA.getTime();
     });
   
-  const postsPerPage = 20;
+  const postsPerPage = 10;
   const totalPages = Math.ceil(allContent.length / postsPerPage);
   
   // Vytvořit statické cesty pro všechny stránky
@@ -69,7 +69,7 @@ function getSlug(entry: any): string {
   if (entry.collection === 'blog') {
     return `/blog/${entry.slug}`;
   } else if (entry.collection === 'podcast') {
-    return `/podcast/${entry.slug}`;
+    return `/podcast/${entry.data.postID}-${entry.slug}`;
   } else if (entry.collection === 'prirucka') {
     // Use id from frontmatter instead of slug for prirucka
     return `/prirucka/${entry.data.id}`;
