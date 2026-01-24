@@ -1,13 +1,14 @@
 ---
 postID: 89
 postTitle: 'Chrome vyhrál a Firefox je za pár let mrtvý?'
+category:
+  - prohlizece
 postUrlId: firefox-mrtvy
 postDateTime: '2017-05-28 00:00:00'
 excerpt: 'Že může nejsilnější konkurent Chrome za dva roky skončit na dvouprocentním podílu celosvětového trhu? Docela děsivé, ale nenapadá mě žádný argument, proč by se to nemělo stát.'
 postStatus: Published
 authorID: 0
 sectionID: 1
-category: []
 no_ads: false
 og_title: 'Chrome vyhrál a Firefox je za pár let mrtvý?'
 og_description: 'Že může nejsilnější konkurent Chrome za dva roky skončit na dvouprocentním podílu celosvětového trhu? Docela děsivé, ale nenapadá mě žádný argument, proč by se to nemělo stát.'

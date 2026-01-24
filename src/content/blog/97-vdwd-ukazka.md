@@ -1,13 +1,14 @@
 ---
 postID: 97
 postTitle: 'Obrázky a další média: Stáhněte si kapitolu z knihy „Vzhůru do (responzivního) webdesignu“'
+category:
+  - responzivni-design
 postUrlId: vdwd-ukazka
 postDateTime: 2017-11-20
 excerpt: 'Prohlédněte si ji zdarma ve formátech PDF, EPUB a MOBI.'
 postStatus: Published
 authorID: 1
 sectionID: 1
-category: []
 no_ads: true
 include_rss: true
 category_highlight: true

@@ -1,10 +1,11 @@
 ---
 id: bootstrap-4-grid
 title: 'Detailně: layout v Bootstrapu 4'
+category:
+  - webdesign
 heading: 'Detailně: layout v Bootstrapu 4'
 perex: ''
 published: true
-category: []
 category_highlight: false
 include_rss: false
 no_ads: false

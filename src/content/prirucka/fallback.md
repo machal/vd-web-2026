@@ -7,6 +7,7 @@ published: true
 category:
   - etc
   - css3
+  - prohlizece
 og_title: 'Fallback'
 og_description: 'Ve světě webového front-endu se jedná o náhradní řešení pro prohlížeče, které neznají určitou technologii.'
 og_type: article

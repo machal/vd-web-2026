@@ -1,6 +1,8 @@
 ---
 postID: 153
 postTitle: 'Podcast: S Michalem Matuškou o konferenci performance.now(), rychlosti webů a WebAssembly'
+category:
+  - rychlost-nacitani
 postUrlId: podcast-perfnow
 postDateTime: 2019-12-19
 excerpt: 'Povídáme si o kultuře rychlosti ve firmách, měření rychlosti v Google Analytics, inteligentním prefetchingu, nastavení serverů pro HTTP/2 priority a na konec i o WebAssembly.'

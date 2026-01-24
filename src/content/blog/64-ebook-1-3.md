@@ -9,6 +9,7 @@ authorID: 0
 sectionID: 1
 category:
   - ebook
+  - css
 og_title: 'Vydal jsem „Vzhůru do CSS3“ ve verzi 1.3: flexbox, calc(), Browsersync, Grunt a další'
 og_description: 'Tentokrát se jedná o větší aktualizaci. Pokud ebook ještě doma nebo ve firmě nemáte, je tady příležitost si jej pořídit.'
 og_type: article

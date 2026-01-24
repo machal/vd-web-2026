@@ -10,6 +10,7 @@ sectionID: 1
 category:
   - ai
   - vývojáři
+  - nastroje
 no_ads: true
 include_rss: true
 category_highlight: true

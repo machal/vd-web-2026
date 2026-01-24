@@ -1,10 +1,11 @@
 ---
 id: amp-implementace-jen-amp
 title: 'Jen AMP: Kanonické AMP stránky'
+category:
+  - amp
 heading: 'Jen AMP: Kanonické AMP stránky'
 perex: ''
 published: false
-category: []
 category_highlight: false
 include_rss: false
 no_ads: false

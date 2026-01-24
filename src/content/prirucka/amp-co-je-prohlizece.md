@@ -1,10 +1,11 @@
 ---
 id: amp-co-je-prohlizece
 title: 'Upravené fungování prohlížečů'
+category:
+  - rychlost-nacitani
 heading: 'Upravené fungování prohlížečů'
 perex: ''
 published: false
-category: []
 category_highlight: false
 include_rss: false
 no_ads: false

@@ -1,13 +1,14 @@
 ---
 postID: 144
 postTitle: 'Nový e-book: Vzhůru do AMP!'
+category:
+  - amp
 postUrlId: amp-ebook
 postDateTime: 2019-06-18
 excerpt: 'AMP přináší revoluci ve způsobu tvorby obsahových webů a e-shopů, takže by mělo zajímat všechny webové vývojáře, ale také marketéry a majitele webů.'
 postStatus: Published
 authorID: 1
 sectionID: 1
-category: []
 no_ads: true
 include_rss: true
 category_highlight: true

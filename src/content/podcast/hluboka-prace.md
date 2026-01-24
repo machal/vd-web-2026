@@ -1,6 +1,8 @@
 ---
 postID: 75
 postTitle: 'Hluboká práce: jak dělat více lepších věcí'
+category:
+  - netechnicke
 postUrlId: hluboka-prace
 postDateTime: 2016-11-22
 excerpt: 'Hluboká práce pomáhá dělat kvalitní výstupy. A když v práci děláte kvalitní výstupy, váš život může být lepší. Hluboká práce tedy přispívá ke kvalitě života.'

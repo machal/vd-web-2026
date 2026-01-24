@@ -1,10 +1,11 @@
 ---
 id: rychlost-nacitani-kultura
 title: 'Rychlost načítání jako součást kultury vývoje'
+category:
+  - rychlost-nacitani
 heading: 'Rychlost načítání jako součást kultury vývoje'
 perex: ''
 published: false
-category: []
 category_highlight: false
 include_rss: false
 no_ads: false

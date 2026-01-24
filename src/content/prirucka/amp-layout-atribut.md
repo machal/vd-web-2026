@@ -1,10 +1,11 @@
 ---
 id: amp-layout-atribut
 title: 'Atribut layout a komponenta amp-layout'
+category:
+  - webdesign
 heading: 'Atribut layout a komponenta amp-layout'
 perex: ''
 published: false
-category: []
 category_highlight: false
 include_rss: false
 no_ads: false

@@ -1,10 +1,11 @@
 ---
 id: budoucnost
 title: 'Zařízení z budoucnosti: co je po mobilech?'
+category:
+  - css
 heading: 'Zařízení z budoucnosti: co je po mobilech?'
 perex: ''
 published: false
-category: []
 category_highlight: false
 include_rss: false
 no_ads: false

@@ -1,10 +1,11 @@
 ---
 id: amp-stories
 title: 'AMP Stories'
+category:
+  - amp
 heading: 'AMP Stories'
 perex: ''
 published: false
-category: []
 category_highlight: false
 include_rss: false
 no_ads: false

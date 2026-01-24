@@ -11,6 +11,7 @@ category:
   - ux
   - cro
   - design
+  - webdesign
 no_ads: true
 include_rss: true
 category_highlight: true

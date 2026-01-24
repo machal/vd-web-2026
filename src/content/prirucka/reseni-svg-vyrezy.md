@@ -1,10 +1,11 @@
 ---
 id: reseni-svg-vyrezy
 title: 'Řešení: Vlastní výřezy obrázků pomocí SVG'
+category:
+  - svg
 heading: 'Řešení: Vlastní výřezy obrázků pomocí SVG'
 perex: ''
 published: true
-category: []
 category_highlight: false
 include_rss: false
 no_ads: false

@@ -9,6 +9,7 @@ authorID: 0
 sectionID: 1
 category:
   - rwd
+  - responzivni-design
 no_ads: false
 og_title: 'Majitelé „m tečka“ webů pozor: Google bude mobile-first'
 og_description: 'Google už oficiálně představil svůj záměr začít indexovat a řadit primárně z pohledu uživatele mobilních zařízení.'

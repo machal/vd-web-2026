@@ -1,10 +1,11 @@
 ---
 id: js-moduly
 title: 'ECMAScript moduly'
+category:
+  - javascript
 heading: 'ECMAScript moduly'
 perex: ''
 published: true
-category: []
 category_highlight: false
 include_rss: false
 no_ads: false

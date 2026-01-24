@@ -1,10 +1,11 @@
 ---
 id: metrika-fid
 title: 'Metrika „Prodleva prvního vstupu“ (First Input Delay, FID)'
+category:
+  - rychlost-nacitani
 heading: 'Metrika „Prodleva prvního vstupu“ (First Input Delay, FID)'
 perex: ''
 published: true
-category: []
 category_highlight: false
 include_rss: false
 no_ads: false

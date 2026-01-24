@@ -1,10 +1,11 @@
 ---
 id: plne-responzivni-typografie
 title: 'Elastická typografie'
+category:
+  - css
 heading: 'Elastická typografie'
 perex: ''
 published: false
-category: []
 category_highlight: false
 include_rss: false
 no_ads: false

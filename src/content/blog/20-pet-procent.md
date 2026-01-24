@@ -1,6 +1,8 @@
 ---
 postID: 20
 postTitle: 'Pohádka o pěti procentech'
+category:
+  - prohlizece
 postUrlId: pet-procent
 postDateTime: '2014-07-13 00:00:00'
 excerpt: '„Prohlížeče, které mají méně než 5% podílu na trhu nepodporujeme.” Mohli jste kolegy z oboru slyšet říkat před pár lety. Nebo klidně minulý týden. Bylo by krásné kdyby rozhodování o podpoře nebo nepodpoře prohlížečů bylo takhle jednoduché. Ale je to blbos'

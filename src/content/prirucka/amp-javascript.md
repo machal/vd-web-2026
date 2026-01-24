@@ -1,10 +1,11 @@
 ---
 id: amp-javascript
 title: 'JavaScript v AMP'
+category:
+  - amp
 heading: 'JavaScript v AMP'
 perex: ''
 published: true
-category: []
 category_highlight: false
 include_rss: false
 no_ads: false

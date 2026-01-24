@@ -1,6 +1,8 @@
 ---
 postID: 30
 postTitle: 'Prohlížeč Spartan webaře rozhodně nenaštve'
+category:
+  - nastroje
 postUrlId: spartan-webari
 postDateTime: '2015-01-26 00:00:00'
 excerpt: 'Asi už víte, že Microsoft bude do přicházejících Windows 10 montovat zcela nový prohlížeč. V tuhle chvíli se o něm mluví jako o „Spartanu“.'

@@ -1,10 +1,11 @@
 ---
 id: autoprefixer
 title: 'Autoprefixer'
+category:
+  - css
 heading: 'Autoprefixer'
 perex: ''
 published: true
-category: []
 category_highlight: false
 include_rss: false
 no_ads: false

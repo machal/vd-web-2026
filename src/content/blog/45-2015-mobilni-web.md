@@ -1,6 +1,8 @@
 ---
 postID: 45
 postTitle: 'Mobilegeddon, Service Worker, AMP…  byl to skvělý rok pro mobilní Web'
+category:
+  - javascript
 postUrlId: 2015-mobilni-web
 postDateTime: '2016-01-05 00:00:00'
 excerpt: 'Na iOS přišly blokátory, vznikly technologi umožňující Progressive Web Apps, Physical Web a Beacons.'

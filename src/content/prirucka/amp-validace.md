@@ -1,10 +1,11 @@
 ---
 id: amp-validace
 title: 'Validace AMP stránek'
+category:
+  - amp
 heading: 'Validace AMP stránek'
 perex: ''
 published: false
-category: []
 category_highlight: false
 include_rss: false
 no_ads: false

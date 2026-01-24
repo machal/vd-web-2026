@@ -1,10 +1,11 @@
 ---
 id: otravne-klikani
 title: 'Málo kliků a ještě méně (otravných) dotyků'
+category:
+  - css
 heading: 'Málo kliků a ještě méně (otravných) dotyků'
 perex: ''
 published: false
-category: []
 category_highlight: false
 include_rss: false
 no_ads: false

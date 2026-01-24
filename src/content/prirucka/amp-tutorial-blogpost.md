@@ -1,10 +1,11 @@
 ---
 id: amp-tutorial-blogpost
 title: 'Tutoriál: Blogpost do AMP'
+category:
+  - amp
 heading: 'Tutoriál: Blogpost do AMP'
 perex: ''
 published: false
-category: []
 category_highlight: false
 include_rss: false
 no_ads: false

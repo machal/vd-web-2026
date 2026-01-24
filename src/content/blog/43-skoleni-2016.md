@@ -1,6 +1,8 @@
 ---
 postID: 43
 postTitle: 'Školení budou v roce 2016 zase o chlup vymakanější'
+category:
+  - bootstrap
 postUrlId: skoleni-2016
 postDateTime: '2015-12-10 00:00:00'
 excerpt: 'Na příštího rok jsem připravil menší přejmenovávací akci a úpravy obsahu našich školení. Kurz frameworku Bootstrap povede Adam Kudrna.'

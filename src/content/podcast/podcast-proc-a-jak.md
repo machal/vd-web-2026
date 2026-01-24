@@ -1,6 +1,8 @@
 ---
 postID: 176
 postTitle: 'Podcast: Proč a jak tvořit podcasty (ve spolupráci s Podcastem .NET.CZ)'
+category:
+  - nastroje
 postUrlId: podcast-proc-a-jak
 postDateTime: 2020-08-04
 excerpt: 'V nové epizodě podcastu (který by se už asi neměl nazývat podcastem) se Robin a Martin spojili s kluky z .NET.CZ Podcast, Martinem Šimečkem a Vojtou Mádrem.'

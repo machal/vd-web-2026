@@ -1,10 +1,11 @@
 ---
 id: figure-figcaption
 title: 'Ilustrace ve stránce: figure a figcaption'
+category:
+  - html
 heading: 'Ilustrace ve stránce: figure a figcaption'
 perex: ''
 published: true
-category: []
 category_highlight: false
 include_rss: false
 no_ads: false

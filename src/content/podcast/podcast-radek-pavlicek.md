@@ -1,6 +1,8 @@
 ---
 postID: 96
 postTitle: 'Podcast: S Radkem Pavlíčkem o přístupnosti aneb inkluzivním designu'
+category:
+  - pristupnost
 postUrlId: podcast-radek-pavlicek
 postDateTime: '2017-10-16 00:00:00'
 excerpt: 'S Radkem jsme letos pro Webexpo připravili dvojblok přenášek o přístupnosti. V předvečer akce jsme si sedli do kavárny a natočili rozhovor. O přístupnosti. Nebo o inkluzivním designu, protože se shodujeme, že pojem přístupnost je všechno jen ne dokonalý.'

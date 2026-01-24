@@ -1,10 +1,11 @@
 ---
 id: bootstrap-typografie
 title: 'Jak správně navázat na typografické principy Bootstrapu'
+category:
+  - html
 heading: 'Jak správně navázat na typografické principy Bootstrapu'
 perex: ''
 published: true
-category: []
 category_highlight: false
 include_rss: false
 no_ads: false

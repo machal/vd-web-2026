@@ -1,10 +1,11 @@
 ---
 id: amp-obory-blogy
 title: 'Blogy'
+category:
+  - nastroje
 heading: 'Blogy'
 perex: ''
 published: false
-category: []
 category_highlight: false
 include_rss: false
 no_ads: false

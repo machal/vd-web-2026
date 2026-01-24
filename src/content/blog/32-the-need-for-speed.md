@@ -1,6 +1,8 @@
 ---
 postID: 32
 postTitle: 'Guillermo Rauch: návrhové vzory pro vylepšení vnímané rychlosti webových aplikací'
+category:
+  - netechnicke
 postUrlId: the-need-for-speed
 postDateTime: '2015-05-14 00:00:00'
 excerpt: 'Návrhové vzory známé z rozhraní Google, Facebooku a dalších.'

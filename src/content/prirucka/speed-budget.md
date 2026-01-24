@@ -1,10 +1,11 @@
 ---
 id: speed-budget
 title: 'Rychlostní limity. A proč nedělat „optimalizace“?'
+category:
+  - rychlost-nacitani
 heading: 'Rychlostní limity. A proč nedělat „optimalizace“?'
 perex: ''
 published: false
-category: []
 category_highlight: false
 include_rss: false
 no_ads: false

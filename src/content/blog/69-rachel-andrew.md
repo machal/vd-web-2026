@@ -1,13 +1,14 @@
 ---
 postID: 69
 postTitle: 'Tři otázky na Rachel Andrew před WebExpo: o CSS Grid Layout a Perch CMS'
+category:
+  - css
 postUrlId: rachel-andrew
 postDateTime: '2016-09-20 00:00:00'
 excerpt: 'Je vážně radost, když vám WebExpo do Prahy přiveze takové řečníky. Řeknu vám, proč je Rachel Andrew pro každého frontendistu zajímavá.'
 postStatus: Published
 authorID: 0
 sectionID: 1
-category: []
 og_title: 'Tři otázky na Rachel Andrew před WebExpo: o CSS Grid Layout a Perch CMS'
 og_description: 'Je vážně radost, když vám WebExpo do Prahy přiveze takové řečníky. Řeknu vám, proč je Rachel Andrew pro každého frontendistu zajímavá.'
 og_type: article

@@ -1,13 +1,14 @@
 ---
 postID: 62
 postTitle: 'Pracovní pozice kolem frontend kodéřiny a bludy v pracovních inzerátech'
+category:
+  - netechnicke
 postUrlId: frontend-pozice
 postDateTime: 2016-06-19
 excerpt: 'V pracovních pozicích nějak se dotýkajících webové kodéřiny je trochu zmatek. Tady je pár poznámek k tématu.'
 postStatus: Published
 authorID: 0
 sectionID: 1
-category: []
 no_ads: false
 include_rss: true
 category_highlight: true

@@ -1,13 +1,14 @@
 ---
 postID: 42
 postTitle: 'Frontend vývojář a frontend kodér'
+category:
+  - css
 postUrlId: frontend-koder-vyvojar
 postDateTime: 2015-11-27
 excerpt: 'Frontend vývojář má blíž k Javascriptu a frontend kodér k CSS. Specializace na frontendu je nutná.'
 postStatus: Published
 authorID: 1
 sectionID: 1
-category: []
 no_ads: false
 include_rss: true
 category_highlight: true

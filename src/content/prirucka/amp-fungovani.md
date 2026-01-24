@@ -1,10 +1,11 @@
 ---
 id: amp-fungovani
 title: 'Jak funguje distribuce AMP stránky?'
+category:
+  - amp
 heading: 'Jak funguje distribuce AMP stránky?'
 perex: ''
 published: false
-category: []
 category_highlight: false
 include_rss: false
 no_ads: false

@@ -1,13 +1,14 @@
 ---
 postID: 76
 postTitle: 'Vzhůru do práce 2.0: více než 500 pracovních pozic pro webové vývojáře'
+category:
+  - webdesign
 postUrlId: prace-2
 postDateTime: '2016-12-06 00:00:00'
 excerpt: 'Novinky k mému agregátoru pracovních nabídek: daleko více pozic, pamatování vybraného, lepší design a další drobnosti.'
 postStatus: Published
 authorID: 0
 sectionID: 1
-category: []
 no_ads: true
 og_title: 'Vzhůru do práce 2.0: více než 500 pracovních pozic pro webové vývojáře'
 og_description: 'Novinky k mému agregátoru pracovních nabídek: daleko více pozic, pamatování vybraného, lepší design a další drobnosti.'

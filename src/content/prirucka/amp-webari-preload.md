@@ -1,10 +1,11 @@
 ---
 id: amp-webari-preload
 title: 'Jak AMP chrání rychlost před webaři. A co je jeho největší přínos?'
+category:
+  - rychlost-nacitani
 heading: 'Jak AMP chrání rychlost před webaři. A co je jeho největší přínos?'
 perex: ''
 published: true
-category: []
 category_highlight: false
 include_rss: false
 no_ads: false

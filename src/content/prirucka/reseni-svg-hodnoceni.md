@@ -1,10 +1,11 @@
 ---
 id: reseni-svg-hodnoceni
 title: 'SVG řešení: hvězdičkové hodnocení'
+category:
+  - svg
 heading: 'SVG řešení: hvězdičkové hodnocení'
 perex: ''
 published: true
-category: []
 category_highlight: false
 include_rss: false
 no_ads: false

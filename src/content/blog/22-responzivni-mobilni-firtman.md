@@ -1,6 +1,8 @@
 ---
 postID: 22
 postTitle: 'Responzivní webdesign by neměl být vaší jedinou mobilní strategií'
+category:
+  - webdesign
 postUrlId: responzivni-mobilni-firtman
 postDateTime: '2014-07-23 00:00:00'
 excerpt: 'Uděláte responzivní web. Máte tím mobily vyřešené? Ne automaticky.'

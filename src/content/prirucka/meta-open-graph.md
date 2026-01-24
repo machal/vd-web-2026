@@ -1,10 +1,11 @@
 ---
 id: meta-open-graph
 title: 'Open Graph a oEmbed: meta značky pro sociální sítě (Facebook, Twitter, LinkedIn, Slack…)'
+category:
+  - html
 heading: 'Open Graph a oEmbed: meta značky pro sociální sítě (Facebook, Twitter, LinkedIn, Slack…)'
 perex: ''
 published: true
-category: []
 category_highlight: false
 include_rss: false
 no_ads: false

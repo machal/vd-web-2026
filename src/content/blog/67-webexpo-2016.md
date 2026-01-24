@@ -1,13 +1,14 @@
 ---
 postID: 67
 postTitle: 'Na co se těším na WebExpo 2016?'
+category:
+  - css
 postUrlId: webexpo-2016
 postDateTime: '2016-08-19 00:00:00'
 excerpt: 'Letos mě zajímá především CSS, design a trochu byznys.'
 postStatus: Published
 authorID: 0
 sectionID: 1
-category: []
 og_title: 'Na co se těším na WebExpo 2016?'
 og_description: 'Letos mě zajímá především CSS, design a trochu byznys.'
 og_type: article

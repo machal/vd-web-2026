@@ -1,10 +1,11 @@
 ---
 id: principy-ui
 title: 'Čtyři principy návrhu responzivního rozhraní'
+category:
+  - responzivni-design
 heading: 'Čtyři principy návrhu responzivního rozhraní'
 perex: ''
 published: false
-category: []
 category_highlight: false
 include_rss: false
 no_ads: false

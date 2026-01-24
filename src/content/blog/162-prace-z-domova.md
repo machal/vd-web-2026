@@ -9,6 +9,7 @@ authorID: 1
 sectionID: 1
 category:
   - netechnické
+  - netechnicke
 no_ads: false
 include_rss: true
 category_highlight: true

@@ -1,13 +1,14 @@
 ---
 postID: 87
 postTitle: 'Nové školení: Mistrovský vývoj webů na WordPressu s Honzou Bienem'
+category:
+  - css
 postUrlId: wordpress-skoleni
 postDateTime: 2017-04-24
 excerpt: 'Zaměřujeme se na Honzovy zkušenosti, poctivě otestované nástroje a filozofii vývoje. Tak, abychom kurzem přinesli hodnotu frontendistům nebo vývojářům bez ohledu na jejich úroveň znalostí WordPressu.'
 postStatus: Published
 authorID: 0
 sectionID: 1
-category: []
 no_ads: true
 include_rss: true
 category_highlight: true

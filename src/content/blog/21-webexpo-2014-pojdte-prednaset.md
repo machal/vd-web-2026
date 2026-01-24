@@ -1,6 +1,8 @@
 ---
 postID: 21
 postTitle: 'Pojďte o webovém frontendu přednášet na WebExpo 2014!'
+category:
+  - nastroje
 postUrlId: webexpo-2014-pojdte-prednaset
 postDateTime: '2014-07-22 00:00:00'
 excerpt: 'Myslíte si, že Gulp je lepší než Grunt? Změnil vám responzivní webdesign pracovní postupy? Máte názor na Web Components? Vybojovali jste u velké aplikace čas na dobrou frontend architekturu? Pojďte o tom přednášet na letošním WebExpu.'

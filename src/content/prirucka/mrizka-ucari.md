@@ -1,10 +1,11 @@
 ---
 id: mrizka-ucari
 title: 'Mřížka účaří (Baseline grid)'
+category:
+  - webdesign
 heading: 'Mřížka účaří (Baseline grid)'
 perex: ''
 published: false
-category: []
 category_highlight: false
 include_rss: false
 no_ads: false

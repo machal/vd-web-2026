@@ -1,10 +1,11 @@
 ---
 id: svg-grunticon
 title: 'Grunticon: SVG s vynikající zpětnou kompatibilitou'
+category:
+  - svg
 heading: 'Grunticon: SVG s vynikající zpětnou kompatibilitou'
 perex: ''
 published: true
-category: []
 category_highlight: false
 include_rss: false
 no_ads: false

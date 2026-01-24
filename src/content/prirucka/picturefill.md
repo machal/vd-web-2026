@@ -8,6 +8,7 @@ published: true
 category:
   - rwd
   - etc
+  - responzivni-design
 category_highlight: true
 include_rss: true
 no_ads: false

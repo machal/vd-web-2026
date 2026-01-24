@@ -1,13 +1,14 @@
 ---
 postID: 81
 postTitle: 'Dotazník: Webaři, jak se vzděláváš?'
+category:
+  - webdesign
 postUrlId: dotaznik-vzdelavani
 postDateTime: '2017-01-22 00:00:00'
 excerpt: 'Zajímá mě, jak vzdělávají čeští weboví řemeslnící: vývojáři i designéři. Pomůžete mi vyplněním dotazníku? Je to na pět minut a výsledky nasdílím všem.'
 postStatus: Published
 authorID: 0
 sectionID: 1
-category: []
 no_ads: true
 og_title: 'Dotazník: Webaři, jak se vzděláváš?'
 og_description: 'Zajímá mě, jak vzdělávají čeští weboví řemeslnící: vývojáři i designéři. Pomůžete mi vyplněním dotazníku? Je to na pět minut a výsledky nasdílím všem.'

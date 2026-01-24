@@ -1,6 +1,8 @@
 ---
 postID: 129
 postTitle: 'Podcast: S Martinem Haklem ze Solidpixels o online redakčních systémech'
+category:
+  - nastroje
 postUrlId: podcast-solidpixels
 postDateTime: 2018-12-05
 excerpt: 'Online redakční nástroje si stále více nacházejí cestu k uživatelům namísto instalovaných řešení jako je WordPress nebo Drupal. Jaké mají výhody a čím mohou být zajímavé pro webové designéry a vývojáře?'

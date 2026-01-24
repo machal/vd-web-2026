@@ -7,6 +7,7 @@ perex: 'Po aktualizaci koncem roku 2018 se z tohoto nástroje stal vynikající 
 published: true
 category:
   - rychlost
+  - rychlost-nacitani
 category_highlight: true
 include_rss: true
 no_ads: false

@@ -1,13 +1,14 @@
 ---
 postID: 113
 postTitle: 'Největší problém Bootstrapu: Chybějící style guide'
+category:
+  - bootstrap
 postUrlId: bootstrap-design-system
 postDateTime: 2018-07-08
 excerpt: 'Bootstrap 4 je prostě pořád nejpropracovanější UI knihovna pro web, ale jedna věc mu – ve srovnání například s Material Designem – chybí.'
 postStatus: Published
 authorID: 1
 sectionID: 1
-category: []
 no_ads: false
 include_rss: true
 category_highlight: true

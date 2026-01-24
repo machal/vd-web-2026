@@ -1,10 +1,11 @@
 ---
 id: amp-platformy
 title: 'Kde je možné potkat AMP stránky?'
+category:
+  - amp
 heading: 'Kde je možné potkat AMP stránky?'
 perex: ''
 published: true
-category: []
 category_highlight: false
 include_rss: false
 no_ads: false

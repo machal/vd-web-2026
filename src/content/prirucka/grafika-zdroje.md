@@ -1,10 +1,11 @@
 ---
 id: grafika-zdroje
 title: 'Zdroje elementů grafického designu'
+category:
+  - webdesign
 heading: 'Zdroje elementů grafického designu'
 perex: ''
 published: false
-category: []
 category_highlight: false
 include_rss: false
 no_ads: false

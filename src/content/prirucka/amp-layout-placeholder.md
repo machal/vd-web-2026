@@ -1,10 +1,11 @@
 ---
 id: amp-layout-placeholder
 title: 'Atributy placeholder a fallback'
+category:
+  - rychlost-nacitani
 heading: 'Atributy placeholder a fallback'
 perex: ''
 published: false
-category: []
 category_highlight: false
 include_rss: false
 no_ads: false

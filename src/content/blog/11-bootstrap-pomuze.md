@@ -1,13 +1,14 @@
 ---
 postID: 11
 postTitle: 'Kdy vám Bootstrap pomůže a kdy ne?'
+category:
+  - bootstrap
 postUrlId: bootstrap-pomuze
 postDateTime: 2014-02-10
 excerpt: 'Užitečnost nových technologií bývá částí lidí podceňována, části přeceňována. Zkusím nás tímto článkem zařadit do třetí skupiny, která se k frontend frameworkům staví střízlivě.'
 postStatus: Published
 authorID: 1
 sectionID: 1
-category: []
 no_ads: false
 include_rss: true
 category_highlight: true

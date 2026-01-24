@@ -7,18 +7,19 @@ import { visit } from 'unist-util-visit';
  * 
  * Transformace:
  * 1. Změní třídu z "related" na "inner-box inner-box--side"
- * 2. Přidá nadpis "SOUVISEJÍCÍ" jako první dítě
- * 3. Transformuje <ul> na <ul class="inner-box__list">
- * 4. Transformuje všechny <a> uvnitř <li> na <a class="inner-box__list-item">
+ * 2. Přidá nadpis "Související" jako první dítě
+ * 3. Transformuje <ul> na <ul class="list list--bordered list--block-hover mb-0">
+ * 4. Transformuje všechny <li> na <li class="list__item">
+ * 5. Transformuje všechny <a> uvnitř <li> na <a class="list__item-link">
  * 
  * Původní struktura:
  * <div class="related"><ul><li><a href="...">text</a></li></ul></div>
  * 
  * Cílová struktura:
  * <div class="inner-box inner-box--side">
- *   <h2 class="inner-box__heading">SOUVISEJÍCÍ</h2>
- *   <ul class="inner-box__list">
- *     <li><a class="inner-box__list-item" href="...">text</a></li>
+ *   <h2 class="inner-box__heading h6 mb-05">Související</h2>
+ *   <ul class="list list--bordered list--block-hover mb-0">
+ *     <li class="list__item"><a class="list__item-link" href="...">text</a></li>
  *   </ul>
  * </div>
  */
@@ -83,8 +84,9 @@ export const rehypeRelatedToInnerBox: Plugin<[], Root> = () => {
 
     /**
      * Transformuje <li> elementy a jejich obsah
-     * - Pokud <li> obsahuje <a>, přidá třídu inner-box__list-item na <a>
-     * - Pokud <li> neobsahuje <a> (aktivní položka), přidá třídu inner-box__list-item--active na <li>
+     * - Přidá třídu list__item na každý <li>
+     * - Pokud <li> obsahuje <a>, přidá třídu list__item-link na <a>
+     * - Pokud <li> neobsahuje <a> (aktivní položka), přidá třídu list__item--active na <li>
      */
     function transformListItems(node: any): void {
       if (!node.children || !Array.isArray(node.children)) {
@@ -94,21 +96,24 @@ export const rehypeRelatedToInnerBox: Plugin<[], Root> = () => {
       for (const child of node.children) {
         if (child.type === 'element') {
           if (child.tagName === 'li') {
+            // Přidat třídu list__item na každý <li>
+            addClass(child, 'list__item');
+            
             // Zkontrolovat, zda <li> obsahuje <a> tag
             const hasLink = child.children && child.children.some(
               (c: any) => c.type === 'element' && c.tagName === 'a'
             );
 
             if (hasLink) {
-              // Pokud má odkaz, přidat třídu inner-box__list-item na <a>
+              // Pokud má odkaz, přidat třídu list__item-link na <a>
               for (const liChild of child.children || []) {
                 if (liChild.type === 'element' && liChild.tagName === 'a') {
-                  addClass(liChild, 'inner-box__list-item');
+                  addClass(liChild, 'list__item-link');
                 }
               }
             } else {
               // Pokud nemá odkaz (aktivní položka), přidat třídu na <li>
-              addClass(child, 'inner-box__list-item--active');
+              addClass(child, 'list__item--active');
             }
           }
           
@@ -124,17 +129,17 @@ export const rehypeRelatedToInnerBox: Plugin<[], Root> = () => {
         // Změnit třídu z "related" na "inner-box inner-box--side"
         setClasses(node, ['inner-box', 'inner-box--side']);
 
-        // Vytvořit nadpis "SOUVISEJÍCÍ"
+        // Vytvořit nadpis "Související"
         const heading = {
           type: 'element',
           tagName: 'h2',
           properties: {
-            className: ['inner-box__heading']
+            className: ['inner-box__heading', 'h6', 'mb-05']
           },
           children: [
             {
               type: 'text',
-              value: 'SOUVISEJÍCÍ'
+              value: 'Související'
             }
           ]
         };
@@ -145,12 +150,12 @@ export const rehypeRelatedToInnerBox: Plugin<[], Root> = () => {
         }
         node.children.unshift(heading);
 
-        // Najít a transformovat <ul> na <ul class="inner-box__list">
+        // Najít a transformovat <ul> na <ul class="list list--bordered list--block-hover mb-0">
         if (node.children && Array.isArray(node.children)) {
           for (const child of node.children) {
             if (child.type === 'element' && child.tagName === 'ul') {
-              // Nastavit třídu inner-box__list
-              setClasses(child, ['inner-box__list']);
+              // Nastavit třídy pro list komponentu s block-hover pro klikatelnou plochu
+              setClasses(child, ['list', 'list--bordered', 'list--block-hover', 'mb-0']);
               
               // Transformovat všechny <li> elementy a jejich obsah
               transformListItems(child);

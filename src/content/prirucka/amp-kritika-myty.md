@@ -1,10 +1,11 @@
 ---
 id: amp-kritika-myty
 title: 'Kritika a časté mýty kolem AMP'
+category:
+  - amp
 heading: 'Kritika a časté mýty kolem AMP'
 perex: ''
 published: true
-category: []
 category_highlight: false
 include_rss: false
 no_ads: false

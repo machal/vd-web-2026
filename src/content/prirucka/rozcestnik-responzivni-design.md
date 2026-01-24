@@ -1,10 +1,11 @@
 ---
 id: rozcestnik-responzivni-design
 title: 'Rozcestník k responzivnímu webdesignu'
+category:
+  - responzivni-design
 heading: 'Rozcestník k responzivnímu webdesignu'
 perex: ''
 published: false
-category: []
 category_highlight: false
 include_rss: false
 no_ads: false

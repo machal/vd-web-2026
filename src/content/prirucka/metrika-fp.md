@@ -1,10 +1,11 @@
 ---
 id: metrika-fp
 title: 'Událost „První vykreslení“ (First Paint, FP)'
+category:
+  - rychlost-nacitani
 heading: 'Událost „První vykreslení“ (First Paint, FP)'
 perex: ''
 published: true
-category: []
 category_highlight: false
 include_rss: false
 no_ads: false

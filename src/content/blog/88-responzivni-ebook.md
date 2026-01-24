@@ -1,13 +1,14 @@
 ---
 postID: 88
 postTitle: 'E-book „Vzhůru do (responzivního) designu“ je tady!'
+category:
+  - responzivni-design
 postUrlId: responzivni-ebook
 postDateTime: '2017-05-15 00:00:00'
 excerpt: 'Jak už možná víte, od začátku zimy pracuji na druhém e-booku. Jmenuje se „Vzhůru do (responzivního) webdesignu“ a právě teď jsem spustil stránku, na které si jej můžete objednat.'
 postStatus: Published
 authorID: 0
 sectionID: 1
-category: []
 no_ads: true
 og_title: 'E-book „Vzhůru do (responzivního) designu“ je tady!'
 og_description: 'Jak už možná víte, od začátku zimy pracuji na druhém e-booku. Jmenuje se „Vzhůru do (responzivního) webdesignu“ a právě teď jsem spustil stránku, na které si jej můžete objednat.'

@@ -1,10 +1,11 @@
 ---
 id: rich-snippets
 title: 'Strukturovaná data (aneb Rich Snippets): Kódem za atraktivnější výsledky vyhledávání pro váš web'
+category:
+  - html
 heading: 'Strukturovaná data (aneb Rich Snippets): Kódem za atraktivnější výsledky vyhledávání pro váš web'
 perex: ''
 published: true
-category: []
 category_highlight: false
 include_rss: false
 no_ads: false

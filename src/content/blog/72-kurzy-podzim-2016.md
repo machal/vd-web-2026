@@ -1,13 +1,14 @@
 ---
 postID: 72
 postTitle: 'Bootstrap a Javascript: doražte se je naučit na našich  dvou podzimních školeních'
+category:
+  - javascript
 postUrlId: kurzy-podzim-2016
 postDateTime: '2016-11-02 00:00:00'
 excerpt: 'Vedou je dva zkušení weboví vývojáři – Riki Fridrich a Adam Kudrna.'
 postStatus: Published
 authorID: 0
 sectionID: 1
-category: []
 og_title: 'Bootstrap a Javascript: doražte se je naučit na našich  dvou podzimních školeních'
 og_description: 'Vedou je dva zkušení weboví vývojáři – Riki Fridrich a Adam Kudrna.'
 og_type: article

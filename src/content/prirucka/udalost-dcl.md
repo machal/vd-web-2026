@@ -1,10 +1,11 @@
 ---
 id: udalost-dcl
 title: 'Událost DOM Content Loaded (DCL)'
+category:
+  - javascript
 heading: 'Událost DOM Content Loaded (DCL)'
 perex: ''
 published: true
-category: []
 category_highlight: false
 include_rss: false
 no_ads: false

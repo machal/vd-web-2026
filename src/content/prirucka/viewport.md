@@ -8,6 +8,7 @@ published: true
 category:
   - rwd
   - etc
+  - css
 og_title: 'Viewport na Windows 8 a 8.1'
 og_description: 'S viewportem jsou jen problémy. A Internet Explorer na Windows Phone 8 a 8.1 dal téhle větě nový rozměr.'
 og_type: article

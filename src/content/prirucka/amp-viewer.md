@@ -1,10 +1,11 @@
 ---
 id: amp-viewer
 title: 'AMP Viewer'
+category:
+  - amp
 heading: 'AMP Viewer'
 perex: ''
 published: false
-category: []
 category_highlight: false
 include_rss: false
 no_ads: false

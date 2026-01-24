@@ -1,6 +1,8 @@
 ---
 postID: 90
 postTitle: 'Podcast: S Honzou Bienem o WordPressu'
+category:
+  - wordpress
 postUrlId: podcast-honza-bien-wordpress
 postDateTime: 2017-06-12
 excerpt: 'Honza je machr přes WordPress. A já zase svý způsobem hejtr tohodle redakčního systému. Co se stane, když se machr a hejtr potkají a natočí podcast?'

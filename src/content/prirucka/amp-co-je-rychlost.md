@@ -1,10 +1,11 @@
 ---
 id: amp-co-je-rychlost
 title: 'Rychlost webů? Stále nedostatečná'
+category:
+  - rychlost-nacitani
 heading: 'Rychlost webů? Stále nedostatečná'
 perex: ''
 published: false
-category: []
 category_highlight: false
 include_rss: false
 no_ads: false

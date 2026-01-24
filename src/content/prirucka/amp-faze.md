@@ -1,10 +1,11 @@
 ---
 id: amp-faze
 title: 'Rychlost AMP stránky ve fázích distribuce'
+category:
+  - amp
 heading: 'Rychlost AMP stránky ve fázích distribuce'
 perex: ''
 published: true
-category: []
 category_highlight: false
 include_rss: false
 no_ads: false

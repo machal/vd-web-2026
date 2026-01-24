@@ -1,13 +1,14 @@
 ---
 postID: 118
 postTitle: 'Grid, Flexbox, rychlost načítání nebo organizace CSS: Podzimní školení začínají'
+category:
+  - css
 postUrlId: skoleni-podzim-2018
 postDateTime: 2018-09-02
 excerpt: 'Doražte se naučit nové frontendové technologie a taky si ušetřit spoustu času stráveného slepými uličkami samostudia.'
 postStatus: Published
 authorID: 1
 sectionID: 1
-category: []
 no_ads: true
 include_rss: true
 category_highlight: true

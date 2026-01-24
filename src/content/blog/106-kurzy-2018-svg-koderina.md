@@ -1,13 +1,14 @@
 ---
 postID: 106
 postTitle: 'Kurzy: SVG, Flexbox nebo Grid? Načerpejte u nás užitečné vědomosti'
+category:
+  - svg
 postUrlId: kurzy-2018-svg-koderina
 postDateTime: 2018-03-21
 excerpt: 'Zvu vás na kurz „SVG“ od Michala Matušky a nově otevřený termín mé „Dnešní webové kodéřiny“.'
 postStatus: Published
 authorID: 1
 sectionID: 1
-category: []
 no_ads: true
 og_title: 'Kurzy: SVG, Flexbox nebo Grid? Načerpejte u nás užitečné vědomosti'
 og_description: 'Zvu vás na kurz „SVG“ od Michala Matušky a nově otevřený termín mé „Dnešní webové kodéřiny“.'

@@ -1,11 +1,12 @@
 ---
 id: knihy
 title: 'Knihy pro frontendisty a frontendistky. Co číst o CSS, JS, designu, rychlosti nebo přístupnosti?'
+category:
+  - css
 heading: 'Knihy pro frontendisty a frontendistky. Co číst o CSS, JS, designu, rychlosti nebo přístupnosti?'
 date: 2021-03-24
 perex: 'Více než dvě desítky knih, které mě nějak odborně posunuly. Plus další, doporučené od čtenářů.'
 published: true
-category: []
 category_highlight: true
 include_rss: true
 no_ads: false

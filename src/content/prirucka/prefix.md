@@ -7,6 +7,7 @@ published: true
 category:
   - etc
   - css3
+  - css
 og_title: 'Prefix'
 og_description: 'Podivná věc, která nás nutí psát jeden CSS kód vícekrát.'
 og_type: article

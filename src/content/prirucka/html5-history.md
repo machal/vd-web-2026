@@ -6,6 +6,7 @@ perex: 'Zjednodušeně řečeno umožňuje měnit část URL za doménou na libo
 published: true
 category:
   - html5
+  - html
 og_title: 'HTML5 History'
 og_description: 'Zjednodušeně řečeno umožňuje měnit část URL za doménou na libovolnou hodnotu. V kombinaci s AJAXem tak dokáže velmi zrychlit procházení webu nebo aplikace.'
 og_type: article

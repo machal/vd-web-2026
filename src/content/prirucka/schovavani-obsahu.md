@@ -1,10 +1,11 @@
 ---
 id: schovavani-obsahu
 title: 'Skrytí obsahu v CSS a HTML'
+category:
+  - css
 heading: 'Skrytí obsahu v CSS a HTML'
 perex: ''
 published: false
-category: []
 category_highlight: false
 include_rss: false
 no_ads: false

@@ -1,6 +1,8 @@
 ---
 postID: 145
 postTitle: 'Podcast: Speciál o AMP k vydání „Vzhůru do AMP“'
+category:
+  - amp
 postUrlId: podcast-vzhuru-do-amp
 postDateTime: 2019-06-26
 excerpt: 'Robin a Martin si tentokrát vystačili sami. Aby ne – mluví o práci na e-booku, který napsali o svém oblíbeném tématu – zrychlovací technologii AMP.'

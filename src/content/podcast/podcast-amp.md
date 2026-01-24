@@ -1,6 +1,8 @@
 ---
 postID: 117
 postTitle: 'Podcast: S Pavlem Jaškem z Google o AMP'
+category:
+  - amp
 postUrlId: podcast-amp
 postDateTime: 2018-08-06
 excerpt: 'Accelerated Mobile Pages jsou kontroverzní, ale tu technologii s Robinem prostě máme rádi. Třeba začnete i vy. Pusťte si proto nový díl našeho povídání.'

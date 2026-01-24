@@ -9,6 +9,7 @@ authorID: 0
 sectionID: 1
 category:
   - rwd
+  - responzivni-design
 og_title: 'Prohlížeč Samsung Internet a moje pokažené statistiky'
 og_description: 'V průvodci světem prohlížečů mám miminálně jednu chybu. Muvím o „mobilních Chrome“, ale to jsem jen naletěl obvyklé chybě měřičů návštěvnosti.'
 og_type: article

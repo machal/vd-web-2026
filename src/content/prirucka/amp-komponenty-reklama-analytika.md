@@ -1,10 +1,11 @@
 ---
 id: amp-komponenty-reklama-analytika
 title: 'Komponenty pro reklamu a analytiku'
+category:
+  - organizace-css
 heading: 'Komponenty pro reklamu a analytiku'
 perex: ''
 published: false
-category: []
 category_highlight: false
 include_rss: false
 no_ads: false

@@ -1,10 +1,11 @@
 ---
 id: dokument-nastroje
 title: 'Blanka a další nástroje pro dokumentovou vrstvu webu'
+category:
+  - nastroje
 heading: 'Blanka a další nástroje pro dokumentovou vrstvu webu'
 perex: ''
 published: false
-category: []
 category_highlight: false
 include_rss: false
 no_ads: false

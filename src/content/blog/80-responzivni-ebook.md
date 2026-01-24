@@ -1,13 +1,14 @@
 ---
 postID: 80
 postTitle: 'Píšu ebook o responzivním designu, pomozte mi prosím předobjednáním'
+category:
+  - responzivni-design
 postUrlId: responzivni-ebook
 postDateTime: '2017-01-11 00:00:00'
 excerpt: 'Ano, je to tak. Už nějadou dobu pracuji na novém ebooku. O procesu tvorby responzivních webů, o svých zkušenostech s ním a taky trochu o principech dnešního webdesignu. Bude rozsáhlejší, barevnější a detailnější než jeho starší sourozenec.'
 postStatus: Published
 authorID: 0
 sectionID: 1
-category: []
 no_ads: true
 og_title: 'Píšu ebook o responzivním designu, pomozte mi prosím předobjednáním'
 og_description: 'Ano, je to tak. Už nějadou dobu pracuji na novém ebooku. O procesu tvorby responzivních webů, o svých zkušenostech s ním a taky trochu o principech dnešního webdesignu. Bude rozsáhlejší, barevnější a detailnější než jeho starší sourozenec.'

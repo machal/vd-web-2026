@@ -1,13 +1,14 @@
 ---
 postID: 108
 postTitle: 'Pár poznámek k průzkumu mezi vývojáři na Stack Overflow'
+category:
+  - css
 postUrlId: stack-overflow-2018
 postDateTime: 2018-04-15
 excerpt: 'Co mě zaujalo v celosvětovém průzkumu mezi 100 tisíci vývojáři?'
 postStatus: Published
 authorID: 1
 sectionID: 1
-category: []
 no_ads: false
 include_rss: true
 category_highlight: true

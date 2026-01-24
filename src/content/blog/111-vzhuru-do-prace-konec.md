@@ -1,13 +1,14 @@
 ---
 postID: 111
 postTitle: 'Sekce Vzhůru do práce: Proč a jak ji brzy uzavřu?'
+category:
+  - netechnicke
 postUrlId: vzhuru-do-prace-konec
 postDateTime: 2018-06-26
 excerpt: 'Se specializovaným agregátorkem pracovních pozic jsem nedokázal konkurovat těm velkým. Dneska se nedivím, brzy ho zavřu. Reklamu budu nabízet dál.'
 postStatus: Published
 authorID: 1
 sectionID: 1
-category: []
 no_ads: true
 include_rss: true
 category_highlight: false

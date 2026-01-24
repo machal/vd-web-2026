@@ -1,13 +1,14 @@
 ---
 postID: 115
 postTitle: 'Dvě novinky od Google: Rychlost webu jako řadící signál a Chrome ještě více tlačí na HTTPS'
+category:
+  - prohlizece
 postUrlId: google-speed-https
 postDateTime: 2018-07-26
 excerpt: 'Dvě důležité změny ve vyhledávání a v prohlížeči Chrome.'
 postStatus: Draft
 authorID: 1
 sectionID: 1
-category: []
 no_ads: false
 include_rss: true
 category_highlight: false

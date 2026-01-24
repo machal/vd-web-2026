@@ -10,6 +10,7 @@ sectionID: 1
 category:
   - ebooky
   - vdlayout
+  - netechnicke
 no_ads: true
 include_rss: true
 category_highlight: true

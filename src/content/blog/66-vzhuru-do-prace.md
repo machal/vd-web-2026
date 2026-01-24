@@ -1,13 +1,14 @@
 ---
 postID: 66
 postTitle: 'Vzhůru do práce: představuji agregátor pracovních nabídek pro webové vývojáře'
+category:
+  - netechnicke
 postUrlId: vzhuru-do-prace
 postDateTime: '2016-08-18 00:00:00'
 excerpt: 'Nová sekce Vzhůru dolů pro webové vývojáře co hledají lepší práci.'
 postStatus: Published
 authorID: 0
 sectionID: 1
-category: []
 og_title: 'Vzhůru do práce: představuji agregátor pracovních nabídek pro webové vývojáře'
 og_description: 'Nová sekce Vzhůru dolů pro webové vývojáře co hledají lepší práci.'
 og_type: article

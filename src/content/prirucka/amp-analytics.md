@@ -1,10 +1,11 @@
 ---
 id: amp-analytics
 title: 'Měření návštěvnosti v AMP'
+category:
+  - amp
 heading: 'Měření návštěvnosti v AMP'
 perex: ''
 published: false
-category: []
 category_highlight: false
 include_rss: false
 no_ads: false

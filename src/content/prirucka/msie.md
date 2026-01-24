@@ -1,10 +1,11 @@
 ---
 id: msie
 title: 'Internet Explorer (je už mrtvý?)'
+category:
+  - css
 heading: 'Internet Explorer (je už mrtvý?)'
 perex: ''
 published: true
-category: []
 category_highlight: false
 include_rss: false
 no_ads: false

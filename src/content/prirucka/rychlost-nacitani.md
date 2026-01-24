@@ -1,11 +1,12 @@
 ---
 id: rychlost-designeri
 title: 'Jak vylepšit rychlost načítání webu'
+category:
+  - rychlost-nacitani
 heading: 'Rychlost načítání: Úvod pro designéry, marketéry a majitele webů'
 date: 2017-05-02
 perex: 'Rychlost nemůžete nechat jen na vývojářích. V článku si shrneme, proč je fajn mít rychlé weby. Povíme si také o nejdůležitějších nástrojích a optimalizačních technikách.'
 published: true
-category: []
 category_highlight: true
 include_rss: true
 no_ads: false

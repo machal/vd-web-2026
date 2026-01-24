@@ -1,10 +1,11 @@
 ---
 id: wai-aria
 title: 'Orientační body WAI-ARIA pro přístupnější web'
+category:
+  - pristupnost
 heading: 'Orientační body WAI-ARIA pro přístupnější web'
 perex: ''
 published: true
-category: []
 category_highlight: false
 include_rss: false
 no_ads: false

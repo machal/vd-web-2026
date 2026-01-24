@@ -1,13 +1,14 @@
 ---
 postID: 39
 postTitle: 'Bootstrap 4: SASS, flexbox a další novinky'
+category:
+  - css
 postUrlId: bootstrap-4
 postDateTime: 2015-09-30
 excerpt: 'Od čtyřky nečekejte žádné bombastické novinky, ale to je dobře.'
 postStatus: Published
 authorID: 1
 sectionID: 1
-category: []
 no_ads: false
 include_rss: true
 category_highlight: true

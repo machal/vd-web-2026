@@ -1,6 +1,8 @@
 ---
 postID: 28
 postTitle: '7 poznámek o přístupnosti z WebExpo 2014'
+category:
+  - skoleni
 postUrlId: pristupnost-webexpo-2014
 postDateTime: '2014-09-30 00:00:00'
 excerpt: 'Radek Pavlíček s Romanem Kabelkou vedli v předvečer letošního WebExpa hodně zajímavý workshop Přístupnost pro kodéry. Za mě prima přiležitost k aktualizaci znalostí od odborníků na slovo vzatých.'

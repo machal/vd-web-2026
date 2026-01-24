@@ -1,10 +1,11 @@
 ---
 id: rozcestnik-rychlost-webu
 title: 'Rozcestník pro rychlost webu'
+category:
+  - rychlost-nacitani
 heading: 'Rozcestník pro rychlost webu'
 perex: ''
 published: false
-category: []
 category_highlight: false
 include_rss: false
 no_ads: false

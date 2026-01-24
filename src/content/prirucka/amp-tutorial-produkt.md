@@ -1,10 +1,11 @@
 ---
 id: amp-tutorial-produkt
 title: 'Tutoriál: Detail produktu e-shopu'
+category:
+  - amp
 heading: 'Tutoriál: Detail produktu e-shopu'
 perex: ''
 published: false
-category: []
 category_highlight: false
 include_rss: false
 no_ads: false

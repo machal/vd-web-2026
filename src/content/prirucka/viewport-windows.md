@@ -1,10 +1,11 @@
 ---
 id: viewport-windows
 title: 'Viewport na Windows 8 a 8.1'
+category:
+  - css
 heading: 'Viewport na Windows 8 a 8.1'
 perex: ''
 published: true
-category: []
 category_highlight: false
 include_rss: false
 no_ads: false

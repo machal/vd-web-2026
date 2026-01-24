@@ -1,10 +1,11 @@
 ---
 id: amp-obory-eshopy
 title: 'E-shopy'
+category:
+  - amp
 heading: 'E-shopy'
 perex: ''
 published: false
-category: []
 category_highlight: false
 include_rss: false
 no_ads: false

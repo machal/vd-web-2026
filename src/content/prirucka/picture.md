@@ -9,6 +9,7 @@ category:
   - responsive
   - rychlost
   - obrázky
+  - responzivni-design
 category_highlight: true
 include_rss: true
 no_ads: false

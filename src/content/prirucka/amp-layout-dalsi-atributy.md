@@ -1,10 +1,11 @@
 ---
 id: amp-layout-dalsi-atributy
 title: 'Atributy width, height, sizes, heights, media'
+category:
+  - responzivni-design
 heading: 'Atributy width, height, sizes, heights, media'
 perex: ''
 published: false
-category: []
 category_highlight: false
 include_rss: false
 no_ads: false

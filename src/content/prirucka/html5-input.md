@@ -1,10 +1,11 @@
 ---
 id: html5-input
 title: 'Nové typy inputů v HTML5: email, tel, number'
+category:
+  - html
 heading: 'Nové typy inputů v HTML5: email, tel, number'
 perex: ''
 published: false
-category: []
 category_highlight: false
 include_rss: false
 no_ads: false

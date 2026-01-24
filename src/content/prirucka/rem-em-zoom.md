@@ -1,10 +1,11 @@
 ---
 id: rem-em-zoom
 title: 'Autorský zoom dokumentu a komponent'
+category:
+  - css
 heading: 'Autorský zoom dokumentu a komponent'
 perex: ''
 published: false
-category: []
 category_highlight: false
 include_rss: false
 no_ads: false

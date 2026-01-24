@@ -1,10 +1,11 @@
 ---
 id: speedindex
 title: 'Metrika „Index rychlosti“ (Speed Index, SI)'
+category:
+  - rychlost-nacitani
 heading: 'Metrika „Index rychlosti“ (Speed Index, SI)'
 perex: ''
 published: true
-category: []
 category_highlight: false
 include_rss: false
 no_ads: false

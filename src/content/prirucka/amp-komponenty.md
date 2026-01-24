@@ -1,10 +1,11 @@
 ---
 id: amp-komponenty
 title: 'Komponenty v AMP'
+category:
+  - amp
 heading: 'Komponenty v AMP'
 perex: ''
 published: false
-category: []
 category_highlight: false
 include_rss: false
 no_ads: false

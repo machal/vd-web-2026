@@ -1,6 +1,8 @@
 ---
 postID: 120
 postTitle: 'Podcast: O prohlížeči Seznam.cz se Štěpánkou Lebedovou'
+category:
+  - prohlizece
 postUrlId: podcast-seznam-prohlizec
 postDateTime: 2018-09-19
 excerpt: 'Prohlížeči Seznamu roste podíl na českém trhu, což je důvod podívat se na něj z mnoha úhlů pohledu.'

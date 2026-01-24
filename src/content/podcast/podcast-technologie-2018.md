@@ -1,6 +1,8 @@
 ---
 postID: 130
 postTitle: 'Podcast: Vánoční speciál o frontendových technologiích roku 2018'
+category:
+  - css
 postUrlId: podcast-technologie-2018
 postDateTime: 2018-12-19
 excerpt: 'Robin s Martinem si tentokrát vystačili sami, aby se pobavili o tom, co je letos zaujalo na technologickém poli. Řeší GraphQL, CSS Grid, Typescript a stav javascriptových frameworků.'

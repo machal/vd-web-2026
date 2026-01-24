@@ -1,10 +1,11 @@
 ---
 id: favicon
 title: 'Favikony webu s RealFaviconGenerator'
+category:
+  - prohlizece
 heading: 'Favikony webu s RealFaviconGenerator'
 perex: ''
 published: true
-category: []
 category_highlight: false
 include_rss: false
 no_ads: false

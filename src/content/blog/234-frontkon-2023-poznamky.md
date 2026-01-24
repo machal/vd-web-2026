@@ -1,13 +1,14 @@
 ---
 postID: 234
 postTitle: 'Poznámky k programu komunitních konferencí (po FrontKonu 2023)'
+category:
+  - skoleni
 postUrlId: frontkon-2023-poznamky
 postDateTime: 2023-11-13
 excerpt: 'Byl to mazec, bylo to velké a troufám si říct, že se to celé povedlo. Zde se ovšem také nahlas zamýšlím, co příště udělat jinak.'
 postStatus: Published
 authorID: 1
 sectionID: 1
-category: []
 no_ads: true
 include_rss: true
 category_highlight: true

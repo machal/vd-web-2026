@@ -9,6 +9,7 @@ authorID: 0
 sectionID: 1
 category:
   - rychlost
+  - rychlost-nacitani
 no_ads: false
 og_title: 'Rychlost webu je záležitostí designéra'
 og_description: 'Cíle webových grafiků a designérů se moc nemění. Co se ale změnilo, jsou naše znalosti o významu rychlosti webu pro jeho výslednou úspěšnost.'

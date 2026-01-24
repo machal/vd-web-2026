@@ -1,11 +1,12 @@
 ---
 id: amp-cache
 title: 'AMP Cache a URL stránky'
+category:
+  - amp
 heading: 'AMP Cache: Servery, které dělají zázraky s rychlostí AMP stránek'
 date: 2019-11-11
 perex: 'V další ukázce z e-booku „Vzhůru do AMP“ se budeme bavit o úložišti pro AMP stránky, kam se stahují, aby byly blíž uživateli.'
 published: true
-category: []
 category_highlight: true
 include_rss: true
 no_ads: false

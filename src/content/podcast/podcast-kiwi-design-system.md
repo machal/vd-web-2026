@@ -1,6 +1,8 @@
 ---
 postID: 126
 postTitle: 'Podcast: S Honzou Tomanem o tvorbě systému designu v Kiwi.com'
+category:
+  - webdesign
 postUrlId: podcast-kiwi-design-system
 postDateTime: 2018-10-30
 excerpt: 'V rozhovou procházíme proces vytváření obecné knihovny komponent pro produkty Kiwi.com. Ale vsadím se, že to bude užitečné pro každého, kdo o systémech designu alespoň slyšel. Hezký poslech.'

@@ -1,13 +1,14 @@
 ---
 postID: 93
 postTitle: 'Zanikající část webařiny: obyčejné weby a CMS na míru'
+category:
+  - webdesign
 postUrlId: levny-webdesign-na-miru-nema-smysl
 postDateTime: 2017-07-23
 excerpt: 'Pokud vyvíjíte vlastní řešení na míru každému klientovi za desítky tisíc korun, zpozorněte, protože v mnoha případech to přestalo dávat smysl.'
 postStatus: Published
 authorID: 0
 sectionID: 1
-category: []
 no_ads: false
 include_rss: true
 category_highlight: true

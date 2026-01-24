@@ -1,6 +1,8 @@
 ---
 postID: 134
 postTitle: 'Podcast: S Honzou Bienem o WordPressu 5 a editoru Gutenberg'
+category:
+  - wordpress
 postUrlId: podcast-gutenberg
 postDateTime: 2019-01-28
 excerpt: 'Gutenberg je velké téma nejen pro WordPressovou komunitu. Proto jsme si znovu pozvali webmistra Honzu, aby nám o tomhle editoru něco pověděl.'

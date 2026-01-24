@@ -1,10 +1,11 @@
 ---
 id: mobilni-responzivni-adaptivni
 title: 'Weby responzivní, adaptivní, mobilní'
+category:
+  - responzivni-design
 heading: 'Weby responzivní, adaptivní, mobilní'
 perex: ''
 published: false
-category: []
 category_highlight: false
 include_rss: false
 no_ads: false

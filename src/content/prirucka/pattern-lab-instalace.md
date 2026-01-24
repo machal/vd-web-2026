@@ -1,10 +1,11 @@
 ---
 id: pattern-lab-instalace
 title: 'Jak nasadit Pattern Lab a nepřijít přitom o rozum?'
+category:
+  - nastroje
 heading: 'Jak nasadit Pattern Lab a nepřijít přitom o rozum?'
 perex: ''
 published: false
-category: []
 category_highlight: false
 include_rss: false
 no_ads: false

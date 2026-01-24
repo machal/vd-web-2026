@@ -1,13 +1,14 @@
 ---
 postID: 85
 postTitle: 'Výsledky dotazníku: Jak se my, webaři a webařky, vzděláváme?'
+category:
+  - nastroje
 postUrlId: vzdelavani-vysledky
 postDateTime: '2017-02-19 00:00:00'
 excerpt: 'Nejvíce pomocí krátkých textů a videí. Fyzické knížky ani prezenční kurzy zatím jejich elektronické alternativy neporazily. Vzdělávání si účastníci většinou objednávají i platí sami.'
 postStatus: Published
 authorID: 0
 sectionID: 1
-category: []
 no_ads: false
 og_title: 'Výsledky dotazníku: Jak se my, webaři a webařky, vzděláváme?'
 og_description: 'Nejvíce pomocí krátkých textů a videí. Fyzické knížky ani prezenční kurzy zatím jejich elektronické alternativy neporazily. Vzdělávání si účastníci většinou objednávají i platí sami.'

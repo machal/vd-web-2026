@@ -1,10 +1,11 @@
 ---
 id: amp-implementace-pluginy
 title: 'Pluginy redakčních systémů'
+category:
+  - nastroje
 heading: 'Pluginy redakčních systémů'
 perex: ''
 published: false
-category: []
 category_highlight: false
 include_rss: false
 no_ads: false

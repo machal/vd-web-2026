@@ -1,6 +1,8 @@
 ---
 postID: 84
 postTitle: 'Podcast: S Riki Fridrichem o NPM, Yarnu a dalších nástrojích JS světa'
+category:
+  - javascript
 postUrlId: podcast-npm-yarn
 postDateTime: '2017-02-13 00:00:00'
 excerpt: 'Z Rikiho jsem tahal moudra o automatizačních, ale i jiných nástrojích dnešního komplikovaného javascriptového světa.'

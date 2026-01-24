@@ -1,10 +1,11 @@
 ---
 id: kontrast
 title: 'Barevný kontrast na webu a nástroje, které s ním pomohou'
+category:
+  - nastroje
 heading: 'Barevný kontrast na webu a nástroje, které s ním pomohou'
 perex: ''
 published: true
-category: []
 category_highlight: false
 include_rss: false
 no_ads: false

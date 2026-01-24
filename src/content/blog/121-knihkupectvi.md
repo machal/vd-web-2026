@@ -1,13 +1,14 @@
 ---
 postID: 121
 postTitle: 'Knihkupectví a e-shopy. Nová místa, kde si teď můžete koupit knížku'
+category:
+  - responzivni-design
 postUrlId: knihkupectvi
 postDateTime: 2018-09-20
 excerpt: 'Kniha „Vzhůru do (responzivního) webdesignu“ vyrazila v mnoha kopiích do celého Česka. Proto ji teď máte mnohem blíž.'
 postStatus: Published
 authorID: 1
 sectionID: 1
-category: []
 no_ads: true
 include_rss: true
 category_highlight: true

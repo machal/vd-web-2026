@@ -1,13 +1,14 @@
 ---
 postID: 79
 postTitle: 'Ebook „Vzhůru do CSS3“ verze 1.4: nové texty o Media Queries, prohlížečích a další'
+category:
+  - css
 postUrlId: ebook-1-4
 postDateTime: '2017-01-09 00:00:00'
 excerpt: 'Kapitola o Media Queries je zgruntu nová atd. 12 stránek navíc.'
 postStatus: Published
 authorID: 0
 sectionID: 1
-category: []
 no_ads: true
 og_title: 'Ebook „Vzhůru do CSS3“ verze 1.4: nové texty o Media Queries, prohlížečích a další'
 og_description: 'Kapitola o Media Queries je zgruntu nová atd. 12 stránek navíc.'

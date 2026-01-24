@@ -1,10 +1,11 @@
 ---
 id: desktopove-zlozvyky
 title: 'Opusťte desktopové zlozvyky'
+category:
+  - netechnicke
 heading: 'Opusťte desktopové zlozvyky'
 perex: ''
 published: false
-category: []
 category_highlight: false
 include_rss: false
 no_ads: false

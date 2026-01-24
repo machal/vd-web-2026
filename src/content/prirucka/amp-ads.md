@@ -1,10 +1,11 @@
 ---
 id: amp-ads
 title: 'AMP Ads'
+category:
+  - amp
 heading: 'AMP Ads'
 perex: ''
 published: false
-category: []
 category_highlight: false
 include_rss: false
 no_ads: false

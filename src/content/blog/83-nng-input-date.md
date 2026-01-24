@@ -1,13 +1,14 @@
 ---
 postID: 83
 postTitle: 'NN Group: Jak vylepšit formulářové prvky pro vložení datumu?'
+category:
+  - html
 postUrlId: nng-input-date
 postDateTime: '2017-02-09 00:00:00'
 excerpt: 'Stručné shrnutí článku. Jak vylepšit input type=date z pohledu uživatelského.'
 postStatus: Published
 authorID: 0
 sectionID: 1
-category: []
 no_ads: false
 og_title: 'NN Group: Jak vylepšit formulářové prvky pro vložení datumu?'
 og_description: 'Stručné shrnutí článku. Jak vylepšit input type=date z pohledu uživatelského.'

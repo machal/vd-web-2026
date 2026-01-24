@@ -1,13 +1,14 @@
 ---
 postID: 104
 postTitle: 'WordPress, SVG a Javascript: naučte se něco nového na březnových kurzech'
+category:
+  - javascript
 postUrlId: kurzy-2018-jaro
 postDateTime: 2018-02-14
 excerpt: 'Obě má školení už proběhla, takže vás rád zvu na akce kolegů Honzy Biena, Michala Matušky a Rikiho Fridricha.'
 postStatus: Published
 authorID: 1
 sectionID: 1
-category: []
 no_ads: true
 og_title: 'WordPress, SVG a Javascript: naučte se něco nového na březnových kurzech'
 og_description: 'Obě má školení už proběhla, takže vás rád zvu na akce kolegů Honzy Biena, Michala Matušky a Rikiho Fridricha.'

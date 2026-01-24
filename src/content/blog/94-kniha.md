@@ -1,13 +1,14 @@
 ---
 postID: 94
 postTitle: 'Teď si můžete objednat i tištěnou verzi knihy „Vzhůru do (responzivního) webdesignu“'
+category:
+  - responzivni-design
 postUrlId: kniha
 postDateTime: '2017-08-03 00:00:00'
 excerpt: 'Hurá!'
 postStatus: Published
 authorID: 0
 sectionID: 1
-category: []
 no_ads: true
 og_title: 'Teď si můžete objednat i tištěnou verzi knihy „Vzhůru do (responzivního) webdesignu“'
 og_description: 'Hurá!'

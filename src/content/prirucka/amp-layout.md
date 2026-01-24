@@ -1,10 +1,11 @@
 ---
 id: amp-layout
 title: 'Systém rozvržení v AMP'
+category:
+  - amp
 heading: 'Systém rozvržení v AMP'
 perex: ''
 published: false
-category: []
 category_highlight: false
 include_rss: false
 no_ads: false

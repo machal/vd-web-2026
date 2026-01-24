@@ -1,10 +1,11 @@
 ---
 id: amp-predavani
 title: 'Předávání stavu mezi AMP a non-AMP'
+category:
+  - amp
 heading: 'Předávání stavu mezi AMP a non-AMP'
 perex: ''
 published: false
-category: []
 category_highlight: false
 include_rss: false
 no_ads: false

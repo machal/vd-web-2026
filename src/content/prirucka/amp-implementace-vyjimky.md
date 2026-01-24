@@ -1,10 +1,11 @@
 ---
 id: amp-implementace-vyjimky
 title: 'Nejprve HTML, pak AMP'
+category:
+  - amp
 heading: 'Nejprve HTML, pak AMP'
 perex: ''
 published: false
-category: []
 category_highlight: false
 include_rss: false
 no_ads: false

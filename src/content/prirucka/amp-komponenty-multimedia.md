@@ -1,10 +1,11 @@
 ---
 id: amp-komponenty-multimedia
 title: 'Komponenty pro multimediální obsah'
+category:
+  - html
 heading: 'Komponenty pro multimediální obsah'
 perex: ''
 published: false
-category: []
 category_highlight: false
 include_rss: false
 no_ads: false

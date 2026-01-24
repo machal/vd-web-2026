@@ -1,10 +1,11 @@
 ---
 id: amp-kritika-standardy
 title: 'Kritika AMP vzhledem ke standardům'
+category:
+  - amp
 heading: 'Kritika AMP vzhledem ke standardům'
 perex: ''
 published: false
-category: []
 category_highlight: false
 include_rss: false
 no_ads: false

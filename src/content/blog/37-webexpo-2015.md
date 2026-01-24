@@ -1,6 +1,8 @@
 ---
 postID: 37
 postTitle: 'Důvody proč jít na WebExpo 2015? Tady jich máte osm'
+category:
+  - webdesign
 postUrlId: webexpo-2015
 postDateTime: '2015-09-07 00:00:00'
 excerpt: 'Z pohledu vývoje webového UI bychom letošní WebExpo mohli pojmenovat jako „architektonické”.'

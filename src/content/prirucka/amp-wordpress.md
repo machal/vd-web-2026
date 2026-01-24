@@ -1,10 +1,11 @@
 ---
 id: amp-wordpress
 title: 'AMP ve WordPressu s oficiálním pluginem: Bleskurychlé stránky za málo práce'
+category:
+  - amp
 heading: 'AMP ve WordPressu s oficiálním pluginem: Bleskurychlé stránky za málo práce'
 perex: ''
 published: true
-category: []
 category_highlight: false
 include_rss: false
 no_ads: false

@@ -1,6 +1,8 @@
 ---
 postID: 27
 postTitle: 'Podzimní termíny školení a nové prostory k tomu'
+category:
+  - responzivni-design
 postUrlId: skoleni-podzim-2014
 postDateTime: '2014-08-28 00:00:00'
 excerpt: 'Výrazněji jsem zaktualizoval obsah „Dnešního webového frontendu” a celodenní školení přesunul do Konferenčního centra Greeenpoint. Ale ani kurzy Gruntu/Gulpu, responzivního webdesignu nebo Bootstrapu nejsou bez novinek. Pojďme si o nich prozradit více.'

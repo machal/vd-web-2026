@@ -11,6 +11,7 @@ category:
   - rychlost
   - lighthouse
   - nástroje
+  - rychlost-nacitani
 no_ads: false
 include_rss: true
 category_highlight: true

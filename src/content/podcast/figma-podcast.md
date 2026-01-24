@@ -11,6 +11,7 @@ category:
   - design
   - figma
   - adobe
+  - nastroje
 no_ads: true
 include_rss: true
 category_highlight: true

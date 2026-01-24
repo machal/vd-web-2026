@@ -10,6 +10,7 @@ sectionID: 1
 category:
   - js
   - rychlost
+  - javascript
 no_ads: false
 include_rss: true
 category_highlight: true

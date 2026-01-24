@@ -1,6 +1,8 @@
 ---
 postID: 18
 postTitle: 'Stav trhu mobilních prohlížečů v Česku'
+category:
+  - prohlizece
 postUrlId: mobilni-prohlizece
 postDateTime: '2014-06-09 00:00:00'
 excerpt: 'Jaké mobilní prohlížeče dnes lidé v ČR používají a v jakých tedy musíte své weby testovat? V prvním z řady článků se podíváme jak vypadá aktuální zdejší prohlížečový trh na tabletech a smartphonech.'

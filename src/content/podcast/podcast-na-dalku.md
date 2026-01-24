@@ -1,6 +1,8 @@
 ---
 postID: 165
 postTitle: 'Podcast: Se Zuzanou Šumlanskou a Honzou Králem o práci na dálku'
+category:
+  - nastroje
 postUrlId: podcast-na-dalku
 postDateTime: 2020-04-16
 excerpt: 'Zuzka má k práci na dálku ambivalentní vztah, Honza si zase neumí představit, že by na dálku nepracoval. A co Robin a Martin?'

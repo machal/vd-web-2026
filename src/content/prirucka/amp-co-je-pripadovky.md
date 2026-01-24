@@ -1,10 +1,11 @@
 ---
 id: amp-co-je-pripadovky
 title: 'Co přineslo firmám nasazení AMP?'
+category:
+  - amp
 heading: 'Co přineslo firmám nasazení AMP?'
 perex: ''
 published: true
-category: []
 category_highlight: false
 include_rss: false
 no_ads: false

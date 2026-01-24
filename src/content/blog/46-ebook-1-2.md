@@ -1,6 +1,8 @@
 ---
 postID: 46
 postTitle: 'Ebook „Vzhůru do CSS3“ vyšel ve verzi 1.2'
+category:
+  - css
 postUrlId: ebook-1-2
 postDateTime: '2016-01-11 00:00:00'
 excerpt: 'V prosinci šla do světa nová verze ebooku. A protože to v předvánočním shonu mohlo zapadnout, zde je sumář novinek.'

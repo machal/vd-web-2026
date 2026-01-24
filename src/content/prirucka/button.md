@@ -1,10 +1,11 @@
 ---
 id: button
 title: 'Vše o prvku BUTTON a tlačítkách v HTML'
+category:
+  - html
 heading: 'Vše o prvku BUTTON a tlačítkách v HTML'
 perex: ''
 published: true
-category: []
 category_highlight: false
 include_rss: false
 no_ads: false

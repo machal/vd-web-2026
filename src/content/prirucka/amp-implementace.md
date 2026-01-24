@@ -1,10 +1,11 @@
 ---
 id: amp-implementace
 title: 'Možnosti implementace AMP do webů'
+category:
+  - amp
 heading: 'Možnosti implementace AMP do webů'
 perex: ''
 published: false
-category: []
 category_highlight: false
 include_rss: false
 no_ads: false

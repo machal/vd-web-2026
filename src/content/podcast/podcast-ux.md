@@ -1,6 +1,8 @@
 ---
 postID: 107
 postTitle: 'Podcast: S Honzou Kvasničkou o UX a spolupráci designérů s vývojáři'
+category:
+  - webdesign
 postUrlId: podcast-ux
 postDateTime: 2018-04-06
 excerpt: 'Co dělají dnešní UXáci? Jak dělat jednoduché uživatelské testování a proč je důležité, aby u něj byli všichni.'

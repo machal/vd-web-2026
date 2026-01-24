@@ -1,10 +1,11 @@
 ---
 id: responzivni-layout
 title: 'Responzivní layout'
+category:
+  - webdesign
 heading: 'Responzivní layout'
 perex: ''
 published: false
-category: []
 category_highlight: false
 include_rss: false
 no_ads: false

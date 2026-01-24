@@ -1,10 +1,11 @@
 ---
 id: metrika-fmp
 title: 'Metrika „První smysluplné vykreslení“ (First Meaningful Paint, FMP)'
+category:
+  - rychlost-nacitani
 heading: 'Metrika „První smysluplné vykreslení“ (First Meaningful Paint, FMP)'
 perex: ''
 published: true
-category: []
 category_highlight: false
 include_rss: false
 no_ads: false

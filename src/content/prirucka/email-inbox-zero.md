@@ -1,10 +1,11 @@
 ---
 id: email-inbox-zero
 title: 'Inbox Zero: jak se zbavit e-mailového chaosu'
+category:
+  - netechnicke
 heading: 'Inbox Zero: jak se zbavit e-mailového chaosu'
 perex: ''
 published: true
-category: []
 category_highlight: false
 include_rss: false
 no_ads: false

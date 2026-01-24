@@ -1,10 +1,11 @@
 ---
 id: media-queries-tipy
 title: 'Tipy a triky k Media Queries'
+category:
+  - css
 heading: 'Tipy a triky k Media Queries'
 perex: ''
 published: false
-category: []
 category_highlight: false
 include_rss: false
 no_ads: false

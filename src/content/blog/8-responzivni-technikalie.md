@@ -1,6 +1,8 @@
 ---
 postID: 8
 postTitle: 'State of the art responzivních technikálií'
+category:
+  - responzivni-design
 postUrlId: responzivni-technikalie
 postDateTime: '2013-11-25 00:00:00'
 excerpt: 'Definice responzivního webdesignu z doby před třemi a půl lety je dnes nedostačující. Problémy jsou především v rychlosti načítání webů a efektivitě práce. Myslím si, že za oba z velké části mohou naše pracovní postupy.'

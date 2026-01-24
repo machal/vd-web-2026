@@ -1,6 +1,8 @@
 ---
 postID: 151
 postTitle: 'Podcast: S Alešem Nešetřilem o STRV, prezentaci své práce, WorkResponsibly.org a Webflow'
+category:
+  - webdesign
 postUrlId: podcast-ales-nesetril
 postDateTime: 2019-10-21
 excerpt: 'Náš host vede designéry v STRV, má zajímavý profil na Instagramu, dělá krásné bokovky jako WorkResponsibly.org a do toho všeho je staví na Webflow.'

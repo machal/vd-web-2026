@@ -1,6 +1,8 @@
 ---
 postID: 99
 postTitle: 'Podcast: S Vuem z Avocode o nástrojích mezi designéry a vývojáři'
+category:
+  - webdesign
 postUrlId: podcast-avocode
 postDateTime: 2017-12-17
 excerpt: 'Konec Photoshopu v Čechách? Pro webdesign snad už ano.'

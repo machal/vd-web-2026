@@ -1,6 +1,8 @@
 ---
 postID: 9
 postTitle: 'Nové školení: Bootstrap a front-end frameworky'
+category:
+  - bootstrap
 postUrlId: nove-skoleni-bootstrap
 postDateTime: '2013-11-27 00:00:00'
 excerpt: 'Novou vlnu front-end frameworků a hlavně Bootstrap a Foundation už pěkně dlouho považuji za skvělé nástroje. A mám radost, když vidím kolik dokáží ušetřit práce když se správně používají.'

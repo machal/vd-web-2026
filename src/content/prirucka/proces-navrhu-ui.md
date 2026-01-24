@@ -1,10 +1,11 @@
 ---
 id: proces-navrhu-ui
 title: 'Proces návrhu uživatelského rozhraní'
+category:
+  - nastroje
 heading: 'Proces návrhu uživatelského rozhraní'
 perex: ''
 published: false
-category: []
 category_highlight: false
 include_rss: false
 no_ads: false

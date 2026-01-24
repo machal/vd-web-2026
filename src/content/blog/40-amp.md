@@ -1,13 +1,14 @@
 ---
 postID: 40
 postTitle: 'AMP opravuje a zároveň rozbíjí World Wide Web'
+category:
+  - rychlost-nacitani
 postUrlId: amp
 postDateTime: 2015-10-13
 excerpt: 'Google řeší elegantně a otevřeně problém s rychlostí načítání. Na druhou stranu tady vzniká možnost závislosti velké části Webu na jeho vrtoších.'
 postStatus: Published
 authorID: 1
 sectionID: 1
-category: []
 no_ads: false
 include_rss: true
 category_highlight: true

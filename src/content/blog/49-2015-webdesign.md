@@ -1,6 +1,8 @@
 ---
 postID: 49
 postTitle: 'Jaký byl rok 2015 ve webdesignu s důrazem na frontend kodéřinu'
+category:
+  - css
 postUrlId: 2015-webdesign
 postDateTime: '2016-01-25 00:00:00'
 excerpt: 'Javascript, Adobe Comet, EU cookies, PostCSS, Google AMP… Málo toho nebylo!'

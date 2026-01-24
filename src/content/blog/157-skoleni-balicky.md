@@ -9,6 +9,7 @@ authorID: 1
 sectionID: 1
 category:
   - školení
+  - skoleni
 no_ads: true
 include_rss: true
 category_highlight: true

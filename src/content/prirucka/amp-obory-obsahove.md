@@ -1,10 +1,11 @@
 ---
 id: amp-obory-obsahove
 title: 'Větší obsahové weby'
+category:
+  - amp
 heading: 'Větší obsahové weby'
 perex: ''
 published: false
-category: []
 category_highlight: false
 include_rss: false
 no_ads: false

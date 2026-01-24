@@ -1,6 +1,8 @@
 ---
 postID: 54
 postTitle: 'Školení Javascriptu a SVG nově na Vzhůru dolů'
+category:
+  - svg
 postUrlId: skoleni-javascript-svg
 postDateTime: '2016-03-15 00:00:00'
 excerpt: 'Nově organizuji i školení Javascriptu a SVG. Obě témata vás naučí odborníci na slovo vzatí. Riki Fridrich a Michal Matuška.'

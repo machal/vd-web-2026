@@ -1,10 +1,11 @@
 ---
 id: html-script
 title: 'Značka SCRIPT: Vložení JavaScriptu do HTML'
+category:
+  - html
 heading: 'Značka SCRIPT: Vložení JavaScriptu do HTML'
 perex: ''
 published: true
-category: []
 category_highlight: false
 include_rss: false
 no_ads: false

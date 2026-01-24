@@ -1,10 +1,11 @@
 ---
 id: html5-struktura
 title: 'Jak definovat strukturu v HTML a proč jsem začal mít rád HTML5 tagy'
+category:
+  - html
 heading: 'Jak definovat strukturu v HTML a proč jsem začal mít rád HTML5 tagy'
 perex: ''
 published: true
-category: []
 category_highlight: false
 include_rss: false
 no_ads: false

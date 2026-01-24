@@ -1,10 +1,11 @@
 ---
 id: svg-use
 title: 'USE v SVG: klonování šetří čas a data'
+category:
+  - svg
 heading: 'USE v SVG: klonování šetří čas a data'
 perex: ''
 published: true
-category: []
 category_highlight: false
 include_rss: false
 no_ads: false

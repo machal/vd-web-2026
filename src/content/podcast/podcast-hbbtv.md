@@ -1,6 +1,8 @@
 ---
 postID: 105
 postTitle: 'Podcast: S Lukášem Kokoškou o HbbTV, chytrých televizích a dálkových ovladačích'
+category:
+  - css
 postUrlId: podcast-hbbtv
 postDateTime: 2018-03-06
 excerpt: 'HbbTV jako tvorba webů pro televize? Hmm, je to složitější. Vše podstatné se dozvíte v dalším podcastu. Tak vzhůru do něj.'

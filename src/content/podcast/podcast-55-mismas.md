@@ -10,6 +10,7 @@ sectionID: 1
 category:
   - komunity
   - frontendisti.cz
+  - rychlost-nacitani
 no_ads: true
 include_rss: true
 category_highlight: true

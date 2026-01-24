@@ -1,6 +1,8 @@
 ---
 postID: 19
 postTitle: 'Mobilní prohlížeč kde lidé tráví nejvíc času? Nejspíš se jmenuje Facebook'
+category:
+  - responzivni-design
 postUrlId: prohlizec-facebook
 postDateTime: '2014-06-11 00:00:00'
 excerpt: 'Dnes o klesajícím a ve skutečnosti neklesajícím času, který lidé na mobilech tráví v prohlížečích. O Facebooku. O pomalém mobilním Safari v něm. A o WebView, UIWebView pro ty co se zajímají o technikálie.'

@@ -1,13 +1,14 @@
 ---
 postID: 95
 postTitle: 'Rozhovor před WebExpo: S Markem Robbinsem o moderním kódování e-mailů'
+category:
+  - css
 postUrlId: mark-robbins
 postDateTime: '2017-09-07 00:00:00'
 excerpt: 'Umíte si představit kódování newsletterů bez tabulek a inline stylů? Používání moderních CSS3 technologií nebo třeba SVG tamtéž? Sci-fi!?'
 postStatus: Published
 authorID: 0
 sectionID: 1
-category: []
 no_ads: false
 og_title: 'Rozhovor před WebExpo: S Markem Robbinsem o moderním kódování e-mailů'
 og_description: 'Umíte si představit kódování newsletterů bez tabulek a inline stylů? Používání moderních CSS3 technologií nebo třeba SVG tamtéž? Sci-fi!?'

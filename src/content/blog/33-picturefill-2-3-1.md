@@ -1,6 +1,8 @@
 ---
 postID: 33
 postTitle: 'Prosím, aktualizujte Picturefill na 2.3.1'
+category:
+  - responzivni-design
 postUrlId: picturefill-2-3-1
 postDateTime: '2015-05-29 00:00:00'
 excerpt: 'Pokud tak neučiníte, na webu vám mohou přestat fungovat obrázky. A nebo – ještě lépe – prohlížeče zmrví nativní implementaci responzivních obrázků.'

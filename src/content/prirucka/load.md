@@ -1,10 +1,11 @@
 ---
 id: load
 title: 'Událost Load'
+category:
+  - css
 heading: 'Událost Load'
 perex: ''
 published: true
-category: []
 category_highlight: false
 include_rss: false
 no_ads: false

@@ -1,10 +1,11 @@
 ---
 id: amp-co-je-rychlost-predevsim
 title: 'AMP, rychlost především'
+category:
+  - rychlost-nacitani
 heading: 'AMP, rychlost především'
 perex: ''
 published: false
-category: []
 category_highlight: false
 include_rss: false
 no_ads: false

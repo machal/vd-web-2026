@@ -1,13 +1,14 @@
 ---
 postID: 196
 postTitle: '#FrontKon: První česká frontendová konference'
+category:
+  - css
 postUrlId: konference
 postDateTime: 2021-05-12
 excerpt: 'Ve štábu spolku Frontendisti.cz organizujeme první českou frontendovou konferenci a zhmotňujeme tak něco, o čem už dlouhá léta mluvíme.'
 postStatus: Published
 authorID: 1
 sectionID: 1
-category: []
 no_ads: true
 include_rss: true
 category_highlight: true

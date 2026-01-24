@@ -1,13 +1,14 @@
 ---
 postID: 124
 postTitle: 'Nové školení „Nástroje Javascriptu“ (detailně o NPM, Yarn, Webpack, Karma, Mocha, Chai, refaktoring, linting…)'
+category:
+  - nastroje
 postUrlId: nastroje-js
 postDateTime: 2018-10-16
 excerpt: 'Pokračování Principů Javascriptu je tady. Riki Fridrich si pro vás připravil přehled nástrojů a technik pro automatizaci, testování a udržování kvality kódu.'
 postStatus: Published
 authorID: 1
 sectionID: 1
-category: []
 no_ads: true
 include_rss: true
 category_highlight: true

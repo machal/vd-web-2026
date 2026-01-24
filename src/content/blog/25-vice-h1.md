@@ -1,13 +1,14 @@
 ---
 postID: 25
 postTitle: 'Více H1 ve stránce? Klidně, ale ne s HTML5 osnovou dokumentu'
+category:
+  - html
 postUrlId: vice-h1
 postDateTime: 2014-08-22
 excerpt: 'Více H1 ve stránce mít lze, ale nepočítejte, že to bude fungovat tak jako nastiňuje článek The Truth About Multiple H1 Tags in the HTML5 Era.'
 postStatus: Published
 authorID: 1
 sectionID: 1
-category: []
 no_ads: false
 include_rss: true
 category_highlight: true

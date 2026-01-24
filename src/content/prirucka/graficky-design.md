@@ -1,10 +1,11 @@
 ---
 id: graficky-design
 title: 'Grafický design'
+category:
+  - webdesign
 heading: 'Grafický design'
 perex: ''
 published: false
-category: []
 category_highlight: false
 include_rss: false
 no_ads: false
