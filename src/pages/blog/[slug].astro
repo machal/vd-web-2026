@@ -7,6 +7,7 @@ import Footer from '../../components/Footer.astro';
 import ArticleHeader from '../../components/ArticleHeader.astro';
 import ArticleFooter from '../../components/ArticleFooter.astro';
 import { categories, type CategoryConfig } from '../../data/categories';
+import { getRelatedArticles } from '../../utils/get-related-articles';
 
 export async function getStaticPaths() {
   const blogPosts = await getCollection('blog');
@@ -40,9 +41,12 @@ function getCategoriesForPost(postTags: string[] = []): CategoryConfig[] {
 
 const postCategories = getCategoriesForPost(post.data.tags);
 
-// Debug: zobrazit tagy a kategorie
-// console.log('Post tags:', post.data.tags);
-// console.log('Post categories:', postCategories);
+// Načíst podobné články podle tagů
+const relatedArticles = await getRelatedArticles(
+  post.data.tags || [],
+  post.slug,
+  'blog'
+);
 ---
 
 <BaseLayout
@@ -152,7 +156,7 @@ const postCategories = getCategoriesForPost(post.data.tags);
       </div>
     </div>
 
-    <ArticleFooter post={post} categories={postCategories} />
+    <ArticleFooter post={post} categories={postCategories} relatedArticles={relatedArticles} />
   </main>
   
   <script is:inline src="/assets/js/vrdl.min.js"></script>

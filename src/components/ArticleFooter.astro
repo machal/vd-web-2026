@@ -2,12 +2,36 @@
 import type { CollectionEntry } from 'astro:content';
 import type { CategoryConfig } from '../data/categories';
 
+type ArticleEntry = CollectionEntry<'prirucka'> | CollectionEntry<'blog'> | CollectionEntry<'podcast'>;
+
 interface Props {
   post: CollectionEntry<'blog' | 'podcast' | 'prirucka'>;
   categories: CategoryConfig[];
+  relatedArticles?: ArticleEntry[];
 }
 
-const { post, categories } = Astro.props;
+const { post, categories, relatedArticles = [] } = Astro.props;
+
+function formatDate(date: Date | undefined): string {
+  if (!date) return '';
+  return new Intl.DateTimeFormat('cs-CZ', {
+    day: 'numeric',
+    month: 'numeric',
+    year: 'numeric',
+  }).format(date);
+}
+
+function getArticleUrl(article: ArticleEntry): string {
+  if (article.collection === 'prirucka') {
+    return `/prirucka/${article.data.id}`;
+  }
+  return `/${article.collection}/${article.slug}`;
+}
+
+function truncateTitle(title: string, maxLength: number = 70): string {
+  if (title.length <= maxLength) return title;
+  return title.substring(0, maxLength).trim() + '…';
+}
 
 // URL článku pro sdílení
 const articleUrl = post.collection === 'blog' 
@@ -26,6 +50,30 @@ const articleUrl = post.collection === 'blog'
     <svg class="vd-logo" viewBox="0 0 28 25" xmlns:xlink="http://www.w3.org/1999/xlink">
       <use class="vd-logo-svg" xlink:href="#vd-symbol" x="0" y="0"></use>
     </svg>
+
+    {relatedArticles.length > 0 && (
+      <div class="row jc-c">
+        <div class="col w-50-sm">
+          <aside role="complementary" aria-labelledby="clanky-heading" class="section hidden-print pt-0">
+            <h2 id="clanky-heading" class="ta-c pb-0 h3">
+              Podobné články
+            </h2>
+            <ul class="list list--bordered list--block-hover list--spaced">
+              {relatedArticles.map(article => (
+                <li class="list__item">
+                  <a href={getArticleUrl(article)} class="list__item-link">
+                    {truncateTitle(article.data.title || '')}
+                    {article.data.date && (
+                      <span class="text-color-lightest"> ({formatDate(article.data.date)})</span>
+                    )}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </aside>
+        </div>
+      </div>
+    )}
 
     {categories.length > 0 && (
       <div class="row">

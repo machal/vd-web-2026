@@ -8,6 +8,7 @@ import ArticleHeader from '../../components/ArticleHeader.astro';
 import ArticleFooter from '../../components/ArticleFooter.astro';
 import { categories, type CategoryConfig } from '../../data/categories';
 import { enrichPriruckaEntry } from '../../utils/extract-content-fallback';
+import { getRelatedArticles } from '../../utils/get-related-articles';
 import { readFileSync } from 'fs';
 import { join } from 'path';
 
@@ -92,6 +93,13 @@ function getCategoriesForPost(postTags: string[] = []): CategoryConfig[] {
 
 const postCategories = getCategoriesForPost(item.data.tags || []);
 
+// Načíst podobné články podle tagů
+const relatedArticles = await getRelatedArticles(
+  item.data.tags || [],
+  item.data.id,
+  'prirucka'
+);
+
 // Použít obohacená data pro zobrazení
 // Priorita: enrichedData.heading > enrichedData.title > item.data.title
 const displayTitle = enrichedData.heading || enrichedData.title || item.data.title;
@@ -174,7 +182,7 @@ const displayOgDescription = enrichedData.og_description || enrichedData.descrip
       </div>
     </div>
 
-    <ArticleFooter post={item} categories={postCategories} />
+    <ArticleFooter post={item} categories={postCategories} relatedArticles={relatedArticles} />
   </main>
   
   <script is:inline src="/assets/js/vrdl.min.js"></script>

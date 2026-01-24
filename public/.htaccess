@@ -1,12 +1,254 @@
-# Přesměrování pro staré URL kurzů
-# Všechny /kurzy/* URL přesměrovat na /kurzy
+# =============================================================================
+# Vzhuru dolu .htaccess
+# =============================================================================
 
+# -----------------------------------------------------------------------------
+# CORS pro fonty (potrebne pro CodePen a dalsi externi domeny)
+# -----------------------------------------------------------------------------
+
+<FilesMatch "\.(ttf|otf|eot|woff|woff2)$">
+    <IfModule mod_headers.c>
+        Header set Access-Control-Allow-Origin "*"
+    </IfModule>
+</FilesMatch>
+
+# -----------------------------------------------------------------------------
+# Zakladni bezpecnost
+# -----------------------------------------------------------------------------
+
+# Zakazat listovani adresaru
+Options -Indexes
+
+# Mod rewrite
 RewriteEngine On
 
-# Přesměrování /kurzy/cokoliv na /kurzy (301 Permanent)
+# Dotfiles nezobrazujeme
+RewriteRule /\.|^\. - [F]
+
+# Nebezpecne adresare presmerujeme na 404
+RedirectMatch 404 ^/node_modules/(.*)
+
+# -----------------------------------------------------------------------------
+# Redirect na www a HTTPS
+# -----------------------------------------------------------------------------
+
+# Redirect na www
+RewriteCond %{HTTP_HOST} ^vzhurudolu\.cz$ [NC]
+RewriteRule ^(.*)$ https://www.vzhurudolu.cz/$1 [R=301,L,NE]
+
+# Redirect na HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# -----------------------------------------------------------------------------
+# Redirecty e-booku a knizek
+# -----------------------------------------------------------------------------
+
+RedirectMatch 301 ^/kniha-rwd$ /kniha-responzivni-design
+RedirectMatch 301 ^/ebook-responzivni$ /kniha-responzivni-design
+RedirectMatch 301 ^/ebook-responzivni/(.*) /kniha-responzivni-design/$1
+RedirectMatch 301 ^/kniha-responzivni-design/kniha$ /kniha-responzivni-design
+RedirectMatch 301 ^/ebook$ /ebook-css3
+RedirectMatch 301 ^/ebook/(.*) /ebook-css3/$1
+RedirectMatch 301 ^/kniha-responzivni-design/doplatek$ /kniha-responzivni-design
+
+# -----------------------------------------------------------------------------
+# Kratke zkratky (pouzivane v e-bookach, napr. vrdl.cz/?/)
+# -----------------------------------------------------------------------------
+
+RedirectMatch 301 ^/p/(.*) /prirucka/$1
+RedirectMatch 301 ^/b/(.*) /blog/$1
+RedirectMatch 301 ^/k/(.*) /kurzy/$1
+RedirectMatch 301 ^/v/(.*) /video/$1
+RedirectMatch 301 ^/f/(.*) /files/$1
+RedirectMatch 301 ^/vdampd/(.*) /files/vdamp/demo/$1
+
+# -----------------------------------------------------------------------------
+# Checklist
+# -----------------------------------------------------------------------------
+
+RedirectMatch 301 ^/checklist$ /prirucka/checklist
+
+# -----------------------------------------------------------------------------
+# Presmerovani starych kurzu
+# -----------------------------------------------------------------------------
+
+# Vsechny /kurzy/* URL presmerovat na /kurzy
 RewriteRule ^kurzy/(.+)$ /kurzy/ [R=301,L]
 
-# Přesměrování bez trailing slash na verzi s trailing slash
+# Specificke stare URL kurzu
+RedirectMatch 301 ^/frontend-kurz$ /kurzy
+RedirectMatch 301 ^/kurzy/webovy-frontend$ /kurzy
+RedirectMatch 301 ^/kurzy/webova-koderina$ /kurzy
+RedirectMatch 301 ^/kurzy/pokrocily-responzivni-design$ /kurzy
+RedirectMatch 301 ^/kurzy/rychlost-nacitani$ /kurzy
+
+# -----------------------------------------------------------------------------
+# CSS prejmenovani (css3-* -> css-*)
+# -----------------------------------------------------------------------------
+
+RedirectMatch 301 ^/prirucka/css3-multicolumn$ /prirucka/css-multicolumn
+RedirectMatch 301 ^/prirucka/css3-flexbox$ /prirucka/css-flexbox
+RedirectMatch 301 ^/prirucka/viewport-mobily$ /prirucka/viewport
+
+# -----------------------------------------------------------------------------
+# AMP redirect (AMP zrusen)
+# -----------------------------------------------------------------------------
+
+RedirectMatch 301 ^/amp/(.*) /$1
+
+# -----------------------------------------------------------------------------
+# Bootstrap a dalsi
+# -----------------------------------------------------------------------------
+
+RedirectMatch 301 ^/frontend-frameworky$ /bootstrap
+
+# -----------------------------------------------------------------------------
+# Prirucka homepage -> kategorie CSS
+# -----------------------------------------------------------------------------
+
+RedirectMatch 301 ^/prirucka$ /css
+
+# -----------------------------------------------------------------------------
+# Legacy redirecty do /data/ (stare soubory)
+# -----------------------------------------------------------------------------
+
+RedirectMatch 301 ^/css3/(.*) /prirucka/css3/$1
+RedirectMatch 301 ^/30/(.*) /data/30/$1
+RedirectMatch 301 ^/archiv/(.*) /data/archiv/$1
+RedirectMatch 301 ^/blank/(.*) /data/blank/$1
+RedirectMatch 301 ^/css-frameworks/(.*) /data/css-frameworks/$1
+RedirectMatch 301 ^/fagaras/(.*) /data/fagaras/$1
+RedirectMatch 301 ^/historie/(.*) /data/historie/$1
+RedirectMatch 301 ^/images/(.*) /data/images-till-2012/$1
+RedirectMatch 301 ^/public/(.*) /data/projects/$1
+RedirectMatch 301 ^/projects/(.*) /data/projects/$1
+RedirectMatch 301 ^/tumblr/(.*) /data/tumblr-till-2012/$1
+
+# -----------------------------------------------------------------------------
+# Redirect starych clanku z prirucky (/prirucka/css3?p=transitions)
+# -----------------------------------------------------------------------------
+
+RewriteCond %{QUERY_STRING} ^p=(.*)$
+RewriteRule ^prirucka/css3?$ /prirucka/css3-%1? [R=301,L]
+
+# -----------------------------------------------------------------------------
+# Trailing slash handling
+# -----------------------------------------------------------------------------
+
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_URI} !(.*)/$
 RewriteRule ^(.*)$ /$1/ [R=301,L]
+
+# =============================================================================
+# Komprese (mod_deflate)
+# HTML5 Boilerplate: https://github.com/h5bp/server-configs-apache
+# =============================================================================
+
+<IfModule mod_deflate.c>
+
+    # Force compression for mangled Accept-Encoding request headers
+    <IfModule mod_setenvif.c>
+        <IfModule mod_headers.c>
+            SetEnvIfNoCase ^(Accept-EncodXng|X-cept-Encoding|X{15}|~{15}|-{15})$ ^((gzip|deflate)\s*,?\s*)+|[X~-]{4,13}$ HAVE_Accept-Encoding
+            RequestHeader append Accept-Encoding "gzip,deflate" env=HAVE_Accept-Encoding
+        </IfModule>
+    </IfModule>
+
+    # Compress all output labeled with one of the following media types
+    <IfModule mod_filter.c>
+        AddOutputFilterByType DEFLATE "application/atom+xml" \
+                                      "application/javascript" \
+                                      "application/json" \
+                                      "application/ld+json" \
+                                      "application/manifest+json" \
+                                      "application/rdf+xml" \
+                                      "application/rss+xml" \
+                                      "application/schema+json" \
+                                      "application/vnd.geo+json" \
+                                      "application/vnd.ms-fontobject" \
+                                      "application/x-font-ttf" \
+                                      "application/x-javascript" \
+                                      "application/x-web-app-manifest+json" \
+                                      "application/xhtml+xml" \
+                                      "application/xml" \
+                                      "font/eot" \
+                                      "font/opentype" \
+                                      "image/bmp" \
+                                      "image/svg+xml" \
+                                      "image/vnd.microsoft.icon" \
+                                      "image/x-icon" \
+                                      "text/cache-manifest" \
+                                      "text/css" \
+                                      "text/html" \
+                                      "text/javascript" \
+                                      "text/plain" \
+                                      "text/vcard" \
+                                      "text/vnd.rim.location.xloc" \
+                                      "text/vtt" \
+                                      "text/x-component" \
+                                      "text/x-cross-domain-policy" \
+                                      "text/xml"
+    </IfModule>
+
+    # Map svgz to gzip encoding
+    <IfModule mod_mime.c>
+        AddEncoding gzip svgz
+    </IfModule>
+
+</IfModule>
+
+# =============================================================================
+# ETags
+# =============================================================================
+
+# Remove ETags as resources are sent with far-future expires headers
+<IfModule mod_headers.c>
+    Header unset ETag
+</IfModule>
+
+FileETag None
+
+# =============================================================================
+# Expires headers (cache)
+# =============================================================================
+
+<IfModule mod_expires.c>
+
+    ExpiresActive on
+    ExpiresDefault                                      "access plus 1 year"
+
+    # Data interchange
+    ExpiresByType application/atom+xml                  "access plus 1 hour"
+    ExpiresByType application/rdf+xml                   "access plus 1 hour"
+    ExpiresByType application/rss+xml                   "access plus 1 hour"
+
+    ExpiresByType application/json                      "access plus 0 seconds"
+    ExpiresByType application/ld+json                   "access plus 0 seconds"
+    ExpiresByType application/schema+json               "access plus 0 seconds"
+    ExpiresByType application/vnd.geo+json              "access plus 0 seconds"
+    ExpiresByType application/xml                       "access plus 0 seconds"
+    ExpiresByType text/xml                              "access plus 0 seconds"
+
+    # Favicon and cursor images
+    ExpiresByType image/vnd.microsoft.icon              "access plus 1 week"
+    ExpiresByType image/x-icon                          "access plus 1 week"
+
+    # HTML
+    ExpiresByType text/html                             "access plus 0 seconds"
+
+    # Manifest files
+    ExpiresByType application/manifest+json             "access plus 1 week"
+    ExpiresByType application/x-web-app-manifest+json   "access plus 0 seconds"
+    ExpiresByType text/cache-manifest                   "access plus 0 seconds"
+
+    # Other
+    ExpiresByType text/x-cross-domain-policy            "access plus 1 week"
+
+</IfModule>
+
+# =============================================================================
+# WOFF2 spravny MIME typ
+# =============================================================================
+
+AddType application/font-woff2 .woff2

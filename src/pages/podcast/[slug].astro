@@ -6,6 +6,7 @@ import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import ArticleFooter from '../../components/ArticleFooter.astro';
 import { categories, type CategoryConfig } from '../../data/categories';
+import { getRelatedArticles } from '../../utils/get-related-articles';
 
 export async function getStaticPaths() {
   const podcasts = await getCollection('podcast');
@@ -46,6 +47,13 @@ function getCategoriesForPost(postTags: string[] = []): CategoryConfig[] {
 }
 
 const postCategories = getCategoriesForPost(podcast.data.tags);
+
+// Načíst podobné články podle tagů
+const relatedArticles = await getRelatedArticles(
+  podcast.data.tags || [],
+  podcast.slug,
+  'podcast'
+);
 ---
 
 <BaseLayout
@@ -177,7 +185,7 @@ const postCategories = getCategoriesForPost(podcast.data.tags);
       </div>
     </div>
 
-    <ArticleFooter post={podcast} categories={postCategories} />
+    <ArticleFooter post={podcast} categories={postCategories} relatedArticles={relatedArticles} />
   </main>
   
   <script is:inline src="/assets/js/vrdl.min.js"></script>
