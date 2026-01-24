@@ -1,5 +1,6 @@
 import { defineConfig } from 'astro/config';
-import sitemap from '@astrojs/sitemap';
+// import sitemap from '@astrojs/sitemap'; // Vypnuto - bug s undefined.reduce()
+import { customSitemap } from './src/utils/custom-sitemap';
 import rehypeRaw from 'rehype-raw';
 import remarkGfm from 'remark-gfm';
 import { remarkHeadingIds } from './src/utils/remark-heading-ids.ts';
@@ -19,9 +20,7 @@ export default defineConfig({
   output: 'static',
   site: 'https://www.vzhurudolu.cz',
   integrations: [
-    sitemap({
-      // Sitemap se vygeneruje automaticky z routes
-    }),
+    customSitemap(),
   ],
   markdown: {
     // Shiki syntax highlighting - používáme css-variables pro možnost přepsání barev

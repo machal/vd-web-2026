@@ -1,0 +1,12 @@
+# Přesměrování pro staré URL kurzů
+# Všechny /kurzy/* URL přesměrovat na /kurzy
+
+RewriteEngine On
+
+# Přesměrování /kurzy/cokoliv na /kurzy (301 Permanent)
+RewriteRule ^kurzy/(.+)$ /kurzy/ [R=301,L]
+
+# Přesměrování bez trailing slash na verzi s trailing slash
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} !(.*)/$
+RewriteRule ^(.*)$ /$1/ [R=301,L]
