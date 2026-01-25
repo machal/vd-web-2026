@@ -25,6 +25,9 @@ RewriteEngine On
 # Dotfiles nezobrazujeme
 RewriteRule /\.|^\. - [F]
 
+# Vlastni 404 stranka
+ErrorDocument 404 /404.html
+
 # Nebezpecne adresare presmerujeme na 404
 RedirectMatch 404 ^/node_modules/(.*)
 
@@ -44,7 +47,7 @@ RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 # Redirecty e-booku a knizek
 # -----------------------------------------------------------------------------
 
-RedirectMatch 301 ^/kniha-rwd$ /kniha-responzivni-design
+RedirectMatch 301 ^/kniha-rwd$ /css-layout/
 RedirectMatch 301 ^/ebook-responzivni$ /kniha-responzivni-design
 RedirectMatch 301 ^/ebook-responzivni/(.*) /kniha-responzivni-design/$1
 RedirectMatch 301 ^/kniha-responzivni-design/kniha$ /kniha-responzivni-design
