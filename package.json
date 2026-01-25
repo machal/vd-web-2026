@@ -10,7 +10,9 @@
     "preview": "astro preview",
     "astro": "astro",
     "convert-images": "tsx scripts/convert-prirucka-images.ts",
-    "fill-heading": "node scripts/fill-heading-from-h1.js"
+    "fill-heading": "node scripts/fill-heading-from-h1.js",
+    "deploy": "./scripts/deploy.sh",
+    "deploy:setup": "./scripts/deploy-setup.sh"
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.15",

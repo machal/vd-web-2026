@@ -1,4 +1,6 @@
 import { defineConfig } from 'astro/config';
+import fs from 'node:fs';
+import path from 'node:path';
 // import sitemap from '@astrojs/sitemap'; // Vypnuto - bug s undefined.reduce()
 import { customSitemap } from './src/utils/custom-sitemap';
 import rehypeRaw from 'rehype-raw';
@@ -14,6 +16,37 @@ import { rehypePriruckaImages } from './src/utils/rehype-prirucka-images.ts';
 import { rehypeConnectedElements } from './src/utils/rehype-connected-elements.ts';
 import { rehypeRelatedToInnerBox } from './src/utils/rehype-related-to-inner-box.ts';
 import { vitePluginPriruckaImages } from './vite-plugin-prirucka-images.ts';
+
+/**
+ * Vite plugin pro kopírování dotfiles (soubory začínající tečkou) z public/ do dist/
+ * Astro/Vite ve výchozím nastavení ignoruje dotfiles při kopírování
+ */
+function vitePluginCopyDotfiles() {
+  return {
+    name: 'copy-dotfiles',
+    apply: 'build',
+    closeBundle: {
+      sequential: true,
+      handler() {
+        const publicDir = 'public';
+        const outDir = 'dist';
+        
+        // Seznam dotfiles ke zkopírování
+        const dotfiles = ['.htaccess'];
+        
+        for (const file of dotfiles) {
+          const src = path.join(publicDir, file);
+          const dest = path.join(outDir, file);
+          
+          if (fs.existsSync(src)) {
+            fs.copyFileSync(src, dest);
+            console.log(`Copied ${file} to ${outDir}/`);
+          }
+        }
+      }
+    }
+  };
+}
 
 // https://astro.build/config
 export default defineConfig({
@@ -55,6 +88,7 @@ export default defineConfig({
   vite: {
     plugins: [
       vitePluginPriruckaImages(), // Automatická konverze obrázků příručky
+      vitePluginCopyDotfiles(), // Kopírování .htaccess a dalších dotfiles do dist/
     ],
     css: {
       preprocessorOptions: {
