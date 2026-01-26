@@ -25,8 +25,9 @@ export function customSitemap(): AstroIntegration {
         // Generovat XML
         const urls = filteredPages.map((page) => {
           const url = new URL(page.pathname, site).href;
-          // Přidat trailing slash pokud chybí
-          const finalUrl = url.endsWith('/') ? url : url + '/';
+          // Použít URL tak, jak je Astro generuje (bez trailing slash, kromě root)
+          // Root URL (/) zůstane s trailing slash, ostatní bez
+          const finalUrl = url;
           return `  <url>
     <loc>${finalUrl}</loc>
   </url>`;

@@ -52,6 +52,7 @@ function vitePluginCopyDotfiles() {
 export default defineConfig({
   output: 'static',
   site: 'https://www.vzhurudolu.cz',
+  trailingSlash: 'never', // Generovat URL bez trailing slash (kromě root /)
   integrations: [
     customSitemap(),
   ],

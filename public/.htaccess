@@ -151,12 +151,24 @@ RewriteCond %{QUERY_STRING} ^p=(.*)$
 RewriteRule ^prirucka/css3?$ /prirucka/css3-%1? [R=301,L]
 
 # -----------------------------------------------------------------------------
-# Trailing slash handling
+# Trailing slash handling - přesměrování z URL s trailing slash na verzi bez (kromě root)
 # -----------------------------------------------------------------------------
 
+# Vypnout automatické přidávání trailing slash u adresářů
+DirectorySlash Off
+
+# Přesměrovat URL s trailing slash na verzi bez trailing slash (kromě root /)
+# Použijeme THE_REQUEST, který obsahuje původní požadavek (před rewrite)
+RewriteCond %{THE_REQUEST} \s(.+)/\s [NC]
+RewriteCond %{REQUEST_URI} !^/$
+RewriteRule ^(.+)/$ /$1 [R=301,L]
+
+# Zajistit, aby URL bez trailing slash našly index.html v adresáři (interní rewrite)
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_URI} !(.*)/$
-RewriteRule ^(.*)$ /$1/ [R=301,L]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteCond %{REQUEST_URI} !^/$
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI}/index.html -f
+RewriteRule ^(.*)$ /$1/index.html [L]
 
 # =============================================================================
 # Komprese (mod_deflate)
