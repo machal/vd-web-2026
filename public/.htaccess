@@ -76,8 +76,14 @@ RedirectMatch 301 ^/checklist$ /prirucka/checklist
 # Presmerovani starych kurzu
 # -----------------------------------------------------------------------------
 
-# Vsechny /kurzy/* URL presmerovat na /kurzy
-RewriteRule ^kurzy/(.+)$ /kurzy/ [R=301,L]
+# Vsechny /kurzy/* URL presmerovat na /kurzy (bez trailing slash)
+# Musíme to udělat PŘED trailing slash pravidlem
+RewriteCond %{THE_REQUEST} \s/kurzy/(.+)\s [NC]
+RewriteRule ^kurzy/(.+)$ /kurzy [R=301,L]
+
+# Přesměrovat /kurzy/ (s trailing slash) na /kurzy (bez trailing slash)
+RewriteCond %{THE_REQUEST} \s/kurzy/\s [NC]
+RewriteRule ^kurzy/$ /kurzy [R=301,L]
 
 # Specificke stare URL kurzu
 RedirectMatch 301 ^/frontend-kurz$ /kurzy
@@ -159,8 +165,10 @@ DirectorySlash Off
 
 # Přesměrovat URL s trailing slash na verzi bez trailing slash (kromě root /)
 # Použijeme THE_REQUEST, který obsahuje původní požadavek (před rewrite)
+# Vyloučíme /kurzy/, protože to už máme zpracované výše
 RewriteCond %{THE_REQUEST} \s(.+)/\s [NC]
 RewriteCond %{REQUEST_URI} !^/$
+RewriteCond %{REQUEST_URI} !^/kurzy/$
 RewriteRule ^(.+)/$ /$1 [R=301,L]
 
 # Zajistit, aby URL bez trailing slash našly index.html v adresáři (interní rewrite)
