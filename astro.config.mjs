@@ -21,14 +21,40 @@ import { vitePluginPriruckaImages } from './vite-plugin-prirucka-images.ts';
  * Rekurzivní kopírování souboru nebo adresáře (včetně dotfiles).
  */
 function copyRecursiveSync(src, dest) {
-  const stat = fs.statSync(src);
-  if (stat.isDirectory()) {
-    if (!fs.existsSync(dest)) fs.mkdirSync(dest, { recursive: true });
-    for (const name of fs.readdirSync(src)) {
-      copyRecursiveSync(path.join(src, name), path.join(dest, name));
+  try {
+    const stat = fs.statSync(src);
+    if (stat.isDirectory()) {
+      if (!fs.existsSync(dest)) fs.mkdirSync(dest, { recursive: true });
+      for (const name of fs.readdirSync(src)) {
+        copyRecursiveSync(path.join(src, name), path.join(dest, name));
+      }
+    } else {
+      // Pokud cílový soubor už existuje a je stejný, přeskočíme ho
+      if (fs.existsSync(dest)) {
+        try {
+          const srcStat = fs.statSync(src);
+          const destStat = fs.statSync(dest);
+          // Pokud jsou soubory stejné (velikost a čas modifikace), přeskočíme
+          if (srcStat.size === destStat.size && srcStat.mtimeMs === destStat.mtimeMs) {
+            return;
+          }
+        } catch (e) {
+          // Pokud nelze zkontrolovat, pokračujeme s kopírováním
+        }
+      }
+      // Zajistíme, že cílový adresář existuje
+      const destDir = path.dirname(dest);
+      if (!fs.existsSync(destDir)) {
+        fs.mkdirSync(destDir, { recursive: true });
+      }
+      fs.copyFileSync(src, dest);
     }
-  } else {
-    fs.copyFileSync(src, dest);
+  } catch (error) {
+    // Ignorujeme I/O chyby - může to být způsobeno tím, že Astro už soubor zkopíroval
+    // nebo že soubor je právě používán jiným procesem
+    if (error.code !== 'EIO' && error.code !== 'ENOENT') {
+      console.warn(`[copy-public-to-dist] Varování při kopírování ${src} -> ${dest}:`, error.message);
+    }
   }
 }
 
@@ -45,16 +71,26 @@ function vitePluginCopyPublicToDist() {
     closeBundle: {
       sequential: true,
       handler() {
-        const publicDir = path.resolve('public');
-        const outDir = path.resolve('dist');
-        if (!fs.existsSync(publicDir)) return;
+        try {
+          const publicDir = path.resolve('public');
+          const outDir = path.resolve('dist');
+          if (!fs.existsSync(publicDir)) return;
 
-        for (const name of fs.readdirSync(publicDir)) {
-          const src = path.join(publicDir, name);
-          const dest = path.join(outDir, name);
-          copyRecursiveSync(src, dest);
+          // Zajistíme, že výstupní adresář existuje
+          if (!fs.existsSync(outDir)) {
+            fs.mkdirSync(outDir, { recursive: true });
+          }
+
+          for (const name of fs.readdirSync(publicDir)) {
+            const src = path.join(publicDir, name);
+            const dest = path.join(outDir, name);
+            copyRecursiveSync(src, dest);
+          }
+          console.log('[copy-public-to-dist] public/ zkopírováno do dist/');
+        } catch (error) {
+          // Necháme build pokračovat i při chybách kopírování
+          console.warn('[copy-public-to-dist] Chyba při kopírování:', error.message);
         }
-        console.log('[copy-public-to-dist] public/ zkopírováno do dist/');
       },
     },
   };

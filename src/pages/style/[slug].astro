@@ -1,6 +1,4 @@
 ---
-import { readFileSync } from 'fs';
-import { join } from 'path';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
@@ -9,203 +7,69 @@ import StyleSubnav from '../../components/StyleSubnav.astro';
 // Vyloučení ze sitemapy
 export const sitemap = false;
 
-// Mapování slug → název souboru (používá se v getStaticPaths i v render části)
-const styleFilesMap: Record<string, { file: string; title: string }> = {
+// Mapování slug → konfigurace stránky (používá se v getStaticPaths i v render části)
+const stylePagesMap: Record<string, { title: string; content: string }> = {
   base: {
-    file: 'style-base.html',
     title: 'Systém designu pro Vzhůru dolů: typografie',
+    content: '<p>Obsah stránky o typografii bude doplněn.</p>',
   },
   colors: {
-    file: 'style-colors.html',
     title: 'Systém designu pro Vzhůru dolů: barvy',
+    content: '<p>Obsah stránky o barvách bude doplněn.</p>',
   },
   default: {
-    file: 'style-default.html',
     title: 'Systém designu pro Vzhůru dolů: default',
+    content: '<p>Obsah stránky o default stylech bude doplněn.</p>',
   },
   helpers: {
-    file: 'style-helpers.html',
     title: 'Systém designu pro Vzhůru dolů: helpery',
+    content: '<p>Obsah stránky o helper třídách bude doplněn.</p>',
   },
   modules: {
-    file: 'style-modules.html',
     title: 'Systém designu pro Vzhůru dolů: moduly',
+    content: '<p>Obsah stránky o modulech bude doplněn.</p>',
   },
 };
 
 export async function getStaticPaths() {
   // Definice přímo v getStaticPaths, protože běží v jiném kontextu
-  const files: Record<string, { file: string; title: string }> = {
+  const pages: Record<string, { title: string; content: string }> = {
     base: {
-      file: 'style-base.html',
       title: 'Systém designu pro Vzhůru dolů: typografie',
+      content: '<p>Obsah stránky o typografii bude doplněn.</p>',
     },
     colors: {
-      file: 'style-colors.html',
       title: 'Systém designu pro Vzhůru dolů: barvy',
+      content: '<p>Obsah stránky o barvách bude doplněn.</p>',
     },
     default: {
-      file: 'style-default.html',
       title: 'Systém designu pro Vzhůru dolů: default',
+      content: '<p>Obsah stránky o default stylech bude doplněn.</p>',
     },
     helpers: {
-      file: 'style-helpers.html',
       title: 'Systém designu pro Vzhůru dolů: helpery',
+      content: '<p>Obsah stránky o helper třídách bude doplněn.</p>',
     },
     modules: {
-      file: 'style-modules.html',
       title: 'Systém designu pro Vzhůru dolů: moduly',
+      content: '<p>Obsah stránky o modulech bude doplněn.</p>',
     },
   };
   
-  return Object.keys(files).map((slug) => ({
+  return Object.keys(pages).map((slug) => ({
     params: { slug },
   }));
 }
 
 const { slug } = Astro.params;
 
-if (!slug || !styleFilesMap[slug]) {
+if (!slug || !stylePagesMap[slug]) {
   return Astro.redirect('/404');
 }
 
-const styleConfig = styleFilesMap[slug];
-const htmlPath = join(process.cwd(), '_import', 'templates', styleConfig.file);
-const htmlContent = readFileSync(htmlPath, 'utf-8');
-
-// Extrakce nadpisu z <div class="page-head">
-const pageHeadMatch = htmlContent.match(/<div class="page-head[^"]*">\s*<h1>([^<]+)<\/h1>/);
-const pageTitle = pageHeadMatch ? pageHeadMatch[1] : styleConfig.title;
-
-// Extrakce obsahu z <main>
-// Struktura může být:
-// 1. <main><div class="content"> (navigace) </div><div class="content"> <div class="article"> OBSAH </div></div></main>
-// 2. <main><div class="content"> (navigace) </div><div class="content"> MODUL1 </div><div class="content"> MODUL2 </div>...</main>
-const mainMatch = htmlContent.match(/<main[^>]*>([\s\S]*?)<\/main>/);
-if (!mainMatch) {
-  throw new Error(`Could not find <main> tag in ${styleConfig.file}`);
-}
-
-const mainContent = mainMatch[1];
-
-// Odstraníme navigaci (první <div class="content"> s navigací)
-// Použijeme přesnější regex, který zachytí celý content div s navigací včetně komentářů
-const contentWithoutNav = mainContent.replace(/<div class="content[^"]*">\s*<div class="nav">[\s\S]*?<\/div>\s*<\/div>\s*(?:<!-- \/\.content -->)?/i, '').trim();
-
-// Extrahujeme všechny <div class="content"> elementy
-// Použijeme jednodušší přístup: najdeme všechny content divy a extrahujeme jejich obsah
-let articleContent = '';
-
-// Najdeme všechny <div class="content"> tagy včetně jejich uzavíracích tagů
-// Použijeme regex, který najde všechny content divy a pak správně extrahuje jejich obsah
-const contentDivMatches: Array<{ start: number; end: number }> = [];
-const contentDivRegex = /<div class="content[^"]*">/gi;
-let match;
-
-while ((match = contentDivRegex.exec(contentWithoutNav)) !== null) {
-  const startIndex = match.index;
-  let depth = 1;
-  let currentIndex = match.index + match[0].length;
-  
-  // Najdeme odpovídající </div>
-  while (depth > 0 && currentIndex < contentWithoutNav.length) {
-    const nextOpen = contentWithoutNav.indexOf('<div', currentIndex);
-    const nextClose = contentWithoutNav.indexOf('</div>', currentIndex);
-    
-    if (nextClose === -1) break;
-    
-    if (nextOpen !== -1 && nextOpen < nextClose) {
-      depth++;
-      currentIndex = nextOpen + 4;
-    } else {
-      depth--;
-      if (depth === 0) {
-        // Našli jsme konec tohoto content divu
-        contentDivMatches.push({
-          start: startIndex + match[0].length,
-          end: nextClose,
-        });
-      }
-      currentIndex = nextClose + 6;
-    }
-  }
-}
-
-if (contentDivMatches.length > 0) {
-  // Extrahujeme obsah z každého content divu
-  const contents: string[] = [];
-  
-  for (const { start, end } of contentDivMatches) {
-    const content = contentWithoutNav.substring(start, end).trim();
-    
-    // Zkontrolujeme, jestli obsahuje <div class="article">
-    // Musíme použít správné párování tagů, protože article může obsahovat vnořené divy
-    const articleStartMatch = content.match(/<div class="article[^"]*">/);
-    if (articleStartMatch) {
-      const articleStartIndex = articleStartMatch.index! + articleStartMatch[0].length;
-      let depth = 1;
-      let currentIndex = articleStartIndex;
-      
-      // Najdeme odpovídající </div> pro article
-      while (depth > 0 && currentIndex < content.length) {
-        const nextOpen = content.indexOf('<div', currentIndex);
-        const nextClose = content.indexOf('</div>', currentIndex);
-        
-        if (nextClose === -1) break;
-        
-        if (nextOpen !== -1 && nextOpen < nextClose) {
-          depth++;
-          currentIndex = nextOpen + 4;
-        } else {
-          depth--;
-          if (depth === 0) {
-            // Našli jsme konec article divu
-            const articleContent = content.substring(articleStartIndex, nextClose).trim();
-            contents.push(articleContent);
-            break;
-          }
-          currentIndex = nextClose + 6;
-        }
-      }
-    } else {
-      // Pokud není article wrapper, použijeme celý obsah
-      contents.push(content);
-    }
-  }
-  
-  // Spojíme všechny obsahy dohromady
-  articleContent = contents.join('\n');
-} else {
-  // Fallback: zkusíme najít article přímo v main (bez navigace) s párováním tagů
-  const articleStartMatch = contentWithoutNav.match(/<div class="article[^"]*">/);
-  if (articleStartMatch) {
-    const articleStartIndex = articleStartMatch.index! + articleStartMatch[0].length;
-    let depth = 1;
-    let currentIndex = articleStartIndex;
-    
-    while (depth > 0 && currentIndex < contentWithoutNav.length) {
-      const nextOpen = contentWithoutNav.indexOf('<div', currentIndex);
-      const nextClose = contentWithoutNav.indexOf('</div>', currentIndex);
-      
-      if (nextClose === -1) break;
-      
-      if (nextOpen !== -1 && nextOpen < nextClose) {
-        depth++;
-        currentIndex = nextOpen + 4;
-      } else {
-        depth--;
-        if (depth === 0) {
-          articleContent = contentWithoutNav.substring(articleStartIndex, nextClose).trim();
-          break;
-        }
-        currentIndex = nextClose + 6;
-      }
-    }
-  } else {
-    // Pokud nic nenajdeme, použijeme celý obsah bez navigace
-    articleContent = contentWithoutNav.trim();
-  }
-}
+const styleConfig = stylePagesMap[slug];
+const pageTitle = styleConfig.title;
+const articleContent = styleConfig.content;
 ---
 
 <BaseLayout
