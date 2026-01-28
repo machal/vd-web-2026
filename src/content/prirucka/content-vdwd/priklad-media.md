@@ -1,3 +1,10 @@
+---
+id: priklad-media
+title: "Příklad: dokument s přizpůsobivými médii"
+heading: "Příklad: dokument s přizpůsobivými médii"
+published: true
+---
+
 # Příklad: dokument s přizpůsobivými médii
 
 Abychom použili vědomosti nasáté v téhle kapitole, vložil jsem do příkladu veškerý mediální obsah. Podívejme se teď na něj v rozlišení dnešních běžných mobilů. 

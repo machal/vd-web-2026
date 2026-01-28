@@ -1,3 +1,10 @@
+---
+id: priklad-navrh-komponenty
+title: "Příklad: návrh fotogalerie krok za krokem"
+heading: "Příklad: návrh fotogalerie krok za krokem"
+published: true
+---
+
 # Příklad: návrh fotogalerie krok za krokem
 
 Nedivil bych se, kdybyste v této části knihy měli hlavu jako meloun. Jen díky tomu ale máme dost vědomostí, abychom navrhli první komponentu uživatelského rozhraní. A tak nevěšme meloun a pojďme si shrnout, jak budeme postupovat.

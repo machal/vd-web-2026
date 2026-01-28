@@ -1,3 +1,10 @@
+---
+id: priklad-holy-grail
+title: Svatý grál mezi layouty
+heading: Svatý grál mezi layouty
+published: true
+---
+
 # Svatý grál mezi layouty
 
 <div class="book-index" data-book-index="Svatý grál"></div>

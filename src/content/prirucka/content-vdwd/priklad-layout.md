@@ -1,3 +1,10 @@
+---
+id: priklad-layout
+title: "Příklad: rozvržení stránky"
+heading: "Příklad: rozvržení stránky"
+published: true
+---
+
 
 # Příklad: rozvržení stránky
 
@@ -93,4 +100,4 @@ A tím se dostáváme k výsledné podmínce pro nasazení layoutu.
 
 Pokud jste pozorně četli [kapitolu o Media Queries](css3-media-queries.md), zápisu byste měli bez problémů rozumět.
 
-Layout tedy máme hotový. 
+Layout tedy máme hotový.

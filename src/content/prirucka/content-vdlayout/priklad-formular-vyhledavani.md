@@ -1,3 +1,10 @@
+---
+id: priklad-formular-vyhledavani
+title: Formulář pro vyhledávání
+heading: Formulář pro vyhledávání
+published: true
+---
+
 # Formulář pro vyhledávání
 
 V této ukázce zkusíme nakódovat jednoduchý vyhledávací formulář. Vyzkoušíme opět něco ze zarovnávání boxů ([CSS Box Alignment](css-box-alignment.md)) a oba systémy layoutu – [flexbox](css-flexbox.md) i [grid](css-grid.md). Zadání přichází s návrhovým vzorem, na který jednou narazí každá kodérka i každý kodér.

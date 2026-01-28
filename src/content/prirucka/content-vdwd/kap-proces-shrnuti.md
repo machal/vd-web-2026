@@ -1,3 +1,10 @@
+---
+id: kap-proces-shrnuti
+title: Zapamatujte si
+heading: Zapamatujte si
+published: true
+---
+
 # Zapamatujte si
 
 - Proces tvorby webu probíhá v cyklech „Výzkum a definice“ a následný „Návrh a realizace“.

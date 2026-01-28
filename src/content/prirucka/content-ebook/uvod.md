@@ -1,3 +1,10 @@
+---
+id: uvod
+title: uvod
+heading: uvod
+published: true
+---
+
 ## Děkuji!
 
 Ještě jednou díky za zakoupení ebooku „Vzhůru do CSS3“. Vážím si vaší důvěry. Díky ní mohu ebook dále vylepšovat a rozšiřovat. 

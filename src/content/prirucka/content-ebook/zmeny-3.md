@@ -1,3 +1,10 @@
+---
+id: zmeny-3
+title: Mnoho prohlížečů, kodérova smrt
+heading: Mnoho prohlížečů, kodérova smrt
+published: true
+---
+
 # Mnoho prohlížečů, kodérova smrt
 
 Příchodem Chrome na desktopu začaly nové „Browser Wars“ a zároveň se první bitva války prohlížečů spustila na mobilních zařízeních. Ano, z tohoto pohledu už kodéři zažívali lepší časy.

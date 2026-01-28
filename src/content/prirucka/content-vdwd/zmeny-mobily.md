@@ -1,3 +1,10 @@
+---
+id: zmeny-mobily
+title: Mobily, jsou tady mobily
+heading: Mobily, jsou tady mobily
+published: true
+---
+
 # Mobily, jsou tady mobily
 
 Proč promeškat příležitost ukázat si graf s rostoucí návštěvností z mobilních zařízení? Jdeme na to.

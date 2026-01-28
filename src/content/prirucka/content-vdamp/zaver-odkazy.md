@@ -1,3 +1,10 @@
+---
+id: zaver-odkazy
+title: Odkazy k dalšímu studiu
+heading: Odkazy k dalšímu studiu
+published: true
+---
+
 # Odkazy k dalšímu studiu
 
 ## AMP.dev

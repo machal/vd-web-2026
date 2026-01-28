@@ -1,3 +1,10 @@
+---
+id: fallback-strategie
+title: Fallback strategie pro starší prohlížeče
+heading: Fallback strategie pro starší prohlížeče
+published: true
+---
+
 # Fallback strategie pro starší prohlížeče
 
 Jednou z krásných vlastností HTML a CSS je *křápovzdornost*. Můžete používat úžasné nové CSS3 nebo i HTML5 vlastnosti, a přitom nerozbít zásadní vlastnosti stránky ve starých prohlížečích. 

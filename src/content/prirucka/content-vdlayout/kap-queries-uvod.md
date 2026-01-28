@@ -1,3 +1,10 @@
+---
+id: kap-queries-uvod
+title: "Kapitola 2: Layoutové dotazy"
+heading: "Kapitola 2: Layoutové dotazy"
+published: true
+---
+
 <div id="kap-queries-before" class="ebook-chapter-before ebook-chapter-before-queries" markdown="1"> 
 
 # Kapitola 2: Layoutové dotazy

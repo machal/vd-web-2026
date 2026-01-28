@@ -1,3 +1,10 @@
+---
+id: 5-uvod
+title: "Kapitola 5: Nasazení, měření a vyhodnocování"
+heading: "Kapitola 5: Nasazení, měření a vyhodnocování"
+published: true
+---
+
 # Kapitola 5: Nasazení, měření a vyhodnocování
 
 Předchozí kapitoly vám měly poskytnout dostatek informací, abyste se mohli rozhodnout, zda je pro vás AMP vhodné, nebo ne. Teď tajně doufáme, že dáte AMP šanci.

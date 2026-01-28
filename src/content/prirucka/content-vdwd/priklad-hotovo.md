@@ -1,3 +1,10 @@
+---
+id: priklad-hotovo
+title: "Příklad: s přimhouřením očí hotovo"
+heading: "Příklad: s přimhouřením očí hotovo"
+published: true
+---
+
 # Příklad: s přimhouřením očí hotovo
 
 Ano, je to tak. Příklad můžeme pro naše potřeby považovat za hotový. V [textu o přípravě fotogalerie](priklad-navrh-komponenty.md) jsme si ukázali proces návrhu skicováním a prototypováním ukázkové komponenty. Než jsme se dostali sem, imaginární designér přemýšlel, skicoval, prototypoval a kódoval všechny ostatní komponenty uživatelského rozhraní. Až z něj kouřilo. 

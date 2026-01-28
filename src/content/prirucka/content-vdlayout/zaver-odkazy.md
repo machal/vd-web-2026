@@ -1,3 +1,10 @@
+---
+id: zaver-odkazy
+title: Odkazy k dalšímu studiu
+heading: Odkazy k dalšímu studiu
+published: true
+---
+
 # Odkazy k dalšímu studiu
 
 Až začnete moderní layout v CSS používat, bude se vám, kromě knížky, jistě hodit i několik odkazů.

@@ -1,3 +1,10 @@
+---
+id: nastroje
+title: Nástroje, postupy, technologie
+heading: Nástroje, postupy, technologie
+published: true
+---
+
 # Nástroje, postupy, technologie
 
 Na začátku této části musím ventilovat svůj pocit, že se vývoj webového rozhraní v poslední době na nástroje zaměřuje až příliš. Nastavením dokonalého workflow v Gruntu trávíme někdy zbytečně moc času v porovnání s tvorbou produktu zaměřenou na uživatele.

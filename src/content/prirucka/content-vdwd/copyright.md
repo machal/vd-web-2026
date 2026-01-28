@@ -1,3 +1,10 @@
+---
+id: copyright
+title: Martin Michálek <br>Vzhůru do (responzivního) webdesignu
+heading: Martin Michálek <br>Vzhůru do (responzivního) webdesignu
+published: true
+---
+
 # Martin Michálek <br>Vzhůru do (responzivního) webdesignu
 
 Obrázky a schémata: Martin Michálek a Daniel Střelec (DanielStrelec.cz)  

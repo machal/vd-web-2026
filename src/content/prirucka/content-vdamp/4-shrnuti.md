@@ -1,3 +1,10 @@
+---
+id: 4-shrnuti
+title: Shrnutí kapitoly formou kvízu
+heading: Shrnutí kapitoly formou kvízu
+published: true
+---
+
 # Shrnutí kapitoly formou kvízu
 
 1. **Kde všude můžete na českém internetu potkat AMP?**  

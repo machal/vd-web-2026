@@ -1,3 +1,10 @@
+---
+id: zaver-tiraz
+title: Tiráž
+heading: Tiráž
+published: true
+---
+
 # Tiráž
 
 * Redakce a jazyková korektura: Petr Jediný Novotný ([pjnovotny.cz](http://pjnovotny.cz/))

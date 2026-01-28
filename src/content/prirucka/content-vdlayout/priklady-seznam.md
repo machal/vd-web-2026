@@ -1,3 +1,10 @@
+---
+id: priklady-seznam
+title: Seznam ukázek
+heading: Seznam ukázek
+published: true
+---
+
 # Seznam ukázek
 
 Jaké příklady spolu ve třetí kapitole nakódujeme?

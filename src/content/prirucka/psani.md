@@ -1,3 +1,10 @@
+---
+id: psani
+title: "O psaní: jak začít a už se nezastavit"
+heading: "O psaní: jak začít a už se nezastavit"
+published: true
+---
+
 # O psaní: jak začít a už se nezastavit
 
 Začněte psát. Prostě začněte. Teď hned. Nebo až dočtete tenhle text.

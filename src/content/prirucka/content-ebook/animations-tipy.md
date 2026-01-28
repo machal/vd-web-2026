@@ -1,3 +1,10 @@
+---
+id: animations-tipy
+title: animations-tipy
+heading: animations-tipy
+published: true
+---
+
 Tipy, triky, odkazy
 ===================
 

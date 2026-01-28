@@ -1,3 +1,10 @@
+---
+id: priklad-barvy-typografie
+title: "Příklad: Barvy, písma a grafický styl"
+heading: "Příklad: Barvy, písma a grafický styl"
+published: true
+---
+
 # Příklad: Barvy, písma a grafický styl
 
 Teď chvilku prakticky. Vybereme barevné schéma a sadu písem.
@@ -68,4 +75,3 @@ Některé z nich jsem tedy pro naše potřeby zakoupil a barevně upravil.
 </figure> 
 
 Je to hotové. Teď se vrhneme na kódování. Musíme si předtím povědět, jak je to v responzivním webdesignu s CSS jednotkami.
-

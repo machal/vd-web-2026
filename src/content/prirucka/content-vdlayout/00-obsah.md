@@ -1,3 +1,10 @@
+---
+id: 00-obsah
+title: Obsah
+heading: Obsah
+published: true
+---
+
 # Obsah
 
 1. [Na úvod](01-predmluva.md)

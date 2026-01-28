@@ -1,3 +1,10 @@
+---
+id: uvod-patitul
+title: "CSS: MODERNÍ LAYOUT"
+heading: "CSS: MODERNÍ LAYOUT"
+published: true
+---
+
 <div class="patitul" markdown="1">
 
 # CSS: MODERNÍ LAYOUT

@@ -1,3 +1,10 @@
+---
+id: font-face-tipy
+title: font-face-tipy
+heading: font-face-tipy
+published: true
+---
+
 Font Face: tipy a triky
 =======================
 

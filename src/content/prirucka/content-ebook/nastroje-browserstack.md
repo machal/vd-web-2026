@@ -1,3 +1,10 @@
+---
+id: nastroje-browserstack
+title: "Browserstack: testování v alternativních prohlížečích"
+heading: "Browserstack: testování v alternativních prohlížečích"
+published: true
+---
+
 # Browserstack: testování v alternativních prohlížečích
 
 Co se týká renderování CSS kódu, není mezi dnešními moderními prohlížeči velkých rozdílů.

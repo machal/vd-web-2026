@@ -1,3 +1,10 @@
+---
+id: zmeny-prohlizece
+title: Úroda prohlížečů
+heading: Úroda prohlížečů
+published: true
+---
+
 # Úroda prohlížečů
 
 Podívejme se, jak to vypadá na trhu prohlížečů pro počítače a také jejich sourozence pro mobilní zařízení.

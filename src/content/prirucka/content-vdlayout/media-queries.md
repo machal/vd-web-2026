@@ -1,3 +1,10 @@
+---
+id: media-queries
+title: Media Queries
+heading: Media Queries
+published: true
+---
+
 # Media Queries
 
 <div class="book-index" data-book-index="Media Queries"></div>

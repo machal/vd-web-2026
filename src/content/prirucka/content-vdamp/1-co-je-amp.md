@@ -1,3 +1,10 @@
+---
+id: 1-co-je-amp
+title: Co je AMP a jaké výhody přináší?
+heading: Co je AMP a jaké výhody přináší?
+published: true
+---
+
 # Co je AMP a jaké výhody přináší?
 
 Než se dostaneme k jednotlivým vlastnostem a výhodám této technologie, osvětlíme vám jednu ze zvláštních věcí kolem AMP. A sice název.

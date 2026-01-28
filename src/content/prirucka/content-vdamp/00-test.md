@@ -1,3 +1,10 @@
+---
+id: 00-test
+title: Test
+heading: Test
+published: true
+---
+
 # Test
 
 Když se podíváte na základní kostru dokumentu, bude vypadat následovně:

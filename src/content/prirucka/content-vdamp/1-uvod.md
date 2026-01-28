@@ -1,3 +1,10 @@
+---
+id: 1-uvod
+title: "Kapitola 1: Co to je a proč se tím zabývat?"
+heading: "Kapitola 1: Co to je a proč se tím zabývat?"
+published: true
+---
+
 # Kapitola 1: Co to je a proč se tím zabývat?
 
 Odpověď na otázku _Proč_ zase tak složitá není. Pokud chcete efektivně vytvářet rychlé weby, docela se hodí si o AMP něco přečíst. A my věříme, že jste právě otevřeli tu správnou knížku.

@@ -1,3 +1,10 @@
+---
+id: zmeny-4
+title: CSS pixel přichází
+heading: CSS pixel přichází
+published: true
+---
+
 # CSS pixel přichází
 
 CSS pixel. Referenční pixel. Ať už tomu říkáme jakkoliv, pixel už holt není, co za našeho mládí býval.

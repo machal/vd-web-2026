@@ -1,3 +1,10 @@
+---
+id: nastroje-preprocesory
+title: CSS preprocesory
+heading: CSS preprocesory
+published: true
+---
+
 # CSS preprocesory
 
 LESS, SASS a další preprocesory frontendistům zjednodušují práci s CSS. Jedná se o jazyky postavené nad CSS. Přidávají do něj nové vlastnosti nebo zjednodušují organizaci kódu. Už na vývojářově pracovní stanici jsou pak kompilovány do CSS, aby kódu rozuměly prohlížeče.

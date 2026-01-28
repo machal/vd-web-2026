@@ -1,3 +1,10 @@
+---
+id: kap-souvisejici-after
+title: Shrnutí deváté kapitoly
+heading: Shrnutí deváté kapitoly
+published: true
+---
+
 <div class="colored-box pbb-a" markdown="1">
 
 # Shrnutí deváté kapitoly

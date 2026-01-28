@@ -1,3 +1,10 @@
+---
+id: nastroje-atd
+title: Další nástroje a weby
+heading: Další nástroje a weby
+published: true
+---
+
 # Další nástroje a weby
 
 Teď už to vezmeme hodně stručně.

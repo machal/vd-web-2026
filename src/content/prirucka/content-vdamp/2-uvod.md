@@ -1,3 +1,10 @@
+---
+id: 2-uvod
+title: "Kapitola 2: AMP očima techniků"
+heading: "Kapitola 2: AMP očima techniků"
+published: true
+---
+
 # Kapitola 2: AMP očima techniků
 
 AMP je kromě jiného frontendový framework. V téhle podstatné kapitole se zaměříme na staré dobré HTML, CSS a taky trochu JavaScript. Ukážeme si rozdíly oproti běžnému vývoji webů a pokusíme se vysvětlit, kde se vzaly.

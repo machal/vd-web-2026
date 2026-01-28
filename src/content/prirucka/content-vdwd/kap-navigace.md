@@ -1,3 +1,10 @@
+---
+id: kap-navigace
+title: "Kapitola 10: Responzivní navigace"
+heading: "Kapitola 10: Responzivní navigace"
+published: true
+---
+
 # Kapitola 10: Responzivní navigace 
 
 Navigace je paní Columbová mobilního webdesignu. Poručík Columbo o ní mluví, ostatní tuší, že někde bude. Ale jen málokdo ji dokáže bez problémů najít. 

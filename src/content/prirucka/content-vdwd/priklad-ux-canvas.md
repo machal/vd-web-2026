@@ -1,3 +1,10 @@
+---
+id: priklad-ux-canvas
+title: "Příklad: E-shop s vybavením pro děti z lesních školek"
+heading: "Příklad: E-shop s vybavením pro děti z lesních školek"
+published: true
+---
+
 # Příklad: E-shop s vybavením pro děti z lesních školek
 
 Jaký zvolit příklad pro knihu? Nebudete mi věřit, ale tohle byla jedna z těžších částí práce na ní.
@@ -52,6 +59,4 @@ Fajn, osm bodů design canvasu bychom měli. Co by mělo následovat? Příprava
 
 Tady ovšem zmáčkneme tlačítko pro rychlý posun filmu vpřed a tím opět proces tvorby webu trošku zjednodušíme. Představíme si, že tohle všechno máme hotovo a díky *Imaginární copywriterce* se nám vyloupl obsah jedné konkrétní stránky, kterou budeme dál webdesignérsky opečovávat.
 
-Nejvýhodnější je začít od základního obsahového prvku, což je v případě e-shopu produkt. 
-
-
+Nejvýhodnější je začít od základního obsahového prvku, což je v případě e-shopu produkt.

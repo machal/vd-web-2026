@@ -1,3 +1,10 @@
+---
+id: 01-autori
+title: Autoři
+heading: Autoři
+published: true
+---
+
 # Autoři
 
 ![Martin Michálek a Robin Pokorny](../dist/images/original/vdamp/autori.jpg)

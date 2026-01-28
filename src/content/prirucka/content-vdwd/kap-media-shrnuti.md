@@ -1,3 +1,10 @@
+---
+id: kap-media-shrnuti
+title: Zapamatujte si
+heading: Zapamatujte si
+published: true
+---
+
 # Zapamatujte si
 
 - Trik s `padding-bottom` umožní zachovat poměr stran jakéhokoliv elementu.  

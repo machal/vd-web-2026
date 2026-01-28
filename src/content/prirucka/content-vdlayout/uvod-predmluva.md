@@ -1,3 +1,10 @@
+---
+id: uvod-predmluva
+title: Předmluva
+heading: Předmluva
+published: true
+---
+
 <div class="foreword" markdown="1">
 
 # Předmluva

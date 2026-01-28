@@ -1,3 +1,10 @@
+---
+id: zaver-ebooky-skoleni
+title: "Vzhůru dolů: videa, další e-booky a tak dále"
+heading: "Vzhůru dolů: videa, další e-booky a tak dále"
+published: true
+---
+
 # Vzhůru dolů: videa, další e-booky a tak dále
 
 Na Vzhůru dolů najdete i další výsledky mé práce.

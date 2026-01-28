@@ -1,3 +1,10 @@
+---
+id: zaver-ebooky-skoleni
+title: Kam dál? E-booky, školení a blog
+heading: Kam dál? E-booky, školení a blog
+published: true
+---
+
 # Kam dál? E-booky, školení a blog
 
 ## Další e-booky

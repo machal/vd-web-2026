@@ -1,3 +1,10 @@
+---
+id: kap-testovani-shrnuti
+title: Zapamatujte si
+heading: Zapamatujte si
+published: true
+---
+
 # Zapamatujte si
 
 - Prohlížečů, verzí platforem a modelů zařízení je hodně. Nespoléhejte na ty, které vám leží na stole.

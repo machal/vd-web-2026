@@ -1,3 +1,10 @@
+---
+id: uvod-isbn-pdf
+title: Tiráž
+heading: Tiráž
+published: true
+---
+
 <div class="imprint" markdown="1">
 
 # Tiráž

@@ -1,3 +1,10 @@
+---
+id: zmeny-2
+title: Responzivní webdesign = webdesign
+heading: Responzivní webdesign = webdesign
+published: true
+---
+
 # Responzivní webdesign = webdesign
 
 > Vše co je dnes navrhováno do fixních rozměrů a neresponzivně není webdesign. Pokud nechcete přijmout proměnlivost vlastní webu, nejste webdesignér. Webdesign je responzivní design, responzivní webdesign je webdesign dělaný správně.

@@ -1,3 +1,10 @@
+---
+id: kap-navigace-shrnuti
+title: Zapamatujte si
+heading: Zapamatujte si
+published: true
+---
+
 # Zapamatujte si
 
 - Navigace slouží také jako ukazatel, mapa webu a reklama na obsah. Schovaná navigace tyto účely neplní.

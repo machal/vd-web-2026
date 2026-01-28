@@ -1,3 +1,10 @@
+---
+id: kap-grid-after
+title: Shrnutí páté kapitoly
+heading: Shrnutí páté kapitoly
+published: true
+---
+
 <div class="colored-box pbb-a" markdown="1">
 
 # Shrnutí páté kapitoly

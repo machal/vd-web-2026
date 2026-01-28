@@ -1,3 +1,10 @@
+---
+id: kap-dokument
+title: "Kapitola 3: Dokument jako základ"
+heading: "Kapitola 3: Dokument jako základ"
+published: true
+---
+
 # Kapitola 3: Dokument jako základ
 
 Když jsem někdy před rokem 2000 dělal své první weby za peníze, zadání bylo jednoduché: Vezmi tenhle tištěný katalog a převeď jej do HTML. Vzniklý web měl pevně dané rozměry a všelijak napodoboval vzhled katalogu, který jsem měl položený vedle monitoru s rozlišením 800 na 600 pixelů. Ano, byl to středověk. A webdesign byl v té době nevolníkem tiskařiny. 
@@ -16,4 +23,3 @@ V téhle zásadní kapitole si rozpitváme první ze dvou základních vrstev de
 6. Poprvé se v knize ponoříme do lehkých technikálií: do [jednotek, které na webu můžeme používat](jednotky.md). Na ně navážeme technikami [zvětšování stránky a komponent](rem-em-zoom.md) a [plně responzivní typografií](plne-responzivni-typografie.md).
 7. Představím vám nástroje, které používám pro technickou implementaci [dokumentové vrstvy webu](dokument-nastroje.md). 
 8. Na konci kapitoly [převedeme grafický charakter dokumentu](priklad-dokument.md) do příkladu. Těšíte se tak jako já?
-

@@ -1,3 +1,10 @@
+---
+id: kap-zaver
+title: Na závěr
+heading: Na závěr
+published: true
+---
+
 # Na závěr
 
 Právě jste dočetli „Vzhůru do (responzivního) webdesignu“! 

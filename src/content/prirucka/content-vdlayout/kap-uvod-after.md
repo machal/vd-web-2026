@@ -1,3 +1,10 @@
+---
+id: kap-uvod-after
+title: Shrnutí první kapitoly
+heading: Shrnutí první kapitoly
+published: true
+---
+
 <div class="colored-box pbb-a" markdown="1">
 
 # Shrnutí první kapitoly

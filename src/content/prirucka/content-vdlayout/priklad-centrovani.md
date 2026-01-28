@@ -1,3 +1,10 @@
+---
+id: priklad-centrovani
+title: Centrování boxu
+heading: Centrování boxu
+published: true
+---
+
 # Centrování boxu
 
 Zatímco na vyrovnání textu na střed s pomocí CSS nic složitého není, při centrování prvků layoutu jsme se ve stylech dlouho drbali levou nohou za pravým uchem. Před příchodem flexboxu a gridu to nic příjemného nebylo.

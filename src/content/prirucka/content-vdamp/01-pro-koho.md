@@ -1,3 +1,10 @@
+---
+id: 01-pro-koho
+title: Pro koho knížka je a jak ji číst?
+heading: Pro koho knížka je a jak ji číst?
+published: true
+---
+
 # Pro koho knížka je a jak ji číst?
 
 Knížka je psána tak, aby z ní měli užitek techničtí i netechničtí lidé. V obou případech je ji nejlepší číst od začátku do konce. Pokud ale máte času málo, pojďme si říct, co je pro každou ze skupin nejdůležitější.

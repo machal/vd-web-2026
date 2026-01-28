@@ -1,3 +1,10 @@
+---
+id: novinky
+title: Co je nového?
+heading: Co je nového?
+published: true
+---
+
 # Co je nového? 
 
 Čtete „Vzhůru do (responzivního) webdesignu“ ve verzi 1.2 z listopadu 2018. Tady je seznam obsahových novinek:

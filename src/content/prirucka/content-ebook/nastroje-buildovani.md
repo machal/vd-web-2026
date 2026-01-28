@@ -1,3 +1,10 @@
+---
+id: nastroje-buildovani
+title: "Buildování: Prepros, Grunt, Gulp"
+heading: "Buildování: Prepros, Grunt, Gulp"
+published: true
+---
+
 # Buildování: Prepros, Grunt, Gulp
 
 Skoro vždy se nám na frontendu hodí provádění nějakých operací nad zdrojovými kódy. CSS chceme kompilovat z preprocesoru, pak ještě třeba minifikovat. Javascriptové soubory chceme zmenšit a spojit. Obrázky chceme datově optimalizovat a slepit do jedné „CSS sprite“. 

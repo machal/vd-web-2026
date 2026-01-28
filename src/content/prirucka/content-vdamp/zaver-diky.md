@@ -1,3 +1,10 @@
+---
+id: zaver-diky
+title: Na závěr
+heading: Na závěr
+published: true
+---
+
 # Na závěr
 
 Právě jste dočetli „Vzhůru do AMP“. Díky, že jste knize věnovali svůj čas, a jsme napjatí, zda se vám líbila.

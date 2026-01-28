@@ -1,3 +1,10 @@
+---
+id: zaver
+title: zaver
+heading: zaver
+published: true
+---
+
 ## Kam dál?
 
 - Blog Vzhůru dolů: [vzhurudolu.cz](http://www.vzhurudolu.cz)

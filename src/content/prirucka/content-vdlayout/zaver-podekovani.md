@@ -1,3 +1,10 @@
+---
+id: zaver-podekovani
+title: Poděkování
+heading: Poděkování
+published: true
+---
+
 # Poděkování
 
 Děkuji všem, kteří první rukopis knížky četli a dodali mi cenný pohled zvenčí: Markéta Andreev Dragoun, Tomáš Kout, Honza Marek, Michal Mikláš, Radek Pavlíček, Kristýna Petrová, Břetislav Proft, Dan Srb, Zuzana Šumlanská.

@@ -1,3 +1,10 @@
+---
+id: kap-dale-after
+title: Shrnutí osmé kapitoly
+heading: Shrnutí osmé kapitoly
+published: true
+---
+
 <div class="colored-box pbb-a" markdown="1">
 
 # Shrnutí osmé kapitoly

@@ -1,3 +1,10 @@
+---
+id: flexbox-priklady
+title: "Flexbox: praktické příklady"
+heading: "Flexbox: praktické příklady"
+published: true
+---
+
 # Flexbox: praktické příklady
 
 ## První příklad: základy pružnosti

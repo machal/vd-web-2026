@@ -1,3 +1,10 @@
+---
+id: uvod-pro-koho
+title: Pro koho knížka je a jak ji číst?
+heading: Pro koho knížka je a jak ji číst?
+published: true
+---
+
 # Pro koho knížka je a jak ji číst?
 
 V knížce jsem cílil na webové vývojáře všech úrovní – od začínajících a orientujících se v problematice až po profesionální specialisty na CSS.

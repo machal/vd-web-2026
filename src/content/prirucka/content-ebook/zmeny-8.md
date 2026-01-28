@@ -1,3 +1,10 @@
+---
+id: zmeny-8
+title: Od ornamentů k typografii a dál
+heading: Od ornamentů k typografii a dál
+published: true
+---
+
 # Od ornamentů k typografii a dál
 
 V souvislosti s nástupem mobilů se rozšířily graficky velmi úsporné styly typu „flat“ (plochý) design. Graficky velmi jednoduché jsou také designérské systémy velkých firem, například Material Design od Google. [material.io/guidelines](https://material.io/guidelines/)

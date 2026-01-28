@@ -1,3 +1,10 @@
+---
+id: kap-media
+title: "Kapitola 6: Obrázky a další média"
+heading: "Kapitola 6: Obrázky a další média"
+published: true
+---
+
 # Kapitola 6: Obrázky a další média
 
 
@@ -12,4 +19,3 @@ Obsah vložený do prohlížeče je z podstaty responzivní. No, nedivte se – 
 7. A tabulky? Ach, ty [responzivní tabulky](responzivni-tabulky.md). Těšte se na fakt hodně možných variant jejich návrhu a implementace.
 8. [Responzivní grafy](responzivni-grafy.md) vezmeme letem světem, protože tak časté nejsou. 
 9. Radostně také hlásím návrat ke kódování našeho fiktivního e-shopu. Naimplementujeme si do něj [responzivní obrázky](priklad-media.md).
-

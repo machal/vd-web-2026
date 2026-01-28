@@ -1,3 +1,10 @@
+---
+id: kap-prostredi-shrnuti
+title: Zapamatujte si
+heading: Zapamatujte si
+published: true
+---
+
 # Zapamatujte si
 
 - Přístupy z mobilních zařízení měly v roce 2016 na webech v ČR v průměru pětinový podíl. Od té doby se leccos změnilo, ale růst téhle statistiky ne.

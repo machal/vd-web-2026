@@ -1,3 +1,10 @@
+---
+id: copyright-print
+title: copyright-print
+heading: copyright-print
+published: true
+---
+
 Sazba: Vladimír Vyskočil (korsach.cz)  
 Vytiskla tiskárna PBtisk (pbtisk.cz)
 

@@ -1,3 +1,10 @@
+---
+id: kap-podekovani
+title: Poděkování
+heading: Poděkování
+published: true
+---
+
 # Poděkování
 
 Velmi děkuji všem recenzentům, kritikům, rejpalům… Prostě kolegům a kolegyním, kteří trpělivě četli, hlásili chyby, upozorňovali na nejasnosti a ptali se „proč?“ tam, kde jsem se sám sebe zeptat zapomněl.

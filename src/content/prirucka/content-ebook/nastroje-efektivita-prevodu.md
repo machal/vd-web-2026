@@ -1,3 +1,10 @@
+---
+id: nastroje-efektivita-prevodu
+title: "Efektivita převodu grafického návrhu: Avocode, Brackets, CSSHat…"
+heading: "Efektivita převodu grafického návrhu: Avocode, Brackets, CSSHat…"
+published: true
+---
+
 # Efektivita převodu grafického návrhu: Avocode, Brackets, CSSHat…
 
 Díky několika nástrojům se převod grafického návrhu do CSS a HTML kódu v poslední době velmi zjednodušil.

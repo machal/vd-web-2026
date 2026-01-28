@@ -1,3 +1,10 @@
+---
+id: zmeny-6
+title: Pruda s prefixovanými vlastnostmi
+heading: Pruda s prefixovanými vlastnostmi
+published: true
+---
+
 # Pruda s prefixovanými vlastnostmi
 
 Výrobci prohlížečů v posledních letech často implementují vlastnosti, které nemají hotovou standardizační proceduru. Je to tedy zkušební, prototypová implementace. Aby ji odlišili od finální implementace, zavedli *vendor prefixy*.

@@ -11,6 +11,8 @@
     "astro": "astro",
     "convert-images": "tsx scripts/convert-prirucka-images.ts",
     "fill-heading": "node scripts/fill-heading-from-h1.js",
+    "check-frontmatter": "node scripts/check-frontmatter.js --check",
+    "fix-frontmatter": "node scripts/check-frontmatter.js --fix",
     "deploy": "./scripts/deploy.sh",
     "deploy:setup": "./scripts/deploy-setup.sh"
   },

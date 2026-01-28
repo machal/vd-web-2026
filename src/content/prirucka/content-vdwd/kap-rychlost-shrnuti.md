@@ -1,3 +1,10 @@
+---
+id: kap-rychlost-shrnuti
+title: Zapamatujte si
+heading: Zapamatujte si
+published: true
+---
+
 # Zapamatujte si
 
 - Rychlost „neoptimalizujte“. Zabývejte se jí už na začátku projektu.

@@ -1,3 +1,10 @@
+---
+id: kap-uvod-kdo
+title: Pro koho knížka je a jak ji číst?
+heading: Pro koho knížka je a jak ji číst?
+published: true
+---
+
 # Pro koho knížka je a jak ji číst?
 
 Během psaní „Vzhůru do (responzivního) webdesignu“ jsem myslel hlavně na tři skupiny webařů a webařek:

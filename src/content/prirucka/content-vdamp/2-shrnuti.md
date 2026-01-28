@@ -1,3 +1,10 @@
+---
+id: 2-shrnuti
+title: Shrnutí kapitoly formou kvízu
+heading: Shrnutí kapitoly formou kvízu
+published: true
+---
+
 # Shrnutí kapitoly formou kvízu
 
 1. **Který z uvedených kořenových elementů definuje AMP stránku?**  

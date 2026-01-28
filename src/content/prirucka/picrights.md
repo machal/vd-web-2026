@@ -1,3 +1,10 @@
+---
+id: picrights
+title: "Obrázky a paragrafy: moje zkušenost s PicRights"
+heading: "Obrázky a paragrafy: moje zkušenost s PicRights"
+published: true
+---
+
 # Obrázky a paragrafy: moje zkušenost s PicRights
 
 Nedávno jsem řešil údajné porušení autorských práv u jednoho obrázku, který jsem používal na Vzhůru dolů.

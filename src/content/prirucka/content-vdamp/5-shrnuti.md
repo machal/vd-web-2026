@@ -1,3 +1,10 @@
+---
+id: 5-shrnuti
+title: Shrnutí kapitoly formou kvízu
+heading: Shrnutí kapitoly formou kvízu
+published: true
+---
+
 # Shrnutí kapitoly formou kvízu
 
 1. **Který z následujících důvodů není indikátorem, že byste měli zvážit AMP?**  

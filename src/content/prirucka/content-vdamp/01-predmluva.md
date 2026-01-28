@@ -1,3 +1,10 @@
+---
+id: 01-predmluva
+title: Předmluva
+heading: Předmluva
+published: true
+---
+
 # Předmluva
 
 Milé čtenářky, milí čtenáři,

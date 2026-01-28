@@ -1,3 +1,10 @@
+---
+id: kap-ui-shrnuti
+title: Zapamatujte si
+heading: Zapamatujte si
+published: true
+---
+
 # Zapamatujte si
 
 - Vizuální rozhraní musí být konzistentní a jednoduché. Důležité prvky očividné. Dejte přednost přirozenému proudu informací zleva doprava a seshora dolů.

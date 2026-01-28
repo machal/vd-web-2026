@@ -1,3 +1,10 @@
+---
+id: animations-priklady
+title: animations-priklady
+heading: animations-priklady
+published: true
+---
+
 Animace na příkladech
 =====================
 

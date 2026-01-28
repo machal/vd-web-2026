@@ -1,3 +1,10 @@
+---
+id: kap-testovani
+title: "Kapitola 11: Testování responzivních webů"
+heading: "Kapitola 11: Testování responzivních webů"
+published: true
+---
+
 # Kapitola 11: Testování responzivních webů
 
 Vraťme se teď společně na začátek, do první kapitoly o [nových displejích a zařízeních](kap-prostredi.md). Při tvorbě responzivních webů díky ní počítáme s mobily, tablety a počítači. Počítáme s hybridními laptopy nebo třeba profesionálními tablety, jako je iPad Pro.

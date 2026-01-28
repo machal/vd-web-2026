@@ -1,3 +1,10 @@
+---
+id: kap-ui
+title: "Kapitola 7: Návrh rozhraní v éře mobilů"
+heading: "Kapitola 7: Návrh rozhraní v éře mobilů"
+published: true
+---
+
 # Kapitola 7: Návrh rozhraní v éře mobilů
 
 Než si prakticky ukážeme, jaký proces pro návrh používám, musím popsat přístup vyplývající ze zkušeností, průzkumů a dat, které za mým uvažováním stojí. 

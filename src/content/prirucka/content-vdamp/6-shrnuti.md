@@ -1,3 +1,10 @@
+---
+id: 6-shrnuti
+title: Shrnutí kapitoly formou kvízu
+heading: Shrnutí kapitoly formou kvízu
+published: true
+---
+
 # Shrnutí kapitoly formou kvízu
 
 1. **Jakou výhodu má AMP reklama na AMP stránce?**  

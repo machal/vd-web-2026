@@ -1,3 +1,10 @@
+---
+id: priklad-obsah
+title: "Příklad: Obsah pro stránku detailu produktu"
+heading: "Příklad: Obsah pro stránku detailu produktu"
+published: true
+---
+
 # Příklad: Obsah pro stránku detailu produktu
 
 Jako ukázkový produkt pro náš proces návrhu uživatelského rozhraní jsem vybral tyhle krásné kotníkové boty značky Fare, v jejichž poněkud zabahněných variantách se v Kunratickém lese prohánějí mladí Michálci. 
@@ -62,4 +69,3 @@ Kód produktu a jeho zařazení v kategoriích by neměly stát tak vysoko v hie
 
 
 Řekněme, že v dokumentu už žádné zásadní chyby nevidíme. Hurá! Můžeme otevřít bránu do veselého světa barev, do světa webové grafiky.
-

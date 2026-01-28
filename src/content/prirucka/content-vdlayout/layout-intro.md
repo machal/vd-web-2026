@@ -1,3 +1,10 @@
+---
+id: layout-intro
+title: Seznamka
+heading: Seznamka
+published: true
+---
+
 # Seznamka
 
 Doba je rychlá a inovace zvýšily tempo řešení situací, které lidem dříve zabíraly velké množství času.

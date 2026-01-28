@@ -1,3 +1,10 @@
+---
+id: kap-layout
+title: "Kapitola 9: Media Queries a layout"
+heading: "Kapitola 9: Media Queries a layout"
+published: true
+---
+
 # Kapitola 9: Media Queries a layout
 
 Responzivní webdesign by bez layoutu a Media Queries byl jako Bob bez Bobka v klobouku kouzelníka Pokustona. Nesmíme je prostě vynechat.

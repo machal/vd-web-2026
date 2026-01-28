@@ -1,3 +1,10 @@
+---
+id: zmeny-7
+title: Méně Photoshopu, více kódu
+heading: Méně Photoshopu, více kódu
+published: true
+---
+
 # Méně Photoshopu, více kódu
 
 Jeden z největších omylů webdesignu? Photoshop jako hlavní tvůrčí nástroj. Mám radost, že se s příchodem responzivního designu opět rozšiřuje názor, že Photoshop nemá mít v procesu návrhu webu tak silné slovo. A doufám, že kódování HTML/CSS podle PSD brzy skončí v muzeu vedle ruchadla bratranců Veverkových.

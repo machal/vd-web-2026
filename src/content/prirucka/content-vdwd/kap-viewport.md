@@ -1,3 +1,10 @@
+---
+id: kap-viewport
+title: "Kapitola 4: Viewport na mobilech"
+heading: "Kapitola 4: Viewport na mobilech"
+published: true
+---
+
 # Kapitola 4: Viewport na mobilech
 
 Smartphony nám přinesly tři zásadní životní radosti: Notifikace chodící ve tři ráno, Facebook plný selfíček – a tvůrcům webů ještě viewporty na mobilech.
@@ -10,4 +17,3 @@ V této kapitole to vezmeme povětšinou technicky:
 2. Jak správně zapsat [meta značku pro viewport](viewport-meta.md)?
 3. [Velikost okna prohlížeče v CSS a JavaScriptu](velikost-okna-css-js.md)?
 4. Jak vypadají weby [na hodinkách od Apple](weby-watchos.md)?
-

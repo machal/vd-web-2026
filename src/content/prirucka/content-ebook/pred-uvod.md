@@ -1,3 +1,10 @@
+---
+id: pred-uvod
+title: Co je nového?
+heading: Co je nového?
+published: true
+---
+
 # Co je nového? 
 
 Čtete „Vzhůru do CSS3“ verze 1.4 z 5. ledna 2017. Tady je seznam obsahových novinek:

@@ -1,3 +1,10 @@
+---
+id: flexbox-prohlizece
+title: "Flexbox: podpora v prohlížečích"
+heading: "Flexbox: podpora v prohlížečích"
+published: true
+---
+
 # Flexbox: podpora v prohlížečích
 
 Není špatná. V době psaní článku je to v ČR 92–95 % a s pomocí rozumných fallbacků pro starší prohlížeče není důvod jej nepoužít hned.

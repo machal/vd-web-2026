@@ -1,3 +1,10 @@
+---
+id: priklad-dokument
+title: "Příklad: hotový dokument"
+heading: "Příklad: hotový dokument"
+published: true
+---
+
 # Příklad: hotový dokument
 
 Pojďme do fiktivního e-shopu přidat vlastní typografii, barvy a grafické prvky. Nějak si prostě dokument upravit podle vizuálního stylu ForestKid.cz. Hotový stav  příkladu pro tuto fázi si můžete naživo prohlédnout nebo stáhnout na následujících adresách:
@@ -166,4 +173,3 @@ E-shop teď získal základní grafický styl.
 Na obrázku trochu kecám a vy zkušenější to víte. Takhle by stránka sama o sobě v mobilu určitě nevypadala. Na obrázku je vidět až stav potom, co jsme prohlížeči oznámili, že je optimalizovaná pro mobilní zařízení.
 
 Udělali jsme to meta značkou pro viewport. I přes to, že jde o jeden řádek HTML kódu, webaři a webařky v něm umí udělat chyby. Pojďme to napravit a o viewportech si něco povědět.
-

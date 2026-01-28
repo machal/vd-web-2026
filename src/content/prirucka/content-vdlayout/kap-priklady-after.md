@@ -1,3 +1,10 @@
+---
+id: kap-priklady-after
+title: Shrnutí třetí kapitoly
+heading: Shrnutí třetí kapitoly
+published: true
+---
+
 <div class="colored-box pbb-a" markdown="1">
 
 # Shrnutí třetí kapitoly

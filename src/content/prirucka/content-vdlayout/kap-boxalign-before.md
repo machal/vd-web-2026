@@ -1,3 +1,10 @@
+---
+id: kap-boxalign-before
+title: "Kapitola 7: Zarovnávání boxů"
+heading: "Kapitola 7: Zarovnávání boxů"
+published: true
+---
+
 <div id="kap-boxalign-before" class="ebook-chapter-before ebook-chapter-before-boxalign" markdown="1"> 
 
 # Kapitola 7: Zarovnávání boxů
@@ -22,5 +29,3 @@ Moc bych si přál, abyste i tuhle část poctivě přečetli, vyzkoušeli si Co
 Proces čtení a učení tedy opět nechám na vás. Pokud o zarovnávání boxů už něco víte, projděte pořádně alespoň vlastnosti [`gap`](css-gap.md) a [`order`](css-order.md) a zkuste si [závěrečný test](kap-boxalign-after.md).
 
 </div>
-
-

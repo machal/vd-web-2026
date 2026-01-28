@@ -1,3 +1,10 @@
+---
+id: uvod-autor
+title: "Autor: Martin Michálek"
+heading: "Autor: Martin Michálek"
+published: true
+---
+
 # Autor: Martin Michálek
 
 ![Martin Michálek](../dist/images/original/vdlayout/autor-2022.jpg)

@@ -1,3 +1,10 @@
+---
+id: zmeny-velke-displeje
+title: Pro péči o ty malé úplně zapomínáme na velké
+heading: Pro péči o ty malé úplně zapomínáme na velké
+published: true
+---
+
 # Pro péči o ty malé úplně zapomínáme na velké
 
 Vlastně se my webdesignéři chováme jako správní rodiče. Pipláme se s těmi roztomilými, mrňavými telefony. Jenže jsme zapomněli, že z našich dalších dětí, desktopových monitorů, mezitím vyrostli pěkní čahouni. Nebo vlastně cvalíci, protože se nám roztáhli hlavně do šířky.

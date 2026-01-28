@@ -1,3 +1,10 @@
+---
+id: kap-layout-shrnuti
+title: Zapamatujte si
+heading: Zapamatujte si
+published: true
+---
+
 # Zapamatujte si
 
 - Pokud můžete, layout navrhujte do mřížky.

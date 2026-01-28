@@ -1,3 +1,10 @@
+---
+id: zaver-diky
+title: Na závěr
+heading: Na závěr
+published: true
+---
+
 # Na závěr
 
 Právě jste tuhle knihu dočetli.

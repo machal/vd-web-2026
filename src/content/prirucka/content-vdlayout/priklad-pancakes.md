@@ -1,3 +1,10 @@
+---
+id: priklad-pancakes
+title: Hromada lívanců
+heading: Hromada lívanců
+published: true
+---
+
 # Hromada lívanců
 
 V dalším relativně častém návrhovém vzoru z uživatelských rozhraní webů zkusíme využít rozvržení mřížkou, tentokrát ale v jiném směru než v předchozí ukázce.

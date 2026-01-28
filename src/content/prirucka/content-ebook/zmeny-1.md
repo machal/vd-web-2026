@@ -1,3 +1,10 @@
+---
+id: zmeny-1
+title: Příchod mobilů
+heading: Příchod mobilů
+published: true
+---
+
 # Příchod mobilů
 
 Bezpochyby nejvýznamnější změna. V jistém smyslu matka většiny ostatních změn. Doufám, že o významu mobilních zařízení pro práci webaře už nikdo nepochybuje. 

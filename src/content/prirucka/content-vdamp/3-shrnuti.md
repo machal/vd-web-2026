@@ -1,3 +1,10 @@
+---
+id: 3-shrnuti
+title: Shrnutí kapitoly formou kvízu
+heading: Shrnutí kapitoly formou kvízu
+published: true
+---
+
 # Shrnutí kapitoly formou kvízu
 
 1. **Jaký je původní a stále převažující způsob tvorby AMP?**  

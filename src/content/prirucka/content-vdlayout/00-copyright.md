@@ -1,3 +1,10 @@
+---
+id: 00-copyright
+title: 00-copyright
+heading: 00-copyright
+published: true
+---
+
 © Martin Michálek, 2019  
 © Nakladatelství Martin Michálek – Vzhůru dolů, 2019  
 All rights reserved.

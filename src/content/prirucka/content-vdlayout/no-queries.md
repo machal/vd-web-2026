@@ -1,3 +1,10 @@
+---
+id: no-queries
+title: No Queries
+heading: No Queries
+published: true
+---
+
 # No Queries
 
 <div class="book-index" data-book-index="No Queries"></div>

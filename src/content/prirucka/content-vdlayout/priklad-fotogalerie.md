@@ -1,3 +1,10 @@
+---
+id: priklad-fotogalerie
+title: Galerie bez Media Queries
+heading: Galerie bez Media Queries
+published: true
+---
+
 # Galerie bez Media Queries
 
 <div class="book-index" data-book-index="No Queries"></div>

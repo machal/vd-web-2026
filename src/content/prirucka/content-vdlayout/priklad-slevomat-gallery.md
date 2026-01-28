@@ -1,3 +1,10 @@
+---
+id: priklad-slevomat-gallery
+title: Responzivní fotogalerie
+heading: Responzivní fotogalerie
+published: true
+---
+
 # Responzivní fotogalerie
 
 V předchozí ukázce jsme poměrně intenzivně využili oblasti mřížky definované pomocí [`grid-template-areas`](css-grid-template-areas.md) a umísťované s [vlastností `grid-area`](css-grid-area.md).

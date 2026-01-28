@@ -1,3 +1,10 @@
+---
+id: kap-multicol-before
+title: "Kapitola 6: Vícesloupcový layout"
+heading: "Kapitola 6: Vícesloupcový layout"
+published: true
+---
+
 <div id="kap-multicol-before" class="ebook-chapter-before ebook-chapter-before-multicol" markdown="1"> 
 
 # Kapitola 6: Vícesloupcový layout
@@ -20,9 +27,3 @@ Jenže i on vyniká, byť to málokdo vidí. Tento nejstarší potomek ve skute�
 Pokud o vícesloupcovém layoutu nic nevíte, zkuste si projít kapitolu postupně tak, jak jsem ji připravil. V případě, že si myslíte, že už o tématu něco víte, zopakujte si kouzla se zkratkou [`column`](css-multicol-columns.md) a mrkněte se také na vlastnosti [`column-fill`](css-multicol-fill.md) a [`column-span`](css-multicol-span.md), které mě svou užitečností a podporou příjemně překvapily.
 
 </div>
-
-
-
-
-
-

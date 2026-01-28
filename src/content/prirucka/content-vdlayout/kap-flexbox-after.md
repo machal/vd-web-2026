@@ -1,3 +1,10 @@
+---
+id: kap-flexbox-after
+title: Shrnutí čtvrté kapitoly
+heading: Shrnutí čtvrté kapitoly
+published: true
+---
+
 <div class="colored-box pbb-a" markdown="1">
 
 # Shrnutí čtvrté kapitoly

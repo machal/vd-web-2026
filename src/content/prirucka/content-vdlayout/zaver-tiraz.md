@@ -1,3 +1,10 @@
+---
+id: zaver-tiraz
+title: Tiráž
+heading: Tiráž
+published: true
+---
+
 # Tiráž
 
 <div class="imprint imprint-last" markdown="1">

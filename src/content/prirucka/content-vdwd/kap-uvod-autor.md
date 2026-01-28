@@ -1,3 +1,10 @@
+---
+id: kap-uvod-autor
+title: Autor
+heading: Autor
+published: true
+---
+
 # Autor
 
 ![Martin Michálek](../dist/images/original/autor.jpg)

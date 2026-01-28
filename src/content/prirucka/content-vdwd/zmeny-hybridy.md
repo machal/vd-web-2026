@@ -1,3 +1,10 @@
+---
+id: zmeny-hybridy
+title: "Vývoj: podíl konvenčních tabletů klesá, hybridy rostou"
+heading: "Vývoj: podíl konvenčních tabletů klesá, hybridy rostou"
+published: true
+---
+
 # Vývoj: podíl konvenčních tabletů klesá, hybridy rostou
 
 Z jakých zařízení budou lidé v nejbližších letech přistupovat na naše weby méně a z jakých více? Srovnání se dneškem by vypadalo asi takto:
@@ -14,4 +21,4 @@ Gartner také ukazuje, jak se zvyšují prodeje hybridních notebooků, které j
 
 Další rostoucí skupinou jsou profesionální tablety jako iPad Pro. Jde o velké „dotykáče“, ke kterým občas připojíte klávesnici. V řadě manažerských, administrativních, ale i designérských profesí dle mého názoru z velké části nebo úplně nahradí notebooky.
 
-Co se týká škály velikostí obrazovky, musíme holt z těchto důvodů počítat se všemi, které nás napadnou. Nový je také kombinovaný způsob ovládání u hybridních notebooků: tabletem a myší. Ale ani to by nás responzivní webaře překvapovat nemělo. 
+Co se týká škály velikostí obrazovky, musíme holt z těchto důvodů počítat se všemi, které nás napadnou. Nový je také kombinovaný způsob ovládání u hybridních notebooků: tabletem a myší. Ale ani to by nás responzivní webaře překvapovat nemělo.

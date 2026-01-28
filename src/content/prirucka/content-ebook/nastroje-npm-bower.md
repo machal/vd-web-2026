@@ -1,3 +1,10 @@
+---
+id: nastroje-npm-bower
+title: "Správa balíčků: NPM a Bower"
+heading: "Správa balíčků: NPM a Bower"
+published: true
+---
+
 # Správa balíčků: NPM a Bower
 
 Dva balíčkovací systémy? Začátečníkům to dělá docela problémy. V následujícím textu se také dozvíte, k čemu se více hodí NPM a k čemu Bower.
@@ -80,5 +87,3 @@ Kromě účelu se oba balíčkovače liší i ve způsobu ukládání závislost
 - Bower naopak závislosti instaluje vždy jen jednou. Opět to v jeho kontextu dává smysl, jQuery chcete na webu mít jen v jedné verzi.
 
 U průměrného projektu tedy bude složka `bower_components` datově vždy výrazně menší než složka `node_modules`.
-
-

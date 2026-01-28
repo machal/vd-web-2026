@@ -1,3 +1,10 @@
+---
+id: kap-priklady-before
+title: "Kapitola 3: Příklady použití"
+heading: "Kapitola 3: Příklady použití"
+published: true
+---
+
 <div id="kap-priklady-before" class="ebook-chapter-before ebook-chapter-before-priklady" markdown="1"> 
 
 # Kapitola 3: Příklady použití
@@ -16,4 +23,3 @@ Všechny cesty vedou do Říma. A všechny texty této knížky vedou do této k
 V předchozích částech jsme už sice pár konkrétních příkladů řešili, ale obecně vzato jsme spíše pokládali teoretické základy. Ve třetí kapitole je použijeme hned na několika příkladech, které jsem se snažil vytáhnout z praxe.
 
 Ty následující kapitoly už budou patřit referenčním příručkám jednotlivých vlastností, kam z této kapitoly odkazuji pro případ, že byste potřebovali znát širší kontext.
-

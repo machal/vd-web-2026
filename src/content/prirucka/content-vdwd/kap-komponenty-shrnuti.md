@@ -1,3 +1,10 @@
+---
+id: kap-komponenty-shrnuti
+title: Zapamatujte si
+heading: Zapamatujte si
+published: true
+---
+
 # Zapamatujte si
 
 - Skicování je výborné pro usnadnění řešení designérských, ale i kodérských problémů pomocí tužky a papíru nebo tabletu.

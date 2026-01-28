@@ -1,3 +1,10 @@
+---
+id: zmeny-5
+title: SVG a srcset/sizes, nové výzvy pro vkládání obrázků
+heading: SVG a srcset/sizes, nové výzvy pro vkládání obrázků
+published: true
+---
+
 # SVG a srcset/sizes, nové výzvy pro vkládání obrázků
 
 Díky CSS pixelu a snaze posílat uživateli ve stránce datově co nejúspornější materiál řešíme daleko více otázek než jen – „Mám použít PNG, nebo JPG?“.

@@ -1,3 +1,10 @@
+---
+id: kap-uvod-dekuji
+title: Děkuji!
+heading: Děkuji!
+published: true
+---
+
 <div class="ebook-not-print" markdown="1">
 
 # Děkuji!

@@ -1,3 +1,10 @@
+---
+id: kap-viewport-shrnuti
+title: Zapamatujte si
+heading: Zapamatujte si
+published: true
+---
+
 # Zapamatujte si
 
 - Layoutový viewport je plocha stránky.
