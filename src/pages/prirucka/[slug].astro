@@ -22,6 +22,49 @@ export async function getStaticPaths() {
       return !!entry.data.id && entry.data.published === true;
     });
     
+    // Validace duplicitních ID
+    const idMap = new Map<string, Array<{ slug: string; id: string; file: string }>>();
+    
+    for (const item of prirucka) {
+      const id = item.data.id;
+      const file = `${item.slug}.md`;
+      
+      if (!idMap.has(id)) {
+        idMap.set(id, []);
+      }
+      
+      idMap.get(id)!.push({
+        slug: item.slug,
+        id: id,
+        file: file,
+      });
+    }
+    
+    // Najít všechny duplicity (ID, která mají více než jeden soubor)
+    const duplicates = Array.from(idMap.entries())
+      .filter(([_, files]) => files.length > 1)
+      .map(([id, files]) => ({ id, files }));
+    
+    if (duplicates.length > 0) {
+      // Sestavit detailní chybovou zprávu
+      const errorMessages = duplicates.map(({ id, files }) => {
+        const fileList = files.map(f => `  - ${f.file} (slug: ${f.slug}, id: ${f.id})`).join('\n');
+        return `ID "${id}" je použito v ${files.length} souborech:\n${fileList}`;
+      });
+      
+      const errorMessage = `\n❌ CHYBA: Nalezeny duplicitní ID v prirucka kolekci!\n\n` +
+        `Duplicitní ID způsobují konflikty v routingu a mohou vést k neočekávaným přesměrováním.\n\n` +
+        `Nalezené duplicity:\n${errorMessages.join('\n\n')}\n\n` +
+        `Řešení: Zkontrolujte front matter v uvedených souborech a zajistěte, že každý článek má jedinečné ID.\n` +
+        `Soubory najdete v: src/content/prirucka/\n`;
+      
+      // Vypíšeme chybu do konzole pro lepší viditelnost
+      console.error(errorMessage);
+      
+      // Zastavíme build vyhozením chyby
+      throw new Error(errorMessage);
+    }
+    
     return prirucka.map((item) => {
       // Use id from frontmatter instead of slug (file name)
       // This ensures URLs are based on id, not file name or frontmatter slug
@@ -32,6 +75,12 @@ export async function getStaticPaths() {
       };
     });
   } catch (error) {
+    // Pokud je to naše vlastní chyba o duplicitách, znovu ji vyhodíme
+    if (error instanceof Error && (error.message.includes('duplicitní ID') || error.message.includes('CHYBA'))) {
+      // Vypíšeme chybu do konzole pro lepší viditelnost
+      console.error(error.message);
+      throw error;
+    }
     console.error('Error loading prirucka collection:', error);
     return [];
   }
