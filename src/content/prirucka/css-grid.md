@@ -3,7 +3,7 @@ id: css-grid
 tags: ['css']
 title: 'CSS grid'
 heading: 'CSS grid'
-date: 2026-01-28
+date: 2024-01-28
 perex: 'CSS grid je sada vlastností pro tvorbu layoutu vsazeného do pravidelné mřížky.'
 published: true
 category:
