@@ -97,6 +97,62 @@ function vitePluginCopyPublicToDist() {
   };
 }
 
+/**
+ * Rekurzivní mazání adresáře
+ */
+function removeRecursiveSync(dirPath) {
+  try {
+    if (!fs.existsSync(dirPath)) {
+      return;
+    }
+    
+    const stat = fs.statSync(dirPath);
+    
+    if (stat.isDirectory()) {
+      const entries = fs.readdirSync(dirPath);
+      for (const entry of entries) {
+        const fullPath = path.join(dirPath, entry);
+        removeRecursiveSync(fullPath);
+      }
+      fs.rmdirSync(dirPath);
+    } else {
+      fs.unlinkSync(dirPath);
+    }
+  } catch (error) {
+    // Ignorujeme chyby při mazání
+    if (error.code !== 'ENOENT') {
+      console.warn(`[remove-astro-build-dir] Varování při mazání ${dirPath}:`, error.message);
+    }
+  }
+}
+
+/**
+ * Vite plugin pro odstranění _astro adresáře z dist/ po buildu.
+ * Adresář _astro obsahuje build-time soubory, které nejsou potřeba na produkci.
+ */
+function vitePluginRemoveAstroBuildDir() {
+  return {
+    name: 'remove-astro-build-dir',
+    apply: 'build',
+    closeBundle: {
+      sequential: true,
+      handler() {
+        try {
+          const outDir = path.resolve('dist');
+          const astroDir = path.join(outDir, '_astro');
+          
+          if (fs.existsSync(astroDir)) {
+            removeRecursiveSync(astroDir);
+            console.log('[remove-astro-build-dir] Adresář dist/_astro odstraněn');
+          }
+        } catch (error) {
+          console.warn('[remove-astro-build-dir] Chyba při mazání:', error.message);
+        }
+      },
+    },
+  };
+}
+
 // https://astro.build/config
 export default defineConfig({
   output: 'static',
@@ -140,6 +196,7 @@ export default defineConfig({
       vitePluginValidateFrontmatter(), // Validace front-matter v Markdown souborech
       vitePluginPriruckaImages(), // Automatická konverze obrázků příručky
       vitePluginCopyPublicToDist(), // Zaručí, že celý public/ (včetně .htaccess, favicon.ico, …) skončí v dist/
+      vitePluginRemoveAstroBuildDir(), // Odstraní dist/_astro adresář (build-time soubory nejsou potřeba na produkci)
     ],
     css: {
       preprocessorOptions: {
