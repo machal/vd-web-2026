@@ -27,3 +27,6 @@ pnpm-debug.log*
 
 # Astro
 .astro/
+
+# working / import data (logs, temp)
+_working/

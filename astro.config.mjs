@@ -18,33 +18,45 @@ import { rehypeRelatedToInnerBox } from './src/utils/rehype-related-to-inner-box
 import { vitePluginPriruckaImages } from './vite-plugin-prirucka-images.ts';
 
 /**
- * Vite plugin pro kopírování dotfiles (soubory začínající tečkou) z public/ do dist/
- * Astro/Vite ve výchozím nastavení ignoruje dotfiles při kopírování
+ * Rekurzivní kopírování souboru nebo adresáře (včetně dotfiles).
  */
-function vitePluginCopyDotfiles() {
+function copyRecursiveSync(src, dest) {
+  const stat = fs.statSync(src);
+  if (stat.isDirectory()) {
+    if (!fs.existsSync(dest)) fs.mkdirSync(dest, { recursive: true });
+    for (const name of fs.readdirSync(src)) {
+      copyRecursiveSync(path.join(src, name), path.join(dest, name));
+    }
+  } else {
+    fs.copyFileSync(src, dest);
+  }
+}
+
+/**
+ * Vite plugin zajišťující kopírování celého public/ do dist/ při buildu.
+ * Astro s publicDir sice public kopíruje, ale dotfiles (např. .htaccess) mohou být
+ * v některých verzích ignorované. Tento krok po closeBundle zaručí, že vše z public/
+ * v dist/ je, včetně skrytých souborů.
+ */
+function vitePluginCopyPublicToDist() {
   return {
-    name: 'copy-dotfiles',
+    name: 'copy-public-to-dist',
     apply: 'build',
     closeBundle: {
       sequential: true,
       handler() {
-        const publicDir = 'public';
-        const outDir = 'dist';
-        
-        // Seznam dotfiles ke zkopírování
-        const dotfiles = ['.htaccess'];
-        
-        for (const file of dotfiles) {
-          const src = path.join(publicDir, file);
-          const dest = path.join(outDir, file);
-          
-          if (fs.existsSync(src)) {
-            fs.copyFileSync(src, dest);
-            console.log(`Copied ${file} to ${outDir}/`);
-          }
+        const publicDir = path.resolve('public');
+        const outDir = path.resolve('dist');
+        if (!fs.existsSync(publicDir)) return;
+
+        for (const name of fs.readdirSync(publicDir)) {
+          const src = path.join(publicDir, name);
+          const dest = path.join(outDir, name);
+          copyRecursiveSync(src, dest);
         }
-      }
-    }
+        console.log('[copy-public-to-dist] public/ zkopírováno do dist/');
+      },
+    },
   };
 }
 
@@ -89,7 +101,7 @@ export default defineConfig({
   vite: {
     plugins: [
       vitePluginPriruckaImages(), // Automatická konverze obrázků příručky
-      vitePluginCopyDotfiles(), // Kopírování .htaccess a dalších dotfiles do dist/
+      vitePluginCopyPublicToDist(), // Zaručí, že celý public/ (včetně .htaccess, favicon.ico, …) skončí v dist/
     ],
     css: {
       preprocessorOptions: {

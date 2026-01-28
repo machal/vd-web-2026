@@ -1,2 +1,7 @@
 User-agent: *
-Disallow: /style/
+Allow:
+Disallow: /data/
+Disallow: /dumps/
+Disallow: /migrations/
+
+Sitemap: https://www.vzhurudolu.cz/sitemap.xml
