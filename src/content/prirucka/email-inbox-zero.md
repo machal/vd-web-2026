@@ -229,4 +229,3 @@ Máte hotovo. Každý den pak budete odměňováni pohledem na prázdný inbox:
 
 Je to fajn. Nemusí to být hned dokonalé. U mě to taky není dokonalé, ani po těch letech. Ale pomáhá to. Zkuste Inbox Zero.
 
-Budu rád, když mi do komentářů napíšete své vlastní zkušenosti.
