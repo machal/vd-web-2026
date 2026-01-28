@@ -2,7 +2,7 @@
 id: zmeny-mobily
 title: Mobily, jsou tady mobily
 heading: Mobily, jsou tady mobily
-published: true
+published: false
 ---
 
 # Mobily, jsou tady mobily
@@ -35,5 +35,3 @@ Ale vy už dávno víte, že mobily jsou pro Web zásadní, že ano? Ještě ale
 - Česká čísla mám z [Rankings.cz](http://rankings.cz). 
 - Aktuální světové statistiky hledejte na [Statcounter.com](http://gs.statcounter.com/). 
 - Návod, jak vytáhnout vlastní čísla z Google Analytics: [vrdl.in/gamobily](https://www.vzhurudolu.cz/prirucka/google-analytics-vyvojari#prohlizece-operacni-systemy-mobilni-zarizeni).
-
-

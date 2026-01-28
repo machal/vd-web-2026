@@ -5,7 +5,7 @@ category:
   - organizace-css
 heading: 'Komponenty pro reklamu a analytiku'
 perex: ''
-published: false
+published: true
 category_highlight: false
 include_rss: false
 no_ads: false

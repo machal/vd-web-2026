@@ -50,4 +50,3 @@ Hranice, které pro vysvědčení používá [nástroj Lighthouse](lighthouse.md
 | Špatný             |  > 7,3 s |  >  3,5 s |
 
 </div>
-

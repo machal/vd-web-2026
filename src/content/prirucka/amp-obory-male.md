@@ -3,7 +3,7 @@ id: amp-obory-male
 title: 'Malé prezentační weby'
 heading: 'Malé prezentační weby'
 perex: ''
-published: false
+published: true
 category: []
 category_highlight: false
 include_rss: false

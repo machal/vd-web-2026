@@ -2,7 +2,7 @@
 id: nastroje-efektivita-prevodu
 title: "Efektivita převodu grafického návrhu: Avocode, Brackets, CSSHat…"
 heading: "Efektivita převodu grafického návrhu: Avocode, Brackets, CSSHat…"
-published: true
+published: false
 ---
 
 # Efektivita převodu grafického návrhu: Avocode, Brackets, CSSHat…

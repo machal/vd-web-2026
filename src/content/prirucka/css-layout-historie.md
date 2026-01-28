@@ -3,7 +3,7 @@ id: css-layout-historie
 title: 'Velmi stručná historie layoutů v CSS'
 heading: 'Velmi stručná historie layoutů v CSS'
 perex: ''
-published: false
+published: true
 category:
   - css
 category_highlight: false

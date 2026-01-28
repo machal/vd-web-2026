@@ -2,7 +2,7 @@
 id: 00-obsah
 title: Obsah
 heading: Obsah
-published: true
+published: false
 ---
 
 # Obsah

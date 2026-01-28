@@ -41,5 +41,3 @@ IE9+
 * `:first-child`, `:last-child`, `:only-child` – první, poslední nebo jediný potomek svého rodiče.
 * `:nth-child(n)`, `:nth-last-child(n)` – n-tý potomek od začátku nebo od konce. Nejlépe se tento šílený (ale moc užitečný) selektor naučíte s pomocí online nástroje [NthMaster](http://nthmaster.com/).
 * `:first-of-type`, `:last-of-type`, `:only-of-type` – první, poslední, jediný tohoto typu elementu.
-
-

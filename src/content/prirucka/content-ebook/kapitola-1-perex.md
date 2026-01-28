@@ -2,7 +2,7 @@
 id: kapitola-1-perex
 title: kapitola-1-perex
 heading: kapitola-1-perex
-published: true
+published: false
 ---
 
 Než se pustíme do samotných CSS3 vlastností, musíme se podívat na dnešní způsob vývoje webového uživatelského rozhraní. 

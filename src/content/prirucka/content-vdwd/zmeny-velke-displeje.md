@@ -2,7 +2,7 @@
 id: zmeny-velke-displeje
 title: Pro péči o ty malé úplně zapomínáme na velké
 heading: Pro péči o ty malé úplně zapomínáme na velké
-published: true
+published: false
 ---
 
 # Pro péči o ty malé úplně zapomínáme na velké

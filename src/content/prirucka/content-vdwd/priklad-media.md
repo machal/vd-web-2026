@@ -2,7 +2,7 @@
 id: priklad-media
 title: "Příklad: dokument s přizpůsobivými médii"
 heading: "Příklad: dokument s přizpůsobivými médii"
-published: true
+published: false
 ---
 
 # Příklad: dokument s přizpůsobivými médii

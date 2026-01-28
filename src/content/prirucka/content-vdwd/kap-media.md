@@ -2,7 +2,7 @@
 id: kap-media
 title: "Kapitola 6: Obrázky a další média"
 heading: "Kapitola 6: Obrázky a další média"
-published: true
+published: false
 ---
 
 # Kapitola 6: Obrázky a další média

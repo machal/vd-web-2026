@@ -2,7 +2,7 @@
 id: zmeny-prohlizece
 title: Úroda prohlížečů
 heading: Úroda prohlížečů
-published: true
+published: false
 ---
 
 # Úroda prohlížečů

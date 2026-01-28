@@ -2,7 +2,7 @@
 id: zmeny-6
 title: Pruda s prefixovanými vlastnostmi
 heading: Pruda s prefixovanými vlastnostmi
-published: true
+published: false
 ---
 
 # Pruda s prefixovanými vlastnostmi
@@ -37,4 +37,3 @@ Aby se prefixované vlastnosti nemusely zapisovat ručně, používaly se knihov
 Dnes se problém řeší daleko elegantněji pomocí Autoprefixeru – [github.com/postcss/autoprefixer](http://github.com/postcss/autoprefixer).
 
 CSS kód píšete tak, jako by všechny prohlížeče uměly standardizovanou nebo standardizující se syntaxi – `transform: rotate(7.5deg)`. Protože se Autoprefixer vyskytuje jako plugin do populárních sestavovacích nástrojů, jako je Grunt či Gulp, do vašeho kódu přidá prefixy pro prohlížeče, jejichž podporu řešíte.
-

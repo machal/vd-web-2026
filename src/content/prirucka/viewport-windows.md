@@ -57,4 +57,3 @@ Jak už to ale bývá – zvídaví lidé přišli na to, že s přidáním prav
 	}
 
 A to je šťastný konec dalšího dílu pohádky o zlobivém Microsoftu, milé děti.
-

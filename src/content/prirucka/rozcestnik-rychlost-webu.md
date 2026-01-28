@@ -5,7 +5,7 @@ category:
   - rychlost-nacitani
 heading: 'Rozcestník pro rychlost webu'
 perex: ''
-published: false
+published: true
 category_highlight: false
 include_rss: false
 no_ads: false
@@ -84,4 +84,4 @@ og_type: article
 
 - [Je WordPress pomalý?](https://www.vzhurudolu.cz/blog/125-wordpress-richman)
 - [Co je PWA?](pwa.md)
-- [Podcast s Michalem Matuškou](https://www.vzhurudolu.cz/podcast/153-podcast-perfnow) 
+- [Podcast s Michalem Matuškou](https://www.vzhurudolu.cz/podcast/153-podcast-perfnow)

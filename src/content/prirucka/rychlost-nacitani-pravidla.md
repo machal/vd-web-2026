@@ -3,7 +3,7 @@ id: rychlost-nacitani-pravidla
 title: 'Tipy pro rychlé načtení webu'
 heading: 'Tipy pro rychlé načtení webu'
 perex: ''
-published: false
+published: true
 category: []
 category_highlight: false
 include_rss: false

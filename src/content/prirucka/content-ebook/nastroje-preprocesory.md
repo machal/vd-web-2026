@@ -2,7 +2,7 @@
 id: nastroje-preprocesory
 title: CSS preprocesory
 heading: CSS preprocesory
-published: true
+published: false
 ---
 
 # CSS preprocesory

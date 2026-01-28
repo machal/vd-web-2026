@@ -2,7 +2,7 @@
 id: uvod-predmluva
 title: Předmluva
 heading: Předmluva
-published: true
+published: false
 ---
 
 <div class="foreword" markdown="1">

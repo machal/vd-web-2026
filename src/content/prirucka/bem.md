@@ -302,5 +302,4 @@ Pokud je Bootstrap nebo jiná knihovna v kódu dominující, na BEM bych se pro 
 
 Pokud byste však používali Bootstrap nebo jinou knihovnu jen jako doplněk k vlastní robustní základně kódu, zvážil bych buď prefixování selektorů knihoven nebo vlastních částí kódu. V počátcích vývoje [VašeČočky](http://www.vasecocky.cz/) jsme třeba pro odlišení našich komponent od těch „bootstrapích“ používali prefix `vc-`.
 
-Jste na konci. O BEMu by se ještě dalo psát, ale to raději zase příště. 
-
+Jste na konci. O BEMu by se ještě dalo psát, ale to raději zase příště.

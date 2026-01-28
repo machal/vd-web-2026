@@ -154,5 +154,3 @@ Připomenu to znovu [v textu o častých chybách](tipy-responzivni-ui.md) respo
 </div>
 
 <!-- AdSnippet -->
-
-

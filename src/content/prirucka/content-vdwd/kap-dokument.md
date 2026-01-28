@@ -2,7 +2,7 @@
 id: kap-dokument
 title: "Kapitola 3: Dokument jako základ"
 heading: "Kapitola 3: Dokument jako základ"
-published: true
+published: false
 ---
 
 # Kapitola 3: Dokument jako základ

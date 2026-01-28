@@ -5,7 +5,7 @@ category:
   - amp
 heading: 'Předávání stavu mezi AMP a non-AMP'
 perex: ''
-published: false
+published: true
 category_highlight: false
 include_rss: false
 no_ads: false

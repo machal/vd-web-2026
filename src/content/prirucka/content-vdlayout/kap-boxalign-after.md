@@ -2,7 +2,7 @@
 id: kap-boxalign-after
 title: Shrnutí sedmé kapitoly
 heading: Shrnutí sedmé kapitoly
-published: true
+published: false
 ---
 
 <div class="colored-box pbb-a" markdown="1">

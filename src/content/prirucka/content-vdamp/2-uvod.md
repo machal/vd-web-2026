@@ -2,7 +2,7 @@
 id: 2-uvod
 title: "Kapitola 2: AMP očima techniků"
 heading: "Kapitola 2: AMP očima techniků"
-published: true
+published: false
 ---
 
 # Kapitola 2: AMP očima techniků

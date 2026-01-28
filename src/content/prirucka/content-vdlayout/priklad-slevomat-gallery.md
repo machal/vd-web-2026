@@ -2,7 +2,7 @@
 id: priklad-slevomat-gallery
 title: Responzivní fotogalerie
 heading: Responzivní fotogalerie
-published: true
+published: false
 ---
 
 # Responzivní fotogalerie

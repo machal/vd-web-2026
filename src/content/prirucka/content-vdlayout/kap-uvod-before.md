@@ -2,7 +2,7 @@
 id: kap-uvod-before
 title: "Kapitola 1: Začínáme s layouty v CSS"
 heading: "Kapitola 1: Začínáme s layouty v CSS"
-published: true
+published: false
 ---
 
 <div id="kap-uvod-before" class="ebook-chapter-before ebook-chapter-before-uvod" markdown="1"> 

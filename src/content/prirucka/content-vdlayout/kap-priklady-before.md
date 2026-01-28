@@ -2,7 +2,7 @@
 id: kap-priklady-before
 title: "Kapitola 3: Příklady použití"
 heading: "Kapitola 3: Příklady použití"
-published: true
+published: false
 ---
 
 <div id="kap-priklady-before" class="ebook-chapter-before ebook-chapter-before-priklady" markdown="1"> 

@@ -2,7 +2,7 @@
 id: kap-prostredi
 title: "Kapitola 1: Proč vlastně responzivní webdesign?"
 heading: "Kapitola 1: Proč vlastně responzivní webdesign?"
-published: true
+published: false
 ---
 
 # Kapitola 1: Proč vlastně responzivní webdesign?

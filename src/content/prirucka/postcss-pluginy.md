@@ -2,7 +2,7 @@
 id: postcss-pluginy
 heading: ''
 perex: ''
-published: false
+published: true
 category:
   - css
 category_highlight: false

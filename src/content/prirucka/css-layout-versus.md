@@ -3,7 +3,7 @@ id: css-layout-versus
 title: 'Moderní a nemoderní layouty'
 heading: 'Moderní a nemoderní layouty'
 perex: ''
-published: false
+published: true
 category:
   - css
 category_highlight: false

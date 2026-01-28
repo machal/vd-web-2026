@@ -205,7 +205,3 @@ Lea Verou má hezkou galerii **barevných vzorů** vytvořených jen s pomocí g
 Právě zmíněné barevné vzory často využívají tzv. **ostrý přechod**, což je přechod-nepřechod, ve kterém je mezi barvami ostrá hrana: `background: linear-gradient(to bottom, transparent, lightgreen 33%, darkgreen 33%);` [cdpn.io/e/licEd](https://cdpn.io/e/licEd).
 
 **CSS Scales** jsou předdefinované barevné přechody. Hezké, ano. Navíc ovšem při jejich vymýšlení mysleli na přístupnost a barvy jsou vhodné pro barvoslepé lidi. [bennettfeely.com/scales](http://bennettfeely.com/scales/).
-
-
-
-

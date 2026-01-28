@@ -2,7 +2,7 @@
 id: zmeny-7
 title: Méně Photoshopu, více kódu
 heading: Méně Photoshopu, více kódu
-published: true
+published: false
 ---
 
 # Méně Photoshopu, více kódu
@@ -32,8 +32,3 @@ V ČR mezi průkopníky tohoto přístupu patří například LMC se svým Jobs 
 Jako frontend designér mám zase zajímavé zkušenosti s návrhem responzivních webů rovnou v prohlížeči. Kombinace designu v HTML a CSS s grafickým editorem by ovšem vydala na samostatnou knížku. Začít ale můžete v tomto článku: [vrdl.cz/blog/38-design-v-prohlizeci](http://www.vzhurudolu.cz/blog/38-design-v-prohlizeci).
 
 Pokud to pracovní procesy vašeho týmu alespoň trochu dovolují, zkuste zaexperimentovat s některou ze zmíněných cest.
-
-
-
-
-

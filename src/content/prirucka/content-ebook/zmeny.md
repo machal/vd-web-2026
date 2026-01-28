@@ -2,7 +2,7 @@
 id: zmeny
 title: Proměny kodéřiny
 heading: Proměny kodéřiny
-published: true
+published: false
 ---
 
 # Proměny kodéřiny
@@ -16,6 +16,4 @@ Jako každá profese, i vývojařina webového rozhraní reflektuje změny prost
 5. [SVG a srcset/sizes, nové výzvy pro vkládání obrázků](zmeny-5.md)   
 6. [Komplikace s prefixy](prefix.md)   
 7. [Méně Photoshopu, více kódu](zmeny-7.md)  
-8. [Od ornamentů k typografii a dál](zmeny-8.md)  
-
-
+8. [Od ornamentů k typografii a dál](zmeny-8.md)

@@ -2,7 +2,7 @@
 id: animations-priklady
 title: animations-priklady
 heading: animations-priklady
-published: true
+published: false
 ---
 
 Animace na příkladech

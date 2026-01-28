@@ -2,7 +2,7 @@
 id: metriky-fmp
 heading: ''
 perex: ''
-published: false
+published: true
 category: []
 category_highlight: false
 include_rss: false
@@ -22,4 +22,3 @@ og_type: article
 *FMP nebo taky „First Meaningful Paint“*
 </figcaption>
 </figure>
-

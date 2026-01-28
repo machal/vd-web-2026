@@ -5,7 +5,7 @@ category:
   - nastroje
 heading: 'Blanka a další nástroje pro dokumentovou vrstvu webu'
 perex: ''
-published: false
+published: true
 category_highlight: false
 include_rss: false
 no_ads: false
@@ -145,5 +145,3 @@ Kdo z nás nezažil situaci, kdy ve stylech počítal úplně se vším – doku
 Proto je tu Blanka Type Test, zátěžový test typografie. Je to vlastně dokument obsahující všechny myslitelné i nemyslitelné elementy HTML. V kombinacích, které by nás nenapadly. V zanořeních, se kterými jsme nepočítali. V rozměrech a délkách, jejichž představa by vás budila ze sna.
 
 Prostě si stáhněte dokument, přidejte si k němu vlastní CSS a otestujte si všechny možné i nemožné kombinace prvků. Podívejte se na soubor `blanka-type-test.cz.html`. [github.com/machal/blanka-html/](https://github.com/machal/blanka-html/blob/master/blanka-type-test.cz.html)
-
-

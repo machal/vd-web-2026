@@ -225,4 +225,3 @@ Použijete parametr `src`, který moderní prohlížeče ignorují, pokud je př
 ### Druhé náhradní řešení: Picturefill {#picturefill}
 
 Javascriptová knihovna, která zařídí fungování atributů `srcset`, `sizes` a značky `<picture>` i ve starších prohlížečích. Jmenuje se Picturefill a považuji ji za dobré řešení, které mám odzkoušené na několika webech. [scottjehl.github.io/picturefill](https://scottjehl.github.io/picturefill/)
-

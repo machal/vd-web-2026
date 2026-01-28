@@ -2,7 +2,7 @@
 id: kap-multicol-after
 title: Shrnutí šesté kapitoly
 heading: Shrnutí šesté kapitoly
-published: true
+published: false
 ---
 
 <div class="colored-box pbb-a" markdown="1">

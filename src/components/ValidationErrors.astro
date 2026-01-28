@@ -1,0 +1,151 @@
+---
+/**
+ * Komponenta pro zobrazení validačních chyb v prohlížeči (pouze v dev módu)
+ * 
+ * Tato komponenta se zobrazí pouze v development módu a zobrazí validační chyby
+ * pro prirucka kolekci přímo v prohlížeči.
+ */
+
+import { getCollection, type CollectionEntry } from 'astro:content';
+import { validateDuplicateIds, formatValidationErrorsForDisplay } from '../utils/validate-prirucka';
+
+let errorMessage = '';
+let hasErrors = false;
+
+// Zobrazíme pouze v dev módu
+if (import.meta.env.DEV) {
+  try {
+    // Načteme všechny soubory z kolekce (včetně unpublished)
+    const allPrirucka = await getCollection('prirucka', (entry): entry is CollectionEntry<'prirucka'> & { data: { id: string } } => {
+      return !!entry.data.id;
+    });
+    
+    // Spustíme validace
+    const validationResult = validateDuplicateIds(allPrirucka);
+    
+    if (!validationResult.isValid) {
+      // Uložíme chyby do proměnné pro zobrazení
+      errorMessage = formatValidationErrorsForDisplay(validationResult.errors);
+      hasErrors = true;
+    }
+  } catch (error) {
+    // V případě chyby při načítání kolekce, přeskočíme zobrazení
+    console.warn('Nepodařilo se načíst validace:', error);
+  }
+}
+---
+
+{import.meta.env.DEV && hasErrors && (
+  <div id="validation-errors-overlay" style="
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  ">
+    <div style="
+      background: white;
+      border-radius: 8px;
+      padding: 30px;
+      max-width: 800px;
+      max-height: 90vh;
+      overflow-y: auto;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    ">
+      <div style="
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+        padding-bottom: 15px;
+        border-bottom: 2px solid #e74c3c;
+      ">
+        <h2 style="
+          margin: 0;
+          color: #e74c3c;
+          font-size: 24px;
+          font-weight: bold;
+        ">
+          ⚠️ Validační chyby
+        </h2>
+        <button
+          id="close-validation-errors"
+          style="
+            background: #e74c3c;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 8px 16px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: bold;
+          "
+          onclick="document.getElementById('validation-errors-overlay').style.display='none'"
+        >
+          Zavřít
+        </button>
+      </div>
+      
+      <div style="
+        color: #333;
+        line-height: 1.6;
+        white-space: pre-wrap;
+        font-size: 14px;
+      ">
+        {errorMessage.split('\n').map((line, index) => {
+          if (line.trim() === '') return <br />;
+          if (line.includes('❌') || line.includes('CHYBA')) {
+            return <div style="color: #e74c3c; font-weight: bold; margin: 10px 0;">{line}</div>;
+          }
+          if (line.trim().startsWith('-') || line.trim().startsWith('•')) {
+            return <div style="margin-left: 20px; color: #555;">{line}</div>;
+          }
+          return <div style="margin: 5px 0;">{line}</div>;
+        })}
+      </div>
+      
+      <div style="
+        margin-top: 20px;
+        padding-top: 15px;
+        border-top: 1px solid #ddd;
+        font-size: 12px;
+        color: #666;
+      ">
+        <strong>Řešení:</strong> Opravte chyby v uvedených souborech. Soubory s <code>published: false</code> jsou z validace vyloučeny (jsou součástí ebooků).
+      </div>
+    </div>
+  </div>
+)}
+
+<script>
+  // Zobrazíme overlay automaticky při načtení stránky
+  if (import.meta.env.DEV) {
+    const overlay = document.getElementById('validation-errors-overlay');
+    if (overlay) {
+      // Zobrazíme overlay
+      overlay.style.display = 'flex';
+      
+      // Zavření při kliknutí mimo overlay
+      overlay.addEventListener('click', (e) => {
+        if (e.target === overlay) {
+          overlay.style.display = 'none';
+        }
+      });
+      
+      // Zavření při stisknutí Escape
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && overlay) {
+          overlay.style.display = 'none';
+        }
+      });
+    }
+  }
+</script>
+

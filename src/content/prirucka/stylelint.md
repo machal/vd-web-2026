@@ -257,4 +257,3 @@ Shrňme si to:
 O Stylelintu povídám také na mém novém školení [CSS kód: Organizace a údržba](https://www.vzhurudolu.cz/kurzy/css-kod), kde se kromě dalšího dozvíte špeky a zkušenosti z jeho praktického používání.
 
 <!-- AdSnippet -->
-

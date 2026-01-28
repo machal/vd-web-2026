@@ -3,7 +3,7 @@ id: css-todo
 title: 'Codetags: štítky pro úkoly v CSS kódu'
 heading: 'Codetags: štítky pro úkoly v CSS kódu'
 perex: ''
-published: false
+published: true
 category:
   - css
 category_highlight: false
@@ -126,5 +126,3 @@ Soubor `TODO.css` je pak víceméně seznamem úkolů k řešení, které odpov�
 - [Fixme](http://johnpostlethwait.github.io/fixme/) je Node.js komponenta pro vypsaní všech všech komentářů se štítky do příkazové řádky. 
 - Balíček [TodoReview](https://packagecontrol.io/packages/TodoReview) dělá podobnou věc pro Sublime Text, jen je zdá se už nespravovaný.
 - [Visual Studio](https://msdn.microsoft.com/en-us/library/txtwdysk.aspx) umí úkoly se štítky zobrazit v okně Task List.
-
-

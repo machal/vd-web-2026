@@ -3,7 +3,7 @@ id: rozcestnik-css
 title: 'Rozcestník k CSS'
 heading: 'Rozcestník k CSS'
 perex: ''
-published: false
+published: true
 category:
   - css
 category_highlight: false

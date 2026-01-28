@@ -2,7 +2,7 @@
 id: kap-testovani
 title: "Kapitola 11: Testování responzivních webů"
 heading: "Kapitola 11: Testování responzivních webů"
-published: true
+published: false
 ---
 
 # Kapitola 11: Testování responzivních webů

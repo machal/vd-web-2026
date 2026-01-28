@@ -2,7 +2,7 @@
 id: zmeny-hybridy
 title: "Vývoj: podíl konvenčních tabletů klesá, hybridy rostou"
 heading: "Vývoj: podíl konvenčních tabletů klesá, hybridy rostou"
-published: true
+published: false
 ---
 
 # Vývoj: podíl konvenčních tabletů klesá, hybridy rostou

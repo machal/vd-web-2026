@@ -2,7 +2,7 @@
 id: kap-podekovani
 title: Poděkování
 heading: Poděkování
-published: true
+published: false
 ---
 
 # Poděkování

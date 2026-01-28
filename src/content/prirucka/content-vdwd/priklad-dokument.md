@@ -2,7 +2,7 @@
 id: priklad-dokument
 title: "Příklad: hotový dokument"
 heading: "Příklad: hotový dokument"
-published: true
+published: false
 ---
 
 # Příklad: hotový dokument

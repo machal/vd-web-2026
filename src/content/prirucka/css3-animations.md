@@ -108,4 +108,3 @@ Strategii podpory starších prohlížečů je dobré zvolit podle typu animace.
 V případě **vylepšujících animací** (měnší i větší estetické drobnosti v uživatelském rozhraní, u kterých uživateli nevadí, že neproběhnou) není důvod tvořit alternativní řešení.
 
 Pokud **animace nese informaci** (například indikátor stavu načítání uživatelem vloženého souboru), pak je nutné nahradit CSS3 animaci Javascriptem nebo detekovat prohlížeče, jež CSS3 animace neovládají a alternativu nabídnout jen jim.
-

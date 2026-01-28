@@ -2,7 +2,7 @@
 id: novinky
 title: Co je nového?
 heading: Co je nového?
-published: true
+published: false
 ---
 
 # Co je nového? 

@@ -2,7 +2,7 @@
 id: kap-komponenty-shrnuti
 title: Zapamatujte si
 heading: Zapamatujte si
-published: true
+published: false
 ---
 
 # Zapamatujte si

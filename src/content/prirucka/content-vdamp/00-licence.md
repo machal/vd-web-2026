@@ -2,7 +2,7 @@
 id: 00-licence
 title: Na úvod
 heading: Na úvod
-published: true
+published: false
 ---
 
 # Na úvod

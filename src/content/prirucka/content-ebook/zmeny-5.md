@@ -2,7 +2,7 @@
 id: zmeny-5
 title: SVG a srcset/sizes, nové výzvy pro vkládání obrázků
 heading: SVG a srcset/sizes, nové výzvy pro vkládání obrázků
-published: true
+published: false
 ---
 
 # SVG a srcset/sizes, nové výzvy pro vkládání obrázků

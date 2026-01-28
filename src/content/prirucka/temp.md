@@ -3,7 +3,7 @@ id: temp
 title: 'Dočasný dokument pro testování prázdných kapitol'
 heading: 'Dočasný dokument pro testování prázdných kapitol'
 perex: ''
-published: false
+published: true
 category: []
 category_highlight: false
 include_rss: false

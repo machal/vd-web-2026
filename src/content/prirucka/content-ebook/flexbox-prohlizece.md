@@ -2,7 +2,7 @@
 id: flexbox-prohlizece
 title: "Flexbox: podpora v prohlížečích"
 heading: "Flexbox: podpora v prohlížečích"
-published: true
+published: false
 ---
 
 # Flexbox: podpora v prohlížečích

@@ -3,7 +3,7 @@ id: css3-vlastnosti
 title: 'Seznam CSS3 vlastností'
 heading: 'Seznam CSS3 vlastností'
 perex: ''
-published: false
+published: true
 category:
   - css
 category_highlight: false

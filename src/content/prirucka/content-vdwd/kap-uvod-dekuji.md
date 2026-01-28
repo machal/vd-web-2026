@@ -2,7 +2,7 @@
 id: kap-uvod-dekuji
 title: Děkuji!
 heading: Děkuji!
-published: true
+published: false
 ---
 
 <div class="ebook-not-print" markdown="1">

@@ -189,6 +189,3 @@ Pokud máte významnou návštěvnost z Exploreru 8 a starších, použijte [HTM
 - V Chromu vám oblasti definované pomocí `role` ukáže rozšíření [Web Developer](https://chrome.google.com/webstore/detail/web-developer/bfbameneiokkgbdmiekhjnmfkcnldhhm): „Information“ > „Display ARIA roles“.
 - V Chromu si také můžete povolit experimentální [Accessibility Inspection](https://gist.github.com/marcysutton/0a42f815878c159517a55e6652e3b23a), jak píše Martin Držka v komentářích.
 -  Nejlepší je ale testovat přímo pomocí čteček. Na Macu máme vestavěný [VoiceOver](http://www.apple.com/accessibility/mac/vision/). Na Windows si nainstalujte [NVDA](http://nvda-project.cz/). Tady je [návod pro spuštění testování](https://dequeuniversity.com/assets/html/jquery-summit/html5/slides/landmarks.html).
-
-
-

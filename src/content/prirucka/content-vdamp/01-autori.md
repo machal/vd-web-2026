@@ -2,7 +2,7 @@
 id: 01-autori
 title: Autoři
 heading: Autoři
-published: true
+published: false
 ---
 
 # Autoři

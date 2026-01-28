@@ -2,7 +2,7 @@
 id: kap-souvisejici-after
 title: Shrnutí deváté kapitoly
 heading: Shrnutí deváté kapitoly
-published: true
+published: false
 ---
 
 <div class="colored-box pbb-a" markdown="1">

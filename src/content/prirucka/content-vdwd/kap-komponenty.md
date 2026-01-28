@@ -2,7 +2,7 @@
 id: kap-komponenty
 title: "Kapitola 8: Design komponent rozhraní"
 heading: "Kapitola 8: Design komponent rozhraní"
-published: true
+published: false
 ---
 
 # Kapitola 8: Design komponent rozhraní

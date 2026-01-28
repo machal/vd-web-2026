@@ -5,7 +5,7 @@ category:
   - css
 heading: 'Tipy a triky k Media Queries'
 perex: ''
-published: false
+published: true
 category_highlight: false
 include_rss: false
 no_ads: false

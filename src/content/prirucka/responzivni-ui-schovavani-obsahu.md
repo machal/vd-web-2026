@@ -3,7 +3,7 @@ id: responzivni-ui-schovavani-obsahu
 title: 'Proč na mobilech neschovávat obsah?'
 heading: 'Proč na mobilech neschovávat obsah?'
 perex: ''
-published: false
+published: true
 category: []
 category_highlight: false
 include_rss: false
@@ -36,5 +36,3 @@ Je pravda, že informace v takové tabulce mají nějakou hierarchii: Pořadí, 
 *Výhry, remízy a prohry* jsou sice méně důležité, ale… proč je pak máme na velkých displejích? Pokud jsme na základě rozboru cílových skupin došli k tomu, že uživatelé tohoto webu takové informace potřebují, mají tady být na všech zařízeních. Vzpomeňte si, když jsem zmiňoval, že jeden člověk vidí vaše weby na různých zařízeních. Na jiném webu, třeba obecně zpravodajském, by pak nepřítomnost těchto informací smysl dávala.
 
 Jak bych tedy na tabulku na mobilech vyzrál? Použil bych řešení „Posun do stran s fixním sloupcem“ z [podkapitoly o tabulkách](responzivni-tabulky.md). Ponechal bych v ní všechny informace a zajistil fixní pozici sloupečků s pořadím, logem a názvem týmů. Ostatní sloupečky bych pak nechal uživatele posouvat do stran.
-
-

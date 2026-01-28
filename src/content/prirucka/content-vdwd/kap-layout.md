@@ -2,7 +2,7 @@
 id: kap-layout
 title: "Kapitola 9: Media Queries a layout"
 heading: "Kapitola 9: Media Queries a layout"
-published: true
+published: false
 ---
 
 # Kapitola 9: Media Queries a layout

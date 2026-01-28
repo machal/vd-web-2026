@@ -5,7 +5,7 @@ category:
   - html
 heading: 'Komponenty pro multimediální obsah'
 perex: ''
-published: false
+published: true
 category_highlight: false
 include_rss: false
 no_ads: false

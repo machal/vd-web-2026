@@ -2,7 +2,7 @@
 id: kap-queries-shrnuti
 title: Shrnutí druhé kapitoly
 heading: Shrnutí druhé kapitoly
-published: true
+published: false
 ---
 
 <div class="colored-box pbb-a" markdown="1">

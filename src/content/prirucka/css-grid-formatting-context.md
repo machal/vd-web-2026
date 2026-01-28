@@ -3,7 +3,7 @@ id: css-grid-formatting-context
 title: 'Formátovací kontext CSS gridu'
 heading: 'Formátovací kontext CSS gridu'
 perex: ''
-published: false
+published: true
 category:
   - css
 category_highlight: false

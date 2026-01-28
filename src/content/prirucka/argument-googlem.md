@@ -3,7 +3,7 @@ id: argument-googlem
 title: 'Argumentace Googlem'
 heading: 'Argumentace Googlem'
 perex: ''
-published: false
+published: true
 category: []
 category_highlight: false
 include_rss: false
@@ -37,4 +37,3 @@ Co se týká doporučení Google, je to přesně dle slov klasika Járy Cimrmana
 Osobní poznámka na závěr. Argumenty Googlem ve své praxi používám velmi nerad a také v knížce je budu používat jen jako doplňující. Dávám přednost přímým odkazům na statistiky a průzkumy, které ostatně i lidé z Googlu pro svá rozhodnutí a doporučení používají.
 
 Závěr této části trochu odlehčím a zkusím si z křišťálové koule zavěštit, kam se prostředí responzivního webu posune v příštích letech.
-

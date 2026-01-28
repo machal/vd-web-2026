@@ -2,7 +2,7 @@
 id: kap-souvisejici-before
 title: "Kapitola 9: Související nástroje a vlastnosti"
 heading: "Kapitola 9: Související nástroje a vlastnosti"
-published: true
+published: false
 ---
 
 <div id="kap-souvisejici-before" class="ebook-chapter-before ebook-chapter-before-souvisejici" markdown="1"> 

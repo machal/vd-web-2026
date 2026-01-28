@@ -3,7 +3,7 @@ id: css-grid-vlastnosti
 title: 'Principy a vlastnosti CSS gridu'
 heading: 'Principy a vlastnosti CSS gridu'
 perex: ''
-published: false
+published: true
 category:
   - css
 category_highlight: false

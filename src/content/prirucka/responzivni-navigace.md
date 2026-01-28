@@ -77,4 +77,3 @@ Raději zmíním i tento „návrhový vzor“. Jak jsem psal [v textu o ikoně 
 Podívejte se na video „Responzivní navigace“.
 
 YouTube: [youtu.be/D4IDwYCWfJk](https://www.youtube.com/watch?v=D4IDwYCWfJk)
-

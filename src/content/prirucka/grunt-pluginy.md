@@ -181,5 +181,4 @@ Něco jako `grunt.registerTask('js', ['newer:jshing, 'newer:uglify'])` napříkl
 
 
 
-Hotovo. Máte další tipy? Poraďte do komentářů. 
-
+Hotovo. Máte další tipy? Poraďte do komentářů.

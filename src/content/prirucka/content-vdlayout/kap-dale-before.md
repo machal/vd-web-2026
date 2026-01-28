@@ -2,7 +2,7 @@
 id: kap-dale-before
 title: "Kapitola 8: Co byste ještě měli vědět?"
 heading: "Kapitola 8: Co byste ještě měli vědět?"
-published: true
+published: false
 ---
 
 <div id="kap-dale-before" class="ebook-chapter-before ebook-chapter-before-dale" markdown="1"> 

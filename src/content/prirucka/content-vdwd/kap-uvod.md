@@ -2,7 +2,7 @@
 id: kap-uvod
 title: Na úvod
 heading: Na úvod
-published: true
+published: false
 ---
 
 # Na úvod

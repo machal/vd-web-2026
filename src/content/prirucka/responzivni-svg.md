@@ -196,4 +196,3 @@ Tak či tak, mechanismus responzivních SVG má velkou budoucnost: pro ikony, gr
 </div>
 
 <!-- AdSnippet -->
-

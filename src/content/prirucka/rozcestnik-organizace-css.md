@@ -3,7 +3,7 @@ id: rozcestnik-organizace-css
 title: 'Rozcestník článků k organizaci CSS'
 heading: 'Rozcestník článků k organizaci CSS'
 perex: ''
-published: false
+published: true
 category:
   - css
 category_highlight: false

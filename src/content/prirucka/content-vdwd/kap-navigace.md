@@ -2,7 +2,7 @@
 id: kap-navigace
 title: "Kapitola 10: Responzivní navigace"
 heading: "Kapitola 10: Responzivní navigace"
-published: true
+published: false
 ---
 
 # Kapitola 10: Responzivní navigace 

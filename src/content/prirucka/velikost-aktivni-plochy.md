@@ -3,7 +3,7 @@ id: velikost-aktivni-plochy
 title: 'Minimální plocha aktivní plochy: alespoň centimetr čtvereční'
 heading: 'Minimální plocha aktivní plochy: alespoň centimetr čtvereční'
 perex: ''
-published: false
+published: true
 category: []
 category_highlight: false
 include_rss: false
@@ -50,5 +50,4 @@ Podle Joshe Clarka, kterého cituji v předchozích textech, mají téměř vše
 Budou to lidé trefovat palcem? Navrhněte to na plochu centimetru čtverečního. Navrhněte to i pro obra z Altonu.
 
 Na závěr odkážu na zmíněný výzkum Stevena Hoobera a Patti Shank: „Making mLearning Usable: How We Use Mobile Devices“. 
-[vrdl.in/aug5z](http://shoobe01.blogspot.cz/2014/11/making-mlearning-usable-how-we-use.html) 
-
+[vrdl.in/aug5z](http://shoobe01.blogspot.cz/2014/11/making-mlearning-usable-how-we-use.html)

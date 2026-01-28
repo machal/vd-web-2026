@@ -2,7 +2,7 @@
 id: priklad-sidebar
 title: Boční panel
 heading: Boční panel
-published: true
+published: false
 ---
 
 # Boční panel

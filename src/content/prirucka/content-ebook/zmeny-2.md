@@ -2,7 +2,7 @@
 id: zmeny-2
 title: Responzivní webdesign = webdesign
 heading: Responzivní webdesign = webdesign
-published: true
+published: false
 ---
 
 # Responzivní webdesign = webdesign

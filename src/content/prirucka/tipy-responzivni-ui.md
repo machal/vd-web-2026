@@ -5,7 +5,7 @@ category:
   - pristupnost
 heading: '8 tipů pro jednodušší rozhraní na mobilech'
 perex: ''
-published: false
+published: true
 category_highlight: false
 include_rss: false
 no_ads: false
@@ -113,4 +113,3 @@ Dlouhá stránka kromě jiného taky odsunuje spodní část rozhraní – pati�
 * roztahovací akordeony (opět je brzy zmíním)
 
 Když už jsem zmiňoval Jana Kvasničku, vřele doporučuji jeho text a přednášku „Nejčastější chyby při návrhu mobilního a responzivního webu prakticky“. [vrdl.in/2tghs](http://blog.kvasnickajan.cz/prakticky-pruvodce-nejcastejsimi-chybami-pri-navrhu-mobilniho-a-responzivniho-webu/)
-

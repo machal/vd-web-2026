@@ -2,7 +2,7 @@
 id: priklad-obsah
 title: "Příklad: Obsah pro stránku detailu produktu"
 heading: "Příklad: Obsah pro stránku detailu produktu"
-published: true
+published: false
 ---
 
 # Příklad: Obsah pro stránku detailu produktu

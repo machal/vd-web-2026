@@ -5,7 +5,7 @@ category:
   - responzivni-design
 heading: 'Weby responzivní, adaptivní, mobilní'
 perex: ''
-published: false
+published: true
 category_highlight: false
 include_rss: false
 no_ads: false
@@ -141,4 +141,3 @@ Mimochodem, adaptivní webdesign popsal a příklady moc hezky doplnil Aaron Gus
 <p class="ebook-only">
   Pojmologii už ale uzavřeme. V další kapitole budeme pracovat na příkladu konkrétního (responzivního) webu, takže nás čeká praxe. Začít ale musíme zeširoka, protože rozumný návrh (responzivního) uživatelského rozhraní vzniká až na základě informací získaných z analytické fáze projektu. Víte vy co? Pojďme si raději povědět něco o tom, jak se dneska tvoří weby. Slibuji, že to bude stručné.
 </p>
-

@@ -141,7 +141,4 @@ Jo – a pozor na `<img>`. Ten uvnitř `<desc>` být může, ale stáhnou ho vš
 
 ### Pomocí Grunticon
 
-[Grunticon](http://www.grunticon.com/) je malá javascriptová knihovna a [Grunt](grunt.md) plugin, který obstarává kompletní workflow pro práci s SVG. Včetně generování fallbacků. Pokud chcete používat vektory uvnitř `<svg>` značky, javascriptová část Grunticon je vloží do DOMu a Grunt plugin vám předgeneruje CSS s fallbacky i pro velmi staré prohlížeče typu IE6. 
-
-
-
+[Grunticon](http://www.grunticon.com/) je malá javascriptová knihovna a [Grunt](grunt.md) plugin, který obstarává kompletní workflow pro práci s SVG. Včetně generování fallbacků. Pokud chcete používat vektory uvnitř `<svg>` značky, javascriptová část Grunticon je vloží do DOMu a Grunt plugin vám předgeneruje CSS s fallbacky i pro velmi staré prohlížeče typu IE6.

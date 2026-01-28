@@ -138,5 +138,3 @@ Fotky samozřejmě můžete připravit v ohromném rozlišení, klidně více ne
 Pokud je to možné, servírujte obrázky ve více variantách. Máme pro to standardizované parametry `srcset` a `sizes` u značky `<img>`. [vrdl.in/srcsiz](https://www.vzhurudolu.cz/prirucka/srcset-sizes)
   
 </div>
-
-

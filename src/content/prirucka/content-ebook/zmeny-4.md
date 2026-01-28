@@ -2,7 +2,7 @@
 id: zmeny-4
 title: CSS pixel přichází
 heading: CSS pixel přichází
-published: true
+published: false
 ---
 
 # CSS pixel přichází

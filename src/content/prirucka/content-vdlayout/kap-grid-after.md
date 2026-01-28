@@ -2,7 +2,7 @@
 id: kap-grid-after
 title: Shrnutí páté kapitoly
 heading: Shrnutí páté kapitoly
-published: true
+published: false
 ---
 
 <div class="colored-box pbb-a" markdown="1">

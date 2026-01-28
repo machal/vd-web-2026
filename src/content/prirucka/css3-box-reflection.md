@@ -4,7 +4,7 @@ tags: ['css']
 heading: 'CSS3 Box Reflection'
 date: 2013-08-01
 perex: 'Prohlížeč vykreslí zrcadlový odlesk pod objektem nebo z jeho strany. Nestandardizovaná vlastnost.'
-published: false
+published: true
 category:
   - css3
   - css
@@ -67,4 +67,3 @@ Jen prohlížeče postavené na Webkit jádře. Ke dnešku tedy funguje ve všec
 Ve Firefoxu lze odlesku dosáhnout pomocí vlastnosti `-moz-element()`. [vrdl.in/yboz2](http://lea.verou.me/2011/06/css-reflections-for-firefox-with-moz-element-and-svg-masks/)
 
 Na vlastnost se tedy nelze spolehnout na široce dostupných webech, ale pro interní aplikace s omezenou cílovou skupinou se může hodit.
-

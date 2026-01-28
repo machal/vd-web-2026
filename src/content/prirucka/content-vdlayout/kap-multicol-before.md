@@ -2,7 +2,7 @@
 id: kap-multicol-before
 title: "Kapitola 6: Vícesloupcový layout"
 heading: "Kapitola 6: Vícesloupcový layout"
-published: true
+published: false
 ---
 
 <div id="kap-multicol-before" class="ebook-chapter-before ebook-chapter-before-multicol" markdown="1"> 

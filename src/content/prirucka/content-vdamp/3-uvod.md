@@ -2,7 +2,7 @@
 id: 3-uvod
 title: "Kapitola 3: Vazby mezi AMP a vaším webem"
 heading: "Kapitola 3: Vazby mezi AMP a vaším webem"
-published: true
+published: false
 ---
 
 # Kapitola 3: Vazby mezi AMP a vaším webem

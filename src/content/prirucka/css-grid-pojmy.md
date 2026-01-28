@@ -3,7 +3,7 @@ id: css-grid-pojmy
 title: 'Pojmy v CSS gridu'
 heading: 'Pojmy v CSS gridu'
 perex: ''
-published: false
+published: true
 category:
   - css
 category_highlight: false

@@ -110,4 +110,3 @@ Výsledek pak v různých zařízeních vypadá takto:
 Samozřejmě. Měli bychom pak ale ještě myslet na nějaká minima a případně i maxima. Znovu tady pro zájemce odkážu na [článek na Smashing Magazine](https://www.smashingmagazine.com/2016/05/fluid-typography/).
 
 Živé demo i s fallbackem je tady: [cdpn.io/e/bZzmGg](https://codepen.io/machal/pen/bZzmGg?editors=1100#0).
-

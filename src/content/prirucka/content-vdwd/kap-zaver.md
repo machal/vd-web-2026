@@ -2,7 +2,7 @@
 id: kap-zaver
 title: Na závěr
 heading: Na závěr
-published: true
+published: false
 ---
 
 # Na závěr
@@ -35,5 +35,3 @@ Získáte v něm hlubší technické znalosti o webové kodéřině: nástroje j
 - Blog Vzhůru dolů. [vzhurudolu.cz](https://www.vzhurudolu.cz)
 - Veřejná a individuální školení autora a spolupracujících expertů. [vzhurudolu.cz/kurzy](https://www.vzhurudolu.cz/kurzy)
 - Autor též poskytuje poradenství firmám i jednotlivcům. [vzhurudolu.cz/martin](https://www.vzhurudolu.cz/martin)
-
-

@@ -5,7 +5,7 @@ category:
   - netechnicke
 heading: 'Omezení složitosti webdesignu'
 perex: ''
-published: false
+published: true
 category_highlight: false
 include_rss: false
 no_ads: false

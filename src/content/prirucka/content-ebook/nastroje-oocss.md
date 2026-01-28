@@ -1,6 +1,7 @@
 ---
 category:
   - css
+published: false
 ---
 
 # Udržitelný kód pomocí OOCSS
@@ -67,4 +68,3 @@ Kvůli zachování nízké specifičnosti se také snažíme co nejméně použ�
 - kombinovaných selektorů (v CSS nepíšu `.button.button-primary`, jen `.button-primary`)
 
 Více o specifičnosti v CSS: [specificity.keegan.st](http://specificity.keegan.st/).
-

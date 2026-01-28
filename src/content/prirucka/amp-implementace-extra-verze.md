@@ -3,7 +3,7 @@ id: amp-implementace-extra-verze
 title: 'Dvě oddělené verze webu'
 heading: 'Dvě oddělené verze webu'
 perex: ''
-published: false
+published: true
 category: []
 category_highlight: false
 include_rss: false

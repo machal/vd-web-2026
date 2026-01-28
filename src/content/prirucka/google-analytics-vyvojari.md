@@ -169,6 +169,3 @@ Jen pozor na *vzorkování*, tedy výběr dat. Při použití segmentu se může
 </div>
 
 <!-- AdSnippet -->
-
-
-

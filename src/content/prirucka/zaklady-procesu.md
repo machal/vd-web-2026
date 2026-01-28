@@ -3,7 +3,7 @@ id: zaklady-procesu
 title: 'Základy procesu tvorby webu'
 heading: 'Základy procesu tvorby webu'
 perex: ''
-published: false
+published: true
 category: []
 category_highlight: false
 include_rss: false

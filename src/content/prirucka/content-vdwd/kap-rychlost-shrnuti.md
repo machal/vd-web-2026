@@ -2,7 +2,7 @@
 id: kap-rychlost-shrnuti
 title: Zapamatujte si
 heading: Zapamatujte si
-published: true
+published: false
 ---
 
 # Zapamatujte si
@@ -14,4 +14,4 @@ published: true
 - Kontrolujte weby pomocí Google PageSpeed Insights. Sledujte rychlost v Google Analytics.
 - Zvažte zapnutí HTTP/2 na vašem serveru.
 - Redukujte datovou velikost stránky. 
-- Zkontrolujte, zda web neobsahuje Javascript blokující vykreslení. 
+- Zkontrolujte, zda web neobsahuje Javascript blokující vykreslení.

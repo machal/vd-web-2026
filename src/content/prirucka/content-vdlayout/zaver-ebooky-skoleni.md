@@ -2,7 +2,7 @@
 id: zaver-ebooky-skoleni
 title: "Vzhůru dolů: videa, další e-booky a tak dále"
 heading: "Vzhůru dolů: videa, další e-booky a tak dále"
-published: true
+published: false
 ---
 
 # Vzhůru dolů: videa, další e-booky a tak dále

@@ -2,7 +2,7 @@
 id: animations-tipy
 title: animations-tipy
 heading: animations-tipy
-published: true
+published: false
 ---
 
 Tipy, triky, odkazy

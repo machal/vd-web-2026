@@ -2,7 +2,7 @@
 id: zaver-tiraz
 title: Tiráž
 heading: Tiráž
-published: true
+published: false
 ---
 
 # Tiráž

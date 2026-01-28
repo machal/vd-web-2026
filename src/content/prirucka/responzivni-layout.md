@@ -5,7 +5,7 @@ category:
   - webdesign
 heading: 'Responzivní layout'
 perex: ''
-published: false
+published: true
 category_highlight: false
 include_rss: false
 no_ads: false
@@ -99,7 +99,4 @@ Kromě toho je práce s pravidelnou mřížkou pro vývojáře efektivnější. 
 </div>
 ```
 
-Více informací o systému pro tvorbu rozvržení do mřížky v Bootstrapu 4 najdete opět na Vzhůru dolů. [vrdl.cz/p/bootstrap-4-grid](https://www.vzhurudolu.cz/prirucka/bootstrap-4-grid)  
-
-
-
+Více informací o systému pro tvorbu rozvržení do mřížky v Bootstrapu 4 najdete opět na Vzhůru dolů. [vrdl.cz/p/bootstrap-4-grid](https://www.vzhurudolu.cz/prirucka/bootstrap-4-grid)

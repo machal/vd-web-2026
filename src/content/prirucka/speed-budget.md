@@ -5,7 +5,7 @@ category:
   - rychlost-nacitani
 heading: 'Rychlostní limity. A proč nedělat „optimalizace“?'
 perex: ''
-published: false
+published: true
 category_highlight: false
 include_rss: false
 no_ads: false
@@ -54,4 +54,3 @@ Je důležité, aby vývojáři byli přítomní už v oné přípravné fázi p
 Kontrola dodržování rychlostních limitů by se měla provádět nejen během práce na webu, ale také po každé větší aktualizaci. Dá se to naštěstí zautomatizovat. Buď nějakým vlastním nástrojem, který vytáhne data z analyzátorů, o nichž mluvím v dalším textu, nebo třeba pomocí specializované nástroje Speed Curve. [speedcurve.com](https://speedcurve.com/)
 
 Pojďme si teď ukázat nástroje pro analýzu rychlosti.
-

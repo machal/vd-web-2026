@@ -167,4 +167,3 @@ Narazil jsem jen na menší vykreslovací bugy v Safari, takže vícesloupcový 
   <use class="ad-snippet__scissors-svg" xlink:href="#vd-icon-scissors" x="0" y="0"></use>
 </svg>
 </aside>
-

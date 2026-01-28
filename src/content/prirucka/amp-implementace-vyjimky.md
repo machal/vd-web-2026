@@ -5,7 +5,7 @@ category:
   - amp
 heading: 'Nejprve HTML, pak AMP'
 perex: ''
-published: false
+published: true
 category_highlight: false
 include_rss: false
 no_ads: false

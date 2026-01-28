@@ -3,7 +3,7 @@ id: css-flexbox-dobre-vedet
 title: 'CSS flexbox: co je dobré o něm vědět'
 heading: 'CSS flexbox: co je dobré o něm vědět'
 perex: ''
-published: false
+published: true
 category:
   - css
 category_highlight: false

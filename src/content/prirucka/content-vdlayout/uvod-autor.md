@@ -2,7 +2,7 @@
 id: uvod-autor
 title: "Autor: Martin Michálek"
 heading: "Autor: Martin Michálek"
-published: true
+published: false
 ---
 
 # Autor: Martin Michálek

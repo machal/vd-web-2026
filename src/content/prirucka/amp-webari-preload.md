@@ -165,4 +165,3 @@ Ano, je nutné se bavit i o jeho nevýhodách. Namátkou:
 Jedno je ale jisté. S AMPem udělají rychlou stránku úplně všichni. 
 
 <!-- AdSnippet -->
-

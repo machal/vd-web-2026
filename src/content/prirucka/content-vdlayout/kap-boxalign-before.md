@@ -2,7 +2,7 @@
 id: kap-boxalign-before
 title: "Kapitola 7: Zarovnávání boxů"
 heading: "Kapitola 7: Zarovnávání boxů"
-published: true
+published: false
 ---
 
 <div id="kap-boxalign-before" class="ebook-chapter-before ebook-chapter-before-boxalign" markdown="1"> 

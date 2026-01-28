@@ -2,7 +2,7 @@
 id: fallback-strategie
 title: Fallback strategie pro starší prohlížeče
 heading: Fallback strategie pro starší prohlížeče
-published: true
+published: false
 ---
 
 # Fallback strategie pro starší prohlížeče
@@ -31,4 +31,3 @@ Připravovat technické řešení webu *křápovzdorně* – s ohledem na nejni�
 Cílem postupného vylepšování je garance poskytnutí obsahu nebo hlavní funkce stránky bez ohledu na technologické vybavení uživatele.
 
 Progressive enhancement je postup, který vám *křápovzdornost* zajistí. Pojďme se podívat na různé strategie pro vytvoření řešení ve starých prohlížečích.
-

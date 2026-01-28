@@ -5,7 +5,7 @@ category:
   - nastroje
 heading: 'Pluginy redakčních systémů'
 perex: ''
-published: false
+published: true
 category_highlight: false
 include_rss: false
 no_ads: false

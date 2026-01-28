@@ -2,7 +2,7 @@
 id: priklad-navrh-komponenty
 title: "Příklad: návrh fotogalerie krok za krokem"
 heading: "Příklad: návrh fotogalerie krok za krokem"
-published: true
+published: false
 ---
 
 # Příklad: návrh fotogalerie krok za krokem

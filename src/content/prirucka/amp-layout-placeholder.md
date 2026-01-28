@@ -5,7 +5,7 @@ category:
   - rychlost-nacitani
 heading: 'Atributy placeholder a fallback'
 perex: ''
-published: false
+published: true
 category_highlight: false
 include_rss: false
 no_ads: false

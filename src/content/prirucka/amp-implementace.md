@@ -5,7 +5,7 @@ category:
   - amp
 heading: 'Možnosti implementace AMP do webů'
 perex: ''
-published: false
+published: true
 category_highlight: false
 include_rss: false
 no_ads: false
@@ -24,4 +24,3 @@ Z pohledu vývojářů existuje několik přístup, jak AMP naimplementovat do s
 | [Výjimky v kódu](amp-implementace-vyjimky.md) | ++       | ++     | +++  |
 | Nejprve AMP    | ?        | ?      | ?    |
 | Jen AMP        | ?        | ?      | ?    |
-

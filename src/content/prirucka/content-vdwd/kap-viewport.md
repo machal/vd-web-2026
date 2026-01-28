@@ -2,7 +2,7 @@
 id: kap-viewport
 title: "Kapitola 4: Viewport na mobilech"
 heading: "Kapitola 4: Viewport na mobilech"
-published: true
+published: false
 ---
 
 # Kapitola 4: Viewport na mobilech

@@ -3,7 +3,7 @@ id: css-layout-devtools
 title: 'CSS layout a DevTools'
 heading: 'CSS layout a DevTools'
 perex: ''
-published: false
+published: true
 category:
   - css
 category_highlight: false

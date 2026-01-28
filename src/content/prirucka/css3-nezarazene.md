@@ -3,7 +3,7 @@ id: css3-nezarazene
 title: 'CSS3 vlastnosti nezařazené v tomto textu'
 heading: 'CSS3 vlastnosti nezařazené v tomto textu'
 perex: ''
-published: false
+published: true
 category:
   - css
 category_highlight: false

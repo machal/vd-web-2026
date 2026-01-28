@@ -5,7 +5,7 @@ category:
   - css
 heading: 'Skrytí obsahu v CSS a HTML'
 perex: ''
-published: false
+published: true
 category_highlight: false
 include_rss: false
 no_ads: false
@@ -218,5 +218,3 @@ Otázka ovšem je, jestli není správnější chybějící obsah prostě přida
 Tímto prostě přidáme chybějící textový popisek.
 
 Nepovedlo se mi dohledat důkaz, zda tyto atributy indexuje Google, ale dávalo by to smysl.
-
-

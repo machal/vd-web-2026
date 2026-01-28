@@ -248,5 +248,3 @@ Netrvejte na komponentovém přístupu, pokud není design komponentově zaměř
 CSS je zápis designu. CSS kodér, který používá objektový zápis dělá v designu systém. Jenže ne každý design je vymyšlený systematicky. Dnešní podklady designérů jen vzácně tvoří striktní systém typu [atomického designu](pattern-lab.md). Většinou se pohybují v rozmezí mezi částečně komponentovým přístupem a naprosto nekomponentovým, kdy každé tlačítko vypadá trochu jinak.
 
 Milí kodéři, nesnažte se proto aplikovat přísné objektové přístupy tam, kde to není z principu možné. Obvykle ale můžete naštěstí alespoň základy principů OOCSS využít i tam, kde designéři na znovupoužitelnost designu nemysleli. Široce použitelné jsou hlavně principy nezávislosti vzhledu na struktuře, obsahu na kontejneru a zachování nízké specifičnosti.
-
-

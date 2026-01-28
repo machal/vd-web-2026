@@ -2,7 +2,7 @@
 id: priklad-barvy-typografie
 title: "Příklad: Barvy, písma a grafický styl"
 heading: "Příklad: Barvy, písma a grafický styl"
-published: true
+published: false
 ---
 
 # Příklad: Barvy, písma a grafický styl

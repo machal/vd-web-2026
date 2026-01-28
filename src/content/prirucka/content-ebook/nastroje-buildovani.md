@@ -2,7 +2,7 @@
 id: nastroje-buildovani
 title: "Buildování: Prepros, Grunt, Gulp"
 heading: "Buildování: Prepros, Grunt, Gulp"
-published: true
+published: false
 ---
 
 # Buildování: Prepros, Grunt, Gulp

@@ -2,7 +2,7 @@
 id: priklad-centrovani
 title: Centrování boxu
 heading: Centrování boxu
-published: true
+published: false
 ---
 
 # Centrování boxu

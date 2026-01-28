@@ -3,7 +3,7 @@ id: css-important
 title: 'CSS !important'
 heading: 'CSS !important'
 perex: ''
-published: false
+published: true
 category:
   - css
 category_highlight: false

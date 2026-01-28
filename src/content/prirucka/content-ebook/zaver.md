@@ -2,7 +2,7 @@
 id: zaver
 title: zaver
 heading: zaver
-published: true
+published: false
 ---
 
 ## Kam dál?
@@ -39,5 +39,3 @@ Pavel Vosyka.
 Děkuji všem v abecedním pořadí.
 
 © 2013-2017 Martin Michálek
-
-

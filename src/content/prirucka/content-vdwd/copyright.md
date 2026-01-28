@@ -2,7 +2,7 @@
 id: copyright
 title: Martin Michálek <br>Vzhůru do (responzivního) webdesignu
 heading: Martin Michálek <br>Vzhůru do (responzivního) webdesignu
-published: true
+published: false
 ---
 
 # Martin Michálek <br>Vzhůru do (responzivního) webdesignu
@@ -16,4 +16,3 @@ Jazyková korektura: Petr Behún (Proofreading.cz)
 Web: Martin Michálek, Daniel Střelec a Přemek Koch
 
 V knize jsem použil písma Capita a Foro od Dietera Hofrichtera (Hoftype.com)
-

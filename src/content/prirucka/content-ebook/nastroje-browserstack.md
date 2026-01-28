@@ -2,7 +2,7 @@
 id: nastroje-browserstack
 title: "Browserstack: testování v alternativních prohlížečích"
 heading: "Browserstack: testování v alternativních prohlížečích"
-published: true
+published: false
 ---
 
 # Browserstack: testování v alternativních prohlížečích

@@ -5,7 +5,7 @@ category:
   - webdesign
 heading: 'Mřížka účaří (Baseline grid)'
 perex: ''
-published: false
+published: true
 category_highlight: false
 include_rss: false
 no_ads: false
@@ -35,5 +35,4 @@ Představte si, že jsou vaše vkládané elementy navržené tak, že je nutné
 
 Nemyslím, že trvat na přísném dodržování mřížky účaří je v efektivních lidských silách. 
 
-Je fajn účaří dodržovat v místech, kde spolu bezprostředně ve dvou sloupcích sousedí dva texty. Nebo v blocích s textem. Na stránce plné vkládaných médií nebo ovládacích prvků ale osobně dogmatické dodržování typografické mřížky vzdávám. 
-
+Je fajn účaří dodržovat v místech, kde spolu bezprostředně ve dvou sloupcích sousedí dva texty. Nebo v blocích s textem. Na stránce plné vkládaných médií nebo ovládacích prvků ale osobně dogmatické dodržování typografické mřížky vzdávám.

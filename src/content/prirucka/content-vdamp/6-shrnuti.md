@@ -2,7 +2,7 @@
 id: 6-shrnuti
 title: Shrnutí kapitoly formou kvízu
 heading: Shrnutí kapitoly formou kvízu
-published: true
+published: false
 ---
 
 # Shrnutí kapitoly formou kvízu

@@ -109,5 +109,3 @@ Tímto způsobem je také možné udělat pěkné náhradní řešení pro form�
 <div class="ebook-only" markdown="1">
   Šmytec. O bitmapových obrázcích jsme si toho řekli už dost. Teď vzhůru do vektorů!
 </div>
-
-

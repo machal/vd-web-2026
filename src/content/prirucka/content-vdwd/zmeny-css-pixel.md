@@ -1,6 +1,7 @@
 ---
 category:
   - css
+published: false
 ---
 
 # CSS rozlišení 

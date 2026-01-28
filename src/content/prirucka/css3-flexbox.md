@@ -2,7 +2,7 @@
 id: css3-flexbox
 heading: ''
 perex: ''
-published: false
+published: true
 category:
   - css
 category_highlight: false

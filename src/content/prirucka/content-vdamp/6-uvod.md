@@ -2,7 +2,7 @@
 id: 6-uvod
 title: "Kapitola 6: Ads, E-mail, Stories"
 heading: "Kapitola 6: Ads, E-mail, Stories"
-published: true
+published: false
 ---
 
 # Kapitola 6: Ads, E-mail, Stories

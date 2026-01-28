@@ -3,7 +3,7 @@ id: modularni-stupnice
 title: 'Modulární stupnice velikostí písma (Modular Scale)'
 heading: 'Modulární stupnice velikostí písma (Modular Scale)'
 perex: ''
-published: false
+published: true
 category: []
 category_highlight: false
 include_rss: false

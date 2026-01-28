@@ -3,7 +3,7 @@ id: css-grid-explicit-implicit
 title: 'CSS grid: Explicitní a implicitní mřížka'
 heading: 'CSS grid: Explicitní a implicitní mřížka'
 perex: ''
-published: false
+published: true
 category:
   - css
 category_highlight: false

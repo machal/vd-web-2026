@@ -2,7 +2,7 @@
 id: priklad-ux-canvas
 title: "Příklad: E-shop s vybavením pro děti z lesních školek"
 heading: "Příklad: E-shop s vybavením pro děti z lesních školek"
-published: true
+published: false
 ---
 
 # Příklad: E-shop s vybavením pro děti z lesních školek

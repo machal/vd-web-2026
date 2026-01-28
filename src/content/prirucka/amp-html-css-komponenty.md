@@ -3,7 +3,7 @@ id: amp-html-css-komponenty
 title: 'AMP v kontextu frontendu'
 heading: 'AMP v kontextu frontendu'
 perex: ''
-published: false
+published: true
 category:
   - css
 category_highlight: false

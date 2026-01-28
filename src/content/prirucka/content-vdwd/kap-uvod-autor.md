@@ -2,7 +2,7 @@
 id: kap-uvod-autor
 title: Autor
 heading: Autor
-published: true
+published: false
 ---
 
 # Autor

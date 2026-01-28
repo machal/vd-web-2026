@@ -2,7 +2,7 @@
 id: priklad-hotovo
 title: "Příklad: s přimhouřením očí hotovo"
 heading: "Příklad: s přimhouřením očí hotovo"
-published: true
+published: false
 ---
 
 # Příklad: s přimhouřením očí hotovo

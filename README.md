@@ -161,6 +161,61 @@ Projekt používá vlastní remark/rehype pluginy pro transformaci Markdownu:
 
 Pluginy jsou v `src/utils/`.
 
+## Validace obsahu
+
+Projekt obsahuje centralizované validace pro kontrolu správnosti obsahu, zejména pro `prirucka` kolekci.
+
+### Kde jsou validace definovány
+
+Všechny validace jsou centralizovány v `src/utils/validate-prirucka.ts`:
+
+- **`validateDuplicateIds()`** - Kontroluje duplicitní ID v kolekci (pouze pro published soubory)
+- **`validateFrontmatter()`** - Validuje frontmatter v souborech
+- **`runAllValidations()`** - Spustí všechny validace najednou
+- **`formatValidationErrorsForDisplay()`** - Formátuje chyby pro zobrazení v prohlížeči
+
+### Jak fungují validace
+
+1. **Duplicitní ID**: Validace kontroluje, zda neexistují dva nebo více souborů se stejným `id` v frontmatter. Tato validace se provádí pouze pro soubory s `published !== false`.
+
+2. **Vyloučení unpublished souborů**: Soubory s `published: false` jsou z validace vyloučeny, protože jsou součástí ebooků a duplicita ID je u nich očekávaná a v pořádku.
+
+3. **Frontmatter validace**: Kontroluje, zda všechny soubory mají správně nastavené frontmatter (např. pole `id`).
+
+### Zobrazení chyb v prohlížeči (dev mode)
+
+V development módu (`npm run dev`) se validační chyby automaticky zobrazují v prohlížeči jako overlay na stránkách příručky:
+
+- Chyby se zobrazí jako modal overlay s detailním popisem
+- Obsahuje seznam problematických souborů
+- Zahrnuje návod na řešení
+- Overlay lze zavřít kliknutím na tlačítko "Zavřít" nebo stisknutím klávesy Escape
+
+Komponenta `src/components/ValidationErrors.astro` zajišťuje zobrazení chyb v dev módu.
+
+### Jak opravit běžné chyby
+
+**Duplicitní ID:**
+- Zkontrolujte frontmatter v uvedených souborech
+- Zajistěte, že každý publikovaný článek má jedinečné ID
+- Pokud je duplicita očekávaná (ebook obsah), nastavte `published: false`
+
+**Chybějící frontmatter:**
+- Spusťte `node scripts/check-frontmatter.js --fix` pro automatickou opravu
+- Nebo přidejte frontmatter ručně do souboru
+
+**Nastavení published: false pro ebook soubory:**
+- Spusťte `node scripts/set-ebook-published-false.js` pro automatické nastavení
+- Tento skript nastaví `published: false` u všech MD souborů v `content-*` podadresářích
+
+### Validace při buildu
+
+Při produkčním buildu (`npm run build`) se validace provádějí automaticky:
+
+- **Vite plugin** (`vite-plugin-validate-frontmatter.ts`) kontroluje frontmatter při buildu
+- **Astro getStaticPaths** (`src/pages/prirucka/[slug].astro`) kontroluje duplicitní ID
+- Pokud jsou nalezeny chyby, build selže s detailní chybovou zprávou
+
 ## Další informace
 
 - **Sitemap**: Vlastní generátor v `src/utils/custom-sitemap.ts`

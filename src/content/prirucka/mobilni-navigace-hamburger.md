@@ -103,4 +103,3 @@ Zbývá nám tu množina webů, u kterých je schovávání navigace nebo její 
 1. Ikonu prosím nezneužívejte pro typ obsahu, který nepředstavuje.
 2. Ikonu opatřete textovým popiskem „Menu“, aby byla přístupná i uživatelům, kteří hamburger neznají. Respektive vždy popiskem, který přesně popisuje obsah, například „Kategorie“ nebo „Recepty“. 
 3. Ikona by měla mít vzhled tlačítka. Z testů vyplývá, že lidé pak snadněji pochopí, že jde o aktivní prvek rozhraní. [exisweb.net/menu-eats-hamburger](http://exisweb.net/menu-eats-hamburger)
-

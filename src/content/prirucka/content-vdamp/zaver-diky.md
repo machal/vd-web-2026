@@ -2,7 +2,7 @@
 id: zaver-diky
 title: Na závěr
 heading: Na závěr
-published: true
+published: false
 ---
 
 # Na závěr

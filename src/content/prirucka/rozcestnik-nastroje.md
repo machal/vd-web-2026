@@ -3,7 +3,7 @@ id: rozcestnik-nastroje
 title: 'Rozcestník článků k nástrojům pro frontendové vývojáře'
 heading: 'Rozcestník článků k nástrojům pro frontendové vývojáře'
 perex: ''
-published: false
+published: true
 category: []
 category_highlight: false
 include_rss: false

@@ -2,7 +2,7 @@
 id: zaver-podekovani
 title: Poděkování
 heading: Poděkování
-published: true
+published: false
 ---
 
 # Poděkování

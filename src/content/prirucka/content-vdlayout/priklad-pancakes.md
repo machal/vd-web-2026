@@ -2,7 +2,7 @@
 id: priklad-pancakes
 title: Hromada lívanců
 heading: Hromada lívanců
-published: true
+published: false
 ---
 
 # Hromada lívanců

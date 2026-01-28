@@ -2,7 +2,7 @@
 id: kap-grid-before
 title: "Kapitola 5: Grid"
 heading: "Kapitola 5: Grid"
-published: true
+published: false
 ---
 
 <div id="kap-grid-before" class="ebook-chapter-before ebook-chapter-before-grid" markdown="1"> 

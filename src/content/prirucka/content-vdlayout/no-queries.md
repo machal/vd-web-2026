@@ -2,7 +2,7 @@
 id: no-queries
 title: No Queries
 heading: No Queries
-published: true
+published: false
 ---
 
 # No Queries

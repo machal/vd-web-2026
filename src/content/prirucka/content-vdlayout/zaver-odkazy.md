@@ -2,7 +2,7 @@
 id: zaver-odkazy
 title: Odkazy k dalšímu studiu
 heading: Odkazy k dalšímu studiu
-published: true
+published: false
 ---
 
 # Odkazy k dalšímu studiu

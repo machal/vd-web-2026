@@ -2,7 +2,7 @@
 id: zmeny-1
 title: Příchod mobilů
 heading: Příchod mobilů
-published: true
+published: false
 ---
 
 # Příchod mobilů

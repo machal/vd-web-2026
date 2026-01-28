@@ -2,7 +2,7 @@
 id: typografie-tipy
 heading: ''
 perex: ''
-published: false
+published: true
 category: []
 category_highlight: false
 include_rss: false
@@ -25,4 +25,4 @@ Zase říkám ano. Je to totiž praktičtější. Bezpatková písma jsou užš�
 * ligatury (fi, st, Th) viz CSS3 Fonts Module
 * fout, foit - web font loader
 * text rendering [vrdl.in/dz5f9](http://blog.typekit.com/2011/01/26/css-properties-that-affect-type-rendering/)
-* zalamování textu - hyphens: auto 
+* zalamování textu - hyphens: auto

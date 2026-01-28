@@ -2,7 +2,7 @@
 id: kap-ui
 title: "Kapitola 7: Návrh rozhraní v éře mobilů"
 heading: "Kapitola 7: Návrh rozhraní v éře mobilů"
-published: true
+published: false
 ---
 
 # Kapitola 7: Návrh rozhraní v éře mobilů

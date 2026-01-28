@@ -5,7 +5,7 @@ category:
   - css
 heading: 'Zařízení z budoucnosti: co je po mobilech?'
 perex: ''
-published: false
+published: true
 category_highlight: false
 include_rss: false
 no_ads: false
@@ -59,4 +59,4 @@ Sledujte zařízení jako třeba Google Home. Nebo si na YouTube pusťte předst
 
 Tam už moc příležitostí pro designéry rozhraní webových stránek nebude. Omlouvám se. Ale nebojte, mluvící rozhraní ta naše obrazovková ani zdaleka nenahradí. Tuhle knížku ještě neodkládejte, to vážně ne. Weby budou dále sloužit jako zdroj informací. I pro tyhle mluvící potvory.
 
-Teď se už z této futurologické odbočky dostáváme zpět k responzivním webům. 
+Teď se už z této futurologické odbočky dostáváme zpět k responzivním webům.

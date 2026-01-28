@@ -2,7 +2,7 @@
 id: nastroje
 title: Nástroje, postupy, technologie
 heading: Nástroje, postupy, technologie
-published: true
+published: false
 ---
 
 # Nástroje, postupy, technologie

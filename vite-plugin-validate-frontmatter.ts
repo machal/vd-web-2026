@@ -1,6 +1,9 @@
 /**
  * Vite plugin pro validaci front-matter v Markdown souborech
  * Selže build, pokud nějaký MD soubor nemá front-matter
+ * 
+ * Poznámka: Soubory s published: false jsou vyloučeny z validace,
+ * protože jsou součástí ebooků a duplicita je očekávaná.
  */
 
 import type { Plugin } from 'vite';
@@ -36,6 +39,49 @@ function hasFrontMatter(filePath: string): boolean {
     return false;
   } catch (error) {
     // Pokud nelze soubor přečíst, vrátíme false
+    return false;
+  }
+}
+
+/**
+ * Zkontroluje, zda soubor má published: false v front-matter
+ * Soubory s published: false jsou vyloučeny z validace (jsou součástí ebooků)
+ */
+function hasPublishedFalse(filePath: string): boolean {
+  try {
+    const content = fs.readFileSync(filePath, 'utf-8');
+    const trimmed = content.trim();
+    
+    if (!trimmed.startsWith('---')) {
+      return false;
+    }
+    
+    const lines = trimmed.split('\n');
+    let frontMatterEnd = -1;
+    
+    // Najdeme konec front-matter
+    for (let i = 1; i < lines.length; i++) {
+      if (lines[i].trim() === '---') {
+        frontMatterEnd = i;
+        break;
+      }
+    }
+    
+    if (frontMatterEnd === -1) {
+      return false;
+    }
+    
+    // Prohledáme front-matter pro published: false
+    for (let i = 1; i < frontMatterEnd; i++) {
+      const line = lines[i].trim();
+      // Zkontrolujeme published: false nebo published:false
+      if (line === 'published: false' || line === 'published:false' || line.match(/^published\s*:\s*false\s*$/)) {
+        return true;
+      }
+    }
+    
+    return false;
+  } catch (error) {
     return false;
   }
 }
@@ -90,6 +136,11 @@ export function vitePluginValidateFrontmatter(): Plugin {
       const filesWithoutFrontMatter: string[] = [];
       
       for (const file of mdFiles) {
+        // Vyloučíme soubory s published: false z validace (jsou součástí ebooků)
+        if (hasPublishedFalse(file)) {
+          continue;
+        }
+        
         if (!hasFrontMatter(file)) {
           filesWithoutFrontMatter.push(file);
         }

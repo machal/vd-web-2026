@@ -2,7 +2,7 @@
 id: priklady-seznam
 title: Seznam ukázek
 heading: Seznam ukázek
-published: true
+published: false
 ---
 
 # Seznam ukázek

@@ -3,7 +3,7 @@ id: css-layout-grid-vs-flex
 title: 'Grid vs. flex (vs. multicol)'
 heading: 'Grid vs. flex (vs. multicol)'
 perex: ''
-published: false
+published: true
 category:
   - css
 category_highlight: false

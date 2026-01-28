@@ -28,5 +28,3 @@ og_type: article
 Hlášení případných chyb velmi vítám: [martin@vzhurudolu.cz](mailto:martin@vzhurudolu.cz).  
 
 A teď už přeji příjemné čtení.
-
-

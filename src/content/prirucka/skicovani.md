@@ -3,7 +3,7 @@ id: skicovani
 title: 'Skicování'
 heading: 'Skicování'
 perex: ''
-published: false
+published: true
 category: []
 category_highlight: false
 include_rss: false
@@ -60,4 +60,3 @@ Vybranou variantu pak musím ověřit ve světě, ve kterém komponenta bude ž�
 - Styl a úroveň věrnosti skic jsou volitelné. Jak moc se mohou lišit skici designérů v rámci jedné firmy, hezky ukazuje článek „The different sketch styles of the designers at 37signals“ od Jasona Frieda. [vrdl.in/pmuio](https://signalvnoise.com/posts/1880-the-different-sketch-styles-of-the-designers-at-37signals)
 - Předtištěné šablony mobilních zařízení od SneakPeekIt. [sneakpeekit.com](http://sneakpeekit.com/)
 - Pěkný je také gridzzly, nástroj Rostislava Blahy, který vám umožní tisk požadované mřížky na čistý papír. [gridzzly.com](http://gridzzly.com/)
-

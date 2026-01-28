@@ -2,7 +2,7 @@
 id: zmeny-8
 title: Od ornamentů k typografii a dál
 heading: Od ornamentů k typografii a dál
-published: true
+published: false
 ---
 
 # Od ornamentů k typografii a dál

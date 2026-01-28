@@ -2,7 +2,7 @@
 id: 5-uvod
 title: "Kapitola 5: Nasazení, měření a vyhodnocování"
 heading: "Kapitola 5: Nasazení, měření a vyhodnocování"
-published: true
+published: false
 ---
 
 # Kapitola 5: Nasazení, měření a vyhodnocování

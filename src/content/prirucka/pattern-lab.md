@@ -166,4 +166,4 @@ Tím, že jsme si do projektů zavedli vodopádový systém, udělali jsme si z 
 
 Díky nástupu mobilních zařízení se zjednodušují uživatelská rozhraní, což je skvělé, ale nestačí to. Nástup designových systémů vnímám jako pročišťující proces. Proto *návrat*. Návrat do pravěku webdesignu, kdy fáze návrhu a implementace webu nebyla tak komplexní činností.
 
-A proč návrat *do budoucnosti*? [Na WebExpo 2015](https://www.vzhurudolu.cz/blog/38-design-v-prohlizeci) jsem říkal, že nám chybí nástroje pro rozumný návrh rozhraní. A že v budoucnu určitě přijdou. Tušíte správně. Pattern Lab je pro mě jedním z nich. Do světa bez atomického designu, Pattern Labu nebo podobných nástrojů se už, moji milí, vracet nechci. 
+A proč návrat *do budoucnosti*? [Na WebExpo 2015](https://www.vzhurudolu.cz/blog/38-design-v-prohlizeci) jsem říkal, že nám chybí nástroje pro rozumný návrh rozhraní. A že v budoucnu určitě přijdou. Tušíte správně. Pattern Lab je pro mě jedním z nich. Do světa bez atomického designu, Pattern Labu nebo podobných nástrojů se už, moji milí, vracet nechci.

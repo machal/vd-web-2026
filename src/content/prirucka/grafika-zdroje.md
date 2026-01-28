@@ -5,7 +5,7 @@ category:
   - webdesign
 heading: 'Zdroje elementů grafického designu'
 perex: ''
-published: false
+published: true
 category_highlight: false
 include_rss: false
 no_ads: false

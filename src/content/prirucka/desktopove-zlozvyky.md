@@ -5,7 +5,7 @@ category:
   - netechnicke
 heading: 'Opusťte desktopové zlozvyky'
 perex: ''
-published: false
+published: true
 category_highlight: false
 include_rss: false
 no_ads: false
@@ -80,4 +80,3 @@ Specifickou odrůdu modálních oken, otravná modální okna, dokonce Google po
 
 
 Modálními okny a lightboxy ukončíme výčet nejvýznamnějších zástupců „Červené knihy ohrožených návrhových vzorů“. Teď se zamyslíme nad schováváním obsahu na mobilech.
-

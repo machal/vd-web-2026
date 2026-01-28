@@ -184,5 +184,3 @@ Je to fajn základ, který můžete dále rozšiřovat, třeba [o Style Lint](ht
 Když PostCSS vezmete jako jemné rozšíření vašeho CSS o proměnné a vkládané importy, s použitím na menší projekty neváhejte. Váš CSS kód bude kompatibilní i do budoucna a získáte velmi rychlou kompilaci. 
 
 Pro ostatní projekty prostě využijte [preprocesory](https://www.vzhurudolu.cz/blog/12-css-preprocesory-1). Čím více budete ve stylech mít programátorského, imperativního kódu – mixinů, funkcí, cyklů – tím více potřebujete robustnější řešení. Jazyk, který je vymyšlený pro složité úkoly – nejlépe [Sass](http://sass-lang.com/). Extrémy jako [frameworky typu Bootstrapu](https://www.vzhurudolu.cz/frontend-frameworky) si napsané v nativním CSS a transpilované pomocí PostCSS zatím představit neumím, ale i to se časem může srovnat.
-
-

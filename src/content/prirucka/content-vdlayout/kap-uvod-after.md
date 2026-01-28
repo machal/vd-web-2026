@@ -2,7 +2,7 @@
 id: kap-uvod-after
 title: Shrnutí první kapitoly
 heading: Shrnutí první kapitoly
-published: true
+published: false
 ---
 
 <div class="colored-box pbb-a" markdown="1">

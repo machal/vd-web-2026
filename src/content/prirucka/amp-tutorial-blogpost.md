@@ -5,7 +5,7 @@ category:
   - amp
 heading: 'Tutoriál: Blogpost do AMP'
 perex: ''
-published: false
+published: true
 category_highlight: false
 include_rss: false
 no_ads: false
@@ -364,5 +364,3 @@ Výsledek našeho snažení si můžete prohlédnout nebo stáhnout na následuj
 * Stažení v ZIPu: [vrdl.in/vdampj2z](https://www.vzhurudolu.cz/files/vdamp/vdamp-jednoduchy-2.zip)
 
 Nyní se zaměříme na komponenty dostupné v AMP.
-
-

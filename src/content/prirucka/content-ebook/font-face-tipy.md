@@ -2,7 +2,7 @@
 id: font-face-tipy
 title: font-face-tipy
 heading: font-face-tipy
-published: true
+published: false
 ---
 
 Font Face: tipy a triky

@@ -3,7 +3,7 @@ id: css-box-alignment-teorie
 title: 'Teorie k zarovnání boxů v CSS (Box Alignment Module)'
 heading: 'Teorie k zarovnání boxů v CSS (Box Alignment Module)'
 perex: ''
-published: false
+published: true
 category:
   - css
 category_highlight: false

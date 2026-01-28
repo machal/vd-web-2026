@@ -2,7 +2,7 @@
 id: priklad-layout
 title: "Příklad: rozvržení stránky"
 heading: "Příklad: rozvržení stránky"
-published: true
+published: false
 ---
 
 

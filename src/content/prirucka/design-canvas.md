@@ -5,7 +5,7 @@ category:
   - webdesign
 heading: 'User Centered Design Canvas'
 perex: ''
-published: false
+published: true
 category_highlight: false
 include_rss: false
 no_ads: false
@@ -42,4 +42,3 @@ Důvod, proč by uživatelé měli koupit zrovna váš produkt, a ne ten konkure
 Možná jste si všimli, že mluvíme o variaci na známý Lean Canvas – zjednodušený podnikatelský plán na jedné straně papíru. Ano, je to tak. Ten už rámec obsahu knihy překračuje skutečně hodně, takže nabídnu alespoň odkaz. [leancanvas.cz](http://www.leancanvas.cz/)
 
 Teď, když umíme jednoduché výstupy z výzkumné fáze shrnout do jedné stránky, pojďme se zaměřit na fázi návrhu a realizace uživatelského rozhraní.
-

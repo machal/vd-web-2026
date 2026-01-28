@@ -2,7 +2,7 @@
 id: nastroje-npm-bower
 title: "Správa balíčků: NPM a Bower"
 heading: "Správa balíčků: NPM a Bower"
-published: true
+published: false
 ---
 
 # Správa balíčků: NPM a Bower

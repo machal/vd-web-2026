@@ -2,7 +2,7 @@
 id: flexbox-priklady
 title: "Flexbox: praktické příklady"
 heading: "Flexbox: praktické příklady"
-published: true
+published: false
 ---
 
 # Flexbox: praktické příklady

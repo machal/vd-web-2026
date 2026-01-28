@@ -31,4 +31,3 @@ Je jich [opravdu velmi hodně](https://github.com/Modernizr/Modernizr/wiki/HTML5
 Na HTML5Please.com je seznam všech HTML5 vlastností, které se doporučuje [používat s polyfillem](http://html5please.com/#polyfill).
 
 Pokud jste zvědaví kde přesně se slovo „polyfill“ vzalo, mrkněte k [Remy Sharpovi](http://remysharp.com/2010/10/08/what-is-a-polyfill/).
-

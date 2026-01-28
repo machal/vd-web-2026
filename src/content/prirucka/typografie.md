@@ -121,5 +121,3 @@ Skvělá učebnice typografie od Jasona Santa Maria. [vrdl.in/76nb2](https://abo
 Dan Srb se hezky rozpovídal na jedné z akcí Frontendisti.cz. [youtu.be/bJLGEMQ3rnM](https://youtu.be/bJLGEMQ3rnM)
 * *Online kniha „The Elements of Typographic Style Applied to the Web“*  
 Bible od Roberta Bringhursta a spoluautorů. [webtypography.net](http://webtypography.net/toc/)
-
-

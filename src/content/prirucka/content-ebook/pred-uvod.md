@@ -2,7 +2,7 @@
 id: pred-uvod
 title: Co je nového?
 heading: Co je nového?
-published: true
+published: false
 ---
 
 # Co je nového? 
@@ -20,5 +20,3 @@ published: true
 Hlášení případných chyb velmi vítám: [martin@vzhurudolu.cz](mailto:martin@vzhurudolu.cz).  
 
 A teď už přeji příjemné čtení.
-
-

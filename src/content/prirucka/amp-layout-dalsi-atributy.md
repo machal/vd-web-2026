@@ -5,7 +5,7 @@ category:
   - responzivni-design
 heading: 'Atributy width, height, sizes, heights, media'
 perex: ''
-published: false
+published: true
 category_highlight: false
 include_rss: false
 no_ads: false

@@ -75,4 +75,3 @@ Samozřejmě – typografické principy nejsou jediným systémem uvnitř Bootst
 ## Bez zapojení designéra to bude bolet
 
 Typografické, ale i další principy Bootstrapu by měli znát designéři, kteří pro vás vytvářejí grafické podklady. Pokud se tahle pravidla porušují už během přípravy grafického systému, začne se vám Bootstrap stavět na zadní a nezřídka vás nehezky nakopne. Takže designéra zapojte a kolem Bootstrapu s ním našlapujte opatrně. :)
-

@@ -2,7 +2,7 @@
 id: 4-uvod
 title: "Kapitola 4: AMP v různých oborech webařiny"
 heading: "Kapitola 4: AMP v různých oborech webařiny"
-published: true
+published: false
 ---
 
 # Kapitola 4: AMP v různých oborech webařiny

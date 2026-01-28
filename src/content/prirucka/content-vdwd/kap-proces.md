@@ -2,7 +2,7 @@
 id: kap-proces
 title: "Kapitola 2: Úvod do tvorby webu"
 heading: "Kapitola 2: Úvod do tvorby webu"
-published: true
+published: false
 ---
 
 # Kapitola 2: Úvod do tvorby webu

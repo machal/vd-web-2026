@@ -2,7 +2,7 @@
 id: 00-copyright
 title: 00-copyright
 heading: 00-copyright
-published: true
+published: false
 ---
 
 © Martin Michálek, 2022  

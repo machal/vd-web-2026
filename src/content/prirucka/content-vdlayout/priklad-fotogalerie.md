@@ -2,7 +2,7 @@
 id: priklad-fotogalerie
 title: Galerie bez Media Queries
 heading: Galerie bez Media Queries
-published: true
+published: false
 ---
 
 # Galerie bez Media Queries

@@ -53,4 +53,3 @@ Martin Michálek je frontend designér na volné noze. Navrhuje a implementuje  
 Pořádá školení se zaměřením na moderní webový frontend – CSS, responzivní design, rychlost načítání, framework Bootstrap, SVG nebo Javascript. [vrdl.cz/kurzy](http://www.vzhurudolu.cz/kurzy)
 
 [vrdl.cz/martin](http://www.vzhurudolu.cz/martin)
-

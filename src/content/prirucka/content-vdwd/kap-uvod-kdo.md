@@ -2,7 +2,7 @@
 id: kap-uvod-kdo
 title: Pro koho knížka je a jak ji číst?
 heading: Pro koho knížka je a jak ji číst?
-published: true
+published: false
 ---
 
 # Pro koho knížka je a jak ji číst?

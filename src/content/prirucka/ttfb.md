@@ -141,5 +141,3 @@ Shrnu teď to nejdůležitější a už vám dám pokoj:
 - TTFB může být pro různá měření a různé stránky webu velmi různě vysoké. Má tedy smysl sledovat jen jeho dlouhodobý trend a srovnávat se s adekvátní konkurencí.
 
 <!-- AdSnippet -->
-
-

@@ -1,6 +1,7 @@
 ---
 category:
   - css
+published: false
 ---
 
 # Křápovzdorné technické řešení v CSS3

@@ -2,7 +2,7 @@
 id: 1-uvod
 title: "Kapitola 1: Co to je a proč se tím zabývat?"
 heading: "Kapitola 1: Co to je a proč se tím zabývat?"
-published: true
+published: false
 ---
 
 # Kapitola 1: Co to je a proč se tím zabývat?

@@ -2,7 +2,7 @@
 id: zmeny-3
 title: Mnoho prohlížečů, kodérova smrt
 heading: Mnoho prohlížečů, kodérova smrt
-published: true
+published: false
 ---
 
 # Mnoho prohlížečů, kodérova smrt

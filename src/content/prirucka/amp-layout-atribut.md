@@ -5,7 +5,7 @@ category:
   - webdesign
 heading: 'Atribut layout a komponenta amp-layout'
 perex: ''
-published: false
+published: true
 category_highlight: false
 include_rss: false
 no_ads: false

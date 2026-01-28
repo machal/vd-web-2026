@@ -2,7 +2,7 @@
 id: kap-prostredi-shrnuti
 title: Zapamatujte si
 heading: Zapamatujte si
-published: true
+published: false
 ---
 
 # Zapamatujte si
@@ -18,7 +18,3 @@ published: true
 - Kromě kapesních herních konzolí a displejů v autech teď jiná nová zařízení pro zobrazování webů nechystají.
 - Všechny responzivní weby jsou adaptivní. Ale říkáme jim responzivní, protože se to ujalo.
 - „M tečka“ weby mohou být fajn dočasné řešení. Dlouhodobě udržitelné jsou ale jen responzivní řešení.
-
-
-
-

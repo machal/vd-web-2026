@@ -2,7 +2,7 @@
 id: priklad-bootstrap-grid
 title: Mřížka jako v Bootstrapu
 heading: Mřížka jako v Bootstrapu
-published: true
+published: false
 ---
 
 # Mřížka jako v Bootstrapu

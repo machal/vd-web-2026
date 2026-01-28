@@ -2,7 +2,7 @@
 id: nastroje-bootstrap
 title: Bootstrap a hotové UI knihovny
 heading: Bootstrap a hotové UI knihovny
-published: true
+published: false
 ---
 
 # Bootstrap a hotové UI knihovny

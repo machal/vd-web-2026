@@ -2,7 +2,7 @@
 id: layout-intro
 title: Seznamka
 heading: Seznamka
-published: true
+published: false
 ---
 
 # Seznamka

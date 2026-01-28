@@ -3,7 +3,7 @@ id: vrstveni
 title: 'Vrstvení'
 heading: 'Vrstvení'
 perex: ''
-published: false
+published: true
 category: []
 category_highlight: false
 include_rss: false
@@ -141,5 +141,3 @@ A první věc, kterou tam udělají, je rozvržení. Layout. Až pak se přes ko
 Kodér, který pak výsledný soubor z Photoshopu zpracovává, musí namísto převodu grafického systému do CSS tupě přepisovat, co vidí. Do technologie převádí vnější znaky systému, ne systém samotný.
 
 Zkusme si v knížce ukázat postup, který jde tvorbě vrstveného systému na ruku. Když už máme v příkladu vyladěný obsah, vybereme písma, barvy a celkový grafický charakter. Prostě vizuální základnu. Pak teprve navrhneme komponenty typu navigace, a až nám obsah začne přetékat „z Ruzyně“, teprve pak jej zalomíme layoutem.
-
-
