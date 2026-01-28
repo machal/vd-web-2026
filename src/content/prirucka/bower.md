@@ -12,7 +12,9 @@ category:
 og_title: 'Bower'
 og_description: 'Bower je správce frontend balíčků. jQuery, Bootstrap… Prostě balíčků.'
 og_type: article
----# Bower
+---
+
+# Bower
 
 Bower je správce frontend balíčků.
 

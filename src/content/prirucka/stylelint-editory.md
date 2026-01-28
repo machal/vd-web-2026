@@ -11,7 +11,9 @@ no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----# Stylelint: Jak si jej nainstalovat v editorech kódu?
+---
+
+# Stylelint: Jak si jej nainstalovat v editorech kódu?
 
 Pojďme si rozjet [Stylelint](stylelint.md) přímo v editoru. Je to totiž to první místo, kde bychom jej měli používat.
 

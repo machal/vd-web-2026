@@ -11,7 +11,9 @@ no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----# Dělená cache v prohlížečích: konec sdílení zdrojů jako CSS, JS a webfonty
+---
+
+# Dělená cache v prohlížečích: konec sdílení zdrojů jako CSS, JS a webfonty
 
 Chrome přichází od verze 86 s takzvanou dělenou mezipamětí ([partitioned cache](https://www.stefanjudis.com/notes/say-goodbye-to-resource-caching-across-sites-and-domains/)), která znemožňuje sdílení zdrojů z CDN mezi weby běžícími na různých doménách.
 

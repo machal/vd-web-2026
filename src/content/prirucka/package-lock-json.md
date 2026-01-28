@@ -11,7 +11,9 @@ no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----# package-lock.json: Proč potřebujeme „lockfile“?
+---
+
+# package-lock.json: Proč potřebujeme „lockfile“?
 
 Co je hernajs ten `package-lock.json`, který se vám objevuje v hlavní složce repozitáře, když používáte [balíčkovací manažer NPM](npm.md)?
 

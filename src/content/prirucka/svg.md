@@ -1,5 +1,5 @@
 ---
-id: svg-fallbacky
+id: svg
 tags: ['rychlost-nacitani']
 title: 'SVG: vektorový formát, který na webu chyběl'
 heading: 'SVG fallbacky'
@@ -12,7 +12,9 @@ no_ads: false
 og_title: 'SVG fallbacky'
 og_description: 'Pojďme prozkoumat náhradní řešení pro prohlížeče, které neumí SVG.'
 og_type: article
----# SVG: vektorový formát, který na webu chyběl
+---
+
+# SVG: vektorový formát, který na webu chyběl
 
 Nezdá se to, ale SVG (Scalable Vector Graphics) je prastarý vektorový formát, jehož první standard pochází z roku 2001.
 

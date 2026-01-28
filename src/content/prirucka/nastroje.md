@@ -1,5 +1,5 @@
 ---
-id: rychlost-nastroje
+id: nastroje
 tags: ['nastroje']
 title: 'Nástroje, které používám pro frontend kodéřinu'
 heading: 'Nástroje pro analýzu rychlosti načtení stránky'
@@ -11,7 +11,9 @@ category:
 og_title: 'Nástroje pro analýzu rychlosti načtení stránky'
 og_description: 'Začněte s Google PageSpeed Insights, pokračujte na WebPageTest.org. Budou se vám také hodit vývojářské nástroje v Chrome nebo jiných prohlížečích.'
 og_type: article
----# Nástroje, které používám pro frontend kodéřinu
+---
+
+# Nástroje, které používám pro frontend kodéřinu
 
 Sublime Text, DevTools, Grunt, Browserstack, Graphic, Photoshop Elements a další.
 

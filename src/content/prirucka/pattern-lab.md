@@ -11,7 +11,9 @@ no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----# Atomický design a Pattern Lab: návrat do budoucnosti návrhu uživatelských rozhraní
+---
+
+# Atomický design a Pattern Lab: návrat do budoucnosti návrhu uživatelských rozhraní
 
 > We’re not designing pages, we’re designing systems of components. 
 – Stephen Hay

@@ -11,7 +11,9 @@ no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----# Preconnect a dns-prefetch
+---
+
+# Preconnect a dns-prefetch
 
 Docela často se stává, že na stránce potřebujeme stahovat prvky z jiných domén než je ta hlavní, na které web běží.
 

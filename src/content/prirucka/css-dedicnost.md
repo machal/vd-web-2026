@@ -13,7 +13,9 @@ no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----# Dědičnost v CSS: Co to je a kterých vlastností se týká?
+---
+
+# Dědičnost v CSS: Co to je a kterých vlastností se týká?
 
 Dědičnost je spolu s [kaskádou](css-kaskada.md) jako dvě sestry. A my, weboví vývojáři, jejich rodiče.
 

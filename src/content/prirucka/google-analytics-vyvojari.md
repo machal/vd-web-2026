@@ -11,7 +11,9 @@ no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----# Google Analytics: průvodce měřením pro webové vývojáře
+---
+
+# Google Analytics: průvodce měřením pro webové vývojáře
 
 Podíváme se co v Analytics mohou vývojáři sledovat, na užitečné nástroje a nutné základy práce s daty.
 

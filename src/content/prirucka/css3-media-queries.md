@@ -13,7 +13,9 @@ no_ads: false
 og_title: 'CSS3 Media Queries'
 og_description: 'Dotazy na média. Podmínka, která se zajistí platnost CSS pravidel jen po svém splnění.'
 og_type: article
----# Media Queries
+---
+
+# Media Queries
 
 Jde o podmínky, které umožňují aplikovat různá CSS pravidla v různých technických kontextech.
 

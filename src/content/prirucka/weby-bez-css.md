@@ -12,7 +12,9 @@ no_ads: false
 og_title: 'Weby bez CSS: Existuje to vůbec? A jak to testovat?'
 og_description: 'I váš web se možná někde zobrazuje bez vašich pečlivě připravených CSS.'
 og_type: article
----# Weby bez CSS: Existuje to vůbec? A jak to testovat?
+---
+
+# Weby bez CSS: Existuje to vůbec? A jak to testovat?
 
 Je docela dost situací a kontextů, ve kterých se weby vykreslují s jinými než vašimi styly nebo úplně bez nich. Prima video k tomu natočila [Jen Simmons](https://www.youtube.com/watch?v=C82zB_yaGF8).
 

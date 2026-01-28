@@ -13,7 +13,9 @@ no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----# Uti­li­ty třídy a kom­po­nen­ty v CSS: Jak najít rov­no­váhu?
+---
+
+# Uti­li­ty třídy a kom­po­nen­ty v CSS: Jak najít rov­no­váhu?
 
 Utility třídy jsou skvělé, ale když je nasadíte na složitější komponenty, správa se stává problematickou. Proto se často kolo uzavře a najednou jste zpět u klasických BEM komponent nebo jiné abstrakce. 
 

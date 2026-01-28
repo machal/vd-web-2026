@@ -13,7 +13,9 @@ no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----# Funkce calc()
+---
+
+# Funkce calc()
 
 Funkce `calc()` v CSS umožňuje vložit matematický výraz místo hodnoty vlastnosti.
 

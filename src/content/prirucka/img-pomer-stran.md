@@ -11,7 +11,9 @@ no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----# Poměr stran obrázků jednoduše (pomocí atributů WITH a HEIGHT ve značce IMG)
+---
+
+# Poměr stran obrázků jednoduše (pomocí atributů WITH a HEIGHT ve značce IMG)
 
 Nedávno jsem na Vzhůru dolů publikoval [text o nastavení poměru stran](css-pomer-stran.md) pro obrázky, video, iframy a další obsah vkládaný do HTML zvenčí. Říkejme mu média.
 

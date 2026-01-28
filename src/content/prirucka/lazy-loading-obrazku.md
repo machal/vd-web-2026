@@ -15,7 +15,9 @@ no_ads: false
 og_title: 'Lazy loading obrázků a iframe: Kompletní průvodce implementací (včetně nativní podpory v prohlížečích)'
 og_description: 'Velký text, ve kterém se podíváme na konkrétní možnosti implementace lazy loadingu do vašich webů. Od nativní podpory v prohlížečích po knihovny nebo vliv na SEO a UX.'
 og_type: article
----# Lazy loading obrázků a iframe na webu
+---
+
+# Lazy loading obrázků a iframe na webu
 
 Připomeňme, že lazy loading je technika pro odložení načtení prvků webu až na moment, kdy jsou opravdu potřeba.
 

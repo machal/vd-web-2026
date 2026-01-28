@@ -13,7 +13,9 @@ no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----# Responzivní breakpointy: Realizace v kódu (CSS, Sass i PostCSS)
+---
+
+# Responzivní breakpointy: Realizace v kódu (CSS, Sass i PostCSS)
 
 Ukládání breakpointů a rozmezí do proměnných preprocesoru velmi doporučuji, protože to zpřehlední kód a zefektivní psaní.
 

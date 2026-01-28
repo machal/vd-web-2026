@@ -13,7 +13,9 @@ no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----# Zděděná a výchozí hodnota v CSS, vlastnost all a klíčová slova inherit, initial, unset, revert
+---
+
+# Zděděná a výchozí hodnota v CSS, vlastnost all a klíčová slova inherit, initial, unset, revert
 
 Pojďme zjistit, jak vracet nastavení vlastnosti k výchozí nebo poděděné hodnotě.
 

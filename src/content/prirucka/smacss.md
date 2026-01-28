@@ -13,7 +13,9 @@ no_ads: false
 og_title: 'SMACSS'
 og_description: 'Scalable and Modular Architecture for CSS. Style guide od Jonathana Snooka.'
 og_type: article
----# SMACSS
+---
+
+# SMACSS
 
 Starší style guide pro psaní CSS od Jonathana Snooka.
 

@@ -13,7 +13,9 @@ no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----# Zásady psaní respektujícího CSS
+---
+
+# Zásady psaní respektujícího CSS
 
 Pište kód jednotně a hlavně tak, aby se dobře četl jiným nebo třeba vám samotným za rok. Počítejte s tím, že lidé umí CSS. To ostatní není jisté. Pište proto CSS kód a moc si jej neupravujte. *Respektujte* vlastnosti lidí i CSS.
 

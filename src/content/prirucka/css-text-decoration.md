@@ -13,7 +13,9 @@ no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----# Rodina vlastností text-decoration v CSS
+---
+
+# Rodina vlastností text-decoration v CSS
 
 Když se pustíte do studia dříve jednoduchých vlastností v CSS, můžete být překvapení jejich robustností (a pro někoho také přílišnou složitostí). To se  stalo i mě právě teď u vlastnosti `text-decoration`.
 

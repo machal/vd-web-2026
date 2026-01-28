@@ -13,7 +13,9 @@ no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----# Kaskáda v CSS: skrytý „nepřítel“
+---
+
+# Kaskáda v CSS: skrytý „nepřítel“
 
 Možná se divíte, proč se na blogu, kde řešívám spíše pokročilejší záležitosti v CSS, vrhám na začátečnické téma. Jenže… Moc dobře vím, že správné chápání kaskády je rozšířené daleko méně než byste možná čekali.
 

@@ -1,5 +1,5 @@
 ---
-id: rychlost-designeri
+id: rychlost-nacitani
 title: 'Jak vylepšit rychlost načítání webu'
 category:
   - rychlost-nacitani

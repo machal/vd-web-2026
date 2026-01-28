@@ -11,7 +11,9 @@ no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----# Weby versus aplikace 
+---
+
+# Weby versus aplikace 
 
 Podívejte se, jsem webař, aplikace nedělám. Už si o nich ale se mnou chtělo povídat tolik lidí, že se o ně zajímám alespoň ze strategického pohledu. Pokud vám tedy stačí stručný úvod do tématu, čtěte.
 

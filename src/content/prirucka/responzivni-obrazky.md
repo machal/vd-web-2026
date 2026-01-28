@@ -11,7 +11,9 @@ no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----# Responzivní obrázky
+---
+
+# Responzivní obrázky
 
 V responzivním designu máme na výběr poměrně hodně řešení možných problémů s obrázky.
 

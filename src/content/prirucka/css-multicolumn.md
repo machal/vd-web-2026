@@ -13,7 +13,9 @@ no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----# Vícesloupcové rozvržení: příručka pro vlastnosti CSS Multi-column Layout
+---
+
+# Vícesloupcové rozvržení: příručka pro vlastnosti CSS Multi-column Layout
 
 Díky vlastnosti `column` a dalším definovaným v sadě modulu CSS Multi-column Layout můžeme obsah stránky vysázet do více sloupců definované šířky podobně jako v novinové sazbě.
 

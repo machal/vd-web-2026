@@ -16,7 +16,9 @@ no_ads: false
 og_title: 'Style Queries v CSS: zeptejte se na styl prvku'
 og_description: 'Po dotazech na média a na kontejner zde máme první implementaci dotazů na styl. Chrome od verze 111 umožní dotazovat se na hodnotu custom properties v konkrétním prvku. To se může hodit.'
 og_type: article
----# CSS Style Queries
+---
+
+# CSS Style Queries
 
 Sotva jsme na svět praktického CSS přivítali výborné [Container Queries](container-queries.md), přichází další novinka. CSS Style Queries umožňují ptát se v na vypočtené hodnoty CSS vlastností a podle toho změnit styl elementu.
 

@@ -12,7 +12,9 @@ no_ads: false
 og_title: 'Typografie na webu'
 og_description: 'Písmo v nás vyvolává emoce a špatná typografie může odradit čtenáře nebo zákazníka. Proto je typografie důležitá i na webu.'
 og_type: article
----# Typografie na webu
+---
+
+# Typografie na webu
 
 Pojďme si projít základní množinu znalostí o využití písma na webu, zmínit pár častých chyb a dvakrát podtrhnout hlavní pravidlo pro stavbu responzivního rozvržení stránky. Předtím ale ještě zmíním jeden účel písma, na který se často zapomíná. 
 

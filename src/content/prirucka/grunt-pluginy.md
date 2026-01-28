@@ -11,7 +11,9 @@ no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----# 29 užitečných pluginů pro Grunt
+---
+
+# 29 užitečných pluginů pro Grunt
 
 Pozor, vybraná devětadvacítka je dlouhá jako týden před výplatou. Berte ji ale jako zdroj inspirace, pokud Grunt nevyužíváte naplno nebo teprve začínáte. Takže se množství nelekejme a směle do toho.
 

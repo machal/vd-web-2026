@@ -1,5 +1,5 @@
 ---
-id: principy-ui
+id: 4-principy-ui
 title: 'Čtyři principy návrhu responzivního rozhraní'
 category:
   - responzivni-design

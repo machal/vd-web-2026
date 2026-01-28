@@ -13,7 +13,9 @@ no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----# CSS grid: 3 příklady použití, které se vám budou líbit (a fallback k tomu)
+---
+
+# CSS grid: 3 příklady použití, které se vám budou líbit (a fallback k tomu)
 
 [CSS grid](css-grid.md) nádherně rozšiřuje možnosti layoutu ve webdesignu. Pojďte se nechat inspirovat několika příklady využití.
 

@@ -11,7 +11,9 @@ no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----# HTTP/3
+---
+
+# HTTP/3
 
 Třetí verze protokolu HTTP vypadá slibně. Zatím ji lze z pohledu webaře spíše jen po očku sledovat, na reálné použití si totiž na většině našich projektů zatím kvůli slabé podpoře asi počkáme.
 

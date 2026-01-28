@@ -1,5 +1,5 @@
 ---
-id: css-grid-msie
+id: css-grid
 tags: ['css']
 title: 'CSS grid'
 heading: 'CSS Grid v Internet Exploreru: Jde to!'
@@ -16,7 +16,9 @@ no_ads: false
 og_title: 'CSS Grid v Internet Exploreru: Jde to!'
 og_description: 'Na vědomí se tímto dává, že díky zásadním aktualizacím v Autoprefixeru je možné Grid používat v daleko více případech než tomu bylo dosud.'
 og_type: article
----# CSS grid
+---
+
+# CSS grid
 
 <div class="book-index" data-book-index="Grid"></div>
 

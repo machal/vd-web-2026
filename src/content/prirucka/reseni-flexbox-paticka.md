@@ -11,7 +11,9 @@ no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----# CSS řešení: Patička přilepená ke spodní hraně okna
+---
+
+# CSS řešení: Patička přilepená ke spodní hraně okna
 
 Jsou věci, které grafici na CSS prostě nemohou vystát. Jako třeba patičku, která zůstává viset hned za obsahem.
 

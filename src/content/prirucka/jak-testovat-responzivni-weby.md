@@ -11,7 +11,9 @@ no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----# Testování a ladění webů na zařízeních
+---
+
+# Testování a ladění webů na zařízeních
 
 Jak si poradit s dnešní škálou prohlížečů a zařízení? A jak s nepřítomností pořádných vývojářských nástrojů na mobilech? Svatý grál neznám, ale pár tipů ze své praxe bych měl.
 

@@ -11,7 +11,9 @@ no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----# Google Page Experience
+---
+
+# Google Page Experience
 
 „Page Experience“ bylo pojmové zarámování snah Googlu o zhodnocení uživatelské zkušenosti (UX) se stránkou.
 

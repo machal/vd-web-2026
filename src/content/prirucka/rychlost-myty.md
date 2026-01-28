@@ -11,7 +11,9 @@ no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----# 7 blbostí z oblasti webové rychlosti
+---
+
+# 7 blbostí z oblasti webové rychlosti
 
 V praxi poradce k rychlosti webů musím často vysvětlovat některá koncepční nepochopení. Teď nastává ta chvíle, kdy je milerád vyvrátím.
 

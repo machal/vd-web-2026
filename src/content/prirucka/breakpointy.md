@@ -12,7 +12,9 @@ no_ads: false
 og_title: 'Breakpointy v responzivním designu: Detailně a do hloubky'
 og_description: 'Velký článek o breakpointech: Jak je vymýšlet podle designu webu a také jeho cílové skupiny, jak je pojmenovávat a čemu se rozhodně vyhnout.'
 og_type: article
----# Breakpointy a rozmezí platnosti responzivního designu
+---
+
+# Breakpointy a rozmezí platnosti responzivního designu
 
 Breakpointy jsou velikosti okna ([viewportu](viewport.md)) prohlížeče, ve kterých se může měnit design webu. Česky jim můžeme říkat *body zlomu designu*.
 

@@ -12,7 +12,9 @@ no_ads: false
 og_title: 'PostCSS jako jednoduchá náhrada preprocesoru'
 og_description: 'Jak PostCSS využít jako jednoduchý a rychlý preprocesor, který vám na spoustu projektů výborně poslouží. A proč ne CSSnext?'
 og_type: article
----# PostCSS jako jednoduchá náhrada preprocesoru
+---
+
+# PostCSS jako jednoduchá náhrada preprocesoru
 
 [PostCSS](http://postcss.org/) je nástroj pro transformaci CSS pomocí pluginů napsaných v Node.js. Naoko vlastně nic nedělá, je to ale nutná spodní vrstva pro fungování známějších a zajímavějších pluginů, například Autoprefixeru. 
 

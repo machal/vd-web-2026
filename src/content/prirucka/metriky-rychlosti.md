@@ -12,7 +12,9 @@ no_ads: false
 og_title: 'Me­t­ri­ky rych­los­ti webů: Prů­vod­ce s de­tail­ním vy­svět­le­ním'
 og_description: 'Nově přepsaný text příručky. Syntetická měření, RUM a vysvětlení spousty zkratek: TTFB, DCL, FP, FCP…'
 og_type: article
----# Metriky rychlosti webu
+---
+
+# Metriky rychlosti webu
 
 V metrikách a událostech, které se týkají načítání a vykreslování stránky je děsný nepořádek. Pokusím se trochu uklidit.
 

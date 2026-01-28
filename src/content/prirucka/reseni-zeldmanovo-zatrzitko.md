@@ -11,7 +11,9 @@ no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----# CSS řešení: Zeldmanovo zatržítko
+---
+
+# CSS řešení: Zeldmanovo zatržítko
 
 Podíváme se na další z řešení, které jsem ukazoval v přednášce [na WebExpo 2016](https://www.vzhurudolu.cz/prednaska/webexpo-2016-246).
 

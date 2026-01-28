@@ -15,7 +15,9 @@ no_ads: false
 og_title: 'Web Vitals: Co jsou zač ty nové metriky rychlosti webu od Googlu?'
 og_description: 'Lidé z Googlu přišli s novou sadou metrik rychlosti webu, kterou by podle nich měl znát a sledovat úplně každý. Tentokrát navíc jasně řekli, že budou mít vliv na SEO.'
 og_type: article
----# Web Vitals
+---
+
+# Web Vitals
 
 Web Vitals je sada metrik, které Google nově označuje za důležité pro sledování dobrého uživatelského zážitku na webu.
 

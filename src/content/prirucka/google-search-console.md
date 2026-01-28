@@ -11,7 +11,9 @@ no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----# Search Console: co si Google myslí o vašem webu?
+---
+
+# Search Console: co si Google myslí o vašem webu?
 
 Google Search Console je monitorovací nástroj ověřující provedení webu z pohledu vyhledavače. Možná Search Console znáte jako „Webmaster Tools“, dříve se tak jmenoval.
 

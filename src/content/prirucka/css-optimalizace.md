@@ -15,7 +15,9 @@ no_ads: false
 og_title: 'CSS: Optimalizace datové velikosti'
 og_description: 'Velký článek o krocích, které je potřeba udělat ke zmenšení datového objemu stylů. Datová velikost CSS je totiž důležitá a každý bajt se počítá.'
 og_type: article
----# CSS: Optimalizace datové velikosti
+---
+
+# CSS: Optimalizace datové velikosti
 
 CSS je zdroj, který vždy blokuje vykreslení stránky a proto se každý jeho kilobajt počítá. Ukažme si osm kroků, kterými je možné optimalizovat datovou velikost stylů a zlepšit tak rychlost webu.
 

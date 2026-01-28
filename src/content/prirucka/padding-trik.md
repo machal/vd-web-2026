@@ -11,7 +11,9 @@ no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----# Zachování poměru stran v CSS: Metoda s pading-top nebo padding-bottom
+---
+
+# Zachování poměru stran v CSS: Metoda s pading-top nebo padding-bottom
 
 Často se stává, že během načítání externích zdrojů stránky – jako jsou obrázky, video nebo obsah prvku `<iframe>` – potřebujeme držet [poměr stran](css-pomer-stran.md).
 

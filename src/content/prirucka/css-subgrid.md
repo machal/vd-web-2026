@@ -16,7 +16,9 @@ no_ads: false
 og_title: 'CSS subgrid: grid uvnitř gridu'
 og_description: '[AKTUALIZACE] Nově tuto velmi zajímavou část CSS gridu můžeme používat ve všech prohlížečích. V ukázce z knížky „CSS: moderní layout“ se podmřížce podíváme na zub.'
 og_type: article
----# Subgrid v CSS gridu
+---
+
+# Subgrid v CSS gridu
 
 Subgrid umožní vytvořit zanořenou mřížku, která zároveň podědí layout rodičovského gridu. Je to velmi praktické a nově podporované ve všech prohlížečích.
 

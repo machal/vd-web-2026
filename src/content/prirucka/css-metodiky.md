@@ -13,7 +13,9 @@ no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----# Metodiky pro organizaci CSS kódu
+---
+
+# Metodiky pro organizaci CSS kódu
 
 CSS kód je snadné psát, ale špatně se spravuje jeho větší množství.
 

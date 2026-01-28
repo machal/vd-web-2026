@@ -11,7 +11,9 @@ no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----# Google Analytics: průvodce pro přidání webu
+---
+
+# Google Analytics: průvodce pro přidání webu
 
 Přidání nového webu do Analytics může vypadat jako jednoduchá záležitost, ale není tomu tak. Tenhle návod je primárně určený pro webové vývojáře, takže nepředpokládám hlubokou znalost problematiky.
 

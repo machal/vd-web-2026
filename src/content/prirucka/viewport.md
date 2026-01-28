@@ -1,5 +1,5 @@
 ---
-id: viewport-windows
+id: viewport
 title: 'Viewport ve webdesignu: layoutový, vizuální a ideální'
 heading: 'Viewport na Windows 8 a 8.1'
 date: 2015-02-03

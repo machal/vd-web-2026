@@ -11,7 +11,9 @@ no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----# Parcel.js
+---
+
+# Parcel.js
 
 <!-- Autor: Tomáš Smetka (smetka.tomas90@gmail.com) -->
 

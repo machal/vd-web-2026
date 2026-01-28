@@ -11,7 +11,9 @@ no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----# package.json: Manifest závislostí projektu
+---
+
+# package.json: Manifest závislostí projektu
 
 Dneska o tomhle populárním souboru, o NPM skriptech a taky o závislostech.
 

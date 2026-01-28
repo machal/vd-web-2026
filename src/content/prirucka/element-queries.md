@@ -11,7 +11,9 @@ no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----# Element/Container Queries: Media Queries na rodiče
+---
+
+# Element/Container Queries: Media Queries na rodiče
 
 Element Queries (nebo Container Queries) jsou vlastně stejné typy podmínek jako [Media Queries](css3-media-queries.md). Jen se neptáte na parametry okna prohlížeče, ale na parametry samotného elementu.
 

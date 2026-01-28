@@ -11,7 +11,9 @@ no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----# CSS řešení: Elastická typografie počítaná v procentech z výšky komponenty
+---
+
+# CSS řešení: Elastická typografie počítaná v procentech z výšky komponenty
 
 Pojďme si rozebrat jedno z řešení, které jsem ukazoval v přednášce [na WebExpo 2016](https://www.vzhurudolu.cz/prednaska/webexpo-2016-246).
 

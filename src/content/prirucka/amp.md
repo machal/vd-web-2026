@@ -1,5 +1,5 @@
 ---
-id: amp-platformy
+id: amp
 title: 'AMP weby: Co to je a proč nás to má vůbec zajímat?'
 heading: 'AMP: Odkud vám přinese návštěvnost pro web?'
 date: 2019-07-04

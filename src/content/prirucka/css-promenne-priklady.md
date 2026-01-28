@@ -13,7 +13,9 @@ no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----# CSS proměnné: 6 praktických příkladů, které vás nakopnou k jejich používání
+---
+
+# CSS proměnné: 6 praktických příkladů, které vás nakopnou k jejich používání
 
 [„CSS proměnné“](css-promenne.md) (nebo také autorské vlastnosti) už známe z předchozího textu. V tomhle se podívejme na jejich praktické použití.
 

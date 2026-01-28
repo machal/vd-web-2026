@@ -13,7 +13,9 @@ no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----# Masonry layout nativně v CSS
+---
+
+# Masonry layout nativně v CSS
 
 Rozvržení typu masonry je ve webdesignu stejně populární jako zednická lžíce mezi zedníky.
 

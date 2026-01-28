@@ -13,7 +13,9 @@ no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----# Deskriptor font-display: Jak na řízené vykreslování webfontů?
+---
+
+# Deskriptor font-display: Jak na řízené vykreslování webfontů?
 
 Vlastnost `font-display` určuje, jak se bude během stahování vykreslovat webový font. Umožní renderovat webfonty bez zbytečného probliknutí a jednotně v moderních prohlížečích.
 

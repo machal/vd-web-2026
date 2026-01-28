@@ -11,7 +11,9 @@ no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----# Metrika „Největší vykreslení obsahu“ (Largest Contentful Paint, LCP)
+---
+
+# Metrika „Největší vykreslení obsahu“ (Largest Contentful Paint, LCP)
 
 Nová [metrika rychlosti webu](metriky-rychlosti.md) – Largest Contentful Paint (LCP) – představuje přesnější způsob měření momentu, ve kterém se vykreslí hlavní obsah stránky.
 

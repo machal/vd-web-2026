@@ -15,7 +15,9 @@ no_ads: false
 og_title: 'Preload: Přednačtení prvků stránky detailně a do hloubky'
 og_description: 'Hlavičková deklarace PRELOAD vyvolává dřívější stažení prvku stránky a v případě JavaScriptu odděluje stažení od spuštění.'
 og_type: article
----# Preload: Přednačtení prvků stránky
+---
+
+# Preload: Přednačtení prvků stránky
 
 Preload je deklarace, které vyvolává dřívější stažení prvku stránky a v případě JavaScriptu odděluje stažení od spuštění.
 

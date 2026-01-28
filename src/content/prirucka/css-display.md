@@ -13,7 +13,9 @@ no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----# Vlastnost CSS display
+---
+
+# Vlastnost CSS display
 
 <div class="book-index" data-book-index="display"></div>
 

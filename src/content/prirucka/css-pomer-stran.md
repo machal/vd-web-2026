@@ -13,7 +13,9 @@ no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----# Poměr stran v CSS
+---
+
+# Poměr stran v CSS
 
 Jak v CSS udržet poměr stran než se vykreslí složitější komponenta nebo responzivní médium? V textu jsou popsané nejznámější metody, včetně triků s paddingem, s autorskými vlastnostmi a napřímo vloženým SVG.
 

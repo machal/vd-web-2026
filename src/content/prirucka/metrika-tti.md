@@ -11,7 +11,9 @@ no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----# Metrika „Čas do interaktivity“ (Time To Interactive, TTI)
+---
+
+# Metrika „Čas do interaktivity“ (Time To Interactive, TTI)
 
 [Metrika rychlosti webu](metriky-rychlosti.md), která říká kdy je stránka renderovaná a zároveň schopná spolehlivě reagovat na uživatelský vstup.
 

@@ -13,7 +13,9 @@ no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----# Porovnávací funkce v CSS: min(), max() a clamp()
+---
+
+# Porovnávací funkce v CSS: min(), max() a clamp()
 
 <div class="book-index" data-book-index="min()"></div>
 <div class="book-index" data-book-index="max()"></div>

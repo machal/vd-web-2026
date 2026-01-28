@@ -16,7 +16,9 @@ no_ads: false
 og_title: 'WebP obrázky: datově úsporná alternativa k JPEG, PNG i GIF'
 og_description: '[Update článku] WebP je formát bitmapových obrázků, který se v posledních letech stal na webu velmi populárním.'
 og_type: article
----# WebP obrázky: datově úsporná alternativa k JPEG, PNG i GIF
+---
+
+# WebP obrázky: datově úsporná alternativa k JPEG, PNG i GIF
 
 [WebP](https://developers.google.com/speed/webp/) je formát bitmapových obrázků, který představil Google v roce 2010.
 

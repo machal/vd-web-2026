@@ -13,7 +13,9 @@ no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----# CSS vlastnost contain
+---
+
+# CSS vlastnost contain
 
 Vlastností `contain` označujeme části stránky, které jsou izolované od zbytku.
 Izolujeme je proto, aby prohlížeč nemusel při změnách překreslovat celou stránku.

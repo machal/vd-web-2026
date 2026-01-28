@@ -11,7 +11,9 @@ no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----# JavaScript: Priority stahování a spouštění
+---
+
+# JavaScript: Priority stahování a spouštění
 
 Navážu zde na [výborný přehled](https://medium.com/dev-channel/javascript-loading-priorities-in-chrome-57c54cfa6672) od autorů Chrome a doplním jej dalšími postřehy.
 

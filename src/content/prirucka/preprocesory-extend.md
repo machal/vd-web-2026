@@ -11,7 +11,9 @@ no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----# @extend v preprocesorech: Bacha na něj!
+---
+
+# @extend v preprocesorech: Bacha na něj!
 
 V CSS preprocesorech jako LESS a Sass můžete použít direktivu `@extend`. Asi tak ve dvou případech z tisíce to může být užitečné, ale v textu se vás od toho chystám odradit.
 

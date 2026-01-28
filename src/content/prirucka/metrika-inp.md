@@ -11,7 +11,9 @@ no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----# Interaction to Next Paint (INP): nová metrika přijde v březnu 2024
+---
+
+# Interaction to Next Paint (INP): nová metrika přijde v březnu 2024
 
 INP je nová metrika rychlosti webu, se kterou přichází Google v rámci své sady [Core Web Vitals](web-vitals.md). V březnu 2024 má nahradit dnes už neuspokojivou metriku [FID (First Input Delay)](metrika-fid.md).
 

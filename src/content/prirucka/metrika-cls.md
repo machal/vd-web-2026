@@ -11,7 +11,9 @@ no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----# Metrika „Kumulativní posun layoutu“ (Cumulative Layout Shift, CLS)
+---
+
+# Metrika „Kumulativní posun layoutu“ (Cumulative Layout Shift, CLS)
 
 Metrika, která udává stabilitu vzhledu stránky během vykreslování.
 

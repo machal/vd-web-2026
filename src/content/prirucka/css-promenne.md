@@ -15,7 +15,9 @@ no_ads: false
 og_title: 'CSS proměnné (nebo také autorské či volitelné vlastnosti)'
 og_description: 'Nativní proměnné v CSS jsou fajn. Od proměnných v preprocesorech, které asi znáte více, se liší tím, že se počítají přímo v prohlížeči a že jsou dostupné kromě CSS také v JavaScriptu a HTML.'
 og_type: article
----# CSS proměnné (nebo také autorské či volitelné vlastnosti)
+---
+
+# CSS proměnné (nebo také autorské či volitelné vlastnosti)
 
 Nativní proměnné v CSS jsou fajn. Od proměnných v preprocesorech, které možná někteří znáte více, se liší tím, že se počítají přímo v prohlížeči a že jsou dostupné kromě CSS také v JavaScriptu a HTML.
 

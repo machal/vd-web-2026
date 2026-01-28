@@ -11,7 +11,9 @@ no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----# Grunt.js: plnohodnotný sestavovací nástroj
+---
+
+# Grunt.js: plnohodnotný sestavovací nástroj
 
 Grunt si říká „The JavaScript Task Runner“. Není to nic jiného než skript sloužící webovým vývojářům. Automatizuje opakující se nebo nudné úkoly.
 

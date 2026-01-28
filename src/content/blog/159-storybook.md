@@ -17,7 +17,9 @@ og_title: 'Jak v ContentKing děláme design systém za pomocí Sketche, InVisio
 og_description: 'Rozebíráme motivaci pro vytvoření systému designu v ContentKing, postup a nástroje, které použili, včetně Storybooku.'
 og_type: article
 tags: ['nastroje', 'organizace-css']
----# Jak v ContentKing děláme design systém za pomocí Sketche, InVision a Storybooku
+---
+
+# Jak v ContentKing děláme design systém za pomocí Sketche, InVision a Storybooku
 
 _[Martin Pešout](http://www.martinpesout.cz/), frontendový vývojář z [ContentKing](https://www.contentking.cz/) vám v dnešním textu ukáže, jak vzniká jejich systém designu._
 

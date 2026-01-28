@@ -11,7 +11,9 @@ no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----# Mobilní navigace: potřebujeme hamburgery?
+---
+
+# Mobilní navigace: potřebujeme hamburgery?
 
 Hlavní navigační oblasti webů jsme zvyklí dělat složité. Tak složité a strukturované, že se na malé mobilní obrazovky nevejdou. Proto je tam schováváme a opatřujeme vypínačem. 
 

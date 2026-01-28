@@ -13,7 +13,9 @@ no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----# Velikost okna prohlížeče v CSS a JavaScriptu: min-width, innerWidth, clientWidth
+---
+
+# Velikost okna prohlížeče v CSS a JavaScriptu: min-width, innerWidth, clientWidth
 
 Na rozdíl od rozlišení displeje poskytuje velikost okna pro responzivní design webu velmi zajímavé informace.
 

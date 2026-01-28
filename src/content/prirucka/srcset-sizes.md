@@ -11,7 +11,9 @@ no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----# Atributy responzivních obrázků: srcset a sizes
+---
+
+# Atributy responzivních obrázků: srcset a sizes
 
 Nové atributy řeší potřebu autorů stránek zobrazovat v různých kontextech designu různé varianty obrázků.
 

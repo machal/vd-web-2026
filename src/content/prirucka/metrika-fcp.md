@@ -11,7 +11,9 @@ no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----# Metrika „První vykreslení obsahu“ (First Contentful Paint, FCP)
+---
+
+# Metrika „První vykreslení obsahu“ (First Contentful Paint, FCP)
 
 [Metrika rychlosti webu](metriky-rychlosti.md), která vzniká v okamžiku vykreslení prvního textu nebo obrázku (včetně těch natahovaných přes CSS vlastnost `background`).
 

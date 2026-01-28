@@ -13,7 +13,9 @@ no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----# Pseudotřídy v CSS
+---
+
+# Pseudotřídy v CSS
 
 Vítejte v referenční příručce pro pseudotřídy v CSS! Pseudotřídy pomáhají [obyčejným selektorům](css-selektory.md) při snadnějším vybírání prvků pro stylování.
 

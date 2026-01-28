@@ -13,7 +13,9 @@ no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----# CSS funkce minmax() a klíčová slova min-content, max-content a fit-content
+---
+
+# CSS funkce minmax() a klíčová slova min-content, max-content a fit-content
 
 Funkce (nebo přesněji řečeno „zápis“) `minmax()` a navázaná klíčová slova definují rozsah šířky nebo výšky pro sloupce či řádky mřížky v CSS gridu.
 

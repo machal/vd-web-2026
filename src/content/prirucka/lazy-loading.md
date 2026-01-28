@@ -15,7 +15,9 @@ no_ads: false
 og_title: 'Lazy loading v kontextu webového frontendu: co to je a proč to dělat?'
 og_description: 'Obecně o principu líného načtení obrázků, iframe a dalších prvků, který může zrychlit načtení stránky.'
 og_type: article
----# Lazy loading
+---
+
+# Lazy loading
 
 [Lazy loading](http://cs.wikipedia.org/wiki/Lazy_loading) je v oblasti IT dost široký pojem, ale ve světě webové kodéřiny označuje techniku, která zajistí načtení části obsahu stránky až ve chvíli, kdy ji uživatel potřebuje.
 

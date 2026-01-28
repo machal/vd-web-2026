@@ -11,7 +11,9 @@ no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----# Zdrženlivá filozofie přístupu k nástrojům
+---
+
+# Zdrženlivá filozofie přístupu k nástrojům
 
 Nástroje frontend kodéra [už jsme probrali](nastroje.md). Teď ještě něco k principům přístupu k nim. Ty moje se dají shrnout do jedné věty:
 

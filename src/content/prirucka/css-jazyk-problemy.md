@@ -13,7 +13,9 @@ no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----# Kaskáda a další „problémy“ CSS: Jak je řešit, když vás pálí?
+---
+
+# Kaskáda a další „problémy“ CSS: Jak je řešit, když vás pálí?
 
 CSS své trable bezpochyby má. Pokud se ale jedná o organizaci a architekturu projektu, těžko o nich mluvit jako o problémech. 
 

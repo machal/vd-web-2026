@@ -11,7 +11,9 @@ no_ads: false
 og_title: ''
 og_description: ''
 og_type: article
----# Proč řešit rychlost načítání webu?
+---
+
+# Proč řešit rychlost načítání webu?
 
 V Google mají jasno. Tohle prohlásil v roce 2010 Eric Schmidt, tehdejší šéf firmy:
 
