@@ -2,9 +2,9 @@
 id: css-grid
 tags: ['css']
 title: 'CSS grid'
-heading: 'CSS Grid v Internet Exploreru: Jde to!'
-date: 2019-01-03
-perex: 'Na vědomí se tímto dává, že díky zásadním aktualizacím v Autoprefixeru je možné Grid používat v daleko více případech než tomu bylo dosud.'
+heading: 'CSS grid'
+date: 2026-01-28
+perex: 'CSS grid je sada vlastností pro tvorbu layoutu vsazeného do pravidelné mřížky.'
 published: true
 category:
   - css
