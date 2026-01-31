@@ -3,14 +3,6 @@
     Twitter: @machal
     From: Prague, Czech Republic
 
-    PHP Programmer: Premek Koch
-    Twitter: @premek_k
-    From: Smilovice
-
-    UI developer: Martin Stanek
-    Twitter: @koucik
-    From: Prague, Czech Republic
-
 /* SITE */
     Language: Czech
     Standards: HTML5, CSS3
