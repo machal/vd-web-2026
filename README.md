@@ -7,8 +7,7 @@ Web [vzhurudolu.cz](https://www.vzhurudolu.cz) - blog o webové kodéřině, CSS
 | Technologie | Verze | Popis |
 |-------------|-------|-------|
 | **Astro** | 4.x | Statický generátor webu |
-| **SCSS** | - | CSS preprocesing (kompilace přes Grunt) |
-| **Grunt** | 1.6.x | Task runner pro kompilaci CSS/JS |
+| **Vite** | (součást Astro) | Build nástroj – SCSS, bundling, pluginy |
 | **Node.js** | - | Runtime prostředí |
 | **Markdown** | - | Formát obsahu článků |
 
@@ -27,15 +26,15 @@ www/
 │   └── utils/              # Pomocné utility (remark/rehype pluginy)
 ├── public/                 # Statické soubory (kopírují se do dist/)
 │   ├── assets/             # CSS, JS, fonty, obrázky
-│   ├── prirucka/           # Obrázky příručky (webp)
-│   └── .htaccess           # Apache konfigurace
-├── grunt/                  # Grunt konfigurace tasků
-├── scripts/                # Pomocné skripty
-├── _import/                # Interní soubory (Cursor výstupy, TODO) – není v gitu
+│   ├── favicon/            # Ikony a PWA manifest
+│   ├── .htaccess           # Apache konfigurace
+│   ├── robots.txt          # Pravidla pro crawler
+│   ├── sw.js               # Service worker
+│   └── …                   # humans.txt, offline.html, …
+├── scripts/                # Pomocné skripty (konverze obrázků, frontmatter, …)
 ├── dist/                   # Build výstup (generuje se při npm run build)
-├── astro.config.mjs        # Konfigurace Astro
-├── package.json            # NPM závislosti a skripty
-└── Gruntfile.js            # Grunt konfigurace
+├── astro.config.mjs        # Konfigurace Astro (Vite, markdown, pluginy)
+└── package.json            # NPM závislosti a skripty
 ```
 
 ## Instalace a spuštění
@@ -63,21 +62,8 @@ npm run preview
 | `npm run preview` | Náhled produkčního buildu |
 | `npm run convert-images` | Konverze obrázků příručky |
 | `npm run fill-heading` | Doplnění nadpisů z H1 |
-
-## Grunt příkazy
-
-Grunt se používá pro kompilaci SCSS a minifikaci CSS/JS:
-
-```bash
-# Kompilace SCSS do CSS
-grunt sass
-
-# Minifikace CSS
-grunt cssmin
-
-# Watch mode
-grunt watch
-```
+| `npm run check-frontmatter` | Kontrola frontmatter v Markdown souborech |
+| `npm run fix-frontmatter` | Automatická oprava frontmatter |
 
 ## Nasazení na produkci
 
@@ -88,9 +74,8 @@ grunt watch
 
 | Soubor | Popis |
 |--------|-------|
-| [astro.config.mjs](astro.config.mjs) | Hlavní konfigurace Astro (pluginy, markdown) |
+| [astro.config.mjs](astro.config.mjs) | Hlavní konfigurace Astro (Vite, markdown, pluginy) |
 | [public/.htaccess](public/.htaccess) | Apache: redirecty, CORS, bezpečnost |
-| [grunt/](grunt/) | Grunt tasky (sass, cssmin, watch...) |
 | [src/content/config.ts](src/content/config.ts) | Definice content collections |
 
 ## Obsah webu
@@ -103,18 +88,21 @@ grunt watch
 
 ## Vlastní pluginy
 
-Projekt používá vlastní remark/rehype pluginy pro transformaci Markdownu:
+Projekt používá vlastní remark/rehype pluginy (v `src/utils/`) a Vite pluginy (v rootu) pro transformaci Markdownu a obrázků:
 
 | Plugin | Popis |
 |--------|-------|
-| `remark-prirucka-images` | Transformace cest k obrázkům |
+| `remark-prirucka-images` | Transformace cest k obrázkům v MD |
 | `remark-process-markdown-attributes` | Zpracování `markdown="1"` atributů |
+| `rehype-prirucka-images` | Transformace cest k obrázkům v HTML |
+| `rehype-remove-ebook-only` | Odstranění elementů s třídou `ebook-only` |
+| `rehype-related-to-inner-box` | Transformace `.related` na inner-box |
 | `rehype-heading-anchors` | Přidání anchorů k nadpisům |
 | `rehype-prirucka-links` | Transformace odkazů příručky |
 | `rehype-remove-first-h1` | Odstranění prvního H1 |
 | `rehype-connected-elements` | Transformace `.connected` elementů |
-
-Pluginy jsou v `src/utils/`.
+| `vite-plugin-prirucka-images` | Konverze obrázků příručky při buildu |
+| `vite-plugin-validate-frontmatter` | Validace frontmatter při buildu |
 
 ## Validace obsahu
 
