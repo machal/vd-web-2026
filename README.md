@@ -31,7 +31,7 @@ www/
 │   └── .htaccess           # Apache konfigurace
 ├── grunt/                  # Grunt konfigurace tasků
 ├── scripts/                # Pomocné skripty
-├── _import/                # Importní soubory (legacy)
+├── _import/                # Interní soubory (Cursor výstupy, TODO) – není v gitu
 ├── dist/                   # Build výstup (generuje se při npm run build)
 ├── astro.config.mjs        # Konfigurace Astro
 ├── package.json            # NPM závislosti a skripty
@@ -61,8 +61,6 @@ npm run preview
 | `npm run dev` | Spustí Astro dev server |
 | `npm run build` | Vytvoří produkční build do `dist/` |
 | `npm run preview` | Náhled produkčního buildu |
-| `npm run deploy` | Build + deploy na produkci (FTP) |
-| `npm run deploy:setup` | Nastavení FTP hesla do Keychain |
 | `npm run convert-images` | Konverze obrázků příručky |
 | `npm run fill-heading` | Doplnění nadpisů z H1 |
 
@@ -83,51 +81,8 @@ grunt watch
 
 ## Nasazení na produkci
 
-### Automatický deploy (doporučeno)
-
-Projekt používá `lftp` pro inkrementální FTP upload - nahrává **pouze změněné soubory**.
-
-**První nastavení:**
-
-1. Vyplňte FTP údaje v `.env` (podle `.env.example`)
-2. Uložte heslo do macOS Keychain:
-   ```bash
-   npm run deploy:setup
-   ```
-
-**Deploy:**
-
-```bash
-npm run deploy
-```
-
-Skript automaticky:
-- Spustí `npm run build`
-- Nahraje pouze změněné soubory na FTP
-- Smaže soubory, které už nejsou v `dist/`
-- **Nesahá na `files/` a `data/`** (legacy adresáře na produkci)
-
-### Manuální deploy
-
-Pokud potřebujete nahrát ručně:
-
-1. Spusťte build:
-   ```bash
-   npm run build
-   ```
-
-2. Nahrajte **obsah složky `dist/`** do rootu FTP serveru
-
-### Důležité poznámky
-
-- Nahrávejte **obsah** `dist/`, ne složku samotnou
-- Složky `data/` a `files/` jsou **pouze na produkci** (legacy soubory) - nemazat!
-- Po nahrání ověřte redirecty a 404 stránky
-- Heslo k FTP je bezpečně uložené v macOS Keychain (ne v gitu)
-
-### Checklist před nasazením
-
-Viz soubor [TODO-PRED-NASAZENIM.md](TODO-PRED-NASAZENIM.md) pro kompletní checklist.
+1. Lokální build: `npm run build`
+2. Obsah složky `dist/` nahrajte na server pomocí Transmitu (nebo jiného FTP/SFTP klienta)
 
 ## Konfigurace
 
@@ -224,5 +179,5 @@ Při produkčním buildu (`npm run build`) se validace provádějí automaticky:
 
 ## Repository
 
-- **Git**: Bitbucket
-- **URL**: https://bitbucket.org/machal/vd-web-2026
+- **Git**: GitHub
+- **URL**: https://github.com/machal/vd-web-2026

@@ -36,3 +36,8 @@ public/prirucka/images/
 
 # working / import data (logs, temp)
 _working/
+_import/
+
+# legacy data (stored elsewhere)
+public/data/
+public/files/
