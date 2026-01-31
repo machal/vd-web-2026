@@ -110,10 +110,10 @@ RedirectMatch 301 ^/prirucka/css3-flexbox$ /prirucka/css-flexbox
 RedirectMatch 301 ^/prirucka/viewport-mobily$ /prirucka/viewport
 
 # -----------------------------------------------------------------------------
-# AMP redirect (AMP zrusen)
+# AMP redirect (AMP zrusen) – pouze /amp/xxx, ne /amp ani /amp/
 # -----------------------------------------------------------------------------
 
-RedirectMatch 301 ^/amp/(.*) /$1
+RedirectMatch 301 ^/amp/(.+) /$1
 
 # -----------------------------------------------------------------------------
 # Bootstrap a dalsi

@@ -2,24 +2,19 @@
 
 ## Provozní soubory v dist/
 
-**PRAVIDLO:** Provozní a build-time soubory se nesmí dostat do produkčního buildu v `dist/`.
+**PRAVIDLO:** Do produkčního buildu v `dist/` musí být zahrnuta složka `dist/_astro/`.
 
-### Co se automaticky odstraňuje
+### Co musí zůstat v dist/
 
-- `dist/_astro/` - Adresář obsahuje build-time JavaScript soubory (hoisted.*.js), které nejsou potřeba pro statický web na produkci. Automaticky se odstraňuje po buildu pomocí `vitePluginRemoveAstroBuildDir()` v `astro.config.mjs`.
+- `dist/_astro/` - Adresář obsahuje JavaScript soubory (např. `hoisted.*.js`), na které odkazuje vygenerované HTML. Tyto soubory **nesmí** být mazány ani vynechány při nasazení – prohlížeč je načítá podle odkazů v `<script src="/_astro/...">` a jejich absence způsobuje 404 na produkci.
 
 ### Důvod
 
-Adresář `_astro` obsahuje soubory generované Astro během buildu pro client-side hydrataci a podobné build-time operace. Pro statický web (SSG) tyto soubory nejsou potřeba a zbytečně zvyšují velikost buildu.
-
-### Implementace
-
-- Vite plugin `vitePluginRemoveAstroBuildDir()` v `astro.config.mjs` automaticky smaže `dist/_astro/` po dokončení buildu.
-- Plugin běží v `closeBundle` hooku, takže se spustí až po dokončení celého buildu.
+Astro při buildu vkládá do stránek odkazy na skripty z `_astro/`. Pokud složka chybí (např. byla smazána po buildu nebo nebyla nasazena), na produkci vznikají chyby `GET /_astro/hoisted.XXX.js net::ERR_ABORTED 404`.
 
 ### Kontrola
 
-Po buildu zkontroluj, že `dist/_astro/` neexistuje:
+Po buildu ověř, že `dist/_astro/` existuje a obsahuje soubory:
 ```bash
-ls -la dist/_astro/  # Mělo by vrátit "No such file or directory"
+ls -la dist/_astro/
 ```
