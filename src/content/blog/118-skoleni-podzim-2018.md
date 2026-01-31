@@ -29,7 +29,7 @@ První tři školení už tradičně vedu já: [kodéřinu](/kurzy/webova-koderi
 
 Školení bude skvělé pro ty z vás, kteří HTML, CSS a technologie kolem primárně neděláte a pro ty z vašich kolegů, kteří s frontendem začínají.
 
-[![Dnešní webová kodéřina](/assets/img/content/dest/original/skoleni/lektori/webova-koderina.jpg)](/kurzy/webova-koderina)
+[![Dnešní webová kodéřina](/assets/img/content/dest/skoleni/lektori/webova-koderina.webp)](/kurzy/webova-koderina)
 
 Dostanete hutný přehled aktuální technologií. U Flexboxu, Gridu a NPM workflow se na chvíli zastavíme, abyste si je vyzkoušeli a dali si pozor na nejrůznější špeky.
 

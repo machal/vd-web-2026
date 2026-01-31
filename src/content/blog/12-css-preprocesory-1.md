@@ -34,7 +34,7 @@ Pojďme hned na první díl. Řekneme si tady co preprocesory jsou, zda jsou pro
 
 CSS preprocesor je jazyk, který je postavený nad CSS. Přidává do něj nové jazykové vlastnosti nebo řeší jiné jeho technické slabilny. V seriálu se zabýváme nejznámějšími z preprocesorů — [LESSem](http://lesscss.org/), [SASSem](http://sass-lang.com/) a [Stylusem](http://learnboost.github.io/stylus/).
 
-<img src="/assets/img/content/src/css-preprocesory.jpg" width="736" alt="LESS, SASS, Stylus">
+<img src="/assets/img/content/dest/css-preprocesory.jpg" width="736" alt="LESS, SASS, Stylus">
 
 ## Mám se o preprocesory vůbec zajímat?
 
@@ -73,7 +73,7 @@ Preprocesorovým začátečníkům občas vadí, že jim DevTools nebo Firebug u
 
 Existují cesty jak si v obou ladících nástrojích zobrazit čísla řádků — [FireLESS](https://addons.mozilla.org/cs/firefox/addon/fireless/), FireSASS, FireStylus pro FireBug nebo modernější a pokročilejší [Source Maps](http://robdodson.me/debug-less-with-chrome-developer-tools/) pro DevTools. Ty doporučuji vaši pozornosti, protože tohle je jen jedna z věcí, kterou umí.
 
-![Source Maps](/assets/img/content/src/source-maps-.jpg) 
+![Source Maps](/assets/img/content/dest/source-maps-.jpg) 
 
 Nicméně! Dovolím si tvrdit, že pokud k ladění chyb nutně potřebujete znát čísla řádků, je něco shnilého ve vašem kódu. Rozdělením kódu do malých komponent (budeme se jí zabývat v dalších dílech) a organizací pomocí některé z [metodik](http://www.vzhurudolu.cz/prirucka/bem) [organizace](http://www.vzhurudolu.cz/prirucka/oocss) CSS kódu potřeba ladění přes čísla řádku téměř odpadá.
 

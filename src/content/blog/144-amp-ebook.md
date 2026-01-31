@@ -25,7 +25,7 @@ s velkou radostí vítám na světě náš nový e-book.
 
 [Vzhůru do AMP](/ebook-amp/) vám na více než třech stovkách stránek detailně představí technologii bezkonkurenčně rychlých webů a zároveň efektivní frontendový framework – AMP. 
 
-![Vzhůru do AMP](/perch-content/vd-soc-vdamp-1.png)
+![Vzhůru do AMP](/perch-content/vd-soc-vdamp-1.webp)
 
 Tentokrát jsem nepsal sám. Pomáhal mi parťák z podcastu, Robin Pokorný.
 

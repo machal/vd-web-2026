@@ -16,6 +16,8 @@ import { rehypePriruckaImages } from './src/utils/rehype-prirucka-images.ts';
 import { rehypeConnectedElements } from './src/utils/rehype-connected-elements.ts';
 import { rehypeRelatedToInnerBox } from './src/utils/rehype-related-to-inner-box.ts';
 import { vitePluginPriruckaImages } from './vite-plugin-prirucka-images.ts';
+import { vitePluginContentImages } from './vite-plugin-content-images.ts';
+import { vitePluginDesignImages } from './vite-plugin-design-images.ts';
 import { vitePluginValidateFrontmatter } from './vite-plugin-validate-frontmatter.ts';
 
 /**
@@ -195,6 +197,8 @@ export default defineConfig({
     plugins: [
       vitePluginValidateFrontmatter(), // Validace front-matter v Markdown souborech
       vitePluginPriruckaImages(), // Automatická konverze obrázků příručky
+      vitePluginContentImages(), // Content obrázky (blog, lectors, logos...) → WebP
+      vitePluginDesignImages(), // Design ikony (SVG optimalizace)
       vitePluginCopyPublicToDist(), // Zaručí, že celý public/ (včetně .htaccess, favicon.ico, …) skončí v dist/
       vitePluginRemoveAstroBuildDir(), // Odstraní dist/_astro adresář (build-time soubory nejsou potřeba na produkci)
     ],

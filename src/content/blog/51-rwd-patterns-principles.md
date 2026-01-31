@@ -22,7 +22,7 @@ To, že čtete Vzhůru dolů ale může znamenat, že knížka není pro vás. I
 
 Podobně jako v první knize vás Marcotte totiž nezavalí nákladem novinek a technických vymožeností. Pro nejnovějším technické vychytávky nebo hloubku informací je proto lepší hledat jiné zdroje.
 
-![Responsive Design: Patterns & Principles](/assets/img/content/src/rwd-patterns-principles.jpg)
+![Responsive Design: Patterns & Principles](/assets/img/content/dest/rwd-patterns-principles.jpg)
 
 Ethan umí jiné věci. Umí trpělivě, precizně a vtipně vysvětlovat hluboké principy. Tak, aby vzniklý obsah měl dopad na co nejvíce lidí. Váháte co tím myslím? Ethan vymyslel „responzivní webdesign“ a já se sázím, že o tom jste něco slyšeli.
 

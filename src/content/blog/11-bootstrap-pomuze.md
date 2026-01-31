@@ -23,7 +23,7 @@ Užitečnost nových technologií bývá částí lidí podceňována, části p
 
 Bootstrap mám buď v některých situacích odzkoušený nebo jsem se k historkám o jejich nasazování dostal z první ruky. Naskytlo se celkem 6  ověřených scénářů, kdy pomůže, nepomůže nebo pomůže s podmínkou. 
 
-<img src="/assets/img/content/src/vdbootstraplogofialove-.jpg" width="1000" height="575" alt="Bootstrap 3.1 logo">
+<img src="/assets/img/content/dest/vdbootstraplogofialove-.jpg" width="1000" height="575" alt="Bootstrap 3.1 logo">
 
 ## Pomůže
 

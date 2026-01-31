@@ -23,7 +23,7 @@ V pracovních pozicích nějak se dotýkajících webové kodéřiny je trochu z
 
 Mezi těmi co nějakým způsobem pracují s HTML/CSS samozřejmě dominuje obecný *vývojář* jen zaměřený na konkrétní programovací jazyky. Specializovanější *frontend kodér* je méně častý. *Frontend designér* zatím vyloženě vzácný kousek.
 
-![Webový vývojář, frontend kodér, frontend designér](/assets/img/content/dest/original/frontend-prace.svg)
+![Webový vývojář, frontend kodér, frontend designér](/assets/img/content/dest/frontend-prace.svg)
 
 ## Webový vývojář
 

@@ -24,7 +24,7 @@ Na českém webu najdete dost míst s nabídkou práce pro webové vývojáře. 
 
 Právě proto jsem se pustil do agregáru vlastního.  Kromě už uvedeného se jeho prostřednictvím snažíme inzeráty třídit alespoň se základní dávkou inteligence. Takže si lehce vyberete podle vašeho oblíbeného [vývojářského jazyka](http://www.vzhurudolu.cz/prace/php-vyvojar,kdekoliv,jakykoliv), [regionu](http://www.vzhurudolu.cz/prace/cokoliv,praha,jakykoliv) nebo [pozice](http://www.vzhurudolu.cz/prace/frontend-koder,kdekoliv,jakykoliv). „Vzhůru do práce“ také například umí filtrovat inzeráty [s možností práce na dálku](http://www.vzhurudolu.cz/prace/cokoliv,telework,jakykoliv).
 
-[![Vzhůru do práce: práce pro webové vývojáře](/assets/img/content/dest/original/prace/vd-prace-reklama.jpg)](/prace)
+[![Vzhůru do práce: práce pro webové vývojáře](/assets/img/content/dest/prace/vd-prace-reklama.webp)](/prace)
 
 ## Když lidi naopak hledáte…
 

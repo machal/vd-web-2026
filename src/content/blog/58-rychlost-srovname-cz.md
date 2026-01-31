@@ -109,7 +109,7 @@ A výsledek?
 
 Povedlo se díky tomu dosáhnout zrychlení vykreslení stránky:
 
-![Srovname.cz - před optimalizací se obsah zobrazil kolem šesté vteřiny. Po ní už kolem první.](http://www.vzhurudolu.cz/assets/img/content/dest/original/srovname-pred-po.jpg)
+![Srovname.cz - před optimalizací se obsah zobrazil kolem šesté vteřiny. Po ní už kolem první.](http://www.vzhurudolu.cz/assets/img/content/dest/srovname-pred-po.webp)
 
 Nejvíce zajímavý je ale samozřejmě [dopad na obchodní ukazatele](/prirucka/rychlost-nacitani-proc). Rychlé vyhodnocení po prvním kole optimalizace ukazuje vylepšení konverzního poměru na všech zařízeních:
 

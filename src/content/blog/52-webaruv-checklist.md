@@ -16,7 +16,7 @@ og_type: article
 
 Proč dělat weby blbě, když je můžete dělat dobře? Třeba podle [kontrolního seznamu ze Vzhůru dolů](http://www.vzhurudolu.cz/checklist).
 
-[![Checklist pro dokončení webu](/assets/img/content/src/checklist/checklist-webapp-for-article.jpg)](http://www.vzhurudolu.cz/checklist)
+[![Checklist pro dokončení webu](/assets/img/content/dest/checklist/checklist-webapp-for-article.jpg)](http://www.vzhurudolu.cz/checklist)
 
 Webařův checklist měl v [podobě článku a PDF](http://www.vzhurudolu.cz/prirucka/checklist) hezké ohlasy. Jenže… *Článek*  v době, kdy existují aplikace snad i na drbání za uchem!? *Pé dé ef*  ve století, ve kterém všechny potíže světa vyřešil React?!
 

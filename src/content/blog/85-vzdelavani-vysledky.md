@@ -27,7 +27,7 @@ Nejvíce pomocí krátkých textů a videí. Fyzické knížky ani prezenční k
 
 Ve velké většině od vývojářů a kodérů všeho typu, což bylo samozřejmě způsobeno distribucí na sítích Vzhůru dolů. Data jsou ovlivněná také tím, že odpovídali hlavně lidé z menších firem nebo volnonožci a jak v textu zjistíte i lidé aktivní při výběru vzdělávání.
 
-![Obrázek: věk, firma a pozice účastníků.](/assets/img/content/dest/original/blog/vzdelavani-respondenti.jpg)
+![Obrázek: věk, firma a pozice účastníků.](/assets/img/content/dest/blog/vzdelavani-respondenti.webp)
 
 - Věková kategorie: vede 26-35 (57 % odpovědí), pak 18-25 (26 %) a 36-45 let (14 %).
 - Velikost firmy: volná noha (34 %), do 20 lidí (27 %), 21-50 lidí (14 %), 51-100 (4,8 %), více než 100 (20 %).
@@ -37,7 +37,7 @@ Ve velké většině od vývojářů a kodérů všeho typu, což bylo samozřej
 
 Ptal jsem se nejprve na všechny formy vzdělávání používané za poslední rok a pak na tři, které lidem vyhovují nejvíce. Nejvíce používané a také nejvíce vyhovující jsou krátké texty: články, tutoriály, a weby typu Stack Overflow.
 
-![Obrázek: Používané a vyhovující způsoby vzdělávání.](/assets/img/content/dest/original/blog/vzdelavani-formy.jpg)
+![Obrázek: Používané a vyhovující způsoby vzdělávání.](/assets/img/content/dest/blog/vzdelavani-formy.webp)
 
 - Nejvíce využívané jsou tedy krátké texty (96 %), videa (78 %), sociální sítě a online diskuze (62,5 %), nad polovinu se dostaly ještě ebooky (51 %). V grafu je to tmavě zelený sloupec.
 - Zajímavější jsou nejvíce vyhovující: krátké texty (79 %), videa (47 %), dlouho nic a pak ebooky, knížky a online kurzy (vše kolem čtvrtiny respondentů). V grafu je to znázorněno světlejší zelenou.
@@ -69,7 +69,7 @@ Lidé museli vybrat jednu ze tří možností. 51 % mateřský jazyk neupřednos
 
 Další čtyři otázky shrnu na následujícím obrázku. Detaily si pak můžete přečíst pod ním.
 
-![Obrázek: Další čtyři otázky](/assets/img/content/dest/original/blog/vzdelavani-dalsi.jpg)
+![Obrázek: Další čtyři otázky](/assets/img/content/dest/blog/vzdelavani-dalsi.webp)
 
 ## Kdo ti nejčastěji vzdělávání platí?
 

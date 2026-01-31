@@ -26,7 +26,7 @@ Tohle je přepis toho nejdůležitějšího z obsahu přednášky na [Frontendis
 
 Prohlížeč totiž s renderováním stránky čeká na kompletní načtení CSS souborů. Proto  čekání na zobrazení stránky s bílou obrazovkou na pomalejších připojeních.
 
-![Jak prohlížeč načítá stránku?](/assets/img/content/src/critical-css-schema.jpg)
+![Jak prohlížeč načítá stránku?](/assets/img/content/dest/critical-css-schema.jpg)
 
 Dá se to hacknout tím, že CSS načtete asynchronně pomocí javascriptu. Aby ale prohlížeč nezobrazil stránky ve svém vychozím stylování, potřebujete mu poskytnout nějaké základní CSS v inline podobě:
 
@@ -62,7 +62,7 @@ U grunt-criticalcss je dobré myslet na `forceInclude` parametr pro `:hover` sta
 
 I u takto jednoduché stránky se nám rychlost zobrazení podařilo významně posunout:
 
-![Před: SpeedIndex 11314; po SpeedIndex 4078](/assets/img/content/src/critical-css-pred-po.jpg)
+![Před: SpeedIndex 11314; po SpeedIndex 4078](/assets/img/content/dest/critical-css-pred-po.jpg)
 
 ## Co dál?
 

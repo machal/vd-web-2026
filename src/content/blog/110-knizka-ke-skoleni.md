@@ -24,7 +24,7 @@ Všichni, kteří objednají do konce června totiž dostanou tištěnou knížk
 
 Při objednávce kurzu prostě jen uveďte kód: `KNIZKAKESKOLENI`.
 
-[![Objednej školení, dostaneš knížku](/assets/img/content/dest/original/blog/skol-kniha-16-9.jpg)](/kurzy)
+[![Objednej školení, dostaneš knížku](/assets/img/content/dest/blog/skol-kniha-16-9.webp)](/kurzy)
 
 Podmínky:
 

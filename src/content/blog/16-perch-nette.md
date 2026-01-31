@@ -24,7 +24,7 @@ Perch je skvělý v definování jednodušších datových struktur, jejich vzá
 
 Zkusme příklad. Někde si nadefinujete datovou strukturu (říká se *Model*, že jo?) *Kurzy*, k ní pak *Termíny kurzů*. *Termíny kurzů* jsou navázané na *Kurzy* a dále obsahují datum konání, organizátora, text, nějaká zatržítka…
 
-![Stránka Termínu kurzů v CMS Perch](/assets/img/content/src/vdperchkurzy-.jpg) 
+![Stránka Termínu kurzů v CMS Perch](/assets/img/content/dest/vdperchkurzy-.jpg) 
 
 Tahle pěkná stránka redakčního systému vám k *Termínům kurzů* vznikne sama od sebe. Nastavíte si jen jak se má zobrazovat seznam *Termínů*, jak řadit nebo kdo je může editovat. Fajn, ne?
 

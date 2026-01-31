@@ -25,7 +25,7 @@ Kodéřina je jen část mé práce, takže dole je i seznam nástrojů, které 
 
 [Sublime](http://www.sublimetext.com/) je klasika. Existují i modernější varianty, ale kromě nepříliš vymakaného našeptávání mě Sublime zcela vyhovuje. Je to editor z kategorie „jednoduchý, ale rozšiřitelný”. Moc toho neumí a vyžaduje nějaký čas pro nastavení a vyladění dle osobních preferencí. Pokud mu čas věnujete, bohatě se vám to vrátí. Pokud vám časová investice tohoto typu nevyhovuje, hledejte IDE jako WebStorm nebo Eclipse.
 
-![Můj Sublime Text](https://www.vzhurudolu.cz/assets/img/content/dest/original/sublime-text.jpg)
+![Můj Sublime Text](https://www.vzhurudolu.cz/assets/img/content/dest/sublime-text.webp)
 
 Z obrázku sami vidíte, že můj Sublime Text neoplývá barvičkami a vizuálními vychytávkami. Princip „konvence je víc než konfigurace“ v praxi.
 

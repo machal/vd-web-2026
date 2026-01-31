@@ -41,7 +41,7 @@ Za druhé, [responzivní HTML prototypy](https://www.youtube.com/watch?v=A71kFP8
 
 Za třetí, a to považuji za největší přínos responzivních prototypů, jednou napsaný kód použijete jako základ pro kódování frontendu podle grafického návrhu. Obrázkové skici po schválení zahodíte. Složitý prototyp z Axure, nad kterým váš UX designer probděl noci, zrovna tak. Pokud ale šikovně postavíte responzivní prototyp a máte pod kontrolou zbytek výrobního procesu, HTML kód znovu použijete a ušetříte tak ve výsledku práci kodérovi a peníze klientovi. A to se počítá.
 
-[![Adamova přednáška o prototypování](/assets/img/content/src/adam-kudrna-prototypovani.jpg)](https://www.youtube.com/watch?v=A71kFP8I_qY)
+[![Adamova přednáška o prototypování](/assets/img/content/dest/adam-kudrna-prototypovani.jpg)](https://www.youtube.com/watch?v=A71kFP8I_qY)
 
 Samozřejmě, pokud bychom pro každý prototyp psali čistý, nový kód na zelené louce, náročnost výroby by byla značná a nic bychom tím nezískali. Proto své prototypy vytváříme nad Bootstrapem, který je responzivní, vede k [mobile first](/prirucka/mobile-first) návrhu i kódování a obsahuje řadu nejrůznějších komponent.
 

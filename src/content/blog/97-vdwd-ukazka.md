@@ -22,7 +22,7 @@ og_type: article
 Možností řešení obrázků, SVG nebo třeba tabulek v responzivním designu je hodně. Chcete pomoci vybrat tu, která je pro váš projekt ideální? Nejdelší kapitola [z knihy](/ebook-responzivni) je přesně o tom. Vy si ji můžete stáhnout ve formátech PDF, EPUB a MOBI.
 
 <figure>
-<img src="/assets/img/content/dest/medium/ebook-vdwd/vdwd-kap-6.png" alt="Šestá kapitola z knihy „Vzhůru do (responzivního) webdesignu“">
+<img src="/assets/img/content/dest/ebook-vdwd/vdwd-kap-6.webp" alt="Šestá kapitola z knihy „Vzhůru do (responzivního) webdesignu“">
 <figcaption markdown="1">    
 *V ukázce si můžete detailně prohlédnout způsob, jakým je vysázená tištěná kniha a jak jsou zpracované e-booky.*
 </figcaption> 

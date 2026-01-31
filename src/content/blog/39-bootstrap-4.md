@@ -25,7 +25,7 @@ Bručoun by řekl, že – co se nových vlastností týká – Bootstrap jen do
 
 Bootstrap 4 je v alfa fázi, proto [i školení](http://www.vzhurudolu.cz/kurzy/bootstrap) zatím primárně orientuji na třetí verzi s tím, že novinky ve čtyřce zmiňuji průběžně.
 
-![Bootstrap 4](/assets/img/content/dest/original/bootstrap-4.jpg)
+![Bootstrap 4](/assets/img/content/dest/bootstrap-4.webp)
 
 ## LESS → SASS
 

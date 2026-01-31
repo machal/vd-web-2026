@@ -21,7 +21,7 @@ Obě má školení už proběhla, takže vás rád zvu na akce kolegů Honzy Bie
 
 ## 8. března: Mistrovský vývoj webů na WordPressu
 
-[![Školení WordPressu](https://www.vzhurudolu.cz/assets/img/content/src/skoleni/lektori/wordpress.jpg)](https://www.vzhurudolu.cz/kurzy/wordpress)
+[![Školení WordPressu](https://www.vzhurudolu.cz/assets/img/content/dest/skoleni/lektori/wordpress.webp)](https://www.vzhurudolu.cz/kurzy/wordpress)
 
 Děláte WordPress a chcete jej dělat pořádně? Doražte na školení lektora s mistrovským přehledem. Honza Bien vývojem nebo konzultacemi pomáhá s weby na WordPressu desítkám menších i větších firem. A ví toho hodně, jak už možná tušíte [z našeho společného podcastu](https://www.vzhurudolu.cz/blog/90-podcast-honza-bien-wordpress). Své praktické zkušenosti rád předá i vám. 
 
@@ -36,7 +36,7 @@ Podívejte se i na [ohlasy dalších účastníků](https://www.vzhurudolu.cz/ku
 
 ## 15. března: Principy Javascriptu
 
-[![Školení Javascriptu](https://www.vzhurudolu.cz/assets/img/content/src/skoleni/lektori/principy-javascriptu.jpg)](https://www.vzhurudolu.cz/kurzy/javascript)
+[![Školení Javascriptu](https://www.vzhurudolu.cz/assets/img/content/dest/skoleni/lektori/principy-javascriptu.webp)](https://www.vzhurudolu.cz/kurzy/javascript)
 
 Na kurzu se naučíte Javascript jako jazyk. Zaměřujeme se hlavně na jeho stále podceňované vlastnosti, špatně chápané principy a domněle temná zákoutí. Riki Fridrich má na kurzu poslední dvě volná místa. *Aktualizace: jarní školení je vyprodáno, ale můžete se už přihlásit na podzimní termín.*
 
@@ -45,7 +45,7 @@ Na kurzu se naučíte Javascript jako jazyk. Zaměřujeme se hlavně na jeho st�
 
 ## 29. března: Pokročilé SVG
 
-[![Školení SVG](https://www.vzhurudolu.cz/assets/img/content/src/skoleni/lektori/svg.jpg)](https://www.vzhurudolu.cz/kurzy/svg)
+[![Školení SVG](https://www.vzhurudolu.cz/assets/img/content/dest/skoleni/lektori/svg.webp)](https://www.vzhurudolu.cz/kurzy/svg)
 
 Že se SVG hodí jen na loga a ikony? Nenechte se mýlit. SVG je snadno spravovatelný a přístupný vektorový standard, která vás může [svými možnostmi](https://www.vzhurudolu.cz/prirucka/svg-inspirace) překvapit. Kurz vede zkušený senior vývojář ze Superkoders Michal Matuška. [Více informací…](https://www.vzhurudolu.cz/kurzy/svg)
 

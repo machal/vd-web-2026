@@ -28,7 +28,7 @@ Ve skutečnosti je to všechno o cílení e-mailových klientů, ve kterých to 
 Z pohledu webu je to jako psaní kódu pro poslední verzi Chrome, zatímco také bereme v potaz, že 6 % našich uživatelů používá Netscape 4.
 
 <figure>
-<img src="/assets/img/content/dest/original/blog/mark_robbins.jpg" alt="Mark Robbins">
+<img src="/assets/img/content/dest/blog/mark_robbins.webp" alt="Mark Robbins">
 <figcaption markdown="1">    
 Mark Robbins je e-mailový rebel.
 </figcaption> 

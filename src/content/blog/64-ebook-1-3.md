@@ -37,7 +37,7 @@ Tentokrát se jedná o větší aktualizaci. Pokud ebook ještě doma nebo ve fi
 
 </div>
 
-[![Ebook Vzhůru do CSS3](http://www.vzhurudolu.cz/assets/img/content/dest/original/ebook/ebook-banner-3d-koupit.jpg)](/ebook)
+[![Ebook Vzhůru do CSS3](http://www.vzhurudolu.cz/assets/img/content/dest/ebook/ebook-banner-3d-koupit.webp)](/ebook)
 
 ## Co je nového ve verzi 1.3?
 

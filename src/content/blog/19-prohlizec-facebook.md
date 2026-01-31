@@ -20,7 +20,7 @@ Dnes o klesajícím a ve skutečnosti neklesajícím času, který lidé na mobi
 
 Vezměme, že podíl času, který lidé tráví v mobilních prohlížečích [meziročně klesá](http://www.flurry.com/bid/109749/Apps-Solidify-Leadership-Six-Years-into-the-Mobile-Revolution#.U5B63JSSxbx). Mezi roky 2013 a 2014 o celých 7 procentních bodů na nynějších 14%.
 
-<img src="/assets/img/content/src/mobilni-prohlizece-10-flurry.jpg" alt="14% podíl času stráveného v mobilích prohlížečích">
+<img src="/assets/img/content/dest/mobilni-prohlizece-10-flurry.jpg" alt="14% podíl času stráveného v mobilích prohlížečích">
 
 Můžete to interpretovat i [pomateně jako potenciální konec webu](http://www.lupa.cz/clanky/mobilni-web-ustupuje-aplikacim-muze-to-znamenat-jeho-konec/). Nebo se na graf podíváte pořádně a zeptáte se — které aplikace v nějaké situaci otevírají browser? 
 
@@ -42,7 +42,7 @@ Na Androidu její vykreslovací jádro tvoří výchozí Android Browser ve verz
 
 Na iOS je to na jednu stranu jednodušší, protože ve všech verzích vykresluje stránky v UIWebView Safari ve verzi operačního systému. Na druhou stranu složitější v tom, že to není stejný prohlížeč — nemá totiž přístup k rychlejšímu javascriptovému engine Nitro, ani ke cache mobilního Safari. Otevírání a provádění javascriptů je v prohlížeči uvnitř aplikací přibližně [o 20% pomalejší](http://www.guypo.com/mobile/ios-browsers-speed-bakeoff/) než v mobilním Safari.
 
-<img src="/assets/img/content/src/mobilni-prohlizece-7-webview.jpg" alt="Problémy vkládaných prohlížečů">
+<img src="/assets/img/content/dest/mobilni-prohlizece-7-webview.jpg" alt="Problémy vkládaných prohlížečů">
 
 Vývojáři nativních aplikací se navíc předhánějí v úpravách ovládacích prvků aplikace. Nepočítejte tedy s tím, že třeba výška zobrazovací plochy bude stejná jako v běžném mobilním Safari a zlom stránky bude někde jinde než váš vymazlený design vyžaduje.
 

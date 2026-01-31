@@ -22,7 +22,7 @@ Definice responzivního webdesignu z doby [před třemi a půl lety](http://alis
 
 Pojďme se podívat na dva weby — jeden je podle převládající zkomolené definice responzivní, druhý naopak ne:
 
-![kbps.cz a blackcomb.cz](/assets/img/content/src/rwddevelcz1-.jpg) 
+![kbps.cz a blackcomb.cz](/assets/img/content/dest/rwddevelcz1-.jpg) 
 
 Bez urážky autorů prvního webu prosím! Stejně je na tom téměř každý český responzivní web, který jsem za poslední dva roky viděl. Jenže je web, který se na mobilním připojení načítá přes 2 minuty opravdu responzivní? 
 
@@ -54,7 +54,7 @@ Mohou za to pracovní postupy.
 
 Říká vám něco [progressive ennhancement](http://en.wikipedia.org/wiki/Progressive_enhancement)? Tenhle prastarý postup zase ožívá v podobě tzv. zezdola nahoru ([Mobile Up](http://bradfrostweb.com/blog/web/mobile-first-responsive-web-design/)) návrhu kódu:
 
-![Desktop Down / Mobile Up](/assets/img/content/src/rwddevelczdesktopdown-.jpg) 
+![Desktop Down / Mobile Up](/assets/img/content/dest/rwddevelczdesktopdown-.jpg) 
 
 Jenže v existujících pracovních postupech převažuje řešení opačné (Desktop Down). To ovšem produkuje spoustu balastního a špatně spravovatelného kódu, kterým ve variantě pro malé displeje předefinováváme řešení pro ty velké.
 
@@ -75,7 +75,7 @@ A druhá? Spravovatelnost takového kódu je webařská verze Mission Impossible
 
 Tohle je velké téma, ale zkusím být stručný. Weby jsou tvořeny stránkami, to vás nepřekvapí. Ale stránky jsou tvořeny komponentami. Někdo jim říká [atomy](http://bradfrostweb.com/blog/post/atomic-web-design/). Podívejte se třeba na tuhle responzivní homepage jedné …ehm… nadějné softwarové firmy:
 
-![Komponenty na Microsoft.com](/assets/img/content/src/rwddevelcz2-.jpg)  
+![Komponenty na Microsoft.com](/assets/img/content/dest/rwddevelcz2-.jpg)  
 
 Na Microsoft.com se můžeme buď dívat jako na jednu docela složitou stránku nebo na logický uspořádaný systém pěti komponent a jejich variant. Zkuste si teď představit, že ty komponenty můžete znovupoužívat na různých místech webu. Už tušíte, co myslím tím, že máme v efektivitě pracovních postupů velké mezery?
 
@@ -91,7 +91,7 @@ A teď se od nedostatků v pracovních postupech dostáváme k fastfoodu. Chvilk
 
 ## Problém příliš velkého hamburgeru
 
-![Co chce uživatel a co dostane od stránky.](/assets/img/content/src/rwddevelcz3-.jpg)
+![Co chce uživatel a co dostane od stránky.](/assets/img/content/dest/rwddevelcz3-.jpg)
 
 „Ale já jsem chtěl hamburger, ne desetipatrový barák s řízkem na balkóně!” 
 
@@ -127,7 +127,7 @@ Opět v hlavní roli progressive enhancement. Základní verze komponenty je ta 
 
 Takhle to vypadá v reálu na BostonGlobe.com:
 
-![Počasí na BostonGlobe.com](/assets/img/content/src/rwddevelcz4-.jpg) 
+![Počasí na BostonGlobe.com](/assets/img/content/dest/rwddevelcz4-.jpg) 
 
 A takhle nějak pak v kódu (využívá plugin [AjaxInclude](https://github.com/filamentgroup/Ajax-Include-Pattern/)):
 

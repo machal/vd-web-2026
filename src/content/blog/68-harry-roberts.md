@@ -22,7 +22,7 @@ Vzal jsem příležitost za pačesy a přes organizátory se jej zeptal na refak
 
 Harry neváhal věci rozepsat, takže je z toho pěkný článek. Můžete mu na konci poděkovat třeba doporučením dobrých pražských hospod. 
 
-![Harry Roberts](/assets/img/content/dest/original/harry-roberts-talking.jpg)
+![Harry Roberts](/assets/img/content/dest/harry-roberts-talking.webp)
 
 ### Harry, moc se těším na vaši přednášku! Na jednom z projektů mám část CSS děsně starou. Prostě území, kam se bojím jít po setmění. Dají se stručně říct první tři věci, které bych tam měl udělat?
 
@@ -56,7 +56,7 @@ Do těchto detailů se pustíme právě v implementační fázi, ale musíme opa
 
 Ze všech dostupných CSS metodik je ITCSS nejpodobnější SMACSS. Zabývá se typy nebo vrstvami pravidel a nabízí rovnováhu mezi dědičností a zapouzdřením. 
 
-[![ITCSS](/assets/img/content/dest/original/itcss.png)](https://speakerdeck.com/dafed/managing-css-projects-with-itcss)
+[![ITCSS](/assets/img/content/dest/itcss.webp)](https://speakerdeck.com/dafed/managing-css-projects-with-itcss)
 
 Klíčová myšlenka ITCSS je ve využití dědičnosti z CSS v náš prospěch. Děláme to seřazením pravidel velmi charakteristickým a přesně daným způsobem, který je založený na třech klíčových metrikách. Tento model umožňuje snadné rozšiřování a růst projektu. Nabízí také možnost většímu množství lidí velmi bezpečně přispívat do zdrojáků. Je také slučitelný s jakýmikoliv frontend knihovnami, Web Components nebo technologickými stacky, které používáte.
 

@@ -18,7 +18,7 @@ og_type: article
 
 Novou vlnu front-end frameworků a hlavně [Bootstrap](http://getbootstrap.com/) a [Foundation](http://foundation.zurb.com/) už pěkně dlouho považuji za skvělé nástroje. A mám radost, když vidím kolik práce umí ušetřit když se správně používají.
 
-<a href="/kurzy/bootstrap/"><img src="/assets/img/content/src/bootstrap-foundation.jpg" alt="Bootstrap a Foundation"></a>
+<a href="/kurzy/bootstrap/"><img src="/assets/img/content/dest/bootstrap-foundation.jpg" alt="Bootstrap a Foundation"></a>
 
 O třetím tématu pro celodenní kurz tedy nebylo potřeba přemítat pod hvězdnou oblohou. Zájem o Bootstrap a spol. je na probíhajících kurzech vážně velký.
 

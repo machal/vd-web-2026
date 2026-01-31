@@ -22,19 +22,19 @@ Jen pozor, v článku se operuje s čísly. A čísla jsou zrádná. Používám
 
 Mobilní prohlížeče si na konci dubna 2014 vzaly něco kolem 11% pageviews velkých českých webů měřených Gemiusem:
 
-<img src="/assets/img/content/src/mobilni-prohlizece-1-podil.jpg" alt="Podíl mobilních prohlížečů na celkovém počtu pageviews v ČR – duben 2014">
+<img src="/assets/img/content/dest/mobilni-prohlizece-1-podil.jpg" alt="Podíl mobilních prohlížečů na celkovém počtu pageviews v ČR – duben 2014">
 
 Pro srovnání — v listopadu 2013 to bylo jen 8,3%. Dostaneme se po letošních Vánocích nad 15%? Vypadá to, že ano.
 
 Tak a teď k těm mobilním prohlížečům. Pro zjednodušení je nejdřív seskupíme do rodin. Ale pozor — rodina Android Browser obsahuje moderní verze 4.0 až 4.4, ale i starší 2.3. Internet Explorer na Windows Phone zase verze 7, 9, 10 i 11, v podílu Opery mícháme bratry vyloženě nevlastní — Operu Mobile i Mini. Více k jednotlivým prohlížečům hned v dalším textu.
 
-<img src="/assets/img/content/src/mobilni-prohlizece-2-rodiny.jpg" alt="Podíly rodin mobilních prohlížečů">
+<img src="/assets/img/content/dest/mobilni-prohlizece-2-rodiny.jpg" alt="Podíly rodin mobilních prohlížečů">
 
 ## Android Browser
 
 V tuhle chvíli nejrozšířenější rodina mobilních prohlížečů:
 
-<img src="/assets/img/content/src/mobilni-prohlizece-3-android.jpg" alt="Verze Android Browseru">
+<img src="/assets/img/content/dest/mobilni-prohlizece-3-android.jpg" alt="Verze Android Browseru">
 
 ### Verze mobilních prohlížečů? Google Analytics nevěřte
 
@@ -48,7 +48,7 @@ Tvůrce větších prezentačních webů ale potrápí zejména stále se vyskyt
 
 Výchozí prohlížeč na Apple mobilních zařízeních má přibližně 2procentní podíl na celkovém českém trhu. Vzhledem ke specifikům platformy neporoste tak rychle jako masovka Android. Prostředí iOS má ale pro vývojáře jednu výhodu — cca 3/4 uživatelů iOS mají vždy nainstalovanou poslední verzi operačního systému i prohlížeče, nyní 7. 
 
-<img src="/assets/img/content/src/mobilni-prohlizece-4-safari.jpg" alt="Verze Safari Mobile">
+<img src="/assets/img/content/dest/mobilni-prohlizece-4-safari.jpg" alt="Verze Safari Mobile">
 
 Centrálně plánovaná jednotnost s sebou ovšem přináší i nevýhody. Na iOS si sice můžete zvesela instalovat spousty alternativních prohlížečů, stránky vám bude ale mobilní Safari. Navíc trochu pomalejší, ale to rozvedu v příštím článku.
 
@@ -66,7 +66,7 @@ Jak už jsem zmínil, Apple do AppStore nepustí prohlížeč s vlastním render
 
 Chrome Mobile je zároveň prohlížečem s nejrychleji rostoucí uživatelskou základnou na mobilních zařízeních. Tady je vývoj podle Gemiusu:
 
-<img src="/assets/img/content/src/mobilni-prohlizece-6-chrome.jpg" alt="Rostoucí Chrome Mobile">
+<img src="/assets/img/content/dest/mobilni-prohlizece-6-chrome.jpg" alt="Rostoucí Chrome Mobile">
 
 A pozor, Google se zřejmě rozhodl [zaříznout vývoj Android Browseru](https://twitter.com/firt/status/404135122032525312) ve prospěch mobilního Chrome. I renderovací engine WebView na Androidu 4.4 už obsahuje Chromium jádro ve verzi 30. Takže je pravděpodobné, že Chrome se do budoucna stane jedničkou i mezi mobilními prohlížeči.
 
@@ -76,7 +76,7 @@ Podle Gemiusu má půlprocentní podíl. Čísla z Google Analytics na mých web
 
 Microsoft s Explorerem celkově dohání ztracená léta kdy HTML5 ignoroval. Což o to, z pohledu webaře není od verze 10 k zahození. Horší je to s jeho tržním podílem. Zatím prakticky na úrovni mobilní Opery. Takže velmi, velmi málo.
 
-<img src="/assets/img/content/src/mobilni-prohlizece-5-ie.jpg" alt="Podíly verzí mobilního IE">
+<img src="/assets/img/content/dest/mobilni-prohlizece-5-ie.jpg" alt="Podíly verzí mobilního IE">
 
 ## Mobilní Opery
 
@@ -92,7 +92,7 @@ Ve statistikách se moc neprojevují, ale dobré vědět i o nových mobilních 
 
 Pojďme se teď u jednotlivých prohlížečů podívat jak jsou daleko s implementací rostoucí rodiny HTML5 technologií. V [HTML5 testu](http://html5test.com/results/desktop.html) mohou prohlížeče aktuálně získat až 515 bodů. Chrome na mém desktopovém Macu jich má nejvíc — 505. A takhle si stojí jednotlivé moblní prohlížeče:
 
-<img src="/assets/img/content/src/mobilni-prohlizece-8-html5.jpg" alt="Jak si mobilní prohlížeče stojí v HTML5test.com?">
+<img src="/assets/img/content/dest/mobilni-prohlizece-8-html5.jpg" alt="Jak si mobilní prohlížeče stojí v HTML5test.com?">
 
 Pro srovnání dobré vědět, že IE8 v HTML5test.com po neuvěřitelném výkonu dosáhl na skóre pěkných 43 bodů. Říkal snad někdo, jak jsou ty mobilní prohlížeče úděsné? 
 

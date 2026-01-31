@@ -20,7 +20,7 @@ Pojďme si ukázat proces návrhu rozhraní webu při responzivním redesignu es
 
 Nejdříve ale rychlý výlet do historie. Před 10 lety jsme to ve webdesignu měli krásně jednotné:
 
-![grafika, nabídka, frontendista, programátor, spuštění](/assets/img/content/dest/original/webexpo-2015/webexpo-2015-for-blog.002.jpg)
+![grafika, nabídka, frontendista, programátor, spuštění](/assets/img/content/dest/webexpo-2015/webexpo-2015-for-blog.002.webp)
 
 1. **Napsala se analýza.**
 Tedy pardon, analýzy nikdo nepsal. Udělala se rovnou nabídka.  Když tam byla analýza, pak nějaká takováto – „cílová skupina webu jsou muži a ženy mezi 18 a 70 lety".
@@ -35,33 +35,33 @@ Oproti odhadům z analýzy – ach pardon nabídky! – trvala výroba webu tři
 
 Ano, tenhle proces je z pekla. Říkává se mu vodopád.
 
-![vodopád](/assets/img/content/dest/original/webexpo-2015/webexpo-2015-for-blog.003.jpg)
+![vodopád](/assets/img/content/dest/webexpo-2015/webexpo-2015-for-blog.003.webp)
 
 Jenže z vyšší úrovně na nižší tam nepadá voda, ale problémy. Proto mu – s dovolením – budu říkat průseropád.
 
 Jenže průseropád není nejhorší varianta. I dnes se najdou i tací, kterým běžný tok průserů nestačí. Děsivý proces je možné ještě vylepšit jednou věcí – grafiku uděláte ještě před nabídkou. PSD prostě přiložíte k rozpočtu a děj se vůle Boží:
 
-![spojení grafiky a nabídky](/assets/img/content/dest/original/webexpo-2015/webexpo-2015-for-blog.004.jpg)
+![spojení grafiky a nabídky](/assets/img/content/dest/webexpo-2015/webexpo-2015-for-blog.004.webp)
 
 Jenže… děje se obvykle vůle Satana. Pojďme tomu říkat:
 
-![niagarský průseropád](/assets/img/content/dest/original/webexpo-2015/webexpo-2015-for-blog.005.jpg)
+![niagarský průseropád](/assets/img/content/dest/webexpo-2015/webexpo-2015-for-blog.005.webp)
 
 Hrůzostrašné je, že takovým způsobem vzniká mnoho webů i dnes.
 
 A tak jsme si v branži vymysleli lepší proces:
 
-![analýza, ux, grafika, frontendista, programátor, spuštění, vyhodnocení a návrat zpět na analýzu](/assets/img/content/dest/original/webexpo-2015/webexpo-2015-for-blog.006.jpg)
+![analýza, ux, grafika, frontendista, programátor, spuštění, vyhodnocení a návrat zpět na analýzu](/assets/img/content/dest/webexpo-2015/webexpo-2015-for-blog.006.webp)
 
 Na začátku je analýza a uživatelský průzkum. Na to navazuje tvorba wireframů a až na ně navazuje grafika. Zbytek procesu zůstal podobný. Obohatili jsme jej ještě o vyhodnocení a po něm opět návrat na začátek další iterace. Vypadá docela dobře, že? 
 
 Já se tady dneska budu zaměřovat na část návrhu a realizace uživatelského rozhraní:
 
-![ux, grafika, frontendista](/assets/img/content/dest/original/webexpo-2015/webexpo-2015-for-blog.007.jpg)
+![ux, grafika, frontendista](/assets/img/content/dest/webexpo-2015/webexpo-2015-for-blog.007.webp)
 
 Jeho problémem je, že s prohlížečem a reálným zařízením – skutečným prostředím pro svůj běh – se návrh potká až pod rukama frontendisty. 
 
-![ux, grafika, frontendista](/assets/img/content/dest/original/webexpo-2015/webexpo-2015-for-blog.008.jpg)
+![ux, grafika, frontendista](/assets/img/content/dest/webexpo-2015/webexpo-2015-for-blog.008.webp)
 
 Obvykle až v prohlížeči se vynoří řada problémů souvisejících hlavně s responzivním designem nebo třeba rychlostí načítání, které designér ani grafik vidět nemohl. Používají totiž statické nástroje, které webová prostředí maximálně napodobují. 
 
@@ -71,7 +71,7 @@ Chci mít web v prohlížeči co nejdříve.
 
 Takže spojím designovací a kódovací fázi do jedné – designování v prohlížeči:
 
-![spojení ux a frontendisty](/assets/img/content/dest/original/webexpo-2015/webexpo-2015-for-blog.009.jpg)
+![spojení ux a frontendisty](/assets/img/content/dest/webexpo-2015/webexpo-2015-for-blog.009.webp)
 
 Na [WebExpo přednášce](http://webexpo.cz/praha2015/prednaska/designovani-webu-v-prohlizeci/) jsem používal spojení UX+frontendista, to je ale nepřesné. UX a tedy kontakt s uživateli a práci s daty obstarával kolega, já bych si v tomto kontextu měl říkat designér uživatelského rozhraní (UI).
 
@@ -79,7 +79,7 @@ Jako designér nepoužívám Axure, Photoshop ani jiné wireframovací nástroje
 
 Můj proces návrhu rozhraní vypadá takto:
 
-![](/assets/img/content/dest/original/webexpo-2015/webexpo-2015-for-blog.010.jpg)
+![](/assets/img/content/dest/webexpo-2015/webexpo-2015-for-blog.010.webp)
 
 1. Tvořím **obsah a jeho strukturu**.
 2. V prohlížeči pak nad strukturovaným obsahem iteruji a dělám **lineární design**, tzn. vizuální hierarchii, typografii a základy grafiky.
@@ -90,35 +90,35 @@ Všechny fáze procházejí vlastními iteracemi. Nejde o nenávratný průserop
 
 Nechci být teoretický, takže si to pojďme všechno ukázat na příkladu zatím nespuštěného redesignu [VašeČočky.cz](http://www.vasecocky.cz/) – velkého eshopu s čočkami, který má mnoho poboček po Evropě – na kterém jsem tenhle pracovní postup aplikoval.
 
-![Vaše čočky .cz](/assets/img/content/dest/original/webexpo-2015/webexpo-2015-for-blog.011.jpg)
+![Vaše čočky .cz](/assets/img/content/dest/webexpo-2015/webexpo-2015-for-blog.011.webp)
 
 Pokud jste alespoň trochu krátkozrací, tomu webu jste se asi nedokázali vyhnout.
 
-![](/assets/img/content/dest/original/webexpo-2015/webexpo-2015-for-blog.012.jpg)
+![](/assets/img/content/dest/webexpo-2015/webexpo-2015-for-blog.012.webp)
 
 ## Revize obsahu a jeho struktury na základě průzkumu
 
 V prvé fázi jsme na základě dat z Analytics, AB testů a klientovy vlastní analytiky přehodnocovali obsah a jeho strukturu. Brali jsme potaz potřebu jeho redukce kvůli mobilům. 
 
-![](/assets/img/content/dest/original/webexpo-2015/webexpo-2015-for-blog.014.jpg)
+![](/assets/img/content/dest/webexpo-2015/webexpo-2015-for-blog.014.webp)
 
 Zvažovali jsme také, do jaké míry je dobré měnit už existující design. 
 
 Interně mám pro tohle rozhodování zavedenou „Chegeva–konzerva stupnici". Vlevo Chegevara a reprezentující radikální změny designu, vlevo konzerva zastupující pravý opak.
 
-![](/assets/img/content/dest/original/webexpo-2015/webexpo-2015-for-blog.015.jpg)
+![](/assets/img/content/dest/webexpo-2015/webexpo-2015-for-blog.015.webp)
 
 Během redesignu VašeČočky.cz jsme byli konzervativní. Pokud to nebylo kvůli mobilům nutné, nechtěli jsme zásadní části informační architektury webu měnit. Web už běží a je velmi úspěšný. Měnili jsme to nejnutnější.
 
 V další fázi jsme si definovali strukturu a prioritizaci obsahu a v rámci jednotlivých komponent a stránek:
 
-![Google Docs s diskuzí o struktuře obsahu](/assets/img/content/dest/original/webexpo-2015/webexpo-2015-for-blog.017.jpg)
+![Google Docs s diskuzí o struktuře obsahu](/assets/img/content/dest/webexpo-2015/webexpo-2015-for-blog.017.webp)
 
 Tohle se dá a má dělat nějak jednoduše a před začátkem jakékoliv kreslení. My jsme použili strukturovaný Google dokument a pro diskuze použili komentáře v něm. Někdo tomu říká [Content Priority Guide](http://seesparkbox.com/foundry/content_priority_guide), my se bavili o „obsahové struktuře webu".
 
 A už tady jsme aktuální stav práce převedli do prohlížeče. Stačí [Bootstrap](http://www.vzhurudolu.cz/blog/11-bootstrap-pomuze) a chvilka v HTML:
 
-![Strukturované zobrazení v prohlížeči s reálným obsahem](/assets/img/content/dest/original/webexpo-2015/webexpo-2015-for-blog.019.jpg)
+![Strukturované zobrazení v prohlížeči s reálným obsahem](/assets/img/content/dest/webexpo-2015/webexpo-2015-for-blog.019.webp)
 
 Ták! Už v tuhle chvíli máme reálný výsledek práce, na který můžeme koukat na různých prohlížečích a zařízeních. K čemu by nám to mohlo být dobré? Jen čtěte dál.
 
@@ -129,11 +129,11 @@ Tenhle pohled na obsah nám řekne, jestli je obsah a jeho hierarchie v pořádk
 
 Často tady budu mluvit o ověřování hypotézy v prohlížeči. Prohlížeč ověřuje hypotézy, které vytváříme v ne-webovém prostředí – Photoshopu, Axure nebo v tomto případě Google dokumentech.
 
-![Strukturované zobrazení v prohlížeči s reálným obsahem](/assets/img/content/dest/original/webexpo-2015/webexpo-2015-for-blog.019.jpg)
+![Strukturované zobrazení v prohlížeči s reálným obsahem](/assets/img/content/dest/webexpo-2015/webexpo-2015-for-blog.019.webp)
 
 Vidíme tam hned spoustu problémů. Vezměme alespoň tři z nich:
 
-![](/assets/img/content/dest/original/webexpo-2015/webexpo-2015-for-blog.020.jpg)
+![](/assets/img/content/dest/webexpo-2015/webexpo-2015-for-blog.020.webp)
 
 1. **Některé prvky jsou moc dlouhé.** 
 Třeba hlavička webu, když ji zobrazíte strukturovaně. Že vypadá ošklivě nikoho nepřekvapí. Tyhle typy prvků jsou UI komponenty, které vyžadují speciální péči. Ještě se k nim dostaneme. 
@@ -144,7 +144,7 @@ Na obrázku to nevidíme, ale při testování na reálném smartphonu člověku
 
 Po několika iteracích tedy máme tuhle verzi:
 
-![Nové lineární zobrazení v prohlížeči](/assets/img/content/dest/original/webexpo-2015/webexpo-2015-for-blog.022.jpg)
+![Nové lineární zobrazení v prohlížeči](/assets/img/content/dest/webexpo-2015/webexpo-2015-for-blog.022.webp)
 
 1. **UI komponenty jsou nahrazené šedivou plochou.**
 Máme je označené jako úkol na později, a díky placeholderu se můžeme soustředit na celkovou strukturu dokumentu a obsah stránky. Placeholder má odhadovanou výšku budoucí komponenty.
@@ -159,7 +159,7 @@ Všimněte si, že se zatím bavíme jen o mobilním pohledu na obsah. Ano, pře
 
 Problémy v této fázi řešíme ve prospěch mobilních zařízení. V sekci s parametry a dotazy ke zboží například nepoužíváme záložky, které jsou překážkou nejpřirozenějšího lineárního pohybu (mobilního) uživatele dokumentem zeshora dolů:
 
-![Mobile First](/assets/img/content/dest/original/webexpo-2015/webexpo-2015-for-blog.023.jpg)
+![Mobile First](/assets/img/content/dest/webexpo-2015/webexpo-2015-for-blog.023.webp)
 
 [Mobile First](http://www.vzhurudolu.cz/prirucka/mobile-first) nám pomáhá vytvářet lepší weby.
 
@@ -169,11 +169,11 @@ Z obrázků to vidět není, ale když držíte lineární prototyp v mobilu, de
 
 Jsme odstínění od dalších vrstev problémů jako je design jednotlivých komponent, celostránkový design nebo grafika. Myslím, že tímhle postupem se i méně zkušení webaři mohou naučit rozumně navrhovat uživatelská rozhraní. 
 
-![](/assets/img/content/dest/original/webexpo-2015/webexpo-2015-for-blog.024.jpg)
+![](/assets/img/content/dest/webexpo-2015/webexpo-2015-for-blog.024.webp)
 
 Lineární design je hotový. Vraťme se teď k těm šedivým plochám. Ty říkají – tady máš úkol, navrhni rozhraní komponenty uživatelského rozhraní:
 
-![](/assets/img/content/dest/original/webexpo-2015/webexpo-2015-for-blog.025.jpg)
+![](/assets/img/content/dest/webexpo-2015/webexpo-2015-for-blog.025.webp)
 
 ## Návrh UI komponent: skicování
 
@@ -181,7 +181,7 @@ Tady samozřejmě nezačnu rovnou v prohlížeči. To je časově náročné, ta
 
 Skicuji. Mě vyhovuje rovnou ruka, tužka a bílý papír:
 
-![](/assets/img/content/dest/original/webexpo-2015/webexpo-2015-for-blog.027.jpg)
+![](/assets/img/content/dest/webexpo-2015/webexpo-2015-for-blog.027.webp)
 
 Skicování je super! Můžu kreslit jako šílený a vůbec u toho nemyslet. Tahle fáze skicování je od toho, aby se vygenerovalo co nejvíce variant řešení. Hlavně žádné designování, žádné přemýšlení. A nemusím umět kreslit, což sami vidíte.
 
@@ -189,7 +189,7 @@ Mozek zapojím až teď. Dívám se na jednotlivé skici a přemýšlím o jejic
 
 V tomhle případě jsem interně vybral třetí variantu hlavičky. Kolegům v týmu ji pak ještě rozkreslím do takovýchto předtištěných drátěných modelů jednotlivých zařízení:
 
-![](/assets/img/content/dest/original/webexpo-2015/webexpo-2015-for-blog.028.jpg)
+![](/assets/img/content/dest/webexpo-2015/webexpo-2015-for-blog.028.webp)
 
 Někdo by už tady nasadil wireframovací nástroj, mě i tady vyhovuje tužka, papír a prohlížeč.
 
@@ -199,11 +199,11 @@ Elektronický nebo nakreslený wireframe – na tom nezáleží. Je to ale výst
 
 Tím se dostáváme k problému návrhu webu ve statickém prostředí: 
 
-![Skica, PSD, wireframe - statická hypotéza pro dynamické médium.](/assets/img/content/dest/original/webexpo-2015/webexpo-2015-for-blog.029.jpg)
+![Skica, PSD, wireframe - statická hypotéza pro dynamické médium.](/assets/img/content/dest/webexpo-2015/webexpo-2015-for-blog.029.webp)
 
 Dynamičnost webu je v interakcích, animacích a v mém případě hlavně responzivitě – přizpůsobování rozhraní různým rozlišením:
 
-![Web = multimediální hypertext + animace + interakce + responzivnost](/assets/img/content/dest/original/webexpo-2015/webexpo-2015-for-blog.030.jpg)
+![Web = multimediální hypertext + animace + interakce + responzivnost](/assets/img/content/dest/webexpo-2015/webexpo-2015-for-blog.030.webp)
 
 Ano, můžete si udělat responzivní prototypy třeba v Axure, i s exportem do HTML. To co vznikne, ale nepoužívá plnohodnotnou HTML/CSS technologii. Responzivní web tam pouze emulujete. Fluidní layout – přizpůsobování rozhraní pixel po pixelu tam neuděláte. Je to něco mezi statickým návrhem a webem v prohlížeči.
 
@@ -211,7 +211,7 @@ Jedině přímo prohlížeč a testování na reálných zařízeních vám řek
 
 ## Návrh UI komponent: ověření v prohlížeči
 
-![](/assets/img/content/dest/original/webexpo-2015/webexpo-2015-for-blog.032.jpg)
+![](/assets/img/content/dest/webexpo-2015/webexpo-2015-for-blog.032.webp)
 
 Axure vám neřekne, zda je návrh technicky realizovatelný bez nějakých složitostí typu změny pořadí v kódu nebo detekce na serveru.  
 
@@ -225,7 +225,7 @@ Ale pokud u webu navrhujete složité nebo nestandardní UI komponenty, rychlý 
 
 Designování celých webů v prohlížeči je poněkud extrém. Pojďme se bavit o přenesení důležitých rozhodnutí do prohlížeče:
 
-![](/assets/img/content/dest/original/webexpo-2015/webexpo-2015-for-blog.037.jpg)
+![](/assets/img/content/dest/webexpo-2015/webexpo-2015-for-blog.037.webp)
 
 Nemusíte v prohlížeči vytvářet návrh celého webu, stačí se v něm rozhodovat o netriviálních částech. Důležité je, aby to proběhlo už v rané fázi návrhu.
 
@@ -237,19 +237,19 @@ Určitě by ale takhle neměla vypadat na velkých obrazovkách. Pro tvorbu layo
 
 Začínáme vždy od nejmenších rozlišení – 240px širokých:
 
-![](/assets/img/content/dest/original/webexpo-2015/webexpo-2015-for-blog.033.jpg)
+![](/assets/img/content/dest/webexpo-2015/webexpo-2015-for-blog.033.webp)
 
 Okno zvětšujeme:
 
-![](/assets/img/content/dest/original/webexpo-2015/webexpo-2015-for-blog.034.jpg)
+![](/assets/img/content/dest/webexpo-2015/webexpo-2015-for-blog.034.webp)
 
 Dokud komponenta nevypadá… no víte jak:
 
-![](/assets/img/content/dest/original/webexpo-2015/webexpo-2015-for-blog.035.jpg)
+![](/assets/img/content/dest/webexpo-2015/webexpo-2015-for-blog.035.webp)
 
 V tu chvíli je čas na breakpoint a nasazení jiného vzhledu:
 
-![](/assets/img/content/dest/original/webexpo-2015/webexpo-2015-for-blog.036.jpg)
+![](/assets/img/content/dest/webexpo-2015/webexpo-2015-for-blog.036.webp)
 
 Prostě zvětšuji okno prohlížeče a v rozlišení kde to nefunguje, je čas změnit layout. Skicu mám připravenou, protože jsem různé varianty kresli i pro větší displeje. 
 
@@ -277,19 +277,19 @@ Nadějně vypadá zejména [Bohemian Sketch](http://bohemiancoding.com/sketch/),
 
 Pro mě možná i zajímavější cestou je postupné zlepšování vývojářských nástrojů. V Google například tímto směrem hezky [posunují Chrome DevTools](https://trello.com/b/GKotpgkR/devtools-for-designers).
 
-![](/assets/img/content/dest/original/webexpo-2015/webexpo-2015-for-blog.038.jpg)
+![](/assets/img/content/dest/webexpo-2015/webexpo-2015-for-blog.038.webp)
 
 Teď od zbožných přání zpět k procesu.
 
 Máme hotový design komponent, celých stránek, otestované interakce, otestovaná zařízení a kvalitní základnu kódu. Jdeme za grafikem.
 
-![](/assets/img/content/dest/original/webexpo-2015/webexpo-2015-for-blog.039.jpg)
+![](/assets/img/content/dest/webexpo-2015/webexpo-2015-for-blog.039.webp)
 
 ## Grafika
 
 Až teď řešíme grafický styl – barevné schéma, vzhled UI komponent, dekorace stránky… Tohle ale platí jen v případě redesignu VašeČočky.cz. Grafický styl jsme chtěli měnit jen málo, ostatně jsme ty konzervy na Chegeva-konzerva stupnici, že ano…
 
-![](/assets/img/content/dest/original/webexpo-2015/webexpo-2015-for-blog.041.jpg)
+![](/assets/img/content/dest/webexpo-2015/webexpo-2015-for-blog.041.webp)
 
 Pokud bychom vytvářeli nový web a jeho grafický styl zgruntu, grafiku bychom vymýšleli už od úvodní fáze lineárního designování. Třeba pomocí [Style Tiles](http://styletil.es/). Grafika a design spolu velmi souvisí, proto jejích rozpojení v případu redesignu VašeČočky.cz berte jako výjimku.
 
@@ -297,15 +297,15 @@ Grafika není pár drobností v CSS, které se na závěr projektu upraví.
 
 Takže – lusknutí prstem trvající několik měsíců – a web je opatřený grafickým stylem:
 
-![](/assets/img/content/dest/original/webexpo-2015/webexpo-2015-for-blog.042.jpg)
+![](/assets/img/content/dest/webexpo-2015/webexpo-2015-for-blog.042.webp)
 
 Grafika je ale hotová, takže se postupně nasazuje a ověřuje. Ve chvíli psaní článku není ještě nová verze plně nasazená.
 
-![](/assets/img/content/dest/original/webexpo-2015/webexpo-2015-for-blog.043.jpg)
+![](/assets/img/content/dest/webexpo-2015/webexpo-2015-for-blog.043.webp)
 
 ## Shrňme si náš proces
 
-![](/assets/img/content/dest/original/webexpo-2015/webexpo-2015-for-blog.044.jpg)
+![](/assets/img/content/dest/webexpo-2015/webexpo-2015-for-blog.044.webp)
 
 Povídali jsme si o návrhu a realizaci uživatelského rozhraní v prohlížeči. Probíhalo to takhle:
 

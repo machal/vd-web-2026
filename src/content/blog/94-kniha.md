@@ -19,7 +19,7 @@ og_type: article
 
 Jsem trochu na měkko. Tištěná verze [„Vzhůru do (responzivního) webdesignu“ je tady](/ebook-responzivni)!
 
-[![Kniha „Vzhůru do (responzivního) webdesignu“](/assets/img/content/dest/original/vdwd.jpg)](/ebook-responzivni)
+[![Kniha „Vzhůru do (responzivního) webdesignu“](/assets/img/content/dest/vdwd.webp)](/ebook-responzivni)
 
 Když jsem před osmi měsíci začal psát druhý e-book, ještě jsem netušil, kolik energie mě to bude stát. 
 

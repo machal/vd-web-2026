@@ -69,7 +69,7 @@ Ideálním řešením je samozřejmě [responzivní web](/kurzy/responzivni-desi
 
 Teď už zbývá schovat na stránce zbytečnosti. Třeba obsah:
 
-![Schovaný obsah na damejidlo.cz](/assets/img/content/dest/original/mobily-obsah.jpg)
+![Schovaný obsah na damejidlo.cz](/assets/img/content/dest/mobily-obsah.webp)
 
 
 ## 15) Hlavička webu musí zabrat alespoň polovinu mobilního displeje

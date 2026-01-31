@@ -19,7 +19,7 @@ og_type: article
 
 Jak už možná víte, od začátku zimy pracuji na druhém e-booku. Jmenuje se [„Vzhůru do (responzivního) webdesignu“](/ebook-responzivni) a právě teď jsem spustil stránku, na které si jej můžete objednat.
 
-[![Vzhůru do (responzivního) webdesignu](/assets/img/content/dest/original/blog/vdwd-launch.jpg)](/ebook-responzivni)
+[![Vzhůru do (responzivního) webdesignu](/assets/img/content/dest/blog/vdwd-launch.webp)](/ebook-responzivni)
 
 Původně jsem měl v úmyslu podělit se v novém e-booku o znalosti detailů technikálií responzivního webdesignu, které se mi v hlavě nahromadily během let návrhu a implementace, ale i školení a poradenství responzivních webů.  
 

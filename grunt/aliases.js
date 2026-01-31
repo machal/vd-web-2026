@@ -2,18 +2,6 @@
 
 module.exports = {
 
-  // grunt IMG
-  img: [
-    'imagemin',
-    'responsive_images:default'
-  ],
-
-  // grunt img -- all images once again
-  imgall: [
-    'imagemin',
-    'responsive_images:all'
-  ],
-
   // grunt css
   css: [
     'dart-sass',

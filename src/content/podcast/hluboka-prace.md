@@ -32,7 +32,7 @@ Pojďme si nejdřív definovat, o čem se tady budeme bavit. Existují dva druhy
 - **Hluboká** je ta, kterou provádíme ve stavu maximální koncentrace bez vyrušování. Posouvá hranice našich znalostí a schopností. Vytváří nové hodnoty a je těžké ji nahradit, ať už softwarem nebo i jiným člověkem. Je mimořádná ve smyslu kvality, ale třeba i rychlosti provedení.
 - **Plytká** je mentálně nenáročná práce, kterou je snadné předat jinému člověku nebo nahradit programem. Nevytváří nové hodnoty. Plytké práci se často říká manažerská. Není sama o sobě špatná, však se bez ní skoro nikdo neobejde. Pokud ale děláte kreativní práci, musíte dát plytkosti přísné mantinely.
 
-![Hluboká práce](/assets/img/content/dest/original/blog/hluboka-prace.jpg)
+![Hluboká práce](/assets/img/content/dest/blog/hluboka-prace.webp)
 
 I tvořící lidé jako programátoři, designéři, copywriteři, analytici a další se velmi často nechají plytkostí strhnout. Tvoří pak v krátkých úsecích a mezitím se nechávají rozptylovat emaily, sociálními sítěmi, schůzkami, pracovními chaty a tak dále. To co vznikne v těch krátkých úsecích mezi plytkou prací pak nemůže mít kvalitu výstupů z práce hluboké.
 

@@ -47,7 +47,7 @@ Podcast: <a href="https://soundcloud.com/vzhurudolu/avocode" data-id="370020830"
 * Vu Hoang Anh: [LinkedIn](https://www.linkedin.com/in/helloiamvu), [Twitter](https://twitter.com/helloiamvu?lang=cs), [Přednáška na Webexpo 2017](https://www.webexpo.cz/praha2016/talk/the-price-of-not-selling-your-company/)
 * Avocode: [Avocode.com](https://avocode.com/), [Forbes](http://www.forbes.cz/prosli-si-startupovym-drillem-v-usa-ted-zabijeji-photoshop-z-prazske-naplavky/), [TyInternety.cz](http://tyinternety.cz/startupy/startup-tydne-24-avocode-the-photoshop-killer/), [StartupJobs.cz](https://www.startupjobs.cz/startup/avocode-inc)
 
-![Pěkně provedené interiéry kanceláří v Avocode](/assets/img/content/dest/original/blog/avocode-kancl.jpg)
+![Pěkně provedené interiéry kanceláří v Avocode](/assets/img/content/dest/blog/avocode-kancl.webp)
 
 
 ## Textový přepis {#text}
@@ -90,7 +90,7 @@ My jsme na základě toho vytvořili dalších asi 11 produktů ve Photoshopu, k
 
 A my jsme si řekli, že bychom chtěli udělat nějaký SaaS (Software as a Service), kterým bychom zlepšili tu workflow ještě víc. Nejenom nějakými pluginy, které ještě byly závislé na Photoshopu. S každým upgradem Photoshopu se totiž ten plugin rozbil. 
 
-![Uživatelské rozhraní Avocode](/assets/img/content/dest/original/blog/avocode-ui.jpg)
+![Uživatelské rozhraní Avocode](/assets/img/content/dest/blog/avocode-ui.webp)
 
 Tak jsme přišli [s Avocodem](https://avocode.com/), ptali jsme se různě těch dvou set tisíc lidí, které jsme měli, co by oni ve workflow uvítali. Ptali jsme se jich osobně, byli jsme osobně v Heurece, myslím, a došli jsme k tomu, že by bylo dobré udělat cloudového, že tam někdo něco nahraje a vývojář z toho může dostávat všechna potřebná data. A takhle vznikla první myšlenka Avocodu. 
 

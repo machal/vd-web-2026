@@ -42,7 +42,7 @@ Jenže on ten responzivní webdesign a další obory jsou vlastně součástí n
 
 Původní Marcotteho responzivní webdesign nemusíme přejmenovávat, jen ho položíme do náruče daleko obecněji definovaného pojmu. 
 
-![Adaptivní versus responzivní](/assets/img/content/src/adaptivni-responzivni.jpg)
+![Adaptivní versus responzivní](/assets/img/content/dest/adaptivni-responzivni.jpg)
 
 Už nemusíme řešit na původní definici responzivního webdesignu napasovat rychlost načítání, nové pracovní postupy nebo mobilní HTML5. Budeme prostě mluvit o webdesignu *adaptivním*. Moc fajn, že? Jenže takhle to fungovat nebude. 
 

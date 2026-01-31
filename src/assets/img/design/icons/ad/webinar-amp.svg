@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Vrstva_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="500px" height="500px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="90.9153" y1="90.5989" x2="409.1126" y2="408.7962" gradientTransform="matrix(1 0 0 -1 -0.0151 499.6987)">
+	<stop  offset="0.39" style="stop-color:#005AF0"/>
+	<stop  offset="1" style="stop-color:#04D4C2"/>
+</linearGradient>
+<path fill="url(#SVGID_1_)" d="M327.144,229.398l-94.387,157.08h-17.101l16.905-102.353l-52.357,0.068c0,0-0.494,0.015-0.728,0.015
+	c-4.71,0.002-8.532-3.815-8.534-8.526c0-0.002,0-0.006,0-0.01c0-2.023,1.882-5.452,1.882-5.452l94.079-156.892l17.386,0.075
+	l-17.332,102.51l52.628-0.067c0,0,0.561-0.007,0.832-0.007c4.711-0.003,8.533,3.813,8.535,8.525c0,0.003,0,0.006,0,0.009
+	c0,1.913-0.751,3.593-1.814,5.018L327.144,229.398L327.144,229.398z M250,25C125.732,25,25,125.74,25,250
+	c0,124.269,100.732,225,225,225c124.26,0,225-100.731,225-225C475,125.74,374.26,25,250,25z"/>
+</svg>

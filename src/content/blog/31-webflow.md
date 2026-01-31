@@ -23,7 +23,7 @@ Vyzkoušel jsem zase po čase pořádně [WebFlow](https://webflow.com) a myslí
 
 WebFlow je vizuální editor webů, do kterého si vkládáte komponenty typu navigace, formulář, obrázek, text nebo třeba kontejner layoutu. Obrázek napoví.
 
-<a href="https://webflow.com/"><img src="http://www.vzhurudolu.cz/assets/img/content/src/webflow.jpg" height="414"></a>
+<a href="https://webflow.com/"><img src="http://www.vzhurudolu.cz/assets/img/content/dest/webflow.webp" height="414"></a>
 
 Pojďme si povídat o těch lepších částech WebFlow.
 

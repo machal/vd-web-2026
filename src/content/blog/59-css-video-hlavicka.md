@@ -20,7 +20,7 @@ Na posledním firemním školení [v Creoxu](http://www.creox.cz/) jsme otevřel
 
 Takhle vypadá zadání:
 
-![Úkol: Hlavička je na celou výšku okna, video na pozadí a centrované a na mobilech video není.](/assets/img/content/dest/original/reseni-hlavicka.jpg)
+![Úkol: Hlavička je na celou výšku okna, video na pozadí a centrované a na mobilech video není.](/assets/img/content/dest/reseni-hlavicka.webp)
 
 Postupně si to rozebereme, nebo si prostě [prohlédněte hotové řešení](http://codepen.io/machal/pen/bpZRvW?editors=1100).
 

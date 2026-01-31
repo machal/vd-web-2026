@@ -28,7 +28,7 @@ Druhý a třetí důvod bude ve značce. MSIE má mezi vývojáři a významnou 
 
 A samozřejmě, existence prastarých korporátních systémů – nebo spíše způsob jakým je vývojáři vytvářeli a spravovali – komplikuje radikálnější odříznutí od historie. Microsoft oznámil, že ve Windows 10 bude Internet Explorer dál přítomný, jen ho prostě budete muset trochu hledat. 
 
-![Spartan, zdroj: Microsoft.com](/assets/img/content/src/spartan.jpg)
+![Spartan, zdroj: Microsoft.com](/assets/img/content/dest/spartan.jpg)
 
 ## Internet Explorer zůstává
 

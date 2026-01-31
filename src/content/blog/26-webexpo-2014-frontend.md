@@ -18,7 +18,7 @@ Několik uplynulých měsíců jsme s [Robinem Pokorným](https://twitter.com/ro
 
 Nastavili jsme si témata, která letos musejí zaznít a ke každému hledali co nejlepšího řečníka. A jak to dopadlo? Pojďte s námi na krátkou procházku frontend programem letošního WebExpa.
 
-<img src="/assets/img/content/src/webexpo-2014.jpg" width="1000" height="575" alt="WebExpo 2014">
+<img src="/assets/img/content/dest/webexpo-2014.jpg" width="1000" height="575" alt="WebExpo 2014">
 
 ## [Marko Dugonjic: Responzivní webová typografie](http://2014.webexpo.cz/recnici/marko-dugonjic/)
 

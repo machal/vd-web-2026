@@ -61,7 +61,7 @@ Vše v panelu Console. Dostanete se přes <kbd>Esc</kbd> v otevřených DevTools
 
 Moje oblíbená část. DevTools obsahují výborný emulátor pro potřeby ladění responzivního designu. Najdete ho pod nenápadnou ikonkou mobilu nalevo od hlavního menu. Nebo pod zkratkou <kbd>Ctrl/Cmd+Shift+M</kbd> když máte DevTools otevřené.
 
-![DevTools Device Mode](/assets/img/content/dest/original/devtools-nrs.jpg)
+![DevTools Device Mode](/assets/img/content/dest/devtools-nrs.webp)
 
 Sledujte čísla na obrázku:
 

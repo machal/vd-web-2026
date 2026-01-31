@@ -61,7 +61,7 @@ Takové syntaxi velmi rychle propadnete (i já jsem s ní měl pěkný románek)
 
 S whitespace syntaxí v SASSu jsem narazil a myslím, že tady se ta cesta proti povaze CSSka nevyplácí.  Whitespace SASS vám neumožní svobodné zalamování opravdu dlouhých řádek a taky nežere blokové CSS komentáře:
 
-![SASS whitespace syntaxe problémy – blokové komentáře a zalamování uvnitř deklarací](/assets/img/content/src/sass-whitespace-.jpg) 
+![SASS whitespace syntaxe problémy – blokové komentáře a zalamování uvnitř deklarací](/assets/img/content/dest/sass-whitespace-.jpg) 
 
 Naštěstí v SASSu můžete používat i SCSS syntaxi, která vychází z CSS. Po pořádek je dobré dodat, že Stylus s výšeuvedeným kódem nemá žádný problém. I on umožňuje výběr syntaxe.
 
@@ -77,7 +77,7 @@ Můžete volit podle různých pohledů na problematiku. Nemám k tomu žádná 
 
 Nejprve megastručně:
 
-![Který CSS preprocesor vybrat?](/assets/img/content/src/preprocesory-ktery-vybrat-.jpg) 
+![Který CSS preprocesor vybrat?](/assets/img/content/dest/preprocesory-ktery-vybrat-.jpg) 
 
 ### Designér vs. programátor
 

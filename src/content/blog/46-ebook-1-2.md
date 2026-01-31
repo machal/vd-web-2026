@@ -27,7 +27,7 @@ V prosinci šla do světa nová verze ebooku. A protože to v předvánočním s
 
 Všichni držitelé licencí ji dostali už v prosinci a samozřejmě bezplatně. Vy si ji může [objednat taky](/ebook). To ale ještě není všechno.
 
-[![Ebook „Vzhůru do CSS3“](/assets/img/content/dest/original/ebook-devices.jpg)](/ebook)
+[![Ebook „Vzhůru do CSS3“](/assets/img/content/dest/ebook-devices.webp)](/ebook)
 
 ## Update ebookového webu
 

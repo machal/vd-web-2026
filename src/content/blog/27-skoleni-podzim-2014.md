@@ -18,7 +18,7 @@ og_type: article
 
 [Nové termíny veřejných kurzů](http://www.vzhurudolu.cz/kurzy) jsou tu! Výrazněji jsem zaktualizoval obsah „Dnešního webového frontendu" a celodenní školení přesunul do Konferenčního centra Greeenpoint. Ale ani kurzy Gruntu/Gulpu, responzivního webdesignu nebo Bootstrapu nejsou bez novinek. Pojďme si o nich prozradit více.
 
-<a href="http://www.vzhurudolu.cz/kurzy"><img src="/assets/img/content/src/vse_podzim_2014_jpg.jpg" alt="Podzimní školení webového frontendu" height="575"></a>
+<a href="http://www.vzhurudolu.cz/kurzy"><img src="/assets/img/content/dest/vse_podzim_2014_jpg.jpg" alt="Podzimní školení webového frontendu" height="575"></a>
 
 ## [Dnešní webový frontend](http://www.vzhurudolu.cz/kurzy/webovy-frontend/75)
 

@@ -26,7 +26,7 @@ Moje poznámky z prezentace „The Need for Speed”. Hezky a na konkrétním u�
 První dva návrhové vzory jsou hezky vidět na videu:
 
 <video autoplay loop width="100%">
-<source src="/assets/img/content/src/cloudup.mp4">
+<source src="/assets/img/content/dest/cloudup.mp4">
 </video>
 
 

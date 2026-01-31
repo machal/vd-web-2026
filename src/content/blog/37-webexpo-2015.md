@@ -40,7 +40,7 @@ Odolný frontend v Andyho podání znamená web, který se nerozbíjí ani na po
 
 ## 6) Martin Michálek: Designování webů v prohlížeči
 
-[![Iterace VašeČočky.cz](/assets/img/content/src/vasecocky-iterace.jpg)](http://webexpo.cz/praha2015/prednaska/designovani-webu-v-prohlizeci/)
+[![Iterace VašeČočky.cz](/assets/img/content/dest/vasecocky-iterace.jpg)](http://webexpo.cz/praha2015/prednaska/designovani-webu-v-prohlizeci/)
 
 Je to trapné, ale musím vás pozvat i na svou přednášku. :-) V posledních letech jsem téměř úplně opustil Photoshop a statické kreslící nástroje. Komponenty uživatelského rozhraní, ale i celé weby skicuji rukou a pak rovnou prototypuji v prohlížeči. Má to své klady, ale i problémy. Co jsem se zatím o tomhle způsobu práce naučil, ukážu na probíhajícím redesignu eshopu [VašeČočky.cz](http://www.vasecocky.cz/). [Více na WebExpo.cz](http://webexpo.cz/praha2015/prednaska/designovani-webu-v-prohlizeci/).
 

@@ -35,7 +35,7 @@ Karusely jsou komplikované a jejich využití potenciálně rizikové. Je pravd
 
 Podle [některých průzkumů](http://weedygarden.net/2013/07/carousel-interaction-stats/) totiž drtivá většina lidí uvidí jen první obrázek. Karusely podobné bannerům zase kvůli „bannerové slepotě“ mnoho uživatelů rovnou ignoruje.
 
-![Karusely na rsts.cz](http://www.vrdl.cz/assets/img/content/dest/original/mobily-karusely.jpg)
+![Karusely na rsts.cz](http://www.vrdl.cz/assets/img/content/dest/mobily-karusely.webp)
 
 Na mobilních zařízeních navíc vezměte v potaz:
 

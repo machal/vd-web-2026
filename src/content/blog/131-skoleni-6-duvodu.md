@@ -55,7 +55,7 @@ Vymýšlíme, iterujeme, ladíme a posloucháme zpětnou vazbu. Už pět let. Le
 Martinovi, Rikimu, Michalovi a Honzovi na webu říkáme [lektoři](https://www.vzhurudolu.cz/kurzy/lektori). Ano – mají výborné prezentační dovednosti, umí vás věci naučit a jednoduše vysvětlit na pohled složité principy.
 
 <figure>
-<img src="/assets/img/content/dest/original/courses/skol-lektori.jpg" alt="Lektoři Vzhůru dolů">
+<img src="/assets/img/content/dest/courses/skol-lektori.webp" alt="Lektoři Vzhůru dolů">
 <figcaption markdown="1">
 *Obrázek: To jsou oni. Martin, Riki, Michal a Honza. Kříženci odborníků s lektory*
 </figcaption>
@@ -131,7 +131,7 @@ Ne, u nás nečekejte školení pro začátečníky. Víme, že máme co nabídn
 
 Víte co? Nechme mluvit logotypy!
 
-<img src="/assets/img/content/dest/original/courses/skol-loga.jpg" alt="Loga některých klientů školení ze Vzhůru dolů">
+<img src="/assets/img/content/dest/courses/skol-loga.webp" alt="Loga některých klientů školení ze Vzhůru dolů">
 
 Ale i další – vzdělávali jsme lidi z T-Mobile, GE Money, České spořitelny, Mall.cz  a mohli bychom pokračovat. Prostě půlku českého internetu. Jste zatím v té druhé půlce? [Zkuste nás](https://www.vzhurudolu.cz/kurzy). 
 
@@ -140,7 +140,7 @@ Ale i další – vzdělávali jsme lidi z T-Mobile, GE Money, České spořitel
 Co jiného byste měli od školení chtít, než „něco se naučit"? Jenže sami víte, že ze spousty kurzů se odchází s bolavou hlavou, dvěma sty slajdy a seznamem úkolů k samostudiu. To my nechceme.
 
 <figure>
-<img src="/assets/img/content/dest/original/courses/skol-cert.jpg" alt="Certifikát ze Vzhůru dolů">
+<img src="/assets/img/content/dest/courses/skol-cert.webp" alt="Certifikát ze Vzhůru dolů">
 <figcaption markdown="1">
 *Obrázek: Dostanete také certifikát, tužku a desky. Ale kvůli těm jste na školení nešli, že?*
 </figcaption>
@@ -182,7 +182,7 @@ Učíme se navzájem. Nejen účastníci, ale i naši lektoři vám řeknou, že
 Protože nikdo neví všechno a někdy je prostě pro lektora nejlepší nechat mluvit účastníky a jejich specifickou zkušenost. Nebo diskutovat, to přece všichni chceme – navzájem se obohatit.
 
 <figure>
-<img src="/assets/img/content/dest/original/courses/skol-lidi.jpg" alt="Účastníci školení Principy Javasciptu">
+<img src="/assets/img/content/dest/courses/skol-lidi.webp" alt="Účastníci školení Principy Javasciptu">
 <figcaption markdown="1">
 *Obrázek: Účastníci listopadového termínu Principů Javascriptu]. I oni přispěli dotazy, diskuzemi a připomínkami*
 </figcaption>

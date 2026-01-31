@@ -35,7 +35,7 @@ Občas používaný „UX vývojář“ je na tom ještě hůř než ú-í-čka�
 
 Kodér je navíc v Česku perfektně zavedený:
 
-![Anketa o „kodérovi“ na Facebooku](http://www.vzhurudolu.cz/assets/img/content/dest/original/koder-fb-anketa.jpg)
+![Anketa o „kodérovi“ na Facebooku](http://www.vzhurudolu.cz/assets/img/content/dest/koder-fb-anketa.webp)
 
 Právě proto zůstávám u kodéra. Pro sebe si ho nyní přesněji definuji jako „frontend kodér“. Protože „kodér“ je popis typu profese, ne pojmenování konkrétní pozice. Programátor v Cobolu je totiž taky kodér, že ano. „Frontend kodér“ je perfektně pozicovaný ke svému programátorskému kolegovi „frontend vývojáři“. 
 

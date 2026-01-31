@@ -30,7 +30,7 @@ Ano, na použití v produkčních prostředích je brzy. Nicméně, myslím, že
 
 Pokud to neuděláte v momentě, kdy je implementace technologie ještě schovaná za vlaječkami v nastavení prohlížeče, ztrácíte šanci. Jakmile je jednou nějaká CSS vlastnost venku a je používaná na běžných webech, je příliš pozdě na změny.
 
-![Rachel Andrew, foto: Jeffrey Zeldman](/assets/img/content/dest/original/rachel-andrew.jpg)
+![Rachel Andrew, foto: Jeffrey Zeldman](/assets/img/content/dest/rachel-andrew.webp)
 
 ### Díky za skvělý Perch CMS! Používám ho k velké spokojenosti. Chystají se nějaké větší novinky, které nejsou příliš veřejně známé?
 

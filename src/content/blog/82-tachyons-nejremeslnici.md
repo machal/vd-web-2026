@@ -21,7 +21,7 @@ og_type: article
 
 Tachyons používáme na našich nových a redesignovaných stránkách v [NejŘemeslníci.cz](http://nejremeslnici.cz/) a zatím myslím, že jsme velmi spokojení!
 
-![Homepage NejŘemeslníci s Tachyons třídami](/assets/img/content/dest/original/blog/tachyons-nejremeslnici.jpg)
+![Homepage NejŘemeslníci s Tachyons třídami](/assets/img/content/dest/blog/tachyons-nejremeslnici.webp)
 
 Framework jsme začali nasazovat asi před třemi měsíci při začátku prací na redesignu homepage a dalších hlavních stránek webu. Kromě těchto nových částí, kde stylování už děláme výlučně v Tachyons, máme samozřejmě ještě spoustu stránek ve starém designu a s původním monolitickým CSS souborem.
 

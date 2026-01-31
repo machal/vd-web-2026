@@ -51,7 +51,7 @@ Na oltář širokého záběru bylo v textu obětováno například SVG, výborn
 
 Autor se bohužel nevyhnul jevu, pro který mám interní označení *Nákaza technika lyrikou.* Úvodní odstavce všech kapitol se v angličtině čtou fakt špatně. Když se to ještě přeloží do češtiny, je to sranda k popukání:
 
-![Responzivní webdesign profesionálně - Lyrické vsuvky](/assets/img/content/src/rwd_kadlec_1.jpg)
+![Responzivní webdesign profesionálně - Lyrické vsuvky](/assets/img/content/dest/rwd_kadlec_1.jpg)
 
 Vzal jsem si z toho pro sebe ponaučení: „Technický autore, když kolem tebe letí Lyrická Můza, nasaď si prosím roušku a schovej se do sklepa. Neboj, ona zase odletí!"
 
@@ -87,7 +87,7 @@ Celkově z překladu ale zas tak depresivní dojem nemám, horší je to s česk
 
 Kontroverze v překladu jsou zčásti subjektivní, to se ale nedá říct o množství chyb, které se v českém vydání vyskytují. Pro vaši představu jsem si zahrál na korektora u jedné z části knihy — vkládaných příspěvků jiných autorů. Mimochodem, na přispěvatele měl Tim Kadlec fakt vkus. Jenže v češtině pak prasí Frosta, Wroblewskiho a další.
 
-![Responzivní webdesign profesionálně - chyby redakce](/assets/img/content/src/rwd_kadlec_2.jpg)
+![Responzivní webdesign profesionálně - chyby redakce](/assets/img/content/dest/rwd_kadlec_2.jpg)
 
 V kolečku jsou autoři, u kterých v českém vydání vypadly fotografie. Přeškrtnuté jsou reference na stránky, které s realitou moc nepasují. Vlnovkou jsou překlady, které FAKT nemůžu zařadit do kategorie *„přeložil bych jinak, ale je to subjektivní"*.
 

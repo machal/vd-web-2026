@@ -36,7 +36,7 @@ V iOS9 se loni objevila podpora blokátorů reklamy a dalšího obsahu. Pro velk
 
 Tohle nemůže nikoho šokovat. Vzhledem k cenové politice Apple to znamená jediné – na mobilním webu konečně začínají převažovat běžní uživatelé, kteří si prostě koupí normálně drahé Android zařízení. Podíly mobilních operačních systémů začínají i ve vyspělých zemích odpovídat skutečné struktuře obyvatelstva.
 
-![iOS ztrácí tržní podíly](/assets/img/content/dest/original/ios-konec-dominance.jpg)
+![iOS ztrácí tržní podíly](/assets/img/content/dest/ios-konec-dominance.webp)
 
 ## Progressive Web Apps
 

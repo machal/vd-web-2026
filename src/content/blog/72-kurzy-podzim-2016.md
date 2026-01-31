@@ -24,7 +24,7 @@ V pražském Konferenčním centru Greenpoint v listopadu organizujeme poslední
 
 ## Bootstrap (10. listopadu)
 
-[![Bootstrap školení](/assets/img/content/dest/original/skoleni/lektori/bootstrap-adam.jpg)](/kurzy/bootstrap)
+[![Bootstrap školení](/assets/img/content/dest/skoleni/lektori/bootstrap-adam.webp)](/kurzy/bootstrap)
 
 Věřím, že o Bootstrapu už jste slyšeli a možná v něm už něco dělali. Adam Kudrna s ním má velké zkušenosti na projektech své firmy a je také spoluautorem vylepšující nádstavby [Bootstrap UI](http://www.bootstrap-ui.com/). Doražte se od Adama naučit triky a poznat Bootstrap do hloubky, kterou z dokumentace nezískáte.
 
@@ -36,7 +36,7 @@ Věřím, že o Bootstrapu už jste slyšeli a možná v něm už něco dělali.
 
 ## Principy Javascriptu (24. listopadu)
 
-[![Javascript školení](/assets/img/content/dest/original/skoleni/lektori/javascript-riki.jpg)](/kurzy/javascript)
+[![Javascript školení](/assets/img/content/dest/skoleni/lektori/javascript-riki.webp)](/kurzy/javascript)
 
 Javascript je „lingua franca“ Webu. Pro vývoj webových aplikací je prostě nepostradatelný. Doražte na Rikiho školení naučit se jeho hlavní principy, které jsou vývojáři v jiných jazycích opomíjené nebo chybně chápané. 
 

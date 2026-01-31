@@ -21,7 +21,7 @@ Novinky k mému [agregátoru pracovních nabídek](/prace): daleko více pozic, 
 
 ## Nové importy z Indeed: počty pozic se ztrojnásobily
 
-[![Práce pro webové vývojáře](/assets/img/content/dest/original/blog/prace-v2.jpg)](/prace)
+[![Práce pro webové vývojáře](/assets/img/content/dest/blog/prace-v2.webp)](/prace)
 
 Kromě inzerátů ze StartupJobs.cz teď agregátor importuje pozice z Indeed.com, takže na Vzhůru dolů najdete přes [pět set pozic pro webové vývojáře](/prace). Vše je pečlivě filtrováno a tříděno tak, abyste se nemuseli probírat nerelevantními informacemi. Máme tu:
 
@@ -53,7 +53,7 @@ Nezvýhodněné inzeráty samozřejmě můžete [vložit i zadarmo](/prace/prida
 
 ## Podporuji Jobs Dev, veletrh pracovních příležitostí pro vývojáře
 
-[![Jobs Dev](/assets/img/content/dest/original/blog/jobs-dev-16-9.jpg)](http://www.jobsdev.cz/)
+[![Jobs Dev](/assets/img/content/dest/blog/jobs-dev-16-9.webp)](http://www.jobsdev.cz/)
 
 Vzhůru dolů podporuje chystaný první veletrh pracovních příležitostí pro vývojáře, [Jobs Dev](http://www.jobsdev.cz/), který proběhne začátkem dubna 2017 v Praze. Organizuje jej Jan Hlaváč, člověk, který stojí za akcí [Unihunt.cz](http://www.unihunt.cz/), která měla úspěch mezi  UXáky.
 

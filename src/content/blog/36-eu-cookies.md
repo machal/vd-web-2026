@@ -99,7 +99,7 @@ I tak prosím – nepřenášejte svou případnou frustraci z domněle zbytečn
 
 Docela mě děsí jak i konverzně-super-optimalizované ecommerce weby nasazují lištu tak, že…  no… pokud jim nesnižuje konverze, to fakt sním svoje ponožky.
 
-![Před: Dobrá a zlá cookie lišta](/assets/img/content/src/cookie-lista.jpg)
+![Před: Dobrá a zlá cookie lišta](/assets/img/content/dest/cookie-lista.jpg)
 
 [Dobrá](http://codepen.io/machal/pen/WQexja?editors=110) „cookie lišta“ má rozdíl od [špatné](http://codepen.io/machal/pen/xwKOYO?editors=110) tyhle parametry:
 

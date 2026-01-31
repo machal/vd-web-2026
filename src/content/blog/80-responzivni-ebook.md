@@ -19,7 +19,7 @@ og_type: article
 
 Ano, je to tak. Už nějadou dobu pracuji [na novém ebooku](/ebook-responzivni). O procesu tvorby responzivních webů, o svých zkušenostech s ním a taky trochu o principech dnešního webdesignu. Bude rozsáhlejší, barevnější a detailnější než jeho starší sourozenec.
 
-[![Vzhůru do responzivního webdesignu](/assets/img/content/dest/original/ebook/ebook-rwd-predprodej.jpg)](/ebook-responzivni)
+[![Vzhůru do responzivního webdesignu](/assets/img/content/dest/ebook/ebook-rwd-predprodej.webp)](/ebook-responzivni)
 
 Vyjde na jaře. Doufám. :) Jsem asi v půlce psaní, jenže ta druhá nebude snadná, to už vím z přípravy ebooku prvního. Vy mi ale můžete pomoci. Když si ebook předobjednáte, vaše peníze mi umožní soustředit se na psaní a nedělat moc jiné práce. To pak ebook vyjde dříve. Berete?
 

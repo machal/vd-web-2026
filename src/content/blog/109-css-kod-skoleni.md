@@ -25,7 +25,7 @@ Vím jistě, že to první mě vždycky šlo lépe. A nejsem sám. Čtení – a
 
 V poslední době ale právě CSS více čtu než píšu při klientských code reviews nebo poradenství. Díky tomu jsem leccos zažil, vyzkoušel a pochopil. Hlavně si ale vytvořil sadu nástrojů, technik a doporučení. No a teď se z mých zjištění a omylů můžete poučit i vy – na školení „CSS kód: Organizace a údržba“. 
 
-[![Školení Organizace CSS](/assets/img/content/dest/original/skoleni/lektori/css-kod.jpg)](/kurzy/css-kod)
+[![Školení Organizace CSS](/assets/img/content/dest/skoleni/lektori/css-kod.webp)](/kurzy/css-kod)
 
 Během dne si na příkladu zažijete vybrané metodiky i nástroje: BEM, OOCSS, ITCSS, SMACSS, Stylelint a další. Chtěl bych vám v nich udělat pořádek a pomoci vám najít vlastní metodiku.
 

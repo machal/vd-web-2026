@@ -22,7 +22,7 @@ Mám pro vás tip na poslední akci z jarního běhu kurzů – školení SVG. K
 
 ## 29. března: Pokročilé SVG
 
-[![Školení SVG](https://www.vzhurudolu.cz/assets/img/content/src/skoleni/lektori/svg.jpg)](https://www.vzhurudolu.cz/kurzy/svg)
+[![Školení SVG](https://www.vzhurudolu.cz/assets/img/content/dest/skoleni/lektori/svg.webp)](https://www.vzhurudolu.cz/kurzy/svg)
 
 Kurz vede zkušený technický šéf Superkoders – Michal Matuška. Na kurzu s vámi Michal projde všechny ty [cool věci](https://www.vzhurudolu.cz/prirucka/svg-inspirace), pro které SVG milujeme: filtry, transformace, animace nebo i hůře pochopitelné koncepty jako je viewbox a viewport. 
 
@@ -42,7 +42,7 @@ Je dobré vědět, že další termín tohoto skvělého školení máme vyhlá�
 
 ## 14. května: Webová kodéřina (včetně Flexboxu a Gridu)
 
-[![Dnešní webová kodéřina](https://www.vzhurudolu.cz/assets/img/content/src/skoleni/lektori/webova-koderina.jpg)](https://www.vzhurudolu.cz/kurzy/webova-koderina)
+[![Dnešní webová kodéřina](https://www.vzhurudolu.cz/assets/img/content/dest/skoleni/lektori/webova-koderina.webp)](https://www.vzhurudolu.cz/kurzy/webova-koderina)
 
 Webová kodéřina je průběžně aktualizované školení, které se týká tří oblastí:
 

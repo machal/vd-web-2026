@@ -159,7 +159,7 @@ Telefonní čísla v mezinárodním formátu nejsou nutnou podmínkou pro fungov
 
 ### Optimalizace pro vyhledávače
 
-![Přidání telefonu k lokálnímu byznysu na Google pomocí mikroformátu](http://www.vzhurudolu.cz/assets/img/content/dest/original/href-tel-seo.jpg)
+![Přidání telefonu k lokálnímu byznysu na Google pomocí mikroformátu](http://www.vzhurudolu.cz/assets/img/content/dest/href-tel-seo.webp)
 
 Google doporučuje použít [strukturovaný formát dat](https://developers.google.com/structured-data/local-businesses/#adding_structured_data_markup_to_your_site), díky kterému uděláte telefonní odkazy lépe rozpoznatelné pro vyhledavače. Vyhledavač je pak dokáže lépe zobrazit na stránce s výsledky vyhledávání. Uživatel uvidí tlačítko, jehož stisknutím vytočí uvedené číslo. Dudley Storey [ve svém článku](http://thenewcode.com/536/Adding-Phone-Numbers-To-Web-Pages-With-HTML5-and-Microdata) připravil pěknou ukázku:
 
