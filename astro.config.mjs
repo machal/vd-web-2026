@@ -3,6 +3,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 // import sitemap from '@astrojs/sitemap'; // Vypnuto - bug s undefined.reduce()
 import { customSitemap } from './src/utils/custom-sitemap';
+import { changedFilesIntegration } from './src/utils/changed-files-integration';
 import rehypeRaw from 'rehype-raw';
 import remarkGfm from 'remark-gfm';
 import { remarkHeadingIds } from './src/utils/remark-heading-ids.ts';
@@ -106,6 +107,7 @@ export default defineConfig({
   trailingSlash: 'never', // Generovat URL bez trailing slash (kromě root /)
   integrations: [
     customSitemap(),
+    changedFilesIntegration(),
   ],
   markdown: {
     // Shiki syntax highlighting - používáme css-variables pro možnost přepsání barev
