@@ -53,6 +53,8 @@ function getSlug(entry: any): string {
     return `/blog/${entry.slug}`;
   } else if (entry.collection === 'podcast') {
     return `/podcast/${entry.data.postID}-${entry.slug}`;
+  } else if (entry.collection === 'prirucka') {
+    return `/prirucka/${entry.slug}`;
   }
   return '#';
 }
