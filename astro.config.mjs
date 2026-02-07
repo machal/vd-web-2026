@@ -113,6 +113,14 @@ export default defineConfig({
     // Shiki syntax highlighting - používáme css-variables pro možnost přepsání barev
     shikiConfig: {
       theme: 'css-variables',
+      langAlias: {
+        url: 'text',
+        terminal: 'text',
+        img: 'text',
+        htaccess: 'text',
+        robotstxt: 'text',
+        svg: 'xml',
+      },
     },
     // FÁZE 1: Základní HTML generování z markdownu
     // Pouze základní parsování markdownu a zpracování markdown="1" atributů

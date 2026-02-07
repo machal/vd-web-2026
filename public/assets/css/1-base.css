@@ -3,14 +3,14 @@
   --vd-text-color: rgb(var(--vd-text-color-rgb));
   --vd-text-color-lighter: rgba(var(--vd-text-color-rgb), 0.8);
   --vd-text-color-lightest: rgba(var(--vd-text-color-rgb), 0.7);
-  --vd-background-color: #e5e3df;
+  --vd-background-color: rgb(228.77325, 227.12085, 222.57675);
   --vd-content-bg-color: #fcfcf7;
   --vd-border-color: rgba(var(--vd-text-color-rgb));
   --vd-border-color-light: rgba(var(--vd-text-color-rgb), 0.5);
   --vd-highlight-bg-color: #d8f5b8;
-  --vd-highlight-neutral-bg-color: #f2f0ed;
+  --vd-highlight-neutral-bg-color: rgb(241.6186, 240.29668, 236.6614);
   --vd-link-color: #5fa316;
-  --vd-heading-color: #2b490a;
+  --vd-heading-color: rgb(42.6216216216, 73.1297297297, 9.8702702703);
   --vd-code-color: hsl(25, 74%, 23%);
   --vd-code-color-1: hsl(25, 74%, 32%);
   --vd-code-color-2: hsl(25, 74%, 37%);
@@ -25,11 +25,11 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --vd-text-color-rgb: 252, 252, 247;
-    --vd-background-color: #201f06;
-    --vd-content-bg-color: #171605;
+    --vd-background-color: rgb(32.2, 30.8, 6.3);
+    --vd-content-bg-color: rgb(23, 22, 4.5);
     --vd-highlight-bg-color: #3A3F26;
     --vd-highlight-neutral-bg-color: #3A3F26;
-    --vd-heading-color: #d1f4ab;
+    --vd-heading-color: rgb(208.5405405405, 243.6432432432, 170.8567567568);
     --vd-code-color: hsl(25, 74%, 83%);
     --vd-code-color-1: hsl(25, 74%, 82%);
     --vd-code-color-2: hsl(25, 74%, 77%);
@@ -226,8 +226,8 @@ figure {
  * Address differences between Firefox and other browsers.
  */
 hr {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
   height: 0;
 }
 
@@ -338,8 +338,7 @@ input {
  */
 input[type=checkbox],
 input[type=radio] {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; /* 1 */
+  box-sizing: border-box; /* 1 */
   padding: 0; /* 2 */
 }
 
@@ -360,6 +359,7 @@ input[type=number]::-webkit-outer-spin-button {
  */
 input[type=search] {
   -webkit-appearance: textfield; /* 1 */
+  -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box; /* 2 */
   box-sizing: content-box;
 }
@@ -707,9 +707,7 @@ input[type=number],
 input[type=password],
 select,
 textarea {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   display: inline-block;
   line-height: 1.5;
   padding: 0.25rem 2rem;
@@ -717,8 +715,6 @@ textarea {
   color: var(--vd-text-color);
   border: 1px solid var(--vd-border-color-light);
   border-radius: 4px;
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
 }
 input[type=text]:hover, input[type=text]:focus, input[type=text]:active, input[type=text].active,
 input[type=email]:hover,
@@ -783,18 +779,6 @@ textarea.active {
 .article textarea.button:active {
   border-style: solid;
 }
-input[type=text]::-webkit-input-placeholder, input[type=email]::-webkit-input-placeholder, input[type=tel]::-webkit-input-placeholder, input[type=url]::-webkit-input-placeholder, input[type=search]::-webkit-input-placeholder, input[type=number]::-webkit-input-placeholder, input[type=password]::-webkit-input-placeholder, select::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-  color: var(--vd-text-color-lighter);
-}
-input[type=text]::-moz-placeholder, input[type=email]::-moz-placeholder, input[type=tel]::-moz-placeholder, input[type=url]::-moz-placeholder, input[type=search]::-moz-placeholder, input[type=number]::-moz-placeholder, input[type=password]::-moz-placeholder, select::-moz-placeholder, textarea::-moz-placeholder {
-  color: var(--vd-text-color-lighter);
-}
-input[type=text]:-ms-input-placeholder, input[type=email]:-ms-input-placeholder, input[type=tel]:-ms-input-placeholder, input[type=url]:-ms-input-placeholder, input[type=search]:-ms-input-placeholder, input[type=number]:-ms-input-placeholder, input[type=password]:-ms-input-placeholder, select:-ms-input-placeholder, textarea:-ms-input-placeholder {
-  color: var(--vd-text-color-lighter);
-}
-input[type=text]::-ms-input-placeholder, input[type=email]::-ms-input-placeholder, input[type=tel]::-ms-input-placeholder, input[type=url]::-ms-input-placeholder, input[type=search]::-ms-input-placeholder, input[type=number]::-ms-input-placeholder, input[type=password]::-ms-input-placeholder, select::-ms-input-placeholder, textarea::-ms-input-placeholder {
-  color: var(--vd-text-color-lighter);
-}
 input[type=text]::placeholder,
 input[type=email]::placeholder,
 input[type=tel]::placeholder,
@@ -805,6 +789,18 @@ input[type=password]::placeholder,
 select::placeholder,
 textarea::placeholder {
   color: var(--vd-text-color-lighter);
+}
+input[type=text],
+input[type=email],
+input[type=tel],
+input[type=url],
+input[type=search],
+input[type=number],
+input[type=password],
+select,
+textarea {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
 }
 
 input[type=radio],
@@ -844,8 +840,7 @@ small a:hover, small a:focus, small a:active,
 a {
   color: inherit;
   text-decoration: underline;
-  -webkit-text-decoration-skip: auto;
-          text-decoration-skip: auto;
+  text-decoration-skip: auto;
   text-decoration-color: var(--vd-text-color-lighter);
 }
 a:hover, a:focus, a:active {
@@ -875,12 +870,14 @@ figcaption {
   color: var(--vd-text-color-lighter);
   text-decoration-color: rgba(var(--vd-text-color-lighter), 0.5);
   margin-bottom: 0.5rem;
-  font-style: italic;
-  margin-top: 0.5rem;
 }
 figcaption a:hover, figcaption a:focus, figcaption a:active {
   color: var(--vd-link-color);
   text-decoration: underline;
+}
+figcaption {
+  font-style: italic;
+  margin-top: 0.5rem;
 }
 
 abbr {
@@ -945,6 +942,25 @@ pre .hljs-comment {
   color: var(--vd-code-color-4);
 }
 
+:root {
+  --astro-code-color-text: var(--vd-code-color);
+  --astro-code-color-background: var(--vd-content-bg-color);
+  --astro-code-token-keyword: var(--vd-code-color-1);
+  --astro-code-token-string: var(--vd-code-color-2);
+  --astro-code-token-comment: var(--vd-code-color-4);
+  --astro-code-token-parameter: var(--vd-code-color-1);
+  --astro-code-token-function: var(--vd-code-color-1);
+  --astro-code-token-string-expression: var(--vd-code-color-2);
+  --astro-code-token-punctuation: var(--vd-code-color-3);
+  --astro-code-token-constant: var(--vd-code-color-1);
+  --astro-code-token-link: var(--vd-link-color);
+}
+
+pre.astro-code {
+  background-color: var(--astro-code-color-background);
+  color: var(--astro-code-color-text);
+}
+
 .full-layout-element,
 .content-full {
   clear: both;
@@ -999,8 +1015,7 @@ pre .hljs-comment {
 
 .content-container {
   background: var(--vd-content-bg-color);
-  -webkit-box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.1);
   padding-bottom: 2rem;
 }
 @media only screen and (min-width: 820px) {
@@ -1011,8 +1026,7 @@ pre .hljs-comment {
 }
 @media print {
   .content-container {
-    -webkit-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
   }
 }
 
@@ -1020,9 +1034,6 @@ pre .hljs-comment {
   clear: both;
   padding-left: 1rem;
   padding-right: 1rem;
-  max-width: 34rem;
-  margin-bottom: 1.25rem;
-  margin-top: 2.5rem;
 }
 @media only screen and (min-width: 741px) {
   .content {
@@ -1032,10 +1043,17 @@ pre .hljs-comment {
     padding-right: 2rem;
   }
 }
+.content {
+  max-width: 34rem;
+}
 @media only screen and (max-width: 600px), print {
   .content {
     max-width: none;
   }
+}
+.content {
+  margin-bottom: 1.25rem;
+  margin-top: 2.5rem;
 }
 .section .content {
   margin-top: 0;
@@ -1043,11 +1061,8 @@ pre .hljs-comment {
 }
 
 .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   margin-left: -1rem;
   margin-right: -1rem;
 }
@@ -1055,8 +1070,7 @@ pre .hljs-comment {
 .col {
   padding-left: 1rem;
   padding-right: 1rem;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 100%;
 }
 
@@ -1108,7 +1122,6 @@ pre .hljs-comment {
 }
 
 .js .section--openable {
-  -webkit-transition: 0.5s;
   transition: 0.5s;
   height: auto;
 }
@@ -1124,4 +1137,3 @@ pre .hljs-comment {
   max-height: 100em;
   overflow: auto;
 }
-/*# sourceMappingURL=1-base.css.map */
