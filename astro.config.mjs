@@ -9,6 +9,7 @@ import remarkGfm from 'remark-gfm';
 import { remarkHeadingIds } from './src/utils/remark-heading-ids.ts';
 import { remarkProcessMarkdownAttributes } from './src/utils/remark-process-markdown-attributes.ts';
 import { remarkPriruckaImages } from './src/utils/remark-prirucka-images.ts';
+import { remarkNormalizeCodeLang } from './src/utils/remark-normalize-code-lang.ts';
 import { rehypeRemoveFirstH1 } from './src/utils/rehype-remove-first-h1.ts';
 import { rehypeRemoveEbookOnly } from './src/utils/rehype-remove-ebook-only.ts';
 import { rehypeHeadingAnchors } from './src/utils/rehype-heading-anchors.ts';
@@ -127,6 +128,7 @@ export default defineConfig({
     remarkPlugins: [
       remarkGfm, // GitHub Flavored Markdown (standardní rozšíření)
       remarkPriruckaImages, // Transformace cest k obrázkům - nutné před zpracováním Astro assets (pouze úprava cest, ne transformace obsahu)
+      remarkNormalizeCodeLang, // url/terminal/img/htaccess/robotstxt → text, svg → xml (Shiki jinak háže chybu)
       remarkProcessMarkdownAttributes, // Zpracování markdown="1" atributů - potřebné pro generování základního HTML
       // VYPNUTO - transformace budou až na hotovém HTML:
       // remarkHeadingIds, // Přesunuto do rehype fáze (rehypeHeadingAnchors)
