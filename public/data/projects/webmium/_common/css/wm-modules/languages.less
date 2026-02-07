@@ -1,0 +1,200 @@
+/* 
+Modul Přepínání jazykových mutací
+==============================================================================
+
+Třída `.wm-m-languages`. 
+
+Otevírání seznamu alternativních mutací se děje pomocí `:hover` nad 
+`.wm-m-languages`. Varianta je otevírat pomocí přidání třídy `.active` 
+tamtéž javascriptem.
+
+
+Ukázka
+------
+
+V HTML vždy na konci dokumentu před `</body>`. 
+
+V ukázce spolus mobilní hlavičkou, která je potřeba pro zobrazení přepínátka 
+na malých displejích.
+
+
+```
+<div class="wm-l-mobile-header row-fluid">
+    <div class="span12">
+        <div class="sw-nav-toggle">
+            <a class="btn btn-inverse" href="#sw-main-navigation"><span class="symbol">≡</span> Menu</a>
+        </div>
+    </div>
+</div>
+
+
+<div class="wm-m-languages">
+  <h2>Jazykové mutace</h2>        
+  <ul>
+    <li class="item-active"><strong>Čeština</strong></li>
+    <li class="item"><a href="#">Slovenčina</a></li>
+    <li class="item"><a href="#">English</a></li>
+    <li class="item"><a href="#">Deutsch</a></li>  
+    <li class="item"><a href="#">Српски / srpski</a></li>        
+  </ul>
+</div><!-- .wm-m-languages -->
+```
+
+*/
+
+.wm-m-languages {	
+	width: 160px;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: 980px/2 - 160px;
+	z-index: 50010;
+	
+	@media (max-width: 1024px) {
+		margin-left: 0;
+		right: 10px;
+		left: auto;
+	}	
+	
+	@media (max-width: @wmSmallDisplayEnd) {
+		top: 10px;
+		right: 0;
+		width: 140px;
+	}
+	
+	@media print {
+		display: none;
+	}
+}	
+	
+	
+// Base
+
+.wm-m-languages {	
+	h2 {
+		display: none;
+	}
+	
+	ul, li {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}		
+}	
+	
+// Vnitrni casti jednotlivych polozek
+	
+.wm-m-languages a,
+.wm-m-languages strong {	
+	.btn;
+	display: block;
+	background: #fff;
+	font-weight: normal;
+	text-decoration: none;
+	color: @textColor;
+	
+	&:hover,
+	&:focus,
+	&:active {
+		background: #fff;
+	}
+		
+	@media (max-width: @wmSmallDisplayEnd) {
+		background: #222;
+		color: #fff;	
+		
+		&:hover,
+		&:focus,
+		&:active {
+			background: #222;
+		}		
+	}	
+}
+
+// Krajni neaktivni polozky (druha a posledni)
+// maji vetsi padding
+
+.wm-m-languages ul > li:nth-child(2):before,
+.wm-m-languages ul > li:last-child:after {	
+	content: "";
+	height: 6px;
+	display: block;
+	background: #fff;
+	
+	@media (max-width: @wmSmallDisplayEnd) { 
+		background: #222;
+	}	
+}
+
+// Aktivni polozka
+
+.wm-m-languages a:hover,
+.wm-m-languages a:focus,
+.wm-m-languages a:active {
+	text-decoration: underline;
+	color: @linkColor;
+}
+
+// Aktivni polozka
+
+.wm-m-languages .item-active {
+	border-bottom: rgba(0,0,0,0) solid 1px;
+	
+	strong {
+		color: @linkColor;
+	}	
+	
+	@media (max-width: @wmSmallDisplayEnd) {
+		margin-bottom: 10px;
+		
+		strong {
+			color: #fff;		
+		}		
+	}	
+}	
+
+// Aktivni polozka: Symbol sipky
+
+.wm-m-languages .item-active:after {
+	display: inline-block;
+	position: absolute;
+	top: 12px;
+	right: 10px;	
+	// CSS Triangle…
+	content: "";
+	border-style: solid;
+	border-width: 7px 7px 0 7px;
+	border-color: @linkColor transparent transparent transparent;	
+	
+	@media (max-width: @wmSmallDisplayEnd) {
+		border-color: #fff transparent transparent transparent;
+		right: 20px;	
+	}		
+}
+
+
+// Otevirani/zavirani polozek
+
+// V beznem provozu jsou vsechny neaktivni polozky schovane
+.wm-m-languages .item {	
+	display: none;
+}
+
+// Po najeti mysi na plochu modulu se aktivni obarvi sedive 
+// a vsechny neaktivni zobrazi
+.wm-m-languages:hover,
+.wm-m-languages:focus,
+.wm-m-languages:active,
+.wm-m-languages.active {
+	.item-active strong {
+		color: @grayLight;
+	}
+	
+	.item-active:after {
+		border-color: @grayLight transparent transparent transparent;			
+	}
+	
+  .item {
+		display: block;
+	}
+}

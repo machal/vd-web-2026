@@ -1,0 +1,266 @@
+@charset "utf-8";
+
+/* 
+
+========== Stylopis pro kalendar na webu Prazskeho Jara (www.festival.cz) ========== 
+
+Autor:        Martin Michalek, Studio Shortcat
+
+*/
+
+
+/* Overlay - vrstva, ktera prekryva obsah pod kalendarem */
+#calendar-shadow {
+  width: 1004px; 
+  height: 558px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -502px; /* (sirka stinu / 2) */
+  margin-top: -281px; /* (vyska stinu / 2) */
+  background: transparent url("/images/layout/calendar-shadow.png") no-repeat top left;
+  z-index: 840; 
+}
+
+
+#calendar {
+  width: 966px; 
+  height: 520px;
+  background-color: #fff; 
+  padding: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -488px; /* (sirka kalendare / 2) */
+  margin-top: -270px; /* (vyska kalendare / 2) */
+  z-index: 850; 
+}
+
+
+
+/* === Hlavicka kalendare === */
+
+#calendar #calendar-head {
+  padding-left: 83px;
+  padding-top: 30px;
+}
+
+#calendar #calendar-head h2 {
+  width: 290px; /* celkem ma kazdy sloupec 290px */
+  padding: 8px 0px 8px 0;
+  margin: 0;
+  float: left;
+  font-size: 16px;
+  font-weight: bold;
+}  
+
+
+/* Obsah kalendare - dny */
+#calendar #calendar-days {
+  clear: both;
+  width: auto;
+  height: 420px;
+  padding-bottom: 23px;
+  overflow: auto;
+  position: relative;
+}
+
+.municipal-house-program h3,
+.rudolfinum-program h3,
+.other-venues-program h3 {
+  display: none;
+}
+
+
+
+/* === Radek kalendare - mesic === */
+
+#calendar .month {
+  border-bottom: 2px solid #fff; 
+  clear: both;
+  background-color: #f5f3f2;  
+  height: 24px;
+  padding-top: 5px;
+}
+
+#calendar .month h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 0 0 5px;
+}
+
+
+
+/* === Radek kalendare - den === */
+
+#calendar .day {
+  border-bottom: 2px solid #fff; 
+  clear: both;  
+  height: 33px;
+}
+
+/* Radek kalendare - 2, 3 nebo 4 akce v jednom miste konani */
+#calendar .day.more-events-in-one-venue-2 { height: 57px; /* = 2x25+4 */ }
+#calendar .day.more-events-in-one-venue-3 { height: 81px; }
+#calendar .day.more-events-in-one-venue-4 { height: 105px; }
+
+/* Hlavicka radku kalendare - den a datum */
+#calendar .day .day-head {
+  width: 70px;
+  float: left;
+  font-size: 1em;
+  font-weight: normal;
+  margin: 0;
+  padding: 3px;
+}
+
+#calendar .day .day-head .week-day  {
+  width: 25px;
+  margin: 0 0 0 3px;
+  padding: 5px 0 0 0;
+  float: left;  
+  color: #71685c;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#calendar .day .day-head .date  {
+  font-size: 16px;
+  width: 25px;
+  margin: 5px 8px 0 0;
+  float: right;  
+  font-weight: bold;
+  text-align: right;  
+}
+
+
+/* Radek kalendare - bunky jednotlivych mist konani */
+#calendar .day .municipal-house-program,
+#calendar .day .rudolfinum-program,
+#calendar .day .other-venues-program {
+  width: 284px;
+  float: left;
+  padding: 5px 3px; 
+  height: 23px;
+  background-color: #f5f3f2;  
+}
+
+/* Radek kalendare - vyska bunky jednotlivych mist konani v pripade konani vice akci na jednom miste */
+#calendar .day.more-events-in-one-venue-2 .municipal-house-program,
+#calendar .day.more-events-in-one-venue-2 .rudolfinum-program,
+#calendar .day.more-events-in-one-venue-2 .other-venues-program {
+  height: 48px;
+}
+#calendar .day.more-events-in-one-venue-3 .municipal-house-program,
+#calendar .day.more-events-in-one-venue-3 .rudolfinum-program,
+#calendar .day.more-events-in-one-venue-3 .other-venues-program {
+  height: 71px;
+}
+#calendar .day.more-events-in-one-venue-4 .municipal-house-program,
+#calendar .day.more-events-in-one-venue-4 .rudolfinum-program,
+#calendar .day.more-events-in-one-venue-4 .other-venues-program {
+  height: 95px;
+}
+
+/* Mouseover na radku kalendare */
+#calendar .day:hover,
+#calendar .day.hover {
+  background-color: #f5f3f2;
+}
+
+#calendar .day .municipal-house-program li,
+#calendar .day .rudolfinum-program li,
+#calendar .day .other-venues-program li,
+#calendar .day .municipal-house-program ul,
+#calendar .day .rudolfinum-program ul,
+#calendar .day .other-venues-program ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Bunka kalendare - jednotlive predstaveni */
+#calendar .day li {
+  position: absolute;
+  width: 284px;  
+  height: 23px;    
+}
+
+/* Bunka kalendare - jednotlive predstaveni - hlavnim prvkem je <a> kvuli odkazu v MSIE6 */
+#calendar .day li a {
+  display: block;
+  width: 284px;  
+  height: 23px; 
+  background-color: #666;
+  color: #fff;     
+}
+
+/* Posunuti druhe az ctvrte akce v jednom miste a jednom dni */
+#calendar .day li.venue-event-2 { margin-top: 24px; }
+#calendar .day li.venue-event-3 { margin-top: 48px; }
+#calendar .day li.venue-event-4 { margin-top: 72px; }
+
+#calendar .day li .time {
+  width: 30px;
+  padding: 4px 4px 4px 4px;
+  background-color: #333;
+  display: block;
+  float: left;
+}
+
+#calendar .day li .event-description {
+  width: 227px;
+  float: right;
+  margin-right: 10px;  
+  padding: 4px 0;
+  cursor: pointer;
+  height: 11px;
+  overflow: hidden;
+}
+
+#container #calendar .day .event-description strong {
+  font-weight: normal;
+  color: #fff;
+}
+
+#container #calendar .day .event-description .price {
+  border-bottom: 1px dotted #fff;
+  line-height: 1em;
+}
+
+#calendar .day li a:hover {
+  cursor: pointer;
+  border-bottom: 2px solid #F5F3F2;
+  height: auto;
+  padding-bottom: 15px;
+}
+
+#calendar .day li a:hover .event-description {
+  overflow: none;
+  height: auto;
+}
+
+#calendar .day li .clear-zero {
+  display: block;
+  height: 0;
+}
+
+
+/* === Zaviraci krizek upravime pro kalendar === */
+
+#calendar p.close {  
+  width: 35px;
+  height: 35px;
+  top: 15px;
+  right: 15px;
+}
+
+#calendar p.close a {
+  background: transparent url('/images/layout/close-big-dark.gif');
+  width: 35px;
+  height: 35px;
+}
+
+#calendar p.close a:hover {
+  background-position: bottom left;
+}

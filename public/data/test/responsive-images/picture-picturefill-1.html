@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="cs">
+
+  <head>
+    <meta charset="UTF-8">
+
+    <title>Picturefill 1 tests</title>
+
+    <script>
+    // Picture element HTML5 shiv
+    document.createElement( "picture" );
+    </script>
+    <script src="assets/picturefill-1.js" async></script>
+
+    <link rel="stylesheet" href="assets/responsive-images.css">
+
+  </head>
+
+  <body>
+
+    <h1>Picturefill 1: select image based on media queries (picture/source)</h1>
+
+    <span data-picture data-alt="First test">
+        <span data-src="assets/small_600.gif"></span>
+        <span data-src="assets/medium_1024.gif" data-media="(min-width: 600px)"></span>
+        <span data-src="assets/large_1600.gif" data-media="(min-width: 1024px)"></span>
+        <noscript>
+            <img src="assets/small_600.gif" alt="First test">
+        </noscript>
+    </span>
+
+  </body>
+
+</html>

@@ -1,0 +1,192 @@
+/*
+
+Košík: zboží v košíku
+=====================
+
+*/
+
+// Seznam zboží
+// ------------
+
+.cart-items {
+  // pokud nahoře není cart-goto.php border-top: 1px solid @vc-border-color-dark;
+  padding-top: @line-height-computed;
+}
+
+
+// Jednotlivé zboží
+// ----------------
+
+.cart-item {
+  .clearfix;
+  padding-bottom: @line-height-computed/2;
+  margin-bottom: @line-height-computed;
+  border-bottom: 1px solid @vc-border-color-dark;
+}
+
+// Obrázek
+// -------
+
+.cart-item-image {
+  text-align: center;
+
+  img {
+    max-width: 100%;
+    height: auto;
+    // Výšku hlídáme pro případ vysokých fotek a roztoků (.product-options-1-item),
+    // ale taky mobilního lineárního layoutu:
+    max-height: 90px;
+  }
+}
+
+// Název
+// -----
+
+// .content kvůli specifičnosti, viz base.less a .content h2
+//  TODO: neukazuje to nějakou ošklivost v base?
+
+.content .cart-item-name {
+  font-size: @font-size-h5;
+  font-weight: bold;
+  margin: 0 0 @line-height-computed/3;
+  line-height: 1.3;
+}
+
+// Parametry zboží
+// ---------------
+
+// Výpis .product-options komponent
+
+.cart-item-params {
+  // Nadpis (první oko, druhé oko…)
+  h3 {
+    display: inline;
+    font-size: @font-size-smaller;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+// Počet kusů zboží
+// ----------------
+
+.cart-item-count {
+  .form-control {
+    display: inline-block;
+    width: auto;
+  }
+}
+
+// Cena  zboží
+// -----------
+
+.cart-item-price {
+  margin: 3px @padding-large-horizontal 0 0;
+}
+
+
+// Responzivní varianty layoutu
+// ----------------------------
+
+// ### Nejmenší displeje
+// Název a obrázek pod sebou
+
+@media only screen {
+
+  .cart-item-remove {
+    float: left;
+    font-size: @font-size-small;
+  }
+
+  // .content kvůli specifičnosti, viz base.less a .content h2
+  //  TODO: neukazuje to nějakou ošklivost v base?
+  .content .cart-item-price {
+    font-size: @font-size-h5;
+    font-weight: bold;
+    float: right;
+  }
+
+}
+
+// ### Středně velké
+// Název a obrázek vedle sebe
+
+@media only screen and (min-width: 320px) and (max-width: (@vc-layout-start - 1px)) {
+
+    .cart-item-name-image {
+      .clearfix;
+    }
+
+    .cart-item-image {
+      float: left;
+      width: percentage(1/3);
+      text-align: left;
+
+      img {
+        max-width: 90%;
+      }
+    }
+
+    .cart-item-name {
+      float: right;
+      width: percentage(2/3);
+    }
+
+}
+
+@media only screen and (min-width: 500px) and (max-width: (@vc-layout-start - 1px)) {
+
+  .cart-item-image { width: percentage(1/4); }
+  .cart-item-name { width: percentage(3/4); }
+
+}
+
+// ### Zvětšíme nadpisy
+
+@media only screen and (min-width: 500px) {
+
+  // Zvětšíme nadpisy
+  .content .cart-item-price,
+  .content .cart-item-name {
+    font-size: @font-size-h4;
+  }
+
+  .content .cart-item-price {
+    margin-top: 0;
+  }
+
+}
+
+// ### Desktop
+// Rozvržení do spoupců: obrázek / název a parametry / odstranit a cena.
+
+@media only screen and (min-width: @vc-layout-start) {
+
+  .cart-item {
+    position: relative;
+    padding-left: percentage(1/6);
+    padding-right: percentage(1/6); // Tzn. o cca 10px větší než obsahová plocha v detailu produktu
+  }
+
+  .cart-item-image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 12%;
+    margin-top: @line-height-computed;
+  }
+
+  .cart-item-remove {
+    position: absolute;
+    right: @padding-large-horizontal;
+    top: 2px;
+  }
+
+  .cart-item-price {
+    position: absolute;
+    right: 0;
+    bottom: @line-height-computed;
+  }
+
+}

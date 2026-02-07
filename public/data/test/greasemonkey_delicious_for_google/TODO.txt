@@ -1,0 +1,8 @@
+Verze 0
+
+* Zprehlednit kod
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Verze 1
+* prohledávat taky tagy po vzoru minulého

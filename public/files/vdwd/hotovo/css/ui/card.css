@@ -1,0 +1,35 @@
+/*
+Card
+====
+
+Karta do seznamu polozek
+*/
+
+@media only screen and (min-width: 22.5em) {
+
+  .cards {
+    display: flex;
+  }
+
+}
+
+@media only screen and (min-width: 22.5em) and (max-width: 47.99em) {
+
+  .cards {
+    flex-wrap: wrap;
+  }
+
+  .card {
+    flex: 1 1 calc(50% - 2em);
+  }
+
+}
+
+
+@media only screen and (min-width: 48em) {
+
+  .card {
+    flex: 1 1 calc(25% - 2em);
+  }
+
+}

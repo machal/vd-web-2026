@@ -1,0 +1,31 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <style type="text/css" media="screen">
+ 
+div {
+    -webkit-transition-property: opacity, width;
+    -webkit-transition-duration: 2s, 0.5s;
+    -moz-transition-property: opacity, width;
+    -moz-transition-duration: 2s, 0.5s;
+		width:100px;
+		            height:100px;
+		            background-color:blue;
+}
+ 
+div.fadeAway {
+    opacity:.5;
+    width: 200px;
+}
+ 
+    </style>
+</head>
+<body>
+ 
+ 
+<div onclick="className = 'fadeAway'">
+Tap to fade
+</div>
+ 
+</body>
+</html>

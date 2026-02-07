@@ -1,0 +1,12 @@
+{
+  "products": [
+    { "size": 23, "width": 154, "delivery": "pozítří" , "available": true }, 
+    { "size": 24, "width": 161, "delivery": "pozítří" , "available": true }, 
+    { "size": 25, "width": 167, "delivery": "za 4 dny" , "available": true }, 
+    { "size": 26, "width": 174, "delivery": "pozítří" , "available": true }, 
+    { "size": 27, "width": 181, "delivery": "nyní vyprodáno" , "available": false }, 
+    { "size": 28, "width": 188, "delivery": "pozítří" , "available": true }, 
+    { "size": 29, "width": 195, "delivery": "pozítří" , "available": true }, 
+    { "size": 30, "width": 202, "delivery": "za 4 dny", "available": true }
+  ]
+ }

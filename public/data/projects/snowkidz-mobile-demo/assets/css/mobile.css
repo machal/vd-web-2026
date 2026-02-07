@@ -1,0 +1,660 @@
+/* Mobile stylesheet
+   ============================================== 
+   Project: Snowkidz.cz
+   CSS author: Martin Michalek, michalek@shortcat.cz
+*/
+
+
+/* ==============================================================================
+   1) Base
+*/
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+input, textarea, select {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+p, ul, ol, dl, h1, h2, h3, h4, h5, h6, fieldset, form, blockquote, table {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 18px;
+}
+
+ol {
+  padding-left: 20px;
+}
+
+a img 
+  {  border: 0; }
+
+a
+  { color: #0085ee; }
+
+a:hover,
+a:focus,
+a:active 
+  { color: #f30; }
+
+sup, sub {position: relative; font-size: 75%; line-height: 0;}
+
+/* HR is section divider in base stylesheet */
+hr
+  { margin-bottom: 36px;}
+
+@font-face {
+	font-family: 'VAGRundschriftD';
+	src: url('webfonts/202158_0_0.eot?') format('eot'), url('webfonts/202158_0_0.woff') format('woff'), url('webfonts/202158_0_0.ttf') format('truetype');
+}
+
+/* --------------------------------------------------------------------------------  
+   Helpers
+*/
+
+.clear 
+  { clear: both;}
+
+.clear_zero {
+  clear: both;
+  font-size: 1px;
+  line-height: 1px;
+}
+
+.clearf:before, .clearf:after { content: ""; display: table; }
+.clearf:after { clear: both; }
+.clearf { zoom: 1; }
+
+.smart_only
+  { display: none; }  
+.right
+  { text-align: right; }
+.left
+  { text-align: left; }  
+.center
+  { text-align: center; }  
+
+/* Pro zjednoduseni dema neotevirame okna */
+.window,
+.open_window {
+  display: none;
+}
+
+@font-face {
+	font-family: 'VAGRundschriftD';
+	src: url('webfonts/202158_0_0.eot?') format('eot'), url('webfonts/202158_0_0.woff') format('woff'), url('webfonts/202158_0_0.ttf') format('truetype');
+}
+
+
+/* --------------------------------------------------------------------------------  
+   Helpers
+*/
+      
+.dumb_only 
+  { display: none; }
+.desktop_only
+  { display: none; }  
+
+
+/* --------------------------------------------------------------------------------  
+   Layout
+*/
+
+
+body { 
+  -webkit-text-size-adjust: 100%;
+  color: #555; 
+  background: #e1eff3 url('../img/bg.png') repeat-x; 
+  margin: 5px 5px 0 5px;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+#container {
+  position: relative;
+}
+
+#content {
+  background: #fff;
+  -webkit-border-radius: 5px; /* Saf3-4, iOS 1-3.2, Android <e;1.6 */
+  -moz-border-radius: 5px; /* FF1-3.6 */
+  border-radius: 5px; /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
+  padding: 10px;
+}  
+
+.snowpark_navigation_top {
+  display: none;
+}
+  
+
+/* --------------------------------------------------------------------------------  
+   Hlavni navigace
+*/
+
+#head {
+  margin: -5px -5px 18px -5px;
+  padding: 5px 15px;
+  height: 38px;
+  background: -moz-linear-gradient(top,  rgba(65,145,209,0.75) 0%, rgba(65,145,209,0.99) 96%, rgba(40,89,127,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(65,145,209,0.75)), color-stop(96%,rgba(65,145,209,0.99)), color-stop(100%,rgba(40,89,127,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(65,145,209,0.75) 0%,rgba(65,145,209,0.99) 96%,rgba(40,89,127,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(65,145,209,0.75) 0%,rgba(65,145,209,0.99) 96%,rgba(40,89,127,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(65,145,209,0.75) 0%,rgba(65,145,209,0.99) 96%,rgba(40,89,127,1) 100%); /* IE10+ */
+  background: linear-gradient(top,  rgba(65,145,209,0.75) 0%,rgba(65,145,209,0.99) 96%,rgba(40,89,127,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf4191d1', endColorstr='#28597f',GradientType=0 ); /* IE6-9 */
+}
+
+#head .logo {
+  width: 140px;
+  height: 40px;
+  float: left;
+}
+
+#head .logo a {
+  display: block;
+  width: 140px;
+  height: 40px;  
+  background: url('../img/snowkidz_logo_mobile.png') no-repeat;
+  -webkit-background-size: 130px auto; /* Saf3-4 */
+  -moz-background-size: 130px auto; /* FF3.6 */
+  background-size: 130px auto; /* Opera, IE9, Saf5, Chrome, FF4 */
+}
+
+#head .logo img {
+  display: none;
+}
+
+#head .nav_jump {
+  text-transform: uppercase;
+  display: inline-block;
+  float: right;
+}
+
+#head .nav_jump a {
+  border: 1px solid rgba(0,0,0,.4);
+  color: #fff;
+  text-transform: uppercase;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 10px;
+  padding: 7px 8px;
+  background: rgba(65,145,209,0.3);
+  text-shadow: 0 1px 1px rgba(0,0,0,.5);
+  -webkit-border-radius: 5px; /* Saf3-4, iOS 1-3.2, Android <e;1.6 */
+  -moz-border-radius: 5px; /* FF1-3.6 */
+  border-radius: 5px; /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
+  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, .55);
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, .55);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, .55);  
+}
+
+#head .nav_jump a:hover,
+#head .nav_jump a:focus,
+#head .nav_jump a:active {
+  background: rgba(65,145,209,1);  
+}
+
+
+#head .nav_jump a .icon {
+  display: none;
+}
+
+#nav {
+  background: rgba(65,145,209,0.75);
+  padding: 10px 10px 10px;
+  margin: 18px -5px 0;
+}
+
+#nav .top_jump {
+  float: right;
+  border: 1px solid rgba(0,0,0,.4);
+  color: #fff;
+  text-transform: uppercase;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 10px;
+  padding: 7px 8px;
+  background: rgba(65,145,209,0.3);
+  text-shadow: 0 1px 1px rgba(0,0,0,.5);
+  -webkit-border-radius: 5px; /* Saf3-4, iOS 1-3.2, Android <e;1.6 */
+  -moz-border-radius: 5px; /* FF1-3.6 */
+  border-radius: 5px; /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
+  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, .55);
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, .55);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, .55);  
+}
+
+#nav .head {
+  padding: 10px;
+  text-decoration: none;
+  border-bottom: 1px solid #ddd;  
+  margin-bottom: 0;  
+}
+
+#nav ul {
+  clear: both;
+  list-style-type: none;
+  margin: 0;
+  padding: 10px 0 0 0;
+}  
+
+#nav li {
+  margin: 0;
+  padding: 0;
+}
+
+#nav .item {
+  display: block;
+  padding: 12px 10px;
+  margin-bottom: 4px;
+  text-decoration: none;
+  border: 1px solid rgba(0,0,0,.4);
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 10px;
+  background: rgba(65,145,209,0.3);
+  text-shadow: 0 1px 1px rgba(0,0,0,.5);
+  -webkit-border-radius: 5px; /* Saf3-4, iOS 1-3.2, Android <e;1.6 */
+  -moz-border-radius: 5px; /* FF1-3.6 */
+  border-radius: 5px; /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
+  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, .55);
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, .55);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, .55);  
+}
+
+#nav strong.item,
+#nav strong .item,
+#nav .item:hover,
+#nav .item:focus,
+#nav .item:active {
+  text-decoration: underline;  
+}
+
+/* --------------------------------------------------------------------------------  
+   Stranka detail snowparku
+*/
+
+.snowpark_head .head {
+	font-family: 'VAGRundschriftD', "Helvetica Neue", Helvetica, Arial, sans-serif;  
+  font-size: 20px;
+  line-height: 22px;  
+  color: #0d63a3;
+  margin-bottom: 3px;    
+}  
+ 
+.snowpark_head .tagline b {
+  font-weight: normal;
+} 
+
+.snowpark_services {
+  color: #aaa;
+}
+
+.snowpark_services .head {
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 3px;
+  font-weight: bold;
+  color: #555;
+}  
+
+/* --- Prouzek s pocasim a statusem z Twitteru --- */
+
+.snowpark_info {
+  color: #fff;
+  background: #67a3d1;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.snowpark_info .actual {
+  padding: 1px 0;  
+  background: url('../img/snowpark_info_actual.png') no-repeat left center;  
+  border-bottom: 1px solid #fff;
+}
+
+.snowpark_info .weather {
+  padding: 1px 0;  
+  background: url('../img/snowpark_info_weather.png') no-repeat left center;  
+  border-bottom: 1px solid #fff;  
+}
+
+.snowpark_info .actual .content,
+.snowpark_info .weather .content {
+  margin: 12px 15px 12px 58px;
+  overflow: hidden;  
+}
+
+/* --- Slideshow --- */
+
+.snowpark_slideshow .slideshow_viewport_carousel {
+  margin-left: -10px;
+  margin-right: -10px;  
+}
+
+.snowpark_slideshow .slideshow_item {
+  display: none;
+  height: 140px;
+  -webkit-background-size: 100% auto; /* Saf3-4 */
+  -moz-background-size: 100% auto; /* FF3.6 */
+  background-size: 100% auto; /* Opera, IE9, Saf5, Chrome, FF4 */
+}
+
+.snowpark_slideshow .slideshow_item.first {
+  display: block;
+}
+
+.snowpark_slideshow .text_content {
+  margin-top: -72px;
+  margin-bottom: 18px;
+  padding: 10px 10px 0 10px;
+  background-color: rgba(255, 255, 255, .95);
+  -webkit-border-radius: 5px; /* Saf3-4, iOS 1-3.2, Android <e;1.6 */
+  -moz-border-radius: 5px; /* FF1-3.6 */
+  border-radius: 5px; /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
+  color: #626364;
+  border: 1px solid #e3eff3;
+}
+
+.snowpark_slideshow .text_content .head {
+  color: #46ad4b;
+  font-weight: normal;
+}
+
+
+/* --- Vybaveni parku --- */
+
+.snowpark_equipment .head {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #f7fafb;
+  color: #0d63a3;
+  padding: 11px 12px 8px 12px;
+  border-bottom: 1px solid #e3eff3;
+  margin: 0 -10px 5px -10px;
+}
+
+.snowpark_equipment_list {
+  list-style-type: none;
+  margin: 0 0 18px 0;
+  padding: 0;
+}
+
+.snowpark_equipment_list .item {
+  display: inline-block;
+}
+
+.snowpark_equipment_list img {
+  display: none;
+}
+
+.snowpark_equipment_list .item .name {
+  display: inline-block;
+  color: #fff;
+  padding: 6px 10px;
+  margin: 0 1px 5px 0;
+  text-align: center;
+  background: #b3b3b3; /* Old browsers */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2IzYjNiMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNhMGEwYTAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top,  #b3b3b3 0%, #a0a0a0 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b3b3b3), color-stop(100%,#a0a0a0)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #b3b3b3 0%,#a0a0a0 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #b3b3b3 0%,#a0a0a0 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #b3b3b3 0%,#a0a0a0 100%); /* IE10+ */
+  background: linear-gradient(top,  #b3b3b3 0%,#a0a0a0 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3b3b3', endColorstr='#a0a0a0',GradientType=0 ); /* IE6-8 */  
+  -webkit-border-radius: 20px; /* Saf3-4, iOS 1-3.2, Android <e;1.6 */
+  -moz-border-radius: 20px; /* FF1-3.6 */
+  border-radius: 20px; /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
+}
+
+.snowpark_equipment_list .item:hover .name,
+.snowpark_equipment_list .item:focus .name,
+.snowpark_equipment_list .item:active .name {
+  background: #a0a0a0;
+}
+
+
+
+/* --- Kontakty --- */
+
+.snowpark_contacts .head {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #f7fafb;
+  color: #0d63a3;
+  padding: 11px 12px 8px 12px;
+  border-bottom: 1px solid #e3eff3;
+  margin: 0 -10px 5px -10px;
+}
+
+.snowpark_contacts .address {
+  height: 82px; /* 92 */
+  overflow: hidden;  
+  padding: 10px 23px 0 66px;
+  background: url('../img/snowpark_address.png') no-repeat center left;  
+}
+
+.snowpark_contacts .address .areal {
+  color: #0d63a3;  
+}
+
+/* --- Instruktori --- */
+
+.snowpark_instructors {
+  margin-bottom: 18px;
+}
+
+.snowpark_instructors .head {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #f7fafb;
+  color: #0d63a3;
+  padding: 11px 12px 8px 12px;
+  margin: 0 -10px;
+  border-bottom: 1px solid #e3eff3;
+}
+
+.snowpark_instructors .list {
+  list-style-type: none;
+  text-align: center;
+  margin: 0 auto;  
+}
+
+.snowpark_instructors .instructor {
+  width: 100px;
+  float: left;
+}
+
+.snowpark_instructors .instructor .image {
+  position: relative;
+  display: block;
+  width: 70px;
+  height: 70px;  
+  margin: 20px 0 10px 10px;
+  background-color: #eee;
+  -webkit-background-size: 70px 70px; /* Saf3-4 */
+  -moz-background-size: 70px 70px; /* FF3.6 */
+  background-size: 70px 70px; /* Opera, IE9, Saf5, Chrome, FF4 */
+}
+
+.snowpark_instructors .instructor .image_mask {
+  position: absolute;
+  display: block;
+  width: 70px;
+  height: 70px;  
+  top: 0px;
+  left: 0px;  
+  background: url('../img/mask_circle_140.png');
+  -webkit-background-size: 70px 70px; /* Saf3-4 */
+  -moz-background-size: 70px 70px; /* FF3.6 */
+  background-size: 70px 70px; /* Opera, IE9, Saf5, Chrome, FF4 */
+}
+
+/* --- Partneri --- */
+
+.snowpark_partners {
+  margin-bottom: 18px;
+}
+
+.snowpark_partners .head {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #f7fafb;
+  color: #0d63a3;
+  padding: 11px 12px 8px 12px;
+  margin: 0 -10px;
+  border-bottom: 1px solid #e3eff3;
+}
+
+.snowpark_partners .item {
+ margin-right: -4px; 
+}
+
+
+.snowpark_partners .item img {
+  height: 50px;
+  width: auto !important;
+  margin: 10px 10px 0 0;
+}
+
+
+/* --- Motivace k clenstvi --- */
+
+.snowpark_motivator {
+  text-align: center;  
+  background-color: #e4ffec;
+  padding: 10px 0;
+  margin: 0 -10px;
+}
+
+.snowpark_motivator .head {
+  text-indent: -5000px;  
+  background: url('../img/snowpark_10percent.png') no-repeat;
+  width: 70px;
+  height: 70px;
+  margin: 20px auto 12px;
+  -webkit-background-size: 70px 70px; /* Saf3-4 */
+  -moz-background-size: 70px 70px; /* FF3.6 */
+  background-size: 70px 70px; /* Opera, IE9, Saf5, Chrome, FF4 */
+}
+
+.snowpark_motivator .text {
+  margin: 0 auto 12px;
+  width: 209px;
+  font-weight: bold;
+}
+
+.snowpark_motivator .button {
+  margin-bottom: 30px;
+}
+
+.snowpark_motivator .button a {
+  display: inline-block;
+  color: #fff;
+  padding: 6px 0;
+  text-align: center;
+  width: 146px;
+  text-decoration: none;
+  -webkit-border-radius: 20px; /* Saf3-4, iOS 1-3.2, Android <e;1.6 */
+  -moz-border-radius: 20px; /* FF1-3.6 */
+  border-radius: 20px; /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */    
+  background: #148ef0; /* Old browsers */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIxJSIgc3RvcC1jb2xvcj0iIzE0OGVmMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMTdiZGQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top,  #148ef0 1%, #017bdd 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#148ef0), color-stop(100%,#017bdd)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #148ef0 1%,#017bdd 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #148ef0 1%,#017bdd 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #148ef0 1%,#017bdd 100%); /* IE10+ */
+  background: linear-gradient(top,  #148ef0 1%,#017bdd 100%); /* W3C */
+}
+
+.snowpark_motivator .button a:hover,
+.snowpark_motivator .button a:focus,
+.snowpark_motivator .button a:active {
+  text-decoration: none;
+  background: #1076c5; /* Old browsers */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIxJSIgc3RvcC1jb2xvcj0iIzEwNzZjNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwNzZlYmMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top,  #1076c5 1%, #076ebc 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#1076c5), color-stop(100%,#076ebc)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #1076c5 1%,#076ebc 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #1076c5 1%,#076ebc 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #1076c5 1%,#076ebc 100%); /* IE10+ */
+  background: linear-gradient(top,  #1076c5 1%,#076ebc 100%); /* W3C */
+}
+
+
+/* --- Navigace po snowparcich dole --- */
+
+.snowpark_navigation_bottom .head {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #f7fafb;
+  color: #0d63a3;
+  padding: 11px 12px 8px 12px;
+  border-bottom: 1px solid #e3eff3;
+  margin: 0 -10px 5px -10px;
+  
+}
+
+.snowpark_navigation_bottom ul,
+.snowpark_navigation_bottom li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.snowpark_navigation_bottom .item {
+  display: block;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.snowpark_navigation_bottom ul > li:last-child .item {
+  border-bottom: none;
+}
+
+
+/* --- FB like --- */
+
+.fb-like {
+  width: 300px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+
+/* --------------------------------------------------------------------------------  
+   Paticka
+*/  
+
+#foot {
+  background: rgba(65,145,209,0.75);  
+  margin: 0 -5px;
+  padding: 10px;
+  color: #fff;
+  font-size: 10px;
+  text-align: center;
+}
+
+#foot p {
+  margin: 0; 
+}

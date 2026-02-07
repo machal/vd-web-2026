@@ -1,0 +1,661 @@
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.dumb-only {
+  position: absolute;
+  top: -500px;
+}
+.clear-zero {
+  clear: both;
+  font-size: 1px;
+  line-height: 1px;
+  height: 1px;
+}
+.right {
+  text-align: right;
+}
+.center {
+  text-align: center;
+}
+p,
+ul,
+ol,
+blockquote,
+table,
+pre {
+  padding-top: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 1em;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding-top: 0;
+  margin-top: 1em;
+  padding-bottom: 0;
+  margin-bottom: .5em;
+}
+a img {
+  border: 0;
+}
+a {
+  color: #5fa316;
+  text-decoration: none;
+}
+a:hover,
+a:focus,
+a:active {
+  text-decoration: underline;
+}
+body {
+  font-family: Calibri, 'PT Sans', 'Trebuchet MS', sans-serif;
+  line-height: 1.3em;
+  color: #222222;
+}
+h1,
+h2 {
+  font-family: 'ForoExtraBold', sans-serif;
+  font-weight: normal;
+  line-height: 1em;
+}
+.vd-tagline h1 {
+  font-family: 'ForoLight', sans-serif;
+}
+@font-face {
+  font-family: 'vzhurudolu-icons';
+  src: url('http://www.vzhurudolu.cz/2012/assets/fonts/vzhurudolu-icons.eot');
+  src: url('http://www.vzhurudolu.cz/2012/assets/fonts/vzhurudolu-icons.eot?#iefix') format('embedded-opentype'), url('http://www.vzhurudolu.cz/2012/assets/fonts/vzhurudolu-icons.svg#vzhurudolu-icons') format('svg'), url('http://www.vzhurudolu.cz/2012/assets/fonts/vzhurudolu-icons.woff') format('woff'), url('http://www.vzhurudolu.cz/2012/assets/fonts/vzhurudolu-icons.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ForoExtraBold";
+  src: url("http://www.vzhurudolu.cz/2012/assets/fonts/ForoXBol-webfont.eot");
+  src: local("☺"), url("http://www.vzhurudolu.cz/2012/assets/fonts/ForoXBol-webfont.woff") format("woff"), url("http://www.vzhurudolu.cz/2012/assets/fonts/ForoXBol-webfont.ttf") format("truetype"), url("http://www.vzhurudolu.cz/2012/assets/fonts/ForoXBol-webfont.svg#ForoExtraBold") format("svg");
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+@font-face {
+  font-family: 'ForoLight';
+  src: url('http://www.vzhurudolu.cz/2012/assets/fonts/ForoLig-webfont.eot');
+  src: url('http://www.vzhurudolu.cz/2012/assets/fonts/ForoLig-webfont.eot?#iefix') format('embedded-opentype'), url('http://www.vzhurudolu.cz/2012/assets/fonts/ForoLig-webfont.woff') format('woff'), url('http://www.vzhurudolu.cz/2012/assets/fonts/ForoLig-webfont.ttf') format('truetype'), url('fhttp://www.vzhurudolu.cz/2012/assets/fonts/ForoLig-webfont.svg#ForoExtraBold') format('svg');
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+.vd-button {
+  font-family: 'ForoLight', sans-serif;
+  font-size: .75em;
+  padding: .5em 2em .4em;
+  background-color: #e0e0e0;
+  background-image: -moz-linear-gradient(top, #eeeeee, #cccccc);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#eeeeee), to(#cccccc));
+  background-image: -webkit-linear-gradient(top, #eeeeee, #cccccc);
+  background-image: -o-linear-gradient(top, #eeeeee, #cccccc);
+  background-image: linear-gradient(to bottom, #eeeeee, #cccccc);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffeeeeee', endColorstr='#ffcccccc', GradientType=0);
+  border: 1px solid #ccc;
+  border-bottom: 1px solid #bbb;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  border-radius: 0.5em;
+  color: #333;
+  line-height: 1em;
+  text-align: center;
+  text-shadow: 0 1px 0 #eee;
+}
+.vd-button:hover,
+.vd-button:focus {
+  text-decoration: none;
+  background-color: #cfcfcf;
+  background-image: -moz-linear-gradient(top, #dddddd, #bbbbbb);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#dddddd), to(#bbbbbb));
+  background-image: -webkit-linear-gradient(top, #dddddd, #bbbbbb);
+  background-image: -o-linear-gradient(top, #dddddd, #bbbbbb);
+  background-image: linear-gradient(to bottom, #dddddd, #bbbbbb);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffdddddd', endColorstr='#ffbbbbbb', GradientType=0);
+  border: 1px solid #bbb;
+  border-bottom: 1px solid #999;
+  cursor: pointer;
+  text-shadow: 0 1px 0 #ddd;
+}
+.vd-button:active {
+  border: 1px solid #aaa;
+  border-bottom: 1px solid #888;
+  -webkit-box-shadow: inset 0 0 5px 2px #aaaaaa, 0 1px 0 0 #eeeeee;
+  -moz-box-shadow: inset 0 0 5px 2px #aaaaaa, 0 1px 0 0 #eeeeee;
+  box-shadow: inset 0 0 5px 2px #aaaaaa, 0 1px 0 0 #eeeeee;
+}
+.vd-global-head {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 260px;
+  margin-left: -130px;
+}
+.vd-global-head h2 {
+  position: absolute;
+  top: -200px;
+}
+.vd-global-nav {
+  margin: 0;
+  padding: 0;
+  height: 32px;
+  text-align: center;
+}
+.vd-global-nav li {
+  height: 32px;
+  line-height: 20px;
+  display: inline-block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  margin-right: 2px;
+}
+.vd-global-nav .vd-button {
+  display: inline-block;
+  font-size: 15px;
+  line-height: 30px;
+  padding: 0;
+  width: 80px;
+  text-align: center;
+  -webkit-border-radius: 0 0 10px 10px;
+  -moz-border-radius: 0 0 10px 10px;
+  border-radius: 0 0 10px 10px;
+  opacity: 0.66;
+  filter: alpha(opacity=66);
+}
+.vd-global-nav .vd-button:hover,
+.vd-global-nav .vd-button:focus,
+.vd-global-nav .vd-button:active {
+  color: black;
+}
+.vd-global-nav strong .vd-button {
+  font-weight: normal;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+@media print {
+  .vd-global-nav {
+    display: none;
+  }
+}
+@media print {
+  .vd-side {
+    display: none;
+  }
+}
+@media screen {
+  .vd-tagline {
+    margin-bottom: 3em;
+  }
+  .vd-tagline h1 {
+    text-align: center;
+    color: #fff;
+    line-height: 1.2em;
+  }
+  .vd-tagline a {
+    color: #fff;
+    text-decoration: none;
+    -webkit-transition: color 0.1s;
+    -moz-transition: color 0.1s;
+    -o-transition: color 0.1s;
+    transition: color 0.1s;
+  }
+  .vd-tagline a:hover,
+  .vd-tagline a:focus,
+  .vd-tagline a:active {
+    color: #ccc;
+    color: fadeOut(#222222, 50%);
+  }
+  .vd-paging {
+    border-top: 1px solid #d4d4d4;
+    padding-top: 1em;
+    margin-bottom: 3em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .vd-paging a {
+    display: inline-block;
+  }
+  .vd-courses {
+    overflow: hidden;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    background-color: #f4f4f4;
+    background-image: -moz-linear-gradient(top, #f8f8f8, #eeeeee);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f8f8f8), to(#eeeeee));
+    background-image: -webkit-linear-gradient(top, #f8f8f8, #eeeeee);
+    background-image: -o-linear-gradient(top, #f8f8f8, #eeeeee);
+    background-image: linear-gradient(to bottom, #f8f8f8, #eeeeee);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff8f8f8', endColorstr='#ffeeeeee', GradientType=0);
+    font-size: .75em;
+  }
+  .vd-courses table {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 101%;
+    margin: 0;
+  }
+  .vd-courses caption {
+    text-align: center;
+    font-weight: bold;
+    padding: .7em 1em .6em;
+    background: transparent;
+    border-bottom: 1px solid #d8d893;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .vd-courses td,
+  .vd-courses th {
+    padding: .5em 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid #d8d893;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .vd-courses tr > td:first-child,
+  .vd-courses tr > th:first-child {
+    padding-left: 2em;
+  }
+  .vd-courses tr > td:last-child,
+  .vd-courses tr > th:last-child {
+    padding-right: 2em;
+    display: none;
+  }
+  .vd-courses .note {
+    padding: .75em 1em 1em;
+    text-align: center;
+    margin: 0;
+    line-height: 1.3em;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+  }
+  .vd-icons li {
+    display: block;
+    float: left;
+    width: 4em;
+    height: 4em;
+  }
+  .vd-icon {
+    display: block;
+    display: inline-block;
+    width: 4em;
+    height: 4em;
+    line-height: 4em;
+    overflow: hidden;
+  }
+  .vd-icon .icon {
+    display: inline-block;
+    width: 100%;
+    font-size: 2em;
+    text-align: center;
+    color: #ccc;
+    -webkit-transition: 0.1s color;
+    -moz-transition: 0.1s color;
+    -o-transition: 0.1s color;
+    transition: 0.1s color;
+    text-shadow: -1px -1px #aaaaaa, 1px 1px #ffffff;
+  }
+  .vd-icon .text {
+    position: absolute;
+    left: -999em;
+  }
+  .vd-icon:hover .icon,
+  .vd-icon:focus .icon,
+  .vd-icon:active .icon {
+    color: #999;
+  }
+  [data-icon]:before {
+    font-family: 'vzhurudolu-icons';
+    content: attr(data-icon);
+    speak: none;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+  }
+  [class^="icon-"]:before,
+  [class*=" icon-"]:before {
+    font-family: 'vzhurudolu-icons';
+    font-style: normal;
+    speak: none;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+  }
+  .icon-rss:before {
+    content: "\23";
+  }
+  .icon-facebook:before {
+    content: "\24";
+  }
+  .icon-twitter:before {
+    content: "\21";
+  }
+  .icon-history:before {
+    content: "\22";
+  }
+  .post {
+    padding-top: 1em;
+    padding-bottom: 2em;
+    font-size: 85%;
+    line-height: 130%;
+  }
+  .post a {
+    text-decoration: none;
+    -webkit-transition: all 0.1s;
+    -moz-transition: all 0.1s;
+    -o-transition: all 0.1s;
+    transition: all 0.1s;
+  }
+  .post a:hover,
+  .post a:focus,
+  .post a:active {
+    color: #000;
+    text-decoration: none;
+  }
+  .post h1 {
+    line-height: 1.25em;
+    margin-bottom: 1em;
+    margin-top: 0;
+  }
+  .post h1 a {
+    font-weight: normal;
+  }
+  .post h2,
+  .post h3 {
+    font-family: 'ForoLight', sans-serif;
+    font-size: 1.25em;
+    line-height: 1em;
+    color: #6f6f6f;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+  }
+  .vd-head-text {
+    display: block;
+    margin-bottom: .5em;
+    letter-spacing: -0.03em;
+  }
+  .vd-head-date {
+    display: block;
+    padding: .25em 0;
+    border-bottom: 1px solid #d4d4d4;
+    border-top: 1px solid #d4d4d4;
+    font-size: .4em;
+    color: #999;
+    font-family: 'ForoLight', sans-serif;
+    white-space: nowrap;
+  }
+  .comments {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+  }
+  .tags {
+    font-size: .8em;
+    font-family: 'ForoLight', sans-serif;
+    border-top: 1px solid #d4d4d4;
+    border-bottom: 1px solid #d4d4d4;
+    padding: .5em 0;
+    margin: 2.5em 0;
+    text-transform: uppercase;
+    color: #999;
+  }
+  .tags a {
+    display: inline-block;
+    padding: .25em .5em .2em;
+    margin-right: -0.5em;
+    line-height: 1.5em;
+    -webkit-border-radius: 0.25em;
+    -moz-border-radius: 0.25em;
+    border-radius: 0.25em;
+    color: #999;
+  }
+  .tags a:hover,
+  .tags a:focus,
+  .tags a:active {
+    color: #fff;
+    background: #999;
+  }
+  .post hr {
+    border: 0;
+    border-bottom: 1px solid #d4d4d4;
+  }
+  .post .underline_note {
+    margin-bottom: 1.3em;
+  }
+  .post small {
+    font-size: .75em;
+    line-height: 1em;
+    color: #a2a2a2;
+  }
+  .post small a {
+    color: #a2a2a2;
+    text-decoration: underline;
+  }
+  .post ul {
+    margin-left: 0;
+    padding-left: 1em;
+    list-style-type: square;
+  }
+  .post img {
+    max-width: 100%;
+    height: auto;
+  }
+  .post .photo a,
+  .post a.image {
+    display: inline-block;
+    padding: 0;
+    border: 4px solid #fff;
+  }
+  .post .photo.with_border a,
+  .post a.image.with_border {
+    border: 4px solid #ccc;
+  }
+  .post .photo a:hover,
+  .post a.image:hover {
+    -webkit-transition: 0.1s border-color;
+    -moz-transition: 0.1s border-color;
+    -o-transition: 0.1s border-color;
+    transition: 0.1s border-color;
+    border-color: #5fa316;
+  }
+  .post .photo a img,
+  .post a.image img {
+    display: inline-block;
+    margin-bottom: -7px;
+  }
+  .post pre {
+    font-family: Menlo, "Bitstream Vera Sans Mono", "DejaVu Sans Mono", Monaco, Consolas, monospace;
+    font-size: .8em;
+    line-height: 1.4em;
+    overflow: auto;
+    max-width: 100%;
+    white-space: pre;
+    padding: 1.5em 1em;
+    border-top: 1px dashed #ddd;
+    border-bottom: 1px dashed #ddd;
+    background: #f8f8f8;
+    margin-bottom: 2em;
+  }
+  .post code {
+    color: #666;
+    font-family: Menlo, "Bitstream Vera Sans Mono", "DejaVu Sans Mono", Monaco, Consolas, monospace;
+    font-size: .8em;
+    line-height: 1em;
+  }
+  .post pre code {
+    white-space: pre;
+    color: #222;
+  }
+  .post div.quote span.quote {
+    font-family: 'ForoLight', sans-serif;
+    font-size: 1.33em;
+    line-height: 1.2em;
+    color: #999;
+    display: block;
+    margin-bottom: .75em;
+  }
+  .post div.quote span.quote big.quote {
+    font-family: 'ForoExtraBold', sans-serif;
+    font-size: 2em;
+    line-height: 0;
+    vertical-align: -0.25em;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+  }
+  .post blockquote {
+    border-left: 8px solid #EEEEEE;
+    padding: 0 0 0 1em;
+    margin-left: 0;
+    font-style: italic;
+    color: #6f6f6f;
+  }
+  .post .read_more {
+    text-align: center;
+  }
+  .post .twitter-tweet-rendered {
+    margin-top: 0 !important;
+    margin-bottom: 2.5em !important;
+  }
+  .vd-big-head {
+    text-align: center;
+    color: #666;
+    margin-top: .5em;
+  }
+  body {
+    background: #cccccc url('img/bg_vd.png?3') repeat;
+  }
+  .vd-container {
+    margin: 4em auto;
+  }
+  .vd-body {
+    background: #fff;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    border-radius: 1em;
+    min-height: 50em;
+  }
+  .vd-content {
+    padding: 1em;
+  }
+  .vd-icons {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    width: 16em;
+  }
+  .vd-icons li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  #disqus_opener {
+    display: none;
+  }
+}
+@media screen and (min-width: 481px) {
+  #disqus_thread {
+    margin-top: -3em;
+  }
+}
+@media screen and (min-width: 42em) {
+  .vd-container {
+    width: 40em;
+  }
+  .vd-body {
+    background: #eeeeee url('img/beige_paper_bg.png') repeat-y 0 0;
+    -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2), inset 1px 1px 0 rgba(0, 0, 0, 0.1), inset 2px 2px 0 rgba(255, 255, 255, 0.5);
+    -moz-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2), inset 1px 1px 0 rgba(0, 0, 0, 0.1), inset 2px 2px 0 rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2), inset 1px 1px 0 rgba(0, 0, 0, 0.1), inset 2px 2px 0 rgba(255, 255, 255, 0.5);
+  }
+  .vd-content {
+    width: 31em;
+    /* 36em */
+
+    padding: 1em 2.5em;
+    float: right;
+    background: #fff;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    border-radius: 1em;
+    -webkit-box-shadow: 3px 0 1em rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 3px 0 1em rgba(0, 0, 0, 0.2);
+    box-shadow: 3px 0 1em rgba(0, 0, 0, 0.2);
+  }
+  .vd-side {
+    width: 4em;
+    float: left;
+    padding-top: 6.25em;
+  }
+  .vd-icons {
+    width: auto;
+    border-top: 1px solid #bebebe;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid #ffffff;
+  }
+  .vd-icons li {
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #bebebe;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  .vd-icons li:first-child {
+    border-top: 1px solid #ffffff;
+  }
+  .post .prettyprint ol li {
+    line-height: 1.3em;
+  }
+  .vd-courses tr > td:last-child,
+  .vd-courses tr > th:last-child {
+    display: table-cell;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 899px) {
+  body {
+    font-size: 111%;
+  }
+}
+@media screen and (min-width: 900px) and (max-width: 979px) {
+  body {
+    font-size: 120%;
+  }
+}
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+  body {
+    font-size: 130%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  body {
+    font-size: 141%;
+  }
+}

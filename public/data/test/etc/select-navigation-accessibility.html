@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>&lt;select&gt; navigation accessibility test</title>
+	<meta name="generator" content="TextMate http://macromates.com/">
+	<meta name="author" content="Martin Michálek">
+
+</head>
+<body>
+    
+    <h1>&lt;select&gt; navigation accessibility test</h1>
+        
+    <form action="" method="post" class="js_jumper">                
+        <p>
+            <label for="navigation_select">Navigation</label>
+            <select id="navigation_select">
+                <option value="./">Select</option>
+                <option value="./select-navigation-accessibility-one.html">One</option>
+                <option value="./select-navigation-accessibility-two.html">Two</option>
+            </select>
+            <input type="submit" id="navigation_go" value="Go">
+        </p>
+    </form>
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    
+    <script>
+    
+    $(function() {
+
+        $(".js_jumper input[type=submit]").hide();
+
+        $(".js_jumper select").change(function() {
+            window.location = $(".js_jumper select option:selected").val();
+        })
+
+    });    
+    
+    </script>
+            
+
+</body>
+</html>

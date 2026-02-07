@@ -1,0 +1,271 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    
+  <title>[Floex web - english]</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2" />
+	<meta http-equiv="content-language" content="en">
+	<meta name="description" content="Website of Tomáš Dvořák (Machinarium OST) aka Floex">
+	<meta name="keywords" content="Floex, Tomáš Dvořák, Tomas Dvorak, Machinarium, Samorost 2, Pocustone, Zorya">
+    <meta http-equiv="imagetoolbar" content="no">
+ 
+  <link rel="stylesheet" href="../floex_style.css" type="text/css" />
+
+<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"
+type="text/javascript"></script>
+
+
+	<!-- Songkick -->	
+	<script>
+	  // Po nacteni stranky umistime tabulky s koncerty za existujici nadpisy
+	  $(function(){
+	    add_songkick_table('328853', '#songkick_head_floex');
+		  add_songkick_table('5069378', '#songkick_head_dj_floex');
+	  })
+	  // Funkce, ktera pres Songkick API stahuje a zobrazuje tabulku s koncerty
+	  function add_songkick_table(id, where) {
+		  $.getJSON('http://api.songkick.com/api/3.0/artists/'+id+'/calendar.json?apikey=Wh3UQWgnktvm89hK&jsoncallback=?',
+        function(data) {
+			  var output = '<table class="songkick_events">';
+			  $.each(data.resultsPage.results.event, function(key, value) {
+			    console.log(value.start.date);
+  				date = parse_date(value.start.date, 'yyyy-mm-dd');
+  				month = date.getMonth() + 1;
+  				day = date.getDate();
+  				year = date.getFullYear();					
+  		    output = output + ('<tr><td class="date">' +day+'/'+month+'/'+year + '</td><td class="venue"><a href="' + value.uri + '">' + value.venue.displayName + ', ' + value.venue.metroArea.displayName+'</a></td></tr>');
+			  });
+			  output = output + '</table>';
+			  $(where).after(output);
+		  });	
+ 	  }
+    function parse_date(input, format) {
+      format = format || 'yyyy-mm-dd'; // default format
+      var parts = input.match(/(\d+)/g), 
+          i = 0, fmt = {};
+      // extract date-part indexes from the format
+      format.replace(/(yyyy|dd|mm)/g, function(part) { fmt[part] = i++; });
+
+      return new Date(parts[fmt['yyyy']], parts[fmt['mm']]-1, parts[fmt['dd']]);
+    } 	  
+	</script>
+	<style type="text/css">
+		table.songkick_events {
+			padding: 0;
+		}
+
+		table.songkick_events td,
+		table.songkick_events th {
+			vertical-align: top;
+			padding: 4px 0;
+			text-align: left;
+		}			
+
+		table.songkick_events td.date {
+			padding-right: 10px;
+		}
+	</style>
+	<!-- /Songkick -->
+
+
+
+</head>
+
+<body leftmargin="0" topmargin="0" bgcolor="#ffffff" marginheight="0" marginwidth="0">
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="870">
+  <tbody>
+    <tr>
+      <td><a href="home.html"><img <img src="../hlavni-typo.png" alt="floex" width="870" height="88" border="0" /></a>
+      <div id="jazyk"><strong>english </strong> / <a href="../home.html">česky</a> </div>
+        
+        </td>
+    </tr>
+  </tbody>
+</table>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="870">
+
+  <tbody>
+    <tr>
+
+        <td valign="top" width="500">
+          <p>  
+      <script src="http://widgets.twimg.com/j/2/widget.js"></script>
+<script>
+new TWTR.Widget({
+  version: 2,
+  type: 'profile',
+  rpp: 4,
+  interval: 30000,
+  width: 500,
+  height: 250,
+  theme: {
+    shell: {
+      background: '#c0dee0',
+      color: '#009ca1'
+    },
+    tweets: {
+      background: '#edf2f2',
+      color: '#376570',
+      links: '#00767a'
+    }
+  },
+  features: {
+    scrollbar: false,
+    loop: false,
+    live: false,
+    hashtags: true,
+    timestamp: true,
+    avatars: false,
+    behavior: 'all'
+  }
+}).render().setUser('FloexOfficial').start();
+</script>
+</p>
+
+       <div id="socialplugs">
+<a href="http://www.facebook.com/pages/Floex/345012736566" target="_blank"><img src="../FaceBook-icon.jpg" alt="facebook" width="40" height="40" /></a> <a href="http://www.soundcloud.com/floex" target="_blank"><img src="../soundcloud.jpg" alt="Soundcloud" width="40" height="40" /></a> <a href="http://www.last.fm/music/Floex" target="_blank"><img src="../lastfm.jpg" alt="LastFm" width="40" height="40" /></a> <a href="http://innerfx.bandcamp.com" target="_blank"><img src="../bandcamp.jpg" alt="Bandcamp" width="40" height="40" /></a><a href="http://itunes.apple.com/us/album/zorya/id489596900" target="_blank"><img src="../icon_itunes.jpg" alt="Itunes" width="40" height="40" /></a>
+</div>
+
+                
+      <p><img src="../nadpis_data.gif" alt="data" /></p>
+
+                
+      <div id="data">
+ <h4 class="songkick_events_head" id="songkick_head_floex">Floex
+Concerts:</h4>
+
+	 <h4 class="songkick_events_head" id="songkick_head_dj_floex">Floex DJing:</h4>
+          
+          </div>
+	
+ 
+          
+      <div id="novinky_txt">
+                
+      <p><img src="../nadpis_news.gif" alt="novinky" /></p>
+
+                
+          
+      <script type="text/javascript" src="http://floex.tumblr.com/js?tag=newsen"></script> </div>
+      <br />
+
+
+                  
+      <div id="poznamky"><a href="http://floex.tumblr.com/rss"><img src="../rss.gif" alt="rss" height="15" width="15" /></a>          <br />
+
+          Powered by<a href="http://floex.tumblr.com/" target="_blank"> Tumblr</a></div>
+
+                  <br />
+
+
+         	
+    </td>
+
+      <td valign="top" width="350">
+      <div id="basics">
+        
+      <p><img src="../nadpis_menu.gif" alt="menu" width="350" height="18" /></p>
+
+		  
+      <h1><a href="discography.html">Discography </a></h1>
+
+		  LP, Remixes, Singles, Music for the Movies, Theatre and Games
+          
+      <p>&nbsp;</p>
+
+          
+      <h1><a href="interaktivni.html">Interactive Works</a></h1>
+
+          Documentations
+          
+      <p>&nbsp;</p>
+
+          
+      <h1><a href="blog.html">Blog</a></h1>
+
+          Notes on the other things which doesn't fit enywhere else
+          
+      <p>&nbsp;</p>
+
+          
+            <h1><a href="http://www.bumbumsatori.org/contact/" target="_blank">Booking</a> / <a href="mailto:t{snailthing}floex.cz">Contact</a></h1>
+      <p>&nbsp;</p>
+
+          
+      <h2><a href="http://www.discogs.com/artist/Floex" target="_blank">Discography Floex</a> / <a href="http://www.discogs.com/artist/Tom%C3%A1%C5%A1+Dvo%C5%99%C3%A1k" target="_blank">Tomáš Dvořák</a> </h2> 
+      
+     <h2><a href="floex-short_bio-en.pdf">Biography</a></h2>
+     
+     <br />
+
+          
+       <p>&nbsp; </p>
+          
+   
+      <form method="post" action="../pommo/user/subscribe.php">
+        <fieldset>
+        <legend>Join newsletter</legend>
+
+
+        <div>
+        <label for="email">Email:</label>
+        <input size="20" maxlength="60" name="Email" id="email" type="text" />
+        </div>
+
+
+        </fieldset>
+
+
+        <div class="buttons">
+
+        <input value="Subscribe" type="submit" />
+
+        </div>
+
+
+      </form>
+
+
+<p>&nbsp;</p>
+
+
+      <h1 >*</h1>
+      <h1 ><a href="http://innerfx.bandcamp.com/" target="_blank">Digital Store</a></h1>
+      <p>mp3, flac, wav, etc... </p>
+      <p>&nbsp;</p>
+      </div></td>
+
+      </tr>
+
+    
+  </tbody>
+</table>
+
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="870">
+  <tbody>
+    <tr>
+      <td><img src="../spodni_obr.gif" alt="" width="870" height="179" /></td>
+    </tr>
+  </tbody>
+</table>
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=5640009; 
+var sc_invisible=1; 
+var sc_partition=60; 
+var sc_click_stat=1; 
+var sc_security="09f0b861"; 
+</script>
+
+<script type="text/javascript"
+src="http://www.statcounter.com/counter/counter.js"></script><noscript><div
+class="statcounter"><a title="myspace counters"
+href="http://www.statcounter.com/myspace/"
+target="_blank"><img class="statcounter"
+src="http://c.statcounter.com/5640009/0/09f0b861/1/"
+alt="myspace counters" ></a></div></noscript>
+<!-- End of StatCounter Code -->
+</body>
+</html>

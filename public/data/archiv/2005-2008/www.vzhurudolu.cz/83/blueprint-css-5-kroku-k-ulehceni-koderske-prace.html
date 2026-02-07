@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"    "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="cs">
+  
+<!-- Mirrored from www.vzhurudolu.cz/83/blueprint-css-5-kroku-k-ulehceni-koderske-prace by HTTrack Website Copier/3.x [XR&CO'2008], Tue, 11 Aug 2009 14:14:40 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>
+      Archiv Vzhůru dolů: Blueprint CSS: pár kroků k ulehčení kodérské práce 
+    </title>
+    <link rel="stylesheet" href="../css/compressed/screen.css" type="text/css" media="screen, projection">
+    <link rel="stylesheet" href="../css/compressed/print.css" type="text/css" media="print">
+    <!--[if IE]><link rel="stylesheet" href="/css/lib/ie.css" type="text/css" media="screen, projection"><![endif]-->
+    <link rel="stylesheet" href="../css/vd.css" type="text/css" media="all">    
+  </head>
+  <body>
+    <div class="container">      
+      <div class="column span-4">
+        <div class="side box">
+          <p class="indent-3" id="home">
+            <a href="/archiv/">Prohližíte si <span>archiv blogu Vzhůru dolů 2005 — 2008</span> o webdesignu a příbuzných oborech.</a>
+            <a href="http://www.vzhurudolu.cz">Aktuální verze je <span>jinde.</span></a>
+          </p>
+          <!--
+          <form action="/" method="get" class="indent-3">
+          <p>
+          <input type="text" name="q" value="" size="12" id="searchInput" />
+          <input type="submit" value="Najít" id="searchSubmit" />
+          </p>
+          </form>
+          -->
+        </div>
+      </div>      
+      <div class="column span-6 prepend-1 indent-8 last">
+
+        <h1><a href="blueprint-css-5-kroku-k-ulehceni-koderske-prace.html" title="Stálý odkaz na článek">Blueprint CSS: pár kroků k ulehčení kodérské práce</a></span> </h1>
+
+<p class="singleSubHead"><small><span class="date"> 4. říjen 2008, 17:33</span> Kategorie: <a href="../kategorie/Webdesign/index.html">Webdesign</a>  </small></p>
+
+<p>Navazuji na <a href="../82/proc-i-koderi-potrebuji-svuj-framework.html">minulý článek</a> a Josefa Strzibneho a jeho <a href="http://stribny.name/zapisnik/?clanky/blueprint-css-framework">úvod do Blueprintu z pohledu programátora a HTML kodéra</a>.</p>
+
+    <p><a href="http://www.flickr.com/photos/7996859@N03/1115320589/" title="remoteImage.png by ldminteractive, on Flickr"><img src="../../farm2.static.flickr.com/1291/1115320589_27bc142c81.jpg" width="420" height="104" alt="remoteImage.png" /></a></p>
+
+    <p>Blueprint je CSS framework, který za vás vyřeší šest základních kodérských úkolů při startu vývoje každého projektu:</p>
+
+<ul>
+<li>vynuluje tovární nastavení prohlížečů</li>
+<li>nastaví typografická pravidla</li>
+<li>specifikuje obecné třídy pro často používané chování prvků</li>
+<li>vypořádá se alespoň částečně s MSIE</li>
+<li>nastaví vzhled některým prvkům</li>
+<li>poskytne velmi silný nástroj pro vybudování layoutu</li>
+</ul>
+
+    <p>Cokoliv z toho můžete odmítnout. Ale popravdě &mdash; kdo by to všechno chtěl psát všechno od píky?</p>
+    <p>Blueprint CSS prošel poslední dobou několika změnami. Jeho tým kromě původního tvůrce (Olav Bjorkoy) doplnilo několik dalších lidí a společný vývoj můžete sledovat na <a href="http://github.com/joshuaclayton/blueprint-css/commits/master">Githubu</a>, kde je také docela dobrá základna vědomostí v podobě <a href="http://github.com/joshuaclayton/blueprint-css/wikis/home">wiki</a>.</p>
+
+    <p>Pojďme si v několika krocích vysvětlit jak do Blueprintu nejlépe proniknout z pohledu CSS kodéra.</p>
+
+    <h2>Stáhněte si a nastudujte zdrojové soubory</h2>
+
+    <p>Stáhněte si poslední revizi z <a href="http://github.com/joshuaclayton/blueprint-css/zipball/master">Githubu</a>.</p>
+
+    <p>Stáhněte si, nastudujte a nejlépe vytiskněte <a href="http://www.digitart.net/blueprintcss/bluebrintcss.pdf">PDF cheatsheet</a>.</p>
+
+    <p>Prostudujte podrobně všechny CSS soubory tvořící framework. V adresáři <code>blueprint/css/</code> najdete následující zdrojové soubory:</p>
+
+<ul>
+<li><code>reset.css</code> &#8211; sjednoducuje výchozí nastavení prohlížečů &#8211; maže margin, padding, border, nastavuje shodnou velikost písma, ostraňuje rámeček kolem obrázků &#8211; tabulkám je třeba v HTML nebo vlastním CSS nastavit cellspacing=&#8221;0&#8221;</li>
+<li><code>typography.css</code> &#8211; nastavuje základní velikost písma odpovídající 12px a výšku řádku 18px, z toho odvozuje velikosti dalších prvků, typicky nadpisů. Ve svém stylesheetu nezapomeňte správně nastavit font-family pro české prostředí. Věnujte pozornost sekci Misc classes, kde je celá řada definic pro obvyklé stavy prvků na webu &#8212;například schovávaní prvků pomocí .hide, zvýrazňování pomocí .highlight atd.</li>
+<li><code>grid.css</code> &#8211; Soubor s třídami pro definici layoutu založeném na mřížce. Je možné, že jej váš layout nebude vůbec potřebovat. Přednastavený layout je 950px široký s 24 sloupci o 30px šířce a 10px marginem mezi sloupci.</li>
+<li><code>forms.css</code> &#8211; Předdefinovává typické užití formulářových prvků &#8211; například input.text pro běžný textový vstup. <code>input.title</code> pro &#8220;titulkový vstup&#8221;, kterému nastaví větší velikost písma. Součástí jsou také třídy pro komunikaci uživatelského rozhraní směrem k uživateli: <code>.error</code> a <code>.notice</code>.</li>
+<li><code>ie.css</code> &#8211; Napravuje celou řadu svérázných postojů k CSS standardům v MSIE 6 a 7 jako je špatná interpretace marginů a stylování prvků jako legend, ol, sup, sub, code, hr. Například podpora png průhlednosti v ie6 zde byla také, ale nepříliš vyvedená a proto zatím chybí.</li>
+</ul>
+
+    <p>Je třeba vědět, že všechny zdrojové soubory jsou pak v komprimované podobě umístěny v <code>css/screen.css</code> a <code>css/ie.css</code> spolu s tiskovým stylem <code>css/print.css</code>. Pouze tyto tři soubory připojte do hlavičky svého HTML souboru.</p>
+
+    <h2>Vygenerujte mřížkový layout, chcete-li</h2>
+
+    <p>Hodláte-li využít v layotu mřížky, komunita kolem Blueprint vám připravila velké množství nástrojů, bez nichž by tvorba layoutu byla matematickým oříškem. <a href="http://constructyourcss.com/">Construct</a> Christiana Montoyi je plnohodnotný wysiwyg editor layoutu. Sám jsem si ale zatím vždycky vystačil s generátorem na <a href="http://kematzy.com/blueprint-generator/">Kematzy.com</a>.</p>
+
+    <p>Naše přátele nebo kodéry přesahující do designu a programování směřuji na <a href="http://github.com/joshuaclayton/blueprint-css/wikis/tools-and-resources">stránku s nástroji ulehčující práci s Blueprintem i jim</a>.</p>
+
+    <h2>Nasaďte Blueprint do vašeho HTML</h2>
+
+    <p>Blueprint pochopitelně vždy využívejte jako základní stavební kámen pro vzhled webu, nad který pak navrstvíte cihly vlastních CSS souborů. Nikdy neupravujte CSS samotného Blueprintu.</p>
+
+    <p>Hlavička vašeho HTML by tedy mohla vypadat takto:</p>
+
+<pre style='color:#d1d1d1;background:#000000;width:470px;overflow: auto; padding: 5px;'><span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>link</span> rel<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"stylesheet"</span> href<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"/css/blueprint/screen.css"</span>   type<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"text/css"</span> media<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"screen, projection"</span><span style='color:#ff8906; '>></span>
+<span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>link</span> rel<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"stylesheet"</span> href<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"/css/blueprint/print.css"</span> type<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"text/css"</span> media<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"print"</span><span style='color:#ff8906; '>></span>
+<span style='color:#9999a9; '>&lt;!--[if IE]>&lt;link rel="stylesheet" href="/css/blueprint/ie.css" type="text/css" media="screen, projection">&lt;![endif]--></span>
+<span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>link</span> rel<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"stylesheet"</span> href<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"/css/styly-vaseho-webu.css"</span> type<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"text/css"</span> media<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"all"</span><span style='color:#ff8906; '>></span>
+<span style='color:#9999a9; '>&lt;!--[if IE]>&lt;link rel="stylesheet" href="/css/styly-vaseho-webu-ie.css" type="text/css" media="screen, projection">&lt;![endif]--></span>
+</pre>
+
+    <p>Vsadím se, že časem a zkušeností s některými definicemi Blueprintu nebudete souhlasit. Ano, tvůrci se občas místo do ulehčování práce kodérům pouštějí až příliš do specifikace vzhledu nějakých prvků. Můj anti-blueprint CSS kód má ale jen pár řádků. Více o něm snad příště. Nedočkavci, podívejte se do zdroje webu <a href="http://www.kinoaero.cz/">Kina Aero</a>, kde framework využíváme.</p>
+
+<p class="bookmarksBox">
+Ulož do 
+
+<a href="http://delicious.com/post?url=http://www.vzhurudolu.cz/83/blueprint-css-5-kroku-k-ulehceni-koderske-prace&amp;title=Blueprint CSS: pár kroků k ulehčení kodérské práce" onClick="javascript:urchinTracker('/social-bookmarks/del_icio_us');">delicious</a>,
+
+<a href="http://linkuj.cz/?id=linkuj&amp;url=http://www.vzhurudolu.cz/83/blueprint-css-5-kroku-k-ulehceni-koderske-prace&amp;title=Blueprint CSS: pár kroků k ulehčení kodérské práce" onClick="javascript:urchinTracker('/social-bookmarks/linkuj_cz');">linkuj.cz</a>,
+
+<a href="http://www.jagg.cz/bookmarks.php?action=add&amp;address=http://www.vzhurudolu.cz/83/blueprint-css-5-kroku-k-ulehceni-koderske-prace&amp;title=Blueprint CSS: pár kroků k ulehčení kodérské práce" onClick="javascript:urchinTracker('/social-bookmarks/jagg_cz');">jagg.cz</a>,
+
+<a href="http://vybrali.sme.sk/submit.php?url=http://www.vzhurudolu.cz/83/blueprint-css-5-kroku-k-ulehceni-koderske-prace" onClick="javascript:urchinTracker('/social-bookmarks/vybrali_sme_sk');">vybrali.sme.sk</a>
+
+
+
+Díky!
+
+</p>
+
+
+
+<div class="commentsBox" id="komentar">
+
+
+<h2>Diskuze</h2>
+<p>
+[ <a href="../index6a0e.html?rss=1&amp;area=comments&amp;id=83" title="Comments XML feed">RSS této diskuze</a> ]
+</p>
+
+
+<ol class="comments"><li><h3 class="comment-head">
+  <a href="http://alian.info/" title="alian.info" rel="nofollow">alian</a>, 
+<small>
+  05. 10. 08, 21:34, 
+  <a href="blueprint-css-5-kroku-k-ulehceni-koderske-prace.html#c000373" id="c000373">#</a>
+</small>
+</h3>
+
+<div class="comment-message">
+<p>Vyzera to velmi zaujimavo &#8211; vdaka za tip!</p>
+</div>
+
+
+
+
+
+
+
+</li>
+<li><h3 class="comment-head">
+  <a href="http://www.smain.cz/" title="www.smain.cz/" rel="nofollow">smain</a>, 
+<small>
+  05. 10. 08, 23:53, 
+  <a href="blueprint-css-5-kroku-k-ulehceni-koderske-prace.html#c000374" id="c000374">#</a>
+</small>
+</h3>
+
+<div class="comment-message">
+<p>Nevypadá to úplně špatně... zajímavý tip, rozhodně na to mrknu.</p>
+</div>
+
+
+
+
+
+
+
+</li></ol>
+
+
+  <p>Komentáře jsou uzavřeny</p>
+
+
+</div>
+
+
+
+
+      </div>      
+    </div>
+
+  </body>
+
+<!-- Mirrored from www.vzhurudolu.cz/83/blueprint-css-5-kroku-k-ulehceni-koderske-prace by HTTrack Website Copier/3.x [XR&CO'2008], Tue, 11 Aug 2009 14:14:41 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
+</html>

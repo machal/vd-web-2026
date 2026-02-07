@@ -1,0 +1,61 @@
+body {
+color: #333;
+background: #fff;
+font: small "Arial CE", "Helvetica CE", Arial, Helvetica, sans-serif;;
+margin: 20px;
+padding: 0px;
+}
+
+
+
+a {
+color: #06c;
+background: inherit;
+}
+
+a:visited {
+color: #5489E1;
+background: inherit;
+}
+
+a:active {
+font-weight: bold;
+background: inherit;
+}
+
+a:hover {
+color: #00c;
+background: inherit;
+}
+
+div.incompatiblebrowser {
+border: 2px solid #603;
+}
+
+h1, h2, h3, h4, h5, h6 {
+font-weight: bold;
+}
+
+h1 {
+font-size: 160%;
+}
+
+h2 {
+font-size: 150%;
+}
+
+h3 {
+font-size: 140%;
+}
+
+h4 {
+font-size: 130%;
+}
+
+h5 {
+font-size: 120%;
+}
+
+h6 {
+font-size: 110%;
+}

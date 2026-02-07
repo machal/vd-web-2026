@@ -1,0 +1,99 @@
+/*
+
+Login
+=====
+
+Přihlašovací komponenta. (Facebook, Jméno, Heslo, Ztracené heslo…)
+Používá se v hlavičce (klik na ikonu hlavy) nebo pak ve stránkách jako
+např. vložení osobních údajů v objednávce.
+
+*/
+
+
+
+// Base
+// ----
+
+.login {
+  clear: both;
+}
+
+hr {
+  border-color: @vc-border-color;
+}
+
+
+// Subkomponenty
+// -------------
+
+// Facebook tlačítko
+
+.login-facebook {
+  margin-bottom: @line-height-computed;
+}
+
+// Label "Heslo nebo číslo objednávky *"
+// - zvětšujeme šířku, aby se vešel na co nejvíce rozlišeních
+
+.login-password .control-label {
+  padding-right: 0;
+}
+
+// Řádek s tlačítky
+
+.login-buttons {
+  margin-bottom: 0;
+}
+
+.login-btn-lost-pswd {
+  float: left;
+  margin-left: -1*@padding-base-horizontal;
+}
+
+.login-btn-login {
+  float: right;
+}
+
+
+// Varianta v hlavičce
+// -------------------
+
+// Otevírá se až kliknutím na ikonu uživatele.
+
+// Pokud je načtený JS, ihned schováme
+
+.js .login-in-head {
+  display: none;
+}
+
+// Vzhled vrstvy
+
+.login-in-head {
+  margin-bottom: @line-height-computed/2;
+}
+
+// Řádek s tlačítky je bez paddingu
+
+.login-in-head .login-buttons {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+// Velké displeje: šup do absolutně pozicované vrstvy.
+
+.login-in-head {
+  @media only screen and (min-width: 600px) {
+    position: absolute;
+    top: 82px;
+    z-index: 55000; // Kvuli Pine.js
+    width: 320px;
+    right: @grid-gutter-width / 2;
+    border: 1px solid #bbb;
+    border-radius: @border-radius-base;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    right: 50%;
+    margin-right: -585px;
+  }
+}

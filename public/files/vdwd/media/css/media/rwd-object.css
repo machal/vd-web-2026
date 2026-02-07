@@ -1,0 +1,21 @@
+/*
+Pruzne vkladane objekty
+=======================
+
+<iframe>, <video>… - zachovavame pomer stran
+
+1) Udava pomer stran, vychozi 16:9
+*/
+
+.rwd-object {
+  position: relative;
+  height: 0;
+  padding-bottom: 56.25%; /* 1) */
+}
+
+.rwd-object-in {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+

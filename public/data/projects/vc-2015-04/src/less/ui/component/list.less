@@ -1,0 +1,106 @@
+/*
+
+List
+====
+
+Seznam položek.
+Používáme v patičce nebo nákupním procesu.
+
+*/
+
+// Základní varianta: seznam bez odrážek
+// -------------------------------------
+
+.list ul {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+
+
+// Varianta s rámečkem a paddingem
+// -------------------------------
+// Např. v nákupním procesu.
+
+// ```
+// <div class="list list-bordered">
+//   <div class="list-item">
+//     <h2 class="sr-only">Dostupnost zboží</h2>
+//     <p>
+//       Dostupnost <strong>v pondělí 19. 1.</strong> u vás.
+//     </p>
+//   </div>
+// </div>
+// ```
+
+// Rodič
+
+.list-bordered {
+  margin-bottom: @line-height-computed/2;
+}
+
+// Položka
+
+.list-bordered .list-item {
+  padding: @line-height-computed/2 @padding-base-horizontal;
+  border-top: 1px solid @vc-border-color;
+
+  &:last-child {
+    border-bottom: 1px solid @vc-border-color;
+  }
+
+  // Bootstrap formulář uvnitř
+  .form-group:last-child {
+    margin-bottom: 0;
+  }
+}
+
+// Varianta s rámečkem a položkami obsahující hlavičku a obsah
+// -----------------------------------------------------------
+
+// Položka
+
+.list-complex-items .list-item {
+  padding-top: 0;
+  padding-bottom: 0;
+
+  // Pro vložení checkboxu/radiobuttonu využíváme Boostrapu,
+  // ale musíme upravit vzhled elementu.
+  > .checkbox,
+  > .radio {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+// Hlavička položky
+
+.list-complex-items .list-item-heading {
+  display: block;
+  padding-top: @line-height-computed/2;
+  padding-bottom: @line-height-computed/2;
+
+  > p {
+    margin-bottom: 0;
+  }
+}
+
+// Obsah položky
+
+.list-complex-items .list-item-body {
+  .clearfix;
+  padding: @line-height-computed*.5 0 @line-height-computed*.75 0;
+
+  > .checkbox:first-child,
+  > .radio:first-child {
+    margin-top: 0;
+  }
+}
+
+// Varianta obsahu pro situaci kdy v -heading je checkbox nebo radio
+
+.list-complex-items .list-item-body-indented {
+  padding-left: 20px;
+}
+

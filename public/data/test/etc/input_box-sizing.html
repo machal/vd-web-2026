@@ -1,0 +1,79 @@
+<!doctype html>
+
+<html lang="en"> 
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Input elements and box-sizing</title>
+
+    <style>
+    	body {
+				font-size: 12px/18px sans-serif;
+			}
+
+			input,
+			select,
+			textarea,
+			.measure {
+			    width: 60px;			    
+				height: 30px;
+            	padding: 10px;
+            	margin: 0;
+				display: inline-block;
+				border: 1px solid #333;
+				vertical-align: middle;
+			}
+			
+			.measure {
+				background-color: #ccc;
+				font-size: 10px;
+				line-height: 13px;
+			}
+			
+    </style>
+
+  </head>
+  
+  <body>
+  
+    <div id="container">
+	
+			<p>
+				<strong>Input elements and box-sizing:</strong>
+				<br>
+			</p>
+			
+			<pre>
+				<code>
+input,
+select,
+textarea,
+.measure {
+  width: 60px;			    
+  height: 30px;
+  padding: 10px;
+  margin: 0;
+  display: inline-block;
+}
+				</code>
+			</pre>
+    
+			<input type="submit" name="" value="submit input">
+
+			<input name="" value="text input">
+			
+			<input type="file" name="" value="file input">
+			
+			<select>
+				<option>select</option>
+			</select>
+			
+			<textarea>textarea</textarea>
+			
+			<small class="measure">60x30px, 10px padding</small>
+
+    </div><!-- /container -->
+    
+  </body>
+  
+</html>

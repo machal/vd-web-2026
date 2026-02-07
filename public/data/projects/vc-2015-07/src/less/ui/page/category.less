@@ -1,0 +1,141 @@
+/*
+
+Stránka: kategorie produktu
+===========================
+
+*/
+
+// Popisek kategorie
+// a
+// Seznam kategorii
+// -----------------
+
+.vc-category-description,
+.vc-category-first-col {
+
+  padding-bottom: @line-height-computed/2;
+  .vc-layout-col-base;
+  .vc-layout-col(12);
+
+  @media only screen and (min-width: @vc-layout-start) { .vc-layout-col(6); }
+}
+
+
+// Motivator
+// ---------
+
+.vc-category-motivator-top {
+  .vc-layout-col-base;
+
+  @media only screen and (min-width: 1024px) { .vc-layout-col(6); }
+}
+
+
+// Bublina
+// -------
+
+// TODO: zobecnit? ještě je podobná v odeslané objednávce
+
+.vc-top-bubble {
+  position: relative;
+  padding: @padding-small-vertical @padding-small-horizontal;
+  border-radius: @border-radius-large;
+  border: 1px solid @vc-border-color;
+
+  background-color: #ffffff;
+  color: @text-color;
+
+  // nulování odsazení posledního elementu v boxu
+  // kvůli stejné vizuální mezeře nahoře a dole v boxu
+
+  > *:last-child { margin-bottom: 0; }
+
+  // Šipku má smysl zobrazovat až ve chvíli,
+  // kdy je osoba vedle boxu
+
+  height: 90px; // funguje jako min-height, ktery nefunguje
+
+  // varianta pro overflow: hidden,
+  // která by ořezávala šipku,
+  // ale která je potřeba kvůli floatované postavě
+
+  display: table-cell !important;
+  width: 10000px !important;
+
+  @media only screen and (min-width: 380px) {
+    padding: @padding-base-vertical @padding-base-horizontal;
+  }
+
+  @media only screen and (min-width: @vc-layout-start) {
+    padding: @padding-large-vertical @padding-large-horizontal;
+  }
+
+  // šipka řešená přes pseudo elementy
+  // pozicování a velikost je individuální
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 0;
+    border-style: solid;
+  }
+
+  // větší šedá šipka
+
+  &:before {
+    border-color: rgba(0, 0, 0, 0) @vc-border-color;
+    top: 55px;
+    right: -15px;
+    border-width: 0 0 10px 15px;
+
+    @media only screen and (min-width: 380px) {
+      top: 55px;
+      right: -22px;
+      border-width: 0 0 17px 22px;
+    }
+  }
+
+  // menší bílá šipka, která z části překrývá šedou
+  // a tvoří tak šipku s okrajem
+
+  &:after {
+    border-color: rgba(0, 0, 0, 0) #ffffff;
+    top: 56px;
+    right: -13px;
+    border-width: 0 0 8px 13px;
+
+    @media only screen and (min-width: 380px) {
+      top: 56px;
+      right: -19px;
+      border-width: 0 0 15px 20px;
+    }
+  }
+
+  p {
+    margin-bottom: 0;
+    font-size: @vc-font-size-smaller;
+    text-align: left;
+
+    @media only screen and (min-width: 380px) { text-align: right; }
+
+    @media only screen and (min-width: 480px) { font-size: @font-size-small; }
+  }
+
+  a,
+  a:link {
+    color: #3ba818;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: darken(#3ba818, 8%);
+    text-decoration: underline;
+  }
+
+  .vc-top-bubble-note {
+    margin-top: @line-height-computed/2;
+    font-size: @vc-font-size-smaller;
+  }
+}

@@ -1,0 +1,31 @@
+/*
+
+Bar
+===
+
+Proužek s důležitou informací nahoře.
+(Např. výdejní místa v okolí.)
+
+*/
+
+.bar {
+  font-size: @font-size-smaller;
+  line-height: 1.3;
+  background: @vc-bg-light;
+  // TODO text-shadow: lighten(@vc-bg-light, 25%) 0px 1px 0px;
+}
+
+.bar .container {
+  position: relative;
+  padding-top: @padding-large-vertical;
+  padding-bottom: @padding-large-vertical;
+  padding-right: 35px;
+  margin-bottom: 0;
+}
+
+.bar .close {
+  position: absolute;
+  right: @grid-gutter-width/2;
+  top: 50%;
+  margin-top: -15px;
+}

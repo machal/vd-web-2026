@@ -1,0 +1,43 @@
+/*
+
+Foot Base
+=========
+
+Základna a vzhled patičky.
+
+*/
+
+.foot {
+  clear: both;
+  padding: 2*@line-height-computed 0 @line-height-computed;
+  margin:
+    2*@line-height-computed
+    (@grid-gutter-width / -2)
+    0;
+  background: #eee;
+  position: relative;
+}
+
+// Base
+// ----
+
+.foot h2 {
+  font-size: 18px;
+  margin: 0 0 3px 0;
+  padding: 0;
+}
+
+
+// Layout
+// ------
+
+.foot-row {
+  .clearfix;
+  position: relative;
+}
+
+.foot-row-second {
+  @media only screen and (min-width: 480px) {
+    position: relative; // Kvuli .foot-social-buttons
+  }
+}

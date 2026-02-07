@@ -1,0 +1,90 @@
+/*
+
+Košík: Slevy: kupón a ISIC
+==========================
+
+*/
+
+
+.vc-cart-discounts {}
+
+// ### Vložení kupónu
+
+// Jednořádkový formulář
+
+.vc-cart-coupon {
+
+  // TODO: dočasné řešení, nevím,
+  // jestli se vc-list-item používá i jinde na webu
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+  border: none !important;
+
+  .vc-list-item-heading {
+    padding-top: @padding-base-vertical;
+    padding-bottom: @padding-base-vertical;
+  }
+
+  // Textový input
+  .form-control {
+    float: left;
+    display: inline-block;
+    width: 67%;
+    vertical-align: middle;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  // Tlačítko
+  .vc-btn {
+    float: left;
+    width: 33%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-left: -1px;
+  }
+
+  // Layout: jiné rozložení tam kde se nevejde 80/20
+  @media only screen and (min-width: 1024px) {
+    .form-control { width: 80%; }
+    .vc-btn       { width: 20%; }
+  }
+
+}
+
+// ### Vložení čísla ISIC
+
+.vc-cart-isic {
+  border-bottom: 1px solid @vc-border-color;
+  margin-bottom: @line-height-computed;
+
+  @media only screen and (min-width: @vc-layout-start) {
+    margin-bottom: 2*@line-height-computed;
+  }
+
+  // TODO: dočasné řešení, nevím,
+  // jestli se vc-list-item používá i jinde na webu
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+  border: none !important;
+
+  .vc-list-item-heading {
+    padding-top: @padding-base-vertical;
+    padding-bottom: @padding-base-vertical;
+  }
+}
+
+
+// Info pod košíkem: Layout na větších displejích
+// ----------------------------------------------
+
+.vc-cart-discounts {
+  clear: both;
+  .vc-layout-col-base;
+  .vc-layout-col(12);
+
+  @media only screen and (min-width: @vc-discount-info-layout-start) {
+    .vc-layout-col(6);
+    float: right;
+  }
+}

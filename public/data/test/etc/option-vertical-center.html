@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Option vertical centering</title>
+	<meta name="generator" content="TextMate http://macromates.com/">
+	<meta name="author" content="Martin Michálek">
+	<!-- Date: 2011-05-01 -->
+	<style type="text/css">
+		body {
+			font: 12px/18px sans-serif;
+		}
+
+		select {
+			border: 1px solid #ccc; /* Removes native look in FF */
+			line-height: 28px;
+			vertical-align: middle;
+		}
+		
+		option {
+			padding: 5px;
+			vertical-align: middle;
+		}
+
+	</style>
+</head>
+<body>
+	
+	<p>
+		This is impossible vertical center on FF3.6/4:
+		<br>(Tested on Mac — Chrome shows native control, Opera without native look, both without padding)
+	</p>
+	
+	<select name="">
+		<option value="">First item</option>
+		<option value="">Second item</option>
+		<option value="">Third item</option>
+	</select>
+	
+	<br><br>
+	
+	<input name="" value="Text...">
+
+</body>
+</html>

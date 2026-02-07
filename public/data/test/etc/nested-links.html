@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Nested links in HTML5</title>
+	<meta name="generator" content="TextMate http://macromates.com/">
+	<meta name="author" content="Martin Michálek">
+	<!-- Date: 2012-02-28 -->
+</head>
+<body>
+	
+	<h1>Nested links in HTML5 <a href="http://www.quora.com/Why-nesting-a-element-is-forbidden-in-HTML-5">are forbidden</a> and browsers don't support them:</h1>
+
+	<pre>
+		<code>
+&lt;a href=&quot;#block&quot;&gt;
+  &lt;p&gt;
+    This is &lt;a href=&quot;#inline&quot; style=&quot;color: red&quot;&gt;inline anchor&lt;/a&gt; in the middle of block anchor.
+  &lt;/p&gt;
+&lt;/a&gt;		
+		</code>		
+	</pre>
+
+	
+	<a href="#block">
+	<p>
+		This is 
+		<a href="#inline" style="color: red">inline anchor</a> 
+		in the middle of block anchor.
+	</p>
+	</a>
+
+
+        <!-- Google Analytics --> 
+        <script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+        <script type="text/javascript">
+        try {
+        var pageTracker = _gat._getTracker("UA-67173-13");
+        pageTracker._trackPageview();
+        } catch(err) {}</script>
+        <!-- /Google Analytics -->
+
+</body>
+</html>

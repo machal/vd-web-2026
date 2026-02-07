@@ -1,0 +1,122 @@
+/*
+
+Bar
+===
+
+Proužek s důležitou informací nahoře.
+(Např. výdejní místa v okolí.)
+
+*/
+
+
+
+// obecné vlastnosti
+// -----------------
+
+.vc-bar {
+  .vc-clearfix;
+
+  font-size: @vc-font-size-smaller;
+  line-height: 1.3;
+  letter-spacing: 0.025em;
+
+  .vc-container {
+    position: relative;
+    padding-top: @padding-large-vertical;
+    padding-bottom: @padding-large-vertical;
+    padding-right: 35px;
+    margin-bottom: 0;
+  }
+}
+
+// ### úprava BS .close
+.vc-bar .close {
+  // lokální proměnné
+  @vc-bar-close-size: 14px;
+  @vc-bar-close-padding: 4px;
+
+  // layout
+  position: absolute;
+  right: @grid-gutter-width/2;
+  top: 50%;
+  margin-top: -(@vc-bar-close-size - @vc-bar-close-padding);
+  padding: @vc-bar-close-padding; // vetsi klikatelna plocha
+  line-height: 1;
+
+  // typografie
+  font-weight: 100;
+  font-size: @vc-bar-close-size;
+  text-shadow: none;
+  opacity: 1;
+}
+
+// mixin
+// -----
+
+.bar-variant(@vc-bar-color; @vc-bar-bg-color; @vc-bar-link-color; @vc-bar-hover-color) {
+  // typografie
+  background-color: @vc-bar-bg-color;
+  color: @vc-bar-color;
+
+  // odkazy
+  a { color: @vc-bar-link-color; }
+
+  a:hover { color: @vc-bar-hover-color; }
+
+  // ### úprava BS .close
+  .close {
+    color: @vc-bar-color;
+
+    // stavy
+    &:hover,
+    &:focus { color: @vc-bar-hover-color !important; }
+  }
+}
+
+
+// bar lokace
+// ------------
+
+.vc-bar-location {
+  .bar-variant(#ffffff; #65c915; #ffffff; #000000);
+
+  border-bottom: 1px solid #4bc115;
+  box-shadow: 0 1px 0 0 #31ba15;
+
+  .vc-container {
+    // lokální proměnné
+
+    // šířka ikony
+    @vc-bar-icon-width: 12px;
+
+    // odsazeno tak, aby bylo zarovnáno na střed čočky v logu
+    @vc-bar-icon-left-small: 24px;
+    @vc-bar-icon-left: 33px;
+
+    padding-left: @vc-bar-icon-left-small + @padding-small-horizontal + @vc-bar-icon-width;
+    background: transparent url(../dist/img/icons/map-marker.svg) no-repeat @vc-bar-icon-left-small 50%; //todo: inline / sprite svg?
+
+    @media @vc-head-breakpoint-not-small{
+      padding-left: @vc-bar-icon-left + @padding-small-horizontal + @vc-bar-icon-width;
+      background-position: @vc-bar-icon-left 50%;
+    }
+
+    .vc-no-svg & { // fallback pro prohlížeče bez svg (IE8-)
+      background-image: url("../dist/img/icons/map-marker.png"); //todo: inline / sprite svg?
+    }
+  }
+}
+
+// Proužek s informacemi o cookies
+// -------------------------------
+
+.vc-bar-cookie {
+  .bar-variant(@vc-color-text; @vc-bg-light; @gray-light; #000000);
+
+  border-top: 1px solid #ffffff;
+  position: fixed;
+  z-index: 100;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}

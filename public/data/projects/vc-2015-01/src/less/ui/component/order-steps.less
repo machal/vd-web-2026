@@ -1,0 +1,138 @@
+/*
+
+Order Steps
+===========
+
+Vyznačení probíhajícího kroku objednávky.
+
+Ukázka HTML
+-----------
+
+```
+<ul>
+  <li class="order-steps-item">
+    <strong>
+      <span class="in">Košík</span>
+    </strong>
+  </li>
+  <li class="order-steps-item">
+    <a href="#">
+      <span class="in">Vyberte si dárek</span>
+    </a>
+  </li>
+</ul>
+```
+
+*/
+
+// Základna
+// --------
+
+// Kontejner
+
+.order-steps {
+  .clearfix;
+  margin-bottom: 2*@line-height-computed;
+}
+
+// UL uvnitř seznamu
+
+.order-steps ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+// Položka seznamu
+// ---------------
+
+// <li class="order-steps-item">
+
+.order-steps-item {
+  width: percentage(1/5); // Natvrdo počítáme s pěti položkami
+  float: left;
+  padding: 0;
+  margin: 0;
+
+  a, b, strong {
+    display: block;
+    height: @line-height-computed*4;
+    text-align: center;
+    font-size: 11px;
+    background: #ddd;
+    border-right: 1px solid #fff;
+    font-weight: normal;
+    // <vertikalni-centrovani>
+    line-height: @line-height-computed*4;
+    // </vertikalni-centrovani>
+
+    .in {
+      // <vertikalni-centrovani>
+      vertical-align: middle;
+      display: inline-block;
+      line-height: 15px;
+      // </vertikalni-centrovani>
+    }
+
+    // Velikost písma
+    @media only screen and (min-width: 420px) {
+      font-size: @font-size-smaller;
+    }
+
+    @media only screen and (min-width: 1025px) {
+      font-size: @font-size-small;
+    }
+  }
+
+  &:last-child {
+    border-right: none;
+  }
+}
+
+// Číslo v položce
+// (TODO: v prototypu místo ikony)
+
+.order-steps-item {
+  .nr {
+    font-size: @font-size-h2;
+    line-height: 1.15;
+  }
+}
+
+// Text v položce
+
+.order-steps-item .txt {
+  @media only screen and (max-width: 599px) {
+    display: none;
+  }
+}
+
+// Layout na menších displejích
+@media only screen and (max-width: 480px) {
+  .order-steps-item {
+    a, b, strong {
+      height: @line-height-computed*2;
+      line-height: @line-height-computed*2;
+    }
+
+    .nr {
+      font-size: @font-size-base;
+    }
+  }
+}
+
+
+// Aktivní položka seznamu
+
+// <li class="order-steps-item">
+//   <strong>
+//     <span class="in">Košík</span>
+//   </strong>
+// </li>
+
+.order-steps-item {
+  b, strong {
+    background: transparent;
+    background: #c8c8c8;
+  }
+}

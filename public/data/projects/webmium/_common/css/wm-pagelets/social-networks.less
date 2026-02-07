@@ -1,0 +1,36 @@
+/* 
+Pagelet: Social Networks
+==============================================================================
+
+Sdílecí tlačítka, které v tuhle chvíli ale nemají implementaci v administraci, 
+takže je moc neřešíme.
+*/
+
+.wm-p-social-networks {
+	clear: both;	
+	.wm-m-section;
+	text-align: center;
+	height: 42px;
+
+	.facebook,
+	.twitter,
+	.google {
+		background: @grayLight;
+		color: @white;
+		padding: @paddingLarge;
+		.box-sizing(border-box);
+		font-size: @fontSizeLarge;
+
+		@media (max-width: @wmSmallDisplayEnd) {
+			margin-bottom: @baseLineHeight/2;
+		}
+	}
+
+	.facebook { background: #3b428a; }
+	.twitter { background: #077a8d; }
+	.google { background: #1185d8; }
+
+	@media print {
+		display: none;
+	}
+}

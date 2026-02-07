@@ -1,0 +1,16 @@
+body,
+input,
+select,
+textarea {
+  color: var(--color-text);
+}
+
+a {
+  color: var(--color-text);
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: var(--color-alpha);
+}

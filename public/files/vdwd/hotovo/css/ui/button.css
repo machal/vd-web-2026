@@ -1,0 +1,46 @@
+/*
+UI komponenta Tlacitko
+======================
+*/
+
+/*
+Zakladni vzhled
+---------------
+Stejne jako <input> a <button>
+*/
+
+.button {
+  display: inline-block;
+  padding: var(--input-padding);
+  background: transparent;
+  color: var(--color-text);
+  border: var(--input-border) solid var(--color-text);
+  border-radius: var(--border-radius);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  border-color: var(--color-alpha);
+  cursor: pointer;
+}
+
+/*
+Primarni vyzva k akci
+---------------------
+*/
+
+.button-primary {
+  background: var(--color-alpha);
+  color: white;
+  border: none;
+  padding:
+    calc(
+      var(--input-padding)
+      + var(--input-border)
+    )
+    calc(
+      2 * var(--input-padding)
+    );
+}
+

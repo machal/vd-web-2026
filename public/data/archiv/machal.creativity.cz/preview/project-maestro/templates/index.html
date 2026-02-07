@@ -1,0 +1,389 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="cs" xml:lang="cs">
+<head>
+	<title>ProjectMaestro</title>
+
+	<meta http-equiv="content-type" content="text/html; charset=windows-1250" />
+    <meta http-equiv="content-language" content="cs" />
+
+    <meta name="author" content="ILIKETHIS!, s.r.o." />
+    <meta name="keywords" content="" />
+    <meta name="copyright" content="" />
+    <meta name="MSSmartTagsPreventParsing" content="TRUE" />
+
+	<link rel="stylesheet" href="css/screen.css" type="text/css" />
+ 
+
+</head>
+<body>
+
+<div id="bodyContainer">
+
+<div id="headTop">
+  <p id="headLogo">
+    <strong><a href="#homepage"><img src="img/head/logotype.gif" alt="Logotype" /></a></strong>
+  </p>
+  <p id="headDate">
+    <span>Friday, 19. 9. 2003</span>
+  </p>  
+  <form action="">
+  <p id="headLogged">     
+    <span id="headUser">User: Katka Antošíková</span>
+	<span  id="headLogoff">
+	<input type="submit" value="Log Off" />
+	</span>
+  </p>  
+  </form>
+  <div class="clearboth1px">&nbsp;</div>
+</div>
+
+<div id="headBottom">
+  <p id="headMenu">
+    <span class="borderContainer"><a href="#" id="headMenuMyDesktop"><span>My Desktop</span></a></span> <span class="displaynone">|</span>
+    <span class="borderContainer"><a href="#" id="headMenuAgenda"><span>Agenda</span></a></span> <span class="displaynone">|</span>
+    <span class="borderContainer"><a href="#" id="headMenuProjects"><span>Projects</span></a></span> <span class="displaynone">|</span>
+    <span class="borderContainer"><a href="#" id="headMenuMyTeam"><span>My Team</span></a></span> <span class="displaynone">|</span>
+    <span class="borderContainer"><a href="#" id="headMenuResources"><span>Resources</span></a></span> <span class="displaynone">|</span>
+    <span class="borderContainer"><a href="#" id="headMenuReports"><span>Reports</span></a></span> <span class="displaynone">|</span>	
+    <span class="borderContainer"><a href="#" id="headMenuAdmin"><span>Admin</span></a></span> <span class="displaynone">|</span>		
+    <span class="borderContainer"><a href="#" id="headMenuHelp"><span>Help</span></a></span> <span class="displaynone">|</span>	
+  </p>
+
+  <form action="">
+  <p id="headJump">     
+    <span id="headJumpText">Quick jump:</span>
+	<span  id="headJumpSelect">
+	  <select>
+	    <option>-- Select project</option>
+	    <option>Gothan project</option>		
+	  </select>
+	  </span>
+  </p>  
+  </form>
+  <div class="clearboth1px">&nbsp;</div>
+</div>
+
+<div class="clearboth">&nbsp;</div>
+
+<!-- mainContainer - hlavni ramovaci box obsahu, zuzeny pro homepage => -->
+<div id="mainContainer" class="homePage">
+  <div id="mainBox">
+
+    <div id="headBox">
+	  <h1><img src="img/content/here_arrow_grey.gif" alt="" /> <img src="img/content/h1_icon_my_desktop.gif" alt="" /> My Desktop</h1>
+	  <p id="submitInitiative"><a href="#submitinitiative"><img src="img/content/icon_submit_initiative.gif" alt="" /></a>&nbsp;<a href="#submitinitiative">Submit initiative / request</a></p>
+      <div class="clearboth1px">&nbsp;</div>
+	</div>  
+
+    <div id="contentBox">
+	  
+      <!-- siroky box s rolovaci tabulkou - Open Projects =>-->
+	  <div class="borderNoCornerA marginBottom1em"><div class="borderNoCornerB"><div class="borderNoCornerC"><div class="borderNoCornerD">
+	    <div class="boxA boxTypeOne bgColorOne">
+		  <div class="boxHead">
+		    <h2><img src="img/content/here_arrow_white.gif" alt="" /> Open Projects</h2>
+			<p class="boxHeadCollapse"><a href="#collapse">Collapse</a> <a href="#collapse"><img src="img/content/icon_collapse.gif" alt="" /></a></p>
+            <div class="clearboth1px">&nbsp;</div>			
+		  </div>
+		  <div class="scrollTable">
+		  <table class="normal">
+		  <thead>
+		    <tr>
+			  <th>Project name</th>
+			  <th>Overdue</th>
+			  <th>Open Issues</th>			  
+			</tr>
+		  </thead>
+		  <tbody>
+		    <tr>
+			  <td><img src="img/content/icon_project_red.gif" alt="" /> &nbsp;&nbsp; <a href="#projectdetail">Project A</a></td>
+			  <td>80</td>
+			  <td>1</td>			  
+			</tr>
+		    <tr class="trBgColorTwo">
+			  <td><img src="img/content/icon_project_green.gif" alt="" /> &nbsp;&nbsp; <a href="#projectdetail">Project Next</a></td>
+			  <td>10</td>
+			  <td>0</td>			  
+			</tr>			
+		    <tr>
+			  <td><img src="img/content/icon_project_green.gif" alt="" /> &nbsp;&nbsp; <a href="#projectdetail">Projekt na záchranu Machalova spánku s dlouhým názvem</a></td>
+			  <td>80</td>
+			  <td>5</td>			  
+			</tr>
+		    <tr class="trBgColorTwo">
+			  <td><img src="img/content/icon_project_red.gif" alt="" /> &nbsp;&nbsp; <a href="#projectdetail">Project Next</a></td>
+			  <td>10</td>
+			  <td>0</td>			  
+			</tr>						
+		  </tbody>					
+		  </table>
+		  </div>
+		</div>   
+	  </div></div></div></div>
+      <!-- <= siroky box s rolovaci tabulkou - Open Projects-->
+	  
+      <!-- siroky box s rolovaci tabulkou - Task List =>-->
+	  <div class="borderNoCornerA marginBottom1em"><div class="borderNoCornerB"><div class="borderNoCornerC"><div class="borderNoCornerD">
+	    <div class="boxA boxTypeOne bgColorOne">
+		  <div class="boxHead">
+		    <h2><img src="img/content/here_arrow_white.gif" alt="" /> Task List</h2>
+			<p class="boxHeadCollapse"><a href="#expand">Expand</a> <a href="#expand"><img src="img/content/icon_expand.gif" alt="" /></a></p>
+            <div class="clearboth1px">&nbsp;</div>			
+		  </div>
+		  <div class="scrollTable">
+		  <table class="normal">
+		  <thead>
+		    <tr>
+			  <th>Task name</th>
+			  <th>Project name</th>			  
+			  <th>Due In</th>
+			  <th>% Completed</th>			  
+			</tr>
+		  </thead>
+		  <tbody>
+		    <tr>
+			  <td><a href="#taskdetail">Task XY</a></td>
+			  <td><a href="#projectdetail">Project A</a></td>
+			  <td>80</td>
+			  <td>1</td>			  
+			</tr>
+		    <tr class="trBgColorTwo">
+			  <td><a href="#taskdetail">Task XY</a></td>			
+			  <td><a href="#projectdetail">Project Next</a></td>
+			  <td>10</td>
+			  <td>0</td>			  
+			</tr>			
+		    <tr>
+			  <td><a href="#taskdetail">Task XY</a></td>			
+			  <td><a href="#projectdetail">Projekt na záchranu Machalova spánku s dlouhým názvem</a></td>
+			  <td>80</td>
+			  <td>5</td>			  
+			</tr>
+		    <tr class="trBgColorTwo">
+			  <td><a href="#taskdetail">Task XY</a></td>			
+			  <td><a href="#projectdetail">Project Next</a></td>
+			  <td>10</td>
+			  <td>0</td>			  
+			</tr>						
+		  </tbody>					
+		  </table>
+		  </div>
+		</div>   
+	  </div></div></div></div>
+      <!-- <= siroky box s rolovaci tabulkou - Task List-->	  
+	  
+	  
+      <!-- siroky box s rolovaci tabulkou - Open Projects =>-->
+	  <div class="borderNoCornerA marginBottom1em"><div class="borderNoCornerB"><div class="borderNoCornerC"><div class="borderNoCornerD">
+	    <div class="boxA boxTypeOne bgColorOne">
+		  <div class="boxHead">
+		    <h2><img src="img/content/here_arrow_white.gif" alt="" /> Personal Alerts</h2>
+			<p class="boxHeadCollapse"><a href="#collapse">Collapse</a> <a href="#collapse"><img src="img/content/icon_collapse.gif" alt="" /></a></p>
+            <div class="clearboth1px">&nbsp;</div>			
+		  </div>
+		  <div class="scrollTable">
+		  <table class="normal">
+		  <thead>
+		    <tr>
+			  <th>Date</th>
+			  <th>Alert Type</th>
+			</tr>
+		  </thead>
+		  <tbody>
+		    <tr>
+			  <td>8. 10. 2003, 0:45</td>
+			  <td>Go to sleep, Machal.</td>
+			</tr>
+		    <tr class="trBgColorTwo">
+			  <td>8. 10. 2003, 0:47</td>
+			  <td>Hey man, aren't you tired?</td>
+			</tr>
+		  </tbody>					
+		  </table>
+		  </div>
+		</div>   
+	  </div></div></div></div>
+      <!-- <= siroky box s rolovaci tabulkou - Open Projects-->	  
+	  
+      
+	  <div><!-- rodicovsky box pro spodni dva polovicni boxiky => -->
+	  
+	  
+      <div style="float: left; width: 320px;">
+	  <!-- polovicni box s rolovaci tabulkou - Recent Project Files =>-->       
+	  <div class="borderNoCornerA marginBottom1em"><div class="borderNoCornerB"><div class="borderNoCornerC"><div class="borderNoCornerD">
+	    <div class="boxB boxTypeOne bgColorTwo">
+		  <div class="boxHead">
+		    <h2><img src="img/content/here_arrow_white.gif" alt="" /> Recent Project Files</h2>
+		  </div>
+		  <div class="scrollTable">
+		  <table class="normal">
+		  <thead>
+		    <tr>
+			  <th>Project Name</th>
+			  <th>File Name</th>
+			  <th>Last Update</th>			  
+			</tr>
+		  </thead>
+		  <tbody>
+		    <tr>
+			  <td>Project One</td>
+			  <td><a href="#download">sleep.mpeg</a></td>
+			  <td>8. 10. 2003, 1:07</td>
+			</tr>
+		    <tr class="trBgColorTwo">
+			  <td>Project One</td>
+			  <td><a href="#download">sleep.xls</a></td>
+			  <td>8. 10. 2003, 1:08</td>
+			</tr>
+		    <tr>
+			  <td>Project One</td>
+			  <td><a href="#download">sleep.xls</a></td>
+			  <td>8. 10. 2003, 1:10</td>
+			</tr>			
+		  </tbody>					
+		  </table>
+		  </div>
+		</div>   
+	  </div></div></div></div>
+      <!-- <= polovicni box s rolovaci tabulkou - Recent Project Files-->	  	  
+	  </div>
+	  
+      <div style="float: right; width: 320px;">
+	  <!-- polovicni box s rolovaci tabulkou - Recent Project Files =>-->       
+	  <div class="borderNoCornerA marginBottom1em"><div class="borderNoCornerB"><div class="borderNoCornerC"><div class="borderNoCornerD">
+	    <div class="boxB boxTypeOne bgColorTwo">
+		  <div class="boxHead">
+		    <h2><img src="img/content/here_arrow_white.gif" alt="" class="alignmiddle"/> Messages</h2>
+		  </div>
+		  <div class="scrollTable">
+		  <table class="normal">
+		    <tr>
+			  <th><img src="img/content/icon_message.gif" alt="" class="alignmiddle" /> 8. 10. 2003, 1:10</th>
+			</tr>
+		    <tr>
+			  <td>Právě jsem se probudil na klávesnici a to mi ještě chybí půl stránky! <a href="#napismachalovi">machal</a></td>
+	    	</tr>
+		    <tr>
+			  <th><img src="img/content/icon_message.gif" alt="" class="alignmiddle" /> 8. 10. 2003, 1:10</th>
+			</tr>
+		    <tr>
+			  <td>Právě jsem se probudil na klávesnici a to mi ještě chybí půl stránky! <a href="#napismachalovi">machal</a></td>
+	    	</tr>
+		    <tr>
+			  <th><img src="img/content/icon_message.gif" alt="" class="alignmiddle" /> 8. 10. 2003, 1:10</th>
+			</tr>
+		    <tr>
+			  <td>Právě jsem se probudil na klávesnici a to mi ještě chybí půl stránky! <a href="#napismachalovi">machal</a></td>
+	    	</tr>			
+		  </tbody>					
+		  </table>
+		  </div>
+		</div>   
+	  </div></div></div></div>
+      <!-- <= polovicni box s rolovaci tabulkou - Recent Project Files-->	  	  
+	  </div>	 
+	   
+	  </div><!-- <= rodicovsky box pro spodni dva polovicni boxiky  -->	  
+	  
+	</div>  <!-- <= contentBox -->	
+
+  </div>  <!-- <= mainBox -->			
+  
+	
+	<!-- sideBox - pravy sloupec s boxikama - vyskytuje se jen na homepage => -->
+	<div id="sideBox">
+	
+      <div style="width: 260px;">
+	  <!-- polovicni box s rolovaci tabulkou - PM News =>-->       
+	  <div class="borderNoCornerA marginBottom1em"><div class="borderNoCornerB"><div class="borderNoCornerC"><div class="borderNoCornerD">
+	    <div class="boxB boxTypeOne bgColorTwo">
+		  <div class="boxHead">
+		    <h2><img src="img/content/here_arrow_white.gif" alt="" class="alignmiddle"/> PM News</h2>
+		  </div>
+		  <div class="scrollTable">
+		  <table class="normal">
+		    <tr>
+			  <th><img src="img/content/icon_message.gif" alt="" class="alignmiddle" /> 8. 10. 2003, 1:10</th>
+			</tr>
+		    <tr>
+			  <td>Právě jsem se probudil na klávesnici a to mi ještě chybí půl stránky! <a href="#napismachalovi">machal</a></td>
+	    	</tr>
+		    <tr>
+			  <th><img src="img/content/icon_message.gif" alt="" class="alignmiddle" /> 8. 10. 2003, 1:10</th>
+			</tr>
+		    <tr>
+			  <td>Právě jsem se probudil na klávesnici a to mi ještě chybí půl stránky! <a href="#napismachalovi">machal</a></td>
+	    	</tr>
+		    <tr>
+			  <th><img src="img/content/icon_message.gif" alt="" class="alignmiddle" /> 8. 10. 2003, 1:10</th>
+			</tr>
+		    <tr>
+			  <td>Právě jsem se probudil na klávesnici a to mi ještě chybí půl stránky! <a href="#napismachalovi">machal</a></td>
+	    	</tr>			
+		  </tbody>					
+		  </table>
+		  </div>
+		</div>   
+	  </div></div></div></div>
+      <!-- <= polovicni box s rolovaci tabulkou -  PM News-->	  	  
+	  </div>		
+	  
+      <div style="width: 260px;">
+	  <!-- polovicni box s rolovaci tabulkou - Discussion Forum =>-->       
+	  <div class="borderNoCornerA marginBottom1em"><div class="borderNoCornerB"><div class="borderNoCornerC"><div class="borderNoCornerD">
+	    <div class="boxB boxTypeOne bgColorTwo">
+		  <div class="boxHead">
+		    <h2><img src="img/content/here_arrow_white.gif" alt="" class="alignmiddle"/>Discussion Forum</h2>
+		  </div>
+		  <div class="scrollTable">
+		  <table class="normal">
+		    <tr>
+			  <th><img src="img/content/icon_message.gif" alt="" class="alignmiddle" /> 8. 10. 2003, 1:10</th>
+			</tr>
+		    <tr>
+			  <td>Právě jsem se probudil na klávesnici a to mi ještě chybí půl stránky! <a href="#napismachalovi">machal</a></td>
+	    	</tr>
+		    <tr>
+			  <th><img src="img/content/icon_message.gif" alt="" class="alignmiddle" /> 8. 10. 2003, 1:10</th>
+			</tr>
+		    <tr>
+			  <td>Právě jsem se probudil na klávesnici a to mi ještě chybí půl stránky! <a href="#napismachalovi">machal</a></td>
+	    	</tr>
+		    <tr>
+			  <th><img src="img/content/icon_message.gif" alt="" class="alignmiddle" /> 8. 10. 2003, 1:10</th>
+			</tr>
+		    <tr>
+			  <td>Právě jsem se probudil na klávesnici a to mi ještě chybí půl stránky! <a href="#napismachalovi">machal</a></td>
+	    	</tr>			
+		  </tbody>					
+		  </table>
+		  </div>
+		</div>   
+	  </div></div></div></div>
+      <!-- <= polovicni box s rolovaci tabulkou -  Discussion Forum-->	  	  
+	  </div>			  
+	
+	</div>	<!-- <= sideBox - pravy sloupec s boxikama - vyskytuje se jen na homepage -->	
+	
+
+
+</div>
+<!-- <= mainContainer - hlavni ramovaci box obsahu, zuzeny pro homepage  -->
+
+<div id="foot">
+  <div id="partOne">
+    &nbsp;
+  </div>
+  <div id="partTwo">
+    copyright &copy; 2003 ILIKETHIS!
+  </div>  
+  
+</div>
+
+</div>
+</body>
+
+</html>

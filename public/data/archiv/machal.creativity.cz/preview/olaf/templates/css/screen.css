@@ -1,0 +1,352 @@
+* {
+xxxborder: 1px solid red !important;
+}
+
+body {
+color: #fff;
+background: #333;
+margin: 0px;
+padding: 0px;
+}
+
+body, table td,  table th, input, textarea, option {
+font: 11px/15px Verdana, Arial, Helvetica, lucida, sans-serif;
+}
+
+a:link, a:visited, a:hover, a:active {
+color: #fff;
+background: transparent;
+}
+
+img, form {
+border: 0px;
+margin: 0px;
+padding: 0px;
+}
+
+body {
+text-align: center;
+padding: 50px 0px;
+}
+
+#container {
+width: 760px;
+height: 460px;
+position: absolute;
+top: 50%;
+left: 50%;
+margin: -230px 0px 0px -380px;
+text-align: left;
+}
+
+#tagline {
+padding: 6px 22px;
+}
+
+#flash {
+width: 760px;
+height: 312px;
+padding: 0px;
+margin: 0px;
+}
+
+#content {
+width: 760px;
+height: 308px;
+padding: 0px;
+margin: 0px;
+background: #fff url("content_bg.gif") repeat-x;
+color: #333;
+clear: both;
+}
+
+#content .sectionimage {
+float: left;
+width: 262px;
+}
+
+#content .sectionhead {
+float: left;
+width: 115px;
+}
+
+#content .sectiontext {
+float: right;
+width: 381px;
+background: #b90000;
+color: #ccc;
+}
+
+#content .sectionhead h1 {
+margin: 20px 0px 0px 0px;
+padding: 0px;
+font-size: 11px;
+xxxbackground: #333;
+color: #fff;
+height: 44px;
+}
+
+#content .sectionhead h1 .inside {
+padding: 5px 0px 0px 15px;
+}
+
+#content .sectionhead p {
+margin: 15px;
+padding: 0px;
+}
+
+#content .sectionhead p.first {
+margin-top: 6px;
+margin-bottom: 0px;
+}
+
+
+#content .sectionhead p em {
+font-style: normal;
+}
+
+#content .sectionhead a {
+background: transparent;
+color: #B90000;
+}
+
+#content .sectiontext .pagecontent {
+margin-top: 20px;
+height: 288px;
+overflow: auto;
+}
+
+#content .sectiontext .pagecontent table td,  #content .sectiontext .pagecontent table th  {
+background: transparent;
+color: #ccc;
+}
+
+#content .sectiontext .pagecontent a {
+background: transparent;
+color: #fff;
+}
+
+#content .sectiontext .pagecontent strong {
+font-weight: normal;
+color: #fff;
+ } 
+
+#content .sectiontext .pagecontent .menu {
+height: 44px;
+text-align: right;
+padding: 20px 15px 9px 15px;
+border-bottom: 1px solid #B90000;
+}
+
+#content .sectiontext .pagecontent p {
+margin: 0px;
+padding: 15px;
+}
+
+#content .sectiontext .pagecontent .shortitem {
+clear: both;
+background: #A40000;
+color: inherit;
+padding: 5px 15px 9px 15px;
+border-bottom: 1px solid #B90000;
+}
+
+#content .sectiontext .pagecontent .shortitem img.openclose {
+float: right;
+margin-top: 6px;
+}
+
+#content .sectiontext .pagecontent h2 {
+background: inherit;
+color: #fff;
+padding: 0px;
+margin: 0px;
+font-size: 1em;
+line-height: 15px;
+}
+
+#content .sectiontext .pagecontent h3 {
+background: inherit;
+color: #fff;
+padding: 0px;
+margin: 0px;
+font-size: 1em;
+}
+
+#content .sectiontext .pagecontent p.paddingtop0px {
+padding-top: 0px;
+}
+
+#content .sectiontext .pagecontent .shortitem p {
+padding: 0px;
+margin: 0px;
+line-height: 15px;
+}
+
+#content .sectiontext .pagecontent .shortitem h2 a {
+color: #fff;
+background: inherit;
+}
+
+#content .sectiontext .pagecontent .longitem, #content .sectiontext .pagecontent .longitem p  {
+margin: 0px;
+padding: 0px;
+}
+
+#content .sectiontext .pagecontent .longitem p  {
+padding: 15px 0px 19px 0px;
+}
+
+#content .sectiontext .pagecontent .longitem p.paddingtop5px {
+xxxpadding: 5px 0px;
+}
+
+#content .sectiontext .pagecontent .longitem {
+background: #920000;
+border-bottom: 1px solid #B90000;
+padding: 5px 15px;
+display: none;
+}
+
+#content .sectiontext .pagecontent .menu, #content .sectiontext .pagecontent .menu a {
+background: #333;
+color: #ccc;
+}
+
+#menu {
+clear: both;
+background: #ccc url("menu_bg.gif") repeat-x;
+color: #333;
+font-size: 1px;
+line-height: 1px;
+width: 760px;
+}
+
+#menu * {
+xxxborder: 1px solid red !important;
+}
+
+#menu #items {
+width: 670px;
+padding: 0px;
+margin: 0px;
+}
+
+#menu #language {
+align: right;
+padding: 0px;
+margin: 0px;
+margin-left: 50px;
+}
+
+#undermenu {
+background: #ebebeb;
+color: #333;
+height: 25px;
+clear: both;
+width: 760px;
+}
+
+#logos {
+margin: 0px;
+background: #fff;
+text-align: right;
+padding: 10px 15px;
+width: 760px;
+}
+
+#footer {
+margin: 0px;
+padding: 5px 10px;
+clear: both;
+}
+
+#footer, #footer a {
+background: transparent;
+color: #999;
+}
+
+#footer .floatleft50 {
+float: left;
+width: 49%;
+}
+
+#footer .floatright50 {
+float: right;
+text-align: right;
+width: 49%;
+}
+
+label {
+display: block;
+}
+
+input, textarea {
+background: #ccc;
+}
+
+input.m, textarea.m {
+width: 125px;
+}
+
+textarea.m {
+height: 115px;
+}
+
+input.button {
+background: #333;
+color: #fff;
+border-top: 1px solid #666;
+border-left: 1px solid #666;
+border-right: 1px solid #000;
+border-bottom: 1px solid #000;
+}
+
+address {
+font-style: normal;
+padding: 15px;
+}
+
+.clearboth {
+clear: both;
+}
+
+.fontsize1px {
+font-size: 1px;
+}
+
+.floatleft {
+float: left;
+}
+
+.floatright {
+float: right;
+}
+
+.floatleft50 {
+float: left;
+width: 49%;
+}
+
+.floatright50 {
+float: right;
+width: 49%;
+}
+
+.testred {
+border: 1px solid red;
+}
+
+.marginright15px {
+margin-right: 15px;
+}
+
+.aligntop {
+vertical-align: top;
+}
+
+.displayblock, .longitem.displayblock {
+display: block;
+}
+
+

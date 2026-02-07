@@ -1,0 +1,425 @@
+body {
+font-family: Verdana, sans-serif;
+line-height: 1.4em;
+}
+
+#header, #bodyContainer, #footer {
+font-size: small;
+}
+
+h1, h2, h3, h4, h5, h6 {
+font-family: Arial, sans-serif;
+}
+
+/* predefinice */
+
+body {
+margin: 0;
+padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, table {
+padding: 0;
+margin: 1em 0;
+line-height: 1.4em;
+}
+
+a img {
+border: 0;
+} 
+
+hr {
+height: 1px;
+color: #eee;
+margin: 1em 0; 
+}
+
+form {
+margin: 0;
+padding: 0;
+}
+
+/* layout stránky */
+
+#header {
+border-bottom: .5em #ccc solid;
+margin-top: 20px;
+padding: 0 20px;
+}
+
+#navigationMainCategories {
+margin: 0;
+padding: 0;
+text-align: center;
+clear: both;
+}
+
+#navigationMainCategories span a, #navigationMainCategories strong a {
+margin-left: .5em;
+padding: .5em 1em;
+text-align: center;
+}
+
+#navigationMainCategories span, #navigationMainCategories strong, #navigationMainCategories span a, #navigationMainCategories strong a {
+background: #eee;
+color: #000;
+text-decoration: none;
+}
+
+#logotype {
+font-size: 1.2em;
+font-weight: bold;
+float: left;
+border: 1px solid #eee;
+margin: 0;
+padding: 0;
+}
+
+#logotype a {
+width: 150px;
+height: 75px;
+display: block;
+}
+
+#tagline {
+font-size: 1.2em;
+font-weight: bold;
+float: left;
+border: 1px solid #eee;
+margin: 0;
+padding: 0;
+}
+
+#tagline a {
+width: 380px;
+height: 40px;
+display: block;
+}
+
+#topSelfPromo {
+font-size: 1.2em;
+font-weight: bold;
+float: right;
+border: 1px solid #eee;
+margin: 0;
+padding: 0;
+}
+
+#topSelfPromo a {
+width: 150px;
+height: 75px;
+display: block;
+}
+
+/* -- obsah */
+
+#bodyContainer {
+background: transparent url("../img/sideOneContainer-bg.gif") top left repeat-y;
+}
+
+#bodyContainerInside {
+background: transparent url("../img/sideOneContainer-bg.gif") top right repeat-y;
+position: relative;
+width: 100%;
+}
+
+#sideOneContainer, #sideTwoContainer {
+width: 170px;
+background: #eee;
+color: inherit;
+}
+
+#sideOneContainer {
+position: absolute;
+left: 0px;
+top: 0px;
+}
+
+#sideTwoContainer {
+position: absolute;
+top: 0px;
+right: 0px;
+}
+
+.containerInside {
+padding: 20px 10px 20px 20px;
+}
+
+#contentContainer {
+margin: 0 170px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+margin: 0 0 1em 0;
+padding: 0;
+}
+
+ul, ol, dl {
+margin-top: 0;
+margin-bottom: 1em;
+padding-top: 0;
+padding-bottom: 0;
+}
+
+#bodyContainer h1 {
+font-size: 1.5em;
+margin: 0 0 1em 0;
+padding: 0;
+}
+
+#bodyContainer h2 {
+font-size: 1.3em;
+margin: 0 0 1em 0;
+padding: 0;
+}
+
+#bodyContainer h5 {
+font-size: 1.1em;
+margin: 0 0 1em 0;
+padding: 0;
+}
+
+#bodyContainer h6 {
+font-size: 1em;
+margin: 0 0 1em 0;
+padding: 0;
+}
+
+#breadCrumbs {
+vertical-align: middle;
+margin-bottom: 1em;
+}
+
+#breadCrumbs span {
+vertical-align: middle;
+}
+
+#breadCrumbs h1 {
+display: inline;
+vertical-align: middle;
+}
+
+/* -- seznam zbozi */
+
+#listCategories, #listOrder {
+border: 1px solid #ccc;
+}
+
+#listCategories p, #listOrder p {
+margin: 1em;
+}
+
+#listOrder {
+background: #efefef;
+border-top: 1px solid #efefef;
+margin-bottom: 1px;
+margin-bottom: 1em;
+}
+
+.listItem {
+clear: both;
+border-bottom: 1px solid #eee;
+margin-bottom: 1em;
+padding-bottom: 1em;
+}
+
+.listItem .imgListItem {
+float: left;
+}
+
+.listItem .listItemBody {
+margin-left: 80px;
+}
+
+.listItem h3 {
+margin-bottom: 0;
+font-size:  1.2em;
+}
+
+
+/* -- detail zbozi */
+
+.imgProductDetail {
+float: left;
+}
+
+#productDetailText {
+margin-left: 120px;
+}
+
+#productDetailDescription {
+}
+
+table.addToCart  {
+border-top: #ccc solid 1px;
+border-left: #ccc solid 1px;
+border-collapse: collapse;
+border-bottom: #ccc solid 1px;
+border-right: #ccc solid 1px;
+width: 85%;
+}
+
+table.addToCart td, table.addToCart th, table.addToCart caption  {
+padding: .5em;
+text-align: left;
+vertical-align: top;
+font-weight: normal;
+}
+
+table.addToCart caption  {
+background: #eee;
+border-bottom: 0;
+border-top: #ccc solid 1px;
+border-left: #ccc solid 1px;
+border-right: #ccc solid 1px;
+}
+
+table.addToCart tr.borderBottom td, table.addToCart tr.borderBottom th {
+border-bottom: #ccc dotted 1px;
+}
+
+table.addToCart td.alignCenter {
+text-align: center;
+}
+
+/* -- kosik */
+
+table.cart  {
+border-collapse: collapse;
+border-top: #ccc solid 1px;
+border-left: #ccc solid 1px;
+border-bottom: #ccc solid 1px;
+border-right: #ccc solid 1px;
+width: 97%;
+}
+
+table.cart td, table.cart th, table.cart caption  {
+padding: .5em;
+text-align: left;
+vertical-align: top;
+font-weight: normal;
+border-bottom: 1px solid dotted;
+border-left: 1px solid #eee;
+}
+
+table.cart th {
+background: #efefef;
+color: inherit;
+}
+
+table.cart td.alignRight {
+text-align: right;
+}
+
+/* -- paticka */
+
+#footerInfo {
+border-top: .5em #ccc solid;
+font-size: .7em;
+width: 100%;
+}
+
+#footerInfoInside {
+margin: 20px 100px 20px 190px;
+}
+
+#footerInfo h6 {
+font-size: 1em;
+margin-top: 0;
+padding-top: 0;
+}
+
+#footerInfo ul {
+margin-left: 20px;
+padding: 0;
+}
+
+#footerInfo .footerColumn {
+width: 150px;
+margin-right: 20px;
+float: left;
+}
+
+#footer {
+border-top: 1px #ccc solid;
+padding: 20px;
+font-size: .7em;
+}
+
+/* -- maly kosik */
+
+table.smallCart  {
+border-collapse: collapse;
+}
+
+table.smallCart td, table.smallCart th  {
+font-size: .8em;
+padding: .2em;
+text-align: left;
+vertical-align: top;
+font-weight: normal;
+border-bottom: #999 dotted 1px;
+}
+
+/* fomuláøe */
+
+.formRequired {
+font-size: 1.1em;
+color: #004089;
+}
+
+fieldset {
+border: 0px solid #F2F2F2;
+background: #F8F8F8;
+padding: 1em;
+}
+
+table.form {
+width: 100%;
+}
+
+table.form th {
+width: 30%;
+vertical-align: top;
+text-align: right;
+font-weight: normal;
+padding: 5px;
+}
+
+table.form td {
+width: 60%;
+vertical-align: top;
+text-align: left;
+padding: 5px;
+}
+
+
+/* obecné tøídy */
+
+.paging 		{ margin-top: 2em; text-align: center; }
+
+.fontSmall 		{ font-size: .8em; }
+
+.clearBothZero 	{ clear: both; font-size: 1px; line-height: 1px; visibility: hidden; }
+.clearLeftZero 	{ clear: left; font-size: 1px; line-height: 1px; visibility: hidden; }
+.clearRightZero	{ clear: right; font-size: 1px; line-height: 1px; visibility: hidden; }
+
+.alignCenter 	{ text-align: center; }
+.alignLeft 		{ text-align: left; }
+.alignRight 	{ text-align: right; }
+.alignTop 		{ vertical-align: top; }
+.alignBottom 	{ vertical-align: bottom; }
+.alignMiddle 	{ vertical-align: middle; }
+
+/* -- formuláøe */
+
+input.xs, select.xs 		{ width: 2em; }
+input.s, select.s 			{ width: 4em; }
+input.m, select.m 			{ width: 6em; }
+input.l, select.l 			{ width: 9em; }
+input.xl, select.xl 		{ width: 17em; }
+input.xxl, select.xxl 		{ width: 20em; }
+input.xxxl, select.xxxl 	{ width: 25em; }
+input.xxxxl, select.xxxxl 	{ width: 35em; }
+textarea.xl 				{ width: 20em; height: 5em; }
+textarea.xxl 				{ width: 25em; height: 7em; }

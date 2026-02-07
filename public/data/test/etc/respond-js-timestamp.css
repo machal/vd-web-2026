@@ -1,0 +1,5 @@
+@media (min-width: 50px) {
+    body {
+        background: yellow;
+    }
+}

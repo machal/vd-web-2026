@@ -1,0 +1,153 @@
+html body 
+{
+   font-family: Verdana, sans-serif;
+}
+
+/* Nechceme ramecek kolem obrazku */
+a img,
+a:hover img
+{
+  border: 0;
+  background-color: transparent;
+}
+
+/* Odkazy */
+body a,
+html body .post a.permalink,
+body .post div.quote .source a,
+html body #footer p.tiny a
+{
+	color: #5FA316 !important;
+	text-decoration: none !important;
+	padding: 2px 1px !important;
+}
+
+html body a:hover,
+html body .post a.permalink:hover,
+html body .post div.quote .source a:hover,
+html body #footer p.tiny a:hover
+{
+	background: #5FA316 !important;
+	color: #fff !important;
+}
+
+/* === Hlavicka === */
+
+/* Hlavicka - sjednotime velikost pisma */
+body div#description
+{
+  font-size: 12px;
+  display: inline;
+  font-family: Verdana, sans-serif;
+  line-height: 1.3em; 
+  letter-spacing: 0;
+  width: 300px;
+}
+
+/* Vyhledavaci input */
+div#search input[type=text]
+{
+  font-size: 12px;
+  font-family: Verdana, sans-serif;
+  letter-spacing: 0;
+  color: #eee;
+  background-color: #222;
+  border: 1px solid #666;
+  padding: 3px 5px 4px 5px;  
+}
+
+div#search input[type=text]:focus
+{
+  border-color: #eee;
+  color: #eee;
+}
+
+/* Vyhledavaci submit */
+div#search input[type=submit]
+{
+  font-size: 12px;
+  font-family: Verdana, sans-serif;
+  line-height: 1.3em; 
+  letter-spacing: 0;
+  color: #666;
+  background-color: #222;
+  border: 1px solid #666;
+  padding: 2px 5px 3px 5px;
+}
+
+div#search input[type=submit]:hover
+{
+  border-color: #eee;
+  cursor: pointer;
+  color: #eee;
+}
+
+
+/* Nadpisy */
+body .post div.quote span.quote,
+body .post h2 
+{ 
+  font-size: 24px;  
+  font-family: Georgia,serif; 
+  line-height: 1.3em; 
+}
+
+/* Link - sjednotime velikost pisma */
+body .post .link a.link,
+body .post .link .description
+{
+  border: none;
+  display:inline;
+  font-family: Georgia,serif;
+  font-size: 18px; 
+  font-weight:normal;
+  line-height:1.2em;
+  color: #666;
+}
+
+body .post .link a.link:hover
+{
+  color: #fff;
+}
+
+body pre 
+{ 
+  background: #eee; 
+  overflow: auto; 
+  padding: .5em 5px; 
+}
+
+body .post .photo .caption a 
+{ 
+  color: #5FA316; 
+}
+
+
+body .date 
+{
+  font-size:12px;
+}
+
+
+/* Odsazeni pred informaci o komentarich */
+.post div.quote,
+html body .post a.permalink
+{
+  margin-bottom: 10px;
+}
+
+/* Odkaz */
+.post div.quote .source
+{
+  font-size: 12px;
+}
+
+
+/* === Paticka === */
+
+#RSSicon
+{
+  margin-bottom: -10px;
+  width: 28px;
+  height: 28px;
+}

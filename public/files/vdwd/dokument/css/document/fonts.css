@@ -1,0 +1,18 @@
+/*
+Typografie na miru pismu
+========================
+*/
+
+body,
+input,
+select,
+textarea,
+button {
+  font-family: 'PT Sans', sans-serif;
+}
+
+
+h1, h2, h3 {
+  font-family: 'Yeseva One', cursive;
+  line-height: 1.2;
+}

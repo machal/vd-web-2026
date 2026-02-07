@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>3-col layout via CSS</title>
+	
+<style type="text/css">
+/* <![CDATA[ */
+
+	body {
+		margin:0; padding:0;
+		font:11pt/1.5 sans-serif;
+		}
+
+	#header {
+		margin:0; padding:0;
+		background:yellow;
+		}
+
+	#main1 {
+		margin:0; padding:0;
+		background:yellow url("red.gif") top left repeat-y;
+		}
+	#main2 {
+		margin:0; padding:0;
+		background:url("blue.gif") top right repeat-y;
+		}
+	#left {
+		float:left;
+		width:150px;
+		margin:0; padding:0;
+		background:url("corner.gif") top right no-repeat;
+		font-size:80%;
+		}
+	#right {
+		float:right;
+		width:150px;
+		margin:0; padding:0;
+		background:url("corner.gif") top right no-repeat;
+		font-size:80%;
+		}
+	#middle {
+		margin:0 150px;
+		background:yellow;
+		font-size:80%;
+		}
+	.column-in {
+		margin:0; padding:0.5em 1em;
+		}
+	.cleaner {
+		clear:both;
+		height:1px;
+		font-size:1px;
+		border:none;
+		margin:0; padding:0;
+		background:transparent;
+		}
+		
+	h1,h2,h3,h4 { margin: 0.2em 0 }
+	p { margin: 0.5em 0 }
+	a { color:black }
+	
+	.copy { text-align:center; font-size:80% }
+
+/* ]]> */
+</style>
+
+<script type="text/javascript">
+// <![CDATA[
+
+function toggleContent(name,n) {
+	var i,t='',el = document.getElementById(name);
+	if (!el.origCont) el.origCont = el.innerHTML;
+	
+	for (i=0;i<n;i++) t += el.origCont;
+	el.innerHTML = t;
+	}
+
+// ]]>
+</script>
+</head>
+<body>
+
+<div id="header"><div class="column-in">
+	<h1>3-col layout via CSS</h1>
+	<p>
+		No tables, no absolute positioning (no positioning at all), <strong>no hacks(!),</strong>  same height of all columns.
+		The left and right columns have fixed width (150px), the middle one is elastic. Any (zero or non-zero) margin of the body may be used.
+		It works (AFAIK) in any modern browser - I tested it in IE5/Win95, IE6/WinXP, Opera7/WinXP, IE5/Mac, Mozilla, Safari, and Camino.
+		It won't work in old browsers poorly supporting CSS (like NN4, IE4 etc).
+	</p>
+</div></div>
+
+<div id="main1"><div id="main2">
+
+	<div id="left"><div class="column-in">
+		<h4>Left Col</h4>
+		<p id="lccont">
+			This is content of the LEFT column. It can be <a href="javascript:toggleContent('lccont',1)">short</a>, <a href="javascript:toggleContent('lccont',3)">longer</a> or <a href="javascript:toggleContent('lccont',10)">very long</a>.
+		</p>
+	</div></div>
+
+	<div id="right"><div class="column-in">
+		<h4>Right Col</h4>
+		<p id="rccont">
+			This is content of the RIGHT column. It can be <a href="javascript:toggleContent('rccont',1)">short</a>, <a href="javascript:toggleContent('rccont',3)">longer</a> or <a href="javascript:toggleContent('rccont',10)">very long</a>.
+		</p>
+		
+		
+	</div></div>
+
+	<div id="middle"><div class="column-in">
+		<h4>Middle Col</h4>
+		
+		
+		<p id="mccont">
+			This is content of the MIDDLE column. It can be <a href="javascript:toggleContent('mccont',1)">short</a>, <a href="javascript:toggleContent('mccont',10)">longer</a> or <a href="javascript:toggleContent('mccont',40)">very long</a>.
+		</p>
+		
+		<p style="float: left; width: 200px;">float</p>
+		
+		<div style="clear: both;">&nbsp;</div>
+		
+		<p>after clear</p>
+		
+	</div></div>
+
+	<div class="cleaner">&nbsp;</div>
+
+</div></div>
+
+<div id="footer"><div class="column-in">
+		<h4>The footer</h4>
+		<p>
+			Anything follows here...
+		</p>
+</div></div>
+
+<hr />
+<p class="copy">2003-04-02 (c) <a href="http://www.pixy.cz">Petr Stanicek (aka -pixy-)</a> (<a href="mailto:pixy@pixy.cz">pixy@pixy.cz</a>)</p>
+
+<div id="statistiky">
+	<img src="http://www.toplist.cz/count.asp?id=45236&amp;logo=2" alt="TOPlist" width="1" height="1" />
+
+<!-- NAVRCHOLU.cz -->
+<script type="text/javascript">
+<!--
+pxDepth = screen.pixelDepth; if (!(pxDepth>0)) pxDepth = screen.colorDepth; if (!(pxDepth>0)) pxDepth = 0; 
+document.write("<img src=\"http://hit.navrcholu.cz/hit?id=00057521;n=1;screenx=" + screen.width + ";screeny=" + screen.height + ";cdepth=" + pxDepth + ";ref=" + escape(top.document.referrer) + "\" width=\"1\" height=\"1\" alt=\"\" />");
+// -->
+</script>
+<noscript>
+<p><img src="http://hit.navrcholu.cz/hit?id=00057521;n=1" width="1" height="1" alt="" /></p>
+</noscript>
+<!-- NAVRCHOLU.cz - konec -->
+</div>
+
+</body>
+</html>

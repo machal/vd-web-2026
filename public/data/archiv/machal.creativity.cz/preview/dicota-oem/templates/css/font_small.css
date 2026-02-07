@@ -1,0 +1,43 @@
+body, td, th, caption {
+font-size: 11px;
+line-height: 1.5em;
+}
+
+table#header tr#menurow td, table#header tr#menurow td select {
+font-size: 13px;
+}
+
+table#main tr#youarehere td {
+font-size: 13px;
+}
+
+tr.zerorow td {
+font-size: 0.01px;
+padding: 0px;
+}
+
+input, textarea, select,
+table#header tr#menurow td.favoritessecond, table#header tr#menurow th.favoritessecond {
+font-size: 11px;
+}
+
+/*
+
+input, textarea, select, td, th, caption {
+xxxfont-size: 100%;
+}
+
+table#header tr#firstrow td, table#header tr#firstrow th {
+xxxfont-size: 65%;
+}
+
+table#header tr#logorow td strong {
+xxxfont-size: 120%;
+}
+
+table#header tr#logorow td.userboxleft {
+xxxfont-size: 70%;
+}
+
+*/
+

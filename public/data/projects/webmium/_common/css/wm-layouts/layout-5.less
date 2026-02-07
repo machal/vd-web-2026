@@ -1,0 +1,154 @@
+/*  
+Layout 3
+==============================================================================
+
+Struktura HTML
+--------------
+
+<pre>
+.container-fluid
+  .wm-l-mobile-header
+  [data-sw="header"]
+  .wm-l-header
+  .content-container
+    .row-fluid
+      #sw-main-navigation
+      .content
+        .wm-p-header-image
+  .wm-l-footer
+</pre>
+
+*/
+
+	// --- 1) Layout ---
+
+.layout-3-mixin() {
+	.header-nav {
+		width:300px;
+		margin:0 auto;
+		background: transparent url(../images/menu.png);
+	}
+	.container-fluid {margin:0 auto;}
+	#sw-logo {
+	height: 170px;
+		h1 {
+			color:white;
+		}
+	}
+	
+
+  // Navigace
+  .bg-container {
+	  background:transparent url(../images/body-bg.png) fixed center -100px;
+		height:auto;
+		min-height:100%;
+	}
+	// pozadie sivy kruh hack
+	body, html {
+	  min-height: 100%;
+	  height:100%;
+	}
+	
+  .nav-container {
+    clear: both;
+
+    .span-first;
+	width:300px;
+//	float: right;
+//	margin-right:300px;
+	position:relative;
+//	left:0;
+margin:0 auto;
+	margin-bottom: 50px;
+	background: transparent url(../images/menu.png)
+  }
+
+	// Navigace je vertikalni
+	#sw-main-navigation {
+		padding-bottom: 0px !important;
+		position: relative;
+			&:after {
+				position:absolute;
+				content:" "; 
+				display:block;
+				width:300px;
+				height:30px;
+				background: transparent url(../images/menu-bottom.png);
+				top:auto;
+				}				
+		.nav-vertical;
+
+		> ul {
+			text-align: center;
+			ul {
+			text-align:left;
+			width:170px;
+			opacity:0;
+			}
+
+		>li.sw-navmenu-li-shown>.nav-item>ul {opacity:1;transition: opacity 0.3s ease;}
+		ul>li.sw-navmenu-li-shown>.nav-item>ul {opacity:1;transition: opacity 0.3s ease;}
+		}
+	}
+
+  // Obsah
+  .content {
+  padding:50px 30px 30px 30px;
+  }
+  .content-container {
+    padding-left: 0;
+    padding-right: 0;
+	background: transparent;
+	clear: both;
+  }
+  .content {
+	border-radius:10px;	
+	width: 70%;
+	margin: 0 auto;
+	background-color:#FFF;
+  }
+  .wider {
+	width: 85%;
+  }
+  .widest {
+	width: auto;
+  }
+}
+
+@media (min-width: @wmLargeDisplayStart) { .layout-3-mixin; }
+.old-ie & { .layout-3-mixin;
+			#sw-main-navigation {
+				top:auto !important;
+				}
+		}
+
+	// --- 2) .container nema pozadi, sloupec s obsahem ano ---
+
+.content-container {
+  background: #fff;
+  clear: both;
+}
+
+	// Stiny nahore a dole
+@media (min-width: @wmLargeDisplayStart) {
+  .content {
+    position: relative;
+
+    &:before, &:after {
+      position: absolute;
+      content: '';
+      z-index: -1;
+      left: 2.5%;
+      top: 0;
+      width: 95%;
+      height: 40px;
+      .border-radius(30%);
+      .box-shadow(0 0 20px rgba(0,0,0,.3));
+    }
+
+    &:after {
+      top: auto;
+      bottom: 0;
+    }
+  }
+}

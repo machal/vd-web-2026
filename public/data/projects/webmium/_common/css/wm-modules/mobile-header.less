@@ -1,0 +1,50 @@
+/* 
+Modul Mobilní hlavička
+==============================================================================
+
+Lišta co se na malých displejích objevuje nahoře a obsahuje tlačítko na otevírání
+navigace. Na desktopu se nezobrazuje vůbec.
+
+Třída `.wm-l-mobile-header `. 
+
+TODO
+----
+
+- zjednodušit HTML: Bootstrap markup tady už nepotřebujeme
+
+Ukázka
+------
+
+```
+<div class="wm-l-mobile-header row-fluid">
+    <div class="span12">
+        <div class="sw-nav-toggle">
+            <a class="btn btn-inverse" href="#sw-main-navigation"><span class="symbol">≡</span> Menu</a>
+        </div>
+    </div>
+</div>
+```
+*/
+
+// TODO barvy do promennych pro navigaci
+.wm-l-mobile-header {
+	background: #222;
+	margin: 0 -1*@gridGutterWidth/2 @baseLineHeight/2;
+	padding: @gridGutterWidth/2 @gridGutterWidth;
+  .clearfix();
+
+	// Symbol pro mobilni navigaci
+	.sw-nav-toggle .symbol {
+		font-size: @baseFontSize * 1.2;
+	}
+	
+	// Kvuli zapornemu marginu nesmime mit nikde width: 100%
+	&,
+	.span12 {
+		width: auto;
+	}
+
+	// V IE8- a na velkych displejich mobilni navigaci nezobrazujeme
+	@media (min-width: @wmLargeDisplayStart) { display: none; }
+	.old-ie & { display: none; }
+}

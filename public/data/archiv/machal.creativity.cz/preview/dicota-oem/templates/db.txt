@@ -1,0 +1,64 @@
+== Databaze ==
+==============
+
+(nebo spise polozky, ktere by tam mely byt z meho pohledu, dalsi urcite pridas)
+
+== product ==
+id
+Art.Nr.			evidencni cislo
+Category		zarazeni do kategorie z jejich katalogu
+Material		zarezeni do materialove skupiny
+Customers		odberatele, kteri odebiraji toho zbozi (je jich vice)
+Pridal / Pobocka / Kdy
+Nazev produktu
+Comment
+Buy Price		nakupni cena
+Subsidiary Price	(update 23.4.2003) pobockova cena
+Minimal Price		(update 23.4.2003) minimalni pobockova cena
+Partner Price		(update 23.4.2003) cena pro partnery
+Sell prices		tabulka prodejnich cen (kazda pobocka ma svoji)
+Downloads		soubory ke stazeni k produktu
+Transactions		obchody k danemu produktu
+
+== transaction ==	obchod
+id
+Pridal / Pobocka / Kdy
+Product			ke kteremu se vaze
+Transaction Date	kdy proveden
+Customer		s kym uzavren
+Price			cena za kus
+Comment			komentar
+
+== downloads ==		soubory ke stazeni k produktu
+id 
+Pridal / Pobocka / Kdy	
+Product			ke kteremu se vazou
+Name			jmeno souboru upravitelne
+File Name		jmeno souboru natazene z disku
+File Type		typ souboru
+File Size		velikost
+Is Image		jestli je JPG, GIF, PNG, vyrobit nahled na 150px a zobrazit v karte produktu
+
+== user ==		uzivatel
+id
+Login
+Password
+Name
+Company			pobocka, kam patri
+E-Mail
+Phone
+Access rights		prirazene uzivatelske prava
+
+== access rights ==
+zmena nakupni ceny u produktu
+zmeny v katalogu
+administrace uzivatelu
+
+== company ==		pobocka
+id
+Name
+City
+Country
+Timezone		(update 23.4.2003 - rusi se) pro evidenci rozdilnych casu
+Users			prirazeni uzivatele
+

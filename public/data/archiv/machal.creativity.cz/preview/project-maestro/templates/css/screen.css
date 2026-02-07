@@ -1,0 +1,644 @@
+/*
+ProjectMaestro screen
+7.9.2003
+*/
+
+xxxbody * {
+border: 1px solid red;
+}
+
+body {
+margin: 0;
+padding: 0;
+background: #E5E8ED;
+color: #000;
+}
+
+body, td, th, input, select, option, textarea {
+font: x-small/1.4em  Verdana, sans-serif;
+font/* */:/**/small/1.4em Verdana, sans-serif;
+font: /**/small/1.4em Verdana, sans-serif;
+}
+
+body {
+font-size: 0.7em;
+}
+
+td, th, input, select, option, textarea {
+font-size: 1em;
+}
+
+a, a:link, a:visited, a:hover, a:active {
+color: #F26522;
+background: inherit;
+}
+
+a:hover, a:active {
+color: #f93;
+}
+
+a img {
+border: 0;
+}
+
+form {
+margin: 0;
+padding: 0;
+}
+
+code {
+font-size: 1em;
+}
+
+hr {
+height: 1px;
+color: #ccc;
+margin: 0.5em 0;
+padding: 0;
+}
+
+
+/*
+layout
+*/
+
+#bodyContainer {
+width: 1000px;
+border-right: 1px solid #DDE3E8;
+}
+
+#headTop p, #headBottom p {
+margin: 0;
+padding: 0;
+}
+
+#headTop {
+background: #FDFEFE url("../img/head/top_bg.gif") bottom left no-repeat;
+color: #000;
+padding: 15px 0;
+}
+
+#headTop #headLogo {
+background: transparent url("../img/head/head_dot_1a.gif") center left no-repeat;
+color: #000;
+width: 550px;
+float: left;
+}
+
+#headTop #headLogo img {
+margin-left: 25px;
+vertical-align: middle;
+}
+
+#headTop #headDate {
+background: transparent url("../img/head/head_dot_1b.gif") center right no-repeat;
+color: #000;
+text-align: right;
+float: left;
+padding-right:  30px;
+width: 160px;
+width/* */:/**/130px;
+width: /**/130px;
+}
+
+#headTop #headLogged {
+background: transparent url("../img/head/head_dot_1c.gif") center right no-repeat;
+color: #000;
+width: 270px;
+float: right;
+padding-top: 15px;
+padding-top/* */:/**/0;
+padding-top: /**/0;
+}
+
+#headTop #headLogged span#headLogoff {
+display: block;
+float: left;
+xxxwidth: 8em;
+background: transparent url("../img/buttons/bg_br_one.gif") bottom right no-repeat;
+vertical-align: middle;
+margin-top: -7px;
+}
+
+#headTop #headLogged span#headLogoff input {
+border: 0px;
+padding: 3px 5px 3px 15px;
+background: transparent url("../img/buttons/logoff_bg.gif") top left no-repeat;
+vertical-align: middle;
+color: #666;
+}
+
+#headTop #headLogged span#headUser {
+vertical-align: middle;
+display: block;
+width: 13em;
+float: left;
+}
+
+#headBottom  {
+border-bottom: 1px solid #D7DDE3;
+background: #EFF1F4 url("../img/head/head_dot_2a.gif") center left no-repeat;
+padding: 3px 3px 3px 20px;
+}
+
+#headBottom #headMenu  {
+float: left;
+width: 690px;
+background: #EFF1F4 url("../img/head/head_dot_2b.gif") center right no-repeat;
+}
+
+#headBottom #headMenu .borderContainer {
+float: left;
+display: block;
+padding: 0 1px 1px 0;
+background: #748F94 url("../img/buttons/bg_br_two.gif") bottom right no-repeat;
+margin-left: 2px;
+}
+
+#headBottom #headMenu a:link, #headBottom #headMenu a:hover, #headBottom #headMenu a:visited, #headBottom #headMenu a:active {
+display: block;
+padding: 4px 5px 4px 29px;
+color: #8E8E8E;
+background: transparent;
+text-decoration: none;
+}
+
+#headBottom #headMenu a:hover {
+color: #000;
+background: transparent;
+}
+
+#headBottom #headMenu a#headMenuMyDesktop:link, #headBottom #headMenu a#headMenuMyDesktop:hover, #headBottom #headMenu a#headMenuMyDesktop:visited, #headBottom #headMenu a#headMenuMyDesktop:active {
+background: transparent url("../img/head/menu/my_desktop.gif") no-repeat;
+}
+
+#headBottom #headMenu a#headMenuAgenda:link, #headBottom #headMenu a#headMenuAgenda:hover, #headBottom #headMenu a#headMenuAgenda:visited, #headBottom #headMenu a#headMenuAgenda:active {
+background: transparent url("../img/head/menu/agenda.gif") no-repeat;
+}
+
+#headBottom #headMenu a#headMenuProjects:link, #headBottom #headMenu a#headMenuProjects:hover, #headBottom #headMenu a#headMenuProjects:visited, #headBottom #headMenu a#headMenuProjects:active {
+background: transparent url("../img/head/menu/projects.gif") no-repeat;
+}
+
+#headBottom #headMenu a#headMenuMyTeam:link, #headBottom #headMenu a#headMenuMyTeam:hover, #headBottom #headMenu a#headMenuMyTeam:visited, #headBottom #headMenu a#headMenuMyTeam:active {
+background: transparent url("../img/head/menu/my_team.gif") no-repeat;
+}
+
+#headBottom #headMenu a#headMenuResources:link, #headBottom #headMenu a#headMenuResources:hover, #headBottom #headMenu a#headMenuResources:visited, #headBottom #headMenu a#headMenuResources:active {
+background: transparent url("../img/head/menu/resources.gif") no-repeat;
+}
+
+#headBottom #headMenu a#headMenuReports:link, #headBottom #headMenu a#headMenuReports:hover, #headBottom #headMenu a#headMenuReports:visited, #headBottom #headMenu a#headMenuReports:active {
+background: transparent url("../img/head/menu/reports.gif") no-repeat;
+}
+
+#headBottom #headMenu a#headMenuAdmin:link, #headBottom #headMenu a#headMenuAdmin:hover, #headBottom #headMenu a#headMenuAdmin:visited, #headBottom #headMenu a#headMenuAdmin:active {
+background: transparent url("../img/head/menu/admin.gif") no-repeat;
+}
+
+#headBottom #headMenu a#headMenuHelp:link, #headBottom #headMenu a#headMenuHelp:hover, #headBottom #headMenu a#headMenuHelp:visited, #headBottom #headMenu a#headMenuHelp:active {
+background: transparent url("../img/head/menu/help.gif") no-repeat;
+}
+
+#headBottom #headMenu a#headMenuMyTeam:link, #headBottom #headMenu a#headMenuMyTeam:hover, #headBottom #headMenu a#headMenuMyTeam:visited, #headBottom #headMenu a#headMenuMyTeam:active {
+background: transparent url("../img/head/menu/my_team.gif") no-repeat;
+}
+
+#headBottom #headMenu a#headMenuMyDesktop:hover, 
+#headBottom #headMenu a#headMenuAgenda:hover, 
+#headBottom #headMenu a#headMenuProjects:hover, 
+#headBottom #headMenu a#headMenuMyTeam:hover, 
+#headBottom #headMenu a#headMenuResources:hover, 
+#headBottom #headMenu a#headMenuReports:hover, 
+#headBottom #headMenu a#headMenuAdmin:hover,
+#headBottom #headMenu a#headMenuHelp:hover,
+#headBottom #headMenu a#headMenuMyTeam:hover {
+background-position: 0 -50px;
+}
+
+#headBottom #headJump {
+background: transparent url("../img/head/head_dot_1c.gif") center right no-repeat;
+color: #000;
+width: 270px;
+float: right;
+padding-top: 7px;
+}
+
+#headBottom #headJump span#headJumpSelect {
+vertical-align: middle;
+display: block;
+}
+
+#headBottom #headJump span#headJumpSelect select {
+width: 11em;
+}
+
+#headBottom #headJump span#headJumpText {
+vertical-align: middle;
+display: block;
+width: 9em;
+float: left;
+}
+
+/*
+-- footer
+*/
+
+#foot {
+background: #E5E8ED;
+padding: 10px 0;
+clear: both;
+}
+
+#foot #partOne  {
+float: left;
+width: 710px;
+background: transparent url("../img/head/head_dot_2b.gif") center right no-repeat;
+height: 2em;
+}
+
+#foot #partTwo {
+background: transparent url("../img/head/head_dot_1c.gif") center right no-repeat;
+color: #333;
+width: 270px;
+float: right;
+height: 2em;
+}
+
+
+
+/*
+-- samotny obsah stranky
+*/
+
+#mainContainer {
+background: #fff;
+color: #333;
+}
+
+#mainContainer #mainBox {
+margin-left: 9px;
+border-left: 1px solid #D7DDE3;
+margin-right: 5px;
+border-right: 1px solid #D7DDE3;
+xxxborder-bottom: 1px solid red;
+}
+
+#mainContainer.homePage #mainBox {
+width: 700px;
+margin-right: 0;
+}
+
+#mainContainer #headBox {
+padding: 5px 10px 5px 20px;
+border-bottom: 1px solid #D7DDE3;
+}
+
+#mainContainer #headBox h1 {
+margin: 0;
+font-size: 1.2em;
+color: #000;
+background: transparent;
+letter-spacing: 0.3em;
+float: left;
+width: 400px;
+}
+
+#mainContainer #headBox h1 img {
+vertical-align: middle;
+}
+
+#mainContainer #headBox #submitInitiative {
+margin: 0;
+padding: 0;
+float: right;
+text-align: right;
+padding-right: 10px;
+width: 220px;
+}
+
+#mainContainer #headBox #submitInitiative * {
+vertical-align: middle;
+}
+
+/*
+-- obsah 
+*/
+
+
+#contentBox {
+padding: 20px 15px;
+}
+
+
+/*
+---- sideBox - pravy sloupec s boxikama - vyskytuje se jen na homepage
+*/
+
+
+#sideBox {
+width: 290px;
+position: absolute;
+left: 709px;
+top: 119px;
+padding: 5em 1em;
+background: #F5F7F9;
+}
+
+
+
+
+/*
+-- tabulky
+*/
+
+table.normal {
+border-collapse: collapse;
+border-top: 1px solid #E7EBEF;
+border-left: 1px solid #E7EBEF;
+width: 100%;
+width/* */:/**/100%;
+width: /**/100%;
+}
+
+table.normal td, table.normal th {
+border-bottom: 1px solid #E7EBEF;
+border-right: 1px solid #E7EBEF;
+background: #fff;
+color: #000;
+padding: 5px;
+font-size: 0.7em;
+font-size/* */:/**/1em;
+font-size: /**/1em;
+}
+
+table.normal th {
+background: #E5E8ED;
+border-right: 1px solid #fff;
+color: #000;
+text-align: left;
+font-weight: bold;
+}
+
+table.normal tr.trBgColorTwo td, table.normal tr.trBgColorTwo th {
+background: #F5FAFE;
+color: #000;
+}
+
+
+
+
+
+/*
+---- okraje boxu  (bezrohove)
+*/
+
+.borderNoCornerA {
+background: #595959 url("../img/content/border_no_corner_white_dot.gif") no-repeat top left;
+}
+
+.borderNoCornerB {
+background: transparent url("../img/content/border_no_corner_white_dot.gif") no-repeat bottom right;
+}
+
+.borderNoCornerC {
+background: transparent url("../img/content/border_no_corner_white_dot.gif") no-repeat top right;
+}
+
+.borderNoCornerD {
+background: transparent url("../img/content/border_no_corner_white_dot.gif") no-repeat bottom left;
+padding: 1px;
+}
+
+
+/*
+---- typ boxu (velikost, odsazeni etc.)
+*/
+
+.boxA {
+}
+
+.boxA h2 { 
+margin: 0px;
+padding: 0px;
+font-size: 1.2em;
+float: left;
+width: 40%;
+}
+
+.boxA h2 * {
+vertical-align: middle;
+}
+
+.boxA .boxHeadCollapse {
+vertical-align: middle;
+float: right;
+width: 30%;
+text-align: right;
+}
+
+.boxA .boxHeadCollapse * {
+vertical-align: middle;
+}
+
+.boxA .boxHeadCollapse a {
+color: #fff;
+background: inherit;
+font-size: 1.1em;
+text-decoration: none;
+}
+
+.boxA .boxHeadCollapse a:hover {
+text-decoration: underline;
+}
+
+.boxB {
+}
+
+.boxB h2 { 
+margin: 0px;
+padding: 0px;
+font-size: 1.2em;
+}
+
+.boxB h2 * { 
+vertical-align: middle;
+}
+
+.boxB table.normal {
+border-top: 1px solid #CFE9EB;
+border-left: 1px solid #CFE9EB;
+}
+
+.boxB table.normal td, .boxB table.normal th {
+border-bottom: 1px solid #CFE9EB;
+border-right: 1px solid #CFE9EB;
+}
+
+.boxB table.normal th {
+background: #CFE9EB;
+border-right: 1px solid #fff;
+}
+
+.boxB table.normal tr.trBgColorTwo td {
+background: #F0F8F9;
+color: #000;
+}
+
+/*
+------ barva boxu
+*/
+
+.boxTypeOne {
+background: #ccc;
+color: #333;
+padding: 4px 2px;
+}
+
+/*
+---- barva pozadi
+*/
+
+.bgColorOne {
+background: #748F94;
+color: #fff;
+}
+
+.bgColorTwo {
+background: #6FA8AD;
+color: #fff;
+}
+
+
+
+/*
+-------- rolovaci obsah tabulky
+*/
+
+.boxA .scrollTable, .boxB .scrollTable {
+height: 10em;
+overflow: auto;
+padding: 5px 0;
+background: #fff;
+}
+
+
+
+xxx.boxA .scrollTable thead tr {
+position: relative;
+top: expression(this.offsetParent.offsetTop);
+} 
+
+xxx.boxA .scrollTable table {
+width: expression(this.offsetParent.clientWidth);
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
+obecne tridy
+*/
+
+.displaynone {
+display: none;
+}
+
+.clearboth {
+clear: both;
+}
+
+.clearboth1px {
+clear: both;
+line-height: 1px;
+font-size: 1px;
+xxxborder: 1px solid red;
+}
+
+.floatleft {
+float: left;
+}
+
+.floatright {
+float: right;
+}
+
+#contentBox .floatleft50 {
+float: left;
+width: 150px;
+}
+
+#contentBox .floatright50 {
+float: right;
+width: 150px;
+text-align: right;
+}
+
+.paddingBottom0 {
+padding-bottom: 0;
+}
+
+.temporary {
+background: #e3e3e3;
+}
+
+.alignleft {
+text-align: left;
+}
+
+.alignright {
+text-align: right;
+}
+
+.aligncenter {
+text-align: center;
+}
+
+.aligntop {
+vertical-align: top;
+}
+
+.alignbottom {
+vertical-align: bottom;
+}
+
+.alignmiddle {
+vertical-align: middle;
+}
+
+.testred {
+border: 1px solid red;
+}
+
+.colorSecond {
+color: #f60;
+}
+
+.importantBottom, #contentBox p.importantBottom {
+border: 1px dotted #F1F1F1;
+background: #F8F8F8;
+padding: 1em;
+}
+
+.topBox, #contentBox .topBox {
+border: 1px dotted #F1F1F1;
+background: #F8F8F8;
+padding: 1em;
+}
+
+
+
+.marginTopNo {
+margin-top: 0;
+}
+
+.marginBottom1em {
+margin-bottom: 1em;
+}

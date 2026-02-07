@@ -26,6 +26,8 @@ www/
 │   └── utils/              # Pomocné utility (remark/rehype pluginy)
 ├── public/                 # Statické soubory (kopírují se do dist/)
 │   ├── assets/             # CSS, JS, fonty, obrázky
+│   ├── data/               # Trvalé soubory na vzhurudolu.cz/data/… (archiv, legacy)
+│   ├── files/              # Trvalé soubory na vzhurudolu.cz/files/…
 │   ├── favicon/            # Ikony a PWA manifest
 │   ├── .htaccess           # Apache konfigurace
 │   ├── robots.txt          # Pravidla pro crawler
@@ -77,6 +79,12 @@ npm run preview
 | [astro.config.mjs](astro.config.mjs) | Hlavní konfigurace Astro (Vite, markdown, pluginy) |
 | [public/.htaccess](public/.htaccess) | Apache: redirecty, CORS, bezpečnost |
 | [src/content/config.ts](src/content/config.ts) | Definice content collections |
+
+## Složky public/data a public/files
+
+Trvalé soubory, které mají být dostupné na **vzhurudolu.cz/data/…** resp. **vzhurudolu.cz/files/…**, patří do `public/data/` a `public/files/`. Jsou verzované v repozitáři a při buildu se spolu s celým obsahem `public/` zkopírují do `dist/`. Žádná další konfigurace ani skripty nejsou potřeba.
+
+V `.htaccess` jsou nastaveny legacy redirecty (např. `/archiv/` → `/data/archiv/`, `/30/` → `/data/30/`) – cílové cesty odpovídají podadresářům v `public/data/`. Složka `/data/` je v `robots.txt` zakázaná pro indexaci.
 
 ## Obsah webu
 

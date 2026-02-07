@@ -1,0 +1,159 @@
+// Formuláře
+// =========
+
+// Využíváme Bootstrap forms.less s vlastními úpravami viditelnými v tomto souboru:
+
+
+// Legend má vlastní velikost písma a z ní odvozené vlastnosti
+
+legend {
+  @vc-font-size-legend: @font-size-base * 1.125;
+  font-size: @vc-font-size-legend;
+  padding: @vc-font-size-legend 0 @vc-font-size-legend/3;
+  margin-bottom: @line-height-computed / 3;
+}
+
+
+// Label tučně
+
+.control-label { font-weight: 500; }
+
+// Formulářové políčko chceme inline-block,
+// aby se vedle vešla ikona nápovědy:
+
+.form-control { display: inline-block; }
+
+// Ani pokud obsahuje validační ikonu, nezvětšujeme padding zprava.
+// Položky formulářů totiž zmenšujeme, viz .form-control-m atd.
+
+.has-feedback .form-control { padding-right: @padding-base-horizontal; }
+
+// Řádek formuláře má vždy clearfix.
+// Kvůli např. řádku .vc-dropdown-container-buttons v Login komponentě.
+
+.form-group { .vc-clearfix; }
+
+// Text pro nápovědu chceme menším písmem:
+
+.help-block { font-size: @vc-font-size-smaller; }
+
+// Text pro nápovědu v poslední položce formuláře nemá odsazení zezdole:
+
+.form-group:last-child .help-block { margin-bottom: 0; }
+
+
+// Obarvení textu pokud je stav
+
+.has-success {
+  .form-control {
+    color: @state-success-text;
+    background-color: @state-success-bg;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px lighten(@state-success-text, 10%);
+  }
+}
+
+.has-warning {
+  .form-control {
+    color: @state-warning-text;
+    background-color: @state-warning-bg;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px lighten(@state-warning-text, 10%);
+  }
+}
+
+.has-error {
+  .form-control {
+    color: @state-danger-text;
+    background-color: @state-danger-bg;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px lighten(@state-danger-text, 10%);
+  }
+}
+
+
+// Vlastní layout formulářů
+// -------------------------
+
+// Rozšiřujeme Bootstrapí .form-horizontal, kterému dáváme výchozí design.
+
+// Používáme hlavně uvnitř .vc-list-bordered, navíc ve variantě, která na desktopu
+// zabírá polovinu layoutu. Takže je výchozí layout přizpůsoben tomuto chování.
+// Pro konkrétní formuláře pak přenastavujeme v rámci konkrétních komponent.
+
+// Breakpoint pro zobrazení formulářů vedle sebe:
+
+@horizontal-form-start: 550px;
+
+// Náš řádek formuláře má tuto strukturu:
+// .form-group
+//   .control-label
+//   .control-input
+
+.form-horizontal {
+
+  .control-label {
+    text-align: left;
+    padding-bottom: 4px;
+    .vc-layout-col-base;
+    .vc-layout-col(12);
+  }
+
+  .control-input {
+    .vc-layout-col-base;
+    .vc-layout-col(12);
+  }
+
+  @media only screen and (min-width: @horizontal-form-start) {
+    // Label z Bootstrapu
+    .control-label {
+      .vc-layout-col(6);
+    }
+
+    // Obal inputu (náš vlastní element)
+    .control-input {
+      .vc-layout-col(6);
+      margin-bottom: 0;
+    }
+  }
+
+}
+
+
+// 2 odesílací tlačítka, každé na jedné straně
+// -------------------------------------------
+
+// Např. komponenta Login
+
+.form-group-buttons {
+  padding-left:  (@grid-gutter-width / 2);
+  padding-right:  (@grid-gutter-width / 2);
+}
+
+// 1 odesílací tlačítko
+// --------------------
+
+// Má být veprostřed zarovnané s hranou .control-input.
+// Viz uplnatnění ISIC karty v košíku - cart.php
+
+.form-group-button { text-align: center; }
+
+@media only screen and (min-width: @horizontal-form-start) {
+  .form-group-button {
+    text-align: left;
+    padding-left: 50%;
+  }
+
+  .form-group-button > .vc-btn {
+    margin-left: (@grid-gutter-width / 2);
+  }
+}
+
+
+// Velikosti formulářových políček
+// -------------------------------
+
+.form-control-xl { width: 100%; }
+
+.form-control-l { width: 80%; }
+
+.form-control-m { width: 60%; }
+
+.form-control-s { width: 6em; }

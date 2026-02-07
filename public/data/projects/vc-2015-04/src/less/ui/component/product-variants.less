@@ -1,0 +1,146 @@
+/*
+
+Product Variants
+================
+
+Výběr varianty produktu (např. barva čoček u Freshlook)
+uvnitř .product-options v detailu produktu.
+
+Bez JS je tam <select>, s JS pak rozklikavatelna vrstva s vizualnim
+zobrazenim variant.
+
+*/
+
+// -- Bez JS --
+
+// Je tam <select>, vizualni seznam variant ani odkaz
+// na nej nezobrazujeme.
+
+.no-js {
+  .product-variants-anchor,
+  .product-variants-list {
+    display: none;
+  }
+}
+
+// -- S JS --
+
+// Schovame puvodni <select>, ale ctecky ho dale vidi
+// Seznam variant schovame a nasledne otevirame pomoci JS
+
+.js {
+  .product-variants-select {
+    .sr-only;
+  }
+
+  .product-variants-list {
+    display: none;
+  }
+}
+
+// - Odkaz pro rozkliknuti seznamu variant -
+
+.product-variants-opener {
+  .js & {
+    cursor: pointer;
+  }
+
+  // Nazev varianty nesmi vycuhovat ven a tak pouzivame
+  // text-overflow: ellipsis
+  .text {
+    display: inline-block;
+    max-width: 80%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    vertical-align: top;
+  }
+}
+
+
+.product-variants-anchor.active a {
+  text-decoration: underline;
+}
+
+// - Seznam variant -
+
+.product-variants-list {
+  .clearfix;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  border-top: 1px solid lighten(@gray, 33%);
+  border-bottom: 1px solid lighten(@gray, 33%);
+  height: 100%;
+}
+
+// - Varianta -
+
+.product-variants-variant {
+  margin: 0;
+  border: 5px solid white;
+  text-align: center;
+}
+
+.product-variants-variant .text {
+  display: block;
+  font-size: @font-size-smaller;
+  line-height: 15px;
+  color: @gray-light;
+  padding: 5px 5px 0;
+}
+
+.product-variants-variant {
+  &.active {
+    cursor: pointer;
+    border-color: #e8e8e8;
+  }
+
+  // TODO: nechceme jen hover na iOS kdyz se scrolluje a tak
+  // tady bude lepsi modernizr a .no-touch trida
+  @media only screen and (min-width: 768px) {
+    &:hover,
+    &:focus,
+    &:active {
+      cursor: pointer;
+      border-color: #e8e8e8;
+    }
+  }
+}
+
+.product-variants-variant img {
+  display: inline-block;
+  // Ne bezne .img-responsive, tady chceme aby se
+  // obrazky roztahovaly nad svou prirozenou sirku
+  // dokud nebudeme mit k dispozici vetsi
+  width: 100%;
+  height: auto;
+}
+
+// TODO: osklive reseni s tim rucnim nastavovanim vysky
+// - zkusit flexbox.
+.product-variants-variant {
+  float: left;
+  width: percentage(1/4);
+  height: 135px;
+
+  @media only screen {
+    @media (min-width: 410px) and (max-width: 479px) {
+      height: 150px;
+    }
+
+    @media (min-width: 480px) and (max-width: 767px) {
+      width: percentage(1/5);
+      height: 170px;
+    }
+
+    @media (min-width: 768px) {
+      width: percentage(1/6);
+      height: 140px;
+    }
+
+    @media (min-width: 980px) {
+      height: 170px;
+    }
+  }
+}

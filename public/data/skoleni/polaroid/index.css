@@ -1,0 +1,56 @@
+/* Base + reset */
+
+body {
+  font-family: sans-serif;
+  background: #6d431f url('http://www.vzhurudolu.cz/skoleni/zdroje/wood.png') repeat;
+  color: #fff;
+  padding: 3em;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2em;
+  margin-top: 0;
+}
+
+a img { border: 0; }
+
+/* Seznam s fotkami */
+
+.polaroids {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Jednotliva fotka */
+
+.polaroid {
+  float: left;
+  width: 14em;
+  height: 14em;
+  padding: 1em;
+  margin: 0 2em 2em 0;
+  background-color: white;
+  color: darkgrey;
+}
+
+.polaroid img {
+  max-width: 100%;
+}
+
+.polaroid a {
+  color: darkgrey;
+  text-decoration: none;
+}
+
+.polaroid:hover a,
+.polaroid:focus a,
+.polaroid:active a {
+  color: black;
+}
+
+.polaroid .head {
+  text-align: center;
+  font-size: 1em;
+}

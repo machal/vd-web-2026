@@ -1,0 +1,106 @@
+/*
+
+Foot Debug
+==========
+
+Pomůcky pro vývoj
+
+*/
+
+// kontrola ploch odkazů (co je klikatelné)
+a { outline: 1px solid red !important; }
+
+// zobrazi nad patickou, v jakem breakpointu paticky se nachazime
+
+.vc-foot:before {
+  display: block;
+  width: 100%;
+  margin-top: -50px;
+  margin-bottom: 50px;
+  text-align: center;
+  padding: 10px 0;
+  .vc-clearfix;
+  content: "foot default";
+  background-color: purple;
+
+  @media @vc-foot-breakpoint-A {
+    content: "foot breakpoint A to breakpoint B";
+    background-color: green;
+  }
+
+  @media @vc-foot-breakpoint-B {
+    content: "foot breakpoint B to breakpoint C";
+    background-color: dodgerblue;
+  }
+
+  @media @vc-foot-breakpoint-C {
+    content: "foot beyond breakpoint C";
+    background-color: darkred;
+  }
+}
+
+// debugovací barvy pozadí
+.vc-debug-bg-1 { background-color: darkred; }
+
+.vc-debug-bg-2 { background-color: goldenrod; }
+
+.vc-debug-bg-3 { background-color: deepskyblue; }
+
+.vc-debug-bg-4 { background-color: darkgreen; }
+
+.vc-debug-bg-5 { background-color: darkmagenta; }
+
+.vc-debug-bg-6 { background-color: darkslateblue; }
+
+.vc-debug-bg-7 { background-color: darkmagenta; }
+
+.vc-debug-bg-8 { background-color: darkcyan; }
+
+.vc-debug-bg-9 { background-color: darkslategrey; }
+
+.vc-foot {
+  &-nav {
+    .vc-debug-bg-6;
+
+    .vc-list { .vc-debug-bg-2;
+
+      &:last-of-type {
+        .vc-debug-bg-5;
+      }
+    }
+  }
+
+  &-social {
+    .vc-debug-bg-7;
+
+    .vc-foot-facebook {
+      & > a { .vc-debug-bg-4; }
+    }
+
+    .vc-foot-twitter {
+      & > a { .vc-debug-bg-1; }
+    }
+  }
+
+  &-customer-care,
+  &-social { .vc-debug-bg-3; }
+
+  &-person {
+    .vc-debug-bg-7;
+
+    &-matrjoska { .vc-debug-bg-1; }
+
+  }
+
+  &-contacts { .vc-debug-bg-4; }
+
+  &-row {
+    &-partners {
+      &-item {
+        .vc-debug-bg-7;
+
+        img { .vc-debug-bg-4; }
+      }
+    }
+  }
+}

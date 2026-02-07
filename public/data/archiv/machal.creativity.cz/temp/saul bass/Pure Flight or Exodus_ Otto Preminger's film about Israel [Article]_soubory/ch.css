@@ -1,0 +1,27 @@
+P {
+	FONT-SIZE: 12pt; COLOR: #385050; FONT-FAMILY: Arial, Helvetica
+}
+OL {
+	FONT-SIZE: 10pt; COLOR: #385050; FONT-FAMILY: Arial, Helvetica
+}
+:link {
+	COLOR: navy; TEXT-DECORATION: none
+}
+:active {
+	COLOR: navy; TEXT-DECORATION: none
+}
+:visited {
+	COLOR: navy; TEXT-DECORATION: none
+}
+.artx {
+	FONT-SIZE: 10pt; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.arti {
+	FONT-WEIGHT: bold; FONT-SIZE: 12pt; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.aruti {
+	FONT-WEIGHT: normal; FONT-SIZE: 12pt; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.aut {
+	FONT-SIZE: 10pt; FONT-STYLE: italic; FONT-FAMILY: Arial, Helvetica, sans-serif
+}

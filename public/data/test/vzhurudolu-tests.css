@@ -1,0 +1,115 @@
+body { 
+  margin: 20px; 
+  padding: 0; 
+  background: #fff; 
+  font: 12px/17px 'Helvetica Neue', sans-serif;
+}
+
+.column {
+	float: left;
+	position: relative;
+	width: 340px;
+	margin: 0 20px 20px 0;
+	padding: 20px;
+}
+
+.column.bordered {
+	border: 1px solid #eee;
+	min-height: 660px;  
+}
+
+h1 {
+	font: 17px/20px sans-serif;
+	margin-top: 20px;
+}
+
+a {
+	color: #666;
+}
+
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+}
+
+a img 
+  { border: 0; }
+
+.info {
+	position: absolute;
+	top: 23px;
+	left: 130px;
+	width: 220px;
+	font: 10px/14px sans-serif;
+	color: #999;
+	margin: 0;
+}
+
+/* Width, height and position expected within submit button */ 
+.container { 
+  position: absolute; 
+  top: 20px; 
+  left: 20px; 
+  z-index: 10; 
+  width: 61px; 
+  height: 30px; 
+  background: #33FF00; 
+  margin: 0;
+  padding: 0;
+  opacity: .5; 
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
+}
+
+pre code {
+	display: block;
+	background-color: #eee;
+	color: #666;
+	padding: 10px;
+	font-family: Monaco, Consolas, 'DejaVu Sans Mono', monospace;
+}
+
+pre code strong {
+  font-weight: normal;
+	color: #aaa;
+}
+
+/* --------------------------------------------------------------------------------  
+   Tests list
+*/
+
+.test_list {
+  list-style-type: none;
+  margin: 34px 0;
+  padding: 0;
+}
+
+.test_list li {
+  float: left;
+  width: 220px;
+  height: 70px;
+  padding: 0;
+  margin: 0 10px 10px 0;
+  border: 1px outset #ccc;
+  background-color: #efefef;
+  -webkit-border-radius: 10px; /* Saf3-4, iOS 1-3.2, Android <1.6 */
+  -moz-border-radius: 10px; /* FF1-3.6 */
+  border-radius: 10px; /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
+}
+
+.test_list li a {
+  display: inline-block;
+  width: 200px;
+  height: 50px;
+  padding: 10px;  
+  text-decoration: none;
+}
+
+.test_list li:hover,
+.test_list li:focus,
+.test_list li:active {
+  background-color: #ddd;
+}
+
+

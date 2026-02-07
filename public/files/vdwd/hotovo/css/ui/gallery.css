@@ -1,0 +1,23 @@
+/*
+Fotogalerie
+===========
+*/
+
+
+.gallery-pane,
+.gallery-thumbs {
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.gallery-thumbs {
+  height: calc(2.5em + 5vw);
+}
+
+.gallery-thumbs img {
+  height: 100%;
+}
+

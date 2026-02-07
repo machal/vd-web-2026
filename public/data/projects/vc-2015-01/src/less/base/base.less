@@ -1,0 +1,69 @@
+/*
+
+Typografická základna
+=====================
+
+Resp. úpravy základny Bootstrapu.
+Vše co nelze udělat proměnnými nebo jinak elegantně.
+
+*/
+
+// Zmensovani nadpisu v obshau na malych displejich
+
+@media only screen and (max-width: (@layout-start - 1px)) {
+
+  .content h1,
+  .content .h1 {
+    font-size: (@font-size-h1 / 1.5);
+  }
+
+  .content h2,
+  .content .h2 {
+    font-size: (@font-size-h2 / 1.5);
+  }
+
+  .content h3,
+  .content .h3 {
+    font-size: (@font-size-h3 / 1.5);
+  }
+
+}
+
+// Doplnkove texty u nadpisu vzdy v zakladni velikosti pisma
+// (napr. v detailu produktu)
+// Prestylovavame BS pravidla
+
+h1, h2, h3, h4, h5, h6 {
+  small, .small {
+    font-size: @font-size-base;
+
+    &.pull-right {
+      margin-top: 10px;
+
+      @media only screen and (max-width: (@layout-start - 1px)) {
+        margin-top: 7px;
+      }
+    }
+  }
+}
+
+
+// Prestylovani BS <blockquote>
+// (napr. v detailu produktu)
+
+blockquote {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+
+// Tabulka uvnitr helperu pro responzivni tabulku
+// Prestylovani BS
+
+.table-responsive {
+  .table tr:first-child {
+    td, th {
+      border-top: 0;
+    }
+  }
+}

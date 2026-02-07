@@ -1,0 +1,40 @@
+body, td, th, caption {
+font-size: 13px;
+line-height: 1.5em;
+}
+
+table#header tr#menurow td, table#header tr#menurow td select {
+font-size: 14px;
+}
+
+table#main tr#youarehere td {
+font-size: 14px;
+}
+
+tr.zerorow td {
+font-size: 0.01px;
+}
+
+/*
+input, textarea, select {
+xxxfont-size: 100%;
+}
+
+input, textarea, select, td, th, caption {
+xxxfont-size: 100%;
+}
+
+table#header tr#firstrow td, table#header tr#firstrow th {
+xxxfont-size: 65%;
+}
+
+table#header tr#logorow td strong {
+xxxfont-size: 120%;
+}
+
+table#header tr#logorow td.userboxleft {
+xxxfont-size: 70%;
+}
+
+*/
+

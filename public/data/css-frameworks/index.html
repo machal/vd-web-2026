@@ -1,0 +1,100 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="PSPad editor, www.pspad.com">
+  
+  <link rel="stylesheet" type="text/css" href="yui/build/cssreset/reset.css"> 
+  <link rel="stylesheet" type="text/css" href="yui/build/cssfonts/fonts.css"> 
+  <link rel="stylesheet" type="text/css" href="yui/build/cssbase/base.css">  
+  <link rel="stylesheet" type="text/css" href="index.css">  
+  
+  <title>CSS frameworks typography comparison</title>
+  
+
+  <!-- Google Analytics -->
+  <script type="text/javascript">
+  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+  <script type="text/javascript">
+  try {
+  var pageTracker = _gat._getTracker("UA-67173-13");
+  pageTracker._trackPageview();
+  } catch(err) {}</script>
+  <!-- / Google Analytics -->
+  
+  </head>
+  <body>
+  
+  <div id="container">
+  
+    <div class="framework" id="960">
+      <h2><a href="http://960.gs/">1) 960.gs</a></h2>
+      <iframe src="960-gs/test.html"></iframe>
+    </div><!-- / class="framework"  -->
+    
+    
+    <div class="framework" id="blueprint">
+      <h2><a href="http://www.blueprintcss.org/">2) Blueprint CSS</a></h2>
+      <iframe src="blueprint-css/test.html"></iframe>
+    </div><!-- / class="framework"  -->  
+    
+    <div class="framework" id="bluetrip">
+      <h2><a href="http://bluetrip.org/">3) Bluetrip CSS Framework</a></h2>
+      <iframe src="bluetrip-css-framework/test.html"></iframe>
+    </div><!-- / class="framework"  -->  
+    
+  
+    <div class="framework" id="tripoli">
+      <h2><a href="http://devkick.com/lab/tripoli/">4) Tripoli</a></h2>
+      <iframe src="tripoli/test.html"></iframe>
+    </div><!-- / class="framework"  -->   
+    
+    <div class="framework" id="emastic">
+      <h2><a href="http://code.google.com/p/emastic/">5) Emastic + Formy CSS Frameworks</a></h2>
+      <iframe src="vladimir-carrer/test.html"></iframe>
+    </div><!-- / class="framework"  -->     
+    
+    <div class="framework" id="yaml">
+      <h2><a href="http://www.yaml.de/">6) YAML</a></h2>
+      <iframe src="YAML/test.html"></iframe>
+    </div><!-- / class="framework"  -->  
+    
+    <div class="framework" id="yui">
+      <h2><a href="http://developer.yahoo.com/yui/">7) YUI CSS foundation</a></h2>
+      <iframe src="yui/test.html"></iframe>
+    </div><!-- / class="framework"  -->    
+    
+    <div class="framework" id="baseline">
+      <h2><a href="http://baselinecss.com/">8) Baseline CSS</a></h2>
+      <iframe src="baseline-css/test.html"></iframe>
+    </div><!-- / class="framework"  -->     
+  
+    <div class="framework" id="tk-base">
+      <h2><a href="http://www.ez-css.org/">9) Thierry Koblentz's base.css</a></h2>
+      <iframe src="tk-base/test.html"></iframe>
+    </div><!-- / class="framework"  -->  
+    
+    <div class="framework" id="sen-css">
+      <h2><a href="http://sencss.kilianvalkhof.com/">10) SenCSs</a></h2>
+      <iframe src="sen-css/test.html"></iframe>
+    </div><!-- / class="framework"  -->  
+  
+  </div><!-- / id="container"  -->
+  
+  <script type="text/javascript">
+    function resizeContainer() {
+        var height = document.documentElement.clientHeight;
+        height -= document.getElementById('container').offsetTop;
+        height -= 40; /* whatever you set your body bottom margin/padding to be */
+        document.getElementById('container').style.height = height +"px";
+    };
+    document.getElementById('container').onload = resizeContainer;
+    window.onresize = resizeContainer;
+    window.onload = resizeContainer;
+  </script>
+  
+  </body>
+</html>

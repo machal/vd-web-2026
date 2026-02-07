@@ -1,0 +1,15 @@
+h1 {
+display: none;
+}
+
+div#main {
+width: 100%;
+}
+
+div#main div#leftside {
+display: none;
+}
+
+div#main div#content {
+width: 100%;
+}

@@ -1,0 +1,42 @@
+/*
+UI komponenta Tlacitko s plusem a minuse
+========================================
+
+| .stepper-plus | .stepper-input | .stepper-minus |
+*/
+
+
+
+.stepper {
+  display: flex;
+}
+
+.stepper-input {
+  border-radius: 0;
+  border-left: none;
+  border-right: none;
+}
+
+.stepper-plus,
+.stepper-minus {
+  color: var(--text-color);
+  background: var(--color-grey-e);
+}
+
+.stepper-plus:hover,
+.stepper-minus:hover {
+  border-color: var(--text-color);
+  background: var(--color-grey-d);
+}
+
+.stepper-plus {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-left: none;
+}
+
+.stepper-minus {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right: none;
+}

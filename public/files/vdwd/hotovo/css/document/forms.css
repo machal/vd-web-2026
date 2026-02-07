@@ -1,0 +1,25 @@
+/*
+Zakladni stylovani pro formulare
+================================
+
+TODO jednoradkove prvky a tlacitka nejsou na svisly stred.
+
+*/
+
+
+input,
+select,
+textarea {
+  display: inline-block;
+  padding: var(--input-padding);
+  background: transparent;
+  border: var(--input-border) solid var(--color-text);
+  border-radius: var(--border-radius);
+}
+
+input::-moz-focus-inner,
+select::-moz-focus-inner,
+textarea::-moz-focus-inner {
+  padding: 0;
+}
+

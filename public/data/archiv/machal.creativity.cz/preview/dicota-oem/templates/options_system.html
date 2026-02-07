@@ -1,0 +1,216 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<head>
+	<title>Impello Webpilot</title>
+    
+	<meta http-equiv="content-type" content="text/html; charset=windows-1250">
+	<meta name="author" content="Impello - Internet Development Studio, http://www.impello.cz">
+	
+	<link rel="stylesheet" href="css/common.css" type="text/css">
+	<link rel="stylesheet" href="css/screen.css" type="text/css">	
+ 	<link rel="stylesheet" href="css/font_small.css" type="text/css" title="Small style">
+<!-- 	<link rel="stylesheet" href="css/font_large.css" type="text/css" title="Large style">	 -->
+ 	<link rel="stylesheet" href="css/print.css" type="text/css" media="print" title="Print stylesheet">	
+    
+	<script src="js/script.js" type="text/jscript"></script>
+	
+		
+</head>
+
+<body>
+
+<table class="layout" id="header" width="100%">
+  <col width="10">
+  <col width="10%"><col width="10%"><col width="10%"><col width="10%"><col width="10%"><col width="10%"><col width="10%"><col width="10%"><col width="10%">
+  <col width="10">  
+<tr class="zerorow">
+  <td width="10">&nbsp;</td>
+  <td width="10%">&nbsp;</td><td width="10%">&nbsp;</td><td width="10%">&nbsp;</td><td width="10%">&nbsp;</td><td width="10%">&nbsp;</td>
+  <td width="10%">&nbsp;</td><td width="10%">&nbsp;</td><td width="10%">&nbsp;</td><td width="10%">&nbsp;</td><td width="10%">&nbsp;</td>
+  <td width="10">&nbsp;</td>  
+</tr>
+
+<tr id="logorow">
+  <td>&nbsp;</td>
+  <td colspan="2">
+  	  <strong>
+	    <a href="index.html"><img src="img/logo.gif" alt="Dicota" width="113" height="38" border="0"></a>
+	  </strong>
+  </td>
+  <td colspan="4" class="verticallineleft">
+    <strong>
+	  OEM Catalogue
+	</strong>
+  </td>
+  <td colspan="2" class="userboxleft">
+    <div>
+	  <a href="options.html">Supervisor</a> / Dicota Germany
+	</div>
+  </td>
+  <td colspan="2" class="userboxright">
+    <div>
+	  <a href="log_out.html">Log out</a>
+	</div>
+  </td>
+  <td>&nbsp;</td>  
+</tr>
+
+<form name="naviform">
+<tr id="menurow">
+  <td>&nbsp;</td>
+  <td colspan="6">
+
+  <script type="text/javascript">
+	document.write('<select class="menu" name="navigation" onchange="window.location=document.naviform.navigation.options[document.naviform.navigation.selectedIndex].value; return false;"> ');
+	document.write('<option value="index.html">Desktop/News</option> ');
+	document.write('<option value="catalogue.html">Catalogue</option> ');
+	document.write('<option value="options.html" selected>Options</option> ');
+	document.write('<option value="users.html">*Users</option> ');
+	document.write('</select> ');
+  </script>				
+  <noscript>
+    <a href="index.html">Desktop/News</a>
+    <a href="catalogue.html">Catalogue</a>
+    <a href="options.html"><strong>Options</strong></a>
+    <a href="users.html">Users</a>
+  </noscript>
+  
+  </td>
+  <td colspan="2" class="favorites">
+  <script type="text/javascript">
+	document.write('<select class="l" name="bookmarks" onchange="window.location=document.naviform.bookmarks.options[document.naviform.bookmarks.selectedIndex].value; return false;"> ');
+	document.write('<option value="bookmarks_add.html" selected>+ Add Page to Bookmarks</option> ');
+	document.write('<option value="catalogue_detail.html">Multiplus</option> ');
+	document.write('<option value="options.html">User Options</option> ');
+	document.write('</select> ');
+  </script>				
+  <noscript>
+    <a href="bookmarks_add.html">+ Add Page to Bookmarks</a>
+    <a href="catalogue_detail.html">Multiplus</a>
+    <a href="options.html">Administration</a>				
+  </noscript>
+  </td>
+  <td colspan="2" class="favoritessecond">
+  22/1/2003 19:30 
+  </td>  
+  <td>&nbsp;</td>  
+</tr>
+
+</form>
+
+</table>
+
+
+<table class="layout" id="main" width="100%">
+  <col width="10"> 
+  <col width="10%"> <col width="10%"> <col width="10%">  <col width="10%">  <col width="10%"> <col width="10%">  <col width="10%"> <col width="10%"> <col width="10%">                
+  <col width="10">  
+<tr class="zerorow">
+  <td width="10">&nbsp;</td>
+  <td width="10%">&nbsp;</td><td width="10%">&nbsp;</td><td width="10%">&nbsp;</td><td width="10%">&nbsp;</td><td width="10%">&nbsp;</td> <td width="10%">&nbsp;</td><td width="10%">&nbsp;</td><td width="10%">&nbsp;</td><td width="10%">&nbsp;</td><td width="10%">&nbsp;</td>
+  <td width="10">&nbsp;</td>  
+</tr>
+
+<!-- you are here - cesta aktualni pozice -->
+
+<tr id="youarehere">
+  <td></td>
+  <td colspan="10">
+    <a href="index.html">Desktop</a> <span class="noimportant">&gt;</span> <a href="options.html">Options</a> <span class="noimportant">&gt;</span> Interface
+  </td>
+  <td></td>  
+</tr>
+
+<tr id="contentcontainer">
+  <td>&nbsp;</td>
+
+<!-- tree side => -->  
+  <td colspan="2" class="content dicotaoem treeside">
+
+  <h2>Options tree</h2>
+
+  <table class="sortby">
+    <tr>
+	  <td>&nbsp;</td>
+	</tr>
+  </table>
+
+    <ul>
+	  <li><img src="img/folder_opened.gif" alt="Opened" width="16" height="13">My Options
+	<ul>
+		<li><a href="options.html"><img src="img/file_txt.gif" alt="Options page" width="13" height="16">Basic Data</a></li>
+		<li><a href="options_password.html"><img src="img/file_txt.gif" alt="Options page" width="13" height="16">Password</a>	</li>
+		<li><a href="options_system.html"><img src="img/file_txt.gif" alt="Options page" width="13" height="16">Interface</a>	</li>
+	</ul>
+	</li>
+	</ul>	
+	
+
+
+  </td>
+<!-- <= tree side --> 
+
+
+<!-- content side => -->  
+  <td colspan="8" class="content dicotaoem contentside">
+
+  <h2 class="verticallineleft">Options</h2>
+  
+     <table class="formlayouttoptabs">
+         <col width="5%"><col width="5%"><col width="5%"><col width="5%"><col width="5%"><col width="5%"><col width="5%"><col width="5%">
+         <col width="5%"><col width="5%"><col width="5%"><col width="5%"><col width="5%"><col width="5%"><col width="5%"><col width="5%">
+  	  <tr class="bgone">
+		<td colspan="16">&nbsp;</td>
+	  </tr>		  
+       <tr class="zerorow">
+         <td width="5%">&nbsp;</td><td width="5%">&nbsp;</td><td width="5%">&nbsp;</td><td width="5%">&nbsp;</td><td width="5%">&nbsp;</td> <td width="5%">&nbsp;</td><td width="5%">&nbsp;</td><td width="5%">&nbsp;</td>
+         <td width="5%">&nbsp;</td><td width="5%">&nbsp;</td><td width="5%">&nbsp;</td><td width="5%">&nbsp;</td><td width="5%">&nbsp;</td> <td width="5%">&nbsp;</td><td width="5%">&nbsp;</td><td width="5%">&nbsp;</td>
+      </tr>	  
+	</table>  
+	
+
+	<div class="aligncenter">
+	<table class="formlayout borderright" style="width: 50%">
+	  <caption>
+	    Font size
+	  </caption>
+      <col width="5%"><col width="5%"><col width="5%"><col width="5%">
+      <col width="5%"><col width="5%"><col width="5%"><col width="5%">
+  	  <tr class="bgtwo">
+		<th colspan="4"><span style="font-size: small">Browser default</span></th>
+		<td colspan="4"><input type="button" value="Apply" class="button"></td>
+	  </tr>
+  	  <tr class="bgone">
+		<th colspan="4"><span style="font-size: 11px">Small text</span></th>
+		<td colspan="4"><strong>Active</strong></td>
+	  </tr>
+  	  <tr class="bgtwo">
+		<th colspan="4"><span style="font-size: 13px">Large text</span></th>
+		<td colspan="4"><input type="button" value="Apply" class="button"></td>
+	  </tr>
+       <tr class="zerorow">
+         <td width="5%">&nbsp;</td><td width="5%">&nbsp;</td><td width="5%">&nbsp;</td><td width="5%">&nbsp;</td>
+         <td width="5%">&nbsp;</td><td width="5%">&nbsp;</td><td width="5%">&nbsp;</td><td width="5%">&nbsp;</td>		 
+      </tr>	  
+  </table>  
+  </div>
+
+
+  </td>  
+
+<!-- <= content side -->  
+ 
+  <td>&nbsp;</td>  
+</tr>
+
+</table>
+
+
+
+<!-- ********************************************** -->
+
+
+</body>
+</html>

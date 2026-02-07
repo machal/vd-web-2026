@@ -1,0 +1,415 @@
+@charset "utf-8";
+
+/* ===== Tiskove CSS pro web Prazskeho Jara, Shortcat 2008 ===== */
+
+/* ===== Import Blueprintu a pravidel jej upravujich  ===== */
+
+@import "/stylesheets/blueprint/print.css";
+
+/* Nelibi se nam na Blueprintu */
+
+a:link:after, a:visited:after 
+ { content: ""; }
+ 
+img 
+ { margin: 0; } /* Proc davat vsem obrazkum margin? Blueprinte, uf uf uf */ 
+
+/* === Obecne - mozna presuneme do Blueprint-extra === */
+
+body, 
+table 
+  { font-size: 10pt; line-height: 1.3em; }
+  
+body a, 
+body a:active, 
+body a:focus, 
+body a:visited
+  { color: #000; text-decoration: underline; }  
+
+/* Nezobrazovat */
+
+input[type=submit]
+  { display: none; }  
+
+.clear-zero 
+  { display: none; }  
+  
+/* Naopak zobrazovat */  
+  
+.print-clear-zero
+  { display: block; clear: both; height: 1px; font-size: 1px; }  
+
+.print-only  
+  { display: inline; }
+
+/* === Definice pro web Prazskeho Jara === */
+
+#navigations {
+  margin: 0 0 1.3em 0;
+}
+
+#logo {
+  position: static;
+  float: left;
+}
+
+#web-title {
+  font-size: 1.5em;
+  margin-left: 20px; 
+  float: left;
+  margin-top: 40px;
+}
+
+#content {
+  padding: 0;
+}
+
+#content-head {
+  clear: both;
+  padding-top: 10px;
+  padding-bottom: 20px; 
+}
+
+.column,
+.wide-column,
+.half-column {
+  width: 100%;
+  float: none;  
+}
+
+h2 {
+  font-size: 1.4em;
+  margin-top: 20px;
+}
+
+h3 {
+  font-size: 1.2em;
+}
+
+/*  Nezobrazovat */
+
+#top-navigation,
+#site-navigation,
+#program-navigation,
+#second-site-navigation {
+  display: none;
+}
+
+.no-print {
+  display: none;
+}
+
+
+/* Formulare */
+
+table.form {
+  width: 100%;
+}
+
+table.form th {
+  text-align: left;
+  width: 33%;
+  padding: .25em 0;
+}
+
+table.form td {
+  width: 66%;
+  border-bottom: 3px solid black; /* Vznikne pseudoformularovy styl */
+  height: 20pt;
+}
+
+/* == Stranka Program pro tisk (Strudl) == */
+
+.print_schedule #content-head h1 {
+  margin-left: 0px;
+}
+
+.print_schedule #content .column {
+  margin: 0;
+  float: none;
+  width: auto;
+}
+
+.print_schedule .program-item {
+  margin: 0 10px 10px 0;
+  padding: 0;
+  font-size: .85em;
+  line-height: 1.2em;
+  float: left;
+  clear: none;
+  width: 320px;  
+  #width: 430px; /* V IE je to trochu jinak */
+}
+
+.print_schedule .program-item li {
+ display: inline; 
+}
+
+.print_schedule .calendar-date {
+  margin: 0;
+  background-image: none;
+  background-color: #eee;
+  border: 1px solid #999;
+}
+
+.print_schedule .calendar-date strong {
+  display: inline;
+  text-indent: 0;
+  text-align: center;
+}
+
+.print_schedule .calendar-date.has-month strong {
+  bottom: 23px;
+}  
+
+/* Prvky, ktere nebudeme zobrazovat v tistenem strudlu */  
+.print_schedule .prices a,
+.print_schedule .pseudo-button,
+.print_schedule .photo-gallery,
+.print_schedule .print-this-item, 
+.print_schedule .ticket-pro-link
+  { display: none; }   
+
+/* Zkusime omezit zalamovani stranek uprostred polozky programu */
+.print_schedule .program-item *  {
+  page-break-before: avoid;
+}
+
+.print_schedule .clear-zero 
+  { display: block; } 
+
+
+
+/* Verze s tiskem pouze vybranych polozek */
+.print_schedule.print-only-selected .program-item {
+  display: none;
+}
+
+.print_schedule.print-only-selected .program-item.will-print {
+  display: block;
+  clear: none; 
+}
+
+.print_schedule.print-only-selected .program-item {
+  clear: both;
+}
+
+
+
+/* == Stranka Soutezni formular == */
+
+.competition_submissions input,
+.competition_submissions select,
+.competition_submissions textarea {
+  visibility: hidden;
+}
+
+.competition_submissions input[type=radio] {
+  visibility: visible;
+  border: 2px solid black;
+  padding: .5em;
+}
+
+.competition_submissions #repertoire-round-2-label input,
+.competition_submissions #piano_accompanist-label input {
+  visibility: visible;
+  border-bottom: 3px solid black;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.competition_submissions #select-instrument {
+  font-weight: bold;
+}
+
+.competition_submissions #select-instrument a {
+  text-decoration: none;
+}
+
+.competition_submissions .half-right {
+  text-align: right;
+}
+
+.competition_submissions .submit-row {
+  display: none;
+}
+
+/* == Stranka Detail akce == */
+
+.program_events.show #filter,
+.program_events.show #event-list {
+  display: none;  
+}
+
+.program_events.show #content-head h1 {
+  font-size: 1.5em;
+  margin-bottom: 0;
+  font-weight: normal;
+}
+
+.program_events.show #event h2 {
+  font-size: 40px;  
+  line-height: 40px;
+}
+
+
+
+/* === Stranka Abonentni koncerty === */
+
+#abonentni_koncerty p.emphasized-date {
+  margin: 50px 0 5px 0;
+}
+
+#abonentni_koncerty #content h2 {
+  margin-top: 0;
+}
+
+
+
+/* === Kalendar === */
+
+/* Kdyz neni otevreny kalendar */
+#calendar {
+  display: none;
+}
+
+/* Kdyz je otevreny kalendar */
+body.has-calendar #calendar {
+  display: block;
+  position: static;
+  margin: 0;  
+  width: 95%;
+}
+
+/* Kdy je otevreny, netiskneme nic ze obsahu stranky krome hlavicky */
+body.has-calendar #content-head,
+body.has-calendar #content,
+body.has-calendar #calendar-overlay,
+body.has-calendar #calendar p.close {
+  display: none;
+}
+
+/* = Nezalamovani stranky = */
+
+body.has-calendar #calendar .day *  {
+  page-break-before: avoid;
+}
+
+body.has-calendar #calendar .day   {
+  page-break-before: auto;
+}
+
+
+/* = Ramecky = */
+
+body.has-calendar #calendar #calendar-head {
+  border: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+}
+
+body.has-calendar #calendar #calendar-head h2 {
+  border-left: 1px solid #ccc;
+}
+
+body.has-calendar #calendar .month {
+  border: 1px solid #ccc;
+  border-top: 0;
+}
+
+body.has-calendar #calendar .day {
+  border: 1px solid #ccc;
+  border-top: 0;
+}
+
+body.has-calendar #calendar .day .municipal-house-program, 
+body.has-calendar #calendar .day .rudolfinum-program, 
+body.has-calendar #calendar .day .other-venues-program {
+  border-left: 1px solid #ccc;
+}
+
+
+/* = Layout tisteneho kalendare */
+
+/* Predstaveni */
+body.has-calendar #calendar .day li {
+  position: static;  
+  height: 65px;
+}
+
+/* Neschovavame popisek predstaveni */
+body.has-calendar #calendar .day li .event-description {
+  overflow: visible;  
+  width: 210px;
+}
+
+/* Nazev prestaveni je tucne, ostatni netucne */
+body.has-calendar #container #calendar .day .event-description {
+  font-weight: normal;
+}
+
+body.has-calendar #container #calendar .day .event-description strong {
+  font-weight: bold;
+}
+
+/* Hlavicka kalendare */
+body.has-calendar #calendar #calendar-head {
+  padding-left: 83px;
+  padding-top: 0;
+  height: 32px;
+  #height: 25px;  
+}
+
+body.has-calendar #calendar #calendar-head h2 {
+  width: 30.7%;
+}  
+
+/* Obsah kalendare - dny - nemaji omezenou vysku */
+body.has-calendar #calendar #calendar-days {
+  height: auto;
+  overflow: visible;
+  position: static;
+}
+
+body.has-calendar #calendar .day .day-head {
+  width: 77px;
+}
+
+body.has-calendar #calendar .day .municipal-house-program, 
+body.has-calendar #calendar .day .rudolfinum-program, 
+body.has-calendar #calendar .day .other-venues-program {
+  width: 28%;
+} 
+
+body.has-calendar #calendar .day,
+body.has-calendar #calendar .day .day-head, 
+body.has-calendar #calendar .day .municipal-house-program, 
+body.has-calendar #calendar .day .rudolfinum-program, 
+body.has-calendar #calendar .day .other-venues-program {
+  height: 90px;
+} 
+
+/* Vyska radku kalendare v pripade vice predstaveni */
+body.has-calendar #calendar .day.more-events-in-one-venue-2,
+body.has-calendar #calendar .day.more-events-in-one-venue-2 .day-head,
+body.has-calendar #calendar .day.more-events-in-one-venue-2 .municipal-house-program,
+body.has-calendar #calendar .day.more-events-in-one-venue-2 .rudolfinum-program,
+body.has-calendar #calendar .day.more-events-in-one-venue-2 .other-venues-program {
+  height: 180px;
+}
+
+body.has-calendar #calendar .day.more-events-in-one-venue-3,
+body.has-calendar #calendar .day.more-events-in-one-venue-3 .day-head,
+body.has-calendar #calendar .day.more-events-in-one-venue-3 .municipal-house-program,
+body.has-calendar #calendar .day.more-events-in-one-venue-3 .rudolfinum-program,
+body.has-calendar #calendar .day.more-events-in-one-venue-3 .other-venues-program {
+  height: 270px;
+}
+
+body.has-calendar #calendar .day.more-events-in-one-venue-4,
+body.has-calendar #calendar .day.more-events-in-one-venue-4 .day-head,
+body.has-calendar #calendar .day.more-events-in-one-venue-4 .municipal-house-program,
+body.has-calendar #calendar .day.more-events-in-one-venue-4 .rudolfinum-program,
+body.has-calendar #calendar .day.more-events-in-one-venue-4 .other-venues-program {
+  height: 360px;
+}

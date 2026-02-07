@@ -1,0 +1,122 @@
+/*
+
+Layout webu
+===========
+
+*/
+
+// Rodic layoutu: .vc-container
+// -------------------------
+
+// Rodicovsky kontejner pro layout
+.vc-container {
+  .vc-clearfix;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: @vc-layout-full-start;
+  padding-left: @grid-gutter-width/3;
+  padding-right: @grid-gutter-width/3;
+
+  @media only screen and (min-width: 320px){
+    padding-left: @grid-gutter-width/2;
+    padding-right: @grid-gutter-width/2;
+  }
+}
+
+// Varianta: Kontejner vice vyzivajici sirku okna nad 1600px
+// (napr. seznam produktu na velkych screenech)
+.vc-container-full {
+  clear: both;
+  .vc-clearfix;
+
+  padding-left: @grid-gutter-width/3;
+  padding-right: @grid-gutter-width/3;
+
+  @media only screen and (min-width: 320px){
+    padding-left: @grid-gutter-width/2;
+    padding-right: @grid-gutter-width/2;
+  }
+
+  @media only screen and (min-width: 1600px) {
+    padding-right: 10%;
+    padding-left: 10%;
+    margin-right: 0;
+    margin-left: 0;
+    max-width: none;
+  }
+}
+
+// Varianta: Kontejner s relativni pozici
+// Potrebujeme napr. v detailu produktu
+.vc-container-relative {
+  position: relative;
+}
+
+
+// Radek layoutu
+// -------------
+
+// Bootstrap .row prebirame z jeho mixinu, protoze cely jeho layout system nevyuzivame
+.vc-make-row(@gutter: @grid-gutter-width) {
+  .vc-clearfix;
+  margin-left:  (@gutter / -2);
+  margin-right: (@gutter / -2);
+}
+
+.vc-row { .vc-make-row; }
+
+
+// Hlavní obsah
+// ------------
+
+.vc-main {
+  .vc-clearfix;
+  padding-bottom: (@vc-foot-top-delta + 2*@line-height-computed);
+  margin-bottom: -@vc-foot-top-delta;
+  z-index: 0;
+}
+
+
+// Rodic obsahu - .vc-content
+// --------------------------
+
+// Nas element pro textovy obsah stranky
+.vc-content {
+  .vc-layout-col-base;
+  .vc-layout-col(12);
+}
+
+
+// Uzsi obsah, napr. v detailu produktu
+.vc-content-narrower {
+  @media only screen and (min-width: @vc-layout-start) {
+    .vc-layout-col(8);
+    float: right;
+  }
+}
+
+.vc-content-centered {
+   @media only screen and (min-width: @vc-layout-start) {
+    .vc-layout-col(8);
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+// Sloupec layoutu
+// ---------------
+
+// Sloupec abirajici @columns/12 sloupcu mrizky.
+// Vyextrahovano z BS.
+
+.vc-layout-col-base(@grid-gutter-width: @grid-gutter-width) {
+  float: left;
+  min-height: 1px;
+  padding-left:  (@grid-gutter-width / 2);
+  padding-right: (@grid-gutter-width / 2);
+}
+
+.vc-layout-col(@vc-columns) {
+  width: percentage((@vc-columns / 12));
+}

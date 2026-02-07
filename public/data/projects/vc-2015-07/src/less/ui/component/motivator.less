@@ -1,0 +1,566 @@
+/*
+
+Motivator
+=========
+
+Výhody nákupu na VČ, pro detail a seznam produktů.
+
+*/
+
+// Základna motivátoru: lineární verze pro staré křápy
+// ---------------------------------------------------
+
+.vc-motivator {
+  clear: both;
+  position: relative;
+  .vc-clearfix;
+  overflow: hidden; // Kvuli border-radius
+  padding: @padding-large-vertical @padding-large-horizontal;
+  margin: 0 0 @line-height-computed;
+	border: 1px solid #c9c9c9;
+	border-radius: @panel-border-radius;
+  background: @vc-bg-lightest;
+}
+
+// Blok s nadpisem
+
+.vc-motivator-head {
+  margin-bottom: @line-height-computed;
+  text-align: center;
+}
+
+.vc-motivator-heading {
+  margin: 0;
+  color: #666666;
+}
+
+.vc-motivator-desc {
+  color: #666666;
+}
+
+.vc-motivator-link {
+  margin-bottom: 0;
+  font-size: @vc-font-size-smaller;
+  line-height: 1.3;
+
+  > a {
+    text-decoration: none;
+
+    &:before {
+      content: "\2192";
+      display: inline-block;
+      // float: left;
+      // margin-top: -8px;
+      margin-right: @padding-xs-horizontal;
+      vertical-align: middle;
+    }
+
+    > span {
+      display: inline-block;
+      vertical-align: middle;
+      // overflow: hidden;
+    }
+  }
+}
+
+// Položky motivátoru
+
+.vc-motivator-items {
+  margin-left: -@padding-large-horizontal/2;
+}
+
+.vc-motivator-item {
+  float: left;
+  width: percentage(1/3);
+	padding-left: @padding-large-horizontal/2;
+}
+
+// Konkrétní bublina
+
+.vc-motivator-item-title {
+  position: relative;
+  top: 0;
+  min-height: 130px;
+  padding: 70px 5px 10px;
+  margin: 0;
+  border: 1px solid;
+  border-radius: @panel-border-radius;
+  background-position: 50% 10px;
+  background-repeat: no-repeat;
+  color: #666666;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 300;
+  text-align: center;
+  transition: top 0.1s linear 0.5s;
+
+  // Šipky bublin se řeší pseudoelementy
+  // Směr a pozici ovlivňují modifikované třídy
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    display: block;
+    width: 0;
+    height: 0;
+  }
+
+  &:before {
+    // margin-left: -12px;
+    margin-left: -20px;
+    border-right: 20px solid transparent;
+    border-left: 20px solid transparent;
+
+    .vc-motivator-item-right & {
+      top: 100%;
+      border-top: 17px solid;
+      // border-left: 25px solid transparent;
+    }
+
+    .vc-motivator-item-left & {
+      bottom: 100%;
+      border-bottom: 17px solid;
+      // border-right: 25px solid transparent;
+    }
+
+    .vc-motivator-item-1 & {
+      border-top-color: #00c600;
+    }
+
+    .vc-motivator-item-2 & {
+      border-top-color: #ce409d;
+    }
+
+    .vc-motivator-item-3 & {
+      border-top-color: #319bf0;
+    }
+
+    .vc-motivator-item-4 & {
+      border-bottom-color: #e7a500;
+    }
+
+    .vc-motivator-item-5 & {
+      border-top-color: #ff7b00;
+      border-bottom-color: #ff7b00;
+    }
+
+    .vc-motivator-item-6 & {
+      border-bottom-color: #34bbe5;
+    }
+  }
+
+  &:after {
+    // margin-left: -11px;
+    margin-left: -19px;
+    border-right: 19px solid transparent;
+    border-left: 19px solid transparent;
+
+    .vc-motivator-item-right & {
+      top: 100%;
+      // border-top: 15px solid #fcfcfc;
+      border-top: 16px solid #fcfcfc;
+      // border-left: 23px solid transparent;
+    }
+
+    .vc-motivator-item-left & {
+      bottom: 100%;
+      // border-bottom: 15px solid #fcfcfc;
+      border-bottom: 16px solid #fcfcfc;
+      // border-right: 23px solid transparent;
+    }
+
+    .vc-motivator-item.active & {
+      display: none;
+    }
+  }
+
+  &:hover {
+    top: -5px;
+    transition-delay: 0s;
+  }
+
+  &:hover,
+  &.active {
+    color: #ffffff;
+
+    &:after {
+      display: none;
+    }
+
+    .vc-motivator-item-1 & {
+      background-color: #00c600;
+      background-image: url("../dist/img/icons/location-44-white.svg");
+
+      .vc-no-svg & { // fallback pro prohlížeče bez svg (IE8-)
+        background-image: url("../dist/img/icons/location-44-white.png");
+      }
+    }
+
+    .vc-motivator-item-2 & {
+      background-color: #ce409d;
+      background-image: url("../dist/img/icons/bonus-44-white.svg");
+
+      .vc-no-svg & { // fallback pro prohlížeče bez svg (IE8-)
+        background-image: url("../dist/img/icons/bonus-44-white.png");
+      }
+    }
+
+    .vc-motivator-item-3 & {
+      background-color: #319bf0;
+      background-image: url("../dist/img/icons/time-44-white.svg");
+
+      .vc-no-svg & { // fallback pro prohlížeče bez svg (IE8-)
+        background-image: url("../dist/img/icons/time-44-white.png");
+      }
+    }
+
+    .vc-motivator-item-4 & {
+      background-color: #e7a500;
+      background-image: url("../dist/img/icons/delivery-44-white.svg");
+
+      .vc-no-svg & { // fallback pro prohlížeče bez svg (IE8-)
+        background-image: url("../dist/img/icons/delivery-44-white.png");
+      }
+    }
+
+    .vc-motivator-item-5 & {
+      background-color: #ff7b00;
+      background-image: url("../dist/img/icons/calendar-44-white.svg");
+
+      .vc-no-svg & { // fallback pro prohlížeče bez svg (IE8-)
+        background-image: url("../dist/img/icons/calendar-44-white.png");
+      }
+    }
+
+    .vc-motivator-item-6 & {
+      background-color: #34bbe5;
+      background-image: url("../dist/img/icons/savings-44-white.svg");
+
+      .vc-no-svg & { // fallback pro prohlížeče bez svg (IE8-)
+        background-image: url("../dist/img/icons/savings-44-white.png");
+      }
+    }
+  }
+
+  .vc-motivator-item-1 & {
+    border-color: #00c600;
+    background-image: url("../dist/img/icons/location-44.svg");
+
+    .vc-no-svg & { // fallback pro prohlížeče bez svg (IE8-)
+      background-image: url("../dist/img/icons/location-44.png");
+    }
+  }
+
+  .vc-motivator-item-2 & {
+    border-color: #ce409d;
+    background-image: url("../dist/img/icons/bonus-44.svg");
+
+    .vc-no-svg & { // fallback pro prohlížeče bez svg (IE8-)
+      background-image: url("../dist/img/icons/bonus-44.png");
+    }
+  }
+
+  .vc-motivator-item-3 & {
+    border-color: #319bf0;
+    background-image: url("../dist/img/icons/time-44.svg");
+
+    .vc-no-svg & { // fallback pro prohlížeče bez svg (IE8-)
+      background-image: url("../dist/img/icons/time-44.png");
+    }
+  }
+
+  .vc-motivator-item-4 & {
+    border-color: #e7a500;
+    background-image: url("../dist/img/icons/delivery-44.svg");
+
+    .vc-no-svg & { // fallback pro prohlížeče bez svg (IE8-)
+      background-image: url("../dist/img/icons/delivery-44.png");
+    }
+  }
+
+  .vc-motivator-item-5 & {
+    border-color: #ff7b00;
+    background-image: url("../dist/img/icons/calendar-44.svg");
+
+    .vc-no-svg & { // fallback pro prohlížeče bez svg (IE8-)
+      background-image: url("../dist/img/icons/calendar-44.png");
+    }
+  }
+
+  .vc-motivator-item-6 & {
+    border-color: #34bbe5;
+    background-image: url("../dist/img/icons/savings-44.svg");
+
+    .vc-no-svg & { // fallback pro prohlížeče bez svg (IE8-)
+      background-image: url("../dist/img/icons/savings-44.png");
+    }
+  }
+}
+
+// Obsah bubliny se skrývá a zobrazuje pod bublinami javascriptem
+
+.vc-motivator-item-content {
+  display: none;
+}
+
+// Kontejnery do kterých se vypisují obsahy bublin
+// první je mezi bublinami druhá pod bublinami
+
+.vc-motivator-content {
+  clear: both;
+  margin-top: 2*@line-height-computed;
+  text-align: center;
+}
+
+.vc-motivator-content-first {
+  padding: @line-height-computed 0;
+}
+
+.vc-motivator-content-second {
+  display: none;
+}
+
+// větší text v bublině
+
+@media only screen and (min-width: 400px) {
+  .vc-motivator-item-title {
+    min-height: 136px;
+    font-size: 14px;
+  }
+}
+
+// změna minimální výšky textu v bublině
+
+@media only screen and (min-width: 450px) {
+  .vc-motivator-item-title {
+    min-height: 118px;
+  }
+}
+
+// změna layoutu
+// text je vedle bublin
+// bubliny jsou stále va dvou řádcích
+
+@media only screen and (min-width: 600px) {
+  .vc-motivator-head {
+    float: left;
+    width: percentage(1/4);
+    padding-right: @padding-large-horizontal/2;
+    text-align: left;
+  }
+
+  .vc-motivator-heading {
+    margin-bottom: @line-height-computed/2;
+  }
+
+  .vc-motivator-link {
+    > a {
+      &:before {
+        display: block;
+        float: left;
+      }
+
+      > span {
+        display: block;
+        overflow: hidden;
+      }
+    }
+  }
+
+  .vc-motivator-body {
+    float: left;
+    width: percentage(3/4);
+  }
+
+  .vc-motivator-content-first {
+    padding-left: @padding-large-horizontal/2;
+  }
+}
+
+// změna layoutu
+// text je zpět nad bublinami kvůli místu
+// bubliny jsou v jednom řádku
+
+@media only screen and (min-width: @vc-layout-start) {
+  .vc-motivator-head {
+    float: none;
+    width: auto;
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .vc-motivator-heading {
+    margin-bottom: 0;
+  }
+
+  .vc-motivator-link {
+    > a {
+      &:before {
+        display: inline-block;
+        float: none;
+      }
+
+      > span {
+        display: inline-block;
+      }
+    }
+  }
+
+  .vc-motivator-body {
+    float: none;
+    width: auto;
+  }
+
+  .vc-motivator-item {
+    .vc-motivator-6-items & {
+      width: percentage(1/6);
+    }
+  }
+
+  .vc-motivator-item-title {
+    min-height: 136px;
+
+    &:before {
+      margin-left: -12px;
+
+      .vc-motivator-item-right & {
+        top: 100%;
+        bottom: auto;
+        border-top-width: 17px;
+        border-left-width: 25px;
+        border-right: none;
+        border-bottom: none;
+      }
+
+      .vc-motivator-item-left & {
+        top: 100%;
+        bottom: auto;
+        border-top: 17px solid;
+        border-right-width: 25px;
+        border-left: none;
+        border-bottom: none;
+      }
+
+      .vc-motivator-item-4 & {
+        border-top-color: #e7a500;
+      }
+
+      .vc-motivator-item-5 & {
+        border-top-color: #ff7b00;
+      }
+
+      .vc-motivator-item-6 & {
+        border-top-color: #34bbe5;
+      }
+    }
+
+    &:after {
+      margin-left: -11px;
+
+      .vc-motivator-item-right & {
+        border-left-width: 23px;
+        border-right: none;
+      }
+
+      .vc-motivator-item-left & {
+        top: 100%;
+        bottom: auto;
+        border-top: 15px solid #fcfcfc;
+        border-right-width: 23px;
+        border-left: none;
+        border-bottom: none;
+      }
+    }
+  }
+
+  .vc-motivator-content-first {
+    display: none;
+  }
+
+  .vc-motivator-content-second {
+    display: block;
+  }
+}
+
+// změna minimální výšky textu v bublině
+
+@media only screen and (min-width: 800px) {
+  .vc-motivator-item-title {
+    min-height: 118px;
+  }
+}
+
+// změna layoutu
+// text je vedle bublin
+// bubliny jsou v jednom řádku
+
+@media only screen and (min-width: 940px) {
+  .vc-motivator-head {
+    float: left;
+    width: percentage(1/4);
+    padding-right: @padding-large-horizontal/2;
+    text-align: left;
+  }
+
+  .vc-motivator-heading {
+    margin-bottom: @line-height-computed/2;
+  }
+
+  .vc-motivator-link {
+    > a {
+      &:before {
+        display: block;
+        float: left;
+      }
+
+      > span {
+        display: block;
+      }
+    }
+  }
+
+  .vc-motivator-body {
+    float: left;
+    width: percentage(3/4);
+  }
+
+  .vc-motivator-item-title {
+    min-height: 136px;
+  }
+}
+
+// větší odsazení v boxu motivátoru
+// text je vedle bublin
+// bubliny jsou v jednom řádku
+
+@media only screen and (min-width: 1024px) {
+  .vc-motivator {
+    padding: 2*@padding-large-vertical 2*@padding-large-horizontal;
+  }
+
+  .vc-motivator-head {
+    .vc-motivator-6-items & {
+      width: percentage(1/6);
+    }
+  }
+
+  .vc-motivator-body {
+    .vc-motivator-6-items & {
+      width: percentage(5/6);
+    }
+  }
+
+  .vc-motivator-item-title {
+    min-height: 118px;
+  }
+}
+
+// větší odsazení v bublině motivátoru
+
+@media only screen and (min-width: 1100px) {
+  .vc-motivator-item-title {
+    padding: 70px 20px 10px;
+  }
+}

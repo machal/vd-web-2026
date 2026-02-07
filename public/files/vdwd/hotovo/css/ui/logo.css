@@ -1,0 +1,34 @@
+/*
+Logo ForestKid.cz
+=================
+*/
+
+/*
+Siroke tak, aby bylo texte stejne vysoky jako text
+nejvetsich nadpisu
+*/
+
+.logo {
+  width: 13rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/*
+Pruzne chovani SVG v IE vyzaduje kontejner
+*/
+
+
+.logo-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 19.05%; /* Pomer stran */
+}
+
+.logo-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+

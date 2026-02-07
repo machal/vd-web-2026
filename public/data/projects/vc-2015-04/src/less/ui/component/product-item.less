@@ -1,0 +1,172 @@
+/*
+
+Product Item
+============
+
+Položka v seznamu produktů.
+
+*/
+
+// --- Base & subkomponenty ---
+
+.product-item {
+  text-align: center;
+  position: relative; // Kvuli .offer-icon
+}
+
+// Obrazek
+
+.product-item-image {
+  margin-bottom: @line-height-computed / 4;
+
+  a {
+    display: block;
+    padding: 0 20%; // Trochu zmensime obrazek uvnitr
+  }
+
+  img {
+    width: inherit; // IE8 http://stackoverflow.com/questions/8610077/height-auto-in-internet-explorer-8-and-below
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+// Text: nazev, cena a "skladem"
+
+.product-item-text {}
+
+.product-item .product-item-heading { // Kvuli specifificnosti .content h2 atd. (TODO)
+  font-size: @font-size-small;
+  margin: 0 0
+    @line-height-computed/8 0;
+}
+
+// Info: Cena a "skladem"
+
+.product-item-text-info {
+  font-size: @font-size-small;
+  line-height: 1.2;
+}
+
+.product-item-price {
+  display: inline-block;
+  margin-bottom: 0;
+  color: @vc-color-red;
+}
+
+.product-item-stock {
+  color: @vc-color-green;
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+// Ikona nabidky
+
+.offer-icon.product-item-offer {
+  top: 10px;
+  right: 10px;
+
+  @media only screen and (min-width: 1400px) {
+    top: 30px;
+    right: 30px;
+  }
+}
+
+// Vychozi layout: na malych displejcih 2 na radku
+
+.product-item {
+  float: left;
+  padding:
+    0 @grid-gutter-width/2
+    @line-height-computed/2 0;
+  width: percentage(1/2);
+}
+
+
+
+
+// --- Responsive ---
+
+// Proporce v .product-item a pocet polozek na radce
+// na vetsich displejich
+// TODO sloucit stejne deklarace
+
+
+@media only screen {
+
+  @media (max-width: 319px) {
+    .product-item-text { height: 115px }
+    .product-item-image { height: 76px; line-height: 76px; }
+  }
+
+  @media (min-width: 320px) and (max-width: 359px) {
+    .product-item-text { height: 80px }
+    .product-item-image { height: 80px; line-height: 80px; }
+  }
+
+  @media (min-width: 360px) and (max-width: 399px) {
+    .product-item-text { height: 65px }
+    .product-item-image { height: 80px; line-height: 80px; }
+  }
+
+  @media (min-width: 400px) and (max-width: 599px) {
+    .product-item-text { height: 55px }
+    .product-item-image { height: 100px; line-height: 100px; }
+  }
+
+
+  @media (min-width: 600px) and (max-width: 767px) {
+    .product-item { width: percentage(1/4); }
+    .product-item-text { height: 85px }
+    .product-item-image { height: 90px; line-height: 90px; }
+  }
+
+  @media (min-width: 768px) and (max-width: 899px) {
+    .product-item { width: percentage(1/4); }
+    .product-item-text { height: 75px }
+    .product-item-image { height: 100px; line-height: 100px; }
+  }
+
+  // Desktop view - větší písmo
+  @media (min-width: 768px) {
+    .product-item { padding-bottom: @line-height-computed; }
+    .product-item-heading { font-size: @font-size-base; }
+  }
+
+  @media (min-width: 900px) {
+    .product-item { width: percentage(1/4); }
+    .product-item-text { height: 60px }
+    .product-item-image { height: 160px; line-height: 160px; }
+  }
+
+  // Roztaženo mimo šířku běžného layoutu
+  @media (min-width: 1280px) {
+    .product-item-image a { padding-left: 15%; padding-right: 15%; }
+    .product-item-text {
+      max-width: 15em;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+}
+
+// 6 polozek na radku na velkych displejich
+
+.product-items-6-on-row {
+  @media (min-width: 1600px) {
+    .product-item { width: percentage(1/6); }
+    .product-item-text { height: 60px }
+  }
+}
+
+// Varianta pro 3 polozky na radku na stredne velkych displejich
+
+.product-items-3-on-row {
+  @media (min-width: 481px) and (max-width: 599px) {
+    .product-item { width: percentage(1/3); }
+    .product-item-text { height: 70px }
+    .product-item-image { height: 80px; line-height: 80px; }
+  }
+}

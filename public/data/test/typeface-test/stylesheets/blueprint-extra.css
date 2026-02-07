@@ -1,0 +1,163 @@
+@charset "utf-8";
+
+/* ===== Blueprint CSS Extra -- Doplneni Blueprint CSS -- Autor: Martin Michalek, Shortcat michalek@shortcat.cz  ===== */
+
+/* Mensi vyska radku a vynulovani ramecku */  
+body {
+  line-height:1.3;
+  margin: 0; 
+  padding: 0;
+}
+
+/* Nedelame outline - ovsem TODO, jak je s pristupnosti */  
+* {
+  outline: none;
+}  
+
+/* Nedekorujeme odkazy */
+a {
+  text-decoration: none;
+} 
+
+/* Neprebirame barvu bunek tabulky */
+th { 
+  background: transparent; 
+}
+
+/* Necheme, aby obrazky v odstavcich floatovaly */
+p img { 
+  float: none; margin: 0; 
+}
+
+/* Zruseni kurzivy a odsazeni adresy */
+address {
+  font-style: normal;
+  margin: 0;
+}
+
+
+/* Jednotne pismo i pro prvky formulare */
+input, textarea, select { 
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+}
+
+/* Nechceme pridavat margin k formularovym prvkum */
+textarea, select {
+  margin: 0;
+}
+
+/* Nechceme nastavovat velikost pro textareu */
+textarea {
+  width: auto;
+  height: auto;
+  font-size: 1em;
+}
+
+/* Zatim rusime fokus na formularovych prvcich - mozna je lepsi nastavovat pro kazdy web zvlast */
+input:focus, textarea:focus, select:focus,
+input, textarea, select {
+  border: 1px inset #aaa;
+  padding: 2px 0;
+}
+
+/* Stylovani odesilacich tlacitek, aby nepodedily vyse uvedene */
+input[type=submit] {
+  border: 2px outset #aaa;
+  cursor: pointer;
+}
+
+/* Stylovani odesilacich tlacitek, aby nepodedily vyse uvedene */
+input[type=radio], input[type=checkbox], input[type=hidden] {
+  border: none;
+}
+
+/* Pridame ceske uvozovky do citaci, TODO: proc se neukladaji spravne znaky? */  
+blockquote:before, blockquote:after, q:before, q:after {
+  content: Ĕ;
+}
+blockquote, q {
+  quotes:Ą Ԕ;
+}  
+
+
+/* ===== Obecne tridy  ===== */
+
+.clear-zero /* TODO: Deprecated: nahradit .clearfix z Blueprintu ..? */
+  { clear: both; height: 1px; font-size: 1px; }  
+.half-left
+  { float: left; width: 49%; }
+.half-right
+  { float: right; width: 49%; text-align: right }    
+hr.divider
+  { height: 40px; background: transparent; border: none; }
+.print-only 
+  { display: none; }
+.align-right
+  { text-align: right; }
+ 
+  
+/* ===== Tabulky ===== */
+
+table 
+  { border-collapse: collapse; }
+
+th, td {
+  padding: 2px 0;
+  vertical-align:top;
+}
+
+
+/* ===== Formulare  ===== */ 
+
+table.form th, 
+table.form td 
+  { padding: 2px; }
+
+table.form th 
+  { font-weight: normal; width: 33%; }
+table.form td 
+  { font-weight: normal; width: 66%; }
+
+table.form tr.submit td,
+table.form tr.submit th 
+  { border-bottom: 0; }  
+
+table.form small.help 
+  { color: #A9A49C; }
+
+label 
+  { font-weight: normal; }
+
+p.submit-row 
+  { text-align: right; }
+  
+input, select, textarea {
+  font-size: 1em;
+}
+  
+/* Velikost formularovych poli podle obsahu - TODO: rozsirit */ 
+ 
+input.zip,
+input.s
+  { width: 6ex; }  
+input.phone
+  { width: 15ex; }  
+input.full,
+select.full,
+textarea.full
+  { width: 100%; }  
+
+
+/* == Chybova hlaseni == */
+
+.error, .notice, .success {
+  border: none;
+  padding: 5px;
+  margin: 0;
+}
+
+/* Pouze pro tisk */
+
+.print-clear-zero {
+  display: none;
+}

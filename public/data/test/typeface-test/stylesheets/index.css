@@ -1,0 +1,3811 @@
+@charset "utf-8";
+
+/* 
+
+=========== Zakladni stylopis webu Prazskeho Jara (www.festival.cz) =========== 
+
+Autor:        Martin Michalek, Studio Shortcat
+
+*/
+
+
+/* ===== Import Blueprintu a pravidel jej upravujich  ===== */
+
+@import "./blueprint/screen.css";
+@import "./blueprint-extra.css";
+
+
+/* ===== Import prvku webu  ===== */
+
+@import "./calendar.css";
+
+
+/* ===== Import barev webu  ===== */
+
+@import "./colors.css";   
+
+  
+/* ===== Styl prvku specificky pro tento web - mozna presuneme do blueprint-extra.css ===== */
+
+.loading {
+  background-image: url('..../images/layout/loading.gif');
+  background-repeat: no-repeat;
+  background-position: 20px 20px;
+}
+
+body.loading {
+  background-image: none !important;
+  cursor: wait;
+}
+
+blockquote {
+  font-style: normal;
+  color: #9b958d;
+  border-left: 5px #ede9e6 solid;
+  padding-left: 15px;
+  margin: 0;
+}
+
+.not_implemented { 
+  border: 1px solid #FDC9D6; 
+  opacity: 0.8; 
+}
+
+.not_implemented q { 
+  color: #F96A91; 
+}
+
+
+/* ===== Obecne tridy, helpery ===== */
+
+.no-bottom-margin {
+  margin-bottom: 0;
+}
+
+/* Odkaz zpet */
+
+p.back-link {
+  width: 50px;
+  position: relative;
+  left: -61px;
+  margin: 0; 
+}
+
+a.arrow-left {
+  background-image: url('../images/layout/arrow_left_grey_blue_hover.gif');
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  padding-left: 13px;
+}
+
+a.arrow-left:hover {
+  background-position: 0px -20px;
+}
+
+
+/* === Odkaz na cizi web (zruseno) === */
+
+
+
+
+
+/* = Formulare = */
+
+table.form th, 
+table.form td {
+  padding: 4px 2px;
+}
+
+table.form th {
+  font-weight: normal;
+  width: 30%;
+}
+
+table.form td {
+  font-weight: normal;
+  width: 70%;
+}
+
+.submit-row {
+  text-align: right;
+  width: 740px; /* 3x sirka sloupce */
+}
+
+.submit-row form,
+.submit-row form div {
+  display: inline;
+}
+
+table.form small.help {
+  color: #A9A49C;
+}
+
+
+
+/* ===== Layout ===== */
+
+body {
+  margin-bottom: 20px;
+}
+
+#container {
+  text-align: left;
+  min-width: 1000px;
+}
+
+
+
+/* === Hlavicka === */
+
+#head {
+  margin-top: 13px;
+}
+
+#logo {
+  width: 43px;
+  height: 80px;
+  position: absolute;
+  top: 13px;
+  left: 18px;
+  margin: 0;
+}
+
+#navigations {
+ margin-right: 14px;
+ margin-left: 73px;
+ height: 80px;
+}
+
+#web-title {
+  float: left;
+  width: 475px;
+  font-size: 28px;
+  font-family: 'Chronicle Disp Comp', Arial, sans-serif;
+  margin: 0 0 0 8px;
+  height: 35px;
+}
+
+/* Informace o tom, ze si prohlizime staging verzi nahore v hlavicce */
+
+#app-is-staging {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  color: white; 
+  background: #000; 
+  padding: 0.5em;
+  margin: 0;
+  text-align: center;    
+  z-index: 950;
+  opacity: 0.8;
+}
+
+
+/* == Programova navigace == */
+
+#program-navigation {
+  margin: 0;
+  position: absolute;
+  z-index: 350;
+  top: 38px;
+  left: 81px;
+  width: 896px; /* = 7 * sirka polozky programove navigace (128) */
+}
+
+#program-navigation a,
+#program-navigation span,
+#program-navigation strong {
+  float: left;
+  width: 128px;
+  background: #333 url('../images/layout/program-navigation-limiter.gif') top left repeat-x;
+  color: #fff;
+  height: 21px;
+  line-height: 11px;
+  margin-top: 0;
+  text-indent: -5000px;  
+  text-align: center;
+  display: block;
+  font-weight: normal;
+}
+
+#program-navigation a:hover,
+#program-navigation a.hover,
+#program-navigation strong {  
+  padding: 10px 0 14px 0;
+  text-indent: 0px;
+  margin-top: -24px;
+  background-image: none;
+}
+
+
+
+/* == Navigace webu == */
+
+#site-navigation {
+  margin-top: 15px;
+}
+
+#site-navigation a,
+#site-navigation strong {
+  padding: 7px 8px;
+  float: left;
+  color: #544A3A;
+  vertical-align: middle;
+  font-weight: normal;
+}
+
+/* Aktivni polozka navigace */
+#site-navigation span {
+  color: #A9A49C;
+}
+
+/* Aktivni a klikatelna polozka navigace */
+#site-navigation strong a {
+  padding: 0;
+  color: #71685C;
+}
+
+
+
+/* == Navigace vpravo nahore == */
+
+#top-navigation {
+  float: right;  
+  width: 425px;
+  margin-top: -4px;
+  padding: 0;
+}
+
+#top-navigation a {
+  padding: 7px 8px 3px;
+  float: right;
+  color: #544A3A;
+  vertical-align: middle;
+}
+
+
+/* Ikona kalendare */
+#top-navigation a#calendar-link {
+  background: transparent url('../images/layout/calendar-icon.gif?2') no-repeat 0px -87px;
+  height: 22px;
+  width: 98px;
+  padding: 7px 7px 0 0;
+  text-align: right;  
+  float: right;
+  margin-right: 6px;
+}
+
+#top-navigation a#calendar-link:hover {
+  background-position: 0px -58px;
+  color: #322a21;
+}
+
+#top-navigation a#calendar-link.loading {
+  background-position: 0px -29px;
+}
+
+#top-navigation a#calendar-link.loading:hover {
+  background-position: 0px 0px;
+  color: #322a21;
+}
+
+
+/* === Identifikace a prepinani jazyka === */
+
+#current-locale {
+  display: none;
+}
+
+.with-javascript #current-locale {
+  display: block;
+  float: right;
+  margin-top: 1px;
+  margin-right: 4px;
+  width: 71px; 
+  height: 21px;
+  padding-top: 6px;
+  padding-left: 9px;
+  background: transparent url('../images/layout/current-locale-bg.gif') no-repeat top left;
+  cursor: pointer;  
+}
+
+
+/* Prepinani jazyka bez javascriptu .. */
+
+#switch-locale {
+  display: block;
+  margin-top: 6px;
+}
+
+#switch-locale span,
+#switch-locale a  {
+  padding: 6px 3px 4px 6px;
+  float: none;
+  color: #71685C;
+}
+
+#switch-locale span a {
+  padding: 0;
+  margin: 0;
+  color: #322A21;
+  border: 0;
+  background-color: transparent;
+}
+
+/* .. a s javascriptem */
+
+.with-javascript #switch-locale {
+  z-index: 370;
+  display: block;
+  width: 80px;
+  position: absolute;
+  top: 4px;
+  right: 274px;
+  display: none;
+}
+
+.with-javascript #switch-locale span,
+.with-javascript #switch-locale a  {
+  display: block;
+  padding: 6px 5px 4px 9px;
+  border-bottom: 1px #EDE9E6 solid;
+  float: none;
+  background-color: #fff;
+  line-height: 15px;
+}
+
+
+.with-javascript #switch-locale span a {
+  padding: 0 0 0 0;
+  margin: 0;
+  color: #322A21;
+  border: 0;
+  background-color: transparent;
+}
+
+.with-javascript #switch-locale span:hover  {
+  background-color: #f6f4f3;
+  cursor: pointer;
+}
+
+.with-javascript #switch-locale span.first  {
+  background-image: url('../images/layout/switch-locale-bg.png'); 
+  background-repeat: no-repeat; 
+  background-position: right top;
+}
+
+.with-javascript #switch-locale span.last  {
+  background-image: url('../images/layout/switch-locale-bg.png');  
+  background-repeat: no-repeat; 
+  background-position: left bottom;  
+}
+
+
+/* Uprava prepinace pro verzi, kdy uzivatel navstivi www.festival.cz s cizim jazykovym nastavenim */
+
+
+.with-javascript #current-locale.foreign-language {
+  width: 83px;
+  height: 21px;
+  background: transparent url('../images/layout/current-locale-foreign-bg.gif') no-repeat top left;  
+}
+
+.with-javascript #switch-locale.foreign-language {
+  width: 93px;
+  right: 274px;
+}
+
+.with-javascript #switch-locale.foreign-language span.first  {
+  background-image: url('../images/layout/switch-locale-foreign-bg.png'); 
+}
+
+.with-javascript #switch-locale.foreign-language span.last  {
+  background-image: url('../images/layout/switch-locale-foreign-bg.png');  
+}
+
+
+
+/* === Vyhledavani === */
+
+form#site-search {
+  float: right;
+  display: inline;  
+}
+
+form#site-search p {
+  display: inline;
+  margin: 0;
+  padding: 0;  
+}
+
+input#site-search-input {
+  width: 108px;
+  padding: 3px 6px 3px 6px;
+  margin-top: 2px;
+  float: left;
+  border: 2px solid #EDE9E6;  
+  vertical-align: middle;       
+}
+
+#site-search.loading input#site-search-input {
+  background-position: 102px 2px;
+  background-image: url("../images/layout/loading-small.gif");
+  background-repeat: no-repeat;
+}
+
+input#site-search-input.focus,
+input#site-search-input:focus,
+form#site-search.focus input#site-search-input {
+  border-color: #71685c;
+}
+
+input#site-search-submit {  
+  display: block;
+  text-indent: -500px;
+  border: 0;
+  margin-top: 4px;
+  width: 21px;
+  height: 21px;
+  float: left;
+  vertical-align: middle;
+  cursor: pointer;
+  background: transparent url("../images/layout/site-search-submit.gif?2") no-repeat top left;    
+  font-size: 0px; 
+  line-height: 0px;   
+}
+
+input#site-search-submit.hover,
+input#site-search-submit:hover,
+form#site-search.focus input#site-search-submit {
+  background-position: bottom left;
+}
+
+
+
+
+/* === Layout obsahu === */
+
+/* Nadpis obsahu */
+
+#content-head {
+  margin: 15px 0 0 0;
+  clear: both;
+  width: 880px;
+
+  height: 57px;       
+}
+
+#content-head h1 {
+  font-size: 40px;
+  line-height: 40px;
+  height: 40px;
+  font-family: 'Chronicle Disp Comp', Arial, sans-serif;
+  margin: 0 0 3px 82px;
+  padding: 0;
+  overflow: hidden;
+  margin-bottom: 0;
+}
+
+
+h1 {
+  font-size: 40px;
+  line-height: 40px;
+  height: 40px;
+  font-family: 'Chronicle Disp Comp', Arial, sans-serif;
+  margin: 0 0 3px 82px;
+  padding: 0;
+  overflow: hidden;
+  margin-bottom: 0;
+}
+
+/* Nadpis sekce (napr. v Archivu) */
+
+#section-head {
+  margin: 18px 0 0 0;
+  clear: both;
+  padding: 8px 20px 8px 80px;
+  background-color: #E4DFDB;  
+  height: 38px;
+  width: 894px;
+}
+
+#section-head h2 {
+  font-size: 33px;
+  padding: 0;
+  margin: 0;  
+  line-height: 38px;
+  overflow: hidden;
+  width: 400px;
+  float: left;
+}
+
+#section-head #section-navigation {
+  width: 400px;
+  float: right;
+  text-align: right;
+}
+
+/* Navigace 2. urovne */
+
+#second-site-navigation {
+  width: 600px;
+  position: absolute;
+  top: 130px;
+  left: 372px;
+  margin: 0;
+  height: 35px;  
+}
+
+#second-site-navigation a,
+#second-site-navigation strong {
+  line-height: 11px;
+  padding: 12px 10px;
+  background-color: #F6F4F3;
+  float: right;
+  font-weight: normal;
+  margin-left: 2px;
+  display: block;
+}
+
+#second-site-navigation strong a {
+  padding: 0;
+  background-color: transparent;
+}
+
+#second-site-navigation strong {
+  background-color: #fff;
+}
+
+
+
+/* ===== Program ve verzi pro tisk  ("Strudl") ===== */
+
+/* Polozka programu ve verzi pro tisk */
+
+.print_schedule #content {
+  padding-top: 30px;
+}
+
+.print_schedule #content .column {
+  width: 443px;
+  margin: 0;
+  float: left;
+}
+
+.print_schedule .program-item {
+  float: left;
+  margin: 0 3px 3px 0;
+  padding: 12px 14px 24px 14px;
+  background: #f6f4f3;
+  width: 412px; /* Celkem 440px */
+}
+
+.print_schedule .program-item-meta {
+  float: left;
+  width: 43px;
+  margin-right: 10px;  
+}
+
+.print_schedule .calendar-date {
+  margin-right: 0;
+  float: none;
+  background-color: #fff;
+}
+
+.print_schedule .print-this-item {
+  display: block;
+  width: 43px;
+  height: 54px;
+  margin: 0;
+  background-image: url("../images/layout/print-this-item.gif");
+  background-repeat: no-repeat;  
+  cursor: pointer;  
+}
+
+.print_schedule .print-this-item input {
+  margin: 28px 0 0 15px;
+  cursor: pointer;
+}
+
+.print_schedule .program-item-text {
+  margin-left: 54px;  
+  margin-bottom: 0;
+}
+
+.print_schedule .photo-gallery {
+  height: 43px;
+  overflow: hidden;
+  margin-bottom: 1.3em;
+}
+
+.print_schedule .photo-gallery a {
+  width: 43px;
+  height: 43px;
+  padding-bottom: 2px;
+  padding-right: 2px;
+}
+
+
+.print_schedule .photo-gallery img {
+  width: 43px;
+  height: 43px;
+}
+
+.print_schedule #content .program-item-text p,
+.print_schedule #content .program-item-text ul {
+  margin-bottom: 1.3em;
+}
+
+.print_schedule #content .program-item-text ul li {
+  background-image: none;
+  padding: 0;
+  margin: 0;
+  width: auto;
+}
+
+.print_schedule .bottom-buttons, 
+.print_schedule .top-buttons
+{
+  display: none;
+}
+
+.print_schedule .bottom-buttons
+{
+  clear: both;
+}
+
+
+/* Barvy polozek programu k tisku - slice ma sirku jedne barvy 86 px (prvni je 43px normalni, druhy 43px mouseover) */
+.print_schedule .program-item.category-color-1                   { background-color: #f3e3ed; }
+.print_schedule .category-color-1 .print-this-item               { background-position: 0 0; }
+.print_schedule .category-color-1 .print-this-item.hover,   
+.print_schedule .category-color-1.will-print .print-this-item    { background-position: -43px 0; }
+
+
+.print_schedule .program-item.category-color-2                   { background-color: #e8e0ed; }
+.print_schedule .category-color-2 .print-this-item               { background-position: -86px 0; }
+.print_schedule .category-color-2 .print-this-item.hover,   
+.print_schedule .category-color-2.will-print .print-this-item    { background-position: -129px 0; }
+
+.print_schedule .program-item.category-color-3                   { background-color: #daeaee; }
+.print_schedule .category-color-3 .print-this-item               { background-position: -172px 0; }
+.print_schedule .category-color-3 .print-this-item.hover,   
+.print_schedule .category-color-3.will-print .print-this-item    { background-position: -215px 0; }
+
+.print_schedule .program-item.category-color-4                   { background-color: #e3efe7; }
+.print_schedule .category-color-4 .print-this-item               { background-position: -258px 0; }
+.print_schedule .category-color-4 .print-this-item.hover,   
+.print_schedule .category-color-4.will-print .print-this-item    { background-position: -301px 0; }
+
+.print_schedule .program-item.category-color-5                   { background-color: #eef0d9; }
+.print_schedule .category-color-5 .print-this-item               { background-position: -344px 0; }
+.print_schedule .category-color-5 .print-this-item.hover,   
+.print_schedule .category-color-5.will-print .print-this-item    { background-position: -387px 0; }
+
+.print_schedule .program-item.category-color-6                   { background-color: #f6e8d9; }
+.print_schedule .category-color-6 .print-this-item               { background-position: -430px 0; }
+.print_schedule .category-color-6 .print-this-item.hover,   
+.print_schedule .category-color-6.will-print .print-this-item    { background-position: -473px 0; }
+
+.print_schedule .program-item.category-color-7                   { background-color: #f1dedd; }
+.print_schedule .category-color-7 .print-this-item               { background-position: -516px 0; }
+.print_schedule .category-color-7 .print-this-item.hover,   
+.print_schedule .category-color-7.will-print .print-this-item    { background-position: -559px 0; }
+
+
+/* ===== Prvky stranek ===== */
+
+/* Kalendarni datum v detailu akce a v programu podle kategorii */
+
+.calendar-date {
+  width: 43px;
+  height: 49px;
+  background-color: #ECEAE6;
+  background-position: 0 14px;
+  background-repeat: no-repeat;
+  float: left;
+  margin-right: 10px;
+  position: relative;
+  font-size: 25px;
+  overflow: hidden;  
+}
+
+.calendar-date small {
+  position: absolute;
+  top: 2px;
+  left: 5px;
+  font-size: 12px;
+  color: #A9A49C;
+  font-weight: normal;
+}
+
+.calendar-date strong {
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  line-height: 1em;
+  width: 43px;
+  text-align: center;
+  font-weight: normal;
+  font-size: 25px;
+  text-indent: -5000px;
+}
+
+
+/* Kdyz se ma vypisovat i mesic */
+.calendar-date.has-month {
+  height: 67px;
+}
+
+.calendar-date .month {
+  margin-top: 50px;
+  display: block;
+  padding: 1px;
+  width: 41px;
+  bottom: -20px;
+  text-align: center;
+  background-color: #322A21;
+  color: #fff;
+  font-weight: normal;
+  overflow: hidden;
+}
+
+.calendar-date.day-1 { background-image: url("../images/days/1.png") }
+.calendar-date.day-2 { background-image: url("../images/days/2.png") }
+.calendar-date.day-3 { background-image: url("../images/days/3.png") }
+.calendar-date.day-4 { background-image: url("../images/days/4.png") }
+.calendar-date.day-5 { background-image: url("../images/days/5.png") }
+.calendar-date.day-6 { background-image: url("../images/days/6.png") }
+.calendar-date.day-7 { background-image: url("../images/days/7.png") }
+.calendar-date.day-8 { background-image: url("../images/days/8.png") }
+.calendar-date.day-9 { background-image: url("../images/days/9.png") }
+.calendar-date.day-10 { background-image: url("../images/days/10.png") }
+.calendar-date.day-11 { background-image: url("../images/days/11.png") }
+.calendar-date.day-12 { background-image: url("../images/days/12.png") }
+.calendar-date.day-13 { background-image: url("../images/days/13.png") }
+.calendar-date.day-14 { background-image: url("../images/days/14.png") }
+.calendar-date.day-15 { background-image: url("../images/days/15.png") }
+.calendar-date.day-16 { background-image: url("../images/days/16.png") }
+.calendar-date.day-17 { background-image: url("../images/days/17.png") }
+.calendar-date.day-18 { background-image: url("../images/days/18.png") }
+.calendar-date.day-19 { background-image: url("../images/days/19.png") }
+.calendar-date.day-20 { background-image: url("../images/days/20.png") }
+.calendar-date.day-21 { background-image: url("../images/days/21.png") }
+.calendar-date.day-22 { background-image: url("../images/days/22.png") }
+.calendar-date.day-23 { background-image: url("../images/days/23.png") }
+.calendar-date.day-24 { background-image: url("../images/days/24.png") }
+.calendar-date.day-25 { background-image: url("../images/days/25.png") }
+.calendar-date.day-26 { background-image: url("../images/days/26.png") }
+.calendar-date.day-27 { background-image: url("../images/days/27.png") }
+.calendar-date.day-28 { background-image: url("../images/days/28.png") }
+.calendar-date.day-29 { background-image: url("../images/days/29.png") }
+.calendar-date.day-30 { background-image: url("../images/days/30.png") }
+.calendar-date.day-31 { background-image: url("../images/days/31.png") }
+
+/* Pseudotlacitka (vetsinou ovladajici javascript - viz naprikladu program k tisku) */
+
+.pseudo-button {
+  background-image: url("../images/layout/pseudobutton-left.gif");
+  background-repeat: no-repeat;
+  background-position: top left;
+  color: #0084CD;
+  display: inline-block; 
+  cursor: pointer;
+}
+
+.pseudo-button span {
+  background-image: url("../images/layout/pseudobutton-right.gif");
+  background-repeat: no-repeat;
+  background-position: top right;
+  padding: 7px 12px 6px;
+  display: inline-block;
+  text-align: center;
+}
+
+.pseudo-button.hover {
+  background-position: bottom left;
+}
+
+.pseudo-button.hover span {
+  background-position: bottom right;
+}
+
+.pseudo-button span span,
+.pseudo-button.hover span span {
+  background-image: none;
+}
+
+.pseudo-button small {
+  font-size: 1em;
+  color: #71685c;
+}
+
+.bottom-buttons {
+  margin-top: 1.6em;
+}
+
+/* Vytisknout vybrane akce */
+.pseudo-button.print-selected {
+  background-image: url("../images/layout/pseudobutton-print.gif");
+}
+
+.pseudo-button.print-selected span {
+  padding-left: 33px;
+  width: 155px;
+}
+
+.pseudo-button.print-selected span.print-count {
+  width: auto;
+  display: inline;
+  padding: 0;
+}
+
+
+
+
+
+
+/* === Docasna stranka === */
+
+.temporary-website#page-program-columns .program-item {
+  float: left;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+.temporary-website .program-item {
+  width: 231px;
+  margin: 0 25px 15px 0;
+  float: left;
+  padding: 0;
+}
+
+
+
+/* === Staticke stranky === */
+
+#content-head h1 {
+  margin-left: 81px;
+}
+
+#content {
+  width: 892px; /* Celkova sirka je vzdy 993px */
+  background: #fff;
+  padding: 15px 20px 50px 81px;
+  clear: both;
+}
+
+/* === Uvodni stranka souteze === */
+
+/* Soutezni clanky */
+#competition-results {
+  width: 516px;
+  float: left;
+}
+
+#competition-results .instrument {
+  width: 255px;
+  float: left;
+  background-color: #ede9e6;
+  margin-right: 2px;
+  padding-bottom: 100px;
+}
+
+#competition-results .instrument .heading {
+  margin: 15px 20px 5px 20px;
+  height: 120px;
+  text-align: center;    
+}
+
+#competition-results .instrument .heading h2 {
+  margin: 0;
+  font-family: 'Chronicle Disp Comp', Arial, sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000;
+}
+
+#competition-results .instrument  .round {
+  margin: 3px 12px;
+  padding: 10px 10px;
+  background-color: #fff;
+  text-align: center;  
+  height: 110px;
+}
+
+#competition-results .instrument  .round h3 {
+  font-weight: normal;  
+  margin: 0;
+  font-family: 'Chronicle Disp Comp', Arial, sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000;
+}
+
+#competition-results .instrument .round p {
+  margin: 0;
+}
+
+/* Odkaz na vysledky a program  */
+#competition-results .instrument  .round a.plan-and-results { 
+  background-color: #e5f2fa;  
+  background-image: url("../images/layout/plan-and-results-bg.gif");
+  background-repeat: no-repeat;
+  background-position: top left;  
+  padding: 5px 5px 6px 5px;
+  margin-left: -5px;
+  margin-right: 7px;
+  text-align: center;
+  width: 76px;
+  display: inline-block;  
+}
+
+
+#competition-results #prices-handover {
+  width: 458px;
+  text-align: center;
+  padding: 15px 15px 1px 15px;
+  margin: 6px 12px;
+  background-color: #fff;
+  top: -96px;
+  position: relative;
+  clear: both;
+}
+
+#competition-results #prices-handover h2:first-child {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: 'Chronicle Disp Comp', Arial, sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000;
+}
+
+
+/* Soutezni clanky */
+#competition-articles {
+  width: 340px;
+  float: right;
+}
+
+
+#competition-articles .article h2 {
+  margin: 0 0 0 0;
+  font-size: 28px;
+  line-height: 28px;
+  font-family: 'Chronicle Disp Comp', Arial, sans-serif;
+}
+
+#competition-articles #another-news {
+  margin-top: 2.6em;
+}
+
+
+/* === Detail soutezni staticke stranky === */
+
+.competition_pages.show #content table td,
+.competition_pages.show #content table th {
+  padding: 2px 4px 2px 0;
+}
+
+.competition_pages.show #content table td.right {
+  text-align: right;
+}
+
+.competition_pages.show #content table td hr {
+  margin: .6em 0;
+  height: 1px;
+  background-color: #c7c4be;
+}
+
+
+/* === O Soutezi === */
+
+body#o_soutezi #content em {
+  font-style: normal;
+  color: #90897F;
+  clear: both; 
+}
+
+
+
+/*  Styl obsahu  */
+
+
+/* = Grid obsahove casti webu = */
+
+/* Sloupec trisloupcoveho layoutu (napr. Podminky souteze) */
+
+#content .column {
+  width: 231px;
+  margin-right: 25px;
+  float: left;
+}
+
+/* Pul-sloupec trisloupcoveho layoutu */
+
+#content .half-column {
+  width: 115px;
+  margin-right: 15px;
+  float: left;
+}
+
+
+/* Grid formularu (napr. Prihlaska k soutezi) */
+
+#content .double-column {
+  width: 485px;
+  margin-right: 25px;
+  float: left;
+}
+
+#content .wide-column { 
+  width: 357px; /* 1.5 sirky sloupce */
+  margin-right: 25px;
+  float: left;
+}
+
+/* Posledni sloupce bez marginu */
+
+#content .column.last,
+#content .half-column.last,
+#content .double-column.last,
+#content .wide-column.last {
+  margin-right: 0;
+}
+
+#content h2 {
+  font-size: 19px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+#content h2:first-child {
+  margin-top: 20px;
+}
+
+/* Tucny text ma potlacenou barvu */
+#content strong,
+#content table th {
+  color: #71685c;
+}
+
+#content h3 {
+  color: #90897F;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1.3em;
+}
+
+#content ul {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+#content ul li {
+  background-image: url('../..../images/layout/list-bullet.png');
+  background-repeat: no-repeat;
+  background-position: top left;
+  padding-left: 12px;
+  margin-left: -12px;
+  width: 232px;
+}
+
+#content li li {
+  width: 210px;
+  margin-left: 0;
+}
+
+#content li li li {
+  width: 210px;
+}
+
+/* 
+#content ol li {
+  left: -22px;
+  padding-left: 0px;
+  margin-left: 4px;
+  position: relative; 
+}
+TODO: MSIE ma hrozne velkou mezeru mezi cislem a textem
+*/
+
+.competition_submissions #content h3,
+#page-static #content h3 {
+  margin-top: 35px;
+}
+
+img#payments {
+  margin: .5em 0 .5em 0;
+}
+
+
+/* === Textovy obsah - typografie === */
+
+/* TODO: presunout sem vsechna pravidla */
+
+.text-column h3 a {
+  color: #71685C;
+}
+
+/* TODO: odstranit vsechny duplicitni pravidla pro jednotlive stranky */
+#content em {
+  color: #71685c;
+  font-style: normal;
+}
+
+.top-margin-without-header {
+  margin-top: 77px;
+}
+
+
+
+
+/* === Vysledky vyhledavani === */
+
+#ajax-search-box {
+  z-index: 360;
+  position: absolute;
+  top: 28px;
+  right: 27px;
+  width: 317px;  
+}
+
+/* Vyresime stinovani */
+#ajax-search-box .search-results {
+  padding: 0 8px;
+  background: transparent url("../images/layout/ajax-search-results-bg.png") repeat-y top left;  
+}
+
+#ajax-search-box-top {
+  height: 8px;
+  background: transparent url("../images/layout/ajax-search-results-bg-top-bottom.png") no-repeat top left;
+}
+
+#ajax-search-box-bottom {
+  height: 8px;
+  background: transparent url("../images/layout/ajax-search-results-bg-top-bottom.png") no-repeat bottom left;
+}
+
+#other-search-results {
+  background-color: #f6f4f3;
+  clear: both;
+  color: #FFFFFF;
+  font-size: 1em;
+  margin: 0;
+  padding: 5px 10px;
+  width: 281px;
+}
+
+/* Zaviraci krizek */
+#ajax-search-box-close {
+  z-index: 360;
+  position: absolute;
+  height: 19px;
+  width: 19px;
+  right: 10px;
+  top:-14px;
+  background: transparent url("../images/layout/close-grey.gif") no-repeat top left;
+  cursor: pointer;
+}
+
+  #ajax-search-box-close:hover,
+  #ajax-search-box-close.hover {
+    background-position: bottom left;
+  }
+
+
+/* Nadpis typu obsahu */
+.search-results h2 {
+  padding: 5px 10px;
+  margin: 0;
+  width: 281px; /* 301px sirka vrstvy - 20px padding */
+  color: #fff;
+  background-color: #71685c;
+  font-size: 1em;
+  clear: both;
+}
+
+/* Seznam vysledku vyhledavani */
+.search-results ul {
+  list-style-type: none;
+  padding: 1em 0;
+  margin: 0;
+}
+
+/* Polozka vysledku vyhledavani */
+.search-result-item {
+  padding: 7px 10px;
+  width: 281px; /* 301px sirka vrstvy - 20px padding */
+  margin: 0;
+  clear: both;
+}
+
+.search-result-item h3.calendar-date {
+  margin-bottom: 0;
+}
+
+.search-result-item h3.calendar-date small {
+  top: 4px;
+}
+
+.search-result-item img {
+  float: left;
+}
+
+.search-result-item p {
+  width: 210px;
+  float: right;
+  margin: 0 15px 0 0;
+}
+
+/* Mouseover na polozce vysledku vyhledavani */
+.search-result-item.hover,
+.search-result-item:hover {
+  background-color: #f6f4f3;
+  cursor: pointer;
+}
+
+.search-result-item.hover h3.calendar-date,
+.search-result-item:hover h3.calendar-date {
+  background-color: #fff;
+}
+
+/* Vysledky vyhledavani v obsahove casti - non-JS verze */
+#content li.search-result-item {
+ background-image: none;
+}
+
+#content ul li.search-result-item {
+  width: 281px; /* 301px sirka vrstvy - 20px padding */
+}
+
+#content .search-results h2 {
+  background-color: transparent;
+  color: #322A21;
+  padding: 0;
+}
+
+
+/* === Soutezni prihlaska === */
+
+.competition_submissions #select-instrument {
+  width: 420px;
+  float: left;
+}
+
+.competition_submissions #select-instrument #select-instrument-title {
+  width: 220px;
+  float: left;
+}
+
+.competition_submissions #select-instrument h2 {
+  margin-top: 0;
+  width: 190px;
+}
+
+.competition_submissions #select-instrument p {
+  margin-top: 7px;
+  width: 200px;
+  float: left;
+}
+
+.competition_submissions .half-right {
+  margin-top: 3px; 
+}
+
+.competition_submissions #piano_accompanist-label {
+  margin-left: 22px;
+}
+
+.competition_submissions #repertoire-round-2-label {
+  margin-left: 22px;
+}
+
+.competition_submissions #repertoire-round-2-label input {
+  margin-top: 5px;
+}
+
+.competition_submissions #repertoire ol li {
+  margin-bottom: .5em;
+}
+
+.competition_submissions .wide-column textarea {
+  height: 30px;
+}
+
+
+/* === Soutezni podminky === */
+
+.soutezni-podminky .special-link a {
+  background-color: #EDE9E6;
+  padding: 4px;
+  float: right;
+}
+
+/* === Stranka Kontakt === */
+
+body.kontakt #content h3 {
+  margin-bottom: 0;
+}
+
+body.kontakt #content em {
+  font-style: normal;
+  color: #90897F;
+}
+
+
+/* === Stranka Abonentni koncerty === */
+
+.abonentni_koncerty #content h2 {
+  margin: 0 0 10px 0;
+}
+
+.abonentni_koncerty #content em {
+  font-style: normal;
+  color: #90897F;
+}
+
+.abonentni_koncerty p.emphasized-date {
+  margin: 30px 0 5px -2px;
+}
+
+.abonentni_koncerty p.emphasized-date span {
+  background-color: #ede9e6;
+  padding: 3px 2px;
+  line-height: 1em;
+}
+
+.abonentni_koncerty p.emphasized-date.first {
+  margin-top: 3px;
+}
+
+#abonent-info {
+  margin-bottom: 40px;
+}
+
+
+
+
+
+
+/* === Stranka Prodejni mista === */
+
+.prodejni_mista .sale-place {
+  width: 231px;
+  margin: 0 25px 15px 0;
+  float: left;
+  padding: 0;
+}
+
+
+
+/* === Stranka Organizacni struktura === */
+
+.organizacni_struktura .organization-person {
+  width: 231px;
+  margin: 0 25px 15px 0;
+  float: left;
+  padding: 0;
+}
+
+.organizacni_struktura #content em {
+  font-style: normal;
+  color: #90897F;
+}
+
+.organizacni_struktura #content .column.last {
+  width: 235px;
+}
+
+
+
+/* === Stranka Tiskovy servis === */
+
+.tiskovy_servis #content em {
+  font-style: normal;
+  color: #90897F;
+}
+
+
+
+/* === Stranky Program, Mista, Clanky, Umelci - spolecny layout === */
+
+.program_events #content-head,
+.venues #content-head,
+.articles #content-head,
+.article_sections #content-head,
+.artists #content-head  {
+  margin-left: 125px;
+}
+
+.program_events #content,
+.venues #content,
+.articles #content,
+.article_sections #content,
+.artists #content {
+  width: auto;
+  background: transparent;
+  padding: 0;
+}
+
+.program_events #content h2,
+.articles #content h2,
+.article_sections #content h2,
+.artists #content h2 {
+  font-size: 33px;
+  line-height: 1.1em;
+  margin-top: 0;
+}
+
+/* Nadpis novinek je kvuli datumu jeste odsazen shora */
+.articles #content h2,
+.article_sections #content h2 {
+  margin-top: 20px;
+}
+
+
+/* === Stranka program === */
+
+
+/* Hvezdy programu na uvodni strance programu */
+#programme-stars {
+  padding: 20px 20px 0 20px;
+  height: 416px; /* Celkem 436px */
+  background-color: #fff;
+}
+
+#programme-stars h2 {
+  width: 310px;
+  float: left;
+  margin-top: 0;
+}
+
+/* Odkaz na kalendar */
+#programme-stars a#calendar-big-link {
+  width: 141px;
+  height: 22px;
+  float: right;
+  padding: 17px 0 8px 8px;
+  margin-right: 18px; 
+  background: transparent url('../images/layout/calendar-icon-big.gif') no-repeat 0px -141px;
+  text-align: left;
+  color: #322a21;  
+}
+
+#programme-stars a#calendar-big-link:hover {
+  background-position: 0px -94px;
+  color: #0084CD;
+}
+
+#programme-stars a#calendar-big-link.loading {
+  background-position: 0px -47px;
+}
+
+#programme-stars a#calendar-big-link.loading:hover {
+  background-position: 0px 0px;
+}
+
+
+/* Fotky hvezd */
+.programme-stars-photo-gallery {
+  width: auto;
+  float: none;
+  clear: both;
+  padding: 0;  
+  margin: 0;    
+}
+
+.programme-stars-photo-gallery #photo-title {
+  clear: both;
+  width: auto;
+  padding-top: 5px;
+}
+
+.programme-stars-photo-gallery a:hover img {
+  opacity: 0.6;
+}
+
+
+/* Prvni sloupec - filtrovani akci u Programu, seznam mist v Mistech, kategorie Clanku, seznam Umelcu */
+
+.program_events #filter,
+.venues #content #venues-list,
+#article-sections,
+.artists #artists-categories {
+  background: #fff;
+  width: 208px;
+  float: left;
+  border-right: 2px solid #EDE9E6;
+}
+
+/* Typ filtru - Kategorie, Mista, Skupiny */
+
+.program_events #filter {
+  min-height: 436px;
+}
+
+.program_events #filter-type {
+  margin-top: 15px;
+}
+
+.program_events #filter-type label {
+  display: block;
+  line-height: 1.5em;
+  font-weight: normal;
+  padding-left: 8px;
+}
+
+.program_events #filter-type a {
+  color: #71685C;
+  display: inline;
+  padding-left: 0;
+}
+
+/* === Sablona pro seznam prvku v (prvni slupec v Programu, v Mistech, v Clancich nebo prvni i druhy Umelcich) === */
+
+.program_events #filter-choices,
+.venues #venues-list ul,
+#article-sections ul,
+.artists #artists-categories ul,
+.artists #artists-list ul {
+  list-style-type: none;
+  margin: 26px 0 30px 0;
+  padding: 0;
+}
+
+.program_events #filter-choices li,
+.venues #venues-list ul li,
+#article-sections ul li,
+.artists #artists-categories ul li,
+.artists #artists-list ul li {
+  background-image: none;
+  padding-left: 0;
+  width: 220px;  
+}
+
+.program_events #filter-choices a,
+.venues #venues-list a,
+#article-sections a,
+.artists #artists-categories a,
+.artists #artists-list a {
+  line-height: 1.3em;
+  padding: 2px 0 3px 25px;
+  display: block;  
+  height: 15px;
+  overflow: hidden;
+  font-weight: normal;
+}
+
+.program_events #filter-choices a:hover,
+.program_events #filter-choices li.active a,
+.venues #venues-list a:hover,
+.venues #venues-list li.active a,
+#article-sections a:hover,
+#article-sections li.active a,
+.artists #artists-categories a:hover,
+.artists #artists-categories li.active a,
+.artists #artists-list a:hover,
+.artists #artists-list li.active a {
+  background: #0084CD;
+  color: #fff;
+}
+
+/* Pocet akci nalezicich do polozky filtru */
+
+.program_events #filter-choices li small,
+#article-sections li small {
+  font-size: 1em;
+  color: #A9A49C;
+}
+
+.program_events #filter-choices a:hover small,
+.program_events #filter-choices li.active a small,
+#article-sections a:hover small
+#article-sections li.active a small {
+  color: #ccc;
+}
+
+/* Seznam akci splnujici podminky filtru */
+
+.program_events #event-list {
+  background-color: #fff;
+  width: 251px;
+  float: left;
+  border-right: 2px solid #EDE9E6;
+  height: 436px;
+}
+
+.program_events #event-list-clipper  {  
+  height: 416px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.program_events #event-list .head {
+  height: 93px;
+  overflow: hidden;
+  margin: 5px 18px 5px 18px;
+}  
+
+.program_events #event-list table  {  
+  margin: 0;
+}
+
+.program_events #event-list h3 {
+  margin: 1.3em 0 0 12px;
+}
+
+.program_events #event-list table tr.active {
+  background: #EDE9E6;
+}
+
+.program_events #event-list td.day {
+  width: 12px;
+  padding-left: 12px;
+  color: #A9A49C;
+}
+
+.program_events #event-list td.date {
+  width: 18px;
+  padding-right: 10px;
+  text-align: right;
+}
+
+.program_events #event-list td.event {
+  width: 195px;
+  height: 15px;
+  overflow: hidden;
+}
+
+.program_events #event-list table tr.active td,
+.program_events #event-list table tr:hover td,
+.program_events #event-list table tr.hover td {
+  background: #0084CD;
+  color: #fff;
+}
+
+.program_events #event-list table tr.month.active td,
+.program_events #event-list table tr.month:hover td,
+.program_events #event-list table tr.month.hover td {
+  background: transparent;  
+}
+
+/* === Sablona pro Detail akce a Detail umelce === */
+
+.program_events .event-detail,
+.artists #artist {
+  background-color: transparent;
+  width: 530px;
+  float: left;  
+}
+
+.program_events .event-detail .head,
+.artists #artist .head {
+  background-color: #fff;
+  padding: 10px 20px 15px 20px;  
+}  
+
+.program_events #event-body,
+.artists #artist-body {
+  float: left;
+  background-color: #fff;
+  width: 342px;
+  padding: 0px 20px 15px 20px;
+  margin: 0;  
+}
+
+.program_events .photo-gallery,
+.artists #artist .photo-gallery {
+  float: left;
+  background-color: #fff;
+  width: 128px;
+  padding: 0 20px 20px 0;  
+  margin: 0;    
+}
+
+.program_events .photo-gallery .photo-title,
+.artists #artist .photo-gallery .photo-title {
+  clear: both;
+  width: auto;
+  padding-top: 5px;
+}
+
+
+
+.program_events .event-detail #facts {
+  margin-bottom: 1.3em;
+}
+
+.program_events .event-detail #facts #venue {
+  width: 285px;
+  float: left;
+  margin: 3px 0 0 13px;
+}
+
+.program_events .event-detail #facts #venue small {
+  font-size: 1em;
+  color: #322A21; 
+}
+
+.program_events .event-detail #facts #venue p {
+  margin: 0;
+}
+
+.program_events .event-detail #fees em,
+.program_events .event-detail #performers em,
+.program_events .event-detail #compositions {
+  color: #90897F; 
+  font-style: normal;
+}
+
+/* Autor v seznamu skladeb ma tmavsi barvu */
+.program_events .event-detail #compositions .author {
+  color: #322A21; 
+}
+
+.program_events .event-detail #fees li {
+  width: auto;
+  background-image: none;  
+}
+
+.program_events .event-detail #ticket-pro-link {
+  margin: 0;
+}
+
+.program_events .event-detail #text,
+.artists #artist-body #text {
+  width: 340px;
+  float: left;
+  color: #322A21;   
+}
+
+.program_events .event-detail #barrier-free-access {
+  color: #90897F;
+}
+
+.program_events .event-detail #performers li,
+.program_events .event-detail #compositions li {
+  background-image: none;
+  width: auto;
+}
+
+.program_events .event-detail #performers em,  
+.program_events .event-detail #compositions em {
+  font-style: normal;
+  color: #90897F;
+}
+
+
+.program_events .event-detail h3 {
+  font-size: 1em;
+  margin: 0;
+  color: #90897F;
+}
+
+.program_events #content .event-detail ul {
+  margin-right: 0;
+} 
+
+.program_events .event-detail #related ul,
+.artists #artist-body #related ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+.program_events .event-detail #media {
+  width: 240px;
+  float: right;
+}
+
+.program_events .event-detail #media #list {
+  margin-bottom: 10px;
+}
+
+.program_events .event-detail #media #legend {
+  color: #322A21;
+}
+
+
+/* Verze sablony pro Detail akce a Detail umelce bez fotek */
+
+.program_events #event-body.without-photos,
+.artists .without-photos #artist-body {
+  width: 470px;
+  padding: 0 40px 20px 20px;
+}
+
+.program_events #event-body.without-photos #text,
+.program_events #event-body.without-photos .related-content,
+.artists .without-photos #artist-body #text,
+.artists .without-photos #artist-body .related-content {
+  width: 340px;
+  float: none;
+}
+
+/* Nacitani v pripade AJAXove verze */
+
+.program_events #event.loading,
+.artists #artist.loading {
+  background-color: #fff;
+  width: 530px;
+  height: 400px;
+}
+
+.program_events #event.loading *,
+.artists #artist.loading * {  
+  display: none;
+}
+
+.program_events #event-list.loading,
+.artists #artists-list.loading {
+  height: 436px;
+}
+
+.program_events #event-list.loading *,
+.artists #artists-list.loading * {
+  display: none;  
+}
+
+.program_events #filter.loading #filter-choices {  
+  display: none;
+}
+
+.program_events #filter.loading   {  
+  height: 436px;
+  background: #fff url('../images/layout/loading.gif') no-repeat 20px 90px;
+}
+
+
+/* == Podobny obsah == */
+
+#content .related-content ul li {
+  background-image: none;
+  width: auto;
+}  
+
+#content .related-content h3 {
+  margin-bottom: 0;
+}
+
+.article .related-content {
+  margin-top: 1.3em;
+}
+
+
+
+/* == Stranka Mista Konani == */
+
+.venues #venue {
+  width: 783px;
+  float: left;
+}
+
+.venues #venue.without-photos {
+  width: 463px;
+  padding: 6px 320px 20px 0;
+  background-color: #fff;
+}
+
+.venues #venue .head {
+  width: auto;
+  background-color: #fff;
+  padding: 10px 20px 15px 0;
+}
+
+.venues #venue-body {
+  width: 446px;
+  padding: 0 40px 20px 20px;
+  background-color: #fff;
+  float: left;
+}
+
+.venues .photo-gallery {
+  float: left;
+  background-color: #fff;
+  width: 257px;
+  padding: 20px 20px 20px 0;  
+  margin: 0;    
+}
+
+.venues .photo-gallery .photo-title {
+  clear: both;
+  width: auto;
+  padding-top: 5px;
+}
+
+.venues #venue h2 {
+  font-size: 33px;
+  line-height: 1.1em;
+  margin: 0; 
+}
+
+.venues #venue h3 {
+  font-size: 1em;
+  margin: 0;
+}
+
+.venues #content ul li {
+  background-image: none;
+  width: auto;
+}
+
+.venues .photo-title {
+  width: 250px;
+}
+
+/* Oznaceni skupiny akci */
+.venues #content li a.group {
+  color: #71685c;
+  border-bottom: 1px dotted #71685c;
+}
+
+
+
+/* === Stranka Clanky === */
+
+
+/* Prvni sloupec - rubriky */
+
+#content #article-sections h2 {
+  font-size: 19px;
+  margin: 10px 0 0 10px;
+}
+
+#article-sections ul {
+  margin-top: 10px;
+}
+
+/* Druhy sloupec - seznam clanku */
+
+.article-container {
+  width: 784px;
+  float: left;
+}
+
+
+/* Druhy sloupec - polozka seznamu clanku nebo detail clanku */
+
+.article {
+  clear: both;
+}
+
+/* Text clanku */
+.articles .article .text,
+.article_sections .article .text {
+  position: relative;
+  width: 452px; /* Sirka je 507px - postranni padding (30px + 25px) */
+  padding: 20px 30px 20px 25px;
+  float: left;
+  background-color: #fff;
+}
+
+.articles #content ul li,
+.articles_sections #content ul li {
+  width: auto;
+}
+
+/* Datum clanku */
+.articles .article .date,
+.article_sections .article .date {
+  width: 120px; 
+  position: absolute;
+  right: 30px;
+  top: 20px;
+  text-align: right;
+}
+
+/* Nadpis clanku */
+.articles .article h2,
+.article_sections .article h2,
+.articles.show .article h1 {
+  width: 415px; 
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+/* Kategorie clanku a dalsi metainformace */
+.articles .article .meta,
+.article_sections .article .meta {
+  margin-top: 10px;
+  clear: both;
+}
+
+
+/* Fotogalerie */
+.articles .article .photo-gallery,
+.article_sections .article .photo-gallery {
+  width: 236px; /* Sirka je 276px - postranni padding (20px - 20px) */
+  padding: 20px 20px 20px 0;
+  margin-right: 21px;
+  float: right;
+  display: inline;
+  background-color: #fff;
+}
+
+.articles .photo-title,
+.article_sections .photo-title {
+  width: 236px; /* Sirka je 276px - postranni padding (20px - 20px) */
+}
+
+
+/* === Prehravac na multimedia u clanku === */
+
+.multimedia {
+  margin-bottom: 2px;
+  background-color: #d9edf8;
+  background-position: 8px -4px;
+  background-repeat: no-repeat;
+}
+
+.articles #content .multimedia h3,
+.article_sections #content .multimedia h3 {
+  padding: 12px 20px 12px 40px;
+  margin: 0;
+  background: transparent url("../images/layout/multimedia_arrow.gif") -500px 0px no-repeat;
+  font-size: 1em;
+  font-weight: normal;
+}
+
+.articles #content .multimedia h3 span,
+.article_sections #content .multimedia h3 span {
+  display: block;
+  overflow: hidden;
+  height: 15px; 
+  width: 392px; /* 452 - padding (40 + 20) */
+}
+
+.articles .multimedia .player,
+.article_sections .multimedia .player {
+  padding: 10px 0 15px 13px;
+  margin: 0;
+}
+
+.player embed,
+.player object {
+  z-index: 210;
+  position: relative;
+}
+
+
+/* = Typy - audio, video a fotky = */
+
+.articles .multimedia.video,
+.article_sections .multimedia.video {
+  background-image: url("../images/layout/video_icon.gif?2");
+}
+
+.articles .multimedia.audio,
+.article_sections .multimedia.audio {
+  background-image: url("../images/layout/audio_icon.gif?2");
+}
+
+.articles .multimedia.photos,
+.article_sections .multimedia.photos {
+  background-image: url("../images/layout/photo_icon.gif?2");
+}
+
+  .articles .multimedia.photos .player,
+  .article_sections .multimedia.photos .player {
+    padding: 10px;
+  }
+
+  .articles .multimedia.photos .photo-gallery,
+  .article_sections .multimedia.photos .photo-gallery {
+    width: 392px;
+    padding: 15px 15px 0 20px;
+    float: none;
+    display: block; 
+  }
+  
+  .articles .multimedia.photos .photo-title,
+  .article_sections .multimedia.photos .photo-title {
+    width: auto;
+    height: 40px;
+    display: block;
+    margin-left: -5px;
+  }  
+  
+  .articles .multimedia.photos .photo-title span,
+  .article_sections .multimedia.photos .photo-title span {
+    padding: 5px;
+  }    
+  
+
+/* = Mouseover - prebarvime na tmavsi barvu = */
+
+#content .multimedia.hover,
+#content .multimedia:hover {
+  cursor: pointer;
+  background-position: -467px -4px;
+  background-color: #b2daf0;    
+}
+
+#content .multimedia.hover h3,
+#content .multimedia:hover h3 {
+  background-position: 420px 14px;  
+}
+
+/* = Otevreny - prebarvime na tmavsi barvu = */
+
+#content .multimedia.opened {
+  cursor: pointer;
+  background-position: -467px -4px;
+  background-color: #b2daf0;    
+}
+
+/* = Otevreny a mouseover - zobrazime sipku nahoru = */
+
+#content .multimedia.opened.hover h3,
+#content .multimedia.opened:hover h3 {
+  background: transparent url("../images/layout/multimedia_arrow_up.gif") 420px 10px no-repeat;
+}
+
+
+/* === Sekce Umelci === */
+
+.artists #artists-categories {
+  min-height: 436px;
+}
+
+.artists #artists-list {
+  background-color: #fff;
+  width: 251px;
+  float: left;
+  border-right: 2px solid #EDE9E6;
+  height: 436px;
+}
+
+.artists #artists-list-clipper  {  
+  height: 416px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.artists #artists-list ul li {
+  width: auto;
+}
+
+
+
+/* === Strankovani === */
+.pagination {
+  width:452px;
+  padding: 40px 30px 20px 25px;
+  clear: both;  
+  background-color: #fff;
+}
+
+.pagination a,
+.pagination span {
+  padding: 5px;
+  border: 1px solid #EDE9E6;
+}
+
+.pagination a:hover,
+.pagination span.current {
+  padding: 5px;
+  background-color: #EDE9E6;
+}
+
+.pagination .disabled {
+  display: none;
+}
+
+
+
+
+/* === Stranka partneri === */
+
+body.partneri #content {
+  padding-top: 25px;
+}
+
+.partner-label {
+  margin-bottom: 0;
+}
+
+.partner {
+  width: 120px;
+  float: left;
+  margin-right: 30px;
+}
+
+.partner.smaller {
+  margin-right: 20px;
+}
+
+body.partneri #content span.partner-title {
+  display: block;
+  margin-bottom: 5px;
+}
+
+body.partneri #content em {
+  font-style: normal;
+  color: #90897F;
+}
+
+body.partneri #president {
+  float: left;
+  width: 148px;
+}
+
+body.partneri.lang-de #president {
+  width: 200px;
+}
+
+body.partneri #ministerstvo-kultury {
+  float: left;
+  width: 220px;  
+}
+
+body.partneri #ministerstvo-kultury img {
+  margin-left: -5px;
+}
+
+body.partneri #praha {
+  float: left;
+  width: 170px; 
+}
+
+body.partneri #eu2009 {
+  float: left;
+  width: 220px; 
+}
+
+body.partneri #eu2009 img {
+  margin-left: -2px;
+  margin-top: 15px; 
+}
+
+body.partneri #ceska-sporitelna {
+  margin-top: 15px;
+}
+
+body.partneri #rwe {
+  margin-top: 15px;
+}
+
+body.partneri #ceska-televize {
+  margin-top: 30px;
+  margin-bottom: 35px;
+}
+
+body.partneri #ceska-televize img {
+  margin-top: 5px;
+  margin-left: 20px;
+}
+
+body.partneri #mercedes-benz {
+  width: 165px;
+  float: left;
+  margin-bottom: 40px;
+}
+
+body.partneri #intercontinental {
+  width: 165px;
+  float: left;
+}
+
+body.partneri #cesky-rozhlas {
+  width: 218px;
+  float: left;
+  margin-bottom: 40px;
+}
+
+body.partneri #radio-station {
+  margin-bottom: 60px;
+}
+
+body.partneri #dnes {
+  width: 143px;
+  float: left;
+}
+
+body.partneri #idnes {
+  width: 150px;
+  float: left;
+}
+
+body.partneri #content #hudba .partner-title,
+body.partneri #content #dale-spolupracujeme .partner-title {
+  margin-bottom: 20px;
+} 
+
+body.partneri #hudba p {
+  margin-right: 20px;
+  float: left;
+  text-align: center;
+  width: 200px;
+  height: 60px;
+}
+
+body.partneri #dale-spolupracujeme {
+  margin-top: 20px;
+}
+
+body.partneri #dale-spolupracujeme p {
+  margin-right: 20px;
+  float: left;
+  text-align: center;
+  width: 120px;
+}
+
+
+
+/* === Vrstva s programem kategrie === */
+
+#program-layer {
+  width: 850px;
+  position: absolute;
+  top: 60px;
+  left: 81px;
+  background: #666;
+  padding: 32px 23px;
+  color: #fff;
+}
+
+#program-layer .column {
+  width: 280px;
+  margin: 0;
+}
+
+#program-layer p {
+  color: #ddd;
+}
+
+#content #program-layer p a {
+  color: #fff;
+}
+
+#program-layer .program-item,
+#program-layer .program-item {
+  margin: 0;
+  padding-right: 15px;
+}
+
+#program-layer .program-item:hover,
+#program-layer .program-item.hover {
+  background: #333;
+  cursor: pointer;
+}
+
+
+
+/* === Zaviraci krizek === */
+
+p.close {
+  width: 19px;
+  height: 19px;
+  display: block;
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  margin: 0;
+  padding: 0;
+}
+
+p.close a {
+  width: 19px;
+  height: 19px;
+  display: block;
+  background: transparent url('../..../images/layout/close-white.gif');
+  text-indent: -5000px; 
+}
+
+p.close a:hover {
+  background-position: 0 100%;
+}
+
+
+
+/* === Uvodni stranka === */
+
+.page-home #news,
+.page-home-single-event #news {
+  width: 258px;
+  float: right;
+}
+
+#content.page-home,
+#content.page-home-single-event {
+  padding: 0;
+  width: 993px;
+  height: 333px;
+}
+
+/* Hvezdy festivalu s fotkou maji hlavni prostor na titulce */
+
+#highlights {
+  float: left;
+  background: #29292a;
+  color: #fff; 
+}
+
+#highlights .highlight-item a {
+  position: absolute;
+  height: 49px;
+  width: 717px;
+  display: block;
+  z-index: 10;
+  margin: 0;
+  color: #fff;
+  line-height: 1.3em;
+  text-indent: -5000px;
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  margin-top: -15px;
+  cursor: pointer;    
+}
+
+#highlights h2 a {
+  color: #fff;
+}
+
+#highlights h2 .calendar-date {
+  display: none;
+  font-size: 12px;
+  left: 17px;
+  position: absolute;  
+  line-height: .7em;
+  background-color: #fff;
+  text-indent: 0px;
+}
+
+#highlights h2 .calendar-date small {
+  top: 5px;
+}
+
+
+#highlights h2 .calendar-date .month {
+  line-height: 16px;
+}
+
+#highlights h2 big {
+  margin-left: 81px;
+  font-weight: normal;
+  font-size: 33px;
+  display: none;
+}
+
+#highlights .highlight-item .perex {
+  position: absolute;
+  top: 410px;
+  left: 81px;
+  color: #fff;
+  width: 430px;
+  height: 47px;
+  z-index: 10;
+  display: none;
+}
+
+#highlights .highlight-item .perex strong {
+  color: #fff;
+}
+
+/* Aktivni slide slideshow */
+
+#highlights .highlight-item .activeSlide a  {
+  position: absolute;
+  height: 49px;
+  width: 717px;
+  display: block;  
+  background-repeat: no-repeat;
+  background-position: -800px 0px;
+}
+
+#highlights .highlight-item .activeSlide .calendar-date  {
+  display: block;
+}
+
+#highlights .highlight-item .activeSlide .calendar-date strong {
+  display: none;
+}
+
+#highlights .highlight-item .activeSlide .perex  {
+  display: block;
+}
+
+
+/* Barva polozky zvyraznene pomoci slideshow */
+
+#highlights #highlight-1 .activeSlide { color: #B14289 }  
+#highlights #highlight-2 .activeSlide { color: #B14289 }
+#highlights #highlight-3 .activeSlide { color: #B14289 }
+#highlights #highlight-4 .activeSlide { color: #B14289 }
+#highlights #highlight-5 .activeSlide { color: #B14289 }
+
+/* Hezke barevne nadpisy */
+
+#highlights #highlight-1 a { background-image: url("../images/home-highlights/text-kupiec.png"); }  
+#highlights #highlight-2 a { background-image: url("../images/home-highlights/text-gardiner.png") }
+#highlights #highlight-3 a { background-image: url("../images/home-highlights/text-shankar.png") }
+#highlights #highlight-4 a { background-image: url("../images/home-highlights/text-previn.png") }
+#highlights #highlight-5 a { background-image: url("../images/home-highlights/text-borodina.png") }
+
+/* Absolutni umisteni jednotlivych nadpisu, radky o vysce 38px */
+
+#highlight-1 a { top: 198px; }
+#highlight-2 a { top: 236px; }
+#highlight-3 a { top: 274px; }
+#highlight-4 a { top: 312px; }
+#highlight-5 a { top: 350px; }
+
+
+/* Obrazky hvezd z highlights pro slideshow (jquery.cycle prirazuje z-index: 1-5) */
+
+#highlights-images {
+  width: 717px;
+  height: 333px;
+  float: left;
+}
+
+#highlights-images img {
+  width: 717px;
+  height: 333px;
+}  
+
+
+/* = Zvyrazneni jedine akce na titulce festivalu - napr. vanocni Freddy Cole = */
+
+#highlight-single-event {
+  width: 717px;
+  height: 333px;
+  float: left;
+  overflow: hidden;
+  background: transparent url("../images/home-highlights/cole-cz.jpg") no-repeat top left;
+  cursor: pointer;
+}
+
+#highlight-single-event.lang-en {
+  background: transparent url("../images/home-highlights/cole-en.jpg") no-repeat top left;
+}
+
+#highlight-single-event h2 {
+  display: none;
+}
+
+#perex-single-event {
+  margin: 255px 0 0 19px;
+}
+
+#perex-single-event img {
+  float: left;
+}
+
+#perex-single-event p {
+  float: left;
+  margin-left: 23px;
+  color: #fff;
+  margin-top: 2px;
+}
+
+#perex-single-event p a {
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Podekovani na konci festivalu */
+
+#highlight-thanks {
+  width: 717px;
+  height: 333px;
+  background-image: url('../images/home-highlights/thanks.jpg');
+  background-repeat: no-repeat;  
+  float: left;
+  overflow: hidden;  
+  color: #fff;
+  position: relative;
+}
+
+#content #highlight-thanks h2 {
+  width: 350px;
+  height: 45px;
+  top: 130px;
+  left: 76px;
+  position: absolute;
+  background-image: url('../images/home-highlights/thanks-cz.jpg');
+  background-repeat: no-repeat;   
+  margin: 0;
+  padding: 0;
+}
+
+#highlight-thanks h2:first-child {
+  margin: 0;
+  padding: 0;
+}
+
+.lang-en #content #highlight-thanks h2 {
+  background-image: url('../images/home-highlights/thanks-en.jpg');
+}
+
+.lang-de #content #highlight-thanks h2 {
+  background-image: url('../images/home-highlights/thanks-de.jpg');
+}
+
+#highlight-thanks h2 span {
+  display: none;  
+}
+
+#highlight-thanks p { 
+  bottom: 30px;
+  left: 76px;
+  position: absolute;  
+  width: 420px;
+  margin: 0;
+  padding: 0;  
+}
+
+#highlight-thanks p strong { 
+  color: #fff;
+}
+
+
+/* Strucne novinky z festivalu (TODO: Deprecated ze staticke verze) */
+
+#news {
+  width: 258px;
+  float: right;
+}
+
+.page-home #news h2,
+.page-home-single-event #news h2 {
+  margin: 10px 0;
+}
+
+#news-content {
+  height: 252px;
+  overflow: auto;
+  padding-right: 20px;
+}
+
+#news p {
+  margin-bottom: .4em;
+}
+
+#news p.date {
+  margin-bottom: 0;
+  padding-top: 1.3em;
+}
+
+#news p.first,
+#news p:first-child {
+  padding-top: 0;
+}
+
+#news h3 {
+  margin-bottom: 0;
+}
+
+
+/* Vypis clanku na uvodni strance */
+
+#articles-for-homepage {
+  width: 258px;
+  float: right;
+}
+
+.page-home #articles-for-homepage h2 {
+  margin: 10px 0 10px 5px;
+}
+
+#articles-for-homepage-content {
+  height: 252px;
+  overflow: auto;
+  padding-right: 10px;
+}
+
+#articles-for-homepage .article-item {
+  padding: 5px 5px 5px 5px;
+}
+
+#articles-for-homepage .article-item.hover,
+#articles-for-homepage .article-item:hover {
+  cursor: pointer;
+  background-color: #f6f4f3;
+}
+
+#articles-for-homepage p {
+  display: inline;
+}
+
+#articles-for-homepage p.date {
+  margin-bottom: 0;
+}
+
+#articles-for-homepage h3 {
+  margin-bottom: 0;
+}
+
+
+
+
+
+
+
+/* == Partneri na uvodni strance == */
+
+.page-home #partners,
+.page-home #partners-coloured {
+  position: absolute;
+  top: 498px;
+  left: 0;
+  z-index: 200;
+  width: 993px;
+  height: 47px;  
+  padding: 10px 0;  
+  background-color: #71685c;
+  color: #b8b4ae;
+  font-size: .9em;
+  clear: both;
+}
+
+.page-home #partners.hover,
+.page-home #partners-coloured.hover {
+  cursor: pointer;
+}
+
+/*  Boxik s obarvenymi logy, do ktereho se morfuje pri mouseoveru, je schovany pod tim sedivym */
+.page-home #partners-coloured {
+  z-index: 199;
+  background-color: #fff;
+}
+
+.page-home #partners p,
+.page-home #partners-coloured p {
+  float: left;
+  display: inline;
+  margin: 0;
+}
+
+.page-home #partners p *,
+.page-home #partners-coloured p * {
+  vertical-align: middle;
+}
+
+.page-home #partners #partner-ministerstvo-kultury,
+.page-home #partners-coloured #partner-ministerstvo-kultury  {
+  margin-left: 94px;
+  width: 200px;
+}
+
+.page-home #partners #partner-ceska-sporitelna,
+.page-home #partners-coloured #partner-ceska-sporitelna {
+  margin-left: 22px;
+  width: 210px;
+  margin-top: -2px;
+}
+
+.page-home #partners #partner-ceska-sporitelna img,
+.page-home #partners-coloured #partner-ceska-sporitelna img {
+  margin-left: 5px;
+}
+
+.page-home #partners #partner-rwe,
+.page-home #partners-coloured #partner-rwe {
+  margin-left: 36px;
+  width: 149px;
+}
+
+.page-home #partners #partner-praha,
+.page-home #partners-coloured #partner-praha {
+  margin-left: 30px;
+  width: 166px;
+}
+
+
+/* Partneri na anglicke titulce */
+.lang-en .page-home #partners #partner-ministerstvo-kultury,
+.lang-en .page-home #partners-coloured #partner-ministerstvo-kultury {
+  width: 206px;
+}
+
+.lang-en .page-home #partners #partner-rwe,
+.lang-en .page-home #partners-coloured #partner-rwe {
+  width: 155px;
+}
+
+/* Partneri na titulce v nemcine */
+.lang-de .page-home #partners #partner-ministerstvo-kultury,
+.lang-de .page-home #partners-coloured #partner-ministerstvo-kultury  {
+  margin-left: 80px;
+  width: 230px;
+}
+
+.lang-de .page-home #partners #partner-rwe,
+.lang-de .page-home #partners-coloured #partner-rwe {
+  margin-left: 36px;
+  width: 160px;
+}
+
+
+/* === Stranka Pratele PJ  === */
+
+.friends.index #content big {
+  font-size: 28px;
+  line-height: 34px;
+  display: block;
+  width: 800px;
+  color: #0084CD;
+}
+
+.friends.index #content .column {
+  width: 282px;
+  margin-right: 15px;
+}
+
+.friends.index #content .double-column {
+  width: 600px;
+}  
+
+.friends.index #content h2 {
+  margin-top: 0px;
+}  
+
+#friends-quarters {
+  width: 881px;
+  background: url(../images/pages/pratele_kruhy_middle.gif) repeat-y;
+  margin-top: 10px;
+  margin-bottom: 1.5em;
+  position: relative;
+}
+
+#friends-quarters-top {
+  width: 881px;
+  background: url(../images/pages/pratele_kruhy_top.gif) no-repeat top left;
+}
+
+.lang-en #friends-quarters-top {
+  background-image: url(../images/pages/pratele_kruhy_top_en.gif);
+}
+
+.lang-de #friends-quarters-top {
+  background-image: url(../images/pages/pratele_kruhy_top_de.gif);
+}
+
+#friends-quarters-bottom {
+  width: 881px;
+  background: url(../images/pages/pratele_kruhy_bottom.gif) no-repeat bottom left;
+  padding-top: 120px;
+  padding-bottom: 85px;
+}
+
+.friends-quarter {
+  width: 256px; /* Celkem 286 */
+  float: left;
+  margin-left: 11px;
+  padding: 0 15px;  
+}
+
+.friends-quarter h2 {
+  display: none; 
+}
+
+.friends-quarter .more-than-basic {
+  
+}
+
+#content .friends-quarter,
+#content .friends-quarter strong {
+  color: #655f59;
+}
+
+.friends-quarter.first {
+  margin-left: 0;
+}
+
+.friends-color-foundation {
+  color: #2bc8f2;
+}
+
+.friends-color-silver {
+  color: #999999;
+}
+
+.friends-color-gold {
+  color: #e7b016;
+}
+
+#content .friends-quarter ul {
+  margin-right: 0;  
+}
+
+#content .friends-quarter ul li {
+  margin-right: 0;  
+  margin-left: 2px;
+}
+
+#content .friends-quarter.basic ul li {
+  background-image: url(../images/layout/list-disc-blue.gif);
+}
+
+#content .friends-quarter.silver  {
+  padding-top: 5px;
+}
+
+#content .friends-quarter.silver ul li {
+  background-image: url(../images/layout/list-disc-grey.gif);
+}
+
+#content .friends-quarter.gold  {
+  padding-top: 5px;
+}
+
+#content .friends-quarter.gold ul li {
+  background-image: url(../images/layout/list-disc-yellow.gif);
+}
+
+#content .friends-quarter-button a {
+  display: block;
+  position: absolute;
+  bottom: 29px;
+  margin-left: 10px;
+  font-size: 14px;
+  line-height: 30px;
+  height: 30px;
+  width: 240px;
+  color: #fff;
+  text-align: center;
+  background-color: #0083cd;
+  border-bottom: 1px solid #003756;
+  border-right: 1px solid #003756;
+  border-top: 1px solid #369dd8;
+  border-left: 1px solid #369dd8;
+}
+
+.lang-de #content .friends-quarter-button a {
+  margin-left: 0px;
+  width: 250px;
+}
+
+.friends-quarter-button a:hover {
+  opacity: 0.9;
+}
+
+#content .friends-quarter.silver .friends-quarter-button a {
+  background-color: #999999;
+  border-bottom: 1px solid #404040;
+  border-right: 1px solid #404040;
+  border-top: 1px solid #c4c4c4;
+  border-left: 1px solid #c4c4c4;
+}
+
+#content .friends-quarter.gold .friends-quarter-button a {
+  background-color: #cc9900;
+  border-bottom: 1px solid #564000;
+  border-right: 1px solid #564000;
+  border-top: 1px solid #e2c46c;
+  border-left: 1px solid #e2c46c;
+}
+
+#actual-friends {
+  width: 870px;
+}
+
+/* ===  Stranka Prihlaska k Pratelum PJ === */
+
+.friends #content .prihlaska {  
+  padding-top: 30px;
+}
+
+.friends #content .prihlaska .column {  
+  width: 430px;
+  margin-left: 13px;
+  margin-right: 0;
+  border-top: 2px solid #ede9e6;
+}
+
+.friends #content .prihlaska  .column.first {
+  margin-left: 0;
+}
+
+.friends #content .prihlaska .column h2 {  
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.friends .prihlaska table.form {  
+  margin-bottom: 0;
+}
+
+.friends .prihlaska table.form td,
+.friends .prihlaska table.form th {  
+  border-top: 1px solid #ede9e6;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  width: auto;
+}
+
+.friends .prihlaska table.form .error {  
+  background-color: #fff;
+}
+
+.friends .prihlaska .payment-cards {
+  margin-top: 5px;
+}
+
+.friends .prihlaska .input-info {
+  margin-left: 25px;
+}
+
+.friends .prihlaska input.other-amount {  
+  width: 8ex;
+}
+
+.friends .prihlaska input {
+  padding-bottom: 0px;
+}
+
+.friends .prihlaska input#friend_last_name {  
+  width: 12ex;
+}
+
+.friends .prihlaska .suppress {
+  width: 350px;
+}
+
+.friends .prihlaska .obligatory {
+  text-align: right;
+  width: 873px;
+}
+
+.friends .prihlaska input[type="radio"],
+.friends .prihlaska input[type="checkbox"] {
+  float: left;
+  margin-right: 15px;
+}
+
+.friends .prihlaska label span {
+  width: 350px;
+  display: block;
+  float: left;
+}
+
+.friends .prihlaska .submit-row {
+  text-align: center;
+  width: 873px;  
+  border-top: 2px solid #ede9e6;
+  padding-top: 30px;
+  margin-top: 20px;  
+}
+
+.friends .prihlaska .submit-row input {
+  font-size: 16px;
+  line-height: 24px;
+  padding: 0;
+  height: 30px;
+  width: 160px;
+  color: #fff;
+  text-align: center;
+  background-color: #0083cd;
+  border-bottom: 1px solid #003756;
+  border-right: 1px solid #003756;
+  border-top: 1px solid #369dd8;
+  border-left: 1px solid #369dd8;
+  padding-bottom: 2px;
+}
+
+.friends .prihlaska .submit-row input:hover {
+  opacity: 0.9;
+}
+
+
+/* ===  Fotogalerie - univerzalni prvek pro prohlizeni fotek s nahledy v "dlazdicich" === */
+
+.photo-gallery {
+  background-color: transparent;
+  padding: 0;
+}
+
+.photo-gallery a {
+  display: block;
+  width: 75px;
+  height: 75px;
+  float: left;
+  padding: 0 3px 3px 0;
+}
+
+.photo-gallery a:hover img {
+  opacity: 0.6;
+}
+
+.photo-title {
+  margin: 5px 5px 0 0;
+  width: 335px;
+  font-size: .9em;
+  clear: both;
+}
+
+.photo-title span {
+  background-color: #fff;
+  display: block;
+}
+
+#photo-credit,
+.photo-credit {
+  color: #90897F;
+}
+
+
+/* === Layout stranek s karuselem fotek (napr. Novinky) === */
+
+#content.photo-carusel-layout .text-column {
+  width: 410px;
+  float: left;
+  margin-right: 25px;
+}
+
+#content.photo-carusel-layout .photo-column {
+  width: 438px;
+  float: left;
+}
+
+/* Fotogalerie na strankach s karuselem (napr. Novinky) */
+
+#content.photo-carusel-layout .photo-gallery {
+  background-color: #ede9e6;
+  padding: 22px 21px 21px 23px;
+}
+
+#content.photo-carusel-layout .photo-title {
+  margin: 10px 5px 0 5px;
+  height: 30px;
+  overflow: hidden;
+  font-size: .9em;
+}
+
+#content.photo-carusel-layout #photo-credit {
+  color: #90897F;
+}
+
+#content.photo-carusel-layout #photo-detail {
+  margin: 5px 0 0 0;
+}
+
+#content.photo-carusel-layout #photo-detail img,
+#content.photo-carusel-layout .other-photos img {
+  border: 5px solid #fff;
+}  
+
+#content.photo-carusel-layout .other-photos {
+  margin-top: 30px;
+  display: none;
+}
+
+
+/* == jCarousel, plugin pro prohlizeni zmensenin obrazku (http://sorgalla.com/projects/jcarousel/) == */
+
+/**
+ * This <div> element is wrapped by jCarousel around the list
+ * and has the classname "jcarousel-container".
+ */
+.jcarousel-container {
+    position: relative;
+}
+
+.jcarousel-clip {
+    z-index: 2;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.jcarousel-list {
+    z-index: 1;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.jcarousel-list li,
+.jcarousel-item {
+    float: left;
+    list-style: none;
+    /* We set the width/height explicitly. No width/height causes infinite loops. */
+    width: 75px;
+    height: 75px;
+}
+
+/**
+ * The buttons are added dynamically by jCarousel before
+ * the <ul> list (inside the <div> described above) and
+ * have the classnames "jcarousel-next" and "jcarousel-prev".
+ */
+.jcarousel-next {
+    z-index: 3;
+    display: none;
+}
+
+.jcarousel-prev {
+    z-index: 3;
+    display: none;
+} 
+
+/* == jCarousel - vzhled pro PJ == */
+
+#content .jcarousel-skin-praguespring ul {
+  list-style-type: none;  
+}
+
+#content .jcarousel-skin-praguespring ul li.jcarousel-item  {
+  background: transparent;
+  margin: 0 3px 0 0; 
+  padding: 0;
+  width: 75px;
+  height: 75px; 
+}  
+
+.jcarousel-skin-praguespring .jcarousel-container {
+  position: relative;
+  margin: 0 auto;  
+  background-color: transparent; 
+  width: 393px;   /* Sirka celeho bloku s karuselem (vcetne navigace) */
+}
+
+.jcarousel-skin-praguespring .jcarousel-container-horizontal {
+  padding: 0px 42px;
+  width: 309px;   /* Sirka bloku s obsahem karuselu */
+}
+
+.jcarousel-skin-praguespring .jcarousel-clip-horizontal {
+  height: 75px;
+}
+
+.jcarousel-skin-praguespring .jcarousel-item-horizontal {
+    margin-right: 15px;
+}
+
+.jcarousel-skin-praguespring .jcarousel-item-placeholder {
+    background: #fff;
+    color: #000;
+}
+
+/*  Horizontal Buttons */
+
+.jcarousel-skin-praguespring .jcarousel-next-horizontal {
+    position: absolute;   
+    width: 34px;            /* Rozmery a pozice prave sipky */
+    height: 75px;
+    top: 0;
+    right: 0;        
+    cursor: pointer;
+    background: transparent url(../images/layout/jcarousel-next-horizontal.png) no-repeat 0 0;
+}
+
+.jcarousel-skin-praguespring .jcarousel-next-horizontal:hover {
+    background-position: bottom left;
+}
+
+.jcarousel-skin-praguespring .jcarousel-next-horizontal:active {
+    background-position: bottom left;
+}
+
+.jcarousel-skin-praguespring .jcarousel-next-disabled-horizontal,
+.jcarousel-skin-praguespring .jcarousel-next-disabled-horizontal:hover,
+.jcarousel-skin-praguespring .jcarousel-next-disabled-horizontal:active {
+    cursor: default;
+    background-image: none;
+}
+
+.jcarousel-skin-praguespring .jcarousel-prev-horizontal {
+    position: absolute;
+    width: 34px;        /* Rozmery a pozice leve sipky */
+    height: 75px;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    background: transparent url(../images/layout/jcarousel-prev-horizontal.png) no-repeat 0 0;
+}
+
+.jcarousel-skin-praguespring .jcarousel-prev-horizontal:hover {
+    background-position: bottom left;
+}
+
+.jcarousel-skin-praguespring .jcarousel-prev-horizontal:active {
+    background-position: bottom left;
+}
+
+.jcarousel-skin-praguespring .jcarousel-prev-disabled-horizontal,
+.jcarousel-skin-praguespring .jcarousel-prev-disabled-horizontal:hover,
+.jcarousel-skin-praguespring .jcarousel-prev-disabled-horizontal:active {
+    cursor: default;
+    background-image: none;
+}
+
+
+
+/* === Layout stranek s dlazdicemi fotek (napr. Historie) === */
+
+#content.photo-tiles-layout { /* TODO: Proc tohle pravidlo ignoruje ie6, sakra? */
+ background-color: transparent;
+ padding: 0;
+ margin: 0;
+ width: 993px;
+}
+
+#content.photo-tiles-layout .text-column {
+  width: 420px;
+  padding: 23px 25px 60px 81px;
+  float: left;
+  background-color: #fff;
+  margin-left: 0;  
+}
+
+#content.photo-tiles-layout .photo-column {
+  width: 400px;
+  padding: 23px 67px 20px 0px;
+  float: left;
+  background-color: #fff;
+}
+
+
+
+
+/* === FancyBox - jQuery plugin pro otevirani velkych fotek === */
+
+div#fancy_overlay {
+	position:absolute;
+	top: 0;
+	left: 0;
+	z-index: 590;
+	width: 100%;
+	background-color: #333;
+}
+
+div#fancy_loading {
+	position: absolute;
+	height: 40px;
+	width: 40px;
+	cursor: pointer;
+	display: none;
+	overflow: hidden;
+	background: transparent;
+	z-index: 598;
+}
+
+div#fancy_loading div {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 40px;
+	height: 40px;
+	background: #EDE9E6 url(../images/layout/fancy_progress.gif) no-repeat center center;
+}
+
+div#fancy_close {
+	position: fixed;
+	top: 24px;
+	right: 22px;
+	height: 37px;
+	width: 37px;
+	background: transparent url(../images/layout/fancy_closebox.png) ;
+	cursor: pointer;
+	z-index: 598;
+	display: none;
+}
+
+div#fancy_close:hover {
+	background-position: bottom left;
+}
+
+div#fancy_content {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 0; 
+  margin: 0;
+	z-index: 596;
+}
+
+#fancy_frame {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+
+img#fancy_img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border:0; 
+	padding: 0; 
+	margin: 0;
+	z-index: 592;
+}
+
+div#fancy_title {
+	position: fixed;
+	top: 24px;
+	left: 22px;
+	width: auto;
+	z-index: 598;
+	display: none;
+	font-size: .9em;
+	max-width: 400px;
+}
+
+div#fancy_title table {
+	margin: 0 auto;
+}
+
+div#fancy_title div {
+	color: #333;
+	padding-bottom: 2px;
+}
+
+td#fancy_title_left {
+	display: none;
+}
+
+td#fancy_title_main {
+	background-color: #fff;
+	padding: 5px 5px 4px 5px;
+	width: auto; 
+}
+
+td#fancy_title_right {
+	display: none;
+}
+
+div#fancy_outer {
+	position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 590;
+  margin: 50px 0 0 0;
+  overflow: hidden;
+  background: transparent;
+  display: none;
+}
+
+div#fancy_inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: #FFF;
+}
+
+a#fancy_left, a#fancy_right {
+	position: fixed; 
+	display: block;
+	bottom: 10px; 
+	height: 100%; 
+	width: 35%; 
+	cursor: pointer;
+	background-image: url(data:image/gif;base64,AAAA);
+	z-index: 598; 
+}
+
+a#fancy_left {
+	left: 0px; 
+}
+
+a#fancy_right {
+	right: 0px; 
+}
+
+a#fancy_left:hover {
+	background: transparent url(../images/layout/fancy_left.gif) no-repeat 0% 50%;
+}
+
+a#fancy_right:hover {
+	background: transparent url(../images/layout/fancy_right.gif) no-repeat 100% 50%;
+}
+
+#fancy_bigIframe, #fancy_freeIframe {
+	position:absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 510;
+}
+
+div#fancy_bg {
+	display: none;
+}
+	
+div.fancy_bg {
+	position: absolute;
+	display: block;
+	z-index: 570;
+}
+
+div.fancy_bg_n {
+	top: -18px;
+	width: 100%;
+	height: 18px;
+	background: transparent url(../images/layout/fancy_shadow_n.png) repeat-x;
+}
+
+div.fancy_bg_ne {
+	top: -18px;
+	right: -13px;
+	width: 13px;
+	height: 18px;
+	background: transparent url(../images/layout/fancy_shadow_ne.png) no-repeat;
+}
+
+div.fancy_bg_e {
+	right: -13px;
+	height: 100%;
+	width: 13px;
+	background: transparent url(../images/layout/fancy_shadow_e.png) repeat-y;
+}
+
+div.fancy_bg_se {
+	bottom: -18px;
+	right: -13px;
+	width: 13px;
+	height: 18px;
+	background: transparent url(../images/layout/fancy_shadow_se.png) no-repeat;
+}
+
+div.fancy_bg_s {
+	bottom: -18px;
+	width: 100%;
+	height: 18px;
+	background: transparent url(../images/layout/fancy_shadow_s.png) repeat-x;
+}
+
+div.fancy_bg_sw {
+	bottom: -18px;
+	left: -13px;
+	width: 13px;
+	height: 18px;
+	background: transparent url(../images/layout/fancy_shadow_sw.png) no-repeat;
+}
+
+div.fancy_bg_w {
+	left: -13px;
+	height: 100%;
+	width: 13px;
+	background: transparent url(../images/layout/fancy_shadow_w.png) repeat-y;
+}
+
+div.fancy_bg_nw {
+	top: -18px;
+	left: -13px;
+	width: 13px;
+	height: 18px;
+	background: transparent url(../images/layout/fancy_shadow_nw.png) no-repeat;
+}
+
+/* === Archiv === */
+
+#archive-other-years {
+  z-index: 370;
+  width: 300px;
+  position: absolute;
+  top: 126px;
+  left: 209px;
+}
+
+#archive-other-years #archive-year-selection {
+  float: left;
+  margin-right: 10px;
+}
+
+#archive-other-years #archive-old-years-anchors {
+  display: none;
+}
+
+#archive-year-navigation {
+  float: right;
+  width: 200px;
+}
+
+.archive .article-container {
+  background-color: #fff;
+}
+
+.archive #content-head {
+  margin-left: 0;
+  margin-top: 0;
+}
+
+.archive #second-site-navigation {
+  top: 190px;
+}
+
+.archive #cse-search-box {
+  margin-top: 5px;
+}
+
+
+
+/* === Google Custom Search - vzhled vysledku vyhledavani v archivu === */
+
+#google-custom-search {
+  width: 512px;
+}
+
+/* = Tabulka pro vyhledavaci policko = */
+#google-custom-search table.gsc-search-box td {
+  vertical-align: middle;
+}
+
+/* Vyhledavaci policko */
+#google-custom-search .gsc-input {
+  width: 200px;
+  margin-right: 5px;
+}
+
+/* = Google brand - nezobrazujeme = */
+#google-custom-search .gsc-branding {
+  display: none;
+}
+
+/* = Zalozky se zpresnenim vyhledavani = */
+#google-custom-search .gsc-tabsArea  {
+  border-bottom: 1px #EDE9E6 solid; 
+  margin-bottom: 1.5em;
+  height: 36px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* Zalozka */
+#google-custom-search .gsc-tabsArea .gsc-tabHeader {
+  border-top: 1px #EDE9E6 solid;
+  border-left: 1px #EDE9E6 solid;
+  border-right: 1px #EDE9E6 solid;
+  background-color: #F6F4F3;
+  padding: 10px 12px;
+  float: left;
+  margin-right: 2px;
+  color: #0084CD;
+  cursor: pointer;
+}
+
+/* Aktivni zalozka  */
+#google-custom-search .gsc-tabsArea .gsc-tabhActive {
+  background-color:  #fff;
+  color: #322a21;
+  cursor: default;
+  padding-bottom: 11px;  
+}
+
+/* Blok, ktery se zobrzuje, kdyz nejsou zobrazeny zalozky - nezobrazujeme */
+#google-custom-search .gsc-tabsAreaInvisible {
+  display: none;
+}
+
+/* = Reklama = */
+#google-custom-search .gsc-adBlock {
+  margin-bottom: 1.5em;
+}
+
+/* Nezobrazujeme blok, ktery se zobrazuje, kdyz se reklama nezobrazuje :) */
+#google-custom-search .gsc-adBlockInvisible {
+  display: none;
+}
+
+/* = Pocet vysledku vyhledavani atd. - nezobrazujeme = */
+#google-custom-search .gsc-resultsHeader {
+  display: none;
+}
+
+/* Jednotlivy vysledek vyhledavani */ 
+#google-custom-search .gs-result {
+  margin-bottom: 1.5em; 
+}
+
+/* Dlouhe URL u vysledku vyhledavani  */
+#google-custom-search .gs-result .gs-visibleUrl-long {
+  color: #71685c;
+}
+
+/* Kratne URL u vysledku vyhledavani - nezobrazujeme */
+#google-custom-search .gs-result .gs-visibleUrl-short {
+  display: none;
+}
+
+/* Watermark - informaci Google u vysledku vyhledavani - nezobrazujeme */
+#google-custom-search .gs-result .gs-watermark {
+  display: none;
+}
+
+/* Strankovani */
+#google-custom-search .gsc-cursor-box {
+  background-color: #FFFFFF;
+  clear: both;
+  padding: 40px 30px 20px 0px;
+  width: 452px;
+}  
+
+/* Cislo ve strankovani */
+#google-custom-search .gsc-cursor-box .gsc-cursor-page {
+  border: 1px solid #EDE9E6;
+  padding: 5px;
+  margin-left: 2px;
+  float: left;
+  color: #0084CD;  
+  cursor: pointer;
+}
+
+/* Zvyraznene cislo ve strankovani */
+#google-custom-search .gsc-cursor-box .gsc-cursor-current-page {
+  background-color: #EDE9E6;
+  color: #322a21;
+}
+
+/* Dalsi vysledky na staticke strance - nezobrazujeme */
+#google-custom-search .gsc-cursor-box .gsc-trailing-more-results {
+  display: none;
+}
+
+
+/* Neaktivni zalozka s vysledky vyhledavani - nezobrazujeme */
+#google-custom-search .gsc-tabdInactive {
+  display: none;     
+}
+
+
+/* === Chybove stranky (404, 500, 503..) === */
+
+.error-page #content {
+  margin-top: 53px;
+  padding: 30px 20px 30px 81px;
+}
+
+/* === Hlavicka pro stary web (old.festival.cz) === */
+
+iframe {
+  border: 0;
+  overflow: hidden;  
+}
+
+#old_web_iframe  {
+  overflow: hidden;
+  height: 140px;
+  text-align: left;  
+}
+
+#old_web_iframe h1 {
+  width: 598px;
+  height: 108px;
+  float: left;
+  margin: 0;
+}
+
+#old_web_highlights {
+  clear: both;
+  padding-top: 9px;
+  padding-bottom: 7px;
+  padding-left: 18px;
+  background: #d7d1cd; 
+}
+
+#old_web_google_search {
+  width: 370px;
+  float: right;
+  margin-right: 30px;
+  margin-top: 10px;
+  text-align: right;
+}
+
+#old_web_anchors {
+  width: 300px;
+  float: right;
+  margin-right: 30px;
+  margin-top: 10px;
+  text-align: right;
+}
+
+
+
+
+

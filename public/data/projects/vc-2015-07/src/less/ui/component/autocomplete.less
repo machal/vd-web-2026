@@ -1,0 +1,107 @@
+/*
+
+Autocomplete
+===
+
+Našeptávač míst v dopravě a platbě
+
+*/
+
+
+// Wrapper inputu kvůli šipky
+
+.ui-autocomplete-wrapper {
+  position: relative;
+  margin: 10px 0 10px (20px + 49px + 3px); // Levý margin jako součet odsazení
+                                           // paddingu labelu a šířky ikony dopravy
+                                           // a cca whitespace mezery
+
+  // Šipka inputu
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    width: 0;
+    height: 0;
+    .transition(~"border-color ease-in-out .15s");
+  }
+
+  &:before {
+    left: 15px;
+    border-color: transparent transparent @vc-border-color transparent;
+    border-style: solid;
+    border-width: 0 6px 8px 6px;
+    margin-bottom: -1px;
+  }
+
+  &:after {
+    left: 16px;
+    border-color: transparent transparent #ffffff transparent;
+    border-style: solid;
+    border-width: 0 5px 7px 5px;
+    margin-bottom: -2px;
+  }
+
+  // Změna barvy šipky na focus
+
+  &.is-focused {
+    &:before {
+      border-bottom-color: @input-border-focus;
+    }
+  }
+
+  // Změna barvy šipky po výběru
+
+  &.is-selected {
+    &:before {
+      border-bottom-color: #f5f5f5;
+    }
+  }
+}
+
+
+// Hodnota vybraná v našeptávači,
+// suplující vzhled inputu
+
+.ui-autocomplete-pseudoinput {
+  .form-control();
+  .form-control-m();
+
+  border-color: #f5f5f5;
+}
+
+
+// Přetížení kontejneru UI našeptávače
+
+.ui-widget {
+  border-radius: @border-radius-base;
+  border-color: @vc-border-color;
+  padding: 3px;
+  font-family: @font-family-sans-serif;
+  font-size: @font-size-base;
+  font-weight: 300;
+}
+
+// Přetížení položky UI našeptávače
+
+.ui-menu {
+  .ui-menu-item {
+    padding: 5px 10px;
+    border: none;
+    border-radius: @border-radius-base;
+
+    // Hover položky
+
+    &.ui-state-focus {
+      padding: 5px 10px;
+      margin: 0;
+      border: none;
+      background-color: #1d92c2;
+      color: #ffffff;
+      font-weight: 300;
+    }
+  }
+}
+

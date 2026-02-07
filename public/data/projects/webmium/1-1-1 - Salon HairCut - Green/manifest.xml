@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+	<title>1-1-1 - Salon HairCut - Green</title>
+	<description>1-1-1 - Salon HairCut - Green</description>
+	<author>Webmium</author>
+	<copyright>Webmium</copyright>
+	<businessBranch>11</businessBranch>
+	<generation>1</generation>
+  <family>1</family>
+  <color>1</color>
+  <resizableContent>true</resizableContent>
+	<variants>
+	</variants>
+    <defaultHeaderImageName>assets/images/header-img.jpg</defaultHeaderImageName>
+    <backgroundImageUrl>assets/images/bg.jpg</backgroundImageUrl>
+    <backgroundImageType>2</backgroundImageType>
+</manifest>

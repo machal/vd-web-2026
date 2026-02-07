@@ -1,0 +1,90 @@
+/*
+Blanka.css: Seting basic document typography
+============================================
+
+- document minimal paddings
+- block elements with bottom margins only
+- same left margins for ul/ol, dd, blockquote
+
+*/
+
+
+/*
+Document minimal paddings
+*/
+
+body {
+  padding: 1.5rem;
+}
+
+/*
+Block elements with bottom margins only
+---------------------------------------
+*/
+
+p, ul, ol, dl, table,
+blockquote, pre, hr {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: .5rem;
+}
+
+ul ul,
+ul ol,
+ol ul,
+ol ol {
+  margin-bottom: 0;
+}
+
+
+/*
+Same left margins for ul/ol, dd, blockquote
+-------------------------------------------
+*/
+
+ul,
+ol,
+dd {
+  padding-left: 1.75rem;
+}
+
+dd {
+  margin-left: 0;
+}
+
+/*
+Blockquote
+----------
+*/
+
+blockquote {
+  border: 0;
+  padding-left: 1.75rem;
+  margin-left: 0;
+  font-style: italic;
+}
+
+
+/*
+Etc.
+----
+*/
+
+fieldset {
+  border: 0;
+}
+
+legend {
+  padding: 0 .5rem;
+}
+
+hr {
+  border-style: solid;
+  opacity: .25;
+}

@@ -1,0 +1,26 @@
+# Node.js, Grunt a Bower balicky neverzujeme
+/node_modules/
+/bower_components/
+
+# osx noise
+.DS_Store
+profile
+
+# xcode noise
+build/*
+*.mode1
+*.mode1v3
+*.mode2v3
+*.perspective
+*.perspectivev3
+*.pbxuser
+*.xcworkspace
+xcuserdata
+
+# svn & cvs
+.svn
+CVS
+sftp-config.json
+npm-debug.log
+NOTES.txt
+.sublime-grunt.cache

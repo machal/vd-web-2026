@@ -1,0 +1,152 @@
+/*
+
+Confirmation - potvrzení objednávky
+==========================
+
+*/
+
+
+// Obsahový kontejner na stránce
+// přijetí objednávky
+// ----------------------------------------
+
+.vc-confirmation {
+  max-width: 940px;
+  margin: 0 auto;
+
+  @media only screen and (min-width: @vc-layout-start) {
+    margin-top: 2*@line-height-computed;
+    margin-bottom: 2*@line-height-computed;
+  }
+}
+
+// Box na stránce přijetí objednávky
+// ----------------------------------------
+
+.vc-confirmation-box {
+  position: relative;
+  padding:
+    @padding-large-vertical
+    @padding-large-horizontal;
+  margin-top: @line-height-computed;
+  margin-bottom: @line-height-computed;
+  border-radius: @border-radius-large;
+  border: 1px solid @vc-border-color;
+  background-color: #ffffff;
+  color: #222222;
+
+  // nulování odsazení posledního elementu v boxu
+  // kvůli stejné vizuální mezery nahoře a dole v boxu
+
+  > *:last-child {
+    margin-bottom: 0;
+  }
+
+  // Šipku má smysl zobrazovat až ve chvíli,
+  // kdy je osoba vedle boxu
+
+  @media only screen and (min-width: @vc-layout-start) {
+
+    padding:
+      2*@padding-large-vertical
+      2*@padding-large-horizontal;
+
+    // varianta pro overflow: hidden,
+    // která by ořezávala šipku,
+    // ale která je potřeba kvůli floatované postavě
+
+    display: table-cell !important;
+    width: 10000px !important;
+
+    // šipka řešená přes pseudo elementy
+    // pozicování a velikost je individuální
+
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 0;
+      border-style: solid;
+    }
+
+    // větší šedá šipka
+
+    &:before {
+      top: 75px;
+      left: -22px;
+      border-width: 0 22px 17px 0px;
+      border-color: rgba(0, 0, 0, 0) @vc-border-color;
+    }
+
+    // menší bílá šipka, která z části překrývá šedou
+    // a tvoří tak šipku s okrajem
+
+    &:after {
+      top: 76px;
+      left: -19px;
+      border-width: 0 20px 15px 0px;
+      border-color: rgba(0, 0, 0, 0) #ffffff;
+    }
+  }
+}
+
+.vc-confirmation-box-title {
+  margin-top: 0;
+}
+
+.vc-confirmation-box-text {
+  margin-bottom: @line-height-computed;
+  font-size: 18px;
+
+  > strong {
+    font-weight: 500;
+  }
+}
+
+.vc-confirmation-box-info {
+  margin-bottom: @line-height-computed;
+  margin-left: 2*@padding-large-horizontal;
+
+  caption {
+    color: inherit;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: left;
+  }
+
+  th {
+    padding-right: @padding-small-horizontal;
+    font-weight: 300;
+  }
+
+  td {
+    font-weight: 500;
+  }
+}
+
+// Řešení responzivní tabulky pro úzký layout
+// ----------------------------------------
+
+@media only screen and (max-width: 420px) {
+
+  .vc-confirmation-box-info {
+    &,
+    & caption,
+    & tbody,
+    & tr,
+    & th,
+    & td {
+      display: block;
+    }
+
+    & tr {
+      margin-top: @padding-base-vertical;
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+
+}

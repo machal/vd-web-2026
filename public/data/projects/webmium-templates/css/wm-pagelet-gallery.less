@@ -1,0 +1,92 @@
+// --- Pagelet: Fotogalerie ---
+// Defaultne:
+// - bez karuselu
+// - 1 obrazek na radku
+
+.wm-p-gallery {
+	.wm-m-section;	
+}
+
+#sw-gallery {
+  position: relative;
+	overflow: hidden;
+}
+
+.sw-gallery-list {
+	margin-right: 5px; // Rezerva pro margin posledniho .sw-gallery-item
+  -webkit-overflow-scrolling: touch;	
+}
+
+// Jednotliva fotka
+.sw-gallery-item {	
+	display: inline-block;	
+	padding: 0 5px 5px 0;
+	margin: 0 0 0 -4px; // sirka jednoho znaku
+	width: 100%; // 1 polozka na radek
+	.box-sizing(border-box);
+	
+	a {
+		display: block;
+	}
+	
+	img {
+		width: 100%;
+	}
+}
+
+// - Varianta: S karuselem -
+
+#sw-gallery.with-carousel {
+	.wm-m-proportional-parent(10, 9); // 10:9
+	
+	.sw-gallery-list {
+		.wm-m-proportional-child;
+		white-space: nowrap;
+		overflow-x: scroll;		
+		overflow-y: hidden;
+	}		
+	
+	.sw-gallery-item {
+		width: 90%; // Chceme, aby dalsi obrazek vycuhoval
+	}	
+}
+
+
+// - Varianta: 4 obrazky na radku -
+
+#sw-gallery.with-4-items {
+	.sw-gallery-item {
+		width: 100% / 4;
+	}	
+	
+	// V kombinaci s karuselem: 
+	// … jiny pomer stran karuselu
+	&.with-carousel {
+		padding-bottom: 100% / 4 * .9;
+	}
+	
+	// … ukazeme i vycuhujici kousek dalsi fotky
+	&.with-carousel .sw-gallery-item {
+		width: 90% / 4;
+	}
+}
+
+// - Varianta: 2 obrazky na radku -
+
+#sw-gallery.with-2-items {
+	.sw-gallery-item {
+		width: 100% / 2;
+	}	
+	
+	// V kombinaci s karuselem: 
+	// … jiny pomer stran karuselu
+	&.with-carousel {
+		padding-bottom: 100% / 2 * .9;
+	}
+	
+	// … ukazeme i vycuhujici kousek dalsi fotky
+	&.with-carousel .sw-gallery-item {
+		width: 90% / 2;
+	}
+}
+

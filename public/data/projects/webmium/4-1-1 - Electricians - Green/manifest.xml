@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+	<title>4-1-1 - Electricians - Green</title>
+	<description>4-1-1 - Electricians - Green</description>
+	<author>Webmium</author>
+	<copyright>Webmium</copyright>
+	<businessBranch>15</businessBranch>
+	<generation>4</generation>
+  <family>1</family>
+  <color>1</color>
+  <resizableContent>true</resizableContent>
+	<variants>
+	</variants>
+    <defaultHeaderImageName>assets/images/header-img.jpg</defaultHeaderImageName>
+    <backgroundImageUrl>assets/images/bg.jpg</backgroundImageUrl>
+    <backgroundImageType>2</backgroundImageType>
+</manifest>

@@ -1,0 +1,202 @@
+/*  
+Pagelet: Soubor ke stažení
+==============================================================================
+
+Třída `wm-p-file`.
+
+Každý jednotlivý soubor ke stažení je **samostatný pagelet**:
+
+`<section>` zde musí být protože v JS se počítá, že každý pagelet je jím obalený.
+
+```
+<section class="wm-p-file">
+	<p class="in">
+	  <a href="#">
+	    Ceník výrobků
+	  </a>        
+	  <small>(PDF,&nbsp;0.4&nbsp;MB)</small>
+	</p>
+</section>
+```
+
+Pokud uživatel navkládá souborů víc, v CSS máme deklaraci, které ruší vertikální mezeru mezi nimi.
+
+Varianta **souboru ke stažení s ikonkou** přidává některou ze tříd `.with-icon-*`. A taky přidáme
+samotnou ikonku pomocí `<a href="#" class="icon"></a>`.
+
+```
+<section class="wm-p-file with-icon-doc">
+	<p class="in">
+		<a href="#" class="icon"></a>
+		<a href="#" class="name">
+	    Ceník výrobků
+	  </a>        
+	  <small>(DOC,&nbsp;0.4&nbsp;MB)</small>
+	</p>
+</section> 
+```
+
+K seznamu souboru ke stažení můžeme přidat nadpis, pak je ale potřeba mu podobně jako např. u video pageletu přidat třídu `.without-margin-bottom`:
+
+```
+<!-- Tento kontejner je bezne ve strance pritomny, zde kvuli funkcnosti testu v dokumentaci -->
+<div class="container-fluid">
+
+	<section class="wm-p-simple-text without-margin-bottom">
+	  <h1>Nadpis přidaný k souborům ke stažení pomocí simple textu</h1>
+	</section>      
+	<section class="wm-p-file">
+		<p class="in">
+		  <a href="#">
+		    Ceník výrobků
+		  </a>        
+		  <small>(PDF,&nbsp;0.4&nbsp;MB)</small>
+		</p>
+	</section>  
+	<section class="wm-p-file">  
+		<p class="in">
+		  <a href="#">
+		    Celkový ceník výrobků s hrozně dlouhým názvem, který přepadne na druhý řádek
+		  </a>
+		  <small>(PDF,&nbsp;0.4&nbsp;MB)</small>
+		</p>
+	</section>
+
+</div>
+```
+
+Ikonky jsou řešeny pomocí SVG spritu. To, jestli prohlížeč SVG umí, je ale potřeba detekovat pomocí JS. 
+A v případě negativního výsledku přidat k `<html>` třídu `.no-svg`. V CSS pak servírujeme alternativní PNG verzi.
+
+
+*/
+
+.wm-p-file {
+	clear: both;	
+	.wm-m-section;	
+	list-style-type: none;
+	padding: 0;	
+}
+
+// Vnitrni blok
+.wm-p-file {
+	.in {
+		margin: 0 0 0 17px;	
+		position: relative;		
+		
+		// Odrážka jako u UL/LI seznamu
+		&:before {
+		  position: absolute;
+		  left: -17px;
+		  color: @linkColor;
+		  content: "\25aa";
+		}			
+	}		
+}
+
+// Pokud je souborů ke stažení vedle sebe více, pagelet se neodsazuje
+.wm-p-file + .wm-p-file {
+	margin-top: -1.75*@baseLineHeight;
+
+	@media (max-width: @wmSmallDisplayEnd) {
+		margin-top: -.75*@baseLineHeight;
+	}
+}
+
+// Odkaz se jmenem souboru
+.wm-p-file a.name {
+	color: @textColor;
+	font-weight: bold;
+	line-height: 19px;
+	
+	&:hover,
+	&:focus,
+	&:active {
+		color: @linkColor;
+	}		
+}
+
+// --- Varianta: s ikonou ---
+	
+// Souradnice pro pozicovani ikonky ze spritu 
+@iconWidth: 35px;
+@iconHeight: 36px;
+@spriteHeight: 66px;
+@spriteMarginTop: 15px;	
+@spriteMarginLeft: 19px;		
+@spriteMarginBetween: 11px;
+@spriteIconWidth: 30px;	
+
+.wm-p-file[class*="with-icon"] {	
+	.in {
+		padding-left: 45px;
+		margin-left: 0;			
+	}
+		
+	a.name {
+		display: block;
+	}
+	
+	small {
+		display: block;
+		margin-top: -.15*@baseLineHeight;	
+	}
+	
+	// U varianty s ikonkou odrazky nejsou
+	.in:before {
+		content: "";
+	}
+	
+	a.icon {
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: @iconWidth;
+		height: @iconHeight;	
+		//background-image: url("../../../_common/images/file_icons.svg");
+		background-image: url("http://www.webmium.com/CDN/css/client/pagelet/downloadfile/file_icons.svg");
+		
+		background-repeat: no-repeat;		
+		.background-size(auto @spriteHeight); 
+		
+		// Varianta bez podpory SVG (IE8, Android Browser 2.3-)
+		.no-svg & {
+			//background-image: url("../../../_common/images/file_icons.png"); 			
+			background-image: url("http://www.webmium.com/CDN/css/client/pagelet/downloadfile/file_icons.png");
+		}
+	}
+	
+}	
+	
+// --- Generovani jednotlivych ikonek ---
+
+// Mixin co generuje kod pro jednotlive ikony ze spritu file_icons.svg
+// @icon je string co oznacuje typ ikony
+// @positionX je poradi ikony ve spritu, prvni je 0	
+.generate-icon(@icon, @positionX) {
+	(~".wm-p-file.with-icon-@{icon} a.icon") {
+		background-position: @positionX  -1*@spriteMarginTop;
+	}
+}	
+
+// Generovani pozic pozic ikonek mixinem	
+.generate-icon(avi, -20px);
+.generate-icon(bmp, -62px);
+.generate-icon(doc, -103px);
+.generate-icon(jpeg, -145px);
+.generate-icon(jpg, -187px);
+.generate-icon(mp3, -228px);
+.generate-icon(mp4, -270px);
+.generate-icon(mpeg, -311px);
+.generate-icon(mpg, -353px);
+.generate-icon(pdf, -395px);
+.generate-icon(png, -436px);
+.generate-icon(pps, -478px);
+.generate-icon(ppt, -520px);
+.generate-icon(rar, -561px);
+.generate-icon(rtf, -603px);
+.generate-icon(txt, -644px);
+.generate-icon(xls, -686px);
+.generate-icon(zip, -727px);
+.generate-icon(general, -768px);

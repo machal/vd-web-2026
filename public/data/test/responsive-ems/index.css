@@ -1,0 +1,159 @@
+/*
+   Stylopis pro testovací stránku školení HTML5/CSS
+	 Autor: Martin Michálek, michalek@shortcat.cz
+*/
+
+/* --- Zakladni typografie --- */
+
+
+/* 15px/20px rytmus */
+body {
+	font-size: 15px;
+	line-height: 1.3333em;
+}
+
+/* Jednotne parametry pisma */
+body,
+input, textarea, select {
+  font-family: Georgia, serif;
+}
+
+/* Nastavime rytmus spodnim odsazenim */
+p, ul, ol, blockquote, table {
+  padding-top: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 1.3333em;
+}
+
+/* U nadpisu bude odsazeni jen polovicni */
+h1, h2, h3, h4, h5, h6 {
+  padding-top: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  margin-bottom: .5em;
+  font-family: Arial, sans-serif;
+}
+
+/* Ponechan spodni rytmus */
+a img {
+  border: 0;
+}
+
+/* Barvy */
+a {
+	color: #5FA316;
+}
+
+h1, h2 {
+	color: #999;
+	font-weight: normal;
+}
+
+
+/* --- Layout a zakladni vzhled pro desktop/tablety --- */
+
+body {
+	background: #ccc;
+}	
+
+.container {
+	position: relative;
+	max-width: 1000px;
+	min-width: 700px;
+	margin: 3.3333333333% auto; /* 30/900*100 */
+	padding-top: 6em; /* 90/15 */
+	background: #fff;
+}
+
+.content {
+	float: left;
+	width: 60%; /* 540/900*100 */
+	padding: 0 3.3333333333%; /* 30/900*100 */
+}
+
+.side {
+	float: right;
+	width: 26.666666667%; /* 240/900*100 */
+	padding: 0 3.3333333333%; /* 30/900*100 */
+}
+
+.foot {
+	clear: both;
+	padding: 3.3333333333%; /* 30/900*100 */
+	background-color: #eee;
+	color: #999;
+}
+
+.foot p {
+	margin-bottom: 0;
+}
+
+.nav {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 94.222222222%; /* 848/900*100 */
+	padding-right: 3.3333333333%; /* 30/900*100 */
+	padding-left: 2.4444444444%; /* 22/900*100 */
+	background: #333;
+}
+
+.nav h2 {
+	display: none;
+}
+
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}  
+
+.nav li {
+  display: inline-block;
+  float: left; /* IE7 */
+  margin: 0;
+  padding: 0;
+}
+
+.nav a {
+  display: inline-block;
+  padding: 1.3333333333em .5em; /* 20/15 10/900*100 */
+  margin-left: -2px;
+  text-decoration: none;
+}
+
+.nav strong a,
+.nav a:hover,
+.nav a:focus,
+.nav a:active {
+  color: #fff;
+}
+
+
+@media print {
+	
+	.nav {
+		display: none;
+	}
+	
+} /* @media print */
+
+
+
+@media (min-width: 768px) and (max-width: 979px) {
+
+  html {
+	  font-size: 13px;
+	}
+	
+}
+
+@media (max-width: 767px) {
+	
+  html {
+	  font-size: 11px;
+	}	
+
+}	
+

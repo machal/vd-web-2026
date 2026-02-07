@@ -1,0 +1,9 @@
+/*
+UI komponenta Box
+=================
+*/
+
+.box {
+  background: var(--color-grey-e);
+  border-radius: var(--border-radius);
+}

@@ -1,0 +1,19 @@
+// Logo webu
+
+.logo {
+  float: left;
+  width: 178px;
+  height: 60px;
+
+  @media only screen and (max-width: 410px) {
+    width: 107px;
+    height: 36px;
+  }
+
+  img {
+    @media only screen and (max-width: 410px) {
+      max-width: 107px; // Podle vysky ikon 36px
+      height: auto;
+    }
+  }
+}

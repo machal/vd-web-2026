@@ -1,0 +1,12 @@
+/*
+Nastaveni vlastnosti dokumentu
+==============================
+
+1) Maximalni sirka typograficke radky: cca 66 znaku.
+*/
+
+.container {
+  max-width: 30em; /* 1) */
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="David Kaneda" />
+    <title>Resolution Independent Mobile UI: Step 1: Button</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <style type="text/css" media="screen">
+
+		body {
+			font-family: Helvetica, Arial, sans-serif;
+			margin: 1.4em 2em;
+			padding: 0;
+		}
+
+		a {
+			text-decoration: none;
+		}
+
+		.imgbase {
+			max-width: 4em;
+		}
+
+		.size_2x {
+			font-size: 200%;
+		}
+
+		.size_8x {
+			font-size: 800%;
+		}
+
+        .button {
+            background: #5A7F03;
+            background-image: -moz-linear-gradient(top, #C1FA3B, #5A7F03); /* FF3.6 */
+            background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#C1FA3B), color-stop(0.02, #8FCA05), to(#5A7F03)); /* Saf4+, Chrome */
+            filter:  progid:DXImageTransform.Microsoft.gradient(startColorStr='#C1FA3B', EndColorStr='#5A7F03'); /* IE6,IE7 */
+            -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#C1FA3B', EndColorStr='#5A7F03')"; /* IE8 */
+            -webkit-border-radius: .2em;
+            -moz-border-radius:    .2em;
+            border-radius:         .2em;
+            -webkit-box-shadow: #7EB105 0 0 .03em 0.03em inset, rgba(0, 0, 0, 0.4) 0px 0.1em .2em;
+            -moz-box-shadow:    #7EB105 0 0 .03em 0.03em inset, rgba(0, 0, 0, 0.4) 0px 0.1em .2em;
+            box-shadow:         #7EB105 0 0 .03em 0.03em inset, rgba(0, 0, 0, 0.4) 0px 0.1em .2em;
+            border: .08em solid #374D02;
+            color: #fff;
+            display: inline-block;
+            margin-bottom: 20px;
+            padding: .2em .6em;
+            text-align: center;
+            text-decoration: none;
+            text-shadow: rgba(0,0,0,.2) 0 .05em .02em;
+        }
+        
+        .textsize_2x {
+            font-size: 200%;
+        }
+    </style>
+</head>
+<body>
+    
+    <a href="#" class="button">1&times;</a>
+    
+    <div class="size_2x">
+        <a href="#" class="button">2&times;</a>
+    </div>
+    <div class="size_8x">
+        <a href="#" class="button">8&times;</a>
+    </div>
+    
+    <a href="#" class="button"><span class="textsize_2x">2&times; (just text)</span></a>
+</body>
+</html>

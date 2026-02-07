@@ -1,0 +1,38 @@
+/* 
+   Stylopis pro MSIE 7 a nizsi pro blog Vzhùru dolù
+   Projekt: www.vzhurudolu.cz
+   Autor: Martin Michalek, Studio Shortcat, michalek@shorcat.cz
+*/
+
+
+.post div.quote span.quote 
+{
+  top: -20px;
+  position: relative;
+}
+
+div#search input[type="submit"] 
+{
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+.post div.quote span.quote big.quote 
+{
+  font-size: 54px;
+  font-weight: bold;
+  line-height: 1em;
+  vertical-align: 0;
+  top: 20px;
+  position: relative;
+}
+
+
+/* Nemusime uplatnovat hack. Pod obrazky z nejakych duvodu zustava 4px prostor. */
+.post .photo a img,
+a.image img
+{
+  margin-bottom: 0px;
+}

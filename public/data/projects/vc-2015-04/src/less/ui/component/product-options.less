@@ -1,0 +1,357 @@
+/*
+
+Product Options
+===============
+
+Tabulka s výběrem parametrů zboží. Stejná komponenta se využívá
+v detailu produktu i seznamu.
+
+*/
+
+
+// Základna
+// --------
+
+.product-options {
+  margin-top: @line-height-computed*2;
+  margin-bottom: @line-height-computed;
+
+  select,
+  input {
+    max-width: 80px;
+  }
+
+  .form-group {
+    margin-bottom: 0;
+  }
+}
+
+// Mensi pismo, aby se toho veslo vic
+.product-options {
+  font-size: @font-size-small;
+
+  .form-control {
+    font-size: @font-size-small;
+  }
+}
+
+// Nadpis (nepoužíváme v košíku)
+.product-options-heading {
+  .heading-underlined;
+  margin-bottom: 0;
+}
+
+// Seznam parametrů
+// ----------------
+
+.product-options-items {
+  .clearfix;
+  clear: both;
+
+  // Horní rámeček u první položky jen mimo košík:
+
+  border-top: 1px dotted @vc-border-color;
+
+  .product-options-first-eye & {
+    border-top: none;
+  }
+
+  .product-options-cart .product-options-first-eye & {
+    border-top: 1px dotted @vc-border-color;
+  }
+}
+
+// Jednotlivé parametry
+// --------------------
+
+.product-options-item {
+  float: left;
+  padding: @padding-large-vertical 0;
+  padding-right: 5px;
+  height: 81px;
+}
+
+// ### Parametr: Dostupnost produktu
+
+// Vyjimecne muze vylezt na 3 radky, proto neomezujeme vysku
+// a mensi radkovani.
+
+.product-options-availability {
+
+  height: auto;
+  .form-control-static {
+    line-height: 18px;
+    padding-top: 8px;
+    padding-bottom: 4px;
+  }
+}
+
+// ### Tlačítko "upravit"/"uložit" v košíku
+
+
+.product-options-edit-save {
+  padding-top: 40px;
+}
+
+// Pridani oka
+// -----------
+
+.product-options-add-eye {
+  padding: @padding-large-vertical 0;
+  margin-bottom: 0;
+
+  // Zobrazujeme jen v JS verzi
+  display: none;
+  .js & {
+    display: block;
+  }
+}
+
+// Prvni a druhe oko
+// -----------------
+
+.product-options-first-eye { }
+
+// Druhe v JS verzi zobrazujeme az po kliknuti na .product-options-add-eye
+.product-options-second-eye {
+  .js & {
+    display: none;
+  }
+}
+
+
+// Varianta: Výběr parametrů v košíku
+// ----------------------------------
+
+// V košíku nemá odsazení zezhora
+
+.product-options-cart {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  @media only screen and (max-width: 767px) {
+    border-bottom: 1px dotted @vc-border-color;
+    margin-bottom: @line-height-computed;
+  }
+}
+
+// V košíku nechci nadpis
+.product-options-cart .product-options-heading {
+  .sr-only;
+}
+
+
+// Responzivní varianty
+// --------------------
+
+// Do 1023 individuálně pro každou položkovou verzi.
+// Od 1024 jednotně podle 10sloupcového gridu.
+
+// TODO
+// - jeste bude chtit poladit mezi cca 500-1024
+//   viz cart_all.php
+
+
+// ### 1-polozkovy:
+// Tam kde je jen pocet baleni, napr. roztoky
+// V kosikove verzi vubec neni tlacitko "Upravit".
+
+.product-options-1-item {
+
+  // V košíku nezobrazujeme
+  &.product-options-cart .product-options-heading {
+    .sr-only;
+  }
+
+  .product-options-count { width: percentage(1/2); }
+  .product-options-availability { width: percentage(1/2);}
+
+  @media only screen and (min-width: 320px) and (max-width: 499px) {
+    .product-options-count { width: percentage(1/3); }
+    .product-options-availability { width: percentage(2/3);}
+  }
+
+  @media only screen and (min-width: 500px) and (max-width: 1024px) {
+    .product-options-count { width: percentage(1/5); }
+    .product-options-availability { width: percentage(4/5);}
+  }
+}
+
+// ### 4-polozkovy
+// (+ dostupnost + tlacitko ulozit/upravit v kosiku)
+
+.product-options-4-items {
+
+  // 2 na radku:
+  .product-options-item {  width: percentage(1/2); }
+  .product-options-availability { width: percentage(2/2); }
+  // Kosik s tlacitkem navic:
+  &.product-options-cart .product-options-availability { width: percentage(1/2); }
+  &.product-options-cart .product-options-edit-save { width: percentage(1/2); }
+
+  // 3 na radku:
+  @media only screen and (min-width: 320px) and (max-width: 559px),
+    only screen and (min-width: 768px) and (max-width: 859px) {
+    .product-options-item {  width: percentage(1/3); }
+    .product-options-availability { width: percentage(2/3); }
+    // Kosik s tlacitkem navic:
+    &.product-options-cart .product-options-availability { width: percentage(1/3); }
+    &.product-options-cart .product-options-edit-save { width: percentage(1/3); }
+  }
+
+  // Vse do jedne radky
+  @media only screen and (min-width: 560px) and (max-width: 767px),
+    only screen and (min-width: 860px) and (max-width: 1023px) {
+    .product-options-item { width: percentage(1/6); }
+    .product-options-availability { width: percentage(2/6); }
+    // Kosik s tlacitkem navic:
+    &.product-options-cart .product-options-availability { width: percentage(1/6); }
+    &.product-options-cart .product-options-edit-save { width: percentage(1/6); }
+  }
+}
+
+// ### 5-polozkovy
+// (+ dostupnost + tlacitko ulozit/upravit v kosiku)
+
+.product-options-5-items {
+
+  // 2 na radku:
+  .product-options-item {  width: percentage(1/2); }
+  .product-options-availability { width: percentage(2/2); }
+  // Kosik s tlacitkem navic:
+  &.product-options-cart .product-options-availability { width: percentage(1/2); }
+  &.product-options-cart .product-options-edit-save { width: percentage(1/2); }
+
+  // 3 na radku:
+  @media only screen and (min-width: 320px) and (max-width: 359px) {
+    .product-options-item {  width: percentage(1/3); }
+    .product-options-availability { width: percentage(2/3); }
+    // Kosik s tlacitkem navic:
+    &.product-options-cart .product-options-variants { width: percentage(2/3); }
+    &.product-options-cart .product-options-availability { width: percentage(2/3); }
+    &.product-options-cart .product-options-edit-save { width: percentage(1/3); }
+  }
+
+  // 4 na radku:
+  @media only screen and (min-width: 360px) and (max-width: 559px),
+    only screen and (min-width: 768px) and (max-width: 1023px) {
+    .product-options-item {  width: percentage(1/4); }
+    .product-options-availability { width: percentage(3/4); }
+    // Kosik s tlacitkem navic:
+    &.product-options-cart .product-options-availability { width: percentage(2/4); }
+    &.product-options-cart .product-options-edit-save { width: percentage(1/4); }
+  }
+
+  // Vse do jedne radky
+  @media only screen and (min-width: 560px) and (max-width: 767px) {
+    .product-options-item { width: percentage(1/7); }
+    .product-options-availability { width: percentage(2/7); }
+    // Kosik s tlacitkem navic:
+    &.product-options-cart .product-options-availability { width: percentage(1/7); }
+    &.product-options-cart .product-options-edit-save { width: percentage(1/7); }
+  }
+}
+
+// ### 6-polozkovy
+
+.product-options-6-items {
+
+  // 2 na radku:
+  .product-options-item {  width: percentage(1/2); }
+  .product-options-availability { width: percentage(2/2); }
+  // Kosik s tlacitkem navic:
+  &.product-options-cart .product-options-availability { width: percentage(1/2); }
+  &.product-options-cart .product-options-edit-save { width: percentage(1/2); }
+
+  // 3 na radku:
+  @media only screen and (min-width: 320px) and (max-width: 399px) {
+    .product-options-item {  width: percentage(1/3); }
+    .product-options-availability { width: percentage(2/3); }
+    // Kosik s tlacitkem navic:
+    &.product-options-cart .product-options-availability { width: percentage(2/3); }
+    &.product-options-cart .product-options-edit-save { width: percentage(1/3); }
+  }
+
+  // 4 na radku:
+  @media only screen and (min-width: 400px) and (max-width: 1023px) {
+    .product-options-item {  width: percentage(1/4); }
+    .product-options-availability { width: percentage(2/4); }
+    // Kosik s tlacitkem navic:
+    &.product-options-cart .product-options-availability { width: percentage(1/4); }
+    &.product-options-cart .product-options-edit-save { width: percentage(1/4); }
+  }
+}
+
+
+// ### 7-polozkovy
+
+.product-options-7-items {
+  .product-options-item { float: left; }
+
+  // 3 na radku
+  .product-options-item {  width: percentage(1/3); }
+  .product-options-availability { width: percentage(2/3); }
+
+  // Kosik s polozkou navic: 3 na radku
+  &.product-options-cart .product-options-availability { width: percentage(1/3); }
+  &.product-options-cart .product-options-edit-save { width: percentage(1/3); }
+
+  // 5 na radku
+  @media only screen and (min-width: 520px) and (max-width: 1023px) {
+    .product-options-item { width: percentage(1/5); }
+    .product-options-availability { width: percentage(3/5); }
+  }
+
+  // Kosik s polozkou navic: 5 na radku
+  @media only screen and (min-width: 520px) and (max-width: 1023px) {
+    &.product-options-cart .product-options-availability { width: percentage(2/5); }
+    &.product-options-cart .product-options-edit-save { width: percentage(1/5); }
+  }
+}
+
+// ### Jednotný grid pro velké desktopy
+
+// Od 1024
+// 10ti sloupeckova mrizka (max 7 polozek + 2 sloupce pro availability + 1 pro edit-save)
+// TODO specificnost
+
+@media only screen and (min-width: 1024px) {
+  .product-options .product-options-items {
+    .product-options-item {  width: percentage(1/10); }
+
+    // Výjimky, které dostanou více nebo méně než desetinu
+    .product-options-count { width: percentage(1.5/10); }
+    .product-options-availability { width: percentage(1.5/10); }
+    .product-options-variants { width: percentage(1.5/10); }
+    .product-options-edit-save { width: percentage(0.5/10);   }
+  }
+
+  // U méně početných variant věnujeme dostupnosti více prostoru
+  .product-options.product-options-6-items .product-options-availability { width: percentage(2.5/10) }
+  .product-options.product-options-5-items .product-options-availability { width: percentage(3.5/10) }
+  .product-options.product-options-4-items .product-options-availability { width: percentage(4.5/10) }
+  .product-options.product-options-1-item  .product-options-availability { width: percentage(6/10) }
+
+  // Tlačítko pro přepnutí do editačního režimu nebo uložení
+  // TODO specificita
+  .product-options .product-options-item.product-options-edit-save {
+    float: right;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 39px;
+    margin: 0;
+
+    // Vždy zarovnáváme vpravo:
+    position: relative;
+    a {
+      position: absolute;
+      right: 0;
+    }
+  }
+}
+
+
+
+
+
+

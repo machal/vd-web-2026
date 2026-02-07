@@ -1,0 +1,245 @@
+/*
+
+Person
+============
+
+Fotografie osoby zákaznického centra
+s indikátorem online/offline stavu
+
+*/
+
+// proměnné
+
+// obrázek osoby
+@vc-person-image-size: 100px;
+@vc-person-for-foot-image-size: 100px;
+@vc-person-for-confirmation-image-size: 174px;
+@vc-person-for-category-image-size: 70px;
+@vc-person-image-border-width: 4px;
+@vc-person-image-stroke-width: 1px;
+
+
+// Layout
+// ------
+
+.vc-person {
+  width: percentage(12/12);
+
+  > .vc-matrjoska {
+    padding-left: @grid-gutter-width/2;
+    padding-right: @grid-gutter-width/2;
+    position: relative;
+    display: block;
+    width: percentage(12/12);
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+.vc-person-for-confirmation {
+  @media only screen and (min-width: @vc-layout-start) {
+    float: left;
+    width: auto;
+
+    > .vc-matrjoska {
+      padding-left: 0;
+      padding-right: @grid-gutter-width;
+    }
+  }
+}
+
+.vc-person-for-top {
+  float: right;
+  width: auto;
+  margin-right: 0;
+  max-width: 100px;
+
+  @media only screen and (min-width: 380px) {
+    margin-right: @grid-gutter-width/2;
+    max-width: 130px;
+  }
+
+  @media only screen and (min-width: @vc-layout-full-start) { margin-right: 0; }
+
+  > .vc-matrjoska {
+    padding-right: 0;
+    padding-left: @grid-gutter-width/4;
+
+    @media only screen and (min-width: 380px) { padding-left: @grid-gutter-width/2; }
+
+    @media only screen and (min-width: @vc-layout-full-start) { padding-left: @grid-gutter-width; }
+
+  }
+
+  .vc-person-name{
+
+    @media only screen and (max-width: 380px) {
+      font-size: @vc-font-size-smaller;
+    }
+
+  }
+}
+
+.vc-person-for-cart-empty {
+  float: left;
+  width: auto;
+
+  > .vc-matrjoska {
+    padding-left: 0;
+  }
+
+  // Změna layoutu
+  // Kontaktní box je na řádku s nadpisem,
+  // Proto se mění uspořádání a zarovnání
+
+  @media only screen and (min-width: 600px) {
+    float: right;
+
+    > .vc-matrjoska {
+      padding-left: @grid-gutter-width/2;
+      padding-right: 0;
+    }
+  }
+}
+
+.vc-person-for-foot {
+  @media @vc-foot-breakpoint-A {
+    float: left;
+    width: percentage(6/12);
+  }
+
+  @media @vc-foot-breakpoint-B {
+    float: right;
+    width: auto;
+  }
+
+  > .vc-matrjoska {
+    @media @vc-foot-breakpoint-A {
+      float: right;
+    }
+
+    @media @vc-foot-breakpoint-B {
+      float: left;
+      width: @grid-gutter-width + @vc-person-image-size + 2*@vc-person-image-border-width + 10;
+    }
+  }
+}
+
+
+// Komponenty
+// ----------
+
+// ### „ikona“ statusu (online/offline)
+
+.vc-person-status {
+  overflow: hidden;
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  z-index: 1010;
+  width:  19px;
+  height: 19px;
+  top:    8px;
+  right:  8px;
+
+  &-online { background-color: #65c915; }
+
+  &-offline { background-color: #919191; }
+
+  span { .sr-only } // text statusu je skryt
+
+  // vetsi status pro desktop
+
+  .vc-person-for-confirmation & {
+    @media only screen and (min-width: @vc-layout-start) {
+      width:  30px;
+      height: 30px;
+      top:    11px;
+      right:  11px;
+    }
+  }
+
+  .vc-person-for-top & {
+      width:  15px;
+      height: 15px;
+      top:    5px;
+      right:  5px;
+  }
+
+  .vc-person-for-cart-empty & {
+    top: 4px;
+    right: 4px;
+    width: 8px;
+    height: 8px;
+    border-width: 1px;
+  }
+}
+
+// ### jméno osoby
+
+.vc-person-name {
+  font-size: @font-size-small;
+  line-height: 1;
+}
+
+// ### fotka osoby
+
+.vc-person-photo {
+  position: relative;
+  display: inline-block;
+}
+
+.vc-person-img {
+  display: inline-block;
+  border-radius: 50%;
+  overflow: hidden;
+
+  border: @vc-person-image-stroke-width #dbdbdb solid;
+
+  .vc-old-ie & {
+    width: auto;
+    height: auto;
+  }
+
+  .vc-person-for-foot & { border: none; }
+
+  img {
+    border-radius: 50%;
+    border: @vc-person-image-border-width #ffffff solid;
+    width:  @vc-person-image-size + 2*@vc-person-image-border-width;
+    height: @vc-person-image-size + 2*@vc-person-image-border-width;
+    overflow: hidden;
+
+    // vetsi fotka pro desktop
+
+    .vc-person-for-confirmation & {
+      @media only screen and (min-width: @vc-layout-start) {
+        width:  @vc-person-for-confirmation-image-size + 2*@vc-person-image-border-width + 2*@vc-person-image-stroke-width;
+        height: @vc-person-for-confirmation-image-size + 2*@vc-person-image-border-width + 2*@vc-person-image-stroke-width;
+      }
+    }
+
+    .vc-person-for-top & {
+      width:  @vc-person-for-category-image-size + 2*@vc-person-image-border-width + 2*@vc-person-image-stroke-width;
+      height: @vc-person-for-category-image-size + 2*@vc-person-image-border-width + 2*@vc-person-image-stroke-width;
+    }
+
+    .vc-person-for-cart-empty & {
+      width: 50px;
+      height: 50px;
+    }
+  }
+}
+
+.vc-person-name {
+  .vc-person-for-confirmation & {
+    color: #5a5a5a;
+    font-size: 14px;
+    font-weight: 400;
+
+    > small {
+      color: #959595;
+      font-size: 12px;
+    }
+  }
+}

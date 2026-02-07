@@ -1,0 +1,39 @@
+
+// Oznaceni TODO v prototypu
+
+.todo {
+  background: #f8f8f8;
+  font-style: italic !important;
+  padding: 10px;
+}
+
+// Podtrzene nadpisy
+// (napr. v detailu produktu)
+// Stylovani vychazi z BS .page-header
+
+.heading-underlined {
+  padding-bottom: ((@line-height-computed / 2) - 1);
+  margin: 0 0 @line-height-computed;
+  border-bottom: 1px solid lighten(@gray, 33%);
+}
+
+
+// Sipka pro indikaci otevreneho/zavreneho stavu
+// (napr. v navigaci nebo v elementech, ktere jdou otevirat/zavirat)
+// Prebrano z BS, doplneno o opacnou variantu .caret-up
+
+.caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-top:   @caret-width-base solid;
+  border-right: @caret-width-base solid transparent;
+  border-left:  @caret-width-base solid transparent;
+}
+
+.caret-up {
+  border-top: none;	
+  border-bottom:   @caret-width-base solid;
+}

@@ -1,0 +1,46 @@
+/*
+
+Site Search
+===========
+
+Vyhledávání v hlavičce webu.
+
+*/
+
+.search-form {
+  clear: both;
+
+  @media only screen and (min-width: 767px) {
+    position: absolute;
+    top: 32px;
+    left: 50%;
+    width: 33%;
+    margin-left: -16.5%;
+  }
+}
+
+.bar + .head .search-form {
+  @media only screen and (min-width: 767px) {
+    top: 59px;
+  }
+}
+
+.js .search-form-hidden {
+  display: none;
+}
+
+
+// TODO Pine.js
+// https://github.com/rwd-pine/pine/issues/2
+
+::-webkit-input-placeholder {
+   color: @input-color-placeholder !important;
+}
+
+::-moz-placeholder {
+   color: @input-color-placeholder !important;
+}
+
+:-ms-input-placeholder {
+   color: @input-color-placeholder !important;
+}

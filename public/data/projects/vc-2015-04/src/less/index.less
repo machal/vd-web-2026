@@ -1,0 +1,131 @@
+/*
+
+Hlavni CSS pro responzivni verzi VaseCocky.cz
+============================================
+
+1) Knihovny (Bootstrap…)
+2) Funkcni jadro
+3) Typograficka zakladna
+4) Uzivatelske rozhrani
+
+*/
+
+
+// 1) Knihovny (Bootstrap…)
+// -----------------------
+
+// Bootstrap
+// http://getbootstrap.com/
+// Nenatahujeme jej cely a mocne jej konfigurujeme, viz:
+
+@import "vendor/bootstrap-original-variables.less";
+@import "vendor/bootstrap-variables.less";
+@import "vendor/bootstrap-mixins.less";
+@import "vendor/bootstrap.less";
+@import "vendor/bootstrap-fixes.less";
+
+// Freestyle Grid
+// https://github.com/machal/freestyle-grid
+// Nepravidelny layout uvnitr stranek (napr. kategorie na homepage)
+
+@import "vendor/freestyle-grid.less";
+
+
+// 2) Funkcni jadro
+// ----------------
+
+// Promenne, mixiny, helpery…
+
+@import "core/variables.less";
+@import "core/mixins.less";
+@import "core/helpers.less";
+
+
+// 3) Typograficka zakladna
+// ------------------------
+
+// Resp. uprava Boostrapovske zakladny
+
+@import "base/base.less";
+
+
+// 4) Uzivatelske rozhrani
+// -----------------------
+
+// ### a) Layout
+
+@import "ui/layout/layout.less";
+
+
+// ### b) Obecne komponenty
+
+@import "ui/component/bar.less";                    // Řádek s důležitou informací pod navigací
+@import "ui/component/box.less";                    // Boxík s odlišenou barvou pozadí
+@import "ui/component/button.less";                 // Rozšiřujeme Bootstrap tlačítka
+@import "ui/component/forms.less";                  // Upravené Bootstrap formuláře
+@import "ui/component/list.less";                   // Seznam položek, např. s rámečkem v nákupním procesu
+@import "ui/component/motivator.less";              // Motivační body, hlavně pro detail produktu.
+@import "ui/component/motivator-linear.less";       // Motivace, lineární verze
+@import "ui/component/offer-icon.less";             // Ikona nabídky.
+@import "ui/component/order-steps.less";            // Vyznačení probíhajícího kroku objednávky.
+@import "ui/component/page-heading.less";           // Nadpis stránky.
+@import "ui/component/pagination.less";             // Stránkování.
+@import "ui/component/section.less";                // Element s konzistentním odsazením zezdola.
+@import "ui/component/table-recap.less";            // Tabulka s rekapitulací objednávky. Např. v Dopravě a platbě.
+@import "ui/component/testimonial.less";            // Ohlasy zakazníků v seznamu produktů
+
+// ### c) Konkrétní komponenty
+
+@import "ui/component/categories-tree.less";        // Seznam kategorií produktů
+@import "ui/component/login.less";                  // Přihlašovací komponenta pro hlavičku atd.
+@import "ui/component/directory.less";              // Rozcestník kategorií.
+@import "ui/component/filter.less";                 // Filtrování v seznamu produktů.
+@import "ui/component/product-item.less";           // Seznam produktů: položka produktu.
+@import "ui/component/product-variants.less";       // Detail produktu: Formulář pro výběr variant produktu (např. barev čoček)
+@import "ui/component/product-options.less";        // Detail produktu: Formulář pro výběr parametrů produktu.
+@import "ui/component/rating.less";                 // Detail produktu: Položka hodnocení produktu.
+@import "ui/component/row-testimonials.less";       // Ohlasy zákazníků pro homepage nebo kategorii
+
+
+// ### c.1) Hlavička
+
+@import "ui/head/head.less";
+@import "ui/head/banner.less";
+@import "ui/head/logo.less";
+@import "ui/head/nav-panel.less";
+@import "ui/head/nav.less";
+@import "ui/head/search-form.less";
+
+
+// ### c.2) Patička
+
+@import "ui/foot/foot-base.less";                  // Typoška & základní layout
+@import "ui/foot/foot-person.less";                // Kontaktní osoba
+@import "ui/foot/foot-links.less";                 // Odkazy
+@import "ui/foot/foot-quality.less";               // Pečeť kvality - Heureka
+@import "ui/foot/foot-partners.less";              // Partneři
+@import "ui/foot/foot-social-buttons.less";        // Tlačítka sociálních sítí
+@import "ui/foot/foot-copyright.less";             // Copyright
+
+
+// ### c.3) Stranky a komponenty specifické pro stránky
+
+// Homepage
+@import "ui/page/home.less";
+
+// Košík
+@import "ui/page/cart.less";
+@import "ui/page/cart/cart-discounts.less";
+@import "ui/page/cart/cart-item.less";
+
+// Kategorie
+@import "ui/page/category.less";
+
+// Detail produktu
+@import "ui/page/detail.less";
+
+// Kroky objednávky
+// - Doprava a platba
+// - Osobni udaje
+@import "ui/page/order.less";
+@import "ui/page/order/order-goto.less";

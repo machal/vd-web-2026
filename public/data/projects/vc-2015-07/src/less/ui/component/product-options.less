@@ -1,0 +1,457 @@
+/*
+
+Product Options
+===============
+
+Tabulka s výběrem parametrů zboží. Stejná komponenta se využívá
+v detailu produktu i seznamu.
+
+*/
+
+
+// Základna
+// --------
+
+.vc-product-options {
+  .vc-clearfix;
+  background-color: @vc-bg-lightest;
+
+  margin-top: @line-height-computed;
+  margin-bottom: @line-height-computed;
+  border-color: #f2f2f2;
+
+  padding-left: @padding-small-horizontal;
+  padding-right: @padding-small-horizontal;
+
+  @media only screen and (min-width: 320px){
+    padding-left: @padding-large-horizontal;
+    padding-right: @padding-large-horizontal;
+  }
+
+  @media only screen and (min-width: @vc-layout-start){
+    margin-top: @line-height-computed*2;
+  }
+
+  select,
+  input {
+    max-width: 100px;
+    min-width: 70px;
+  }
+
+  .form-group {
+    margin-bottom: 0;
+  }
+}
+
+// Mensi pismo, aby se toho veslo vic
+.vc-product-options {
+  font-size: @font-size-small;
+
+  // label vždy nahoře a nezalamovat, měl by se vejít
+  label {
+    width: 100%;
+    white-space: nowrap;
+    line-height: 1;
+  }
+
+  // menší písmo, menší prostor vpravo a vlevo
+  .form-control {
+    font-size: @font-size-small;
+    padding-left: 6px;
+    padding-right: 2px; // v IE11 odsazuje "rozbalovací" tlačítko selectu!
+  }
+}
+
+// Nadpis (nepoužíváme v košíku)
+.vc-product-options-heading {
+  .vc-heading-underlined;
+  margin-top: @line-height-computed/3;
+  margin-bottom: 0;
+  color: #a3a3a3;
+  border-bottom-color: #e6e6e6;
+}
+
+// Seznam parametrů
+// ----------------
+
+.vc-product-options-items {
+  .vc-clearfix;
+  clear: both;
+
+  // Horní rámeček u první položky jen mimo košík
+  border-top: 1px dotted #e3e3e3;
+
+  .vc-product-options-first-eye & { border-top: none; }
+
+}
+
+// ### label v parametrech produktu
+.vc-product-options-label{
+  font-size: 100%;
+  font-weight: 300;
+
+  display: inline-block;
+
+  // aspoň 1px mezera pokud se zalomí pod sebe
+  margin-bottom: 2px;
+  margin-top: -1px; // zarovnání na zpšt do řádku
+
+  padding: 0.30em 0.4em 0.22em;
+}
+
+// Jednotlivé parametry
+// --------------------
+
+.vc-product-options-item {
+  float: left;
+  padding: @padding-large-vertical @padding-small-horizontal 0 0;
+  height: 81px;
+
+}
+
+// ### Parametr: Dostupnost produktu
+
+// Vyjimecne muze vylezt na 3 radky, proto neomezujeme vysku
+// a mensi radkovani.
+
+.vc-product-options-availability {
+  height: auto;
+
+  .form-control-static {
+    line-height: 18px;
+    padding-top: 8px;
+    padding-bottom: 4px;
+    padding-left: 0;
+  }
+}
+
+// ### vyber barvy
+
+// skryjeme v kosiku
+.vc-product-options-cart .vc-product-variants { display: none; }
+
+// skryjeme v detailu
+.vc-product-options-detail .vc-product-options-variants { .sr-only; }
+
+
+// Pridani oka
+// -----------
+
+.vc-product-options-add-eye {
+  padding: @padding-large-vertical 0;
+  margin-bottom: 0;
+
+  a,
+  a:link { text-decoration: none; }
+
+  a:hover { text-decoration: underline; }
+
+  // Zobrazujeme jen v JS verzi
+  display: none;
+  .js & {
+    display: block;
+  }
+}
+
+// Prvni a druhe oko
+// -----------------
+
+.vc-product-options-first-eye { }
+
+// Druhe v JS verzi zobrazujeme az po kliknuti na .vc-product-options-add-eye
+.vc-product-options-second-eye {
+  .js & {
+    display: none;
+  }
+}
+
+
+// Varianta: Výběr parametrů v košíku
+// ----------------------------------
+
+.vc-product-options-cart {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  padding-left: 0;
+  padding-right: 0;
+
+  background-color: #ffffff;
+
+  @media only screen and (max-width: 767px) {
+    border-bottom: 1px dotted @vc-border-color;
+    margin-bottom: @line-height-computed;
+  }
+}
+
+// V košíku nechci nadpisy
+.vc-product-options-cart .vc-product-options-heading { .sr-only; }
+
+// Responzivní varianty
+// --------------------
+
+// Do 1199 individuálně pro každou položkovou verzi.
+// Od 1200 jednotně podle 10sloupcového gridu.
+
+// TODO
+// - jeste bude chtit poladit mezi cca 500-1024
+//   viz cart_all.php
+
+
+// ### 1-polozkovy:
+// Tam kde je jen pocet baleni, napr. roztoky
+// V kosikove verzi vubec neni tlacitko "Upravit".
+
+.vc-product-options-1-item {
+
+  @media only screen and (max-width: 319px) {
+    // 1 sloupce
+    .vc-product-options-item { width: percentage(1/1); }
+  }
+
+  @media only screen and (min-width: 320px) and (max-width: 567px) {
+    // 2 sloupce
+    .vc-product-options-quantity     { width: percentage(1/3); }
+
+    .vc-product-options-availability { width: percentage(2/3); }
+  }
+
+  @media only screen and (min-width: 568px) and (max-width: (@vc-layout-full-start - 1px)) {
+    // 2 sloupce
+    .vc-product-options-quantity     { width: percentage(1/5); }
+
+    .vc-product-options-availability { width: percentage(4/5); }
+  }
+}
+
+// ### 4-polozkovy
+// (+ dostupnost + tlacitko ulozit/upravit v kosiku)
+
+.vc-product-options-4-items {
+
+  @media only screen and (max-width: 319px) {
+    // 2 sloupce
+    .vc-product-options-item         { width: percentage(1/2); }
+
+    .vc-product-options-availability { width: percentage(2/2); }
+  }
+
+  @media only screen and (min-width: 320px) and (max-width: 419px){
+    // 3 sloupce
+    .vc-product-options-item { width: percentage(1/3); }
+
+    .vc-product-options-availability { width: percentage(2/3); }
+
+  }
+
+  @media only screen and (min-width: 420px) and (max-width: 649px),
+         only screen and (min-width: @vc-layout-start) and (max-width: 959px) {
+    // 4 sloupce
+    .vc-product-options-item { width: percentage(1/4); }
+
+    .vc-product-options-availability { width: percentage(4/4); }
+
+  }
+
+  @media only screen and (min-width: 650px) and (max-width: (@vc-layout-start - 1px)),
+         only screen and (min-width: 960px) and (max-width: (@vc-layout-full-start - 1px)) {
+    // 6 sloupcu
+    .vc-product-options-item { width: percentage(1/6); }
+
+    .vc-product-options-availability { width: percentage(2/6); }
+  }
+}
+
+// ### 5-polozkovy
+// (+ dostupnost + tlacitko ulozit/upravit v kosiku)
+
+.vc-product-options-5-items {
+
+  @media only screen and (max-width: 319px) {
+    // 2 sloupce
+    .vc-product-options-item         { width: percentage(1/2); }
+
+    .vc-product-options-availability { width: percentage(2/2); }
+
+    &.vc-product-options-cart {
+      .vc-product-options-variants { width: percentage(2/2); }
+    }
+  }
+
+  @media only screen and (min-width: 320px) and (max-width: 419px) {
+    // 3 sloupce
+    .vc-product-options-item         { width: percentage(1/3); }
+
+    .vc-product-options-availability { width: percentage(2/3); }
+
+    &.vc-product-options-cart {
+      .vc-product-options-variants     { width: percentage(2/3); }
+
+      .vc-product-options-availability { width: percentage(3/3); }
+    }
+  }
+
+  @media only screen and (min-width: 420px) and (max-width: (@vc-layout-full-start - 1px)) {
+    // 4 sloupce
+    .vc-product-options-item         { width: percentage(1/4); }
+
+    .vc-product-options-availability { width: percentage(4/4); }
+
+    &.vc-product-options-cart {
+      .vc-product-options-variants     { width: percentage(2/4); }
+
+      .vc-product-options-availability { width: percentage(2/4); }
+    }
+  }
+}
+
+// ### 6-polozkovy
+
+.vc-product-options-6-items {
+
+  @media only screen and (max-width: 319px) {
+    // 2 sloupce
+    .vc-product-options-item         { width: percentage(1/2); }
+
+    .vc-product-options-availability { width: percentage(2/2); }
+  }
+
+  @media only screen and (min-width: 320px) and (max-width: 419px) {
+    // 3 sloupce
+    .vc-product-options-item         { width: percentage(1/3); }
+
+    .vc-product-options-availability { width: percentage(3/3); }
+  }
+
+  @media only screen and (min-width: 420px) and (max-width: 649px),
+         only screen and (min-width: @vc-layout-start) and (max-width: 960px) {
+    // 4 sloupce
+    .vc-product-options-item         { width: percentage(1/4); }
+
+    .vc-product-options-availability { width: percentage(2/4); }
+  }
+
+  @media only screen and (min-width: 650px) and (max-width: (@vc-layout-start - 1px)),
+         only screen and (min-width: 960px) and (max-width: (@vc-layout-full-start - 1px)) {
+    // 6 sloupců
+    .vc-product-options-item         { width: percentage(1/6); }
+
+    .vc-product-options-availability { width: percentage(6/6); }
+  }
+}
+
+
+// ### 7-polozkovy
+
+.vc-product-options-7-items {
+
+  .vc-product-options-item { float: left; }
+
+  @media only screen and (max-width: 319px) {
+    // 2 sloupce
+    .vc-product-options-item         { width: percentage(1/2); }
+
+    .vc-product-options-availability { width: percentage(2/2); }
+  }
+
+  @media only screen and (min-width: 320px) and (max-width: 419px) {
+    // 3 sloupce
+    .vc-product-options-item         { width: percentage(1/3); }
+
+    .vc-product-options-availability { width: percentage(2/3); }
+  }
+
+  @media only screen and (min-width: 420px) and (max-width: 559px) {
+    // 3 sloupce
+    .vc-product-options-item { width: percentage(1/3); }
+
+    .vc-product-options-availability { width: percentage(2/3); }
+  }
+
+  @media only screen and (min-width: 560px) and (max-width: (@vc-layout-full-start - 1px)) {
+    // 5 sloupců
+    .vc-product-options-item { width: percentage(1/5); }
+
+    .vc-product-options-availability { width: percentage(3/5); }
+
+  }
+}
+
+// ### Jednotný grid pro velké desktopy
+
+// Od 1200
+// 10ti sloupeckova mrizka (max 7 polozek + 2 sloupce pro availability + 1 pro edit-save)
+
+@media only screen and (min-width: @vc-layout-full-start) {
+
+  // lokální proměnná: počet sloupců
+  @vc-cols: 10;
+
+  .vc-product-options .vc-product-options-items {
+
+    .vc-product-options-item { width: percentage(1/@vc-cols); }
+
+    // jemné nastavení, výchozí je 7 položková varianta
+    // pozor, je třeba zkontrolovat všechny kombinace, zda dávají dohromady 10
+
+    // počet balení
+    .vc-product-options-quantity     { width: percentage(1.35/@vc-cols); }
+    // dioptrie
+    .vc-product-options-power        { width: percentage(1.20/@vc-cols); }
+    // zakřivení
+    .vc-product-options-base-curve   { width: percentage(1.05/@vc-cols); }
+    // adice
+    .vc-product-options-add          { width: percentage(1.25/@vc-cols); }
+    // cylindr
+    .vc-product-options-cylinder     { width: percentage(1.10/@vc-cols); }
+    // osa
+    .vc-product-options-axis         { width: percentage(1.05/@vc-cols); }
+    // průměr
+    .vc-product-options-diameter     { width: percentage(1.15/@vc-cols); }
+    // dostupnost
+    .vc-product-options-availability { width: percentage(1.85/@vc-cols); }
+    // varianty
+    .vc-product-options-variants     { width: percentage(1.50/@vc-cols); }
+
+  }
+
+  // ladění pro další varianty
+  .vc-product-options.vc-product-options-6-items {
+    .vc-product-options-availability { width: percentage(3.10/@vc-cols); }
+  }
+
+  .vc-product-options.vc-product-options-5-items {
+
+    .vc-product-options-availability { width: percentage(5.25/@vc-cols); }
+
+    &.vc-product-options-cart {
+      .vc-product-options-variants     { width: percentage(2.80/@vc-cols); }
+
+      .vc-product-options-availability { width: percentage(2.45/@vc-cols); }
+    }
+  }
+
+  .vc-product-options.vc-product-options-4-items {
+    .vc-product-options-availability { width: percentage(5.25/@vc-cols); }
+  }
+
+  .vc-product-options.vc-product-options-1-item {
+    .vc-product-options-availability { width: percentage(8.60/@vc-cols); }
+  }
+
+}
+
+// debugovací pozadí
+/*
+body{
+  .vc-product-options-quantity { background-color: lighten(lightcoral,5%); }
+  .vc-product-options-power { background-color: lightpink; }
+  .vc-product-options-base-curve { background-color: lighten(orange, 20%); }
+  .vc-product-options-add { background-color: lighten(green, 15%); }
+  .vc-product-options-cylinder { background-color: lighten(green, 20%); }
+  .vc-product-options-axis { background-color: lighten(green, 35%); }
+  .vc-product-options-diameter { background-color: lighten(yellow, 20%); }
+  .vc-product-options-variants { background-color: lighten(deepskyblue,30%); }
+  .vc-product-options-availability { background-color: lightgray; }
+}
+*/

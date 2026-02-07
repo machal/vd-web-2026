@@ -1,0 +1,377 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+ 
+<html xml:lang="cs" xmlns="http://www.w3.org/1999/xhtml"> 
+<head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+  <title>Typeface.js test</title> 
+ 
+  <meta http-equiv="description" content="" /> 
+  <meta name="author" content="Shortcat; info@shortcat.cz" /> 
+  <meta http-equiv="imagetoolbar" content="no" /> 
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" /> 
+  
+ 
+  <!-- Dublin Core Metadata:  --> 
+  <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" /> 
+  <meta name="DC.Title" content="Mezinárodní hudební festival Pražské jaro" /> 
+  <meta name="DC.Creator.corporateName" content="Pražské jaro (festival)" /> 
+  <meta name="DC.Subject" scheme="PHNK" content="hudební festivaly" /> 
+  <meta name="DC.Subject" scheme="PHNK" content="music festivals" /> 
+  <meta name="DC.Subject" scheme="MDT_KON" content="78 - Hudba" /> 
+  <meta name="DC.Subject" scheme="DDC_CON" content="780 - Music" /> 
+  <meta name="DC.Description.abstract" content="Webové stránky mezinárodního hudebního festivalu Pražské jaro. Archiv předchozích ročníků festivalu je uložen na http://old.festival.cz/." /> 
+  <meta name="DC.Publisher" content="Pražské jaro, o.p.s." /> 
+  <meta name="DC.Date.issued" scheme="DCMIPeriod" content="start:2009-" /> 
+  <meta name="DC.Type" scheme="DCMIType" content="Text" /> 
+  <meta name="DC.Format" scheme="IMT" content="text/html" /> 
+  <meta name="DC.Identifier" content="http://www.festival.cz/" /> 
+  <meta name="DC.Identifier" scheme="URN" content="URN:NBN:cz-nk20097371" /> 
+  <meta name="DC.Language" scheme="RFC3066" content="cze" /> 
+  <meta name="DC.Language" scheme="RFC3066" content="eng" /> 
+  <meta name="DC.Language" scheme="RFC3066" content="ger" /> 
+  <meta name="DC.Coverage.spatial" scheme="PHNK" content="Praha (Česko)" /> 
+  <meta name="DC.Coverage.spatial" scheme="PHNK" content="Prague (Czech Republic)" /> 
+  <meta name="DC.Rights" content="Pražské jaro, o.p.s" /> 
+  
+ 
+  <link href="http://www.festival.cz/articles.atom" rel="alternate" title="ATOM" type="application/atom+xml" /> 
+  
+  <link href="./stylesheets/index.css?1264184911" media="all" rel="stylesheet" type="text/css" />  
+  <!--[if IE]><link href="./stylesheets/ie.css?1264184911" media="all" rel="stylesheet" type="text/css" /><![endif]--> 
+  <!--[if lte IE 6]><link href="./stylesheets/ie6.css?1264184911" media="all" rel="stylesheet" type="text/css" /><![endif]-->  
+  <link href="./stylesheets/print.css?1264184911" media="print" rel="stylesheet" type="text/css" /> 
+    
+  <script src="./javascripts/prototype.all.pack.js?1264184911" type="text/javascript"></script> 
+<script src="./javascripts/application.js?1264184911" type="text/javascript"></script>    
+  <script src="./javascripts/jquery.all.min.js?1264184911" type="text/javascript"></script> 
+<script src="./javascripts/application-jquery.js?1264184911" type="text/javascript"></script>   
+  
+  <!--[if lt IE 7]><script src="./javascripts/unitpngfix.js?1264184911" type="text/javascript"></script><![endif]-->    
+
+<!-- load the typeface.js library and typeface.js fonts -->
+    <script type="text/javascript" src="typeface-0.14.js"></script>
+    <script type="text/javascript" src="chronicle_disp_comp_roman.typeface.js"></script>
+ 
+</head> 
+ 
+<body id="body" class="competition_pages index  lang-cz"> 
+
+<p style="position:fixed; bottom: 0; left: 0; z-index: 1000; width: 100%; opacity: .8; padding:10px; text-align:center; background: #333; color: #fff; margin: 0;">
+  Test zobrazování nadpisů pomocí technologie Typeface.js.
+</p>
+ 
+ 
+<div id="container"> 
+ 
+ <!-- == Hlavicka a navigace == --> 
+ <div id="head"> 
+ 
+  <p id="logo"><a href="http://www.festival.cz/"><img src="http://www.festival.cz/images/prazske-jaro-logo.png" alt="65. mezinárodní hudební festival Pražské jaro" /></a></p> 
+  
+  <div id="navigations"> 
+  
+    <p id="web-title" class="typeface-js">65. mezinárodní hudební festival Pražské jaro</p> 
+ 
+        <div id="top-navigation"> 
+ 
+          
+          <form action="/search" id="site-search" method="get" onsubmit="new Ajax.Request('/search?authenticity_token=Cf3XBv%2FlVCFFrBn9ZbKL5nCC5h3F21OjJbddLhr5q6o%3D&amp;format=js', {asynchronous:true, evalScripts:true, onComplete:function(request){
+                      $('site-search').removeClassName('loading');
+                      $('ajax-search-box-close').show();
+                      initializeAjaxSearchBox();
+                      load_unit_png_fix();
+                      Application.GoogleAnalytics.pageView('/search?authenticity_token=Cf3XBv%2FlVCFFrBn9ZbKL5nCC5h3F21OjJbddLhr5q6o%3D&amp;format=js');                                            
+                    }, onLoading:function(request){
+                      $('site-search').addClassName('loading');
+                      $('ajax-search-box-close').hide();
+                    }, parameters:Form.serialize(this)}); return false;"> 
+<p> 
+  <input id="site-search-input" name="search" type="text" value="Vyhledávání" /> 
+  <input id="year" name="year" type="hidden" value="2010" /> 
+  <input id="locale" name="locale" type="hidden" value="cz" /> 
+  <input id="site-search-submit" type="submit" value="Vyhledat" /> 
+</p> 
+</form> 
+ 
+          
+        
+          
+          <a href="http://www.festival.cz/calendar" id="calendar-link" onclick="new Ajax.Request('/calendar', {asynchronous:true, evalScripts:true, method:'get', onComplete:function(request){Application.GoogleAnalytics.pageView(&quot;/calendar&quot;); Application.Calendar.loaded();}, onLoading:function(request){Application.Calendar.loading()}, parameters:'authenticity_token=' + encodeURIComponent('Cf3XBv/lVCFFrBn9ZbKL5nCC5h3F21OjJbddLhr5q6o=')}); return false;">Kalendář</a> 
+ 
+ 
+            
+        
+          
+          <div id="current-locale" class=""> 
+  Česky
+  
+        
+</div> 
+ 
+<div id="switch-locale" class=""> 
+  <span class="active"> 
+    Česky
+  </span> 
+  <span> 
+    <a href="http://www.prague-spring.net/competition" class="jquery_do_not_mess_with_me">English</a> 
+  </span> 
+  <span> 
+    <a href="http://www.pragerfruhling.de/competition" class="jquery_do_not_mess_with_me">Deutsch</a> 
+  </span> 
+</div><!-- /switch-locale --> 
+ 
+          
+ 
+        </div><!-- /top-navigation --> 
+ 
+        <div class="clear-zero">&nbsp;</div>   
+ 
+        <p id="program-navigation"> 
+          <span class="category-background-1"></span> 
+          <span class="category-background-2"></span> 
+          <span class="category-background-3"></span> 
+          <span class="category-background-4"></span> 
+          <span class="category-background-5"></span> 
+          <span class="category-background-6"></span> 
+          <span class="category-background-7"></span>           
+        </p><!-- /program-navigation -->  
+ 
+        <div class="clear-zero">&nbsp;</div> 
+ 
+  
+  <p id="site-navigation"> 
+  <span><a href="http://www.festival.cz/">Úvodní stránka</a></span> 
+ 
+  <span><a href="http://www.festival.cz/program">Program</a></span> 
+ 
+  <span><a href="http://www.festival.cz/articles">Novinky a články</a></span> 
+ 
+  <span><a href="http://www.festival.cz/vstupenky">Vstupenky</a></span> 
+ 
+  <span><a href="http://www.festival.cz/partneri">Partneři</a></span> 
+                   
+  <span><a href="http://www.festival.cz/pratele">Přátelé</a></span>                   
+ 
+  <strong><a href="http://www.festival.cz/soutezni-pravidla">Soutěž</a></strong> 
+ 
+  <span><a href="http://www.festival.cz/koncerty-u-sv-vavrince">Koncerty u sv. Vavřince</a></span> 
+ 
+  <span><a href="http://www.festival.cz/historie">O nás</a></span> 
+ 
+  <span><a href="http://www.festival.cz/archive/2009">Archiv</a></span> 
+ 
+  <span><a href="http://www.festival.cz/kontakt">Kontakt</a></span> 
+ 
+  <span><a href="http://www.festival.cz/tiskovy_servis">Tiskový servis</a></span> 
+</p><!-- /site-navigation --> 
+ 
+  
+ 
+  </div><!-- /navigations --> 
+ </div><!-- /head --> 
+ 
+ <!-- == Nadpis stranky == --> 
+ <div id="content-head"> 
+   <h1 class="typeface-js">Mezinárodní soutěž</h1>
+ </div><!-- /content-head --> 
+ 
+ <!-- == Obsah stranky == --> 
+ <div id="content"> 
+ 
+    <p id="second-site-navigation"> 
+    <span><a href="http://www.festival.cz/o_soutezi">O soutěži</a></span> 
+    <strong>Soutěž 2009</strong> 
+    
+    <span><a href="http://www.festival.cz/soutezni-pravidla">Podmínky</a></span> 
+  </p><!-- /second-site-navigation --> 
+  
+ 
+<div class="clear-zero">&nbsp;</div><!-- /clear-zero  --> 
+ 
+<!-- TITLE: Soutěžní aktuality --> 
+  
+<!-- === Vysledky souteze === --> 
+ 
+<div id="competition-results"> 
+ 
+    <p> 
+      Pořadatel si vyhrazuje právo na případné změny v uvedeném časovém rozvrhu.<br /> 
+    </p>      
+ 
+<!--  === Fletna === --> 
+   
+   <div class="instrument">   
+   
+     <div class="heading"> 
+      
+        <h2 class="typeface-js">Flétna</h2> 
+        
+        <p> 
+          <strong>Zahájení a losování</strong><br /> 
+          7. května 2009, 18:00, HAMU
+        </p>    
+      
+     </div><!--  /heading -->         
+ 
+     <div class="round"> 
+       <h3 class="typeface-js">I. kolo</h3> 
+       <p> 
+         <strong>8. a 9. května 2009</strong>, 
+         začátky v 9:00, 14:00  a 19:00, HAMU<br /><br /> 
+         <a href="http://www.festival.cz/competition/pages/1-fletna-program-1-kola" class="plan-and-results">Program</a> 
+         <a href="http://www.festival.cz/competition/pages/3-fletna-vysledky-1-kola" class="plan-and-results">Výsledky</a> 
+       </p> 
+     </div><!-- / class="round"  -->     
+     
+     <div class="round"> 
+       <h3 class="typeface-js">II. kolo</h3> 
+       <p> 
+         <strong>11. května 2009</strong>, 
+         začátky v 9:00, 14:00 a 19:00, HAMU<br /><br /> 
+         <a href="http://www.festival.cz/competition/pages/5-fletna-program-2-kola" class="plan-and-results">Program</a> 
+         <a href="http://www.festival.cz/competition/pages/7-fletna-vysledky-2-kola" class="plan-and-results">Výsledky</a>         
+       </p> 
+     </div><!-- / class="round"  -->      
+     
+     <div class="round"> 
+       <h3 class="typeface-js">Finále</h3> 
+       <p> 
+         <strong>13. května 2009</strong> (v rámci festivalu), 
+         16:00 a 20:00, Rudolfinum<br /><br /> 
+         <a href="http://www.festival.cz/competition/pages/9-fletna-program-finale" class="plan-and-results">Program</a> 
+         <a href="http://www.festival.cz/competition/pages/11-fletna-vysledky-finale" class="plan-and-results">Výsledky</a>         
+       </p> 
+     </div><!-- / class="round"  -->                 
+     
+ 
+  </div><!-- /instrument -->  
+  
+ 
+<!--  === Fagot === -->        
+  
+   <div class="instrument last">  
+   
+      <div class="heading"> 
+   
+        <h2 class="typeface-js">Fagot</h2> 
+        
+        <p> 
+          <strong>Zahájení a losování</strong><br /> 
+          8. května 2009, 18:00, Národní dům<br />na Vinohradech          
+        </p>          
+      
+     </div><!--  /heading -->               
+ 
+     <div class="round"> 
+       <h3 class="typeface-js">I. kolo</h3> 
+       <p> 
+         <strong>9. a 10. května 2009</strong>, 
+         9:00, 14:00 a 19:00, Národní dům na Vinohradech<br /><br /> 
+         <a href="http://www.festival.cz/competition/pages/2-fagot-program-1-kola" class="plan-and-results">Program</a> 
+         <a href="http://www.festival.cz/competition/pages/4-fagot-vysledky-1-kola" class="plan-and-results">Výsledky</a> 
+       </p> 
+     </div><!-- / class="round"  -->     
+     
+     <div class="round"> 
+       <h3 class="typeface-js">II. kolo</h3> 
+       <p> 
+         <strong>12. května 2009</strong>, 
+         9:00, 14:00 a 19:00, Národní dům na Vinohradech<br /><br /> 
+         <a href="http://www.festival.cz/competition/pages/6-fagot-program-2-kola" class="plan-and-results">Program</a> 
+         <a href="http://www.festival.cz/competition/pages/8-fagot-vysledky-2-kola" class="plan-and-results">Výsledky</a>            
+       </p> 
+     </div><!-- / class="round"  -->      
+     
+     <div class="round"> 
+       <h3 class="typeface-js">Finále</h3> 
+       <p> 
+         <strong>14. května 2009</strong> (v rámci festivalu), 
+         16:00 a 20:00, Rudolfinum<br /><br /> 
+         <a href="http://www.festival.cz/competition/pages/10-fagot-program-finale" class="plan-and-results">Program</a> 
+         <a href="http://www.festival.cz/competition/pages/12-fagot-vysledky-finale" class="plan-and-results">Výsledky</a>           
+       </p> 
+     </div><!-- / class="round"  -->                 
+     
+ 
+  </div><!-- /instrument -->    
+  
+  
+  <div id="prices-handover"> 
+    
+    <h2 class="typeface-js">Slavnostní předání cen </h2> 
+    <p> 
+      <strong>15. května 2009 11:00</strong>, Staroměstská radnice
+    </p> 
+    
+  </div><!-- / id="prices-handover"  -->  
+  
+</div><!-- /competition-results --> 
+ 
+ 
+ 
+<!--  ==  Novinky ze souteze == --> 
+<div id="competition-articles"> 
+            
+      <div class="article">         
+        <div class="text"> 
+ 
+        <h2 class="typeface-js"><a href="http://www.festival.cz/articles/115">Novinky ze soutěže</a></h2> 
+           
+        
+          
+<p>15. prosinec 2009&#160;byl posledním dnem, kdy se mohli kandidáti přihlásit
+do 62. ročníku soutěže. Do sekretariátu přišlo 105&#160;přihlášek pro obor
+trubka, houslistů se přihlásilo 66. V&#160;těchto dnech se rozhoduje, kdy budou
+probíhat výběrová předkola, o&#160;jejichž výsledcích budeme včas informovat.<a 
+href="http://www.festival.cz/articles/115-novinky-ze-souteze">&#160;(více)</a></p> 
+ 
+             
+ 
+        </div><!-- /text --> 
+      </div><!-- /article --> 
+ 
+      <div class="article">         
+        <div class="text"> 
+ 
+        <h2 class="typeface-js"><a href="http://www.festival.cz/articles/110">Soutěžní podmínky 2010 na hodně a hodně řádků</a></h2> 
+           
+        
+          
+<p>Stálá soutěžní komise na své červnové schůzce odsouhlasila podmínky pro
+Mezinárodní hudební soutěž Pražské jaro 2010, která se bude konat v&#160;době od
+7. do 15. května 2010&#160;v&#160;Praze v&#160;oborech HOUSLE a TRUBKA.</p> 
+ 
+<p>Kompletní soutěžní podmínky najdete <a 
+href="http://www.festival.cz/soutezni-pravidla" rel="nofollow">na stránkách
+soutěže</a>.</p> 
+ 
+             
+ 
+        </div><!-- /text --> 
+      </div><!-- /article --> 
+ 
+  
+    <p id="another-news"> 
+      <a href="http://www.festival.cz/articles/by-category/1">Další soutěžní novinky</a> 
+    </p> 
+ 
+ 
+</div><!-- /competition-articles --> 
+ 
+<div class="clear-zero">&nbsp;</div> 
+ 
+ 
+ <div class="clear-zero">&nbsp;</div> 
+ </div><!-- /content --> 
+ 
+ <div class="clear-zero">&nbsp;</div> 
+ 
+</div><!-- /container --> 
+ 
+<script type="text/javascript">
+jQuery("body").addClass("with-javascript");
+_typeface_js.initialize();
+</script> 
+ 
+</body> 
+</html> 

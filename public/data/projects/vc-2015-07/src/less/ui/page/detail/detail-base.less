@@ -1,0 +1,140 @@
+/*
+
+Stránka: Detail produktu
+========================
+
+*/
+
+
+// ### Název produktu
+.vc-detail-heading {
+  margin-bottom: @line-height-computed/2;
+}
+
+
+// ### Kategorie, ve kterych je produkt zarazen
+.vc-detail-categories {
+  margin: 0 0 @line-height-computed*0.2;
+  font-size: @font-size-small;
+  line-height: @font-size-small*1.25;
+  color: @gray-light;
+
+  a {
+    color: @gray-light;
+    text-decoration: underline;
+
+    &:hover,
+    &:focus,
+    &:active { color: @vc-color-dark-blue; }
+  }
+}
+
+
+// ### dostupnost produktu
+.vc-detail-in-stock {
+  margin: 0 auto @line-height-computed;
+  color: @vc-color-green;
+  font-size: @font-size-small;
+  line-height: @font-size-small*1.25;
+
+  a { text-decoration: none; }
+}
+
+
+// ### Pridat do kosiku
+.vc-detail-add-to-cart {
+  .vc-clearfix;
+  width: 100%;
+  border-top: 1px dotted #e3e3e3;
+  padding-top: @line-height-computed/2;
+  margin: 0 auto @line-height-computed/2;
+
+  .vc-btn {
+    margin-top: @line-height-computed/2;
+    text-align: center;
+    width: 100%;
+
+    @media only screen and (min-width: 521px) { width: auto; }
+
+  }
+
+  @media only screen and (min-width: 521px) {
+    float: left;
+    margin-top: @line-height-computed/2;
+  }
+}
+
+
+// ### Motivace: doprava zdarma
+.vc-detail-transport {
+  display: block;
+  margin-top: @line-height-computed/2-@padding-small-vertical;
+  padding: @padding-small-vertical @padding-small-horizontal;
+  border-radius: @border-radius-base;
+
+  @media only screen and (min-width: 521px) { float: right; }
+
+  &,
+  &:link {
+    text-decoration: none;
+    color: @vc-color-text;
+  }
+
+  &:hover { background-color: @vc-bg-light; }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-position: inside;
+  }
+
+  li {
+    text-indent: -1em;
+    margin-left: 1em;
+  }
+
+  p { margin: 0; }
+
+}
+
+
+// ### Motivace: vydejni mista a garance vymeny
+.vc-detail-motivator { clear: both; }
+
+
+// ### Popis produktu
+.vc-detail-description {
+  clear: both;
+  padding-top: @line-height-computed;
+  margin-bottom: @line-height-computed;
+}
+
+.vc-detail-description-content {
+  .vc-clearfix;
+  margin-bottom: 2*@line-height-computed;
+}
+
+.vc-detail-description-image {
+  @media only screen and (min-width: 360px) {
+    float: left;
+    padding-right: @padding-large-horizontal;
+  }
+
+  img {
+    .img-responsive;
+    max-height: 200px;
+  }
+}
+
+
+// ### Parametry produktu
+.vc-detail-parameters {
+
+  // první sloupec tabulky užší aby nebyly hodnoty příliš daleko
+  .table th{
+    @media only screen and (min-width: 430px) and (max-width: @vc-layout-start),
+           only screen and (min-width: 860px) {
+      width: 33%;
+    }
+  }
+}

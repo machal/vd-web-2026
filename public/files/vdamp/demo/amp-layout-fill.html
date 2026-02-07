@@ -1,0 +1,82 @@
+<!doctype html>
+<html amp lang="en">
+  <head>
+    <meta charset="utf-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <title>AMP layout</title>
+    <link rel="canonical" href="amp-layout-fill.html">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <style amp-custom>
+      body {
+        padding: 20px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+      }
+
+      .container {
+        padding: 10px;
+        background:lightgrey;
+      }
+
+      /* Needed for layout="fill" */
+      .container-in {
+        position: relative;
+        height: 15em;
+      }
+
+      .of-cover img {
+        object-fit: cover;
+      }
+
+      .of-contain img {
+        object-fit: contain;
+      }
+
+      img {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>AMP: layout="fill"</h1>
+
+    <h2>layout="fill"</h2>
+
+    <div class="container">
+      <div class="container-in">
+        <amp-img src="img/placeholder/placeholder-green-16-9.jpg"
+            width="160"
+            height="90"
+            layout="fill"
+            alt=""></amp-img>
+      </div>
+    </div>
+
+    <h2>layout="fill" &amp; object-fit: cover</h2>
+
+    <div class="container">
+      <div class="container-in">
+        <amp-img src="img/placeholder/placeholder-green-16-9.jpg"
+            width="160"
+            height="90"
+            layout="fill"
+            class="of-cover"
+            alt=""></amp-img>
+      </div>
+    </div>
+
+    <h2>layout="fill" &amp; object-fit: contain</h2>
+
+    <div class="container">
+      <div class="container-in">
+        <amp-img src="img/placeholder/placeholder-green-16-9.jpg"
+            width="160"
+            height="90"
+            layout="fill"
+            class="of-contain"
+            alt=""></amp-img>
+      </div>
+    </div>
+
+  </body>
+</html>

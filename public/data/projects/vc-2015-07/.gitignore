@@ -1,0 +1,31 @@
+# Node.js, Grunt a Bower balicky neverzujeme
+/node_modules/
+/bower_components/
+
+# /dist/ se zkompilovanymi CSSky atd. nepotrebujeme verzovat
+/dist/
+
+# osx noise
+.DS_Store
+profile
+
+# xcode noise
+build/*
+*.mode1
+*.mode1v3
+*.mode2v3
+*.perspective
+*.perspectivev3
+*.pbxuser
+*.xcworkspace
+xcuserdata
+
+# IDEA noise
+.idea/*
+
+# svn & cvs
+.svn
+CVS
+npm-debug.log
+NOTES.txt
+.sublime-grunt.cache

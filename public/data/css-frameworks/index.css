@@ -1,0 +1,54 @@
+/* CSS Document */
+
+body
+{
+  margin: 30px;
+  color: #666;
+}
+
+#container
+{
+  width: 4000px;
+  height: 100%;  
+}
+
+h1 
+{
+  font-weight: normal;
+  font-size: 1.6em;
+}
+
+.framework {
+  width: 350px;  
+  float: left;
+  margin-right: 30px;
+  height: 100%;  
+}
+
+.framework h2
+{
+  margin: 0;
+}
+
+.framework h2 a 
+{
+  display: block;
+  background-color: #5FA316;
+  color: #fff;
+  margin: 0;
+  padding: 5px 20px;
+  text-decoration: none; 
+}
+
+.framework h2 a:hover
+{
+  text-decoration: underline;
+}
+
+.framework iframe
+{
+  width: 348px;
+  height: 90%;
+  border: 1px solid #ccc;
+}
+

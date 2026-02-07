@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="cs"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="cs"> <!--<![endif]-->
+
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>RWD images @ VD.cz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta name="description" content="Ahoj, jsem Martin Michálek, specialista na webový frontend." />
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png" />
+
+    <link rel="alternate" type="application/rss+xml" title="Vzhůru dolů" href="/rss" />
+
+		<link rel="stylesheet" href="../../../assets/css/index.css" />
+
+    <script>
+        document.documentElement.className =
+           document.documentElement.className.replace("no-js","js");
+
+        // Picture element HTML5 shiv
+        document.createElement( "picture" );
+    </script>
+
+    <script src="responsive-images/picturefill-2.js" async></script>
+
+    <script src="responsive-images/picturefill-1.js" async></script>
+
+  </head>
+
+  <body class="section-autor">
+
+    <div class="container">
+
+
+
+		<div class="content-container">
+				<div class="section-head">
+					<div class="section-head-in">
+						<div class="section-head-content">
+							<div class="section-head-content-in">
+								    <p class="section-perex">
+      Responsive Images test s Picturefill 2.1
+    </p>
+
+							</div><!-- .section-head-content-in -->
+						</div><!-- .section-head-content -->
+					</div><!-- .section-head-in -->
+				</div><!-- .section-head -->
+      <div role="main">
+				<div class="content">
+
+
+          <h2><a href="http://scottjehl.github.io/picturefill/">Picturefill 2</a></h2>
+
+
+		      <p>
+<pre><code>&lt;img alt="Test obrázek" height="414"
+  srcset="
+    responsive-images/large.jpg 1000w,
+    responsive-images/medium.jpg 800w,
+    responsive-images/small.jpg 600w"
+  sizes="
+    (min-width: 756px) 736px,
+    calc(100vw - 2*1em)"&gt;</code></pre>
+          </p>
+
+          <p>
+            <img alt="Test obrázek" height="414"
+              srcset="
+                responsive-images/large.jpg 1000w,
+                responsive-images/medium.jpg 800w,
+                responsive-images/small.jpg 600w"
+              sizes="
+                (min-width: 756px) 736px,
+                calc(100vw - 2*1em)">
+          </p>
+
+
+          <h2><a href="https://github.com/scottjehl/picturefill/blob/1.2.1/README.md">Picturefill 1</a></h2>
+
+<p>
+<pre><code>&#x3C;span data-picture data-alt=&#x22;Test obr&#xE1;zek&#x22;&#x3E;
+    &#x3C;span
+      data-src=&#x22;responsive-images/medium.jpg&#x22;&#x3E;&#x3C;/span&#x3E;
+    &#x3C;span
+      data-src=&#x22;responsive-images/small.jpg&#x22;
+      data-media=&#x22;(max-width: 530px)&#x22;&#x3E;&#x3C;/span&#x3E;
+    &#x3C;span
+      data-src=&#x22;responsive-images/small-2x.jpg&#x22;
+      data-media=&#x22;
+        (max-width: 530px)
+        and (-webkit-min-device-pixel-ratio: 1.5)
+        and (min-resolution: 144)&#x22;&#x3E;&#x3C;/span&#x3E;
+    &#x3C;noscript&#x3E;
+        &#x3C;img src=&#x22;responsive-images/medium.jpg&#x22; alt=&#x22;Test obr&#xE1;zek&#x22;&#x3E;
+    &#x3C;/noscript&#x3E;
+&#x3C;/span&#x3E;</code></pre>
+</p>
+
+          <p>
+            <span data-picture data-alt="Test obrázek">
+                <span
+                  data-src="responsive-images/medium.jpg"></span>
+                <span
+                  data-src="responsive-images/small.jpg"
+                  data-media="(max-width: 530px)"></span>
+                <span
+                  data-src="responsive-images/small-2x.jpg"
+                  data-media="
+                    (max-width: 530px)
+                    and (-webkit-min-device-pixel-ratio: 1.5)
+                    and (min-resolution: 144)"></span>
+                <noscript>
+                    <img src="responsive-images/medium.jpg" alt="Test obrázek">
+                </noscript>
+            </span>
+          </p>
+
+          <h2>TODO</h2>
+
+          <ul>
+            <li>P2: pokud použiju <code>sizes="(min-width: 46.625em) 46.625em, calc(100vw - 2*1em)"</code>  zobrazuje large verzi aniž by musel (stačí medium) - problém s přepočtem EM?</li>
+          </ul>
+
+          <h2>Poznámky</h2>
+
+          <ul>
+            <li>Picturefill 1:
+            <ul>
+              <li><code>min-width: 530px</code>, tj <code>500px+2*15px</code> margin</li>
+            </ul>
+            <li>Picturefill 2 lze jen bez <code>src</code> a nelze <code>noscript</code> verzi. :-( Aktuální stav:<ul>
+            <li>Chrome37 načte na velkých vždy jen 1000 verzi, na malých ale obě??</li>
+            <li>FF32, IE11 OK – načte na velkých vždy jen 1000 verzi, na malých jen malou</li>
+            <li>IE8 – načte, ale neumí čekat na změnu okna, menší obrázek načte až po reloadu</li>
+            <li>P2 vybírá obrázky pro device-pixel-ratio>1 ze sizes, tzn. nelze použít Compressive Images :-(
+            <li>P2 přidává hned za <code>html</code> do DOMU <code>div</code> s aktuálními rozměry
+          </ul>
+            </li>
+          </ul>
+
+
+
+	</div><!-- .content -->
+
+      </div>
+		</div><!-- .content-container -->
+
+  </div><!-- /container -->
+
+		<script src="../../../assets/js/index-production.js"></script>
+
+  </body>
+
+</html>

@@ -1,0 +1,70 @@
+/*
+
+Login
+=====
+
+Přihlašovací komponenta. (Facebook, Jméno, Heslo, Ztracené heslo…)
+Používá se v hlavičce (klik na ikonu hlavy) nebo pak ve stránkách jako
+např. vložení osobních údajů v objednávce.
+
+*/
+
+
+// Base
+// ----
+
+.vc-login { }
+
+
+// Subkomponenty
+// -------------
+
+// Facebook tlačítko
+
+.vc-login-facebook {
+  margin-bottom: @line-height-computed;
+
+  @media only screen and (min-width: @p-large-display-start) { // jakmile se skryje nav-icon menu
+    padding-right: @vc-nav-icons-icon-size + 2px;
+  }
+}
+
+// čára pod Facebook tlačítkem
+.vc-login-hr-after-facebook{
+  border-color: #d1d1d1;
+}
+
+// Label "Heslo nebo číslo objednávky *"
+// - zvětšujeme šířku, aby se vešel na co nejvíce rozlišeních
+
+.vc-login-password .control-label {
+  padding-right: 0;
+}
+
+// Řádek s tlačítky
+
+.vc-dropdown-container-buttons {
+  margin-bottom: 0;
+}
+
+.vc-login-btn-lost-pswd {
+  float: left;
+  margin-left: -1*@padding-base-horizontal;
+}
+
+.vc-login-btn-login {
+  float: right;
+}
+
+
+// Varianta v hlavičce
+// -------------------
+
+// odsazení řádků s formulářovými prvky
+
+@media only screen and (min-width: @p-large-display-start) { // jakmile se skryje nav-icon menu
+  .vc-login .form-group{
+    padding-left: @padding-large-horizontal;
+    padding-right: @padding-large-horizontal;
+  }
+}

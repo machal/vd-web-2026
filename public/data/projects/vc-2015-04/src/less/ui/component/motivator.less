@@ -1,0 +1,213 @@
+/*
+
+Motivator
+=========
+
+Výhody nákupu na VČ, pro detail a seznam produktů.
+
+*/
+
+// Základna motivátoru: lineární verze pro staré křápy
+// ---------------------------------------------------
+
+.motivator {
+  position: relative;
+  .clearfix;
+  overflow: hidden; // Kvuli border-radius
+  margin: 0 0
+    @line-height-computed;
+  padding: 0;
+  list-style-type: none;
+	border: 1px solid @input-border;
+	border-radius: @panel-border-radius;
+  background: #eee;
+  .box-shadow(0 1px 1px rgba(0,0,0,.05));
+}
+
+
+// ### Nadpis "Proč VašeČočky.cz?"
+
+.motivator-heading {
+  font-size: @font-size-smaller;
+  margin: 0;
+  padding:
+    @padding-large-vertical
+    @padding-large-horizontal;
+  border-bottom: 1px solid @input-border;
+  border-radius:
+    @panel-border-radius
+    @panel-border-radius
+    0 0;
+}
+
+// ### Polozka
+
+.motivator-item {
+	margin: 0;
+	padding:
+		@padding-large-vertical
+		@padding-large-horizontal;
+	border-bottom: 1px solid @input-border;
+
+	&:last-child {
+		border-bottom: 0;
+	}
+}
+
+// Rozsirena verze
+// ---------------
+
+// "Boxikova" verze. Potrebuje moderni prohlizec a
+// funkcni javascript.
+
+// Rozsireny layout schovame pred oldskul prohlizeci
+@media only screen {
+  .js .motivator {
+
+    &-item {
+      padding: 0;
+      border-bottom: none;
+    }
+
+    // ### Nazev motivace
+
+    // Layout
+
+    &-item-title {
+      cursor: pointer;
+      float: left;
+      width: percentage(1/3);
+      height: 70px;
+      margin: 0;
+      padding: 0;
+      font-weight: normal;
+      text-align: center;
+      border-right: 1px solid @input-border;
+      border-bottom: 1px solid @input-border;
+      line-height: 70px; // Protoze vertikalni centrovani
+
+      > .in {  // Protoze vertikalni centrovani
+        vertical-align: middle;
+        display: inline-block;
+        font-size: @font-size-smaller;
+        line-height: 1.3;
+        padding: 0 @padding-base-horizontal;
+      }
+    }
+
+    // Stavy
+
+    &-item-title:hover,
+    &-item-title:focus,
+    &-item-title:active {
+      background: #fff;
+    }
+
+    &-item-title.active {
+      background: #fff;
+      border-bottom: none;
+    }
+
+    &-item-last .motivator-item-title {
+      border-right: 0;
+    }
+
+    // ### Textovy obsah jednotlivych motivaci
+
+    &-item-content {
+      display: none; // V teto verzi neni videt a ceka na kliknuti
+    }
+
+    // ### Boxik, ve kterem zobrazujeme obsah motivacnich polozek
+
+    &-js-content  {
+      padding: 0;
+      margin: 0;
+      clear: both;
+      background: #fff;
+      height: 80px;
+      line-height: 70px; // Protoze vertikalni centrovani
+
+      > .in {  // Protoze vertikalni centrovani
+        vertical-align: middle;
+        display: inline-block;
+        padding: 0 @padding-base-horizontal;
+        font-size: @font-size-smaller;
+        line-height: 1.3;
+        max-width: 50em;
+      }
+    }
+
+  } // .js .motivator
+} // @media only screen
+
+
+
+// Rozsirena verze: varianta s 6 polozkami
+// ---------------------------------------
+
+// V seznamu produktu na vetsich displejich.
+
+@media only screen {
+  .js .motivator-6-items {
+
+   .motivator-item-title {
+      width: percentage(1/6);
+    }
+
+    // Polozka bez borderu je az ta na druhem radku
+
+    .motivator-item-last .motivator-item-title {
+      border-right: 1px solid @input-border;
+    }
+
+    .motivator-item-2nd-row.motivator-item-last .motivator-item-title {
+      border-right: none;
+    }
+
+  } // .js .motivator
+} // @media only screen
+
+
+
+// Rozsirena verze: varianta s 6 polozkami dva radky
+// -------------------------------------------------
+
+// V seznamu produktu na mensich displejich.
+
+@media only screen {
+  .js .motivator-2-rows-6-items {
+
+    .motivator-item-title {
+      width: percentage(1/3);
+    }
+
+    // Nazvy polozek z druhe radky
+
+    .motivator-item-2nd-row .motivator-item-title {
+      border-bottom: none;
+      border-top: 1px solid @input-border;
+      position: relative;
+      bottom: -80px;
+
+      &.active {
+        border-top-color: #fff;
+      }
+    }
+
+    //  Obsah se posunuje mezi prvni a druhou radku
+
+    .motivator-js-content  {
+      position: relative;
+      top: -70px;
+    }
+
+    // Posledni polozka prvniho radku bez borderu
+
+    .motivator-item-last .motivator-item-title {
+      border-right: none;
+    }
+
+
+  } // .js .motivator
+} // @media only screen

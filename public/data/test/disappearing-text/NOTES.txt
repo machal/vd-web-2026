@@ -1,0 +1,4 @@
+
+TODO
+- misto .disapearer by bylo elegantnejsi :after, ale tam je problem se z-indexy v IE8 :-(
+- jak se ten efekt jmenuje v anglictine v Apple UI?

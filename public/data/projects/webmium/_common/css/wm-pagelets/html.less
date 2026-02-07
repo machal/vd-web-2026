@@ -1,0 +1,52 @@
+/* 
+Pagelet: HTML blok
+==============================================================================
+
+* Uživatelské HTML s výchozím stylováním.
+* Třída `.wm-p-html`.
+* Podobné pravidla jako pro textový blok (`.wm-p-simple-text`)
+
+Ukázka s vloženou tabulkou
+-------------------------
+
+```
+<section class="wm-p-html" data-sw-pagelet="{&quot;id&quot;:&quot;a84a0891-0cdc-4a78-9893-2c86990a87ed&quot;,&quot;type&quot;:&quot;&quot;}">
+  <table>
+    <tbody>
+      <tr>
+        <td>Dálný zřejmě autoři</td>
+        <td>–</td>
+        <td>Ze seveřané</td>
+        <td>1 000 Kč</td>
+      </tr>
+      <tr>
+        <td>Kilometrového návrat uchu</td>
+        <td>–</td>
+        <td>Pořízená zdi</td>
+        <td>1 100 Kč</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+```
+
+*/
+
+.wm-p-html {
+	clear: both;	
+	.wm-m-section;
+	.wm-m-fluid-images;
+	
+	// Obrazky na mensich screenech
+	img {
+		.wm-m-image-on-small-display;
+	}	
+}
+
+.wm-p-html {
+	h1, h2, h3 { // Druhy a dalsi maji odsazeni zezhora
+		&:nth-child(n+2) {
+			margin-top: @baseLineHeight;
+		}
+	}
+}

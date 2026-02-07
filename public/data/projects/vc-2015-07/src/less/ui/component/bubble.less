@@ -1,0 +1,240 @@
+/*
+
+Bubble
+===
+
+Info bublina
+
+*/
+
+.vc-bubble {
+
+  // lokální proměnné
+  @vc-border-width:       1px;                // šířka okraje
+  @vc-border-color:       @vc-color-blue;     // barva okraje
+  @vc-text-color:         @vc-color-blue;     // barva textu
+  @vc-bg-color:           #ffffff;            // barva pozadi
+  @vc-caret-size:         3px;                // velikost šipky
+  @vc-padding-vertical:   2px;                // horní a dolní odsazení textu od okraje
+  @vc-padding-horizontal: 6px;                // pravé a levé odsazení textu od okraje
+  @vc-font-size:          11px;               // velikost písma
+
+  @vc-size: @vc-caret-size + round(@vc-border-width * cos(pi()/4)*2);
+
+  // lg varianta
+  @vc-font-size-lg:          @font-size-base; // velikost písma
+  @vc-caret-size-lg:         4px;             // velikost šipky
+  @vc-padding-vertical-lg:   4px;             // horní a dolní odsazení textu od okraje
+  @vc-padding-horizontal-lg: 8px;             // pravé a levé odsazení textu od okraje
+
+  @vc-size-lg: @vc-caret-size-lg + round(@vc-border-width * cos(pi()/4)*2);
+
+  // layout obalovacího prvku
+  display: inline-block;
+  text-align: center;
+
+  // samotný badge
+  & > .vc-matrjoska {
+
+    // layout
+    display: inline-block;
+    padding: @vc-padding-vertical @vc-padding-horizontal;
+    line-height: 1;
+
+    // vlastnosti textu
+    font-size: @vc-font-size;
+    white-space: nowrap;
+
+    // barvy a okraje
+    color: @vc-text-color;
+    background-color: @vc-bg-color;
+    border: @vc-border-width solid @vc-border-color;
+    border-radius: @border-radius-small;
+
+    // jen kvůli šipce (caret)
+    position: relative;
+
+    // šipka (caret)
+    &:after,
+    &:before {
+      height: 0;
+      width: 0;
+      position: absolute;
+      border: solid transparent;
+      content: " ";
+    }
+
+    &:after { border-width: @vc-caret-size; }
+
+    &:before { border-width: @vc-size; }
+    // /šipka (caret)
+  }
+
+  // Varianta se šipkou vlevo
+  // Varianty jsou takhle zanořené kvůli
+  // použití lokálních proměnných
+
+  &-left {
+    & > .vc-matrjoska {
+      // šipka (caret)
+      &:after,
+      &:before {
+        top: 50%;
+        right: 100%;
+      }
+
+      &:after {
+        border-right-color: @vc-bg-color;
+        margin-top: -@vc-caret-size;
+      }
+
+      &:before {
+        border-right-color: @vc-border-color;
+        margin-top: -@vc-size;
+      }
+      // /šipka (caret)
+    }
+  }
+
+  // Varianta se šipkou nahoře
+  // TODO: otestovat na konkrétním příkladu
+  //       asi bude třeba změnit box model na block
+
+  &-top {
+    & > .vc-matrjoska {
+      // šipka (caret)
+      &:after,
+      &:before {
+        bottom: 100%;
+        left: 50%;
+      }
+
+      &:after {
+        border-bottom-color: @vc-bg-color;
+        margin-left: -@vc-caret-size;
+      }
+
+      &:before {
+        border-bottom-color: @vc-border-color;
+        margin-left: -@vc-size;
+      }
+      // /šipka (caret)
+    }
+  }
+
+  // Varianta se šipkou dole
+
+  &-bottom {
+    & > .vc-matrjoska {
+      // šipka (caret)
+      &:after,
+      &:before {
+        top: 100%;
+        left: 50%;
+      }
+
+      &:after {
+        border-top-color: @vc-bg-color;
+        margin-left: -@vc-caret-size;
+      }
+
+      &:before {
+        border-top-color: @vc-border-color;
+        margin-left: -@vc-size;
+      }
+      // /šipka (caret)
+    }
+  }
+
+  &-inverse {
+    & > .vc-matrjoska {
+
+      // barvy a okraje
+      color: @vc-bg-color;
+      background-color: @vc-text-color;
+
+      &:after { display: none; }
+    }
+  }
+
+  // větší bublina
+  &-lg > .vc-matrjoska {
+
+    // layout
+    padding: @vc-padding-vertical-lg @vc-padding-horizontal-lg;
+    border-radius: @border-radius-large;
+
+    // vlastnosti textu
+    font-size: @vc-font-size-lg;
+
+    // šipka (caret)
+    &:after { border-width: @vc-caret-size-lg; }
+
+    &:before { border-width: @vc-size-lg; }
+  }
+
+
+  // bublina v detailu produktu
+  &-detail {
+    // lokální proměnné
+    @vc-text-color:    #ffffff; // barva textu
+    @vc-bg-color:      #ffcc66; // barva pozadi
+    @vc-icon-bg-color: #ffb83d; // barva ikony
+    @vc-icon-width:    16px;    //šířka obrázku ikony
+    @vc-icon-height:   14px;    // výška obrázku ikony
+    @vc-icon-padding:  8px;     // odsazení obrázku vpravo a vlevo
+
+    z-index: 50; // z pozice nad obrázkem
+
+    // odsazení od obrázku
+    position: relative;
+    top: -@vc-caret-size-lg;
+
+
+    // dočasné skrytí bubliny pro malé obrazovky
+    @media only screen and (max-width: @vc-layout-start){ display: none; }
+
+    @media only screen and (min-width: @vc-layout-start){ top: -@vc-icon-height; }
+
+    // ikona
+    &:before{
+      content: " ";
+      display: block;
+      width: @vc-icon-width + 2*@vc-icon-padding;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 1;
+      border-radius: @border-radius-large 0 0 @border-radius-large;
+
+      background: @vc-icon-bg-color url("../dist/img/icons/check-white.svg") no-repeat 50% 50%; //todo: inline / větší sprite svg?
+
+      .vc-no-svg & { // fallback pro prohlížeče bez svg (IE8-)
+        background-image: url("../dist/img/icons/check-white.png"); //todo: větší sprite svg?
+      }
+    }
+
+    // vlatnosti bubliny
+    & > .vc-matrjoska {
+
+      // odsazení vlevo (aby se vešla ikona)
+      padding-left: @vc-icon-width + 2*@vc-icon-padding + @vc-padding-horizontal-lg;
+
+      // barvy a okraje
+      color: @vc-text-color;
+      background-color: @vc-bg-color;
+      border-color: @vc-bg-color;
+
+      // je to -inverse bublina, není třeba
+      &:after { display: none; }
+
+      // šipka (caret)
+      &:before { border-top-color: @vc-bg-color; }
+    }
+  }
+
+}
+
+// bublina s písmenem „i“
+.vc-bubble-info > .vc-matrjoska { font-family: Courier; }

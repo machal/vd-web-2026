@@ -1,0 +1,43 @@
+/*
+
+Košík: Dárky k nákupu
+==========================
+
+*/
+
+.vc-cart-gifts {
+  clear: both;
+  padding: 2*@padding-large-vertical @padding-large-horizontal;
+  margin-bottom: 2*@line-height-computed;
+  border: 1px dotted #aaaaaa;
+  border-radius: @border-radius-small;
+}
+
+.vc-cart-gifts-offer {
+  position: relative;
+  padding-left: 70px;
+  background: url("../dist/img/icons/bonus-44.svg") no-repeat 0 50%;
+
+  .vc-no-svg & { // fallback pro prohlížeče bez svg (IE8-)
+    background: url("../dist/img/icons/bonus-44.png") no-repeat 0 50%;;
+  }
+
+  .badge {
+    position: absolute;
+    left: 28px;
+    top: -6px;
+    background-color: #ff7e0a;
+    color: #ffffff;
+  }
+
+  .vc-caret {
+    margin-left: 5px;
+    border-top: none;
+    border-bottom: @caret-width-base solid;
+  }
+
+  .collapsed .vc-caret {
+    border-top: @caret-width-base solid;
+    border-bottom: none;
+  }
+}

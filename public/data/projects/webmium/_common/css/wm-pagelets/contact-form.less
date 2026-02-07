@@ -1,0 +1,105 @@
+/*  
+Pagelet: Kontaktní formulář
+==============================================================================
+
+Třída `wm-p-contact-form`.
+
+TODO 
+----
+
+- potřebujeme ješte vůbec Bootstrap forms?
+- složitý HTML5 kód pryč
+- stejná výška formulářových prvků i pro defaultní sadu fontů z Bootstrapu
+
+Ukázka HTML:
+------------
+
+```
+<section class="wm-p-contact-form" data-sw-pagelet="{&quot;id&quot;:&quot;5fb694a5-b631-467f-a694-5dbc0b1ec9a4&quot;,&quot;type&quot;:&quot;ContactForm&quot;,&quot;name&quot;:&quot;Kontaktní formulář&quot;,&quot;email&quot;:&quot;martin@vzhurudolu.cz&quot;,&quot;confirmationText&quot;:&quot;Děkuji. Vaše informace byla odeslána.&quot;}">
+	<form class="sw-contact-form" action="/pagelet/ContactForm/Send" method="post">
+	  <h1>Napište nám</h1>
+	  <div class="row-fluid">
+			<div class="span6">
+				<section>
+					<label for="sw-contact-form-name">Jméno</label>
+					<input type="text" id="sw-contact-form-name" name="name" required>
+				</section>
+				<section>
+					<label for="sw-contact-form-email">E-mail</label>
+					<input type="email" id="sw-contact-form-email" name="email" required>
+				</section>
+				<section>
+					<label for="sw-contact-form-tel">Telefon</label>
+					<input type="tel" id="sw-contact-form-tel" name="tel">
+				</section>
+			</div>
+			<div class="span6">
+				<label for="sw-contact-form-text">Vaše zpráva</label>
+				<textarea name="text" id="sw-contact-form-text" rows="8" cols="30" required></textarea>
+			</div>
+	  </div><!-- . row-fluid -->
+		<footer class="row-fluid submit-row">
+		  <div class="span12">
+				<input type="submit" class="btn submit" value="Odeslat">
+				<input type="hidden" name="id" value="5fb694a5-b631-467f-a694-5dbc0b1ec9a4">
+				<input name="__RequestVerificationToken" type="hidden" value="EwNBkp3e6apy9TcpHnJI8Zh2AgO7d8u3FFP0utymCxNMeSEmmaXP7Fj1U7aQbwiXTDov8qXq7MZl2j8nsRA1s7T358oWLuiq+ZAynY2eLBpHcSxEOfA5SJOftSl8XQSX6Idl1KPMNs8iyJe56YTXN4Z/9FCBBCqE4vckVZZeOVgJqvqD">
+		  </div>
+		</footer>
+	</form>
+</section>
+```		
+*/
+
+
+.sw-contact-form {
+	clear: both;	
+	.wm-m-section;
+
+	#sw-contact-form-text {
+		width: 100%;
+		height: 148px;
+
+		@media (max-width: 720px) {
+			width: 100%;
+		}
+	}
+
+	#sw-contact-form-name,
+	#sw-contact-form-email,
+	#sw-contact-form-tel {
+		width: 100%;
+		display: block;
+
+		@media (max-width: 720px) {
+			width: 100%;
+		}
+	}
+
+	.submit-row {
+		margin-top: 8px;
+		text-align: right;
+	}
+
+	@media print {
+		display: none;
+	}
+
+	// Mensi displeje a sloupeckovy pagelet: rusime floatovani
+	
+	// Na malych displejich driv nez na obvykle hranici
+	@media (max-width: 720px) {
+		.row-fluid [class*="span"] {
+			float: none;
+			width: auto;
+			margin-left: 0;
+		}
+	}
+	
+	.wm-p-columns & {
+		.row-fluid [class*="span"] {
+			float: none;
+			width: auto;
+			margin-left: 0;
+		}	
+	}
+}

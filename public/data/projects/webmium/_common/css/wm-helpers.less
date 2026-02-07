@@ -1,0 +1,23 @@
+/* 
+Helpery
+==============================================================================
+
+Znovupoužitelne třídy užívaný celou codebase.
+*/
+
+// Zruseni spodniho odsazeni u nadpisu sousediciho s jinym pageletem
+.container-fluid .without-margin-bottom {
+	margin-bottom: 0;
+}
+
+// Obrazek v textu floatovany doprava na vetsich screenech
+.sw-float-right {
+	float: right;
+	margin: @baseFontSize 0 @baseFontSize @baseFontSize;
+}
+
+// Obrazek v textu floatovany doleva na vetsich screenech
+.sw-float-left {
+	float: left;
+	margin: @baseFontSize @baseFontSize @baseFontSize 0;
+}

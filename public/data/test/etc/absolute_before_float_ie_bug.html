@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xml:lang="cs" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  
+  <title>MSIE 6+7 bug: Absolutní blok umístěný před float blokem zmizí</title>
+
+  <meta name="author" content="Martin Michálek; michalek@shortcat.cz" />
+
+</head>
+
+<body>
+
+  <div style="border: 3px solid red; position: absolute; top: 60px; left: 8px;">                   
+    1) První pozicovaný blok (V MSIE chybně neviditelný)
+  </div>  
+
+  <div style="border: 3px solid green; float: left;">
+    2) Float blok
+  </div>
+
+  <div class="clear-zero" style="border: 3px solid blue; clear: left; height: 1px;">
+    3) Čistící blok s výškou 1px
+  </div>
+
+</body>
+</html>

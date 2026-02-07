@@ -1,0 +1,116 @@
+/*
+
+# Site Nav
+
+Hlavní navigace webu.
+
+*/
+
+// -- Pine.JS navigace ---
+
+// https://github.com/rwd-pine/pine
+
+@import "../../bower_components/responsive-navigation/src/stylesheets/pine";
+
+@p-padding-horizontal: 10px;
+@p-large-display-start: 768px;
+@p-small-screen-top: 90px;
+@p-background: #c8c8c8;
+@p-hover-background: #b8b8b8;
+
+// Velikost textu na vetsich displejich
+
+@media only screen and (min-width: @p-large-display-start) {
+  .pine {
+    font-size: 14px;
+  }
+}
+
+// Šířka položna navigace
+
+@media only screen and (min-width: @p-large-display-start) {
+  .pine-horizontal .pine-level-1 > li {
+    width: 100%/5;
+  }
+
+  // Fix chyby kdy Pine po otevreni a zavreny na malem a zvetseni okna nechava max-height: 0
+  .pine {
+    max-height: none !important;
+  }
+}
+
+// Pine nemá absolutní ale static pozici
+
+@media only screen and (max-width: (@p-large-display-start - 1px)) {
+  body {
+    overflow: auto !important;
+  }
+
+  .js .pine {
+    position: static;
+  }
+
+  .js .pine-visible {
+    max-height: none !important;
+  }
+}
+
+// Rámečky kolem položek
+
+.pine-level-1 {
+  > li > a,
+  > li > strong {
+    @media only screen and (min-width: @p-large-display-start) {
+      border-right: 1px solid #fff;
+    }
+  }
+
+  > li:last-child > a,
+  > li:last-child > strong {
+    border-right: none;
+  }
+}
+
+// Všechno má rámeček zezdola, kromě poslední položky submenu na velkých displejích
+
+.pine {
+  a, strong {
+    border-bottom: 1px solid #fff;
+  }
+}
+
+.pine-level-2 > li:last-child {
+  a, strong {
+    @media only screen and (min-width: @p-large-display-start) {
+      border-bottom: 0;
+    }
+  }
+}
+
+
+
+// Odsazení a clearování
+
+.pine {
+  clear: both;
+  margin-bottom: @line-height-computed / 2;
+}
+
+@media only screen and (max-width: (@p-large-display-start - 1px)) {
+
+  .pine {
+    margin-bottom: 0;
+  }
+
+  .pine-visible {
+    margin-bottom: @line-height-computed / 2;
+  }
+
+}
+
+
+// Barvy
+
+.pine-level-2 > li > a {
+  background: #dfdfdf;
+}

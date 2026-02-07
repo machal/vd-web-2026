@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en"> 
+
+  <head>
+    <meta charset="UTF-8">
+    <title>CTRL+click and javascript</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
+	
+	<style type="text/css" media="screen">
+		p {
+			width: 300px;
+			float: left;
+			text-align: center;
+			background-color: #ccc;
+			margin: 10px;
+		}
+	</style>
+	
+	<script type="text/javascript" charset="utf-8">
+		$(function() {
+			
+		  $('#first').click(function(){
+	        var href = $(this).find('a:first').attr('href');
+	        if (href) location.href = href;
+		  });
+		
+			$(document).click(function(e) { 
+			  if(e.ctrlKey) { 
+			    console.log("Ctrl+Click"); 
+			  } else if(e.altKey) { 
+			    console.log("Alt+Click"); 
+			  } else if(e.shiftKey) { 
+			    console.log("Shift+Click"); 
+			  } else if(e.metaKey) { 
+			    console.log("Cmd+Click"); 
+			  }
+			});
+		
+		});
+	</script>
+
+  </head>
+  
+  <body>
+  
+    <div id="container">
+	
+		<p id="first">
+			<a href="http://www.google.com">Click with javascript</a>
+		</p>
+    
+		<p id="second">
+			<a href="http://www.google.com">Click without javascript</a>
+		</p>
+
+
+    </div><!-- /container -->
+    
+  </body>
+  
+</html>

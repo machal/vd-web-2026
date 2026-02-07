@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+/* 
+
+=========== Doplnujici stylopis pro nove upravy archivniho webu Prazskeho Jara (old.festival.cz) =========== 
+
+Autor:        Martin Michalek, Studio Shortcat, michalek@shortcat.cz
+
+*/
+
+.hlava-oblast,
+.navigace-in
+{
+  display: none;
+}
+
+.cela-str
+{
+  margin-top: 140px;
+  _margin-top: 0; /* IE6 */
+}
+
+#new_web_head
+{
+  overflow: hidden;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 157px;
+  background-image: url(http://www.festival.cz/images/layout/old_web_head_bg.png);
+  background-position: bottom left;
+  background-repeat: repeat-x;
+  _height: 140px; /* IE6 */ 
+  _background-image: none; /* IE6 */  
+}
+
+#new_web_iframe
+{
+  border: 0;
+  overflow: hidden;  
+}

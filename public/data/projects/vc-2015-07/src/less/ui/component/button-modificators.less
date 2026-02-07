@@ -1,0 +1,60 @@
+/*
+
+Button modificators
+===================
+
+typy tlačítek
+
+*/
+
+
+
+// Block button
+// ------------
+
+.vc-btn-block {
+  display: block;
+  width: 100%;
+}
+
+// Vertically space out multiple block buttons
+.vc-btn-block + .vc-btn-block { margin-top: 5px; }
+
+// Specificity overrides
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  &.vc-btn-block { width: 100%; }
+}
+
+
+// Button Sizes
+// ------------
+
+.vc-btn-lg {
+  // line-height: ensure even-numbered height of button next to large input
+  .vc-button-size(@padding-large-vertical; @padding-large-horizontal; @font-size-base*1.125; @vc-btn-line-height-large; @btn-border-radius-base);
+}
+
+.vc-btn-sm {
+  // line-height: ensure proper height of button next to small input
+  .vc-button-size(@padding-small-vertical; @padding-small-horizontal; @font-size-small; @line-height-small; @btn-border-radius-small);
+}
+
+.vc-btn-xs {
+  .vc-button-size(@padding-xs-vertical; @padding-xs-horizontal; @vc-font-size-smaller; @vc-btn-line-height-small; @btn-border-radius-small);
+}
+
+
+// In the bubble button
+// ====================
+// Přetížení výšky řádku popover tlačítka,
+// které se u info bubliny používá
+// TODO: tohle bude chtít REFAKTOR,
+//       je to fakt hnus
+.vc-btn-bubble {
+  line-height: 1 !important;
+
+  &.vc-btn-focus,
+  &:focus { outline: none; }
+}

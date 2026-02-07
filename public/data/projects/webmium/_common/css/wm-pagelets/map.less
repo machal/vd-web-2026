@@ -1,0 +1,46 @@
+/* 
+Pagelet: Mapa
+==============================================================================
+
+* Třída `.wm-p-map`.
+* Vkládané Google Maps nebo Mapy.cz
+* Počítáme s proporcemi 16:9
+
+Ukázka: Google Maps
+-------------------
+
+```
+<section class="wm-p-map" data-sw-pagelet='{"id":"be9164c9-384a-4034-b566-3371db7b0e3e","type":"Map","address":"antala staška 1365, prague","latitude":50.0421066,"longitude":14.4478321,"x":14.4478321,"y":50.0421066,"width":320,"height":240,"zoom":13}'>
+  <div class="sw-map-pagelet"></div>
+</section>
+```
+
+Ukázka: Mapy.cz
+---------------
+```
+<section class="wm-p-map" data-sw-pagelet='{"id":"31f2cee8-8101-46ce-b3bf-1ec28b1ffa1b","type":"SMap","address":"Praha%204%2C%20bud%u011Bjovick%E1","latitude":50.1049042,"longitude":14.3960075,"x":14.4515858,"y":50.0437737,"width":320,"height":240,"zoom":10}'>
+  <div class="sw-smap-pagelet" style='width: 320px; height: 240px'></div>
+</section>
+```
+
+TODO
+----
+
+* na malých screenech jen tlačítko
+
+*/
+
+.wm-p-map {
+	clear: both;	
+	.wm-m-section;
+	.wm-m-proportional-parent(16,9); // 16:9
+
+	.sw-smap-pagelet,
+	.sw-map-pagelet {
+		.wm-m-proportional-child;
+	}
+
+	@media print {
+		display: none;
+	}
+}

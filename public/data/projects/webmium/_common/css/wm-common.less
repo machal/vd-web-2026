@@ -1,0 +1,76 @@
+/* 
+Centrální stylopis
+==============================================================================
+*/
+
+
+// Bootstrap
+// ---------
+
+// TODO
+// - forms a tables nevyuzivame nijak zasadne, casem pryc
+@import "../bootstrap/less/variables.less"; 
+@import "../bootstrap/less/mixins.less";
+@import "../bootstrap/less/scaffolding.less";
+@import "../bootstrap/less/type.less";
+@import "../bootstrap/less/forms.less";
+@import "../bootstrap/less/tables.less";
+@import "../bootstrap/less/layouts.less";
+
+// Webmium
+// -------
+
+// Promenne
+@import "wm-variables.less";
+
+// Grid system
+@import "wm-grid.less";
+
+// Mixiny
+@import "wm-mixins.less";
+
+// Zakladna a typoska
+@import "wm-base.less";
+
+// Helpery
+@import "wm-helpers.less";
+
+// Layout: hlavicky a paticka
+@import "wm-layout.less";
+
+// Moduly: obecne komponenty
+@import "wm-modules/footer.less";
+@import "wm-modules/header-image.less";
+@import "wm-modules/header.less";
+@import "wm-modules/languages.less";
+@import "wm-modules/logo.less";
+@import "wm-modules/mobile-header.less";
+@import "wm-modules/navigation.less";
+
+// Pagelety: komponenty uvnitr obsahu stranky
+@import "wm-pagelets/background-image.less";
+@import "wm-pagelets/columns.less";
+@import "wm-pagelets/contact-form.less";
+@import "wm-pagelets/contact-info.less";
+@import "wm-pagelets/facebook-comments.less";
+@import "wm-pagelets/file.less";
+@import "wm-pagelets/gallery.less";
+@import "wm-pagelets/html.less";
+@import "wm-pagelets/map.less";
+@import "wm-pagelets/simple-text.less";
+@import "wm-pagelets/social-networks.less";
+@import "wm-pagelets/video.less";
+
+// Sablony s layoutem pro velke screeny 
+// Kvuli zpetne kompatibility s fazi vyvoje, kdy se zdalo, ze nebudeme moci
+// upravovat HTML.
+// TODO:
+// 	- pryc s tim a nahradit zmenami v HTML
+@media (min-width: @wmLargeDisplayStart) {	
+	@import "wm-templates.less";
+}
+
+// Sablony s layoutem pro velke screeny: IE8
+.old-ie {	
+	@import "wm-templates.less";
+}

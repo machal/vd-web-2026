@@ -1,0 +1,54 @@
+/*
+
+Ohlasy zákazníků
+================
+
+V kategorii produktů nebo na homepage dole.
+
+*/
+
+
+// Ohlasy
+// ------
+
+.row-testimonials {
+  margin-top: @line-height-computed*2;
+  padding-top: @line-height-computed;
+  border-top: 1px solid #ddd;
+}
+
+// TODO vlastni komponenta?
+
+.row-testimonial {
+  .layout-col-base;
+  .layout-col(12);
+
+  // Na malych zobrazujeme jen prvni 2
+  &.testimonial-3,
+  &.testimonial-4 {
+    display: none;
+  }
+
+  @media only screen and (min-width: 600px) {
+    .layout-col(6);
+  }
+
+  @media only screen and (min-width: 768px) {
+    .layout-col(4);
+
+    // Zobrazujeme prvni 3
+    &.testimonial-3 {
+      display: block;
+    }
+  }
+
+  @media only screen and (min-width: 1025px) {
+    .layout-col(3);
+
+    // Zobrazujeme vsechny
+    &.testimonial-4 {
+      display: block;
+    }
+  }
+
+}

@@ -1,0 +1,231 @@
+body {
+background: #808080;
+color: #fff;
+padding: 0;
+margin: 15px 5px;
+}
+
+body, td, th, input, select, option, textarea {
+font: xx-small/1.4em Arial, sans-serif;
+font/* */:/**/x-small/1.4em Arial, sans-serif;
+font: /**/x-small/1.4em Arial, sans-serif;
+}
+
+input, select {
+font-size: 1em;
+}
+
+a, a:link, a:visited, a:hover, a:active {
+color: #f00;
+background: inherit;
+}
+
+a:hover, a:active {
+color: #f93;
+}
+
+a img {
+border: 0;
+}
+
+form {
+margin: 0;
+padding: 0;
+}
+
+code {
+font-size: 1em;
+}
+
+#contentContainer {
+width: 990px;
+background: #fff;
+color: #000;
+margin: auto;
+}
+
+#contentSideOne {
+width: 698px;
+background: transparent url("../img/side-one-bg.gif") repeat-y;
+color: inherit;
+float: left;
+}
+
+#contentContainer.inside #contentSideOne {
+background: #fff;
+}
+
+#contentSideOne h1 {
+display: inline;
+margin: 0;
+padding: 0;
+}
+
+#contentSideOneOne {
+width: 323px;
+background: transparent url("../img/side-one-one-bg.jpg") no-repeat top left;
+color: inherit;
+padding-bottom: 200px;
+float: left;
+}
+
+#contentSideOneOne #names {
+padding: 0;
+margin: 15px;
+}
+
+#contentSideOneNews {
+width: 365px;
+height: 263px;
+overflow: auto;
+float: right;
+font-weight: normal;
+margin-top: 5px;
+xxxmargin-right: 1px;
+color: #999;
+background: transparent;
+scrollbar-3dlight-color: #fff;
+scrollbar-arrow-color: #C0C0C0;
+scrollbar-base-color: #fff;
+scrollbar-darkshadow-color: #C0C0C0;
+scrollbar-face-color: #fff;
+scrollbar-highlight-color: #fff;
+scrollbar-shadow-color: #fff;
+}
+
+#contentSideOneNews.text {
+width: 500px;
+float: right;
+border-left: 1px solid red;
+font-size: 1.2em;
+color: #333;
+line-height: 1.3em;
+padding: 0 1em;
+}
+
+#contentSideOneNews.text p {
+margin-bottom: 1em;
+}
+
+#contentSideOneNews.text h2 {
+font-size: 1.2em;
+line-height: 1.3em;
+margin-bottom: 1em;
+}
+
+#contentSideOneNews.text h3 {
+font-size: 1.1em;
+line-height: 1.3em;
+margin-bottom: 1em;
+}
+
+#contentSideOneNews h2 {
+color: #000;
+background: transparent;
+font-size: .9em;
+margin: 1em 0 0 0;
+padding: 0;
+font-family: arial;
+margin-right: 10px;
+}
+
+#contentSideOneNews p {
+margin: 0;
+padding: 0;
+margin-right: 10px;
+margin-bottom: 1em;
+}
+
+#contentSideOneBokem {
+width: 130px;
+float: left;
+font-size: 1.2em;
+color: #333;
+line-height: 1.3em;
+padding: 0 1em;
+margin-top: 4em;
+}
+
+#contentSideOneBokem br {
+line-height: 1.5em;
+}
+
+#contentSideTwo {
+width: 292px;
+float: right;
+background: #F7F5F0;
+padding: 20px 20px 20px 20px;
+width: 292px;
+width/* */:/**/252px;
+width: /**/252px;
+}
+
+#contentSideTwo #trackList {
+width: 150px;
+text-align: right;
+padding-top: 15px;
+}
+
+#contentSideTwo #trackList strong {
+color: red;
+background: transparent;
+font-weight: normal;
+font-style: italic;
+}
+
+#contentSideTwo #album {
+float: right;
+}
+
+#contentSideTwoSec {
+width: 292px;
+float: right;
+background: #F3F0E8;
+padding: 10px 10px 20px 10px;
+width: 292px;
+width/* */:/**/272px;
+width: /**/272px;
+}
+
+#contentSideTwoSec h2 {
+color: red;
+background: transparent;
+font-weight: normal;
+font-size: 1em;
+text-align: center;
+}
+
+#footer {
+border-top: 1px solid #CDCCC8;
+clear: both;
+}
+
+#footer img {
+float: right;
+}
+
+#footer p {
+margin: 15px 0 0 18px;
+padding: 0;
+}
+
+.red {
+color: red;
+background: inherit;
+}
+
+#contentSideTwoSec a, #contentSideOneOne a {
+color: #000;
+text-decoration: none;
+} 
+
+#contentSideTwoSec a:hover, #contentSideOneOne a:hover {
+color: #f00;
+text-decoration: underline;
+} 
+
+.obrazarnaImg {
+float: left;
+margin: 1em;
+border: #F7F5F0 1em solid;
+}

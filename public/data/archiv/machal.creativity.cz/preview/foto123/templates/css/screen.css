@@ -1,0 +1,283 @@
+* {
+xxxborder: 1px solid red;
+}
+
+body {
+color: #000;
+background: #fff;
+margin: 0px;
+padding: 25px 0px;
+}
+
+body, table td,  table th, input, textarea, option {
+font: 0.8em "Verdana CE", "Arial CE", "Lucida Grande CE", "Helvetica CE", Verdana, Arial, lucida, sans-serif;
+}
+
+div#contentcontainer  {
+line-height: 1.5em;
+}
+
+input, textarea {
+font-size: 13px;
+}
+
+a:link, a:visited, a:hover, a:active {
+color: #f60;
+background: transparent;
+}
+
+img, form {
+border: 0px;
+margin: 0px;
+padding: 0px;
+}
+
+
+input.button, span.button, button {
+border: 1px solid #000;
+color: #000;
+background: #fff;
+cursor: pointer;cursor: hand;
+}
+
+span.button {
+padding: 3px 10px;
+}
+
+span.button.paddinglight {
+padding: 1px 5px;
+}
+
+a button, a input.button, a span.button, a.button {
+text-decoration: none;
+}
+
+input.button.orange, span.button.orange, button.orange {
+background: #f93 url('../img/content/button_orange_bg.gif') bottom left no-repeat;
+color: #000;
+}
+
+input.button.white, span.button.white, button.white {
+background: #fff url('../img/content/button_white_bg.gif') bottom left no-repeat;
+color: #000;
+}
+
+p.error {
+border: 1px solid #f30;
+background: #fff url('../img/content/error_bg.gif') no-repeat;
+padding: 15px 10px 15px 50px;
+}
+
+fieldset {
+border: 1px solid #000;
+margin-bottom: 25px;
+padding: 10px;
+}
+
+form table {
+border-collapse: collapse;
+border: 0px;
+width: 100%;
+}
+
+form table col.col50 {
+width: 50%;
+}
+
+form table td {
+padding: 5px;
+margin: 5px;
+vertical-align: top;
+}
+
+form table tr.error  {
+border: #f30 1px solid;
+xxxbackground: #f99;
+color: #f30;
+}
+
+form table tr.error p {
+margin: 0px;
+padding: 0px;
+font-size: smaller;
+}
+
+legend {
+padding: 0px 5px;
+}
+
+
+input {
+vertical-align: middle;
+}
+
+div.formrow {
+margin: 10px 0px; 
+}
+
+/* struktura */
+
+#header {
+background: #9c0 url('../img/header/undermenu_bg.jpg') bottom left no-repeat;
+color: inherit;
+padding-bottom: 25px;
+margin-bottom: 25px;
+}
+
+
+#header #head {
+margin: 0px;
+padding: 0px 0px 0px 50px;
+background: #9c0;
+color: #fff;
+}
+
+#header ul#menu, #header ul#menu li {
+margin: 0px;
+padding: 0px;
+list-style-type: none;
+}
+
+#header ul#menu {
+border-top: 1px solid #000;
+border-bottom: 1px solid #000;
+background: #fff url('../img/header/menu_bg.gif') bottom left no-repeat;
+text-align: right;
+line-height: 1.5em;
+}
+
+#header ul#menu li {
+width: 10em;
+padding: 1px 5px;
+text-align: center;
+border-left: 1px solid #000;
+background: #fff url('../img/header/menu_bg.gif') bottom left no-repeat;
+display: inline;
+cursor: pointer;cursor: hand;
+}
+
+#header ul#menu li.last {
+border-right: 1px solid #000;
+margin-right: 50px;
+}
+
+#header ul#menu li a {
+text-decoration: none;
+color: #000;
+background: transparent;
+}
+
+#header ul#menu li:hover, #header ul#menu li:hover a:hover {
+color: #000;
+background: #ffc;
+cursor: hand;cursor: pointer;
+}
+
+#contentcontainer {
+width: 780px;
+padding-left: 50px;
+}
+
+#rightsidecontainer {
+float: right;
+width: 200px;
+margin-left: 25px;
+}
+
+#rightside {
+width: 200px;
+}
+
+#content {
+float: left;
+width: 500px;
+}
+
+#content h1, #content h2, #content h3, #content h4, #content h5, #content h6    {
+font-family: "Trebuchet MS", "Arial CE", "Lucida Grande CE", "Helvetica CE", Verdana, Arial, lucida, sans-serif;
+background: inherit;
+color: #030;
+}
+
+#content h1 {
+font-size: 1.7em;
+}
+
+#rightside .box {
+border: 1px solid #000;
+background: #ffc;
+color: #330;
+margin-bottom: 25px;
+}
+
+#rightside .box h2 {
+border-bottom: 1px solid #000;
+background: #9c0 url("../img/content/rightside_h2_bg.jpg") bottom right;
+color: #000;
+font-size: 0.9em;
+text-align: center;
+margin: 0px;
+padding: 3px 0px;
+font-weight: normal;
+}
+
+#rightside .box a {
+background: transparent;
+color: #330;
+}
+
+#rightside .box div.content {
+padding: 25px;
+}
+
+#rightside .box div.content {
+padding: 25px;
+}
+
+#rightside .box div.content p, #rightside .box div.content dl, #rightside .box div.content ol, #rightside .box div.content ul {
+padding: 0px;
+margin: 0px;
+margin-bottom: 10px;
+}
+
+#rightside .box div.content dd {
+font-size: smaller;
+margin: 0px 0px 5px 0px;
+}
+
+
+
+
+#rightside .box input.text {
+width: 140px;
+}
+
+#content .welcomebox {
+border: 1px solid #000;
+padding: 10px;
+}
+
+#content .welcomebox p {
+margin-top: 0px;
+padding-top: 0px;
+}
+
+#footer {
+background: #f93 url('../img/header/undermenu_bg.jpg') bottom left no-repeat;
+color: #fff;
+padding-bottom: 25px;
+margin-top: 25px;
+}
+
+#footer a:link, #footer a:visited, #footer a:hover, #footer a:active {
+color: #fff;
+background: inherit;
+}
+
+#footer p {
+margin: 0px; 
+padding: 3px 50px;
+background: #363;
+color: inherit;
+}
+

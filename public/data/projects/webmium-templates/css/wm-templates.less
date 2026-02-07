@@ -1,0 +1,64 @@
+// --- Layout sablon ---
+// Tridy s prefixem .wm-t-
+
+// - Dvousloupcova sablona -
+
+.wm-t-twocolumn {
+	
+	// Logo
+	.wm-l-header {
+		.span;
+		.span12;
+		.span-first;		
+	}
+
+	// Navigace	
+	#sw-main-navigation {
+		clear: both;
+		.span;
+		.span4;
+		.span-first;
+	}	
+	
+	// Header Image
+	.wm-p-header-image {
+		.span;		
+		.span8;
+		position: relative;
+		height: 0;
+	  padding-bottom: 9/16*65.95%;
+		
+		#sw-header-image {
+			.wm-m-proportional-child;
+		}
+	}
+
+	// Obsah	
+	.content {
+		.span;		
+		.span8; 
+		.offset4-span-first;		
+	}	
+}
+
+// - Jednoslopucova sablona -
+
+.wm-t-onecolumn {
+	
+	// Header Image
+	.wm-p-header-image {	
+		.wm-m-proportional-parent(10, 3);
+		
+		#sw-header-image {
+			.wm-m-proportional-child;
+		}
+	}	
+	
+	// Obsah
+	.content {
+		.span;
+		.span8;
+		.offset2-span-first;					
+	}
+	
+}

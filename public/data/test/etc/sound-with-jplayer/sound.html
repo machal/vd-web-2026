@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Sound test</title>
+	<meta name="generator" content="TextMate http://macromates.com/">
+	<meta name="author" content="Martin Michálek">
+	<!-- Date: 2011-12-08 -->
+</head>
+<body>
+    
+    
+    <xxxaudio controls preload>
+        <source src="sound.mp3" />
+    </audio>    
+    
+    <div id="jp">
+        
+    </div>
+    
+    <div id="jp_click">
+        Play/Stop
+    </div>
+
+    
+    
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    
+    <script type="text/javascript" src="js/jquery.jplayer.min.js">
+    </script>        
+    
+    <script type="text/javascript" charset="utf-8">
+
+    
+    $(function() { // executed when $(document).ready()
+      
+      $("#jp").jPlayer( {
+        ready: function () {
+          $(this).jPlayer("setMedia", {
+            mp3: "sound.mp3"
+          }); 
+        },
+        supplied: "mp3",
+    		wmode: "window"
+      });
+      
+      $("#jp_click").live('click', function() {
+         $("#jp").jPlayer("play");
+         $(this).addClass('playing');
+      });
+
+      $("#jp_click.playing").live('click', function() {
+         $("#jp").jPlayer("pause");
+         $(this).removeClass('playing');
+      });
+      
+      
+      
+      
+    });    
+    
+    </script>
+    
+
+</body>
+</html>

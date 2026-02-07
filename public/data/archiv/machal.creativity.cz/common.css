@@ -1,0 +1,108 @@
+/* common used stylesheet 10.4.2003 * machal@ilikethis.cz */
+
+.testred {border: 1px solid red;} 
+.testgreen {border: 1px solid green;} 
+.testblue {border: 1px solid blue;}
+
+.displaynone {display: none;}
+.displayinline {display: inline;}
+.displayblock {display: block;}
+.visibilityhidden {visibility: hidden;}
+
+.floatleft {float: left;} 
+.floatright {float: right;} 
+.floatleft50 {float: left;width: 49%;}
+.floatright50 {float: right;width: 49%;}
+
+.clearboth {clear: both;}
+.clearright {clear: right;}
+.clearleft {clear: left;}
+
+.alignleft, table td.alignleft, table th.alignleft, table tr.alignleft td, table tr.alignleft th {text-align: left;}
+.alignright, table td.alignright, table th.alignright, table tr.alignright td, table tr.alignright th {text-align: right;}
+.aligncenter, table td.aligncenter, table th.aligncenter, table tr.aligncenter td, table tr.aligncenter th {text-align: center;}
+.alignjustify, table td.alignjustify, table th.alignjustify, table tr.alignjustify td, table tr.alignjustify th {text-align: justify;}
+.aligntop {vertical-align: top;}
+.alignbottom {vertical-align: bottom;}
+.alignmiddle {vertical-align: middle;}
+
+.fontbold {font-weight:  bold;}
+.fontnobold {font-weight:  normal;}
+.fontsize1px, table tr.fontsize1px td, table tr.fontsize1px th {font-size: 1px;}
+
+.widthauto {width: auto;}
+.width100 {width: 100%;}
+
+.cursorhand {cursor: hand;cursor: pointer;}
+
+.margintop0px, .margintop0 { margin-top: 0px }
+.margintop1px, .margintop1 { margin-top: 1px }
+.margintop2px, .margintop2 { margin-top: 2px }
+.margintop5px, .margintop5 { margin-top: 5px }
+.margintop10px, .margintop10 { margin-top: 10px }
+.margintop20px, .margintop20 { margin-top: 20px }
+
+.marginbottom0px, .marginbottom0 { margin-bottom: 0px }
+.marginbottom1px, .marginbottom1 { margin-bottom: 1px }
+.marginbottom2px, .marginbottom2 { margin-bottom: 2px }
+.marginbottom5px, .marginbottom5 { margin-bottom: 5px }
+.marginbottom10px, .marginbottom10 { margin-bottom: 10px }
+.marginbottom20px, .marginbottom20 { margin-bottom: 20px }
+
+.marginright0px, .marginright0 { margin-right: 0px }
+.marginright1px, .marginright1 { margin-right: 1px }
+.marginright2px, .marginright2 { margin-right: 2px }
+.marginright5px, .marginright5 { margin-right: 5px }
+.marginright10px, .marginright10 { margin-right: 10px }
+.marginright20px, .marginright20 { margin-right: 20px }
+
+.marginleft0px, .marginleft0 { margin-left: 0px }
+.marginleft1px, .marginleft1 { margin-left: 1px }
+.marginleft2px, .marginleft2 { margin-left: 2px }
+.marginleft5px, .marginleft5 { margin-left: 5px }
+.marginleft10px, .marginleft10 { margin-left: 10px }
+.marginleft20px, .marginleft20 { margin-left: 20px }
+
+.margin0px, .margin0 { margin: 0px }
+.margin1px, .margin1 { margin: 1px }
+.margin2px, .margin2 { margin: 2px }
+.margin5px, .margin5 { margin: 5px }
+.margin10px, .margin10 { margin: 10px }
+.margin20px, .margin20 { margin: 20px }
+
+.paddingtop0px, .paddingtop0 { padding-top: 0px }
+.paddingtop1px, .paddingtop1 { padding-top: 1px }
+.paddingtop2px, .paddingtop2 { padding-top: 2px }
+.paddingtop5px, .paddingtop5 { padding-top: 5px }
+.paddingtop10px, .paddingtop10 { padding-top: 10px }
+.paddingtop20p, .paddingtop20 { padding-top: 20px }
+
+.paddingbottom0px, .paddingbottom0 { padding-bottom: 0px }
+.paddingbottom1px, .paddingbottom1 { padding-bottom: 1px }
+.paddingbottom2px, .paddingbottom2 { padding-bottom: 2px }
+.paddingbottom5px, .paddingbottom5 { padding-bottom: 5px }
+.paddingbottom10px, .paddingbottom10 { padding-bottom: 10px }
+.paddingbottom20px, .paddingbottom20 { padding-bottom: 20px }
+
+.paddingright0px, .paddingright0 { padding-right: 0px }
+.paddingright1px, .paddingright1 { padding-right: 1px }
+.paddingright2px, .paddingright2 { padding-right: 2px }
+.paddingright5px, .paddingright5 { padding-right: 5px }
+.paddingright10px, .paddingright10 { padding-right: 10px }
+.paddingright20px, .paddingright20 { padding-right: 20px }
+
+.paddingleft0px, .paddingleft0 { padding-left: 0px }
+.paddingleft1px, .paddingleft1 { padding-left: 1px }
+.paddingleft2px, .paddingleft2 { padding-left: 2px }
+.paddingleft5px, .paddingleft5 { padding-left: 5px }
+.paddingleft10px, .paddingleft10 { padding-left: 10px }
+.paddingleft20px, .paddingleft20 { padding-left: 20px }
+
+.padding0px, .padding0 { padding: 0px }
+.padding1px, .padding1 { padding: 1px }
+.padding2px, .padding2 { padding: 2px }
+.padding5px, .padding5 { padding: 5px }
+.padding10px, .padding10 { padding: 10px }
+.padding20px, .padding20 { padding: 20px }
+
+.border0px, .border0 { border: 0px }

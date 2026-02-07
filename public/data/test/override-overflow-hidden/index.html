@@ -1,0 +1,258 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" 
+  "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+  <head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="content-language" content="cs">
+	<meta http-equiv="imagetoolbar" content="no">
+	<meta http-equiv="Content-Style-Type" content="text/css">
+	<meta http-equiv="Content-Script-Type" content="text/javascript">
+
+	<title>Override overflow: hidden (child element out of parent)</title>
+	
+	<style type="text/css">
+	   
+	     body {
+		  font: 12px/18px sans-serif;
+		 }
+		 
+		#author {
+		  position: fixed;
+		  right: 20px;
+		  bottom: 20px;
+		  margin: 0;
+		}
+
+		a {
+		  color: #666;
+		}
+	
+	    .example {
+		  float: left;
+		  width: 180px;
+		  height: 180px;
+		  margin: 0 10px 10px 0;
+		  padding: 20px;
+		  border: 1px solid #ccc;
+		}
+		
+		.example.works {
+		  background-color: #eee;
+		}
+		
+		.out {
+		  width: 100px;
+		  height: 100px;
+		  background-color: #DDD;
+		  overflow: hidden;
+		}
+		
+		.in {
+		  width: 100px;
+		  height: 100px;
+		  margin: 25px;
+		  background-color: #666;
+		}
+		
+		.absolute {
+		  position: absolute;
+		}
+		
+		.relative {
+		  position: relative;
+		}
+		
+		.fixed {
+		  position: relative;
+		}
+		
+
+		
+	</style>
+
+  <!-- Google Analytics -->
+  <script type="text/javascript">
+  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+  <script type="text/javascript">
+  try {
+  var pageTracker = _gat._getTracker("UA-67173-13");
+  pageTracker._trackPageview();
+  } catch(err) {}</script>
+  <!-- / Google Analytics -->
+
+  </head>
+
+  <body>
+
+	<div class="example">
+		<div class="out">
+		  OUT (STATIC) 
+		  <div class="in">
+		   IN (STATIC)
+		  </div>
+		</div>
+	</div>
+	
+	<div class="example works">
+		<div class="out">
+		  OUT (STATIC) 
+		  <div class="in absolute">
+		   IN (ABSOLUTE)
+		  </div>
+		</div>
+		<br><br><p>Win: FF3.6, IE6&ndash;8, Op10.5, Ch4<br> Mac: Ch5, Saf4</p>
+	</div>
+	
+	<div class="example">
+		<div class="out">
+		  OUT (STATIC) 
+		  <div class="in relative">
+		   IN (RELATIVE)
+		  </div>
+		</div>
+	</div>
+	
+	<div class="example">
+		<div class="out">
+		  OUT (STATIC) 
+		  <div class="in fixed">
+		   IN (FIXED)
+		  </div>
+		</div>
+	</div>
+	
+	<br style="clear: left">
+	
+	
+	<div class="example">
+		<div class="out relative">
+		  OUT (RELATIVE) 
+		  <div class="in">
+		   IN (STATIC)
+		  </div>
+		</div>
+	</div>
+	
+	<div class="example">
+		<div class="out relative">
+		  OUT (RELATIVE) 
+		  <div class="in absolute">
+		   IN (ABSOLUTE)
+		  </div>
+		</div>
+	</div>
+	
+	<div class="example">
+		<div class="out relative">
+		  OUT (RELATIVE) 
+		  <div class="in relative">
+		   IN (RELATIVE)
+		  </div>
+		</div>
+	</div>
+	
+	<div class="example">
+		<div class="out relative">
+		  OUT (RELATIVE) 
+		  <div class="in fixed">
+		   IN (FIXED)
+		  </div>
+		</div>
+	</div>
+	
+
+	<br style="clear: left">
+
+
+	<div class="example">
+		<div class="out absolute">
+		  OUT (ABSOLUTE) 
+		  <div class="in">
+		   IN (STATIC)
+		  </div>
+		</div>
+	</div>
+
+	<div class="example">
+		<div class="out absolute">
+		  OUT (ABSOLUTE) 
+		  <div class="in absolute">
+		   IN (ABSOLUTE)
+		  </div>
+		</div>
+	</div>
+
+	<div class="example">
+		<div class="out absolute">
+		  OUT (ABSOLUTE) 
+		  <div class="in relative">
+		   IN (RELATIVE)
+		  </div>
+		</div>
+	</div>
+
+	<div class="example">
+		<div class="out absolute">
+		  OUT (ABSOLUTE) 
+		  <div class="in fixed">
+		   IN (FIXED)
+		  </div>
+		</div>
+	</div>
+	
+	
+	
+	<br style="clear: left">
+
+
+	<div class="example">
+		<div class="out fixed">
+		  OUT (FIXED) 
+		  <div class="in">
+		   IN (STATIC)
+		  </div>
+		</div>
+	</div>
+
+	<div class="example">
+		<div class="out fixed">
+		  OUT (FIXED) 
+		  <div class="in absolute">
+		   IN (ABSOLUTE)
+		  </div>
+		</div>
+	</div>
+
+	<div class="example">
+		<div class="out fixed">
+		  OUT (FIXED) 
+		  <div class="in relative">
+		   IN (RELATIVE)
+		  </div>
+		</div>
+	</div>
+
+	<div class="example">
+		<div class="out fixed">
+		  OUT (FIXED) 
+		  <div class="in fixed">
+		   IN (FIXED)
+		  </div>
+		</div>
+	</div>
+	
+	<br style="clear: left">
+	
+	
+	<p id="author">
+	  <small><a href="http://www.linkedin.com/in/martinmichalek">Author</a></small>
+	</p>
+	
+  </body>
+
+</html>

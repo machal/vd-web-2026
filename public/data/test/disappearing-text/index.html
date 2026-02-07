@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en"> 
+
+  <head>
+	<meta charset="UTF-8">
+
+	<title>Disappearing text with HTML/CSS</title>
+
+  </head>
+  
+	<style type="text/css" media="screen">
+
+	body {
+	  font: 12px/18px sans-serif;
+	  color: #333;
+	  background-color: #fff;
+	  padding: 50px;
+	  margin: 0;
+	}
+	
+	a {
+	  color: #5FA316;
+	  font-weight: bold;
+	}
+
+	#content {
+	  width: 300px;
+	}
+
+	h1 {
+	  font-size: 24px;
+	  line-height: 29px;
+	}
+	
+	.disappearing {
+	  display: block;
+	  position: relative;
+	  white-space: nowrap;
+	  overflow: hidden;
+	  width: 340px;
+	  height: 29px;
+	}
+	
+	.disappearer {
+	  display: block;
+	  position: absolute;
+	  top: 0;
+	  right: 0;
+	  content: "";
+	  width: 29px;
+	  height: 29px;
+	  background: url(disappearer.png) repeat-y top right;
+	  _background-image: none; /* IE6 */
+	}
+
+	</style>
+
+
+  <body>
+
+	<div id="container">
+
+	  <div id="content">	  
+
+		<h1>
+			<a class="disappearing" href="http://www.facebook.com/machal">
+			http://www.facebook.com/machal
+			<span class="disappearer"></span>
+			</a>
+		</h1>
+		
+		<br><br>
+		
+		<p>End of URL disappears on width we want with this HTML/CSS only solution and one PNG image.</p>
+			
+		<p>Tested on Windows: IE7+8, FF3.5, Chrome4. IE6 cuts text roughly but it doesn't matter.</p>
+		
+		<p>Look at the source code.</p>
+		
+
+	  </div><!-- /content -->
+	  
+	</div><!-- /container -->
+
+  </body>
+
+</html>

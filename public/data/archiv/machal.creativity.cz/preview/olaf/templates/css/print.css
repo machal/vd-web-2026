@@ -1,0 +1,17 @@
+body * {
+color: #000 !important;
+background: transparent !important;
+}
+
+body, table td,  table th, input, textarea, option, input, textarea, h1, h2, h3, h4 {
+font-size: xx-small;
+}
+
+#container {
+width: 100%;
+}
+
+#menu {
+display: none;
+}
+

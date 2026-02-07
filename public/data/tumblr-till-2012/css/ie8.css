@@ -1,0 +1,16 @@
+/* 
+   Stylopis pro MSIE 8 
+   Projekt: www.vzhurudolu.cz
+   Autor: Martin Michalek, Studio Shortcat, michalek@shorcat.cz
+*/
+
+/* Narozdil od IE6+7, osmicka pocita paddingy v inputech zase trochu jinak */
+div#search input[type="submit"] 
+{
+  padding-top: 4px;
+  padding-bottom: 3px;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+

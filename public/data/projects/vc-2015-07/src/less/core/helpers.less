@@ -1,0 +1,129 @@
+/*
+
+Helpery
+=======
+
+Jednoduché pomocné třídy.
+
+*/
+
+
+// Typografie
+
+.vc-font-size-large { font-size: @font-size-large; }
+.vc-font-size-base { font-size: @font-size-base; }
+.vc-font-size-small { font-size: @font-size-small; }
+.vc-font-size-smaller { font-size: @vc-font-size-smaller; }
+
+.vc-number-space {
+  display: inline-block;
+  width: .2em;
+
+  // aby bylo přeškrtnutí i přes mezeru
+  del &:before {
+  content: "\00A0"; // nedělitelná mezera
+  width: 100%;
+  display: inline-block;
+  text-decoration: line-through;
+}
+
+}
+
+// Oznaceni TODO v prototypu
+
+.vc-todo {
+  background: #eee;
+  font-style: italic !important;
+  padding: 10px;
+}
+
+// Podtrzene nadpisy
+// Stylovani vychazi z BS .page-header
+
+.vc-heading-underlined {
+  padding-bottom: ((@line-height-computed / 2) - 1);
+  margin: 0 0 @line-height-computed;
+  border-bottom: 1px solid @vc-border-color-dark;
+}
+
+// nadpisy s carou vpravo
+// (napr. v detailu produktu)
+// Stylovani vychazi z BS .page-header
+// pokud neni v nadpisu odkaz, tak se musi text nadpisu musi obalit spanem
+
+.vc-heading-lined {
+  padding-bottom: 0;
+  margin: 0 0 @line-height-computed;
+  position: relative;
+
+  &:after {
+    content: "";
+    background-color: @vc-border-color-dark;
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin-top: 1px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: -1;
+  }
+
+  > a,
+  > span{
+    padding-right: @padding-large-horizontal;
+    background-color: #ffffff;
+    text-decoration: none;
+  }
+
+}
+
+// Sipka pro indikaci otevreneho/zavreneho stavu
+// (napr. v navigaci nebo v elementech, ktere jdou otevirat/zavirat)
+// Prebrano z BS, doplneno o opacnou variantu .vc-caret-up
+// pokud se ma chovat jako v bootstrapu, bude treba doplnit o upravy pokud je v .vc-btn, .dropup atd.
+// TODO komponenta.
+
+.vc-caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-top:   @caret-width-base solid;
+  border-right: @caret-width-base solid transparent;
+  border-left:  @caret-width-base solid transparent;
+}
+
+.vc-caret-up {
+  border-top: none;
+  border-bottom:   @caret-width-base solid;
+}
+
+.vc-nowrap{
+  white-space: nowrap;
+}
+
+// Zobrazování a schovávání obsahu
+// -------------------------------
+
+// Např. v tlačítku "Pokračovat v objednávce"
+
+.vc-hide-320-down {
+  @media only screen and (max-width: 319px) {
+    display: none;
+  }
+}
+
+.vc-show-320-up {
+  @media only screen and (max-width: 319px) {
+    display: block;
+  }
+}
+
+.vc-show-320-up-inline {
+ @media only screen and (max-width: 319px) {
+   display: inline;
+ }
+}
+

@@ -1,0 +1,80 @@
+/*  
+Layout 2-2
+==============================================================================
+
+Struktura HTML
+--------------
+
+<pre>
+.container-fluid
+  .wm-l-mobile-header row-fluid
+  [data-sw=header]
+    .wm-l-header
+  .row-fluid
+    #sw-main-navigation
+    .content-container
+      .content-container-inside
+        .wm-p-header-image
+        .content
+      .wm-l-footer
+</pre>
+
+*/
+
+.layout-2-2-mixin() {
+  .nav-container {
+    .span;
+    .span3;
+    .span-first;
+    .offset1-span-first;
+  }
+
+  .content {
+    .span;
+    .span10;
+    .span-first;
+    .offset1-span-first;
+  }
+
+  #sw-logo {
+		padding-top: 13px;
+		
+		h1 {
+			padding-left: 36.170212765957444%;
+		}
+  }
+
+  .content-container {
+    background: transparent;
+    .border-radius(11px 11px 0 0);
+  }
+  .content {
+    background: @white;
+    .border-radius(11px 11px 0 0);
+    padding: 40px 60px;
+  }
+}
+
+
+.content-container-inside {
+  @media (max-width: @wmSmallDisplayEnd) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width: @wmLargeDisplayStart) { .layout-2-2-mixin; }
+.old-ie & { .layout-2-2-mixin; }
+
+	// Uprava z-indexu, aby byl header nahore
+
+.wm-l-header {
+  position: relative;
+  z-index: 30;
+}
+
+	// Navigace je vertikalni
+#sw-main-navigation {
+  .nav-vertical;
+}
+

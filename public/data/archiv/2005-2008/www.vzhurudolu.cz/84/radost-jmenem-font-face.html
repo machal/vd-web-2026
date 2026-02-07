@@ -1,0 +1,304 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"    "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="cs">
+  
+<!-- Mirrored from www.vzhurudolu.cz/84/radost-jmenem-font-face by HTTrack Website Copier/3.x [XR&CO'2008], Tue, 11 Aug 2009 14:14:40 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>
+      Archiv Vzhůru dolů: Radost jménem @font-face 
+    </title>
+    <link rel="stylesheet" href="../css/compressed/screen.css" type="text/css" media="screen, projection">
+    <link rel="stylesheet" href="../css/compressed/print.css" type="text/css" media="print">
+    <!--[if IE]><link rel="stylesheet" href="/css/lib/ie.css" type="text/css" media="screen, projection"><![endif]-->
+    <link rel="stylesheet" href="../css/vd.css" type="text/css" media="all">    
+  </head>
+  <body>
+    <div class="container">      
+      <div class="column span-4">
+        <div class="side box">
+          <p class="indent-3" id="home">
+            <a href="/archiv/">Prohližíte si <span>archiv blogu Vzhůru dolů 2005 — 2008</span> o webdesignu a příbuzných oborech.</a>
+            <a href="http://www.vzhurudolu.cz">Aktuální verze je <span>jinde.</span></a>
+          </p>
+          <!--
+          <form action="/" method="get" class="indent-3">
+          <p>
+          <input type="text" name="q" value="" size="12" id="searchInput" />
+          <input type="submit" value="Najít" id="searchSubmit" />
+          </p>
+          </form>
+          -->
+        </div>
+      </div>      
+      <div class="column span-6 prepend-1 indent-8 last">
+
+        <h1><a href="radost-jmenem-font-face.html" title="Stálý odkaz na článek">Radost jménem @font-face</a></span> </h1>
+
+<p class="singleSubHead"><small><span class="date">23. říjen 2008, 23:20</span> Kategorie: <a href="../kategorie/Webdesign/index.html">Webdesign</a>  </small></p>
+
+<p>Již brzy vydaný Firefox 3.1 bude s největší pravděpodobností podporovat CSS vlastnost <a title="@font-face" href="https://developer.mozilla.org/en/CSS/@font-face" id="ysbn">@font-face</a> a tím mi právě začaly Vánoce.</p>
+
+<p>Vkládaná (embed) písma totiž nejsou další z těch hezkých nových vlastností prohlížečů, kterých si sotva všimnete a za dva roky zjistíte, že je docela milé je využívat. Nikoliv. Využívání fontů je součástí podstaty webdesignu a @font-face měly všechny ty zatracené prohlížeče podporovat už pěknou řadu let.</p>
+
+<p><a href="http://www.flickr.com/photos/machal/2967115181/" title="@font-face v Safari  a Firefoxu by absolutmachal, on Flickr"><img src="../../farm4.static.flickr.com/3006/2967115181_c577e3a83c.jpg" width="500" height="358" alt="@font-face v Safari  a Firefoxu" /></a>
+<br />
+<em>Srovnání stránky s vkládanými fonty v Safari 3.2.1 a Firefoxu 3 na Windows. Hádejte, který podporuje @font-face :) </em></p>
+
+<h3>Vlastní fonty &mdash; k čemu vlastně?</h3>
+
+<p>Když jsem v jedné učebně Ostravské univerzity před 11 lety vytvořil svoji první HTML stránku, měl jsem obrovskou radost, že díky Netscape Composeru můžu na některé části stránky zvolit font Verdana a na jiné Times New Roman. Radost mi zkazilo zjištění, že Verdana na počítači mého prvního klienta jaksi nefunguje. Tak začal můj boj s nesystémovými fonty.</p>
+
+<p>Potřeba vkládat vlastní fonty je přitom naprosto jasná, přirozená a nesouvisí s webem. Lidé se chtějí vizuálně odlišovat,&nbsp; webdesignéři chtějí dodržovat vizuální styl organizací pro něž pracují a uživatelé by jistě uvítali fonty, které se dobře čtou bez ohledu na operační systém jaký využívají.</p>
+
+
+<h3>Proč tedy nejsou samozřejmostí?</h3>
+
+<p>Některé z důvodů proč se tak dosud nestalo se myslím překrývají s množinou  &bdquo;obecných námitek proti pokroku internetových technologií&rdquo;. Pojďme si je zkusit z legrace vyjmenovat:</p>
+
+<ol>
+
+<li><strong>Nevyjasněná autorská práva</strong>  &mdash;  ano, na internetu stále žijeme v autorské džungli a možnost stáhnout jakýkoliv komerční font nahlédnutím do zdrojového se bude zlobivým teenagerům líbit. Ale přátelé - stahovat obrázky z cizích webů je stejným porušením autorských práv. Vsadím se, že se naopak najde řada prozíravých typografů, kteří nabídnou bezplatně k širokému užití dobré fonty pro web.
+</li>
+
+<li><strong>Nejednotná standardizace a ne-podpora v prohlížečích</strong>  &mdash;  těmi se už snad ani nemůžeme trápit. Více v článku dále.<br>
+</li>
+
+<li><strong>Obavy o bezpečnost</strong>  &mdash;  někteří zlí lidé mohou do souborů s písmy vkládat škodlivé kódy. Nevídané! Ale proč se nimi dělat, když to jde jednodušeji.
+</li>
+
+<li><strong>Obavy z &bdquo;amaterizace typografie&rdquo;</strong>  &mdash;  někteří ctihodní typografové mají
+strach, že nezodpovědní amatéři zahltí svět svými blogy vysázenými v
+Comic Sans a do roka tu máme estetický Armagedon.</li>
+
+</ol>
+
+<br />
+
+<h3>V zajetí hacků: FIR, sIFR a FLIR na scéně</h3>
+
+<p>
+Zbraně jako náhrada nadpisu obrázkem, pak trošku přístupnější náhrada nadpisu obrázkem na pozadí (FIR), generováním nadpisů na serveru (naposledy FLIR) byly předvojem zatím nejlepšího řešení, kterým je <a href="http://en.wikipedia.org/wiki/Scalable_Inman_Flash_Replacement">sIFR</a>.</p>
+
+<p>
+Všechny tyto &bdquo;hacky&rdquo; a nervydrásající práce s nejlepším z nich jsou však pouze výrazem zoufalého boje webdesignérů s typografií na webu.
+</p>
+
+<p>
+Sám Mike Davidson, jeden z autorů sIFRu, říká: &bdquo;Ačkoliv dnes sIFR umožňuje lepší práci s písmem, určitě není řešením pro příštích dvacet let&rdquo;. Tím by však mohlo být @font-face.</p>
+
+<h3>@font-face zachráncem s nejistou podporou, ale nadějnou budoucností</h3>
+
+<p>Díky CSS vlastnosti @font-face prostě nadefinujete cestu k nějakému souboru, který obsahuje vybraný font, a na stránce jej pak použijete. Díky hodným prohlížečům se pak font zobrazí všem lidem na světě stejně.</p>
+
+<p>V CSS pak definice vypadá asi takto:</p>
+
+<pre style='color:#d1d1d1;background:#000000; padding: 5px;'><span style='color:#b060b0; '>@</span><span style='color:#008073; '>font-face</span> <span style='color:#b060b0; '>{</span>
+    <span style='color:#904050; '>font-family</span><span style='color:#d2cd86; '>:</span> MujFont<span style='color:#b060b0; '>;</span>
+    <span style='color:#904050; '>src</span><span style='color:#d2cd86; '>:</span> <span style='color:#e66170; font-weight:bold; '>url</span><span style='color:#d2cd86; '>(</span><span style='color:#00c4c4; '>'</span><span style='color:#40015a; '>MujFont-Roman.otf</span><span style='color:#00c4c4; '>'</span><span style='color:#d2cd86; '>)</span><span style='color:#b060b0; '>;</span>
+<span style='color:#b060b0; '>}</span>
+
+<span style='color:#e66170; font-weight:bold; '>h1</span> <span style='color:#b060b0; '>{</span> <span style='color:#904050; '>font-family</span><span style='color:#d2cd86; '>:</span> MujFont<span style='color:#d2cd86; '>,</span> sans-serif<span style='color:#b060b0; '>;</span> <span style='color:#b060b0; '>}</span>
+</pre>
+
+<p>
+Současná podpora @font-face v prohlížečích je ke dnešku velmi různorodá:
+</p>
+
+<ul>
+
+<li><strong>MSIE</strong> je zde nejprogresivnější. Žerty stranou. Skutečně. Embedovat fonty umí už od verze 4. Jak bývá u Microsoftu zvykem, jsou velmi opatrní co se autorských práv a bezpečnosti týče a zvolili vlastní formát <a href="http://en.wikipedia.org/wiki/Embedded_OpenType">EOT</a>, do kterého webdesignér zabalí patřičný font a zamezí jeho distribuci mimo vymezené domény. Microsoft se aktuálně snaží EOT prosadit jako webový standard.</li>
+
+<li>Napřed je pochopitelně také <strong>Safari/Webkit</strong>, které podporuje @font-face už přes rok. Chrome zatím používá starší verzi Webkitu, kde tahle vlastnosti není.</li>
+
+<li>Aktuální stav podpory <strong>Opery</strong> se mi nepodařilo zjistit, ale její šéf &ndash; Håkon Wium Lie &ndash; patří k hlavním popularizátorům podpory vkládaných fontů dle standardu W3C.</li>
+
+<li>Mozilla Foundation se chystá nadělit už zmíněný dáreček ve <a href="https://wiki.mozilla.org/Firefox3.1">Firefoxu verze 3.1</a>, který vyjde v nejbližších měsících.</li>
+
+</ul>
+
+<p>
+Standard webových fontů bude další velkou prohlížečovou bitvou. Připravme obvazy. </p>
+
+<p>Netěšme se proto předčasně &mdash; uplyne pár měsíců, než @font-face budeme moci s obezličkami různých hacků začít používat napříč prohlížeči a bude trvat roky než se obejdeme i bez nich. Pod svůj vývojářský vánoční stromeček si k ukrácení čekání budu přát alespoň bezchybnou verzi sIFRu.</p>
+
+<p>Pokud vás zajímá další informace na téma fonty a webdesign, podívejte se do <a href="http://delicious.com/machal/fonts">patřičného štítku v mých Delicious</a>.</p>
+
+<p class="bookmarksBox">
+Ulož do 
+
+<a href="http://delicious.com/post?url=http://www.vzhurudolu.cz/84/radost-jmenem-font-face&amp;title=Radost jménem @font-face" onClick="javascript:urchinTracker('/social-bookmarks/del_icio_us');">delicious</a>,
+
+<a href="http://linkuj.cz/?id=linkuj&amp;url=http://www.vzhurudolu.cz/84/radost-jmenem-font-face&amp;title=Radost jménem @font-face" onClick="javascript:urchinTracker('/social-bookmarks/linkuj_cz');">linkuj.cz</a>,
+
+<a href="http://www.jagg.cz/bookmarks.php?action=add&amp;address=http://www.vzhurudolu.cz/84/radost-jmenem-font-face&amp;title=Radost jménem @font-face" onClick="javascript:urchinTracker('/social-bookmarks/jagg_cz');">jagg.cz</a>,
+
+<a href="http://vybrali.sme.sk/submit.php?url=http://www.vzhurudolu.cz/84/radost-jmenem-font-face" onClick="javascript:urchinTracker('/social-bookmarks/vybrali_sme_sk');">vybrali.sme.sk</a>
+
+
+
+Díky!
+
+</p>
+
+
+
+<div class="commentsBox" id="komentar">
+
+
+<h2>Diskuze</h2>
+<p>
+[ <a href="../index156a.html?rss=1&amp;area=comments&amp;id=84" title="Comments XML feed">RSS této diskuze</a> ]
+</p>
+
+
+<ol class="comments"><li><h3 class="comment-head">
+  VfB, 
+<small>
+  24. 10. 08, 07:06, 
+  <a href="radost-jmenem-font-face.html#c000376" id="c000376">#</a>
+</small>
+</h3>
+
+<div class="comment-message">
+<p>a opět je největší překážkou Microsoft, který háže používání font-face klacky pod nohy, prostě starého psa nové kousky nanaučíš</p>
+</div>
+
+
+
+
+
+
+
+</li>
+<li><h3 class="comment-head">
+  tomas, 
+<small>
+  24. 10. 08, 12:35, 
+  <a href="radost-jmenem-font-face.html#c000377" id="c000377">#</a>
+</small>
+</h3>
+
+<div class="comment-message">
+<p>>> Aktuální stav podpory Opery se mi nepodařilo zjistit</p>
+
+	<p>??<br />Zadal jsem do googlu &#8220;font-face opera&#8221;:</p>
+
+	<p>http://ajaxian.com/archives/webkit-joins-opera-with-font-face-support</p>
+</div>
+
+
+
+
+
+
+
+</li>
+<li><h3 class="comment-head">
+  <a href="../index.html" title="www.vzhurudolu.cz" rel="nofollow">Martin Michálek</a>, 
+<small>
+  24. 10. 08, 13:47, 
+  <a href="radost-jmenem-font-face.html#c000378" id="c000378">#</a>
+</small>
+</h3>
+
+<div class="comment-message">
+<p>tomasi, bravurní použití Google :-)</p>
+
+	<p>Ten rok starý článek jsem četl. Opera v té době podporu @font-face plánovala, pak od ní ustoupila a v aktuální verzi 9.61 jej nepodporuje.</p>
+
+	<p>Důvody se mi nepodařilo najít, ale docela mě zajímají, když Hakon ještě před rokem patřil mezi nejsilnější <a href="http://www.alistapart.com/articles/cssatten">hlasy popularizující @font-face</a>.</p>
+
+	<p>Opera &#8220;webfonts&#8221; umí jen ve <a href="http://labs.opera.com/news/2008/03/28/">zvláštní verzi</a> sestavené ke splnění testu Acid3.</p>
+</div>
+
+
+
+
+
+
+
+</li>
+<li><h3 class="comment-head">
+  <a href="http://www.jakpsatweb.cz/css/css-eot-weft-font.html" title="www.jakpsatweb.cz/css/css-eot-weft-font.html" rel="nofollow">Yuhů</a>, 
+<small>
+  25. 10. 08, 22:14, 
+  <a href="radost-jmenem-font-face.html#c000379" id="c000379">#</a>
+</small>
+</h3>
+
+<div class="comment-message">
+<p>Je otázka, jak to bude s češtinou. Vlastní fonty už se daly na stránkách používat před sedmi lety, ale udělat EOT nějakého českého fontu bylo  tehdy velmi obtížné. </p>
+
+	<p>Paradoxní je, že kvůli masivnímu rozšíření Internet Exploreru (4, 5, 6) se tehdy daly EOT fonty používat s větší podporou než dnes. Tehdy to bylo přes 90 procent podpory, dnes je to něco málo přes padesát. V tomto kontextu ty Vánoce moc nechápu. Prostě se vrátíme k devadesáti procentům podpory, ale to už tu jednou bylo.</p>
+</div>
+
+
+
+
+
+
+
+</li>
+<li><h3 class="comment-head">
+  msgre, 
+<small>
+  27. 10. 08, 09:49, 
+  <a href="radost-jmenem-font-face.html#c000380" id="c000380">#</a>
+</small>
+</h3>
+
+<div class="comment-message">
+<p>Martine, pridej si do delicious dalsi zajimavy odkaz: <a href="http://typeface.neocracy.org/">typeface.js</a></p>
+
+	<p>Javascript dynamicky nahradi zadane bloky < canvas >em a vykresli do nich text tvym fontem. Ten je ale nutne predem prevest z TTF podoby do  JSON.</p>
+
+	<p>Mrkni na to, je to zajimave!</p>
+</div>
+
+
+
+
+
+
+
+</li>
+<li><h3 class="comment-head">
+  <a href="../index.html" title="www.vzhurudolu.cz" rel="nofollow">Martin Michálek</a>, 
+<small>
+  28. 10. 08, 15:14, 
+  <a href="radost-jmenem-font-face.html#c000381" id="c000381">#</a>
+</small>
+</h3>
+
+<div class="comment-message">
+<p><a href="radost-jmenem-font-face.html#c000379">@Yuhů</a>: V letech 2001-2003, kdy měl IE s EOT 90-ti procentní podíl na trhu, jsme měli myslím trochu jiné starosti než dobrou typografii. :)</p>
+
+	<p><a href="radost-jmenem-font-face.html#c000380">@msgre</a>: Typeface neznám, ale vyzkouším. Vypadá zajímavě hlavně proto, že přebírá formátování textu z CSS, což je největší nedostatek sIFRu.</p>
+</div>
+
+
+
+
+
+
+
+</li></ol>
+
+
+  <p>Komentáře jsou uzavřeny</p>
+
+
+</div>
+
+
+
+
+      </div>      
+    </div>
+
+  </body>
+
+<!-- Mirrored from www.vzhurudolu.cz/84/radost-jmenem-font-face by HTTrack Website Copier/3.x [XR&CO'2008], Tue, 11 Aug 2009 14:14:40 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
+</html>

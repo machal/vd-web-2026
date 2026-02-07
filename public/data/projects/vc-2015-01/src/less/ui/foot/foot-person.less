@@ -1,0 +1,76 @@
+/*
+
+Foot Person
+===========
+
+Osoba v zákaznickém servise.
+
+*/
+
+.foot-person {
+  margin-bottom: @line-height-computed;
+  padding-left: @grid-gutter-width/2;
+  padding-right: @grid-gutter-width/2;
+
+  @media only screen and (min-width: 480px) {
+    float: left;
+    width: percentage(6/12);
+  }
+
+  @media only screen and (min-width: 768px) {
+    width: percentage(4/12);
+  }
+
+  @media only screen and (min-width: 1100px) {
+    width: percentage(3/12);
+  }
+}
+
+.foot-person {
+  .clearfix;
+  text-align: center;
+
+  @media only screen and (min-width: 320px) {
+    text-align: left;
+    width: 275px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.foot-person-photo {
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 50%;
+
+  @media only screen and (min-width: 320px) {
+    float: left;
+    margin-right: 10px;
+  }
+
+  @media only screen and (min-width: 480px) and (max-width: 600px) {
+    float: none;
+  }
+}
+
+.foot-person-text {
+  @media only screen and (min-width: 320px) {
+    float: left;
+  }
+
+  @media only screen and (min-width: 480px) and (max-width: 600px) {
+    float: none;
+  }
+}
+
+// Na nekterych rozlisenich zkracujeme jmeno
+// TODO zkusit pres data-attr?
+
+.foot-person-name-short {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 815px) {
+  .foot-person-name-short { display: inline; }
+  .foot-person-name-full { display: none; }
+}

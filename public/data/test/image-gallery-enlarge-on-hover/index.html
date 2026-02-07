@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en"> 
+
+  <head>
+	<meta charset="UTF-8">
+	<title>CSS photo gallery with rounded corners, enlarge on hover</title>
+	
+	<link rel="stylesheet" href="../vzhurudolu-tests.css" type="text/css">
+
+	<style>
+	
+	/* --------------------------------------------------------------------------------  
+	   Layout
+	*/
+	
+	
+	body {
+	  background-color: #efefef;
+	  overflow: hidden;
+	}
+
+  .photos {
+    position: absolute;
+    top: 50%;
+    left: 50%;    
+    width: 340px;
+    height: 220px;
+    margin: -110px 0 0 -170px;
+  }
+  
+  .info {
+	  color: #666;    
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    width: 280px;
+  }
+  
+
+	/* --------------------------------------------------------------------------------  
+	   Photo gallery
+	   Find "-->" symbol and change image thumbnail/full size and urls.
+	   CSS author: Martin Michalek, machal77@gmail.com
+	*/
+	
+		
+	/* Photo wrapper */
+		
+  .photos .photo_container {
+    position: relative;
+    float: left;
+    margin: 0 20px 20px 0;  
+    /* --> Thumbnail image size */        
+    width: 150px;
+    height: 100px;    
+  }
+  
+	/* Photo item with all effects */  
+  
+  .photos .photo {
+    position: absolute;
+    z-index: 90;    
+    top: 0;
+    left: 0;
+    -webkit-border-radius: 10px; /* Saf3-4, iOS 1-3.2, Android <1.6 */
+    -moz-border-radius: 10px; /* FF1-3.6 */
+    border-radius: 10px; /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
+    border: 2px solid #fff;
+    -webkit-transition: all 0.15s ease-out;  /* Saf3.2+, Chrome */
+    -moz-transition: all 0.15s ease-out;  /* FF4+ */
+    -ms-transition: all 0.15s ease-out;  /* IE10? */
+    -o-transition: all 0.15s ease-out;  /* Opera 10.5+ */
+    transition: all 0.15s ease-out;    
+    -moz-box-shadow:    0px 0px 3px rgba(0,0,0, 0.5);
+    -webkit-box-shadow: 0px 0px 3px rgba(0,0,0, 0.5);
+    box-shadow:         0px 0px 3px rgba(0,0,0, 0.5);    
+    background-repeat: no-repeat;
+    /* --> Thumbnail image size */    
+    width: 150px;
+    height: 100px;    
+    -webkit-background-size: 150px 100px; /* Saf3-4 */
+    -moz-background-size: 150px 100px; /* FF3.6 */
+    background-size: 150px 100px; /* Opera, IE9, Saf5, Chrome, FF4 */
+  }
+    
+  /* --> Image URLs */    
+  
+  .photos .photo.first
+    { background-image: url('photo_1.jpg'); }
+  .photos .photo.second
+    { background-image: url('photo_2.jpg'); }
+  .photos .photo.third
+    { background-image: url('photo_3.jpg'); }
+  .photos .photo.fourth
+    { background-image: url('photo_4.jpg'); }                
+  
+  /* IE non-hover state */  
+  
+  .photos .photo img {
+    -ms-interpolation-mode: bicubic;
+    opacity: 0; /* Hide image in standard browsers, 
+    because rounded corners in Webkit are not possible on inline image */    
+    z-index: 90;
+    position: absolute;        
+    /* --> Thumbnail image size */
+    width: 150px;
+    height: 100px;
+  }
+
+  /* Standard browsers hover */
+  
+  .photos .photo:hover,
+  .photos .photo:focus,
+  .photos .photo:active {
+    z-index: 100;    
+    /* Bigger box shadow  */
+    -moz-box-shadow: 0px 0px 20px rgba(0, 0, 0, .5); /* FF3.5 - 3.6 */
+    -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, .5); /* Saf3.0+, Chrome */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, .5); /* Opera 10.5, IE9, FF4+, Chrome 10+ */     
+    /* --> Full image size */
+    width: 240px;
+    height: 160px;
+    -webkit-background-size: 240px 160px; /* Saf3-4 */
+    -moz-background-size: 240px 160px; /* FF3.6 */
+    background-size: 240px 160px; /* Opera, IE9, Saf5, Chrome, FF4 */
+    /* --> Half of height sutraction (Full image height - Thumbnail image height) */
+    margin-top: -30px;
+    /* --> Half of width sutraction (Full image width - Thumbnail image width) */    
+    margin-left: -45px; 
+    /* IE6+IE7 does not hover because of z-index stacking context bug:  
+       http://www.quirksmode.org/bugreports/archives/2006/01/Explorer_z_index_bug.html */
+    /* --> Thumbnail image size */       
+    *width: 150px;
+    *height: 100px;    
+    *margin-top: 0;
+    *margin-left: 0;
+  }
+  
+  /* IE hover */  
+  
+  .photos .photo:hover img,
+  .photos .photo:focus img,
+  .photos .photo:active img {    
+    z-index: 100;    
+    /* --> Full image size */    
+    width: 240px;
+    height: 160px;
+    /* IE6+IE7 does not hover because of z-index stacking context bug:  
+       http://www.quirksmode.org/bugreports/archives/2006/01/Explorer_z_index_bug.html */
+    /* --> Thumbnail image size */       
+    *width: 150px;
+    *height: 100px; 
+  }
+
+	</style>
+	
+    <!-- Google Analytics --> 
+    <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+    try {
+    var pageTracker = _gat._getTracker("UA-67173-13");
+    pageTracker._trackPageview();
+    } catch(err) {}</script>
+    <!-- /Google Analytics -->
+
+  </head>
+
+  <body>
+    
+      <div class="info">
+        
+        <h1>CSS gallery with rounded corners on images and enlargement on&nbsp;hover</h1>
+        
+        <p>
+          Pure CSS3 solution. Gracefully degrades in older MSIE&nbsp;versions. 
+        </p>
+        
+        <p>
+          Source code <a href="https://gist.github.com/1357873">on Github</a>.<br>
+          <a href="#">Article</a> (in czech).<br><br>
+          Photos &copy; <a href="http://www.flickr.com/photos/scukcz/">Scuk.cz</a>.<br>
+          Solution: <a href="mailto:machal77&#64;gmail.com">Martin Michálek</a>.<br>
+          Other <a href="/test/">CSS tests</a>.
+        </p>
+        
+      </div><!-- .info -->
+	  
+      <p class="photos">
+        
+        <span class="photo_container">
+          <a href="http://www.flickr.com/photos/scukcz/5821831198/in/photostream" class="photo first">
+            <img src="photo_1.jpg" width="150" height="100" alt="">
+          </a>
+        </span>
+        
+        <span class="photo_container">
+          <a href="http://www.flickr.com/photos/scukcz/6308549265/in/photostream" class="photo second">
+            <img src="photo_2.jpg" width="150" height="100" alt="">
+          </a>
+        </span>
+        
+        <span class="photo_container">
+          <a href="http://www.flickr.com/photos/scukcz/6069495264/in/photostream" class="photo third">
+            <img src="photo_3.jpg" width="150" height="100" alt="">
+          </a>          
+        </span>
+        
+        <span class="photo_container">
+          <a href="http://www.flickr.com/photos/scukcz/6020952605/in/photostream" class="photo fourth">
+            <img src="photo_4.jpg" width="150" height="100" alt="">
+          </a>
+        </span>  
+                   
+      </p>  	  
+
+  </body>
+
+</html>

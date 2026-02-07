@@ -1,0 +1,155 @@
+/*
+
+Product Variants
+================
+
+Výběr varianty produktu (např. barva čoček u Freshlook)
+uvnitř .vc-product-options v detailu produktu.
+
+Bez JS je tam <select>, s JS pak rozklikavatelna vrstva s vizualnim
+zobrazenim variant.
+
+*/
+
+// -- Bez JS --
+
+// Je tam <select>, vizualni seznam variant ani odkaz
+// na nej nezobrazujeme.
+
+.no-js {
+  .vc-product-variants-anchor,
+  .vc-product-variants-list { display: none; }
+}
+
+// -- S JS --
+
+// Schovame puvodni <select>, ale ctecky ho dale vidi
+// Seznam variant schovame a nasledne otevirame pomoci JS
+
+.js {
+  .vc-product-variants-select { .sr-only; }
+}
+
+// wrapper variant
+.vc-product-variants {
+  // lokální proměnné
+  @vc-border-width:      1px; // okraj celého rámečku
+  @vc-padding:           3px; // odsazení variant od okraje rámečku
+  @vc-item-border-width: 2px; // okraj vybrané varianty
+
+  .vc-clearfix;
+
+  // wrapper položek (jednotlivých variant)
+  &-list {
+    .vc-clearfix;
+
+    text-align: center;
+    padding: @vc-padding;
+    border: @vc-border-width solid #ffffff;
+    border-radius: @border-radius-base;
+
+    list-style-type: none;
+    background-color: #ffffff;
+    height: 100%;
+    margin:
+      0
+      -(@vc-padding + @vc-item-border-width + @vc-border-width) // posuneme vlevo, aby fotka byla zarovnaná s ostatními prvky
+      @line-height-computed/3;
+
+    // validační stavy
+    .has-success &{
+      border-color: @state-success-text;
+      background-color: @state-success-bg;
+    }
+
+    .has-warning &{
+      border-color: @state-warning-text;
+      background-color: @state-warning-bg;
+    }
+
+    .has-error &{
+      border-color: @state-danger-text;
+      background-color: @state-danger-bg;
+    }
+  }
+
+  // výchozí rámeček varianty (položky)
+  &-variant { border: @vc-item-border-width solid transparent; }
+}
+
+
+// layout varianty (položky)
+// TODO: osklive reseni s tim rucnim nastavovanim vysky
+// - zkusit flexbox.
+.vc-product-variants-variant {
+  float: left;
+  width: percentage(1/3);
+  height: 130px;
+
+  @media only screen {
+
+    @media (min-width: 360px) {
+      width: percentage(1/4);
+    }
+
+    @media (min-width: 410px) {
+      height: 150px;
+    }
+
+    @media (min-width: 480px) {
+      width: percentage(1/5);
+    }
+
+    @media (min-width: 590px) {
+      height: 170px;
+    }
+
+    @media (min-width: 768px) {
+      width: percentage(1/6);
+      height: 140px;
+    }
+
+    @media (min-width: 980px) {
+      height: 170px;
+    }
+  }
+}
+
+// aktivní a hover stavy varianty (položky)
+.vc-product-variants-variant {
+  &.active,
+  &.active:hover {
+    cursor: pointer;
+    border-color: @vc-color-blue;
+  }
+
+  // TODO: nechceme jen hover na iOS kdyz se scrolluje a tak
+  // tady bude lepsi modernizr a .no-touch trida
+  @media only screen and (min-width: @vc-layout-start) {
+    &:hover,
+    &:focus,
+    &:active {
+      cursor: pointer;
+      border-color: #e8e8e8;
+    }
+  }
+}
+
+
+
+.vc-product-variants-variant .vc-text {
+  display: block;
+  font-size: @vc-font-size-smaller;
+  line-height: 15px;
+  color: @gray-light;
+  padding: 5px 0 0;
+
+  // Nazev varianty nesmi vyčuhovat ven
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  @media only screen and (min-width: 320px) { padding: 5px 5px 0; }
+
+}
+
+.vc-product-variants-variant img { .img-responsive; }

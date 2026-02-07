@@ -1,0 +1,65 @@
+/*
+
+Foot Navigation
+===============
+
+Skupiny odkazů v patičce (dva seznamy)
+
+*/
+
+.vc-foot-nav {
+  float: left;
+  letter-spacing: -0.015em;
+  width: percentage(12/12);
+
+  @media @vc-foot-breakpoint-B {
+    width: percentage(4/12);
+  }
+
+  @media @vc-foot-breakpoint-C {
+    width: percentage(6/12);
+  }
+
+  .vc-list-title {
+    margin-bottom: @line-height-computed*0.5;
+
+    @media @vc-foot-breakpoint-A {
+      margin-bottom: @line-height-computed;
+    }
+  }
+
+  .vc-list {
+    float: left;
+    padding-right: @grid-gutter-width;
+    width: percentage(12/12);
+
+    @media @vc-foot-breakpoint-A {
+      width: percentage(6/12);
+    }
+
+    @media @vc-foot-breakpoint-B {
+      width: percentage(12/12);
+    }
+
+    @media @vc-foot-breakpoint-C {
+      max-width: 270px;
+      min-width: 140px + @grid-gutter-width;
+      width: percentage(6/12);
+    }
+
+  }
+
+}
+
+.vc-list-body li {
+  font-size: @font-size-small;
+  line-height: 1.1;
+  margin-bottom: @line-height-computed/2.5;
+
+  &:before {
+    content: "\002014\000020"; // em pomlčka (—), její šířka je 1 em, tedy hodnota @vc-foot-list-bullet-width
+  }
+
+  margin-left: @vc-foot-list-bullet-width;
+  text-indent: -@vc-foot-list-bullet-width;
+}

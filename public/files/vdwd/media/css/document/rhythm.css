@@ -1,0 +1,116 @@
+/*
+Zakladni typograficka nastaveni
+===============================
+
+- vnitrni okraje dokumentu
+- blokove prvky maji okraje vysky font-size jen zezdola
+- sjednoceni odsazeni ul/ol, dd, blockquote
+
+TODO:
+- neni to rhytm.css, ale nastaveni, "set"
+- Blanka-reset? blanka-css?
+
+*/
+
+
+/*
+Minimalni okraje dokumentu
+*/
+
+body {
+  padding: 1.5rem;
+}
+
+/*
+Vse je odsazeno zezdola
+------------------------
+*/
+
+/*
+Blokove prvky odsazeny o jednu font-size
+*/
+
+p, ul, ol, dl, table,
+blockquote, pre, hr {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+/*
+Nadpisy odsazeny o pulku font-size
+*/
+
+h1, h2, h3, h4, h5, h6 {
+	margin-top: 0;
+	margin-bottom: .5rem;
+}
+
+dd {
+  margin-left: 0
+}
+
+/*
+UL/OL
+-----
+
+Nastaveno podle dvoucifernych cisel v <ul>
+*/
+
+ul,
+ol {
+  padding-left: 1.75rem;
+}
+
+/*
+Zanorene seznamy se neodsazuji
+*/
+
+ul ul,
+ul ol,
+ol ul,
+ol ol {
+  margin-bottom: 0;
+}
+
+fieldset {
+  border: 0;
+}
+
+legend {
+  padding: 0 .5rem;
+}
+
+/*
+Blokova citace
+--------------
+
+1) Pozice zleva stejne jako ul/ol
+*/
+
+blockquote {
+  border-left: .25rem solid lightgrey;
+  padding-left: 1.5rem; /* 1) */
+  margin-left: 0;
+}
+
+/*
+Seznam definic
+--------------
+
+1) Pozice zleva stejne jako ul/ol
+*/
+
+dd {
+  padding-left: 1.75rem; /* 1) */
+}
+
+
+/*
+Vodorovny oddelovac
+-------------------
+*/
+
+hr {
+  border-style: solid;
+  opacity: .25;
+}

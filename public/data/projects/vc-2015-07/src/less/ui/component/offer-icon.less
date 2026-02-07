@@ -1,0 +1,130 @@
+/*
+
+Offer Icon
+==========
+
+Ikona akční nabídky v detailu zboží nebo v seznamu.
+
+*/
+
+.vc-offer-icon {
+  // lokální proměnné
+  @vc-icon-size:        70px;           // velikost ikony
+  @vc-icon-shadow-width: 4px;           // šířka průsvitného okraje
+  @vc-icon-border-width: 2px;           // šířka okraje
+  @vc-icon-color:        @vc-color-red; // barva textu a okrajů
+  @vc-icon-bg:           #ffffff;       // barva pozadí
+
+  // malá ikona
+  @vc-icon-size-small:  52px;           // velikost, sudé číslo
+
+  // layout
+  width: @vc-icon-size;
+  height: @vc-icon-size;
+  display: table; // kvůli vertikálnímu zarovnání
+  position: absolute;
+  transform: rotate(15deg);
+  z-index: 30;
+
+  // barvy
+  border: @vc-icon-border-width solid @vc-icon-color;
+  border-radius: 50%;
+  background: @vc-icon-bg;
+  color: @vc-icon-color;
+  box-shadow: 0 0 0 @vc-icon-shadow-width fade(@vc-icon-bg, 50%);
+
+  // vlastnosti textu
+  text-align: center;
+  line-height: 1;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 18px;
+
+  // pro malé displeje zobrazíme malou verzi ikony
+  @media only screen and (max-width: 320px) {
+    .vc-offer-icon-sm;
+    top: -10px;
+    right: 0;
+  }
+
+  @media only screen and (min-width: 321px) {
+    top: -15px;
+    right: -10px;
+  }
+
+  @media only screen and (min-width: @vc-layout-full-start) {
+    top: -25px;
+    right: -10px;
+  }
+
+
+  // menší text
+  .vc-offer-icon-text-small { font-size: @font-size-small; }
+
+  // nejmenší text
+  .vc-offer-icon-text-smaller { font-size: @vc-font-size-smaller; }
+
+  // je potřeba explicitně znovu nastavit výšku řádku
+  .vc-offer-icon-text-small,
+  .vc-offer-icon-text-smaller { display: inline-block; }
+
+
+  // dokud jsou zmenšené okraje, neposunujeme za okraj,
+  // jinak způsobí vodorovné scrollbary
+  @media only screen and (max-width: 480px) { right: 0; }
+
+  // žádné podtržení
+  a&,
+  a&:link,
+  a&:hover,
+  a&:focus,
+  a&:active { text-decoration: none; }
+
+  a&:hover,
+  a&:focus,
+  a&:active,
+  a:hover &,
+  a:focus &,
+  a:active & {
+    color: @vc-icon-bg;
+    background: @vc-icon-color;
+    box-shadow: 0 0 0 @vc-icon-shadow-width fade(@vc-icon-color, 40%);
+  }
+
+  // extra element kvůli vertikálnímu zarovnání
+  > .vc-matrjoska {
+    display: table-cell;
+    vertical-align: middle;
+    padding: @padding-small-vertical;
+  }
+
+  // varianta: menší velikost
+  // (např. v seznamu produktů)
+
+  &.vc-offer-icon-sm {
+    top: 0;
+    right: 0;
+    width: @vc-icon-size-small;
+    height: @vc-icon-size-small;
+    border-width: floor(@vc-icon-border-width/2);
+    font-size: @font-size-small;
+    line-height: 1;
+
+    @media only screen and (min-width: 320px){ right: -(floor(0.2*@vc-icon-size-small)); }
+
+    @media only screen and (min-width: 960px){ right: (floor(0.3*@vc-icon-size-small)); }
+
+    @media only screen and (min-width: @vc-layout-full-start){ right: floor(0.5*@vc-icon-size-small); }
+
+    @media only screen and (min-width: 1900px){ right: floor(0.2*@vc-icon-size-small); }
+
+    .vc-offer-icon-text-small { font-size: @vc-font-size-smaller; }
+
+    .vc-offer-icon-text-smaller {
+      font-size: ceil(@vc-font-size-smaller*0.8);
+      letter-spacing: -0.03em;
+    }
+  }
+}
+
+

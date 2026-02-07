@@ -1,0 +1,82 @@
+// === Zakladna a typoska ===
+// Zadne specificke tridy, definice primo pro HTML elementy.
+
+// --- Upravy Bootstrapu ---
+
+body {
+	background: @grayLighter;
+	@media (max-width: 767px) {	
+		background: @white;
+	}	
+}
+
+// Obsahovy kontejner
+.container-fluid {
+	max-width: 940px;
+	margin: 20px auto;
+	background: @white;
+	
+	.old-ie & {
+		width: 940px;
+	}
+	
+	@media (max-width: 767px) {	
+		margin-bottom: 0;
+	}		
+}
+
+// --- Prace s obsahem ---
+
+// Opravime osklivou Bootstrap typosku nadpisu
+// a pridame vlastni velikosti pro mobilni displeje
+
+h1, h2, h3 {
+	margin-top: 0;
+}
+
+h1 {
+	line-height: @baseLineHeight * 2;	
+	
+	@media (max-width: @mobileDisplayEnd) {
+		font-size: @baseFontSize * 1.8;
+		line-height: @baseLineHeight * 1.6;			
+	}
+}
+
+h2 {
+	line-height: @baseLineHeight * 1.75;
+	
+	@media (max-width: @mobileDisplayEnd) {
+		font-size: @baseFontSize * 1.5;
+		line-height: @baseLineHeight * 1.3;			
+	}	
+}
+
+h3 {
+	line-height: @baseLineHeight * 1.5;
+	
+	@media (max-width: @mobileDisplayEnd) {
+		font-size: @baseFontSize * 1.1;
+		line-height: @baseLineHeight * 1;			
+	}	
+}
+
+// Obrazky v obsahu vzdy roztahujeme maximalne do sirky rodice
+.content img {
+	max-width: 100%;
+	height: auto;
+}
+
+// Pagelety pro prehlednost (zatim) oddelujeme pomoci <hr>
+.content > hr {
+	margin-top: 2*@baseLineHeight;
+	margin-bottom: 2*@baseLineHeight;	
+	border: 0;
+	border-bottom: 1px solid #eee;
+
+	@media (max-width: @smallDisplayEnd) {
+		margin-top: @baseLineHeight;
+		margin-bottom: @baseLineHeight;		
+	}	
+}
+

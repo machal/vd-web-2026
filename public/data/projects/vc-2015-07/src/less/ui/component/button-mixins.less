@@ -1,0 +1,96 @@
+/*
+
+Button mixins
+=============
+
+Mixiny pro tlačítka. Vychází z BS.
+
+
+*/
+
+// Button variants
+//
+// Easily pump out default styles, as well as :hover, :focus, :active,
+// and disabled options for all buttons
+
+.vc-button-variant(
+  @normal;
+  @bg;
+  @border: @normal;
+
+  @hover: @normal;
+  @hover-bg: darken(@bg, 10%);
+  @hover-border: darken(@border, 10%);
+
+  @focus: @hover;
+  @focus-bg: darken(@hover-bg, 5%);
+  @focus-border: darken(@hover-border, 5%);
+) {
+  color: @normal;
+  background-color: @bg;
+  border-color: @border;
+
+  &:focus,
+  &.vc-btn-focus {
+    color: @focus;
+    background-color: @hover-bg;
+    border-color: @focus-border;
+  }
+
+  &:hover {
+    color: @hover;
+    background-color: @hover-bg;
+    border-color: @hover-border;
+  }
+
+  &:active,
+  &.vc-btn-active,
+  .open > .dropdown-toggle & {
+    color: @hover;
+    background-color: @hover-bg;
+    border-color: @hover-border;
+
+    &:hover,
+    &:focus,
+    &.vc-btn-focus {
+      color: @focus;
+      background-color: @focus-bg;
+      border-color: @focus-border;
+    }
+  }
+
+  &:active,
+  &.vc-btn-active,
+  .open > .dropdown-toggle & {
+    background-image: none;
+  }
+
+  &.vc-btn-disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &,
+    &:hover,
+    &:focus,
+    &.vc-btn-focus,
+    &:active,
+    &.vc-btn-active {
+      color: @normal;
+      background-color: @bg;
+      border-color: @border;
+    }
+  }
+
+  .badge {
+    color: @bg;
+    background-color: @normal;
+  }
+}
+
+// Button sizes
+.vc-button-size(@padding-vertical; @padding-horizontal; @font-size; @line-height; @border-radius) {
+  padding: @padding-vertical @padding-horizontal;
+  font-size: @font-size;
+  line-height: @line-height;
+  border-radius: @border-radius;
+}
+

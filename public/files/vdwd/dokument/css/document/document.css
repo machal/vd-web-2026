@@ -1,0 +1,17 @@
+/*
+Nastaveni vlastnosti dokumentu
+==============================
+
+1) Minimalni odsazeni ze stran.
+2) Maximalni sirka typograficke radky: cca 66 znaku.
+*/
+
+body {
+  margin: 1.5em; /* 1) */
+}
+
+.container {
+  max-width: 30em; /* 2) */
+  margin-left: auto;
+  margin-right: auto;
+}

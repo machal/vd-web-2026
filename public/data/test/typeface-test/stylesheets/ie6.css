@@ -1,0 +1,216 @@
+@charset "utf-8";
+
+/* 
+
+========== MSIE 6 CSS pro web Prazskeho Jara (www.festival.cz) ========== 
+
+Autor:        Martin Michalek, Studio Shortcat
+
+*/
+
+
+/* === Obecne prvky === */
+
+/* Oznaceni externiho odkazu - aby zezdolu neodskakoval */
+a.link-out span { 
+  margin-bottom: 0; 
+}
+
+/* V navigaci druhe urovne je treba pak trosku stahnout padding, aby se odkaz neroztahoval */
+#second-site-navigation a.link-out {
+  padding-bottom: 9px;
+} 
+
+/* === Layout === */
+
+/* Emulace min-width v ie6,
+   funguje hezky ale cislo v podmince musi byt vyssi, jinak zamrzne IE6
+   http://www.cameronmoll.com/archives/000892.html
+*/
+
+#container {
+ width: expression(document.body.clientWidth < 997 ? "995px" : "auto" );
+}
+
+input#site-search-input {
+  position: relative;
+}
+
+#content-head {
+  margin-top: 4px;
+}
+
+#web-title {
+  display: inline; /* Dvojity leftmargin bug */
+}
+
+
+
+/* === Obsah === */
+
+/* IE6 nezna :first-child a v pripade obsahoveho nadpisu jej nahrazujeme */
+#content h2 { 
+  margin-top: expression(this.previousSibling==null?'20px':'40px');
+}
+
+
+
+/* === Navigace druhe urovne === */
+
+#second-site-navigation {
+  left: 365px;
+}
+
+
+/* === Stranka program === */
+
+.program_events #filter {
+  height: 436px; /* IE6 tohle interpretuje jako chtene min-height */
+}
+
+/* V ie 6 pouzivame pro datumovky pruhledny GIF na bilem pozadi, protoze vsechna reseni pro PNG pruhlednost selhavaji */
+
+.calendar-date.day-1 { background-image: url("../../images/days/1.gif") }
+.calendar-date.day-2 { background-image: url("../../images/days/2.gif") }
+.calendar-date.day-3 { background-image: url("../../images/days/3.gif") }
+.calendar-date.day-4 { background-image: url("../../images/days/4.gif") }
+.calendar-date.day-5 { background-image: url("../../images/days/5.gif") }
+.calendar-date.day-6 { background-image: url("../../images/days/6.gif") }
+.calendar-date.day-7 { background-image: url("../../images/days/7.gif") }
+.calendar-date.day-8 { background-image: url("../../images/days/8.gif") }
+.calendar-date.day-9 { background-image: url("../../images/days/9.gif") }
+.calendar-date.day-10 { background-image: url("../../images/days/10.gif") }
+.calendar-date.day-11 { background-image: url("../../images/days/11.gif") }
+.calendar-date.day-12 { background-image: url("../../images/days/12.gif") }
+.calendar-date.day-13 { background-image: url("../../images/days/13.gif") }
+.calendar-date.day-14 { background-image: url("../../images/days/14.gif") }
+.calendar-date.day-15 { background-image: url("../../images/days/15.gif") }
+.calendar-date.day-16 { background-image: url("../../images/days/16.gif") }
+.calendar-date.day-17 { background-image: url("../../images/days/17.gif") }
+.calendar-date.day-18 { background-image: url("../../images/days/18.gif") }
+.calendar-date.day-19 { background-image: url("../../images/days/19.gif") }
+.calendar-date.day-20 { background-image: url("../../images/days/20.gif") }
+.calendar-date.day-21 { background-image: url("../../images/days/21.gif") }
+.calendar-date.day-22 { background-image: url("../../images/days/22.gif") }
+.calendar-date.day-23 { background-image: url("../../images/days/23.gif") }
+.calendar-date.day-24 { background-image: url("../../images/days/24.gif") }
+.calendar-date.day-25 { background-image: url("../../images/days/25.gif") }
+.calendar-date.day-26 { background-image: url("../../images/days/26.gif") }
+.calendar-date.day-27 { background-image: url("../../images/days/27.gif") }
+.calendar-date.day-28 { background-image: url("../../images/days/28.gif") }
+.calendar-date.day-29 { background-image: url("../../images/days/29.gif") }
+.calendar-date.day-30 { background-image: url("../../images/days/30.gif") }
+.calendar-date.day-31 { background-image: url("../../images/days/31.gif") }
+
+
+/* Minimalni vyska seznamu akci */
+.program_events #event-list {
+ /* height: 350px; IE7 to nesezere a nastavi *maximalni vysku*, TODO: nastudovat min-height pro IE6 */
+}
+
+/* Minimalni vyska detailu akce */
+.program_events #event {
+ /* height: 400px; IE7 to nesezere a nastavi *maximalni vysku* */
+}
+
+.program_events #event-list table {
+  width: 234px;
+}
+
+.venues #venue-body {
+  width: 400px;
+}
+
+
+/* === Uvodni stranka === */
+
+.page-home #highlights h2 .calendar-date .month {
+  bottom: 13px;
+}
+
+.page-home #highlights .highlight-item .perex {
+  top: _430px;
+}
+
+
+/* TODO: Zjistit, proc toto je treba pro IE6 zopakovat !? */
+#content.page-home {
+  padding: 0;
+  width: 993px;
+}
+
+#highlight-thanks p {
+  bottom: 50px;
+}
+
+
+/* === Staticke stranky === */
+
+.pages #content .text-column { 
+  padding-left: 0;
+}
+
+.text-column h3 a:link,
+.text-column h3 a:visited {
+  color: #71685C;
+}
+
+
+
+
+/* === Kalendar === */
+
+/* MSIE6 potrebuje o 2px uzsi hlavicku, aby se na radek vesly vsechny sloupce */
+#calendar .day .day-head {
+  width: 75px;
+}
+
+/* Zuzime posledni sloupec, aby neodskakoval na druhy radek */
+#calendar .day .other-venues-program {
+  width: 273px;
+}
+
+/* MSIE6 neumi height: 100%, proto nastavime nesmyslnou vysku  */
+#calendar-overlay {
+ height: 2000px;
+}
+
+/* === Stranka clanky === */
+
+/* Nezobrazuje dole 2px mezeru pomoci marginu */
+.articles .multimedia {
+  border-bottom: 1px solid #fff;
+}
+
+/* Fotogalerie u clanku */
+.articles .article .photo-gallery,
+.article_sections .article .photo-gallery {
+  display: inline;
+  margin-right: 16px;
+}
+
+/* === Prepinac jazyku === */
+
+.with-javascript #switch-locale {
+  right: 273px;
+}
+
+
+/* === Archiv === */
+
+/* Navigace druhe urovne je posunuta nize */
+.archive #second-site-navigation {
+  top: 200px;
+}
+
+#archive-other-years {
+  top: 144px;
+}
+
+
+/* === Stranka Pratele PJ === */
+
+#content .friends-quarter ul,
+#content .friends-quarter li {
+  margin-right: 0;
+}

@@ -1,0 +1,79 @@
+/*
+
+Stránka: Detail produktu: hlavní obrázek
+========================================
+
+a malé obrázky pod ním
+
+*/
+
+// ### obrazek produktu
+
+.vc-detail-image {
+  text-align: center;
+
+  @media only screen and (min-width: @vc-layout-start) {
+    // Obrazek produktu: na vetsich displejich je nalevo od obsahu
+    position: absolute;
+    left: @grid-gutter-width/2;
+    width: 28%;
+    top: 1.5*@line-height-computed; // Od nejblizsiho .vc-container
+  }
+
+}
+
+.vc-detail-image-main{
+  position: relative; // Kvuli pozicovani .vc-offer-icon
+}
+
+.vc-detail-image-main img {
+  .img-responsive;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 200px;
+
+  @media only screen and (min-width: 410px) { max-height: 300px; }
+
+  @media only screen and (min-width: @vc-layout-start) {
+    max-height: 500px;
+    max-height: 70vh; // aby se obrazek pohodlne vesel na jednu obrazovku
+  }
+
+}
+
+// ### stare varianty obalu
+.vc-detail-image-older {
+  .vc-clearfix;
+  display: block;
+  text-align: center;
+  padding-top: @line-height-computed*1.5;
+}
+
+.vc-detail-image-older-heading {
+  display: block;
+  font-size: @vc-font-size-smaller;
+  color: @vc-color-grey;
+}
+
+.vc-detail-image-older-img {
+  .img-responsive;
+
+  min-width: 64px;
+
+  display: inline-block;
+  margin: @padding-xs-horizontal;
+
+  @media only screen and (min-width: 480px){
+    margin: @padding-base-horizontal;
+  }
+
+  @media only screen and (min-width: @vc-layout-start){
+    margin: @padding-base-horizontal auto;
+    display: block;
+  }
+
+  @media only screen and (min-width: @vc-layout-full-start){
+    display: inline-block;
+    margin: @padding-base-horizontal;
+  }
+}

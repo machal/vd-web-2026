@@ -1,0 +1,54 @@
+/*  
+Layout 1
+==============================================================================
+
+Hlavní odlišnosti:
+--------------
+
+1. V HTML je navigace až po header image
+2. Logo a patička je mimo .container
+
+
+Struktura HTML
+--------------
+
+<pre>
+.container-fluid.wm-t-onecolumn
+	.wm-l-mobile-header
+	.wm-l-header
+	.content-container
+		[data-sw="header"]
+			.wm-p-header-image
+			#sw-main-navigation
+			.row-fluid
+				.content
+	.wm-l-footer
+</pre>
+
+*/
+
+ 
+	// --- 1) Navigace je v HTML az po header image ---
+	// TODO do base?
+	// Header image nema na velkem displeji odsazeni zezdola
+.wm-p-header-image {
+	margin-bottom: 0;
+
+	@media (max-width: @wmSmallDisplayEnd) {
+		.wm-m-section;
+	}
+}
+
+ 
+	// Navigace ma odsazeni zezdola a je horizontalni
+#sw-main-navigation {
+	.wm-m-section;
+	.nav-horizontal;
+}
+
+ 
+	// Stiny nahore a dole
+@media (min-width: @wmLargeDisplayStart) {
+  .wm-m-shadow-topbottom;
+}
+

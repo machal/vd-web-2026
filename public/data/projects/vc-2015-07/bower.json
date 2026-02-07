@@ -1,0 +1,33 @@
+{
+  "name": "vasecocky.cz prototyp",
+  "version": "0.0.0",
+  "authors": [
+    "Martin Michalek <michalek@shortcat.cz>"
+  ],
+  "main": "index.html",
+  "moduleType": [
+    "amd"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "pine-navigation": "0.5",
+    "enquire": "~2.1.2",
+    "fastclick": "~1.0.3",
+    "respond": "~1.4.2",
+    "picturefill": "~2.3.1",
+    "loadcss": "~0.1.2",
+    "jquery": "~1.11",
+    "freestyle-grid": "*",
+    "jquery-ui": "~1.11.4",
+    "webfontloader": "~1.6.4"
+  }
+}

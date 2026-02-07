@@ -1,0 +1,26 @@
+/*
+
+Naše mixiny
+===========
+
+*/
+
+
+
+
+// Nas clearfix s podporou IE6/7
+// Source: http://nicolasgallagher.com/micro-clearfix-hack/
+
+.vc-clearfix {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+  & {
+  	zoom:1; // For IE 6/7 (trigger hasLayout)
+  }
+}

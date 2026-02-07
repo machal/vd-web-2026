@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en"> 
+
+  <head>
+	<meta charset="UTF-8">
+	<title>Submit button with same width and height in all browsers with CSS</title>
+	
+	<link rel="stylesheet" href="../vzhurudolu-tests.css" type="text/css">
+
+	<style>
+		
+		
+		.submit { 
+			padding: 5px 10px; 
+			font: 12px/18px Arial, sans-serif;
+			background: red; 
+			color: white; 
+			border: 1px outset #F30;
+	     }
+		  
+		
+		.submit_better { 
+			padding: 5px 10px; 
+			font: 12px/18px Arial, sans-serif;
+			background: red; 
+			color: white; 
+			border: 1px outset #F30;
+			/* removes extra side padding in IE 6 and 7: */
+	    overflow: visible;
+	    /* unify height in Firefox, Opera (watch traditional box model): */
+	    height: 30px;
+			/* removes extra margin in Webkit: */
+			margin-left: 0;
+	     }
+		  
+		/* removes extra padding in Firefox */
+		.submit_better::-moz-focus-inner {
+		  padding: 0;
+		}
+
+
+	</style>
+	
+    <!-- Google Analytics --> 
+    <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+    try {
+    var pageTracker = _gat._getTracker("UA-67173-13");
+    pageTracker._trackPageview();
+    } catch(err) {}</script>
+    <!-- /Google Analytics -->
+
+  </head>
+
+  <body>
+	
+
+	<div class="column bordered">
+		
+		<input type="submit" class="submit" value="Submit">
+
+		<p class="container"></p>
+		
+		<p class="info">&#x2190; Red: submit button, semitransparent green: expected button dimensions and position.</p>
+		
+		<h1>Ugly submit button</h1>
+		
+		<p>
+			CSS code is simple.
+			<br />Button looks <a href="http://www.flickr.com/photos/machal/5043989466/">different in all browsers</a>.
+		</p>
+		
+		<pre>
+			<code>
+.submit { 
+  padding: 5px 10px; 
+  font: 12px/18px sans-serif;
+  background: red; 
+  color: white; 
+  border: 1px outset #F30;
+}
+			</code>
+		</pre>		
+		
+	</div><!-- .column -->
+  
+
+	<div class="column bordered">
+		
+		<input type="submit" class="submit_better" value="Submit">
+
+		<p class="container"></p>
+
+		<p class="info">&#x2190; Red: submit button, semitransparent green: expected button dimensions and position.</p>
+		
+		<h1>Better submit button</h1>
+		
+		<p>
+		   CSS code is slightly more complex.
+		   <br />Button looks identical in almost all browsers.<acronym title="With minor defferences in IE7 and IE6">*</acronym>
+		</p>
+
+		<pre>
+			<code>
+.submit_better { 
+  padding: 5px 10px; 
+  font: 12px/18px sans-serif;
+  background: red; 
+  color: white; 
+  border: 1px outset #F30;
+  <strong>/* remove extra padding in IE6+7: */</strong>
+  overflow: visible;
+  <strong>/* unify height in Firefox, Opera 
+  (watch traditional box model): */</strong>
+  height: 30px;
+  <strong>/* remove extra margin in Webkit: */</strong>
+  margin: 0;
+}
+ 
+<strong>/* remove extra padding in Firefox: */</strong>
+.submit_better::-moz-focus-inner {
+  padding: 0;
+}
+
+			</code>
+		</pre>	
+		
+		<p>
+		  <a href="http://kratce.vzhurudolu.cz/post/1397448754/klonovane-submity-utoci-jednotny-vzhled-odesilaciho">Article (in Czech)</a><br>
+		  <a href="/test/">Other CSS tests</a>
+		</p>
+		
+	</div><!-- .column -->  	
+
+
+  </body>
+
+</html>

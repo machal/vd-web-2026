@@ -1,0 +1,105 @@
+body {
+margin: 2%;
+padding: 0px;
+background: #ccc;
+color: #000;
+}
+
+body {
+font: 90%/120% Garamond, serif;
+}
+
+h1, h2, h3, h4, h5, h6, div#menu {
+font-family: Garamond, sans-serif;
+}
+
+a, a:link {
+color: #f00;
+background: inherit;
+}
+
+a:hover, a:visited {
+color: #c00;
+background: inherit;
+}
+
+div#page {
+background: #fff;
+color: #000;
+border: 2px solid #333;
+width: 80%;
+clear: both;
+}
+
+h1 {
+background: #333;
+color: #fff;
+padding: 2%;
+margin: 0px;
+}
+
+div#contentcontainer {
+width: 63%;
+float: left;
+}
+
+div#content {
+padding: 2%;
+width: 100%;
+padding-top: 20px;
+}
+
+div#content h3 {
+border-bottom: 4px solid #c00;
+}
+
+div#menu {
+padding: 2%;
+padding-top: 20px;
+width: 30%;
+float: right;
+background: #ffc;
+color: #000;
+border-left: 2px solid #333;
+border-bottom: 2px solid #333;
+}
+
+div#menu h3 {
+border-bottom: #996 3px solid;
+}
+
+div#menu ul {
+list-style-type: square;
+list-style-color: #cc9;
+}
+
+abbr, acronym {
+border-bottom: 1px dotted #999;
+}
+
+pre {
+text-align: left;
+width: 400px;
+margin: 0px;
+padding: 0px;
+overflow: auto;
+}
+
+pre, code {
+color: #039;
+background: inherit;
+font-size: 1em;
+}
+
+blockquote {
+padding: 5px;
+font-style: italic;
+}
+
+.clearboth {
+clear: both;
+}
+
+.testred {
+border: 1px solid red;
+}

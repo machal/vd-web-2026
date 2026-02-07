@@ -1,0 +1,244 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cs" lang="cs">
+<head><title>machal.creativity.cz/ Neupotřebitelné, ale zajímavé CSS menu - Martin Mich&#225;lek</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta http-equiv="content-language" content="cs" />
+<meta http-equiv="pics-label" content='(pics-1.1 "http://www.icra.org/ratingsv02.html" comment "ICRAonline v2.0" l gen true for "http://machal.creativity.cz"  r (nz 1 vz 1 lz 1 oz 1 cz 1) "http://www.rsac.org/ratingsv01.html" l gen true for "http://machal.creativity.cz"  r (n 0 s 0 v 0 l 0))' />
+
+<meta name="author" content="Martin Michálek" />
+<meta name="keywords" content="Martin Michálek, Michálek, machal, webdesign, CSS, XHTML, HTML, XML, DTD, sound design, weblog, blog" />
+<meta name="copyright" content="2002 - Martin Michálek" />
+<meta name="MSSmartTagsPreventParsing" content="TRUE" />
+<meta name="robots" content="index,follow" />
+
+<link rel="Start" title="Úvodní stránka" href="http://machal.creativity.cz/index.php" />
+<link rel="Author" title="Kontakt na autora" href="mailto:machal@creativity.cz" />
+
+
+    <style type="text/css" title="Homematesmenu Stylesheet">  
+	  
+	  body {
+	  font: 11px sans-serif;
+	  background: #9C0;
+	  color: #333;
+	  margin: 0px;
+	  padding: 0px;	  	  
+	  }
+	  
+	  #box {	  
+	  margin: 20px 40px;
+	  padding: 20px;
+	  border: 5px solid #333;
+	  background: #fff;
+	  color: #333;  
+	  }
+	  
+	  p, h1, h2 {
+	  margin: 10px 0px;
+	  padding: 0px;	  
+	  }
+	  
+	  h1 {
+	  font-size: 15px;	  
+	  }
+	
+	  h2 {
+	  font-size: 13px;	  
+	  }
+	  
+	  a {
+	  color: #f63;
+	  background: transparent;
+	  }
+	  
+	  #foot {
+	  background: #EAEAE5;
+	  color: #330;
+	  padding: 20px;
+	  margin: 20px;
+	  }
+	  
+	  #homematesmenu, #homematesmenuwithoutstyles {
+	  height: 100px;
+	  padding: 0px 20px;
+  	  border: 1px solid #999;	  
+	  }	  
+	  
+	  #homematesmenu .menu {
+	  margin-top: 30px;
+	  height: 20px;
+	  clear: both;
+	  }
+	  
+	  #homematesmenu .menu a {
+	  width: 20px;
+	  height: 20px;	  
+  	  display: block;
+	  float: left;
+	  margin-right: 10px;
+	  background: #333;
+	  color: inherit;
+	  }	  
+	   
+	  #homematesmenu .menu a.thin {
+	  background: transparent;
+	  color: inherit;  
+	  border: 2px solid #333;
+	  width: 20px; 	  
+	  height: 20px;	  
+      voice-family: "\"}\""; 
+      voice-family:inherit;	 
+	  width: 16px; 
+	  height: 16px; 	  
+	  }	  	  
+	  	  	  
+  	  #homematesmenu .menu strong a:link, #homematesmenu .menu a:active {
+	  margin-top: 20px;  
+	  }
+	  
+	  #homematesmenu .menu a span.outertext {	  
+	  color: #333;
+	  background: transparent;
+	  position: absolute;
+	  top: 330px;
+	  display: none;
+	  text-decoration: none;
+	  }
+	    
+  	  #homematesmenu .menu a:active span.outertext {	  
+	  display: block;
+	  color: #333;
+	  background: transparent;
+	  width: 150px;
+	  }
+	  
+   	  #homematesmenu a:link, #homematesmenu a:visited, #homematesmenu a:hover, #homematesmenu a:active {
+	  text-decoration: none;	
+	  }
+	  
+	  #homematesmenu .displaynone {	  
+	  display: none;
+	  }
+	  
+    </style>	
+
+
+</head>
+
+<body>
+
+<div id="box">
+
+<h1>CSS legrácka s pseudoanimací pomocí pseudotřídy</h1>
+
+<h2>HTML verze</h2>
+
+<div id="homematesmenuwithoutstyles">
+  <p class="displaynone"><strong>Nadpis</strong></p>
+  <p class="menu">
+    <span class="itembox">
+	  <a href="#" title="HTML verze &#10;sdfdsafdfadsf ">
+	    <span class="displaynone">Pokoj 1 &mdash;</span>
+		<span class="outertext">Jsem veselá</span>
+	  </a> 	   
+	</span>
+
+	<span class="displaynone">&nbsp;|&nbsp;</span>
+
+    <span class="itembox">
+	  <a href="#" title="HTML verze" class="thin">
+	    <span class="displaynone">Pokoj 2 &mdash;</span>
+		<span class="outertext">Jsem hravá</span>
+	  </a> 	   
+	</span>
+	
+	<span class="displaynone">&nbsp;|&nbsp;</span>	
+	
+    <span class="itembox">
+	  <a href="#" title="HTML verze" class="thin">
+	    <span class="displaynone">Pokoj 3 &mdash;</span>
+		<span class="outertext">A možná i zdravá</span>
+	  </a> 	   
+	</span>	
+  </p>
+</div>
+
+<h2>HTML verze s CSS</h2>
+
+<div id="homematesmenu">
+  <p class="displaynone"><strong>Nadpis</strong></p>
+  <p class="menu">
+    <span class="itembox">
+	  <a href="#" title="Jsem veselá">
+	    <span class="displaynone">Pokoj 1 &mdash;</span>
+		<span class="outertext">Jsem veselá</span>
+	  </a> 	   
+	</span>
+
+	<span class="displaynone">&nbsp;|&nbsp;</span>
+
+    <span class="itembox">
+	  <a href="#" title="Jsem hravá" class="thin">
+	    <span class="displaynone">Pokoj 2 &mdash;</span>
+		<span class="outertext">Jsem hravá</span>
+	  </a> 	   
+	</span>
+	
+	<span class="displaynone">&nbsp;|&nbsp;</span>	
+	
+    <span class="itembox">
+	  <a href="#" title="A možná i zdravá" class="thin">
+	    <span class="displaynone">Pokoj 3 &mdash;</span>
+		<span class="outertext">A možná i zdravá</span>
+	  </a> 	   
+	</span>	
+  </p>
+</div>
+
+<p>
+HTML kód obou menu je stejný. Fachá v winIE5.5+, Moz1, Op7. Všechny prohlížeče kromě IE win generují <code>:active</code> je po dobu stisknutí tlačítka, efekt lze nahradit  přiřazením <code>&lt;strong&gt;</code> k aktivní položce na nové stránce. Upozornění: jde jen o nedodělananou legrácku. :-)
+</p>
+
+
+<div id="foot">
+
+
+<p>
+<a href="http://machal.creativity.cz/">
+machal.creativity.cz
+</a>
+</p>
+
+<p><small>Poslední úprava: 25. 4. 2003. </small></p>
+
+<a href="http://counter.cnw.cz/"><img src="http://counter.cnw.cz/invisible.cgi?machal&amp;on" alt="[CNW:Counter]" style="border:0px;" /></a>
+<script type="text/javascript">
+<!-- 
+document.write("<A href=\"http://counter.cnw.cz\" target=\"_parent\"><IMG src=\"http://counter.cnw.cz/trackit.cgi?machal&amp;t5&amp;" + escape(top.document.referrer) + "\" alt=\"CNW:Tracker\" border=\"0\" width=\"9\" height=\"9\"></A>"); 
+// -->
+</script>
+
+
+<script type="text/javascript">
+<!--
+document.write ('<img src="http://www.toplist.cz/dot.asp?id=44230&amp;http='+escape(document.referrer)+'&amp;wi='+escape(window.screen.width)+'&amp;he='+escape(window.screen.height)+'&amp;cd='+escape(window.screen.colorDepth)+'" style="border:0px" alt="TOPlist" />'); 
+//-->
+</script>
+<noscript>
+<div><img src="http://www.toplist.cz/dot.asp?id=44230" style="border:0px" alt="TOPlist" /></div>
+</noscript>
+
+
+</div>
+
+</div>
+
+
+
+</body>
+
+</html>

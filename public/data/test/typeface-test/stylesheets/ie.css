@@ -1,0 +1,254 @@
+@charset "utf-8";
+
+/* 
+
+========== MSIE 7- CSS pro web Prazskeho Jara (www.festival.cz) ========== 
+
+Autor:        Martin Michalek, Studio Shortcat
+
+*/
+
+
+/* ===== Import Blueprintu a pravidel jej upravujich  ===== */
+
+@import "./blueprint/ie.css";
+
+
+/* === Obecne prvky === */
+
+/* Oznaceni externiho odkazu - aby zezdolu neodskakoval */
+a.link-out span { 
+  margin-bottom: 3px;
+}
+
+/* V navigaci druhe urovne je treba pak trosku stahnout padding, aby se odkaz neroztahoval */
+#second-site-navigation a.link-out {
+  padding-top: 10px;
+  padding-bottom: 10px;
+} 
+
+#app-is-staging {
+  filter: alpha(opacity=80);  
+}
+
+/* === Layout === */
+
+
+
+/* Vyrovnani vyhledavani s vedlejsi navigaci */
+#site-search {
+  margin-top: 0px;
+}
+
+input#site-search-input {
+  margin-top: 3px;  
+}
+
+input#site-search-submit {     
+  font-size: 0px; 
+  line-height: 0px;   
+  margin-top: 5px;  
+}
+
+#content-head {
+  margin-top: 16px;
+}
+
+/* Progamova navigace musi mit jinou pozici, protoze v MSIE jinak funguje position relative */
+#program-navigation {
+  left: 80px;
+  width: 900px;
+}
+
+#site-navigation {
+  position: static;
+  margin-top: 13px;
+}
+
+#top-navigation {
+  margin-top: -4px;
+}
+
+.photo-gallery a:hover img {
+  filter: alpha(opacity=60);
+}
+
+/* === Obsah === */
+
+/* IE neumi zrusit barevnost pozadi HR? */
+hr.divider {
+  visibility: hidden;
+}
+
+.top-margin-without-header {
+  margin-top: 72px;
+}
+
+/* 100% je na nej moc? */
+input.full,
+select.full,
+textarea.full
+  { width: 97%; }
+  
+ol li
+  { margin-left: 5px; padding-left: 0px; }  
+
+/* Umisteni vrstvy s programem */
+#program-layer {
+  top: 59px;
+}
+
+/* Posunuti cisla v kalendari */
+.sIFR-hasFlash .calendar-date strong {
+ bottom: 3px;
+}
+
+/* === Navigace druhe urovne === */
+
+#second-site-navigation {
+  top: 131px;
+}
+
+/* === Vyhledavani === */
+
+#ajax-search-box {
+  top: 27px;     
+}
+
+#ajax-search-box-close {
+  top:-15px;
+}
+
+/* Lepsi zmensovani obrazku v IE6 a 7, http://code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/*/
+.search-result-item img {
+  height: 43px; /* zapneme hasLayout */
+  -ms-interpolation-mode: bicubic;     
+}
+
+#ajax-search-box-top,
+#ajax-search-box-bottom {
+  font-size: 1px; /* ie6 jinak neumozni zmensit prazdny div na nizsi vysku nez je velikost pisma */
+}
+
+/* Polozka vysledku vyhledavani */
+.search-result-item {
+  width: 281px; /* 301px sirka vrstvy - 20px padding */
+}
+
+.search-result-item p {
+  display: inline; /* Aby nezdvojnasoboval marginy */
+}
+
+
+
+/* === Stranka program === */
+
+/* Vyrovnani nadpisu v programu */
+.program_events .program_events {
+  padding-top: 4px;
+}
+
+.program_events #filter ul#filter-choices {
+  margin-top: 28px;
+}
+
+.program_events #filter-type input {
+  border: 0;
+}
+
+.program_events #photo-gallery #photo-title {
+  padding: 0px;
+}
+
+.programme-stars-photo-gallery a:hover img {
+  filter: alpha(opacity=60);
+}
+
+
+/* ===== Program ve verzi pro tisk  ("Strudl") ===== */
+
+.print_schedule .print-this-item input {
+  margin: 23px 0 0 12px;
+  border: 0;
+}
+
+.print_schedule .photo-gallery img {
+  -ms-interpolation-mode: bicubic;
+}
+
+
+/* === Stranka Mista konani === */
+
+.venues #photo-gallery #photo-title {
+  padding: 0px;
+  margin-top: -5px;
+}
+
+/* Minimalni vyska seznamu akci */
+.program_events #event-list {
+ /* height: 350px; IE7 to nesezere a nastavi *maximalni vysku*, TODO: nastudovat min-height pro IE6 */
+}
+
+/* Minimalni vyska detailu akce */
+.program_events #event {
+ /* height: 400px; IE7 to nesezere a nastavi *maximalni vysku* */
+}
+
+
+/* === Uvodni stranka === */
+
+/* Jine radkovani v upoutavce na uvodni strance */
+.page-home #highlights h2 {
+  line-height: 2.1em;
+}
+
+.page-home #highlights h2 .calendar-date {
+  line-height: .4em;
+}
+
+.page-home #highlights h2 .calendar-date small {
+  line-height: 1em;
+}
+
+.page-home #highlights .highlight-item a {
+  margin-top: 0px;  
+}
+
+.page-home #highlights .highlight-item .perex {
+  top: 410px;
+}
+
+/* Novinky na uvodni strance maji jinou vysku rolovatelneho boxiku */
+#news-content {
+  height: 262px;
+}
+
+/*  === Pratele === */
+
+.friends .prihlaska label span {
+  margin-top: -15px;
+}
+
+/* === Staticke stranky === */
+
+
+/* === Kalendar === */
+
+#calendar .day .day-head .date  {
+  margin-right: 7px;
+}
+
+/* Nizsi padding u datumu konani akce */
+#calendar .day li .time {
+  padding-bottom: 3px;
+}
+
+/* === Prepinac jazyku === */
+
+.with-javascript #switch-locale {
+  right: 271px;
+}
+
+.with-javascript #switch-locale.foreign-language {
+  right: 273px;
+}

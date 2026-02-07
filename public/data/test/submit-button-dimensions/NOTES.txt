@@ -1,0 +1,16 @@
+TODO pro clanek 2.0
+-------------------------------
+- Kdyz nenastavim border, vznika tam i nejaky margin, proc?
+- Safari/Win pridava 3px k horizontalnimu paddingu?
+
+
+Poznamky mimo
+-------------
+
+input[type=submit]
+  { border: 2px outset buttonface; }
+--> Barva buttonface nahodi 'tlacitkove defaultni' vzhled (Webkity)
+
+
+
+

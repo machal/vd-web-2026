@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>SVG spinner</title>
+	<meta name="generator" content="TextMate http://macromates.com/">
+	<meta name="author" content="Martin Michálek">
+	
+	<style>
+	
+		/* Modern browsers */
+		
+		.loading {	
+			width: 50px;
+			height: 50px;			
+			background: url('svg/spinner.svg') center center no-repeat;
+			-webkit-animation: rotate 1s infinite linear; /* Saf5, Chrome */
+			-moz-animation: rotate 1s infinite linear; /* FF5+ */
+			-ms-animation: rotate 1s infinite linear; /* IE10pp3 */
+  			animation: rotate 1s infinite linear;						
+			display: inline-block;
+		}
+		
+		.loading .alternate {
+			display: none;
+		}
+		
+		/* Fallback for browsers without CSS animations */		
+		
+		.no-svg .loading {
+			background-image: none;
+		}
+
+		.no-svg .loading .alternate {
+			display: inline;
+		}
+
+				
+	  /* Animation for PNG spinner rotations */
+
+	  @-webkit-keyframes rotate {
+	    from {-webkit-transform:rotate(0deg);}
+	    to {-webkit-transform:rotate(360deg);}
+	  }
+
+	  @-moz-keyframes rotate {
+	    from {-moz-transform:rotate(0deg);}
+	    to {-moz-transform:rotate(360deg);}
+	  }
+
+	  @-ms-keyframes rotate {
+	    from {-ms-transform:rotate(0deg);}
+	    to {-ms-transform:rotate(360deg);}
+	  }		
+	
+	  /* Document style */
+	
+	    body { font: 12px/18px Helvetica, sans-serif; color: #444; margin: 50px; }
+	
+		h1 { margin: 0; line-height: 1.2em;}
+
+		.column {
+			width: 280px;
+			margin: 0 20px 20px 0;
+			float: left;
+		}	
+		
+	</style>
+	
+</head>
+<body>
+	
+	<div class="column">
+		
+	  <h1>SVG Spinner gracefully degradades into text</h1>  
+	
+	</div><!-- /.column -->
+	
+	
+	<div class="column">
+
+		<p class="loading">
+			 <span class="alternate"> 
+			   Loading…		
+			 </span>
+		</p>
+		
+	</div><!-- .column -->
+	
+	
+	<script src="http://www.modernizr.com/downloads/modernizr-latest.js"></script>
+
+</body>
+</html>

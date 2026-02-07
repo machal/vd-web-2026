@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="cs"> 
+
+  <head>
+    <meta charset="UTF-8">
+    
+    <title>SVG test</title>
+
+
+<!--
+		Zatím se zdá, že:
+		- Opera a FF nezmensi hezky náš SVG na pozadi
+		- SVGWEB v IE8- vektory na pozadí přes CSS neumí?
+		- IE9 nedela mouseover, kdyz je kurzor na plose SVG
+		- v IE8 je vykresleni vice elementu hrozne pomale
+-->
+
+
+	<!--[if gte IE 8]><script src="svg/svgweb/src/svg.js" data-path="svg/svgweb/src"></script><![endif]-->	
+	
+	<style type="text/css">
+	    
+	    body { font: 12px/18px Helvetica, sans-serif; color: #444; margin: 50px; }
+	
+		p, ul, ol, dl, h1, h2, h3, h4, h5, h6, fieldset, form, blockquote, table {
+		  padding-top: 0;
+		  padding-bottom: 0;
+		  margin-top: 0;
+		  margin-bottom: 9px;
+		}		
+		
+		.column {
+			width: 280px;
+			margin: 0 20px 20px 0;
+			float: left;
+		}
+	
+		.wrapper {
+			background-color: #666;
+			padding: 1em;
+			display: inline-block;
+			min-height: 50px;
+			min-width: 50px;
+			margin-bottom: 18px;
+			-webkit-border-radius: 10px; /* Saf3-4, iOS 1-3.2, Android <e;1.6 */
+			-moz-border-radius: 10px; /* FF1-3.6 */
+			border-radius: 10px; /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */			
+		}
+		
+		.wrapper.html object  {
+			opacity: 0.5;
+			-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; 
+			filter: alpha(opacity=50);
+		}
+		
+		.wrapper.html:hover object,
+		.wrapper.html:focus object,
+		.wrapper.html:active object {
+			opacity: 1;
+			-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; 
+			filter: alpha(opacity=100);		  
+		}
+		
+		
+		.wrapper.bg {
+			background-color: #ddd;
+			background: rgba(0,0,0,0.5) url('svg/ikona_35mm.svg') no-repeat center center;
+			-webkit-background-size: 50px auto; /* Saf3-4 */
+			-moz-background-size: 50px auto; /* FF3.6 */
+			background-size: 50px auto; /* Opera, IE9, Saf5, Chrome, FF4 */
+			-webkit-transition: all 0.1s ease-out;  /* Saf3.2+, Chrome */
+			-moz-transition: all 0.1s ease-out;  /* FF4+ */
+			-ms-transition: all 0.1s ease-out;  /* IE10? */
+			-o-transition: all 0.1s ease-out;  /* Opera 10.5+ */
+			transition: all 0.1s ease-out; 
+		}
+		
+		.wrapper.bg1 {
+			background-image: url('svg/svgweb/samples/svg-files/android.svg');
+		}		
+		
+		.wrapper.bg:hover,
+		.wrapper.bg:focus,
+		.wrapper.bg:active {
+		    background-color: rgba(0,0,0,1);
+			-webkit-background-size: 60px auto; /* Saf3-4 */
+			-moz-background-size: 60px auto; /* FF3.6 */
+			background-size: 60px auto; /* Opera, IE9, Saf5, Chrome, FF4 */		
+		}
+		
+		
+	</style>
+
+  </head>
+  
+  <body>
+  
+    <div id="container">
+      
+      <div id="content">
+	
+		<div class="column">
+
+	        <h1>
+				SVG test
+			</h1>
+		  
+		</div><!-- /.column -->
+		
+		
+		<div class="column">
+			
+			<h2>
+				Linkovaný z HTML 
+			</h2>
+
+			<p class="wrapper html">
+		      <!--[if !IE]>-->
+		        <object data="svg/svgweb/samples/svg-files/android.svg" type="image/svg+xml"
+		                width="50" height="50" id="svg_icon1"> <!--<![endif]-->
+		      <!--[if lt IE 9]>
+		        <object src="svg/svgweb/samples/svg-files/android.svg" classid="image/svg+xml"
+		                width="50" height="50" id="svg_icon1"> <![endif]-->
+		      <!--[if gte IE 9]>
+		        <object data="svg/svgweb/samples/svg-files/android.svg" type="image/svg+xml"
+		                width="50" height="50" id="svg_icon1"> <![endif]-->
+		        </object>
+			</p>
+			
+			
+			<h2>
+				V CSS na pozadí
+			</h2>
+
+			<p class="wrapper bg bg1">
+			</p>						
+			
+		</div><!-- .column -->
+		
+		
+		<div class="column">
+			
+
+
+			<h2>
+				Linkovaný z HTML
+			</h2>
+
+			<p class="wrapper html">
+		      <!--[if !IE]>-->
+		        <object data="svg/ikona_35mm.svg" type="image/svg+xml"
+		                width="50" height="50" id="svg_icon2"> <!--<![endif]-->
+		      <!--[if lt IE 9]>
+		        <object src="svg/ikona_35mm.svg" classid="image/svg+xml"
+		                width="50" height="50" id="svg_icon2"> <![endif]-->
+		      <!--[if gte IE 9]>
+		        <object data="svg/ikona_35mm.svg" type="image/svg+xml"
+		                width="50" height="50" id="svg_icon2"> <![endif]-->
+		        </object>
+			</p>
+
+			<h2>
+				V CSS na pozadí
+			</h2>
+
+			<p class="wrapper bg bg2">
+			</p>			
+			
+		</div><!-- .column -->
+
+
+      
+      </div><!-- /content -->      
+
+    </div><!-- /container -->
+    
+  </body>
+    
+</html>

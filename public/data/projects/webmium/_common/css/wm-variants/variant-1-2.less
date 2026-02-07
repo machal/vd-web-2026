@@ -1,0 +1,250 @@
+// Varianta 1-2
+// Navigace se stuzkou (Penzion)
+
+// --- Predefinujeme promenne ---
+// (Viz nase wm-variables.less a variables.less pro Bootstrap)
+
+// Typo
+@sansFontFamily: 					"Segoe UI", Segoe, Tahoma, Geneva, sans-serif;
+@baseFontSize: 						14px;
+@baseLineHeight: 					24px;
+
+// Barvy
+@wmBodyBg:									#f4dfc4;
+@textColor: 								#666;
+@linkColor: 								#c7b093;
+@linkColorHover:						#434343;
+@tableBackgroundAccent: 		#f3f3f3;
+@wmButtonColor:							#fff;
+@wmFooterColor:							#fff;
+@wmFooterBackground:        #555;
+
+// Textove logo
+@wmTextLogoColor:						#333333;
+@wmTextLogoAlign:           center;
+
+// Barvy v navigaci
+
+// Level 1
+@wmColorNav: 									#fff;
+@wmColorNavHover:    					#434343;
+@wmColorNavLevel1Bg: 					#434343;
+
+// Level 2
+@wmColorNavLevel2:            @wmColorNavHover;
+@wmColorNavLevel2Hover:       @wmColorNav;
+@wmColorNavLevel2Bg: 					#f4dfc4;
+
+// Level 3
+@wmColorNavLevel3:            @wmColorNav;
+@wmColorNavLevel3Hover:       @wmColorNav;
+@wmColorNavLevel3Bg: 					#434343;
+
+@wmColorSmallScreenNavBg:			#434343;
+@wmColorSmallScreenNavActive:	#f4dfc4;
+
+// Nadpisy
+@headingsFontWeight: 				normal;
+@wmH1FontSize:							32px;
+@wmH1Color:									@linkColor;
+@wmH2FontSize:							28px;
+@wmH2Color:									@linkColor;
+@wmH3FontSize:							22px;
+@wmH3Color:									#999;
+
+// Formulare
+@inputBorder:								#ccc;
+
+// --- Vlastni deklarace ---
+
+// - Zmeny v layoutu
+
+// Obsahovy blok může mít širší a nejširší variantu
+.wm-m-wider-content();
+
+// Logo na velkych screenech
+.header-logo() {
+  margin-top: 0;
+  position:relative;
+
+  #sw-logo {
+    position: absolute;
+    z-index: 50010; 
+    width: 50%; // Fixni sirka, automatickou s display:table/table-cell nezvladneme
+		left: 50%;
+		margin-left: -25%;
+    text-align: center;
+
+    h1 {
+      padding: 0 28px;
+      background-color: @wmBodyBg; // Fallback pro IE8
+      background-color: fade(@wmBodyBg, 90%);
+      top: 0;
+      max-width: 90%;
+    }
+  }
+}
+
+.container-fluid {
+  @media (min-width: @wmLargeDisplayStart) { .header-logo; }
+  .old-ie & { .header-logo; }
+}
+
+// Obrazek v hlavicce
+// TODO kandidat na refactor, kvuli wm-t-onecolumn
+.wm-t-onecolumn .wm-p-header-image {
+  @media (min-width: @wmLargeDisplayStart) { padding-bottom: 40%; }
+  .old-ie & { padding-bottom: 40%; }
+}
+
+// Stin na layoutu
+.content-container {
+  .box-shadow(0 0 43px rgba(0,0,0,.08));
+}
+
+// --- Prepinac jazyku ---
+
+// Posunuty doleva i na velkych displejich
+.wm-m-languages {	
+	margin-left: 980px/2 - 160px - 10px;
+}	
+
+// --- Vzhled navigace ---
+
+// Na displejich > 1024 zobrazujeme navigaci "vycuhujici" do stran
+
+// Lokalni parametry stuzky
+@wmRibbonHeight:            100px;
+@wmRibbonOuterWidth:        130px;
+@wmRibbonContainerOverflow: 24px;
+@wmRibbonDepth:             14px;
+
+// Ribbon : zalomene kraje navigace
+.stick-out-nav() {
+  position: relative;
+  padding-bottom: 22px;
+  padding-top: 22px;
+  padding-left: 2.5%; // puvodne padding-left: 7.5%;
+  padding-right: 2.5%; // puvodne padding-right: 7.5%;
+  margin-left: -2.5%;
+  margin-right: -2.5%;
+  width: 100% !important;  // TODO, puvodne width: 90% !important
+
+  @shadow: ~"inset -1px 0 0 rgba(0,0,0,.2), inset 1px 0 0 rgba(0,0,0,.2), inset 0 -1px 0 rgba(0,0,0,.2), inset 0 1px 0 rgba(0,0,0,.2)";
+  .box-shadow(@shadow);
+
+  &:before, &:after {
+    position: absolute;
+    content: '';
+    z-index: -1;
+    top: 100%;
+    left: 0;
+    border-style: solid;
+    border-width: @wmRibbonDepth 0 0 @wmRibbonContainerOverflow;
+    border-color: darken(@wmColorNavLevel1Bg, 15%) transparent transparent;
+  }
+  &:after {
+    left: auto;
+    right: 0;
+    border-style: solid;
+    border-width: @wmRibbonDepth @wmRibbonContainerOverflow 0 0;
+    border-color: darken(@wmColorNavLevel1Bg, 15%) transparent transparent;
+  }
+
+}
+
+.nav-container #sw-main-navigation {
+  background-color: @wmColorSmallScreenNavBg;
+  @media (min-width: 1025px) { .stick-out-nav; }
+  .old-ie & { .stick-out-nav; }
+}
+
+@media (min-width: 1025px) {
+
+  // Ribbon : presahujici stuzka
+  .nav-container {
+    position:relative;
+
+    &:before, &:after {
+      position:absolute;
+      z-index: -1;
+      left: -1 * @wmRibbonOuterWidth + @wmRibbonContainerOverflow;
+      top: @wmRibbonDepth + 4px; // 4px tvori 2x2 bordery
+      display: inline-block;
+      content: '';
+      width: @wmRibbonOuterWidth;
+      height: @wmRibbonHeight;
+
+//      background-color: @wmColorSmallScreenNavBg;
+      background-image: url('../images/nav-pattern.png');
+      background-repeat: no-repeat;
+      background-position: 0 0;
+
+      @shadow: ~"inset 0 -1px 0 rgba(0,0,0,.2), inset 0 1px 0 rgba(0,0,0,.2)";
+      .box-shadow(@shadow);
+    }
+
+    &:after {
+      right: -1 * @wmRibbonOuterWidth + @wmRibbonContainerOverflow;
+      left: auto;
+      background-position: 24px -100px;
+    }
+  }
+
+
+  // Ribbon : vyseknute kraje stuzky
+  .nav-inner {
+    position:relative;
+//
+//    @dimension: @wmRibbonHeight / 1.4142; // sqrt(2) je dostupne az v 1.4.0 beta
+//    @ribbonSidePosition: (-0.5 * @dimension) - @wmRibbonOuterWidth + @wmRibbonContainerOverflow;
+//
+//    &:before,
+//    &:after {
+//      position:absolute;
+//      content: '';
+//      top: 32px; // vypocitat dynamicky
+//      right: @ribbonSidePosition;
+//      width: @dimension;
+//      height: @dimension;
+//      background: @wmBodyBg;
+//      .rotate(45deg);
+//    }
+//
+//    &:after {
+//      left: @ribbonSidePosition;
+//      right: auto;
+//    }
+
+  }
+}
+
+// Ribbon : vzorek na pozadi
+@media (min-width: @wmLargeDisplayStart) {
+  .nav-container #sw-main-navigation {
+    background-color: @wmColorSmallScreenNavBg;
+    background-image: url('../images/nav-pattern.png');
+    background-repeat: repeat-x;
+    background-position: 0 -199px;
+
+    .nav-item > a {
+      background: transparent;
+    }
+  }
+}
+
+.old-ie .nav-container #sw-main-navigation {
+  background-color: @wmColorSmallScreenNavBg;
+  background-image: url('../images/nav-pattern.png');
+  background-repeat: repeat-x;
+
+  .nav-item > a {
+    background: transparent;
+  }
+}
+
+// Footer
+.wm-l-footer {
+  padding: @baseLineHeight/2 0;
+  .box-shadow(0 0 6px rgba(0,0,0,.15));
+}

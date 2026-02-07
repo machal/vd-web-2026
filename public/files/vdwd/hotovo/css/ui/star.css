@@ -1,0 +1,41 @@
+/*
+UI komponenta Hvezdicka pro hodnoceni
+=====================================
+*/
+
+.star {
+  fill: var(--color-beta);
+  stroke: var(--color-beta);
+  stroke-width: 1;
+}
+
+.star-half {
+  fill:url(#halfGradient);
+}
+
+.star-empty {
+  fill: none;
+}
+
+/* IE11 */
+
+.star-container {
+  display: inline-block;
+  position: relative;
+  width: 2rem;
+  height: 2rem;
+}
+
+.star {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* SVG zdroj musime schovat, jinak v prohlizeci dela diru nahore */
+
+.star-source {
+  position: absolute;
+  width: 0;
+  top: 0;
+}

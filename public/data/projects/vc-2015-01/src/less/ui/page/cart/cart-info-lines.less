@@ -1,0 +1,23 @@
+/*
+
+Košík: Informativní věty pod košíkem
+====================================
+
+Např. celková dostupnost, počet bonusových bodů…
+
+*/
+
+.cart-info-lines {
+  padding-left: @grid-gutter-width/2;
+  padding-right: @grid-gutter-width/2;
+  margin-bottom: 2*@line-height-computed;
+}
+
+.cart-info-line {
+  padding: @line-height-computed/2 @padding-base-horizontal 0;
+  border-top: 1px solid @border-color;
+
+  &:last-child {
+    border-bottom: 1px solid @border-color;
+  }
+}

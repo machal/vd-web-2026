@@ -1,0 +1,62 @@
+/*
+
+Filter
+======
+
+Filtrování produktů v kategorii.
+
+*/
+
+.vc-filter { .vc-clearfix; }
+
+.vc-filter-heading {
+  margin-top: @line-height-computed/2;
+  margin-bottom: @line-height-computed/3;
+  font-size: @vc-font-size-smaller;
+  font-weight: 500;
+  color: @headings-color;
+}
+
+.vc-filter-group {
+  float: left;
+  width: percentage(1/1);
+  padding-left: 0;
+  margin-bottom: @line-height-computed/2;
+
+  @media only screen and (min-width: 320px) {
+    width: percentage(1/2);
+
+    &:nth-child(2n) { padding-left: @padding-xs-horizontal; }
+  }
+
+  @media only screen and (min-width: 640px) {
+    width: percentage(1/4);
+
+    &:not(:first-child) { padding-left: @padding-xs-horizontal; }
+  }
+
+  @media only screen and (min-width: @vc-layout-start) {
+    width: percentage(1/2);
+
+    &:not(:first-child) { padding-left: 0; }
+
+    &:nth-child(2n) { padding-left: @padding-small-horizontal; }
+  }
+
+  @media only screen and (min-width: @vc-layout-full-start) {
+    width: percentage(1/4);
+
+    &:not(:first-child) { padding-left: @padding-small-horizontal; }
+  }
+
+  .form-control {
+    font-size: @vc-font-size-smaller;
+    padding-left: @padding-xs-horizontal;
+    padding-right: 0;
+    // aby se vešlo víc písmenek
+    letter-spacing: -0.01em;
+  }
+
+  // a reset zpět
+  option { letter-spacing: 0; }
+}

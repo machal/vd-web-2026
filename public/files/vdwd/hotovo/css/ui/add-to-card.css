@@ -1,0 +1,67 @@
+/*
+UI komponenta pro pridani zbozi do kosiku
+=========================================
+*/
+
+/* Pridavaci tlacitko ma layout vsude */
+
+.add-to-card-form {
+  display: flex;
+}
+
+
+/* Male displeje: vse pod sebou a centrovano */
+
+@media only screen and (max-width: 29.99em) {
+  .add-to-card-price {
+    text-align: center;
+    margin-bottom: .75rem;
+  }
+
+  .add-to-card-form {
+    justify-content: center;
+  }
+
+  .add-to-card-text {
+    text-align: center;
+  }
+}
+
+/*
+Layout:
+|   .add-to-card-price   |   .add-to-card-form   |
+|   .add-to-card-text    |                       |
+*/
+
+@media only screen and (min-width: 30em) {
+
+  .add-to-card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .add-to-card-price {
+    flex: 1;
+    min-width: 8rem;
+  }
+
+  .add-to-card-form {
+    flex: 2;
+    min-width: 12rem;
+    justify-content: flex-end;
+  }
+
+  .add-to-card-text {
+    flex: none;
+    width: 100%;
+  }
+
+  .add-to-card-form {
+
+  }
+
+}
+
+
+

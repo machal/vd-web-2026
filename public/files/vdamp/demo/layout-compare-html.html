@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Layout comparison: HTML</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <style>
+      body {
+        margin: 0;
+        padding: 0 20px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+      }
+
+      .container {
+        padding: 10px;
+        background:lightgrey;
+      }
+
+      .container-in img {
+        background: darkgrey;
+      }
+
+      .container-in--fixed img {
+        width: 160px;
+        height: 90px;
+      }
+
+      .container-in--responsive img {
+        width: 100%;
+        height: auto;
+      }
+
+      img {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>HTML Layout</h1>
+
+    <h2>fixed</h2>
+
+    <div class="container">
+      <div class="container-in container-in--fixed">
+        <img src="img/placeholder/placeholder-green-16-9.jpg"
+            width="160"
+            height="90"
+            alt="">
+       </div>
+    </div>
+
+    <h2>responsive</h2>
+
+    <div class="container">
+      <div class="container-in container-in--responsive">
+        <img src="img/placeholder/placeholder-green-16-9.jpg"
+            width="160"
+            height="90"
+            alt="">
+      </div>
+    </div>
+
+    <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit</h2>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas quisquam autem, tempore veniam ullam modi nam maxime possimus, incidunt dolore libero iure sunt consectetur repellat iusto velit rerum voluptate. Voluptas.</p>
+
+  </body>
+</html>

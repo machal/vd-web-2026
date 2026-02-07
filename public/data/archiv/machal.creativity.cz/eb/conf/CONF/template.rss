@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<rss version="0.92">
+	<channel>
+		<title>machal.creativity.cz</title>
+		<link>http://machal.creativity.cz/</link>
+		<description>Martin Michálek - Weblog o webdesignu</description>
+		<lastBuildDate><!-- «BUILD_DATE_TIME» --></lastBuildDate> 
+		<docs>http://backend.userland.com/rss092</docs>
+		<managingEditor>machal@creativity.cz</managingEditor>
+		<webMaster>machal@creativity.cz</webMaster>
+		<language>cs</language>
+<!-- «ITEMS» -->
+	</channel>
+</rss>

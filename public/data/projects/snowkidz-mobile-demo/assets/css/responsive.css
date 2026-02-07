@@ -1,0 +1,138 @@
+/* Responsive variant
+   ============================================== 
+   CSS author: Martin Michalek, michalek@shortcat.cz
+*/
+
+
+/* ================================================================================
+   1) Layout
+*/
+
+#container {
+  width: auto;
+  max-width: 940px;
+}
+
+/* --- Hlavicka --- */
+
+.snowpark_navigation_top .nav {
+  width: 100%;
+}
+
+.snowpark_navigation_top .nav li {
+  width: 14.285714286%; /* 100/7 polozek */
+}
+
+.snowpark_navigation_top .nav li .item,
+.snowpark_navigation_top .nav ul > li:first-child .item {
+  width: 100%;
+}
+
+/* --- Hlavni nadpis atd. --- */
+
+.snowpark_main {
+  height: auto;
+  padding-bottom: 18px;
+}
+
+.snowpark_head {
+  width: 61.70212766%;  /* 580/940*100 */
+}
+
+.snowpark_head .head {
+  margin: 5.1724137931% 0 .1% 5.1724137931%; /*  (30px 0 2px 30px) / 580 * 100 */  
+}
+
+.snowpark_head .tagline {
+  margin: 0 0 0 5.1724137931%; /*  (0 0 0 30px) / 580 * 100 */  
+}
+
+.snowpark_services {
+  width: 36.170212766%;  /* 340/940*100 */  
+}
+
+.snowpark_services .head {
+  margin: 6.7647058824% 0 0.8823529412% 0; /*  (23px 0 3px 0) / 340 * 100 */  
+}
+
+.snowpark_info .weather {
+  width: 37.5%;  /* 360/960*100 */  
+}
+
+.snowpark_info .actual {
+  width: 61.70212766%;  /* 580/940*100 */  
+}
+
+
+
+/* --- Vybaveni --- */
+
+.snowpark_equipment_list_container {
+  overflow: hidden;
+  width: 100%;
+}
+
+.snowpark_equipment_list {
+  width: 100.5%;
+}
+
+.snowpark_equipment_list .item,
+.snowpark_equipment_list > .item:first-child {
+  width: 20%; /* 100/5 polozek */
+  -webkit-box-sizing: border-box; /* <=iOS4, <= Android  2.3 */
+   -moz-box-sizing: border-box; /* FF1+ */
+   box-sizing: border-box; /* Chrome, IE8, Opera, Safari 5.1*/
+}
+
+.snowpark_equipment_list .item .name {
+  position: absolute;
+  bottom: 16px;
+  left: 10.106382979%; /* 19/188*100 */ 
+  padding: 6px 0; 
+  text-align: center;
+  width: 77.659574468%; /* 146/188*100 */  
+}
+
+
+/* --- Kontakty a instruktori --- */
+
+.snowpark_contacts_and_insctructors {
+  background-size: 33.29787234% auto; /* 313/940*100 */ 
+}
+
+.snowpark_contacts {
+  width: 33.191489362%; /* 312/940*100 */  
+}
+
+.snowpark_contacts .map img {
+  width: 100%;
+  height: auto;
+}
+
+.snowpark_instructors {
+  width: 66.70212766%;  /* 627/940*100 */ 
+}
+
+/* ---  Partneri a FB --- */
+
+.snowpark_partners_and_motivator {
+  background-size: 100% auto; /* 313/940*100 */ 
+}
+
+.snowpark_partners {
+  width: 66.70212766%;  /* 627/940*100 */ 
+}
+
+.snowpark_partners .content {
+  padding-right: 2.4232633279%; /* 15/619*100 */
+  margin-right: 1%;
+}
+
+.snowpark_motivator {
+  float: right;
+  width: 32.085106383%; /* 311/940*100 */
+  margin: 0;
+  -webkit-box-sizing: border-box; /* <=iOS4, <= Android  2.3 */
+   -moz-box-sizing: border-box; /* FF1+ */
+   box-sizing: border-box; /* Chrome, IE8, Opera, Safari 5.1*/
+}

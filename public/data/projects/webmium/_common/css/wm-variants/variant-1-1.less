@@ -1,0 +1,94 @@
+// Varianta 1-1
+// Navigace "vycuhujici" do stran (Salon Haircut)
+
+// Typo
+@sansFontFamily: 					"Segoe UI", Segoe, Tahoma, Geneva, sans-serif;
+@baseFontSize: 						14px;
+@baseLineHeight: 					24px;
+
+// Barvy
+@wmBodyBg:									~"#eee";
+@textColor: 								#666;
+@linkColor: 								#c7b093;
+@linkColorHover:						#434343;
+@tableBackgroundAccent: 		#f3f3f3;
+@wmButtonColor:							#fff;
+@wmFooterColor:							#666;
+@wmFooterBackground:        transparent;
+
+// Navigace
+@wmColorNavLevel1Bg: 					@linkColor;
+@wmColorNavLevel2Bg: 					#666;
+@wmColorNavLevel3Bg: 					#999999;
+@wmColorSmallScreenNavBg:			#555;
+@wmColorSmallScreenNavActive:	#999;
+@wmNavLevel1FontSize: 				16px;
+@wmNavLevel2FontSize: 				13px;
+@wmNavLevel3FontSize: 				13px;
+
+// Nadpisy
+@headingsFontWeight: 				normal;
+@wmH1FontSize:							32px;
+@wmH1Color:									@linkColor;
+@wmH2FontSize:							28px;
+@wmH2Color:									@linkColor;
+@wmH3FontSize:							22px;
+@wmH3Color:									#999;
+
+// Formulare
+@inputBorder:								#ccc;
+
+
+// Obsahovy blok může mít širší a nejširší variantu
+.wm-m-wider-content();
+
+// --- Vzhled navigace ---
+// Na displejich > 1024 zobrazujeme navigaci "vycuhujici" do stran
+
+// Mixin: Navigace vycuhujici do stran
+// Automaticky i pro vsechna IE8, uzivatele s IE8 a 1024 a mene jsou cca 2-3% celkove navstevnosti
+.stick-out-nav() {
+	background: @wmColorNavLevel1Bg;
+	position: relative;
+	padding-left: 7.5%;
+	padding-right: 7.5%;
+	margin-left: -2.5%;
+	margin-right: -2.5%;
+	width: 90% !important;	// TODO
+
+	// Trojuhelnicek pred
+	&:before, &:after {
+		z-index: 90; // Schovame pod .header-image
+		position: absolute;
+		top: -20px;
+		left: 0;
+		display: block;
+		content: '';
+		width: 0;
+		height: 0;
+
+		border-top: 0 dotted transparent; // dotted zajisti lepsi vykreslovani ve FF
+		border-bottom: 20px solid darken(@wmColorNavLevel1Bg, 15%);
+		border-left: 25px solid transparent;
+	}
+
+	// Trojuhelnicek za
+	&:after {
+		left: auto;
+		right: 0;
+
+		border-top: 0 dotted transparent; // dotted zajisti lepsi vykreslovani ve FF
+		border-bottom: 20px solid darken(@wmColorNavLevel1Bg, 15%);
+		border-right: 25px solid transparent;
+	}
+}
+
+.nav-container {
+	@media (min-width: 1025px) { .stick-out-nav; }
+	.old-ie & { .stick-out-nav; }
+}
+
+// Header image musi prekryt ty trojuhelnicky
+.wm-p-header-image {
+	z-index: 50005;
+}

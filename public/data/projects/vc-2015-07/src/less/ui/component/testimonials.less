@@ -1,0 +1,141 @@
+/*
+
+Ohlasy zákazníků
+================
+
+V kategorii produktů nebo na homepage dole.
+
+*/
+
+
+// Ohlasy
+// ------
+
+.vc-testimonials {
+  margin-top: @line-height-computed;
+  margin-bottom: -@vc-foot-top-delta;
+  padding: @line-height-computed 0 @line-height-computed*2;
+
+  min-height: 300px;
+  border-top: 1px solid #f2f2f2;
+  background-color: @vc-bg-lightest;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+
+  // pozadi testimonialu
+
+  &:after{
+    // lokální proměnná
+    @vc-width: 1330px;
+
+    content:" ";
+    display: block;
+    width: @vc-width;
+    height: 740px;
+
+    position: absolute;
+    top: -120px;
+
+    // vycentrovat
+    left: 50%;
+    margin-left: -@vc-width/2;
+
+    // pod obsah
+    z-index: -1;
+
+    // natočit
+    transform: rotate(-15deg);
+
+    // zprůhlednit
+    opacity: 0.04;
+
+    // zešedit
+    filter: grayscale(100%);
+
+    background-image: ~"url('/dist/content-img/partners/heureka-color.svg'), url('/dist/content-img/partners/heureka-color.svg'), url('/dist/content-img/partners/heureka-color.svg')"; //todo: inline / sprite svg?
+    background-repeat: ~"no-repeat, no-repeat, no-repeat";
+    background-position: ~"0 0, 580px 40px, 100% 100%";
+    background-size: ~"460px, 300px, 470px";
+  }
+}
+
+// radek layoutu
+.vc-testimonials-row { .vc-make-row(); }
+
+// sloupce layoutu
+.vc-testimonials-column {
+  .vc-layout-col-base();
+  .vc-layout-col(12);
+
+  margin-bottom: @line-height-computed*2;
+
+  // zobrazeni textu i recenzi na radek
+  @media only screen and (min-width: 1024px) { .vc-layout-col(3); }
+}
+
+.vc-testimonials-column-content {
+  // zobrazeni dvou recenzi na radek
+  @media only screen and (min-width: 450px) {
+    .vc-layout-col(6);
+
+    &:last-child {
+      display: none;
+    }
+  }
+
+  // zobrazeni recenzi na radek
+  @media only screen and (min-width: @vc-layout-start) {
+    .vc-layout-col(4);
+
+    &:last-child {
+      display: block;
+    }
+  }
+
+  // zobrazeni textu i recenzi na radek
+  @media only screen and (min-width: 1024px) { .vc-layout-col(3); }
+}
+
+.vc-testimonials-heading {
+  margin-top: 0;
+  color: #666666;
+  font-size: 30px;
+}
+
+.vc-testimonials-desc {
+  color: #666666;
+  font-size: 18px;
+}
+
+.vc-testimonials-link {
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 1.3;
+
+  > a {
+    text-decoration: none;
+
+    &:before {
+      content: "\2192";
+      display: inline-block;
+      margin-right: @padding-xs-horizontal;
+      vertical-align: middle;
+
+      @media only screen and (min-width: @vc-layout-start) {
+        display: block;
+        float: left;
+      }
+    }
+
+    > span {
+      display: inline-block;
+      vertical-align: middle;
+
+      @media only screen and (min-width: @vc-layout-start) {
+        display: block;
+        overflow: hidden;
+      }
+    }
+  }
+}

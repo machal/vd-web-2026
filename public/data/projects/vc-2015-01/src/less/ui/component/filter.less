@@ -1,0 +1,52 @@
+/*
+
+Filter
+======
+
+Filtrování produktů v kategorii.
+
+*/
+
+// Base
+
+.filter {
+  input, select, option {
+    font-size: @font-size-small;
+  }
+}
+
+// Layout
+
+.filter {
+  .clearfix;
+  border-bottom: 1px solid #ddd;
+  padding: @padding-large-vertical 0;
+  margin-bottom: 2*@line-height-computed;
+}
+
+// Polozka
+
+.filter-item {
+  float: left;
+  max-width: 150px;
+  margin-bottom: @padding-large-vertical;
+  padding-right: @padding-large-horizontal;
+
+  &:last-child {
+    padding-right: 0;
+  }
+
+  .filter-2-items & {
+      width: percentage(1/2);
+  }
+
+  .filter-3-items & {
+      width: percentage(1/3);
+  }
+
+  .filter-3-items & {
+      width: percentage(1/3);
+  }
+}
+
+

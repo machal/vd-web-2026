@@ -1,0 +1,1753 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700|Yeseva+One&subset=latin-ext");
+
+/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Correct the line height in all browsers.
+ * 3. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  line-height: 1.15;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 3 */
+  -webkit-text-size-adjust: 100%;
+  /* 3 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+figcaption,
+figure,
+main {
+  /* 1 */
+  display: block;
+}
+
+/**
+ * Add the correct margin in IE 8.
+ */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */
+}
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+a:active,
+a:hover {
+  outline-width: 0;
+}
+
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+  font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+video {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+  border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+html [type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+  /* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-cancel-button,
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+details,
+menu {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Scripting
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+canvas {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in IE.
+ */
+template {
+  display: none;
+}
+
+/* Hidden
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10-.
+ */
+[hidden] {
+  display: none;
+}
+
+/*
+Blanka.css: Seting basic document typography
+============================================
+
+- document minimal paddings
+- block elements with bottom margins only
+- same left margins for ul/ol, dd, blockquote
+
+*/
+/*
+Document minimal paddings
+*/
+body {
+  padding: 1.5rem;
+}
+
+/*
+Block elements with bottom margins only
+---------------------------------------
+*/
+p, ul, ol, dl, table,
+blockquote, pre, figure,
+hr {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+ul ul,
+ul ol,
+ol ul,
+ol ol {
+  margin-bottom: 0;
+}
+
+/*
+Same left margins for ul/ol, dd, blockquote
+-------------------------------------------
+*/
+ul,
+ol,
+dd {
+  padding-left: 1.75rem;
+}
+
+dd {
+  margin-left: 0;
+}
+
+/*
+Blockquote
+----------
+*/
+blockquote {
+  border: 0;
+  padding-left: 1.75rem;
+  margin-left: 0;
+  font-style: italic;
+}
+
+/*
+Figure/Figcaption
+-----------------
+*/
+figure {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+figure > table,
+figure > img,
+figure > picture {
+  margin-bottom: 0;
+}
+
+/*
+Etc.
+----
+*/
+fieldset {
+  border: 0;
+}
+
+legend {
+  padding: 0 0.5rem;
+}
+
+hr {
+  border-style: solid;
+  opacity: 0.25;
+}
+
+/*
+Blanka Helpers: Subatomic CSS helpers
+=====================================
+
+- Display
+- Spacing: margins and paddings
+- Widths and heights
+
+*/
+/* Display */
+.d-b {
+  display: block;
+}
+
+.d-i {
+  display: inline;
+}
+
+.d-ib {
+  display: inline-block;
+}
+
+/* Screen reader only */
+.sr-only {
+  /*https://developer.yahoo.com/blogs/ydn/clip-hidden-content-better-accessibility-53456.html*/
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+body:hover .sr-only a, body:hover .sr-only input, body:hover .sr-only button {
+  display: none !important;
+}
+
+/* Responsive images */
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Margins */
+.m-x-a {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.mr-0 {
+  margin-right: 0;
+}
+
+.ml-0 {
+  margin-left: 0;
+}
+
+.m-0-25 {
+  margin: 0.25rem;
+}
+
+.mt-0-25 {
+  margin-top: 0.25rem;
+}
+
+.mb-0-25 {
+  margin-bottom: 0.25rem;
+}
+
+.mr-0-25 {
+  margin-right: 0.25rem;
+}
+
+.ml-0-25 {
+  margin-left: 0.25rem;
+}
+
+.m-0-5 {
+  margin: 0.5rem;
+}
+
+.mt-0-5 {
+  margin-top: 0.5rem;
+}
+
+.mb-0-5 {
+  margin-bottom: 0.5rem;
+}
+
+.mr-0-5 {
+  margin-right: 0.5rem;
+}
+
+.ml-0-5 {
+  margin-left: 0.5rem;
+}
+
+.m-1 {
+  margin: 1rem;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.mr-1 {
+  margin-right: 1rem;
+}
+
+.ml-1 {
+  margin-left: 1rem;
+}
+
+.m-1-5 {
+  margin: 1.5rem;
+}
+
+.mt-1-5 {
+  margin-top: 1.5rem;
+}
+
+.mb-1-5 {
+  margin-bottom: 1.5rem;
+}
+
+.mr-1-5 {
+  margin-right: 1.5rem;
+}
+
+.ml-1-5 {
+  margin-left: 1.5rem;
+}
+
+.m-2 {
+  margin: 2rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.mr-2 {
+  margin-right: 2rem;
+}
+
+.ml-2 {
+  margin-left: 2rem;
+}
+
+.m-3 {
+  margin: 3rem;
+}
+
+.mt-3 {
+  margin-top: 3rem;
+}
+
+.mb-3 {
+  margin-bottom: 3rem;
+}
+
+.mr-3 {
+  margin-right: 3rem;
+}
+
+.ml-3 {
+  margin-left: 3rem;
+}
+
+/* Paddings */
+.p-0 {
+  padding: 0;
+}
+
+.pt-0 {
+  padding-top: 0;
+}
+
+.pb-0 {
+  padding-bottom: 0;
+}
+
+.pr-0 {
+  padding-right: 0;
+}
+
+.pl-0 {
+  padding-left: 0;
+}
+
+.p-0-5 {
+  padding: 0.5rem;
+}
+
+.pt-0-5 {
+  padding-top: 0.5rem;
+}
+
+.pb-0-5 {
+  padding-bottom: 0.5rem;
+}
+
+.pr-0-5 {
+  padding-right: 0.5rem;
+}
+
+.pl-0-5 {
+  padding-left: 0.5rem;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.pt-1 {
+  padding-top: 1rem;
+}
+
+.pb-1 {
+  padding-bottom: 1rem;
+}
+
+.pr-1 {
+  padding-right: 1rem;
+}
+
+.pl-1 {
+  padding-left: 1rem;
+}
+
+.p-1-5 {
+  padding: 1.5rem;
+}
+
+.pt-1-5 {
+  padding-top: 1.5rem;
+}
+
+.pb-1-5 {
+  padding-bottom: 1.5rem;
+}
+
+.pr-1-5 {
+  padding-right: 1.5rem;
+}
+
+.pl-1-5 {
+  padding-left: 1.5rem;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.pt-2 {
+  padding-top: 2rem;
+}
+
+.pb-2 {
+  padding-bottom: 2rem;
+}
+
+.pr-2 {
+  padding-right: 2rem;
+}
+
+.pl-2 {
+  padding-left: 2rem;
+}
+
+.p-3 {
+  padding: 3rem;
+}
+
+.pt-3 {
+  padding-top: 3rem;
+}
+
+.pb-3 {
+  padding-bottom: 3rem;
+}
+
+.pr-3 {
+  padding-right: 3rem;
+}
+
+.pl-3 {
+  padding-left: 3rem;
+}
+
+/* Borders */
+.b-0 {
+  border: 0;
+}
+
+/* Text Align */
+.ta-r {
+  text-align: right;
+}
+
+.ta-l {
+  text-align: left;
+}
+
+.ta-c {
+  text-align: center;
+}
+
+/* Print */
+@media print {
+  .hidden-print {
+    display: none;
+  }
+}
+
+.print-only {
+  display: none;
+}
+@media print {
+  .print-only {
+    display: block;
+  }
+}
+
+/* Widths */
+.w-1 {
+  width: 1em;
+}
+
+.w-2 {
+  width: 2em;
+}
+
+.w-3 {
+  width: 3em;
+}
+
+.w-5 {
+  width: 5em;
+}
+
+.w-10 {
+  width: 10em;
+}
+
+/* Maximum widths */
+.maxw-20em {
+  max-width: 20em;
+}
+
+.maxw-30em {
+  max-width: 30em;
+}
+
+.maxw-40em {
+  max-width: 40em;
+}
+
+.maxw-25perc {
+  max-width: 25%;
+}
+
+.maxw-33perc {
+  max-width: 33%;
+}
+
+.maxw-50perc {
+  max-width: 50%;
+}
+
+/* etc. */
+.ellipsis {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+:root {
+  /*
+  Barva textu
+  -----------
+  */
+  --color-text: #063747;
+  /*
+  50% mix s bilou: potlaceny text
+  */
+  --color-text-50: #839DA6;
+  /*
+  Sekundarni barva textu: nadpisy tabulek atd.
+  */
+  --color-text-secondary: #118ab2;
+  /*
+  Primarni barva
+  --------------
+  Vyzvy k akci atd.
+  */
+  --color-alpha: #EF476F;
+  /*
+  Sekundarni barva
+  ----------------
+  Doplnkove prvky druhe urovne
+  */
+  --color-beta: #06D6A0;
+  /*
+  Sedive odstiny
+  --------------
+  Neutralni barvy.
+  */
+  --color-grey-d: #ddd;
+  --color-grey-e: #eee;
+  /*
+  Bila
+  ----
+  */
+  --color-white: #fff;
+  /*
+  Vychozi zakulaceni rohu
+  -----------------------
+  */
+  --border-radius: 0.25em;
+  /*
+  Rozmery formularovych prvku
+  ---------------------------
+  */
+  --input-padding: 0.5em;
+  --input-border: 2px;
+}
+
+body,
+input,
+select,
+textarea {
+  color: var(--color-text);
+}
+
+a {
+  color: var(--color-text);
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: var(--color-alpha);
+}
+
+/*
+Helpery pro barvy
+-----------------
+*/
+.c-alpha {
+  color: var(--color-alpha);
+}
+
+.c-beta {
+  color: var(--color-beta);
+}
+
+/*
+Stupnovani velikosti v pomeru 1,25
+----------------------------------
+
+http://www.modularscale.com/?1&rem&1.25&web&text
+*/
+h1,
+.h1 {
+  font-size: 2.441rem;
+}
+
+h2,
+.h2 {
+  font-size: 1.953rem;
+}
+
+h3,
+.h3 {
+  font-size: 1.563rem;
+}
+
+h4,
+.h4 {
+  font-size: 1.25rem;
+}
+
+h6,
+h5,
+.h5,
+.h6 {
+  font-size: 1rem;
+}
+
+small,
+.text-small {
+  font-size: 0.8rem;
+  line-height: 1.3;
+}
+
+/*
+Vyska radku na ruzne velkych breakpointech
+-------------------------------------------
+*/
+html {
+  font-size: 1.125em;
+  line-height: 1.5;
+}
+
+@media only screen and (min-width: 20em) and (max-width: 40em) {
+  html {
+    line-height: 1.45;
+    font-size: 1em;
+  }
+}
+@media only screen and (max-width: 19.9em) {
+  html {
+    line-height: 1.4;
+    font-size: 1em;
+  }
+}
+/*
+Typografie na miru pismu
+========================
+*/
+body,
+input,
+select,
+textarea,
+button {
+  font-family: "PT Sans", sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: "Yeseva One", cursive;
+  line-height: 1.2;
+}
+
+/*
+Tabulky
+=======
+*/
+/*
+TODO radeji komponenta .table
+*/
+table {
+  margin-bottom: 1.25em;
+  width: 100%;
+  border-top: 1px solid lightgrey;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  text-align: left;
+  padding: 0.5em 0.25em;
+  border-bottom: 1px solid lightgrey;
+}
+
+table caption {
+  font-weight: bold;
+  text-align: center;
+  padding: 0.5em 0;
+}
+
+/*
+Zakladni stylovani pro formulare
+================================
+
+TODO jednoradkove prvky a tlacitka nejsou na svisly stred.
+
+*/
+input,
+select,
+textarea {
+  display: inline-block;
+  padding: var(--input-padding);
+  background: transparent;
+  border: var(--input-border) solid var(--color-text);
+  border-radius: var(--border-radius);
+}
+
+input::-moz-focus-inner,
+select::-moz-focus-inner,
+textarea::-moz-focus-inner {
+  padding: 0;
+}
+
+/*
+Nastaveni vlastnosti dokumentu
+==============================
+
+1) Maximalni sirka typograficke radky: cca 66 znaku.
+*/
+.container {
+  max-width: 30em;
+  /* 1) */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*
+Element jen pro zobrazeni pri ovladani klavesnici atd.
+------------------------------------------------------
+*/
+.focus-only {
+  position: absolute;
+  top: 0;
+  right: 100%;
+}
+
+.focus-only:focus {
+  right: auto;
+}
+
+/*
+Zastupne plochy pro obrazky
+---------------------------
+*/
+.temp-images {
+  position: relative;
+  background: #e8e8e8;
+  padding-bottom: 75%;
+}
+
+.temp-images i {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*
+Ostatni
+-------
+*/
+.suppressed {
+  color: var(--color-text-50);
+}
+
+/*
+Pruzne vkladane objekty
+=======================
+
+<iframe>, <video>… - zachovavame pomer stran
+
+1) Udava pomer stran, vychozi 16:9
+*/
+.rwd-object {
+  position: relative;
+  height: 0;
+  padding-bottom: 56.25%;
+  /* 1) */
+}
+
+.rwd-object-in {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/*
+Tabulky se skrolovanim do strany
+=================================
+*/
+.rwd-table {
+  overflow-x: auto;
+}
+
+/*
+UI komponenta pro pridani zbozi do kosiku
+=========================================
+*/
+/* Pridavaci tlacitko ma layout vsude */
+.add-to-card-form {
+  display: flex;
+}
+
+/* Male displeje: vse pod sebou a centrovano */
+@media only screen and (max-width: 29.99em) {
+  .add-to-card-price {
+    text-align: center;
+    margin-bottom: 0.75rem;
+  }
+
+  .add-to-card-form {
+    justify-content: center;
+  }
+
+  .add-to-card-text {
+    text-align: center;
+  }
+}
+/*
+Layout:
+|   .add-to-card-price   |   .add-to-card-form   |
+|   .add-to-card-text    |                       |
+*/
+@media only screen and (min-width: 30em) {
+  .add-to-card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .add-to-card-price {
+    flex: 1;
+    min-width: 8rem;
+  }
+
+  .add-to-card-form {
+    flex: 2;
+    min-width: 12rem;
+    justify-content: flex-end;
+  }
+
+  .add-to-card-text {
+    flex: none;
+    width: 100%;
+  }
+}
+/*
+UI komponenta Box
+=================
+*/
+.box {
+  background: var(--color-grey-e);
+  border-radius: var(--border-radius);
+}
+
+/*
+UI komponenta Badge
+===================
+*/
+.badge {
+  position: absolute;
+  top: -0.5em;
+  right: -0.5em;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8em;
+  width: 1.5em;
+  height: 1.5em;
+  padding: 0.25em;
+  border-radius: 50%;
+  color: var(--color-white);
+  background: var(--color-beta);
+}
+
+.badge-container {
+  position: relative;
+}
+
+/*
+UI komponenta Tlacitko
+======================
+*/
+/*
+Zakladni vzhled
+---------------
+Stejne jako <input> a <button>
+*/
+.button {
+  display: inline-block;
+  padding: var(--input-padding);
+  background: transparent;
+  color: var(--color-text);
+  border: var(--input-border) solid var(--color-text);
+  border-radius: var(--border-radius);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  border-color: var(--color-alpha);
+  cursor: pointer;
+}
+
+/*
+Primarni vyzva k akci
+---------------------
+*/
+.button-primary {
+  background: var(--color-alpha);
+  color: white;
+  border: none;
+  padding: calc( var(--input-padding) + var(--input-border) ) calc( 2 * var(--input-padding) );
+}
+
+/*
+Card
+====
+
+Karta do seznamu polozek
+*/
+@media only screen and (min-width: 22.5em) {
+  .cards {
+    display: flex;
+  }
+}
+@media only screen and (min-width: 22.5em) and (max-width: 47.99em) {
+  .cards {
+    flex-wrap: wrap;
+  }
+
+  .card {
+    flex: 1 1 calc(50% - 2em);
+  }
+}
+@media only screen and (min-width: 48em) {
+  .card {
+    flex: 1 1 calc(25% - 2em);
+  }
+}
+/*
+Fotogalerie
+===========
+*/
+.gallery-pane,
+.gallery-thumbs {
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.gallery-thumbs {
+  height: calc(2.5em + 5vw);
+}
+
+.gallery-thumbs img {
+  height: 100%;
+}
+
+/*
+UI komponenta Header
+====================
+*/
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+  padding: 0 1.5rem;
+}
+
+.header-logo {
+  margin-bottom: 0;
+}
+
+.header-nav {
+  /* Vzdy vpravo: */
+  margin-left: auto;
+}
+
+/* Male displeje: serazeno pod sebou */
+@media only screen and (max-width: 29em) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-logo {
+    margin-bottom: 1rem;
+  }
+
+  .header-nav {
+    margin-left: 0;
+  }
+}
+/*
+Logo ForestKid.cz
+=================
+*/
+/* Stejne vysoke jako ikony vedle: */
+.logo {
+  height: 48px;
+}
+
+.logo-svg {
+  height: 48px;
+}
+
+/*
+UI komponenta pro seznam polozek
+================================
+*/
+.list {
+  list-style-type: none;
+  padding-left: 0;
+  border-top: 1px solid var(--color-text-50);
+}
+
+.list-item {
+  display: block;
+  padding: var(--input-padding);
+  border-bottom: 1px solid var(--color-text-50);
+}
+
+/*
+Media Object
+============
+
+Fotka nebo video s textem
+
+*/
+.media-object {
+  font-size: 0.8em;
+}
+
+@media only screen and (min-width: 22.5em) {
+  .media-object {
+    display: flex;
+  }
+
+  .media-object-media {
+    flex: 1;
+    margin-right: 1em;
+  }
+
+  .media-object-text {
+    flex: 2;
+  }
+}
+/*
+UI komponenta Navigace
+======================
+*/
+.nav-list {
+  display: flex;
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.nav-list-item {
+  margin-left: 0.5em;
+}
+
+.nav-list-item:first-child {
+  margin-left: 0;
+}
+
+.nav-anchor {
+  display: block;
+  height: 48px;
+}
+
+/*
+UI komponenta Hvezdicka pro hodnoceni
+=====================================
+*/
+.star {
+  fill: var(--color-beta);
+  stroke: var(--color-beta);
+  stroke-width: 1;
+}
+
+.star-half {
+  fill: url(#halfGradient);
+}
+
+.star-empty {
+  fill: none;
+}
+
+/* IE11 */
+.star-container {
+  display: inline-block;
+  position: relative;
+  width: 2rem;
+  height: 2rem;
+}
+
+.star {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* SVG zdroj musime schovat, jinak v prohlizeci dela diru nahore */
+.star-source {
+  position: absolute;
+  width: 0;
+  top: 0;
+}
+
+/*
+UI komponenta Tlacitko s plusem a minuse
+========================================
+
+| .stepper-plus | .stepper-input | .stepper-minus |
+*/
+.stepper {
+  display: flex;
+}
+
+.stepper-input {
+  border-radius: 0;
+  border-left: none;
+  border-right: none;
+}
+
+.stepper-plus,
+.stepper-minus {
+  color: var(--text-color);
+  background: var(--color-grey-e);
+}
+
+.stepper-plus:hover,
+.stepper-minus:hover {
+  border-color: var(--text-color);
+  background: var(--color-grey-d);
+}
+
+.stepper-plus {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-left: none;
+}
+
+.stepper-minus {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right: none;
+}
+
+/*
+Varianty produktu v tabulce
+============================
+*/
+/*
+Zakladni stylovani
+------------------
+*/
+.variants {
+  font-size: 0.8em;
+}
+
+.variants-table table {
+  margin-bottom: 0;
+}
+
+.variants-table th,
+.variants-table td {
+  white-space: nowrap;
+}
+
+/* Vzhled hlavicky tabulek */
+.variants-table th {
+  font-weight: normal;
+  color: var(--color-text-secondary);
+}
+
+/* Vzhled radku po najeti mysi */
+.variants-table tr:hover td {
+  background: var(--color-grey-e);
+  cursor: pointer;
+}
+
+/*
+Sloupecky v tabulkach
+---------------------
+*/
+.variants-table-radio {
+  width: 10%;
+  padding-left: 0.5em;
+}
+
+.variants-table-size {
+  width: 15%;
+}
+
+.variants-table-width {
+  width: 25%;
+}
+
+.variants-table-delivery {
+  width: 50%;
+}
+
+/*
+Layout: "jedna" tabulka pod sebou
+----------------------------------
+*/
+@media only screen and (max-width: 34.99em) {
+  .variants-table:nth-child(2) th {
+    display: none;
+  }
+}
+/*
+Layout: dve tabulky na radce vedle sebe
+---------------------------------------
+*/
+@media only screen and (min-width: 35em) {
+  .variants {
+    display: flex;
+  }
+
+  .variants-table {
+    flex: 1;
+  }
+
+  .variants-table:nth-child(2) {
+    margin-left: 1rem;
+  }
+}
+/*
+Rozvrzeni stranky
+=================
+*/
+/*
+Odsazeni od kraje a barvy pozadi
+--------------------------------
+*/
+body {
+  background: var(--color-grey-e);
+  padding: 0.75rem;
+}
+
+.container {
+  max-width: none;
+}
+
+.layout-container {
+  background: white;
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+}
+
+/* Mensi pro male displeje */
+@media only screen and (max-width: 25em) {
+  .layout-container {
+    padding: 0.75rem;
+  }
+}
+@media only screen and (min-width: 50em) {
+  body {
+    padding: 1.5rem;
+  }
+}
+/*
+Blogpost: Layout na vetsich displejich
+---------------------------------------------
+*/
+.layout-blogpost {
+  max-width: 40em;
+  margin: 0 auto 3rem;
+}
+
+@media only screen and (min-width: 48em) {
+  .layout-blogpost {
+    font-size: 1.2em;
+  }
+}
+/*
+Detail produktu: Layout na vetsich displejich
+---------------------------------------------
+
+Fotky napravo, obsah nalevo.
+
+.container
+  header
+    .logo
+  .layout-container
+    .layout-heading (nadpis)
+    .layout-main
+      .layout-text (text)
+      .layout-photos (fotky)
+*/
+@media only screen and (min-width: 48em) {
+  .layout-main {
+    display: flex;
+  }
+
+  .layout-text {
+    width: 50%;
+  }
+
+  .layout-photos {
+    width: 50%;
+  }
+}

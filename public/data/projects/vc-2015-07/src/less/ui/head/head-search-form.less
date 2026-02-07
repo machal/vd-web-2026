@@ -1,0 +1,61 @@
+/*
+
+Site Search
+===========
+
+Vyhledávání v hlavičce webu.
+
+*/
+
+@vc-search-form-input-icon-width: 12px;
+
+.vc-search-form {
+  clear: both;
+
+  @media only screen and (min-width: @p-large-display-start) {
+    margin-top: 32px;
+    position: absolute;
+    top: 0;
+    left: 27%;
+    width: 25%;
+    min-width:230px;
+  }
+
+}
+
+.js .vc-search-form-hidden {
+  display: none;
+}
+
+// input s ikonou
+// todo: s našeptáváčem udělat i hover stav
+
+.vc-search-form-input {
+  background-position: @padding-base-horizontal 50%;
+  background-repeat: no-repeat;
+  background-image: url("../dist/img/icons/magnifier.svg"); //todo: inline / sprite svg?
+
+  padding-right: @padding-small-horizontal;
+  padding-left: @vc-search-form-input-icon-width + @padding-base-horizontal + @padding-small-horizontal;
+
+  .vc-no-svg &{ // fallback pro prohlížeče bez svg (IE8-)
+    background-image: url("../dist/img/icons/magnifier.png"); //todo: inline / sprite svg?
+  }
+}
+
+
+// TODO Pine.js
+// https://github.com/rwd-pine/pine/issues/2
+// todo: nechat to na autoprefixeru?
+
+::-webkit-input-placeholder {
+   color: @input-color-placeholder !important;
+}
+
+::-moz-placeholder {
+   color: @input-color-placeholder !important;
+}
+
+:-ms-input-placeholder {
+   color: @input-color-placeholder !important;
+}

@@ -1,0 +1,27 @@
+/*
+
+Úpravy Bootstrap prvků
+======================
+
+Vše co nelze udělat proměnnými nebo jinak elegantně.
+
+*/
+
+
+// Hlavicka stranky bez horniho odsazeni
+.page-header {
+  margin-top: 0;
+}
+
+// Gryphicon: criticalCSS fix
+// --------------------------
+// Kvuli critical CSS pridavame mezeru jako obsah,
+// protoze grunt-criticalcss nevezme obsah napr. .glyphicon-user:before{}
+// a explicitni uvedeni ve forceInclude nefunguje:
+// https://github.com/filamentgroup/grunt-criticalcss/issues/11
+// (TODO: ikony nejspis vyresime SVGeckem, takze casem zrusit)
+
+.glyphicon {
+  width: 16px;
+  height: 16px;
+}

@@ -1,0 +1,38 @@
+/*
+
+Typografická základna
+=====================
+
+Resp. úpravy základny Bootstrapu.
+Vše co nelze udělat proměnnými nebo jinak elegantně.
+TODO: nepotřebujeme?
+
+*/
+
+// Zmensovani nadpisu v obshau na malych displejich
+// Pokud je logo mensi, zmensuji se i nadpisy
+
+@media only screen and (max-width: 410px) {
+
+  .content h1,
+  .content .h1 {
+    font-size: (@font-size-h1 / 1.5);
+  }
+
+  .content h2,
+  .content .h2 {
+    font-size: (@font-size-h2 / 1.2);
+  }
+
+  .content h3,
+  .content .h3 {
+    font-size: (@font-size-h3 / 1.2);
+  }
+
+}
+
+// Textarey chceme umožnit zvětšovat jen na výšku
+
+textarea {
+  resize: vertical;
+}

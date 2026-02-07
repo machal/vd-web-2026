@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  
+  <head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="author" content="Shortcat; info@shortcat.cz">
+    <meta http-equiv="imagetoolbar" content="no">
+    
+    <title>CSS specificity test </title>    
+    
+    <style type="text/css">
+       /*  This selector has specificity value 0,10,0,1 (this is not the same as 1001!) */
+       #one #two #three #four #five #six #seven #eight #nine #ten p
+         { background-color: green; }
+    </style>
+        
+  </head>
+  
+  <body>
+    
+    <div id="one">
+      <div id="two">
+        <div id="three">
+          <div id="four">
+            <div id="five">
+              <div id="six">
+                <div id="seven">
+                  <div id="eight">
+                    <div id="nine">
+                      <div id="ten">
+                        <p style="background-color: red">
+                          Element is red because has specificity value 1,0,0,0.
+                        </p>
+                      </div><!-- / id="ten"  -->      
+                    </div><!-- / id="nine"  -->       
+                  </div><!-- / id="eight"  -->       
+                </div><!-- / id="seven"  -->       
+              </div><!-- / id="six"  -->      
+            </div><!-- / id="five"  -->
+          </div><!-- / id="four"  -->
+        </div><!-- / id="three"  -->
+      </div><!-- / id="two"  -->
+    </div><!-- / id="one"  -->  
+    
+  </body>
+  
+</html>

@@ -1,0 +1,92 @@
+/*
+Varianty produktu v tabulce
+============================
+*/
+
+/*
+Zakladni stylovani
+------------------
+*/
+
+.variants {
+  font-size: .8em;
+}
+
+.variants-table table {
+  margin-bottom: 0;
+}
+
+.variants-table th,
+.variants-table td {
+  white-space: nowrap;
+}
+
+/* Vzhled hlavicky tabulek */
+
+.variants-table th {
+  font-weight: normal;
+  color: var(--color-text-secondary);
+}
+
+/* Vzhled radku po najeti mysi */
+
+.variants-table tr:hover td {
+  background: var(--color-grey-e);
+  cursor: pointer;
+}
+
+/*
+Sloupecky v tabulkach
+---------------------
+*/
+
+.variants-table-radio {
+  width: 10%;
+  padding-left: .5em;
+}
+
+.variants-table-size {
+  width: 15%;
+}
+
+.variants-table-width {
+  width: 25%;
+}
+
+.variants-table-delivery {
+  width: 50%;
+}
+
+/*
+Layout: "jedna" tabulka pod sebou
+----------------------------------
+*/
+
+@media only screen and (max-width: 34.99em) {
+
+  .variants-table:nth-child(2) th {
+    display: none;
+  }
+
+}
+
+/*
+Layout: dve tabulky na radce vedle sebe
+---------------------------------------
+*/
+
+@media only screen and (min-width: 35em) {
+
+  .variants {
+    display: flex;
+  }
+
+  .variants-table {
+    flex: 1;
+  }
+
+  .variants-table:nth-child(2) {
+    margin-left: 1rem;
+  }
+
+}

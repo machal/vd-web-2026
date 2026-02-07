@@ -1,0 +1,10 @@
+/*
+Tabulky se skrolovanim do strany
+=================================
+*/
+
+.rwd-table {
+  overflow-x: auto;
+}
+
+

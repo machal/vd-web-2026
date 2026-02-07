@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cs" lang="cs">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1250" />
+	<meta name="author" content="All: Libor Krayzel [eLKa]; mailto:elka@elka.cz" />
+	<meta name="copyright" content="eLKa 2002 - 2003" />
+	<meta http-equiv="Content-language" content="cs" />
+	<meta name="GENERATOR" content="EasyPad from http://www.elka.cz/easypad/" />
+	<meta name="robots" content="ALL,FOLLOW" />
+	<meta name="description" content="EasyBlog Lite" />
+	<title>My Blog</title>
+	<style media="all" type="text/css">@import "style.css";</style>
+</head>
+<body>
+
+<h1><a href="index.htm">My blog</a></h1>
+<h2>This is my forst blog</h2>
+<p>(c) 2003 <a href="mailto:my@email.com">Author</a></p>
+<hr>
+
+<!-- «CONTENT» -->
+
+<hr>
+<p>(c) 2003 <a href="mailto:my@email.com">Author</a></p>
+
+</body>
+</html>

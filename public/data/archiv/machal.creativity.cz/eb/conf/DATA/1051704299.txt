@@ -1,0 +1,15 @@
+Blogování je jednoduché, ale je jednoduché blogovat dobøe?
+<a href="http://www.sovavsiti.cz/weblog/2003/04/28.html#bp20030428_blogy">SVS</a> a jiní mají sice pravdu, kdy píšou o tom, jak jednoduché je publikovat blogem. Ale... jakmile máte blog delší dobu, pøíjdete na to, e byste chtìli nìco víc ne jen FTP pøístup a Poznámkovı blok.</p>
+<p>Tøeba já: <a href="http://www.blogger.com">Blogger</a> mì neuspokojuje u hodnıch pár mìsícù, ale zatím jsem nenašel jinou vhodnou obì svého obèasného pisálkovství. Pøitom nemám rozhodnì pøehnané poadavky:</p>
+<ul>
+  <li>Chci  systém dostupnı kdekoliv &mdash; nejlépe tedy webové rozhraní</li>
+  <li>Chci systém nezávislı na platformì &mdash; nejlépe tedy webové rozhraní</li>
+  <li>Chci systém jednoduchı k implementaci &mdash; nejlépe tedy webové rozhraní u cizího poskytovatele (zde ještì Blogger stíhá)</li>
+  <li>Chci kvalitní a jednoduchı RSS generátor &mdash; i v Èesku u se RSS prosadilo tak, e jeho nedostupnost je silná nevıhoda (zde se Blogger zadıchává)</li>
+  <li>Chci systém, kterı mì nenutí do pouívání unicode, kdy chci blogovat z Windows 98 (zde Blogger odmítá spolupráci)</li>
+</ul>
+<p>
+...kdybych byl hodnì rozmazlenı, tak chci taky: systém, kterı umí komentáøe k pøíspìvkùm, umí tøídìní pøíspìvkù do kategorií, umí odloené zveøejòování pøíspìvkù dopøedu, umí vyhledávání, no a... nebuïme skromní: umí sám psát, kdy nemám èas, umí støihat ušima, ehlit a neotravuje, kdy sedím u poèítaèe. :-)
+</p>
+
+<p>Zatím mám favorita v <a href="http://www.elka.cz/easyblog/">EasyBlog Lite</a> jeho nedostatky zatím spatøuju v tom, e se jedná o aplikaci a e neumí ehlit. Pokud mì pøes èumák nepraští nìjakı Vytouenı-Blogovací-Systém&trade;, øejmì ho vyzkouším.</p>

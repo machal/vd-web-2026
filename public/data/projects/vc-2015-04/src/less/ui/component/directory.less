@@ -1,0 +1,155 @@
+/*
+
+Directory
+=========
+
+Rozcestník kategorií. Např. v seznamu produktů nahoře.
+
+*/
+
+
+// Base
+
+.directory {
+  font-size: @font-size-smaller;
+  line-height: @line-height-small;
+}
+
+.directory ul {
+  margin-left: 0;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+}
+
+.directory li {
+  float: left;
+}
+
+
+// Nadpis
+
+.directory-heading,
+.directory-group-heading {
+  font-size: @font-size-smaller;
+  line-height: @line-height-small;
+  margin: 0 0 @padding-small-vertical 0;
+  font-weight: bold;
+}
+
+.js .directory-heading {
+  display: none;
+}
+
+// Oddelovac polozek
+
+.directory-divider {
+  color: @gray-light;
+
+  .directory-group-content & {
+    margin-right: 4px;
+  }
+}
+
+// Blok se seznamem polozek
+
+.directory-group-content {
+  .clearfix;
+}
+
+// Polozka seznamu
+
+.directory-item {
+  padding: @padding-small-vertical 0;
+  display: inline-block;
+}
+
+
+
+// Varianta: .directory-multiple - vyber mezi vice typy kategorii
+// --------------------------------------------------------------
+
+// Napr. v kategorii "Cocky". Pridavame zalozkovou logiku, ktera funguje jen pokud
+// fici javascript.
+
+.js .directory-multiple {
+  .directory-heading {
+    display: block;
+  }
+
+  .directory-group-heading {
+    .sr-only;
+  }
+}
+
+// Layout: s JS jsou to "zalozky" a zobrazená je vzdy jen ta prvni
+
+.js .directory-multiple {
+  .directory-group {
+    display: none;
+  }
+
+  .directory-group.first {
+    display: block;
+  }
+}
+
+// Zvyraznovani aktivni polozky v hlavicce
+
+.js .directory-multiple {
+  .directory-heading a.active {
+    color: @text-color;
+    text-decoration: underline;
+  }
+}
+
+
+// Directory as select
+// -------------------
+// Testovaná druhá varianta
+// TODO refactor
+
+// Dole v bloku s popiskem
+
+.category-directory-as-select-container  {
+  @media only screen and (min-width: 1024px) {
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+// Base
+
+.directory-as-select-group {
+  margin-bottom: @line-height-computed/2;
+
+  @media only screen and (min-width: 1024px) {
+    margin-bottom: 0;
+  }
+}
+
+.directory-as-select-group .form-control {
+  font-size: @font-size-smaller;
+}
+
+
+// Layout
+
+.directory-as-select-group {
+  float: left;
+  width: percentage(1/4);
+  padding-left: 10px;
+
+  &:first-child {
+    padding-left: 0;
+  }
+
+  @media only screen and (max-width: 480px) {
+    width: percentage(1/2);
+
+    &:nth-child(3n) {
+      padding-left: 0;
+    }
+  }
+}
+

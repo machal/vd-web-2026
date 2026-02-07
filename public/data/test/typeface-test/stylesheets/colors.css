@@ -1,0 +1,448 @@
+@charset "utf-8";
+
+/* 
+
+========== Stylopis pro barvy webu Prazskeho Jara (www.festival.cz) ========== 
+
+Autor:        Martin Michalek, Studio Shortcat
+
+*/
+
+
+/* === Modra - odkazy === */
+
+a, a:hover, a:visited, a:link, a:active, a:focus,
+#site-navigation a:hover,
+#top-navigation a:hover
+  { color: #0084CD; }
+
+/* === 100% hneda - barva textu ===  */
+
+body, h1, h2, h3, h4, h5, h6, 
+input, textarea, select,
+body #web-title a,
+body #site-navigation a, 
+body #top-navigation a,
+body.program_events #event #text,
+body.program_events #event #compositions .author,
+body #content .search-results h2 
+  { color: #322a21; }
+  
+body .calendar-date .month 
+  { background-color: #322a21; }  
+
+/* === 50% hneda - potlaceny text === */
+
+body #site-navigation span,
+body #site-navigation strong,
+body #content h3,
+body .suppress,
+body #photo-credit,
+body blockquote,
+body .calendar-date small,
+body #calendar .day .day-head .week-day,
+body.program_events #event #facts #venue small,
+body.program_events #event #url,
+body.program_events #event #url a,
+body.program_events #event #media #legend,
+body.program_events #event #facts #date small,
+body.program_events #event-list table td.day,
+body.program_events #event #related ul li,
+body.program_events #filter a small,
+body.program_events #filter-type a,
+body.program_events #event #fees em, 
+body.program_events #event #performers em,
+body.program_events #event #compositions,
+body.program_events #event #barrier-free-access,
+body.program_events #event h3,
+body.organizacni_struktura #content em,
+body.partneri #content em,
+body.tiskovy_servis #content em,
+body.abonentni_koncerty #content em,
+body.kontakt #content em,
+body #calendar h2,
+body #calendar .date,
+html body #calendar .day:hover .day-head .week-day,
+html body #calendar .day.hover .day-head .week-day,
+body #content em
+  { color: #71685c; }
+  
+body .search-results h2  
+  { background-color: #71685c; }
+
+/* TODO: nepujde styl pro #content <em> a dalsi prvky sjednotit a zjednodusit? */
+
+/* === 25% hneda - pozadi stranky === */
+
+body,
+body .abonentni_koncerty .emphasized-date span,
+body .search-result-item.hover,
+body .search-result-item:hover,
+body #other-search-results
+  { background-color: #EDE9E6; }
+  
+.program_events #event-list,
+.program_events #filter,
+.venues #content #venues-list
+  { border-color: #EDE9E6; }
+  
+
+/* === 33% hneda - vice potlaceny text === */
+
+body #calendar .day .day-head .week-day {
+  color: #c7c4be;
+}
+
+
+
+
+/* === Programove kategorie === */
+
+/* = Pozadi = */
+
+/* Prednastavene - barva odkazu */
+.program_events #event-list table tr:hover,
+.program_events #event-list table tr.hover,
+.program_events #filter-choices a:hover,
+.program_events #filter-choices li.active a
+  { background-color: #0084CD; }  
+
+/* Barvy jednotlivych kategorii */
+#container .category-background-1,
+#container .block-category-background-1,
+#container #calendar .day li a.category-background-1,
+.program_events #event-list table tr.category-color-1:hover td,
+.program_events #event-list table tr.category-color-1.hover td,
+.program_events #event-list table tr.category-color-1.active td,
+.program_events #filter-choices .category-color-1:hover,
+.program_events #filter-choices .category-color-1.hover,
+.program_events #filter-choices .category-color-1.active
+  { background-color: #B14289; }
+#container .category-background-2,
+#container .block-category-background-2,
+#container #calendar .day li a.category-background-2,
+.program_events #event-list table tr.category-color-2:hover td,
+.program_events #event-list table tr.category-color-2.hover td,
+.program_events #event-list table tr.category-color-2.active td,
+.program_events #filter-choices .category-color-2:hover,
+.program_events #filter-choices .category-color-2.hover,
+.program_events #filter-choices .category-color-2.active
+  { background-color: #623287; }
+#container .category-background-3,
+#container .block-category-background-3,
+#container #calendar .day li a.category-background-3,
+.program_events #event-list table tr.category-color-3:hover td,
+.program_events #event-list table tr.category-color-3.hover td,
+.program_events #event-list table tr.category-color-3.active td,
+.program_events #filter-choices .category-color-3:hover,
+.program_events #filter-choices .category-color-3.hover,
+.program_events #filter-choices .category-color-3.active
+  { background-color: #046F8F; }
+#container .category-background-4,
+#container .block-category-background-4,
+#container #calendar .day li a.category-background-4,
+.program_events #event-list table tr.category-color-4:hover td,
+.program_events #event-list table tr.category-color-4.hover td,
+.program_events #event-list table tr.category-color-4.active td,
+.program_events #filter-choices .category-color-4:hover,
+.program_events #filter-choices .category-color-4.hover,
+.program_events #filter-choices .category-color-4.active
+  { background-color: #40925B; }
+#container .category-background-5,
+#container .block-category-background-5,
+#container #calendar .day li a.category-background-5,
+.program_events #event-list table tr.category-color-5:hover td,
+.program_events #event-list table tr.category-color-5.hover td,
+.program_events #event-list table tr.category-color-5.active td,
+.program_events #filter-choices .category-color-5:hover,
+.program_events #filter-choices .category-color-5.hover,
+.program_events #filter-choices .category-color-5.active
+  { background-color: #8C9C00; }
+#container .category-background-6,
+#container .block-category-background-6,
+#container #calendar .day li a.category-background-6,
+.program_events #event-list table tr.category-color-6:hover td,
+.program_events #event-list table tr.category-color-6.hover td,
+.program_events #event-list table tr.category-color-6.active td,
+.program_events #filter-choices .category-color-6:hover,
+.program_events #filter-choices .category-color-6.hover,
+.program_events #filter-choices .category-color-6.active
+  { background-color: #C56600; }
+#container .category-background-7,
+#container .block-category-background-7,
+#container #calendar .day li a.category-background-7,
+.program_events #event-list table tr.category-color-7:hover td,
+.program_events #event-list table tr.category-color-7.hover td,
+.program_events #event-list table tr.category-color-7.active td,
+.program_events #filter-choices .category-color-7:hover,
+.program_events #filter-choices .category-color-7.hover,
+.program_events #filter-choices .category-color-7.active
+  { background-color: #A41F18; }
+
+/* Bila barva textu na mouseover */  
+.program_events #event-list table tr:hover,
+.program_events #event-list table tr.hover,
+.program_events #event-list table tr:hover a,
+.program_events #event-list table tr.hover a,
+.program_events #event-list table tr.active a,
+.program_events #filter-choices a:hover,
+.program_events #filter-choices li .hover,
+.program_events #filter-choices li .active
+  { color: #fff; }    
+  
+/* Radek s nadpisem nema pozadi */   
+body.program_events #event-list table tr.month.hover td,
+body.program_events #event-list table tr.month:hover td {
+  background-color: #fff;  
+}  
+
+/* = Barva textu = */
+#old_web_iframe .category-color-1,
+#container .category-color-1 a,
+.block-category-color-1 a,
+#event.category-color-1 a,
+h2.category-color-1,
+#container .block-category-color-1 .multimedia .text
+  { color: #B14289; }
+#old_web_iframe .category-color-2,
+#container .category-color-2 a,
+.block-category-color-2 a,
+#event.category-color-2 a,
+h2.category-color-2,
+#container .block-category-color-2 .multimedia .text
+  { color: #623287; }
+#old_web_iframe .category-color-3,
+#container .category-color-3 a,
+.block-category-color-3 a,
+#event.category-color-3 a,
+h2.category-color-3,
+#container .block-category-color-3 .multimedia .text
+  { color: #046F8F; }
+#old_web_iframe .category-color-4,  
+#container .category-color-4 a,
+.block-category-color-4 a,
+#event.category-color-4 a,
+h2.category-color-4,
+#container .block-category-color-4 .multimedia .text
+  { color: #40925B; }
+#old_web_iframe .category-color-5,  
+#container .category-color-5 a,
+.block-category-color-5 a,
+#event.category-color-5 a,
+h2.category-color-5,
+#container .block-category-color-5 .multimedia .text
+  { color: #8C9C00; }
+#old_web_iframe .category-color-6,  
+#container .category-color-6 a,
+.block-category-color-6 a,
+#event.category-color-6 a,
+h2.category-color-6,
+#container .block-category-color-6 .multimedia .text
+  { color: #C56600; }
+#old_web_iframe .category-color-7,  
+#container .category-color-7 a,
+.block-category-color-7 a,
+#event.category-color-7 a,
+h2.category-color-7,
+#container .block-category-color-7 .multimedia .text
+  { color: #A41F18; }
+  
+/* == 25% tmavsi barva - pro hover efekty atd. (hrozne se tesim na RGBa) */
+
+#container #program-layer.block-category-background-1 .program-item:hover,
+#container #program-layer.block-category-background-1 .program-item.hover,
+#container #calendar .day .category-background-1 .time
+  { background-color: #853167 }
+#container #program-layer.block-category-background-2 .program-item:hover,
+#container #program-layer.block-category-background-2 .program-item.hover,
+#container #calendar .day .category-background-2 .time
+  { background-color: #492565 }  
+#container #program-layer.block-category-background-3 .program-item:hover,
+#container #program-layer.block-category-background-3 .program-item.hover,
+#container #calendar .day .category-background-3 .time
+  { background-color: #03536b }
+#container #program-layer.block-category-background-4 .program-item:hover,
+#container #program-layer.block-category-background-4 .program-item.hover,
+#container #calendar .day .category-background-4 .time
+  { background-color: #306d44 }
+#container #program-layer.block-category-background-5 .program-item:hover,
+#container #program-layer.block-category-background-5 .program-item.hover,
+#container #calendar .day .category-background-5 .time
+  { background-color: #697500 }
+#container #program-layer.block-category-background-6 .program-item:hover,
+#container #program-layer.block-category-background-6 .program-item.hover,
+#container #calendar .day .category-background-6 .time
+  { background-color: #944c00 }    
+#container #program-layer.block-category-background-7 .program-item:hover,
+#container #program-layer.block-category-background-7 .program-item.hover,
+#container #calendar .day .category-background-7 .time
+  { background-color: #7b1712 }      
+
+
+/* == 15%-ni - napriklad pro prehravac multimedii == */
+
+
+#container .block-category-color-1 .multimedia {
+  background-color: #f3e3ed;
+}
+#container .block-category-color-2 .multimedia {
+  background-color: #e8e0ed;
+}
+#container .block-category-color-3 .multimedia {
+  background-color: #daeaee;
+}
+#container .block-category-color-4 .multimedia {
+  background-color: #e3efe7;
+}
+#container .block-category-color-5 .multimedia {
+  background-color: #eef0d9;
+}
+#container .block-category-color-6 .multimedia {
+  background-color: #f6e8d9;
+}
+#container .block-category-color-7 .multimedia {
+  background-color: #f1dedd;
+}
+
+/* == Ikonka pro prehravac multimedii */
+
+#container .block-category-color-1 .multimedia.audio 
+ { background-image: url("/images/layout/audio_icon_color_1.gif"); }
+#container .block-category-color-2 .multimedia.audio 
+ { background-image: url("/images/layout/audio_icon_color_2.gif"); }
+#container .block-category-color-3 .multimedia.audio 
+ { background-image: url("/images/layout/audio_icon_color_3.gif"); }
+#container .block-category-color-4 .multimedia.audio 
+ { background-image: url("/images/layout/audio_icon_color_4.gif"); }
+#container .block-category-color-5 .multimedia.audio 
+ { background-image: url("/images/layout/audio_icon_color_5.gif"); }
+#container .block-category-color-6 .multimedia.audio 
+ { background-image: url("/images/layout/audio_icon_color_6.gif"); }   
+#container .block-category-color-7 .multimedia.audio 
+ { background-image: url("/images/layout/audio_icon_color_7.gif"); } 
+
+#container .block-category-color-1 .multimedia.video 
+ { background-image: url("/images/layout/video_icon_color_1.gif"); }
+#container .block-category-color-2 .multimedia.video 
+ { background-image: url("/images/layout/video_icon_color_2.gif"); }
+#container .block-category-color-3 .multimedia.video 
+ { background-image: url("/images/layout/video_icon_color_3.gif"); }
+#container .block-category-color-4 .multimedia.video 
+ { background-image: url("/images/layout/video_icon_color_4.gif"); }
+#container .block-category-color-5 .multimedia.video 
+ { background-image: url("/images/layout/video_icon_color_5.gif"); }
+#container .block-category-color-6 .multimedia.video 
+ { background-image: url("/images/layout/video_icon_color_6.gif"); }
+#container .block-category-color-7 .multimedia.video 
+ { background-image: url("/images/layout/video_icon_color_7.gif"); }
+ 
+#container .block-category-color-1 .multimedia.photos
+ { background-image: url("/images/layout/photo_icon_color_1.gif"); }
+#container .block-category-color-2 .multimedia.photos 
+ { background-image: url("/images/layout/photo_icon_color_2.gif"); }
+#container .block-category-color-3 .multimedia.photos 
+ { background-image: url("/images/layout/photo_icon_color_3.gif"); }
+#container .block-category-color-4 .multimedia.photos 
+ { background-image: url("/images/layout/photo_icon_color_4.gif"); }
+#container .block-category-color-5 .multimedia.photos 
+ { background-image: url("/images/layout/photo_icon_color_5.gif"); }
+#container .block-category-color-6 .multimedia.photos 
+ { background-image: url("/images/layout/photo_icon_color_6.gif"); }   
+#container .block-category-color-7 .multimedia.photos 
+ { background-image: url("/images/layout/photo_icon_color_7.gif"); } 
+ 
+   
+
+/* == 30%-ni - napriklad pro mouseover nebo otevreny stav nad prehravacem videa == */
+
+#container .block-category-color-1  .multimedia:hover,
+#container .block-category-color-1  .multimedia.hover,
+#container .block-category-color-1  .multimedia.opened
+  { background-color: #e7c6db }
+#container .block-category-color-2  .multimedia:hover,
+#container .block-category-color-2  .multimedia.hover,
+#container .block-category-color-2  .multimedia.opened
+  { background-color: #d0c1db }
+#container .block-category-color-3  .multimedia:hover,
+#container .block-category-color-3  .multimedia.hover,
+#container .block-category-color-3  .multimedia.opened
+  { background-color: #b3d4dd }
+#container .block-category-color-4  .multimedia:hover,
+#container .block-category-color-4  .multimedia.hover,
+#container .block-category-color-4  .multimedia.opened
+  { background-color: #c5decd }
+#container .block-category-color-5  .multimedia:hover,
+#container .block-category-color-5  .multimedia.hover,
+#container .block-category-color-5  .multimedia.opened
+  { background-color: #dce1b2 }      
+#container .block-category-color-6  .multimedia:hover,
+#container .block-category-color-6  .multimedia.hover,
+#container .block-category-color-6  .multimedia.opened
+  { background-color: #edd1b2 }  
+#container .block-category-color-7  .multimedia:hover,
+#container .block-category-color-7  .multimedia.hover,
+#container .block-category-color-7  .multimedia.opened
+  { background-color: #e4bbb9 }  
+  
+/* == Ikonka pro mouseover nad prehravacem multimedii */
+
+#container #content .multimedia:hover,
+#container #content .multimedia.hover {
+  background-position: -467px -4px; 
+}  
+
+
+  
+/* == 50% svetlejsi barva - pro hover efekty (jeste vic se tesim na RGBa), TODO: dodelat pro nove barvy */
+
+#container #program-layer.block-category-background-1 p
+  { color: #B14289 }
+#container #program-layer.block-category-background-2 p
+  { color: #623287 }  
+#container #program-layer.block-category-background-3 p
+  { color: #046F8F }
+#container #program-layer.block-category-background-4 p
+  { color: #40925B }
+#container #program-layer.block-category-background-5 p
+  { color: #8C9C00 }
+#container #program-layer.block-category-background-6 p
+  { color: #C56600 }    
+#container #program-layer.block-category-background-7 p
+  { color: #A41F18 }      
+  
+  
+/* == 75% svetlejsi barva - pro texty v kalendari */
+
+#container #calendar .day .category-background-1 .event-description
+  { color: #ebd0e1 }
+#container #calendar .day .category-background-2 .event-description
+  { color: #d8cce1 }  
+#container #calendar .day .category-background-3 .event-description
+  { color: #c0dbe3 }
+#container #calendar .day .category-background-4 .event-description
+  { color: #cfe4d6 }
+#container #calendar .day .category-background-5 .event-description
+  { color: #e2e6bf }
+#container #calendar .day .category-background-6 .event-description
+  { color: #f0d9bf }    
+#container #calendar .day .category-background-7 .event-description
+  { color: #e8c7c5 }    
+
+/* == 75% svetlejsi barva - barva teckovaneho ramecku u cen v kalendari */
+
+#container #calendar .day .category-background-1 .event-description .price
+  { border-color: #ebd0e1 }
+#container #calendar .day .category-background-2 .event-description .price
+  { border-color: #d8cce1 }  
+#container #calendar .day .category-background-3 .event-description .price
+  { border-color: #c0dbe3 }
+#container #calendar .day .category-background-4 .event-description .price
+  { border-color: #cfe4d6 }
+#container #calendar .day .category-background-5 .event-description .price
+  { border-color: #e2e6bf }
+#container #calendar .day .category-background-6 .event-description .price
+  { border-color: #f0d9bf }    
+#container #calendar .day .category-background-7 .event-description .price
+  { border-color: #e8c7c5 }   
+
+

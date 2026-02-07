@@ -13,3 +13,10 @@ cp -r ../favicon public/
 ```
 
 Astro automaticky servuje soubory z `public/` adresáře na root URL.
+
+## Trvalé soubory (data, files)
+
+- **`data/`** – soubory dostupné na **/data/…** (archiv, legacy; část starých URL se sem přesměrovává z `.htaccess`).
+- **`files/`** – soubory dostupné na **/files/…**.
+
+Obojí je v repozitáři a při buildu se kopíruje do `dist/` společně s ostatním obsahem `public/`.

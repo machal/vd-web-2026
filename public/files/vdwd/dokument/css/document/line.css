@@ -1,0 +1,23 @@
+/*
+Vyska radku na ruzne velkych breakpointech
+-------------------------------------------
+*/
+
+html {
+	font-size: 1.125em;
+	line-height: 1.5;
+}
+
+@media only screen and (min-width: 20em) and (max-width: 40em) {
+	html {
+		line-height: 1.45;
+    font-size: 1em;
+	}
+}
+
+@media only screen and (max-width: 19.9em) {
+	html {
+		line-height: 1.4;
+    font-size: 1em;
+	}
+}

@@ -1,0 +1,9 @@
+Drobné zmìny v blogu
+Každý si svátek práce pøedstavuje trochu jinak. Tøeba já jsem k poslednímu dubnu ukonèil zamìstnanecký pomìr v ILT!  (pokraèuju jen na èásteèný úvazek) a dnešek jsem místo pobíhání za ženskýma a hledání vhodného stromu k jejich oblizování strávil kromì jiných pracovních témat i úpravami na weblogu.</p>
+
+<ul>
+  <li>Od nynìjška používám <a href="http://www.elka.cz/easyblog/">EasyBlog Lite</a> a jsem pøesvìdèen, že po odstranìní nìkterých nedodìlávek bude sloužit dobøe.</li>
+  <li>Zmìna systému pøinesla i <a href="rss.xml">nové RSS</a>, tak si prosím nastavte ty své ètecí strojeèky na <code>http://machal.creativity.cz/rss.xml</code></li>
+  <li>Drobných zmìn se doèkala i struktura menu a další.</li>
+  <li>Aktuální verze blogu je v testování. Pokud vaše oko spoèine na nìjakém nedodìlku, dejte, prosím, vìdìt.</li>
+</ul>

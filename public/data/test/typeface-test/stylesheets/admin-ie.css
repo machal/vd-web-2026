@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+/* 
+
+========== Stylopis pro administraci webu Prazskeho jara - odlisnosti pro MSIE ========== 
+
+Autor:        Martin Michalek, Studio Shortcat
+
+*/
+
+input.submit-big {
+	padding: 4px 2px 4px 2px;
+}
+
+input.submit-big-green {
+	padding: 4px 2px 4px 2px;
+}
+
+input.submit-big-disable {
+	padding: 4px 2px 4px 2px;
+}
+
+input.submit-small {
+	padding: 2px 0 2px 0;
+}
+
+#adresar-vyber-table table {
+	width: 98%;
+	font-size: .8em;
+	border-collapse: collapse;
+}
+
+#contentMainBoxMiddleLayoutTwoLeftInside {
+	width: 49.5% !important;
+}
+
+#contentMainBoxMiddleNavigation {
+	margin: 0 26px 0 20px;
+}
+
+.quicksearch input.submit-small {
+  padding: 2px 0px 3px 0;
+  
+}
+
+.submit-row .submit-big-hilite {
+  position: relative; top: 8px;  
+}
+
+.submit-publish {
+  padding: 4px 10px;
+  margin-bottom: 5px; 
+}
+
+
+
+/***********************************************************************************************************/
+/* Viola - odlisnosti v MSIE  */
+/***********************************************************************************************************/
+
+#headUser #headSwitchers 
+  { width: 180px; }
+
+#headUser #headSwitchers input
+  { padding: 0 1px; }
+  
+#headUser 
+  { width: 360px; }  
+
+/* Oznaceni aktualniho rocniku neni odsazeno shora */
+#headUser #headSwitchers h2 
+  { top: 0; }

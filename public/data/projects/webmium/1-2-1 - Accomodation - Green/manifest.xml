@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+	<title>1-2-1 - Accomodation - Green</title>
+	<description>1-2-1 - Accomodation - Greent</description>
+	<author>Webmium</author>
+	<copyright>Webmium</copyright>
+	<businessBranch>30</businessBranch>
+	<generation>1</generation>
+  <family>2</family>
+  <color>1</color>
+  <resizableContent>true</resizableContent>
+	<variants>
+	</variants>
+    <defaultHeaderImageName>assets/images/header-img.jpg</defaultHeaderImageName>
+    <backgroundImageUrl></backgroundImageUrl>
+    <backgroundImageType>0</backgroundImageType>
+</manifest>

@@ -1,0 +1,58 @@
+:root {
+
+  /*
+  Barva textu
+  -----------
+  */
+  --color-text: #063747;
+
+  /*
+  50% mix s bilou: potlaceny text
+  */
+  --color-text-50: #839DA6;
+
+  /*
+  Sekundarni barva textu: nadpisy tabulek atd.
+  */
+  --color-text-secondary: #118ab2;
+
+  /*
+  Primarni barva
+  --------------
+  Vyzvy k akci atd.
+  */
+
+  --color-alpha: #EF476F;
+
+  /*
+  Sekundarni barva
+  ----------------
+  Doplnkove prvky druhe urovne
+  */
+
+  --color-beta: #06D6A0;
+
+  /*
+  Sedive odstiny
+  --------------
+  Neutralni barvy.
+  */
+
+  --color-grey-d: #ddd;
+  --color-grey-e: #eee;
+
+  /*
+  Vychozi zakulaceni rohu
+  -----------------------
+  */
+
+  --border-radius: .25em;
+
+  /*
+  Rozmery formularovych prvku
+  ---------------------------
+  */
+
+  --input-padding: .5em;
+  --input-border: 2px;
+}

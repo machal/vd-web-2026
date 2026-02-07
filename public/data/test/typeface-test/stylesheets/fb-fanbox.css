@@ -1,0 +1,111 @@
+@charset "utf-8";
+
+/* 
+
+=========== Stylopis pro Facebook Fanbox (www.festival.cz) =========== 
+
+Autor:        Martin Michalek, Studio Shortcat
+
+*/
+
+body,
+.fan_box,
+.fan_box .full_widget,
+.UIIntentionalStory_Message, 
+.UIIntentionalStory .location
+{
+  color: #322A21;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  line-height: 15.6px;
+}
+
+/* Hlavni blok */
+.fan_box,
+.fan_box .full_widget 
+{
+  border: 0;  
+}
+
+/* Odkazy */
+.full_widget a
+{ 
+  color: #0084CD;
+}
+
+.full_widget a:hover
+{ 
+  text-decoration: none;
+}
+
+/*  Nazev FB uctu */
+.fan_box .connect_action .name 
+{
+  font-size: 12px;
+}
+
+
+.fan_box .full_widget .connect_top 
+{
+  background-color: #f6f4f3;
+  border-color: #c7c4be;
+}
+
+/* Stream, tedy FB statusy */
+.fan_box .page_stream
+{
+  padding-left: 0;
+  height: 483px;
+  border-color: #EDE9E6;
+}
+
+
+/* Jednotlive statusy maji vetsi horni odsazeni */
+.fan_box .UIIntentionalStory
+{
+  padding-top: 22px;
+}
+
+/* Nazev stranky pred statusem */
+.UIIntentionalStory_Names 
+{
+  font-weight: normal;
+}
+
+
+/* Datum a misto publikovani statusu  */
+.UIIntentionalStory_Location, 
+.UIIntentionalStory_Time, 
+.UIIntentionalStory_Time a,
+.UIStoryAttachment_Caption,
+.UIStoryAttachment_Copy 
+{
+  color: #90897F;
+}
+
+
+/* Nahledovy obrazek z prilozene stranky nebo vkladanych multimedii  */
+.share_media .video_thumb img,
+.UIMediaItem img
+{
+  max-height: 43px;
+  max-width: 43px;
+}
+
+/* Barva ramecku prilozene citace */
+.UIStoryAttachment_BlockQuote
+{
+  border-color: #C7C4BE;
+}
+
+/* Obrazky v galerii nemaji padding */
+.UIIntentionalStory_MediaExtra 
+{
+  padding-left: 0;
+}
+
+/* Titulek statusu s prilohou nema zezhora padding */
+.UIStoryAttachment_Title
+{
+  padding-top: 0;
+}

@@ -1,0 +1,109 @@
+/*
+
+Foot Newsletter
+=============
+
+Přihlášení k novinkám v patičce.
+
+*/
+
+.vc-foot-row-newsletter{}
+
+.vc-foot-row-newsletter-bg-outer {
+  border-top: 8px solid #daeef1;
+  background-color: #3891c0;
+}
+
+.vc-foot-row-newsletter-bg-inner {
+  position: relative;
+  top: -45px;
+  padding: (187px + @line-height-computed) 0 30px;
+  background: url("../dist/content-img/footer/maskot.png") no-repeat 50% 0;
+}
+
+.vc-foot-row-newsletter-cell-claim {
+  text-align: center;
+}
+
+.vc-foot-row-newsletter-cell-form {
+  text-align: center;
+}
+
+.vc-foot-row-newsletter-claim {
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.vc-foot-row-newsletter-input-wrapper {
+  display: inline-block;
+  width: 180px;
+  padding: 5px 10px 5px 37px;
+  border-radius: @border-radius-base;
+  border: 1px solid #2c7398;
+  background: #ffffff url("../dist/img/icons/envelope-grey.svg") no-repeat 10px 50%;
+  overflow: hidden;
+  vertical-align: middle;
+
+  .vc-no-svg & { // fallback pro prohlížeče bez svg (IE8-)
+    background: #ffffff url("../dist/img/icons/envelope-grey.png") no-repeat 10px 50%;
+  }
+}
+
+.vc-foot-row-newsletter-input {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: transparent;
+  color: @vc-color-text;
+  font-size: 14px;
+  text-align: left;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+
+// Změna layoutu: Obrázek a vedle něj na řádku claim a newsletter formulář
+
+@media only screen and (min-width: @vc-layout-start) {
+  .vc-foot-row-newsletter-bg-inner {
+    padding: (45px + 40px) 0 20px 270px;
+    background-position: 0 0;
+  }
+
+  .vc-foot-row-newsletter-cell-claim {
+    text-align: left;
+  }
+
+  .vc-foot-row-newsletter-cell-form {
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .vc-foot-row-newsletter-table {
+    display: table;
+    width: 100%;
+  }
+
+  .vc-foot-row-newsletter-cell {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .vc-foot-row-newsletter-claim {
+    font-size: 30px;
+  }
+
+  .vc-foot-row-newsletter-cell-form {
+    text-align: right;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .vc-foot-row-newsletter-input-wrapper {
+    width: 270px;
+  }
+}

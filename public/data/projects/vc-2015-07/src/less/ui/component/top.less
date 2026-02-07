@@ -1,0 +1,56 @@
+/*
+
+Horní element s obloukem dole
+=============================
+
+Je obalem pro banner nebo kroky v košíku.
+
+*/
+
+
+.vc-top {
+  .vc-clearfix;
+
+  padding-bottom: 11px;
+
+  background: @vc-bg-lightest url("../dist/img/arc-content.svg") no-repeat 50% 100%; //todo: inline / sprite svg?
+  background-size: 100.5%; // více než 100 % je kvůli pokrytí pozadím v Chrome při lichých rozlišeních
+
+  @media only screen and (min-width: 420px){
+    padding-bottom: 22px; // vyska oblouku na pozadi
+  }
+
+  // oblouky v ie7 a ie8 neřešíme
+  /*
+  .vc-no-svg &{ // fallback pro prohlížeče bez svg (IE8-)
+    background-image: url("../dist/img/arc-foot-partners.png"); //todo: inline / sprite svg?
+  }
+  */
+}
+
+.vc-top-is-under {
+  position: absolute;
+  width: 100%;
+  height: 120px;
+  border-top: 1px solid #f1f7fa;
+
+  @media only screen and (min-width: @vc-layout-start) {
+    height: 150px;
+  }
+
+  @media only screen and (min-width: 1024px) {
+    height: 170px;
+  }
+}
+
+.vc-top-for-cart-empty {
+  height: 260px;
+
+  @media only screen and (min-width: 600px) {
+    height: 280px;
+  }
+
+  @media only screen and (min-width: @vc-layout-start) {
+    height: 200px;
+  }
+}

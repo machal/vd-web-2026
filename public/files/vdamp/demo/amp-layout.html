@@ -1,0 +1,151 @@
+<!doctype html>
+<html amp lang="en">
+  <head>
+    <meta charset="utf-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <title>AMP layout</title>
+    <link rel="canonical" href="amp-layout.html">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <style amp-custom>
+      body {
+        padding: 20px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+      }
+
+      .container {
+        padding: 10px;
+        background:lightgrey;
+      }
+
+      /* Needed for layout="fill" */
+      .container-in--for-fill {
+        position: relative;
+        height: 4em;
+      }
+
+      /* Needed for layout="flex-item" */
+      .container-in--for-flex-item {
+        display: flex;
+      }
+
+      img {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>The AMP Layout</h1>
+
+    <h2>layout="fixed"</h2>
+
+    <div class="container">
+      <div class="container-in">
+        <amp-img src="img/placeholder/placeholder-green-16-9.jpg"
+            width="160"
+            height="90"
+            layout="fixed"
+            alt=""></amp-img>
+       </div>
+    </div>
+
+    <h2>layout="responsive"</h2>
+
+    <div class="container">
+      <div class="container-in">
+        <amp-img src="img/placeholder/placeholder-green-16-9.jpg"
+            width="160"
+            height="90"
+            layout="responsive"
+            alt=""></amp-img>
+      </div>
+    </div>
+
+    <h2>layout="intrinsic"</h2>
+
+    <div class="container">
+      <div class="container-in">
+        <amp-img src="img/placeholder/placeholder-green-16-9.jpg"
+            width="160"
+            height="90"
+            layout="intrinsic"
+            alt=""></amp-img>
+      </div>
+    </div>
+
+    <h2>layout="flex-item"</h2>
+
+    <div class="container">
+      <div class="container-in container-in--for-flex-item">
+        <p layout="flex-item">
+          <amp-img src="img/placeholder/placeholder-green-1-1.jpg"
+          width="90"
+          height="90"
+          alt=""></amp-img>
+        </p>
+        <p layout="flex-item">
+          <amp-img src="img/placeholder/placeholder-green-1-1.jpg"
+          width="90"
+          height="90"
+          layout="flex-item"
+          alt=""></amp-img>
+        </p>
+      </div>
+    </div>
+
+    <h2>layout="fixed-height"</h2>
+
+    <div class="container">
+      <div class="container-in">
+        <amp-img src="img/placeholder/placeholder-green-16-9.jpg"
+            height="90"
+            layout="fixed-height"
+            alt=""></amp-img>
+        </div>
+    </div>
+
+    <h2>layout="fill"</h2>
+
+    <div class="container">
+      <div class="container-in container-in--for-fill">
+        <amp-img src="img/placeholder/placeholder-green-16-9.jpg"
+            width="160"
+            height="90"
+            layout="fill"
+            alt=""></amp-img>
+      </div>
+    </div>
+
+    <h2>layout="nodisplay"</h2>
+
+    <div class="container">
+      <div class="container-in">
+        <amp-img src="img/placeholder/placeholder-green-16-9.jpg"
+            width="160"
+            height="90"
+            layout="nodisplay"
+            alt=""></amp-img>
+      </div>
+    </div>
+
+    <h2>Atribut media</h2>
+
+    <div class="container">
+      <div class="container-in">
+        <amp-img src="img/placeholder/placeholder-grey-16-9.jpg"
+          media="(max-width: 600px)"
+          width="160"
+          height="90"
+          layout="responsive"
+          alt=""></amp-img>
+        <amp-img src="img/placeholder/placeholder-green-16-9.jpg"
+          media="(min-width: 599px)"
+          width="160"
+          height="90"
+          layout="responsive"
+          alt=""></amp-img>
+      </div>
+    </div>
+
+  </body>
+</html>
