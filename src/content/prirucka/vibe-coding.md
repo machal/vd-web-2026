@@ -4,7 +4,7 @@ title: "Vibe-coding: revoluce jako prase"
 heading: "Vibe-coding: revoluce jako prase"
 date: 2026-02-02
 perex: "Vibe-coding je revoluce jako prase. Demokratizuje technologie a vývojařinu. A okno příležitosti je otevřené dokořán."
-published: true
+published: false
 category:
   - dovednosti
   - ai
