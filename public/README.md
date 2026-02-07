@@ -20,3 +20,7 @@ Astro automaticky servuje soubory z `public/` adresáře na root URL.
 - **`files/`** – soubory dostupné na **/files/…**.
 
 Obojí je v repozitáři a při buildu se kopíruje do `dist/` společně s ostatním obsahem `public/`.
+
+## FTP (Transmit)
+
+Při nahrávání na server přes FTP (např. Transmit) je v kořeni `public/` (a po buildu v `dist/`) soubor **`.transmitignore`**, který při synchronizaci vynechá složky `data/` a `files/` – ty se na server nahrávají zvlášť nebo tam už jsou.

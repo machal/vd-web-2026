@@ -1,0 +1,5 @@
+# Transmit FTP – ignorované složky při nahrávání
+# https://library.panic.com/transmit/transmit-ignore-file/
+
+data/
+files/
