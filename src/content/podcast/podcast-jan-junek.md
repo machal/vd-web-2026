@@ -28,14 +28,14 @@ V podcastu rozebíráme také překvapivého vítěze studie Baymard Institute m
 
 Honzova přednáška na Czech Online Expo 2019, na kterou v podcastu navazujeme:
 
-<blockquote class="twitter-tweet"><p lang="cs" dir="ltr">Děkuju za skvělé publikum na <a href="https://twitter.com/czechonlineexpo?ref_src=twsrc%5Etfw">@czechonlineexpo</a> 2019! Slidy stahujte na <a href="https://t.co/12mYaeGrBO">https://t.co/12mYaeGrBO</a> <a href="https://twitter.com/hashtag/COE2019?src=hash&ref_src=twsrc%5Etfw">#COE2019</a></p>— Jan Junek (@jan_junek) <a href="https://twitter.com/jan_junek/status/1111639726258307072?ref_src=twsrc%5Etfw">March 29, 2019</a></blockquote>
+<blockquote class="twitter-tweet"><p lang="cs" dir="ltr">Děkuju za skvělé publikum na <a href="https://x.com/czechonlineexpo?ref_src=twsrc%5Etfw">@czechonlineexpo</a> 2019! Slidy stahujte na <a href="https://t.co/12mYaeGrBO">https://t.co/12mYaeGrBO</a> <a href="https://x.com/hashtag/COE2019?src=hash&ref_src=twsrc%5Etfw">#COE2019</a></p>— Jan Junek (@jan_junek) <a href="https://x.com/jan_junek/status/1111639726258307072?ref_src=twsrc%5Etfw">March 29, 2019</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 K dispozici je také [online](https://www.eshoptube.cz/videa/86-proc-osklive-weby-funguji-aneb-co-chtit-od-grafickeho-designu) (je zpoplatněno).
 
 ## Odkazy
 
-- Jan Junek: [janjunek.com](https://www.janjunek.com/), [Twitter](https://twitter.com/jan_junek), [Proof & Reason](https://www.proofreason.com/)
+- Jan Junek: [janjunek.com](https://www.janjunek.com/), [X](https://x.com/jan_junek), [Proof & Reason](https://www.proofreason.com/)
 - Robinův tip: [The Verge: Microsoft teases its Edge browser for macOS](https://www.theverge.com/2019/5/6/18528881/microsoft-edge-macos-mac-browser-teaser-build-2019)
 - Martinův tip: [Eduard Štůla: Nejlepší články o webovém vývoji](https://medium.com/@eduardstula)
 - [Mediář: 10 statistik, které vám pomohou z marketingové bubliny](https://www.mediar.cz/10-statistik-ktere-vam-pomohou-z-marketingove-bubliny/)

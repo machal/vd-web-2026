@@ -58,7 +58,7 @@ Lidé měli na výběr jen jednu variantu.
 Lidé mohli vyplnit cokoliv. Zajímala mě znalost značky.
 
 - Často opakované jsem počítal:  Smashing Magazine 55×, CSS Tricks 36×, Medium.com 32×, Ječas 23×, Zdroják 28×, Nette web a forum 18×,  W3Schools.com 13×, Sitepoint 13×, Nielsen Norman Group 6×, Github.com 8×, Ilincev.com 8×, developer.mozilla.org 6×. „Vyhrálo“ by Vzhůru dolů (69×), ale ovlivněné je to samozřejmě šířením v kruzích mých čtenářů. Nepočítám to, ale i tak díky. :)
-- Oblíbené jsou také různé agregátory: 16 lidí uvedlo Twitter,  7 Facebook a 4 RSS.
+- Oblíbené jsou také různé agregátory: 16 lidí uvedlo X,  7 Facebook a 4 RSS.
 - Asi třetina lidí neuvedla žádný konkrétní web.
 
 ## Upřednostňuješ pro vzdělávání svůj mateřský jazyk před angličtinou?

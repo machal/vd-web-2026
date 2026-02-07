@@ -50,9 +50,9 @@ Velmi doporučuji právě Lighthouse pouštět pravidelně a řídit se jeho dop
 Také [Lighthouse](lighthouse.md) zde má samostatný článek.
 </span>
 
-## PageSpeed.cz tester 
+## PageSpeed.ONE tester 
 
-Na nástroji Lighthouse a datech z [Chrome UX Reportu](chrome-ux-report.md) je postavený také produkt, který vytváříme v PageSpeed.cz. Náš [tester rychlosti](https://app.pagespeed.cz/) má také placenou verzi pro profesionály [PLUS](https://app.pagespeed.cz/plus).
+Na nástroji Lighthouse a datech z [Chrome UX Reportu](chrome-ux-report.md) je postavený také produkt, který vytváříme v PageSpeed.ONE. Náš [tester rychlosti](https://app.pagespeed.cz/) má také placenou verzi pro profesionály [PLUS](https://app.pagespeed.cz/plus).
 
 <span class="web-only" markdown="1">
 Více [v tutoriálu](https://www.vzhurudolu.cz/blog/237-pagespeed-cz-plus-tutorial), kde rozebírám, jak vám náš nástroj pomůže.

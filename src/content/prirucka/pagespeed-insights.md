@@ -98,7 +98,7 @@ Při psaní článku přemýšlím, které české nebo slovenské weby mají v 
 
 <!-- AdSnippet -->
 
-Hodí se vědět, že [Chrome UX report se aktualizuje jednou za měsíc](https://twitter.com/rick_viscomi/status/1022828987490426880?ref_src=twsrc%5Etfw), kdežto reporty PSI každý den. Je tedy užitečné se na data od uživatelů chodit koukat sem.
+Hodí se vědět, že [Chrome UX report se aktualizuje jednou za měsíc](https://x.com/rick_viscomi/status/1022828987490426880?ref_src=twsrc%5Etfw), kdežto reporty PSI každý den. Je tedy užitečné se na data od uživatelů chodit koukat sem.
 
 ## Laboratorní data {#lab}
 

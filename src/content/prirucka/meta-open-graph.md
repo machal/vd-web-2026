@@ -1,9 +1,9 @@
 ---
 id: meta-open-graph
-title: 'Open Graph a oEmbed: meta značky pro sociální sítě (Facebook, Twitter, LinkedIn, Slack…)'
+title: 'Open Graph a oEmbed: meta značky pro sociální sítě (Facebook, X, LinkedIn, Slack…)'
 category:
   - html
-heading: 'Open Graph a oEmbed: meta značky pro sociální sítě (Facebook, Twitter, LinkedIn, Slack…)'
+heading: 'Open Graph a oEmbed: meta značky pro sociální sítě (Facebook, X, LinkedIn, Slack…)'
 perex: ''
 published: true
 category_highlight: false
@@ -13,7 +13,7 @@ og_title: ''
 og_description: ''
 og_type: article
 ---
-# Open Graph a oEmbed: meta značky pro sociální sítě (Facebook, Twitter, LinkedIn, Slack…)
+# Open Graph a oEmbed: meta značky pro sociální sítě (Facebook, X, LinkedIn, Slack…)
 
 V tomto článku si budeme povídat o starých dobrých HTML značkách postavený na specifikaci Open Graph od Facebooku.
 
@@ -30,7 +30,7 @@ Meta značky pro sociální sítě a moderní chatovací nástroje jsou zodpově
 <figure>
 <img src="../dist/images/original/meta-open-graph.png" alt="">
 <figcaption markdown="1">
-*Takhle to může vypadat na Facebooku, Twitteru, LinkedIn nebo Slacku. Když se to dobře nastaví.*
+*Takhle to může vypadat na Facebooku, X, LinkedIn nebo Slacku. Když se to dobře nastaví.*
 </figcaption>
 </figure>
 
@@ -43,7 +43,7 @@ Stále samozřejmě platí, že do `<head>` stránky musíme uvádět značky `<
 
 Tohle se použije na mnoha různých místech – počínaje názvem okna v prohlížeči a konče výsledky vyhledávání Googlu nebo Seznamu. Tam to bude ovlivňovat například i šanci, jak moc bude uživatel chtít kliknout právě na ten váš výsledek.
 
-Teoreticky by to mohlo stačit všem sociálním sítím. Jenže často je struktura informací potřebných pro náhled v prohlížeči, vyhledávači a nebo pro Twitter dost odlišná.
+Teoreticky by to mohlo stačit všem sociálním sítím. Jenže často je struktura informací potřebných pro náhled v prohlížeči, vyhledávači a nebo pro X dost odlišná.
 
 Ten hlavní rozdíl je v obrázkovém náhledu obsahu stránky, který po vás sociální síť vyžaduje:
 
@@ -75,11 +75,11 @@ Tenhle validátor ovšem může za rok, dva být neplatný nebo prostě nebude d
 Proto se ideálně ještě dívejte na výsledky validátorů pro sociální sítě, které vás zajímají:
 
 - [Facebook: Sharing Debugger](https://developers.facebook.com/tools/debug/)
-- [Twitter: Card Validator](https://cards-dev.twitter.com/validator)
+- [X: Card Validator](https://cards-dev.twitter.com/validator)
 - [LinkedIn: Post Inspector](https://www.linkedin.com/post-inspector/inspect/)
 - [Pinterest: Rich Pins Validator](https://developers.pinterest.com/tools/url-debugger/)
 
-Minimálně ty první dva (Facebook a Twitter) doporučuji projít u každého typu URL, které na webu máte. Vzhledem k významnému podílu návštěvnosti ze sociálních sítí je to nutnost.
+Minimálně ty první dva (Facebook a X) doporučuji projít u každého typu URL, které na webu máte. Vzhledem k významnému podílu návštěvnosti ze sociálních sítí je to nutnost.
 
 Takže teď víte, že máte vždy připravit obrázek a pak se případně nechat řídit validátory. Pojďme ukrojit další, tentokrát více hutné, kolečko salámu.
 
@@ -105,12 +105,12 @@ Následuje vysvětlení:
 - `og:url` je kanonické URL, které si přičte všechna sdílení a lajkování této stránky. Prý je to povinné i pro URL, která nemají kanonickou adresu.
 - `og:site_name` použijte raději vždy, ale hodí se hlavně u webů, které sedí na více (sub)doménách a chtějí na socsítích používat jednu značku.
 - `og:type` je důležité označení typu stránky. Různé typy mohou mít různé zobrazení náhledů. Možné typy jsou např. `article`, `book`, `product`… Více k tomu [později](#typy).
-- `twitter:card` je označení typu karty, což umožňuje změnit Twitter.
-- `twitter:site` odkazuje na Twitter účet, který se může u karty objevit s výzvou k přihlášení odběru.
+- `twitter:card` je označení typu karty, což umožňuje změnit X.
+- `twitter:site` odkazuje na X účet, který se může u karty objevit s výzvou k přihlášení odběru.
 
-## Open Graph, Twitter Cards… a tady oEmbed {#oembed}
+## Open Graph, X Cards… a tady oEmbed {#oembed}
 
-Asi jste si všimli, že kromě technologie [Open Graph](https://ogp.me/) (OG) od Facebooku (prefix `og:`) se zde používají také [Twitter Cards](https://developer.twitter.com/en/docs/twitter-for-websites/cards/guides/getting-started) (prefix: `twitter:`).
+Asi jste si všimli, že kromě technologie [Open Graph](https://ogp.me/) (OG) od Facebooku (prefix `og:`) se zde používají také [X Cards](https://developer.twitter.com/en/docs/twitter-for-websites/cards/guides/getting-started) (prefix: `twitter:`).
 
 V praxi se můžete setkat ještě se třetí specifikací – [oEmbed](https://oembed.com/), která na to technicky jde trochu jinak.
 
@@ -141,9 +141,9 @@ V JSON pak definujete potřebně parametry pro vzhled sdílecího náhledu:
 
 Vypadá to zajímavě, hlavně z pohledu vývojářů, protože díky umístění „bokem“ není potřeba zvětšovat HTML kód.
 
-Zdá se, že minimálně obecně s oEmbed [Facebook](https://developers.facebook.com/docs/features-reference/oembed_read) i [Twitter](https://developer.twitter.com/en/docs/twitter-for-websites/oembed-api) pracovat umí.
+Zdá se, že minimálně obecně s oEmbed [Facebook](https://developers.facebook.com/docs/features-reference/oembed_read) i [X](https://developer.twitter.com/en/docs/twitter-for-websites/oembed-api) pracovat umí.
 
-To ale neznamená, že byste mohli Open Graph pro vaše weby úplně vynechat. Ptal jsem se na sociálních sítích, zda někdo oEmbed používá jako hlavní zdroj pro náhledy webu ([Facebook](https://www.facebook.com/groups/frontendisti/posts/2925001394378032/), [Twitter](https://twitter.com/machal/status/1450008456698736650)). [Nikoliv](https://twitter.com/mifko/status/1450705870871007233).
+To ale neznamená, že byste mohli Open Graph pro vaše weby úplně vynechat. Ptal jsem se na sociálních sítích, zda někdo oEmbed používá jako hlavní zdroj pro náhledy webu ([Facebook](https://www.facebook.com/groups/frontendisti/posts/2925001394378032/), [X](https://x.com/machal/status/1450008456698736650)). [Nikoliv](https://x.com/mifko/status/1450705870871007233).
 
 oEmbed tedy zatím považuji spíše za určitou alternativu k Open Graph, která je vhodná pro specifičtější použití, ale OG nenahrazuje.
 
@@ -195,7 +195,7 @@ Kdysi jsem četl, že je kvůli analytice dobré propojit web i se stránkou na 
 <meta property="fb:pages" content="…">
 ```
 
-U Twitteru prý podobnou vazbu na analytiku dělá `twitter:site`:
+U X prý podobnou vazbu na analytiku dělá `twitter:site`:
 
 ```html
 <meta name="twitter:site" content="@vzhurudolu">
@@ -255,15 +255,15 @@ Podmínky pro náhledové obrázky se liší podle sociálních sítí, ale je m
 
 Více v [dokumentaci Facebooku](https://developers.facebook.com/docs/sharing/webmasters/images/).
 
-### Twitter
+### X
 
 - Poměr stran 2 : 1.
 - Minimálně 300 ⨉ 157.
 - Maximálně 4096 ⨉ 4096, 5 MB.
 
-Více [v dokumentaci Twitteru](https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/summary-card-with-large-image).
+Více [v dokumentaci X](https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/summary-card-with-large-image).
 
-Vychází z toho, že vaše obrázky by mohly mít poměr stran velikost 1200 ⨉ 630 pixelů, ale počítejte, že vám je Twitter na výšku mírně ořízne.
+Vychází z toho, že vaše obrázky by mohly mít poměr stran velikost 1200 ⨉ 630 pixelů, ale počítejte, že vám je X na výšku mírně ořízne.
 
 ## Generování náhledových obrázků {#generovani}
 

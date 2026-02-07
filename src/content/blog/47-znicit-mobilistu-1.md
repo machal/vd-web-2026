@@ -83,7 +83,7 @@ HD displeje typu [Retina](https://www.apple.com/macbook-pro/features-retina/) ne
 
 *Dejte těm potvorám jasně najevo, ať si koupí jiný mobil.*
 
-Musíme se smířit [s ohromnou různorodostí rozlišení obrazovky](http://screensiz.es/phone) na mobilních zařízeních. Dříve hlavně na Android platformě, [dnes už ale i na Apple zařízeních](https://twitter.com/firt/status/644540229815259138). Dávno nelze počítat s tím, že chytrý telefon má v menším rozměru něco kolem 320, tablet kolem 768 a desktop nad 1024 pixelů. Stránky by se hlavně na rozlišeních pod 768 pixelů měly umět plynule přizpůsobovat velikosti displeje. 
+Musíme se smířit [s ohromnou různorodostí rozlišení obrazovky](http://screensiz.es/phone) na mobilních zařízeních. Dříve hlavně na Android platformě, [dnes už ale i na Apple zařízeních](https://x.com/firt/status/644540229815259138). Dávno nelze počítat s tím, že chytrý telefon má v menším rozměru něco kolem 320, tablet kolem 768 a desktop nad 1024 pixelů. Stránky by se hlavně na rozlišeních pod 768 pixelů měly umět plynule přizpůsobovat velikosti displeje. 
 
 Pro jaká rozlišení web připravit? Pro všechna, přátelé.
 

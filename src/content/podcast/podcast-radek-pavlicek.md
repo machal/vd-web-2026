@@ -30,7 +30,7 @@ Podcast: <a href="https://soundcloud.com/vzhurudolu/s-radkem-pavlickem-o-pristup
 * Blog [Poslepu.cz](http://poslepu.cz/)
 * [Středisko Teiresiás](https://www.teiresias.muni.cz/)
 * [Přednáška na WebExpo 2017](https://www.webexpo.cz/praha2017/prednaska/jak-a-proc-resi-velke-weby-pristupnost/)
-* [Twitter](https://twitter.com/radlicek), [Facebook](https://cs-cz.facebook.com/radlicek), [LinkedIn](https://cz.linkedin.com/in/radekpavlicek/cs)
+* [X](https://x.com/radlicek), [Facebook](https://cs-cz.facebook.com/radlicek), [LinkedIn](https://cz.linkedin.com/in/radekpavlicek/cs)
 
 ## Obsah {#obsah}
 

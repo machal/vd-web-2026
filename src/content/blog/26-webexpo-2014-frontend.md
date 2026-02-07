@@ -14,7 +14,7 @@ og_type: article
 
 # Co musí frontendista vidět na WebExpu 2014?
 
-Několik uplynulých měsíců jsme s [Robinem Pokorným](https://twitter.com/robinpokorny) a [Honzou Sládkem](https://twitter.com/honzasladek) usilovně pracovali na frontend [programu letošního WebExpa](http://webexpo.cz/konference2014/program/sobota/). Teď vám chceme představit výsledky.
+Několik uplynulých měsíců jsme s [Robinem Pokorným](https://x.com/robinpokorny) a [Honzou Sládkem](https://x.com/honzasladek) usilovně pracovali na frontend [programu letošního WebExpa](http://webexpo.cz/konference2014/program/sobota/). Teď vám chceme představit výsledky.
 
 Nastavili jsme si témata, která letos musejí zaznít a ke každému hledali co nejlepšího řečníka. A jak to dopadlo? Pojďte s námi na krátkou procházku frontend programem letošního WebExpa.
 
@@ -54,5 +54,5 @@ O Gruntu bylo i v Česku řečeno mnohé. My jsme ale hledali člověka, který 
 
 Nezapomeňte, že kromě osmi „našich" přednášek a workshopů letos v centru Prahy uvidíte [dalších přibližně 70 řečníků](http://2014.webexpo.cz/) mluvících o webdesignu a příbuzných oborech.
 
-*[Martin Michálek](https://twitter.com/machal) a [Robin Pokorný](https://twitter.com/robinpokorny)  
+*[Martin Michálek](https://x.com/machal) a [Robin Pokorný](https://x.com/robinpokorny)  
 garanti frontend programu WebExpo 2014*

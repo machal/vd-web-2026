@@ -33,7 +33,7 @@ Dneska by se místo „čtu knihy“ mohlo raději říkat „konzumuji ucelený
 
 Sám jsem fanoušek knih, ucelenějšího a soustředěnějšího pohledu na problematiku, která mě zajímá. Je ale pravda, že v průběhu času se to mění i u mě – před lety jsem se například zbláznil do e-knih, ale v poslední době od nich utíkám zpět směrem k tištěným.
 
-O některých oblastech bych si knížku nekoupil nebo koupit nemůžu (rychlost webu, jak brzy uvidíte) a knihy samozřejmě i já používám jako doplněk k Twitteru, newsletterům a článkům a té nejdůležitější věci, které se jmenuje Google.
+O některých oblastech bych si knížku nekoupil nebo koupit nemůžu (rychlost webu, jak brzy uvidíte) a knihy samozřejmě i já používám jako doplněk k X, newsletterům a článkům a té nejdůležitější věci, které se jmenuje Google.
 
 <!-- AdSnippet -->
 
@@ -193,7 +193,7 @@ Důležité téma. Domnívám se, že [o přístupnosti](https://www.vzhurudolu.
 
 ### Inclusive Design Patterns (Heydon Pickering, 2016)
 
-Máte rádi anglický humor? Češi nejspíš ano. A neznáte Heydona Pickeringa? Tohle určitě napravte. [Heydon](https://twitter.com/heydonworks) je dle mého nejvtipnější tvůrce obsahu pro webové vývojáře, navíc hodně chytrý člověk, který umí o přístupnosti skvěle psát a mluvit. „Inclusive Design Patterns“ je napsané s lehkostí a postavená tak, abyste mohli získané znalosti hned používat.  [Web knihy](https://www.smashingmagazine.com/2016/10/inclusive-design-patterns/).
+Máte rádi anglický humor? Češi nejspíš ano. A neznáte Heydona Pickeringa? Tohle určitě napravte. [Heydon](https://x.com/heydonworks) je dle mého nejvtipnější tvůrce obsahu pro webové vývojáře, navíc hodně chytrý člověk, který umí o přístupnosti skvěle psát a mluvit. „Inclusive Design Patterns“ je napsané s lehkostí a postavená tak, abyste mohli získané znalosti hned používat.  [Web knihy](https://www.smashingmagazine.com/2016/10/inclusive-design-patterns/).
 </div>
 </div>
 
@@ -231,7 +231,7 @@ Tipy na další zdroje: [Radek Pavlíček](https://poslepu.cz/), kdo jiný.
 
 ## Rychlost webu {#rychlost}
 
-V mém aktuálně hlavním zaměření je to s knížkami těžké. Věci se vyvíjejí velmi rychle a vlastně neexistuje aktuální knížka, kterou bych vám mohl doporučit. Tady je opravdu lepší sledovat Twitter a newslettery. Zmíním ale alespoň dvě knihy.
+V mém aktuálně hlavním zaměření je to s knížkami těžké. Věci se vyvíjejí velmi rychle a vlastně neexistuje aktuální knížka, kterou bych vám mohl doporučit. Tady je opravdu lepší sledovat X a newslettery. Zmíním ale alespoň dvě knihy.
 
 <div class="row">
 <div class="col w-25-xs" markdown="1">
@@ -263,7 +263,7 @@ Svého času jsem měl rád tuto knihu, která rozšiřuje responzivní design o
 </div>
 </div>
 
-Raději vám dám tipy na další zdroje: sledujte [Performance Newsletter](https://perf.email/) nebo náš [Twitter účet z PageSpeed.cz](https://twitter.com/pagespeedcz).
+Raději vám dám tipy na další zdroje: sledujte [Performance Newsletter](https://perf.email/) nebo náš [X účet z PageSpeed.ONE](https://x.com/pagespeedcz).
 
 ## Design {#design}
 
@@ -309,7 +309,7 @@ Velmi čtivá a praktická příručka použitelnosti. Čtenář Miroslav Bartí
 
 ### UX pro začátečníky: Rychlokurz – 100 lekcí (Joel Marsh, 2015)
 
-Stručná brožurka, která poskytuje intro do UX. Tuhle jsem zatím nečetl, ale Martin Kopta, zkušený UX výzkumník k ní [napsal](https://twitter.com/atpok/status/1136583353145184256): „Měli byste jich mít pár na stole, a kdykoli se u něj objeví někdo, kdo s UX přichází do styku poprvé (manažeři, produkťáci, vývojáři, grafici…), měli byste mu jednu vrazit.“
+Stručná brožurka, která poskytuje intro do UX. Tuhle jsem zatím nečetl, ale Martin Kopta, zkušený UX výzkumník k ní [napsal](https://x.com/atpok/status/1136583353145184256): „Měli byste jich mít pár na stole, a kdykoli se u něj objeví někdo, kdo s UX přichází do styku poprvé (manažeři, produkťáci, vývojáři, grafici…), měli byste mu jednu vrazit.“
 
 </div>
 </div>

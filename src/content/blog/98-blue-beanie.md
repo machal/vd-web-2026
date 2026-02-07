@@ -24,9 +24,9 @@ Poslední listopadový den si celosvětově připomínáme Den modrého kulicha.
 
 Dnes se slaví už pojedenácté, ale proč se slaví zrovna 30. listopadu, netuším. Tuším ale, že modrý kulich odkazuje na velkého [Jeffreyho Zeldmana](http://www.zeldman.com/), neúnavného propagátora webových standardů.
 
-Aktivně se do akce můžete připojit fotkou s modrým kulichem na sociálních sítích pod hashtagem [#bbd17](https://twitter.com/search?q=%23bbd17&src=typd). Nebo jinak, když nemáte kulicha:
+Aktivně se do akce můžete připojit fotkou s modrým kulichem na sociálních sítích pod hashtagem [#bbd17](https://x.com/search?q=%23bbd17&src=typd). Nebo jinak, když nemáte kulicha:
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="cs" dir="ltr">Dnes je Blue Beanie Day, připomínka webových standardů a přístupnosti. Modrého kulicha jsem nenašel. Připojuji se tedy s TOU knížkou, jejím autorem a jeho kulichem. <a href="https://twitter.com/hashtag/bbd17?src=hash&ref_src=twsrc%5Etfw">#bbd17</a> <a href="https://t.co/kps9FjJjZh">pic.twitter.com/kps9FjJjZh</a></p>— Martin Michálek (@machal) <a href="https://twitter.com/machal/status/936150266226925568?ref_src=twsrc%5Etfw">November 30, 2017</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="cs" dir="ltr">Dnes je Blue Beanie Day, připomínka webových standardů a přístupnosti. Modrého kulicha jsem nenašel. Připojuji se tedy s TOU knížkou, jejím autorem a jeho kulichem. <a href="https://x.com/hashtag/bbd17?src=hash&ref_src=twsrc%5Etfw">#bbd17</a> <a href="https://t.co/kps9FjJjZh">pic.twitter.com/kps9FjJjZh</a></p>— Martin Michálek (@machal) <a href="https://x.com/machal/status/936150266226925568?ref_src=twsrc%5Etfw">November 30, 2017</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 A pokud nejste zrovna *selfíčkový typ* (já se taky moc přemáhal), vezměte příležitost za pačesy a přečtěte si nebo mrkněte na něco, co vaše weby vylepší.
@@ -48,4 +48,4 @@ Nebo jinde:
 - Skvělá knížka [Inclusive Design Patterns](https://shop.smashingmagazine.com/products/inclusive-design-patterns) Heydona Pickeringa 
 - Článek o [ARIA atributech](http://jecas.cz/aria) na Ječas.cz
 
-A když to nestihnete dneska, nevadí. Prostě si na přístupnost [vzpomeňte](https://twitter.com/search?q=%23VzpomenuSi&src=typd), až budete kódovat další projekt.
+A když to nestihnete dneska, nevadí. Prostě si na přístupnost [vzpomeňte](https://x.com/search?q=%23VzpomenuSi&src=typd), až budete kódovat další projekt.

@@ -45,7 +45,7 @@ Autoři se dopustili dvou taktických chyb: Založili AMP jako projekt jedné fi
 
 První veřejné oznámení technologie proběhlo 7. října 2015 a mluví jasně: AMP je projekt Googlu. Dávalo to smysl. Vždyť která jiná firma by měla mít zájem na dramatickém vylepšení uživatelského prožitku z otevřené části webu než ta, která na něm vydělává nejvíce? Jak jinak reagovat na právě spuštěný konkurenční projekt od Facebooku, Instant Articles?
 
-Personální základy AMP tedy položil Google. Už v úvodních oznámeních se ale mluví o partnerství s poskytovateli obsahu, jako jsou Twitter, Pinterest nebo BuzzFeed. Google nicméně projekt vedl a navazoval na něj své další projekty.
+Personální základy AMP tedy položil Google. Už v úvodních oznámeních se ale mluví o partnerství s poskytovateli obsahu, jako jsou X, Pinterest nebo BuzzFeed. Google nicméně projekt vedl a navazoval na něj své další projekty.
 
 Podívejte se na video „AMP: Základy technologie pro rychlé weby“.
 

@@ -41,7 +41,7 @@ Jsou tyhle novinky pro vývojáře hrozbou, pomocníkem nebo čím vlastně? Sho
 </div>
 <div class="col w-75-xs" markdown="1">
 
-Honza je Founder & CEO v [Contemberu](https://www.contember.com/) a CTO / UX designer v [manGowebu](https://www.mangoweb.cz/tym/honza-sladek). Dříve běhal orienťáky, vedl WebExpo a můžete si jej pamatovat jako spolupracovníka projektu [Rekola](https://www.rekola.cz/) pro sdílení kol. Honzu najdete na [LinkedInu](https://www.linkedin.com/in/honzasladek/) a [Twitteru](https://twitter.com/honzasladek).
+Honza je Founder & CEO v [Contemberu](https://www.contember.com/) a CTO / UX designer v [manGowebu](https://www.mangoweb.cz/tym/honza-sladek). Dříve běhal orienťáky, vedl WebExpo a můžete si jej pamatovat jako spolupracovníka projektu [Rekola](https://www.rekola.cz/) pro sdílení kol. Honzu najdete na [LinkedInu](https://www.linkedin.com/in/honzasladek/) a [X](https://x.com/honzasladek).
 
 </div>
 </div>

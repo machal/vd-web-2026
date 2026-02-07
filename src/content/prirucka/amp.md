@@ -3,7 +3,7 @@ id: amp
 title: 'AMP weby: Co to je a proč nás to má vůbec zajímat?'
 heading: 'AMP: Odkud vám přinese návštěvnost pro web?'
 date: 2019-07-04
-perex: 'Platformy, které využívají AMP. Není to jen vyhledávání na Google, ale také třeba LinkedIn, Pinterest, Bing a trochu i Twitter.'
+perex: 'Platformy, které využívají AMP. Není to jen vyhledávání na Google, ale také třeba LinkedIn, Pinterest, Bing a trochu i X.'
 published: true
 category:
   - amp
@@ -11,7 +11,7 @@ category_highlight: true
 include_rss: true
 no_ads: false
 og_title: 'AMP: Odkud vám přinese návštěvnost pro web?'
-og_description: 'Platformy, které využívají AMP. Není to jen vyhledávání na Google, ale také třeba LinkedIn, Pinterest, Bing a trochu i Twitter.'
+og_description: 'Platformy, které využívají AMP. Není to jen vyhledávání na Google, ale také třeba LinkedIn, Pinterest, Bing a trochu i X.'
 og_type: article
 ---
 # AMP weby: Co to je a proč nás to má vůbec zajímat?
@@ -140,7 +140,7 @@ _Čím se liší distribuce běžné stránky od AMP?_
 
 Roboti se o AMP stránce dozví prostřednictvím odkazu v HTML stránce (1), pak ji umístí na celosvětovou síť optimalizovaných serverů AMP Cache (2), kde je k dispozici platformám, které AMP dokáží využít (3).
 
-Mezi [platformy](amp-platformy.md) využívající AMP patří kromě Googlu také Bing, LinkedIn, Pinterest nebo  Twitter.
+Mezi [platformy](amp-platformy.md) využívající AMP patří kromě Googlu také Bing, LinkedIn, Pinterest nebo  X.
 
 ## Proč nás má AMP zajímat? {#proc}
 

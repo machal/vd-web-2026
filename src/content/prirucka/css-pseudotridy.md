@@ -742,7 +742,7 @@ Na rozdíl od `:is()` nepřispívá pseudotřída `:where()` ani žádný z jej�
 }
 ```
 
-Od [Stephanie Eckles](https://twitter.com/5t3ph/status/1443995746601144324) jsem si půjčil následující příklad:
+Od [Stephanie Eckles](https://x.com/5t3ph/status/1443995746601144324) jsem si půjčil následující příklad:
 
 ```css
 :where(ul, ol):where([role="list"]) {

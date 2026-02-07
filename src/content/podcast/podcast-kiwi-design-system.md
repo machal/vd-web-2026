@@ -36,7 +36,7 @@ V rozhovou jsme se pokusili projít proces vytváření obecné knihovny kompone
 
 ## Odkazy
 
-- [Honza na Twitteru](https://twitter.com/honzatmn)
+- [Honza na X](https://x.com/honzatmn)
 - Honzova přednáška: [Kam nás vedou design systémy?](https://www.youtube.com/watch?v=H-CWd4Rbxxg)
 - Články od Honzy a jeho kolegů: [design.kiwi.com](https://design.kiwi.com)
 - Srazy Czech Design Systems Community na [Meetup.com](https://www.meetup.com/Czech-Design-Systems-Community/)

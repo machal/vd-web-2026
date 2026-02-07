@@ -44,7 +44,7 @@ Zakázal si totiž začínat nové projekty, dokud není ten předchozí spušt�
 
 Filip je expert na Dart a Flutter. A tvůrce par excellence. Vývojář her, autor blogu, známého twitterbota, YouTube kanálu a mnoha dalších bočních projektů, které se právě teď mohou stát těmi hlavními.
 
-Hledejte ho na [filiph.net](https://filiph.net/), [LinkedIn](https://www.linkedin.com/in/visible/), [Twitteru](https://twitter.com/filiphracek) nebo YouTube.
+Hledejte ho na [filiph.net](https://filiph.net/), [LinkedIn](https://www.linkedin.com/in/visible/), [X](https://x.com/filiphracek) nebo YouTube.
 
 </div>
 </div>
@@ -54,7 +54,7 @@ Hledejte ho na [filiph.net](https://filiph.net/), [LinkedIn](https://www.linkedi
 - Filipův odchod z Googlu **(1:45)**
 - Vedlejší projekty zaměstnanců Googlu. Platí ještě 20 % času? **(6:58)**
 - Role „developer advocate“ v Googlu. Proč nesmí být obchodník? **(8:45)**
-- Filipovy vedlejší projekty jako [Year Progress](https://twitter.com/year_progress)  **(11:30)**
+- Filipovy vedlejší projekty jako [Year Progress](https://x.com/year_progress)  **(11:30)**
 - Jak udělat úspěšný „side project“? [Finishing is a Skill](http://blog.dubspot.com/creative-strategies-for-producers-w-matt-shadetek-finishing-is-a-skill/) **(12:49)**
 - Další projekty jako [The Self-Improving Developer](https://selfimproving.dev/) pro vývojáře, kteří nemají formální IT vzdělání **(22:45)**
 - Filipova hra [Knights of San Francisco](https://egamebook.com/knights/) a [Natural language generation (NLG)](https://en.wikipedia.org/wiki/Natural_language_generation) **(26:50)**

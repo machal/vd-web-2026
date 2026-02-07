@@ -32,7 +32,7 @@ V druhé polovině je javascriptový vývojář Robin zvědavý, jaké výhody m
 
 ## Odkazy
 
-- Honza Bien: [webmistr.wtf](https://www.webmistr.wtf/), [Twitter](https://twitter.com/honzabien?lang=cs)
+- Honza Bien: [webmistr.wtf](https://www.webmistr.wtf/), [X](https://x.com/honzabien?lang=cs)
 - Robinův tip: [PWA jako desktopové aplikace](https://developers.google.com/web/progressive-web-apps/desktop)
 - Martinův tip k fungování prohlížečů: [From URL to Interactive](https://alistapart.com/article/from-url-to-interactive) a Robinův dodatek: 
 [Inside look at modern web browser](https://developers.google.com/web/updates/2018/09/inside-browser-part1)

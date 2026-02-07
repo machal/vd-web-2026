@@ -64,7 +64,7 @@ Obsah je král a HTML je jeho trůn. Tímhle musíme začít.
 - Osnova nadpisů je v pořádku ★★☆  
 <small>Stromová struktura (outline) nadpisů `<h1>`, `<h2>` atd.  má odrážet strukturu dokumentu. Usnadní indexaci vyhledávači a prohlížení stránky zrakově postiženými. Prohlédněte si DOM, využijte [HTML5 outliner](https://gsnedders.html5.org/outliner/). Více: [Vzhůru dolů: Lze mít více `<h1>`?](https://www.vzhurudolu.cz/blog/25-vice-h1).</small>
 - Náhledy pro sociální sítě a chaty ★★☆  
-<small>Doplňte meta značky pro Facebook Open Graph, Twitter Cards a další. Mají potenciál zvýšit návštěvnost webu, protože vytvářejí hezký náhled webu na sociálních sítích. Důležitý je hlavně obrázek. Více: [Open Graph na Vzhůru dolů](meta-open-graph.md). Nástroje pro kontrolu: [Facebook Debugger](https://developers.facebook.com/tools/debug/), [Twitter Validator](https://cards-dev.twitter.com/validator), [MetaTags.io](https://metatags.io/)</small>
+<small>Doplňte meta značky pro Facebook Open Graph, X Cards a další. Mají potenciál zvýšit návštěvnost webu, protože vytvářejí hezký náhled webu na sociálních sítích. Důležitý je hlavně obrázek. Více: [Open Graph na Vzhůru dolů](meta-open-graph.md). Nástroje pro kontrolu: [Facebook Debugger](https://developers.facebook.com/tools/debug/), [X Validator](https://cards-dev.twitter.com/validator), [MetaTags.io](https://metatags.io/)</small>
 - Strukturovaná data pro Google ★★☆  
 <small>„Rich Snippets“ usnadňují nahrání informací, například o struktuře produktů e-shopu a vylepší náhled webu ve výsledcích vyhledávání. Je to podstatné hlavně u e-shopů a webů, které obsahují recenze nebo události. Více: [Strukturovaná data (aneb Rich Snippets) na Vzhůru dolů](rich-snippets.md). Tester [Google Structured Data Testing Tool](https://developers.google.com/structured-data/testing-tool/).</small>
 - Odkazy z webu ven jsou platné ★★☆  
@@ -100,7 +100,7 @@ Obsah už máme královsky vyladěný. Pojďme teď odstranit překážky, kter�
 Tuhle oblast mají obvykle na starosti naši kolegové designéři. Pojďme ale zkontrolovat to nejdůležitější z technických aspektů designu.
 
 - Požadovaná rychlost webu ★★★  
-<small>Jděte na [PageSpeed.cz](https://pagespeed.cz), změřte si konkurenci a snažte se být rychlejší než ona. Testujte všechny důležité vstupní šablony. Sledujte hlavně metriky [Web Vitals](web-vitals.md) od uživatelů. Dále: [jak Google měří rychlost](google-page-experience.md), [jak zrychlit web?](jak-zrychlit-web.md), [checklist rychlosti](https://pagespeed.cz/blog/checklist-2021), [videa o rychlosti](https://www.vzhurudolu.cz/video).</small>
+<small>Jděte na [PageSpeed.ONE](https://pagespeed.cz), změřte si konkurenci a snažte se být rychlejší než ona. Testujte všechny důležité vstupní šablony. Sledujte hlavně metriky [Web Vitals](web-vitals.md) od uživatelů. Dále: [jak Google měří rychlost](google-page-experience.md), [jak zrychlit web?](jak-zrychlit-web.md), [checklist rychlosti](https://pagespeed.cz/blog/checklist-2021), [videa o rychlosti](https://www.vzhurudolu.cz/video).</small>
 - Web je přátelský k mobilním uživatelům ★★★  
 <small>Pomůže test [Mobile Friendly](https://search.google.com/test/mobile-friendly) od Googlu. Vyčerpávající informace [o responzivní designu](https://www.vzhurudolu.cz/responzivni-design) jsou v knížce [Vzhůru do (responzivního) webdesignu](https://www.vzhurudolu.cz/kniha-responzivni-design/).</small>
 - Grafika podporuje HD displeje typu Retina ★★★  
@@ -119,7 +119,7 @@ Zobrazuje se váš obsah ve všech prohlížečích, které podporujete? Dá se 
 - Tisková verze stránky ★★☆  
 <small>Je potřeba hlavně zajistit nezobrazování částí nezajímavých pro tisk jako jsou ovládací prvky webu. [Článek na Je čas](http://jecas.cz/tisk).</small>
 - Zobrazení s blokovači reklamy ★★☆  
-<small>Testujte se zapnutými blokovači. Neblokuje Adblock i nevinné třídy z vašeho CSS? Otestujte web se zapnutým AdBlockem. [Tweet](https://twitter.com/machal/status/1084773644331597824).</small>
+<small>Testujte se zapnutými blokovači. Neblokuje Adblock i nevinné třídy z vašeho CSS? Otestujte web se zapnutým AdBlockem. [Tweet](https://x.com/machal/status/1084773644331597824).</small>
 - Dostupnost hlavního obsahu ve starších prohlížečích ★☆☆  
 <small>Záleží to na projektu a cílové skupině. Ve starších prohlížečích web nemusí vypadat jako z reklamy, důležitá je ale čitelnost hlavního obsahu a dostupnost navigace.</small>
 - Stránka je v pořádku bez CSS ★☆☆  

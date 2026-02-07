@@ -33,73 +33,64 @@ function formatDate(date: Date): string {
 ---
 
 <BaseLayout
-  title="Podcast"
-  description="Robin Pokorný a Martin Michálek vedou rozhovory se zajímavými lidmi kolem webového designu a vývoje."
+  title="Podcast – archiv Vzhůru dolů a FrontKec"
+  description="Archiv podcastu ze Vzhůru dolů (všechny epizody, už nevysílá). Martin Michálek a Robin Pokorný pokračují v podcastu FrontKec pod Frontendisti.cz."
   bodyClass="section-podcast"
 >
   <Header slot="header" />
   <Footer slot="footer" />
 
   <main role="main" id="main" aria-label="Hlavní obsah">
-      <div class="page-head page-head--lower">
-        <h1>Podcast</h1>
+      <div class="page-head page-head--lower mb-0">
+        <h1>Podcast ze Vzhůru dolů</h1>
         <div class="mb-0 maxw-30em">
-          <div class="maxw-30em">
-            <p>
-              <a href="https://robinpokorny.com/">Robin Pokorný</a> a <a href="https://www.vzhurudolu.cz/martin">Martin Michálek</a> vedou rozhovory se zajímavými lidmi kolem webového designu a vývoje.
-            </p>
-            <p>
-              Nalaďte nás: <a href="https://itunes.apple.com/cz/podcast/vzhuru-dolu-podcast/id1176274658">iTunes</a> – <a href="https://open.spotify.com/show/1G2kH2YrIwD9BABg4L7xGC">Spotify</a> – <a href="https://tunein.com/podcasts/Technology-News/Vzhuru-dolu-podcast-p1177693/">TuneIn</a> – <a href="https://anchor.fm/s/82312eb4/podcast/rss">RSS podcastů</a>.
-            </p>
-          </div>
+          <p>
+            Podcast ze Vzhůru dolů už nevysílá, změnil se na <a href="https://www.frontendisti.cz/frontkec">FrontKec</a>. Zde ale najdete všechny původní epizody na jednom místě.
+          </p>
+          <p>
+            <a href="https://open.spotify.com/show/1G2kH2YrIwD9BABg4L7xGC">Spotify</a> – <a href="https://itunes.apple.com/cz/podcast/vzhuru-dolu-podcast/id1176274658">Apple Podcasts</a> – <a href="https://tunein.com/podcasts/Technology-News/Vzhuru-dolu-podcast-p1177693/">TuneIn</a> – <a href="https://anchor.fm/s/82312eb4/podcast/rss">RSS</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="section frontkec-box pt-0 mt-0" id="frontkec">
+        <div class="content ta-c maxw-30em pt-2 pb-2">
+          <h2 class="section-heading heading-anchored mb-05">
+            <a href="#frontkec">Přelaďte na FrontKec</a>
+          </h2>
+          <p>
+            Podcast od frontendistů pro frontendisty, od webařů pro webaře. Martin Michálek a Robin Pokorný mluví s lidmi, kteří mají zkušenosti, znalosti a dělají weby srdcem. FrontKec navazuje na podcast Vzhůru dolů.
+          </p>
+          <p>
+            <a href="https://open.spotify.com/show/1Eo2sxfbDhiOTnRXDbsBYT">Spotify</a> – <a href="https://www.youtube.com/playlist?list=PLnXfazh66kVc9pbw_Tnw36M5VUIp3_pGQ">YouTube</a> – <a href="https://podcasts.apple.com/us/podcast/frontkec-podcast/id1836574580">Apple Podcasts</a> – <a href="https://anchor.fm/s/108d0600c/podcast/rss">RSS</a>
+          </p>
+          <p class="mt-2">
+            <a class="button" href="https://www.frontendisti.cz/frontkec">Přejít na FrontKec</a>
+          </p>
         </div>
       </div>
 
       <div class="section">
+        <div class="content maxw-40em mx-a">
         {latestPodcast && (
-          <div class="content-full">
-            <div class="row">
-              <div class="col mb-15 mb-0-md w-66-md mx-a-md ta-c">
-                <h2 class="mb-05 pb-0">
-                  <a href={`/podcast/${latestPodcast.data.postID}-${latestPodcast.slug}`}>{latestPodcast.data.title}</a>
-                </h2>
-                <p>
-                  <span class="article">
-                    <span class="text-color-lightest">
-                      {formatDate(latestPodcast.data.date)}
-                      —
-                    </span>
-                    {latestPodcast.data.description}
-                  </span>
-                </p>
-                <p class="mb-0 f-6">
-                  <a class="button" href={`/podcast/${latestPodcast.data.postID}-${latestPodcast.slug}`}>Pokračovat…</a>
-                </p>
-              </div>
-
-              <aside role="complementary" id="kurzy-top" aria-labelledby="promoTop-heading" class="col w-33-md">
-                <div class="rounded bg-highlight p-05 f-sm ta-c">
-                  <h2 class="h4 ml-05 mt-05 mb-025" id="promoTop-heading">
-                    CSS: moderní layout
-                  </h2>
-                  <a class="course-icon course-icon--ebook p-r" href="/css-layout/">
-                    <span class="course-icon__image">
-                      <img src="/assets/img/content/handmade/ebooks/vdlayout/vdlayout-model-both__760.webp" alt="Kniha a e-book „CSS: moderní layout"" loading="lazy" width="1540" height="1270">
-                    </span>
-                  </a>
-                  <p class="ml-05 mt-05 mp-0">
-                    Floaty už šly spát, ale tahle kniha ve vás probudí nadšence do CSS.
-                  </p>
-                  <p>
-                    <a class="button" href="/css-layout/">Více informací</a>
-                  </p>
-                </div>
-              </aside>
-            </div>
+          <div class="mb-15 ta-c">
+            <h2 class="mb-05 pb-0">
+              <a href={`/podcast/${latestPodcast.data.postID}-${latestPodcast.slug}`}>{latestPodcast.data.title}</a>
+            </h2>
+            <p>
+              <span class="article">
+                <span class="text-color-lightest">
+                  {formatDate(latestPodcast.data.date)}
+                  —
+                </span>
+                {latestPodcast.data.description}
+              </span>
+            </p>
+            <p class="mb-0 f-6">
+              <a class="button" href={`/podcast/${latestPodcast.data.postID}-${latestPodcast.slug}`}>Pokračovat…</a>
+            </p>
           </div>
         )}
-
-        <div class="content">
           {otherPodcasts.length > 0 && (
             <>
               <hr class="hr--small hr--spaced" />
@@ -151,10 +142,10 @@ function formatDate(date: Date): string {
                   Martin Michálek
                 </h3>
                 <p>
-                  Webový expert na volné noze s více než dvacetiletou praxí, zaměřující se v rámci projektu PageSpeed.cz na optimalizace rychlosti webů. Píše blog Vzhůru dolů, je autorem několika knih. Vede spolek Frontendisti.cz. S rodinou žije u Milíčovského lesa v Praze.
-                  <small>
-                    <a href="https://vzhurudolu.cz/martin" target="_blank">vzhurudolu.cz/martin</a>
-                  </small>
+                  Dlouholetý webař, píše blog Vzhůru dolů a knihy o frontendu, věnuje se rychlosti webů (PageSpeed.one). Zakladatel spolku Frontendisti.cz.
+                </p>
+                <p class="small">
+                  <a href="https://www.vzhurudolu.cz/martin" target="_blank" rel="noopener">Web</a> – <a href="https://x.com/machal" target="_blank" rel="noopener">X</a> – <a href="https://www.linkedin.com/in/machal/" target="_blank" rel="noopener">LinkedIn</a>
                 </p>
               </div>
 
@@ -166,17 +157,24 @@ function formatDate(date: Date): string {
                   Robin Pokorný
                 </h3>
                 <p>
-                  Vývojář se zaměřením na strategický doménový design, TypeScript a funkcionální programování. Žije a pracuje v Berlíně, kde také organizuje srazy a přednáší. V letech 2013 a 2015 natáčel první český podcast o frontendu pod názvem Brus kódu. Spoluzaložil spolek Frontendisti.cz.
-                  <small>
-                    <a href="https://robinpokorny.com" target="_blank">robinpokorny.com</a>
-                  </small>
+                  Senior Staff Engineer, zaměřuje se na TypeScript a funkcionální programování. Od roku 2013 natáčel podcast Brus kódu, spoluzaložil spolek Frontendisti.cz.
+                </p>
+                <p class="small">
+                  <a href="https://robinpokorny.com" target="_blank" rel="noopener">Web</a> – <a href="https://x.com/robinpokorny" target="_blank" rel="noopener">X</a> – <a href="https://www.linkedin.com/in/robinpokorny/" target="_blank" rel="noopener">LinkedIn</a>
                 </p>
               </div>
             </div>
           </div>
         </div>
       </div>
+
     </main>
+
+  <style>
+    .frontkec-box {
+      background: #f5f2d4;
+    }
+  </style>
   
   <script is:inline src="/assets/js/vrdl.min.js"></script>
 </BaseLayout>

@@ -37,7 +37,7 @@ Nebo [WordPress](https://wordpress.org/). Klasika. To už snad ani nemusím psá
 
 Ano, i na WordPressu jde všechno udělat dobře. Ale často se to dělá, no vy víte jak... Najme se vývojář, který je levný a nerozumí tomu. I relativně velké weby jsou často jen neudržovaným slepencem pluginů. Levný vývojář je levný. Takže to udělá blbě, nekomunikuje, neřeší, je zrovna na Kanárech...
 
-V [PageSpeed.cz](https://www.pagespeed.cz/) to při poradenství k rychlosti vidíme často. Konzultace nebo analýzy mohou u být u levných řešení výrazně náročnější než u řešení na míru. 
+V [PageSpeed.ONE](https://www.pagespeed.cz/) to při poradenství k rychlosti vidíme často. Konzultace nebo analýzy mohou u být u levných řešení výrazně náročnější než u řešení na míru. 
 
 Pořád to může vycházet ekonomicky, projektově nebo jinak dobře. Jasně, že může. Ale rozhodně si to dejte do kalkulace. Nenechte se překvapit. Já jsem vám to říkal.
 

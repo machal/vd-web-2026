@@ -117,7 +117,7 @@ AMP Cache ovšem uvedený kód odstraní, protože pokud je stránka zobrazován
 
 ## Kopie z AMP Cache je připravená k zobrazování
 
-Nyní už můžete na verzi stránky z AMP Cache narazit na místech, kde se obvykle setkáváme s běžnými HTML stránkami. Například ve vyhledávání Googlu, v aplikacích LinkedIn, Twitter nebo Pinterest. Na [místa výskytu AMP](amp-platformy.md) se podíváme už za chvíli.
+Nyní už můžete na verzi stránky z AMP Cache narazit na místech, kde se obvykle setkáváme s běžnými HTML stránkami. Například ve vyhledávání Googlu, v aplikacích LinkedIn, X nebo Pinterest. Na [místa výskytu AMP](amp-platformy.md) se podíváme už za chvíli.
 
 V ideální distribuční cestě se ale AMP stránka načte z AMP Vieweru, který pomáhá prohlížeči s vykreslením. Tady ji najdete už na známé adrese pod doménou Googlu: `https://google.com/amp/s/…`.
 
@@ -134,6 +134,6 @@ Zatím jsme čekali na příležitost pro vysvětlení rozdílu mezi různými u
 
 Setkání uživatele s AMP stránkou by mělo proběhnout v AMP Vieweru. Ten očekává, že bude mít k dispozici upravenou stránku umístěnou na AMP Cache. A ta si pro zdroje sahá na náš server.
 
-Je možné, že některé zobrazovací kontexty povedou uživatele přímo na zdroj, tedy na doménu majitele obsahu (`https://example.com/stranka.amp.html`), jak to dělá například Twitter. Takhle se ale zdaleka nevyužívá potenciálu AMP. Ten je v mixu frameworku pro tvorbu stránek a specifické distribuční cesty.
+Je možné, že některé zobrazovací kontexty povedou uživatele přímo na zdroj, tedy na doménu majitele obsahu (`https://example.com/stranka.amp.html`), jak to dělá například X. Takhle se ale zdaleka nevyužívá potenciálu AMP. Ten je v mixu frameworku pro tvorbu stránek a specifické distribuční cesty.
 
 Teď si musíme říct více o oné mezipaměti pro ukládání stránek AMP – o AMP Cache.

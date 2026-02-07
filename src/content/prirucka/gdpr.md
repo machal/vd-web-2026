@@ -33,7 +33,7 @@ Cílem je eliminace úniků a zneužití osobních informací.  [Osobní údaje]
 
 Vůbec si nemyslím, že jde o nějakou zbytečnou buzeraci, jak občas slýchávám. 
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="cs" dir="ltr">Spousta lidí: “<a href="https://twitter.com/hashtag/GDPR?src=hash&amp;ref_src=twsrc%5Etfw">#GDPR</a> je zbytečné.”<br><br>Tož jasně. Do doby, než uniknou a budou zneužita právě jejich data.</p>&mdash; Martin Michálek (@machal) <a href="https://twitter.com/machal/status/989460397257261057?ref_src=twsrc%5Etfw">April 26, 2018</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="cs" dir="ltr">Spousta lidí: “<a href="https://x.com/hashtag/GDPR?src=hash&amp;ref_src=twsrc%5Etfw">#GDPR</a> je zbytečné.”<br><br>Tož jasně. Do doby, než uniknou a budou zneužita právě jejich data.</p>&mdash; Martin Michálek (@machal) <a href="https://x.com/machal/status/989460397257261057?ref_src=twsrc%5Etfw">April 26, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Je samozřejmě pravda, že v zavádění předpisu na weby je pořád dost nejasností, ale tak už to s velkými normami bývá.

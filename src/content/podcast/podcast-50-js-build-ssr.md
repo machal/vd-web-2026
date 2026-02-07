@@ -62,7 +62,7 @@ Bohužel jsme se opět ani jednou nepohádali.
 
 Riki  píše JavaScript ve firmě [Outreach](https://www.outreach.io/). [Učí ostatní](https://www.vzhurudolu.cz/lektori/riki-fridrich), jak psát Javascript. Přednáší na konferencích a setkáních. Většinou o Javascriptu. Riki je z Ládví.
 
-[Web](https://fczbkk.com/) – [Twitter](https://twitter.com/fczbkk) – [Github](https://github.com/fczbkk) – [LinkedIn](https://www.linkedin.com/in/fczbkk/)
+[Web](https://fczbkk.com/) – [X](https://x.com/fczbkk) – [Github](https://github.com/fczbkk) – [LinkedIn](https://www.linkedin.com/in/fczbkk/)
 
 </div>
 </div>
@@ -79,7 +79,7 @@ Riki  píše JavaScript ve firmě [Outreach](https://www.outreach.io/). [Učí o
 
 Libor je Head of Front-End Development v [CDN77](https://www.cdn77.com/), kde poskytují infrastrukturu pro globální internet. Fanoušek World Wide Web platformy a rozumného přístupu k web developmentu. Má rád všechny JS frameworky, ale ještě radši je podrobuje kritickému pohledu. Kdysi dělal meetupy Vue.js, dneska migruje většinu věcí z Nextu na SvelteKit. Ve volném čase dělá pro bono projekty, jako např. web a newsletter pro novináře [Davida Klimeše](https://davidklimes.cz/) a konzultuje architekturu a výkon webových aplikací.
 
-[LinkedIn](https://www.linkedin.com/in/liborvanekcz/) – [Twitter](https://twitter.com/liborvanek)  
+[LinkedIn](https://www.linkedin.com/in/liborvanekcz/) – [X](https://x.com/liborvanek)  
 
 </div>
 </div>
@@ -96,7 +96,7 @@ Libor je Head of Front-End Development v [CDN77](https://www.cdn77.com/), kde po
 
 Petr v rámci projektu [Nauč mě IT](https://naucme.it/) pomáhá lidem získat dovednosti a znalosti vhodné pro práci v IT. Říká o sobě, že je vývojář zapálený pro technologie a vzdělávání. Zaměřuje se na performance, kterou vnímá jako součást UX a přístupnosti. I díky tomu si oblíbil framework Qwik, o kterém je řeč v podcastu.
 
-[LinkedIn](https://www.linkedin.com/in/petr-pegak-glaser/) – [Twitter](https://twitter.com/PetrPegakGlaser)
+[LinkedIn](https://www.linkedin.com/in/petr-pegak-glaser/) – [X](https://x.com/PetrPegakGlaser)
 
 </div>
 </div>

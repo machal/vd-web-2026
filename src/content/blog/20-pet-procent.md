@@ -201,7 +201,7 @@ Takhle nám utečou jen 4% uživatelů. To je lepší, ne? Jenže…
 
 ## Na pohádky o procentech se raději vykašlete úplně
 
-Model *„koukáme se do statistik a rozhodujeme se o podpoře či nepodpoře konkrétních prohlížečů“* má totiž stejně jako model *„na Twitteru psali, že IE8 už není potřeba podporovat, takže na něj pečeme“*  docela dost problémů:
+Model *„koukáme se do statistik a rozhodujeme se o podpoře či nepodpoře konkrétních prohlížečů“* má totiž stejně jako model *„na X psali, že IE8 už není potřeba podporovat, takže na něj pečeme“*  docela dost problémů:
 
 1. **Od webu vždy někoho odstřihnete** — 4 procenta jsou lepší než 25. Pořád to ale mohou být důležitá 4%. A rozdíl v množství mezi čtyřmi a pětadvaceti procenty v případě, že všechny prohlížeče podporujeme *plně* je obrovský.
 2. **Nezohledňují vaše konkrétní čísla** — Může vám být úplně jedno jaká čísla vycházejí mě, mohou vám být ukradené české průměry, nemluvě o těch světových. Ty berte jako výchozí bod pro vaše úvahy, hodí se třeba k odsledování trendů. Ale statistiky sledujte svoje vlastní.

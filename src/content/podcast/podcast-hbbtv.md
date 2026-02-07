@@ -29,7 +29,7 @@ og_type: article
 
 * Martinův tip: [Weby bez CSS: Existuje to vůbec? A jak to testovat?](https://www.vzhurudolu.cz/prirucka/weby-bez-css)
 * Robinův tip: [AMP Conf 2018 v Amsterdamu](https://www.ampproject.org/amp-conf/)
-* [Lukáš Kokoška na Twitteru](https://twitter.com/Lukoko_name)
+* [Lukáš Kokoška na X](https://x.com/Lukoko_name)
 * Firma [GrandIT](http://hbbtv.grandit.cz/)
 * [O HbbTV na stránkách České televize](http://www.ceskatelevize.cz/hbbtv/)
 * [Díl v MP3 ke stažení](http://cast.rocks/hosting/10893/003-HbbTV.mp3)

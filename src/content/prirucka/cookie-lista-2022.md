@@ -46,7 +46,7 @@ To soukromí ale fakt musíme řešit. Jenže jak?
 
 > Nepoužívat a nešmírovat. Za analytické nástroje nechat platit toho, kdo data měří a nenechávat to na ceně uživatelského soukromí lidí, kteří ani nevědí co schvalují.
 >
-> – *<cite>Honza ChemiX Černý [na Twitteru](https://twitter.com/janhonzacerny/status/1465985275268632579)</cite>*
+> – *<cite>Honza ChemiX Černý [na X](https://x.com/janhonzacerny/status/1465985275268632579)</cite>*
 
 Představte si situaci že přijdete do obchoďáku a u vchodu vám bez ptaní dají do kapsy krabičku, která bude ukládat vaši polohu – jaké obchody jste navštívili, co jste tam dělali. Dají vám ji s úsměvem a s tím, že příště ta data použijí pro zlepšení vašeho nákupního prožitku. A že je možné, že ta data někomu prodají. Pro vaše dobro.
 
@@ -67,7 +67,7 @@ Za náš ušetřený čas a peníze platí uživatelé svým soukromím. Jejich 
 </figcaption>
 </figure>
 
-Můj postoj je silně ovlivněný studiem třetích stran, které jsem dosud běžně používal zde na Vzhůru dolů a které pravděpodobně používáte taky – Google Analytics a vkládaný obsah od YouTube, Twitteru, Facebooku… Jejich přístup k soukromí je prostě o dost horší, než jsem si myslel.
+Můj postoj je silně ovlivněný studiem třetích stran, které jsem dosud běžně používal zde na Vzhůru dolů a které pravděpodobně používáte taky – Google Analytics a vkládaný obsah od YouTube, X, Facebooku… Jejich přístup k soukromí je prostě o dost horší, než jsem si myslel.
 
 Takže – pojďme soukromí řešit. Pojďme jej řešit bez paniky a nadávání na zákon nebo EU. Pojďme vzít ty (formálně špatné) cookie lišty jako příležitost se něco naučit a zlepšit web jako celek.
 
@@ -84,7 +84,7 @@ Nejprve pár textů a videí, které se vám mohou hodit při studiu základů z
 * Právní pohled: [Lupa.cz](https://www.lupa.cz/clanky/od-1-ledna-se-zmeni-pravidla-pro-cookies-pripravte-si-listy-radi-pravnicka/), od [Petry Dolejšové](https://www.pavelungr.cz/jak-na-cookie-listu-v-roce-2022-prace-s-cookies-v-roce-2022-saga-pokracuje-petra-dolejsova/) nebo [Dostupného advokáta](https://dostupnyadvokat.cz/blog/povinnosti-cookies).
 * Marketingový pohled: [House of Řezáč](https://www.houseofrezac.com/blog/mereni-a-marketing-bez-cookies).
 * UX pohled: [Ondřej Ilinčev](https://www.ilincev.com/cookies-2022).
-* Můj pohled k rychlosti webu na [PageSpeed.cz](http://pagespeed.cz/). (To jediné, čemu doopravdy rozumím.)
+* Můj pohled k rychlosti webu na [PageSpeed.ONE](http://pagespeed.cz/). (To jediné, čemu doopravdy rozumím.)
 * [Komplexní webinář](https://www.youtube.com/watch?v=mvMyEVr_kMg) organizovaný Pavlem Ungrem.
 * [Diskuze o cookies](https://www.youtube.com/watch?v=s4I6TjZMR_I) u Frontendistů. (Martin Kopta a Honza Chemix Černý tam velmi hezky argumentují z pohledu soukromí uživatele.)
 
@@ -135,7 +135,7 @@ Cookie lišta je otrava. Ano, to je.
 
 > Víte jaká je nejlepší cookie lišta?  Žádná!
 >
-> – *<cite>Z ohlasů [na Twitteru](https://twitter.com/count_lovelace/status/1466352798149271555)</cite>*
+> – *<cite>Z ohlasů [na X](https://x.com/count_lovelace/status/1466352798149271555)</cite>*
 
 U malinkých webů asi nemá smysl propadat panice, ale u větších jsou postihy za nedodržení zákona samozřejmě udělovány od [úřadu ÚOOU](https://www.uoou.cz/).
 
@@ -143,7 +143,7 @@ Advokáti říkají, že vás nejprve úředníci musejí vyzvat k nápravě, ta
 
 > Kontrolu provádí @UOOUCR, sankce dává samozřejmě podle uvážení, ale horní hranice je vždycky předpisem limitovaná, navíc nesmí být nepřiměřená a likvidační.
 >
-> – *<cite>Petra Dolejšová [na Twitteru](https://twitter.com/DolejsovaPetra/status/1470436779803262988)</cite>*
+> – *<cite>Petra Dolejšová [na X](https://x.com/DolejsovaPetra/status/1470436779803262988)</cite>*
 
 Jen pro pořádek – je potřeba odlišit [GDPR](gdpr.md) a nový odstaveček zákona týkajícího se cookie lišty. Píšu tady o tom druhém. Pokuty za porušování GDPR jsou myslím úplně jiná písnička. GDPR by už ale měli mít v pořádku všichni. A dávno.
 
@@ -181,7 +181,7 @@ Popularitu teď nabírají alternativní nástroje jako je [Matomo](https://mato
 
 Tyhle nástroje často nepoužívají cookies, to je fajn, ale zároveň uživatele identifikují jinak, nejčastěji kombinací různých faktorů, takže [fingerprintingem](https://en.wikipedia.org/wiki/Device_fingerprint), což je z pohledu soukromí úplně to samé.
 
-[Simple Analytics](https://simpleanalytics.com/), další alternativu, údajně bez fingerprintingu, ale bez sledování uživatele napříč webem, doporučovali další lidé, jako např. [Jan Smitka na Twitteru](https://twitter.com/jansmitka/status/1471592040479825923).
+[Simple Analytics](https://simpleanalytics.com/), další alternativu, údajně bez fingerprintingu, ale bez sledování uživatele napříč webem, doporučovali další lidé, jako např. [Jan Smitka na X](https://x.com/jansmitka/status/1471592040479825923).
 
 Zdá se mi, že ani přes alternativní řešení ke GA cesta nevede. GA navíc mají velkou výhodu – jsou de facto průmyslovým standardem.
 
@@ -193,13 +193,13 @@ Musím se přiznat, že právě tahle část analýzy, kterou jsem si dělal pro
 
 Pojďme si projít pár [third-parties](third-party.md), které jsem zkoumal.
 
-* **Google Fonts:** názory se různí. Nějakou personalizaci dělají, ale spíše na základě lokality. Ve [FAQ píší](https://developers.google.com/fonts/faq#what_does_using_the_google_fonts_api_mean_for_the_privacy_of_my_users), že „no cookies are sent“. [Vladimír Smitka](https://twitter.com/smitka/status/1471132548990439434) ale říká, že „Google fonty sbírají data o koncovém uživateli“ a tak je při přísném výkladu potřeba souhlas. Nebo si fonty stáhnout lokálně.
-* **Vložení obsahu z Twitteru:** Ukládají cookies, personalizační i reklamní, tzn. souhlas by myslím standardně byl potřeba. Je to však možné vypnout a chránit soukromí uživatele, viz [nápověda](https://twitter.com/machal/status/1471031073027076098).
-* **Vložení videa z YouTube:** Standardně souhlas potřebujete, ukládají reklamní cookies. Embedy lze servírovat z domény `youtube-nocookie.com` a cookies se neuloží dokud uživatel video nepustí. Tzn. pak není potřeba souhlas? Nevím. Vladimír Smitka [píše](https://twitter.com/smitka/status/1471132859402489865), že ta cookieless doména je fejk.
+* **Google Fonts:** názory se různí. Nějakou personalizaci dělají, ale spíše na základě lokality. Ve [FAQ píší](https://developers.google.com/fonts/faq#what_does_using_the_google_fonts_api_mean_for_the_privacy_of_my_users), že „no cookies are sent“. [Vladimír Smitka](https://x.com/smitka/status/1471132548990439434) ale říká, že „Google fonty sbírají data o koncovém uživateli“ a tak je při přísném výkladu potřeba souhlas. Nebo si fonty stáhnout lokálně.
+* **Vložení obsahu z X:** Ukládají cookies, personalizační i reklamní, tzn. souhlas by myslím standardně byl potřeba. Je to však možné vypnout a chránit soukromí uživatele, viz [nápověda](https://x.com/machal/status/1471031073027076098).
+* **Vložení videa z YouTube:** Standardně souhlas potřebujete, ukládají reklamní cookies. Embedy lze servírovat z domény `youtube-nocookie.com` a cookies se neuloží dokud uživatel video nepustí. Tzn. pak není potřeba souhlas? Nevím. Vladimír Smitka [píše](https://x.com/smitka/status/1471132859402489865), že ta cookieless doména je fejk.
 * **Facebook embed i Facebook pixel:** Ukládají cookie jak diví a nikde jsem nenašel možnost to změnit.
 * **Komentáře Disqus:** Ukládá cookies jak divý, v [Cookie Policy](https://disqus.com/cookie-policy/) přiznává jen část a ještě vesele prohlašuje komu všemu ty údaje cookies nepředává. A to je prosím placená služba! Zde budu muset při pročišťování webu od nepořádných služeb třetí strany začít.
 
-Můj celkový dojem? Pardon, ale asi budu blinkat… Takhle špatné jsem to nečekal. Čest výjimce, čest Twitteru.
+Můj celkový dojem? Pardon, ale asi budu blinkat… Takhle špatné jsem to nečekal. Čest výjimce, čest X.
 
 → *Související: Jak jsem dělal [analýzu cookies třetích stran](cookieless.md).*
 
@@ -212,7 +212,7 @@ Hodně se mi líbí řešení, kdy si souhlas k vložení obsahu vkládaném tř
 </figcaption>
 </figure>
 
-Celé moje vlákno k problematice third-parties je [na Twitteru](https://twitter.com/machal/status/1471031067708641282), pokud by vás to zajímalo doplněné o cenné názory dalších.
+Celé moje vlákno k problematice third-parties je [na X](https://x.com/machal/status/1471031067708641282), pokud by vás to zajímalo doplněné o cenné názory dalších.
 
 Dobře, teď už vím, že s vysokou pravděpodobností budu i na Vzhůru dolů nějakou lištu potřebovat. Jak to ale implementovat?
 
@@ -261,7 +261,7 @@ Větší weby využívají velmi robustní [OneTrust (dříve Optanon)](https://
 
 ## Cookie lišta a rychlost webu {#rychlost}
 
-Na [blogu PageSpeed.cz](https://pagespeed.cz/blog/cookie-rychlost-webu) jsem psal o trablech z pohledu rychlosti webu, které může nasazení cookie lišty způsobit.
+Na [blogu PageSpeed.ONE](https://pagespeed.cz/blog/cookie-rychlost-webu) jsem psal o trablech z pohledu rychlosti webu, které může nasazení cookie lišty způsobit.
 
 Svoje jsme si užili s OneTrust, Didomi i Google Funding Choices. Nicméně vždy jsme nalezli cestu k optimalizaci.
 

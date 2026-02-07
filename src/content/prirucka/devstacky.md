@@ -24,7 +24,7 @@ Cílem je poskytnout méně zkušeným inspiraci pro práci na vlastním [devsta
 
 ![Grunt, Gulp a NPM](../dist/images/original/grunt-gulp-npm.svg)
 
-Vycházím z toho, co jste mi poslali na [Twitteru](https://twitter.com/vzhurudolu/status/1102959956792393728) a [Facebooku](https://www.facebook.com/VzhuruDolu/posts/2211950638921068) a doplňuji to komentářem, aby bylo jasné, co je obsahem.
+Vycházím z toho, co jste mi poslali na [X](https://x.com/vzhurudolu/status/1102959956792393728) a [Facebooku](https://www.facebook.com/VzhuruDolu/posts/2211950638921068) a doplňuji to komentářem, aby bylo jasné, co je obsahem.
 
 ## Gulp
 

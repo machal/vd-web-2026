@@ -97,11 +97,11 @@ Vysvětlení je snadné: Pro Bing není český uživatel a celý český intern
 
 Jak víte, Cloudflare nevyvíjí vyhledávač, sociální síť ani jinou službu, která by vedla uživatele na cizí weby. Motivace tohoto poskytovatele serverové infrastruktury k vytvoření AMP Cache je tedy jiná než u Googlu nebo Microsoftu – cílí na další platformy a vývojáře z médií.
 
-Představte si například, že jste technický šéf Twitteru. Máte to? Snad se v té pozici cítíte dobře…
+Představte si například, že jste technický šéf X. Máte to? Snad se v té pozici cítíte dobře…
 
-A teď příklad úkolu, který řešíte: Na mobilním webu a v mobilní aplikaci Twitteru chcete zařídit UX stejného kalibru, jako si díky AMP dovoluje Google ve výsledcích vyhledávání. Skoro okamžité zobrazení odkazů na externí stránky.
+A teď příklad úkolu, který řešíte: Na mobilním webu a v mobilní aplikaci X chcete zařídit UX stejného kalibru, jako si díky AMP dovoluje Google ve výsledcích vyhledávání. Skoro okamžité zobrazení odkazů na externí stránky.
 
-Jak na to? Budování vlastní AMP Cache je drahé a využití těch od Microsoftu nebo Googlu pro vás není strategicky výhodné. Jsou to konkurenti, že ano. Můžete ale sáhnout po nezávislé Cache. Nejspíš se tedy, jako novopečený technický šéf Twitteru, přidáte k zákazníkům Cloudflare.
+Jak na to? Budování vlastní AMP Cache je drahé a využití těch od Microsoftu nebo Googlu pro vás není strategicky výhodné. Jsou to konkurenti, že ano. Můžete ale sáhnout po nezávislé Cache. Nejspíš se tedy, jako novopečený technický šéf X, přidáte k zákazníkům Cloudflare.
 
 Cache od Cloudflare navíc disponuje inovativními vlastnostmi. Umí například vést uživatele automaticky z jedné AMP stránky na další AMP. Je dobré na tomto místě zmínit, že jinak uživatelé z první AMP stránky přecházejí na běžný web.
 

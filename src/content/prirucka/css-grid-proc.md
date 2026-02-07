@@ -91,7 +91,7 @@ Tohle téma mě zajímá, a tak občas na sociálních sítích dělám průzkum
 Preferují flexbox nebo grid?
 Vypadá to, že stále flexbox.
 
-[Na Twitteru](https://twitter.com/machal/status/1367758625142374400) mi v březnu 2021 odpovědělo 55 % lidí (ze 162), že flexbox považují za výchozí pro svoji práci.
+[Na X](https://x.com/machal/status/1367758625142374400) mi v březnu 2021 odpovědělo 55 % lidí (ze 162), že flexbox považují za výchozí pro svoji práci.
 U pětiny to byl grid a u čtvrtiny záleží na případu použití.
 
 Podobnou anketu jsem letos zopakoval ve skupině [Frontendisti.cz na Facebooku](https://www.facebook.com/groups/frontendisti/posts/3230392077172294/).
@@ -312,7 +312,7 @@ Už také víte, že jsem se přistihl přitom, že se mi špatně představují
 Jenže co já vím – kodéřinou se neživím a moje představivost je omezená.
 
 Proto jsem se na sociálních sítích na příklady ptal i kolegyň a kolegů.
-(Díky všem za odpovědi! Viz [Twitter](https://twitter.com/machal/status/1597140237007716353), [Facebook](https://www.facebook.com/groups/frontendisti/posts/3230392077172294/), [LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7002906970009567232/).)
+(Díky všem za odpovědi! Viz [X](https://x.com/machal/status/1597140237007716353), [Facebook](https://www.facebook.com/groups/frontendisti/posts/3230392077172294/), [LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7002906970009567232/).)
 
 Když jsme takto dali hlavy dohromady, už víme, že obecně může být flexbox vhodnější, když jde o tyto situace:
 
@@ -367,10 +367,10 @@ Musíme použít Media Queries, však jde o „grid in“ layout, který musíme
 
 Na sítích se díky vám naskytlo pár dalších příkladů, kdy je prostě flexbox jednodušší:
 
-1. Zarovnání ikonky v tlačítku (Viz [Ondřej Žára](https://twitter.com/0ndras/status/1597149042659696640). Gridem to jde, ale je to o řádek složitější.)
-2. Zarovnání formulářových prvků s automatickou responzivitou. (Viz [zde](https://twitter.com/machal/status/1597443811134693378).)
-3. Fotogalerie s důrazem na přizpůsobení velikosti obrázků. (Viz [Ondřej Konečný](https://twitter.com/ondrejkonec/status/1597843162864578560).)
-4. Kroková navigace, která se přizpůsobuje obsahu a viewportu. (Viz [Ondřej Konečný](https://twitter.com/ondrejkonec/status/1597843824252157952).)
+1. Zarovnání ikonky v tlačítku (Viz [Ondřej Žára](https://x.com/0ndras/status/1597149042659696640). Gridem to jde, ale je to o řádek složitější.)
+2. Zarovnání formulářových prvků s automatickou responzivitou. (Viz [zde](https://x.com/machal/status/1597443811134693378).)
+3. Fotogalerie s důrazem na přizpůsobení velikosti obrázků. (Viz [Ondřej Konečný](https://x.com/ondrejkonec/status/1597843162864578560).)
+4. Kroková navigace, která se přizpůsobuje obsahu a viewportu. (Viz [Ondřej Konečný](https://x.com/ondrejkonec/status/1597843824252157952).)
 
 ## Kdo je vítěz? Ono záleží…
 

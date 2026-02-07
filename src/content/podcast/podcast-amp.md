@@ -27,7 +27,7 @@ Odkazy:
 
 - [Stránky projektu AMP](https://www.ampproject.org/)
 - [Inside Google’s plan to make the whole web as fast as AMP](https://www.theverge.com/2018/3/8/17095078/google-amp-accelerated-mobile-page-announcement-standard-web-packaging-urls) na The Verge
-- [Pavel Jašek](http://www.jasek.info/) a jeho [twitter](https://twitter.com/paveljasek)
+- [Pavel Jašek](http://www.jasek.info/) a jeho [X](https://x.com/paveljasek)
 - Martinův tip: Knihy [Nauč se to](https://www.melvil.cz/kniha-nauc-se-to/) a [Teaching Tech Together](http://teachtogether.tech/en/)
 - Robinův tip: [The Cost Of JavaScript In 2018](https://medium.com/@addyosmani/the-cost-of-javascript-in-2018-7d8950fbb5d4)
 - [Přímý odkaz na MP3](http://cast.rocks/hosting/10893/Pavel-Jasek-AMP.mp3) 

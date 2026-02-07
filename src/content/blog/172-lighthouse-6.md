@@ -26,7 +26,7 @@ Google nedávno [představil](https://web.dev/lighthouse-whats-new-6.0/) šestou
 
 <!-- AdSnippet -->
 
-V prohlížeči Chrome bude k dispozici už od připravované verze 84. Na příkazové řádce a v online nástrojích jako je [web.dev/measure](https://web.dev/measure/), [PageSpeed Insights](https://www.vzhurudolu.cz/prirucka/pagespeed-insights) nebo v našem [PageSpeed.cz](https://pagespeed.cz/) jsou výsledky Lighthouse 6 dostupné už zhruba od prvního červnového týdne.
+V prohlížeči Chrome bude k dispozici už od připravované verze 84. Na příkazové řádce a v online nástrojích jako je [web.dev/measure](https://web.dev/measure/), [PageSpeed Insights](https://www.vzhurudolu.cz/prirucka/pagespeed-insights) nebo v našem [PageSpeed.ONE](https://pagespeed.cz/) jsou výsledky Lighthouse 6 dostupné už zhruba od prvního červnového týdne.
 
 Jaké novinky přináší?
 
@@ -45,9 +45,9 @@ Borci a borkyně v Googlu nejvíce zamakali na testování [rychlosti stránek](
 Dojde tedy k celkové změně skóringu. Podle autorů výše odkazovaného článku je to spočítané tak, že zhruba pro 20 % webů uvidíte znatelně vyšší skóre, 30 % zůstane beze změn a u 50 % dojde k poklesu nejméně o pět bodů.
 
 <figure>
-<img src="https://res.cloudinary.com/vzhurudolu-cz/image/upload/v1592283002/vzhurudolu-blog/lighthouse-6-pagespeed_f7npmi.png" alt="Test rychlosti webu na PageSpeed.cz" width="1600" height="900">
+<img src="https://res.cloudinary.com/vzhurudolu-cz/image/upload/v1592283002/vzhurudolu-blog/lighthouse-6-pagespeed_f7npmi.png" alt="Test rychlosti webu na PageSpeed.ONE" width="1600" height="900">
 <figcaption markdown="1">
-*Obrázek: U některých webů si přechodu na Lighthouse šestku ničeho nevšimnete, u jiných nastal nemalý sešup ve skóringu. Zdroj: [PageSpeed.cz](https://pagespeed.cz/).*
+*Obrázek: U některých webů si přechodu na Lighthouse šestku ničeho nevšimnete, u jiných nastal nemalý sešup ve skóringu. Zdroj: [PageSpeed.ONE](https://pagespeed.cz/).*
 </figcaption>
 </figure>
 
@@ -104,6 +104,6 @@ npm install -g lighthouse
 lighthouse https://www.example.com --view
 ```
 
-Výsledky pro LPS (Lighthouse Performance Score) verze 6 už vrací náš [nástroj PageSpeed.cz](https://pagespeed.cz/).
+Výsledky pro LPS (Lighthouse Performance Score) verze 6 už vrací náš [nástroj PageSpeed.ONE](https://pagespeed.cz/).
 
 <!-- AdSnippet -->

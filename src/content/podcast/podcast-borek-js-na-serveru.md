@@ -41,7 +41,7 @@ V podcastu se mimojiné dozvíte, proč by Borek nejnovější Bun zatím nepou�
 </div>
 <div class="col w-75-xs" markdown="1">
 
-Borek je aktuálně CTO v [Shoptetu](https://www.shoptet.cz/), ale také člověk, který k naší velké radosti sleduje a veřejně komentuje dění na scéně webových technologií. Z dřívějška jej můžete znát jako zakladatele [Versionpressu](https://versionpress.com/) a historicky také například jako autora knihy o [Adobe Flex](https://www.knihydobrovsky.cz/kniha/adobe-flex-82991). Borka najdete mimojiné na [LinkedIn](https://www.linkedin.com/in/borekbernard/) nebo [Twitteru](https://twitter.com/borekb).
+Borek je aktuálně CTO v [Shoptetu](https://www.shoptet.cz/), ale také člověk, který k naší velké radosti sleduje a veřejně komentuje dění na scéně webových technologií. Z dřívějška jej můžete znát jako zakladatele [Versionpressu](https://versionpress.com/) a historicky také například jako autora knihy o [Adobe Flex](https://www.knihydobrovsky.cz/kniha/adobe-flex-82991). Borka najdete mimojiné na [LinkedIn](https://www.linkedin.com/in/borekbernard/) nebo [X](https://x.com/borekb).
 
 </div>
 </div>
@@ -49,7 +49,7 @@ Borek je aktuálně CTO v [Shoptetu](https://www.shoptet.cz/), ale také člově
 ## O čem mluvíme?
 
 * Robinův tip: Heroku zdarma končí ([Heroku's Next Chapter](https://blog.heroku.com/next-chapter)) **(1:10)**
-* Martinův tip: Jak WP Optimize podvádí v testech rychlosti ([Gijo Varghese na Twitteru](https://twitter.com/GijoVarghese_/status/1563097754322501632)) **(4:40)**
+* Martinův tip: Jak WP Optimize podvádí v testech rychlosti ([Gijo Varghese na X](https://x.com/GijoVarghese_/status/1563097754322501632)) **(4:40)**
 * Borek Bernard - představení **(8:20)**
 * O čem si budeme povídat a proč to bude JS na serveru a proč je to klíčové pro frontendový tooling? **(9:20)**
 * Prapůvod: prohlížečové JS runtime (V8 engine, SpiderMonkey, JavaScriptCore) **(11:45)**

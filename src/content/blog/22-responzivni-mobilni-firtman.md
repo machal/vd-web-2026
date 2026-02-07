@@ -20,7 +20,7 @@ Uděláte responzivní web. Máte tím mobily vyřešené? Ne automaticky.
 
 Maximiliano Firtman ten problém detailně popisuje v článku [You May Be Losing Users If Responsive Web Design Is Your Only Mobile Strategy](http://www.smashingmagazine.com/2014/07/22/responsive-web-design-should-not-be-your-only-mobile-strategy/). Pokusím se tady stručně převyprávět hlavní myšlenky a doplnit svými.
 
-Webaři se totiž u responzivního webdesignu příliš soustředí na onu *responzivnost*, tedy změnu layoutu při změně velikost okna. Onu [harmoniku](https://twitter.com/machal/status/383525191462445056).
+Webaři se totiž u responzivního webdesignu příliš soustředí na onu *responzivnost*, tedy změnu layoutu při změně velikost okna. Onu [harmoniku](https://x.com/machal/status/383525191462445056).
 
 Původní definice responzivního webdesignu to neříká jinak: responzivní web se přizpůsobuje zobrazovacímu kontextu za pomocí fluidního layoutu, médií a [Media Queries](http://www.vzhurudolu.cz/prirucka/css3-media-queries).
 

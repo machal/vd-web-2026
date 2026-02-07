@@ -50,7 +50,7 @@ Webovému kodérovi též můžeme říkat frontend kodér, vývojář uživatel
 <!-- AdSnippet -->
 
 * SEO: osnova dokumentu, `<title>`, `<meta description…>`.
-* **[nové] **Sémantické metaznačky: [Facebook Open Graph a Twitter Cards](meta-open-graph.md); Google Schema.org a [Rich Snippets](rich-snippets.md);  [favicon a touchicon](favicon.md). ([školení](https://www.vzhurudolu.cz/kurzy/webovy-frontend))
+* **[nové] **Sémantické metaznačky: [Facebook Open Graph a X Cards](meta-open-graph.md); Google Schema.org a [Rich Snippets](rich-snippets.md);  [favicon a touchicon](favicon.md). ([školení](https://www.vzhurudolu.cz/kurzy/webovy-frontend))
 * **[nové] **[Audio a video](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_HTML5_audio_and_video): HTML5 formáty audia a videa, které vyžadují aktuální prohlížeče, případně Flash.
 * **[nové] **[Canvas](http://www.zdrojak.cz/clanky/zaciname-z-html5-canvasem/): principy; k čemu je dobrý.
 * **[nové] **Povědomí o základních HTML5 aplikačních API: local/sessionStorage; History API; Geolocation API; komunikace: WebSockets, ServerSentEvents; offline: AppCache. ([školení](https://www.vzhurudolu.cz/kurzy/webovy-frontend))
@@ -193,6 +193,6 @@ Webovému kodérovi též můžeme říkat frontend kodér, vývojář uživatel
 * [Nastavení Google Analytics](google-analytics-pridani.md): základní nastavení cílů; ukládání událostí; měření konverzí a jejich hodnot; [nástroje pro vývojáře](google-analytics-vyvojari.md).
 * [Google Search Console](google-search-console.md): přidání webu a monitoring problémů.
 
-<small>Původní verze textu vznikla jako draft pro popis profese pro [Národní soustavu kvalifikací](http://narodnikvalifikace.cz/). Za kapitolu o přístupnosti autor děkuje [Radkovi Pavlíčkovi](https://twitter.com/radlicek) ([Poslepu.cz](http://poslepu.cz/)). Za spolupráci na kvalifikačním standardu kromě Radka i [Vojtovi Outulnému](https://www.linkedin.com/in/vojtechoutulny) a Jaroslavu Zelenému. Za podněty k draftu pak [Robinu Pokornému](http://robinpokorny.com/), [Tomáši Musiolovi](http://www.musiol.cz/) a [Martinu Staňkovi](https://twitter.com/koucik).</small>
+<small>Původní verze textu vznikla jako draft pro popis profese pro [Národní soustavu kvalifikací](http://narodnikvalifikace.cz/). Za kapitolu o přístupnosti autor děkuje [Radkovi Pavlíčkovi](https://x.com/radlicek) ([Poslepu.cz](http://poslepu.cz/)). Za spolupráci na kvalifikačním standardu kromě Radka i [Vojtovi Outulnému](https://www.linkedin.com/in/vojtechoutulny) a Jaroslavu Zelenému. Za podněty k draftu pak [Robinu Pokornému](http://robinpokorny.com/), [Tomáši Musiolovi](http://www.musiol.cz/) a [Martinu Staňkovi](https://x.com/koucik).</small>
 
 <small>Pokud si něco v obsahu zaslouží změnu, [upravte soubor](https://github.com/machal/prirucka/search?utf8=%E2%9C%93&q=webovy-koder) na Githubu nebo tam [vyplňte issue](https://github.com/machal/prirucka/issues).</small>

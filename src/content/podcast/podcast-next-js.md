@@ -33,7 +33,7 @@ Co musíte umět pro začátek? Jaké všechny způsoby renderování tento inov
 
 - Martinův tip: [Pseudotřída :any-link](https://developer.mozilla.org/en-US/docs/Web/CSS/:any-link).
 - Robinův tip: [Malinká knihovna rozbila create-react-app](https://github.com/then/is-promise/issues/13).
-- Martin Krištof: [LinkedIn](https://www.linkedin.com/in/martin-kri%C5%A1tof-b6b78177/), [Twitter.com](https://twitter.com/Krejcek) a jeho [Školení Reactu](https://education.anywhere.cz/skoleni/react-js-2/).
+- Martin Krištof: [LinkedIn](https://www.linkedin.com/in/martin-kri%C5%A1tof-b6b78177/), [X.com](https://x.com/Krejcek) a jeho [Školení Reactu](https://education.anywhere.cz/skoleni/react-js-2/).
 - [Framework Next.js](https://nextjs.org/).
 - Přednáška [Tima Neutkense na loňském WebExpu](https://slideslive.com/38918908/nextjs-the-react-framework?locale=cs).
 - [Přehled pěti způsobů renderování](https://developers.google.com/web/updates/images/2019/02/rendering-on-the-web/infographic.png) z [tohoto článku](https://developers.google.com/web/updates/2019/02/rendering-on-the-web).

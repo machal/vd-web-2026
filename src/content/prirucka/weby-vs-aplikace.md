@@ -141,7 +141,7 @@ Pokud jste firma, co má věrné uživatele, aplikací jste zase schopni je víc
 
 ![Reach (web) vs. Rich (native)](../dist/images/original/vdwd/lukew-reach-rich.png)
 
-*„Reach (web) vs. Rich (native) OR why you want both.“ Zdroj: Luke Wroblewski na Twitteru. [vrdl.in/8lh4f](https://twitter.com/lukew/status/649255909420503041)*
+*„Reach (web) vs. Rich (native) OR why you want both.“ Zdroj: Luke Wroblewski na X. [vrdl.in/8lh4f](https://x.com/lukew/status/649255909420503041)*
 
 Zvládnete ještě nějaká čísla? Podle comScore (The 2015 U.S. Mobile App Report) měl v červnu 2015 americký mobilní web na 9 milionů unikátních uživatelů, nativní aplikace jen něco přes tři. Jenže v aplikacích strávil průměrný uživatel přes 200 minut času, v prohlížeči něco přes 10 minut.
 
@@ -157,5 +157,5 @@ Takže usmíření na závěr:
 - Existuje spoustu variant jak udělat aplikaci a netrápit se extra kódem pro různé platformy.
 
 <div class="f-6" markdown="1">
-  *Text byl původně součástí knihy [Vzhůru do (responzivního) webdesignu](https://www.vzhurudolu.cz/ebook-responzivni). Za připomínky k článku děkuji [Honzovi Sládkovi](https://www.mangoweb.cz/en/tym/honzas), [Jirkovi Sekerovi](https://twitter.com/signalizer?lang=cs), [Honzovi Kvasničkovi](http://www.kvasnickajan.cz/), [Janu Polzerovi](https://www.polzer.cz/), [Tomáši Musiolovi](https://www.musiol.cz/) a dalším.*
+  *Text byl původně součástí knihy [Vzhůru do (responzivního) webdesignu](https://www.vzhurudolu.cz/ebook-responzivni). Za připomínky k článku děkuji [Honzovi Sládkovi](https://www.mangoweb.cz/en/tym/honzas), [Jirkovi Sekerovi](https://x.com/signalizer?lang=cs), [Honzovi Kvasničkovi](http://www.kvasnickajan.cz/), [Janu Polzerovi](https://www.polzer.cz/), [Tomáši Musiolovi](https://www.musiol.cz/) a dalším.*
 </div>

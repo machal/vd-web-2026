@@ -97,7 +97,7 @@ Od zveřejnění ChatGPT poklesly page views na StackOverflow o jednu třetinu.
 </figcaption>
 </figure>
 
-(Mimochodem, jsem z toho tak excitovaný, že na přednášce omylem [přejmenovávám tuto značku na ChatOverflow](https://twitter.com/tomaslitera/status/1712382318063542628). Asi jim tu značku prodám.) 
+(Mimochodem, jsem z toho tak excitovaný, že na přednášce omylem [přejmenovávám tuto značku na ChatOverflow](https://x.com/tomaslitera/status/1712382318063542628). Asi jim tu značku prodám.) 
 
 Tady už jde prostě do tuhého a reální lidé přicházejí o reálnou práci.
 

@@ -38,14 +38,14 @@ Jedna otázka zůstává: pohádá se Riki s Robinem?
 
 
 
-- Riki: [Web](http://fczbkk.com/), [Twitter](https://twitter.com/fczbkk)
+- Riki: [Web](http://fczbkk.com/), [X](https://x.com/fczbkk)
 - Robinův tip: iOS 13 a podpora PWA, [seznam změn](https://www.simicart.com/blog/pwa-ios-13-beta/)
 - Martinův tip: [WebExpo 2019](https://www.webexpo.net/prague2019), [Robinova přednáška](https://www.webexpo.net/prague2019/talk/practising-the-decision-making-diet-in-a-javascript-developer-s-life) a [Rikiho Discomfort zone](https://www.webexpo.net/prague2019/talk/discomfort-zone-i)
 - Rikiho školení [Vue.js prakticky](https://www.vzhurudolu.cz/kurzy/vue-js)
 - Domovské stránky frameworků [Angular.js](https://angularjs.org), [Angular](https://angular.io), [React](https://reactjs.org), [Vue.js](https://vuejs.org) a [Svelte](https://svelte.dev)
 - Výsledky dotazníku na [Stack Overflow](https://insights.stackoverflow.com/survey/2019)
 - [Seznam](https://github.com/SaraVieira/awesome-react-platforms#awesome-react-platforms) různých příchutí Reactu
-- [Chrome optimalizoval](https://twitter.com/mathias/status/1057611461999112192) jistou operaci, která se začala používat v Reactím světě
+- [Chrome optimalizoval](https://x.com/mathias/status/1057611461999112192) jistou operaci, která se začala používat v Reactím světě
 
 
 [MP3 ke stažení](http://cast.rocks/hosting/10893/Riki-JS-frameworky.mp3)

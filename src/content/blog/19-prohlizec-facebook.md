@@ -26,7 +26,7 @@ Můžete to interpretovat i [pomateně jako potenciální konec webu](http://www
 
 První místo v počtu strávených hodin — hry. No, jasně. Prakticky žádný browser.
 
-Druhé místo — nativní mobilní Facebook aplikace. To je takový ten seznam odkazů na webové stránky, které si lidé otevírají přímo v aplikaci, že ano? Další — Twitter, Social Messaging — tam si lidi občas nějaký ten odkaz pošlou taky, že ano? 
+Druhé místo — nativní mobilní Facebook aplikace. To je takový ten seznam odkazů na webové stránky, které si lidé otevírají přímo v aplikaci, že ano? Další — X, Social Messaging — tam si lidi občas nějaký ten odkaz pošlou taky, že ano? 
 
 ## Ano, web je dneska všude. Ne jen v konvenčních prohlížečích
 
@@ -46,7 +46,7 @@ Na iOS je to na jednu stranu jednodušší, protože ve všech verzích vykreslu
 
 Vývojáři nativních aplikací se navíc předhánějí v úpravách ovládacích prvků aplikace. Nepočítejte tedy s tím, že třeba výška zobrazovací plochy bude stejná jako v běžném mobilním Safari a zlom stránky bude někde jinde než váš vymazlený design vyžaduje.
 
-Naštěstí se zdá, že od iOS bude mít i vkládaný prohlížeč (UIWebView) [plnohodnotný javascriptový engine](https://twitter.com/martindrzka/status/474095065422643200). O nesdílené cache a další nevýhodách toho současného ovšem zatím žádné informace nejsou známy.
+Naštěstí se zdá, že od iOS bude mít i vkládaný prohlížeč (UIWebView) [plnohodnotný javascriptový engine](https://x.com/martindrzka/status/474095065422643200). O nesdílené cache a další nevýhodách toho současného ovšem zatím žádné informace nejsou známy.
 
 Proto i tak…
 

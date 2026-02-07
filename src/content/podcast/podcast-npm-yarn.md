@@ -42,7 +42,7 @@ Podcast: <a href="https://soundcloud.com/vzhurudolu/5-s-riki-fridrichem-o-npm-ya
 * [Rikiho školení „Principy Javascriptu“](http://www.vzhurudolu.cz/kurzy/javascript) a [lektorský web](http://www.vzhurudolu.cz/lektori/riki-fridrich)
 * Rikiho [přednáška „NPM pro lenivé kodéry“](https://www.youtube.com/watch?v=USC3o2FLts0) 
 * Rikiho [článek o Yarnu](https://medium.com/@fczbkk/yarn-prv%C3%A9-dojmy-a-predpove%C4%8F-bud%C3%BAcnosti-83598caf5914)
-* [Web](http://fczbkk.com/), [Twitter](https://twitter.com/fczbkk), [Facebook](https://www.facebook.com/fczbkk)
+* [Web](http://fczbkk.com/), [X](https://x.com/fczbkk), [Facebook](https://www.facebook.com/fczbkk)
 
 ## Obsah
 

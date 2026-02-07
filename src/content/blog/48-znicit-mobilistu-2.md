@@ -43,9 +43,9 @@ Milý webaři, na mobilech dvakrát měř, pak teprve řež. U všech nesystémo
 
 *Pokud jej neotrávíš vlastním jedem, zkus ten sousedův.*
 
-Tlačítka Facebooku, Twitteru nebo Google+ jsou pro uživatele smartphonů nepříjemné (*MUHEHEHE*) ze tří důvodů: 
+Tlačítka Facebooku, X nebo Google+ jsou pro uživatele smartphonů nepříjemné (*MUHEHEHE*) ze tří důvodů: 
 
-1. Stahují [velké množství dat](https://twitter.com/machal/status/390092744116301824) a zpomalují načtení a vykreslování stránky. 
+1. Stahují [velké množství dat](https://x.com/machal/status/390092744116301824) a zpomalují načtení a vykreslování stránky. 
 2. Většinou jsou zbytečná. [Sdílení je integrováno](http://support.apple.com/kb/HT5500) v hlavních mobilních operačních systémech. 
 3. Sdílení obsahu přes tlačítka sociálních sítí ve stránkách je na smartphonech uživatelsky komplikované. 
 

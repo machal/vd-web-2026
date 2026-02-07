@@ -15,7 +15,7 @@ og_type: article
 ---
 # Kde je možné potkat AMP stránky?
 
-AMP využívá hlavně Google, ale také třeba LinkedIn, Pinterest, Bing a trochu i Twitter.
+AMP využívá hlavně Google, ale také třeba LinkedIn, Pinterest, Bing a trochu i X.
 
 <!-- AdSnippet -->
 
@@ -74,7 +74,7 @@ Jak to vyzkoušet? Zadejte si název nějaké aktuální zpravodajské kauzy do 
 
 Jde o výběr článků zobrazovaných na výchozí stránce prohlížeče Google Chrome (Discovery Feed, česky jako „kanál Objevit“). Stránky AMP se zde opět míchají s běžnými stránkami.
 
-Podobně jako u Twitteru, který uvádíme v dalším textu, nevede odkaz na optimalizovanou verzi stránky na CDN, ale na AMP stránku hostovanou na vašem serveru.
+Podobně jako u X, který uvádíme v dalším textu, nevede odkaz na optimalizovanou verzi stránky na CDN, ale na AMP stránku hostovanou na vašem serveru.
 
 <figure>
 <img src="../dist/images/original/vdamp/amp-platformy-chrome.png" alt="">
@@ -104,14 +104,14 @@ I v mobilních aplikacích od Pinterestu můžete jít rovnou na AMP. V Česku j
 
 Více informací se dozvíte přímo od autorů Pinterest Engineering v článku „Building a faster mobile web experience with AMP“. [vrdl.in/amppin](https://medium.com/@Pinterest_Engineering/building-a-faster-mobile-web-experience-with-amp-a73c651ded7)
 
-## 6) Twitter: Moments v mobilní aplikaci {#6}
+## 6) X: Moments v mobilní aplikaci {#6}
 
-Twitter naši milou technologii rychlých stránek používá zatím jen na nepříliš honosném místě – dostanete se na ně z mobilní verze Moments.
+X naši milou technologii rychlých stránek používá zatím jen na nepříliš honosném místě – dostanete se na ně z mobilní verze Moments.
 
 <figure>
 <img src="../dist/images/original/vdamp/amp-platformy-twitter.png" alt="">
 <figcaption markdown="1">
-_Odkaz na AMP verzi článku z The Verge v Twitter Moments._
+_Odkaz na AMP verzi článku z The Verge v X Moments._
 </figcaption>
 </figure>
 

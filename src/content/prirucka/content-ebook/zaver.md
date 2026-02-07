@@ -9,7 +9,7 @@ published: false
 
 - Blog Vzhůru dolů: [vzhurudolu.cz](http://www.vzhurudolu.cz)
 - Facebook blogu: [facebook.com/vzhurudolu](https://facebook.com/vzhurudolu)
-- Autor na Twitteru: [twitter.com/machal](https://twitter.com/machal)
+- Autor na X: [twitter.com/machal](https://x.com/machal)
 
 ## Autorovy kurzy
 

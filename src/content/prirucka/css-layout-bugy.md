@@ -166,7 +166,7 @@ Tyhle chyby detailně znát nemusíte. Většinu vaší práce s flexboxem neohr
 
 <div class="book-index" data-book-index="flex-basis"></div>
 
-Když jsem se vývojářů na Twitteru ptal na jejich vychytávky spojené s flexboxem a gridem, Daniel Střelec napsal jednu, se kterou se ztotožňuji:
+Když jsem se vývojářů na X ptal na jejich vychytávky spojené s flexboxem a gridem, Daniel Střelec napsal jednu, se kterou se ztotožňuji:
 
 > U flexboxu jsem se naučil definovat vždy kompletní zápis, tedy „flex: 1 1 auto“ (nespoléhat na default), a pokud to jde, tak používat vlastnost width místo flex-basis nebo obojí.
 
@@ -195,7 +195,7 @@ Podpora gridu v prohlížečích. Jiný odstín u MSIE nevěstí značí špatno
 
 Na obrázku vidíte podporu gridu v prohlížečích, které mají v ČR nad 0,5 % podílu trhu. Prohlížeče jsou seřazené podle používanosti.
 
-Když jsem si na Twitteru dělal průzkum mezi vývojáři, vyšlo mi, že významná většina dává přednost flexboxu před gridem. Obávám se, že za to může komplikace jménem podpora gridu v MSIE.
+Když jsem si na X dělal průzkum mezi vývojáři, vyšlo mi, že významná většina dává přednost flexboxu před gridem. Obávám se, že za to může komplikace jménem podpora gridu v MSIE.
 
 Je potřeba říct, že i tenhle prohlížeč grid podporuje – a nepodporuje toho z něj vůbec málo: implicitní mřížku, [funkci `repeat()`](css-repeat.md), funkci [`minmax()`](css-minmax.md) nebo klíčová slova `min-content` a `max-content`.
 

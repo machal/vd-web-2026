@@ -28,7 +28,7 @@ V rozumné formě jednotícího obalu pro všechny poskytovatele je navržená n
 
 ## amp-social-share
 
-Přidává tlačítka pro sdílení stránky. Od e-mailu přes klasiky jako Facebook, Twitter až po sdílení e-mailem.
+Přidává tlačítka pro sdílení stránky. Od e-mailu přes klasiky jako Facebook, X až po sdílení e-mailem.
 
 Musíme začít vložením skriptu komponenty, jako vždycky:
 
@@ -91,7 +91,7 @@ Je jich ale k dispozici daleko více:
 
 ## A co další sociální sítě?
 
-Když se  díváme na seznam patnácti komponent v téhle kategorii, nemuseli bychom se divit lidem, kteří AMP zazlívají výlučnost a neotevřenost. Do seznamu se dostaly nejdůležitější sítě jako Facebook, Twitter, Pinterest nebo ruské VK, jenže spousta jiných – například LinkedIn – zde v době, kdy vzniká teto text, vlastní komponenty nemá.
+Když se  díváme na seznam patnácti komponent v téhle kategorii, nemuseli bychom se divit lidem, kteří AMP zazlívají výlučnost a neotevřenost. Do seznamu se dostaly nejdůležitější sítě jako Facebook, X, Pinterest nebo ruské VK, jenže spousta jiných – například LinkedIn – zde v době, kdy vzniká teto text, vlastní komponenty nemá.
 
 Jak už jsme psali v části první kapitoly [o kritice AMP](amp-kritika-myty.md), pevně doufáme, že i zde se povede vymyslet jednotný framework požadavků na tento typ prvků stránky a přidání nového poskytovatele nebude vyžadovat tvorbu nové komponenty.
 

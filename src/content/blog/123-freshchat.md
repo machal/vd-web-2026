@@ -23,10 +23,10 @@ tags: ['rychlost-nacitani']
 
 Ale může vám unikat jedna podstatná věc – každé nasazení externí komponenty do stránky může rychlost webu pokazit.
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="cs" dir="ltr">Marketéři, když vybíráte nějakou komponentu pro web (analytiku, a/b testing, chat…), konzultujete vždy výběr s vývojáři?<br>(RT helfne, dík moc.)</p>— Martin Michálek (@machal) <a href="https://twitter.com/machal/status/1046731360264695808?ref_src=twsrc%5Etfw">October 1, 2018</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="cs" dir="ltr">Marketéři, když vybíráte nějakou komponentu pro web (analytiku, a/b testing, chat…), konzultujete vždy výběr s vývojáři?<br>(RT helfne, dík moc.)</p>— Martin Michálek (@machal) <a href="https://x.com/machal/status/1046731360264695808?ref_src=twsrc%5Etfw">October 1, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-Moje anketa na Twitteru nemá zrovna statisticky vypovídající účast, ale řekněme, že zde je minimálně 20 marketérů, kterým bych rád věnoval tento článek.
+Moje anketa na X nemá zrovna statisticky vypovídající účast, ale řekněme, že zde je minimálně 20 marketérů, kterým bych rád věnoval tento článek.
 
 Týká se to vkládání: 
 

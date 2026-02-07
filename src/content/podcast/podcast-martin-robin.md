@@ -43,7 +43,7 @@ Takže v první části vánočního dvojdílu dělá Martin rozhovor s Robinem 
 - Práce na produktu versus práce v agentuře (**16:30**)
 - [Martin](https://www.vzhurudolu.cz/martin), konzultant rychlosti webu na volné noze - co dělá a co už nedělá? (**20:00**)
 - Vliv fenoménu 2020 na školení (**22:55**)
-- Projekt [PageSpeed.cz](https://pagespeed.cz/) (**26:30**)
+- Projekt [PageSpeed.ONE](https://pagespeed.cz/) (**26:30**)
 - Jak probíhá práce konzultanta rychlosti (**28:45**)
 - Jak se u Robina projevil rok 2020? (**33:10**)
 - Problematika online komunikace a proč na schůzku nechodit s krabicí od banánů (**35:00**)

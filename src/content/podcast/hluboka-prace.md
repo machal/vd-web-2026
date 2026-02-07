@@ -81,9 +81,9 @@ Všechny neurgentní komunikační a manažerské aktivity tak odsouvám na odpo
 
 ### 2) Aktivně se před plytkostí chránit
 
-Ke každému se plytkost dostává jinak. Já jsem například klasický narkoman sociálních sítí. Klávesnice je otlačená u písmene „F“ jako Facebook a „T“ jako Twitter. 
+Ke každému se plytkost dostává jinak. Já jsem například klasický narkoman sociálních sítí. Klávesnice je otlačená u písmene „F“ jako Facebook a „T“ jako X. 
 
-Aby to nebylo ještě horší, mám například odjakživa zrušené veškeré notifikace kromě SMS a volání. A nově se v časech hluboké práce chráním před mimoděčným vstupem na zakázené sociální sítě. Z telefonu jsem si Facebook a Twitter úplně odstranil. Ušetřený čas věnuji čtení ebooků. 
+Aby to nebylo ještě horší, mám například odjakživa zrušené veškeré notifikace kromě SMS a volání. A nově se v časech hluboké práce chráním před mimoděčným vstupem na zakázené sociální sítě. Z telefonu jsem si Facebook a X úplně odstranil. Ušetřený čas věnuji čtení ebooků. 
 
 Na počítači si pak v hodinách hluboké práce pomocí [SelfControl](https://selfcontrolapp.com/) blokuji plytké weby. Může to vypadat jako blbost, ale každý podnět zvenčí vám v hlavě udělá vítr a často i touhu se mu věnovat. No a původní koncentrace je v čudu.
 

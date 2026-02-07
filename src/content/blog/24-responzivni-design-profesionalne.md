@@ -61,7 +61,7 @@ Však víte, jak to je s technickými knihami. Jsou zastaralé už v tiskárně.
 
 U knihy o responzivním webdesignu to platí dvojnásob. Celý obor se teprve definuje. Nebo lépe řečeno — responzivní postupy redefinují celý webdesign. Bude trvat roky a roky než se ustálí pracovní postupy, zavedou technologie a vzniknou nástroje.
 
-Je ale třeba říct, že Tim Kadlec byl při smyslech a servíruje vám sadu technologií a vědomostí, které budou ještě nějakou dobu platit. K datu vydání české mutace chybí třeba více informací o `<picture>`, řešení pro responzivní obrázky, které se [zřejmě ujme](https://twitter.com/machal/status/483914638971899904), ale s tím autor nemohl nic udělat.
+Je ale třeba říct, že Tim Kadlec byl při smyslech a servíruje vám sadu technologií a vědomostí, které budou ještě nějakou dobu platit. K datu vydání české mutace chybí třeba více informací o `<picture>`, řešení pro responzivní obrázky, které se [zřejmě ujme](https://x.com/machal/status/483914638971899904), ale s tím autor nemohl nic udělat.
 
 ## Je to adaptivní, ne responzivní
 

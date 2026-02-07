@@ -16,7 +16,7 @@ og_type: article
 
 # Školení Javascriptu a SVG nově na Vzhůru dolů
 
-Pokud odebíráte newslettery nebo jste na Twitteru a Facebooku, už to víte. Pro ty z vás  co Vzhůru dolů čtete přes web nebo RSS to bude novinka – nově organizuji i školení [Javascriptu](/kurzy/javascript) a [SVG](/kurzy/svg). Obě témata vás naučí odborníci na slovo vzatí.
+Pokud odebíráte newslettery nebo jste na X a Facebooku, už to víte. Pro ty z vás  co Vzhůru dolů čtete přes web nebo RSS to bude novinka – nově organizuji i školení [Javascriptu](/kurzy/javascript) a [SVG](/kurzy/svg). Obě témata vás naučí odborníci na slovo vzatí.
 
 **[Javascript](/kurzy/javascript)** školí [Riki Fridrich](https://www.linkedin.com/in/fczbkk), nyní z TopMonks, kterého znáte i jako bloggera nebo populárního konferenčního řečníka. Javascriptem se na Vzhůru dolů (a ve své praxi) moc nezabývám, ale pro účastníky mých školení to je obvykle denní chleba. Od [HTML a CSS](/kurzy/webova-koderina) vede cesta ke [Gruntu a Gulpu](/kurzy/grunt-gulp). Od nich turistické značky ukazují k Javascriptu. Ten zároveň podle všeho patří k těm hůř pochopeným programovacím jazykům. Proto se Riki na školení nesoustředí na ekosystém kolem jazyka, ale na jazyk samotný. 
 

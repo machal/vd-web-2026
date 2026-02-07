@@ -170,7 +170,7 @@ _— „Večeře je hotová“_
 _— „Jasný, už jen poslední e-mail!“ (Jde na Facebook)_  
 _…_  
 _— „Večeřéééé!“_  
-_— „Úúúž!“ (Ještě Twitter)_  
+_— „Úúúž!“ (Ještě X)_  
 _…_  
 _— „Vystydne ti to!“_  
 _— „Musím to dopsat!“ (Dlouho jsem nebyl na LinkedInu, že…)_  
@@ -237,7 +237,7 @@ Pomohou nástroje. Já používám dva – cukr a bič:
 
 
 *   [RescueTime](https://www.rescuetime.com/) – měří čas strávený na různých typech aplikací a webů. Každý den mi dává skóre, jak moc jsem byl produktivní. To je pozitivní motivace, metoda cukru.
-*   [Freedom](https://freedom.to/) – vypne přístup k určitým webům v určitý čas nebo na určitý časový úsek. Vypínám si hlavně Facebook a Twitter, ale občas i zpravodajské weby. To je bič.
+*   [Freedom](https://freedom.to/) – vypne přístup k určitým webům v určitý čas nebo na určitý časový úsek. Vypínám si hlavně Facebook a X, ale občas i zpravodajské weby. To je bič.
 
 
 <figure>
@@ -247,7 +247,7 @@ Obrázek: Hodina a půl času v čudu. Tak to ti pěkně děkuju za informaci, m
 </figcaption>
 </figure>
 
-Nemám ty aplikace vlastně rád, ale myslím, že jim ročně vděčím až za stovky hodin času, ve kterých se můžu věnovat zajímavějším věcem než diskuzím na Facebooku nebo Twitteru.
+Nemám ty aplikace vlastně rád, ale myslím, že jim ročně vděčím až za stovky hodin času, ve kterých se můžu věnovat zajímavějším věcem než diskuzím na Facebooku nebo X.
 
 
 ### Zaveďte úřední hodiny

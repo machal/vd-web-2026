@@ -45,7 +45,7 @@ Audio
 ## Host
 
 Riki Fridrich je JS/Vue vývojář v Mall.cz a [lektor](https://www.vzhurudolu.cz/lektori/riki-fridrich).  
-[Web](https://fczbkk.com/) – [Twitter](https://twitter.com/fczbkk)
+[Web](https://fczbkk.com/) – [X](https://x.com/fczbkk)
 
 ## O čem mluvíme?
 

@@ -29,7 +29,7 @@ og_type: article
 ## Měření rychlosti
 
 - [Nástroje pro měření](rychlost-nastroje.md)
-- [PageSpeed.cz tester PLUS](https://www.vzhurudolu.cz/blog/237-pagespeed-cz-plus-tutorial)
+- [PageSpeed.ONE tester PLUS](https://www.vzhurudolu.cz/blog/237-pagespeed-cz-plus-tutorial)
 - [PageSpeed Insights](chrome-ux-report.md)
 - [Chrome UX Report](chrome-ux-report.md)
 - [Google Lighthouse](lighthouse.md)

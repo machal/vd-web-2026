@@ -325,4 +325,4 @@ Povídali jsme si o návrhu a realizaci uživatelského rozhraní v prohlížeč
 5. Prohlížeč je designérský trasér.
 6. Potřebujeme na lepší nástroje.
 
-<small>Za spolupráci na projektu responzivního redesignu VašeČočky.cz autor děkuje [Jirkovi Urbanovi](https://twitter.com/urbanjiri), jeho lidem v Maternii a redesignovacímu týmu – [Honzovi Kvasničkovi](https://twitter.com/Jan_Kvasnicka) (UX), [Petru Štastnému](https://twitter.com/raist) (grafika), [Danu Srbovi](https://twitter.com/benAbraham) a [Patriku Illymu](https://twitter.com/illycz) (frontend). </small>
+<small>Za spolupráci na projektu responzivního redesignu VašeČočky.cz autor děkuje [Jirkovi Urbanovi](https://x.com/urbanjiri), jeho lidem v Maternii a redesignovacímu týmu – [Honzovi Kvasničkovi](https://x.com/Jan_Kvasnicka) (UX), [Petru Štastnému](https://x.com/raist) (grafika), [Danu Srbovi](https://x.com/benAbraham) a [Patriku Illymu](https://x.com/illycz) (frontend). </small>

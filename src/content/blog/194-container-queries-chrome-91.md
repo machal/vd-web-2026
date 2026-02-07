@@ -23,7 +23,7 @@ og_type: article
 
 Jde o něco, co samozřejmě v CSS chceme a při vývoji webů opravdu hodně potřebujeme. Webdesign je totiž stále více o komponentách, nikoliv o stránkách.
 
-<blockquote class="twitter-tweet"><p lang="cs" dir="ltr">Container Queries přistály v Chrome Canary. <br>Je fakt mazec, jak jde ten vývoj rychle.<a href="https://t.co/pLFKHnBs55">https://t.co/pLFKHnBs55</a></p>— Martin Michálek (@machal) <a href="https://twitter.com/machal/status/1377513564236357632?ref_src=twsrc%5Etfw">April 1, 2021</a></blockquote>
+<blockquote class="twitter-tweet"><p lang="cs" dir="ltr">Container Queries přistály v Chrome Canary. <br>Je fakt mazec, jak jde ten vývoj rychle.<a href="https://t.co/pLFKHnBs55">https://t.co/pLFKHnBs55</a></p>— Martin Michálek (@machal) <a href="https://x.com/machal/status/1377513564236357632?ref_src=twsrc%5Etfw">April 1, 2021</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Před lety to ale ještě nevypadalo dobře. Provázely to různé problémy a hlášení o „nemožné implementaci“. Napsal jsem o tom [podrobný článek na blog](https://www.vzhurudolu.cz/prirucka/element-queries) a prohlásil, že to asi nikdy nedostaneme. Jsem rád, že jsem se spletl.

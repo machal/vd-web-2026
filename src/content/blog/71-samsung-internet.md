@@ -55,7 +55,7 @@ Jak [uvádí Peter Paul Koch](https://www.smashingmagazine.com/2016/10/whats-the
 Více o prohlížeči Samsung Internet:
 
 - [Homepage](http://developer.samsung.com/internet)
-- [Twitter](https://twitter.com/sbrowserdevrel)
+- [X](https://x.com/sbrowserdevrel)
 - [Kanál na Medium](https://medium.com/samsung-internet-dev)
 - [Google Play](https://play.google.com/store/apps/details?id=com.sec.android.app.sbrowser&hl=cs)
 

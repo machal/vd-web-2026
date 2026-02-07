@@ -23,7 +23,7 @@ og_type: article
 
 Prázdniny, to je čas odpočinku a potkávání se. Robin s Martinem si takhle jednoho prázdninového dne v pražském Productboardu uvědomili, že ještě nikdy nenatáčeli podcast z očí do očí, sami dva. Takže tentokrát ne online, ne s hosty, ale o tom, co se nám aktuálně převaluje v hlavách.
 
-Probrali jsme toho hodně, od práce v [Productboardu](https://www.productboard.com/) nebo v [PageSpeed.cz](http://pagespeed.cz), Robinovo „prgání“ v Kotlinu, přes leadership a management, komunity [Frontendisti.cz](http://frontendisti.cz) a[ React Berlin](https://www.meetup.com/react-berlin-meetup/), pak další nové komunity, anketu [State of React](https://stateofreact.com/en-US), metriku[ INP](https://docs.pagespeed.cz/docs/inp) a na závěr vás zveme na konferenci [FrontKon](https://www.frontkon.cz/).
+Probrali jsme toho hodně, od práce v [Productboardu](https://www.productboard.com/) nebo v [PageSpeed.ONE](http://pagespeed.cz), Robinovo „prgání“ v Kotlinu, přes leadership a management, komunity [Frontendisti.cz](http://frontendisti.cz) a[ React Berlin](https://www.meetup.com/react-berlin-meetup/), pak další nové komunity, anketu [State of React](https://stateofreact.com/en-US), metriku[ INP](https://docs.pagespeed.cz/docs/inp) a na závěr vás zveme na konferenci [FrontKon](https://www.frontkon.cz/).
 
 ## Podcast {#podcast}
 
@@ -42,7 +42,7 @@ Probrali jsme toho hodně, od práce v [Productboardu](https://www.productboard.
 - Co dělá Robin? „Architektura“ v Productboardu **(1:30)**
 - Robinovy hrátky s [Kotlinem](https://kotlinlang.org/) **(3:30)**
 - Co čteme? [The Bonfire Moment](https://www.bonfiremoment.com/), série [Duna](https://www.databazeknih.cz/serie/duna-86) **(9:00)**
-- Co dělá Martin? PageSpeed.cz [konzultace](https://www.pagespeed.cz/sluzby) a [nástroj](https://app.pagespeed.cz/plus) **(17:30)**
+- Co dělá Martin? PageSpeed.ONE [konzultace](https://www.pagespeed.cz/sluzby) a [nástroj](https://app.pagespeed.cz/plus) **(17:30)**
 - Manažujeme nebo děláme leadership? **(20:10)**
 - My a naše komunity ([Frontendisti](https://frontendisti.cz/), [React Berlin](https://www.meetup.com/react-berlin-meetup/), [WebPerf.CZ](https://www.meetup.com/webperf-cz/), [Software Design Berlin](https://www.meetup.com/software-design-berlin/))  **(23:00)**
 - React a výsledky ankety [State of React](https://stateofreact.com/en-US) **(49:50)**

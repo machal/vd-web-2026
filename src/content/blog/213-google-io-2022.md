@@ -111,10 +111,10 @@ Tohle měl být stručný článek, takže si toho hodně budu muset nechat pro 
 
 * K rychlosti: [Video](https://www.youtube.com/watch?v=fWoI9DXmpdk), jak optimalizovat [metriku LCP](https://www.vzhurudolu.cz/prirucka/metrika-lcp).
 * Nová metrika [Interaction to Next Paint (INP)](https://web.dev/inp/), která asi jednou nahradí [FID](https://www.vzhurudolu.cz/prirucka/metrika-fid). [Video](https://www.youtube.com/watch?v=Mizzbsvv8Os) o jejím vzniku.  
-* Rozšířená realita v brýlích v kombinaci s překladačem umožňuje lidem povídat si spolu. [Twitter](https://twitter.com/Google/status/1524464030668177409).
-* Chrome na Androidu umožní při platbách kartou generovat jednorázové číslo. [Twitter](https://twitter.com/wadearnold/status/1524450893860458497).
+* Rozšířená realita v brýlích v kombinaci s překladačem umožňuje lidem povídat si spolu. [X](https://x.com/Google/status/1524464030668177409).
+* Chrome na Androidu umožní při platbách kartou generovat jednorázové číslo. [X](https://x.com/wadearnold/status/1524450893860458497).
 * [Page Transitions](https://github.com/WICG/shared-element-transitions/blob/main/developer-guide.md) (možná) umožní animovat přechody mezi stránkami, tohle je fakt cool! [Video](https://www.youtube.com/watch?v=JCJUPJ_zDQ4).
 
 Google pak důležité novinky shrnuje [v článku](https://web.dev/googleio22-recap/).
 
-Co zaujalo vás? Napište [na Twitter](https://twitter.com/vzhurudolu/status/1526130210923487235) nebo [Facebook](https://www.facebook.com/VzhuruDolu/posts/pfbid0CqLFf14ppoNoF5pfkHcFui1pDXMokFwb5A2f4ziEsPF2EeXdh1iVefygsbycagPWl) Vzhůru dolů.
+Co zaujalo vás? Napište [na X](https://x.com/vzhurudolu/status/1526130210923487235) nebo [Facebook](https://www.facebook.com/VzhuruDolu/posts/pfbid0CqLFf14ppoNoF5pfkHcFui1pDXMokFwb5A2f4ziEsPF2EeXdh1iVefygsbycagPWl) Vzhůru dolů.

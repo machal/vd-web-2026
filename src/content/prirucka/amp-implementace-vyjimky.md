@@ -117,7 +117,7 @@ Tímhle způsobem přechroustáme všechny HTML prvky, které se v obou verzích
 Kromě obrázků jde zejména o kód třetích stran. Na blogu používáme například následující komponenty od AMP:
 
 * `<amp-youtube>` se vkládá namísto běžného `<iframe>` z YouTube.
-* `<amp-twitter>` namísto vkládaného kódu z Twitteru.
+* `<amp-twitter>` namísto vkládaného kódu z X.
 * `<amp-iframe>` u kódu dalších služeb, jako je SoundCloud.
 
 Když už jsme u konkrétního webu, podívejme se, jak nasazení vypadalo v praxi.

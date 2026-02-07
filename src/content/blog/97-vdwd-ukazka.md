@@ -74,7 +74,7 @@ Chodí jich dost a já je ukazuji ženě a dětem. Aby viděli, že za to ty mě
 
 ### Od frontendistů: 
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="cs" dir="ltr">Komplexní, přehledné, aktuální. Povinné čtení pro všechny frontendisty. Super práce <a href="https://twitter.com/machal?ref_src=twsrc%5Etfw">@machal</a>, díky!!! <a href="https://twitter.com/hashtag/VzhuruDoWebdesignu?src=hash&ref_src=twsrc%5Etfw">#VzhuruDoWebdesignu</a></p>— Jan Pavlica (@palivko) <a href="https://twitter.com/palivko/status/871988540036575237?ref_src=twsrc%5Etfw">June 6, 2017</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="cs" dir="ltr">Komplexní, přehledné, aktuální. Povinné čtení pro všechny frontendisty. Super práce <a href="https://x.com/machal?ref_src=twsrc%5Etfw">@machal</a>, díky!!! <a href="https://x.com/hashtag/VzhuruDoWebdesignu?src=hash&ref_src=twsrc%5Etfw">#VzhuruDoWebdesignu</a></p>— Jan Pavlica (@palivko) <a href="https://x.com/palivko/status/871988540036575237?ref_src=twsrc%5Etfw">June 6, 2017</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
@@ -85,7 +85,7 @@ Chodí jich dost a já je ukazuji ženě a dětem. Aby viděli, že za to ty mě
 
 ### Od programátorů:
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="cs" dir="ltr">Tahle knížka je fakt skvělá a moc za ni <a href="https://twitter.com/machal?ref_src=twsrc%5Etfw">@machal</a> děkuji! <a href="https://t.co/xSI711IcaF">pic.twitter.com/xSI711IcaF</a></p>— geekovo (@geekovo) <a href="https://twitter.com/geekovo/status/923139453849350144?ref_src=twsrc%5Etfw">October 25, 2017</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="cs" dir="ltr">Tahle knížka je fakt skvělá a moc za ni <a href="https://x.com/machal?ref_src=twsrc%5Etfw">@machal</a> děkuji! <a href="https://t.co/xSI711IcaF">pic.twitter.com/xSI711IcaF</a></p>— geekovo (@geekovo) <a href="https://x.com/geekovo/status/923139453849350144?ref_src=twsrc%5Etfw">October 25, 2017</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 

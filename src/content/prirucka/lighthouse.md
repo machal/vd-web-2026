@@ -66,7 +66,7 @@ Ale bavme se i o nevýhodách:
 - Výsledky auditu rychlosti webu jsou obvykle *ovlivněné aktuálním výkonem*  počítače, na kterém jej spouštíme.
 - Dělá jen *syntetickou analýzu* v jednom umělém uživatelském kontextu. Zdaleka nám tedy nedá obrázek o celé šíři problémů na naší uživatelské základně.
 
-Data o rychlosti od uživatelů nám částečně poskytne například jiný nástroj od Google – [PageSpeed Insights](pagespeed-insights.md). I s historií v čase pak [tester PageSpeed.cz](https://pagespeed.cz/).
+Data o rychlosti od uživatelů nám částečně poskytne například jiný nástroj od Google – [PageSpeed Insights](pagespeed-insights.md). I s historií v čase pak [tester PageSpeed.ONE](https://pagespeed.cz/).
 
 ## Co Lighthouse umí analyzovat? {#co-umi}
 
@@ -123,9 +123,9 @@ Podívejte se na video „Lighthouse: Test rychlosti webu“.
 
 YouTube: [youtu.be/zkbzYJ7xNKw](https://www.youtube.com/watch?v=zkbzYJ7xNKw)
 
-## Každodenní data z Lighthouse: PageSpeed.cz tester
+## Každodenní data z Lighthouse: PageSpeed.ONE tester
 
-Na datech z Lighthouse je postavený také produkt, který vytváříme v PageSpeed.cz. 
+Na datech z Lighthouse je postavený také produkt, který vytváříme v PageSpeed.ONE. 
 
 Náš [tester rychlosti](https://app.pagespeed.cz/) má také placenou verzi pro profesionály [PLUS](https://app.pagespeed.cz/plus).
 

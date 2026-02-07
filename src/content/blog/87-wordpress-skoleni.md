@@ -31,4 +31,4 @@ Za změnu vztahu vděčím [Honzovi Bienovi](https://www.janbien.cz/), zkušené
 </p>
 <br>
 
-A abych nezapomněl – do konce týdne můžete školení získat se slevou 590 Kč. Sledujte kanály Vzhůru dolů [na Facebooku](https://www.facebook.com/vzhurudolu) nebo [Twitteru](https://twitter.com/VzhuruDolu/).
+A abych nezapomněl – do konce týdne můžete školení získat se slevou 590 Kč. Sledujte kanály Vzhůru dolů [na Facebooku](https://www.facebook.com/vzhurudolu) nebo [X](https://x.com/VzhuruDolu/).

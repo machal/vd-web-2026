@@ -47,7 +47,7 @@ Pojďme si to v následujícím textu trochu rozpitvat. K dispozici zde máte st
 
 Ať už ho nazvete jakkoliv, je to centrální mozek stylů. Může vypadat [takto jednoduše](https://github.com/machal/priklad-rwd-2014-10-01/blob/master/less/index.less) nebo i [trochu složitěji](https://github.com/machal/vzhurudolu-scss/blob/master/index.scss). Musí být ovšem patřičně stručný a samovysvětlující. Je to soubor, který vy nebo váš kolega otevřete jako první, když chcete zjistit, jak je projekt organizovaný. 
 
-[Chytří lidé](https://twitter.com/koucik) mě naučili jak moc důležité je, aby to v adresáři se styly byl vždy jediný soubor. 
+[Chytří lidé](https://x.com/koucik) mě naučili jak moc důležité je, aby to v adresáři se styly byl vždy jediný soubor. 
 
 ## Typografická základna
 

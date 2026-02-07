@@ -16,7 +16,7 @@ og_type: article
 # Cypress.js
 
 <!-- 
-_[Tomáš Smetka](https://twitter.com/TSmetka) z [Pilulka.cz](https://www.pracevpilulce.cz/) vám v dnešním textu představí end-to-end testování s Cypress.js._
+_[Tomáš Smetka](https://x.com/TSmetka) z [Pilulka.cz](https://www.pracevpilulce.cz/) vám v dnešním textu představí end-to-end testování s Cypress.js._
 -->
 
 End-to-end (E2E) testy provádějí ověření kompletních procesů v aplikaci. U webových aplikací jde o test prováděný automaticky, ale očima uživatele, ověřující celou škálu možných problémů na frontendu i backendu.

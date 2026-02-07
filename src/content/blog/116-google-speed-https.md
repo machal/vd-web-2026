@@ -23,7 +23,7 @@ Během července začaly platit dvě důležité změny ve vyhledávání a v pr
 
 ## Rychlost webu jako řadící signál vyhledávače
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">The Speed Update, which enables page speed in mobile search ranking, is now rolling out for all users!<br><br>More details on Webmaster Central  <a href="https://t.co/fF40GJZik0">https://t.co/fF40GJZik0</a></p>— Google Webmasters (@googlewmc) <a href="https://twitter.com/googlewmc/status/1016276644321996800?ref_src=twsrc%5Etfw">July 9, 2018</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">The Speed Update, which enables page speed in mobile search ranking, is now rolling out for all users!<br><br>More details on Webmaster Central  <a href="https://t.co/fF40GJZik0">https://t.co/fF40GJZik0</a></p>— Google Webmasters (@googlewmc) <a href="https://x.com/googlewmc/status/1016276644321996800?ref_src=twsrc%5Etfw">July 9, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Důležité odkazy:
@@ -35,7 +35,7 @@ Důležité odkazy:
 
 ## Chrome ukazuje weby bez HTTPS jako „not secure“
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Starting TODAY, we’re rolling out changes to mark all sites that are not encrypted with HTTPS as “not secure”<a href="https://t.co/0d0komGFVI">https://t.co/0d0komGFVI</a> <a href="https://t.co/JEaZKn8Xzb">pic.twitter.com/JEaZKn8Xzb</a></p>— Chrome Developers (@ChromiumDev) <a href="https://twitter.com/ChromiumDev/status/1021806746283651072?ref_src=twsrc%5Etfw">July 24, 2018</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Starting TODAY, we’re rolling out changes to mark all sites that are not encrypted with HTTPS as “not secure”<a href="https://t.co/0d0komGFVI">https://t.co/0d0komGFVI</a> <a href="https://t.co/JEaZKn8Xzb">pic.twitter.com/JEaZKn8Xzb</a></p>— Chrome Developers (@ChromiumDev) <a href="https://x.com/ChromiumDev/status/1021806746283651072?ref_src=twsrc%5Etfw">July 24, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Důležité odkazy:

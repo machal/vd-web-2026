@@ -59,7 +59,7 @@ Na samotný závěr jsme nemohli vynechat Adobe. Shodli jsme se, že obavy o bud
 <div class="col w-75-xs" markdown="1">
 
 [Honza ChemiX Černý](https://honzacerny.com/) spolupořádá [meetupy o Figmě](https://www.meetup.com/figma-prague/). Figmu miluje mimo jiné jako vývojář. Baví ho velké možnosti automatizace, exportů a dalšího usnadnění práce.  
-[LinkedIn](https://www.linkedin.com/in/chemix), [Twitter](https://twitter.com/janhonzacerny).
+[LinkedIn](https://www.linkedin.com/in/chemix), [X](https://x.com/janhonzacerny).
 
 </div>
 </div>

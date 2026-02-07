@@ -23,7 +23,7 @@ Nepoužívejme prosím ve webdesignu spojení „pixel perfect“, když mluvím
 
 Designér Lukáš Augusta napsal [skvělý článek](https://medium.com/@lukasaugusta/jak-na-pixel-perfect-k%C3%B3dov%C3%A1n%C3%AD-2200d1bc11dd) plný tipů na oblasti, kterým by z pohledu designéra měli [weboví kodéři](https://www.vzhurudolu.cz/blog/42-frontend-koder-vyvojar) věnovat pozornost. Dopustil se ale komunikační chyby – jeho text lze číst tak, že problémy vidí hlavně na druhé straně. 
 
-<blockquote class="twitter-tweet"><p lang="cs" dir="ltr">Čtení pro kodéry. Buďte pixel perfect. Toto jsem napsal, abych to mohl posílat kodérům, kteří budou přebírat grafické návrhy. Jaké máte zkušenosti vy s realizací 1:1? <a href="https://t.co/dbMbyQ5UG3">https://t.co/dbMbyQ5UG3</a></p>— Lukáš Augusta (@lukasaugusta) <a href="https://twitter.com/lukasaugusta/status/1242031212048367625?ref_src=twsrc%5Etfw">March 23, 2020</a></blockquote>
+<blockquote class="twitter-tweet"><p lang="cs" dir="ltr">Čtení pro kodéry. Buďte pixel perfect. Toto jsem napsal, abych to mohl posílat kodérům, kteří budou přebírat grafické návrhy. Jaké máte zkušenosti vy s realizací 1:1? <a href="https://t.co/dbMbyQ5UG3">https://t.co/dbMbyQ5UG3</a></p>— Lukáš Augusta (@lukasaugusta) <a href="https://x.com/lukasaugusta/status/1242031212048367625?ref_src=twsrc%5Etfw">March 23, 2020</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Je to stejná chyba, které se z druhé strany dopustil kodér [Tomáš Krejčí](https://www.vzhurudolu.cz/lektori/tomas-krejci), když svou [neméně skvělou přednášku](https://www.youtube.com/watch?v=gL2db0IISRg) pojmenoval „Typické chyby designérů při návrhu responzivních webů“.
@@ -86,7 +86,7 @@ Web je divné medium i v tom, že se zobrazuje na stovkách různých kontextů 
 
 Stačí, když si uživatel zvětší písmo (což bychom mu [měli dovolit](https://www.vzhurudolu.cz/prirucka/jednotky)) nebo se pro vykreslení stránky dočasně použije jiný font (kvůli [zrychlení zobrazení obsahu](https://www.vzhurudolu.cz/prirucka/css-font-display)) a důsledně aplikovaný koncept „pixel perfect“ se rozpadá.
 
-<blockquote class="twitter-tweet" data-conversation="none"><p lang="cs" dir="ltr">Chtěl bych někdy vidět responsivní 1:1 návrh</p>— Aleš Roubíček (@alesroubicek) <a href="https://twitter.com/alesroubicek/status/1243039654586220552?ref_src=twsrc%5Etfw">March 26, 2020</a></blockquote>
+<blockquote class="twitter-tweet" data-conversation="none"><p lang="cs" dir="ltr">Chtěl bych někdy vidět responsivní 1:1 návrh</p>— Aleš Roubíček (@alesroubicek) <a href="https://x.com/alesroubicek/status/1243039654586220552?ref_src=twsrc%5Etfw">March 26, 2020</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ### 3) Degraduje to dobré designéry a dobré kodéry

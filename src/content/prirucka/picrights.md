@@ -108,7 +108,7 @@ Pamatujte ale na to, že pro roboty jde jen o doporučení, nemusí to reálně 
 
 Tento článek píšu i proto, že na českém internetu o problému PicRights nebylo možné cokoliv relevantního vygooglit.
 
-Považoval jsem to tedy za okrajové téma, takže mě překvapilo, kolik lidí se mi po zveřejnění ozvalo, zejména na [Twitteru](https://twitter.com/machal/status/1752243358129402095) a [Facebooku](https://www.facebook.com/machal/posts/pfbid0vLTiDjcQsifXPdaEatPibz7TiwMM15CmA4AR8nMhgkNwSqBSdyyYkGoGS7d3wQN8l). Zejména diskuze na druhém jmenovaném je zajímavá.
+Považoval jsem to tedy za okrajové téma, takže mě překvapilo, kolik lidí se mi po zveřejnění ozvalo, zejména na [X](https://x.com/machal/status/1752243358129402095) a [Facebooku](https://www.facebook.com/machal/posts/pfbid0vLTiDjcQsifXPdaEatPibz7TiwMM15CmA4AR8nMhgkNwSqBSdyyYkGoGS7d3wQN8l). Zejména diskuze na druhém jmenovaném je zajímavá.
 
 Nevím, jestli vám to k něčemu bude, ale většina se zachovala jako já – fotky odstranila a zaplatila. Byli zde i tací, kteří PicRights považují za scam a nezaplatili jim ani korunu, např. s odkazem na [vložení obrázku přispěvovatelem](https://www.facebook.com/machal/posts/pfbid02yo5vVLkkTFzHtp55cgwcsoThKATmYTUiBJpt6LdqG9eTdSgbv8uK1fcW57RbZRcLl?comment_id=1419159425378245).
 

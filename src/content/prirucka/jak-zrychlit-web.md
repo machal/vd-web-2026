@@ -27,7 +27,7 @@ V letech 2021-2022 proběhla ve vyhledávání Googlu aktualizace zvaná [Page E
 
 Podle všech vyjádření z Googlu, které jsem měl možnost číst, nepůjde o velký revoluční posun a pokud nemáte obzvlášť pomalý web, asi se nemusíte bát.
 
-V každém případě se ale mít rychlý web vyplatí. Důvody jsem kdysi sepisoval [na blogu](rychlost-nacitani-proc.md), ale detailněji také [na PageSpeed.cz](https://pagespeed.cz/blog/proc-mit-rychly-web). Kromě možných výhod ve vyhledávání k nim patří vliv na obchodní výkonnost webu, včetně konverzního poměru.
+V každém případě se ale mít rychlý web vyplatí. Důvody jsem kdysi sepisoval [na blogu](rychlost-nacitani-proc.md), ale detailněji také [na PageSpeed.ONE](https://pagespeed.cz/blog/proc-mit-rychly-web). Kromě možných výhod ve vyhledávání k nim patří vliv na obchodní výkonnost webu, včetně konverzního poměru.
 
 <div class="web-only f-6" markdown="1">
 → _Toto je rozšířená verze textu, který vyšel [v newsletteru](https://www.vzhurudolu.cz/email) ze Vzhůru dolů_.
@@ -79,12 +79,12 @@ Když už používáte tyto jednoduché nástroje, dívejte se na data od uživa
 </figcaption>
 </figure>
 
-Rychlost webu je vždy nutné posuzovat v širším kontextu a ten vám jednorázový test neukáže. Náš [nástroj pro měření rychlosti webu – PageSpeed.cz](https://pagespeed.cz/) vám k už uvedenému přidá pohled na vývoj v čase:
+Rychlost webu je vždy nutné posuzovat v širším kontextu a ten vám jednorázový test neukáže. Náš [nástroj pro měření rychlosti webu – PageSpeed.ONE](https://pagespeed.cz/) vám k už uvedenému přidá pohled na vývoj v čase:
 
 <figure>
 <img src="https://res.cloudinary.com/vzhurudolu-cz/image/upload/v1591775251/vzhurudolu-blog/page-speed-cz/pagespeed-alza_wp5zz4.png" alt="Přehled v čase v PageSpeed Insights">
 <figcaption markdown="1">
-*Porovnání rychlosti úvodních stránek prodejců elektroniky, konkrétně vývoj Lighthouse skóre (LPS) v čase. Čím je v grafu vyšší, tím lépe. Zdroj: [Test na PageSpeed.cz](https://pagespeed.cz/r/4c4c72e3abc3)*
+*Porovnání rychlosti úvodních stránek prodejců elektroniky, konkrétně vývoj Lighthouse skóre (LPS) v čase. Čím je v grafu vyšší, tím lépe. Zdroj: [Test na PageSpeed.ONE](https://pagespeed.cz/r/4c4c72e3abc3)*
 </figcaption>
 </figure>
 
@@ -265,8 +265,8 @@ Jinde pomůže nová metoda [s funkcí `aspect-ratio()`](css-aspect-ratio.md) ne
 
 Hledáte ještě další tipy?
 
-- Na blogu PageSpeed.cz jsme vydali [checklist pro optimalizaci rychlosti webu](https://pagespeed.cz/blog/checklist-2021). Je k dispozici jako stránka nebo PDF a obsahuje opravdu, ale opravdu hodně tipů.
-- Sledujte Twitter: [@pagespeedcz](https://twitter.com/pagespeedcz) nebo si na PageSpeed.cz udělejte [test rychlosti webu](https://pagespeed.cz/) a my vám jednou měsíčně pošleme vaše aktuální čísla a tipy na tři nejdůležitější články.
+- Na blogu PageSpeed.ONE jsme vydali [checklist pro optimalizaci rychlosti webu](https://pagespeed.cz/blog/checklist-2021). Je k dispozici jako stránka nebo PDF a obsahuje opravdu, ale opravdu hodně tipů.
+- Sledujte X: [@pagespeedcz](https://x.com/pagespeedcz) nebo si na PageSpeed.ONE udělejte [test rychlosti webu](https://pagespeed.cz/) a my vám jednou měsíčně pošleme vaše aktuální čísla a tipy na tři nejdůležitější články.
 
 Seznam možností jak zrychlit web je teoreticky nekonečný. Tento seznam proto publikuji s vědomím, že zde najdete jen ty nejdůležitější body, které jsem v posledním roce v klientské praxi řešíval.
 

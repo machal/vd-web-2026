@@ -193,7 +193,7 @@ Podle [CanIUse](https://caniuse.com/#feat=css-font-rendering-controls) je podpor
 
 Asi je dobré zmínit, že dříve se tento problém dal vyřešit jen pomocí javascriptových knihoven, např. [FontFaceObserver](https://github.com/bramstein/fontfaceobserver) nebo [WebFontLoader](https://github.com/typekit/webfontloader). Ve velkém množství případů už nebudou potřeba, nativní řešení s `font-display` je samozřejmě efektivější.
 
-Jak mě ale [upozornil Michal Matuška](https://twitter.com/fireball_/status/1130829875298865153), je zde stále několik důvodů, proč u řešení JavaScriptem můžete chtít zůstat:
+Jak mě ale [upozornil Michal Matuška](https://x.com/fireball_/status/1130829875298865153), je zde stále několik důvodů, proč u řešení JavaScriptem můžete chtít zůstat:
 
 1. *Vícenásobná překreslení*  
 Jsou nepříjemná hlavně pokud jsou různé řezy jednoho písma v jednom textu (italic, bold…) stažená různě nebo za pomocí různých strategií `font-display`. JavaScript umožní počkat na stažení všech a překreslovat stránku najednou. (Problém se dá řešit i pomocí `font-display:optional`.)

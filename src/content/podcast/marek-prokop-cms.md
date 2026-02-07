@@ -40,7 +40,7 @@ Pusťte si to a mimo jiné uvidíte, jak dopadly Martinovy technické hrátky s 
 
 ## Obsah {#obsah}
 
-* Marek Prokop: [Facebook](https://www.facebook.com/marek.prokop), [Twitter](https://twitter.com/MarekP), [Prokop software](https://www.prokopsw.cz/cs).
+* Marek Prokop: [Facebook](https://www.facebook.com/marek.prokop), [X](https://x.com/MarekP), [Prokop software](https://www.prokopsw.cz/cs).
 * Robinův tip: [10 JavaScript Projects in 10 Hours](https://www.youtube.com/watch?v=dtKciwk_si4) - projekty od začátku do konce.
 * Martinův tip: [AVIF has landed](https://jakearchibald.com/2020/avif-has-landed/) – nový obrázkový formát.
 * Proč je u webu výběr CMS zcela kritický? Výměna totiž obnáší obrovské náklady.

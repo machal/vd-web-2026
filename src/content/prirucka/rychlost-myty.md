@@ -64,9 +64,9 @@ Zato na frontendovou mašinerii musejí nebozí uživatelé čekat *dloooouhé* 
 
 > Zajímavé, jak rozšířená je myšlenka „náš web je pomalý, protože běží na pomalé platformě [dosaďte oblíbenou]“. 90 % problémů je přitom na frontendu.
 >
-> – *<cite>Stěžuji si [na Twitteru](https://twitter.com/machal/status/1047423382017462272)</cite>*
+> – *<cite>Stěžuji si [na X](https://x.com/machal/status/1047423382017462272)</cite>*
 
-Moje tvrzení na Twitteru sice není založené na širším výzkumu, ale praxe českých a slovenských webů mě ho stále potvrzuje.
+Moje tvrzení na X sice není založené na širším výzkumu, ale praxe českých a slovenských webů mě ho stále potvrzuje.
 
 <!-- AdSnippet -->
 

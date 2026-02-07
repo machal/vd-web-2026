@@ -17,7 +17,7 @@ og_type: article
 
 # Podcast: S Martinem Držkou z Fakturoidu o utility třídách v CSS
 
-S [Robinem](https://robinpokorny.com/) jsme [Martina](https://twitter.com/martindrzka) pozvali, protože nás zajímaly zkušenosti tvůrců oblíbeného fakturačního software s utility třídami.
+S [Robinem](https://robinpokorny.com/) jsme [Martina](https://x.com/martindrzka) pozvali, protože nás zajímaly zkušenosti tvůrců oblíbeného fakturačního software s utility třídami.
 
 Úplně nejlépe vás asi do problematiky uvede následující ukázka HTML kódu z nového rozhraní Fakuroidu:
 
@@ -46,7 +46,7 @@ Proč zvolili tento přístup? Jaké to má výhody a nevýhody? Jak se dají ut
 
 - Robinův tip: Chyby Meltdown a Spectre vs. frontend – [Why we should convince our users to update their browsers — it’s a win-win](https://medium.freecodecamp.org/should-we-demand-the-latest-browser-version-d5c72f8c9ffb) a [diskuze na foru Frontendistů](https://www.facebook.com/groups/frontendisti/permalink/1978129639065217/)
 - Martinův tip: [Adele](https://adele.uxpin.com/) – repozitář veřejně dostupných systémů designu 
-- [Martin Držka na Twitteru](https://twitter.com/martindrzka)
+- [Martin Držka na X](https://x.com/martindrzka)
 - [Nový Fakturoid.cz](https://www.fakturoid.cz/2017)
 - Framework [Tachyons](http://tachyons.io/)
 - Framework [Tailwind](https://tailwindcss.com/)

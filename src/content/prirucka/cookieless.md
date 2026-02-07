@@ -67,7 +67,7 @@ Nepotřebujete pak cookie lištu? Teď vás zklamu. Cookies sice tohle řešení
 > 
 > – Marek Lecián na [Facebooku](https://www.facebook.com/machal/posts/10227467122962667?comment_id=10227467215444979)
 
-Takže i s tímto řešením cookie lištu potřebujete. Marek se ale [zmínil](https://twitter.com/MarekLecian/status/1486990984898617344), že možná nasdílí řešení, které ponechá možnost mít na menších webech dále GA a zároveň nemít cookie lištu.
+Takže i s tímto řešením cookie lištu potřebujete. Marek se ale [zmínil](https://x.com/MarekLecian/status/1486990984898617344), že možná nasdílí řešení, které ponechá možnost mít na menších webech dále GA a zároveň nemít cookie lištu.
 
 Moje řešení je navíc problematické v tom, že pochopitelně přijdete o část dat.
 
@@ -114,7 +114,7 @@ Jak jsem postupoval? V prvé řadě jsem si udělal seznam všech třetích stra
 * [CodePen](https://codepen.io/) (vkládání ukázek kódu)
 * [Disqus](https://disqus.com/) (komentářová služba pro články)
 * [Facebook](https://www.facebook.com/) (měřící pixel a občas vkládaný obsah z Facebooku)
-* [Twitter](https://twitter.com/) (vkládané tweety do článků)
+* [X](https://x.com/) (vkládané tweety do článků)
 * [Vimeo](https://vimeo.com/) (vkládaná videa pro kurzy)
 * [YouTube](https://www.youtube.com/) (vkládaná videa do článků)
 
@@ -137,7 +137,7 @@ Zde jsou tři nejzlobivější služby, které jsem nakonec bez náhrady odstran
 
 Služba, která pod každý článek vkládá komentáře. Dříve poměrně užitečná, později se z toho stávalo stále větší peklo díky přibývajícím reklamám (a cookies), a to i přes fakt, že jde o placený produkt. Přínos pro Vzhůru dolů nebyl malý, takže jsem komponentu nechával žít.
 
-Říká se, že patří Číňanům, ale podle všeho to pravda není. (I když jejich management má čínsky znějící jména.) Pohled na ukládané cookies a do jejich [cookie policy](https://disqus.com/cookie-policy/) mě ale přesvědčil o tom, že Disqus půjde pryč. Ukládají toho hodně a předávají to spouště firem. To nechci. Komentáře jsem v tuhle chvíli [odstranil úplně](https://twitter.com/machal/status/1483024831192911872).
+Říká se, že patří Číňanům, ale podle všeho to pravda není. (I když jejich management má čínsky znějící jména.) Pohled na ukládané cookies a do jejich [cookie policy](https://disqus.com/cookie-policy/) mě ale přesvědčil o tom, že Disqus půjde pryč. Ukládají toho hodně a předávají to spouště firem. To nechci. Komentáře jsem v tuhle chvíli [odstranil úplně](https://x.com/machal/status/1483024831192911872).
 
 ### Facebook {#facebook}
 
@@ -167,12 +167,12 @@ Viz například:
 
 Trochu bolestivé je, že člověk pak přijde o všechny statistiky zobrazení videí. Je podivné, že úplně o všechny. Viz Google Analytics, které bez cookie zobrazí alespoň nějaká data o zobrazení stránek. Zatím jsem to vyhodnotil, tak že statistiky o videích nutně nepotřebuji, ale je možné, že mi to dlouho nevydrží.
 
-### Twitter {#twitter}
+### X {#twitter}
 
 Sociální síť plná tweetů umožňuje zrušit sledování dvěma způsoby. První je atribut `data-dnt` v kódu embedu:
 
 ```html
-<a class="twitter-share-button" href="https://twitter.com/share"
+<a class="twitter-share-button" href="https://x.com/share"
   data-dnt="true">
   Tweet
 </a>
@@ -184,7 +184,7 @@ Druhá je meta značka v HTML:
 <meta name="twitter:dnt" content="on">
 ```
 
-Snaha byla, že ano. Zatím jsem ale neověřil, zda to funguje, protože jsem se rozhodl vkládaný obsah odstranit úplně. Pro jistotu. Ale je pravda, že Twitteru v tomto věřím výrazně více než například Facebooku. Asi tak o parník.
+Snaha byla, že ano. Zatím jsem ale neověřil, zda to funguje, protože jsem se rozhodl vkládaný obsah odstranit úplně. Pro jistotu. Ale je pravda, že X v tomto věřím výrazně více než například Facebooku. Asi tak o parník.
 
 ## Poskytovatelé, kteří jsou v pořádku {#komp-ok}
 
@@ -205,7 +205,7 @@ V tabulce následuje katovna – seznam komponent i s mým subjektivním hodnoce
 | Cloudinary  | ★★★       | bez cookies           |
 | CodePen     | ★★★       | jen funkční cookies   |
 | Cast        | ★★★       | bez cookies |
-| Twitter     | ★★☆       | umožní „do not track“ |
+| X     | ★★☆       | umožní „do not track“ |
 | Vimeo       | ★☆☆       | umožní „do not track“, ale přijdete o měření |
 | Google Analytics | ★☆☆       | bez identifikace uživatele to nejde |
 | YouTube          | ☆☆☆       | sleduje tak či tak |

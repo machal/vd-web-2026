@@ -95,7 +95,7 @@ Tohle se mi poměrně často stává na Edge připojení v pražském metru nebo
 
 Jenže někdy zjistíte, že jste jako uživatel webu bez stylů zároveň považován za škodnou:
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="cs" dir="ltr">Když se vám <a href="https://twitter.com/FINMAG_cz?ref_src=twsrc%5Etfw">@FINMAG_cz</a> náhodně zobrazí bez CSS, zjistíte že vás automaticky považují za uživatele AdBlocku. A já jsem přitom slušnej kluk a Finmag mám rád. <a href="https://t.co/2AUXkeCgmd">pic.twitter.com/2AUXkeCgmd</a></p>&mdash; Martin Michálek (@machal) <a href="https://twitter.com/machal/status/970314002780835841?ref_src=twsrc%5Etfw">March 4, 2018</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="cs" dir="ltr">Když se vám <a href="https://x.com/FINMAG_cz?ref_src=twsrc%5Etfw">@FINMAG_cz</a> náhodně zobrazí bez CSS, zjistíte že vás automaticky považují za uživatele AdBlocku. A já jsem přitom slušnej kluk a Finmag mám rád. <a href="https://t.co/2AUXkeCgmd">pic.twitter.com/2AUXkeCgmd</a></p>&mdash; Martin Michálek (@machal) <a href="https://x.com/machal/status/970314002780835841?ref_src=twsrc%5Etfw">March 4, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
  

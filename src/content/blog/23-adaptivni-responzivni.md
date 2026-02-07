@@ -48,7 +48,7 @@ Už nemusíme řešit na původní definici responzivního webdesignu napasovat 
 
 ## Myslím, že tomu responzivní webdesign budeme říkat i nadále. A že to je dobře
 
-Na první důvod mě upozornil [Honza Sládek](https://twitter.com/honzasladek) — adaptivní design je známý i z jiných oborů. Je to obecný pojem pro design, který se přizpůsobuje kontextu. 
+Na první důvod mě upozornil [Honza Sládek](https://x.com/honzasladek) — adaptivní design je známý i z jiných oborů. Je to obecný pojem pro design, který se přizpůsobuje kontextu. 
 
 Pojem *adaptivní* proto nevyjadřuje unikátnost situace, v jaké současný webdesign je. A tedy nevyjadřuje tu myšlenku, která problém může úspěšně vyřešit. 
 

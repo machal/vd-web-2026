@@ -89,7 +89,7 @@ V praxi budeme nejspíš potřebovat obojí, `preload` i `fetchpriority`, přič
 
 <!-- AdSnippet -->
 
-Jen na okraj: Specifikace původně mluvila o atributu `importance` a ten byl také [propagovaný](https://twitter.com/addyosmani/status/1087614725809160192) na různých místech, ale nakonec se vše změnilo právě na `fetchpriority`.
+Jen na okraj: Specifikace původně mluvila o atributu `importance` a ten byl také [propagovaný](https://x.com/addyosmani/status/1087614725809160192) na různých místech, ale nakonec se vše změnilo právě na `fetchpriority`.
 
 ## Pár příkladů do praxe {#priklady}
 

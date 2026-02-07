@@ -95,7 +95,7 @@ Podle studie Sistrixu ze září 2021 to vypadá, že vliv signálu Page Experie
 
 > Zjištění Sistrix o vlivu Page Experience na SEO:<br><br>– Weby, který splňují PX mají nyní v průměru o 1 % lepší pozice v SERP, ale průběžně se rozdíl zvyšuje.<br><br>– Weby, které některé z požadavků nesplňují, mají pozice o 3,7 % horší.
 >
-> – *<cite>[Twitter](https://twitter.com/machal/status/1442094201965924359)</cite>*
+> – *<cite>[X](https://x.com/machal/status/1442094201965924359)</cite>*
 
 Moje zkušenost z praxe [poradenství k rychlosti webu](https://www.pagespeed.cz/sluzby) je taková, že rychlost k vyšší návštěvnosti z Googlu pomůže jen ve specifických případech, jako je vysoce konkurenční prostředí a specifické typy webů.
 
@@ -119,7 +119,7 @@ Co například URL, která byla nedávno zveřejněna a ještě nemá data z 28 
 Data od uživatelů můžete vytáhnout:
 
 - Nejjednodušším způsobem z [PageSpeed Insights](pagespeed-insights.md)
-- Podrobněji a s vývojem v čase pak v našem [testeru na PageSpeed.cz](https://app.pagespeed.cz/)
+- Podrobněji a s vývojem v čase pak v našem [testeru na PageSpeed.ONE](https://app.pagespeed.cz/)
 - Doplňujte to vždy pohledem do [Google Search Console](google-search-console.md).
 
 Další aspekty, které byly uváděny u příležitosti spuštění hodnocení Page Experience skvěle [v tweetu](https://mobile.twitter.com/fabkru/status/1396331280585928707) shrnul Fabian Krumbholz, takže z něj vyjdu.
@@ -174,7 +174,7 @@ Takže pokud v ČR a SR máte dobré hodnoty Web Vitals, ale kazí vám je malá
 
 ### 7) Data se berou za posledních 28 dní {#jak-7}
 
-Google nepracuje s měsíčními daty, která např. na PageSpeed.cz zobrazujeme v [záložce Domény](https://app.pagespeed.cz/r/c8c4649e8e44#domeny), ale se stavem za posledních 28 dní (to je v PageSpeed.cz v tabulce nahoře).
+Google nepracuje s měsíčními daty, která např. na PageSpeed.ONE zobrazujeme v [záložce Domény](https://app.pagespeed.cz/r/c8c4649e8e44#domeny), ale se stavem za posledních 28 dní (to je v PageSpeed.ONE v tabulce nahoře).
 
 ### 8) Data od všech stránek, včetně blokovaných v robots.txt? {#jak-8}
 
@@ -195,9 +195,9 @@ Důvodů, proč [řešit rychlost webu](rychlost-nacitani-proc.md) ale najdete c
 Co tedy dělat, pokud se chystáte na optimalizaci?
 
 1. V Google Search Console sledujte report Core Web Vitals. Snažte se odstraňovat problémy zde uvedené.
-2. Dlouhodobě sledujte rychlost typových stránek webu, i celé domény pomocí [testeru PageSpeed.cz](https://app.pagespeed.cz/).
+2. Dlouhodobě sledujte rychlost typových stránek webu, i celé domény pomocí [testeru PageSpeed.ONE](https://app.pagespeed.cz/).
 3. Naučte se, jak správně [měřit rychlost webu](https://www.vzhurudolu.cz/video/webinar-rychlost-mereni) a ladění metrik [CLS](https://www.vzhurudolu.cz/video/webinar-cls) a [LCP](https://www.vzhurudolu.cz/video/webinar-lcp). Třeba pomohou mé webináře. Tyto tři webináře teď můžete [pořídit i najednou](https://www.vzhurudolu.cz/kurzy/hromadna-objednavka?videa=699,778,882).
-4. Optimalizujte, optimalizujte, optimalizujte. Pomůže vám [checklist z PageSpeed.cz](https://pagespeed.cz/blog/checklist-2021) nebo moje tipy na novinky - [jak zrychlit web](https://www.vzhurudolu.cz/prirucka/jak-zrychlit-web).
+4. Optimalizujte, optimalizujte, optimalizujte. Pomůže vám [checklist z PageSpeed.ONE](https://pagespeed.cz/blog/checklist-2021) nebo moje tipy na novinky - [jak zrychlit web](https://www.vzhurudolu.cz/prirucka/jak-zrychlit-web).
 5. Vzdělávajte se v oblasti [rychlosti webu](https://www.vzhurudolu.cz/rychlost-nacitani).
 6. Pokud si nevíte rady, [ozvěte se](https://www.vzhurudolu.cz/martin).
 

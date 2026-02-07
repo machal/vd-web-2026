@@ -44,7 +44,7 @@ Jak moc se mu to podaří a jak dokáže oslovit vývojáře? Pojďme diskutovat
 
 Petr v rámci projektu [Nauč mě IT](https://naucme.it/) pomáhá lidem získat dovednosti a znalosti vhodné pro práci v IT.  Říká o sobě, že je vývojář zapálený pro technologie a vzdělávání. Zaměřuje se na performance, kterou vnímá jako součást UX a přístupnosti. I díky tomu si oblíbil framework Qwik, o kterém je řeč v podcastu.
 
-[LinkedIn](https://www.linkedin.com/in/petr-pegak-glaser/) – [Twitter](https://twitter.com/PetrPegakGlaser)
+[LinkedIn](https://www.linkedin.com/in/petr-pegak-glaser/) – [X](https://x.com/PetrPegakGlaser)
 
 </div>
 </div>
@@ -65,7 +65,7 @@ Petr v rámci projektu [Nauč mě IT](https://naucme.it/) pomáhá lidem získat
 * Cena za menší úvodní bundle. **(41:20)**
 * Stavění na Service Worker, [Partytown](https://partytown.builder.io/) na optimalizaci třetích stran. **(46:20)**
 * Jednou to za nás stejně bude všechno dělat [AI](https://www.vzhurudolu.cz/podcast/221-podcast-ai-vyvojari).**(52:00)**
-* Tipy na další zdroje: [Discord atd.](https://qwik.builder.io/community/groups/), [Steve z Builderu](https://twitter.com/Steve8708), [Miško Hevery](https://twitter.com/mhevery) **(53:40)**
+* Tipy na další zdroje: [Discord atd.](https://qwik.builder.io/community/groups/), [Steve z Builderu](https://x.com/Steve8708), [Miško Hevery](https://x.com/mhevery) **(53:40)**
 
 ## Ukázka: možné přínosy a ošemetnosti v přístupu Qwiku {#ukazka}
 

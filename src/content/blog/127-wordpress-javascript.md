@@ -24,7 +24,7 @@ Rádi bychom vás pozvali ne na dvě, ale tři naše pražská školení, která
 
 Vývoj webů na míru s WordPressem může být fajn. I pro vývojáře. Pronikněte do něj díky lektorovi s mistrovským přehledem, Honzou Bienem, jehož kurz sbírá nadšená hodnocení účastníků:
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="cs" dir="ltr">Hlásíme posledních 5 židlí na kurzu „Mistrovský vývoj webů na WordPressu“ s Honzou Bienem. Už 20. 11. v Praze. <a href="https://twitter.com/hashtag/%C5%A0kolen%C3%ADWordpressu?src=hash&ref_src=twsrc%5Etfw">#ŠkoleníWordpressu</a><br>→ <a href="https://t.co/Ine77InpfR">https://t.co/Ine77InpfR</a> <a href="https://t.co/HLSpVmfE0x">pic.twitter.com/HLSpVmfE0x</a></p>— Vzhůru dolů (@vzhurudolu) <a href="https://twitter.com/vzhurudolu/status/1061972198804602882?ref_src=twsrc%5Etfw">November 12, 2018</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="cs" dir="ltr">Hlásíme posledních 5 židlí na kurzu „Mistrovský vývoj webů na WordPressu“ s Honzou Bienem. Už 20. 11. v Praze. <a href="https://x.com/hashtag/%C5%A0kolen%C3%ADWordpressu?src=hash&ref_src=twsrc%5Etfw">#ŠkoleníWordpressu</a><br>→ <a href="https://t.co/Ine77InpfR">https://t.co/Ine77InpfR</a> <a href="https://t.co/HLSpVmfE0x">pic.twitter.com/HLSpVmfE0x</a></p>— Vzhůru dolů (@vzhurudolu) <a href="https://x.com/vzhurudolu/status/1061972198804602882?ref_src=twsrc%5Etfw">November 12, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 <p class="ta-c mt-3 mb-3">

@@ -32,7 +32,7 @@ Přejeme vám příjemný poslech.
 
 [MP3 ke stažení](http://cast.rocks/hosting/10893/S-Petrou-Dolej-ovou-a-Martinem-Koptou-o-soukrom-na-webu.mp3)
 
-My webaři si vždycky nějak poradíme. Zvládli jsem GDPR, teď i cookie lišty. Přesto je pro nás téma soukromí uživatelů stále plné otazníků. Aktuální spory EU s americkými korporacemi ohledně [používání  Google Analytics](https://www.mediaguru.cz/clanky/2022/01/regulace-hrozi-google-analytics-konec-v-evrope/) nebo [Google Fonts](https://twitter.com/machal/status/1488082019498274817), výhružky Facebooku, že [může opustit evropský trh](https://nypost.com/2022/02/07/facebook-instagram-could-shut-down-in-europe-over-data-transfer/) to ukazují. Do toho vstupují různé postoje různých advokátů.  Situace ohledně soukromí se prostě pro běžného webaře stále více komplikuje. 
+My webaři si vždycky nějak poradíme. Zvládli jsem GDPR, teď i cookie lišty. Přesto je pro nás téma soukromí uživatelů stále plné otazníků. Aktuální spory EU s americkými korporacemi ohledně [používání  Google Analytics](https://www.mediaguru.cz/clanky/2022/01/regulace-hrozi-google-analytics-konec-v-evrope/) nebo [Google Fonts](https://x.com/machal/status/1488082019498274817), výhružky Facebooku, že [může opustit evropský trh](https://nypost.com/2022/02/07/facebook-instagram-could-shut-down-in-europe-over-data-transfer/) to ukazují. Do toho vstupují různé postoje různých advokátů.  Situace ohledně soukromí se prostě pro běžného webaře stále více komplikuje. 
 
 V budoucnu leccos může řešit a zjednodušit [norma ePrivacy](https://www.gdpr.cz/gdpr/heslo/eprivacy/), opět od EU, ale nyní je, alespoň podle Martina Kopty, řada na technologických gigantech, zejména výrobcích prohlížečů. Přes to všechno jsou zde slibné signály od českého Úřadu pro ochranu osobních údajů, který podle Petry Dolejšové sice začne s kontrolami, ale nebude řešit malé ryby a i u velkých bude podstatné, aby ukázali snahu situaci řešit. 
 
@@ -51,7 +51,7 @@ Takže nervozita je, hlavně u menších webů, možná zbytečná a situace ná
 <h3 class="pt-0 h4 mb-0">Petra Dolejšová</h3>
 
 Petra je advokátka na volné noze a zabývá se právem v marketingu, e-commerce, GDPR a médii. Říká o sobě, že boří mýty o nudných právnících a že z cookie lišt už jí krapet píská v uchu.  
-[Twitter](https://twitter.com/dolejsovapetra), [LinkedIn](https://www.linkedin.com/in/petradolejsova/), [petradolejsova.cz](https://www.petradolejsova.cz/)
+[X](https://x.com/dolejsovapetra), [LinkedIn](https://www.linkedin.com/in/petradolejsova/), [petradolejsova.cz](https://www.petradolejsova.cz/)
 
 </div>
 </div>
@@ -67,7 +67,7 @@ Petra je advokátka na volné noze a zabývá se právem v marketingu, e-commerc
 <h3 class="pt-0 h4 mb-0">Martin Kopta</h3>
 
 Martin je jeden z nejzkušenějších českých UXáků. Nyní Product Manager v Tipsportu. Board member v  Asociaci UX. Budoucí webaře učí na FIS VŠE v Praze.  
-[Twitter](https://twitter.com/atpok), [LinkedIn](https://www.linkedin.com/in/kopta/)
+[X](https://x.com/atpok), [LinkedIn](https://www.linkedin.com/in/kopta/)
 
 </div>
 </div>

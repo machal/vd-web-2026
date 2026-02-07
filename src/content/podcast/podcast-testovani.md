@@ -36,7 +36,7 @@ Dotaz na naše posluchače: Jaká odborná videa sledujete na YouTube? Podělte 
 
 ## Odkazy
 
-- Ondřej Machulda: [ondrejmachulda.cz](https://ondrejmachulda.cz/), [Twitter](https://twitter.com/OndraM)
+- Ondřej Machulda: [ondrejmachulda.cz](https://ondrejmachulda.cz/), [X](https://x.com/OndraM)
 - Martinův tip: [YouTube kanál Heydona Pickeringa](https://www.youtube.com/user/heydonworks/), poslední [video o SVG](https://youtu.be/1CDTw_UpQoQ
 ) a pro připomenutí i jeho kniha [Inclusive Design Patterns](https://shop.smashingmagazine.com/products/inclusive-design-patterns)
 - Robinův tip: Finalizace standardu [Web Authentication API](https://www.w3.org/TR/webauthn/) (neboli WebAuthn). Pro úvod si přečtěte [článek](https://developers.google.com/web/updates/2018/05/webauthn) nebo se podívejte na [záznam přednášky](https://www.youtube.com/watch?v=kGGMgEfSzMw) z Google I/O. Hashtag bezheslová biometrická reautorizace

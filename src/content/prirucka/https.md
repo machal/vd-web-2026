@@ -84,7 +84,7 @@ Já z nich při převádění Vzhůru dolů vycházel. I tak jsem se ale nevyhnu
 
 ### Disqus a další služby třetích stran {#zkusenosti-disqus}
 
-Ve stránce asi budete mít lajkovací tlačítka Facebooku, Twitteru a dalších služeb. Nebo komentáře – například od Disqus – jako já. Tyhle služby obvykle zobrazují obsah podle URL, kterou ale přechodem na HTTPS měníte. (Ano, je to stejná situace, jako když změníte adresu stránky.)
+Ve stránce asi budete mít lajkovací tlačítka Facebooku, X a dalších služeb. Nebo komentáře – například od Disqus – jako já. Tyhle služby obvykle zobrazují obsah podle URL, kterou ale přechodem na HTTPS měníte. (Ano, je to stejná situace, jako když změníte adresu stránky.)
 
 <!-- AdSnippet -->
 

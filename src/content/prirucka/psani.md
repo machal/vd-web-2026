@@ -137,7 +137,7 @@ Pokaždé, když se něco zajímavého stane, mě už v hlavě vyskakuje text, k
 
 ### „Psaní je pro mě utrpení“ {#utrpeni}
 
-Jednou jsem na Twitter [napsal](https://x.com/machal/status/1805695060639728124):
+Jednou jsem na X [napsal](https://x.com/machal/status/1805695060639728124):
 
 > Abych si připomněl, jaké utrpení je pro některé lidi třeba napsat článek, pustil jsem se do opravy kola svépomocí. „To dám za půl hodinky.“  
 > Většina neděle v háji. Kolo je rozbité víc než předtím. Nyní sháním servis.
@@ -290,7 +290,7 @@ Vytvořte si bezpečné prostředí prvních čtenářů. Tak, aby na vás byli 
 
 Pokud si troufáte trošku více ven, zkuste sociální sítě. Třeba na [Facebooku](https://www.facebook.com/machal) a [LinkedInu](https://www.linkedin.com/in/martinmichalek/) jde psát i delší texty. Texty jen na několik málo odstavců fungují skvěle.
 
-Mistrovství v broušení jádra myšlenky vám nabídne [Twitter/X](https://x.com/machal) a jeho omezení délky postu.
+Mistrovství v broušení jádra myšlenky vám nabídne [X/X](https://x.com/machal) a jeho omezení délky postu.
 
 Podívejte se, zda o daném tématu už někdo nepíše. Pošlete mu svůj text, třeba jej zveřejní. Nebojte se, média opravdu nejsou zahlcená cizími texty. Píše opravdu velmi málo lidí.
 
@@ -333,7 +333,7 @@ Začněte psát. Prostě začněte. Teď hned.
 Odkazy na další zajímavé zdroje o psaní, které sám dobře znám:
 
 - Ondřej Ilinčev je autorem pěkného textu o tom, [jak napsat článek za 3 hodiny](https://www.ilincev.com/clanek-za-3h). Ondřej je mistr psací efektivity.
-- Martin Kopta sepsal [krásné vlákno na Twitteru/X](https://x.com/atpok/status/1804103540459331846), o tom proč a jak píše on. Uvědomil jsem si přitom, jak zkušení psavci docházejí k podobným závěrům.
+- Martin Kopta sepsal [krásné vlákno na X/X](https://x.com/atpok/status/1804103540459331846), o tom proč a jak píše on. Uvědomil jsem si přitom, jak zkušení psavci docházejí k podobným závěrům.
 - Kdysi se mi zalíbil článek od [Obsahové agentury](https://www.obsahova-agentura.cz/blog/jak-napsat-web-aby-ho-lide-precetli), který k psaní přistupuje více byznysově. To se vám bude hodit, pokud chcete z psaní vymáčknout nějaký ten peníz.
 - Pokud jde o tvůrčí psaní, to skvěle učí [René Nekuda](https://www.renenekuda.cz/).
 

@@ -40,7 +40,7 @@ Naše povídání se netočí jen kolem SSR, ale také dalších známých probl
 
 Head of Front-End Development v [CDN77](https://www.cdn77.com/), kde poskytují infrastrukturu pro globální internet. Fanoušek World Wide Web platformy a rozumného přístupu k web developmentu. Má rád všechny JS frameworky, ale ještě radši je podrobuje kritickému pohledu. Kdysi dělal meetupy Vue.js, dneska migruje většinu věcí z Nextu na SvelteKit. Ve volném čase dělá pro bono projekty, jako např. web a newsletter pro novináře [Davida Klimeše](https://davidklimes.cz/) a konzultuje architekturu a výkon webových aplikací.
 
-[LinkedIn](https://www.linkedin.com/in/liborvanekcz/) -- [Twitter](https://twitter.com/liborvanek)
+[LinkedIn](https://www.linkedin.com/in/liborvanekcz/) -- [X](https://x.com/liborvanek)
 
 </div>
 </div>
@@ -59,7 +59,7 @@ Head of Front-End Development v [CDN77](https://www.cdn77.com/), kde poskytují 
 * Další problém: hydratace (hydration) na klientovi **(47:30)**
 * Diskuze o budoucnosti, reflexe v komunitě Reactu **(59:00)**
 * Odkazujeme na podcast [o trendech pro '21](https://www.vzhurudolu.cz/podcast/185-podcast-2021) a [Hotwire](https://hotwired.dev/) – vracíme se zpět? **(1:02:00)**
-* Tipy na zdroje: [Alex Russell](https://infrequently.org/), [Rich Harris](https://twitter.com/Rich_Harris), [Ryan Carniato](https://dev.to/ryansolid), [Mishko Hevery](https://twitter.com/mhevery) **(1:05:00)**
+* Tipy na zdroje: [Alex Russell](https://infrequently.org/), [Rich Harris](https://x.com/Rich_Harris), [Ryan Carniato](https://dev.to/ryansolid), [Mishko Hevery](https://x.com/mhevery) **(1:05:00)**
 
 Děkujeme za spolupráci: Honza Michálek (Milíčovská postprodukce).
 

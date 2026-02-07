@@ -51,7 +51,7 @@ Prostě GraphQL projdeme tak nějak sakum prdum. Doufáme, že se vám 52. díl 
 
 Michal je milovník dobrého jídla a zkušený javascriptový vývojář, který sbíral ostruhy mimojiné v Kiwi.com a Pipedrive. S nadhledem říká, že se o GraphQL zajímá zhruba od roku 1990. Prostě dlouho. Nyní GraphQL a jiné technologie krotí [Trezoru](https://trezor.io/).
 
-[LinkedIn](https://www.linkedin.com/in/michalsanger/) – [X](https://twitter.com/sangernatripu) – [SangerNaTripu.cz](https://sangernatripu.cz/)
+[LinkedIn](https://www.linkedin.com/in/michalsanger/) – [X](https://x.com/sangernatripu) – [SangerNaTripu.cz](https://sangernatripu.cz/)
 
 </div>
 </div>

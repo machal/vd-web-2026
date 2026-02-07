@@ -38,7 +38,7 @@ V tuhle chvíli nejrozšířenější rodina mobilních prohlížečů:
 
 ### Verze mobilních prohlížečů? Google Analytics nevěřte
 
-Verze Android Browseru nám Rankings.cz neukáže, Google Analytics se je ukázat pokoušejí, ale myslím si, že úplně špatně. Drtivě tam převládá 4.0, verzi 2.3 nebo 4.1 Analytics <s title="Viz komentář Pavla Jaška">vůbec neukazují</s> ukazují s miniaturním podílem, kterému se nechce věřit. K rozložení verzí Android Browseru se dostaneme až pokročilejší analýzou serverových logů (díky [Lukáši Kokoškovi](https://twitter.com/Lukoko_name)).
+Verze Android Browseru nám Rankings.cz neukáže, Google Analytics se je ukázat pokoušejí, ale myslím si, že úplně špatně. Drtivě tam převládá 4.0, verzi 2.3 nebo 4.1 Analytics <s title="Viz komentář Pavla Jaška">vůbec neukazují</s> ukazují s miniaturním podílem, kterému se nechce věřit. K rozložení verzí Android Browseru se dostaneme až pokročilejší analýzou serverových logů (díky [Lukáši Kokoškovi](https://x.com/Lukoko_name)).
 
 Zpět k verzím Android Browseru — webové vývojáře v ČR budou zajímat hlavně verze 4.0 a 4.1, do budoucna samozřejmě 4.2 a nejčerstvější 4.4. Pokud děláte prezentační weby, podpora HTML5 mezi nimi není tak různorodá, horší to bude u webových aplikací.
 
@@ -68,7 +68,7 @@ Chrome Mobile je zároveň prohlížečem s nejrychleji rostoucí uživatelskou 
 
 <img src="/assets/img/content/dest/mobilni-prohlizece-6-chrome.jpg" alt="Rostoucí Chrome Mobile">
 
-A pozor, Google se zřejmě rozhodl [zaříznout vývoj Android Browseru](https://twitter.com/firt/status/404135122032525312) ve prospěch mobilního Chrome. I renderovací engine WebView na Androidu 4.4 už obsahuje Chromium jádro ve verzi 30. Takže je pravděpodobné, že Chrome se do budoucna stane jedničkou i mezi mobilními prohlížeči.
+A pozor, Google se zřejmě rozhodl [zaříznout vývoj Android Browseru](https://x.com/firt/status/404135122032525312) ve prospěch mobilního Chrome. I renderovací engine WebView na Androidu 4.4 už obsahuje Chromium jádro ve verzi 30. Takže je pravděpodobné, že Chrome se do budoucna stane jedničkou i mezi mobilními prohlížeči.
 
 ## Internet Explorer na Windows Phone
 

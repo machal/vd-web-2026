@@ -21,7 +21,7 @@ og_type: article
 
 Jak už jsem [avizoval](/blog/100-2016-podelal), brzy na Vzhůru dolů zavřu agregátor pracovních pozic [Vzhůru do práce](/prace). Bylo s ním nemálo práce a vím, že ho někteří využíváte. Nevidím v něm ale žádný potenciál a návštěvnost pomalu klesá:
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="cs" dir="ltr">Se specializovaným agregátorkem pracovních pozic jsem nedokázal konkurovat těm velkým. Dneska se nedivím, brzy ho zavřu. Reklamu budu nabízet dál: <a href="https://t.co/ssoNKW3YOn">https://t.co/ssoNKW3YOn</a> <a href="https://twitter.com/hashtag/FailamaSe%C4%8Clov%C4%9BkU%C4%8D%C3%AD?src=hash&ref_src=twsrc%5Etfw">#FailamaSeČlověkUčí</a> <a href="https://t.co/9iuyLK7246">pic.twitter.com/9iuyLK7246</a></p>— Martin Michálek (@machal) <a href="https://twitter.com/machal/status/1011519247414124546?ref_src=twsrc%5Etfw">June 26, 2018</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="cs" dir="ltr">Se specializovaným agregátorkem pracovních pozic jsem nedokázal konkurovat těm velkým. Dneska se nedivím, brzy ho zavřu. Reklamu budu nabízet dál: <a href="https://t.co/ssoNKW3YOn">https://t.co/ssoNKW3YOn</a> <a href="https://x.com/hashtag/FailamaSe%C4%8Clov%C4%9BkU%C4%8D%C3%AD?src=hash&ref_src=twsrc%5Etfw">#FailamaSeČlověkUčí</a> <a href="https://t.co/9iuyLK7246">pic.twitter.com/9iuyLK7246</a></p>— Martin Michálek (@machal) <a href="https://x.com/machal/status/1011519247414124546?ref_src=twsrc%5Etfw">June 26, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Holt na hledání pracovních pozic jsou tady jiné značky a ty mají úplně jinou známost a množství funkcí. 

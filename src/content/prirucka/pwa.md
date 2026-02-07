@@ -29,7 +29,7 @@ PWA tak kombinují výhody světa webů se světem nativních aplikací. Jak jse
 <figure>
 <img src="../dist/images/original/vdwd/lukew-reach-rich.png" alt="">
 <figcaption markdown="1">
-*„Reach (web) vs. Rich (native) OR why you want both.“ Zdroj: Luke Wroblewski na Twitteru. [vrdl.in/8lh4f](https://twitter.com/lukew/status/649255909420503041)*
+*„Reach (web) vs. Rich (native) OR why you want both.“ Zdroj: Luke Wroblewski na X. [vrdl.in/8lh4f](https://x.com/lukew/status/649255909420503041)*
 </figcaption>
 </figure>
 

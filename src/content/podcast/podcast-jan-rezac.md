@@ -37,7 +37,7 @@ Zakladatele rodu [House of Řezáč](https://www.houseofrezac.com/) jsme pozvali
 <h2 class="pt-0 h3 mb-0">Host: Jan Řezáč</h2>
 
 Zajišťuje, aby firmy dělaly digitální projekty smysluplně. Napsal [Web ostrý jako břitva](https://www.houseofrezac.com/kniha) – první českou knihu o procesu návrhu webu. Vede rod designerů [House of Řezáč](https://www.houseofrezac.com/), kde nyní například nabízí bezplatný e-mailový [trénink řízení digitálních projektů](https://www.houseofrezac.com/kontakt).  
-[Twitter](https://twitter.com/janrezac), [LinkedIn](https://www.linkedin.com/in/jan2rezac/)
+[X](https://x.com/janrezac), [LinkedIn](https://www.linkedin.com/in/jan2rezac/)
 
 </div>
 </div>

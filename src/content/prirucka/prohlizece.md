@@ -104,7 +104,7 @@ Ten, co všechno sní. Celosvětově má podle Statcounter.com už dvě třetiny
 
 ### Firefox {#firefox}
 
-Celosvětově postupně klesá. Teď má na světě podle Statcounter podíl 11 %. Mozille nelze upřít snahu. Firefox chce zrychlit, [zavřela boční projekty](https://twitter.com/jsnajdr/status/785095932782190592) a přichází [s drobnými inovacemi](https://testpilot.firefox.com/experiments). Jenže Google má v případě Chrome z jejich pohledu dost nešťastnou kombinaci *umu* vyrábět výborný prohlížeč a *síly* cokoliv protlačit. [Wikipedia](https://en.wikipedia.org/wiki/Firefox)  
+Celosvětově postupně klesá. Teď má na světě podle Statcounter podíl 11 %. Mozille nelze upřít snahu. Firefox chce zrychlit, [zavřela boční projekty](https://x.com/jsnajdr/status/785095932782190592) a přichází [s drobnými inovacemi](https://testpilot.firefox.com/experiments). Jenže Google má v případě Chrome z jejich pohledu dost nešťastnou kombinaci *umu* vyrábět výborný prohlížeč a *síly* cokoliv protlačit. [Wikipedia](https://en.wikipedia.org/wiki/Firefox)  
 <small>HTML5test.com: 493/555 (verze 62)</small>
 
 <div class="related" markdown="1">
@@ -157,7 +157,7 @@ Relativně nový prohlížeč od Samsungu, který se ve statistkách (včetně G
 
 ### Speciální kategorie: WebView a prohlížeče uvnitř aplikací {#webview}
 
-Velká část dnešních zhlédnutí webů na mobilech se neodehrává vědomým spuštěním prohlížeče, ale otevřením stránky kliknutím na odkaz uvnitř aplikací. Ve Facebooku, Twitteru nebo třeba e-mailové apce. Dříve jsem o tom podrobně psal na Vzhůru dolů. [vrdl.cz/b/19-prohlizec-facebook](https://www.vzhurudolu.cz/blog/19-prohlizec-facebook)
+Velká část dnešních zhlédnutí webů na mobilech se neodehrává vědomým spuštěním prohlížeče, ale otevřením stránky kliknutím na odkaz uvnitř aplikací. Ve Facebooku, X nebo třeba e-mailové apce. Dříve jsem o tom podrobně psal na Vzhůru dolů. [vrdl.cz/b/19-prohlizec-facebook](https://www.vzhurudolu.cz/blog/19-prohlizec-facebook)
 
 <!-- AdSnippet -->
 

@@ -150,7 +150,7 @@ CodePen: [https://cdpn.io/e/mdBPdzE](https://codepen.io/machal/pen/mdBPdzE)
 
 ## Kalkulátor pro napasování systémových písem ke Google Fonts {#calc}
 
-Ptáte se, jak jsem došel k procentuálním hodnotám z ukázky výše? Pomohl [Malte Ubl](https://twitter.com/cramforce). Jeho kalkulátor nazvaný „Automatic font matching" myslím může ušetřit práci i vám.
+Ptáte se, jak jsem došel k procentuálním hodnotám z ukázky výše? Pomohl [Malte Ubl](https://x.com/cramforce). Jeho kalkulátor nazvaný „Automatic font matching" myslím může ušetřit práci i vám.
 
 <figure>
 <img src="../dist/images/original/css-size-adjust-calc.png" width="1600" height="900" alt="CSS size-adjust - kalkulator">

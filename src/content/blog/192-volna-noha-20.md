@@ -56,7 +56,7 @@ Po zřízení živnostenského listu jdu rovnou do Expandia banky, první „int
 
 Přeloženo do dnešního jazyka: K iPhone si pořizuji ještě klíčenku na bitcoiny.
 
-<blockquote class="twitter-tweet"><p lang="cs" dir="ltr">Před 20 lety, 4. května 1998, zahájila své působení na českém trhu Expandia Banka. Vzpomínáte? <a href="https://t.co/VekE7K4zHv">https://t.co/VekE7K4zHv</a> <a href="https://t.co/Af5qKsbLiF">pic.twitter.com/Af5qKsbLiF</a></p>— Muzeum Internetu .cz (@muzeum_CZ) <a href="https://twitter.com/muzeum_CZ/status/992447473695281152?ref_src=twsrc%5Etfw">May 4, 2018</a></blockquote>
+<blockquote class="twitter-tweet"><p lang="cs" dir="ltr">Před 20 lety, 4. května 1998, zahájila své působení na českém trhu Expandia Banka. Vzpomínáte? <a href="https://t.co/VekE7K4zHv">https://t.co/VekE7K4zHv</a> <a href="https://t.co/Af5qKsbLiF">pic.twitter.com/Af5qKsbLiF</a></p>— Muzeum Internetu .cz (@muzeum_CZ) <a href="https://x.com/muzeum_CZ/status/992447473695281152?ref_src=twsrc%5Etfw">May 4, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Neznáte Expandia banku? Přejmenovala se pak na eBanku a ani tu dneska nikdo nezná. Koupila ji už před lety Raiffeisen.
@@ -246,7 +246,7 @@ V tomhle období jsem pracoval jak pro klienty Shortcatu, tak pro vlastní kodé
 
 Někdy kolem roku 2013 nastává další zlom. Kromě narození Jakuba jej pro mě definuje také to, že už tak nějak vím, jak dělat odbornou práci a zároveň těšit se ze stabilních příjmů.
 
-Táhne mi na čtyřicet a říkám si, že by bylo fajn, když bych mladším dokázal pomoci i jinak než psaním článků, příspěvky na Twitteru a školeními. Stále častěji se z hlavy vynořují pojmy jako komunita a setkávání.
+Táhne mi na čtyřicet a říkám si, že by bylo fajn, když bych mladším dokázal pomoci i jinak než psaním článků, příspěvky na X a školeními. Stále častěji se z hlavy vynořují pojmy jako komunita a setkávání.
 
 My ajťáci sice na první pohled kontakt s lidmi nevyhledáváme, ale skutečnost je jiná. Také se chceme družit, jen nám to většinou stačí méně často než řekněme obchodníkům. Ostatně – zeptejte se vývojářů zavřených v lockdownu, zda jsou spokojení, a uvidíte. A družit se se _spřízněnými dušemi_, to chce opravdu každý.
 
@@ -354,12 +354,12 @@ Zachránily mě dvě věci: úspory a boom onlinu. I když i to druhé vypadalo 
 
 Trpělivě jsem publikoval a občas přednášel o rychlosti webů, snažil se co nejlépe pomáhat klientům a začali se ozývat noví. Někdy kolem poloviny roku 2020 tato noha mého podnikání už unese skoro celou zátěž, aniž bych musel zredukovat misi podpory komunity, kterou dělám prostřednictvím Vzhůru dolů a Frontendistů.
 
-Věci také pomohl první velký výstup našeho stále hlubšího partnerství se [SUPERKODERS](https://superkoders.com/). Spustili jsme [PageSpeed.cz](https://pagespeed.cz/), značku zaštiťující naše společné aktivity v poradenství k rychlosti webů a zároveň testovací nástroj.
+Věci také pomohl první velký výstup našeho stále hlubšího partnerství se [SUPERKODERS](https://superkoders.com/). Spustili jsme [PageSpeed.ONE](https://pagespeed.cz/), značku zaštiťující naše společné aktivity v poradenství k rychlosti webů a zároveň testovací nástroj.
 
 <figure>
-<img src="https://res.cloudinary.com/vzhurudolu-cz/image/upload/v1616043824/vzhurudolu-blog/20-let-volna-noha/20-let-volna-noha.014_umuk1f.jpg" width="1600" height="900" alt="Měření rychlosti webu na PageSpeed.cz">
+<img src="https://res.cloudinary.com/vzhurudolu-cz/image/upload/v1616043824/vzhurudolu-blog/20-let-volna-noha/20-let-volna-noha.014_umuk1f.jpg" width="1600" height="900" alt="Měření rychlosti webu na PageSpeed.ONE">
 <figcaption markdown="1">
-*Měření rychlosti webu na PageSpeed.cz.*
+*Měření rychlosti webu na PageSpeed.ONE.*
 </figcaption>
 </figure>
 
@@ -380,7 +380,7 @@ Naučil jsem se i jiné věci. Jako většina lektorů jsem nainvestoval do vyba
 </figcaption>
 </figure>
 
-Hrozně moc jsem potřeboval vyrůst jako konzultant k rychlosti webů, nejen z pohledu hard-skills, které se nám daří v týmu PageSpeed.cz sdílet navzájem, ale také z pohledu klientské péče, komunikace, managementu projektu zrychlování směrem ke klientským týmům.
+Hrozně moc jsem potřeboval vyrůst jako konzultant k rychlosti webů, nejen z pohledu hard-skills, které se nám daří v týmu PageSpeed.ONE sdílet navzájem, ale také z pohledu klientské péče, komunikace, managementu projektu zrychlování směrem ke klientským týmům.
 
 ## 2021: a co bude dál? {#2021}
 
@@ -401,7 +401,7 @@ Jsou věci, na které se můžu spolehnout:
 
 Co budu dělat dál? Štěstí přeje připraveným, takže zde vidím i pár příležitostí, do kterých investuji svůj čas:
 
-* Z [PageSpeed.cz](https://pagespeed.cz/) může vyrůst buď něco jako malá agentura pro pomoc s rychlostí webů nebo nástroj, který velkou část poradenství zautomatizuje.
+* Z [PageSpeed.ONE](https://pagespeed.cz/) může vyrůst buď něco jako malá agentura pro pomoc s rychlostí webů nebo nástroj, který velkou část poradenství zautomatizuje.
 * [Školení ze Vzhůru dolů](https://www.vzhurudolu.cz/kurzy) se určitě vrátí, ať už v podobě hodinových webinářů nebo kratších školení. Zkusíme i [videokurzy](https://www.vzhurudolu.cz/video) bez živého lektora, zatím jako prodej obsahu v podobě upravených záznamů z webinářů.
 * Vzhledem k tomu, že podle výše uvedeného jednou za dva roky vydávám [ebook](https://www.vzhurudolu.cz/ebooky), letos je čas na další. ;)
 * No a… rozhodl jsem se zkusit štěstí na anglicky mluvícím trhu prostřednictvím projektu Roberta Vlacha Freelancing.eu si mě můžete najmou ze zahraničí jako [web performance consultant](https://freelancing.eu/martinmichalek/).

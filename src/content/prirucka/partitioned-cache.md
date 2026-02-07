@@ -147,7 +147,7 @@ Takže pokud stahujete soubory např. ono jQuery od Google, moduly z `unpkg.com`
 
 Dopady jsou asi zřejmé, ale zkusím je ještě shrnout:
 
-- Na webech ztrácí smysl používat veřejné CDN, pokud je jediným důvodem sdílení knihoven s jinými weby. Nepadají tím však další důvody pro CDN, jako je rychlost [TTFB](ttfb.md). Nedávno jsme o tom [diskutovali na Twitteru](https://twitter.com/machal/status/1320633765719384064).
+- Na webech ztrácí smysl používat veřejné CDN, pokud je jediným důvodem sdílení knihoven s jinými weby. Nepadají tím však další důvody pro CDN, jako je rychlost [TTFB](ttfb.md). Nedávno jsme o tom [diskutovali na X](https://x.com/machal/status/1320633765719384064).
 - Webům, které používaly ty nejpopulárnější verze knihoven z větších CDN, může z důvodu nutnosti stahování poklesnout výkon webu měřený u uživatelů. Ale o nic zásadního většinou nepůjde.
 - U těch na druhé straně – u provozovatelů CDN, kteří obsluhují velké objemy mezipaměti zdrojů pro mnoho webů, dojde tímto ke zvýšení provozu.
 

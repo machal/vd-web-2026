@@ -56,12 +56,12 @@ Matt E. Peterson uvádí příklad s našeptávačem: Při každém stisknutí k
 
 Silný server, tenký klient. Takže jsme tam, kde jsme byli. Tyto technologie i postupy jsou známy a používány už léta. Tak jasně, málokdo má koule, aby takové věci říkal NEW MAGIC jako David Heinemeier Hansson, že ano:
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Hotwire aka NEW MAGIC is finally here: An alternative approach to building modern web applications without using much JavaScript by sending HTML instead of JSON over the wire. This includes our brand-new Turbo framework and pairs with Stimulus 2.0 <a href="https://t.co/Pa4EG8Av5E">https://t.co/Pa4EG8Av5E</a></p>— DHH (@dhh) <a href="https://twitter.com/dhh/status/1341420143239450624?ref_src=twsrc%5Etfw">December 22, 2020</a></blockquote>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Hotwire aka NEW MAGIC is finally here: An alternative approach to building modern web applications without using much JavaScript by sending HTML instead of JSON over the wire. This includes our brand-new Turbo framework and pairs with Stimulus 2.0 <a href="https://t.co/Pa4EG8Av5E">https://t.co/Pa4EG8Av5E</a></p>— DHH (@dhh) <a href="https://x.com/dhh/status/1341420143239450624?ref_src=twsrc%5Etfw">December 22, 2020</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Ale znáte to – staré technologie se objevují v nových kontextech, aby další generaci vývojářek a vývojářů otevřely oči. Proč ne, když to něčemu pomůže:
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Progressive enhancement gets repackaged and released as "new magic" time and time again, but seriously if it gets more people doing it, it's a good thing.</p>— Jake Archibald (@jaffathecake) <a href="https://twitter.com/jaffathecake/status/1341654795413762048?ref_src=twsrc%5Etfw">December 23, 2020</a></blockquote>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Progressive enhancement gets repackaged and released as "new magic" time and time again, but seriously if it gets more people doing it, it's a good thing.</p>— Jake Archibald (@jaffathecake) <a href="https://x.com/jaffathecake/status/1341654795413762048?ref_src=twsrc%5Etfw">December 23, 2020</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 A co ta rychlost?

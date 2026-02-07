@@ -85,7 +85,7 @@ A já ještě dodám dvě poznámky k měření „pomalosti”. Dany Richman to
 
 Moje zkušenost ze zakázek při optimalizaci rychlosti webu totiž říká, že naprostá většina problémů, které weby mají, se netýká backendu:
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="cs" dir="ltr">Zajímavé, jak rozšířená je myšlenka „náš web je pomalý, protože běží na pomalé platformě [dosaďte oblíbenou]“.<br>90 % problémů je přitom na frontendu.</p>— Martin Michálek (@machal) <a href="https://twitter.com/machal/status/1047423382017462272?ref_src=twsrc%5Etfw">October 3, 2018</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="cs" dir="ltr">Zajímavé, jak rozšířená je myšlenka „náš web je pomalý, protože běží na pomalé platformě [dosaďte oblíbenou]“.<br>90 % problémů je přitom na frontendu.</p>— Martin Michálek (@machal) <a href="https://x.com/machal/status/1047423382017462272?ref_src=twsrc%5Etfw">October 3, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Backend – tedy rychlost generování stránek WordPressem či jinou platformou – samozřejmě bude mít významný vliv na vnímanou rychlost uživatelů sedících u rychlých připojení.  

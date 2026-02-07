@@ -43,7 +43,7 @@ Figma přichází s novinkami, které by vás neměly minout. Přinášíme i pr
 <h3 class="pt-0 h4 mb-0">Jan Toman</h3>
 
 Director of Design v [Supernova.io](https://www.supernova.io/), kde pracuje na nástrojích, které pomáhají snadno budovat, rozvíjet a rozšiřovat design systémy. Pracoval na design systémech v Productboard nebo Kiwi. Organizuje komunitu [DSCC Czechia](https://designsystemscommunity.cz/).  
-[LinkedIn](https://www.linkedin.com/in/honzatmn/) – [X.com](https://twitter.com/HonzaTmn)
+[LinkedIn](https://www.linkedin.com/in/honzatmn/) – [X.com](https://x.com/HonzaTmn)
 
 </div>
 </div>
@@ -59,7 +59,7 @@ Director of Design v [Supernova.io](https://www.supernova.io/), kde pracuje na n
 <h3 class="pt-0 h4 mb-0">Adam Kudrna</h3>
 
 UI developer/designer na volné noze s důrazem na robustnost, výkon, responzivitu a přístupnost. S design systémy pomáhá značkám jako LMC nebo Racom. Založil také [Frontend Garden](https://frontend.garden/), magazín o frontendu.  
-[LinkedIn](https://www.linkedin.com/in/adamkudrna/) – [X.com](http://x.com/) – [Web](https://www.adamkudrna.cz/)
+[LinkedIn](https://www.linkedin.com/in/adamkudrna/) – [X](https://x.com/AdamKudrna) – [Web](https://www.adamkudrna.cz/)
 
 </div>
 </div>

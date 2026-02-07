@@ -238,7 +238,7 @@ Například u sebe ale vidím interní testování jako úskalí. Za prvé jsem 
 
 ## Jaké jsou výsledky? {#vysledky}
 
-Když jsme implementovali první várku změn, dostali jsme několik pozitivním ohlasů například na Twitteru, ale hlavně nás hřál dobrý pocit, že jsme pomohli.
+Když jsme implementovali první várku změn, dostali jsme několik pozitivním ohlasů například na X, ale hlavně nás hřál dobrý pocit, že jsme pomohli.
 
 Co na to říkají lidi u nás ve firmě? Ti, kteří do problematiky přístupnosti víc vidí, tyto snahy oceňují. Místy je ale náročné přesvědčit ty, kteří se přístupností tolik nezabývají. Určitě je výzva toto povědomí rozšířit a přesvědčit kolegy brát přístupnost jako samozřejmost a ne jako komplikaci, která by se měla přehlížet. To je ale výzva ve všech firmách.
 

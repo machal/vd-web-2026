@@ -51,8 +51,8 @@ function formatDate(date: Date): string {
 ---
 
 <BaseLayout
-  title={`Podcast – stránka ${currentPage}`}
-  description="Robin Pokorný a Martin Michálek vedou rozhovory se zajímavými lidmi kolem webového designu a vývoje."
+  title={`Podcast – stránka ${currentPage} – archiv Vzhůru dolů a FrontKec`}
+  description="Archiv podcastu ze Vzhůru dolů (všechny epizody, už nevysílá). Martin Michálek a Robin Pokorný pokračují v podcastu FrontKec pod Frontendisti.cz."
   bodyClass="section-podcast"
 >
   <Header slot="header" />
@@ -60,21 +60,19 @@ function formatDate(date: Date): string {
 
   <main role="main" id="main" aria-label="Hlavní obsah">
     <div class="page-head page-head--lower">
-      <h1>Podcast</h1>
+      <h1>Podcast ze Vzhůru dolů</h1>
       <div class="mb-0 maxw-30em">
-        <div class="maxw-30em">
-          <p>
-            <a href="https://robinpokorny.com/">Robin Pokorný</a> a <a href="https://www.vzhurudolu.cz/martin">Martin Michálek</a> vedou rozhovory se zajímavými lidmi kolem webového designu a vývoje.
-          </p>
-          <p>
-            Nalaďte nás: <a href="https://itunes.apple.com/cz/podcast/vzhuru-dolu-podcast/id1176693658">iTunes</a> – <a href="https://open.spotify.com/show/1G2kH2YrIwD9BABg4L7xGC">Spotify</a> – <a href="https://tunein.com/podcasts/Technology-News/Vzhuru-dolu-podcast-p1177693/">TuneIn</a> – <a href="https://anchor.fm/s/82312eb4/podcast/rss">RSS podcastů</a>.
-          </p>
-        </div>
+        <p>
+          Podcast ze Vzhůru dolů už nevysílá, změnil se na <a href="https://www.frontendisti.cz/frontkec">FrontKec</a>. Zde ale najdete všechny původní epizody na jednom místě.
+        </p>
+        <p>
+          <a href="https://open.spotify.com/show/1G2kH2YrIwD9BABg4L7xGC">Spotify</a> – <a href="https://itunes.apple.com/cz/podcast/vzhuru-dolu-podcast/id1176274658">Apple Podcasts</a> – <a href="https://tunein.com/podcasts/Technology-News/Vzhuru-dolu-podcast-p1177693/">TuneIn</a> – <a href="https://anchor.fm/s/82312eb4/podcast/rss">RSS</a>
+        </p>
       </div>
     </div>
 
     <div class="section">
-      <div class="content">
+      <div class="content maxw-40em mx-a">
         {paginatedPodcasts.map((podcast) => (
           <article role="article" class="mb-15">
             <h2 class="h4 mb-05">

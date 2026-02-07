@@ -48,4 +48,4 @@ A já vám poradím v dlouhodobé perspektivě udělat jednotný, [responzivní]
 
 Žádný stres. Není to tak horké. Google v článku píše v následujících měsících to bude na úrovni experimentu a v malém měřítku.
 
-*Aktualizace 15. 6. 2017: Google s tím stále spíše experimentuje a nemá [přesný časový plán](http://searchengineland.com/googles-mobile-first-index-still-months-away-271851). Podle [některých zdrojů](https://twitter.com/jenstar/status/874765363635904513) to bude aktuální až v roce 2018.*
+*Aktualizace 15. 6. 2017: Google s tím stále spíše experimentuje a nemá [přesný časový plán](http://searchengineland.com/googles-mobile-first-index-still-months-away-271851). Podle [některých zdrojů](https://x.com/jenstar/status/874765363635904513) to bude aktuální až v roce 2018.*

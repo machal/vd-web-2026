@@ -16,7 +16,7 @@ og_type: article
 
 # 3 otázky na Harryho Robertse před letošním WebExpo: k refaktorování CSS a metodice ITCSS
 
-[Harry Roberts](http://csswizardry.com/about/) ([@csswizardry](https://twitter.com/csswizardry)) je z pohledu frontend designéra jedním z nejzajímavějších přednášejících na letošním WebExpu. 
+[Harry Roberts](http://csswizardry.com/about/) ([@csswizardry](https://x.com/csswizardry)) je z pohledu frontend designéra jedním z nejzajímavějších přednášejících na letošním WebExpu. 
 
 Vzal jsem příležitost za pačesy a přes organizátory se jej zeptal na refaktorování CSS – téma [jeho přednášky](https://webexpo.cz/praha2016/prednaska/refactoring-css-without-losing-your-mind/) – a taky [ITCSS](https://speakerdeck.com/dafed/managing-css-projects-with-itcss), metodiku pro organizaci velkých CSS projektů.
 
@@ -68,7 +68,7 @@ ITCSS má také detailnější přístup, protože (S)CSS pravidla rozděluje do
 
 Nebyl! Nic konkrétního, ale těším se na české pivo a objevování města! Budu rád za všechna doporučení co mi můžete dát…
 
-*Doporučíte? Harry Roberts je na [@csswizardry](https://twitter.com/csswizardry).*
+*Doporučíte? Harry Roberts je na [@csswizardry](https://x.com/csswizardry).*
 
 *Já děkuji za rozhovor a těším se na přednášku!*
 

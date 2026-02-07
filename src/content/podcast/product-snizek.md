@@ -51,7 +51,7 @@ Jako zvláštní téma jsme pak vytáhli význam koučování a mentoringu v pro
 
 Martin se už 20 let zabývá tím, jak stavět dobré weby a digitální produkty. Po zkušenostech z Rohlíku, Slevomatu, Mallu a Rossum v současnosti pomáhá zvenčí zlepšovat produktové týmy, weby a aplikace.
 
-[Web](https://www.snizekweb.cz/) – [X](https://twitter.com/martinsnizek) – [LinkedIn](https://www.linkedin.com/in/martinsnizek/)
+[Web](https://www.snizekweb.cz/) – [X](https://x.com/martinsnizek) – [LinkedIn](https://www.linkedin.com/in/martinsnizek/)
 
 </div>
 </div>

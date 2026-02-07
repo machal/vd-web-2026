@@ -69,7 +69,7 @@ Následují moje jen trošku redigované poznámky z přednášek, na kterých j
 - Doporučuje subdoménu pro marketingové maily kvůli reputaci hlavní domény.
 - AI trend je tvorba obsahu mailů, hlavně jejich variant.
 - Doporučuje promazávání kontaktů a segmentaci, odstranění neaktivních, co kazí statistiky.
-- Shnrutí: Přednáška, se jejímiž výstupy jdu rovnou do týmu [PageSpeed.cz](http://app.pagespeed.cz).
+- Shnrutí: Přednáška, se jejímiž výstupy jdu rovnou do týmu [PageSpeed.ONE](http://app.pagespeed.cz).
 
 
 ## Michal Pastier – How to start/restart a brand for global success

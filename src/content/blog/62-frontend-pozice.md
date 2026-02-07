@@ -51,7 +51,7 @@ Frontend designérů je malinko. Občas si dělám legraci, že v ČR jsme zatí
 
 Ještě jednu poznámku si neodpostím. Když tak procházím pracovní inzeráty, ukazuje to místy dost nevalnou úroveň kamarádění vývojářských týmů se světem designu. 
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="cs" dir="ltr">CSS = design. Není to programovací jazyk. <br><br>Hledáte někoho „s výbornou znalostí PHP, JS a CSS“ a nepožadujete designérské dovednosti? Chyba.</p>— Martin Michálek (@machal) <a href="https://twitter.com/machal/status/742245134096596992">June 13, 2016</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="cs" dir="ltr">CSS = design. Není to programovací jazyk. <br><br>Hledáte někoho „s výbornou znalostí PHP, JS a CSS“ a nepožadujete designérské dovednosti? Chyba.</p>— Martin Michálek (@machal) <a href="https://x.com/machal/status/742245134096596992">June 13, 2016</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Ano, CSS můžete používat jen pro implementaci designu. Lidé co píší styly vždy designérské myšlení nemají. Skoro vždy ale ke škodě výsledku. Pouhý implementátor, který o designu nic neví, dokáže zadání od designéra více či méně pokazit. Na straně designéra či grafika pak také vzniká potřeba děsně neefektivního doslovného zadání.

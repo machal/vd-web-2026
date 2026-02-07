@@ -177,11 +177,11 @@ Prostě můžete změnit layout podle toho, kolik je v něm položek. Kurnik šo
 
 <!-- AdSnippet -->
 
-Další zajímavé tipy přidal například [na X/Twitteru Wes Bos](https://twitter.com/wesbos/status/1737148340322652632) u příležitosti plné podpory selektoru `:has()` ve všech prohlížečích. Uvedu pár příkladů:
+Další zajímavé tipy přidal například [na X/X Wes Bos](https://x.com/wesbos/status/1737148340322652632) u příležitosti plné podpory selektoru `:has()` ve všech prohlížečích. Uvedu pár příkladů:
 
-- [The Anywhere Selector](https://twitter.com/wesbos/status/1737148577137209383) - Např. pokud je v `<body>` zaškrtnutý checkbox, můžete vzít jakýkoli jiný prvek a nastylovat jej.
-- [Layout Targeting](https://twitter.com/wesbos/status/1737148941987156122) – Na základě struktury obsahu stránky mohu měnit rozvržení.
-- [All Siblings](https://twitter.com/wesbos/status/1737149592477577357) – Když na potomka najedete kurzorem, vybere všechny ostatní elementy.
+- [The Anywhere Selector](https://x.com/wesbos/status/1737148577137209383) - Např. pokud je v `<body>` zaškrtnutý checkbox, můžete vzít jakýkoli jiný prvek a nastylovat jej.
+- [Layout Targeting](https://x.com/wesbos/status/1737148941987156122) – Na základě struktury obsahu stránky mohu měnit rozvržení.
+- [All Siblings](https://x.com/wesbos/status/1737149592477577357) – Když na potomka najedete kurzorem, vybere všechny ostatní elementy.
 
 Máte jiný zajímavý příklad použití? Napište mi, přidám jej do článku.
 

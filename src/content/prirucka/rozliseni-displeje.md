@@ -23,14 +23,14 @@ Obsah: [Je to vůbec k něčemu?](#k-necemu) – [Zjištění JavaScriptem](#JS)
 
 ## Je to vůbec k něčemu? {#k-necemu}
 
-Jak už jsem zmiňoval, zase tak zajímavé rozlišení displejů pro webaře není. Když jsem se na Twitteru ptal, zda takovou věc někdo potřeboval v praxi, dostal jsem jen pár příkladů. Většinou to lidé používali pro identifikaci uživatele:
+Jak už jsem zmiňoval, zase tak zajímavé rozlišení displejů pro webaře není. Když jsem se na X ptal, zda takovou věc někdo potřeboval v praxi, dostal jsem jen pár příkladů. Většinou to lidé používali pro identifikaci uživatele:
 
-<blockquote class="twitter-tweet" data-conversation="none" data-lang="en"><p lang="cs" dir="ltr">Jaká lidé používají rozlišení obrazovky, to nás nezajímalo. Ale rozlišení jsne společně s otiskem prohlížeče používali k rozpoznávání různých zařízení, kterými se tentýž člověk připojoval k účtu. Mohli jsme tak sledovat jeho chování cross-device. A to už bylo hodně zajímavé.</p>&mdash; Jan Štráfelda (@Strafelda) <a href="https://twitter.com/Strafelda/status/1030391422522929152?ref_src=twsrc%5Etfw">August 17, 2018</a></blockquote>
+<blockquote class="twitter-tweet" data-conversation="none" data-lang="en"><p lang="cs" dir="ltr">Jaká lidé používají rozlišení obrazovky, to nás nezajímalo. Ale rozlišení jsne společně s otiskem prohlížeče používali k rozpoznávání různých zařízení, kterými se tentýž člověk připojoval k účtu. Mohli jsme tak sledovat jeho chování cross-device. A to už bylo hodně zajímavé.</p>&mdash; Jan Štráfelda (@Strafelda) <a href="https://x.com/Strafelda/status/1030391422522929152?ref_src=twsrc%5Etfw">August 17, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 …no a pak také pro různé prastaré obskurnosti:
 
-<blockquote class="twitter-tweet" data-conversation="none" data-lang="en"><p lang="und" dir="ltr">Počítajú sa hacky cca pred 20 rokmi (Netscape Navigator 4), kedy sme stránky zobrazovali vo fullscreene pomocou tzv. chromeless window a jeho roztiahnutia na celú obrazovku?</p>&mdash; Riki Fridrich (@fczbkk) <a href="https://twitter.com/fczbkk/status/1030120275277492226?ref_src=twsrc%5Etfw">August 16, 2018</a></blockquote>
+<blockquote class="twitter-tweet" data-conversation="none" data-lang="en"><p lang="und" dir="ltr">Počítajú sa hacky cca pred 20 rokmi (Netscape Navigator 4), kedy sme stránky zobrazovali vo fullscreene pomocou tzv. chromeless window a jeho roztiahnutia na celú obrazovku?</p>&mdash; Riki Fridrich (@fczbkk) <a href="https://x.com/fczbkk/status/1030120275277492226?ref_src=twsrc%5Etfw">August 16, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Pro jistotu připomínám, že v [responzivním designu](https://www.vzhurudolu.cz/responzivni-design) je rozlišení obrazovky k ničemu. Vždy potřebujete znát [velikost okna](velikost-okna-css-js.md), protože právě tomu se design webu musí přizpůsobovat.

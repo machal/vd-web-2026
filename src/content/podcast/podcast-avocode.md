@@ -44,7 +44,7 @@ Podcast: <a href="https://soundcloud.com/vzhurudolu/avocode" data-id="370020830"
 
 ## Avocode a Vu {#avocode-vu}
 
-* Vu Hoang Anh: [LinkedIn](https://www.linkedin.com/in/helloiamvu), [Twitter](https://twitter.com/helloiamvu?lang=cs), [Přednáška na Webexpo 2017](https://www.webexpo.cz/praha2016/talk/the-price-of-not-selling-your-company/)
+* Vu Hoang Anh: [LinkedIn](https://www.linkedin.com/in/helloiamvu), [X](https://x.com/helloiamvu?lang=cs), [Přednáška na Webexpo 2017](https://www.webexpo.cz/praha2016/talk/the-price-of-not-selling-your-company/)
 * Avocode: [Avocode.com](https://avocode.com/), [Forbes](http://www.forbes.cz/prosli-si-startupovym-drillem-v-usa-ted-zabijeji-photoshop-z-prazske-naplavky/), [TyInternety.cz](http://tyinternety.cz/startupy/startup-tydne-24-avocode-the-photoshop-killer/), [StartupJobs.cz](https://www.startupjobs.cz/startup/avocode-inc)
 
 ![Pěkně provedené interiéry kanceláří v Avocode](/assets/img/content/dest/blog/avocode-kancl.webp)

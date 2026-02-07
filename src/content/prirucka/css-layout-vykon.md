@@ -151,7 +151,7 @@ Zcela konkrétně to popsal Bohumil Jahoda, autor skvělého JeČas.cz, kterého
 
 > Flexbox trpí tím, že musí čekat na stažení celého HTML nebo poskakuje. (…) Týká se to použití u dlouhého obsahu. Problém je v tom, že poslední element může totálně ovlivnit, jak se daná část vykreslí. Takže prohlížeč buď musí čekat na stažení celého potřebného HTML, nebo vykreslit neúplný obsah, což může vést k tomu poskakování.
 
-Příspěvek jsem přejal z Twitteru, jak jinak, kde si můžete přečíst celou diskuzi. [vrdl.in/flexposk](https://twitter.com/Jahoda/status/1367863896900505605)
+Příspěvek jsem přejal z X, jak jinak, kde si můžete přečíst celou diskuzi. [vrdl.in/flexposk](https://x.com/Jahoda/status/1367863896900505605)
 
 ### Nejde ani tak o flexbox, jako o přednost obsahu při skládání layoutu
 

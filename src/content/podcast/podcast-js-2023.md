@@ -49,7 +49,7 @@ Museli jsme probrat také tooling kolem JS, jako je například balíčkovací n
 
 Riki Fridrich píše JavaScript ve firmě [Outreach](https://www.outreach.io/). [Učí ostatní](https://www.vzhurudolu.cz/lektori/riki-fridrich), jak psát Javascript. Přednáší na konferencích a setkáních. Většinou o Javascriptu. Riki je z Ládví.
 
-[Web](https://fczbkk.com/) – [Twitter](https://twitter.com/fczbkk) – [Github](https://github.com/fczbkk) – [LinkedIn](https://www.linkedin.com/in/fczbkk/)
+[Web](https://fczbkk.com/) – [X](https://x.com/fczbkk) – [Github](https://github.com/fczbkk) – [LinkedIn](https://www.linkedin.com/in/fczbkk/)
 
 </div>
 </div>
@@ -67,7 +67,7 @@ Riki Fridrich píše JavaScript ve firmě [Outreach](https://www.outreach.io/). 
 * TypeScript 5 a [moduleResolution Bundler](https://github.com/microsoft/TypeScript/pull/51669) **(21:20)**
 * [Nejčastěji adaptované vlastnosti JS](https://2022.stateofjs.com/hi-IN/awards/) jako top level Await **(25:40)**
 * [WebSpeech API](https://2022.stateofjs.com/en-US/features/browser-apis/#web_speech) a používaní prohlížeče k mluvení **(34:20)**
-* [Kenn C. Dotts](https://twitter.com/kentcdodds/status/1624595023659667456?lang=en) a všechny ukázky v TypeScriptu **(41:00)**
+* [Kenn C. Dotts](https://x.com/kentcdodds/status/1624595023659667456?lang=en) a všechny ukázky v TypeScriptu **(41:00)**
 * [JS frameworky](https://2022.stateofjs.com/en-US/libraries/) a „renderovací" frameworky, odklon od SPA **(43:40)**
 * Budoucnost backendu není v JS? **(53:20)**
 * Nástup nových JS enginů **(58:50)**

@@ -33,7 +33,7 @@ Podcast: <a href="https://soundcloud.com/vzhurudolu/s-honzou-bienem-o-wordpressu
 
 * Honzovo [školení o WordPressu](http://www.vzhurudolu.cz/kurzy/wordpress) na Vzhůru dolů
 * Honzovo [workflow pro vývoj WordPress webů](https://www.janbien.cz/wordpress-workflow/) na jeho blogu
-* [Web](https://www.janbien.cz/), [Twitter](https://twitter.com/HonzaBien), [Facebook](https://www.facebook.com/jan.bien), [LinkedIn](https://www.linkedin.com/in/janbien/)
+* [Web](https://www.janbien.cz/), [X](https://x.com/HonzaBien), [Facebook](https://www.facebook.com/jan.bien), [LinkedIn](https://www.linkedin.com/in/janbien/)
 
 ## Obsah {#obsah}
 

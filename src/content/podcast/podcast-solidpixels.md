@@ -35,7 +35,7 @@ Na to jsme se ptali Martina Hakla, zástupce jednoho z českých systémů – [
 
 ## Odkazy
 
-- [Martin Hakl na Twitteru](https://twitter.com/martinhakl)
+- [Martin Hakl na X](https://x.com/martinhakl)
 - [Solidpixels: Ambasadorský program pro webaře](https://ambasadori.solidpixels.net/)
 - Konkurenti: [Squarespace](https://www.squarespace.com/), [Wix](https://www.wix.com/), [WebNode](https://www.webnode.cz/)
 - [TEDxPrague.cz](https://www.tedxprague.cz/en/home)

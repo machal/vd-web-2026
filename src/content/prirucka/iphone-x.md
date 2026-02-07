@@ -20,7 +20,7 @@ Schválně jsem text nenazval „jak *optimalizovat* weby pro iPhone X“. To, c
 
 Můžete z toho být nešťastní, ale asi to ničemu nepomůže. Lepší je vzít to s humorem:
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">I think I’ve fixed the notch issue in landscape 🍾 <a href="https://twitter.com/hashtag/iphoneX?src=hash&amp;ref_src=twsrc%5Etfw">#iphoneX</a> <a href="https://t.co/hGytyO3DRV">pic.twitter.com/hGytyO3DRV</a></p>&mdash; Vojta Stavik (@vojtastavik) <a href="https://twitter.com/vojtastavik/status/907911237983449088?ref_src=twsrc%5Etfw">September 13, 2017</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">I think I’ve fixed the notch issue in landscape 🍾 <a href="https://x.com/hashtag/iphoneX?src=hash&amp;ref_src=twsrc%5Etfw">#iphoneX</a> <a href="https://t.co/hGytyO3DRV">pic.twitter.com/hGytyO3DRV</a></p>&mdash; Vojta Stavik (@vojtastavik) <a href="https://x.com/vojtastavik/status/907911237983449088?ref_src=twsrc%5Etfw">September 13, 2017</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Nebo ještě lépe: Zjistit důvody, proč je potřeba nehranaté obrazovky řešit a podle toho uzpůsobit své weby. Od toho jsem tady já a tenhle článek.

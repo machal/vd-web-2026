@@ -177,7 +177,7 @@ Ukažme si alespoň základní z nástrojů, které Lighthouse Performance Score
 
 - [Lighthouse](lighthouse.md) je k dispozici v mnoha podobách, např. v Chrome DevTools nebo ve všech dále přítomných.
 - [PageSpeed Insights](pagespeed-insights.md) je rychlý test, který vám také zobrazí základní pohled na uživatelské metriky.
-- [PageSpeed.cz](https://www.vzhurudolu.cz/blog/171-pagespeed-cz) umožňuje kromě výše uvedeného také sledování rychlosti v čase.
+- [PageSpeed.ONE](https://www.vzhurudolu.cz/blog/171-pagespeed-cz) umožňuje kromě výše uvedeného také sledování rychlosti v čase.
 
 [Nástrojů](rychlost-nastroje.md) pro měření rychlosti webu postavených na Lighthouse je ale opravdu hodně.
 
@@ -205,7 +205,7 @@ Může se ovšem stát, že výrazně různá čísla bude vracet i Lighthouse p
 - máte rovnoměrně vytížené připojení k internetu;
 - nezměnila se [verze Lighthouse](https://www.vzhurudolu.cz/blog/199-lighthouse-8) a tím také výpočet LPS.
 
-Těch externích vlivů může být víc. Pro seriózní měření je vždy lepší testovat na jednotně nastaveném prostředí – například během procesu nasazování (CI – Continuous Integration) nebo využít už zmíněné nástroje, které měření od lokálních šumů izolují, jako je PageSpeed Insights, SpeedCurve či PageSpeed.cz.
+Těch externích vlivů může být víc. Pro seriózní měření je vždy lepší testovat na jednotně nastaveném prostředí – například během procesu nasazování (CI – Continuous Integration) nebo využít už zmíněné nástroje, které měření od lokálních šumů izolují, jako je PageSpeed Insights, SpeedCurve či PageSpeed.ONE.
 
 ## Jak zlepšit Lighthouse Performance Score? {#jak-zlepsit}
 
@@ -213,7 +213,7 @@ Základní technická doporučení ke zlepšení metriky vám dá každý z vý�
 
 Zaměřím zde se hlavně tedy „soft“, nebo také procesní rady:
 
-- Monitorujte rychlost průběžně - například na [PageSpeed.cz](https://app.pagespeed.cz/).
+- Monitorujte rychlost průběžně - například na [PageSpeed.ONE](https://app.pagespeed.cz/).
 - Zaměřte se na jednotlivé metriky. Využijte [kalkulátor](https://googlechrome.github.io/lighthouse/scorecalc/), abyste dokázali odhadnout, jakých posunů můžete jejich optimalizací dosáhnout.
 - Nepřehánějte to. Sledujte hlavně data od uživatelů.
 

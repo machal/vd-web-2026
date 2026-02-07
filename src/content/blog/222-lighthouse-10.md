@@ -64,4 +64,4 @@ Můžeme se ale těšit i na další inovace v reportech Lighthouse:
 
 Kdy se na to můžeme těšit?
 
-Už brzy se to objeví v [Chrome 112](https://chromestatus.com/roadmap), [PageSpeed Insights](https://www.vzhurudolu.cz/prirucka/pagespeed-insights), jejich API, a tedy i našem [testeru na PageSpeed.cz](https://app.pagespeed.cz/).
+Už brzy se to objeví v [Chrome 112](https://chromestatus.com/roadmap), [PageSpeed Insights](https://www.vzhurudolu.cz/prirucka/pagespeed-insights), jejich API, a tedy i našem [testeru na PageSpeed.ONE](https://app.pagespeed.cz/).

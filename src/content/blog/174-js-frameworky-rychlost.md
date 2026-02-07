@@ -23,9 +23,9 @@ og_type: article
 
 Tim Kadlec před časem publikovat [skvělou studii](https://timkadlec.com/remembers/2020-04-21-the-cost-of-javascript-frameworks/) výkonu javascriptových frameworků na datech z reálných webů.
 
-Můj [tweet](https://twitter.com/machal/status/1277856908486074368) přinesl ohlasy, ale zároveň mě ujistil, že tohle se prostě na Twitteru poctivě vysvětlit nedá.
+Můj [tweet](https://x.com/machal/status/1277856908486074368) přinesl ohlasy, ale zároveň mě ujistil, že tohle se prostě na X poctivě vysvětlit nedá.
 
-<blockquote class="twitter-tweet"><p lang="cs" dir="ltr">Které JS frameworky mají *tendenci* zpomalovat weby? <br>V grafech jsou percentily: 10, 25, 50, 75, 90.<br>Vysvětlení je složitější, čtěte raději celý článek:<a href="https://t.co/64630Yd7Nh">https://t.co/64630Yd7Nh</a> <a href="https://t.co/8EcDvSVjBD">pic.twitter.com/8EcDvSVjBD</a></p>&mdash; Martin Michálek (@machal) <a href="https://twitter.com/machal/status/1277856908486074368?ref_src=twsrc%5Etfw">June 30, 2020</a></blockquote>
+<blockquote class="twitter-tweet"><p lang="cs" dir="ltr">Které JS frameworky mají *tendenci* zpomalovat weby? <br>V grafech jsou percentily: 10, 25, 50, 75, 90.<br>Vysvětlení je složitější, čtěte raději celý článek:<a href="https://t.co/64630Yd7Nh">https://t.co/64630Yd7Nh</a> <a href="https://t.co/8EcDvSVjBD">pic.twitter.com/8EcDvSVjBD</a></p>&mdash; Martin Michálek (@machal) <a href="https://x.com/machal/status/1277856908486074368?ref_src=twsrc%5Etfw">June 30, 2020</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
 Pojďme to upřesnit v článku. Pokusím se původní myšlenky zestručnit a přidat k nim pár vlastních.
@@ -101,11 +101,11 @@ Znamenají uvedené grafy, že každý web postavený na Angularu bude stahovat 
 - [Podcast o Next.js](https://www.vzhurudolu.cz/podcast/169-podcast-next-js)
 </div>
 
-Nikoliv, musíme se ještě totiž podívat na možné interpretace. Jak píše například [Jarda Šnajdr](https://twitter.com/jsnajdr/status/1277912842734370822):
+Nikoliv, musíme se ještě totiž podívat na možné interpretace. Jak píše například [Jarda Šnajdr](https://x.com/jsnajdr/status/1277912842734370822):
 
 > Zdaleka nemusí platit, že konkrétní framework _způsobuje_ pomalost, a že kdyby ti samí lidé napsali tu samou aplikaci např v jQuery místo Reactu, že by byla rychlejší.
 
-Je to skoro přesně tak. V porovnání frameworků od Tima Kadlece jde také o porovnání vývojářů, projektů a firem, které tyto frameworky používají. [Jarda Šnajdr](https://twitter.com/jsnajdr/status/1277914687284412422) dodává:
+Je to skoro přesně tak. V porovnání frameworků od Tima Kadlece jde také o porovnání vývojářů, projektů a firem, které tyto frameworky používají. [Jarda Šnajdr](https://x.com/jsnajdr/status/1277914687284412422) dodává:
 
 > 1. Pomalé jsou především velké (rozsahem funkcí) a složité aplikace, a ty se většinou píší v Reactu.
 > 2. Pomalé jsou aplikace méně zkušených autorů. Ti většinou používají React, protože je to mainstream. Jiný framework použijí spíše ti, kteří víc přemýšlí o alternativách.

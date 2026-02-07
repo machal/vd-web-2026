@@ -134,7 +134,7 @@ Jak už bylo řečeno, všechny tři dnešní podstatné prohlížeče to umí n
 
 * Firefox to zapnul [ve verzi 71](https://bugzilla.mozilla.org/show_bug.cgi?id=1547231).
 * Chrome vlastnost podporuje [od verze 79](https://chromestatus.com/feature/5695266130755584).
-* Safari ústy vývojáře deklaruje, že ji přidá do příštího [Tech Preview 99](https://twitter.com/smfr/status/1220051332767174656?s=20).
+* Safari ústy vývojáře deklaruje, že ji přidá do příštího [Tech Preview 99](https://x.com/smfr/status/1220051332767174656?s=20).
 
 Ostatní prohlížeče buď vycházejí z Chrome (Edge, Opera…) nebo jsou pro potřeby článku nerelevantní. V takovém MSIE to už asi nezapnou, na druhou stranu tenhle prohlížeč pozvolna odchází a na zařízeních s pomalým připojení se nevyskytuje.
 

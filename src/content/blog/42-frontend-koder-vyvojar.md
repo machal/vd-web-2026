@@ -27,7 +27,7 @@ Není. Pokud chce člověk dělat webový frontend dobře, musí si  – zjednod
 
 ## Není to „kodér“ ale „frontend kodér“ 
 
-Mám mírnou nechuť používat pojem „kodér“. [Mnoha lidem](https://twitter.com/0ndras/status/667703188179591170) dnes stále asociuje lidský převodník z PSD do HTML. Dnešní náplň kodérovy práce je výrazně jiná. A proto ta tendence hledat jiné pojmenování.
+Mám mírnou nechuť používat pojem „kodér“. [Mnoha lidem](https://x.com/0ndras/status/667703188179591170) dnes stále asociuje lidský převodník z PSD do HTML. Dnešní náplň kodérovy práce je výrazně jiná. A proto ta tendence hledat jiné pojmenování.
 
 Dlouho se mi líbilo označení co používají v Seznamu – „UI vývojář“. Jenže, vývojář je kodér co programuje. CSSko je kód, ale ne programování. Ano, kodér občas něco naprogramuje, ale jeho doména je jinde. Proto – prosím vás – dost už s těmi „HTML programátory“!
 
@@ -47,7 +47,7 @@ Je to možné, ale málo pravděpodobné.
 
 Mnoho frontend kodérů utíká v poslední době k Javascriptu, který je prostě v módě. Předtím podobně k UX. Na trhu je frontend kodérů málo. To ale neznamená, že nejsou potřeba:
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="cs" dir="ltr"><a href="https://twitter.com/machal?ref_src=twsrc%5Etfw">@machal</a> My nemuzeme uz tak 3 mesice sehnat kvalitniho kodera. Fakt &quot;jenom&quot; kodera. Nedostatkovy zbozi.</p>&mdash; Petr Brzek (@PetrBrzek) <a href="https://twitter.com/PetrBrzek/status/668189571717402625?ref_src=twsrc%5Etfw">November 21, 2015</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="cs" dir="ltr"><a href="https://x.com/machal?ref_src=twsrc%5Etfw">@machal</a> My nemuzeme uz tak 3 mesice sehnat kvalitniho kodera. Fakt &quot;jenom&quot; kodera. Nedostatkovy zbozi.</p>&mdash; Petr Brzek (@PetrBrzek) <a href="https://x.com/PetrBrzek/status/668189571717402625?ref_src=twsrc%5Etfw">November 21, 2015</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Snad se shodneme na tom, že na kvalitě uživatelského rozhraní závisí úspěch nebo neúspěch naší práce. Ano? Pak pokud v práci navrhujete nebo jen implementujete uživatelské rozhraní, bez frontendisty s citem pro design se neobejdete. 

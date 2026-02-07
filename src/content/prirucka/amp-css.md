@@ -89,7 +89,7 @@ Třetím argumentem pro vkládání stylů přímo do HTML je v případě AMP �
 
 Dodáváme, že jako limit se počítá datová velikost kódu uvnitř `<style>`, takže minifikace kódu pomůže oddálit dosažení maxima.
 
-Poznámka: Limit byl původně nastaven na 50 kB, ale Google jej na četné (a pochopitelné) žádosti o polovinu navýšil. Neznamená to ovšem, že je nutné tento limit využít celý. S CSS na stránce je potřeba šetřit. Více je tweetu Westona Rutera, jednoho z autorů AMP. [vrdl.in/ampcss75](https://twitter.com/westonruter/status/1229889170077712385)
+Poznámka: Limit byl původně nastaven na 50 kB, ale Google jej na četné (a pochopitelné) žádosti o polovinu navýšil. Neznamená to ovšem, že je nutné tento limit využít celý. S CSS na stránce je potřeba šetřit. Více je tweetu Westona Rutera, jednoho z autorů AMP. [vrdl.in/ampcss75](https://x.com/westonruter/status/1229889170077712385)
 
 ## Zavináčová pravidla: Žádný @import prosím
 

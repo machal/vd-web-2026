@@ -135,7 +135,7 @@ V lednu 2019 jsem prošel velké české hostingy a zajímal se, zda novou verzi
 | Hosting    | Podporuje HTTP/2? |
 |:-----------|:-----------------:|
 |  Active24  | [ano](https://www.active24.cz/webhosting/auto-ssl-a-ssl-certifikaty) |
-| Blueboard | [ano](https://twitter.com/hostingBB/status/849263004751417344) |
+| Blueboard | [ano](https://x.com/hostingBB/status/849263004751417344) |
 | Český hosting | [ano](https://www.cesky-hosting.cz/webhosting/parametry-webhostingu/) |
 | Forpsi | částečně (Win/Actalis) |
 | G-hosting | [ano](https://www.facebook.com/GHosting.cz/posts/u%C5%BE-n%C3%A1m-funguje-php-72-http2-pro-nov%C3%BD-webserver-pojmenovan%C3%BD-debb-m%C3%A1me-i-p%C4%9Bknou-ip/2060349573980736/) |

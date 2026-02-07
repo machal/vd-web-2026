@@ -38,7 +38,7 @@ V praxi rychlostního poradce mě velmi baví legrace, které je možné dělat 
 
 ## 5) Gatsby
 
-Na zařazení [Gatsbyho](https://www.gatsbyjs.org/) jsem dostal tip právě na sociálních sítích, tentokrát [od Borka Bernarda](https://twitter.com/vzhurudolu/status/1069584394107740160). A vlastně je to dobrý nápad: Jde o zástupce nástrojů z kategorie „JAM stack“, které umožňují vytvářet weby bez potřeby vlastního backendu a jsou v poslední době velmi populární. Gatsby je generátor statických webů, který si rozumí s GraphQL a Reactem.
+Na zařazení [Gatsbyho](https://www.gatsbyjs.org/) jsem dostal tip právě na sociálních sítích, tentokrát [od Borka Bernarda](https://x.com/vzhurudolu/status/1069584394107740160). A vlastně je to dobrý nápad: Jde o zástupce nástrojů z kategorie „JAM stack“, které umožňují vytvářet weby bez potřeby vlastního backendu a jsou v poslední době velmi populární. Gatsby je generátor statických webů, který si rozumí s GraphQL a Reactem.
 
 <p class="video">
 Video: <a href="https://www.youtube.com/watch?v=AmdSoR-x7bE">JAMstack</a> ~ Ladislav Prskavec o moderní architektuře pro tvorbu webů.
@@ -62,7 +62,7 @@ Po třech a půl letech vývoje v lednu vyšla [nová verze](https://www.vzhurud
 
 ## 10) AMP
 
-Další z plíživých trendů, které nelze minout. AMP sleduji opravdu bedlivě a stále víc si myslím, že jde o skvělou věc, která může změnit způsob vytváření velké části obsahových webů. Od letoška na AMP narazíte kromě Google, LinkedIn nebo Twitteru také [ve vyhledavači Bing](https://blogs.bing.com/Webmaster-Blog/September-2018/Introducing-Bing-AMP-viewer-and-Bing-AMP-cache). Děláte nový obsahový web nebo e-shop? Na AMP se rozhodně podívejte, třeba skrze [můj seriál na Lupě](https://www.lupa.cz/serialy/accelerated-mobile-pages-amp/).
+Další z plíživých trendů, které nelze minout. AMP sleduji opravdu bedlivě a stále víc si myslím, že jde o skvělou věc, která může změnit způsob vytváření velké části obsahových webů. Od letoška na AMP narazíte kromě Google, LinkedIn nebo X také [ve vyhledavači Bing](https://blogs.bing.com/Webmaster-Blog/September-2018/Introducing-Bing-AMP-viewer-and-Bing-AMP-cache). Děláte nový obsahový web nebo e-shop? Na AMP se rozhodně podívejte, třeba skrze [můj seriál na Lupě](https://www.lupa.cz/serialy/accelerated-mobile-pages-amp/).
 
 <p class="video">
 Video: <a href="https://www.youtube.com/watch?v=uf6hh2skUO8">AMP pro designéry a vývojáře</a> ~ Záznam hospodského tlachání a Accelerated Mobile Pages.

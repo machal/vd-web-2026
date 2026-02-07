@@ -1,6 +1,6 @@
 ---
 postID: 237
-postTitle: 'PageSpeed.cz tester PLUS pro vývojáře: jak monitorovat a ladit rychlost webu'
+postTitle: 'PageSpeed.ONE tester PLUS pro vývojáře: jak monitorovat a ladit rychlost webu'
 postUrlId: pagespeed-cz-plus-tutorial
 postDateTime: 2024-01-08
 excerpt: 'Po letech vývoje přicházíme s tarifem PLUS, navržený pro vývojáře, kteří chtějí zlepšit rychlost svých webů. V článku ukážu, jak PLUS odhaluje a pomáhá opravit nejčastější problémy, s praktickým příkladem na webu Goldea.cz.'
@@ -12,14 +12,14 @@ category:
 no_ads: true
 include_rss: true
 category_highlight: true
-og_title: 'PageSpeed.cz tester PLUS pro vývojáře: jak monitorovat a ladit rychlost webu'
+og_title: 'PageSpeed.ONE tester PLUS pro vývojáře: jak monitorovat a ladit rychlost webu'
 og_description: 'Po letech vývoje přicházíme s tarifem PLUS, navržený pro vývojáře, kteří chtějí zlepšit rychlost svých webů. V článku ukážu, jak PLUS odhaluje a pomáhá opravit nejčastější problémy, s praktickým příkladem na webu Goldea.cz.'
 og_type: article
 tags: ['rychlost-nacitani']
 ---
-# PageSpeed.cz tester PLUS pro vývojáře: jak monitorovat a ladit rychlost webu
+# PageSpeed.ONE tester PLUS pro vývojáře: jak monitorovat a ladit rychlost webu
 
-V PageSpeed.cz jsme po několika letech práce na [testeru pro měření rychlosti](https://app.pagespeed.cz/) spustili také jeho placenou variantu, [tarif PLUS](https://app.pagespeed.cz/plus).
+V PageSpeed.ONE jsme po několika letech práce na [testeru pro měření rychlosti](https://app.pagespeed.cz/) spustili také jeho placenou variantu, [tarif PLUS](https://app.pagespeed.cz/plus).
 
 Stojí kolem 5 tis. Kč bez DPH ročně na jeden web. Postavili jsme jej pro majitele webu, marketéry a vývojáře a to na základě mnohaleté zkušenosti [s poradenstvím k rychlosti](https://www.pagespeed.cz/sluzby).
 
@@ -51,7 +51,7 @@ Náš [tester rychlosti](https://app.pagespeed.cz/) můžete používat už zhru
 
 Zjednodušeně řečeno je to stabilita výsledků, možnost detailního zkoumání příčin a v neposlední řadě také [Hlídač](https://www.pagespeed.cz/blog/tester-hlidac-notifikace), který vám umožní na rychlost zase tak moc nemyslet.
 
-[![Tarif PLUS z PageSpeed.cz](https://res.cloudinary.com/vzhurudolu-cz/image/upload/v1704269311/vzhurudolu-blog/page-speed-cz/ps-plus-tutorial-001_weujjd.jpg)](https://app.pagespeed.cz/plus)
+[![Tarif PLUS z PageSpeed.ONE](https://res.cloudinary.com/vzhurudolu-cz/image/upload/v1704269311/vzhurudolu-blog/page-speed-cz/ps-plus-tutorial-001_weujjd.jpg)](https://app.pagespeed.cz/plus)
 
 Jste zvědaví? Vše vám vysvětlím, chvíli vydržte.
 
@@ -95,7 +95,7 @@ Shrňme si to ještě v tabulce:
 
 Jste webaři-hobbíci a stačí vám vidět trend z týdne na týden a tříměsíční období? Volte verzi zdarma, v opačném případě vám doporučuji [PLUS](https://app.pagespeed.cz/plus).
 
-Dále se pojďme zabývat tím, co v PageSpeed.cz PLUS potěší vývojáře, a to sice detailním technickým rozborem.
+Dále se pojďme zabývat tím, co v PageSpeed.ONE PLUS potěší vývojáře, a to sice detailním technickým rozborem.
 
 ## Technické detaily pro pátrání po příčinách {#tech-detaily}
 
@@ -147,7 +147,7 @@ Právě pro tyto případy stavíme našeho Hlídače. Ten začne „panikařit�
 
 Do Hlídače jsme ale přidali ještě jednu vychytávku. Jde o automatické nastavování hladin rychlosti ([performance budgets](https://developer.mozilla.org/en-US/docs/Web/Performance/Performance_budgets)). Však se podívejte na následující obrázek, z toho budete moudřejší:
 
-![Limity rychlosti v PageSpeed.cz](https://res.cloudinary.com/vzhurudolu-cz/image/upload/v1704269310/vzhurudolu-blog/page-speed-cz/ps-plus-tutorial-006_h4vq8x.jpg)
+![Limity rychlosti v PageSpeed.ONE](https://res.cloudinary.com/vzhurudolu-cz/image/upload/v1704269310/vzhurudolu-blog/page-speed-cz/ps-plus-tutorial-006_h4vq8x.jpg)
 
 Červená linka zda ukazuje limit rychlosti, tedy maximální hladinu. V tomto případě se však metrika FCP postupně zlepšuje.
 
@@ -165,7 +165,7 @@ Sečteno, podrtženo:
 
 Notifikace z hlídače chodí do e-mailu, do Teams nebo do Slacku.
 
-Tester rychlosti od PageSpeed.cz vám však umožní jít dál. V momentě, kdy nastane skutečný problém, můžete se díky výše uvedeným technickým detailům dopátrat až k příčině zhoršení a tu pak opravit.
+Tester rychlosti od PageSpeed.ONE vám však umožní jít dál. V momentě, kdy nastane skutečný problém, můžete se díky výše uvedeným technickým detailům dopátrat až k příčině zhoršení a tu pak opravit.
 
 Pojďme se na optimalizaci rychlosti s pomocí tarifu PLUS podívat prostřednictvím příběhu z praxe.
 
@@ -177,7 +177,7 @@ Podívejte se na čísla z [Chrome UX Reportu](https://www.vzhurudolu.cz/priruck
 
 ![Čísla CrUX jsou zelená](https://res.cloudinary.com/vzhurudolu-cz/image/upload/v1704269308/vzhurudolu-blog/page-speed-cz/ps-plus-tutorial-009_idipia.jpg)
 
-Ale my v PageSpeed.cz moc dobře víme, že monitoring rychlosti se vyplatí i u webů, které jsou technicky stabilní a obstaráváné schopnými lidmi.
+Ale my v PageSpeed.ONE moc dobře víme, že monitoring rychlosti se vyplatí i u webů, které jsou technicky stabilní a obstaráváné schopnými lidmi.
 
 Stále se totiž nasazují nové úpravy, nejen na straně vývojářů, ale třeba i [přes GTM](https://www.vzhurudolu.cz/prirucka/google-tag-manager). Problémy se prostě dějí pořád.
 
@@ -224,7 +224,7 @@ Ukazuje na velký posun tohoto objektu:
 
 Kódeři a specialisté na rychlost mezi námi už mohou něco začít tušit, protože podle názvu elementu a hodnoty posunu může jít o posun celé stránky.
 
-Jak zkoumat dál? Ve výsledku testu si v testeru PageSpeed.cz můžu stáhnout tzv. Trace, což je detailní záznam práce prohlížeče při stahování a renderingu stránky.
+Jak zkoumat dál? Ve výsledku testu si v testeru PageSpeed.ONE můžu stáhnout tzv. Trace, což je detailní záznam práce prohlížeče při stahování a renderingu stránky.
 
 Soubor z Trace můžu otevřít v nástroji Performance Insights, který mám z Chrome DevTools nejraději právě pro ladění metriky CLS.
 
@@ -252,7 +252,7 @@ Můj obrázek je statický, takže vám neukáže rozdíl mezi renderem před a 
 
 Už je vám to jasné? Na webu proběhne ke změna výšky horní zelené lišty. Dojde k tomu kvůli náhradě systémového písma za webfont.
 
-Co s tím? Nebojte, poradím vám. V týmu PageSpeed.cz jsou pro nás tyhle horní lišty takovým vánočním evergreenem, který pravidelně velké části webů ničí kvůli poskočení layoutu čitelnost obsahu a tím i metriku CLS.
+Co s tím? Nebojte, poradím vám. V týmu PageSpeed.ONE jsou pro nás tyhle horní lišty takovým vánočním evergreenem, který pravidelně velké části webů ničí kvůli poskočení layoutu čitelnost obsahu a tím i metriku CLS.
 
 Možnosti řešení jsou například tyto:
 

@@ -38,5 +38,5 @@ Vybral jsem pro vás ty nejzajímavější:
 Související:
  
 - O nativním vstupu data (`<input type="date">`) technicky [píše JeČas.cz](http://jecas.cz/datepicker).
-- [Firefox](https://twitter.com/mozhacks/status/821005161602646016/photo/1?ref_src=twsrc%5Etfw) konečně ohlásil blížící se podporu nativního vstupu data ([Can I Use](http://caniuse.com/#search=date)). Takže jediný aktuální prohlížeč, který to nebude umět je desktopové Safari. To má ale [na trhu v Česku](/prirucka/prohlizece) jen malinký podíl.
+- [Firefox](https://x.com/mozhacks/status/821005161602646016/photo/1?ref_src=twsrc%5Etfw) konečně ohlásil blížící se podporu nativního vstupu data ([Can I Use](http://caniuse.com/#search=date)). Takže jediný aktuální prohlížeč, který to nebude umět je desktopové Safari. To má ale [na trhu v Česku](/prirucka/prohlizece) jen malinký podíl.
 - Peter-Paul Koch v článku „[Making input type=date complicated](https://medium.com/samsung-internet-dev/making-input-type-date-complicated-a544fd27c45a#.tg3dylr70)“ situaci s nativním vstupem data shrnuje a podivuje se, proč ho ještě webaři běžně nepoužívají. Zároveň přiznává, že s ním problémy jsou. Já si ale myslím, že přišel čas to zase začít zkoušet.

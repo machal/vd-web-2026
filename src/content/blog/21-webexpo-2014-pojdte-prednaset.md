@@ -18,7 +18,7 @@ og_type: article
 
 Myslíte si, že Gulp je lepší než Grunt? Změnil vám responzivní webdesign pracovní postupy? Máte názor na Web Components? Vybojovali jste u velké aplikace čas na dobrou frontend architekturu? Pojďte o tom přednášet na letošním WebExpu.
 
-S [Robinem Pokorným](https://twitter.com/robinpokorny) pomáháme organizátorům s programem frontend sekce. Pár hezkých přednášek je už domluvených, máme ale několik osiřelých témat:
+S [Robinem Pokorným](https://x.com/robinpokorny) pomáháme organizátorům s programem frontend sekce. Pár hezkých přednášek je už domluvených, máme ale několik osiřelých témat:
 
 ## 1) Proč je Gulp (nebo něco jiného) lepší než Grunt?
 

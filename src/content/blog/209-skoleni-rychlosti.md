@@ -25,7 +25,7 @@ og_type: article
 
 Po čase máme znovu vypsané termíny dvou půldenních [školení rychlosti webu](https://www.vzhurudolu.cz/kurzy). Proběhnou 15. a 17. února online a tímto vás na ně zvu.
 
-Na školeních vám ukážeme tipy a triky, které používáme v praxi při práci pro klienty [PageSpeed.cz](https://pagespeed.cz/) -- od velkých jako je Livesport, po menší e-shopy jako [Čisté dřevo](https://www.cistedrevo.cz/) nebo [Smarty.cz](https://smarty.cz/).
+Na školeních vám ukážeme tipy a triky, které používáme v praxi při práci pro klienty [PageSpeed.ONE](https://pagespeed.cz/) -- od velkých jako je Livesport, po menší e-shopy jako [Čisté dřevo](https://www.cistedrevo.cz/) nebo [Smarty.cz](https://smarty.cz/).
 
 [Google Page Experience](https://www.vzhurudolu.cz/prirucka/google-page-experience) bude od letoška ovlivňovat také umístění desktopových výsledků vyhledávání, takže téma rychlosti je dobré neopomíjet.
 

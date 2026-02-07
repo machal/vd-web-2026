@@ -14,15 +14,15 @@ Díky, že jste knize věnovali svůj čas, a jsem napjatý, zda se vám líbila
 
 ## Zpětná vazba mi moc pomůže
 
-Moc rád si přečtu váš názor nebo zpětnou vazbu. Pomohla vám knížka? Vylepšili byste ji něčím? Pište mi na e-mail, na Twitter nebo na Facebook.
+Moc rád si přečtu váš názor nebo zpětnou vazbu. Pomohla vám knížka? Vylepšili byste ji něčím? Pište mi na e-mail, na X nebo na Facebook.
 
 I když jsem udělal vše pro to, abych se chybám vyhnul, nezbývá než se smířit s tím, že i v tomto textu nějaké zůstaly. Moc mi pomůže, když je nahlásíte. Všichni čtenáři dostanou jednou za čas aktualizovanou elektronickou verzi.
 
 - E-mail: [martin@vzhurudolu.cz](mailto:martin@vzhurudolu.cz)
 - Facebook: [facebook.com/vzhurudolu](https://facebook.com/vzhurudolu)
-- Autor na Twitteru: [twitter.com/machal](https://twitter.com/machal)
+- Autor na X: [twitter.com/machal](https://x.com/machal)
 
-Na Twitteru nebo Facebooku můžete použít hashtag „#VzhuruDoWebdesignu“.
+Na X nebo Facebooku můžete použít hashtag „#VzhuruDoWebdesignu“.
 
 
 ## Můj první e-book: „Vzhůru do CSS3“

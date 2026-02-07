@@ -23,7 +23,7 @@ Přečtěte si, jak jsem se stal sazečem své vlastní [knihy](https://www.vzhu
 
 ## CSS je kam se podíváš. Proč ne v sazbě knih? {#vsude}
 
-CSS je všude. Vytváříme s jeho pomocí weby a webové aplikace. Fajn. Například také ale aplikace, které na první pohled vypadají jako nativní, jako třeba Spotify. Vývojáři je tvoří [pomocí webových technologií](https://twitter.com/iamakulov/status/1522008507893043201/photo/1), což umožňuje framework Electron.
+CSS je všude. Vytváříme s jeho pomocí weby a webové aplikace. Fajn. Například také ale aplikace, které na první pohled vypadají jako nativní, jako třeba Spotify. Vývojáři je tvoří [pomocí webových technologií](https://x.com/iamakulov/status/1522008507893043201/photo/1), což umožňuje framework Electron.
 
 CSS to ale dopracovalo už i do vesmíru. Uživatelské rozhraní v kosmické lodi Dragon od SpaceX je [dělané pomocí HTML, JS a CSS](https://thenewstack.io/the-hardware-and-software-used-in-space/).
 

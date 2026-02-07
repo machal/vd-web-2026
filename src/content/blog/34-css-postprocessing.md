@@ -22,7 +22,7 @@ Sám dnes [CSS preprocesory](/blog/12-css-preprocesory-1) používám prakticky 
 
 Vyvrcholením trendu bylo zamyšlení zda preprocesory vůbec potřebuji. [Tenhle skvělý článek](https://blog.colepeters.com/on-writing-real-css-again/) od Cole Peterse mě pak přinutil sepsat nynější stav mysli. 
 
-[![Mark Otto, autor Bootstrap](/assets/img/content/dest/bootstrap-postprocessing.jpg)](https://twitter.com/mdo/status/591364406816079873)
+[![Mark Otto, autor Bootstrap](/assets/img/content/dest/bootstrap-postprocessing.jpg)](https://x.com/mdo/status/591364406816079873)
 
 ## Potřebuji preprocesory? Zatím ano, hlavně kvůli proměnným
 

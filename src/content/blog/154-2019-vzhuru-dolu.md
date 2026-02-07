@@ -65,7 +65,7 @@ CSS Grid, Vue.js, font-display, HTTP/2 kejkle, Gatsby, PWA, GraphQL, VS Code, Bo
 Úvod do problematiky: důvody, výhody, nevýhody této technologie. Téma je ovšem hutné, o čemž svědčí fakt, že letos jsme s Robinem Pokorným vydali [e-book](https://www.vzhurudolu.cz/ebook-amp/), který má v PDF přes 300 stránek.  
 → [Celý článek](https://www.vzhurudolu.cz/prirucka/amp)
 
-<blockquote class="twitter-tweet"><p lang="cs" dir="ltr">Zrovna jsem dočetl <a href="https://twitter.com/hashtag/Vzh%C5%AFruDoAMP?src=hash&ref_src=twsrc%5Etfw">#VzhůruDoAMP</a> od <a href="https://twitter.com/vzhurudolu?ref_src=twsrc%5Etfw">@vzhurudolu</a>. Super čtení, které zastínilo i Grand Canyon, a užitečné i pro online marketéry a analytiky. Recenze je na blogu. <a href="https://t.co/j6PdWe3g6T">https://t.co/j6PdWe3g6T</a> <a href="https://t.co/SOfolDFCHv">pic.twitter.com/SOfolDFCHv</a></p>— Michal Blažek (@blazekmichal) <a href="https://twitter.com/blazekmichal/status/1146918021144989696?ref_src=twsrc%5Etfw">July 4, 2019</a></blockquote> 
+<blockquote class="twitter-tweet"><p lang="cs" dir="ltr">Zrovna jsem dočetl <a href="https://x.com/hashtag/Vzh%C5%AFruDoAMP?src=hash&ref_src=twsrc%5Etfw">#VzhůruDoAMP</a> od <a href="https://x.com/vzhurudolu?ref_src=twsrc%5Etfw">@vzhurudolu</a>. Super čtení, které zastínilo i Grand Canyon, a užitečné i pro online marketéry a analytiky. Recenze je na blogu. <a href="https://t.co/j6PdWe3g6T">https://t.co/j6PdWe3g6T</a> <a href="https://t.co/SOfolDFCHv">pic.twitter.com/SOfolDFCHv</a></p>— Michal Blažek (@blazekmichal) <a href="https://x.com/blazekmichal/status/1146918021144989696?ref_src=twsrc%5Etfw">July 4, 2019</a></blockquote> 
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ### 5) CSS Grid v Internet Exploreru: Jde to!
@@ -78,7 +78,7 @@ Ano, jde, alespoň částečně. Evidentně to vzbudilo zájem.
 Staré definice rychlosti webu dnes už neplatí, událost Load a datový objem stránky nás až tak zajímat nemusí. Hledá se definice nová a tenhle článek reaguje na mýty, se kterými se jako konzultant k rychlosti webu stále setkávám.  
 → [Celý článek](https://www.vzhurudolu.cz/prirucka/rychlost-myty)
 
-<blockquote class="twitter-tweet"><p lang="cs" dir="ltr">7 blbostí/mýtů o webové rychlosti. Tak 5 z nich se pravidelně objevuje v SEO auditech co vídám. Ach ouvej, jak bažím po lepších zítřcích! <a href="https://t.co/lMrsYCT25O">https://t.co/lMrsYCT25O</a></p>— Lukáš Pítra (@Lukaspitra) <a href="https://twitter.com/Lukaspitra/status/1090523643396980736?ref_src=twsrc%5Etfw">January 30, 2019</a></blockquote> 
+<blockquote class="twitter-tweet"><p lang="cs" dir="ltr">7 blbostí/mýtů o webové rychlosti. Tak 5 z nich se pravidelně objevuje v SEO auditech co vídám. Ach ouvej, jak bažím po lepších zítřcích! <a href="https://t.co/lMrsYCT25O">https://t.co/lMrsYCT25O</a></p>— Lukáš Pítra (@Lukaspitra) <a href="https://x.com/Lukaspitra/status/1090523643396980736?ref_src=twsrc%5Etfw">January 30, 2019</a></blockquote> 
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ### 3) PageSpeed Insights: Kompletní průvodce

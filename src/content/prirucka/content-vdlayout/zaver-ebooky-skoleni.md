@@ -26,6 +26,6 @@ Průvodce frameworkem pro efektivní tvorbu rychlých webů. Napsáno s Robinem 
 Sledujte novinky z oboru a články ze Vzhůru dolů na sociálních sítích:
 
 [facebook.com/vzhurudolu](https://www.facebook.com/VzhuruDolu/)  
-[twitter.com/vzhurudolu](https://twitter.com/vzhurudolu)  
+[twitter.com/vzhurudolu](https://x.com/vzhurudolu)  
 [instagram.com/vzhurudolu](https://www.instagram.com/vzhurudolu/)  
 [linkedin.com/company/vzhůru-dolů](https://www.linkedin.com/company/vzh%C5%AFru-dol%C5%AF/)

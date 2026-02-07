@@ -47,7 +47,7 @@ To by bylo skvělé, jenže [on novou HTML5 osnovu žádný prohlížeč neimple
 
 > At the time of writing, browsers and screen readers do not support these new outlines, so if you do use multiple `<h1>`s in your documents, it may confuse your users. It’s best if you use logical heading levels — `<h1>`–`<h6>`.
 
-Slabý argument? Pak si přečtěte to hezké červené [varování na webu W3C](https://twitter.com/AdamKudrna/status/497374280662126593), které objevil Adam Kudrna.
+Slabý argument? Pak si přečtěte to hezké červené [varování na webu W3C](https://x.com/AdamKudrna/status/497374280662126593), které objevil Adam Kudrna.
 
 HTML5 outline tedy existuje jen na papíře. A tak bude osnova výšeuvedeného dokumentu v praxi vypadat takto:
 
@@ -81,7 +81,7 @@ Osnova vypadá takto:
 * Nadpis 3. sekce
 ```
 
-Z pohledu [přístupnosti](https://twitter.com/radlicek/status/498031110052278272) ani [vyhledávačů](https://twitter.com/MarekP/status/497653984048709632) by s tím žádný problém být neměl.
+Z pohledu [přístupnosti](https://x.com/radlicek/status/498031110052278272) ani [vyhledávačů](https://x.com/MarekP/status/497653984048709632) by s tím žádný problém být neměl.
 
 Můžeme si z toho vzít hned 3 ponaučení:
 

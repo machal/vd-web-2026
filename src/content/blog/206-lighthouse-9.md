@@ -94,7 +94,7 @@ Na druhou stranu – metriky posbírané od uživatelů jsou k dispozici jen pro
 
 V oblasti „web performance", rychlosti webu, jsou laici obecně dost v pasti mezi srozumitelností podávaných informací a jejich přesností. Ale to je na jiné povídání a jiný článek.
 
-Výsledky testů z Lighthouse 9 už také uvidíte v našem [testeru rychlosti na PageSpeed.cz](https://pagespeed.cz/).
+Výsledky testů z Lighthouse 9 už také uvidíte v našem [testeru rychlosti na PageSpeed.ONE](https://pagespeed.cz/).
 
 <!-- AdSnippet -->
 

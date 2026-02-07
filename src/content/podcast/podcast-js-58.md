@@ -47,7 +47,7 @@ Povídáme si o tom, proč je React už občas vnímán jako „nové jQuery“.
 
 Riki Fridrich píše JavaScript ve firmě [Outreach](https://www.outreach.io/). Učí ostatní, jak psát Javascript. Přednáší na konferencích a meetupech. Většinou o Javascriptu. Riki je z Ládví.
 
-[LinkedIn](https://www.linkedin.com/in/fczbkk/) – [X](https://twitter.com/fczbkk) – [Github](https://github.com/fczbkk) – [Web](https://fczbkk.com/)
+[LinkedIn](https://www.linkedin.com/in/fczbkk/) – [X](https://x.com/fczbkk) – [Github](https://github.com/fczbkk) – [Web](https://fczbkk.com/)
 
 </div>
 </div>

@@ -39,7 +39,7 @@ Po použití tohoto pravidla začne zmiňovaná Lumia 630 na Windows Phone 8.1 z
 
 ## Větší problémy na Windows Phone 8
 
-Zvažte jak moc tohle chcete řešit. Windows 8.1 měly v lednu 2015 celosvětově téměř [dvoutřetinový podíl ze všech WP](https://twitter.com/machal/status/562543744235626496), verze 8 ani ne čtvrtinový. Na druhou stranu je řešení jednoduché – stačí přidat kousek Javascriptu. Ale nepředbíhejme, pojďme k problému.
+Zvažte jak moc tohle chcete řešit. Windows 8.1 měly v lednu 2015 celosvětově téměř [dvoutřetinový podíl ze všech WP](https://x.com/machal/status/562543744235626496), verze 8 ani ne čtvrtinový. Na druhou stranu je řešení jednoduché – stačí přidat kousek Javascriptu. Ale nepředbíhejme, pojďme k problému.
 
 Znáte [snap mód](https://www.youtube.com/watch?v=DS9kPoJ5xvA) z desktopových Windows 8? Česky snad *přichycení*. Mód, ve kterém si aplikaci přilepíte k hraně obrazovky. Pokud ve snap módu běží Internet Explorer ve verzi 10 a zobrazuje responzivní web, nestačí mu obvyklý meta tag viewport. Pokud se má web přizpůsobovat šířce okna, je potřeba nastavit to už zmíněnou CSS deklarací `@-ms-viewport { width: device-width; }`.
 

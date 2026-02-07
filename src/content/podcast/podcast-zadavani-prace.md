@@ -58,7 +58,7 @@ Povídáme si o různých metodikách a nástrojích. Diskutujeme také o roli p
 <h3 class="pt-0 h4 mb-0">Pavel Ungr</h3>
 
 Pavel je „těžký kalibr na vaše SEO“, expert na online marketing na volné noze. V oboru SEO pracuje od roku 2004. Pořádá školení a pravidelně publikuje odborné články. Baví jej experimenty a propaguje SEO jako vytvoření zajímavého a kvalitního obsahu, který je prospěšný především pro uživatele. K zadávání práce vývojářům přichází jako externí konzultant.  
-[PavelUngr.cz](https://www.pavelungr.cz/) – [LinkedIn](https://www.linkedin.com/in/pavelungr/) – [X.com](https://twitter.com/pavelungr)
+[PavelUngr.cz](https://www.pavelungr.cz/) – [LinkedIn](https://www.linkedin.com/in/pavelungr/) – [X.com](https://x.com/pavelungr)
 
 
 </div>
@@ -75,7 +75,7 @@ Pavel je „těžký kalibr na vaše SEO“, expert na online marketing na voln�
 <h3 class="pt-0 h4 mb-0">Michal Voják</h3>
 
 Michal je produkťák, zavádí Product Discovery do firem a vede startup userUP, který má za cíl pomoc firmám právě s tímto tématem. Michal za sebou má bohatou webařskou kariéru od frontendisty přes UX designéra až po současnost. Navíc má zkušenosti se spolupráci s korporáty, proto dokáže problém organizace projektů vnímat z různých úhlů pohledu.  
-[DesignDev](https://designdev.cz/michal-vojak) – [userUp](https://getuserup.com/) – [LinkedIn](https://www.linkedin.com/in/michal-voj%C3%A1k-91721856/) – [X.com](https://twitter.com/michalvojak)
+[DesignDev](https://designdev.cz/michal-vojak) – [userUp](https://getuserup.com/) – [LinkedIn](https://www.linkedin.com/in/michal-voj%C3%A1k-91721856/) – [X.com](https://x.com/michalvojak)
 
 
 </div>

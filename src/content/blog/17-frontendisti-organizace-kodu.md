@@ -16,7 +16,7 @@ og_type: article
 
 Poznámky k přednáškám o organizaci frontend kódu z posledního [srazu Frontendistů](http://srazy.info/frontendisti/4470) v Ostravě.
 
-## [Patrik Illy](https://twitter.com/illycz) — OOCSS, SMACSS, BEM 
+## [Patrik Illy](https://x.com/illycz) — OOCSS, SMACSS, BEM 
 
 <p class="rwd-media">
 <iframe width="736" height="414" src="//www.youtube.com/embed/obx1PawM2WE?rel=0" frameborder="0" allowfullscreen></iframe></p>
@@ -37,7 +37,7 @@ Poznámky k přednáškám o organizaci frontend kódu z posledního [srazu Fron
     8. Kategorie pravidel: Base, Layout (`l-inline {}`), Module, State (`.is-active {}`), Theme.
 * `shame.css` – soubor, kam se ukládají hotfixy. Úkoly pro vývojáře pro pozdější refaktoring .
 
-## [Tomáš Musiol](https://twitter.com/kozleek) — BEM & Preprocesory
+## [Tomáš Musiol](https://x.com/kozleek) — BEM & Preprocesory
 
 <p class="rwd-media"><iframe width="736" height="414" src="//www.youtube.com/embed/xzB-tMR1IcY?rel=0" frameborder="0" allowfullscreen></iframe></p>
 
@@ -53,7 +53,7 @@ Poznámky k přednáškám o organizaci frontend kódu z posledního [srazu Fron
 * Struktura souborů v SASS pak podle rozdělení do bloků tzn. např. `modules/_player.scss`, u velkých projektů i projektů i pro elementy např. `modules/player/_control.scss`. Cílem je vyhnout se velkým diffům ve zbytečně velkých souborech při commitování.
 * Sublime Text packages pro BEM: All Autocomplete, Syntax highlight SASS, SublimeGit, GitGutter.
 
-## [Robin Pokorný](https://twitter.com/robinpokorny) – Organizace kódu v týmu
+## [Robin Pokorný](https://x.com/robinpokorny) – Organizace kódu v týmu
 
 <p class="rwd-media"><iframe width="736" height="414" src="//www.youtube.com/embed/Eda7dYUJXd0?rel=0" frameborder="0" allowfullscreen></iframe></p>
 
@@ -80,6 +80,6 @@ Pokud vás zajímá i to ostatní o čem jsme si povídali, pusťte si [diskuzi]
 
 Veřejně jsme vidět hlavně na Srazy.info. Tam se rovnou můžete přihlásit k příštímu srazu. Tentokrát o [UX v Praze](http://srazy.info/frontendisti/4539).
 
-Sledujte novinky na [Twitteru](https://twitter.com/Frontendisti), [Facebooku](https://www.facebook.com/frontendisti) nebo [Google+](https://plus.google.com/110936223026742005054/posts). Máme i [Youtube kanál](https://www.youtube.com/channel/UCxs7KDC0LFOezVujLG_leRw).
+Sledujte novinky na [X](https://x.com/Frontendisti), [Facebooku](https://www.facebook.com/frontendisti) nebo [Google+](https://plus.google.com/110936223026742005054/posts). Máme i [Youtube kanál](https://www.youtube.com/channel/UCxs7KDC0LFOezVujLG_leRw).
 
 Diskutujte o frontend tématech ve [Facebook skupině](https://www.facebook.com/groups/frontendisti/). Pište a čtěte nabídky práce ve [Frontendisti práce](https://www.facebook.com/groups/frontendistiprace/).

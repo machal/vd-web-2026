@@ -80,7 +80,7 @@ Seniorní full-stack webový vývojář WordPressu na volné noze. Poradce pro r
 <h3 class="pt-0 h4 mb-0">Adam Kudrna</h3>
 
 Frontend designer na volné noze, konzultant a lektor, zaměřený na mentoring a vývoj udržitelných a škálovatelných uživatelských rozhraní.  
-[Twitter](https://twitter.com/AdamKudrna), [LinkedIn](https://www.linkedin.com/in/adamkudrna/), [Web](https://www.adamkudrna.cz/)
+[X](https://x.com/AdamKudrna), [LinkedIn](https://www.linkedin.com/in/adamkudrna/), [Web](https://www.adamkudrna.cz/)
 
 </div>
 </div>

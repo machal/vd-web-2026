@@ -39,9 +39,9 @@ E-mail prostě jiné způsoby komunikace skvěle doplňuje. Skoro bych řekl, je
 Pro mě se návod na správné použití e-mailu jmenuje Inbox Zero. Překvapilo mě, jak málo je tato metodika známá a používaná.
 
 <figure>
-<img src="../dist/images/original/inbox-zero-stats.jpg" width="1600" height="900" alt="Inbox Zero, statistiky z Twitteru">
+<img src="../dist/images/original/inbox-zero-stats.jpg" width="1600" height="900" alt="Inbox Zero, statistiky z X">
 <figcaption markdown="1">
-*Američtí vědci prokázali, že [83,8 % lidí](https://twitter.com/machal/status/1686634871764942848) ocení článek o Inbox Zero.*
+*Američtí vědci prokázali, že [83,8 % lidí](https://x.com/machal/status/1686634871764942848) ocení článek o Inbox Zero.*
 </figcaption>
 </figure>
 
@@ -78,7 +78,7 @@ Co mi Inbox Zero přináší? Méně stresu z přeplněného inboxu, méně obav
 
 Než se pustíme do konkrétních praktických tipů, cítím potřebu uvést svou verzi metodiky Inbox Zero do širšího kontextu.  
 
-Jak pracuji? Jsem sice freelancer, odborně se zaměřuji na [poradenství k rychlosti webu](https://www.vzhurudolu.cz/martin), ale hlavní část mé práce je dnes více méně management. Se třemi kolegy děláme konzultace pod [značkou PageSpeed.cz](https://www.pagespeed.cz/), kde máme zhruba padesát klientů. V rámci dalšího týmu pomáhám vyvíjet [tester rychlosti](https://app.pagespeed.cz/). Spolupracuji také na managementu [komunity Frontendisti.cz](https://frontendisti.cz/) a občas tvořím články nebo [knížky](https://www.vzhurudolu.cz/ebooky) v rámci své značky Vzhůru dolů.
+Jak pracuji? Jsem sice freelancer, odborně se zaměřuji na [poradenství k rychlosti webu](https://www.vzhurudolu.cz/martin), ale hlavní část mé práce je dnes více méně management. Se třemi kolegy děláme konzultace pod [značkou PageSpeed.ONE](https://www.pagespeed.cz/), kde máme zhruba padesát klientů. V rámci dalšího týmu pomáhám vyvíjet [tester rychlosti](https://app.pagespeed.cz/). Spolupracuji také na managementu [komunity Frontendisti.cz](https://frontendisti.cz/) a občas tvořím články nebo [knížky](https://www.vzhurudolu.cz/ebooky) v rámci své značky Vzhůru dolů.
 
 Denně mi přijde kolem stovky e-mailů a nějaké ty zprávy na sociální sítě, do IM nástrojů… Je toho vcelku docela dost a bez metodiky bych byl v čudu.  
 
@@ -128,7 +128,7 @@ Tu půl hodinu až tři čtvrtě hodinu po obědě mám každý den v časovém 
 
 Zpracování e-mailů si normálně počítám v Toggl jako práci:  
 
-* Komunikaci v rámci projektů PageSpeed.cz měřím jako management týmu.
+* Komunikaci v rámci projektů PageSpeed.ONE měřím jako management týmu.
 * Složitější, poradenské e-maily klientům trackuji jako placenou práci pro ně.
 * Pro ostatní e-mailovou komunikaci mám štítek „Komunikace“ a snažím se, aby nepřesáhla tak těch 30 minut denně. Sem patří neplacená komunikace s klienty, různé newslettery, komunikace kolem Vzhůru dolů, občasný soukromý e-mail, a tak dále.
 

@@ -40,7 +40,7 @@ _V českém Googlu jsou AMP stránky zatím relativně vzácné. O to zajímavě
 
 Ať už vás zajímají nákupní konverze, nebo jiné cíle, jako je třeba počet zhlédnutých stránek, rychlý vstup na web z AMP Cache vaši uživatelé ocení.
 
-Už z textu [Kde je možné potkat AMP stránky?](amp-platformy.md) víte, že tohle platí v českém prostředí zejména pro vstupy z Googlu – hlavně z jeho výsledků vyhledávání nebo z navrhovaných článků v Chromu. Dále pak z mobilní aplikace od LinkedIn nebo z některých částí mobilního Twitteru.
+Už z textu [Kde je možné potkat AMP stránky?](amp-platformy.md) víte, že tohle platí v českém prostředí zejména pro vstupy z Googlu – hlavně z jeho výsledků vyhledávání nebo z navrhovaných článků v Chromu. Dále pak z mobilní aplikace od LinkedIn nebo z některých částí mobilního X.
 
 Pro celosvětový trh je ještě zajímavý vyhledávač Bing nebo mobilní aplikace od Pinterest. Navíc předpokládáme, že míst, kde se použije zakešovaný obsah, bude přibývat.
 

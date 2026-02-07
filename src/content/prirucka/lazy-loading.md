@@ -37,7 +37,7 @@ Nejčastěji se ve webdesignu lazy loading týká [obrázků](lazy-loading-obraz
 - *Obrázky*  
 Stažení obrázků až po posunu stránky je nejčastější scénář, kterému věnuji [zvláštní text](lazy-loading-obrazku.md).
 - *Iframe a externí obsah*  
-Velmi vhodným kandidátem na líné stažení je vkládaný obsah třetích stran – YouTube videí, map od Google nebo Seznamu, obsah z Facebooku či Twitteru vkládaný přes `<iframe>`…  
+Velmi vhodným kandidátem na líné stažení je vkládaný obsah třetích stran – YouTube videí, map od Google nebo Seznamu, obsah z Facebooku či X vkládaný přes `<iframe>`…  
 - *Složitější struktury DOM*  
 Často se zapomíná, že „líně” je možné načíst také komplexnější HTML v rámci obsahu stránky. Nejčastěji se to týká například navigací typu „megamenu“ viditelných až po akci uživatele nebo obsahu záložkové navigace uvnitř stránky.
 - *Rendering stránky*  
@@ -69,7 +69,7 @@ Jak už jsem zmiňoval, týká se to různých megamenu nebo panelů s obsahem z
 
 ### 3) Méně zpracovávání JavaScriptu {#proc-3}
 
-Odložením načtení knihoven třetích stran ale neděláme [primárně kvůli datům](https://twitter.com/machal/status/1160409274834726912). Podstatným faktorem je výkon prohlížeče, často zbytečně blokovaný počítáním odložitelného JavaScriptu třetí strany.
+Odložením načtení knihoven třetích stran ale neděláme [primárně kvůli datům](https://x.com/machal/status/1160409274834726912). Podstatným faktorem je výkon prohlížeče, často zbytečně blokovaný počítáním odložitelného JavaScriptu třetí strany.
 
 ### 4) Prioritizace obsahu {#proc-4}
 

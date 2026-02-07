@@ -49,7 +49,7 @@ V prosinci 2018 představili autoři nový model řízení. AMP tak přechází 
 
 V poradním výboru sedí kromě Googlu například lidé z Akamai, Automattic (hlavní autoři WordPressu), The Paciello Group (experti na přístupnost) nebo AliExpressu.
 
-Ve výboru pro technické vedení pak mají zastoupení společnosti Pinterest, Twitter, Microsoft a pochopitelně zase i ten Google. Celkově to ale zní otevřeněji a ne až tak centralizovaně, že?
+Ve výboru pro technické vedení pak mají zastoupení společnosti Pinterest, X, Microsoft a pochopitelně zase i ten Google. Celkově to ale zní otevřeněji a ne až tak centralizovaně, že?
 
 Více najdou zájemci v blogpostu „AMP Project’s new governance model now in effect“. [vrdl.in/ampgov](https://amphtml.wordpress.com/2018/11/30/amp-projects-new-governance-model-now-in-effect/)
 

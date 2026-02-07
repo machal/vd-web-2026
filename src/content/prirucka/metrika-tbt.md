@@ -70,7 +70,7 @@ Zde se tedy velmi dobře hledají také příčiny těchto nekalých dlouhých �
 
 ### WebpageTest {#mereni-webpagetest}
 
-Ve WebpageTestu najdete TBT jako jednu z nejdůležitějších metrik. Krátce po zveřejnění [Lighthouse 6](https://www.vzhurudolu.cz/blog/172-lighthouse-6) zareagoval tvůrce tohoto skvělého nástroje [Pat Meenan tak](https://twitter.com/patmeenan/status/1256267827478175746), že bylo jasné, že si TBT hned velmi oblíbil.
+Ve WebpageTestu najdete TBT jako jednu z nejdůležitějších metrik. Krátce po zveřejnění [Lighthouse 6](https://www.vzhurudolu.cz/blog/172-lighthouse-6) zareagoval tvůrce tohoto skvělého nástroje [Pat Meenan tak](https://x.com/patmeenan/status/1256267827478175746), že bylo jasné, že si TBT hned velmi oblíbil.
 
 ### A co u reálných uživatelů? {#mereni-rum}
 

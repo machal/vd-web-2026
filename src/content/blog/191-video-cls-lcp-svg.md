@@ -42,7 +42,7 @@ Cumulative Layout Shift (CLS) udává stabilitu vzhledu stránky během vykreslo
 1. Co je CLS a proč je důležité?  
 Ukázka z denikn.cz, CLS jako součást důležitých Web Vitals, CLS jako UX metrika.
 2. Problém a jeho měření  
-Měření pomocí PageSpeed Insights, PageSpeed.cz, důležité rozšíření Web Vitals, nepostradatelná Google Search Console.
+Měření pomocí PageSpeed Insights, PageSpeed.ONE, důležité rozšíření Web Vitals, nepostradatelná Google Search Console.
 3. Co by vás nenapadlo  
 Jak přesně se layout shifty počítají, 500 ms hranice pro vyžádané posuny, časté problémy s animacemi.
 4. Demo  
@@ -75,7 +75,7 @@ Largest Contentful Paint je možná tou nejdůležitější ze sady metrik rychl
 1. Co je LCP  
 Důležitost Largest Contentful Paint. LCP v kontextu dalších metrik. Co může a nemůže být „největší obsahový prvek“ a jak jej nalézt.
 2. Měříme LCP  
-PageSpeed Insights a zmatek v číslech. Měříme lépe na PageSpeed.cz. Proč je Google Search Console nepostradatelná.
+PageSpeed Insights a zmatek v číslech. Měříme lépe na PageSpeed.ONE. Proč je Google Search Console nepostradatelná.
 3. Demo  
 Ukázková pitva a optimalizace dvou obsahových webů a jednoho e-shopu za použití Chrome DevTools a nástrojů Lighthouse, tracingu v Performance tabu.
 4. Otázky  

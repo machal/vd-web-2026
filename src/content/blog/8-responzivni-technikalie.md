@@ -26,7 +26,7 @@ Pojďme se podívat na dva weby — jeden je podle převládající zkomolené d
 
 Bez urážky autorů prvního webu prosím! Stejně je na tom téměř každý český responzivní web, který jsem za poslední dva roky viděl. Jenže je web, který se na mobilním připojení načítá přes 2 minuty opravdu responzivní? 
 
-Responzivní neznamená [tahací harmonika](https://twitter.com/machal/status/383525191462445056)! Responzivní znamená přizpůsobující se situaci.
+Responzivní neznamená [tahací harmonika](https://x.com/machal/status/383525191462445056)! Responzivní znamená přizpůsobující se situaci.
 
 Za pár let se možná slovu „responzivní" budeme smát. Zcela určitě se ale budeme smát tomu, že se naše weby tak vehementně přizpůsobovaly všem možným rozlišením obrazovky. Zabralo nám to tolik energie, že jsme už žádné jiné přizpůsobení nezvládli.
 
@@ -40,7 +40,7 @@ Pojďme si zopakovat pár stručných tipů, které z pomalosti načítání res
 * Největší datový objem mívají stránky v obrázcích. A na různé verze obrázků pro různá zařízení máme [Picturefill](https://github.com/scottjehl/picturefill).
 * Načítání všech datově objemných elementů odložíme až na chvíli kdy je uživatel opravdu potřebuje. Třeba když na ně nascrolluje. Pak aplikujeme [Lazy Loading](https://github.com/luis-almeida/unveil).
 * [Compressive Images](http://filamentgroup.com/lab/rwd_img_compression/) je zase technika, která zmenší datový objem JPEG obrázků tak, že je uložíte ve větším rozlišení a menší kvalitě než byste to dělali běžně.
-* Hlídejte si kód třetích stran. Třeba [sdílecí tlačítka](https://twitter.com/machal/status/390092744116301824) tří sociálních sítí vám do stránky přidají 200 kB a 30 dotazů na server. Na Edge připojení to pak znamená minimálně 10vteřinové prodloužení doby načítání.
+* Hlídejte si kód třetích stran. Třeba [sdílecí tlačítka](https://x.com/machal/status/390092744116301824) tří sociálních sítí vám do stránky přidají 200 kB a 30 dotazů na server. Na Edge připojení to pak znamená minimálně 10vteřinové prodloužení doby načítání.
 * Tam kde už nevíte jak, nebojte se mobilní zařízení [detekovat na serveru](http://kratce.vzhurudolu.cz/post/44227784297/docasna-server-detekce). Takové vkládané Google mapy na displeji chytrého telefonu nedávají z pohledu uživatelského prožitku smysl a představují další velkou datovou zátěž.
 * Kde můžete, použijte [History API (pushState)](https://developer.mozilla.org/en-US/docs/Web/Guide/API/DOM/Manipulating_the_browser_history) nebo pluginy typu [Pjax](http://pjax.heroku.com/). 
 
@@ -141,7 +141,7 @@ Jako u všech progressive enhancement variant se mi líbí *křápovzdornost* ř
 
 A na závěr shrnutí:
 
-* Nedostatky responzivních webů jsou v rychlosti načítání a efektivitě práce. Za oba problémy mohou naše pracovní postupy. <small>([tweetni](https://twitter.com/intent/tweet?text=Nedostatky%20responzivn%C3%ADch%20web%C5%AF%20jsou%20v%20rychlosti%20na%C4%8D%C3%ADt%C3%A1n%C3%AD%20a%20efektivit%C4%9B%20pr%C3%A1ce.%20Za%20oba%20probl%C3%A9my%20mohou%20na%C5%A1e%20pracovn%C3%AD%20postupy.&url=http://www.vzhurudolu.cz/blog/8-rwd-technikalie))</small>
-* Jak zrychlit web? 1) Začít testovat 2) Minimalizovat requesty 3) Minimalizovat data 4) Picturefill 5) Lazyloading. <small>([tweetni](https://twitter.com/intent/tweet?text=&Jak%20zrychlit%20web%3F%201.%20Za%C4%8D%C3%ADt%20testovat%202.%20Minimalizovat%20requesty%203.%20Minimalizovat%20data%204.%20Picturefill%205.%20Lazyloading.url=http://www.vzhurudolu.cz/blog/8-rwd-technikalie))</small>
-* Lepší responzivní workflow: 1) Mobile Up 2) Málo breakpointů, málo verzí kódu 3) Nenavrhujeme stránky, ale komponenty. <small>([tweetni](https://twitter.com/intent/tweet?text=Lep%C5%A1%C3%AD%20responzivn%C3%AD%20workflow%3A%201.%20Mobile%20Up%202.%20M%C3%A1lo%20breakpoint%C5%AF%2C%20m%C3%A1lo%20verz%C3%AD%20k%C3%B3du%203.%20Nenavrhujeme%20str%C3%A1nky%2C%20ale%20komponenty.&url=http://www.vzhurudolu.cz/blog/8-rwd-technikalie))</small>
-* Nedávejte uživateli co nepotřebuje. Využijte podmíněné načítání a AjaxInclude. <small>([tweetni](https://twitter.com/intent/tweet?text=Ned%C3%A1vejte%20u%C5%BEivateli%20co%20nepot%C5%99ebuje.%20Vyu%C5%BEijte%20podm%C3%ADn%C4%9Bn%C3%A9%20na%C4%8D%C3%ADt%C3%A1n%C3%AD%20a%20AjaxInclude.&url=http://www.vzhurudolu.cz/blog/8-rwd-technikalie))</small>
+* Nedostatky responzivních webů jsou v rychlosti načítání a efektivitě práce. Za oba problémy mohou naše pracovní postupy. <small>([tweetni](https://x.com/intent/tweet?text=Nedostatky%20responzivn%C3%ADch%20web%C5%AF%20jsou%20v%20rychlosti%20na%C4%8D%C3%ADt%C3%A1n%C3%AD%20a%20efektivit%C4%9B%20pr%C3%A1ce.%20Za%20oba%20probl%C3%A9my%20mohou%20na%C5%A1e%20pracovn%C3%AD%20postupy.&url=http://www.vzhurudolu.cz/blog/8-rwd-technikalie))</small>
+* Jak zrychlit web? 1) Začít testovat 2) Minimalizovat requesty 3) Minimalizovat data 4) Picturefill 5) Lazyloading. <small>([tweetni](https://x.com/intent/tweet?text=&Jak%20zrychlit%20web%3F%201.%20Za%C4%8D%C3%ADt%20testovat%202.%20Minimalizovat%20requesty%203.%20Minimalizovat%20data%204.%20Picturefill%205.%20Lazyloading.url=http://www.vzhurudolu.cz/blog/8-rwd-technikalie))</small>
+* Lepší responzivní workflow: 1) Mobile Up 2) Málo breakpointů, málo verzí kódu 3) Nenavrhujeme stránky, ale komponenty. <small>([tweetni](https://x.com/intent/tweet?text=Lep%C5%A1%C3%AD%20responzivn%C3%AD%20workflow%3A%201.%20Mobile%20Up%202.%20M%C3%A1lo%20breakpoint%C5%AF%2C%20m%C3%A1lo%20verz%C3%AD%20k%C3%B3du%203.%20Nenavrhujeme%20str%C3%A1nky%2C%20ale%20komponenty.&url=http://www.vzhurudolu.cz/blog/8-rwd-technikalie))</small>
+* Nedávejte uživateli co nepotřebuje. Využijte podmíněné načítání a AjaxInclude. <small>([tweetni](https://x.com/intent/tweet?text=Ned%C3%A1vejte%20u%C5%BEivateli%20co%20nepot%C5%99ebuje.%20Vyu%C5%BEijte%20podm%C3%ADn%C4%9Bn%C3%A9%20na%C4%8D%C3%ADt%C3%A1n%C3%AD%20a%20AjaxInclude.&url=http://www.vzhurudolu.cz/blog/8-rwd-technikalie))</small>

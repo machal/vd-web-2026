@@ -75,7 +75,7 @@ Jsem rád, že jsme to takhle vyzkoušeli. Myslím, že to je dobrý koncept, hl
 
 Příště bych záměrně zvolil pomalejší tempo, minimálně pro hlavní stage. Prodloužím některé přednášky a přidám delší diskuze ve více lidech.
 
-Prostě bych zkombinoval pomalé a rychlé tempo. To mi jako dobrý nápad vychází i z účastnického feedbacku a z mé [anketky na Twitteru](https://twitter.com/machal/status/1721796587209248823).
+Prostě bych zkombinoval pomalé a rychlé tempo. To mi jako dobrý nápad vychází i z účastnického feedbacku a z mé [anketky na X](https://x.com/machal/status/1721796587209248823).
 
 ## Obsahový názor FrontKonu {#obsah}
 

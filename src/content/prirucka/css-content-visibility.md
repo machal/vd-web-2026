@@ -131,9 +131,9 @@ Pokud je prvek mimo obrazovku (a není pro uživatele jinak relevantní - např�
 
 Pokud je na stránce velké množství obsahu, které bude často mimo obrazovku (například dlouhý rolovatelný seznam komplexnějších prvků), je v pořádku to na tento obsah aplikovat.
 
-### Příklad s Twitterem {#hodnota-auto-twitter}
+### Příklad s Xem {#hodnota-auto-twitter}
 
-Ve [specifikaci](https://www.w3.org/TR/css-contain-2/#using-cv-auto) uvádějí příklad s Twitterem. Jednotlivé tweety jsou relativně komplexní prvky DOMu, které prohlížeč nemusí nutně vykreslovat, když jsou mimo viditelný [viewport](viewport.md).
+Ve [specifikaci](https://www.w3.org/TR/css-contain-2/#using-cv-auto) uvádějí příklad s Xem. Jednotlivé tweety jsou relativně komplexní prvky DOMu, které prohlížeč nemusí nutně vykreslovat, když jsou mimo viditelný [viewport](viewport.md).
 
 Nebylo by v úplně pořádku aplikovat `content-visibility:auto` na celý rodičovský prvek pro tweety, ale na jednotlivé tweety se to naopak velmi hodí.
 
@@ -157,7 +157,7 @@ contain-intrinsic-size: <šířka> <výška>;
 
 První hodnota definuje vnitřní šířku prvku, druhá vnitřní výšku. Pokud je druhá hodnota vynechána, bude výchozí výška nastavená na stejnou hodnotu jako je šířka.
 
-Na výše uvedeném příkladu Twitteru si např. můžeme říct, že průměrný tweet je zhruba 200px vysoký a 500px široký:
+Na výše uvedeném příkladu X si např. můžeme říct, že průměrný tweet je zhruba 200px vysoký a 500px široký:
 
 ```css
 .tweet {

@@ -38,7 +38,7 @@ JAMStack se v roce 2020 vtírá do více a více týmů, projektů a – možná
 
 ## O čem mluvíme? {#obsah}
 
-- Borek Bernard [@borekb](https://twitter.com/borekb).
+- Borek Bernard [@borekb](https://x.com/borekb).
 - Martinův tip: [Webpagetest už není projekt jednoho člověka](https://www.catchpoint.com/webpagetest-joins-catchpoint), Patricka Meenana.
 - [Podcast: S Davidem Grudlem o vývoji open source a kampani na podporu vývoje Nette](https://www.vzhurudolu.cz/podcast/114-podcast-david-grudl).
 - Robinův tip: [Finský onlinový kurz o umělé inteligenci](https://www.elementsofai.com/eu2019fi), který by měl absolvovat každý stý Evropan.

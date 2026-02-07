@@ -39,7 +39,7 @@ Výhoda startovacích témat také je, že více „vedou za ruku“ a naváděj
 ## Sage {#sage}
 
 
-Sage od [Roots](https://roots.io/) má za sebou nejdelší historii. Odstartovala v roce [2011](https://twitter.com/smashingmag/statuses/54646060458590208) stavěním na HTML5 Boilerplate a CSS frameworku Blueprint. Později využívá Grunt, Gulp nebo Bower. Pro čtenáře Vzhůru dolů může být zajímavé, že Sage zavádí frontendové novinky vždy jako první. 
+Sage od [Roots](https://roots.io/) má za sebou nejdelší historii. Odstartovala v roce [2011](https://x.com/smashingmag/statuses/54646060458590208) stavěním na HTML5 Boilerplate a CSS frameworku Blueprint. Později využívá Grunt, Gulp nebo Bower. Pro čtenáře Vzhůru dolů může být zajímavé, že Sage zavádí frontendové novinky vždy jako první. 
 
 <figure>
 [cms:asset 89]

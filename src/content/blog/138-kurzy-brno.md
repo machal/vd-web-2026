@@ -30,7 +30,7 @@ Vycházíme tak vstříc vám, účastníkům [našich kurzů](/kurzy):
 
 Řešení bylo nasnadě: [Brno](/kurzy/misto-brno-superkoders).
 
-<blockquote class="twitter-tweet"><p lang="cs" dir="ltr">Nuda v Brně? Ale kdeže…<br>I tam můžete v dubnu a květnu zajít na naše kurzy.<a href="https://twitter.com/hashtag/Vzh%C5%AFruDol%C5%AFVBrn%C4%9B?src=hash&ref_src=twsrc%5Etfw">#VzhůruDolůVBrně</a><a href="https://t.co/ROi4ODbibH">https://t.co/ROi4ODbibH</a> <a href="https://t.co/N9qu2iaIIa">pic.twitter.com/N9qu2iaIIa</a></p>— Vzhůru dolů (@vzhurudolu) <a href="https://twitter.com/vzhurudolu/status/1106221455065391104?ref_src=twsrc%5Etfw">March 14, 2019</a></blockquote>
+<blockquote class="twitter-tweet"><p lang="cs" dir="ltr">Nuda v Brně? Ale kdeže…<br>I tam můžete v dubnu a květnu zajít na naše kurzy.<a href="https://x.com/hashtag/Vzh%C5%AFruDol%C5%AFVBrn%C4%9B?src=hash&ref_src=twsrc%5Etfw">#VzhůruDolůVBrně</a><a href="https://t.co/ROi4ODbibH">https://t.co/ROi4ODbibH</a> <a href="https://t.co/N9qu2iaIIa">pic.twitter.com/N9qu2iaIIa</a></p>— Vzhůru dolů (@vzhurudolu) <a href="https://x.com/vzhurudolu/status/1106221455065391104?ref_src=twsrc%5Etfw">March 14, 2019</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Jak ale asi víte, s termíny kurzů docela šetříme. I když se tahle aktivita ujme, pravděpodobně zůstaneme u dvou termínů kurzů v Praze a jednoho v Brně. Pokud tedy jeden brněnský kurz promeškáte, počkáte si rok na další. Co tedy letos organizujeme a kdy?

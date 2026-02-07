@@ -27,8 +27,8 @@ Počet pracujích z domova před měsícem nuceně skokově narostl. A práce z 
 
 - Martinův tip: [Setting Height And Width On Images Is Important Again](https://www.smashingmagazine.com/2020/03/setting-height-width-images-important-again/)
 - Robinův tip: [Finalizace specifikace ECMAScript 2020](https://v8.dev/features/tags/es2020)
-- Zuzana Šumlanská: [@zuza_sumlanska](https://twitter.com/zuza_sumlanska) ([SUPERKODERS](https://superkoders.com/))
-- Honza Král: [@honzakral](https://twitter.com/honzakral) ([Elastic](https://www.elastic.co/))
+- Zuzana Šumlanská: [@zuza_sumlanska](https://x.com/zuza_sumlanska) ([SUPERKODERS](https://superkoders.com/))
+- Honza Král: [@honzakral](https://x.com/honzakral) ([Elastic](https://www.elastic.co/))
 - Rozšíření pro Chrome: [Google Meet Grid View](https://chrome.google.com/webstore/detail/google-meet-grid-view/bjkegbgpfgpikgkfidhcihhiflbjgfic)
 - Vzhůru dolů: [Práce z domova](https://www.vzhurudolu.cz/blog/162-prace-z-domova)
 - Aplikace pro míchání ruchů [Noisli](https://www.noisli.com/)

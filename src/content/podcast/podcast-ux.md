@@ -30,7 +30,7 @@ Honza je UX expert zaměřený na zvyšování konverzí a moc rádi jsme si s n
 
 ## Odkazy
 
-* [Honza Kvasnička](http://www.kvasnickajan.cz/) a jeho [Twitter](https://twitter.com/Jan_Kvasnicka)
+* [Honza Kvasnička](http://www.kvasnickajan.cz/) a jeho [X](https://x.com/Jan_Kvasnicka)
 * Martinův tip: [online kurz Strategický webdesign](https://www.strategickywebdesign.cz/)
 * Robinův tip: mobilní tvořítko webů [Universe](https://onuniverse.com/)
 * Základy UX pro vývojáře: Kniha [Nenuťte uživatele přemýšlet](https://www.databazeknih.cz/knihy/web-design-nenutte-uzivatele-premyslet-116284) Stevena Kruga
