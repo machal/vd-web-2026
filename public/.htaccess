@@ -139,8 +139,7 @@ RedirectMatch 301 ^/css-frameworks/(.*) /data/css-frameworks/$1
 RedirectMatch 301 ^/fagaras/(.*) /data/fagaras/$1
 RedirectMatch 301 ^/historie/(.*) /data/historie/$1
 RedirectMatch 301 ^/images/(.*) /data/images-till-2012/$1
-RedirectMatch 301 ^/public/(.*) /data/projects/$1
-RedirectMatch 301 ^/projects/(.*) /data/projects/$1
+# /data/projects/ smazán – legacy redirecty /public/ a /projects/ odstraněny
 RedirectMatch 301 ^/tumblr/(.*) /data/tumblr-till-2012/$1
 
 # -----------------------------------------------------------------------------

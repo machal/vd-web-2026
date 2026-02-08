@@ -1,0 +1,22 @@
+# Gitleaks config – detekce API klicu a hesel
+# https://github.com/gitleaks/gitleaks
+
+title = "vd-web-2026 secrets"
+
+[rules]
+  id = "google-api-key"
+  description = "Google API Key"
+  regex = '''AIza[0-9A-Za-z\-_]{35}'''
+  keywords = ["AIza"]
+
+  id = "generic-api-key"
+  description = "Generic API Key"
+  regex = '''(?i)(api[_-]?key|apikey|api[_-]?secret)\s*[=:]\s*['\"][^'\"]{10,}['\"]'''
+
+  id = "generic-secret"
+  description = "Generic Secret"
+  regex = '''(?i)(secret|password|passwd|token)\s*[=:]\s*['\"][^'\"]{8,}['\"]'''
+
+  id = "private-key"
+  description = "Private Key"
+  regex = '''-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----'''
