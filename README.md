@@ -94,6 +94,36 @@ V `.htaccess` jsou nastaveny legacy redirecty (např. `/archiv/` → `/data/arch
 | Blog | `src/content/blog/` | ~142 článků |
 | Podcast | `src/content/podcast/` | ~54 epizod |
 
+## Obrázky v článcích
+
+Zdrojové obrázky (šablony, zdroje k úpravám) jsou v [prezentaci v Google Docs](https://docs.google.com/presentation/d/1gG71_QlkQcEXA69RwcBGsP1qqNxPwW12DM7bfE3FDvI/edit?slide=id.p#slide=id.p).
+
+### Kam vložit zdroje obrázků?
+
+- **Blog / podcast:** `src/assets/img/content/` nebo `src/assets/img/blog/` (JPG, PNG, SVG).
+- **Příručka:** `src/content/prirucka/assets/images/` (JPG, PNG).
+- Při `npm run dev` nebo `npm run build` se obrázky automaticky konvertují do WebP v `public/`.
+- **Doporučení:** maximální šířka 1600 px, poměr stran 16:9 (např. 1600×900 px).
+
+### Jak vložit do článku
+
+- **Blog/podcast – lokální obrázek** (po buildu je v `public/assets/img/content/dest/`):
+  ```markdown
+  ![Popis](/assets/img/content/dest/nazev.webp)
+  ```
+  Z podsložky např. `blog/`: `![Popis](/assets/img/content/dest/blog/nazev.webp)`.
+
+- **Blog/podcast – Cloudinary** (obrázek nahraný na Cloudinary, v článku jen URL):
+  ```markdown
+  ![Popis](https://res.cloudinary.com/vzhurudolu-cz/image/upload/…/soubor.jpg)
+  ```
+
+- **Příručka** (v MD píšeme starou cestu, build ji přepíše na `/prirucka/images/…`):
+  ```markdown
+  ![Alt](../dist/images/original/nazev.jpg)
+  ```
+  Z podsložky: `../dist/images/original/podslozka/nazev.png`.
+
 ## Vlastní pluginy
 
 Projekt používá vlastní remark/rehype pluginy (v `src/utils/`) a Vite pluginy (v rootu) pro transformaci Markdownu a obrázků:
