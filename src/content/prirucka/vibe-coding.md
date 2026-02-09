@@ -4,7 +4,7 @@ title: "Vibe-coding: revoluce jako prase"
 heading: "Vibe-coding: revoluce jako prase"
 date: 2026-02-02
 perex: "Vibe-coding je revoluce jako prase. Demokratizuje technologie a vývojařinu. A okno příležitosti je otevřené dokořán."
-published: false
+published: true
 category:
   - dovednosti
   - ai
@@ -12,165 +12,189 @@ category_highlight: true
 include_rss: true
 no_ads: true
 ---
+<!-- TODO: zkontrolovat datum/perex/published před publikací -->
 
-Vibe-coding je revoluce jako prase.
+# Vibe coding: proč jsem z něj u vytržení
 
-Slyšte další nadšenecký výkřik člověka, který se do vibe-codingu zbláznil. Bude to ale v jedné věci jiné. Přes 20 let jsem aktivně vyvíjel webové aplikace, kolem webových technologií se točím už 27 let.
+Vibe coding je revoluce jako prase. Způsobuje deflaci psaní kódu u vývojářů. Širokým masám zase nebývale zpřístupňuje tvorbů webů nebo jiných digitálních produktů.
 
-Nejsem tedy další CEO firmy, který se zbláznil do psaní kódu.
+Vibe coding je ale taky trochu past. Je to past pro lidi, kteří si myslí, že se obejdou bez vývojářů nebo vývojářského myšlení. A pro vývojáře? Pro některé velká příležitost, pro jiné bolení.
 
-Kolem mě to vidím také. Petr Staníček, zkušený UX architekt, mi napsal: „Teď jsem si sedl k Windsurfu a mám za tři dny novou verzi, která toho za týden práce bude umět víc než moje dílo za těch 9 měsíců. Je to fakt šílený."
+Myslel jsem si, že Vzhůru dolů je skoro mrtvé, ale vibe coding jej vzkřísil. Nejen technicky, ale i obsahově. Pokud mám letos na blog napsat jen jeden článek, musí to být tenhle.
 
-Michal Berg z Fakt o klimatu přidal: „Sedl jsem k Wix Vibe a za 2 hodiny mají hotový volební web včetně CMS, kde si to budou moci editovat sami. Dříve tohle bylo několik týdnů práce po večerech ve WordPressu."
+Zkusil jsem tenhle článek koncipovat jako koláž motivace, malých esejí a praktických tipů.
 
-[Marek Prokop](https://www.linkedin.com/posts/marekprokop_m%C3%A1m-hodn%C4%9B-p%C5%99%C3%A1tel-kte%C5%99%C3%AD-te%C4%8F-uj%C3%AD%C5%BEd%C4%9Bj%C3%AD-na-vibe-activity-7366146403502329858-4m91) má střízlivější pohled: „Když přesně víte, co chcete, a víte i to, jak to nejlíp udělat, ušetří vám AI hodně práce. Když nevíte, výsledek může být hodně špatný."
+Co se tématu týče, jsem aktuálně ve fázi explodující hlavy. Berte mě tedy s rezervou, ale musíme tím začít.
 
-Vibe-coding demokratizuje technologie a vývojařinu. Vývojáři a technologicky zdatní lidé nejsou bez práce. Mají výhodu a náskok. Když nezaspí.
+## U vytržení
 
-Okno příležitosti už je otevřené. Dokořán.
+Přes 20 let jsem aktivně vyvíjel webové aplikace, kolem webových technologií se točím už 27 let. Ale něco takového jsem v oboru nezažil. A nejsem sám.
 
-## Co je vibe-coding? {#co-je}
+*„Teď jsem si sedl k Windsurfu a mám za tři dny novou verzi, která toho za týden práce bude umět víc než moje dílo za 9 měsíců. Je to fakt šílený."*
+— [Petr Pixy Staníček](https://www.linkedin.com/feed/update/urn:li:activity:7421846795984683008?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7421846795984683008%2C7422216563153547264%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287422216563153547264%2Curn%3Ali%3Aactivity%3A7421846795984683008%29)
 
-Vibe-coding je způsob programování, kdy popisujete _záměr_ v přirozeném jazyce a AI generuje kód za vás. Místo psaní jednotlivých řádků komunikujete s modelem o tom, co chcete udělat.
+*„Sedl jsem k Wix Vibe a za 2 hodiny je hotový volební web včetně CMS. Dříve tohle bylo několik týdnů práce po večerech ve WordPressu."*
+— [Michal Berg](https://www.linkedin.com/feed/update/urn:li:activity:7421846795984683008?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7421846795984683008%2C7422782495580098560%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287422782495580098560%2Curn%3Ali%3Aactivity%3A7421846795984683008%29)
 
-Název pochází od Andreje Karpathyho, který to popsal jako „fully give in to the vibes" – nechat se vést náladou a intuicí, zatímco AI dělá tu špinavou práci.
+Vibe-coding demokratizuje technologie a vývojařinu. Zpřístupňuje ji všem.
 
-Hlavním nástrojem je pro mě [Cursor](https://cursor.com/) – editor postavený na VS Code s integrovanou AI. Existují i další: Windsurf, GitHub Copilot, Wix Vibe a spousta dalších. Společné mají to, že AI chápe kontext vašeho projektu a umí v něm pracovat.
+Vývojáři a technologicky zdatní lidé ale nejsou bez práce. Mají výhodu a náskok. Když nezaspí. Okno příležitosti už je otevřené, a to dokořán.
 
-Rozdíl oproti tradičnímu vývoji? Neřešíte syntaxi, negooglíte API, nepíšete boilerplate. Řeknete, co chcete, a AI to napíše. Vy pak kontrolujete, opravujete, směřujete.
+Ale OK. Kromě nadšení zkusme být i střízlivější:
+
+*„Když přesně víte, co chcete, a víte i to, jak to nejlíp udělat, ušetří vám AI hodně práce. Když nevíte, výsledek může být hodně špatný."*
+— [Marek Prokop](https://www.linkedin.com/posts/marekprokop_m%C3%A1m-hodn%C4%9B-p%C5%99%C3%A1tel-kte%C5%99%C3%AD-te%C4%8F-uj%C3%AD%C5%BEd%C4%9Bj%C3%AD-na-vibe-activity-7366146403502329858-4m91)
+
+## „Vajb… cože?“
+
+Nejdříve to zkusme definovat:
+
+Vibe-coding je způsob programování, kdy popisujete *záměr* v přirozeném jazyce a AI generuje kód za vás. Místo psaní jednotlivých řádků komunikujete s modelem o tom, co chcete udělat.
+
+Název pochází od [Andreje Karpathyho](https://x.com/karpathy/status/1886192184808149383?lang=en):
+
+*„…you fully give in to the vibes, embrace exponentials, and forget that the code even exists."*
+
+Hlavním nástrojem je pro mě [Cursor](https://cursor.com/) – editor postavený nad VS Code s integrovanou AI. Existují i další: Windsurf, GitHub Copilot, teď letí Antigravity od Googlu a spousta dalších. Společné mají to, že AI chápe kontext vašeho projektu a umí v něm pracovat.
+
+<!-- TODO: doplnit obrázek ../dist/images/original/vibe-coding-cursor.jpg - Cursor a režim Agent (soubor v repu zatím chybí) -->
+
+Cursor má režim Agent, kdy AI pracuje autonomně. Sám spouští terminál, čte soubory, instaluje knihovny, píše do více souborů najednou. Vy to schvalujete nebo korigujete směr.
+
+Rozdíl oproti tradičnímu vývoji? Neřešíte syntaxi, negooglíte dokumentace, nepíšete boilerplate. Řeknete, co chcete, a AI to napíše. Vy pak kontrolujete, opravujete, směřujete.
 
 Je to jako mít juniora, který píše rychle a hodně, ale potřebuje vaše vedení.
 
-## Vibe-coding vs. Agentní vývoj vs. Vibe Engineering {#vibe-vs-agent-vs-engineering}
+## Vibe-coding vs. vibe-engineering
 
-Ne každá práce s AI je stejná. Rozlišuji tři úrovně.
+Ne každá vývojářská práce s AI je stejná. Pracovně zde zkusíme rozlišit alespoň dvě úrovně.
 
-### Vibe-coding
+* **Vibe Coding** – neřeším kód vůbec. Sednu ke Cursoru nebo třeba [Macaly](https://www.macaly.com/), popíšu, co chci, a nechám to jet. Tohle je ideální pro prototypy a ukázky (když pak ten kód zahodíte), jednoduché weby a landing pages nebo jednorázové nástroje. Pojem „Vibe Coding" tady používám i pro širší pojmenování celé téhle oblasti.
 
-Rychlé prototypy, bokovky, menší projekty. Sednu ke Cursoru, popíšu, co chci, a nechám to jet. Kód neřeším do detailu – důležité je, že to funguje. Ideální pro:
+* **Vibe Engineering** – Inženýrský přístup nad rámec Vibe Codingu. Tady už nejde o to „nechat to jet", ale o vědomou spolupráci. Vy navrhujete architekturu, rozkládáte problém na podproblémy, AI implementuje podle vašich specifikací. Ale i ty specifikace tvoříte spolu. Vývojářské a architektonické myšlení zůstává na vás. AI je nástroj, ne náhrada mozku.
 
-- prototypy a ukázky,
-- jednoduché weby a landing pages,
-- jednorázové nástroje.
+Můžeme se hádat o definici, ale nechce se mi do toho. Jsou to jen slova. Uvádím je proto, aby ti z vás, kteří se neorientují, uměli v základu odlišit různé typy „vajbení" kódu.
 
-### Agentní vývoj
+Poznámka bokem: vždycky jsem se snažil pojmy překládat, ale tady na to peču. Ten obor se tak rychle vyvíjí, že je možné, že tohle všechno je jen zastávka na cestě k ještě větší autonomii AI.
 
-Cursor má režim Agent, kdy AI pracuje autonomně. Sama spouští terminál, čte soubory, instaluje knihovny, píše do více souborů najednou. Vy jen schvalujete nebo korigujete směr.
+Co je ale podstatné, to vyznačím opět citací od Marka Prokopa:
 
-Je to mocné, ale náročnější na kredity a občas se to zamotá. Hodí se pro větší úpravy, kde nechcete micromanagovat každý krok.
-
-### Vibe Engineering
-
-Inženýrský přístup s AI. Tady už nejde o to „nechat to jet", ale o vědomou spolupráci. Vy navrhujete architekturu, rozkládáte problém na podproblémy, AI implementuje podle vašich specifikací.
-
-Algoritmické myšlení zůstává na vás. AI je nástroj, ne náhrada mozku.
-
-Marek Prokop to [pěkně popsal](https://www.linkedin.com/posts/marekprokop_m%C3%A1m-hodn%C4%9B-p%C5%99%C3%A1tel-kte%C5%99%C3%AD-te%C4%8F-uj%C3%AD%C5%BEd%C4%9Bj%C3%AD-na-vibe-activity-7366146403502329858-4m91) na příkladu své práce: AI mu navrhla zastaralý balíček, posílala zbytečně dva requesty na každou adresu, přidávala nepotřebné závislosti. Pokaždé ji musel opravit. Bez znalosti programování by si ničeho nevšiml.
-
-Jeho závěr? _„Dávejte si na to pozor a učte se programovat. Je to potřeba i v éře AI."_
+*„Dávejte si na to pozor a učte se programovat. Je to potřeba i v éře AI."*
 
 Tohle je klíčový rozdíl mezi vibe-codingem a vibe-engineeringem. Vibe-coding zvládnete i bez hlubokých znalostí – pro prototyp nebo jednoduchou landing page to stačí. Ale jakmile jde o něco složitějšího, potřebujete být inženýr. Rozumět tomu, co AI dělá. Umět ji opravit, když se splete.
 
+## Čím začít, když jsem nováček?
+
 [Jindra Fáborský](https://www.facebook.com/faborsky/posts/pfbid0tRgVkByRZY8qgVVyGy8asoD2ZA1h7uPcwqjv9czxYFwdYbw13RAQbL6ddsgXUvNwl) to hezky rozřadil do levelů podle složitosti projektu:
 
-- **Level 0** – Jednorázové nástroje a vychytávky
-- **Level 1** – Landing pages
-- **Level 2** – Celé weby
-- **Level 3** – Prototypy aplikací
-- **Level 4** – Interní nástroje
-- **Level 5** – Produkční aplikace
+* **Level 0** – jednorázové nástroje a vychytávky
+* **Level 1** – landing pages
+* **Level 2** – celé weby
+* **Level 3** – prototypy aplikací
+* **Level 4** – interní nástroje
+* **Level 5** – produkční aplikace
 
-Čím vyšší level, tím víc potřebujete inženýrský přístup. Na Level 0–2 stačí vibe-coding. Od Level 3 výš už chcete být vibe-inženýr.
+Čím vyšší level, tím víc potřebujete inženýrský přístup. Na Level 0–2 stačí vibe-coding. Od úrovně 4 a výš už musíte být vibe-inženýr.
 
-## Praktické příklady z praxe {#priklady}
+Pro vývojáře skvělá zpráva. Pro laiky? Nepusťte se rovnou do přepsání vaší appky, která vám vydělává peníze. Prosím, nedělejte to.
+
+## Já a vajbení: čtyři příklady
 
 Teorie je fajn, ale pojďme k tomu, co jsem reálně udělal za poslední dva měsíce.
 
-### Prototyp webu FrontKon
+### Příklad první: prototyp webu FrontKon
 
-Jdu dělat prototyp pro nový web [FrontKon](https://frontendisti.cz/). Abych lidem v týmu snadněji ukázal svůj záměr. Jeden den práce, včetně skoro finálního obsahu. Kód neřeším, zahodí se, je to prototyp.
+V týmu konference [FrontKon](https://www.frontkon.cz/) diskutujeme nový web. Mám na to docela jasný názor a vizi. Abych lidem v týmu snadněji ukázal svůj záměr, jdu udělat [prototyp](https://machal.github.io/frontkon-2026-prototype/cs/).
 
-Dříve jsem takové prototypy dělal 14 dní.
+Jeden den práce, včetně skoro finálního obsahu. Kód neřeším, zahodí se, je to prototyp. Dříve jsem takové prototypy dělal týdny. Ručně. Pak se to často zahodilo, což je u prototypů dobře.
 
-Cíle byly jasné: vytěžit databázi historických přednášek, ukázat, že jsme středoevropská konference s tradicí, mít to pro každý rok stejné. Plus archiv, workshopy, blog, CZ/EN verze.
+První exploze Máchalovy hlavy. Ale taky první zjištění, že vibe-coding je málo. Že musím zapojovat vývojářskou část své hlavy. Že je potřeba číst, co Cursor říká a trošku mu v tom šťourat.
 
-A taky: naučit se vibe-coding v praxi.
+### Příklad druhý: web pro syna
 
-### Web pro syna
+Syn chce dělat s kamarádem dělat první byznys, [stříhání reels z videí](https://clipcut.cz/).
 
-Vyrábím web svému synovi. Sedmeme spolu ke Cursoru. Čekám, že to bude složitější.
+Sedmeme spolu ke Cursoru. Čekám, že to bude složitější. Hádky o vzhled a tak, znáte to… puberťák. Prompt o dvou větách. Výsledek se mu nelíbí, tak jasně.
 
-Hotové je to za 15 minut.
+Zeptám se Cursoru, jaký styl by se mohl líbit Gen Z. Dá mi na výběr čtyři. Honza vybere jeden, Cursor to předělá a Honza je nadšený.
 
-Bastliči malých webů jsou mrtví. Tohle zvládne kdokoliv, kdo umí popsat, co chce.
+<!-- TODO: doplnit obrázek ../dist/images/original/vibe-coding-clipcut.jpg - Web pro syna, Clipcut (soubor v repu zatím chybí) -->
 
-### Úpravy textů v PageSpeed.ONE
+Hotové je to za 15 minut. Propadám přitom hysterickému smíchu. Syn se ptá, zda jsem v pořádku. Já říkám, že ano, ale tohle jsem desítky let dělal dny až týdny. A klienti neměli šanci to tak snadno změnit.
 
-Jdu dělat úpravy textů do naší nápovědy v [PageSpeed.ONE](https://pagespeed.one/). Cursor přesně chápe kontext, umí napodobit konkrétní styl psaní. Markdowny mi upraví, přidá odkazy.
+Bastliči malých webů jsou mrtví. Macaly nebo něco takového zvládne kdokoliv, kdo umí popsat, co chce.
 
-Jak říká parťák Michal Matuška: „Všichni musíme být full-stack." I autoři obsahu. A CEO firmy.
+### Příklad třetí: úpravy textů v PageSpeed.ONE
 
-### Migrace VzhuruDolu.cz z PHP na Astro
+Jdu dělat úpravy textů do naší nápovědy v [PageSpeed.ONE](https://pagespeed.one/). Cursor přesně chápe kontext, umí napodobit konkrétní styl psaní. Řeknu mu jen, co chci zhruba napsat a zhruba kam. Markdowny mi upraví, přidá odkazy, udělá kontrolu.
 
-Zahazuju starý devstack na [VzhuruDolu.cz](https://www.vzhurudolu.cz/). Přecházím z PHP na Astro. Tohle už je složitější. Několik dní práce, ale trvám na tom, aby to bylo napsané dobře.
+Jak říká parťák Michal Matuška: „Všichni musíme být full-stack." I autoři obsahu. I CEO firmy.
 
-Pokud bych to chtěl někomu platit ve starém světě, je to investice 50, možná spíše 100 tisíc korun.
+![Úpravy textů a psaní s AI](../dist/images/original/vibe-coding-vd-writing.jpg)
 
-Ten web je mimochodem od víkendu live.
+### Příklad čtvrtý: migrace Vzhůru dolů z PHP na Astro
+<!-- TODO: přejmenováno z „Příklad třetí" pro konzistenci – zkontrolovat znění nadpisu -->
 
-## Vývojáři bez práce? {#vyvojari-bez-prace}
+Už dva roky chci zahodit starý devstack na [VzhuruDolu.cz](https://www.vzhurudolu.cz/). Běží to na zastaralém PHP a CMS Perch, které už nikdo nespravuje. Je tam stará databáze a celkově je to nebezpečné tak, že se na to bojím i podívat.
 
-Vývojáři se kvůli AI musejí bát o práci, říkali.
+Chci moderní devstack, chci to všechno naházet do Markdownů, mít to v jenom repozitáři a dát na Github.
 
-Prdlajs. Vývojáři mají ohromnou budoucnost, právě díky AI, říkám já.
+Ve „starém světě" by to pro mě ale znamenalo obětovat několik víkendu nebo investovat minimálně 50, ale spíše 100 tisíc Kč do někoho, kdo to obstará. Nic z toho nechci.
 
-Ano, někteří se bát musí. Kódeři, šudlalové, prasiči, copy-pasteři… Ti všichni o svou stávající práci přijdou.
+Tohle už je relativně složitý projekt. Napoprvé to s Cursorem nevyšlo. Vzal jsem staré PHP repo a chtěl po něm předělávku do nového. Utopil se v kontextu dvou různých technologií.
+
+Ukazuje se, že se musím naučit ten nový devstack, že Cursoru musím dávat dobrý zadání a že ho musím hlídat, co reálně dělá. Být ten architekt, ne jen divák.
+
+Mohl jsem být divák a mohl to mít rychleji. Ale nebylo by to dlouhodobě udržitelné a to já nechci.
+
+Nakonec je to hotové. Celkově 2-3 dny práce, vlastně pořád skvělé. Je to postavené na Astro, dostupné na Githubu a od konce ledna fičí na živo.
+
+![Migrace VzhuruDolu.cz na Astro](../dist/images/original/vibe-coding-vd.jpg)
+
+## Vývojáři bez práce?
+
+Vývojáři se kvůli AI musejí bát o práci, říkali. Prdlajs. Vývojáři mají velkou budoucnost, právě díky AI, říkám já.
+
+Ano, někteří se bát musí. Kódeři, šudlalové, prasiči, copy-pasteři… Ti všichni o svou stávající práci mohou přijít.
 
 Pak tu ale máme skutečné vývojáře. Vývojáře s inženýrským myšlením, znalostí technologie, zkušenostmi. Architekty. Vibe-inženýry.
 
 Ti mají ohromnou výhodu – algoritmický způsob přemýšlení. Schopnost rozpadnout problém do podproblémů. Navrhnout architektonické řešení. Technicky oponovat AI, vylepšit jeho řešení.
 
-Nenechat se _vybullshitovat_ od Cursoru.
+Nenechat se *vybullshitovat* od Cursoru.
 
 Stačí si na chvilku sednout vedle někoho, kdo tohle nemá. Koukat se, jak zadává prompt. A trpět, raději tiše.
 
-### Software is eating the world
+### Dva typy vývojářů
+
+Když to hodně zjednoduším, vývojáři se dělí podle motivací:
+
+* Jedni rádi tvoří produkty – weby, appky, službu lidem.
+* Druzí rádi píší kód, mazlí se s ním. Milují konkrétní technologii.
+
+Aktuální vlna AI velmi podporuje první skupinu a může dostávat pod tlak tu druhou.
+
+Bude stále těžší být naplňován jen psaním krásného kódu a budeme se více soustředit na výsledek, který nám technologie přináší.
+
+S LLM můžete dělat skvělý produkt, být velmi technický, i ten kód můžete mít kvalitní, ale nenapsat přitom ani řádku kódu. A myslím, že tohle bude pro řadu lidí v té druhé skupině těžké přijmout.
+
+### Musíte být vývojáři nebo se jimi postupně stávat
+
+Když jsem dělal prototyp nového webu FrontKonu, Cursor mi chtěl udělat server-side rendering pomocí vlastního generátoru z headless Chrome, kde běželo SPA. Technicky to fungovalo. Prakticky to byl nesmysl – existují mnohem lepší řešení.
+
+Kdyby tenhle návrh dostal někdo bez zkušeností, asi by ho přijal. A měl by problém.
+
+Pokud chcete „vajbit" produkty, dříve či později se musíte stát člověkem, který chápe vývojářské řemeslo.
+
+### „Software is eating the world"
 
 Ano, velkou část malinkých aplikací si sami udělají CEO's, markeťáci, samotní klienti… Těch aplikací, které by inženýři sami dělat nechtěli.
 
-Ale software je nenažraný, svět ještě zdaleka nesežral. Přijde ohromná vlna softwaru, který dříve vzniknout nemohl, protože to bylo drahé. Tohle vývojáře neohrozí.
+Ale software je nenažraný, celý svět ještě zdaleka nesežral. Přijde ohromná vlna softwaru, který dříve vzniknout nemohl, protože to bylo drahé. Tohle vývojáře neohrozí.
 
-Čísla to potvrzují. Počet vývojářů ve světě [stále roste](https://www.statista.com/statistics/627312/worldwide-developer-population/). Za tři roky od příchodu ChatGPT přibylo zhruba 13 % vývojářů – před GPT to bylo kolem 10 %.
+Ano, vždycky může přijít průlom, který nevidíme. Ale teď se to neděje. Vývojáři o práci nepřicházejí, minimálně ne hromadně a naráz.
 
-Ano, vždycky může přijít průlom, který nevidíme. Ale teď se to neděje. Vývojáři o práci nepřicházejí.
-
-Přestaňme se strašit.
-
-## Na co si dát pozor {#na-co-si-dat-pozor}
-
-Vibe-coding není všemocný. A hlavně: bez znalosti oboru vás AI snadno zavede.
-
-### Musíš být vývojář
-
-Když jsem migroval VzhuruDolu.cz, Cursor mi chtěl udělat server-side rendering pomocí headless Chrome generátoru. Technicky to fungovalo. Prakticky to byl nesmysl – existují mnohem lepší řešení pro Astro.
-
-Kdyby tenhle návrh dostal někdo bez zkušeností, možná by ho přijal. A měl by problém.
-
-Jindy se model „ztratil" v kontextu starého PHP projektu. Začal míchat starou architekturu s novou, navrhoval řešení, která nikam nevedly. Musel jsem resetovat kontext a začít jinak.
-
-### Kontaminace kontextu
-
-Tohle je klíčové. Cursor (a podobné nástroje) pracují s kontextem – soubory, které vidí, historie chatu, vaše instrukce. Když se ten kontext „zamotá", model začne bloudit.
-
-Řešení? Držet kontext čistý. Pracovat po menších krocích. Občas začít nový chat.
-
-### Příliš velké sousto
-
-Chtěl jsem převést celý web najednou. Špatný nápad. Model se v tom ztratil, já taky.
-
-Příště: připravit kompletní zadání, ale postupovat po krocích. Nejdřív Markdown soubory z blogu, pak příručka, pak šablony. Velké zadání si napsat do dokumentu (třeba `MIGRACE.MD`) a odkrokovat ho.
-
-## Best Practices a efektivita {#best-practices}
+## Několik konkrétních tipů ke Cursoru
 
 Pojďme k tomu, jak z vibe-codingu vytěžit maximum.
 
@@ -178,77 +202,74 @@ Pojďme k tomu, jak z vibe-codingu vytěžit maximum.
 
 Cursor má čtyři hlavní režimy:
 
-| Režim     | Změny v kódu       | Autonomie  | Kdy použít                          |
-| --------- | ------------------ | ---------- | ----------------------------------- |
-| **Agent** | Ano (víc souborů)  | Maximální  | Nová funkce od nuly, refaktoring    |
-| **Plan**  | Nejdřív návrh      | Střední    | Složitá integrace, chcete kontrolu  |
-| **Debug** | Ano (cílené)       | Vysoká     | Oprava chyb, logy                   |
-| **Ask**   | Ne (jen text)      | Nulová     | Konzultace, pochopení kódu          |
+| Režim | Změny v kódu | Autonomie | Kdy použít |
+| :---- | :---- | :---- | :---- |
+| **Agent** | Ano (víc souborů) | Maximální | Nová funkce od nuly, refaktoring |
+| **Plan** | Nejdřív návrh | Střední | Složitá integrace, chcete kontrolu |
+| **Debug** | Ano (cílené) | Vysoká | Oprava chyb, logy |
+| **Ask** | Ne (jen text) | Nulová | Konzultace, pochopení kódu |
 
-Agent je nejmocnější, ale taky nejdražší na kredity. Pro běžnou práci často stačí Plan nebo Ask.
+Agent je nejmocnější, ale taky nejdražší na kredity.
+
+Pro běžnou práci často stačí Plan nebo Ask. Osobně vždy novou fíčur začínám s Plan. Iterujeme nad zadáním a pak teprve pouštím Agenta.
 
 ### Kontextové zkratky
 
-Cursor má užitečné zkratky pro práci s kontextem:
+Cursor má užitečné zkratky pro práci s kontextem, které umí zpřesnit to, o čem s modelem mluvíte:
 
-- **@Codebase** – prohledá celý projekt, nejlepší pro komplexní úpravy
-- **@Files / @Folders** – cílený kontext, šetří tokeny
-- **@Docs** – vložení URL dokumentace
-- **@Web** – hledání na internetu
+* `@Codebase` – prohledá celý projekt, nejlepší pro komplexní úpravy
+* `@Files` / `@Folders` – cílený kontext, šetří tokeny
+* `@Docs` – vložení URL dokumentace
+* `@Web` – hledání na internetu
+
+Úplně killer je možnost pustit si v Cursoru prohlížeč a tam vyznačovat konkrétní elementy, které chcete změnit.
 
 ### Vibe Rules
 
-Tři pravidla pro efektivní práci:
+Tři pravidla pro efektivní práci, které se ze všech pravidel hodí nejvíc:
 
-1. **Dekompozice.** Nechtějte vše najednou. Postupujte po malých funkcích a iteracích.
-
-2. **Cursorrules.** Vytvořte si `.cursorrules` v rootu projektu. Trvalé nastavení „vibe" – např. „Piš v TypeScriptu, mluv česky, používej tento styl kódu."
-
-3. **Sniper vs. brokovnice.** Pro drobné úpravy použijte Ctrl+K (inline edit) místo přepisování celého souboru přes Composer.
+1. **Dekompozice.**
+   Nechtějte vše najednou. Postupujte po malých funkcích a iteracích.
+2. **Cursor Rules**
+   Vytvořte si `.cursorrules` v rootu projektu. Trvalé nastavení „vibe" – např. „Piš v TypeScriptu, mluv česky, používej tento styl kódu."
+3. **Sniper vs. brokovnice**
+   Pro drobné úpravy použijte Ctrl+K (inline edit) místo přepisování celého souboru přes Composer.
 
 ### Modely
 
-- **Default (composer-1):** Rychlý, pro běžnou práci.
-- **Claude 3.5 Sonnet:** Chytřejší, zapnout když se default „zacyklí".
-- **Gemini:** Pro práci s obrovským kontextem (celý repozitář najednou).
+S modely nemám potřebu moc experimentovat, protože mi krásně vyhovuje výchozí Composer-1, ale občas to přehodím, asi takto:
 
-## Jak se to projeví na způsobu práce {#zpusob-prace}
+* **Default (composer-1):** Rychlý, pro běžnou práci.
+* **Claude 3.5 Sonnet:** Chytřejší, zapnout když se default „zacyklí". Killer na texty.
+* **Gemini:** Pro práci s obrovským kontextem (celý repozitář najednou).
 
-Tohle mě překvapilo nejvíc. Flow najednou vypadá jinak.
+## Flow not found… a nebo tam nakonec je?
 
-Není to o leštění kódu. Není to o ladění středníků a zavináčů. Je to o směru, architektuře, kontextu.
+Tohle mě překvapilo nejvíc. Bál jsem se, že během vajbení přijdu o radost z tvorby, ale hluboká práce tam je, jen najednou vypadá jinak.
 
-Zadám úkol a čekám. Pak kontroluju, opravuju, směruju dál. Méně ťukání, více přemýšlení.
+Není to o leštění kódu. Není to o ladění středníků a zavináčů. Je to o směru, architektuře, kontextu. O tvorbě výsledného produktu.
+
+Zadám úkol a čekám. Pak kontroluji, opravuju, směřuju dál. Méně ťukání, více přemýšlení.
 
 A víte co? Překvapivě nechybí hluboká práce a flow. Pořád se dostanu do stavu, kdy nevím o světě a jsem ponořený v problému. Jen ten problém je jiný – není to „jak napsat tuhle funkci", ale „jak tohle celé navrhnout, aby to dávalo smysl".
 
-Je to jiný druh flow. Ale pořád flow.
+Tohle ale nebude vyhovovat lidem, kteří až tak neprožívají finální produkt, který z nich leze, ale baví se mazlení se s kódem.
 
-## Budoucnost a závěr {#zaver}
+## Tohle je velké, ale lidi potřebujeme
 
 AI není náhrada vývojářů. Je to multiplikátor.
 
-Lidi pořád potřebujeme. Pro cally, kuchyňku, offline kontext. Pro zodpovědnost a bezpečnost. Pro rozhodnutí, která vyžadují pochopení širšího kontextu firmy a týmu.
+Lidi pořád potřebujeme. Lidi ovládají a budou ovládat stroje. Doufám.
 
-Firemní know-how se neobjevilo v trénovacích datech. Vaše zkušenosti, vaše historky, vaše chyby – tohle AI nemá a mít nebude.
-
-Ale okno příležitosti je otevřené. Dokořán.
-
-Kdo se teď naučí efektivně spolupracovat s AI, bude mít obrovský náskok. Kdo bude čekat, až to „vyzraje", může zjistit, že vlak už odjel.
+Lidi potřebujeme pro schůzky, hovory v kuchyňce, celý offline kontext, který je stále obrovský. Pro zodpovědnost a bezpečnost. Pro rozhodnutí, která vyžadují pochopení širšího kontextu firmy a týmu.
 
 Vibe-coding demokratizuje technologie. Vývojáři a technologicky zdatní lidé mají výhodu. Ale musí ji využít.
 
-Tak co – zkusíte to?
+---
 
-## Další odkazy a čtení {#odkazy}
-
-- [Jindra Fáborský](https://www.facebook.com/faborsky/posts/pfbid0tRgVkByRZY8qgVVyGy8asoD2ZA1h7uPcwqjv9czxYFwdYbw13RAQbL6ddsgXUvNwl) – AI First, levely projektů 0–5
-- [Dan Srb – Get shit done](https://github.com/glittercowboy/get-shit-done) – meta prompting, tvorba specifikací
-- [Cursor](https://cursor.com/) – AI editor, který používám
-- [AI prý zvládne 80 % psaní a programování…](/blog/ai-programovani-psani) – můj článek o tom, proč to není tak jednoduché
-- [O psaní](/prirucka/psani) – jak začít psát a už se nezastavit
-
-Na co jsem zapomněl? Co u vibe-codingu pomáhá vám? Napište mi na [e-mail](mailto:martin@vzhurudolu.cz) nebo na sociální sítě.
+Na co jsem zapomněl, co mám špatně?
+Co u vibe-codingu pomáhá vám?
+Napište mi [e-mail](mailto:martin@vzhurudolu.cz) nebo komentujte na sociálních sítích.
 
 <!-- 
 POZNÁMKY KE STYLU (pro budoucí úpravy):
