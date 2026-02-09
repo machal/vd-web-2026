@@ -23,6 +23,13 @@ export const categories: CategoryConfig[] = [
     tags: ['responzivni-design'],
   },
   {
+    slug: 'ai',
+    title: 'AI',
+    description: 'Články a podcasty o umělé inteligenci ve vývoji, vibe codingu, nástrojích jako Cursor nebo ChatGPT a o tom, jak AI mění práci vývojářů.',
+    hasTOC: false,
+    tags: ['ai'],
+  },
+  {
     slug: 'organizace-css',
     title: 'Organizace CSS',
     description: 'Napsat hodně CSS kódu není žádný problém. Horší je to s jeho údržbou, to všichni víme. Tady najdete všechny naše text na téma organizace a psaní CSS kódu.',
