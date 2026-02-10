@@ -1,6 +1,6 @@
 ---
 id: vdcss3-uvod
-heading: ''
+heading: 'Děkuji!'
 perex: ''
 published: true
 category:

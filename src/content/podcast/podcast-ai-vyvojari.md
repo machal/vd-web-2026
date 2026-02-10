@@ -9,7 +9,6 @@ authorID: 1
 sectionID: 1
 category:
   - ai
-  - vývojáři
   - nastroje
 no_ads: true
 include_rss: true

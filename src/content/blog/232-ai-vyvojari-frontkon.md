@@ -8,7 +8,7 @@ postStatus: Published
 authorID: 1
 sectionID: 1
 category:
-  - AI
+  - ai
   - soft
   - netechnické
   - nastroje

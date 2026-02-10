@@ -1,9 +1,9 @@
 ---
 id: vibe-coding
-title: "Vibe coding: proč jsem z něj u vytržení"
-heading: "Vibe coding: proč jsem z něj u vytržení"
-date: 2026-02-09
-perex: "Vibe-coding je revoluce jako prase. Demokratizuje technologie a vývojařinu. A okno příležitosti je otevřené dokořán."
+title: "Vibe Coding: Přes 25 let dělám weby, ale poslední dva měsíce úplně jinak"
+heading: "Vibe Coding: Přes 25 let dělám weby, ale poslední dva měsíce úplně jinak"
+date: 2026-02-10
+perex: "Tvorba softwaru pomocí AI demokratizuje vývojařinu. Ale pozor – bez vývojářského myšlení se většinou neobejdete guláš. Slyšte mou koláž nadšení, úvah varování a konkrétních tipů"
 published: true
 category:
   - dovednosti
@@ -13,7 +13,7 @@ include_rss: true
 no_ads: true
 ---
 
-# Vibe coding: proč jsem z něj u vytržení
+# Vibe Coding: Přes 25 let dělám weby, ale poslední dva měsíce úplně jinak
 
 Vibe coding je revoluce jako prase. Způsobuje deflaci psaní kódu u vývojářů. Širokým masám zase nebývale zpřístupňuje tvorbů webů nebo jiných digitálních produktů.
 
@@ -62,12 +62,12 @@ Název pochází od [Andreje Karpathyho](https://x.com/karpathy/status/188619218
 >
 > – *<cite>[Andrej Karpathy](https://x.com/karpathy/status/1886192184808149383?lang=en)</cite>*
 
-Hlavním nástrojem je pro mě [Cursor](https://cursor.com/) – editor postavený nad VS Code s integrovanou AI. Existují i další: Windsurf, GitHub Copilot, teď letí Antigravity od Googlu a spousta dalších. Společné mají to, že AI chápe kontext vašeho projektu a umí v něm pracovat.
+Hlavním nástrojem je pro mě [Cursor](https://cursor.com/) – editor postavený nad VS Code s integrovanou AI. Existují i další: [Windsurf](https://windsurf.com/), [GitHub Copilot](https://github.com/features/copilot), teď letí [Antigravity](https://antigravity.codes/) od Googlu a spousta dalších. Společné mají to, že AI chápe kontext vašeho projektu a umí v něm pracovat.
 
 <figure>
 <img src="../dist/images/original/vibe-coding-cursor.jpg" alt="Cursor a režim Agent">
 <figcaption markdown="1">
-*Cursor a režim Agent – AI pracuje autonomně, spouští terminál a píše do více souborů najednou.*
+*Cursor v režim Agent je boží hlavně pro vývojářský způsob myšlení. A rozhraní znáte z [VS Code](https://code.visualstudio.com/).*
 </figcaption>
 </figure>
 
@@ -145,7 +145,7 @@ Bastliči malých webů jsou mrtví. Macaly nebo něco takového zvládne kdokol
 
 ### Příklad třetí: úpravy textů v PageSpeed.ONE {#priklad-treti-pagespeed}
 
-Jdu dělat úpravy textů do naší nápovědy v [PageSpeed.ONE](https://pagespeed.one/). Cursor přesně chápe kontext, umí napodobit konkrétní styl psaní. Řeknu mu jen, co chci zhruba napsat a zhruba kam. Markdowny mi upraví, přidá odkazy, udělá kontrolu.
+Miluju [psaní](psani.md). Jdu dělat úpravy textů do naší nápovědy v [PageSpeed.ONE](https://pagespeed.one/). Cursor přesně chápe kontext, umí napodobit konkrétní styl psaní. Řeknu mu jen, co chci zhruba napsat a zhruba kam. Markdowny mi upraví, přidá odkazy, udělá kontrolu.
 
 Jak říká parťák Michal Matuška: „Všichni musíme být full-stack.“ I autoři obsahu. I CEO firmy.
 
@@ -159,7 +159,7 @@ Jak říká parťák Michal Matuška: „Všichni musíme být full-stack.“ I 
 ### Příklad čtvrtý: migrace Vzhůru dolů z PHP na Astro {#priklad-ctvrty-migrace-vd}
 
 
-Už dva roky chci zahodit starý devstack na [VzhuruDolu.cz](https://www.vzhurudolu.cz/). Běží to na zastaralém PHP a CMS Perch, které už nikdo nespravuje. Je tam stará databáze a celkově je to nebezpečné tak, že se na to bojím i podívat.
+Už dva roky chci zahodit starý devstack na VzhuruDolu.cz. Běží to na zastaralém PHP a CMS [Perch](https://grabaperch.com/), které už nikdo nespravuje. Je tam stará databáze a celkově je to nebezpečné tak, že se na to bojím i podívat.
 
 Chci moderní devstack, chci to všechno naházet do Markdownů, mít to v jenom repozitáři a dát na Github.
 
@@ -171,7 +171,7 @@ Ukazuje se, že se musím naučit ten nový devstack, že Cursoru musím dávat 
 
 Mohl jsem být divák a mohl to mít rychleji. Ale nebylo by to dlouhodobě udržitelné a to já nechci.
 
-Nakonec je to hotové. Celkově 2-3 dny práce, vlastně pořád skvělé. Je to postavené na Astro, dostupné na Githubu a od konce ledna fičí na živo.
+Nakonec je to hotové. Celkově 2-3 dny práce, vlastně pořád skvělé. Je to postavené na [Astro](https://astro.build/), dostupné na Githubu a od konce ledna fičí na živo.
 
 <figure>
 <img src="../dist/images/original/vibe-coding-vd.jpg" alt="Migrace VzhuruDolu.cz na Astro">
@@ -264,17 +264,17 @@ Tři pravidla pro efektivní práci, které se ze všech pravidel hodí nejvíc:
 1. **Dekompozice.**
    Nechtějte vše najednou. Postupujte po malých funkcích a iteracích.
 2. **Cursor Rules**
-   Vytvořte si `.cursorrules` v rootu projektu. Trvalé nastavení „vibe“– např. „Piš v TypeScriptu, mluv česky, používej tento styl kódu.“
+   Vytvořte si [`.cursorrules`](https://docs.cursor.com/context/cursor-rules) v rootu projektu. Trvalé nastavení „vibe“– např. „Piš v TypeScriptu, mluv česky, používej tento styl kódu.“
 3. **Sniper vs. brokovnice**
-   Pro drobné úpravy použijte Ctrl+K (inline edit) místo přepisování celého souboru přes Composer.
+   Pro drobné úpravy použijte `Ctrl+K` (inline edit) místo přepisování celého souboru přes Composer.
 
 ### Modely {#modely}
 
 S modely nemám potřebu moc experimentovat, protože mi krásně vyhovuje výchozí Composer-1, ale občas to přehodím, asi takto:
 
 * **Default (composer-1):** Rychlý, pro běžnou práci.
-* **Claude 3.5 Sonnet:** Chytřejší, zapnout když se default „zacyklí“. Killer na texty.
-* **Gemini:** Pro práci s obrovským kontextem (celý repozitář najednou).
+* **[Claude 3.5 Sonnet](https://www.anthropic.com/):** Chytřejší, zapnout když se default „zacyklí“. Killer na texty.
+* **[Gemini](https://ai.google.dev/):** Pro práci s obrovským kontextem (celý repozitář najednou).
 
 ## Flow not found… a nebo tam nakonec je? {#flow}
 
@@ -302,23 +302,3 @@ Vibe-coding demokratizuje technologie. Vývojáři a technologicky zdatní lidé
 
 <small>*Na co jsem zapomněl, co mám špatně? Co u vibe-codingu pomáhá vám? Napište mi [e-mail](mailto:martin@vzhurudolu.cz) nebo komentujte na sociálních sítích.*</small>
 
-<!-- 
-POZNÁMKY KE STYLU (pro budoucí úpravy):
-
-Článek vibe-coding: Rozšířená verze LinkedIn postu "Vibe-coding je revoluce“(27. 1. 2026).
-Vyznění a styl podle toho postu – úvod úderný a nadšený, zbytek střízlivější s jasnějším podložením.
-
-Vzory: psani.md, 258-ai-programovani-psani.md
-
-Styl:
-- Krátké věty v úvodu, ale nepřehánět
-- Tón jako když mluvíte
-- Kratší odstavce, jedna myšlenka = jeden odstavec
-- Kurzíva pro důraz (ne tučné)
-- Odkazy inline, přirozeně v textu
-- Konec: shrnutí + otevřená otázka
-
-Model pro psaní: Claude Opus
-
-AdSnippet: nepoužívat (není o CSS)
--->

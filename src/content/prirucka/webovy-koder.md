@@ -1,7 +1,7 @@
 ---
 id: webovy-koder
-heading: ''
-perex: ''
+heading: 'Co by měl umět webový kodér?'
+perex: 'Technik, který oživuje uživatelská rozhraní webové prezentace nebo webové aplikace.'
 published: true
 category: ['css']
 category_highlight: false

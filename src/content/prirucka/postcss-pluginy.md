@@ -1,7 +1,7 @@
 ---
 id: postcss-pluginy
-heading: ''
-perex: ''
+heading: 'Zajímavé pluginy pro PostCSS'
+perex: 'Pluginy pro PostCSS, které mohou být užitečné.'
 published: true
 category:
   - css

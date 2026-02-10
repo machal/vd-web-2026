@@ -10,7 +10,6 @@ sectionID: 1
 category:
   - netechnické
   - ai
-  - netechnicke
 no_ads: true
 include_rss: true
 category_highlight: true
@@ -109,3 +108,5 @@ Stejně tak jiné profese, se kterými nepřicházíte do styku:
 Ano, někteří z nich stroje jsou nebo se jim blíží. Schází jim lidská a expertní přidaná hodnota. A ano, stroje vezmou práci strojům.
 
 Nevěřte lidem, kteří váš obor neznají a věští jeho budoucnost.
+
+→ *Související: [Vibe Coding: Přes 25 let dělám weby, ale poslední dva měsíce úplně jinak](/prirucka/vibe-coding).*

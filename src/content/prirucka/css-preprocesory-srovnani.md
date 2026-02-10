@@ -1,6 +1,6 @@
 ---
 id: css-preprocesory-srovnani
-heading: ''
+heading: 'Srovnání CSS preprocesorů'
 perex: ''
 published: true
 category:

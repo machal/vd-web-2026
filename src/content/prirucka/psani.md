@@ -332,6 +332,7 @@ Začněte psát. Prostě začněte. Teď hned.
 
 Odkazy na další zajímavé zdroje o psaní, které sám dobře znám:
 
+- O psaní kódu i textů s AI (vibe coding, vibe writing) píšu v článku [Vibe Coding: Přes 25 let dělám weby, ale poslední dva měsíce úplně jinak](/prirucka/vibe-coding).
 - Ondřej Ilinčev je autorem pěkného textu o tom, [jak napsat článek za 3 hodiny](https://www.ilincev.com/clanek-za-3h). Ondřej je mistr psací efektivity.
 - Martin Kopta sepsal [krásné vlákno na X/X](https://x.com/atpok/status/1804103540459331846), o tom proč a jak píše on. Uvědomil jsem si přitom, jak zkušení psavci docházejí k podobným závěrům.
 - Kdysi se mi zalíbil článek od [Obsahové agentury](https://www.obsahova-agentura.cz/blog/jak-napsat-web-aby-ho-lide-precetli), který k psaní přistupuje více byznysově. To se vám bude hodit, pokud chcete z psaní vymáčknout nějaký ten peníz.

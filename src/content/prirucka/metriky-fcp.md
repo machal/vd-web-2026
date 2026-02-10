@@ -1,6 +1,6 @@
 ---
 id: metriky-fcp
-heading: ''
+heading: 'Metrika „První obsahové vykreslení“ (First Contentful Paint, FCP)'
 category:
   - rychlost-nacitani
 perex: ''

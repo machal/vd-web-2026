@@ -1,6 +1,6 @@
 ---
 id: typografie-tipy
-heading: ''
+heading: 'Tipy a triky pro typografii na webu'
 perex: ''
 published: true
 category: []

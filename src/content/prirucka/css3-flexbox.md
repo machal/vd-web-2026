@@ -1,6 +1,6 @@
 ---
 id: css3-flexbox
-heading: ''
+heading: 'CSS3 Flexbox: layout pomocí pružných boxů'
 perex: ''
 published: true
 category:

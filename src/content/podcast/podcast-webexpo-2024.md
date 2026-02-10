@@ -10,6 +10,7 @@ sectionID: 1
 category:
   - webexpo
   - rychlost-nacitani
+  - ai
 no_ads: false
 include_rss: true
 category_highlight: true
