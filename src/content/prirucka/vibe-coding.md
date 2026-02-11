@@ -91,7 +91,7 @@ Poznámka bokem: vždycky jsem se snažil pojmy překládat, ale tady na to peč
 
 Co je ale podstatné, to vyznačím opět citací od Marka Prokopa:
 
-> „Dávejte si na to pozor a učte se programovat. Je to potřeba i v éře AI.“
+> „Dávejte si na to pozor a učte se programovat. Je to potřeba i v éře AI.“
 >
 > – *<cite>[Marek Prokop](https://www.linkedin.com/posts/marekprokop_m%C3%A1m-hodn%C4%9B-p%C5%99%C3%A1tel-kte%C5%99%C3%AD-te%C4%8F-uj%C3%AD%C5%BEd%C4%9Bj%C3%AD-na-vibe-activity-7366146403502329858-4m91)</cite>*
 
@@ -272,9 +272,9 @@ Tři pravidla pro efektivní práci, které se ze všech pravidel hodí nejvíc:
 
 S modely nemám potřebu moc experimentovat, protože mi krásně vyhovuje výchozí Composer-1, ale občas to přehodím, asi takto:
 
-* **Default (composer-1):** Rychlý, pro běžnou práci.
-* **[Claude 3.5 Sonnet](https://www.anthropic.com/):** Chytřejší, zapnout když se default „zacyklí“. Killer na texty.
-* **[Gemini](https://ai.google.dev/):** Pro práci s obrovským kontextem (celý repozitář najednou).
+* **[Default (Composer)](https://cursor.com/blog/composer-1-5):** Rychlý, pro běžnou práci. Stačí mi v 80 % případů.
+* **[Claude Sonnet](https://www.anthropic.com/claude/sonnet):** Chytřejší, zapnout když se default „zacyklí“. Killer na texty.
+* **[Gemini](https://gemini.google/about/):** Pro práci s obrovským kontextem (celý repozitář najednou). Přepínám jen výjimečně.
 
 ## Flow not found… a nebo tam nakonec je? {#flow}
 
@@ -300,5 +300,5 @@ Vibe-coding demokratizuje technologie. Vývojáři a technologicky zdatní lidé
 
 ---
 
-<small>*Na co jsem zapomněl, co mám špatně? Co u vibe-codingu pomáhá vám? Napište mi [e-mail](mailto:martin@vzhurudolu.cz) nebo komentujte na sociálních sítích.*</small>
+<small>*Na co jsem zapomněl, co mám špatně? Co u vibe-codingu pomáhá vám? Napište mi [e-mail](mailto:martin@vzhurudolu.cz) nebo komentujte na sociálních sítích: na [LinkedInu](), [X](https://x.com/machal/status/2021155215601263009).*</small>
 
