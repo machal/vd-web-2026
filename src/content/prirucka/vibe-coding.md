@@ -3,7 +3,7 @@ id: vibe-coding
 title: "Vibe Coding: Přes 25 let dělám weby, ale poslední dva měsíce úplně jinak"
 heading: "Vibe Coding: Přes 25 let dělám weby, ale poslední dva měsíce úplně jinak"
 date: 2026-02-10
-perex: "Tvorba softwaru pomocí AI demokratizuje vývojařinu. Ale pozor – bez vývojářského myšlení se většinou neobejdete guláš. Slyšte mou koláž nadšení, úvah varování a konkrétních tipů"
+perex: "Tvorba softwaru pomocí AI demokratizuje vývojařinu. Ale pozor – bez vývojářského myšlení se většinou neobejdete. Slyšte mou koláž nadšení, úvah, varování a konkrétních tipů"
 published: true
 category:
   - dovednosti
@@ -15,7 +15,7 @@ no_ads: true
 
 # Vibe Coding: Přes 25 let dělám weby, ale poslední dva měsíce úplně jinak
 
-Vibe coding je revoluce jako prase. Způsobuje deflaci psaní kódu u vývojářů. Širokým masám zase nebývale zpřístupňuje tvorbů webů nebo jiných digitálních produktů.
+Vibe coding je revoluce jako prase. Způsobuje deflaci psaní kódu u vývojářů. Širokým masám zase nebývale zpřístupňuje tvorbu webů nebo jiných digitálních produktů.
 
 Vibe coding je ale taky trochu past. Je to past pro lidi, kteří si myslí, že se obejdou bez vývojářů nebo vývojářského myšlení. A pro vývojáře? Pro některé velká příležitost, pro jiné bolení.
 
@@ -126,7 +126,7 @@ První exploze Máchalovy hlavy. Ale taky první zjištění, že vibe-coding je
 
 ### Příklad druhý: web pro syna {#priklad-druhy-web-pro-syna}
 
-Syn chce dělat s kamarádem dělat první byznys, [stříhání reels z videí](https://clipcut.cz/).
+Šetnáctiletý syn chce dělat s kamarádem dělat první byznys, [stříhání reels z videí](https://clipcut.cz/).
 
 Sedmeme spolu ke Cursoru. Čekám, že to bude složitější. Hádky o vzhled a tak, znáte to… puberťák. Prompt o dvou větách. Výsledek se mu nelíbí, tak jasně.
 
@@ -159,11 +159,11 @@ Jak říká parťák Michal Matuška: „Všichni musíme být full-stack.“ I 
 ### Příklad čtvrtý: migrace Vzhůru dolů z PHP na Astro {#priklad-ctvrty-migrace-vd}
 
 
-Už dva roky chci zahodit starý devstack na VzhuruDolu.cz. Běží to na zastaralém PHP a CMS [Perch](https://grabaperch.com/), které už nikdo nespravuje. Je tam stará databáze a celkově je to nebezpečné tak, že se na to bojím i podívat.
+Už dva roky chci zahodit starý devstack na Vzhůru dolů. Běží to na zastaralém PHP a CMS [Perch](https://grabaperch.com/), které už nikdo nespravuje. Je tam stará databáze a celkově je to nebezpečné tak, že se na to bojím i podívat.
 
 Chci moderní devstack, chci to všechno naházet do Markdownů, mít to v jenom repozitáři a dát na Github.
 
-Ve „starém světě“ by to pro mě ale znamenalo obětovat několik víkendu nebo investovat minimálně 50, ale spíše 100 tisíc Kč do někoho, kdo to obstará. Nic z toho nechci.
+Ve „starém světě“ by to pro mě ale znamenalo obětovat několik víkendů nebo investovat minimálně 50, ale spíše 100 tisíc Kč do někoho, kdo to obstará. Nic z toho nechci.
 
 Tohle už je relativně složitý projekt. Napoprvé to s Cursorem nevyšlo. Vzal jsem staré PHP repo a chtěl po něm předělávku do nového. Utopil se v kontextu dvou různých technologií.
 
@@ -176,7 +176,7 @@ Nakonec je to hotové. Celkově 2-3 dny práce, vlastně pořád skvělé. Je to
 <figure>
 <img src="../dist/images/original/vibe-coding-vd.jpg" alt="Migrace VzhuruDolu.cz na Astro">
 <figcaption markdown="1">
-*Migrace VzhuruDolu.cz na Astro. Hotovo za 2–3 dny práce.*
+*Migrace Vzhůru dolů na Astro. Hotovo za 2–3 dny práce.*
 </figcaption>
 </figure>
 
