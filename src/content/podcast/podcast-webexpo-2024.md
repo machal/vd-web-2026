@@ -37,7 +37,7 @@ Tak už znáte.
 
 - Co publikum zaujalo na WebExpo? Cache, Discomfort, Speech API, A11y, Nathan W. Pyle, Breaking Long Tasks a metrika INP. **(1:30)**
 - Harry Roberts: [Cache Rules Everything](https://slideslive.com/39021005/cache-rules-everything?ref=speaker-4695) **(2:50)**
-- Odbočka k [BFcache](https://docs.pagespeed.cz/docs/bf-cache) **(10:00)**
+- Odbočka k [BFcache](https://pagespeed.one/znalosti/bfcache) **(10:00)**
 - „Jediný český odborník na keše“ **(15:20)**
 - [Monika Marešová](https://slideslive.com/39021038/email-automation-key-trends-and-how-to-put-them-into-action?ref=search-presentations): hlavičky newsletterů a hyperpersonalizace **(17:05)**
 - [Ana Rodrigues](https://slideslive.com/39021002/exploring-the-potential-of-the-web-speech-api-in-karaoke?ref=search-presentations): Speech API **(23:50)**

@@ -84,7 +84,7 @@ Nejprve pár textů a videí, které se vám mohou hodit při studiu základů z
 * Právní pohled: [Lupa.cz](https://www.lupa.cz/clanky/od-1-ledna-se-zmeni-pravidla-pro-cookies-pripravte-si-listy-radi-pravnicka/), od [Petry Dolejšové](https://www.pavelungr.cz/jak-na-cookie-listu-v-roce-2022-prace-s-cookies-v-roce-2022-saga-pokracuje-petra-dolejsova/) nebo [Dostupného advokáta](https://dostupnyadvokat.cz/blog/povinnosti-cookies).
 * Marketingový pohled: [House of Řezáč](https://www.houseofrezac.com/blog/mereni-a-marketing-bez-cookies).
 * UX pohled: [Ondřej Ilinčev](https://www.ilincev.com/cookies-2022).
-* Můj pohled k rychlosti webu na [PageSpeed.ONE](http://pagespeed.cz/). (To jediné, čemu doopravdy rozumím.)
+* Můj pohled k rychlosti webu na [PageSpeed.ONE](https://pagespeed.one/). (To jediné, čemu doopravdy rozumím.)
 * [Komplexní webinář](https://www.youtube.com/watch?v=mvMyEVr_kMg) organizovaný Pavlem Ungrem.
 * [Diskuze o cookies](https://www.youtube.com/watch?v=s4I6TjZMR_I) u Frontendistů. (Martin Kopta a Honza Chemix Černý tam velmi hezky argumentují z pohledu soukromí uživatele.)
 
@@ -261,7 +261,7 @@ Větší weby využívají velmi robustní [OneTrust (dříve Optanon)](https://
 
 ## Cookie lišta a rychlost webu {#rychlost}
 
-Na [blogu PageSpeed.ONE](https://pagespeed.cz/blog/cookie-rychlost-webu) jsem psal o trablech z pohledu rychlosti webu, které může nasazení cookie lišty způsobit.
+Na [blogu PageSpeed.ONE](https://pagespeed.one/blog/cookie-rychlost-webu) jsem psal o trablech z pohledu rychlosti webu, které může nasazení cookie lišty způsobit.
 
 Svoje jsme si užili s OneTrust, Didomi i Google Funding Choices. Nicméně vždy jsme nalezli cestu k optimalizaci.
 

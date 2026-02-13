@@ -19,9 +19,9 @@ tags: ['rychlost-nacitani']
 ---
 # PageSpeed.ONE tester PLUS pro vývojáře: jak monitorovat a ladit rychlost webu
 
-V PageSpeed.ONE jsme po několika letech práce na [testeru pro měření rychlosti](https://app.pagespeed.cz/) spustili také jeho placenou variantu, [tarif PLUS](https://app.pagespeed.cz/plus).
+V PageSpeed.ONE jsme po několika letech práce na [testeru pro měření rychlosti](https://pagespeed.one/app/) spustili také jeho placenou variantu, [tarif PLUS](https://pagespeed.one/monitoring-plus).
 
-Stojí kolem 5 tis. Kč bez DPH ročně na jeden web. Postavili jsme jej pro majitele webu, marketéry a vývojáře a to na základě mnohaleté zkušenosti [s poradenstvím k rychlosti](https://www.pagespeed.cz/sluzby).
+Stojí kolem 5 tis. Kč bez DPH ročně na jeden web. Postavili jsme jej pro majitele webu, marketéry a vývojáře a to na základě mnohaleté zkušenosti [s poradenstvím k rychlosti](https://pagespeed.one/services).
 
 V tomhle článku vám ukážu, jaké problémy tester PLUS nám a našim klientům řeší. Na jedné případové studii pak budu ilustrovat proces ladění konkrétního problému s pomocí našeho nástroje.
 
@@ -47,11 +47,11 @@ Bez měření neřídíte optimalizaci rychlosti, takže ji nemůžete dělat. R
 
 ## Co tester PLUS přináší oproti verzi zdarma? {#co-prinasi-plus}
 
-Náš [tester rychlosti](https://app.pagespeed.cz/) můžete používat už zhruba dva roky. Co tedy odlišuje novou placenou verzi od té stávající?
+Náš [tester rychlosti](https://pagespeed.one/app/) můžete používat už zhruba dva roky. Co tedy odlišuje novou placenou verzi od té stávající?
 
-Zjednodušeně řečeno je to stabilita výsledků, možnost detailního zkoumání příčin a v neposlední řadě také [Hlídač](https://www.pagespeed.cz/blog/tester-hlidac-notifikace), který vám umožní na rychlost zase tak moc nemyslet.
+Zjednodušeně řečeno je to stabilita výsledků, možnost detailního zkoumání příčin a v neposlední řadě také [Hlídač](https://pagespeed.one/blog/tester-hlidac-notifikace), který vám umožní na rychlost zase tak moc nemyslet.
 
-[![Tarif PLUS z PageSpeed.ONE](https://res.cloudinary.com/vzhurudolu-cz/image/upload/v1704269311/vzhurudolu-blog/page-speed-cz/ps-plus-tutorial-001_weujjd.jpg)](https://app.pagespeed.cz/plus)
+[![Tarif PLUS z PageSpeed.ONE](https://res.cloudinary.com/vzhurudolu-cz/image/upload/v1704269311/vzhurudolu-blog/page-speed-cz/ps-plus-tutorial-001_weujjd.jpg)](https://pagespeed.one/monitoring-plus)
 
 Jste zvědaví? Vše vám vysvětlím, chvíli vydržte.
 
@@ -65,7 +65,7 @@ Pojďme teď na ty fíčury, na ty se jistě těšíte nejvíc.
 
 ### Stabilní infrastruktura {#stabilni-infra}
 
-Ve stávající bezplatné verzi testů na [app.pagespeed.cz](https://app.pagespeed.cz/) testujeme vaše URL méně často a výsledky bereme z API PageSpeed Insight od Googlu.
+Ve stávající bezplatné verzi testů na [pagespeed.one/app](https://pagespeed.one/app/) testujeme vaše URL méně často a výsledky bereme z API PageSpeed Insight od Googlu.
 
 Jak na následujícím grafu sami uvidíte, výsledky PageSpeed Insight nepatří zrovna k etalonům stability:
 
@@ -93,7 +93,7 @@ Shrňme si to ještě v tabulce:
 | Infrastruktura              | PSI API      | vlastní, AWS |
 | Denní výsledky              | nestabilní   | stabilní     |
 
-Jste webaři-hobbíci a stačí vám vidět trend z týdne na týden a tříměsíční období? Volte verzi zdarma, v opačném případě vám doporučuji [PLUS](https://app.pagespeed.cz/plus).
+Jste webaři-hobbíci a stačí vám vidět trend z týdne na týden a tříměsíční období? Volte verzi zdarma, v opačném případě vám doporučuji [PLUS](https://pagespeed.one/monitoring-plus).
 
 Dále se pojďme zabývat tím, co v PageSpeed.ONE PLUS potěší vývojáře, a to sice detailním technickým rozborem.
 
@@ -285,7 +285,7 @@ Samozřejmě zde dále platí výhody stávající bezplatné verze – máte k 
 
 S onboardingem a nastavením testu vám navíc osobně pomůžu.
 
-Více o tarifu PLUS, včetně srovnání s verzí zdarma: [app.pagespeed.cz/plus](https://app.pagespeed.cz/plus)
+Více o tarifu PLUS, včetně srovnání s verzí zdarma: [pagespeed.one/monitoring-plus](https://pagespeed.one/monitoring-plus)
 
 ## Co si zapamatovat? {#pamatovat}
 

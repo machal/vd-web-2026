@@ -85,7 +85,7 @@ Volně cituji podle [specifikace Priority Hints](https://wicg.github.io/priority
 
 > Preload je povinné načtení prostředku, který je nezbytný pro aktuální stav stránky. Priority Hints mohou napovědět, že priorita prostředku by měla být nižší nebo vyšší než jeho výchozí priorita, a mohou být také použity k poskytnutí podrobnějšího určení priority.
 
-V praxi budeme nejspíš potřebovat obojí, `preload` i `fetchpriority`, přičemž tipuji, že někdy bude stačit vhodné použití preloadu a většinou ani to ne. Prostě jde o doplněk pro nás, [hračičky s rychlostí webu](https://www.pagespeed.cz/).
+V praxi budeme nejspíš potřebovat obojí, `preload` i `fetchpriority`, přičemž tipuji, že někdy bude stačit vhodné použití preloadu a většinou ani to ne. Prostě jde o doplněk pro nás, [hračičky s rychlostí webu](https://pagespeed.one/).
 
 <!-- AdSnippet -->
 
@@ -125,7 +125,7 @@ Jak atribut fetchpriority změní pořadí stahování prvků ve stránce.
 </figcaption>
 </figure>
 
-Dolní část pobrázku to ukazuje už po optimalizaci. Stačilo rozumně přeskupit [prvky v hlavičce](https://www.pagespeed.cz/blog/srovnejte-si-to-v-head) (CSS před JS) a atribut `fetchpriority` použít pro snížení přednosti načítání pro JavaScript Bootstrapu a všechny obrázky v karuselu kromě prvního.
+Dolní část pobrázku to ukazuje už po optimalizaci. Stačilo rozumně přeskupit [prvky v hlavičce](https://pagespeed.one/blog/srovnejte-si-to-v-head) (CSS před JS) a atribut `fetchpriority` použít pro snížení přednosti načítání pro JavaScript Bootstrapu a všechny obrázky v karuselu kromě prvního.
 
 Však si to vyzkoušejte na výsledném CodePenu.
 

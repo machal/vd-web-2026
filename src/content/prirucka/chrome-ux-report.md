@@ -153,7 +153,7 @@ Jak na to?
 
 ### 3) Tester PageSpeed.ONE {#ps-tester}
 
-Na datech z [Chrome UX Reportu](chrome-ux-report.md) je postavený také produkt, který vytváříme v PageSpeed.ONE. Náš [tester rychlosti](https://app.pagespeed.cz/) má také placenou verzi pro profesionály [PLUS](https://app.pagespeed.cz/plus).
+Na datech z [Chrome UX Reportu](chrome-ux-report.md) je postavený také produkt, který vytváříme v PageSpeed.ONE. Náš [tester rychlosti](https://pagespeed.one/app/) má také placenou verzi pro profesionály [PLUS](https://pagespeed.one/monitoring-plus).
 
 <figure>
 <img src="https://res.cloudinary.com/vzhurudolu-cz/image/upload/v1704269311/vzhurudolu-blog/page-speed-cz/ps-plus-tutorial-001_weujjd.jpg" width="1600" height="900" alt="PS tester PLUS">

@@ -100,7 +100,7 @@ Obsah už máme královsky vyladěný. Pojďme teď odstranit překážky, kter�
 Tuhle oblast mají obvykle na starosti naši kolegové designéři. Pojďme ale zkontrolovat to nejdůležitější z technických aspektů designu.
 
 - Požadovaná rychlost webu ★★★  
-<small>Jděte na [PageSpeed.ONE](https://pagespeed.cz), změřte si konkurenci a snažte se být rychlejší než ona. Testujte všechny důležité vstupní šablony. Sledujte hlavně metriky [Web Vitals](web-vitals.md) od uživatelů. Dále: [jak Google měří rychlost](google-page-experience.md), [jak zrychlit web?](jak-zrychlit-web.md), [checklist rychlosti](https://pagespeed.cz/blog/checklist-2021), [videa o rychlosti](https://www.vzhurudolu.cz/video).</small>
+<small>Jděte na [PageSpeed.ONE](https://pagespeed.one/), změřte si konkurenci a snažte se být rychlejší než ona. Testujte všechny důležité vstupní šablony. Sledujte hlavně metriky [Web Vitals](web-vitals.md) od uživatelů. Dále: [jak Google měří rychlost](google-page-experience.md), [jak zrychlit web?](jak-zrychlit-web.md), [checklist rychlosti](https://pagespeed.one/blog/checklist-2021), [videa o rychlosti](https://www.vzhurudolu.cz/video).</small>
 - Web je přátelský k mobilním uživatelům ★★★  
 <small>Pomůže test [Mobile Friendly](https://search.google.com/test/mobile-friendly) od Googlu. Vyčerpávající informace [o responzivní designu](https://www.vzhurudolu.cz/responzivni-design) jsou v knížce [Vzhůru do (responzivního) webdesignu](https://www.vzhurudolu.cz/kniha-responzivni-design/).</small>
 - Grafika podporuje HD displeje typu Retina ★★★  

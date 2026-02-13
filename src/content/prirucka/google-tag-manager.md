@@ -213,7 +213,7 @@ Můžeme si říct pár základních pouček:
 
 - Vypínejte značky, které nepoužíváte - nenechávejte zapnutý např. Hotjar, pokud uživatele aktivně nesledujete.
 - Nastavte správné spouštění značek - jak jsem psal výše: myslete na to, kdy se která značka má spustit. Ne všechno potřebujete spouštět hned -  i když ten spouštěč s názvem „Zobrazení“ zní tak krásně…
-- Vybírejte značky podle reálný dopadů. Není totiž [chat jako chat](https://pagespeed.cz/blog/vliv-chatovacich-widgetu-na-rychlost-webu).
+- Vybírejte značky podle reálný dopadů. Není totiž [chat jako chat](https://pagespeed.one/blog/vliv-chatovacich-widgetu-na-rychlost-webu).
 - Dobře a kvalitně [měřte aplikace třetích stran](third-party.md), případně webu jako celku. Jednoduše pak zjistíte, co přesně web z ničeho nic zpomalilo.
 
 Když už manažer značek může rozbít rychlost, nemůže rozbít také něco jiného…?

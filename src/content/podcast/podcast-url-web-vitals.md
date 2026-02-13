@@ -24,7 +24,7 @@ og_type: article
 
 Martin s Robinem jsou tentokrát sami a poprvé streamují naživo přes YouTube. Jak to asi dopadlo? Nakonec docela dobře. Probrali dokonce čtyři témata, která je v poslední době zaujala.
 
-Reagujeme na diskuzi o URL [z videa „Humans can't read URLs. How can we fix it?“](https://www.youtube.com/watch?v=0-wB1VY3Nrc), Martin představuje [Web Vitals](https://www.vzhurudolu.cz/prirucka/web-vitals) a projekt [PageSpeed.ONE](https://pagespeed.cz/) a co tyto novinky znamenají. Nakonec jsme se podívali na [Micro Frontends](https://micro-frontends.org/), velký buzzword poslední doby.
+Reagujeme na diskuzi o URL [z videa „Humans can't read URLs. How can we fix it?“](https://www.youtube.com/watch?v=0-wB1VY3Nrc), Martin představuje [Web Vitals](https://www.vzhurudolu.cz/prirucka/web-vitals) a projekt [PageSpeed.ONE](https://pagespeed.one/) a co tyto novinky znamenají. Nakonec jsme se podívali na [Micro Frontends](https://micro-frontends.org/), velký buzzword poslední doby.
 
 Tentokrát jsme vyzkoušeli novinku – podcast jsme natočili během živého streamování na YouTube.
 
@@ -46,7 +46,7 @@ Budeme rádi za každou vaši zpětnou vazbu k tomuhle novému formátu.
 - [The history of URL](https://x.com/jaffathecake/status/1274992116960235520)
 - [Web Vitals](https://www.vzhurudolu.cz/prirucka/web-vitals) 
 - [Web Vitals: Vliv na SEO + AMP](https://webmasters.googleblog.com/2020/05/evaluating-page-experience.html)
-- [Měření rychlosti PageSpeed.ONE](https://pagespeed.cz/)
+- [Měření rychlosti PageSpeed.ONE](https://pagespeed.one/)
 - [Micro Frontends](https://micro-frontends.org/)
 - [Micro Frontends na MartinFowler.com](https://martinfowler.com/articles/micro-frontends.html)
 

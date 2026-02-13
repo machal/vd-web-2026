@@ -213,7 +213,7 @@ Základní technická doporučení ke zlepšení metriky vám dá každý z vý�
 
 Zaměřím zde se hlavně tedy „soft“, nebo také procesní rady:
 
-- Monitorujte rychlost průběžně - například na [PageSpeed.ONE](https://app.pagespeed.cz/).
+- Monitorujte rychlost průběžně - například na [PageSpeed.ONE](https://pagespeed.one/app/).
 - Zaměřte se na jednotlivé metriky. Využijte [kalkulátor](https://googlechrome.github.io/lighthouse/scorecalc/), abyste dokázali odhadnout, jakých posunů můžete jejich optimalizací dosáhnout.
 - Nepřehánějte to. Sledujte hlavně data od uživatelů.
 

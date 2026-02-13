@@ -118,7 +118,7 @@ Další novinky najdete přímo [v changelogu](https://github.com/GoogleChrome/l
 
 Verze 8 populárního testeru je už nasazená v PageSpeed Insights, včetně API. K dispozici bude v DevTools od Chrome 93, už nyní pomocí osmičky můžete testovat v Chrome Canary.
 
-Na osmou verzi přešla také většina nástrojů, které Lighthouse využívá interně, jako náš [tester na PageSpeed.ONE](https://www.pagespeed.cz/):
+Na osmou verzi přešla také většina nástrojů, které Lighthouse využívá interně, jako náš [tester na PageSpeed.ONE](https://pagespeed.one/):
 
 <blockquote class="twitter-tweet"><p lang="cs" dir="ltr">Přechod měření na <a href="https://x.com/hashtag/Lighthouse8?src=hash&amp;ref_src=twsrc%5Etfw">#Lighthouse8</a> některým webům vylepšil Lighthouse Performance Score (LPS). <br>Zde např. homepage <a href="https://x.com/tsbohemia?ref_src=twsrc%5Etfw">@tsbohemia</a>.<br>Podle autorů se skóring významněji zlepší u 30 % URL. <a href="https://t.co/XXGXQC7kaB">https://t.co/XXGXQC7kaB</a> <a href="https://t.co/5BnwkqH5LR">pic.twitter.com/5BnwkqH5LR</a></p>&mdash; PageSpeed.ONE (@pagespeedcz) <a href="https://x.com/pagespeedcz/status/1404344772572164101?ref_src=twsrc%5Etfw">June 14, 2021</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

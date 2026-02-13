@@ -234,7 +234,7 @@ Lidé na webu čtou, ale musíte vyhrát v boji o jejich pozornost. Větší trp
 
 Nejprve si napište hlavní myšlenku nebo alespoň o čem článek bude nebo třeba překvapivou informaci, ke které jste došli. To musí být v nadpisu nebo v prvním odstavci. Říká se tomu[ obrácená pyramida](https://www.jakpsatweb.cz/enc/obracena-pyramida.html).
 
-Když píšu články o technologiích (na [Vzhůru dolů](https://www.vzhurudolu.cz/) nebo [PageSpeedu](https://docs.pagespeed.cz/)), snažím se vždy odpovědět na tři základní otázky:
+Když píšu články o technologiích (na [Vzhůru dolů](https://www.vzhurudolu.cz/) nebo [PageSpeedu](https://pagespeed.one/znalosti/)), snažím se vždy odpovědět na tři základní otázky:
 
 - „Co?” – o čem to právě teď píšu.
 - „Proč?“ – proč je to pro čtenáře zajímavé, důležité, užitečné, vtipné, překvapivé…

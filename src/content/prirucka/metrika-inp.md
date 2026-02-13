@@ -34,7 +34,7 @@ INP je totiž daleko přísnější. Například [Tim Kadlec](https://www.linked
 </figcaption>
 </figure>
 
-Vzal jsem 100 nejnavštěvovanějších českých e-shopů z naší [studie o rychlosti webů českých e-shopů](https://www.pagespeed.cz/blog/reshoper-2023). Je to mazec. Na mobilu jich novou metriku rychlosti reakce INP splňuje pouhých 17.
+Vzal jsem 100 nejnavštěvovanějších českých e-shopů z naší [studie o rychlosti webů českých e-shopů](https://pagespeed.one/blog/reshoper-2023). Je to mazec. Na mobilu jich novou metriku rychlosti reakce INP splňuje pouhých 17.
 
 To jsou důvody, proč mě oznámení o tom, že INP bude už za méně než rok metrikou Core Web Vitals, překvapilo.
 
@@ -179,6 +179,6 @@ Pokud vám můžu poradit, zatím si INP pro své weby změřte hlavně změřte
 
 <!-- AdSnippet -->
 
-Jestliže vám vyjdou velmi špatná čísla (červené spektrum) a chcete-li do budoucna Web Vitals splňovat a hlavně mít rychlý web, pak raději začněte připravovat plán na nápravu (s čímž vám [rádi pomůžeme](https://www.pagespeed.cz/sluzby)).
+Jestliže vám vyjdou velmi špatná čísla (červené spektrum) a chcete-li do budoucna Web Vitals splňovat a hlavně mít rychlý web, pak raději začněte připravovat plán na nápravu (s čímž vám [rádi pomůžeme](https://pagespeed.one/services)).
 
 Z mé zkušenosti je totiž právě optimalizace JavaScriptu jedna z nejsložitějších a nejdéle se táhnoucích prací na rychlosti webu. Pokud INP splňujete, nezbývá než vám gratulovat.

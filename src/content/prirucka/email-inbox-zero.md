@@ -78,7 +78,7 @@ Co mi Inbox Zero přináší? Méně stresu z přeplněného inboxu, méně obav
 
 Než se pustíme do konkrétních praktických tipů, cítím potřebu uvést svou verzi metodiky Inbox Zero do širšího kontextu.  
 
-Jak pracuji? Jsem sice freelancer, odborně se zaměřuji na [poradenství k rychlosti webu](https://www.vzhurudolu.cz/martin), ale hlavní část mé práce je dnes více méně management. Se třemi kolegy děláme konzultace pod [značkou PageSpeed.ONE](https://www.pagespeed.cz/), kde máme zhruba padesát klientů. V rámci dalšího týmu pomáhám vyvíjet [tester rychlosti](https://app.pagespeed.cz/). Spolupracuji také na managementu [komunity Frontendisti.cz](https://frontendisti.cz/) a občas tvořím články nebo [knížky](https://www.vzhurudolu.cz/ebooky) v rámci své značky Vzhůru dolů.
+Jak pracuji? Jsem sice freelancer, odborně se zaměřuji na [poradenství k rychlosti webu](https://www.vzhurudolu.cz/martin), ale hlavní část mé práce je dnes více méně management. Se třemi kolegy děláme konzultace pod [značkou PageSpeed.ONE](https://pagespeed.one/), kde máme zhruba padesát klientů. V rámci dalšího týmu pomáhám vyvíjet [tester rychlosti](https://pagespeed.one/app/). Spolupracuji také na managementu [komunity Frontendisti.cz](https://frontendisti.cz/) a občas tvořím články nebo [knížky](https://www.vzhurudolu.cz/ebooky) v rámci své značky Vzhůru dolů.
 
 Denně mi přijde kolem stovky e-mailů a nějaké ty zprávy na sociální sítě, do IM nástrojů… Je toho vcelku docela dost a bez metodiky bych byl v čudu.  
 

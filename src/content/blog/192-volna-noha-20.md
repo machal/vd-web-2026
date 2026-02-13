@@ -354,7 +354,7 @@ Zachránily mě dvě věci: úspory a boom onlinu. I když i to druhé vypadalo 
 
 Trpělivě jsem publikoval a občas přednášel o rychlosti webů, snažil se co nejlépe pomáhat klientům a začali se ozývat noví. Někdy kolem poloviny roku 2020 tato noha mého podnikání už unese skoro celou zátěž, aniž bych musel zredukovat misi podpory komunity, kterou dělám prostřednictvím Vzhůru dolů a Frontendistů.
 
-Věci také pomohl první velký výstup našeho stále hlubšího partnerství se [SUPERKODERS](https://superkoders.com/). Spustili jsme [PageSpeed.ONE](https://pagespeed.cz/), značku zaštiťující naše společné aktivity v poradenství k rychlosti webů a zároveň testovací nástroj.
+Věci také pomohl první velký výstup našeho stále hlubšího partnerství se [SUPERKODERS](https://superkoders.com/). Spustili jsme [PageSpeed.ONE](https://pagespeed.one/), značku zaštiťující naše společné aktivity v poradenství k rychlosti webů a zároveň testovací nástroj.
 
 <figure>
 <img src="https://res.cloudinary.com/vzhurudolu-cz/image/upload/v1616043824/vzhurudolu-blog/20-let-volna-noha/20-let-volna-noha.014_umuk1f.jpg" width="1600" height="900" alt="Měření rychlosti webu na PageSpeed.ONE">
@@ -401,7 +401,7 @@ Jsou věci, na které se můžu spolehnout:
 
 Co budu dělat dál? Štěstí přeje připraveným, takže zde vidím i pár příležitostí, do kterých investuji svůj čas:
 
-* Z [PageSpeed.ONE](https://pagespeed.cz/) může vyrůst buď něco jako malá agentura pro pomoc s rychlostí webů nebo nástroj, který velkou část poradenství zautomatizuje.
+* Z [PageSpeed.ONE](https://pagespeed.one/) může vyrůst buď něco jako malá agentura pro pomoc s rychlostí webů nebo nástroj, který velkou část poradenství zautomatizuje.
 * [Školení ze Vzhůru dolů](https://www.vzhurudolu.cz/kurzy) se určitě vrátí, ať už v podobě hodinových webinářů nebo kratších školení. Zkusíme i [videokurzy](https://www.vzhurudolu.cz/video) bez živého lektora, zatím jako prodej obsahu v podobě upravených záznamů z webinářů.
 * Vzhledem k tomu, že podle výše uvedeného jednou za dva roky vydávám [ebook](https://www.vzhurudolu.cz/ebooky), letos je čas na další. ;)
 * No a… rozhodl jsem se zkusit štěstí na anglicky mluvícím trhu prostřednictvím projektu Roberta Vlacha Freelancing.eu si mě můžete najmou ze zahraničí jako [web performance consultant](https://freelancing.eu/martinmichalek/).

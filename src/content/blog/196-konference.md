@@ -43,7 +43,7 @@ Další těžký úkol na mě čeká teď – vytáhnout z programu pár nejzaj�
 * [Ondřej Polesný](https://ondrabus.com/) z [Kentico](https://www.kentico.com/) nám představí nástroj **Vite**.
 * [Ondřej Žára](https://ondras.zarovi.cz/) ze [Seznamu](https://vyvojari.seznam.cz/) dorazí ukázat **10 novinek v CSS**.
 * [Vojtěch Dobeš](https://www.linkedin.com/in/vojtechdobes/?locale=cs_CZ) z [ContentKing](https://www.contentkingapp.com/) bude mluvit o kombinaci **Apollo a Typescriptu**.
-* [Zuzana Šumlanská](https://www.linkedin.com/in/zuzana-sumlanska/?originalSubdomain=cz) z [PageSpeed.ONE](https://pagespeed.cz/) připravuje přednášku o **častých chybách, které kazí Web Vitals**.
+* [Zuzana Šumlanská](https://www.linkedin.com/in/zuzana-sumlanska/?originalSubdomain=cz) z [PageSpeed.ONE](https://pagespeed.one/) připravuje přednášku o **častých chybách, které kazí Web Vitals**.
 * [Riki Fridrich](https://www.vzhurudolu.cz/lektori/riki-fridrich) vám chce ukázat, **jak na vlastní ESLint pravidlo s autofixem**.
 
 Celý program, složený ze 16 dvaceti- nebo pětiminutových přednášek najdete na webu.

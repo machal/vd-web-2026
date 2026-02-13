@@ -84,12 +84,12 @@ Michal je produkťák, zavádí Product Discovery do firem a vede startup userUP
 ## Obsah {#obsah}
 
 * Robinův tip: Kniha [Fluent React od Tejase Kumara](https://www.oreilly.com/library/view/fluent-react/9781098138707/)(0:35)
-* Martinův tip: [PLUS pro monitoring rychlosti](https://app.pagespeed.cz/plus)(4:00)
+* Martinův tip: [PLUS pro monitoring rychlosti](https://pagespeed.one/monitoring-plus)(4:00)
 * Jak to vidí Pavel Ungr? (externí konzultant)  (7:30)
 * Jak to vidí Michal Voják? (Product designer / owner) (11:50)
 * Zásadní téma: [jak se čte „JIRA“](https://confluence.atlassian.com/pages/viewpage.action?pageId=223219957)? (14:30)
 * Jak to vidí Robin? ([Productboard](https://www.productboard.com/), technický leader) (16:30)
-* Jak to vidí Martin? (externí konzultant, [produkt](https://app.pagespeed.cz/)) (18:35)
+* Jak to vidí Martin? (externí konzultant, [produkt](https://pagespeed.one/app/)) (18:35)
 * První problém: neřeší se to v jednom nástroji (20:30)
 * Druhý problém: slabý či neexistující Product Owner (26:50)
 * Triáda a raději výsledky než výstupy (28:07)
