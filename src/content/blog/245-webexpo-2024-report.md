@@ -27,7 +27,7 @@ V předchozích ročnících tomu tak nebylo. Program jsem sice měl, ale vždyc
 
 Přednášku jsem vždy nakonec viděl, to jo. Většinou posledních pět minut. WebExpo pro mě tedy fungovalo hlavně jako dokonalá networkingové akce.
 
-[Letos](https://www.vzhurudolu.cz/blog/241-webexpo-2024) jsem to měl jinak. Definitivně opouštím vývojařinu a [CSS](https://www.vzhurudolu.cz/css), posiluji specializaci na [rychlost webu](https://www.vzhurudolu.cz/rychlost-nacitani) a objevuji oblasti: [produkový management](https://www.vzhurudolu.cz/podcast/240-product-snizek) a SaaS. 
+[Letos](https://www.vzhurudolu.cz/blog/241-webexpo-2024) jsem to měl jinak. Definitivně opouštím vývojařinu a [CSS](https://www.vzhurudolu.cz/css), posiluji specializaci na [rychlost webu](https://www.vzhurudolu.cz/rychlost-nacitani) a objevuji oblasti: [produkový management](https://www.vzhurudolu.cz/podcast/240-product-snizek) a [SaaS](/prirucka/ai-saas). 
 
 Poctivě jsem prošel program, prolustroval řečníky a vybral si přednášky z těchto kategorií. Zafungovalo to skvěle. Mám pocit, že jsem se ve svých nových oborech docela posunul.
 

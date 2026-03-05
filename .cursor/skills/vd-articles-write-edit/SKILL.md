@@ -50,10 +50,11 @@ Při psaní nebo úpravách v `src/content/blog/` a `src/content/prirucka/` (a k
 4. **Citace s atribucí** – blockquote (`>`) + prázdný řádek v blockquote + atribuce: `– *<cite>[Jméno](url)</cite>*` (nebo bez odkazu `*<cite>Jméno</cite>*`). V citacích české uvozovky „ ".
 5. **Tabulky** – obalit v `<div class="rwd-scrollable f-6" markdown="1">` s prázdným řádkem mezi divem a tabulkou.
 6. **Výzva na konci** – obalit v `<small>*…*</small>` (kurzíva, malé písmo). Typicky jde o odkaz na komentování na sociálních sítích (LinkedIn, X apod.) – přidávat až po publikaci článku, když je k dispozici URL příspěvku na soc. síti.
-7. **Odkazování** – externí nástroje/služby odkazovat u prvního výskytu; vnitřní odkazy na důležité články přirozeně v textu. Odkazy nedávat do citací, figcaption, perexů ani do meta částí. Příručka: relativní cesty `nazev.md` → `/prirucka/nazev`. Blog/podcast: `/blog/…`, `/podcast/…`.
+7. **Odkazování** – externí nástroje/služby odkazovat u prvního výskytu; vnitřní odkazy na důležité články přirozeně v textu. Odkazy nedávat do citací, figcaption, perexů ani do meta částí. Příručka: relativní `.md` cesty `[Text](nazev.md)` (funguje i na GitHubu; build přepíše na `/prirucka/nazev`). Blog/podcast: `/blog/…`, `/podcast/…`.
 8. **Perex vs. text článku** – perex (`excerpt`/`perex`) je shrnutí pro RSS, náhledy a OG. Text článku by neměl perex opakovat doslova; první odstavce by měly čtenáře vtáhnout jinak než perex.
 9. **Konzistence H1 a title** – H1 v těle článku musí odpovídat `title` (příručka) nebo `postTitle` (blog/podcast) ve front matter. Stejně tak `og_title`.
 10. **Anglicismy v českém textu** – nepoužívat anglický genitiv s apostrofem (např. ~~CEO's~~); místo toho český tvar (CEO, šéfové firem apod.).
+11. **Zpětné odkazy na nový článek** – při publikaci nového článku najdi v existujících článcích alespoň 3–5 míst pro odkaz na nový text. Nikdy nepřidávej umělé „→ Související:" bloky. Místo toho: (a) hledej výskyt klíčového slova odpovídajícího URL/id nového článku a prolinkuj ho, nebo (b) na vhodné místo přímo do textu připiš stručnou zmínku s odkazem, která tam čtenářsky sedí. Odkaz musí působit, jako by tam byl od začátku.
 
 ## Obrázky – kam a jak
 

@@ -294,11 +294,10 @@ AI není náhrada vývojářů. Je to multiplikátor.
 
 Lidi pořád potřebujeme. Lidi ovládají a budou ovládat stroje. Doufám.
 
-Lidi potřebujeme pro schůzky, hovory v kuchyňce, celý offline kontext, který je stále obrovský. Pro zodpovědnost a bezpečnost. Pro rozhodnutí, která vyžadují pochopení širšího kontextu firmy a týmu.
+Lidi potřebujeme pro schůzky, hovory v kuchyňce, celý offline kontext, který je stále obrovský. Pro [zodpovědnost a bezpečnost](ai-saas.md). Pro rozhodnutí, která vyžadují pochopení širšího kontextu firmy a týmu.
 
 Vibe-coding demokratizuje technologie. Vývojáři a technologicky zdatní lidé mají výhodu. Ale musí ji využít.
 
 ---
 
 <small>*Na co jsem zapomněl, co mám špatně? Co u vibe-codingu pomáhá vám? Napište mi [e-mail](mailto:martin@vzhurudolu.cz) nebo komentujte na sociálních sítích: na [LinkedInu](), [X](https://x.com/machal/status/2021155215601263009).*</small>
-

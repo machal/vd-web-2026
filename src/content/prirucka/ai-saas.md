@@ -52,7 +52,7 @@ Ale zároveň tvrdím, že lidé se nechovají racionálně. Investoři už vůb
 
 *TODO obrázek:* https://www.linkedin.com/feed/update/urn:li:activity:7431956184410030081/ 
 
-Vychází to z toho, že softwarový vývoj prochází tektonickou změnou. [Vibe-coding](/prirucka/vibe-coding) otevřel vývoj softwaru širokým masám.
+Vychází to z toho, že softwarový vývoj prochází tektonickou změnou. [Vibe-coding](vibe-coding.md) otevřel vývoj softwaru širokým masám.
 
 Každý druhý CEO je teď programátor.
 

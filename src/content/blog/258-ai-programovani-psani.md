@@ -96,7 +96,7 @@ Platí tady to samé jako u psaní. Psaní kódu, které jistě AI velmi ovlivn�
 
 Pokud si myslíte, že programování je jen o psaní kódu, o programování toho moc nevíte.
 
-Pro AI bude těžké komunikovat s ostatními členy týmu, nést v hlavě kontext firmy nebo týmu, nést zodpovědnost a rozhodovat se v tomto kontextu, řešit etiku nebo bezpečnost v kontextu týmu, firmy nebo společnosti. Chodit na školení, konference nebo se nechat mentorovat od člověka…
+Pro AI bude těžké komunikovat s ostatními členy týmu, nést v hlavě kontext firmy nebo týmu, [nést zodpovědnost](/prirucka/ai-saas) a rozhodovat se v tomto kontextu, řešit etiku nebo bezpečnost v kontextu týmu, firmy nebo společnosti. Chodit na školení, konference nebo se nechat mentorovat od člověka…
 
 Stejně tak jiné profese, se kterými nepřicházíte do styku:
 
