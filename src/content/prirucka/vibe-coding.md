@@ -145,7 +145,7 @@ Bastliči malých webů jsou mrtví. Macaly nebo něco takového zvládne kdokol
 
 ### Příklad třetí: úpravy textů v PageSpeed.ONE {#priklad-treti-pagespeed}
 
-Miluju [psaní](psani.md). Jdu dělat úpravy textů do naší nápovědy v [PageSpeed.ONE](https://pagespeed.one/). Cursor přesně chápe kontext, umí napodobit konkrétní styl psaní. Řeknu mu jen, co chci zhruba napsat a zhruba kam. Markdowny mi upraví, přidá odkazy, udělá kontrolu.
+Miluju [psaní](/prirucka/psani). Jdu dělat úpravy textů do naší nápovědy v [PageSpeed.ONE](https://pagespeed.one/). Cursor přesně chápe kontext, umí napodobit konkrétní styl psaní. Řeknu mu jen, co chci zhruba napsat a zhruba kam. Markdowny mi upraví, přidá odkazy, udělá kontrolu.
 
 Jak říká parťák Michal Matuška: „Všichni musíme být full-stack.“ I autoři obsahu. I CEO firmy.
 
@@ -294,7 +294,7 @@ AI není náhrada vývojářů. Je to multiplikátor.
 
 Lidi pořád potřebujeme. Lidi ovládají a budou ovládat stroje. Doufám.
 
-Lidi potřebujeme pro schůzky, hovory v kuchyňce, celý offline kontext, který je stále obrovský. Pro [zodpovědnost a bezpečnost](ai-saas.md). Pro rozhodnutí, která vyžadují pochopení širšího kontextu firmy a týmu.
+Lidi potřebujeme pro schůzky, hovory v kuchyňce, celý offline kontext, který je stále obrovský. Pro [zodpovědnost a bezpečnost](/prirucka/ai-saas). Pro rozhodnutí, která vyžadují pochopení širšího kontextu firmy a týmu.
 
 Vibe-coding demokratizuje technologie. Vývojáři a technologicky zdatní lidé mají výhodu. Ale musí ji využít.
 
