@@ -3,15 +3,16 @@ id: ai-saas
 title: 'AI prý zabije SaaS. Zamysleme se nad tím ještě jednou'
 heading: 'AI prý zabije SaaS. Zamysleme se nad tím ještě jednou'
 date: 2026-03-04
-perex: 'Stávající vlna AI je bezpochyby revoluční. Jako každá revoluce bude mít vítěze a pak ty, kteří zůstanou ležet v tratolišti krve. Jenže ono mnohé třeba nebude tak, jak to vypadá.'
+perex: 'Stávající vlna AI je bezpochyby revoluční. Jako každá revoluce bude mít vítěze a pak ty, kteří zůstanou ležet v tratolišti krve. Třeba SaaS. Jenže ono mnohé třeba nebude tak, jak to vypadá.'
 published: true
 category:
   - ai
+  - saas
 category_highlight: false
 include_rss: true
 no_ads: false
 og_title: 'AI prý zabije SaaS. Zamysleme se nad tím ještě jednou'
-og_description: 'Stávající vlna AI je bezpochyby revoluční. Jako každá revoluce bude mít vítěze a pak ty, kteří zůstanou ležet v tratolišti krve. Jenže ono mnohé třeba nebude tak, jak to vypadá.'
+og_description: 'Stávající vlna AI je bezpochyby revoluční. Jako každá revoluce bude mít vítěze a pak ty, kteří zůstanou ležet v tratolišti krve. Třeba SaaS. Jenže ono mnohé třeba nebude tak, jak to vypadá.'
 og_type: article
 ---
 
@@ -36,7 +37,7 @@ Podívejte se na příklady:
 Jako třeba když bývalý majitel Twitteru, Jack Dorsey, z firmy Block vyhodil 4 000 lidí. Katastrofa, všichni přijdeme o práci! Až na to, že to je celé trochu jinak, a [Block potřeboval zeštíhlení jako sůl](https://www.facebook.com/patrick.zandl/posts/pfbid034oZikvMg74FSGKW714dAqtx6D7cNVN1GwuCZpFGBHeLWaSGW2U6w1pSAQCj3ssCLl).
 
 - **„SaaS čeká největší zkouška za posledních 20 let. A asi to nedá!“**  
-… píší jiní. A k tomuto se v tomhle textu chci vyjádřit.
+… píší jiní. Tohle je taky ptákovina. Právě k ní se v tomhle textu chci vyjádřit.
 
 Kolik takových katastrof, které za pár let zničí celá odvětví, jsme zde měli jen za posledních 10 let? Green deal. Elektromobily. Průlomy v energetice. Čína.
 
@@ -50,7 +51,12 @@ Provozujeme SaaS. Proto mě tohle téma docela zajímá. AI má na vše v tomhle
 
 Ale zároveň tvrdím, že lidé se nechovají racionálně. Investoři už vůbec ne. Ilustrujme si to na velmi oblíbeném obrázku, který ukazuje pád akcií softwarových firem.
 
-*TODO obrázek:* https://www.linkedin.com/feed/update/urn:li:activity:7431956184410030081/ 
+<figure>
+<img src="../dist/images/original/saaspokalypse.jpg" alt="SaaSpokalypse. Pád akcií softwarových firem">
+<figcaption markdown="1">
+*Zde vidíme výsledek hlasování odborníků na SaaS, AI a budoucnost.*
+</figcaption>
+</figure>
 
 Vychází to z toho, že softwarový vývoj prochází tektonickou změnou. [Vibe-coding](vibe-coding.md) otevřel vývoj softwaru širokým masám.
 
@@ -58,7 +64,7 @@ Každý druhý CEO je teď programátor.
 
 Z designérů se stávají „builders“.
 
-Každý druhý AI konzultant křičí, že Cursor, ta docela tenká nádstavba nad vývojářským editorem VS Code, je „nejlepší software, jaký byl kdy vytvořen“.
+Každý druhý AI konzultant křičí, že Cursor, ta docela tenká nádstavba nad vývojářským editorem [VS Code](https://code.visualstudio.com), je „nejlepší software, jaký byl kdy vytvořen“.
 
 Nadšení chápu. Ale jak to nadšení, tak ty temné předpovědi a nakonec i pohyb ceny akcií ukazuje na neznalost oboru softwarového vývoje.
 
@@ -68,7 +74,7 @@ Pojďme si to ilustrovat na smyšleném příkladu.
 
 Byl jednou jeden Pepík. Pepík je marketér a trochu AI konzultant, to musí.
 
-Pepík si dodnes platil fakturační SaaS službu, ale včera si „navajbil“ hypotéční kalkulačku, propadl nadšení, a dneska se rozhodl, že přestane platit SaaS a udělá si vlastní udělátko na fakturace.
+Pepík si dodnes platil fakturační SaaS službu, ale včera si „navajbil“ hypotéční kalkulačku, propadl nadšení, a dneska se rozhodl, že přestane platit SaaS a udělá si vlastní udělátko na fakturace. Protože na internetu psali, že [vývojářů už nebude potřeba](/blog/ai-programovani-psani).
 
 ### Den první – nadšení {#den-prvni}
 
@@ -104,6 +110,13 @@ Poté, co Pepík ukazoval své faktury na síti X, si s tím někdo trochu pohr�
 
 Vítej ve světě online bezpečnosti, Pepíku!
 
+<figure>
+<img src="../dist/images/original/vibe-coder-depression.jpg" alt="Vibe coder v nadšení a hluboké depresi">
+<figcaption markdown="1">
+*Pepíkova cesta.*
+</figcaption>
+</figure>
+
 A co se stane den šestý, milé čtenářky a milí čtenáři?  
 
 Pepík si jde obnovit předplatné SaaS služby.
@@ -114,7 +127,7 @@ Ať už si o reálnosti příběhu myslíte co chcete, díky němu snad už mát
 
 SaaS totiž není jen software. SaaS je často velmi komplexní technická infrastruktura (někdy zkusím naznačit, co vše obnáší testování rychlosti webu v PageSpeed.ONE). SaaS je doménová znalost problému. SaaS je know-how, které jako autor appky získáváte. SaaS je produktová vize, komunikace s cílovkou a nacházení problémů, které si vajbkodér neumí představit. SaaS je řešení stability, bezpečnosti a rychlosti řešení. 
 
-SaaS je převzetí zodpovědnosti za váš problém. Fakturoid do určité míry přebírá zodpovědnost za vaši fakturaci a část finančního řízení. My v [PageSpeed.ONE](https://pagespeed.one/) do určité míry SaaSem přebíráme zodpovědnost za řešení rychlosti vašich webů.
+SaaS je převzetí zodpovědnosti za váš problém. [Fakturoid](https://www.fakturoid.cz) do určité míry přebírá zodpovědnost za vaši fakturaci a část finančního řízení. My v [PageSpeed.ONE](https://pagespeed.one/) do určité míry SaaSem přebíráme zodpovědnost za řešení rychlosti vašich webů.
 
 Sebelepší AI vám za nic nepřevezme zodpovědnost.
 
@@ -123,5 +136,3 @@ Programování není jen psaní kódu. Proto všechny programátory nenahradí A
 SaaS není jen naprogramovaná appka. Proto všechny SaaSy nenahradí AI.
 
 Lidé, kteří předpovídají konce celých oborů, většinou ukazují velmi slabou znalost toho, co je skutečná náplň těchto oborů.
-
-→ *Související: [AI prý zvládne 80 % psaní a programování… říkají zatím hlavně ti, co nikdy nepsali a neprogramovali](/blog/ai-programovani-psani).*

@@ -46,7 +46,7 @@ Při psaní nebo úpravách v `src/content/blog/` a `src/content/prirucka/` (a k
 
 1. **České uvozovky** – pouze v prozaickém textu (odstavce, citace). Ve front matter, v HTML a v kódu vždy jen rovné ASCII uvozovky `"`.
 2. **Nadpisy H2–H6** – na konec každého nadpisu přidej anchor ve tvaru `{#slug}` (malá písmena, číslice, pomlčky; bez diakritiky). Každý anchor v článku jedinečný.
-3. **Obrázky s popiskem** – používej `<figure>`, `<img src="..." alt="...">`, `<figcaption markdown="1">` s popiskem v kurzívě. Pro dekorativní obrázek bez popisku stačí `![alt](url)`.
+3. **Obrázky s popiskem** – používej `<figure>`, `<img src="..." alt="...">`, `<figcaption markdown="1">` s popiskem v kurzívě. Pro dekorativní obrázek bez popisku stačí `![alt](url)`. **Alt u obrázků:** vždy doplň smysluplný alt text (co obrázek zobrazuje, v kontextu článku). Pokud ho neznáš nebo je to na autorovi, doplň alespoň dočasný alt a výslovně autora vyzvi: „Doplň prosím alt u obrázku …“ – nikdy obrázek nevkládej s prázdným nebo čistě generickým altem bez toho, že na to upozorníš.
 4. **Citace s atribucí** – blockquote (`>`) + prázdný řádek v blockquote + atribuce: `– *<cite>[Jméno](url)</cite>*` (nebo bez odkazu `*<cite>Jméno</cite>*`). V citacích české uvozovky „ ".
 5. **Tabulky** – obalit v `<div class="rwd-scrollable f-6" markdown="1">` s prázdným řádkem mezi divem a tabulkou.
 6. **Výzva na konci** – obalit v `<small>*…*</small>` (kurzíva, malé písmo). Typicky jde o odkaz na komentování na sociálních sítích (LinkedIn, X apod.) – přidávat až po publikaci článku, když je k dispozici URL příspěvku na soc. síti.
@@ -58,6 +58,7 @@ Při psaní nebo úpravách v `src/content/blog/` a `src/content/prirucka/` (a k
 
 ## Obrázky – kam a jak
 
+- **Alt:** U každého obrázku vždy mít vyplněný smysluplný alt; pokud ho nedoplníš sám, vyzvi autora k doplnění.
 - **Blog / podcast:** zdroje do `src/assets/img/content/` nebo `src/assets/img/blog/`. V článku: `![Popis](/assets/img/content/dest/nazev.webp)` (po buildu WebP). Příp. Cloudinary: `![Popis](https://res.cloudinary.com/vzhurudolu-cz/image/upload/…/soubor.jpg)`.
 - **Příručka:** obrázky do `src/content/prirucka/assets/images/`. V MD: `![Alt](../dist/images/original/nazev.jpg)` – build cestu přepíše na `/prirucka/images/…`. Doporučená max. šířka 1600 px, poměr 16:9.
 
