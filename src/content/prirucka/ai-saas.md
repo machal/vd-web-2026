@@ -2,7 +2,7 @@
 id: ai-saas
 title: 'AI prý zabije SaaS. Zamysleme se nad tím ještě jednou'
 heading: 'AI prý zabije SaaS. Zamysleme se nad tím ještě jednou'
-date: 2026-03-04
+date: 2026-03-06
 perex: 'Stávající vlna AI je bezpochyby revoluční. Jako každá revoluce bude mít vítěze a pak ty, kteří zůstanou ležet v tratolišti krve. Třeba SaaS. Jenže ono mnohé třeba nebude tak, jak to vypadá.'
 published: true
 category:
@@ -18,11 +18,11 @@ og_type: article
 
 # AI prý zabije SaaS. Zamysleme se nad tím ještě jednou
 
-Žijeme ve světě, kde jedna temná AI předpověď střídá druhou. Zároveň je ale dobré si uvědomit, že jako lidé přeceňujeme své znalosti oblastí, kterým nerozumíme.
+Žijeme ve světě, kde jedna temná AI předpověď střídá druhou. Zároveň je ale dobré si uvědomit, že my lidé jsme naprosto excelentní v jedné věci – přeceňování svých znalostí u oblastí, kterým nerozumíme.
 
-Tahle lidská iracionalita se vztahuje i na ty z nás, kteří milují pozornost způsobenou temnými předpověďmi. Ten nepoměr mezi sílou vyjádření a evidentní neznalostí oboru je evidentně starý jako lidstvo samo, ale i tak mě malinko rozčiluje.
+Tahle lidská iracionalita se vztahuje o to víc na ty z nás, kteří milují pozornost spouštěnou temnými předpověďmi. 
 
-Pobavme se zde zcela konkrétně, a to o „SaaSpocalypse“ – apokalypse softwarových akcií.
+Pobavme se zde zcela konkrétně, a to o „SaaSpocalypse“,  apokalypse. Akcie softwarových akcií padají, protože SaaS aplikace (Software as a Service) už nebudou potřeba. Každý si je může s AI napsat sám.
 
 ## My, iracionální lidé, a AI katastrofy {#iracionalni-lide}
 
@@ -30,29 +30,29 @@ Ano, AI mění pravidla hry. Ale ne každá změna pravidel znamená konec hry.
 
 Podívejte se na příklady:
 
-- **Junioři už nebudou potřeba. Jsou tedy bez práce!**  
-Říkají to všichni a poptávka po juniorech opravdu klesá. Jenže to opět není jen o AI, ale ekonomice jako celku. A taky o tom, že jde o [odloženou poptávku](https://www.youtube.com/watch?v=_M_vM52bcxI), protože nárůst produktivity stávajících zaměstnanců díky AI nebude nekonečný.
+- **Junioři už nebudou potřeba. Kdo se o ně postará?!**  
+Říkají to všichni a poptávka po juniorech opravdu klesá. Jenže neklesá jen vinou AI, ale ekonomiky jako celku. A taky vinou toho, že jde o [odloženou poptávku](https://www.youtube.com/watch?v=_M_vM52bcxI). Nárůst produktivity stávajících zaměstnanců díky AI nebude nekonečný.
 
 - **Zanikají pracovní místa. Jsme bez práce všichni!**  
-Jako třeba když bývalý majitel Twitteru, Jack Dorsey, z firmy Block vyhodil 4 000 lidí. Katastrofa, všichni přijdeme o práci! Až na to, že to je celé trochu jinak, a [Block potřeboval zeštíhlení jako sůl](https://www.facebook.com/patrick.zandl/posts/pfbid034oZikvMg74FSGKW714dAqtx6D7cNVN1GwuCZpFGBHeLWaSGW2U6w1pSAQCj3ssCLl).
+Jako třeba když bývalý majitel Twitteru, Jack Dorsey, z firmy Block vyhodil 4 000 lidí. Katastrofa, všichni přijdeme o práci! Až na to, že to je celé trochu jinak, a [Block potřeboval zeštíhlení jako sůl](https://www.facebook.com/patrick.zandl/posts/pfbid034oZikvMg74FSGKW714dAqtx6D7cNVN1GwuCZpFGBHeLWaSGW2U6w1pSAQCj3ssCLl). To je prostě [AI washing](https://en.wikipedia.org/wiki/AI_washing) jak vyšitý.
 
 - **„SaaS čeká největší zkouška za posledních 20 let. A asi to nedá!“**  
-… píší jiní. Tohle je taky ptákovina. Právě k ní se v tomhle textu chci vyjádřit.
+… píší jiní. Musí to být pravda. Napsali to v Hospodářských novinách, kde tomu článku dal editor titulek „Nastala doba digitálního kanibalismu. Umělá inteligence začala požírat software zevnitř“. Osobně bych chtěl, aby AI požírala spíše editory. Ale k věci – právě k SaaSpokalypse e v tomhle textu chci vyjádřit.
 
-Kolik takových katastrof, které za pár let zničí celá odvětví, jsme zde měli jen za posledních 10 let? Green deal. Elektromobily. Průlomy v energetice. Čína.
+Kolik takových katastrof, které za pár let zničí celá odvětví, jsme zde měli jen za posledních 10 let? Green deal. Elektromobily do pěti let do každé domácnosti. Blockchain vše změní. Kryptem budou platit i dělníci ze šroubárny. Metaverse je příští velká věc. Průlomy v energetice. Sejdeme se v Metaverse.
 
-Svět se mění a měnit bude, ale možná trochu jinak, než odhadujeme.
+Svět se mění a měnit bude, ale možná trochu jinak, než hlásají věrozvěstové.
 
 Zpět k SaaSu.
 
 ## SaaSpocalypse {#saaspocalypse}
 
-Provozujeme SaaS. Proto mě tohle téma docela zajímá. AI má na vše v tomhle oboru velký vliv.
+Provozujeme SaaS. Proto mě tohle téma docela zajímá. AI má na vše v tomhle oboru velký vliv. Používáme AI, strategicky sledujeme vše co se děje. Je to velké jako prase.
 
-Ale zároveň tvrdím, že lidé se nechovají racionálně. Investoři už vůbec ne. Ilustrujme si to na velmi oblíbeném obrázku, který ukazuje pád akcií softwarových firem.
+Ale zároveň vidím, že lidé se nechovají racionálně. Investoři už vůbec ne. Ilustrujme si to na nyní velmi trendujícím obrázku, který ukazuje pád akcií softwarových firem.
 
 <figure>
-<img src="../dist/images/original/saaspokalypse.jpg" alt="SaaSpokalypse. Pád akcií softwarových firem">
+<img src="/prirucka/images/saaspokalypse.jpg" alt="SaaSpokalypse. Pád akcií softwarových firem">
 <figcaption markdown="1">
 *Zde vidíme výsledek hlasování odborníků na SaaS, AI a budoucnost.*
 </figcaption>
@@ -64,17 +64,21 @@ Každý druhý CEO je teď programátor.
 
 Z designérů se stávají „builders“.
 
-Každý druhý AI konzultant křičí, že Cursor, ta docela tenká nádstavba nad vývojářským editorem [VS Code](https://code.visualstudio.com), je „nejlepší software, jaký byl kdy vytvořen“.
+Naše kočka by si stavěla vlastní SaaS. Kdybychom nějakou kočku měli…
+
+Každý druhý AI konzultant křičí, že Cursor, z pohledu interface docela tenká nádstavba nad vývojářským editorem [VS Code](https://code.visualstudio.com), je „nejlepší software, jaký byl kdy vytvořen“.
 
 Nadšení chápu. Ale jak to nadšení, tak ty temné předpovědi a nakonec i pohyb ceny akcií ukazuje na neznalost oboru softwarového vývoje.
 
 Pojďme si to ilustrovat na smyšleném příkladu.
 
+U dvanáctého postu na LinkedInu jsem se naštval. A vymyslel Pepíka.
+
 ## Pepík a jeho fakturační software {#pepik}
 
-Byl jednou jeden Pepík. Pepík je marketér a trochu AI konzultant, to musí.
+Byl jednou jeden Pepík. Pepík je marketér a trochu AI konzultant, to je jasné.
 
-Pepík si dodnes platil fakturační SaaS službu, ale včera si „navajbil“ hypotéční kalkulačku, propadl nadšení, a dneska se rozhodl, že přestane platit SaaS a udělá si vlastní udělátko na fakturace. Protože na internetu psali, že [vývojářů už nebude potřeba](/blog/ai-programovani-psani).
+Pepík si dodnes platil fakturační SaaS službu. Ale včera si „navajbil“ hypotéční kalkulačku, propadl nadšení, a dneska se rozhodl, že přestane platit SaaS a udělá si vlastní udělátko na fakturace. Protože na internetu psali, že [vývojářů už nebude potřeba](/blog/ai-programovani-psani).
 
 ### Den první – nadšení {#den-prvni}
 
@@ -111,7 +115,7 @@ Poté, co Pepík ukazoval své faktury na síti X, si s tím někdo trochu pohr�
 Vítej ve světě online bezpečnosti, Pepíku!
 
 <figure>
-<img src="../dist/images/original/vibe-coder-depression.jpg" alt="Vibe coder v nadšení a hluboké depresi">
+<img src="/prirucka/images/vibe-coder-depression.jpg" alt="Vibe coder v nadšení a hluboké depresi">
 <figcaption markdown="1">
 *Pepíkova cesta.*
 </figcaption>
