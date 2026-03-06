@@ -60,7 +60,12 @@ Při psaní nebo úpravách v `src/content/blog/` a `src/content/prirucka/` (a k
 
 - **Alt:** U každého obrázku vždy mít vyplněný smysluplný alt; pokud ho nedoplníš sám, vyzvi autora k doplnění.
 - **Blog / podcast:** zdroje do `src/assets/img/content/` nebo `src/assets/img/blog/`. V článku: `![Popis](/assets/img/content/dest/nazev.webp)` (po buildu WebP). Příp. Cloudinary: `![Popis](https://res.cloudinary.com/vzhurudolu-cz/image/upload/…/soubor.jpg)`.
-- **Příručka:** obrázky do `src/content/prirucka/assets/images/`. V MD: `![Alt](../dist/images/original/nazev.jpg)` – build cestu přepíše na `/prirucka/images/…`. Doporučená max. šířka 1600 px, poměr 16:9.
+- **Příručka** – automatický workflow:
+  1. **Přidej obrázek** (JPG/PNG) do `src/content/prirucka/assets/images/` (případně do podsložky, např. `ai-saas/`).
+  2. **V článku použij cestu** `/prirucka/images/nazev.jpg` (build ji přepíše na `.webp`). Pro podsložku: `/prirucka/images/ai-saas/nazev.jpg`.
+  3. **Konverze na WebP** proběhne automaticky při `npm run dev` nebo `npm run build` (Vite plugin). Při přidání nového souboru stačí spustit dev server nebo build.
+  4. **Formát v MD:** `<figure><img src="/prirucka/images/nazev.jpg" alt="Popis"><figcaption markdown="1">*Popisek v kurzívě.*</figcaption></figure>`
+  5. Doporučená max. šířka 1600 px, poměr 16:9.
 
 ## Validace a opravy
 
