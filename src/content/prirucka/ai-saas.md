@@ -58,7 +58,7 @@ Ale zároveň vidím, že lidé se nechovají racionálně. Investoři už vůbe
 </figcaption>
 </figure>
 
-Vychází to z toho, že softwarový vývoj prochází tektonickou změnou. [Vibe-coding](/prirucka/vibe-coding) otevřel vývoj softwaru širokým masám.
+Vychází to z toho, že softwarový vývoj prochází tektonickou změnou. [Vibe-coding](vibe-coding.md) otevřel vývoj softwaru širokým masám.
 
 Každý druhý CEO je teď programátor.
 
@@ -82,30 +82,25 @@ Pepík si dodnes platil fakturační SaaS službu. Ale včera si „navajbil“ 
 
 ### Den první – nadšení {#den-prvni}
 
-Pepík otevírá Cursor, vytvoří jakés takés zadání a po několika iteracích má řešení. Naťuká data, má fakturu, dokonce v PDF a dokonce hezčí, než nabízela původní služba. Hned běží na síť X napsat: _„Za dvě hodiny práce jsem si vytvořil stejnou aplikaci, jako je ta, za kterou jsem platil 3 000 Kč ročně. SaaS je mrtvý!!!“_
+Pepík otevírá Cursor, vytvoří jakés takés zadání a po několika iteracích má řešení. Naťuká data, má fakturu, dokonce v PDF a dokonce hezčí, než nabízela původní služba. Hned běží na síť X napsat: „Za dvě hodiny práce jsem si vytvořil stejnou aplikaci, jako je ta, za kterou jsem platil 3 000 Kč ročně. SaaS je mrtvý!!!“
 
 Vítej v krásném novém světě, kde si všichni mohou naprogramovat cokoliv, Pepíku!
 
 ### Den druhý – co je git? {#den-druhy}
 
-Jiný klient. Jiná faktura. Je potřeba přidat další kolonky. Prostě zadá prompt, aby to Cursor upravil. Něco se tam ale přitom rozbije. Už nefunguje ani původní vystavování faktur. Pepík nerozumí hláškám v terminálu. 
-Rád by se vrátil k původní verzi. Slyšel, že existuje něco jako git. Ale není čas to studovat. Nakonec to nějak hackne, ale přišel o dvě hodiny práce, ve kterých chtěl psát o tom, jak vibe-coding mění svět.
+Jiný klient. Jiná faktura. Je potřeba přidat další kolonky. Prostě zadá prompt, aby to Cursor upravil. Něco se tam ale přitom rozbije. Už nefunguje ani původní vystavování faktur. Pepík nerozumí hláškám v terminálu. Rád by se vrátil k původní verzi. Slyšel, že existuje něco jako git. Ale není čas to studovat. Nakonec to nějak hackne, ale přišel o dvě hodiny práce, ve kterých chtěl psát o tom, jak vibe-coding mění svět.
 
 Vítej ve světě verzování, Pepíku.
 
 ### Den třetí – divné hlášky v terminálu {#den-treti}
 
-Pepík se celé dopoledne učí git. Na síti X psali, že nově to musí umět i marketéři. Umí tedy verzovat a když se mu něco rozbije, udělá krok zpět. Jde tedy řešit ty divné hlášky v terminálu. 
-
-Po dvou hodinách se mu to povede, ale vlastně pořádně neví, jak. Ztratil přitom sice přehled o čase, neudělal analýzu pro klienta, ale už je z něj vlastně kromě marketéra i programátor. Vždyť programátoři jsou ti, kteří řeší divné hlášky na displeji.
+Pepík se celé dopoledne učí git. Na síti X psali, že nově to musí umět i marketéři. Umí tedy verzovat a když se mu něco rozbije, udělá krok zpět. Jde tedy řešit ty divné hlášky v terminálu. Po dvou hodinách se mu to povede, ale vlastně pořádně neví, jak. Ztratil přitom sice přehled o čase, neudělal analýzu pro klienta, ale už je z něj vlastně kromě marketéra i programátor. Vždyť programátoři jsou ti, kteří řeší divné hlášky na displeji.
 
 Vítej ve světě vývojářských základů, Pepíku.
 
 ### Den čtvrtý – cože, faktura v Eurech? {#den-ctvrty}
 
-Další den je potřeba poslat fakturu slovenskému klientovi. V Pepíkovi hrkne, protože to znamená přidat možnost mít fakturu v Eurech. To je nakonec v Cursoru hračka, ale… hele, jak je to s kurzem a přepočtem měny…? 
-
-Pepík jde studovat, za hodinu to má i s výsledkem. Nakonec mu ale klient stejně fakturu vrací, prý kvůli špatnému „vypořádání přenesené daňové povinnosti“. Pepík je zaskočen a v dokumentaci SaaS appky, kterou před pár dny přestal platit, hledá detaily. Nakonec to po třech hodinách zvládne a je připraven vystavovat faktury na Slovensko.
+Další den je potřeba poslat fakturu slovenskému klientovi. V Pepíkovi hrkne, protože to znamená přidat možnost mít fakturu v Eurech. To je nakonec v Cursoru hračka, ale… hele, jak je to s kurzem a přepočtem měny…? Pepík jde studovat, za hodinu to má i s výsledkem. Nakonec mu ale klient stejně fakturu vrací, prý kvůli špatnému „vypořádání přenesené daňové povinnosti“. Pepík je zaskočen a v dokumentaci SaaS appky, kterou před pár dny přestal platit, hledá detaily. Nakonec to po třech hodinách zvládne a je připraven vystavovat faktury na Slovensko.
 
 Vítej ve světě managementu know-how a produktových fíčur autorů SaaSových aplikací, Pepíku.
 
@@ -136,10 +131,12 @@ Ať už si o reálnosti příběhu myslíte co chcete, díky němu snad už mát
 
 SaaS totiž není jen software. SaaS je často velmi komplexní technická infrastruktura (někdy zkusím naznačit, co vše obnáší testování rychlosti webu v PageSpeed.ONE). SaaS je doménová znalost problému. SaaS je know-how, které jako autor appky získáváte. SaaS je produktová vize, komunikace s cílovkou a nacházení problémů, které si vajbkodér neumí představit. SaaS je řešení stability, bezpečnosti a rychlosti řešení. 
 
-SaaS je převzetí zodpovědnosti za váš problém. [Fakturoid](https://www.fakturoid.cz) do určité míry přebírá zodpovědnost za vaši fakturaci a část finančního řízení, [Streak](https://www.streak.com/) přebírá část zodpovědnosti za váš vztah s klienty. My v [PageSpeed.ONE](https://pagespeed.one/)  přebíráme zodpovědnost za řešení rychlosti vašich webů.
+SaaS je převzetí zodpovědnosti za váš problém. [Fakturoid](https://www.fakturoid.cz) do určité míry přebírá zodpovědnost za vaši fakturaci a část finančního řízení. My v [PageSpeed.ONE](https://pagespeed.one/) do určité míry SaaSem přebíráme zodpovědnost za řešení rychlosti vašich webů.
 
 Sebelepší AI vám za nic nepřevezme zodpovědnost.
 
-Programování není jen psaní kódu. Proto všechny programátory nenahradí AI.
+Programování není jen psaní kódu. Proto všechny programátory nenahradí AI.
 
 SaaS není jen naprogramovaná appka. Proto všechny SaaSy nenahradí AI.
+
+Lidé, kteří předpovídají konce celých oborů, většinou ukazují velmi slabou znalost toho, co je skutečná náplň těchto oborů.
