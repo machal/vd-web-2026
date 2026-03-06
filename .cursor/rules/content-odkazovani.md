@@ -14,7 +14,7 @@ Při psaní nebo větších úpravách článků v příručce a na blogu použ�
    V ostatních článcích z posledních let přidej odkaz na nový/upravený článek buď přímo do věty, nebo jako tip ve formátu:
    `→ *Související: [Název článku](/cesta).*`
 
-Příručka: relativní cesty typu `psani.md` → `/prirucka/psani`. Blog a podcast: absolutní cesty `/blog/…`, `/podcast/…`.
+Příručka: relativní cesty s příponou `.md`, např. `[text](psani.md)` (na GitHubu i po buildu fungují; build přepíše na `/prirucka/psani`). Blog a podcast: na články příručky `[text](../prirucka/nazev.md)`, na vlastní sekce absolutní cesty `/blog/…`, `/podcast/…`.
 
 **Omezení a výjimky:**
 
