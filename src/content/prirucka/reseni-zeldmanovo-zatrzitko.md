@@ -15,7 +15,7 @@ og_type: article
 
 # CSS řešení: Zeldmanovo zatržítko
 
-Podíváme se na další z řešení, které jsem ukazoval v přednášce [na WebExpo 2016](https://www.vzhurudolu.cz/prednaska/webexpo-2016-246).
+Podíváme se na další z řešení, které jsem ukazoval v přednášce na WebExpo 2016.
 
 Je to jednoduchá, ale efektní věc postavená na [animovaných přechodech](css3-transitions.md) a [transformacích](css3-transformations.md). Zatržítko mě zaujalo právě svou jednoduchostí.
 

@@ -116,6 +116,38 @@ RedirectMatch 301 ^/prirucka/viewport-mobily$ /prirucka/viewport
 RedirectMatch 301 ^/amp/(.+) /$1
 
 # -----------------------------------------------------------------------------
+# Video stránky (produktové stránky zrušeny, videa na YouTube)
+# -----------------------------------------------------------------------------
+
+RedirectMatch 301 ^/video/webinar-[^/]+/objednavka/?$ /video
+RedirectMatch 301 ^/video/webinar-[^/]+/?$ /video
+RedirectMatch 301 ^/video/firmy/?$ /video
+
+# -----------------------------------------------------------------------------
+# Blog 77-css-v-js → podcast
+# -----------------------------------------------------------------------------
+
+Redirect 301 /blog/77-css-v-js /podcast/css-v-js
+
+# -----------------------------------------------------------------------------
+# Překlepy a neexistující slugy v příručce
+# -----------------------------------------------------------------------------
+
+RedirectMatch 301 ^/prirucka/css-mulicolumn$ /prirucka/css-multicolumn
+RedirectMatch 301 ^/prirucka/google-Search-Console$ /prirucka/google-search-console
+RedirectMatch 301 ^/prirucka/kap-dokumet$ /prirucka/kap-dokument
+RedirectMatch 301 ^/prirucka/css3-multiple-backgorunds$ /prirucka/css3-multiple-backgrounds
+RedirectMatch 301 ^/prirucka/grid-template-areas$ /prirucka/css-grid-template-areas
+RedirectMatch 301 ^/prirucka/css-media-queries$ /prirucka/css3-media-queries
+RedirectMatch 301 ^/prirucka/media-queries$ /prirucka/css3-media-queries
+
+# -----------------------------------------------------------------------------
+# Ostatní neexistující stránky (lektori, prace, prednaska…)
+# -----------------------------------------------------------------------------
+
+Redirect 301 /lektori/martin-michalek /martin
+
+# -----------------------------------------------------------------------------
 # Bootstrap a dalsi
 # -----------------------------------------------------------------------------
 

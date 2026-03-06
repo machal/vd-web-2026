@@ -109,7 +109,7 @@ Pattern Lab totiž není:
 
 Je to nástroj pro *návrh*. Tedy spíše v kategorii Photoshop nebo Sketch. Jejda, to byla bolest, než mě došlo, že se nehodí k nasazení na existující projekt, ale že projekt se musí přizpůsobit jemu. 
 
-V obvyklých případech vás bude přidání Pattern Labu do vašeho designérského workflow stát určité úsilí. U mě to bylo snadné, protože asi víte, že jsem zblázněný do návrhu rozhraní [přímo v prohlížeči](https://www.vzhurudolu.cz/prednaska/design-webu-v-prohlizeci-149). 
+V obvyklých případech vás bude přidání Pattern Labu do vašeho designérského workflow stát určité úsilí. U mě to bylo snadné, protože asi víte, že jsem zblázněný do návrhu rozhraní přímo v prohlížeči. 
 
 Kromě návrhu ale Pattern Lab dokáže *testovat*, ověřovat designérské hypotézy přímo v prohlížeči, v různých obsahových nebo uživatelských kontextech. To je, řekl bych, jeho hlavní silná stránka. Vy totiž dobře víte, že spíše turista z Francouze vytáhne anglickou větu než vy ze svého Photoshopu či Sketche prototyp testovatelný v prohlížeči. Tady je ta budoucnost, kterou jsem zmiňoval na začátku.
 

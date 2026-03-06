@@ -111,7 +111,7 @@ BEM navíc není žádná novinka a mezi kodéry je slušně zavedený. Takže p
 
 To je častá výtka, zejména programátorů. Estetický pohled je subjektivní, takže se podle toho těžko rozhodovat, zda metodiku použít nebo ne. 
 
-Ano, může to vypadat ošklivě. Ale buď vám BEM vyřeší nějaký problém nebo ne. Pokud ano, používejte ho. Já to *rozhodně* doporučuji. Výjimku tvoří úplně malinké projekty nebo [generování CSS Javascriptem](https://www.vzhurudolu.cz/blog/77-css-v-js) v aplikacích plně na JS závislých.
+Ano, může to vypadat ošklivě. Ale buď vám BEM vyřeší nějaký problém nebo ne. Pokud ano, používejte ho. Já to *rozhodně* doporučuji. Výjimku tvoří úplně malinké projekty nebo [generování CSS Javascriptem](/podcast/css-v-js) v aplikacích plně na JS závislých.
 
 A teď se do BEMu ponořme hlouběji. 
 

@@ -19,18 +19,26 @@ export const rehypePriruckaLinks: Plugin<[], Root> = () => {
         
         // Zkontrolovat, zda odkaz končí na .md a není absolutní URL
         // Ignorovat odkazy začínající na http, https, // nebo /
-        if (href.endsWith('.md') && 
-            !href.startsWith('http') && 
-            !href.startsWith('//') && 
-            !href.startsWith('/')) {
-          // Odstranit .md příponu
-          const withoutExtension = href.replace(/\.md$/, '');
-          
-          // Vzít jen název souboru (bez cesty, pokud je v cestě)
-          const filename = withoutExtension.split('/').pop() || withoutExtension;
-          
-          // Převést na URL příručky
-          node.properties.href = `/prirucka/${filename}`;
+        if (href.endsWith('.md')) {
+          let newHref: string | null = null;
+          // Relativní odkaz (css-grid.md)
+          if (!href.startsWith('http') && !href.startsWith('//') && !href.startsWith('/')) {
+            const withoutExtension = href.replace(/\.md$/, '');
+            const filename = withoutExtension.split('/').pop() || withoutExtension;
+            newHref = `/prirucka/${filename}`;
+          }
+          // Absolutní cesta /prirucka/xxx.md
+          else if (href.startsWith('/prirucka/') && href.endsWith('.md')) {
+            newHref = href.replace(/\.md$/, '');
+          }
+          // Plná URL vzhurudolu.cz/prirucka/xxx.md
+          else if (href.includes('vzhurudolu.cz/prirucka/') && href.endsWith('.md')) {
+            const match = href.match(/\/prirucka\/([^/?#]+)\.md/);
+            if (match) newHref = `/prirucka/${match[1]}`;
+          }
+          if (newHref) {
+            node.properties.href = newHref;
+          }
         }
       }
       

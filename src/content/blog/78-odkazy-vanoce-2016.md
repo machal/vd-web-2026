@@ -23,7 +23,7 @@ Já vím, já vím… Na svátky je lepší být vklidu, s rodinou a odpočívat
 
 * **[Container-based RWD with element queries](http://www.creativebloq.com/web-design/container-based-rwd-element-queries-11618978).** [Media Queries](/prirucka/css3-media-queries) jsou super, ale vlastně bychom je skoro nepotřebovali. Když bychom měli Container Queries. Zatím spíše hackování, ale síla je v tom velká.
 * **[Tutoriály: CSS3 Grid By Example](http://gridbyexample.com/examples/)**. CSS3 Grid Layout příští rok dorazí do prohlížečů a kromě [flexboxu](/prirucka/css3-flexbox) se musíme naučit ještě tohle. Je to velké a můžete mít náskok.
-* **[Můj podcast: S Robinem Pokorným o CSS v Javascriptu](http://www.vzhurudolu.cz/blog/77-css-v-js)**. Styly psané uvnitř JS kódu. Vše co jste o nich chtěli vědět.
+* **[Můj podcast: S Robinem Pokorným o CSS v Javascriptu](/podcast/css-v-js)**. Styly psané uvnitř JS kódu. Vše co jste o nich chtěli vědět.
 * **[Ebook: JavaScript for Web Designers](http://alistapart.com/article/javascript-for-web-designers)**. Tak kolik let se už chystáte vykašlat na jQuery?
 * **[Článek: The Single Biggest Mistake Programmers Make Every Day](https://medium.com/javascript-scene/the-single-biggest-mistake-programmers-make-every-day-62366b432308#.gpruz0ni0).** Něco pro plnohodnotné programátory.
 * **[Článek: Here’s Why Client-side Rendering Won](https://medium.freecodecamp.com/heres-why-client-side-rendering-won-46a349fadb52#.tb3ksyjob).** Ze světa Javascriptu. Backenďáci, na tohle neklikejte! ;)

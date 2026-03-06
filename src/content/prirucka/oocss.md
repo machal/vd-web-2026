@@ -54,7 +54,7 @@ Cílem OOCSS je kromě zajištění znovupoužitelnosti kódu i zlepšení jeho 
 </aside>
 
 
-Myslím, že uplatnění objektových principů na psaní CSS je jistým způsobem nutnost. Alespoň u webů, [psaní javascriptových aplikací](https://www.vzhurudolu.cz/blog/77-css-v-js) totiž může být z pohledu organizace CSS úplně jiná písnička.
+Myslím, že uplatnění objektových principů na psaní CSS je jistým způsobem nutnost. Alespoň u webů, [psaní javascriptových aplikací](/podcast/css-v-js) totiž může být z pohledu organizace CSS úplně jiná písnička.
 
 Ukažme si nejprve zjednodušený kód komponenty s tlačítkem:
 

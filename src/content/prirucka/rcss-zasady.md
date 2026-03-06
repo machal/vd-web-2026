@@ -34,7 +34,7 @@ Tyhle zásady psaní vycházejí z [OOCSS](oocss.md), [BEM](bem.md) a dalších 
 ## Předpoklady {#predpoklady}
 
 - Design vašeho projektu je vymyšlený komponentově a systematicky, ideálně podle principů [atomického designu](pattern-lab.md). Výjimky jsou možné, ale nesmí být moc časté.
-- Píšete čisté nebo preprocesorové CSS, nikoliv [CSS v JS](https://www.vzhurudolu.cz/podcast/77-css-v-js).
+- Píšete čisté nebo preprocesorové CSS, nikoliv [CSS v JS](/podcast/css-v-js).
 - Styly nezapisujete výlučně pomocí [užitkových tříd](https://www.vzhurudolu.cz/podcast/103-podcast-fakturoid-css).
 
 ## Doporučené nástroje {#nastroje}
