@@ -69,8 +69,26 @@ npm run preview
 
 ## Nasazení na produkci
 
-1. Lokální build: `npm run build`
-2. Obsah složky `dist/` nahrajte na server pomocí Transmitu (nebo jiného FTP/SFTP klienta)
+Deploy probíhá přes **GitHub Actions** na FTP. Používá se [FTP Deploy Action](https://github.com/SamKirkland/FTP-Deploy-Action) (SamKirkland): na GitHubu se spustí build, na server se nahrají jen **změněné soubory** (inkrementální sync podle state souboru na serveru).
+
+### Co je potřeba
+
+- V repozitáři (**Settings → Secrets and variables → Actions**) nastavit tři secrets:
+  - `FTP_SERVER` – adresa FTP (např. `ftp.domena.cz`)
+  - `FTP_USERNAME` – FTP uživatel
+  - `FTP_PASSWORD` – FTP heslo
+- Workflow je v [.github/workflows/deploy-ftp.yml](.github/workflows/deploy-ftp.yml). Volitelně tam lze upravit `server-dir` (kam na serveru, např. `public_html/`) a pro FTPS odkomentovat `protocol: ftps` a `port: 990`.
+
+### Jak deploy spustit
+
+1. **Automaticky** – při každém pushu na větev `master` nebo `main` se spustí build a nahrání na FTP.
+2. **Ručně** – v GitHubu: **Actions** → workflow **Deploy na FTP** → **Run workflow** → **Run workflow**.
+
+Žádné přihlašovací údaje nejsou v repozitáři, pouze v GitHub Secrets.
+
+### Alternativa (bez GitHub Actions)
+
+Lokální build: `npm run build`, pak obsah složky `dist/` nahrajte na server vlastním FTP/SFTP klientem (např. Transmit).
 
 ## Konfigurace
 
