@@ -133,10 +133,10 @@ SaaS totiž není jen software. SaaS je často velmi komplexní technická infra
 
 SaaS je převzetí zodpovědnosti za váš problém. [Fakturoid](https://www.fakturoid.cz) do určité míry přebírá zodpovědnost za vaši fakturaci a část finančního řízení. My v [PageSpeed.ONE](https://pagespeed.one/) do určité míry SaaSem přebíráme zodpovědnost za řešení rychlosti vašich webů.
 
-Sebelepší AI vám za nic nepřevezme zodpovědnost.
+Sebelepší AI za nic nepřevezme zodpovědnost.
 
-Programování není jen psaní kódu. Proto všechny programátory nenahradí AI.
+Programování není jen psaní kódu. Proto všechny programátory nenahradí AI.
 
-SaaS není jen naprogramovaná appka. Proto všechny SaaSy nenahradí AI.
+SaaS není jen naprogramovaná appka. Proto všechny SaaSy nenahradí AI.
 
 Lidé, kteří předpovídají konce celých oborů, většinou ukazují velmi slabou znalost toho, co je skutečná náplň těchto oborů.
