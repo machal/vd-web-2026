@@ -138,5 +138,3 @@ Sebelepší AI za nic nepřevezme zodpovědnost.
 Programování není jen psaní kódu. Proto všechny programátory nenahradí AI.
 
 SaaS není jen naprogramovaná appka. Proto všechny SaaSy nenahradí AI.
-
-Lidé, kteří předpovídají konce celých oborů, většinou ukazují velmi slabou znalost toho, co je skutečná náplň těchto oborů.
