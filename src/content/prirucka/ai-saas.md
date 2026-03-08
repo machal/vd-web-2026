@@ -20,9 +20,9 @@ og_type: article
 
 Žijeme ve světě, kde jedna temná AI předpověď střídá druhou. Zároveň je ale dobré si uvědomit, že my lidé jsme naprosto excelentní v jedné věci – přeceňování svých znalostí u oblastí, kterým nerozumíme.
 
-Tahle lidská iracionalita se vztahuje o to víc na ty z nás, kteří milují pozornost spouštěnou temnými předpověďmi. 
+Tahle lidská iracionalita se vztahuje o to víc na ty z nás, kteří milují pozornost spouštěnou temnými předpověďmi.
 
-Pobavme se zde zcela konkrétně, a to o „SaaSpocalypse“,  apokalypse. Akcie softwarových akcií padají, protože SaaS aplikace (Software as a Service) už nebudou potřeba. Každý si je může s AI napsat sám.
+Pobavme se zde zcela konkrétně, a to o „SaaSpocalypse“,  apokalypse SaaS firem. Akcie softwarových akcií padají, protože SaaS aplikace (Software as a Service) už nebudou potřeba. Každý si je může s AI napsat sám.
 
 ## My, iracionální lidé, a AI katastrofy {#iracionalni-lide}
 
@@ -37,9 +37,11 @@ Podívejte se na příklady:
 Jako třeba když bývalý majitel Twitteru, Jack Dorsey, z firmy Block vyhodil 4 000 lidí. Katastrofa, všichni přijdeme o práci! Až na to, že to je celé trochu jinak, a [Block potřeboval zeštíhlení jako sůl](https://www.facebook.com/patrick.zandl/posts/pfbid034oZikvMg74FSGKW714dAqtx6D7cNVN1GwuCZpFGBHeLWaSGW2U6w1pSAQCj3ssCLl). To je prostě [AI washing](https://en.wikipedia.org/wiki/AI_washing) jak vyšitý.
 
 - **„SaaS čeká největší zkouška za posledních 20 let. A asi to nedá!“**  
-… píší jiní. Musí to být pravda. Napsali to v Hospodářských novinách, kde tomu článku dal editor titulek „Nastala doba digitálního kanibalismu. Umělá inteligence začala požírat software zevnitř“. Osobně bych chtěl, aby AI požírala spíše editory. Ale k věci – právě k SaaSpokalypse e v tomhle textu chci vyjádřit.
+… píší jiní. Musí to být pravda. Napsali to v Hospodářských novinách, kde tomu článku dal editor titulek „Nastala doba digitálního kanibalismu. Umělá inteligence začala požírat software zevnitř“. Osobně bych chtěl, aby AI požírala spíše editory, kteří vymyslí takový titulek. Ale k věci – právě k SaaSpokalypse se v tomhle textu chci vyjádřit.
 
-Kolik takových katastrof, které za pár let zničí celá odvětví, jsme zde měli jen za posledních 10 let? Green deal. Elektromobily do pěti let do každé domácnosti. Blockchain vše změní. Kryptem budou platit i dělníci ze šroubárny. Metaverse je příští velká věc. Průlomy v energetice. Sejdeme se v Metaverse.
+Kolik takových katastrof, které za pár let zničí celá odvětví, jsme zde měli jen za posledních 10 let? Elektromobily do pěti let do každé domácnosti. Blockchain vše změní. Kryptem budou platit i dělníci ze šroubárny. Průlomy v energetice.
+
+Sejdeme se v Metaverse, kde budeme sledovat konec Evropy způsobený Green Dealem.
 
 Svět se mění a měnit bude, ale možná trochu jinak, než hlásají věrozvěstové.
 
@@ -49,7 +51,7 @@ Zpět k SaaSu.
 
 Provozujeme SaaS. Proto mě tohle téma docela zajímá. AI má na vše v tomhle oboru velký vliv. Používáme AI, strategicky sledujeme vše co se děje. Je to velké jako prase.
 
-Ale zároveň vidím, že lidé se nechovají racionálně. Investoři už vůbec ne. Ilustrujme si to na nyní velmi trendujícím obrázku, který ukazuje pád akcií softwarových firem.
+Ale zároveň vidím, že se lidé nechovají racionálně. Investoři už vůbec ne. Ilustrujme si to na nyní velmi trendujícím obrázku, který ukazuje pád akcií softwarových firem.
 
 <figure>
 <img src="/prirucka/images/saaspokalypse.jpg" alt="SaaSpokalypse. Pád akcií softwarových firem">
@@ -66,7 +68,7 @@ Z designérů se stávají „builders“.
 
 Naše kočka by si stavěla vlastní SaaS. Kdybychom nějakou kočku měli…
 
-Každý druhý AI konzultant křičí, že Cursor, z pohledu interface docela tenká nádstavba nad vývojářským editorem [VS Code](https://code.visualstudio.com), je „nejlepší software, jaký byl kdy vytvořen“.
+Lecjaký AI konzultant křičí, že Cursor, z pohledu interface docela tenká nádstavba nad vývojářským editorem [VS Code](https://code.visualstudio.com), je „nejlepší software, jaký byl kdy vytvořen“.
 
 Nadšení chápu. Ale jak to nadšení, tak ty temné předpovědi a nakonec i pohyb ceny akcií ukazuje na neznalost oboru softwarového vývoje.
 
@@ -76,9 +78,9 @@ U dvanáctého postu na LinkedInu jsem se naštval. A vymyslel Pepíka.
 
 ## Pepík a jeho fakturační software {#pepik}
 
-Byl jednou jeden Pepík. Pepík je marketér a trochu AI konzultant, to je jasné.
+Byl jednou jeden Pepík. Pepík je marketér a trochu AI konzultant. Pepík je smyšlená postava, aby bylo jasno.
 
-Pepík si dodnes platil fakturační SaaS službu. Ale včera si „navajbil“ hypotéční kalkulačku, propadl nadšení, a dneska se rozhodl, že přestane platit SaaS a udělá si vlastní udělátko na fakturace. Protože na internetu psali, že [vývojářů už nebude potřeba](/blog/ai-programovani-psani).
+Pepík si dodnes platil fakturační SaaS službu. Ale včera si „navajbil“ hypotéční kalkulačku, propadl nadšení, a dneska se rozhodl, že přestane platit SaaS a udělá si vlastní udělátko na fakturace. Protože na internetu psali, že [vývojářů už nebude potřeba](../blog/258-ai-programovani-psani.md).
 
 ### Den první – nadšení {#den-prvni}
 
@@ -88,19 +90,25 @@ Vítej v krásném novém světě, kde si všichni mohou naprogramovat cokoliv, 
 
 ### Den druhý – co je git? {#den-druhy}
 
-Jiný klient. Jiná faktura. Je potřeba přidat další kolonky. Prostě zadá prompt, aby to Cursor upravil. Něco se tam ale přitom rozbije. Už nefunguje ani původní vystavování faktur. Pepík nerozumí hláškám v terminálu. Rád by se vrátil k původní verzi. Slyšel, že existuje něco jako git. Ale není čas to studovat. Nakonec to nějak hackne, ale přišel o dvě hodiny práce, ve kterých chtěl psát o tom, jak vibe-coding mění svět.
+Jiný klient. Jiná faktura. Je potřeba přidat další kolonky. Prostě zadá prompt, aby to Cursor upravil. Něco se tam ale přitom rozbije. Už nefunguje ani původní vystavování faktur. Pepík nerozumí hláškám v terminálu.
+
+Rád by se vrátil k původní verzi. Slyšel, že existuje něco jako git. Ale není čas to studovat. Nakonec to nějak hackne, ale přišel o dvě hodiny práce, ve kterých chtěl psát o tom, jak vibe-coding mění svět.
 
 Vítej ve světě verzování, Pepíku.
 
 ### Den třetí – divné hlášky v terminálu {#den-treti}
 
-Pepík se celé dopoledne učí git. Na síti X psali, že nově to musí umět i marketéři. Umí tedy verzovat a když se mu něco rozbije, udělá krok zpět. Jde tedy řešit ty divné hlášky v terminálu. Po dvou hodinách se mu to povede, ale vlastně pořádně neví, jak. Ztratil přitom sice přehled o čase, neudělal analýzu pro klienta, ale už je z něj vlastně kromě marketéra i programátor. Vždyť programátoři jsou ti, kteří řeší divné hlášky na displeji.
+Pepík se celé dopoledne učí git. Na síti X psali, že nově to musí umět i marketéři. Umí tedy verzovat a když se mu něco rozbije, udělá krok zpět. Jde tedy řešit ty divné hlášky v terminálu.
+
+Po dvou hodinách se mu to povede, ale vlastně pořádně neví, jak. Ztratil přitom sice přehled o čase, neudělal analýzu pro klienta, ale už je z něj vlastně kromě marketéra i programátor. Vždyť programátoři jsou ti, kteří řeší divné hlášky na displeji.
 
 Vítej ve světě vývojářských základů, Pepíku.
 
 ### Den čtvrtý – cože, faktura v Eurech? {#den-ctvrty}
 
-Další den je potřeba poslat fakturu slovenskému klientovi. V Pepíkovi hrkne, protože to znamená přidat možnost mít fakturu v Eurech. To je nakonec v Cursoru hračka, ale… hele, jak je to s kurzem a přepočtem měny…? Pepík jde studovat, za hodinu to má i s výsledkem. Nakonec mu ale klient stejně fakturu vrací, prý kvůli špatnému „vypořádání přenesené daňové povinnosti“. Pepík je zaskočen a v dokumentaci SaaS appky, kterou před pár dny přestal platit, hledá detaily. Nakonec to po třech hodinách zvládne a je připraven vystavovat faktury na Slovensko.
+Další den je potřeba poslat fakturu slovenskému klientovi. V Pepíkovi hrkne, protože to znamená přidat možnost mít fakturu v Eurech. To je nakonec v Cursoru hračka, ale… hele, jak je to s kurzem a přepočtem měny…? Pepík jde studovat, za hodinu to má i s výsledkem.
+
+Nakonec mu ale klient stejně fakturu vrací, prý kvůli špatnému „vypořádání přenesené daňové povinnosti“. Pepík je zaskočen a v dokumentaci SaaS appky, kterou před pár dny přestal platit, hledá detaily. Nakonec to po třech hodinách zvládne a je připraven vystavovat faktury na Slovensko.
 
 Vítej ve světě managementu know-how a produktových fíčur autorů SaaSových aplikací, Pepíku.
 
@@ -127,9 +135,11 @@ Pepík si jde obnovit předplatné SaaS služby.
 
 Ať už si o reálnosti příběhu myslíte co chcete, díky němu snad už máte v hlavě alespoň základní strukturu toho, co poskytuje většina SaaS služeb.
 
-### SaaS je o převzetí zodpovědnosti {#prevzeti-zodpovednosti}
+### SaaS je zpoplatněné převzetí zodpovědnosti {#prevzeti-zodpovednosti}
 
-SaaS totiž není jen software. SaaS je často velmi komplexní technická infrastruktura (někdy zkusím naznačit, co vše obnáší testování rychlosti webu v PageSpeed.ONE). SaaS je doménová znalost problému. SaaS je know-how, které jako autor appky získáváte. SaaS je produktová vize, komunikace s cílovkou a nacházení problémů, které si vajbkodér neumí představit. SaaS je řešení stability, bezpečnosti a rychlosti řešení. 
+SaaS totiž není jen software.
+
+SaaS je často velmi komplexní technická infrastruktura (někdy zkusím naznačit, co vše obnáší testování rychlosti webu v PageSpeed.ONE). SaaS je doménová znalost problému. SaaS je know-how, které jako autor appky získáváte. SaaS je produktová vize, komunikace s cílovkou a nacházení problémů, které si vajbkodér neumí představit. SaaS je řešení stability, bezpečnosti a rychlosti řešení.
 
 SaaS je převzetí zodpovědnosti za váš problém. [Fakturoid](https://www.fakturoid.cz) do určité míry přebírá zodpovědnost za vaši fakturaci a část finančního řízení. My v [PageSpeed.ONE](https://pagespeed.one/) do určité míry SaaSem přebíráme zodpovědnost za řešení rychlosti vašich webů.
 
