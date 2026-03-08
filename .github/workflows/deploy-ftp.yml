@@ -3,7 +3,6 @@ name: Deploy na FTP
 on:
   push:
     branches: [master, main]
-  workflow_dispatch:
 
 jobs:
   deploy:

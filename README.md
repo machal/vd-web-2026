@@ -81,8 +81,7 @@ Deploy probíhá přes **GitHub Actions** na FTP. Používá se [FTP Deploy Acti
 
 ### Jak deploy spustit
 
-1. **Automaticky** – při každém pushu na větev `master` nebo `main` se spustí build a nahrání na FTP.
-2. **Ručně** – v GitHubu: **Actions** → workflow **Deploy na FTP** → **Run workflow** → **Run workflow**.
+Při každém pushu na větev `master` nebo `main` se spustí build a nahrání na FTP.
 
 Žádné přihlašovací údaje nejsou v repozitáři, pouze v GitHub Secrets.
 
