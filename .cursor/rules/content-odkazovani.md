@@ -1,8 +1,8 @@
-# Odkazování v článcích (příručka a blog)
+# Odkazování v článcích (příručka, blog, podcast)
 
-globs: src/content/prirucka/**/*.md, src/content/blog/**/*.md
+globs: src/content/prirucka/**/*.md, src/content/blog/**/*.md, src/content/podcast/**/*.md
 
-Při psaní nebo větších úpravách článků v příručce a na blogu používej **vždy** tuto formu odkazování:
+Při psaní nebo větších úpravách článků v příručce, blogu a podcastu používej **vždy** tuto formu odkazování:
 
 1. **Externí nástroje a služby**  
    Na oficiální stránku nebo dokumentaci odkazuj **vždy u prvního výskytu** daného slova nebo spojení v textu (ne u každého opakování).
@@ -14,7 +14,19 @@ Při psaní nebo větších úpravách článků v příručce a na blogu použ�
    V ostatních článcích z posledních let přidej odkaz na nový/upravený článek buď přímo do věty, nebo jako tip ve formátu:
    `→ *Související: [Název článku](/cesta).*`
 
-Příručka: relativní cesty s příponou `.md`, např. `[text](psani.md)` (na GitHubu i po buildu fungují; build přepíše na `/prirucka/psani`). Blog a podcast: na články příručky `[text](../prirucka/nazev.md)`, na vlastní sekce absolutní cesty `/blog/…`, `/podcast/…`.
+## Formát interních odkazů (povinně .md)
+
+**Interní odkazy na články (blog, příručka, podcast) piš vždy na konkrétní .md soubor.** V Markdownu nikdy nepoužívej hotové URL typu `/blog/258-…` ani `/prirucka/nazev` – build je přepisuje z .md cest.
+
+- **V příručce:** `[text](nazev-clanku.md)` → build přepíše na `/prirucka/nazev-clanku`.
+- **Mezi sekcemi:** `[text](../blog/258-nazev.md)` nebo `[text](../prirucka/nazev.md)` nebo `[text](../podcast/258-nazev.md)` → build přepíše na `/blog/…`, `/prirucka/…`, `/podcast/…`.
+- **Špatně:** `[text](/blog/258-nazev)`, `[text](/prirucka/nazev)` – v MD souborech takové odkazy nepoužívat.
+
+Pravidlo platí pro odkazy z Markdownu i z HTML (`<a href="…">`). Externí odkazy (https://…) a odkazy na nečlánkové části webu (`/blog`, `/podcast`, `/kurzy`, `/martin` atd.) používej dál normálně – ty se nepřepisují.
+
+Kontrola: před commitem nebo na vyžádání použij skill **content-internal-links-md** (ověří, že interní odkazy na články jsou jen v .md formátu).
+
+Příručka: relativní cesty s příponou `.md`, např. `[text](psani.md)`. Blog a podcast: na články příručky `[text](../prirucka/nazev.md)`, na blog `[text](../blog/nazev.md)`, na podcast `[text](../podcast/nazev.md)`. Na vlastní sekce (úvodní stránky) lze použít absolutní cesty `/blog`, `/podcast`.
 
 **Omezení a výjimky:**
 
