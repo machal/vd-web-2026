@@ -15,7 +15,7 @@ Vy z knížky využijete největší část. Získáte přehled o postupech a te
 
 ## 2) Designéři, grafici, marketéři
 
-Vaší pozornosti doporučím hlavně kapitoly [o statistikách](kap-prostredi.md), [rychlosti načítání](kap-rychlost.md), [návrhu rozhraní v éře mobilů](kap-ui.md), [procesu návrhu UI](kap-ui-proces.md) a [responzivních navigacích](kap-navigace.md).  Věřím ale, že vás nalákám i do dalších textů a získáte tak hrubý přehled o technologických základech, na kterých weby společně stavíme.
+Vaší pozornosti doporučím hlavně články [o mobilních a responzivních webech](mobilni-responzivni-adaptivni.md), [rychlosti načítání](rychlost-nacitani-proc.md), [procesu návrhu UI](proces-navrhu-ui.md) a [responzivních navigacích](responzivni-navigace.md).  Věřím ale, že vás nalákám i do dalších textů a získáte tak hrubý přehled o technologických základech, na kterých weby společně stavíme.
 
 ## 3) Začátečníci a méně zkušení
 
@@ -33,7 +33,7 @@ Kvůli zachování tempa vyprávění jsem se samozřejmě i v procesu jeho tvor
 
 1. [Definici potřeb uživatelů a cílů webu](priklad-ux-canvas.md)
 2. [Přípravu obsahu webu](priklad-obsah.md)
-3. [Výběr barvy a typografie](priklad-barvy-typografie.md)
+3. [Výběr barvy a typografie](grafika-zdroje.md)
 4. [Návrh a nakódování dokumentové vrstvy designu](priklad-dokument.md)
 5. [Implementaci responzivních médií](priklad-media.md)
 6. [Návrh komponenty uživatelského rozhraní](priklad-navrh-komponenty.md)

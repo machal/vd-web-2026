@@ -151,7 +151,7 @@ Jen pro pořádek – je potřeba odlišit [GDPR](gdpr.md) a nový odstaveček z
 
 V prvé fázi jsem u všech svých webů přemýšlel nad tímto nejčistším řešením. U miniaturních webů je to realizovatelné například tím, že přestanete měřit analytikou, která nějak identifikuje uživatele. Nebo analytiku opustíte úplně a vystačíte si například s daty z Google Search Console.
 
-Pokud potřebujete jakékoliv běžně měření typu [Google Analytics](google-analytics.md), cookie lištu musíte mít.
+Pokud potřebujete jakékoliv běžně měření typu [Google Analytics](google-analytics-pridani.md), cookie lištu musíte mít.
 
 Pokud do webu vkládáte jakoukoliv jinou komponent třetí strany (YouTube a jiné embedy, Google Tag Manager, chat, Google Fonts…), pak vysoce pravděpodobně cookie lištu musíte mít.
 

@@ -1,0 +1,97 @@
+---
+// Stránkování blogu – /blog/p=2, /blog/p=3, atd.
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import ArticleListItem from '../../components/ArticleListItem.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const postsPerPage = 10;
+  const blogPosts = await getCollection('blog', (entry) => entry.data.published !== false);
+  const sorted = blogPosts.sort((a, b) => {
+    const dateA = a.data.date || new Date(0);
+    const dateB = b.data.date || new Date(0);
+    return dateB.getTime() - dateA.getTime();
+  });
+
+  const totalPages = Math.ceil(sorted.length / postsPerPage);
+  const paths: Array<{
+    params: { page: string };
+    props: {
+      currentPage: number;
+      totalPages: number;
+      paginatedPosts: typeof sorted;
+    };
+  }> = [];
+
+  for (let i = 2; i <= totalPages; i++) {
+    const startIndex = (i - 1) * postsPerPage;
+    const endIndex = startIndex + postsPerPage;
+    paths.push({
+      params: { page: `p=${i}` },
+      props: {
+        currentPage: i,
+        totalPages,
+        paginatedPosts: sorted.slice(startIndex, endIndex),
+      },
+    });
+  }
+
+  return paths;
+}
+
+const { page } = Astro.params;
+const { currentPage, totalPages, paginatedPosts } = Astro.props;
+
+if (!page || !page.startsWith('p=')) {
+  return Astro.redirect('/404');
+}
+---
+
+<BaseLayout
+  title={`Blog – stránka ${currentPage} – Vzhůru dolů`}
+  description="Články o frontendu, CSS, responzivním designu, rychlosti webu a souvisejících tématech."
+  bodyClass="section-blog"
+  ogUrl="https://www.vzhurudolu.cz/blog"
+>
+  <Header slot="header" />
+  <Footer slot="footer" />
+
+  <main role="main" id="main" aria-label="Hlavní obsah">
+    <div class="page-head page-head--lower">
+      <h1>Blog</h1>
+      <div class="mb-0 maxw-30em">
+        <p>Články o frontendu, CSS, responzivním designu, rychlosti webu a souvisejících tématech.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="content">
+        {paginatedPosts.map((post) => (
+          <ArticleListItem post={post} />
+        ))}
+
+        {/* Navigace stránkování */}
+        <nav class="ta-c mt-3" aria-label="Stránkování">
+          <a
+            class="button"
+            href={currentPage === 2 ? '/blog' : `/blog/p=${currentPage - 1}`}
+          >
+            ← Předchozí stránka
+          </a>
+
+          <span class="mx-1 f-6">
+            Stránka {currentPage} z {totalPages}
+          </span>
+
+          {currentPage < totalPages && (
+            <a class="button" href={`/blog/p=${currentPage + 1}`}>
+              Další stránka →
+            </a>
+          )}
+        </nav>
+      </div>
+    </div>
+  </main>
+</BaseLayout>

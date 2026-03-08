@@ -55,7 +55,7 @@ Je to například skvělá možnost, jak zvětšit (zoomovat) celou stránku a z
 
 
 <div class="ebook-only" markdown="1">
-Vzpomeňte si na část první kapitoly [o velkých displejích](zmeny-velke-displeje.md), kde jsme se tím zabývali.
+Vzpomeňte si na část první kapitoly [o velkých displejích](velikost-okna-css-js.md), kde jsme se tím zabývali.
 </div>
 
 Podobně můžeme zvětšovat či zmenšovat písmo (a pak celý layout) na displejích menších. Každý webový projekt má jinak nastavenou základní typografii, jinak postavený layout, takže k tomu moc obecných rad nejde dát. Ale když budete usilovně zmenšovat a zvětšovat okno a sledovat přitom čitelnost textu, místa vhodná k nasazení celkového zvětšení či zmenšení dokumentu poznáte.

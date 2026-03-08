@@ -60,12 +60,12 @@ Převedení předvybraného řešení do formy testovatelné v prohlížeči. Na
 3. *Aplikace grafického stylu*  
 Ten už máme připravený od dokumentové základny. 
 
-Asi z toho vidíte, že proces návrhu a implementace komponent uživatelského rozhraní zabere nejvíce času. O komponentách píšu [v osmé kapitole](kap-ui-proces.md).
+Asi z toho vidíte, že proces návrhu a implementace komponent uživatelského rozhraní zabere nejvíce času. O komponentách píšu v další části tohoto článku.
 
 
 ### Krok 3: Rozvržení webu
 
-Už během přípravy dokumentové základny a komponent je vhodné vymýšlet systém pro layout webu. Jeho implementací se zabývám [v deváté kapitole](kap-layout.md).
+Už během přípravy dokumentové základny a komponent je vhodné vymýšlet systém pro layout webu. Jeho implementací se zabývám [v článku o gridu a flexboxu](css-layout-grid-vs-flex.md).
 
 
 ## Proč to v knížce ukazuji právě takto?

@@ -31,7 +31,7 @@ Základy pro ebook „Vzhůru do CSS3“ pokládá leta aktualizovaná CSS3 př�
 
 Text, který jste právě začali číst provádí vývojáře aktuálním stavem ve vývoji webového uživatelského rozhraní (UI).
 
-Bude se hodit jako každodenní pomocník při používání vlastností v praxi hlavně začínajícím a mírně pokročilým. Zkušení ale ocení první podrobný český text [o Flexboxu](css-flexbox.md) nebo [úvodní shrnutí](kapitola-1-perex.md) principů kódování pro současný web.
+Bude se hodit jako každodenní pomocník při používání vlastností v praxi hlavně začínajícím a mírně pokročilým. Zkušení ale ocení první podrobný český text [o Flexboxu](css-flexbox.md) nebo úvodní shrnutí principů kódování pro současný web.
 
 Zabýváme se kodéřinou, tedy UI vývojařinou. Nikoliv frontend programováním a Javascriptem.
 

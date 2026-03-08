@@ -154,12 +154,6 @@ Redirect 301 /lektori/martin-michalek /martin
 RedirectMatch 301 ^/frontend-frameworky$ /bootstrap
 
 # -----------------------------------------------------------------------------
-# Prirucka homepage -> kategorie CSS
-# -----------------------------------------------------------------------------
-
-RedirectMatch 301 ^/prirucka$ /css
-
-# -----------------------------------------------------------------------------
 # Legacy redirecty do /data/ (stare soubory)
 # -----------------------------------------------------------------------------
 

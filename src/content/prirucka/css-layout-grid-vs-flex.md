@@ -23,7 +23,7 @@ Nyní se zaměříme na jednotlivé systémy rozvržení a povíme si více o ro
 
 Tohle bude rychlé. Už totiž víte, že [multicol](css-multicolumn.md) je určený pro vícesloupcovou sazbu textu, nikoliv pro rozvržení rozhraní.
 
-Jasně – rozvržení je možné tvořit i pomocí vlastnosti `column` a podobných, je možné jej omezeně využít pro tvorbu [„No Queries“ layoutů](no-queries.md), ale je dobré si uvědomit, že tím ohýbáme nástroj pro potřeby řešení.
+Jasně – rozvržení je možné tvořit i pomocí vlastnosti `column` a podobných, je možné jej omezeně využít pro tvorbu „No Queries“ layoutů (layout bez media queries), ale je dobré si uvědomit, že tím ohýbáme nástroj pro potřeby řešení.
 
 ## Grid vs. flexbox
 

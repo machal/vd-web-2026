@@ -32,7 +32,7 @@ og_type: article
 ## Psaní kódu
 
 - [Komentáře v CSS](https://www.vzhurudolu.cz/blog/92-css-komentare)
-- [Proč nepsat CSS do řádku?](https://www.vzhurudolu.cz/blog/proc-nepsat-css-deklarace-do-jednoho-radku)
+- Proč nepsat CSS do řádku? (článek již není na webu)
 
 ## Metodiky
 

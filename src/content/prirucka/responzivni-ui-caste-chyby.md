@@ -19,15 +19,15 @@ Shrňme si tady problémy, kterým se důsledněji věnuji v jiných kapitolách
 
 ## 1) Pomalu se načítající web
 
-Asi největší hřích dnešních responzivních webů. Rychlost načítání má vliv na úspěšnost webu a ovlivňuje řazení ve výsledcích vyhledávání Google. Mobilní sítě jsou pomalé a jen tak se nezrychlí. Nezapomeňte rychlost webu řešit už při návrhu a konzultovat ji v širším týmu. Už jsme se tomu věnovali [v kapitole o rychlosti](kap-rychlost.md).
+Asi největší hřích dnešních responzivních webů. Rychlost načítání má vliv na úspěšnost webu a ovlivňuje řazení ve výsledcích vyhledávání Google. Mobilní sítě jsou pomalé a jen tak se nezrychlí. Nezapomeňte rychlost webu řešit už při návrhu a konzultovat ji v širším týmu. Už jsme se tomu věnovali [v článku o rychlosti načítání](rychlost-nacitani-proc.md).
 
 ## 2) Navigace schovaná do ikony i tam, kde to není nutné
 
-Responzivní weby často na mobilních obrazovkách schovávají navigace do různých ikon. Z průzkumů ale vyplývá, že ikony bez popisků jsou pro uživatele často nesrozumitelné. Ani samo schovávání navigace není nejlepší nápad. Také si o tom ještě [něco povíme](kap-navigace.md).
+Responzivní weby často na mobilních obrazovkách schovávají navigace do různých ikon. Z průzkumů ale vyplývá, že ikony bez popisků jsou pro uživatele často nesrozumitelné. Ani samo schovávání navigace není nejlepší nápad. Také si o tom ještě [něco povíme](responzivni-navigace.md).
 
 ## 3) Přizpůsobení jen některým rozlišením
 
-Jak už jsem [zmiňoval dříve](zmeny-velke-displeje.md), dnešní weby se zobrazují v oknech mezi 240 a 2600 pixely. Oba extrémy nejsou příliš časté, ale například podíl obrazovek s velkým rozlišením roste. Při návrhu a testování je potřeba myslet jak na ta nejmenší zařízení, tak právě i na velké stolní displeje.
+Jak už jsem [zmiňoval dříve](velikost-okna-css-js.md), dnešní weby se zobrazují v oknech mezi 240 a 2600 pixely. Oba extrémy nejsou příliš časté, ale například podíl obrazovek s velkým rozlišením roste. Při návrhu a testování je potřeba myslet jak na ta nejmenší zařízení, tak právě i na velké stolní displeje.
 
 ## 4) Zakázané přiblížení (zoom)
 

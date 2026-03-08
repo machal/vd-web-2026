@@ -22,7 +22,7 @@ Milí marketéři, designéři, majitelé webů a lidé z dalších netechnický
 
 Milí weboví vývojáři a kodéři:
 
-* Pro vás je jádro knížky v technické druhé kapitole, ale nejlepší bude, když si najdete čas a pročtete i tu první. AMP je totiž zcela nový typ technologie, špatně porovnatelný s čímkoliv jiným. A právě první kapitola vám to (doufejme!) vyjasní. Pokud ale nepotřebujete nic vyjasňovat a AMP se chcete naučit, přečtěte si jen, [jak AMP funguje](amp-fungovani.md), a pak rovnou skočte [do druhé kapitoly](2-uvod.md).
+* Pro vás je jádro knížky v technické druhé kapitole, ale nejlepší bude, když si najdete čas a pročtete i tu první. AMP je totiž zcela nový typ technologie, špatně porovnatelný s čímkoliv jiným. A právě první kapitola vám to (doufejme!) vyjasní. Pokud ale nepotřebujete nic vyjasňovat a AMP se chcete naučit, přečtěte si jen, [jak AMP funguje](amp-fungovani.md), a pak rovnou skočte [do druhé kapitoly](amp-fungovani.md).
 * Ve třetí kapitole se zaměříme na způsoby implementace do současného webu.
 * Další kapitoly jsou už méně technické, ale věnují se věcem, které tak či tak pravděpodobně budete řešit – [nasazení AMP](amp-je-pro-vas.md), měření návštěvnosti nebo třeba nasazení AMP v e-mailech či reklamě.
 

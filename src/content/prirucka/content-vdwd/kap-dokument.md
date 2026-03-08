@@ -19,7 +19,7 @@ V téhle zásadní kapitole si rozpitváme první ze dvou základních vrstev de
 2. Vývojářům a začínajícím designérům naservírujeme nutné základy [grafického designu](graficky-design.md).
 3. Blíže se podíváme na [typografii](typografie.md), ale také dopady responzivního webdesignu na ni. 
 4. Dám vám pár tipů na [zdroje pro grafické elementy](grafika-zdroje.md).
-5. Vymyslíme [základní vizuální styl](priklad-barvy-typografie.md) pro fiktivní e-shop ForestKid.cz.
+5. Vymyslíme [základní vizuální styl](grafika-zdroje.md) pro fiktivní e-shop ForestKid.cz.
 6. Poprvé se v knize ponoříme do lehkých technikálií: do [jednotek, které na webu můžeme používat](jednotky.md). Na ně navážeme technikami [zvětšování stránky a komponent](rem-em-zoom.md) a [plně responzivní typografií](plne-responzivni-typografie.md).
 7. Představím vám nástroje, které používám pro technickou implementaci [dokumentové vrstvy webu](dokument-nastroje.md). 
 8. Na konci kapitoly [převedeme grafický charakter dokumentu](priklad-dokument.md) do příkladu. Těšíte se tak jako já?

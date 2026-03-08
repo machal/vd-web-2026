@@ -22,7 +22,7 @@ Servíruji zde zdroje, které pro jednotlivé přísady grafického designu webu
 
 ## Písmo
 
-O výběru písma více píšu [v následujícím textu o příkladu](priklad-barvy-typografie.md). Tady alespoň pár odkazů na zajímavé zdroje a tipy k nim.
+O výběru písma více píšu [v textu o procesu návrhu UI](proces-navrhu-ui.md). Tady alespoň pár odkazů na zajímavé zdroje a tipy k nim.
 
 ### Systémová písma
 

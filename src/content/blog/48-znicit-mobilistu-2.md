@@ -86,7 +86,7 @@ Servisní části rozhraní webu typu hlavičky nebo navigace by nikdy neměly k
 
 Fixně pozicovaná lišta s informací o cookie politice… Ach bože, mě je těch mobilních uživatelů někdy tak líto!
 
-Překrývá obsah webu a ještě více zmenšuje viditelnou plochu okna prohlížeče. Doporučuji vyřešit [staticky pozicovanou vrstvou](/blog/36-cookie-lista), které scrolluje se zbytkem webu. 
+Překrývá obsah webu a ještě více zmenšuje viditelnou plochu okna prohlížeče. Doporučuji vyřešit [staticky pozicovanou vrstvou](36-eu-cookies.md), které scrolluje se zbytkem webu. 
 
 ## 17) Zbytek prostoru pro obsah musí zabrat okno online chatu
 

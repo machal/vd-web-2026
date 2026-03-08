@@ -38,7 +38,7 @@ Jak to probíhá z pohledu provozovatele webu? Následuje troška kódu, ale sna
 
 AMP stránku vytvoříte ve standardu pro AMP HTML. O něm si přečtete více [později](amp-html.md). V tuhle chvíli se spokojme s konstatováním, že to je běžné HTML ořezané o malou část prvků a atributů a na druhou stranu doplněné o nové zajímavé komponenty. I k nim se dostaneme.
 
-Také bychom rádi zdůraznili, že výroba zvláštní verze stránky nemusí probíhat tak, že kód stránky napíšete úplně od začátku. O [možnostech implementace](3-uvod.md) se dozvíte dále.
+Také bychom rádi zdůraznili, že výroba zvláštní verze stránky nemusí probíhat tak, že kód stránky napíšete úplně od začátku. O [možnostech implementace](amp-implementace.md) se dozvíte dále.
 
 Čím se AMP HTML liší? V HTML vypadá například kód pro vložení obrázku takto:
 

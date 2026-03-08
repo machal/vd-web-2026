@@ -46,7 +46,7 @@ Je potřeba řešit situace přesměrování mezi jednou a druhou verzí. Vyvst�
 
 Co s tablety? U speciálních mobilních webů často vznikne problém – mobilní web bude na tablety moc jednoduchý a desktopový moc složitý.
 
-A co dále? Občas se argumentuje tím, že speciální mobilní web se může načítat rychleji. Hlavně pokud je desktopová verze datově oplácaná. V žádném případě to ale neznamená, že nelze udělat velmi rychlý responzivní web. Naopak! [V páté kapitole](kap-rychlost.md) o tom něco málo píšu.
+A co dále? Občas se argumentuje tím, že speciální mobilní web se může načítat rychleji. Hlavně pokud je desktopová verze datově oplácaná. V žádném případě to ale neznamená, že nelze udělat velmi rychlý responzivní web. Naopak! [V článku o rychlosti načítání](rychlost-nacitani-proc.md) o tom něco málo píšu.
 
 Jak vidíte, tohle řešení má řadu nevýhod a považuji ho za dlouhodobě neudržitelné. 
 

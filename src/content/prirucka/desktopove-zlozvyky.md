@@ -70,7 +70,7 @@ Další tipy od Nielsen Norman Group k výběru data jsem sepisoval na blog. [vr
 
 Web bez hlavní navigace? Pfff…!  Představte si, že byste to nějakému klientovi navrhli před pěti lety. Dnes ale na velmi malých displejích postrádají globální navigaci téměř všechny weby. Prostě se tam nevejde.
 
-Nezbývá než se s tím smířit a na globální navigaci zase tak moc nestavět při návrhu navigačního schématu pro web. U větších webů hraje na mobilech velkou roli vyhledávání. Může být také vhodné stavět úvodní stránku složitějších webů jako rozcestník. Chybějící hlavní navigaci je ale potřeba mít v hlavě při návrhu každé komponenty a každé stránky webu. Téma ještě více [otevřeme v desáté kapitole](kap-navigace.md).
+Nezbývá než se s tím smířit a na globální navigaci zase tak moc nestavět při návrhu navigačního schématu pro web. U větších webů hraje na mobilech velkou roli vyhledávání. Může být také vhodné stavět úvodní stránku složitějších webů jako rozcestník. Chybějící hlavní navigaci je ale potřeba mít v hlavě při návrhu každé komponenty a každé stránky webu. Téma ještě více [otevřeme v článku o responzivních navigacích](responzivni-navigace.md).
 
 ## 6) Modální okna, lightboxy: pozor na správnou implementaci
 

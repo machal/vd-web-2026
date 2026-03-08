@@ -88,7 +88,7 @@ package-lock.json
 
 - `node_modules/` je složka, do které se instalují balíčky. Ta se jako jediná nenahrává do Gitu nebo jiného verzovacího systému, protože by zbytečně zabírala prostor a celkově dělala ohromný nepořádek. 
 - `package.json` v kořenovém adresáři je soubor s konfigurací NPM. Obsahuje informace o projektu a seznam potřebných balíčků. Více [ve zvláštním textu](package-json.md).
-- `package-lock.json` uchovává informace o instalovaných verzích balíčků, aby to bylo jednotné pro všechny, kteří na projektu pracují. I tady píšu [více ve zvláštním textu](package-json-lock.md).
+- `package-lock.json` uchovává informace o instalovaných verzích balíčků, aby to bylo jednotné pro všechny, kteří na projektu pracují. I tady píšu [více ve zvláštním textu](package-lock-json.md).
 
 <div class="related web-only" markdown="1">
 - [NPM a Node.js: Rozcestník odkazů](rozcestnik-npm-node.md)

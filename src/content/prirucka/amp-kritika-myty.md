@@ -27,7 +27,7 @@ Následující texty cílíme hlavně na ty z vás, kteří máte k této techno
 
 <div class="ebook-only" markdown="1">
 
-Pokud ale o AMP nemáte pochyby a už se těšíte, co nového se dozvíte, doporučujeme přeskočit rovnou na druhou kapitolu, [popisující AMP technicky](2-uvod.md), nebo na text páté kapitoly zjišťující, [zda je AMP vhodné pro vás](amp-je-pro-vas.md).
+Pokud ale o AMP nemáte pochyby a už se těšíte, co nového se dozvíte, doporučujeme přeskočit rovnou na druhou kapitolu, [popisující AMP technicky](amp-fungovani.md), nebo na text páté kapitoly zjišťující, [zda je AMP vhodné pro vás](amp-je-pro-vas.md).
 
 </div>
 
@@ -193,7 +193,7 @@ Je samozřejmě pravděpodobné, že současný stav věcí na vašich projektec
 
 <div class="ebook-only" markdown="1">
 
-Různými přístupy k tvorbě AMP se zabýváme [ve třetí kapitole](3-uvod.md). Z pohledu správy je nejefektivnější právě přístup [AMP-only (pouze AMP)](amp-implementace-jen-amp.md), ale je dobré vědět i o existenci kompromisních variant. Zmiňme ještě řadu [pluginů do populárních redakčních systémů](amp-implementace-pluginy.md), jako je WordPress. Ty mohou pomoci.
+Různými přístupy k tvorbě AMP se zabýváme [ve článku o implementaci AMP](amp-implementace.md). Z pohledu správy je nejefektivnější právě přístup [AMP-only (pouze AMP)](amp-implementace-jen-amp.md), ale je dobré vědět i o existenci kompromisních variant. Zmiňme ještě řadu [pluginů do populárních redakčních systémů](amp-implementace-pluginy.md), jako je WordPress. Ty mohou pomoci.
 
 </div>
 

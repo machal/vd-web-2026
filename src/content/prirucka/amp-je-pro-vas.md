@@ -48,7 +48,7 @@ Pro celosvětový trh je ještě zajímavý vyhledávač Bing nebo mobilní apli
 
 Otázku pokládáme především z pohledu řešení pro správu obsahu. Dokážete snadno produkovat upravenou verzi webu?
 
-Ze [třetí kapitoly](3-uvod.md) víte, že například WordPress nebo Drupal umožňují vytvářet AMP verzi na jedno kliknutí. Zároveň  to ale není kvůli odlišnému designu nejlepší řešení. Pravděpodobně budete potřebovat upravit výchozí šablony webu, zajistit produkování AMP i non-AMP varianty.
+Z [článku o implementaci AMP](amp-implementace.md) víte, že například WordPress nebo Drupal umožňují vytvářet AMP verzi na jedno kliknutí. Zároveň  to ale není kvůli odlišnému designu nejlepší řešení. Pravděpodobně budete potřebovat upravit výchozí šablony webu, zajistit produkování AMP i non-AMP varianty.
 
 Pokud dodavatel vašeho redakčního systému AMP nepodporuje, hned mu napište.
 
@@ -114,4 +114,4 @@ Google Ads nabízí hezký návod „Testování kampaní AMP“, kde je možné
 
 Další problém může nastat při měření. O tom bychom vám mohli vyprávět! Můžete třeba zkoušet porovnávat konverzní čísla AMP verze nasazené na omezeném počtu stránek se všemi stránkami běžného webu. Nebo si neuvědomíte, že čím dále je AMP stránka od místa skutečných konverzí, tím hůř je možné posuzovat její vliv na obchodní výkon. Pomoci vám může skvělý text „So your AMP test doesn’t perform – now what?“. [vrdl.in/oesnter](https://blog.amp.dev/2018/11/08/so-your-amp-test-doesnt-perform%E2%80%8A-%E2%80%8Anow-what/)
 
-V tuto chvíli snad už víte všechno, abyste mohli AMP nasadit. O způsobech technické implementace píšeme [ve třetí kapitole](3-uvod.md), takže pokud jste jí dosud nevěnovali pozornost, předejte ji alespoň svým vývojářům. A my se teď podíváme na samotné měření návštěvnosti v AMP verzi.
+V tuto chvíli snad už víte všechno, abyste mohli AMP nasadit. O způsobech technické implementace píšeme [v článku o implementaci AMP](amp-implementace.md), takže pokud jste jí dosud nevěnovali pozornost, předejte ji alespoň svým vývojářům. A my se teď podíváme na samotné měření návštěvnosti v AMP verzi.

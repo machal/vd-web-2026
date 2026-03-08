@@ -21,7 +21,7 @@ AMP budí někdy až přehnaně emotivní reakce. Některým bodům kritiky př�
 
 Následující texty cílíme hlavně na ty z vás, kteří máte k této technologii větší výhrady. Doporučujeme je ale pozornosti všem. Příběh téhle technologie a reakcí na ni je totiž v řadě věcí poučný nebo alespoň zajímavý.
 
-Pokud ale o AMP nemáte pochyby a už se těšíte, co nového se dozvíte, doporučujeme přeskočit rovnou na druhou kapitolu, [popisující AMP technicky](2-uvod.md), nebo na text páté kapitoly zjišťující, [zda je AMP vhodné pro vás](amp-je-pro-vas.md).
+Pokud ale o AMP nemáte pochyby a už se těšíte, co nového se dozvíte, doporučujeme přeskočit rovnou na druhou kapitolu, [popisující AMP technicky](amp-fungovani.md), nebo na text páté kapitoly zjišťující, [zda je AMP vhodné pro vás](amp-je-pro-vas.md).
 
 ## Start projektu a komunikace: Tohle se fakt nepovedlo
 
