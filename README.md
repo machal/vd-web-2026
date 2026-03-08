@@ -77,7 +77,7 @@ Deploy probíhá přes **GitHub Actions** na FTP. Používá se [FTP Deploy Acti
   - `FTP_SERVER` – adresa FTP (např. `ftp.domena.cz`)
   - `FTP_USERNAME` – FTP uživatel
   - `FTP_PASSWORD` – FTP heslo
-- Workflow je v [.github/workflows/deploy-ftp.yml](.github/workflows/deploy-ftp.yml). V něm je nastaveno `server-dir: www/project/` (cíl na serveru) a `timeout: 60000` (60 s; při chybách 421 nebo „Server sent FIN packet“ lze hodnotu zvýšit). Pro FTPS odkomentovat `protocol: ftps` a `port: 990`. Jako záloha při opakovaných pádech deploye existuje možnost přechodu na SFTP (např. [wlixcc/SFTP-Deploy-Action](https://github.com/wlixcc/SFTP-Deploy-Action)) s SSH klíčem v secrets.
+- Workflow je v [.github/workflows/deploy-ftp.yml](.github/workflows/deploy-ftp.yml). V něm je nastaveno `server-dir: www/project/` (cíl na serveru) a `timeout: 60000` (60 s; při chybách 421 nebo „Server sent FIN packet“ lze hodnotu zvýšit). Složky `data/` a `files/` se při deployi vynechávají (jako v `.transmitignore`) – na serveru musí být už nahrané nebo je nahrajte zvlášť. Pro FTPS odkomentovat `protocol: ftps` a `port: 990`. Jako záloha při opakovaných pádech deploye existuje možnost přechodu na SFTP (např. [wlixcc/SFTP-Deploy-Action](https://github.com/wlixcc/SFTP-Deploy-Action)) s SSH klíčem v secrets.
 
 ### Jak deploy spustit
 

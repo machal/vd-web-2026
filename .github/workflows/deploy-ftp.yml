@@ -29,5 +29,11 @@ jobs:
           local-dir: ./dist/
           server-dir: www/project/
           timeout: 60000
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+            **/data/**
+            **/files/**
           # protocol: ftps
           # port: 990
