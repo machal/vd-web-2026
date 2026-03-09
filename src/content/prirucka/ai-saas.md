@@ -148,3 +148,5 @@ Sebelepší AI za nic nepřevezme zodpovědnost.
 Programování není jen psaní kódu. Proto všechny programátory nenahradí AI.
 
 SaaS není jen naprogramovaná appka. Proto všechny SaaSy nenahradí AI.
+
+<small>*Na co jsem zapomněl, co mám špatně? Napište mi [e-mail](mailto:martin@vzhurudolu.cz) nebo komentujte na sociálních sítích: na [LinkedInu](https://www.linkedin.com/posts/martinmichalek_ai-pr%C3%BD-zabije-saas-zamysleme-se-nad-t%C3%ADm-activity-7436675567296385024-r16T/), [Facebooku](https://www.facebook.com/machal/posts/pfbid07uYkc1SHoP63QjSGnTXbajpAoebA5AtaE65HNh16WMm9Jm1UhLDuudng1nqiVzxWl), [X](https://x.com/machal/status/2030910470727585894).*</small>
