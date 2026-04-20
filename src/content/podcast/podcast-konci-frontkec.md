@@ -42,6 +42,8 @@ Zůstává to, co fungovalo. Odborný obsah podaný s nadhledem a moderátoři [
 
 Všechny staré epizody podcastu ze Vzhůru dolů zůstanou dále dostupné.
 
+Aktualizovaný [přehled všech zatím vydaných dílů FrontKecu](../blog/262-frontkec-deset-dilu.md) najdete na blogu Vzhůru dolů.
+
 PS: Rovnou vychází první díl FrontKecu, a to na [Spotify](https://open.spotify.com/episode/4RGOiRiJRMsrBqbsdUfxUr?si=ea68b93f17b0464c) nebo na [YouTube](https://www.youtube.com/watch?v=OWPIfC-ALSE).
 
 <div class="rwd-media">

@@ -23,7 +23,7 @@ og_type: article
 
 # S Rikim Fridrichem o stavu CSS a JavaScriptu
 
-Nad výsledky anket State of CSS/JS 2020 jsme nahlas přemýšleli o aktuálním vývoji frontendových technologií. Nemohli jsme se nepozastavit u některých témat, které vidíme jinak, abychom zjistili, že to někdy vidíme velmi podobně. Probrali jsme Tailwind, nástroje pro testování JS, TypeScript a mnohé další.
+Nad výsledky anket State of CSS/JS 2020 jsme nahlas přemýšleli o aktuálním vývoji frontendových technologií. Nemohli jsme se nepozastavit u některých témat, které vidíme jinak, abychom zjistili, že to někdy vidíme velmi podobně. Probrali jsme Tailwind, nástroje pro testování JS, TypeScript a mnohé další. Riki se k anketám State of JavaScript a React vrátil i v roce 2026 v podcastu FrontKec (v přehledu jako díl 10); všechny díly najdete v [rozcestníku na blogu](262-frontkec-deset-dilu.md#tabulka).
 
 Ve výsledcích anket [State of CSS](https://2020.stateofcss.com/en-US/) a [State of JS](https://2020.stateofjs.com/en-US/), které vyplnilo více než 10 tisíc vývojářů, jsme se zaměřili hlavně na tyto dva grafy, které ukazují poměr popularity a oblíbenosti frontendových technologií.
 
