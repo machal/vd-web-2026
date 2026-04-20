@@ -3,7 +3,7 @@ postID: 259
 postTitle: 'Podcast ze Vzhůru dolů končí, FrontKec začíná'
 postUrlId: podcast-konci-frontkec
 postDateTime: 2025-09-01
-excerpt: 'Do nulté epizodu FrontKecu, natáčené už před prázdninami, jsme si pozvali Tomáše Kouta, aby nás vyzpovídal. Bylo nám totiž hloupé vyzpovídávat sami sebe. Tomáš to vzal zgruntu a tak jsme prošli historii našich podcastů, založení Frontendistů, chystaný Fro'
+excerpt: 'Do nulté epizody FrontKecu, natáčené už před prázdninami, jsme si pozvali Tomáše Kouta, aby nás vyzpovídal. Bylo nám totiž hloupé vyzpovídávat sami sebe. Tomáš to vzal zgruntu, a tak jsme prošli historii našich podcastů, založení Frontendistů i cestu k nové značce.'
 postStatus: Published
 authorID: 1
 sectionID: 1
@@ -11,7 +11,7 @@ no_ads: true
 include_rss: true
 category_highlight: true
 og_title: 'Podcast ze Vzhůru dolů končí, FrontKec začíná'
-og_description: 'Do nulté epizodu FrontKecu, natáčené už před prázdninami, jsme si pozvali Tomáše Kouta, aby nás vyzpovídal. Bylo nám totiž hloupé vyzpovídávat sami sebe. Tomáš to vzal zgruntu a tak jsme prošli historii našich podcastů, založení Frontendistů, chystaný Fro'
+og_description: 'Do nulté epizody FrontKecu, natáčené už před prázdninami, jsme si pozvali Tomáše Kouta, aby nás vyzpovídal. Bylo nám totiž hloupé vyzpovídávat sami sebe. Tomáš to vzal zgruntu, a tak jsme prošli historii našich podcastů, založení Frontendistů i cestu k nové značce.'
 og_type: article
 ---
 
@@ -31,13 +31,13 @@ Důvodem změny je hlavně snadnější organizační a technické zabezpečení
 
 FrontKec má nyní jednotnou vizuální identitu s [konferencí FrontKon](https://www.frontkon.cz/) a [komunitou Frontendisti.cz](https://www.frontendisti.cz/).
 
-Vzniká tím i prostor pro nové formáty, které jsme v původním podcastu neměli kapacitu dlouhodobě rozvíjet. 
+Vzniká tím i prostor pro nové formáty, které jsme v původním podcastu neměli kapacitu dlouhodobě rozvíjet.
 
 Zůstává to, co fungovalo. Odborný obsah podaný s nadhledem a moderátoři [Robin Pokorný](https://robinpokorny.com/) a [Martin Michálek](https://www.vzhurudolu.cz/martin).
 
 ## Co rozhodně udělejte? {#todo}
 
-* Přihlaste si nový podcast na [Spotify](https://open.spotify.com/show/1Eo2sxfbDhiOTnRXDbsBYT), [Apple Podcasts](https://podcasts.apple.com/us/podcast/frontkec-podcast/id1836574580) nebo přes [RSS](https://anchor.fm/s/108d0600c/podcast/rss%20).  
+* Přihlaste si nový podcast na [Spotify](https://open.spotify.com/show/1Eo2sxfbDhiOTnRXDbsBYT), [Apple Podcasts](https://podcasts.apple.com/us/podcast/frontkec-podcast/id1836574580) nebo přes [RSS](https://anchor.fm/s/108d0600c/podcast/rss).  
 * Odebírejte také Frontendisty na [LinkedIn](https://www.linkedin.com/company/frontendisti/), [Instagramu](https://www.instagram.com/frontendisti/), [Facebooku](https://www.facebook.com/frontendisti/), [X](https://x.com/Frontendisti) a [YouTube](https://www.youtube.com/@FrontendistiCz).
 
 Všechny staré epizody podcastu ze Vzhůru dolů zůstanou dále dostupné.
