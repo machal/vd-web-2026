@@ -187,4 +187,6 @@ Shrňme si, co jste se (doufejme) dozvěděli o testování rychlosti webů v Pa
 * Dlouhodobě sledujte hlavně pokroky v ukazatelích od reálných uživatelů v sekci „Data pole“.
 * Poslouchejte rady v sekci Příležitosti a Diagnostika, jsou velmi rozumné.
 
+Pokud potřebujete data s historií a srovnáním konkurence, vyzkoušejte náš [test rychlosti webu](https://pagespeed.one/app/insights) na PageSpeed.ONE.
+
 <!-- AdSnippet -->

@@ -36,7 +36,7 @@ CrUX už dlouho používám ve své klientské praxi. V tomhle článku vám uk�
 
 ## Syntetická měření rychlosti versus „data z pole“. A proč je CrUX také RUM? {#syntetika-rum}
 
-Na datech z [Chrome UX reportu](https://developers.google.com/web/tools/chrome-user-experience-report) je výborné, že dostanete údaje o reálné rychlosti webu mezi uživateli. Liší se tak od údajů z [Google Lighthouse](lighthouse.md), [PageSpeed Insights](pagespeed-insights.md) a jiných [nástrojů](rychlost-nastroje.md) pro testování rychlosti, které provádějí kontrolu strojem.
+Na datech z [Chrome UX reportu](https://developers.google.com/web/tools/chrome-user-experience-report) je výborné, že dostanete údaje o reálné rychlosti webu mezi uživateli. Liší se tak od údajů z [Google Lighthouse](lighthouse.md), [PageSpeed Insights](pagespeed-insights.md) a jiných [nástrojů](rychlost-nastroje.md) pro testování rychlosti, které provádějí kontrolu strojem. Více o rozdílech mezi [syntetikou, CrUXem a RUM daty](https://pagespeed.one/znalosti/synth-crux-rum) píšeme na PageSpeed.ONE.
 
 ![Chrome UX Report](../dist/images/original/crux.png)
 
@@ -153,7 +153,7 @@ Jak na to?
 
 ### 3) Tester PageSpeed.ONE {#ps-tester}
 
-Na datech z [Chrome UX Reportu](chrome-ux-report.md) je postavený také produkt, který vytváříme v PageSpeed.ONE. Náš [tester rychlosti](https://pagespeed.one/app/) má také placenou verzi pro profesionály [PLUS](https://pagespeed.one/monitoring-plus).
+Na datech z [Chrome UX Reportu](chrome-ux-report.md) je postavený také produkt, který vytváříme v PageSpeed.ONE. Náš [test rychlosti webu](https://pagespeed.one/app/insights) má také placenou verzi pro profesionály – [monitoring rychlosti webu](https://pagespeed.one/monitoring-plus). Podrobnosti o CrUX datech najdete také v naší [nápovědě o Chrome UX Reportu](https://pagespeed.one/znalosti/crux).
 
 <figure>
 <img src="https://res.cloudinary.com/vzhurudolu-cz/image/upload/v1704269311/vzhurudolu-blog/page-speed-cz/ps-plus-tutorial-001_weujjd.jpg" width="1600" height="900" alt="PS tester PLUS">

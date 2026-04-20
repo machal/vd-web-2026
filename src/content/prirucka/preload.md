@@ -325,6 +325,6 @@ Vysvětlení je prosté:
 
 Tím jsme vyčerpal své vědomosti o `<link rel="preload">`. Budu rád za každý váš tip, trik nebo připomínku v komentářích.
 
-Preload může být výborná věc k doladění rychlosti vašeho webu, ale jak už jsem napsal – nepoužívejte jej bezhlavě a dobře testujte své experimenty.
+Preload může být výborná věc k doladění rychlosti vašeho webu, ale jak už jsem napsal – nepoužívejte jej bezhlavě a dobře testujte své experimenty. Správné řazení [prvků v HTML headu](https://pagespeed.one/znalosti/html-head) je ostatně jednou z nejčastějších příležitostí ke zrychlení, které u klientů vidíme.
 
 <!-- AdSnippet -->

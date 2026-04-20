@@ -27,7 +27,7 @@ Aktuálně je totiž [měření rychlosti](rychlost-nastroje.md) (a UX) webu pom
 
 Nyní měříme hlavně tři metriky – LCP, FID a CLS. Dostali jsme k tomu nástroje a příslib, že se to už nebude moc často měnit.
 
-Google tyto metriky zohledňuje v rámci [hodnocení rychlosti webů](google-page-experience.md). Je zde tedy jednoznačná vazba na SEO.
+Google tyto metriky zohledňuje v rámci [hodnocení rychlosti webů](google-page-experience.md). Je zde tedy jednoznačná vazba na SEO. Pokud si nejste jistí, zda se to týká i vás, přečtěte si, [proč řešit rychlost webu](https://pagespeed.one/znalosti/proc-resit-rychlost).
 
 Pojďme si v tomto textu dát rychlý úvod do metrik ve Vitals obsažených a do způsobů měření.
 
@@ -37,7 +37,7 @@ V sadě Web Vitals je metrik více, ale ty nejpodstatnější Google označuje j
 
 ### Core Web Vitals {#core}
 
-Celé se to točí kolem tří hlavních metrik:
+Celé se to točí kolem tří hlavních metrik, které Google souhrnně označuje jako [Core Web Vitals (CWV)](https://pagespeed.one/metriky/cwv):
 
 * [*Largest Contentful Paint (LCP)*](metrika-lcp.md)  
 Největší vykreslení obsahu. Metrika, která popisuje rychlost načítání stránky – *načítací (loading)* výkon. Jde o něco mezi [FCP](metrika-fcp.md) a [SpeedIndexem](speedindex.md).
@@ -80,10 +80,10 @@ No a pokud byste chtěli jen jeden stav, jedno vysvědčení pro měřenou strá
 
 Google má také na web.dev pěkné materiály o optimalizaci jednotlivých metrik:
 
-* [Optimalizace LCP](https://web.dev/optimize-lcp/)
+* [Optimalizace LCP](https://web.dev/optimize-lcp/) (viz také [metrika LCP](https://pagespeed.one/metriky/lcp) na PageSpeed.ONE)
 * [Optimalizace FID](https://web.dev/optimize-fid/)
-* [Optimalizace CLS](https://web.dev/optimize-cls/)
-* [Optimalizace INP](https://web.dev/optimize-inp/)
+* [Optimalizace CLS](https://web.dev/optimize-cls/) (viz také [metrika CLS](https://pagespeed.one/metriky/cls) na PageSpeed.ONE)
+* [Optimalizace INP](https://web.dev/optimize-inp/) (viz také [metrika INP](https://pagespeed.one/metriky/inp) na PageSpeed.ONE)
 
 ### A co další metriky? {#dalsi-metriky}
 

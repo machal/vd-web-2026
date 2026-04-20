@@ -50,6 +50,6 @@ Metriku FCP ukazují moderní měřící nástroje: [Lighthouse](lighthouse.md) 
 
 Na časové ose je velmi blízko metrikám [FP](metrika-fp.md) (První vykreslení) a [FMP](metrika-fmp.md) (První smysluplné vykreslení).
 
-Více informací o First Contentful Paint najdete [u Google](https://developers.google.com/web/tools/lighthouse/audits/first-contentful-paint).
+Více informací o First Contentful Paint najdete [u Google](https://developers.google.com/web/tools/lighthouse/audits/first-contentful-paint). Prahové hodnoty a aktuální přehled nabízí stránka [metrika FCP](https://pagespeed.one/metriky/fcp) na PageSpeed.ONE.
 
 <!-- AdSnippet -->

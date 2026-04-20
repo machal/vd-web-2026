@@ -330,7 +330,7 @@ A to je všechno. Uveďme ještě na závěr stručně všechno, co teď víme o
 
 ## Shrnutí {#shrnuti}
 
-- Používejte lazy loading! K ušetření dat a k prioritizaci stahování jiný věcí než prvků mimo viewport.
+- Používejte lazy loading! K ušetření dat a k prioritizaci stahování jiný věcí než prvků mimo viewport. Praktické tipy k implementaci jsme sepsali také v článku o [lazy loading obrázků](https://pagespeed.one/znalosti/lazy-loading-obrazku) na PageSpeed.ONE.
 - Na menších webech vám může stačit využít nativní řešení. Prohlížeče, které líné načtení nepodporují, se na to už chystají.
 - Pokud potřebujete knihovnu, volte ty menší nebo ty, které využívají Intersection Observer. Já doporučuji [LazyLoad](https://github.com/verlok/lazyload) od Andrea Verlicchiho.
 - Rozmyslete si, na jaké obrázky lazy loading nasadit a vynechte nasazení na těch nezbytných.

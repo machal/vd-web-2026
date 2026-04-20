@@ -47,7 +47,7 @@ Jde o následující tři metriky.
 </figcaption>
 </figure>
 
-→ *Detailně: [Web Vitals](web-vitals.md)*
+→ *Detailně: [Web Vitals](web-vitals.md)* | *Přehled [Core Web Vitals (CWV)](https://pagespeed.one/metriky/cwv) na PageSpeed.ONE*
 
 ## Další důležité metriky {#dalsi}
 
@@ -118,5 +118,6 @@ Ano, já vím, je to trochu složité. Není ale asi potřeba, abyste si pamatov
 - V dlouhodobém horizontu usilujte o zlepšení v metrikách od reálných uživatelů. Nejlépe je získáte od Chrome UX Reportu, odkud je umí vytáhnout [PageSpeed Insights](pagespeed-insights.md).
 - Provnávejte výsledky vašich nejdůležitějších stránek s konkurencí. Viz můj [článek o rychlosti](rychlost-designeri.md) pro designéry a marketéry.
 - Pokud potřebujete optimalizovat, dívejte se do časové osy vykreslování v prohlížeči. Buď v Chrome DevTools nebo WebpageTest.org. Viz můj [článek o nástrojích](rychlost-nastroje.md).
+- Vyzkoušejte také náš [test rychlosti webu](https://pagespeed.one/app/insights) na PageSpeed.ONE, kde uvidíte historii i srovnání s konkurencí.
 
 <!-- AdSnippet -->

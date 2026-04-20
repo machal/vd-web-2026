@@ -30,7 +30,7 @@ Laicky řečeno: Pokud je server pomalý může to být připojením mezi ním a
 
 ## Je to důležité? Ne tak moc jak si mnozí myslí. Držte to ale pod půl vteřinou {#dulezite}
 
-[Jeden z mýtů](rychlost-myty.md#2) kolem webové rychlosti je to, že ji čas serveru obecně zásadně ovlivňuje.
+[Jeden z mýtů](rychlost-myty.md#2) kolem webové rychlosti je to, že ji čas serveru obecně zásadně ovlivňuje. TTFB sice není součástí [Core Web Vitals](web-vitals.md), ale ovlivňuje všechny metriky, které za ním na časové ose následují, zejména [LCP](metrika-lcp.md).
 
 TTFB ale tvoří skoro vždy tu menší část problému u pomalých webů – větší zásek je obvykle v (ne)optimalizaci frontendu.
 
@@ -135,7 +135,7 @@ Takže ne, tohle nemá být návod na vypnutí Gzipu. Spíše se prosím ujistě
 
 Shrnu teď to nejdůležitější a už vám dám pokoj:
 
-- TTFB je dobrý způsob jak měřit výkon serveru.
+- TTFB je dobrý způsob jak měřit výkon serveru. Podrobnosti o prahových hodnotách najdete na stránce [metrika TTFB](https://pagespeed.one/metriky/ttfb) na PageSpeed.ONE.
 - Pro měření rychlosti webu je velmi nedostačující, mrkněte se na [jiné metriky](metriky-rychlosti.md).
 - Do měření TTFB se může projevovat pomalé internetové připojení, zpomalení způsobené měřícím nástrojem atd.
 - TTFB může být pro různá měření a různé stránky webu velmi různě vysoké. Má tedy smysl sledovat jen jeho dlouhodobý trend a srovnávat se s adekvátní konkurencí.

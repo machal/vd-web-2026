@@ -113,9 +113,11 @@ Metrika zatím není dostupná bez technických znalostí, ale očekávám, že 
 
 V [Lighthouse](lighthouse.md) je LCP finálně dostupné [od verze 6](https://www.vzhurudolu.cz/blog/172-lighthouse-6).
 
-Podobné je to s webovou implementací Lighthouse, [PageSpeed Insights](pagespeed-insights.md). Tam už je LCP dlouho k dispozici, podobně jako v našem nástroji [PageSpeed.ONE](https://pagespeed.one/).
+Podobné je to s webovou implementací Lighthouse, [PageSpeed Insights](pagespeed-insights.md). Tam už je LCP dlouho k dispozici, podobně jako v našem [testu rychlosti webu](https://pagespeed.one/app/insights). Detailní návod na [optimalizaci LCP](https://pagespeed.one/znalosti/optimalizace-lcp) najdete v naší nápovědě.
 
 Lighthouse a nástroje, které jej používají, jsou zároveň nejspolehlivějším zdrojem pro optimalizaci LCP. Udávají nejen hodnotu LCP, ale v části Diagnostika také určí, který prvek považuje za „Largest Contentful Paint element“.
+
+Více o tom, co může být [LCP element](https://pagespeed.one/znalosti/lcp-element) a jak jej ovlivnit, píšeme na PageSpeed.ONE.
 
 ### SpeedCurve {#mereni-speedcurve}
 

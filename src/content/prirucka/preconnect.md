@@ -112,6 +112,6 @@ Je nutné si uvědomit dvě věci:
 * Každý `preconnect` „sežere“ prohlížeči výkon, který v tu chvíli potřebuje pro důležitější úkoly, například vykreslování stránky.
 * Po 10 vteřinách od přednavázání spojení, kdy se z domény nezačalo nic stahovat, prohlížeč spojení zavře.
 
-Z toho vyplývá – ano, používejte preconnect, ale opatrně s ním. Doporučené maximum přednavázaných spojení je za mě 5 - 7 domén. Preconnect je skvělý na zdroje nutné pro urychlení prvních vykreslení stránky a tak by se také měl používat.
+Z toho vyplývá – ano, používejte preconnect, ale opatrně s ním. Doporučené maximum přednavázaných spojení je za mě 5 - 7 domén. Preconnect je skvělý na zdroje nutné pro urychlení prvních vykreslení stránky a tak by se také měl používat. Spolu s preconnectem se hodí mít zapnutou komprimaci – podrobnosti o [Gzip a Brotli](https://pagespeed.one/znalosti/gzip-a-brotli) najdete v naší nápovědě.
 
 <!-- AdSnippet -->

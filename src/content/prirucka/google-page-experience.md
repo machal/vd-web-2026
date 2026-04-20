@@ -119,7 +119,7 @@ Co například URL, která byla nedávno zveřejněna a ještě nemá data z 28 
 Data od uživatelů můžete vytáhnout:
 
 - Nejjednodušším způsobem z [PageSpeed Insights](pagespeed-insights.md)
-- Podrobněji a s vývojem v čase pak v našem [testeru na PageSpeed.ONE](https://pagespeed.one/app/)
+- Podrobněji a s vývojem v čase pak v našem [testu rychlosti webu](https://pagespeed.one/app/insights)
 - Doplňujte to vždy pohledem do [Google Search Console](google-search-console.md).
 
 Další aspekty, které byly uváděny u příležitosti spuštění hodnocení Page Experience skvěle [v tweetu](https://mobile.twitter.com/fabkru/status/1396331280585928707) shrnul Fabian Krumbholz, takže z něj vyjdu.
@@ -195,7 +195,7 @@ Důvodů, proč [řešit rychlost webu](rychlost-nacitani-proc.md) ale najdete c
 Co tedy dělat, pokud se chystáte na optimalizaci?
 
 1. V Google Search Console sledujte report Core Web Vitals. Snažte se odstraňovat problémy zde uvedené.
-2. Dlouhodobě sledujte rychlost typových stránek webu, i celé domény pomocí [testeru PageSpeed.ONE](https://pagespeed.one/app/).
+2. Dlouhodobě sledujte rychlost typových stránek webu, i celé domény pomocí [testu rychlosti webu na PageSpeed.ONE](https://pagespeed.one/app/insights).
 3. Naučte se, jak správně [měřit rychlost webu](https://www.vzhurudolu.cz/video/webinar-rychlost-mereni) a ladění metrik [CLS](https://www.vzhurudolu.cz/video/webinar-cls) a [LCP](https://www.vzhurudolu.cz/video/webinar-lcp). Třeba pomohou mé webináře. Tyto tři webináře teď můžete [pořídit i najednou](https://www.vzhurudolu.cz/kurzy/hromadna-objednavka?videa=699,778,882).
 4. Optimalizujte, optimalizujte, optimalizujte. Pomůže vám [checklist z PageSpeed.ONE](https://pagespeed.one/blog/checklist-2021) nebo moje tipy na novinky - [jak zrychlit web](https://www.vzhurudolu.cz/prirucka/jak-zrychlit-web).
 5. Vzdělávajte se v oblasti [rychlosti webu](https://www.vzhurudolu.cz/rychlost-nacitani).

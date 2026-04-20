@@ -147,13 +147,13 @@ Data od reálných uživatelů vám poskytnou například následující nástro
 * [Rozšíření pro Chrome „Web Vitals“](https://chrome.google.com/webstore/detail/web-vitals/ahfhijdlegdabablpippeagghigmibma?hl=en)  
 * [JS knihovna web-vitals](https://github.com/GoogleChrome/web-vitals) (možnost implementace vlastních měření)
 
-Na závěr se podíváme na obecné tipy, jak vylepšit špatné CLS.
+Na závěr se podíváme na obecné tipy, jak vylepšit špatné CLS. CLS je jednou ze tří metrik [Core Web Vitals](web-vitals.md), proto se vyplatí ji řešit.
 
 ## Optimalizace CLS {#optimalizace}
 
 Zamezte poskakování při vykreslování. Zaměřte se na to, abyste v layoutu rezervovali prostor obsahu, který se bude vykreslovat asynchronně – webfontům, obrázkům, videím, komponentám vykreslovaným [asynchronním JS](js-async-defer-module.md):
 
-* Obrázkům nastavte vždy poměr stran pomocí [parametrů `width` a `height`](img-pomer-stran.md).
+* Obrázkům nastavte vždy poměr stran pomocí [parametrů `width` a `height`](img-pomer-stran.md). Více o tom, proč jsou [rozměry obrázků kvůli CLS](https://pagespeed.one/znalosti/cls-rozmery) tak důležité, píšeme na PageSpeed.ONE.
 * Dalšímu asynchronnímu obsahu jako je video, prvek iframe nebo komponenty vykreslované pomocí JS [držte prostor](css-pomer-stran.md) pomocí technik jako je [trik s paddingem](padding-trik.md).
 * Zajistěte, aby vlastní font nezpůsobil při nahrazování výchozího písma výrazné překreslení stránky.
 * Animujte vždy CSS vlastnosti, které se umí [renderovat pomocí GPU](https://www.smashingmagazine.com/2016/12/gpu-animation-doing-it-right/), takže např. `transform:translateY()` namísto `top`.
@@ -161,6 +161,6 @@ Zamezte poskakování při vykreslování. Zaměřte se na to, abyste v layoutu 
 
 Fanoušky [AMP](amp.md) by mohlo zajímat, že tento framework je stavěný od samých základů tak, aby se [CLS rovnalo nebo blížilo nule](https://blog.amp.dev/2020/04/16/cumulative-layout-shift-in-amp/).
 
-Další obecná doporučení v angličtině od Googlu jsou na [web.dev](https://web.dev/optimize-cls/).
+Další obecná doporučení v angličtině od Googlu jsou na [web.dev](https://web.dev/optimize-cls/). Česky psané tipy na [optimalizaci CLS](https://pagespeed.one/znalosti/optimalizace-cls) najdete v naší nápovědě na PageSpeed.ONE.
 
 <!-- AdSnippet -->

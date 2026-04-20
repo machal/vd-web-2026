@@ -355,7 +355,7 @@ Komunikace s autory 3P komponent je ovšem důležitá. Kromě toho, že jim mů
 
 Third-party komponent jsou stovky a tak by velmi pomohlo, když bychom se o úspěšné nebo neúspěšné optimalizaci navzájem informovali – tweet nebo článek určitě pomůže ostatním.
 
-Existuje zde také databáze komponent třetích stran, podle které je identifikuje například také Lighthouse nebo Chrome DevTools: [Third Party Web](https://github.com/patrickhulce/third-party-web). Bohužel v ní není moc našich lokálních dodavatelů 3P. Pomůže, když uděláte pull request a těmito nástroji neidentifikovanou třetí stranu vložíte.
+V našem [testu rychlosti webu](https://pagespeed.one/app/insights) na PageSpeed.ONE ukazujeme vliv třetích stran pomocí metriky [Third Party Blocking Time (3PBT)](https://pagespeed.one/metriky/3pbt). Existuje zde také databáze komponent třetích stran, podle které je identifikuje například také Lighthouse nebo Chrome DevTools: [Third Party Web](https://github.com/patrickhulce/third-party-web). Bohužel v ní není moc našich lokálních dodavatelů 3P. Pomůže, když uděláte pull request a těmito nástroji neidentifikovanou třetí stranu vložíte.
 
 Tímhle bychom téma mohli uzavřít. Tradičně to shrnu v odpovědi na otázku: Jak optimalizovat rychlost komponent třetích stran?
 

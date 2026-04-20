@@ -171,7 +171,7 @@ Obecně samozřejmě pomáhá mít ve stránce co nejméně JS, který něco pro
 
 Důležitá v případě INP může být také [volba JS frameworku](https://web.dev/inp-in-frameworks/). Např. weby běžící na Next.js na mobilu splňují metriku jen z 20 %. Lidé z Googlu sice deklarují, že s autory těchto knihoven budou pracovat na zlepšení, ale tipuji, že některé autory webů běžících na těchto frameworcích čekají zajímavé časy.
 
-Více o [optimalizaci INP](https://web.dev/optimize-inp/) najdete jako vždy v materiálech přímo od Googlu
+Více o [optimalizaci INP](https://web.dev/optimize-inp/) najdete v materiálech přímo od Googlu. Praktické tipy k řešení dlouhých úloh jsme sepsali v článku [INP a setTimeout](https://pagespeed.one/znalosti/inp-a-settimeout) a podrobněji v nápovědě k [optimalizaci INP](https://pagespeed.one/znalosti/optimalizace-inp) na PageSpeed.ONE
 
 ## Co s tím teď? {#a-co-jako}
 

@@ -94,7 +94,7 @@ Pojďme se ale mrknout na jednotlivé hranice, které pro vysvědčení [použí
 
 </div>
 
-V nástrojích [Lighthouse](lighthouse.md) nebo [PageSpeed Insights](pagespeed-insights.md) se metrika TBT do [celkového skóre (LPS)](metrika-lps.md) projevuje váhou 30 %.
+V nástrojích [Lighthouse](lighthouse.md) nebo [PageSpeed Insights](pagespeed-insights.md) se metrika TBT do [celkového skóre (LPS)](metrika-lps.md) projevuje váhou 30 %. Aktuální prahové hodnoty a detaily shrnuje stránka [metrika TBT](https://pagespeed.one/metriky/tbt) na PageSpeed.ONE.
 
 ## Jak TBT optimalizovat? {#optimalizace}
 

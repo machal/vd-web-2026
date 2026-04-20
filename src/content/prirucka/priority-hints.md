@@ -85,7 +85,7 @@ Volně cituji podle [specifikace Priority Hints](https://wicg.github.io/priority
 
 > Preload je povinné načtení prostředku, který je nezbytný pro aktuální stav stránky. Priority Hints mohou napovědět, že priorita prostředku by měla být nižší nebo vyšší než jeho výchozí priorita, a mohou být také použity k poskytnutí podrobnějšího určení priority.
 
-V praxi budeme nejspíš potřebovat obojí, `preload` i `fetchpriority`, přičemž tipuji, že někdy bude stačit vhodné použití preloadu a většinou ani to ne. Prostě jde o doplněk pro nás, [hračičky s rychlostí webu](https://pagespeed.one/).
+V praxi budeme nejspíš potřebovat obojí, `preload` i `fetchpriority`, přičemž tipuji, že někdy bude stačit vhodné použití preloadu a většinou ani to ne. Prostě jde o doplněk pro nás, [hračičky s rychlostí webu](https://pagespeed.one/). Pokud vás zajímají další moderní techniky pro předvídavé načítání, podívejte se na [Speculation Rules](https://pagespeed.one/znalosti/speculation-rules) v naší nápovědě.
 
 <!-- AdSnippet -->
 
