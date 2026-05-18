@@ -4,7 +4,7 @@
 
 | Pole | Povinné | Typ | Poznámka |
 |------|---------|-----|----------|
-| postTitle | ano | string | Hlavní titulek; mapuje se na `title` |
+| postTitle | ano | string | SEO titulek (stručný); mapuje se na `title`. H1 v těle článku může být jiný — popisnější, vtipnější. |
 | title | volitelné | string | Alternativa k postTitle |
 | postDateTime / date | doporučené | string/date | Pro řazení a zobrazení |
 | excerpt / description | doporučené | string | Perex / popis |
@@ -111,7 +111,8 @@ published: false
 
 | Aspekt | Blog | Podcast | Příručka |
 |--------|------|---------|----------|
-| Hlavní titulek | postTitle | postTitle | id + heading/title |
+| Hlavní titulek (SEO) | postTitle, og_title | postTitle, og_title | title, og_title |
+| H1 v článku | volitelně jiný než postTitle | volitelně jiný | volitelně jiný než title |
 | Datum | postDateTime / date | postDateTime / date | date (volitelné) |
 | Popis | excerpt | excerpt | perex |
 | Unikátní id | ne | ne | ano (u published) |

@@ -107,6 +107,13 @@ export const categories: CategoryConfig[] = [
     tags: ['skoleni'],
   },
   {
+    slug: 'webexpo',
+    title: 'WebExpo',
+    description: 'Pozvánky na konferenci WebExpo v Praze, reporty z jednotlivých ročníků a záznamy podcastů natočených na místě. Každý rok v květnu v Lucerně.',
+    hasTOC: false,
+    tags: ['webexpo'],
+  },
+  {
     slug: 'pristupnost',
     title: 'Přístupnost',
     description: 'Články o přístupnosti',

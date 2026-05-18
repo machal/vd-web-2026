@@ -52,7 +52,7 @@ Při psaní nebo úpravách v `src/content/blog/` a `src/content/prirucka/` (a k
 6. **Výzva na konci** – obalit v `<small>*…*</small>` (kurzíva, malé písmo). Typicky jde o odkaz na komentování na sociálních sítích (LinkedIn, X apod.) – přidávat až po publikaci článku, když je k dispozici URL příspěvku na soc. síti.
 7. **Odkazování** – externí nástroje/služby odkazovat u prvního výskytu; vnitřní odkazy na důležité články přirozeně v textu. Odkazy nedávat do citací, figcaption, perexů ani do meta částí. **Interní odkazy na články vždy jako .md:** v příručce `[Text](nazev.md)`; mezi sekcemi `[Text](../blog/nazev.md)`, `[Text](../prirucka/nazev.md)` nebo `[Text](../podcast/nazev.md)`. V Markdownu nikdy nepsat hotové URL typu `/blog/258-…` ani `/prirucka/nazev` – build přepisuje z .md cest. Na úvodní stránky sekcí lze `/blog`, `/podcast`.
 8. **Perex vs. text článku** – perex (`excerpt`/`perex`) je shrnutí pro RSS, náhledy a OG. Text článku by neměl perex opakovat doslova; první odstavce by měly čtenáře vtáhnout jinak než perex.
-9. **Konzistence H1 a title** – H1 v těle článku musí odpovídat `title` (příručka) nebo `postTitle` (blog/podcast) ve front matter. Stejně tak `og_title`.
+9. **H1 vs. title (postTitle / title)** – **nemusí být stejné.** `postTitle` (blog/podcast) nebo `title` (příručka) a `og_title` piš **stručně a SEO** (klíčová slova, rok, jména speakerů). **H1** v těle článku piš **článkově**: popisnější, osobnější, klidně s vtipem — má lákat ke čtení, ne kopírovat meta titulek. Nesmí ale zavádět (jiné téma než článek).
 10. **Anglicismy v českém textu** – nepoužívat anglický genitiv s apostrofem (např. ~~CEO's~~); místo toho český tvar (CEO, šéfové firem apod.).
 11. **Zpětné odkazy na nový článek** – při publikaci nového článku najdi v existujících článcích alespoň 3–5 míst pro odkaz na nový text. Nikdy nepřidávej umělé „→ Související:" bloky. Místo toho: (a) hledej výskyt klíčového slova odpovídajícího URL/id nového článku a prolinkuj ho, nebo (b) na vhodné místo přímo do textu připiš stručnou zmínku s odkazem, která tam čtenářsky sedí. Odkaz musí působit, jako by tam byl od začátku.
 
@@ -83,7 +83,7 @@ Skript `npm run fill-heading` doplní do front matter příručky pole odvozená
 |----|----------------|----------------------|
 | Front matter | Ano, vždy | Ano, vždy |
 | Unikátní id | — | Ano (`id`) |
-| postTitle / title | postTitle (nebo title) | title / heading |
+| postTitle / title | postTitle (nebo title), SEO; H1 může být jiný | title (SEO); H1 / heading může být jiný |
 | published: false | pro koncepty | pouze v content-* (ebooky) |
 
 Pro detailní přehled polí a příklady front matter viz [reference.md](reference.md).
