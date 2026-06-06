@@ -114,63 +114,63 @@ Deferred to future release.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| MONO-01 | — | Pending |
-| MONO-02 | — | Pending |
-| MONO-03 | — | Pending |
-| MONO-04 | — | Pending |
-| MONO-05 | — | Pending |
-| VD-01 | — | Pending |
-| VD-02 | — | Pending |
-| VD-03 | — | Pending |
-| VD-04 | — | Pending |
-| VD-05 | — | Pending |
-| EN-01 | — | Pending |
-| EN-02 | — | Pending |
-| EN-03 | — | Pending |
-| EN-04 | — | Pending |
-| EN-05 | — | Pending |
-| EN-06 | — | Pending |
-| EN-07 | — | Pending |
-| EN-08 | — | Pending |
-| EN-09 | — | Pending |
-| EN-10 | — | Pending |
-| CONT-01 | — | Pending |
-| CONT-02 | — | Pending |
-| CONT-03 | — | Pending |
-| CONT-04 | — | Pending |
-| CONT-05 | — | Pending |
-| CONT-06 | — | Pending |
-| CONT-07 | — | Pending |
-| I18N-01 | — | Pending |
-| I18N-02 | — | Pending |
-| I18N-03 | — | Pending |
-| I18N-04 | — | Pending |
-| I18N-05 | — | Pending |
-| I18N-06 | — | Pending |
-| I18N-07 | — | Pending |
-| SEO-01 | — | Pending |
-| SEO-02 | — | Pending |
-| SEO-03 | — | Pending |
-| SEO-04 | — | Pending |
-| SEO-05 | — | Pending |
-| SEO-06 | — | Pending |
-| SEO-07 | — | Pending |
-| LEGAL-01 | — | Pending |
-| LEGAL-02 | — | Pending |
-| LEGAL-03 | — | Pending |
-| PERF-01 | — | Pending |
-| PERF-02 | — | Pending |
-| PERF-03 | — | Pending |
-| PERF-04 | — | Pending |
-| DEPLOY-01 | — | Pending |
-| DEPLOY-02 | — | Pending |
-| DEPLOY-03 | — | Pending |
-| DEPLOY-04 | — | Pending |
+| MONO-01 | Phase 1 | Pending |
+| MONO-02 | Phase 1 | Pending |
+| MONO-03 | Phase 2 | Pending |
+| MONO-04 | Phase 1 | Pending |
+| MONO-05 | Phase 5 | Pending |
+| VD-01 | Phase 3 | Pending |
+| VD-02 | Phase 1 | Pending |
+| VD-03 | Phase 4 | Pending |
+| VD-04 | Phase 6 | Pending |
+| VD-05 | Phase 3 | Pending |
+| EN-01 | Phase 5 | Pending |
+| EN-02 | Phase 5 | Pending |
+| EN-03 | Phase 5 | Pending |
+| EN-04 | Phase 5 | Pending |
+| EN-05 | Phase 7 | Pending |
+| EN-06 | Phase 5 | Pending |
+| EN-07 | Phase 5 | Pending |
+| EN-08 | Phase 5 | Pending |
+| EN-09 | Phase 8 | Pending |
+| EN-10 | Phase 8 | Pending |
+| CONT-01 | Phase 7 | Pending |
+| CONT-02 | Phase 7 | Pending |
+| CONT-03 | Phase 7 | Pending |
+| CONT-04 | Phase 7 | Pending |
+| CONT-05 | Phase 7 | Pending |
+| CONT-06 | Phase 7 | Pending |
+| CONT-07 | Phase 7 | Pending |
+| I18N-01 | Phase 6 | Pending |
+| I18N-02 | Phase 6 | Pending |
+| I18N-03 | Phase 6 | Pending |
+| I18N-04 | Phase 6 | Pending |
+| I18N-05 | Phase 6 | Pending |
+| I18N-06 | Phase 6 | Pending |
+| I18N-07 | Phase 6 | Pending |
+| SEO-01 | Phase 8 | Pending |
+| SEO-02 | Phase 8 | Pending |
+| SEO-03 | Phase 8 | Pending |
+| SEO-04 | Phase 8 | Pending |
+| SEO-05 | Phase 8 | Pending |
+| SEO-06 | Phase 8 | Pending |
+| SEO-07 | Phase 8 | Pending |
+| LEGAL-01 | Phase 8 | Pending |
+| LEGAL-02 | Phase 8 | Pending |
+| LEGAL-03 | Phase 8 | Pending |
+| PERF-01 | Phase 8 | Pending |
+| PERF-02 | Phase 8 | Pending |
+| PERF-03 | Phase 8 | Pending |
+| PERF-04 | Phase 8 | Pending |
+| DEPLOY-01 | Phase 5 | Pending |
+| DEPLOY-02 | Phase 9 | Pending |
+| DEPLOY-03 | Phase 9 | Pending |
+| DEPLOY-04 | Phase 9 | Pending |
 
 **Coverage:**
-- v1 requirements: 50 total
-- Mapped to phases: 0 (pending roadmap)
-- Unmapped: 50
+- v1 requirements: 52 total
+- Mapped to phases: 52
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-06-06*
