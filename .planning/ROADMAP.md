@@ -28,7 +28,13 @@ Brownfield Astro monorepo migration and English personal brand launch. Czech sit
   2. Turborepo filter commands build the Czech app independently for local dev and CI
   3. Draft/unpublished blog posts do not appear in production build output or sitemap
   4. Each app declares its own `astro` and `@astrojs/*` dependencies — no root-only hoisting failures
-**Plans**: TBD
+**Plans**: 4 plans
+
+Plans:
+- [ ] 01-01-PLAN.md — Workspace scaffold + big-bang Czech app move (MONO-01 walking skeleton)
+- [ ] 01-02-PLAN.md — Turborepo orchestration + app dependency isolation (MONO-02, MONO-04)
+- [ ] 01-03-PLAN.md — Draft/unpublished content exclusion fix (VD-02)
+- [ ] 01-04-PLAN.md — PR CI + FTP deploy path update (MONO-01, MONO-02 CI guardrails)
 
 ### Phase 2: Shared Packages Extraction
 **Goal**: Shared infrastructure lives in packages — no duplicated plugin or layout code
@@ -139,7 +145,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8 →
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Monorepo Foundation & CI | 0/TBD | Not started | - |
+| 1. Monorepo Foundation & CI | 0/4 | Not started | - |
 | 2. Shared Packages Extraction | 0/TBD | Not started | - |
 | 3. Czech Site Parity Verification | 0/TBD | Not started | - |
 | 4. Vercel Migration — Czech Site | 0/TBD | Not started | - |
