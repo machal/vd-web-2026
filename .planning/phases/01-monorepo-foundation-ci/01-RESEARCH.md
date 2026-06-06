@@ -551,19 +551,16 @@ From Astro troubleshooting [CITED: docs.astro.build/en/guides/troubleshooting]:
 | A3 | Fixing getStaticPaths is sufficient for sitemap draft exclusion | Draft audit | Draft URLs remain in sitemap if Astro lists unpublished routes elsewhere |
 | A4 | `npm install` at root correctly hoists + links workspace packages | Standard Stack | lockfile/workspace link failures |
 
-## Open Questions
+## Open Questions (RESOLVED)
 
 1. **Root `tsconfig.json` in Phase 1?**
-   - What we know: No tsconfig today; recommended in Claude's discretion.
-   - Recommendation: Add minimal root + app `tsconfig.json` extending `astro/tsconfigs/strict` — low cost, helps Phase 2 package extraction.
+   - **RESOLVED:** Yes — add minimal root + app `tsconfig.json` extending `astro/tsconfigs/strict` in Plan 01-02. Low cost, helps Phase 2 package extraction.
 
 2. **Turbo remote cache in CI?**
-   - What we know: Discretion left to planner; not required for 1-app build.
-   - Recommendation: Local cache only in Phase 1; remote cache optional when EN app adds second build target (Phase 5).
+   - **RESOLVED:** Local cache only in Phase 1. Remote cache deferred until EN app adds second build target (Phase 5).
 
 3. **`.env` location after move**
-   - What we know: Root `.env` exists (gitignored).
-   - Recommendation: Move to `apps/vzhurudolu/.env` if any app code reads env vars; audit grep for `import.meta.env` — currently minimal in static SSG.
+   - **RESOLVED:** Keep root `.env` gitignored for now. Minimal `import.meta.env` usage in static SSG; move to `apps/vzhurudolu/.env` only if env-dependent code is found during file move.
 
 ## Environment Availability
 

@@ -19,123 +19,160 @@ Brownfield Astro monorepo migration and English personal brand launch. Czech sit
 ## Phase Details
 
 ### Phase 1: Monorepo Foundation & CI
+
 **Goal**: Czech site builds reliably from monorepo structure with CI guardrails
 **Mode:** mvp
 **Depends on**: Nothing (first phase)
 **Requirements**: MONO-01, MONO-02, MONO-04, VD-02
 **Success Criteria** (what must be TRUE):
+
   1. Developer can run `npm install` at repo root and build Czech site from `apps/vzhurudolu` without errors
   2. Turborepo filter commands build the Czech app independently for local dev and CI
   3. Draft/unpublished blog posts do not appear in production build output or sitemap
   4. Each app declares its own `astro` and `@astrojs/*` dependencies — no root-only hoisting failures
-**Plans**: 4 plans
 
+**Plans**: 4 plans
 Plans:
+**Wave 1**
+
 - [ ] 01-01-PLAN.md — Workspace scaffold + big-bang Czech app move (MONO-01 walking skeleton)
+
+**Wave 2** *(blocked on Wave 1 completion)*
+
 - [ ] 01-02-PLAN.md — Turborepo orchestration + app dependency isolation (MONO-02, MONO-04)
+
+**Wave 3** *(blocked on Wave 2 completion)*
+
 - [ ] 01-03-PLAN.md — Draft/unpublished content exclusion fix (VD-02)
+
+**Wave 4** *(blocked on Wave 3 completion)*
+
 - [ ] 01-04-PLAN.md — PR CI + FTP deploy path update (MONO-01, MONO-02 CI guardrails)
 
 ### Phase 2: Shared Packages Extraction
+
 **Goal**: Shared infrastructure lives in packages — no duplicated plugin or layout code
 **Mode:** mvp
 **Depends on**: Phase 1
 **Requirements**: MONO-03
 **Success Criteria** (what must be TRUE):
+
   1. Markdown pipeline, Vite plugins, layouts, and SEO helpers import from `packages/*` in both apps
   2. Czech site builds with identical content rendering after package extraction (no visual or URL regressions)
   3. Shared markdown config accepts path prefixes (`/prirucka` vs `/guide`) via factory pattern — ready for EN app
+
 **Plans**: TBD
 
 ### Phase 3: Czech Site Parity Verification
+
 **Goal**: Monorepo Czech build matches current production behavior before hosting changes
 **Mode:** mvp
 **Depends on**: Phase 2
 **Requirements**: VD-01, VD-05
 **Success Criteria** (what must be TRUE):
+
   1. Czech site from `apps/vzhurudolu` produces output parity with current production (URLs, redirects, content)
   2. Link checker or URL diff confirms no broken internal links vs live `vzhurudolu.cz`
   3. `public/` asset strategy applied — 685 MB audit complete; builds complete without timeout
+
 **Plans**: TBD
 
 ### Phase 4: Vercel Migration — Czech Site
+
 **Goal**: Czech site serves from Vercel with ported redirects while FTP remains rollback path
 **Mode:** mvp
 **Depends on**: Phase 3
 **Requirements**: VD-03
 **Success Criteria** (what must be TRUE):
+
   1. Czech site preview on Vercel matches production URL behavior including legacy redirects from `.htaccess`
   2. Reader visiting `vzhurudolu.cz` URLs on Vercel preview gets same content and redirect chains as FTP production
   3. Security headers and trailing-slash policy match production expectations
+
 **Plans**: TBD
 
 ### Phase 5: English App Scaffold
+
 **Goal**: michalek.dev exists as lean English Astro app with core pages and dual-project Vercel config
 **Mode:** mvp
 **Depends on**: Phase 4
 **Requirements**: EN-01, EN-02, EN-03, EN-04, EN-06, EN-07, EN-08, MONO-05, DEPLOY-01
 **Success Criteria** (what must be TRUE):
+
   1. Visitor sees homepage with personal tech blog positioning, unified article stream (blog + guide), and CTA to `/martin`
   2. Site title reads **Martin Michálek · Web & Performance** — personal brand, not Vzhůru dolů
   3. Navigation shows **Articles** (→ `/`) and **Martin** (→ `/martin`); legal links in footer only
   4. Article URLs resolve at `/blog/{slug}` and `/guide/{slug}` with no separate listing pages
   5. Custom 404 page helps visitor navigate back to homepage
   6. PR CI builds both apps on every change; two Vercel projects configured from one repo with per-app Root Directory
+
 **Plans**: TBD
 **UI hint**: yes
 
 ### Phase 6: Content Pairing & i18n SEO
+
 **Goal**: Cross-domain language pairing works bidirectionally on all paired content
 **Mode:** mvp
 **Depends on**: Phase 5
 **Requirements**: I18N-01, I18N-02, I18N-03, I18N-04, I18N-05, I18N-06, I18N-07, VD-04
 **Success Criteria** (what must be TRUE):
+
   1. Reader on any of 8 paired EN articles or `/martin` sees language switch ("English" / "Česky") linking to Czech counterpart
   2. Reader on Czech originals of 8 pilot articles sees language switch linking to English counterparts
   3. Paired pages include correct hreflang tags (`en`, `cs`, `x-default` → EN) with absolute URLs
   4. Each page has self-referencing canonical URL — never cross-language canonical
   5. Build fails if pairing manifest has orphan or non-reciprocal pairs
   6. No automatic IP/browser language redirect occurs
+
 **Plans**: TBD
 **UI hint**: yes
 
 ### Phase 7: Content Adaptation — Pilot 8 + `/martin`
+
 **Goal**: Eight adapted pilot articles and native English `/martin` page earn technical credibility
 **Mode:** mvp
 **Depends on**: Phase 6
 **Requirements**: CONT-01, CONT-02, CONT-03, CONT-04, CONT-05, CONT-06, CONT-07, EN-05
 **Success Criteria** (what must be TRUE):
+
   1. Reader can access 5 guide articles (`ai-saas`, `vibe-coding`, `email-inbox-zero`, `web-vitals`, `webp`) and 3 blog articles (`261-rok-2025`, `254-ne`, `244-usetrite-utratite`) in adapted English
   2. Each article has EN-specific title, description, slug, author byline linking to `/martin`, and attribution note (adapted from Czech original)
   3. `/martin` page presents bio, positioning, services, client logos, LinkedIn CTA, and prominent **pagespeed.one** promotion in native English
   4. Homepage includes curated "start here" links to key pilot articles
+
 **Plans**: TBD
 **UI hint**: yes
 
 ### Phase 8: Launch Polish — Legal, Feeds, Tags, Performance
+
 **Goal**: michalek.dev is launch-ready for discovery, compliance, and pragmatic performance
 **Mode:** mvp
 **Depends on**: Phase 7
 **Requirements**: SEO-01, SEO-02, SEO-03, SEO-04, SEO-05, SEO-06, SEO-07, LEGAL-01, LEGAL-02, LEGAL-03, EN-09, EN-10, PERF-01, PERF-02, PERF-03, PERF-04
 **Success Criteria** (what must be TRUE):
+
   1. Every public page has unique title, meta description, Open Graph, Twitter Card, and `lang="en"`
   2. XML sitemap and RSS feed (`/rss`) aggregate unified blog + guide stream; `robots.txt` references sitemap
   3. Person + Article JSON-LD includes `sameAs` (LinkedIn, pagespeed.one)
   4. Tag archive pages (`/{tag}/`) filter unified stream; tags visible on article pages for discovery
   5. Privacy policy and cookie consent cover Vercel hosting and analytics cookies; footer links to both
   6. Site maintains good mobile Core Web Vitals; GA loads async/deferred without blocking render
+
 **Plans**: TBD
 **UI hint**: yes
 
 ### Phase 9: Production Cutover — michalek.dev + DNS
+
 **Goal**: Both domains live on Vercel with FTP retired and documented rollback
 **Mode:** mvp
 **Depends on**: Phase 8
 **Requirements**: DEPLOY-02, DEPLOY-03, DEPLOY-04
 **Success Criteria** (what must be TRUE):
+
   1. `vzhurudolu.cz` and `michalek.dev` serve from Vercel via staged DNS cutover (TTL reduced before switch)
   2. FTP deploy workflow removed after successful Vercel soak period
   3. Rollback path documented — revert DNS or redeploy previous Vercel build
+
 **Plans**: TBD
 
 ## Progress
