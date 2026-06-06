@@ -8,7 +8,7 @@ Both sites live in one monorepo (`apps/vzhurudolu`, `apps/michalek-dev`, `packag
 
 ## Core Value
 
-Articles and the `/martin` page must earn organic trust from the global tech community — shareable, technically credible, and backed by a site that demonstrates 100/100 Lighthouse performance as the consultant's own showcase.
+Articles and the `/martin` page must earn organic trust from the global tech community — shareable and technically credible. The site should still reflect Web Performance expertise (lean Astro SSG, sensible CWV), but Lighthouse 100/100 is a secondary aspiration, not a launch blocker — pragmatic use of analytics and other third-party scripts is acceptable.
 
 ## Requirements
 
@@ -25,7 +25,8 @@ Articles and the `/martin` page must earn organic trust from the global tech com
 
 - [ ] Monorepo structure: `apps/vzhurudolu`, `apps/michalek-dev`, `packages/shared`
 - [ ] English site on `michalek.dev` with personal tech blog homepage
-- [ ] URL structure: `/blog/` + `/guide/` (English příručka)
+- [ ] Unified article stream on homepage (blog + guide, VD-style); article URLs at `/blog/` and `/guide/`; nav: Articles + Martin
+- [ ] Tag taxonomy and tag archive pages (VD-style categories)
 - [ ] `/martin` page: bio, positioning, services, client logos, LinkedIn CTA, prominent **pagespeed.one** promotion
 - [ ] 8 pilot articles adapted to English (AI draft in Cursor + manual edit):
   - Guide: `ai-saas`, `vibe-coding`, `email-inbox-zero`, `web-vitals`, `webp`
@@ -34,7 +35,7 @@ Articles and the `/martin` page must earn organic trust from the global tech com
 - [ ] Site title: **Martin Michálek · Web & Performance**
 - [ ] Legal/technical minimum: privacy policy, cookies (GDPR), RSS, sitemap
 - [ ] Migrate **both** sites from FTP to Vercel (simultaneous)
-- [ ] Lighthouse 100/100 across metrics; minimal unnecessary JS
+- [ ] Strong performance posture (good CWV, lean stack); GA/analytics allowed with pragmatic tradeoffs
 
 ### Out of Scope
 
@@ -60,7 +61,7 @@ Articles and the `/martin` page must earn organic trust from the global tech com
 ## Constraints
 
 - **Tech**: Stay on Astro 4 SSG; monorepo with shared packages — avoid rewrite to different framework
-- **Performance**: Site must exemplify Web Perf consulting — Lighthouse 100/100, zero unnecessary JS
+- **Performance**: Site should exemplify Web Perf consulting — lean Astro SSG, good CWV; third-party scripts (GA, etc.) pragmatically, not dogmatically avoided
 - **Brand**: michalek.dev is personal brand (Martin Michálek), not "Vzhůru dolů in English"
 - **Deploy**: No FTP for production going forward — Vercel (or equivalent recommended in research)
 - **Content**: Adaptation, not literal translation — editorial quality over automation
@@ -72,13 +73,15 @@ Articles and the `/martin` page must earn organic trust from the global tech com
 |----------|-----------|---------|
 | Monorepo with `packages/shared` | Same visuals and infra; only content differs by locale/site | — Pending |
 | Separate domain `michalek.dev` | Stronger international personal brand vs. `/en/` on Czech site | — Pending |
-| `/blog/` + `/guide/` URL split | Preserves content-type clarity from Czech site | — Pending |
+| Unified stream + `/blog/`/`/guide/` article URLs | VD-style listing; type visible in URL only | — Pending |
+| Tags in v1 | Same discovery pattern as VD categories | — Pending |
 | MVP: 8 adapted articles + homepage + `/martin` | Enough depth for credible launch without boiling the ocean | — Pending |
 | Vercel for both sites simultaneously | End FTP uploads; modern CI/CD for monorepo | — Pending |
 | AI + manual content adaptation | Speed of draft, quality of human editorial | — Pending |
 | Full language switch on translated pairs | Readers can find Czech/EN counterpart | — Pending |
 | LinkedIn CTA, no EN newsletter in MVP | Simple contact path; Mailchimp deferred | — Pending |
 | Promote pagespeed.one on `/martin` | Primary business funnel for consulting | — Pending |
+| Pragmatic performance over LH 100/100 | GA and useful third-party scripts OK; CWV matter more than perfect scores | — Pending |
 
 ## Evolution
 
