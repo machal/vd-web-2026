@@ -71,6 +71,8 @@ Recent decisions affecting current work:
 - Phase 02: createCustomSitemap factory + layout/chrome components in @vd/shared; pages import from shared package
 - Phase 03: Local cold build 29s — under 5-minute threshold; copy plugin unchanged per D-11
 - Phase 03: FTP data/files exclusion gap documented for Phase 4+ selective copy
+- Phase 03 Plan 02: Sitemap parity gate — missing prod paths FAIL, local extras WARN; draft slugs excluded from missing count
+- Phase 03 Plan 02: Production sitemap (873 URLs) fetched at verify time as authoritative baseline per D-02
 
 ### Pending Todos
 

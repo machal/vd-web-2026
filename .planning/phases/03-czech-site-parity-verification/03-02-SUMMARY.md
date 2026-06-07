@@ -64,7 +64,7 @@ completed: 2026-06-07
 2. **Task 2: Production vs local sitemap diff** - `b40df67` (feat)
 3. **Task 3: Dist file existence map** - `723994b` (feat)
 
-**Plan metadata:** pending docs commit
+**Plan metadata:** `14e3c8b` (docs: complete sitemap parity gate plan)
 
 ## Files Created/Modified
 
@@ -102,8 +102,9 @@ None.
 
 ## Self-Check: PASSED
 
-- scripts/verify-phase3-parity.sh exists
-- Commits de49b86, b40df67, 723994b found in git log
+- scripts/verify-phase3-parity.sh exists and is executable
+- Commits de49b86, b40df67, 723994b, 14e3c8b found in git log
+- Re-verified 2026-06-07: `npx turbo run build --filter=@vd/vzhurudolu && bash scripts/verify-phase3-parity.sh` — prod 873, local 871, missing 0, extras 0
 
 ---
 *Phase: 03-czech-site-parity-verification*
