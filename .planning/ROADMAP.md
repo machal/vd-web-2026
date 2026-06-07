@@ -43,7 +43,7 @@ Plans:
 
 **Wave 3** *(blocked on Wave 2 completion)*
 
-- [ ] 01-03-PLAN.md — Draft/unpublished content exclusion fix (VD-02)
+- [x] 01-03-PLAN.md — Draft/unpublished content exclusion fix (VD-02)
 
 **Wave 4** *(blocked on Wave 3 completion)*
 
@@ -182,7 +182,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8 →
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Monorepo Foundation & CI | 2/4 | In Progress|  |
+| 1. Monorepo Foundation & CI | 3/4 | In Progress|  |
 | 2. Shared Packages Extraction | 0/TBD | Not started | - |
 | 3. Czech Site Parity Verification | 0/TBD | Not started | - |
 | 4. Vercel Migration — Czech Site | 0/TBD | Not started | - |
