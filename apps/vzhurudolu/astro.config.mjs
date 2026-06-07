@@ -2,7 +2,7 @@ import { defineConfig } from 'astro/config';
 import fs from 'node:fs';
 import path from 'node:path';
 // import sitemap from '@astrojs/sitemap'; // Vypnuto - bug s undefined.reduce()
-import { customSitemap } from './src/utils/custom-sitemap';
+import { createCustomSitemap } from '@vd/shared/seo/custom-sitemap';
 import { changedFilesIntegration } from './src/utils/changed-files-integration';
 import { createMarkdownConfig } from '@vd/shared/markdown';
 import { vitePluginPriruckaImages } from '@vd/shared/vite-plugins/vite-plugin-prirucka-images';
@@ -95,7 +95,7 @@ export default defineConfig({
   site: 'https://www.vzhurudolu.cz',
   trailingSlash: 'never', // Generovat URL bez trailing slash (kromě root /)
   integrations: [
-    customSitemap(),
+    createCustomSitemap({ site: 'https://www.vzhurudolu.cz' }),
     changedFilesIntegration(),
   ],
   markdown: createMarkdownConfig({

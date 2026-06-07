@@ -6,13 +6,13 @@ import { join } from 'path';
  * Vlastní sitemap integrace, která obchází bug v @astrojs/sitemap
  * Bug: Cannot read properties of undefined (reading 'reduce')
  */
-export function customSitemap(): AstroIntegration {
+export function createCustomSitemap(options: { site: string }): AstroIntegration {
+  const { site } = options;
+
   return {
     name: 'custom-sitemap',
     hooks: {
       'astro:build:done': async ({ dir, pages }) => {
-        const site = 'https://www.vzhurudolu.cz';
-        
         // Filtrovat stránky, které nemají být v sitemap
         const filteredPages = pages.filter((page) => {
           const path = page.pathname;
@@ -41,7 +41,7 @@ ${urls.join('\n')}
         // Zapsat sitemap.xml přímo do rootu
         const sitemapPath = join(dir.pathname, 'sitemap.xml');
         writeFileSync(sitemapPath, sitemap);
-        
+
         console.log(`✓ Sitemap vygenerován: ${filteredPages.length} URL`);
       },
     },
