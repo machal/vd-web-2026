@@ -70,7 +70,7 @@ Plans:
 
 **Wave 2** *(blocked on Wave 1 completion)*
 
-- [ ] 02-02-PLAN.md — Vite plugins extraction to @vd/shared (MONO-03)
+- [x] 02-02-PLAN.md — Vite plugins extraction to @vd/shared (MONO-03)
 
 **Wave 3** *(blocked on Wave 2 completion)*
 
