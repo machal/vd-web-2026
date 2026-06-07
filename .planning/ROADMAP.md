@@ -9,7 +9,7 @@ Brownfield Astro monorepo migration and English personal brand launch. Czech sit
 - [x] **Phase 1: Monorepo Foundation & CI** - Workspace structure, Turborepo, Czech app relocation, draft filtering (completed 2026-06-07)
 - [x] **Phase 2: Shared Packages Extraction** - Parameterized markdown pipeline, Vite plugins, layouts, SEO helpers in packages *(execution complete — ready for verification)* (completed 2026-06-07)
 - [x] **Phase 3: Czech Site Parity Verification** - Output parity vs production, public asset audit, link integrity (completed 2026-06-07)
-- [x] **Phase 4: Vercel Migration — Czech Site** - Czech hosting cutover with `.htaccess` → `vercel.json` redirect port (completed 2026-06-07)
+- [ ] **Phase 4: Vercel Migration — Czech Site** - Czech hosting cutover with `.htaccess` → `vercel.json` redirect port *(human gate: Vercel dashboard connect)*
 - [ ] **Phase 5: English App Scaffold** - michalek.dev Astro app, homepage, nav, routing, dual Vercel project config
 - [ ] **Phase 6: Content Pairing & i18n SEO** - CONTENT_PAIRS manifest, language switch, hreflang, Czech mirror links
 - [ ] **Phase 7: Content Adaptation — Pilot 8 + `/martin`** - 8 adapted articles, native EN `/martin`, homepage "start here"
@@ -138,7 +138,7 @@ Plans:
 
 **Wave 3** *(blocked on Wave 2 completion)*
 
-- [x] 04-04-PLAN.md — Vercel dashboard connect + FTP rollback preserved + phase verification
+- [ ] 04-04-PLAN.md — Vercel dashboard connect + FTP rollback preserved + phase verification *(Task 2 human checkpoint)*
 
 ### Phase 5: English App Scaffold
 
