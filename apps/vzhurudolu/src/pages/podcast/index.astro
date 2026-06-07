@@ -1,9 +1,9 @@
 ---
 import { getCollection } from 'astro:content';
 import { isPublished } from '../../utils/is-published';
-import BaseLayout from '../../layouts/BaseLayout.astro';
-import Header from '../../components/Header.astro';
-import Footer from '../../components/Footer.astro';
+import BaseLayout from '@vd/shared/layouts/BaseLayout.astro';
+import Header from '@vd/shared/components/Header.astro';
+import Footer from '@vd/shared/components/Footer.astro';
 
 const podcasts = await getCollection('podcast', isPublished);
 const sortedPodcasts = podcasts.sort((a, b) => {

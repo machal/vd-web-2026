@@ -1,10 +1,10 @@
 ---
 import { Fragment } from 'astro/jsx-runtime';
 import { getCollection } from 'astro:content';
-import BaseLayout from '../../layouts/BaseLayout.astro';
-import Header from '../../components/Header.astro';
-import Footer from '../../components/Footer.astro';
-import ArticleFooter from '../../components/ArticleFooter.astro';
+import BaseLayout from '@vd/shared/layouts/BaseLayout.astro';
+import Header from '@vd/shared/components/Header.astro';
+import Footer from '@vd/shared/components/Footer.astro';
+import ArticleFooter from '@vd/shared/components/ArticleFooter.astro';
 import { categories, type CategoryConfig } from '../../data/categories';
 import { getRelatedArticles } from '../../utils/get-related-articles';
 import { isPublished } from '../../utils/is-published';
