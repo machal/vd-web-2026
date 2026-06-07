@@ -16,6 +16,10 @@
 /kniha-responzivni-design/kniha|/kniha-responzivni-design
 /ebook/foo|/ebook-css3/foo
 
+# Příručka rozcestníky a query-string css3
+/prirucka/css3?p=transitions|/prirucka/css3-transitions
+/prirucka/css3|/css/
+
 # Příručka typo fixes
 /prirucka/css3-flexbox|/prirucka/css-flexbox
 /prirucka/css3-multicolumn|/prirucka/css-multicolumn

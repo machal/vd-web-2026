@@ -87,8 +87,13 @@ run_linkinator() {
     skip_args+=(--skip "${origin}${source}(/|$)")
   done < "$REDIRECT_SAMPLES"
 
-  python3 -m http.server "$port" --directory "$DIST_DIR" >/dev/null 2>&1 &
+  python3 -m http.server "$port" --bind 127.0.0.1 --directory "$DIST_DIR" >/dev/null 2>&1 &
   local server_pid=$!
+  cleanup_server() {
+    kill "$server_pid" 2>/dev/null || true
+    wait "$server_pid" 2>/dev/null || true
+  }
+  trap cleanup_server RETURN
   local ready=0
   for _ in $(seq 1 30); do
     if curl -sf "${origin}/" >/dev/null 2>&1; then
@@ -122,7 +127,7 @@ run_linkinator() {
     return 0
   fi
 
-  broken=()
+  local -a broken=()
   while IFS= read -r line; do
     [[ -n "$line" ]] && broken+=("$line")
   done < <(grep -oE '\[404\] '"${origin}"'[^ ]+' "$log" | sed "s|^\[404\] ${origin}||" | sort -u || true)
@@ -137,7 +142,10 @@ run_linkinator() {
   local path prod_status
   for path in "${broken[@]}"; do
     prod_status=$(check_production_status "$path")
-    if [[ "$prod_status" == "200" ]]; then
+    if [[ -z "$prod_status" ]]; then
+      echo "Phase 3 parity gate: FAIL — could not verify production status for ${path}" >&2
+      regressions=$((regressions + 1))
+    elif [[ "$prod_status" == "200" ]]; then
       echo "Phase 3 parity gate: FAIL — local 404 but production 200: ${path}" >&2
       regressions=$((regressions + 1))
     else
@@ -268,7 +276,7 @@ REDIRECT_PASS=0
 REDIRECT_FAIL=0
 while IFS='|' read -r source expected_suffix _comment; do
   [[ -z "$source" || "$source" =~ ^# ]] && continue
-  headers=$(curl -sfI "https://www.vzhurudolu.cz${source}" || true)
+  headers=$(curl -sfI --max-time 15 "https://www.vzhurudolu.cz${source}" || true)
   if [[ -z "$headers" ]]; then
     echo "Phase 3 parity gate: FAIL — redirect sample ${source}: no response" >&2
     REDIRECT_FAIL=$((REDIRECT_FAIL + 1))

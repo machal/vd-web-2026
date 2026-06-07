@@ -41,11 +41,8 @@
     { "source": "/frontend-kurz", "destination": "/kurzy", "permanent": true },
     { "source": "/kurzy/:path+", "destination": "/kurzy", "permanent": true },
 
-    { "source": "/prirucka/css3", "has": [{ "type": "query", "key": "p" }], "destination": "/prirucka/css3-:p", "permanent": true },
-    { "source": "/prirucka/css3/", "has": [{ "type": "query", "key": "p" }], "destination": "/prirucka/css3-:p", "permanent": true },
-
-    { "source": "/prirucka/css3", "destination": "/css", "permanent": true },
-    { "source": "/prirucka/css3/", "destination": "/css", "permanent": true },
+    { "source": "/prirucka/css3", "destination": "/css/", "permanent": true },
+    { "source": "/prirucka/css3/", "destination": "/css/", "permanent": true },
     { "source": "/prirucka/ostatni", "destination": "/", "permanent": true },
     { "source": "/prirucka/ostatni/", "destination": "/", "permanent": true },
     { "source": "/prirucka/viewport", "destination": "/prirucka/viewport-meta", "permanent": true },

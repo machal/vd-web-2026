@@ -2,6 +2,15 @@ import type { AstroIntegration } from 'astro';
 import { writeFileSync } from 'fs';
 import { join } from 'path';
 
+function escapeXml(value: string): string {
+  return value
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&apos;');
+}
+
 /**
  * Vlastní sitemap integrace, která obchází bug v @astrojs/sitemap
  * Bug: Cannot read properties of undefined (reading 'reduce')
@@ -24,10 +33,7 @@ export function createCustomSitemap(options: { site: string }): AstroIntegration
 
         // Generovat XML
         const urls = filteredPages.map((page) => {
-          const url = new URL(page.pathname, site).href;
-          // Použít URL tak, jak je Astro generuje (bez trailing slash, kromě root)
-          // Root URL (/) zůstane s trailing slash, ostatní bez
-          const finalUrl = url;
+          const finalUrl = escapeXml(new URL(page.pathname, site).href);
           return `  <url>
     <loc>${finalUrl}</loc>
   </url>`;

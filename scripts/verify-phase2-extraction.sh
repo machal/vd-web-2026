@@ -54,7 +54,20 @@ for plugin in validate-frontmatter prirucka-images content-images design-images;
 done
 
 # Stale markdown/SEO utils — must not remain in app src/utils
-for stale in custom-sitemap remark-process-markdown-attributes rehype-prirucka-links; do
+for stale in \
+  custom-sitemap \
+  create-markdown-config \
+  remark-process-markdown-attributes \
+  remark-heading-ids \
+  remark-normalize-code-lang \
+  remark-prirucka-images \
+  rehype-prirucka-links \
+  rehype-prirucka-images \
+  rehype-heading-anchors \
+  rehype-connected-elements \
+  rehype-related-to-inner-box \
+  rehype-remove-ebook-only \
+  rehype-remove-first-h1; do
   if [[ -f "apps/vzhurudolu/src/utils/${stale}.ts" ]]; then
     echo "Phase 2 extraction gate: FAIL — stale util at apps/vzhurudolu/src/utils/${stale}.ts" >&2
     exit 1
@@ -65,7 +78,10 @@ done
 for stale in \
   "apps/vzhurudolu/src/layouts/BaseLayout.astro" \
   "apps/vzhurudolu/src/components/Header.astro" \
-  "apps/vzhurudolu/src/components/Navigation.astro"; do
+  "apps/vzhurudolu/src/components/Navigation.astro" \
+  "apps/vzhurudolu/src/components/Footer.astro" \
+  "apps/vzhurudolu/src/components/ArticleHeader.astro" \
+  "apps/vzhurudolu/src/components/ArticleFooter.astro"; do
   if [[ -f "$stale" ]]; then
     echo "Phase 2 extraction gate: FAIL — stale file at ${stale}" >&2
     exit 1

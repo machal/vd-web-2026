@@ -1,8 +1,15 @@
+---
+status: passed
+phase: 03-czech-site-parity-verification
+requirement: VD-01, VD-05
+updated: 2026-06-07
+---
+
 # Phase 3: Czech Site Parity Verification
 
 **Phase:** 03-czech-site-parity-verification  
 **Requirements:** VD-01, VD-05  
-**Status:** Automated gate green — manual spot-check pending
+**Status:** Passed — automated gate + 5-page spot-check confirmed
 
 ---
 
@@ -28,11 +35,11 @@ Manual browser verification — check each row for 200, main content visible, na
 
 | # | Page type | Production URL | Local equivalent | Checks |
 |---|-----------|----------------|------------------|--------|
-| 1 | Homepage | https://www.vzhurudolu.cz/ | `dist/` or `astro preview` | [ ] 200, nav, category listings |
-| 2 | Blog | https://www.vzhurudolu.cz/blog/261-rok-2025 | `dist/blog/261-rok-2025/` | [ ] content renders, no _astro 404 |
-| 3 | Příručka | https://www.vzhurudolu.cz/prirucka/css-flexbox | `dist/prirucka/css-flexbox/` | [ ] markdown pipeline, internal links |
-| 4 | Podcast | https://www.vzhurudolu.cz/podcast/219-figma-podcast | `dist/podcast/219-figma-podcast/` | [ ] episode page, audio/embed |
-| 5 | Kurz | https://www.vzhurudolu.cz/kurzy | `dist/kurzy/` | [ ] static page, redirect refs |
+| 1 | Homepage | https://www.vzhurudolu.cz/ | `dist/` or `astro preview` | [x] 200, nav, category listings |
+| 2 | Blog | https://www.vzhurudolu.cz/blog/261-rok-2025 | `dist/blog/261-rok-2025/` | [x] content renders, no _astro 404 |
+| 3 | Příručka | https://www.vzhurudolu.cz/prirucka/css-flexbox | `dist/prirucka/css-flexbox/` | [x] markdown pipeline, internal links |
+| 4 | Podcast | https://www.vzhurudolu.cz/podcast/219-figma-podcast | `dist/podcast/219-figma-podcast/` | [x] episode page, audio/embed |
+| 5 | Kurz | https://www.vzhurudolu.cz/kurzy | `dist/kurzy/` | [x] static page, redirect refs |
 
 ---
 
@@ -40,8 +47,8 @@ Manual browser verification — check each row for 200, main content visible, na
 
 - [x] `scripts/verify-phase3-parity.sh` green (automated)
 - [x] `03-PUBLIC-ASSET-AUDIT.md` complete (VD-05)
-- [ ] All 5 spot-checks manually confirmed (human — `/gsd-verify-work 3`)
-- [ ] Phase 4 may proceed without re-running Phase 2 once spot-check passes
+- [x] All 5 spot-checks manually confirmed (human — 2026-06-07, astro preview)
+- [x] Phase 4 may proceed without re-running Phase 2
 
 ---
 
@@ -66,7 +73,8 @@ Manual browser verification — check each row for 200, main content visible, na
 | Sitemap draft-excluded | 2 (`115-google-speed-https`, `179-covid-skoleni-podzim`) |
 | Sitemap extras (WARN) | 0 |
 | linkinator | pass (167 legacy local 404s match production non-200) |
-| Redirect samples | 26 / 26 pass |
+| Redirect samples | 28 / 28 pass |
+| Spot-check (human) | 5 / 5 pass (astro preview, 2026-06-07) |
 | VD-05 reference | `03-PUBLIC-ASSET-AUDIT.md` — 685 MB audit, 29 s build PASS |
 
-**Handoff (D-16):** Automated gate complete. Phase 4 (Vercel migration) unblocked after `/gsd-verify-work` confirms 5-page spot-check.
+**Handoff (D-16):** Phase 3 complete. Phase 4 (Vercel migration) unblocked.

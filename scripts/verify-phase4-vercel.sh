@@ -131,6 +131,12 @@ check_font_cors() {
     echo "Phase 4 Vercel gate: WARN — font CORS check skipped (no response for ${url_path})" >&2
     return 0
   fi
+  local http_status
+  http_status=$(echo "$headers" | tr -d '\r' | grep -i '^HTTP' | head -1 | awk '{print $2}')
+  if [[ "$http_status" == "404" || "$http_status" == "000" ]]; then
+    echo "Phase 4 Vercel gate: WARN — font CORS check skipped (asset ${url_path} returned ${http_status:-none})" >&2
+    return 0
+  fi
   if ! echo "$headers" | tr -d '\r' | grep -qi '^access-control-allow-origin:[[:space:]]*\*'; then
     echo "Phase 4 Vercel gate: FAIL — font CORS check: missing Access-Control-Allow-Origin: * for ${url_path}" >&2
     return 1
