@@ -21,3 +21,7 @@ jobs:
           npx turbo run build --filter=@vd/vzhurudolu
           test -d apps/vzhurudolu/dist/_astro
           bash scripts/verify-phase1-build.sh
+
+      # Optional Phase 3 link gate (D-08) — full verify-phase3-parity.sh runs locally/merge (needs network)
+      - name: Link check (Phase 3)
+        run: bash scripts/verify-phase3-parity.sh --links-only
