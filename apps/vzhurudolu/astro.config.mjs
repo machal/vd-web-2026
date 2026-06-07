@@ -17,10 +17,10 @@ import { rehypePriruckaLinks } from './src/utils/rehype-prirucka-links.ts';
 import { rehypePriruckaImages } from './src/utils/rehype-prirucka-images.ts';
 import { rehypeConnectedElements } from './src/utils/rehype-connected-elements.ts';
 import { rehypeRelatedToInnerBox } from './src/utils/rehype-related-to-inner-box.ts';
-import { vitePluginPriruckaImages } from './vite-plugin-prirucka-images.ts';
-import { vitePluginContentImages } from './vite-plugin-content-images.ts';
-import { vitePluginDesignImages } from './vite-plugin-design-images.ts';
-import { vitePluginValidateFrontmatter } from './vite-plugin-validate-frontmatter.ts';
+import { vitePluginPriruckaImages } from '@vd/shared/vite-plugins/vite-plugin-prirucka-images';
+import { vitePluginContentImages } from '@vd/shared/vite-plugins/vite-plugin-content-images';
+import { vitePluginDesignImages } from '@vd/shared/vite-plugins/vite-plugin-design-images';
+import { vitePluginValidateFrontmatter } from '@vd/shared/vite-plugins/vite-plugin-validate-frontmatter';
 
 /**
  * Rekurzivní kopírování souboru nebo adresáře (včetně dotfiles).
