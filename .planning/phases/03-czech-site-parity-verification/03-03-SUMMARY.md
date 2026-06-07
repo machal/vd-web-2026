@@ -9,7 +9,7 @@ requires:
     provides: Plan 02 sitemap parity gate in verify-phase3-parity.sh
 provides:
   - Internal link crawl via linkinator@7.6.1 with production regression detection
-  - scripts/redirect-samples.txt — 26 verified production redirect pairs
+  - scripts/redirect-samples.txt — 28 verified production redirect pairs
   - Complete automated verify-phase3-parity.sh gate
 affects:
   - 03-czech-site-parity-verification plan 04
@@ -43,7 +43,7 @@ completed: 2026-06-07
 
 # Phase 3 Plan 03: Link Crawl and Redirect Samples Summary
 
-**linkinator@7.6.1 internal link gate with production regression detection and 26-sample redirect matrix**
+**linkinator@7.6.1 internal link gate with production regression detection and 28-sample redirect matrix**
 
 ## Performance
 
@@ -56,8 +56,8 @@ completed: 2026-06-07
 
 - Package legitimacy checkpoint resolved: linkinator@7.6.1 verified on npm (JustinBeckwith, MIT)
 - Internal link crawl via local HTTP server + production URL rewrite
-- 167 legacy local 404s match production non-200 — WARN only
-- 26 redirect samples pass against live production
+- 166 legacy local 404s match production non-200 — WARN only (full gate); 165 in --links-only mode
+- 28 redirect samples pass against live production
 
 ## Task Commits
 
@@ -68,7 +68,7 @@ completed: 2026-06-07
 ## Files Created/Modified
 
 - `scripts/verify-phase3-parity.sh` — run_linkinator(), redirect loop, --links-only CI mode
-- `scripts/redirect-samples.txt` — 26 production-verified redirect pairs
+- `scripts/redirect-samples.txt` — 28 production-verified redirect pairs
 
 ## Decisions Made
 
@@ -113,8 +113,11 @@ None.
 
 ## Self-Check: PASSED
 
-- scripts/redirect-samples.txt exists
-- Commit 723994b found in git log
+- scripts/redirect-samples.txt exists (28 pairs)
+- scripts/verify-phase3-parity.sh exists with linkinator + redirect loop
+- Commit 723994b found in git log (feat implementation)
+- Commit 34ec9d2 found in git log (docs metadata)
+- Re-verified 2026-06-07: full gate exit 0, "internal links OK", 28/28 redirect samples pass
 
 ---
 *Phase: 03-czech-site-parity-verification*

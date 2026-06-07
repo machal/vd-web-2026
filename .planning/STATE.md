@@ -2,16 +2,16 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: human_gate
-stopped_at: Phase 04-04 Task 2 — Vercel dashboard connect
-last_updated: "2026-06-07T16:10:00.000Z"
-last_activity: 2026-06-07 -- Phase 04 automated plans complete; human gate pending
+status: Awaiting Vercel dashboard setup + preview gate
+stopped_at: Completed 03-03-PLAN.md
+last_updated: "2026-06-07T18:30:43.544Z"
+last_activity: 2026-06-07 -- Plans 04-01 through 04-03 complete; 04-04 Task 1 done
 progress:
   total_phases: 9
-  completed_phases: 3
+  completed_phases: 4
   total_plans: 17
-  completed_plans: 16
-  percent: 41
+  completed_plans: 17
+  percent: 44
 ---
 
 # Project State
@@ -73,6 +73,8 @@ Recent decisions affecting current work:
 - Phase 03: FTP data/files exclusion gap documented for Phase 4+ selective copy
 - Phase 03 Plan 02: Sitemap parity gate — missing prod paths FAIL, local extras WARN; draft slugs excluded from missing count
 - Phase 03 Plan 02: Production sitemap (873 URLs) fetched at verify time as authoritative baseline per D-02
+- Phase 03 Plan 03: linkinator@7.6.1 via localhost server + prod URL rewrite; legacy local 404s WARN if prod non-200
+- Phase 03 Plan 03: 28 redirect samples in scripts/redirect-samples.txt verified against live production curl -sI
 
 ### Pending Todos
 
@@ -92,6 +94,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-06-07T16:04:24.348Z
-Stopped at: Completed 03-01-PLAN.md
+Last session: 2026-06-07T18:30:43.540Z
+Stopped at: Completed 03-03-PLAN.md
 Resume file: None
