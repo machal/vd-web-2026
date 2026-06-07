@@ -13,5 +13,77 @@
         }
       ]
     }
+  ],
+  "redirects": [
+    { "source": "/node_modules/:path*", "statusCode": 404 },
+
+    { "source": "/kniha-rwd", "destination": "/css-layout", "permanent": true },
+    { "source": "/ebook-responzivni/:path*", "destination": "/kniha-responzivni-design/:path*", "permanent": true },
+    { "source": "/ebook-responzivni", "destination": "/kniha-responzivni-design", "permanent": true },
+    { "source": "/kniha-responzivni-design/kniha", "destination": "/kniha-responzivni-design", "permanent": true },
+    { "source": "/kniha-responzivni-design/doplatek", "destination": "/kniha-responzivni-design", "permanent": true },
+    { "source": "/ebook/:path*", "destination": "/ebook-css3/:path*", "permanent": true },
+    { "source": "/ebook", "destination": "/ebook-css3", "permanent": true },
+
+    { "source": "/p/:path*", "destination": "/prirucka/:path*", "permanent": true },
+    { "source": "/b/:path*", "destination": "/blog/:path*", "permanent": true },
+    { "source": "/k/:path*", "destination": "/kurzy/:path*", "permanent": true },
+    { "source": "/v/:path*", "destination": "/video/:path*", "permanent": true },
+    { "source": "/f/:path*", "destination": "/files/:path*", "permanent": true },
+    { "source": "/vdampd/:path*", "destination": "/files/vdamp/demo/:path*", "permanent": true },
+
+    { "source": "/checklist", "destination": "/prirucka/checklist", "permanent": true },
+
+    { "source": "/kurzy/webovy-frontend", "destination": "/kurzy", "permanent": true },
+    { "source": "/kurzy/webova-koderina", "destination": "/kurzy", "permanent": true },
+    { "source": "/kurzy/pokrocily-responzivni-design", "destination": "/kurzy", "permanent": true },
+    { "source": "/kurzy/rychlost-nacitani", "destination": "/kurzy", "permanent": true },
+    { "source": "/frontend-kurz", "destination": "/kurzy", "permanent": true },
+    { "source": "/kurzy/:path+", "destination": "/kurzy", "permanent": true },
+
+    { "source": "/prirucka/css3", "has": [{ "type": "query", "key": "p" }], "destination": "/prirucka/css3-:p", "permanent": true },
+    { "source": "/prirucka/css3/", "has": [{ "type": "query", "key": "p" }], "destination": "/prirucka/css3-:p", "permanent": true },
+
+    { "source": "/prirucka/css3", "destination": "/css", "permanent": true },
+    { "source": "/prirucka/css3/", "destination": "/css", "permanent": true },
+    { "source": "/prirucka/ostatni", "destination": "/", "permanent": true },
+    { "source": "/prirucka/ostatni/", "destination": "/", "permanent": true },
+    { "source": "/prirucka/viewport", "destination": "/prirucka/viewport-meta", "permanent": true },
+    { "source": "/prirucka/viewport/", "destination": "/prirucka/viewport-meta", "permanent": true },
+
+    { "source": "/prirucka/css3-multicolumn", "destination": "/prirucka/css-multicolumn", "permanent": true },
+    { "source": "/prirucka/css3-flexbox", "destination": "/prirucka/css-flexbox", "permanent": true },
+    { "source": "/prirucka/viewport-mobily", "destination": "/prirucka/viewport", "permanent": true },
+
+    { "source": "/amp/:path+", "destination": "/:path+", "permanent": true },
+
+    { "source": "/video/webinar-:id/objednavka", "destination": "/video", "permanent": true },
+    { "source": "/video/webinar-:id", "destination": "/video", "permanent": true },
+    { "source": "/video/firmy", "destination": "/video", "permanent": true },
+    { "source": "/video/firmy/", "destination": "/video", "permanent": true },
+
+    { "source": "/blog/77-css-v-js", "destination": "/podcast/css-v-js", "permanent": true },
+
+    { "source": "/prirucka/css-mulicolumn", "destination": "/prirucka/css-multicolumn", "permanent": true },
+    { "source": "/prirucka/google-Search-Console", "destination": "/prirucka/google-search-console", "permanent": true },
+    { "source": "/prirucka/kap-dokumet", "destination": "/prirucka/kap-dokument", "permanent": true },
+    { "source": "/prirucka/css3-multiple-backgorunds", "destination": "/prirucka/css3-multiple-backgrounds", "permanent": true },
+    { "source": "/prirucka/grid-template-areas", "destination": "/prirucka/css-grid-template-areas", "permanent": true },
+    { "source": "/prirucka/css-media-queries", "destination": "/prirucka/css3-media-queries", "permanent": true },
+    { "source": "/prirucka/media-queries", "destination": "/prirucka/css3-media-queries", "permanent": true },
+
+    { "source": "/lektori/martin-michalek", "destination": "/martin", "permanent": true },
+
+    { "source": "/frontend-frameworky", "destination": "/bootstrap", "permanent": true },
+
+    { "source": "/css3/:path*", "destination": "/prirucka/css3/:path*", "permanent": true },
+    { "source": "/30/:path*", "destination": "/data/30/:path*", "permanent": true },
+    { "source": "/archiv/:path*", "destination": "/data/archiv/:path*", "permanent": true },
+    { "source": "/blank/:path*", "destination": "/data/blank/:path*", "permanent": true },
+    { "source": "/css-frameworks/:path*", "destination": "/data/css-frameworks/:path*", "permanent": true },
+    { "source": "/fagaras/:path*", "destination": "/data/fagaras/:path*", "permanent": true },
+    { "source": "/historie/:path*", "destination": "/data/historie/:path*", "permanent": true },
+    { "source": "/images/:path*", "destination": "/data/images-till-2012/:path*", "permanent": true },
+    { "source": "/tumblr/:path*", "destination": "/data/tumblr-till-2012/:path*", "permanent": true }
   ]
 }
