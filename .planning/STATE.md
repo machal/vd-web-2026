@@ -3,15 +3,15 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: executing
-stopped_at: Phase 2 context gathered
-last_updated: "2026-06-07T11:31:58.264Z"
-last_activity: 2026-06-07 -- Phase 02 planning complete
+stopped_at: Completed 02-01-PLAN.md
+last_updated: "2026-06-07T11:35:00.000Z"
+last_activity: 2026-06-07 -- Completed Phase 02 Plan 01 (@vd/shared scaffold)
 progress:
   total_phases: 9
   completed_phases: 1
-  total_plans: 4
-  completed_plans: 4
-  percent: 11
+  total_plans: 9
+  completed_plans: 5
+  percent: 56
 ---
 
 # Project State
@@ -21,30 +21,31 @@ progress:
 See: .planning/PROJECT.md (updated 2026-06-06)
 
 **Core value:** Articles and `/martin` earn organic global trust; site reflects Web Perf expertise with pragmatic tradeoffs (GA OK; LH 100/100 secondary).
-**Current focus:** Phase 01 — Monorepo Foundation & CI
+**Current focus:** Phase 02 — Shared Packages Extraction
 
 ## Current Position
 
 Phase: 2
-Plan: Not started
-Status: Ready to execute
-Last activity: 2026-06-07 -- Phase 02 planning complete
+Plan: 01 complete (1/5)
+Status: Executing
+Last activity: 2026-06-07 -- Completed Phase 02 Plan 01 (@vd/shared scaffold)
 
-Progress: [░░░░░░░░░░] 0%
+Progress: [██████░░░░] 56%
 
 ## Performance Metrics
 
 **Velocity:**
 
-- Total plans completed: 4
-- Average duration: —
-- Total execution time: 0 hours
+- Total plans completed: 5
+- Average duration: 8 min
+- Total execution time: 0.1 hours
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
-| 01 | 4 | - | - |
+| 01 | 4 | 4 | - |
+| 02 | 1 | 5 | 8 min |
 
 **Recent Trend:**
 
@@ -61,6 +62,8 @@ Recent decisions affecting current work:
 - Roadmap: Czech-first sequencing — monorepo + Vercel for CS before EN DNS cutover
 - Roadmap: 9 phases aligned to research; pragmatic CWV over LH 100/100 gate
 - Roadmap: Tags in v1 (Phase 8); unified stream on homepage, no `/blog/` or `/guide/` listing pages
+- Phase 02: Single @vd/shared package with source exports per D-01/D-08
+- Phase 02: Verify gate extends Phase 1 dist checks; stale-path asserts deferred to Plan 05
 
 ### Pending Todos
 
@@ -68,7 +71,7 @@ None yet.
 
 ### Blockers/Concerns
 
-- Package granularity (`@vd/markdown` vs `@vd/shared`) — decide during Phase 1 planning
+- Package granularity (`@vd/markdown` vs `@vd/shared`) — **resolved:** single @vd/shared per D-01
 - Pilot EN slug finalization needed before Phase 6 pairing manifest
 - `.htaccess` → `vercel.json` redirect inventory scope — Phase 4 planning
 
@@ -80,6 +83,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-06-07T11:24:50.636Z
-Stopped at: Phase 2 context gathered
-Resume file: .planning/phases/02-shared-packages-extraction/02-CONTEXT.md
+Last session: 2026-06-07T11:35:00.000Z
+Stopped at: Completed 02-01-PLAN.md
+Resume file: None

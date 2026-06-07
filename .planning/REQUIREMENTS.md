@@ -9,7 +9,7 @@
 
 - [x] **MONO-01**: Repository uses npm workspaces with `apps/vzhurudolu`, `apps/michalek-dev`, and `packages/*` shared packages
 - [x] **MONO-02**: Turborepo orchestrates builds with per-app filter commands for CI and Vercel
-- [ ] **MONO-03**: Shared markdown pipeline, Vite plugins, layouts, and SEO helpers live in packages — no duplicated plugin code
+- [x] **MONO-03**: Shared markdown pipeline, Vite plugins, layouts, and SEO helpers live in packages — no duplicated plugin code
 - [x] **MONO-04**: Each app declares its own `astro` and `@astrojs/*` dependencies (no root-only hoisting)
 - [ ] **MONO-05**: PR CI builds both apps on every change to protected branch
 
@@ -116,7 +116,7 @@ Deferred to future release.
 |-------------|-------|--------|
 | MONO-01 | Phase 1 | Complete |
 | MONO-02 | Phase 1 | Complete |
-| MONO-03 | Phase 2 | Pending |
+| MONO-03 | Phase 2 | Complete |
 | MONO-04 | Phase 1 | Complete |
 | MONO-05 | Phase 5 | Pending |
 | VD-01 | Phase 3 | Pending |

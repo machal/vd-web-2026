@@ -66,7 +66,7 @@ Plans:
 Plans:
 **Wave 1**
 
-- [ ] 02-01-PLAN.md — @vd/shared scaffold + workspace wiring + verify script (MONO-03 foundation)
+- [x] 02-01-PLAN.md — @vd/shared scaffold + workspace wiring + verify script (MONO-03 foundation)
 
 **Wave 2** *(blocked on Wave 1 completion)*
 
@@ -204,7 +204,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8 →
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Monorepo Foundation & CI | 4/4 | Complete    | 2026-06-07 |
-| 2. Shared Packages Extraction | 0/5 | Not started | - |
+| 2. Shared Packages Extraction | 1/5 | In Progress|  |
 | 3. Czech Site Parity Verification | 0/TBD | Not started | - |
 | 4. Vercel Migration — Czech Site | 0/TBD | Not started | - |
 | 5. English App Scaffold | 0/TBD | Not started | - |
