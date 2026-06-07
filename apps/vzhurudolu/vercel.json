@@ -1,0 +1,6 @@
+{
+  "installCommand": "cd ../.. && npm ci",
+  "buildCommand": "cd ../.. && npx turbo run build --filter=@vd/vzhurudolu",
+  "outputDirectory": "dist",
+  "trailingSlash": false
+}
