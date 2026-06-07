@@ -78,9 +78,9 @@ None yet.
 
 ### Blockers/Concerns
 
+- **Phase 4 human gate:** Vercel Dashboard project connect + `verify-phase4-vercel.sh` against live preview (see `04-VERIFICATION.md`)
 - Package granularity (`@vd/markdown` vs `@vd/shared`) — **resolved:** single @vd/shared per D-01
 - Pilot EN slug finalization needed before Phase 6 pairing manifest
-- `.htaccess` → `vercel.json` redirect inventory scope — Phase 4 planning
 
 ## Deferred Items
 
