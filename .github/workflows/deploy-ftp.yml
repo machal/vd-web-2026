@@ -12,13 +12,15 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '22'
           cache: 'npm'
 
       - name: Install & build
         run: |
           npm ci
-          npm run build
+          npx turbo run build --filter=@vd/vzhurudolu
+          test -d apps/vzhurudolu/dist/_astro
+          bash scripts/verify-phase1-build.sh
 
       - name: Deploy to FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.6
@@ -26,7 +28,7 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./dist/
+          local-dir: ./apps/vzhurudolu/dist/
           server-dir: www/project/
           timeout: 60000
           exclude: |
