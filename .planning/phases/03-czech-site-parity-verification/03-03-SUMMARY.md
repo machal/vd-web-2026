@@ -116,7 +116,7 @@ None.
 - scripts/redirect-samples.txt exists (28 pairs)
 - scripts/verify-phase3-parity.sh exists with linkinator + redirect loop
 - Commit 723994b found in git log (feat implementation)
-- Commit 34ec9d2 found in git log (docs metadata)
+- Commit adf89bb found in git log (docs metadata)
 - Re-verified 2026-06-07: full gate exit 0, "internal links OK", 28/28 redirect samples pass
 
 ---
