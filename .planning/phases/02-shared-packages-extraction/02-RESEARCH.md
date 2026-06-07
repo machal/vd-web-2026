@@ -612,19 +612,16 @@ export function createRehypeContentLinks(opts: {
 | A4 | `Navigation.astro` move is acceptable though not listed in D-03 | Inventory | Planner might omit file |
 | A5 | ROADMAP criterion "both apps import packages" applies from Phase 5 onward for EN | Open Questions | Scope creep if EN scaffold required in Phase 2 |
 
-## Open Questions
+## Open Questions (RESOLVED)
 
 1. **Should `remark-heading-ids.ts` move even though disabled in config?**
-   - What we know: Still imported by `remark-process-markdown-attributes.ts`
-   - Recommendation: Yes — move with markdown folder; required for compile
+   - RESOLVED: Yes — move with markdown folder; still imported by `remark-process-markdown-attributes.ts` and required for compile.
 
 2. **ROADMAP success criterion #1 says "both apps" — only vzhurudolu exists**
-   - What we know: EN app is Phase 5; Phase 2 delivers package ready for EN import
-   - Recommendation: Phase 2 gate = vzhurudolu imports `@vd/shared`; EN import is Phase 5 acceptance
+   - RESOLVED: Phase 2 gate = vzhurudolu imports `@vd/shared`; EN app import is Phase 5 acceptance (package ready, not wired).
 
 3. **Remove duplicate `remark-gfm`/`rehype-raw` from app package.json after move?**
-   - What we know: App may still need them if referenced outside shared factory
-   - Recommendation: After `createMarkdownConfig` fully owns registration, remove from app devDeps in final wave
+   - RESOLVED: Remove from app devDeps in Plan 05 after `createMarkdownConfig` fully owns registration.
 
 ## Environment Availability
 
@@ -740,9 +737,9 @@ export function createRehypeContentLinks(opts: {
 | Architecture | HIGH | Full codebase scout with import graph |
 | Pitfalls | HIGH | Grounded in PITFALLS.md + concrete file deps |
 
-### Open Questions
-- Confirm Navigation.astro as in-scope transitive move
-- Clarify ROADMAP "both apps" criterion timing (recommend Phase 5 for EN)
+### Open Questions (RESOLVED)
+- RESOLVED: Navigation.astro moves with Header (transitive dependency, in-scope D-03).
+- RESOLVED: ROADMAP "both apps" — EN import deferred to Phase 5; Phase 2 validates CS app only.
 
 ### Ready for Planning
 Research complete. Planner can now create PLAN.md files.
