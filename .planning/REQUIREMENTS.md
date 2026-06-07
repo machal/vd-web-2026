@@ -7,16 +7,16 @@
 
 ### Monorepo & Infrastructure
 
-- [ ] **MONO-01**: Repository uses npm workspaces with `apps/vzhurudolu`, `apps/michalek-dev`, and `packages/*` shared packages
-- [ ] **MONO-02**: Turborepo orchestrates builds with per-app filter commands for CI and Vercel
+- [x] **MONO-01**: Repository uses npm workspaces with `apps/vzhurudolu`, `apps/michalek-dev`, and `packages/*` shared packages
+- [x] **MONO-02**: Turborepo orchestrates builds with per-app filter commands for CI and Vercel
 - [ ] **MONO-03**: Shared markdown pipeline, Vite plugins, layouts, and SEO helpers live in packages — no duplicated plugin code
-- [ ] **MONO-04**: Each app declares its own `astro` and `@astrojs/*` dependencies (no root-only hoisting)
+- [x] **MONO-04**: Each app declares its own `astro` and `@astrojs/*` dependencies (no root-only hoisting)
 - [ ] **MONO-05**: PR CI builds both apps on every change to protected branch
 
 ### Czech Site (vzhurudolu.cz)
 
 - [ ] **VD-01**: Czech site builds from `apps/vzhurudolu` with output parity to current production (URLs, redirects, content)
-- [ ] **VD-02**: Draft/unpublished blog posts are excluded from production build output and sitemap
+- [x] **VD-02**: Draft/unpublished blog posts are excluded from production build output and sitemap
 - [ ] **VD-03**: Czech site migrates from FTP to Vercel with `.htaccess` rules ported to `vercel.json`
 - [ ] **VD-04**: Czech originals of 8 pilot articles link to English counterparts via language switch
 - [ ] **VD-05**: `public/` asset strategy preserves production behavior without build timeouts (685 MB audit applied)
@@ -114,13 +114,13 @@ Deferred to future release.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| MONO-01 | Phase 1 | Pending |
-| MONO-02 | Phase 1 | Pending |
+| MONO-01 | Phase 1 | Complete |
+| MONO-02 | Phase 1 | Complete |
 | MONO-03 | Phase 2 | Pending |
-| MONO-04 | Phase 1 | Pending |
+| MONO-04 | Phase 1 | Complete |
 | MONO-05 | Phase 5 | Pending |
 | VD-01 | Phase 3 | Pending |
-| VD-02 | Phase 1 | Pending |
+| VD-02 | Phase 1 | Complete |
 | VD-03 | Phase 4 | Pending |
 | VD-04 | Phase 6 | Pending |
 | VD-05 | Phase 3 | Pending |
@@ -168,6 +168,7 @@ Deferred to future release.
 | DEPLOY-04 | Phase 9 | Pending |
 
 **Coverage:**
+
 - v1 requirements: 52 total
 - Mapped to phases: 52
 - Unmapped: 0
