@@ -8,9 +8,16 @@
   "engines": {
     "node": ">=22"
   },
+  "packageManager": "npm@10.9.4",
   "scripts": {
-    "build:vzhurudolu": "npm run build -w @vd/vzhurudolu",
-    "dev:vzhurudolu": "npm run dev -w @vd/vzhurudolu"
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "build:vzhurudolu": "turbo run build --filter=@vd/vzhurudolu",
+    "dev:vzhurudolu": "turbo run dev --filter=@vd/vzhurudolu"
+  },
+  "devDependencies": {
+    "turbo": "^2.9.16",
+    "typescript": "^5.9.3"
   },
   "repository": {
     "type": "git",
