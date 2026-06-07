@@ -35,7 +35,7 @@ Brownfield Astro monorepo migration and English personal brand launch. Czech sit
 Plans:
 **Wave 1**
 
-- [ ] 01-01-PLAN.md — Workspace scaffold + big-bang Czech app move (MONO-01 walking skeleton)
+- [x] 01-01-PLAN.md — Workspace scaffold + big-bang Czech app move (MONO-01 walking skeleton)
 
 **Wave 2** *(blocked on Wave 1 completion)*
 
@@ -182,7 +182,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8 →
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Monorepo Foundation & CI | 0/4 | Not started | - |
+| 1. Monorepo Foundation & CI | 1/4 | In Progress|  |
 | 2. Shared Packages Extraction | 0/TBD | Not started | - |
 | 3. Czech Site Parity Verification | 0/TBD | Not started | - |
 | 4. Vercel Migration — Czech Site | 0/TBD | Not started | - |
