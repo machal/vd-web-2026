@@ -9,7 +9,7 @@ Brownfield Astro monorepo migration and English personal brand launch. Czech sit
 - [x] **Phase 1: Monorepo Foundation & CI** - Workspace structure, Turborepo, Czech app relocation, draft filtering (completed 2026-06-07)
 - [x] **Phase 2: Shared Packages Extraction** - Parameterized markdown pipeline, Vite plugins, layouts, SEO helpers in packages *(execution complete — ready for verification)* (completed 2026-06-07)
 - [x] **Phase 3: Czech Site Parity Verification** - Output parity vs production, public asset audit, link integrity (completed 2026-06-07)
-- [ ] **Phase 4: Vercel Migration — Czech Site** - Czech hosting cutover with `.htaccess` → `vercel.json` redirect port
+- [x] **Phase 4: Vercel Migration — Czech Site** - Czech hosting cutover with `.htaccess` → `vercel.json` redirect port (completed 2026-06-07)
 - [ ] **Phase 5: English App Scaffold** - michalek.dev Astro app, homepage, nav, routing, dual Vercel project config
 - [ ] **Phase 6: Content Pairing & i18n SEO** - CONTENT_PAIRS manifest, language switch, hreflang, Czech mirror links
 - [ ] **Phase 7: Content Adaptation — Pilot 8 + `/martin`** - 8 adapted articles, native EN `/martin`, homepage "start here"
@@ -129,16 +129,16 @@ Plans:
 Plans:
 **Wave 1**
 
-- [ ] 04-01-PLAN.md — Vercel project scaffold (build, trailingSlash, CORS headers, .vercelignore)
+- [x] 04-01-PLAN.md — Vercel project scaffold (build, trailingSlash, CORS headers, .vercelignore)
 
 **Wave 2** *(blocked on Wave 1 completion)*
 
-- [ ] 04-02-PLAN.md — .htaccess → vercel.json redirect port (VD-03 core)
-- [ ] 04-03-PLAN.md — verify-phase4-vercel.sh preview gate
+- [x] 04-02-PLAN.md — .htaccess → vercel.json redirect port (VD-03 core)
+- [x] 04-03-PLAN.md — verify-phase4-vercel.sh preview gate
 
 **Wave 3** *(blocked on Wave 2 completion)*
 
-- [ ] 04-04-PLAN.md — Vercel dashboard connect + FTP rollback preserved + phase verification
+- [x] 04-04-PLAN.md — Vercel dashboard connect + FTP rollback preserved + phase verification
 
 ### Phase 5: English App Scaffold
 
@@ -234,7 +234,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8 →
 | 1. Monorepo Foundation & CI | 4/4 | Complete    | 2026-06-07 |
 | 2. Shared Packages Extraction | 5/5 | Complete    | 2026-06-07 |
 | 3. Czech Site Parity Verification | 4/4 | Complete   | 2026-06-07 |
-| 4. Vercel Migration — Czech Site | 0/4 | Planned | - |
+| 4. Vercel Migration — Czech Site | 4/4 | Complete   | 2026-06-07 |
 | 5. English App Scaffold | 0/TBD | Not started | - |
 | 6. Content Pairing & i18n SEO | 0/TBD | Not started | - |
 | 7. Content Adaptation — Pilot 8 + `/martin` | 0/TBD | Not started | - |
