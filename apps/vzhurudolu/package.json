@@ -1,0 +1,38 @@
+{
+  "name": "@vd/vzhurudolu",
+  "description": "Vzhůru dolů",
+  "version": "0.7.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "convert-images": "tsx scripts/convert-prirucka-images.ts",
+    "fill-heading": "node scripts/fill-heading-from-h1.js",
+    "check-frontmatter": "node scripts/check-frontmatter.js --check",
+    "fix-frontmatter": "node scripts/check-frontmatter.js --fix"
+  },
+  "dependencies": {
+    "@astrojs/rss": "^4.0.15",
+    "@superkoders/modal": "^1.7",
+    "jquery": "^3.7.1",
+    "markdown-it": "^14.1.0",
+    "normalize.css": "^8.0.1",
+    "remark-extract-frontmatter": "^3.2.0",
+    "remark-frontmatter": "^5.0.0",
+    "rollup": "^4.56.0",
+    "sanitize-html": "^2.17.0"
+  },
+  "devDependencies": {
+    "@astrojs/sitemap": "^3.4.0",
+    "astro": "4.16.19",
+    "chokidar": "^3.6.0",
+    "rehype-raw": "^7.0.0",
+    "remark-gfm": "^4.0.0",
+    "sharp": "^0.33.0",
+    "svgo": "^3.3.2",
+    "tsx": "^4.7.0"
+  }
+}
