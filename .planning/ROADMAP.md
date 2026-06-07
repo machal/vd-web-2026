@@ -8,7 +8,7 @@ Brownfield Astro monorepo migration and English personal brand launch. Czech sit
 
 - [x] **Phase 1: Monorepo Foundation & CI** - Workspace structure, Turborepo, Czech app relocation, draft filtering (completed 2026-06-07)
 - [x] **Phase 2: Shared Packages Extraction** - Parameterized markdown pipeline, Vite plugins, layouts, SEO helpers in packages *(execution complete — ready for verification)* (completed 2026-06-07)
-- [ ] **Phase 3: Czech Site Parity Verification** - Output parity vs production, public asset audit, link integrity
+- [x] **Phase 3: Czech Site Parity Verification** - Output parity vs production, public asset audit, link integrity (completed 2026-06-07)
 - [ ] **Phase 4: Vercel Migration — Czech Site** - Czech hosting cutover with `.htaccess` → `vercel.json` redirect port
 - [ ] **Phase 5: English App Scaffold** - michalek.dev Astro app, homepage, nav, routing, dual Vercel project config
 - [ ] **Phase 6: Content Pairing & i18n SEO** - CONTENT_PAIRS manifest, language switch, hreflang, Czech mirror links
@@ -102,15 +102,15 @@ Plans:
 **Wave 1**
 
 - [x] 03-01-PLAN.md — Public asset audit + build timing (VD-05, D-09/D-10/D-12)
-- [ ] 03-02-PLAN.md — verify-phase3-parity.sh skeleton + sitemap URL diff (VD-01, D-01/D-02)
+- [x] 03-02-PLAN.md — verify-phase3-parity.sh skeleton + sitemap URL diff (VD-01, D-01/D-02)
 
 **Wave 2** *(blocked on Wave 1 plan 02 completion)*
 
-- [ ] 03-03-PLAN.md — linkinator internal links + production redirect samples (VD-01, D-05/D-06/D-07)
+- [x] 03-03-PLAN.md — linkinator internal links + production redirect samples (VD-01, D-05/D-06/D-07)
 
 **Wave 3** *(blocked on Wave 2 completion + Plan 01 audit)*
 
-- [ ] 03-04-PLAN.md — PR CI link check + 5-page spot-check + phase gate (VD-01, VD-05, D-08/D-15/D-16)
+- [x] 03-04-PLAN.md — PR CI link check + 5-page spot-check + phase gate (VD-01, VD-05, D-08/D-15/D-16)
 
 ### Phase 4: Vercel Migration — Czech Site
 
@@ -219,7 +219,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8 →
 |-------|----------------|--------|-----------|
 | 1. Monorepo Foundation & CI | 4/4 | Complete    | 2026-06-07 |
 | 2. Shared Packages Extraction | 5/5 | Complete    | 2026-06-07 |
-| 3. Czech Site Parity Verification | 1/4 | In Progress|  |
+| 3. Czech Site Parity Verification | 4/4 | Complete   | 2026-06-07 |
 | 4. Vercel Migration — Czech Site | 0/TBD | Not started | - |
 | 5. English App Scaffold | 0/TBD | Not started | - |
 | 6. Content Pairing & i18n SEO | 0/TBD | Not started | - |

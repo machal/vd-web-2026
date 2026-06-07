@@ -57,9 +57,9 @@ Manual browser verification — check each row for 200, main content visible, na
 
 | Field | Value |
 |-------|-------|
-| Date | 2026-06-07 |
-| Git SHA | 723994b |
-| Build | ~22 s (turbo cached/force) |
+| Date | 2026-06-07 (re-verified end of execute-phase) |
+| Git SHA | 5420443 |
+| Build | ~19 s (turbo cached) |
 | verify-phase3-parity.sh | exit 0 |
 | Sitemap prod / local | 873 / 871 |
 | Sitemap missing (non-draft) | 0 |
