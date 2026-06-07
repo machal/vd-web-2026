@@ -66,7 +66,7 @@ Each task delivered in single audit artifact commit:
 2. **Task 2: Public/ inventory and dist size table (D-09, D-12)** - `1c50a8a` (docs)
 3. **Task 3: Phase 4+ recommendations and VD-05 closure** - `1c50a8a` (docs)
 
-**Plan metadata:** pending final docs commit
+**Plan metadata:** `00f4bab` (docs: complete plan)
 
 ## Files Created/Modified
 
