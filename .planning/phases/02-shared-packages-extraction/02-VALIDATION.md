@@ -3,7 +3,7 @@ phase: 02
 slug: shared-packages-extraction
 status: draft
 nyquist_compliant: false
-wave_0_complete: false
+wave_0_complete: true
 created: 2026-06-07
 ---
 
@@ -42,7 +42,7 @@ created: 2026-06-07
 | 02-02-01 | 02 | 2 | MONO-03 | — | Vite plugins import from @vd/shared | integration | `npm run build:vzhurudolu` | ✅ | ⬜ pending |
 | 02-03-01 | 03 | 3 | MONO-03 | T-02-01 | Markdown pipeline unchanged | integration | `npm run build:vzhurudolu` | ✅ | ⬜ pending |
 | 02-04-01 | 04 | 4 | MONO-03 | — | Layouts import from @vd/shared | integration | `npm run build:vzhurudolu` | ✅ | ⬜ pending |
-| 02-05-01 | 05 | 5 | MONO-03 | — | Stale paths absent | static | `bash scripts/verify-phase2-extraction.sh` | ❌ W0 | ⬜ pending |
+| 02-05-01 | 05 | 5 | MONO-03 | — | Stale paths absent | static | `bash scripts/verify-phase2-extraction.sh` | ✅ | ✅ green |
 
 *Status: ⬜ pending · ✅ green · ❌ red · ⚠️ flaky*
 
@@ -50,8 +50,8 @@ created: 2026-06-07
 
 ## Wave 0 Requirements
 
-- [ ] `scripts/verify-phase2-extraction.sh` — assert extracted files absent from old paths; assert `@vd/shared` imports in astro.config.mjs
-- [ ] Remove duplicated markdown deps from app after migration (final cleanup task)
+- [x] `scripts/verify-phase2-extraction.sh` — assert extracted files absent from old paths; assert `@vd/shared` imports in astro.config.mjs
+- [x] Remove duplicated markdown deps from app after migration (final cleanup task)
 
 ---
 
