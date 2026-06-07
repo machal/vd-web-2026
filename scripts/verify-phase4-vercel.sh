@@ -85,7 +85,7 @@ check_redirect_samples() {
   return 0
 }
 
-_check_trailing_slash() {
+check_trailing_slash() {
   local path="/prirucka/css-flexbox/"
   local headers
   headers=$(curl -sfI --max-time 15 "${PREVIEW_BASE}${path}" || true)
@@ -115,7 +115,7 @@ _check_trailing_slash() {
   return 0
 }
 
-_check_font_cors() {
+check_font_cors() {
   local font_path=""
   if font_path=$(find apps/vzhurudolu/public -name '*.woff2' 2>/dev/null | head -1); then
     :
@@ -139,7 +139,7 @@ _check_font_cors() {
   return 0
 }
 
-_check_homepage_200() {
+check_homepage_200() {
   local status
   status=$(curl -sf -o /dev/null -w '%{http_code}' --max-time 15 "${PREVIEW_BASE}/" || echo "000")
   if [[ "$status" != "200" ]]; then
@@ -150,9 +150,35 @@ _check_homepage_200() {
   return 0
 }
 
+FAIL=0
+
 if ! check_redirect_samples; then
+  FAIL=1
+fi
+
+if [[ "$REDIRECTS_ONLY" == "true" ]]; then
+  if [[ "$FAIL" -eq 0 ]]; then
+    echo "Phase 4 Vercel gate: OK — redirect matrix verified (--redirects-only)"
+    exit 0
+  fi
   exit 1
 fi
 
-echo "Phase 4 Vercel gate: OK — redirect matrix verified"
-exit 0
+if ! check_trailing_slash; then
+  FAIL=1
+fi
+
+if ! check_font_cors; then
+  FAIL=1
+fi
+
+if ! check_homepage_200; then
+  FAIL=1
+fi
+
+if [[ "$FAIL" -eq 0 ]]; then
+  echo "Phase 4 Vercel gate: OK — redirects, trailing slash, font CORS, homepage verified"
+  exit 0
+fi
+
+exit 1
