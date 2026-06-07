@@ -61,7 +61,28 @@ Plans:
   2. Czech site builds with identical content rendering after package extraction (no visual or URL regressions)
   3. Shared markdown config accepts path prefixes (`/prirucka` vs `/guide`) via factory pattern — ready for EN app
 
-**Plans**: TBD
+**Plans**: 5 plans
+
+Plans:
+**Wave 1**
+
+- [ ] 02-01-PLAN.md — @vd/shared scaffold + workspace wiring + verify script (MONO-03 foundation)
+
+**Wave 2** *(blocked on Wave 1 completion)*
+
+- [ ] 02-02-PLAN.md — Vite plugins extraction to @vd/shared (MONO-03)
+
+**Wave 3** *(blocked on Wave 2 completion)*
+
+- [ ] 02-03-PLAN.md — Markdown pipeline + createMarkdownConfig factory (MONO-03, D-06/D-07)
+
+**Wave 4** *(blocked on Wave 3 completion)*
+
+- [ ] 02-04-PLAN.md — SEO sitemap + layouts/components extraction (MONO-03)
+
+**Wave 5** *(blocked on Wave 4 completion)*
+
+- [ ] 02-05-PLAN.md — Cleanup, dep dedupe, full verify gate (MONO-03)
 
 ### Phase 3: Czech Site Parity Verification
 
@@ -183,7 +204,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8 →
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Monorepo Foundation & CI | 4/4 | Complete    | 2026-06-07 |
-| 2. Shared Packages Extraction | 0/TBD | Not started | - |
+| 2. Shared Packages Extraction | 0/5 | Not started | - |
 | 3. Czech Site Parity Verification | 0/TBD | Not started | - |
 | 4. Vercel Migration — Czech Site | 0/TBD | Not started | - |
 | 5. English App Scaffold | 0/TBD | Not started | - |
