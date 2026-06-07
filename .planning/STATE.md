@@ -2,16 +2,16 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: verifying
-stopped_at: Completed 02-05-PLAN.md
-last_updated: "2026-06-07T13:36:59.541Z"
-last_activity: 2026-06-07 -- Completed Phase 02 Plan 05 (final cleanup and verify gate)
+status: executing
+stopped_at: Completed 03-01-PLAN.md
+last_updated: "2026-06-07T13:40:30.000Z"
+last_activity: 2026-06-07 -- Completed Phase 03 Plan 01 (public asset audit + build timing)
 progress:
   total_phases: 9
-  completed_phases: 1
-  total_plans: 9
-  completed_plans: 9
-  percent: 100
+  completed_phases: 2
+  total_plans: 13
+  completed_plans: 10
+  percent: 77
 ---
 
 # Project State
@@ -21,24 +21,24 @@ progress:
 See: .planning/PROJECT.md (updated 2026-06-06)
 
 **Core value:** Articles and `/martin` earn organic global trust; site reflects Web Perf expertise with pragmatic tradeoffs (GA OK; LH 100/100 secondary).
-**Current focus:** Phase 02 — Ready for verification; Phase 03 parity next
+**Current focus:** Phase 03 — Czech site parity verification (Plan 01 complete)
 
 ## Current Position
 
-Phase: 2
-Plan: 05 complete (5/5)
-Status: Ready for verification
-Last activity: 2026-06-07 -- Completed Phase 02 Plan 05 (final cleanup and verify gate)
+Phase: 3
+Plan: 01 complete (1/4)
+Status: In progress
+Last activity: 2026-06-07 -- Completed Phase 03 Plan 01 (public asset audit + build timing)
 
-Progress: [██████████] 100%
+Progress: [████████░░] 77%
 
 ## Performance Metrics
 
 **Velocity:**
 
-- Total plans completed: 9
+- Total plans completed: 10
 - Average duration: 20 min
-- Total execution time: 2.4 hours
+- Total execution time: 2.5 hours
 
 **By Phase:**
 
@@ -46,6 +46,7 @@ Progress: [██████████] 100%
 |-------|-------|-------|----------|
 | 01 | 4 | 4 | - |
 | 02 | 5 | 5 | 25 min |
+| 03 | 1 | 1 | 5 min |
 
 **Recent Trend:**
 
@@ -68,6 +69,8 @@ Recent decisions affecting current work:
 - Phase 02: Vite plugins extracted to @vd/shared with move-only pattern (process.cwd() → app root)
 - Phase 02: Markdown pipeline extracted with createMarkdownConfig factory; link/image plugins parameterized per D-06/D-07
 - Phase 02: createCustomSitemap factory + layout/chrome components in @vd/shared; pages import from shared package
+- Phase 03: Local cold build 29s — under 5-minute threshold; copy plugin unchanged per D-11
+- Phase 03: FTP data/files exclusion gap documented for Phase 4+ selective copy
 
 ### Pending Todos
 
@@ -87,6 +90,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-06-07T13:03:12.000Z
-Stopped at: Completed 02-05-PLAN.md
+Last session: 2026-06-07T13:40:30.000Z
+Stopped at: Completed 03-01-PLAN.md
 Resume file: None

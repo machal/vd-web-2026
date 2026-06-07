@@ -19,7 +19,7 @@
 - [x] **VD-02**: Draft/unpublished blog posts are excluded from production build output and sitemap
 - [ ] **VD-03**: Czech site migrates from FTP to Vercel with `.htaccess` rules ported to `vercel.json`
 - [ ] **VD-04**: Czech originals of 8 pilot articles link to English counterparts via language switch
-- [ ] **VD-05**: `public/` asset strategy preserves production behavior without build timeouts (685 MB audit applied)
+- [x] **VD-05**: `public/` asset strategy preserves production behavior without build timeouts (685 MB audit applied)
 
 ### English Site (michalek.dev)
 
@@ -123,7 +123,7 @@ Deferred to future release.
 | VD-02 | Phase 1 | Complete |
 | VD-03 | Phase 4 | Pending |
 | VD-04 | Phase 6 | Pending |
-| VD-05 | Phase 3 | Pending |
+| VD-05 | Phase 3 | Complete |
 | EN-01 | Phase 5 | Pending |
 | EN-02 | Phase 5 | Pending |
 | EN-03 | Phase 5 | Pending |

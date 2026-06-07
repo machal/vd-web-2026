@@ -101,7 +101,7 @@ Plans:
 Plans:
 **Wave 1**
 
-- [ ] 03-01-PLAN.md — Public asset audit + build timing (VD-05, D-09/D-10/D-12)
+- [x] 03-01-PLAN.md — Public asset audit + build timing (VD-05, D-09/D-10/D-12)
 - [ ] 03-02-PLAN.md — verify-phase3-parity.sh skeleton + sitemap URL diff (VD-01, D-01/D-02)
 
 **Wave 2** *(blocked on Wave 1 plan 02 completion)*
@@ -219,7 +219,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8 →
 |-------|----------------|--------|-----------|
 | 1. Monorepo Foundation & CI | 4/4 | Complete    | 2026-06-07 |
 | 2. Shared Packages Extraction | 4/5 | In Progress|  |
-| 3. Czech Site Parity Verification | 0/4 | Not started | - |
+| 3. Czech Site Parity Verification | 1/4 | In Progress|  |
 | 4. Vercel Migration — Czech Site | 0/TBD | Not started | - |
 | 5. English App Scaffold | 0/TBD | Not started | - |
 | 6. Content Pairing & i18n SEO | 0/TBD | Not started | - |
