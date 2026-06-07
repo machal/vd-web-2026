@@ -68,7 +68,7 @@ Each task was committed atomically:
 2. **Task 2: Remove duplicate deps and empty app directories** - `84dec86` (chore)
 3. **Task 3: Final MONO-03 gate and repo-wide stale import scan** - verification only (no file changes)
 
-**Plan metadata:** `a033e7f` (docs: complete plan)
+**Plan metadata:** `04fd828` (docs: complete plan)
 
 ## Files Created/Modified
 
