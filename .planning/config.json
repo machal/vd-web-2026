@@ -1,7 +1,7 @@
 {
   "model_profile": "balanced",
   "commit_docs": true,
-  "parallelization": true,
+  "parallelization": false,
   "search_gitignored": false,
   "brave_search": false,
   "firecrawl": false,
@@ -41,7 +41,8 @@
     "post_planning_gaps": true,
     "security_enforcement": true,
     "security_asvs_level": 1,
-    "security_block_on": "high"
+    "security_block_on": "high",
+    "_auto_chain_active": false
   },
   "ship": {
     "pr_body_sections": [
@@ -82,6 +83,6 @@
     "source_grounding_authority": "grep"
   },
   "resolve_model_ids": "omit",
-  "mode": "yolo",
+  "mode": "standard",
   "granularity": "standard"
 }
