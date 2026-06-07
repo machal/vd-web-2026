@@ -74,7 +74,7 @@ Plans:
 
 **Wave 3** *(blocked on Wave 2 completion)*
 
-- [ ] 02-03-PLAN.md — Markdown pipeline + createMarkdownConfig factory (MONO-03, D-06/D-07)
+- [x] 02-03-PLAN.md — Markdown pipeline + createMarkdownConfig factory (MONO-03, D-06/D-07)
 
 **Wave 4** *(blocked on Wave 3 completion)*
 
