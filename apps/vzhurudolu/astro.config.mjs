@@ -4,19 +4,7 @@ import path from 'node:path';
 // import sitemap from '@astrojs/sitemap'; // Vypnuto - bug s undefined.reduce()
 import { customSitemap } from './src/utils/custom-sitemap';
 import { changedFilesIntegration } from './src/utils/changed-files-integration';
-import rehypeRaw from 'rehype-raw';
-import remarkGfm from 'remark-gfm';
-import { remarkHeadingIds } from './src/utils/remark-heading-ids.ts';
-import { remarkProcessMarkdownAttributes } from './src/utils/remark-process-markdown-attributes.ts';
-import { remarkPriruckaImages } from './src/utils/remark-prirucka-images.ts';
-import { remarkNormalizeCodeLang } from './src/utils/remark-normalize-code-lang.ts';
-import { rehypeRemoveFirstH1 } from './src/utils/rehype-remove-first-h1.ts';
-import { rehypeRemoveEbookOnly } from './src/utils/rehype-remove-ebook-only.ts';
-import { rehypeHeadingAnchors } from './src/utils/rehype-heading-anchors.ts';
-import { rehypePriruckaLinks } from './src/utils/rehype-prirucka-links.ts';
-import { rehypePriruckaImages } from './src/utils/rehype-prirucka-images.ts';
-import { rehypeConnectedElements } from './src/utils/rehype-connected-elements.ts';
-import { rehypeRelatedToInnerBox } from './src/utils/rehype-related-to-inner-box.ts';
+import { createMarkdownConfig } from '@vd/shared/markdown';
 import { vitePluginPriruckaImages } from '@vd/shared/vite-plugins/vite-plugin-prirucka-images';
 import { vitePluginContentImages } from '@vd/shared/vite-plugins/vite-plugin-content-images';
 import { vitePluginDesignImages } from '@vd/shared/vite-plugins/vite-plugin-design-images';
@@ -110,45 +98,10 @@ export default defineConfig({
     customSitemap(),
     changedFilesIntegration(),
   ],
-  markdown: {
-    // Shiki syntax highlighting - používáme css-variables pro možnost přepsání barev
-    shikiConfig: {
-      theme: 'css-variables',
-      langAlias: {
-        url: 'text',
-        terminal: 'text',
-        img: 'text',
-        htaccess: 'text',
-        robotstxt: 'text',
-        svg: 'xml',
-      },
-    },
-    // FÁZE 1: Základní HTML generování z markdownu
-    // Pouze základní parsování markdownu a zpracování markdown="1" atributů
-    remarkPlugins: [
-      remarkGfm, // GitHub Flavored Markdown (standardní rozšíření)
-      remarkPriruckaImages, // Transformace cest k obrázkům - nutné před zpracováním Astro assets (pouze úprava cest, ne transformace obsahu)
-      remarkNormalizeCodeLang, // url/terminal/img/htaccess/robotstxt → text, svg → xml (Shiki jinak háže chybu)
-      remarkProcessMarkdownAttributes, // Zpracování markdown="1" atributů - potřebné pro generování základního HTML
-      // VYPNUTO - transformace budou až na hotovém HTML:
-      // remarkHeadingIds, // Přesunuto do rehype fáze (rehypeHeadingAnchors)
-    ],
-    // Povolit raw HTML v Markdownu (nutné pro markdown="1" atributy)
-    remarkRehype: {
-      allowDangerousHtml: true,
-    },
-    // FÁZE 2: Transformace na hotovém HTML
-    rehypePlugins: [
-      rehypeRaw, // Převod raw HTML na HAST uzly (nutné pro zobrazení HTML v markdownu)
-      rehypePriruckaImages, // Transformace cest k obrázkům v HTML elementech (z ../dist/images/ na /prirucka/images/)
-      rehypeRemoveEbookOnly, // Odstranění elementů s třídou "ebook-only" (včetně jejich dětí)
-      rehypeConnectedElements, // Transformace elementů s třídou "connected" (přidání tříd, úprava obrázků)
-      rehypeRelatedToInnerBox, // Transformace elementů s třídou "related" na inner-box inner-box--side
-      rehypeHeadingAnchors, // Přidání anchorů k nadpisům (odstraní {#id} z textu, opraví duplikované ID)
-      rehypePriruckaLinks, // Transformace odkazů příručky (css-grid.md -> /prirucka/css-grid)
-      rehypeRemoveFirstH1, // Odstranění prvního H1 z HTML (nadpis je už v zelené ploše nahoře)
-    ],
-  },
+  markdown: createMarkdownConfig({
+    contentPathPrefix: '/prirucka',
+    collections: ['prirucka', 'blog', 'podcast'],
+  }),
   vite: {
     ssr: {
       noExternal: ['@vd/shared'],
