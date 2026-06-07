@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 # Phase 2 end-to-end extraction gate — extends Phase 1 dist smoke checks.
+# Scaffold checks (package, workspace dep, noExternal): active since Plan 02-01.
+# Stale-path assertions: commented below; activate in Plan 05 after file moves.
 set -euo pipefail
 
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
