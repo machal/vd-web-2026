@@ -6,7 +6,7 @@ Brownfield Astro monorepo migration and English personal brand launch. Czech sit
 
 ## Phases
 
-- [ ] **Phase 1: Monorepo Foundation & CI** - Workspace structure, Turborepo, Czech app relocation, draft filtering
+- [x] **Phase 1: Monorepo Foundation & CI** - Workspace structure, Turborepo, Czech app relocation, draft filtering (completed 2026-06-07)
 - [ ] **Phase 2: Shared Packages Extraction** - Parameterized markdown pipeline, Vite plugins, layouts, SEO helpers in packages
 - [ ] **Phase 3: Czech Site Parity Verification** - Output parity vs production, public asset audit, link integrity
 - [ ] **Phase 4: Vercel Migration — Czech Site** - Czech hosting cutover with `.htaccess` → `vercel.json` redirect port
@@ -47,7 +47,7 @@ Plans:
 
 **Wave 4** *(blocked on Wave 3 completion)*
 
-- [ ] 01-04-PLAN.md — PR CI + FTP deploy path update (MONO-01, MONO-02 CI guardrails)
+- [x] 01-04-PLAN.md — PR CI + FTP deploy path update (MONO-01, MONO-02 CI guardrails)
 
 ### Phase 2: Shared Packages Extraction
 
@@ -182,7 +182,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8 →
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Monorepo Foundation & CI | 3/4 | In Progress|  |
+| 1. Monorepo Foundation & CI | 4/4 | Complete   | 2026-06-07 |
 | 2. Shared Packages Extraction | 0/TBD | Not started | - |
 | 3. Czech Site Parity Verification | 0/TBD | Not started | - |
 | 4. Vercel Migration — Czech Site | 0/TBD | Not started | - |
