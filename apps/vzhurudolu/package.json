@@ -15,6 +15,7 @@
     "fix-frontmatter": "node scripts/check-frontmatter.js --fix"
   },
   "dependencies": {
+    "@vd/shared": "*",
     "@astrojs/rss": "^4.0.15",
     "@superkoders/modal": "^1.7",
     "jquery": "^3.7.1",

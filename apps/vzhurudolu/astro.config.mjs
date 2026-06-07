@@ -150,6 +150,9 @@ export default defineConfig({
     ],
   },
   vite: {
+    ssr: {
+      noExternal: ['@vd/shared'],
+    },
     plugins: [
       vitePluginValidateFrontmatter(), // Validace front-matter v Markdown souborech
       vitePluginPriruckaImages(), // Automatická konverze obrázků příručky
