@@ -1,0 +1,45 @@
+# Production redirect sample matrix — verified 2026-06-07 against live vzhurudolu.cz
+# Format: source_path|expected_location_suffix
+# Only explicit Redirect / RedirectMatch 301 rules (not RewriteCond infra)
+
+# Shortcuts /p/, /b/, /k/, /v/, /f/
+/p/css-flexbox|/prirucka/css-flexbox
+/b/261-rok-2025|/blog/261-rok-2025
+/k/webovy-frontend|/kurzy/webovy-frontend
+/v/webinar-2020/objednavka|/video/webinar-2020/objednavka
+/f/vdamp/demo|/files/vdamp/demo
+
+# E-book redirects
+/ebook|/ebook-css3
+/ebook-responzivni|/kniha-responzivni-design
+/ebook-responzivni/foo|/kniha-responzivni-design/foo
+/kniha-responzivni-design/kniha|/kniha-responzivni-design
+/ebook/foo|/ebook-css3/foo
+
+# Příručka typo fixes
+/prirucka/css3-flexbox|/prirucka/css-flexbox
+/prirucka/css3-multicolumn|/prirucka/css-multicolumn
+/prirucka/viewport-mobily|/prirucka/viewport
+/prirucka/css-mulicolumn|/prirucka/css-multicolumn
+/prirucka/google-Search-Console|/prirucka/google-search-console
+
+# Legacy /data/ paths
+/30/sample|/data/30/sample
+/archiv/sample|/data/archiv/sample
+/css-frameworks/sample|/data/css-frameworks/sample
+
+# Kurzy consolidation
+/kurzy/webovy-frontend|/kurzy
+/kurzy/pokrocily-responzivni-design|/kurzy
+/frontend-kurz|/kurzy
+
+# AMP strip
+/amp/prirucka/css-flexbox|/prirucka/css-flexbox
+
+# Blog → podcast
+/blog/77-css-v-js|/podcast/css-v-js
+
+# Misc
+/checklist|/prirucka/checklist
+/lektori/martin-michalek|/martin
+/frontend-frameworky|/bootstrap
