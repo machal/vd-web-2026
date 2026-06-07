@@ -7,9 +7,10 @@ import Footer from '../../components/Footer.astro';
 import ArticleFooter from '../../components/ArticleFooter.astro';
 import { categories, type CategoryConfig } from '../../data/categories';
 import { getRelatedArticles } from '../../utils/get-related-articles';
+import { isPublished } from '../../utils/is-published';
 
 export async function getStaticPaths() {
-  const podcasts = await getCollection('podcast');
+  const podcasts = await getCollection('podcast', isPublished);
   return podcasts.map((podcast) => ({
     params: { slug: `${podcast.data.postID}-${podcast.slug}` },
     props: { podcast },
