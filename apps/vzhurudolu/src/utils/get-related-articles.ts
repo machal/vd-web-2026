@@ -1,4 +1,5 @@
 import { getCollection, type CollectionEntry } from 'astro:content';
+import { isPublished } from './is-published';
 
 type ArticleEntry = CollectionEntry<'prirucka'> | CollectionEntry<'blog'> | CollectionEntry<'podcast'>;
 
@@ -33,9 +34,9 @@ export async function getRelatedArticles(
 
   // Načíst všechny kolekce paralelně
   const [prirucka, blog, podcast] = await Promise.all([
-    getCollection('prirucka', (e) => e.data.published === true),
-    getCollection('blog'),
-    getCollection('podcast'),
+    getCollection('prirucka', isPublished),
+    getCollection('blog', isPublished),
+    getCollection('podcast', isPublished),
   ]);
 
   // Spojit všechny články

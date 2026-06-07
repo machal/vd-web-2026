@@ -4,10 +4,11 @@ import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import ArticleListItem from '../../components/ArticleListItem.astro';
 import { getCollection } from 'astro:content';
+import { isPublished } from '../../utils/is-published';
 
 const postsPerPage = 10;
 
-const blogPosts = await getCollection('blog', (entry) => entry.data.published !== false);
+const blogPosts = await getCollection('blog', isPublished);
 const sorted = blogPosts.sort((a, b) => {
   const dateA = a.data.date || new Date(0);
   const dateB = b.data.date || new Date(0);

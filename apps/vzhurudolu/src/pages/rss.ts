@@ -1,5 +1,6 @@
 import rss from '@astrojs/rss';
 import { getCollection } from 'astro:content';
+import { isPublished } from '../utils/is-published';
 import type { APIContext } from 'astro';
 import sanitizeHtml from 'sanitize-html';
 import MarkdownIt from 'markdown-it';
@@ -29,26 +30,17 @@ function getExcerpt(entry: any): string {
 
 export async function GET(context: APIContext) {
   // Načtení všech kolekcí
-  const blogPosts = await getCollection('blog');
-  const podcasts = await getCollection('podcast');
-  // Filtrovat pouze články s front matter (mají id)
-  const priruckaPosts = await getCollection('prirucka', (entry) => !!entry.data.id);
+  const blogPosts = await getCollection('blog', isPublished);
+  const podcasts = await getCollection('podcast', isPublished);
+  const priruckaPosts = await getCollection('prirucka', isPublished);
 
-  // Filtrování a spojení všech článků
   const allContent = [...blogPosts, ...podcasts, ...priruckaPosts]
     .filter(post => {
-      // Kontrola include_rss flagu
       const includeRss = post.data.include_rss;
       if (includeRss === false || includeRss === 'false') {
         return false;
       }
-      
-      // Filtrování podle published statusu
-      if (post.collection === 'prirucka') {
-        return post.data.published === true;
-      } else {
-        return post.data.published !== false;
-      }
+      return true;
     })
     .sort((a, b) => {
       const dateA = a.data.date || new Date(0);

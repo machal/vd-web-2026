@@ -1,14 +1,13 @@
 ---
 // Stránkování podcastů - /podcast/p=2, /podcast/p=3, atd.
 import { getCollection } from 'astro:content';
+import { isPublished } from '../../utils/is-published';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 
 export async function getStaticPaths() {
-  const podcasts = await getCollection('podcast', (entry) => {
-    return entry.data.published !== false;
-  });
+  const podcasts = await getCollection('podcast', isPublished);
 
   const sortedPodcasts = podcasts.sort((a, b) => {
     const dateA = a.data.date || new Date(0);

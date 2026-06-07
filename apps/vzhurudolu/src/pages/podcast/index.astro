@@ -1,13 +1,11 @@
 ---
 import { getCollection } from 'astro:content';
+import { isPublished } from '../../utils/is-published';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 
-const podcasts = await getCollection('podcast', (entry) => {
-  // Filtrovat jen publikované podcasty
-  return entry.data.published !== false;
-});
+const podcasts = await getCollection('podcast', isPublished);
 const sortedPodcasts = podcasts.sort((a, b) => {
   const dateA = a.data.date || new Date(0);
   const dateB = b.data.date || new Date(0);

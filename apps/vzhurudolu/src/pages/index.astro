@@ -5,26 +5,19 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import ArticleListItem from '../components/ArticleListItem.astro';
 import { getCollection } from 'astro:content';
+import { isPublished } from '../utils/is-published';
 import { Fragment } from 'astro/jsx-runtime';
 
 // Načtení článků z Markdown souborů - všechny tři entity
-const blogPosts = await getCollection('blog');
-const podcasts = await getCollection('podcast');
-// Filtrovat pouze články s front matter (mají id)
-const priruckaPosts = await getCollection('prirucka', (entry) => !!entry.data.id);
+const blogPosts = await getCollection('blog', isPublished);
+const podcasts = await getCollection('podcast', isPublished);
+const priruckaPosts = await getCollection('prirucka', isPublished);
 
 // Spojit všechny články a seřadit podle data od nejnovějšího
 const allContent = [...blogPosts, ...podcasts, ...priruckaPosts]
   .filter(post => {
-    // Filtrovat jen publikované články
-    // Pro blog/podcast: postStatus !== 'Draft', pro příručku: published === true
-    if (post.collection === 'prirucka') {
-      if (post.data.published !== true) return false;
-      // Filtrovat nehotové snippety - pokud title === id, pak to není hotový článek
-      if (post.data.title === post.data.id) return false;
-      return true;
-    }
-    return post.data.published !== false;
+    if (post.collection === 'prirucka' && post.data.title === post.data.id) return false;
+    return true;
   })
   .sort((a, b) => {
     const dateA = a.data.date || new Date(0);
