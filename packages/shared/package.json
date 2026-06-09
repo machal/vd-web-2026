@@ -10,7 +10,10 @@
     "./seo/custom-sitemap": "./seo/custom-sitemap.ts",
     "./layouts/*": "./layouts/*",
     "./components/*": "./components/*",
-    "./types": "./types/index.ts"
+    "./types": "./types/index.ts",
+    "./content-pairing": "./content-pairing/index.ts",
+    "./content-pairing/*": "./content-pairing/*",
+    "./seo/hreflang": "./seo/hreflang.ts"
   },
   "peerDependencies": {
     "astro": "4.16.19",

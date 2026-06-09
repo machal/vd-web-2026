@@ -44,6 +44,7 @@ const blog = defineCollection({
     tags: z.array(z.string()).optional(),
     ogImage: z.string().optional(),
     published: z.union([z.boolean(), z.string()]).optional(),
+    pairId: z.string().optional(),
   }).transform((data) => {
     // Mapování na standardní pole pro snadnější použití
     const dateValue = data.date || data.postDateTime;
@@ -150,6 +151,7 @@ const prirucka = defineCollection({
     title: z.string().optional(),
     description: z.string().optional(),
     tags: z.array(z.string()).optional(),
+    pairId: z.string().optional(),
   }).transform((data) => {
     // Pokud je heading prázdný, použijeme id nebo title
     const title = data.title || (data.heading && data.heading.trim() !== '' ? data.heading : data.id) || data.id || '';

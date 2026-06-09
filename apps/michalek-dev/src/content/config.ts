@@ -15,6 +15,7 @@ const blog = defineCollection({
     tags: z.array(z.string()).optional().default([]),
     published: z.union([z.boolean(), z.string()]).optional().default(true),
     ogImage: z.string().optional(),
+    pairId: z.string().optional(),
   }).transform((data) => ({
     ...data,
     published: data.published !== false && data.published !== 'false',
@@ -40,6 +41,7 @@ const guide = defineCollection({
     tags: z.array(z.string()).optional().default([]),
     heading: z.string().optional(),
     perex: z.string().optional(),
+    pairId: z.string().optional(),
   }).transform((data) => {
     const title = data.title || (data.heading?.trim() ? data.heading : data.id) || '';
     const published = typeof data.published === 'boolean'
