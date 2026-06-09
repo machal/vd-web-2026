@@ -11,7 +11,7 @@ Brownfield Astro monorepo migration and English personal brand launch. Czech sit
 - [x] **Phase 3: Czech Site Parity Verification** - Output parity vs production, public asset audit, link integrity (completed 2026-06-07)
 - [x] **Phase 4: Vercel Migration — Czech Site** - Czech hosting cutover with `.htaccess` → `vercel.json` redirect port
 - [x] **Phase 5: English App Scaffold** - michalek.dev Astro app, homepage, nav, routing, dual Vercel project config (EN Vercel dashboard: human_needed)
-- [ ] **Phase 6: Content Pairing & i18n SEO** - CONTENT_PAIRS manifest, language switch, hreflang, Czech mirror links
+- [x] **Phase 6: Content Pairing & i18n SEO** - CONTENT_PAIRS manifest, language switch, hreflang, Czech mirror links (completed 2026-06-09)
 - [ ] **Phase 7: Content Adaptation — Pilot 8 + `/martin`** - 8 adapted articles, native EN `/martin`, homepage "start here"
 - [ ] **Phase 8: Launch Polish — Legal, Feeds, Tags, Performance** - SEO metadata, RSS/sitemap, tags, legal, CWV review, GA
 - [ ] **Phase 9: Production Cutover — michalek.dev + DNS** - Staged DNS for both domains, FTP retirement, rollback docs
@@ -203,20 +203,20 @@ Plans:
 Plans:
 **Wave 1**
 
-- [ ] 06-01-PLAN.md — CONTENT_PAIRS manifest, resolve.ts, validate core, pairId schemas (I18N-01, I18N-02)
+- [x] 06-01-PLAN.md — CONTENT_PAIRS manifest, resolve.ts, validate core, pairId schemas (I18N-01, I18N-02)
 
 **Wave 2** *(blocked on Wave 1 completion)*
 
-- [ ] 06-02-PLAN.md — hreflang/canonical helpers, LanguageSwitch, BaseLayout head injection (I18N-03, I18N-05, I18N-06)
+- [x] 06-02-PLAN.md — hreflang/canonical helpers, LanguageSwitch, BaseLayout head injection (I18N-03, I18N-05, I18N-06)
 
 **Wave 3** *(blocked on Wave 2 completion)*
 
-- [ ] 06-03-PLAN.md — EN pilot stubs + page wiring (I18N-03, I18N-05, I18N-06, I18N-07)
-- [ ] 06-04-PLAN.md — CS pairId front matter + page wiring (VD-04, I18N-02, I18N-03, I18N-05, I18N-06)
+- [x] 06-03-PLAN.md — EN pilot stubs + page wiring (I18N-03, I18N-05, I18N-06, I18N-07)
+- [x] 06-04-PLAN.md — CS pairId front matter + page wiring (VD-04, I18N-02, I18N-03, I18N-05, I18N-06)
 
 **Wave 4** *(blocked on Wave 3 completion)*
 
-- [ ] 06-05-PLAN.md — Build validator CLI, verify gate, PR CI (I18N-04, I18N-07)
+- [x] 06-05-PLAN.md — Build validator CLI, verify gate, PR CI (I18N-04, I18N-07)
 
 **UI hint**: yes
 
@@ -280,7 +280,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8 →
 | 3. Czech Site Parity Verification | 4/4 | Complete   | 2026-06-07 |
 | 4. Vercel Migration — Czech Site | 4/4 | Complete   | 2026-06-07 |
 | 5. English App Scaffold | 0/TBD | Not started | - |
-| 6. Content Pairing & i18n SEO | 0/TBD | Not started | - |
+| 6. Content Pairing & i18n SEO | 5/5 | Complete   | 2026-06-09 |
 | 7. Content Adaptation — Pilot 8 + `/martin` | 0/TBD | Not started | - |
 | 8. Launch Polish — Legal, Feeds, Tags, Performance | 0/TBD | Not started | - |
 | 9. Production Cutover — michalek.dev + DNS | 0/TBD | Not started | - |

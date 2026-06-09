@@ -18,7 +18,7 @@
 - [x] **VD-01**: Czech site builds from `apps/vzhurudolu` with output parity to current production (URLs, redirects, content)
 - [x] **VD-02**: Draft/unpublished blog posts are excluded from production build output and sitemap
 - [ ] **VD-03**: Czech site migrates from FTP to Vercel with `.htaccess` rules ported to `vercel.json`
-- [ ] **VD-04**: Czech originals of 8 pilot articles link to English counterparts via language switch
+- [x] **VD-04**: Czech originals of 8 pilot articles link to English counterparts via language switch
 - [x] **VD-05**: `public/` asset strategy preserves production behavior without build timeouts (685 MB audit applied)
 
 ### English Site (michalek.dev)
@@ -46,13 +46,13 @@
 
 ### i18n & Language Pairing
 
-- [ ] **I18N-01**: Central `CONTENT_PAIRS` manifest maps EN↔CS article pairs and `/martin` page pair
-- [ ] **I18N-02**: `pairId` (or equivalent) in front matter links articles across domains
-- [ ] **I18N-03**: Language switch component visible on all 8 paired articles and `/martin` (labels: "English" / "Česky")
-- [ ] **I18N-04**: Build-time validator confirms bidirectional pairing reciprocity (no orphan pairs)
-- [ ] **I18N-05**: hreflang tags (`en`, `cs`, `x-default` → EN) on paired pages only; absolute URLs
-- [ ] **I18N-06**: Each page has self-referencing canonical URL (never cross-language canonical)
-- [ ] **I18N-07**: No IP/browser auto-redirect by language
+- [x] **I18N-01**: Central `CONTENT_PAIRS` manifest maps EN↔CS article pairs and `/martin` page pair
+- [x] **I18N-02**: `pairId` (or equivalent) in front matter links articles across domains
+- [x] **I18N-03**: Language switch component visible on all 8 paired articles and `/martin` (labels: "English" / "Česky")
+- [x] **I18N-04**: Build-time validator confirms bidirectional pairing reciprocity (no orphan pairs)
+- [x] **I18N-05**: hreflang tags (`en`, `cs`, `x-default` → EN) on paired pages only; absolute URLs
+- [x] **I18N-06**: Each page has self-referencing canonical URL (never cross-language canonical)
+- [x] **I18N-07**: No IP/browser auto-redirect by language
 
 ### SEO & Discovery
 
@@ -122,7 +122,7 @@ Deferred to future release.
 | VD-01 | Phase 3 | Complete |
 | VD-02 | Phase 1 | Complete |
 | VD-03 | Phase 4 | Pending |
-| VD-04 | Phase 6 | Pending |
+| VD-04 | Phase 6 | Complete |
 | VD-05 | Phase 3 | Complete |
 | EN-01 | Phase 5 | Complete |
 | EN-02 | Phase 5 | Complete |
@@ -141,13 +141,13 @@ Deferred to future release.
 | CONT-05 | Phase 7 | Pending |
 | CONT-06 | Phase 7 | Pending |
 | CONT-07 | Phase 7 | Pending |
-| I18N-01 | Phase 6 | Pending |
-| I18N-02 | Phase 6 | Pending |
-| I18N-03 | Phase 6 | Pending |
-| I18N-04 | Phase 6 | Pending |
-| I18N-05 | Phase 6 | Pending |
-| I18N-06 | Phase 6 | Pending |
-| I18N-07 | Phase 6 | Pending |
+| I18N-01 | Phase 6 | Complete |
+| I18N-02 | Phase 6 | Complete |
+| I18N-03 | Phase 6 | Complete |
+| I18N-04 | Phase 6 | Complete |
+| I18N-05 | Phase 6 | Complete |
+| I18N-06 | Phase 6 | Complete |
+| I18N-07 | Phase 6 | Complete |
 | SEO-01 | Phase 8 | Pending |
 | SEO-02 | Phase 8 | Pending |
 | SEO-03 | Phase 8 | Pending |
