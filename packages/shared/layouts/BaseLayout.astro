@@ -90,7 +90,7 @@ const finalOgDescription = ogDescription || description;
     <meta property="og:site_name" content={config.siteName} />
     <meta property="og:type" content={ogType} />
 
-    {isCs && (
+    {isCs ? (
       <>
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@vzhurudolu" />
@@ -101,7 +101,18 @@ const finalOgDescription = ogDescription || description;
           <link rel="alternate" hreflang="en-us" href="https://www.cssmine.com" />
         )}
       </>
+    ) : (
+      <>
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={finalOgTitle} />
+        <meta name="twitter:description" content={finalOgDescription} />
+        {finalOgImageArray[0] && (
+          <meta name="twitter:image" content={finalOgImageArray[0]} />
+        )}
+      </>
     )}
+
+    <slot name="head" />
 
     <!-- Favicony/touchicons -->
     <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />

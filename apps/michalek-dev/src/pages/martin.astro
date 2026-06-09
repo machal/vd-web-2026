@@ -3,7 +3,9 @@ import { Fragment } from 'astro/jsx-runtime';
 import BaseLayout from '@vd/shared/layouts/BaseLayout.astro';
 import Header from '@vd/shared/components/Header.astro';
 import Footer from '@vd/shared/components/Footer.astro';
+import JsonLd from '@vd/shared/components/JsonLd.astro';
 import LanguageSwitch from '@vd/shared/components/LanguageSwitch.astro';
+import { buildPersonJsonLd } from '@vd/shared/seo/json-ld';
 import { resolveAlternate, resolveHreflangCluster } from '@vd/shared/content-pairing';
 import { buildAlternateLinks } from '@vd/shared/seo/hreflang';
 import { siteConfig } from '../site.config';
@@ -12,6 +14,12 @@ const canonicalUrl = 'https://michalek.dev/martin';
 const alternate = resolveAlternate('michalek-dev', 'page', '/martin');
 const cluster = resolveHreflangCluster('michalek-dev', 'page', '/martin');
 const alternateLinks = cluster ? buildAlternateLinks(cluster) : undefined;
+
+const personJsonLd = buildPersonJsonLd({
+  url: canonicalUrl,
+  description: 'Web performance consultant, author, and speaker. Founder of PageSpeed.ONE.',
+  jobTitle: 'Web Performance Consultant',
+});
 
 const clientLogos = [
   { src: '/assets/img/content/dest/logos/csob.svg', alt: 'ČSOB' },
@@ -31,6 +39,8 @@ const clientLogos = [
   alternateLinks={alternateLinks}
   bodyClass="section-autor"
 >
+  <JsonLd slot="head" data={personJsonLd} />
+
   <Fragment slot="styles">
     <link rel="stylesheet" href="/assets/css/modules-standalone/min/pages/lector.min.css" />
     <link rel="stylesheet" href="/assets/css/modules-standalone/min/accordion.min.css" />

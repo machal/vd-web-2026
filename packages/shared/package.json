@@ -13,7 +13,8 @@
     "./types": "./types/index.ts",
     "./content-pairing": "./content-pairing/index.ts",
     "./content-pairing/*": "./content-pairing/*",
-    "./seo/hreflang": "./seo/hreflang.ts"
+    "./seo/hreflang": "./seo/hreflang.ts",
+    "./seo/json-ld": "./seo/json-ld.ts"
   },
   "peerDependencies": {
     "astro": "4.16.19",
