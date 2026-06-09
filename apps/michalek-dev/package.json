@@ -1,5 +1,24 @@
 {
   "name": "@vd/michalek-dev",
+  "description": "Martin Michálek · Web & Performance",
+  "version": "0.1.0",
   "private": true,
-  "version": "0.0.0"
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@vd/shared": "*",
+    "markdown-it": "^14.1.0",
+    "remark-extract-frontmatter": "^3.2.0",
+    "remark-frontmatter": "^5.0.0",
+    "rollup": "^4.56.0",
+    "sanitize-html": "^2.17.0"
+  },
+  "devDependencies": {
+    "astro": "4.16.19"
+  }
 }

@@ -1,0 +1,1315 @@
+@charset "UTF-8";
+:root {
+  --vd-text-color-rgb: 46, 44, 9;
+  --vd-text-color: rgb(var(--vd-text-color-rgb));
+  --vd-text-color-lighter: rgba(var(--vd-text-color-rgb), 0.8);
+  --vd-text-color-lightest: rgba(var(--vd-text-color-rgb), 0.5);
+  --vd-background-color: #e5e3df;
+  --vd-content-bg-color: #fcfcf7;
+  --vd-border-color: rgba(var(--vd-text-color-rgb));
+  --vd-border-color-light: rgba(var(--vd-text-color-rgb), 0.5);
+  --vd-highlight-bg-color: #d8f5b8;
+  --vd-highlight-neutral-bg-color: #f2f0ed;
+  --vd-link-color: #5fa316;
+  --vd-heading-color: #2b490a;
+  --vd-code-color: hsl(25, 74%, 23%);
+  --vd-code-color-1: hsl(25, 74%, 32%);
+  --vd-code-color-2: hsl(25, 74%, 37%);
+  --vd-code-color-3: hsl(25, 24%, 73%);
+  --vd-code-color-4: hsl(42, 16%, 32%);
+  --vd-bg-hover: rgba(var(--vd-text-color-rgb), 0.1);
+  --vd-box-bg-color: hsl(43, 21%, 94%);
+  --vd-interactive-bg-color: hsl(44, 81%, 94%);
+  --vd-badge-color: #002c3a;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --vd-text-color-rgb: 252, 252, 247;
+    --vd-background-color: #201f06;
+    --vd-content-bg-color: #171605;
+    --vd-highlight-bg-color: #3A3F26;
+    --vd-highlight-neutral-bg-color: #3A3F26;
+    --vd-heading-color: #d1f4ab;
+    --vd-code-color: hsl(25, 74%, 83%);
+    --vd-code-color-1: hsl(25, 74%, 82%);
+    --vd-code-color-2: hsl(25, 74%, 77%);
+    --vd-code-color-3: hsl(25, 24%, 93%);
+    --vd-code-color-4: hsl(42, 16%, 62%);
+    --vd-box-bg-color: hsl(43, 21%, 14%);
+    --vd-interactive-bg-color: hsl(44, 81%, 6%);
+    --vd-badge-color: hsl(194, 100%, 89%);
+  }
+}
+.active {
+  border: 1px solid var(--vd-border-color) -accented;
+  border-radius: 4px;
+}
+
+/**
+
+Button
+======
+
+TODO refactor
+
+*/
+input[type=submit],
+button,
+.button {
+  appearance: none;
+  display: inline-block;
+  line-height: 1.5;
+  padding: 0.25rem 2rem;
+  background: var(--vd-content-bg-color);
+  color: var(--vd-text-color);
+  border: 1px solid var(--vd-border-color-light);
+  border-radius: 4px;
+  color: var(--vd-text-color);
+  border-color: var(--vd-border-color);
+  background: transparent;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+input[type=submit]:hover, input[type=submit]:focus, input[type=submit]:active, input[type=submit].active,
+button:hover,
+button:focus,
+button:active,
+button.active,
+.button:hover,
+.button:focus,
+.button:active,
+.button.active {
+  border-color: var(--vd-text-color);
+  outline: none;
+}
+.article input[type=submit].button:hover, .article input[type=submit].button:focus, .article input[type=submit].button:active,
+.article button.button:hover,
+.article button.button:focus,
+.article button.button:active,
+.article .button.button:hover,
+.article .button.button:focus,
+.article .button.button:active {
+  border-style: solid;
+}
+input[type=submit]::placeholder,
+button::placeholder,
+.button::placeholder {
+  color: var(--vd-text-color-lighter);
+}
+
+.button:hover, .button:focus, .button:active {
+  text-decoration: none;
+  border-color: #5fa316;
+  color: #5fa316;
+}
+
+input[type=submit].button--primary,
+button.button--primary,
+.button.button--primary {
+  transition: all 0.1s;
+  background: #5fa316;
+  border-color: var(--vd-text-color);
+  color: white;
+  text-shadow: none;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25), inset -1px -1px 1px rgba(0, 0, 0, 0.25);
+}
+input[type=submit].button--primary:hover, input[type=submit].button--primary:focus,
+button.button--primary:hover,
+button.button--primary:focus,
+.button.button--primary:hover,
+.button.button--primary:focus {
+  background: #528d13;
+  color: white;
+  border-color: var(--vd-text-color);
+}
+input[type=submit].button--primary:active,
+button.button--primary:active,
+.button.button--primary:active {
+  background: #528d13;
+  color: white;
+  border-color: var(--vd-text-color);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25), inset 1px 1px 1px rgba(0, 0, 0, 0.25);
+}
+input[type=submit].button--primary:disabled,
+button.button--primary:disabled,
+.button.button--primary:disabled {
+  box-shadow: none;
+  background-color: var(--vd-text-color-lightest);
+  cursor: auto;
+}
+
+input[type=submit].button--full,
+button.button--full,
+.button.button--full {
+  display: block;
+  width: 100%;
+}
+input[type=submit].button--wide,
+button.button--wide,
+.button.button--wide {
+  display: block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media only screen and (min-width: 320px) {
+  input[type=submit].button--wide,
+  button.button--wide,
+  .button.button--wide {
+    width: 80%;
+  }
+}
+@media only screen and (min-width: 480px) {
+  input[type=submit].button--wide,
+  button.button--wide,
+  .button.button--wide {
+    width: 60%;
+  }
+}
+
+.container .button--inverted {
+  border-color: var(--vd-content-bg-color);
+  color: var(--vd-content-bg-color);
+  background-color: transparent;
+}
+.container .button--inverted:hover, .container .button--inverted:focus, .container .button--inverted:active {
+  color: #5fa316;
+  border-color: #5fa316;
+}
+
+.container .button--white {
+  border-color: #fcfcf7;
+  color: #fcfcf7;
+  background-color: transparent;
+}
+
+.button--loading {
+  display: flex;
+  align-items: center;
+}
+
+.button--loading::before {
+  content: " ";
+  width: 0.75em;
+  height: 0.75em;
+  margin-right: 0.5em;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: loading-spinner-animation 1s linear infinite;
+}
+
+@keyframes loading-spinner-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@media print {
+  input[type=submit],
+  button,
+  .button {
+    display: none;
+  }
+}
+
+/** @define course
+
+Course
+======
+
+*/
+/*
+
+Figure
+======
+
+Širší verze obrázku zobrazovaného v obsahu.
+
+// [1] because of absolute position of icon
+
+*/
+figure {
+  position: relative;
+  border-bottom: 1px dotted var(--vd-border-color-light);
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+figure .vd-logo {
+  display: block;
+  position: absolute;
+  bottom: -8px;
+  right: 10px;
+  width: 22px;
+  height: 16px;
+  background: var(--vd-content-bg-color);
+}
+
+figure .vd-logo-svg {
+  fill: var(--vd-border-color-light);
+}
+
+figcaption {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--vd-text-color-lighter);
+  text-decoration-color: rgba(var(--vd-text-color-lighter), 0.5);
+  margin-bottom: 0.5rem;
+  font-style: italic;
+}
+figcaption a:hover, figcaption a:focus, figcaption a:active {
+  color: var(--vd-link-color);
+  text-decoration: underline;
+}
+
+figcaption p {
+  margin-top: 1rem;
+}
+
+.be-in-touch {
+  clear: both;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  max-width: 34rem;
+  margin-bottom: 1.25rem;
+  margin-top: 2.5rem;
+  color: var(--vd-text-color-lighter);
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+@media only screen and (min-width: 741px) {
+  .be-in-touch {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+@media only screen and (max-width: 600px), print {
+  .be-in-touch {
+    max-width: none;
+  }
+}
+.section .be-in-touch {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+@media print {
+  .be-in-touch {
+    display: none;
+  }
+}
+
+.foot {
+  text-align: center;
+  margin-top: 0;
+}
+.foot > hr {
+  display: none;
+}
+@media only screen and (min-width: 400px) {
+  .foot {
+    max-width: 26rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.foot__symbol {
+  width: 20px;
+  height: 18px;
+  margin-top: 2rem;
+}
+.foot__symbol .vd-symbol {
+  fill: #b5b397;
+}
+
+/** @define inline-icon
+
+Inline Icon
+===========
+
+Icon inlined with text.
+
+For example: „Package“ icon for two day courses. Visible in:
+- Homepage
+- Courses homepage
+- All table lists of courses
+
+
+Good to know:
+
+1) Uses inline <svg> defined in symbol inside HTML.
+2) Always in height and color of the text.
+3) Vertical centering old-way. It is not possible to use
+   flexbox on the parent, because of smaller screens.
+
+Markup looks like:
+
+<svg class="inline-icon">
+  <use class="inline-icon__symbol"> [1]
+
+*/
+.inline-icon {
+  height: 1em;
+  position: relative;
+  bottom: -0.125em;
+}
+
+.inline-icon__symbol {
+  fill: currentColor;
+}
+
+.list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.list__item {
+  display: block;
+  padding: 0.25em 0;
+}
+
+.list__item-link {
+  display: block;
+  padding: 0.25em 0;
+}
+
+.list__logo {
+  float: right;
+  margin: 0 0 0 1.5em;
+  height: 1.4em;
+  overflow: hidden;
+  position: relative;
+  width: 3.5em;
+}
+.list__logo img {
+  position: absolute;
+  height: 4em;
+  width: 4em;
+  top: -1.5em;
+  left: -0.25em;
+}
+
+.list--bordered {
+  border-top: 1px solid var(--vd-border-color);
+}
+
+.list--bordered .list__item {
+  border-bottom: 1px solid var(--vd-border-color);
+}
+
+.list--block-hover .list__item {
+  padding: 0;
+}
+
+.list--block-hover .list__item-link {
+  padding: 0.25em;
+  text-decoration: none;
+}
+.list--block-hover .list__item-link:hover, .list--block-hover .list__item-link:focus, .list--block-hover .list__item-link:active {
+  background: var(--vd-bg-hover);
+}
+
+.list--block-hover .list__heading {
+  font-size: 1em;
+  margin-bottom: 0;
+  color: var(--vd-heading-color);
+}
+@media print {
+  .list--block-hover .list__heading {
+    color: black;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .list--block-hover .list__heading {
+    display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+}
+
+.list--block-hover .list__heading a {
+  color: var(--vd-heading-color);
+}
+
+.list--block-hover .list__content {
+  margin-top: 0.25em;
+  margin-bottom: 0;
+}
+.list--block-hover .list__content small {
+  margin-bottom: 0;
+}
+
+.list--spaced .list__item {
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+}
+
+.list--block-hover.list--spaced .list__item {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.list--block-hover.list--spaced .list__item-link {
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+}
+
+.list--numbered {
+  counter-reset: section;
+}
+
+.list--numbered .list__item {
+  display: flex;
+  align-items: baseline;
+}
+
+.list--numbered .list__item::before {
+  flex: none;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  line-height: 1;
+  padding: 0.5rem;
+  margin-right: 1em;
+  text-align: center;
+  color: var(--vd-text-color-lighter);
+  border: 1px solid var(--vd-text-color-lighter);
+  border-radius: 50%;
+  counter-increment: section;
+  content: counter(section);
+}
+
+.list--sticked {
+  border-top: 0;
+  margin-top: -1rem;
+}
+
+.list__item--external-link {
+  background: url(/assets/img/icons/src/external-link-arrow.svg) no-repeat;
+  background-position: calc(100% - 0.25em) 0.5em;
+  background-size: 0.5em;
+}
+
+.media-object {
+  display: flex;
+  margin-bottom: 1em;
+}
+
+.media-object__heading {
+  margin-bottom: 0.25rem;
+}
+
+.media-object__perex {
+  font-size: 0.8rem;
+  line-height: 1.35;
+}
+
+@media only screen and (min-width: 480px) {
+  .media-object__image {
+    flex: 1;
+    margin-right: 1rem;
+  }
+  .media-object__content {
+    flex: 3;
+  }
+}
+@media (max-width: 479px) {
+  .media-object {
+    display: block;
+    text-align: center;
+  }
+}
+.rwd-scrollable {
+  overflow-x: auto;
+}
+
+.rwd-media {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  margin-bottom: 1rem;
+}
+
+.rwd-media > iframe,
+.rwd-media > video,
+.rwd-media > img {
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.rwd-media-slideshare {
+  padding-bottom: 81%;
+}
+
+.rwd-media--1-1 {
+  padding-bottom: 100%;
+}
+
+.rwd-media--160-45 {
+  padding-bottom: 28.125%;
+}
+
+/** @define skip-link
+
+Skip Link
+=========
+
+"Skip to main content" - first link in the document
+
+*/
+.skip-link {
+  color: white;
+  background: rgba(46, 44, 9, 0.5);
+  padding: 0.5em 1em;
+  position: absolute;
+  top: 0;
+  right: 100%;
+}
+
+.skip-link:focus {
+  right: auto;
+}
+
+.table--active-row td {
+  padding: 0;
+}
+.table--active-row td.date {
+  padding-right: 0.5em;
+}
+.table--active-row a {
+  text-decoration: none;
+}
+.table--active-row tr:hover a,
+.table--active-row tr:focus a,
+.table--active-row tr:active a {
+  color: #5fa316;
+}
+
+.table--active-row a {
+  padding: 0.75em 1em;
+  display: block;
+}
+.table--active-row a:hover, .table--active-row a:focus, .table--active-row a:active {
+  color: inherit;
+}
+@media only screen and (max-width: 600px) {
+  .table--active-row a {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.box {
+  margin-bottom: 1.25rem;
+  margin-top: 2.5rem;
+  border-top: 1px solid var(--vd-border-color);
+  border-bottom: 1px solid var(--vd-border-color);
+  margin-top: 2.5rem;
+  margin-bottom: 1.25rem;
+  padding: 1.5rem 1rem 0.5rem;
+}
+.section .box {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h2 + .box {
+  margin-top: 0;
+}
+
+.box--higher {
+  padding-top: 2.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.box--latest {
+  border-bottom: 0;
+  padding-bottom: 3rem;
+  margin-bottom: -2rem;
+}
+@media only screen and (min-width: 600px) {
+  .box--latest {
+    border-radius: 0 0 4px 4px;
+  }
+}
+
+.article .box h2 {
+  margin-top: 0;
+}
+
+/** @define buybar
+
+Buy Bar
+=======
+
+Ad on the bottom of the page.
+For book marketing purposes.
+
+
+Structure
+---------
+
+.buybar
+  .buybar__content
+    .buybar__heading
+    .buybar__image
+      .buybar__image-img
+    .buybar__text
+    .buybar__button
+
+*/
+.buybar {
+  background: var(--vd-text-color);
+  color: var(--vd-content-bg-color);
+  text-align: center;
+  padding-bottom: 1rem;
+  margin-top: 0;
+}
+
+@media print {
+  .buybar {
+    display: none;
+  }
+}
+.buybar--intended {
+  margin-top: 2rem;
+}
+
+.buybar__image {
+  margin-bottom: 0;
+}
+
+.buybar__image-img {
+  margin-top: -2rem;
+  max-height: 5rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .buybar {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  .buybar__content {
+    display: flex;
+  }
+  .buybar__image {
+    flex: 1;
+    text-align: left;
+  }
+  .buybar__text {
+    flex: 3;
+    align-self: center;
+    text-align: left;
+    margin: 0;
+  }
+  .buybar__button {
+    flex: 2;
+    align-self: center;
+    margin: 0;
+    text-align: right;
+  }
+}
+.article h2 {
+  font-size: 1.563rem;
+  line-height: 1.3;
+}
+.article h3, .article h4, .article h5, .article h6 {
+  font-size: 1rem;
+}
+
+.article h2 {
+  padding-top: 0.5rem;
+}
+
+.article pre + h2 {
+  padding-top: 0.25;
+}
+
+.article h3 {
+  padding-top: 0.25rem;
+}
+
+.article pre + h3 {
+  padding-top: 0;
+}
+
+.article h2 + pre,
+.article h3 + pre {
+  padding-top: 0.5rem;
+}
+
+.article h2 + .rwd-media,
+.article h3 + .rwd-media {
+  margin-top: 0.5rem;
+}
+
+.article a {
+  text-decoration-color: rgba(95, 163, 22, 0.66);
+}
+.article a:hover, .article a:focus, .article a:active {
+  text-decoration-color: #5fa316;
+}
+
+.article h1 a,
+.article h2 a,
+.article h3 a,
+.article h4 a,
+.article h5 a,
+.heading-anchored a {
+  color: inherit;
+}
+@media print {
+  .article h1 a,
+  .article h2 a,
+  .article h3 a,
+  .article h4 a,
+  .article h5 a,
+  .heading-anchored a {
+    text-decoration: none;
+    color: black;
+  }
+}
+.article h1 a:hover,
+.article h1 a:focus,
+.article h1 a:active,
+.article h2 a:hover,
+.article h2 a:focus,
+.article h2 a:active,
+.article h3 a:hover,
+.article h3 a:focus,
+.article h3 a:active,
+.article h4 a:hover,
+.article h4 a:focus,
+.article h4 a:active,
+.article h5 a:hover,
+.article h5 a:focus,
+.article h5 a:active,
+.heading-anchored a:hover,
+.heading-anchored a:focus,
+.heading-anchored a:active {
+  color: #355b0c;
+}
+@media only screen and (min-width: 740px) {
+  .article h1 a:hover,
+  .article h1 a:focus,
+  .article h1 a:active,
+  .article h2 a:hover,
+  .article h2 a:focus,
+  .article h2 a:active,
+  .article h3 a:hover,
+  .article h3 a:focus,
+  .article h3 a:active,
+  .article h4 a:hover,
+  .article h4 a:focus,
+  .article h4 a:active,
+  .article h5 a:hover,
+  .article h5 a:focus,
+  .article h5 a:active,
+  .heading-anchored a:hover,
+  .heading-anchored a:focus,
+  .heading-anchored a:active {
+    position: relative;
+  }
+  .article h1 a:hover::before,
+  .article h1 a:focus::before,
+  .article h1 a:active::before,
+  .article h2 a:hover::before,
+  .article h2 a:focus::before,
+  .article h2 a:active::before,
+  .article h3 a:hover::before,
+  .article h3 a:focus::before,
+  .article h3 a:active::before,
+  .article h4 a:hover::before,
+  .article h4 a:focus::before,
+  .article h4 a:active::before,
+  .article h5 a:hover::before,
+  .article h5 a:focus::before,
+  .article h5 a:active::before,
+  .heading-anchored a:hover::before,
+  .heading-anchored a:focus::before,
+  .heading-anchored a:active::before {
+    content: "#";
+    position: absolute;
+    left: -1.25rem;
+    color: rgba(53, 91, 12, 0.3);
+  }
+}
+
+.article-foot {
+  position: relative;
+  margin: 5rem auto 0 auto;
+  padding-top: 2.5rem;
+  font-size: 0.9rem;
+  border-top: 1px dotted var(--vd-text-color-lighter);
+}
+
+.article-foot .vd-logo {
+  display: block;
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  right: 50%;
+  width: 22px;
+  height: 16px;
+  margin-left: -11px;
+  background: var(--vd-content-bg-color);
+}
+
+.article-foot .vd-logo-svg {
+  fill: var(--vd-text-color-lighter);
+}
+
+/** @define course-icon
+
+Course Icon
+===========
+
+*/
+.course-icon {
+  position: relative;
+  display: block;
+  height: 0;
+  padding-bottom: 56.25%;
+  background: #2e2c09;
+}
+
+.course-icon--ebook {
+  background: transparent;
+}
+.course-icon--ebook .course-icon__image img,
+.course-icon--ebook .course-icon__image amp-img {
+  height: 90%;
+  width: auto;
+}
+
+.course-icon__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.course-icon__image:hover img, .course-icon__image:hover amp-img, .course-icon__image:focus img, .course-icon__image:focus amp-img {
+  transform: scale(1.1);
+}
+.course-icon__image img, .course-icon__image amp-img {
+  height: 50%;
+  transition: 0.1s;
+  transform: scale(1);
+}
+.course-icon__image amp-img {
+  width: 100%;
+}
+
+/*
+  Component Inner Box
+  ===================
+
+  e.g. video in the article: /prirucka/jak-testovat-responzivni-weby or /prirucka/http-2
+*/
+.inner-box {
+  background: var(--vd-box-bg-color);
+  font-size: 0.66rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border-radius: 3px;
+  box-shadow: 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+.inner-box a {
+  color: var(--vd-text-color);
+}
+
+.inner-box__heading {
+  font-family: foro, sans-serif;
+  font-size: 1em;
+  line-height: 1.4;
+  margin: 0;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.inner-box__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 1em;
+}
+.inner-box__list li {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+@media only screen and (min-width: 340px) {
+  .inner-box__list {
+    margin-bottom: 0;
+  }
+}
+
+.inner-box__list-item {
+  display: block;
+  padding: 0.3rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.inner-box__list-item {
+  border-bottom: 1px solid var(--vd-border-color);
+}
+li:first-child .inner-box__list-item {
+  border-top: 1px solid var(--vd-border-color);
+}
+
+.inner-box__list-item:hover, .inner-box__list-item:focus, .inner-box__list-item:active {
+  background: var(--vd-box-bg-color);
+  text-decoration: none;
+}
+
+.inner-box__video {
+  border: 1px solid var(--vd-border-color);
+  background: var(--vd-box-bg-color);
+}
+
+.inner-box--media .inner-box__medium {
+  margin-bottom: 0.5rem;
+}
+
+.inner-box--media .inner-box__heading {
+  margin-bottom: 0.5rem;
+}
+
+.inner-box--media .inner-box__text p {
+  margin-bottom: 0.5rem;
+}
+
+@media only screen and (min-width: 600px) {
+  .inner-box--media {
+    display: flex;
+  }
+  .inner-box--media .inner-box__medium {
+    flex: 2.5;
+    margin-right: 1rem;
+    margin-bottom: 0;
+  }
+  .inner-box--media .inner-box__text {
+    flex: 1;
+  }
+  .inner-box--media .inner-box__text p:last-child {
+    margin-bottom: 0;
+  }
+}
+.inner-box--side .inner-box__heading {
+  margin-bottom: 0.25rem;
+}
+@media only screen and (min-width: 480px) {
+  .inner-box--side {
+    width: 33.3333333333%;
+    float: right;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+@media only screen and (min-width: 1100px) {
+  .inner-box--side {
+    margin-right: -16.6666666667%;
+  }
+}
+
+/** @define emblem
+
+Emblem
+======
+
+*/
+.emblem {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transform: rotate(-18deg);
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  color: #2e2c09;
+  background: #eecf6d;
+  border: 4px solid #cab05d;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.25);
+  font-family: "foro extra bold", georgia, serif;
+  font-size: 0.64rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.emblem--top-right {
+  position: absolute;
+  top: -0.225rem;
+  right: -0.225rem;
+}
+
+.emblem--for-ebooks {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -3rem;
+  margin-left: 2rem;
+}
+
+/** @define newsletter
+
+Newsletter
+=======
+
+Signup form for MailChimp newsletter.
+Ad on the bottom of the page.
+HTML markup is from MailChimp, we just add our classes and values.
+
+
+Structure
+---------
+
+.newsletter
+  .newsletter__title
+  .newsletter__input
+  .newsletter__submit
+  .newsletter__info
+
+*/
+.newsletter {
+  color: #fcfcf7;
+  background-color: #2e2c09;
+}
+@media print {
+  .newsletter {
+    display: none;
+  }
+}
+
+.newsletter--courses {
+  margin-bottom: -2rem;
+}
+
+.newsletter--transparent {
+  background-color: transparent;
+}
+
+.newsletter__title {
+  color: #fcfcf7;
+}
+
+.newsletter__input[type=email] {
+  display: inline;
+  margin: 0;
+  padding-left: 0.5em;
+  border-color: #fcfcf7;
+  border-radius: 4px 0 0 4px;
+}
+@media only screen and (max-width: 600px) {
+  .newsletter__input[type=email] {
+    width: 10rem;
+  }
+}
+.newsletter__input[type=email]:hover, .newsletter__input[type=email]:focus {
+  border-color: #fcfcf7;
+}
+
+.newsletter__submit[type=submit] {
+  border-radius: 0 4px 4px 0;
+  border-left: 0;
+  margin: 0 0 0 -0.3rem;
+  color: #fcfcf7;
+  border-color: #fcfcf7;
+}
+@media only screen and (max-width: 600px) {
+  .newsletter__submit[type=submit] {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+.newsletter__submit[type=submit]:hover, .newsletter__submit[type=submit]:focus {
+  border-color: #fcfcf7;
+}
+
+.newsletter__info a {
+  text-decoration: underline;
+}
+
+/** @define toc; weak
+
+TOC
+===
+
+Table of contents for ebook pages (/kniha-responzivni-design/)
+or categories (/css).
+
+*/
+.toc {
+  font-size: 0.8rem;
+  column-gap: 1em;
+  padding: 1.5rem;
+}
+@media only screen and (min-width: 600px) and (max-width: 1099px) {
+  .toc {
+    column-count: 2;
+  }
+}
+@media only screen and (min-width: 1100px) {
+  .toc {
+    column-count: 3;
+  }
+}
+
+.toc ul {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.toc li, .toc p, .toc h3, .toc h4 {
+  break-inside: avoid-column;
+}
+
+.toc h3 {
+  font-size: 1rem;
+  margin-bottom: 0.25em;
+}
+
+.toc h4 {
+  font-size: 0.8rem;
+  margin-top: 1em;
+  margin-bottom: 0;
+}
+
+.toc__current a {
+  color: var(--vd-text-color);
+}
+
+/*
+  Component Ad Snippet
+  ====================
+
+  Ads inside article text. e.g.
+  - paid job board
+  - e-book
+  - courses
+
+  https://www.vzhurudolu.cz/style/modules#ad-snippet
+*/
+.ad-snippet {
+  position: relative;
+  border-top: 1px dashed var(--vd-border-color-light);
+  border-bottom: 1px dashed var(--vd-border-color-light);
+  padding: 0.66em;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 0.8rem;
+}
+@media print {
+  .ad-snippet {
+    display: none;
+  }
+}
+
+.ad-snippet__scissors {
+  display: block;
+  position: absolute;
+  width: 22px;
+  height: 18px;
+  background: var(--vd-content-bg-color);
+}
+
+.ad-snippet__scissors-svg {
+  fill: var(--vd-border-color-light);
+}
+
+.ad-snippet__scissors-top {
+  top: -10px;
+  left: 8px;
+}
+
+.ad-snippet__scissors-bottom {
+  bottom: -10px;
+  right: 8px;
+  transform: rotate(180deg);
+}
+
+.ad-snippet__container {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: var(--vd-text-color-lighter);
+  padding: 0.5em;
+}
+.ad-snippet__container:hover, .ad-snippet__container:focus, .ad-snippet__container:active {
+  color: var(--vd-text-color-lighter);
+  background-color: var(--vd-bg-hover);
+}
+
+.ad-snippet__image {
+  max-width: 3.75em;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.ad-snippet__text-heading {
+  font-size: 0.8rem;
+  line-height: 1.5;
+  margin-bottom: 0;
+  color: #5fa316;
+  text-decoration-color: #5fa316;
+}
+
+.ad-snippet__text-content {
+  text-decoration: none;
+  margin-bottom: 0;
+}
+
+@media only screen and (min-width: 600px) {
+  .ad-snippet__container {
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: left;
+  }
+  .ad-snippet__image {
+    width: 3.75em;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin: 0;
+  }
+  .ad-snippet__text {
+    flex: auto;
+    padding-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .ad-snippet--reverse .ad-snippet__container {
+    flex-direction: row;
+  }
+  .ad-snippet--reverse .ad-snippet__text {
+    padding-left: 1rem;
+  }
+}

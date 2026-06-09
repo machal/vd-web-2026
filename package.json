@@ -13,6 +13,7 @@
     "build": "turbo run build",
     "dev": "turbo run dev",
     "build:vzhurudolu": "turbo run build --filter=@vd/vzhurudolu",
+    "build:michalek-dev": "turbo run build --filter=@vd/michalek-dev",
     "dev:vzhurudolu": "turbo run dev --filter=@vd/vzhurudolu"
   },
   "devDependencies": {

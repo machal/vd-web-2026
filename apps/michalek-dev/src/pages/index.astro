@@ -1,0 +1,19 @@
+---
+import BaseLayout from '@vd/shared/layouts/BaseLayout.astro';
+import Header from '@vd/shared/components/Header.astro';
+import Footer from '@vd/shared/components/Footer.astro';
+import { siteConfig } from '../site.config';
+---
+
+<BaseLayout
+  title="Martin Michálek"
+  description="Personal tech blog and web performance consulting."
+  siteConfig={siteConfig}
+  bodyClass="section-home"
+>
+  <Header slot="header" siteConfig={siteConfig} activeSection="home" />
+  <main id="main" class="content">
+    <p>Building…</p>
+  </main>
+  <Footer slot="footer" siteConfig={siteConfig} />
+</BaseLayout>

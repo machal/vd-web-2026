@@ -1,0 +1,176 @@
+:root {
+  --vd-text-color-rgb: 46, 44, 9;
+  --vd-text-color: rgb(var(--vd-text-color-rgb));
+  --vd-text-color-lighter: rgba(var(--vd-text-color-rgb), 0.8);
+  --vd-text-color-lightest: rgba(var(--vd-text-color-rgb), 0.5);
+  --vd-background-color: #e5e3df;
+  --vd-content-bg-color: #fcfcf7;
+  --vd-border-color: rgba(var(--vd-text-color-rgb));
+  --vd-border-color-light: rgba(var(--vd-text-color-rgb), 0.5);
+  --vd-highlight-bg-color: #d8f5b8;
+  --vd-highlight-neutral-bg-color: #f2f0ed;
+  --vd-link-color: #5fa316;
+  --vd-heading-color: #2b490a;
+  --vd-code-color: hsl(25, 74%, 23%);
+  --vd-code-color-1: hsl(25, 74%, 32%);
+  --vd-code-color-2: hsl(25, 74%, 37%);
+  --vd-code-color-3: hsl(25, 24%, 73%);
+  --vd-code-color-4: hsl(42, 16%, 32%);
+  --vd-bg-hover: rgba(var(--vd-text-color-rgb), 0.1);
+  --vd-box-bg-color: hsl(43, 21%, 94%);
+  --vd-interactive-bg-color: hsl(44, 81%, 94%);
+  --vd-badge-color: #002c3a;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --vd-text-color-rgb: 252, 252, 247;
+    --vd-background-color: #201f06;
+    --vd-content-bg-color: #171605;
+    --vd-highlight-bg-color: #3A3F26;
+    --vd-highlight-neutral-bg-color: #3A3F26;
+    --vd-heading-color: #d1f4ab;
+    --vd-code-color: hsl(25, 74%, 83%);
+    --vd-code-color-1: hsl(25, 74%, 82%);
+    --vd-code-color-2: hsl(25, 74%, 77%);
+    --vd-code-color-3: hsl(25, 24%, 93%);
+    --vd-code-color-4: hsl(42, 16%, 62%);
+    --vd-box-bg-color: hsl(43, 21%, 14%);
+    --vd-interactive-bg-color: hsl(44, 81%, 6%);
+    --vd-badge-color: hsl(194, 100%, 89%);
+  }
+}
+.form-row {
+  max-width: 34rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.form-controls textarea,
+.form-controls select,
+.form-controls input[type=text],
+.form-controls input[type=url],
+.form-controls input[type=tel],
+.form-controls input[type=email],
+.form-controls input[type=password],
+.form-controls input[type=search],
+.form-controls input[type=number] {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.size-xl {
+  max-width: 15rem;
+}
+
+.size-lplus {
+  max-width: 12.5rem;
+}
+
+.size-l {
+  max-width: 10rem;
+}
+
+.size-xm {
+  max-width: 7rem;
+}
+
+.size-m {
+  max-width: 5rem;
+}
+
+.size-s {
+  max-width: 3.5rem;
+}
+
+.size-xs {
+  max-width: 2.5rem;
+}
+
+.form-controls label {
+  display: flex;
+  align-items: baseline;
+}
+
+.form-required {
+  opacity: 0.33;
+  font-size: 2rem;
+  line-height: 1rem;
+}
+
+.form-label small {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--vd-text-color-lighter);
+}
+
+.form-error,
+.vd-form-error {
+  display: block;
+  font-style: italic;
+  color: #b43b18;
+  margin-top: 0.25rem;
+}
+.form-error small,
+.vd-form-error small {
+  color: #b43b18;
+}
+
+.form-send {
+  margin-top: 1rem;
+}
+
+@media only screen and (min-width: 480px) {
+  .form-row {
+    display: flex;
+    align-items: baseline;
+  }
+  .form-label {
+    flex: 1.5;
+    text-align: right;
+    margin-top: 0.25rem;
+    margin-bottom: 0;
+    margin-right: 1rem;
+  }
+  .form-label--narrower {
+    flex: 1;
+  }
+  .form-controls {
+    flex: 2;
+  }
+  .form-controls--twocol {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .form-controls--twocol > label {
+    width: 50%;
+  }
+  .form-label[for=frm-orderForm-note],
+  .form-label[for=frm-certificatesForm-coursePersons],
+  .form-label[for=inpt_note],
+  .form-label[for=frm-feedbackForm-course_opinion],
+  .form-label[for=frm-feedbackForm-course_proposals],
+  .form-label[for=frm-newEntryForm-content],
+  .form-label[for=frm-newEntryForm-title],
+  .form-label[for=frm-companyForm-text],
+  .form-label[for=frm-orderFormEbook-note],
+  .form-label[for=frm-orderFormEbookAndBook-note],
+  .form-label[for=frm-orderFormBook-note],
+  .form-label[for=frm-orderFormBookCharge-note] {
+    align-self: flex-start;
+  }
+}
+@media only screen and (min-width: 480px) {
+  .form-row--block .form-label {
+    text-align: left;
+    max-width: 20rem;
+  }
+}
+
+/*# sourceMappingURL=form.css.map */
