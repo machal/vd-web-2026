@@ -14,7 +14,15 @@ Brownfield Astro monorepo migration and English personal brand launch. Czech sit
 - [x] **Phase 6: Content Pairing & i18n SEO** - CONTENT_PAIRS manifest, language switch, hreflang, Czech mirror links (completed 2026-06-09)
 - [ ] **Phase 7: Content Adaptation — Pilot 8 + `/martin`** - 8 adapted articles, native EN `/martin`, homepage "start here"
 - [x] **Phase 8: Launch Polish — Legal, Feeds, Tags, Performance** - SEO metadata, RSS/sitemap, tags, legal, CWV review, GA (completed 2026-06-09)
-- [ ] **Phase 9: Production Cutover — michalek.dev + DNS** - Staged DNS for both domains, FTP retirement, rollback docs *(executed — DNS human_needed)*
+- [ ] **Phase 9: Production Cutover — michalek.dev + DNS** - Staged DNS for both domains, FTP retirement, rollback docs *(executed — DNS blocked by v1.1)*
+
+### Milestone v1.1 — Visual Polish (pre-launch)
+
+- [ ] **Phase 10: CZ Nav & Homepage Restructure** - Header/footer nav, podcast/FrontKec homepage layout
+- [ ] **Phase 11: Shared Author Profile Box** - Brown inverse author box on both homepages
+- [ ] **Phase 12: EN Homepage CS Parity** - Featured article, author, stream, green topic hub
+- [ ] **Phase 13: Article Detail Language UX** - Inline language switch; remove adaptation footer
+- [ ] **Phase 14: Pre-launch Verify & DNS Unblock** - Visual UAT; resume Phase 9 cutover
 
 ## Phase Details
 
@@ -311,3 +319,103 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8 →
 | 7. Content Adaptation — Pilot 8 + `/martin` | 6/6 | Complete   | 2026-06-09 |
 | 8. Launch Polish — Legal, Feeds, Tags, Performance | 5/5 | Complete   | 2026-06-09 |
 | 9. Production Cutover — michalek.dev + DNS | 3/3 | Executed — verification human_needed | 2026-06-09 |
+
+---
+
+## Milestone v1.1: Visual Polish (pre-launch)
+
+**Goal:** Align visual layout on CS and EN sites before production DNS cutover.
+**Blocks:** Phase 9 DNS until v1.1 verify passes.
+**Preview URLs:** CS https://vd-web-2026.vercel.app/ · EN https://vd-web-2026-xco9.vercel.app/
+
+### Phases (v1.1)
+
+- [ ] **Phase 10: CZ Nav & Homepage Restructure** - Header/footer nav, homepage podcast/YouTube/FrontKec layout
+- [ ] **Phase 11: Shared Author Profile Box** - Brown inverse author box on both homepages
+- [ ] **Phase 12: EN Homepage CS Parity** - Featured article, author, stream, green topic hub
+- [ ] **Phase 13: Article Detail Language UX** - Inline language switch row; remove adaptation footer
+- [ ] **Phase 14: Pre-launch Verify & DNS Unblock** - Visual UAT both previews; resume Phase 9 cutover
+
+### Phase 10: CZ Nav & Homepage Restructure
+
+**Goal**: Czech site navigation and homepage match v1.1 layout spec
+**Mode:** mvp
+**Depends on**: v1.0 complete
+**Requirements**: CZNAV-01, CZNAV-02, CZHOME-01, CZHOME-02
+**Success Criteria** (what must be TRUE):
+
+  1. Header nav shows only Články, Knihy, Autor
+  2. Podcast and Video links appear in footer nav only
+  3. Homepage no longer shows podcast/YouTube image blocks in old positions
+  4. Full-width podcast section under e-books links to FrontKec with past-tense copy
+
+**UI hint**: yes
+
+### Phase 11: Shared Author Profile Box
+
+**Goal**: Both homepages show modernized author profile box replacing ebook.cz promo
+**Mode:** mvp
+**Depends on**: Phase 10
+**Requirements**: HOME-01, HOME-02, HOME-03
+**Success Criteria** (what must be TRUE):
+
+  1. CS and EN homepages show author box with heading **Martin Michálek.**, photo, one-sentence bio
+  2. Link to `/martin` present (CS: „více o autorovi“, EN: „About Martin“)
+  3. Box uses inverse brown background band consistent with VD styling
+
+**UI hint**: yes
+
+### Phase 12: EN Homepage CS Parity
+
+**Goal**: English homepage layout matches Czech homepage structure
+**Mode:** mvp
+**Depends on**: Phase 11
+**Requirements**: ENHOME-01, ENHOME-02, ENHOME-03, ENHOME-04, ENHOME-05
+**Success Criteria** (what must be TRUE):
+
+  1. Featured main article highlighted at top of EN homepage
+  2. Author box in CS-equivalent position
+  3. Unified article stream below featured/author section
+  4. Green topic hub box with same topic buttons as CS
+  5. EN „Start here“ section removed or replaced with CS-equivalent layout
+
+**UI hint**: yes
+
+### Phase 13: Article Detail Language UX
+
+**Goal**: Article detail pages show inline language switch and no adaptation footer line
+**Mode:** mvp
+**Depends on**: Phase 12
+**Requirements**: ART-01, ART-02
+**Success Criteria** (what must be TRUE):
+
+  1. Author and date on left, language switch on right — same row (CS + EN paired articles)
+  2. „Text adapted from the Czech article.“ footer attribution removed from article detail
+
+**UI hint**: yes
+
+### Phase 14: Pre-launch Verify & DNS Unblock
+
+**Goal**: Visual polish verified on both previews; Phase 9 DNS cutover unblocked
+**Mode:** mvp
+**Depends on**: Phase 13
+**Requirements**: LAUNCH-01, LAUNCH-02, DEPLOY-02 (resume)
+**Success Criteria** (what must be TRUE):
+
+  1. UAT passes on CS and EN Vercel previews for all v1.1 layout changes
+  2. Phase 9 cutover documentation updated — DNS no longer blocked
+  3. Ready for human DNS cutover to production domains
+
+**UI hint**: no
+
+## Progress (v1.1)
+
+**Execution Order:** 10 → 11 → 12 → 13 → 14 → (resume Phase 9 DNS)
+
+| Phase | Plans Complete | Status | Completed |
+|-------|----------------|--------|-----------|
+| 10. CZ Nav & Homepage Restructure | 0/? | Not started | — |
+| 11. Shared Author Profile Box | 0/? | Not started | — |
+| 12. EN Homepage CS Parity | 0/? | Not started | — |
+| 13. Article Detail Language UX | 0/? | Not started | — |
+| 14. Pre-launch Verify & DNS Unblock | 0/? | Not started | — |
