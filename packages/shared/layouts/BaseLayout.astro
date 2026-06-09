@@ -33,21 +33,27 @@ const {
   ogUrl = Astro.url.href,
   ogTitle,
   ogDescription,
-  ogImage = [
-    'https://www.vzhurudolu.cz/assets/img/content/dest/socials/vd-soc-uni-1.webp',
-    'https://www.vzhurudolu.cz/assets/img/content/dest/socials/vd-soc-uni-2.webp',
-  ],
+  ogImage: ogImageProp,
   canonicalUrl,
   siteConfig: siteConfigProp,
 } = Astro.props;
 
 const config = siteConfigProp ?? CS_DEFAULT;
-const displayTitle = config.titleSuffix ? `${title} · ${config.titleSuffix}` : title;
-const finalOgImage = Array.isArray(ogImage) ? ogImage : [ogImage];
+const isCs = config.locale === 'cs';
+const displayTitle = config.titleSuffix
+  ? (title ? `${title} · ${config.titleSuffix}` : config.titleSuffix)
+  : title;
+const defaultOgImages = isCs
+  ? [
+      'https://www.vzhurudolu.cz/assets/img/content/dest/socials/vd-soc-uni-1.webp',
+      'https://www.vzhurudolu.cz/assets/img/content/dest/socials/vd-soc-uni-2.webp',
+    ]
+  : [`${config.origin}/assets/img/content/dest/socials/default.webp`];
+const finalOgImage = ogImageProp ?? defaultOgImages;
+const finalOgImageArray = Array.isArray(finalOgImage) ? finalOgImage : [finalOgImage];
 const finalCanonicalUrl = canonicalUrl || ogUrl;
 const finalOgTitle = ogTitle || displayTitle;
 const finalOgDescription = ogDescription || description;
-const isCs = config.locale === 'cs';
 ---
 
 <!DOCTYPE html>
@@ -61,7 +67,7 @@ const isCs = config.locale === 'cs';
     <!-- Socials -->
     <meta property="og:title" content={finalOgTitle} />
     <meta property="og:description" content={finalOgDescription} />
-    {finalOgImage.map((img) => (
+    {finalOgImageArray.map((img) => (
       <meta property="og:image" content={img} />
     ))}
     {isCs && (
@@ -127,8 +133,6 @@ const isCs = config.locale === 'cs';
   </head>
 
   <body id="body" class={bodyClass}>
-    <slot name="styles" />
-    
     <a href="#main" class="skip-link">{isCs ? 'Přejít na hlavní obsah' : 'Skip to main content'}</a>
     
     <div class="container">
