@@ -12,7 +12,7 @@ function formatDate(date: Date | undefined): string {
   if (!date) return '';
   return new Intl.DateTimeFormat(locale === 'en' ? 'en-GB' : 'cs-CZ', {
     day: 'numeric',
-    month: 'numeric',
+    month: locale === 'en' ? 'short' : 'numeric',
     year: 'numeric',
   }).format(date);
 }
