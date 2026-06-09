@@ -192,27 +192,27 @@ Deferred to future release.
 
 ### Shared Homepage Author Box
 
-- [ ] **HOME-01**: Author profile box replaces ebook.cz promo area on both CS and EN homepages
-- [ ] **HOME-02**: Author box shows heading **Martin Michálek.**, portrait photo, one-sentence bio, and link to `/martin`
-- [ ] **HOME-03**: Author box uses inverse brown background band (existing VD styling)
+- [x] **HOME-01**: Author profile box replaces ebook.cz promo area on both CS and EN homepages
+- [x] **HOME-02**: Author box shows heading **Martin Michálek.**, portrait photo, one-sentence bio, and link to `/martin`
+- [x] **HOME-03**: Author box uses inverse brown background band (existing VD styling)
 
 ### English Homepage Parity
 
-- [ ] **ENHOME-01**: EN homepage shows featured main article at top (CS layout pattern)
-- [ ] **ENHOME-02**: Author box positioned in CS-equivalent layout (beside/adjacent to featured article)
-- [ ] **ENHOME-03**: Full unified article stream below featured/author section
-- [ ] **ENHOME-04**: Green topic hub box with same topic buttons as CS homepage
-- [ ] **ENHOME-05**: EN-specific “Start here” section removed or replaced with CS-equivalent structure
+- [x] **ENHOME-01**: EN homepage shows featured main article at top (CS layout pattern)
+- [x] **ENHOME-02**: Author box positioned in CS-equivalent layout (beside/adjacent to featured article)
+- [x] **ENHOME-03**: Full unified article stream below featured/author section
+- [x] **ENHOME-04**: Green topic hub box with same topic buttons as CS homepage
+- [x] **ENHOME-05**: EN-specific “Start here” section removed or replaced with CS-equivalent structure
 
 ### Article Detail UX
 
-- [ ] **ART-01**: Language switch on same row as author and date — author/date left, switch right (CS + EN)
-- [ ] **ART-02**: Footer line “Text adapted from the Czech article.” removed from article detail pages
+- [x] **ART-01**: Language switch on same row as author and date — author/date left, switch right (CS + EN)
+- [x] **ART-02**: Footer line “Text adapted from the Czech article.” removed from article detail pages
 
 ### Pre-launch Gate
 
-- [ ] **LAUNCH-01**: Visual polish verified on both Vercel previews (CS + EN) via UAT
-- [ ] **LAUNCH-02**: Phase 9 production DNS cutover resumes only after LAUNCH-01 passes
+- [x] **LAUNCH-01**: Visual polish verified on both Vercel previews (CS + EN) via UAT
+- [x] **LAUNCH-02**: Phase 9 production DNS cutover resumes only after LAUNCH-01 passes
 
 ## v1.2 Requirements
 
@@ -239,18 +239,18 @@ Deferred to future release.
 | CZNAV-02 | Phase 10 | Pending |
 | CZHOME-01 | Phase 10 | Pending |
 | CZHOME-02 | Phase 10 | Pending |
-| HOME-01 | Phase 11 | Pending |
-| HOME-02 | Phase 11 | Pending |
-| HOME-03 | Phase 11 | Pending |
-| ENHOME-01 | Phase 12 | Pending |
-| ENHOME-02 | Phase 12 | Pending |
-| ENHOME-03 | Phase 12 | Pending |
-| ENHOME-04 | Phase 12 | Pending |
-| ENHOME-05 | Phase 12 | Pending |
-| ART-01 | Phase 13 | Pending |
-| ART-02 | Phase 13 | Pending |
-| LAUNCH-01 | Phase 14 | Pending |
-| LAUNCH-02 | Phase 14 | Pending |
+| HOME-01 | Phase 11 | Complete |
+| HOME-02 | Phase 11 | Complete |
+| HOME-03 | Phase 11 | Complete |
+| ENHOME-01 | Phase 12 | Complete |
+| ENHOME-02 | Phase 12 | Complete |
+| ENHOME-03 | Phase 12 | Complete |
+| ENHOME-04 | Phase 12 | Complete |
+| ENHOME-05 | Phase 12 | Complete |
+| ART-01 | Phase 13 | Complete |
+| ART-02 | Phase 13 | Complete |
+| LAUNCH-01 | Phase 14 | Complete |
+| LAUNCH-02 | Phase 14 | Complete |
 
 **Coverage (v1.1):**
 

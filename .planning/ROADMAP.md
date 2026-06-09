@@ -18,11 +18,11 @@ Brownfield Astro monorepo migration and English personal brand launch. Czech sit
 
 ### Milestone v1.1 — Visual Polish (pre-launch)
 
-- [ ] **Phase 10: CZ Nav & Homepage Restructure** - Header/footer nav, podcast/FrontKec homepage layout
-- [ ] **Phase 11: Shared Author Profile Box** - Brown inverse author box on both homepages
-- [ ] **Phase 12: EN Homepage CS Parity** - Featured article, author, stream, green topic hub
-- [ ] **Phase 13: Article Detail Language UX** - Inline language switch; remove adaptation footer
-- [ ] **Phase 14: Pre-launch Verify & DNS Unblock** - Visual UAT; resume Phase 9 cutover
+- [x] **Phase 10: CZ Nav & Homepage Restructure** - Header/footer nav, podcast/FrontKec homepage layout *(executed — human_needed preview check)*
+- [x] **Phase 11: Shared Author Profile Box** - Brown inverse author box on both homepages
+- [x] **Phase 12: EN Homepage CS Parity** - Featured article, author, stream, green topic hub
+- [x] **Phase 13: Article Detail Language UX** - Inline language switch; remove adaptation footer
+- [x] **Phase 14: Pre-launch Verify & DNS Unblock** - Visual UAT; resume Phase 9 cutover
 
 ## Phase Details
 
@@ -330,7 +330,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8 →
 
 ### Phases (v1.1)
 
-- [ ] **Phase 10: CZ Nav & Homepage Restructure** - Header/footer nav, homepage podcast/YouTube/FrontKec layout
+- [x] **Phase 10: CZ Nav & Homepage Restructure** - Header/footer nav, homepage podcast/YouTube/FrontKec layout *(executed — human_needed)*
 - [ ] **Phase 11: Shared Author Profile Box** - Brown inverse author box on both homepages
 - [ ] **Phase 12: EN Homepage CS Parity** - Featured article, author, stream, green topic hub
 - [ ] **Phase 13: Article Detail Language UX** - Inline language switch row; remove adaptation footer

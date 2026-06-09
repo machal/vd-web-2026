@@ -2,15 +2,15 @@
 gsd_state_version: 1.0
 milestone: v1.1
 milestone_name: Visual Polish (pre-launch)
-status: planning
-last_updated: "2026-06-09T07:00:30.393Z"
+status: complete
+last_updated: "2026-06-09T09:15:00.000Z"
 last_activity: 2026-06-09
 progress:
   total_phases: 5
-  completed_phases: 0
-  total_plans: 0
-  completed_plans: 0
-  percent: 0
+  completed_phases: 5
+  total_plans: 5
+  completed_plans: 5
+  percent: 100
 ---
 
 # Project State
@@ -20,14 +20,14 @@ progress:
 See: .planning/PROJECT.md (updated 2026-06-06)
 
 **Core value:** Articles and `/martin` earn organic global trust; site reflects Web Perf expertise with pragmatic tradeoffs (GA OK; LH 100/100 secondary).
-**Current focus:** Milestone v1.1 — Phase 10 CZ Nav & Homepage Restructure (planning)
+**Current focus:** Milestone v1.1 complete — ready for Phase 9 DNS cutover after browser UAT
 
 ## Current Position
 
-Phase: 10 (cz-nav-homepage-restructure)
+Phase: 14 (pre-launch-verify-dns-unblock)
 Plan: —
-Status: Defining requirements — milestone v1.1 started
-Last activity: 2026-06-09 — Milestone v1.1 Visual Polish roadmap created
+Status: v1.1 Phases 10–14 executed
+Last activity: 2026-06-09 — Phases 11–14 complete; verify-phase14 passes
 
 ## Performance Metrics
 
@@ -50,11 +50,12 @@ Last activity: 2026-06-09 — Milestone v1.1 Visual Polish roadmap created
 - Phase 8: GA4 via PUBLIC_GA_MEASUREMENT_ID; loads only after analytics cookie consent
 - Phase 8: EN tags in tags.ts; archive pages at /{tag}/
 - Phase 9: FTP auto-deploy disabled; archived at `.github/workflows/archived/deploy-ftp.yml`
-- Phase 9: Simultaneous DNS cutover both domains; 09-VERIFICATION.md status human_needed until cutover
+- Phase 9: Simultaneous DNS cutover both domains; unblocked after v1.1 Phase 14 verify
+- Phase 11–14: AuthorProfileBox, EN homepage parity, article language row, verify script
 
 ### Pending Todos
 
-- **v1.1 visual polish both blogs** — `.planning/todos/pending/2026-06-09-v1-1-visual-polish-both-blogs.md` (blocks Phase 9 DNS until done; `/martin` → v1.2)
+- ~~v1.1 visual polish both blogs~~ — resolved by Phases 10–14 (`/martin` redesign → v1.2)
 
 ### Blockers/Concerns
 
