@@ -14,7 +14,7 @@ Brownfield Astro monorepo migration and English personal brand launch. Czech sit
 - [x] **Phase 6: Content Pairing & i18n SEO** - CONTENT_PAIRS manifest, language switch, hreflang, Czech mirror links (completed 2026-06-09)
 - [ ] **Phase 7: Content Adaptation — Pilot 8 + `/martin`** - 8 adapted articles, native EN `/martin`, homepage "start here"
 - [x] **Phase 8: Launch Polish — Legal, Feeds, Tags, Performance** - SEO metadata, RSS/sitemap, tags, legal, CWV review, GA (completed 2026-06-09)
-- [ ] **Phase 9: Production Cutover — michalek.dev + DNS** - Staged DNS for both domains, FTP retirement, rollback docs
+- [ ] **Phase 9: Production Cutover — michalek.dev + DNS** - Staged DNS for both domains, FTP retirement, rollback docs *(executed — DNS human_needed)*
 
 ## Phase Details
 
