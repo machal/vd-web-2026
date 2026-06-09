@@ -81,8 +81,8 @@
 
 - [ ] **DEPLOY-01**: Two Vercel projects from one Git repo (Root Directory per app, monorepo settings enabled) — EN config ready; dashboard connect human_needed
 - [ ] **DEPLOY-02**: Both domains (`vzhurudolu.cz`, `michalek.dev`) cut over to Vercel with staged DNS (TTL reduced before switch)
-- [ ] **DEPLOY-03**: FTP deploy workflow deprecated/removed after successful Vercel soak period
-- [ ] **DEPLOY-04**: Rollback path documented (revert DNS or redeploy previous Vercel build)
+- [x] **DEPLOY-03**: FTP deploy workflow deprecated/removed after successful Vercel soak period — auto-deploy disabled Phase 9; manual rollback preserved; delete secrets after soak
+- [x] **DEPLOY-04**: Rollback path documented (revert DNS or redeploy previous Vercel build)
 
 ## v2 Requirements
 
@@ -163,9 +163,9 @@ Deferred to future release.
 | PERF-03 | Phase 8 | Complete |
 | PERF-04 | Phase 8 | Complete |
 | DEPLOY-01 | Phase 5 | Partial (EN dashboard human_needed) |
-| DEPLOY-02 | Phase 9 | Pending |
-| DEPLOY-03 | Phase 9 | Pending |
-| DEPLOY-04 | Phase 9 | Pending |
+| DEPLOY-02 | Phase 9 | Pending (human DNS cutover — see 09-VERIFICATION.md) |
+| DEPLOY-03 | Phase 9 | Complete (auto-deploy off; archived workflow) |
+| DEPLOY-04 | Phase 9 | Complete |
 
 **Coverage:**
 

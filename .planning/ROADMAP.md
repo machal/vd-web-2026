@@ -283,7 +283,17 @@ Plans:
   2. FTP deploy workflow removed after successful Vercel soak period
   3. Rollback path documented — revert DNS or redeploy previous Vercel build
 
-**Plans**: TBD
+**Plans**: 3 plans (executed — DNS cutover human_needed)
+
+Plans:
+**Wave 1**
+
+- [x] 09-01 — Rollback runbook + 09-VERIFICATION.md (DEPLOY-02, DEPLOY-04)
+- [x] 09-02 — verify-phase9-cutover.sh production smoke tests (DEPLOY-02)
+
+**Wave 2** *(blocked on Wave 1 plan 01)*
+
+- [x] 09-03 — Archive FTP workflow + disable auto-deploy (DEPLOY-03)
 
 ## Progress
 
@@ -300,4 +310,4 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8 →
 | 6. Content Pairing & i18n SEO | 5/5 | Complete   | 2026-06-09 |
 | 7. Content Adaptation — Pilot 8 + `/martin` | 6/6 | Complete   | 2026-06-09 |
 | 8. Launch Polish — Legal, Feeds, Tags, Performance | 5/5 | Complete   | 2026-06-09 |
-| 9. Production Cutover — michalek.dev + DNS | 0/TBD | Not started | - |
+| 9. Production Cutover — michalek.dev + DNS | 3/3 | Executed — verification human_needed | 2026-06-09 |
