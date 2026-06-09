@@ -145,17 +145,42 @@ Plans:
 **Goal**: michalek.dev exists as lean English Astro app with core pages and dual-project Vercel config
 **Mode:** mvp
 **Depends on**: Phase 4
-**Requirements**: EN-01, EN-02, EN-03, EN-04, EN-06, EN-07, EN-08, MONO-05, DEPLOY-01
+**Requirements**: EN-01, EN-02, EN-03, EN-04, EN-05, EN-06, EN-07, EN-08, MONO-05, DEPLOY-01
 **Success Criteria** (what must be TRUE):
 
   1. Visitor sees homepage with personal tech blog positioning, unified article stream (blog + guide), and CTA to `/martin`
   2. Site title reads **Martin Michálek · Web & Performance** — personal brand, not Vzhůru dolů
   3. Navigation shows **Articles** (→ `/`) and **Martin** (→ `/martin`); legal links in footer only
   4. Article URLs resolve at `/blog/{slug}` and `/guide/{slug}` with no separate listing pages
-  5. Custom 404 page helps visitor navigate back to homepage
-  6. PR CI builds both apps on every change; two Vercel projects configured from one repo with per-app Root Directory
+  5. Full `/martin` page with bio, services, client logos, LinkedIn CTA, and **pagespeed.one** promotion
+  6. Custom 404 page helps visitor navigate back to homepage
+  7. PR CI builds both apps on every change; two Vercel projects configured from one repo with per-app Root Directory
 
-**Plans**: TBD
+**Plans**: 5 plans
+
+Plans:
+**Wave 1**
+
+- [ ] 05-01-PLAN.md — Shared siteConfig parameterization for EN branding (EN-02, EN-07)
+
+**Wave 2** *(blocked on Wave 1 completion)*
+
+- [ ] 05-02-PLAN.md — EN Astro app scaffold, collections, stub content (EN-01, EN-06)
+
+**Wave 3** *(blocked on Wave 2 completion)*
+
+- [ ] 05-03-PLAN.md — Homepage, article routes, 404, legal stubs (EN-03, EN-04, EN-06, EN-07, EN-08)
+- [ ] 05-04-PLAN.md — Full `/martin` page EN-05 pulled forward (EN-05)
+
+**Wave 4** *(blocked on Wave 3 completion)*
+
+- [ ] 05-05-PLAN.md — Dual-app CI, EN vercel.json, verify gate, Vercel dashboard checkpoint (MONO-05, DEPLOY-01)
+
+**Cross-cutting constraints:**
+
+- Site title reads **Martin Michálek · Web & Performance** — personal brand, not Vzhůru dolů
+- PR CI builds both apps on every change; two Vercel projects configured from one repo with per-app Root Directory
+
 **UI hint**: yes
 
 ### Phase 6: Content Pairing & i18n SEO
