@@ -36,13 +36,13 @@
 
 ### Content Adaptation
 
-- [ ] **CONT-01**: 5 guide articles adapted from příručka: `ai-saas`, `vibe-coding`, `email-inbox-zero`, `web-vitals`, `webp`
-- [ ] **CONT-02**: 3 blog articles adapted: `261-rok-2025`, `254-ne`, `244-usetrite-utratite`
-- [ ] **CONT-03**: Each adapted article has EN-specific title, description, and slug (not machine-translated metadata)
-- [ ] **CONT-04**: Each adapted article includes author byline linking to `/martin`
-- [ ] **CONT-05**: Adapted articles include honest attribution note (adapted from Czech original on Vzhůru dolů)
-- [ ] **CONT-06**: `/martin` page content is written natively in English (not translated from Czech `/martin`)
-- [ ] **CONT-07**: Homepage includes curated "start here" links to key pilot articles
+- [x] **CONT-01**: 5 guide articles adapted from příručka: `ai-saas`, `vibe-coding`, `email-inbox-zero`, `web-vitals`, `webp`
+- [x] **CONT-02**: 3 blog articles adapted: `261-rok-2025`, `254-ne`, `244-usetrite-utratite`
+- [x] **CONT-03**: Each adapted article has EN-specific title, description, and slug (not machine-translated metadata)
+- [x] **CONT-04**: Each adapted article includes author byline linking to `/martin`
+- [x] **CONT-05**: Adapted articles include honest attribution note (adapted from Czech original on Vzhůru dolů)
+- [x] **CONT-06**: `/martin` page content is written natively in English (not translated from Czech `/martin`)
+- [x] **CONT-07**: Homepage includes curated "start here" links to key pilot articles
 
 ### i18n & Language Pairing
 
@@ -134,13 +134,13 @@ Deferred to future release.
 | EN-08 | Phase 5 | Complete |
 | EN-09 | Phase 8 | Pending |
 | EN-10 | Phase 8 | Pending |
-| CONT-01 | Phase 7 | Pending |
-| CONT-02 | Phase 7 | Pending |
-| CONT-03 | Phase 7 | Pending |
-| CONT-04 | Phase 7 | Pending |
-| CONT-05 | Phase 7 | Pending |
-| CONT-06 | Phase 7 | Pending |
-| CONT-07 | Phase 7 | Pending |
+| CONT-01 | Phase 7 | Complete |
+| CONT-02 | Phase 7 | Complete |
+| CONT-03 | Phase 7 | Complete |
+| CONT-04 | Phase 7 | Complete |
+| CONT-05 | Phase 7 | Complete |
+| CONT-06 | Phase 7 | Complete |
+| CONT-07 | Phase 7 | Complete |
 | I18N-01 | Phase 6 | Complete |
 | I18N-02 | Phase 6 | Complete |
 | I18N-03 | Phase 6 | Complete |

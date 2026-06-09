@@ -3,15 +3,15 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: ready_for_verification
-stopped_at: Completed 06-05-PLAN.md
-last_updated: "2026-06-09T06:45:00.000Z"
-last_activity: 2026-06-09 -- Phase 6 content pairing complete; verify gate PASS
+stopped_at: Completed Phase 7 content adaptation
+last_updated: "2026-06-09T07:00:00.000Z"
+last_activity: 2026-06-09 -- Phase 7 pilot EN adaptations; verify gate PASS
 progress:
   total_phases: 9
-  completed_phases: 6
-  total_plans: 27
-  completed_plans: 27
-  percent: 67
+  completed_phases: 7
+  total_plans: 33
+  completed_plans: 33
+  percent: 78
 ---
 
 # Project State
@@ -21,16 +21,16 @@ progress:
 See: .planning/PROJECT.md (updated 2026-06-06)
 
 **Core value:** Articles and `/martin` earn organic global trust; site reflects Web Perf expertise with pragmatic tradeoffs (GA OK; LH 100/100 secondary).
-**Current focus:** Phase 06 — content-pairing-i18n-seo
+**Current focus:** Phase 07 — content-adaptation-pilot-8-martin
 
 ## Current Position
 
-Phase: 06 (content-pairing-i18n-seo)
-Plan: 5 of 5
-Status: Executed — verification passed (automated gate)
-Last activity: 2026-06-09 -- Phase 6 pairing, hreflang, LanguageSwitch; verify gate PASS
+Phase: 07 (content-adaptation-pilot-8-martin)
+Plan: executed (no PLAN.md files on disk; from CONTEXT)
+Status: Executed — verification passed
+Last activity: 2026-06-09 -- 8 EN pilot articles adapted; homepage start-here; verify gate PASS
 
-Progress: [██████░░░░] 67% (6/9 phases complete)
+Progress: [███████░░░] 78% (7/9 phases complete)
 
 ## Performance Metrics
 
@@ -58,5 +58,5 @@ Progress: [██████░░░░] 67% (6/9 phases complete)
 ## Session Continuity
 
 Last session: 2026-06-09
-Stopped at: Completed 06-05-PLAN.md
+Stopped at: Completed Phase 7 content adaptation
 Resume file: None

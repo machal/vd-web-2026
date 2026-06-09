@@ -236,12 +236,12 @@ Plans:
 **Plans**: 6 plans
 
 Plans:
-- [ ] 07-01-PLAN.md — EN content schema, AdaptationAttribution, author/attribution wiring (CONT-03, CONT-04, CONT-05)
-- [ ] 07-02-PLAN.md — Adapt guide pilots webp + web-vitals (CONT-01)
-- [ ] 07-03-PLAN.md — Adapt guide pilots ai-saas + email-inbox-zero (CONT-01)
-- [ ] 07-04-PLAN.md — Adapt guide pilot vibe-coding (CONT-01)
-- [ ] 07-05-PLAN.md — Adapt 3 blog pilots (CONT-02)
-- [ ] 07-06-PLAN.md — Homepage start-here, /martin EN-05 verify, phase 7 gate (CONT-06, CONT-07, EN-05)
+- [x] 07-01-PLAN.md — EN content schema, AdaptationAttribution, author/attribution wiring (CONT-03, CONT-04, CONT-05)
+- [x] 07-02-PLAN.md — Adapt guide pilots webp + web-vitals (CONT-01)
+- [x] 07-03-PLAN.md — Adapt guide pilots ai-saas + email-inbox-zero (CONT-01)
+- [x] 07-04-PLAN.md — Adapt guide pilot vibe-coding (CONT-01)
+- [x] 07-05-PLAN.md — Adapt 3 blog pilots (CONT-02)
+- [x] 07-06-PLAN.md — Homepage start-here, /martin EN-05 verify, phase 7 gate (CONT-06, CONT-07, EN-05)
 
 **UI hint**: yes
 
@@ -288,8 +288,8 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8 →
 | 2. Shared Packages Extraction | 5/5 | Complete    | 2026-06-07 |
 | 3. Czech Site Parity Verification | 4/4 | Complete   | 2026-06-07 |
 | 4. Vercel Migration — Czech Site | 4/4 | Complete   | 2026-06-07 |
-| 5. English App Scaffold | 0/TBD | Not started | - |
+| 5. English App Scaffold | 5/5 | Complete   | 2026-06-08 |
 | 6. Content Pairing & i18n SEO | 5/5 | Complete   | 2026-06-09 |
-| 7. Content Adaptation — Pilot 8 + `/martin` | 0/6 | Planned | - |
+| 7. Content Adaptation — Pilot 8 + `/martin` | 6/6 | Complete   | 2026-06-09 |
 | 8. Launch Polish — Legal, Feeds, Tags, Performance | 0/TBD | Not started | - |
 | 9. Production Cutover — michalek.dev + DNS | 0/TBD | Not started | - |
