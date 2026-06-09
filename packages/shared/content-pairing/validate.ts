@@ -65,10 +65,7 @@ export function validateContentPairs(
     }
 
     if (checkContentFiles) {
-      // Warnings only — EN content may be stubs until Phase 7
-      warnings.push(
-        `Content file check skipped at runtime — use validate-content-pairs.mjs CLI for file checks`,
-      );
+      // File existence checks are performed by validate-content-pairs.mjs CLI
     }
   }
 
@@ -92,14 +89,13 @@ export function validateContentPairs(
     }
 
     for (const pair of manifest) {
-      const csEntries = frontmatterIndex.get(pair.pairId) ?? [];
-      const hasCsMatch = csEntries.some((e) => pairRefMatches(e, pair.cs));
-      const hasEnMatch = csEntries.some((e) => pairRefMatches(e, pair.en));
-      if (csEntries.length > 0 && !hasCsMatch && !hasEnMatch) {
-        errors.push(`Manifest pairId "${pair.pairId}" has no matching front matter entry`);
-      }
-      if (hasCsMatch && hasEnMatch && pair.cs.site !== pair.en.site) {
-        // Both sides present — ok
+      const entries = frontmatterIndex.get(pair.pairId) ?? [];
+      for (const entry of entries) {
+        if (!pairRefMatches(entry, pair.cs) && !pairRefMatches(entry, pair.en)) {
+          errors.push(
+            `Front matter pairId "${pair.pairId}" mismatch for ${refKey(entry)}`,
+          );
+        }
       }
     }
   }
