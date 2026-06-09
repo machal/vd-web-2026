@@ -3,15 +3,15 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: ready_for_verification
-stopped_at: Completed Phase 7 content adaptation
-last_updated: "2026-06-09T07:00:00.000Z"
-last_activity: 2026-06-09 -- Phase 7 pilot EN adaptations; verify gate PASS
+stopped_at: Completed Phase 8 launch polish
+last_updated: "2026-06-09T08:00:00.000Z"
+last_activity: 2026-06-09 -- Phase 8 launch polish; verify gate PASS
 progress:
   total_phases: 9
-  completed_phases: 7
-  total_plans: 33
-  completed_plans: 33
-  percent: 78
+  completed_phases: 8
+  total_plans: 38
+  completed_plans: 38
+  percent: 89
 ---
 
 # Project State
@@ -25,12 +25,12 @@ See: .planning/PROJECT.md (updated 2026-06-06)
 
 ## Current Position
 
-Phase: 07 (content-adaptation-pilot-8-martin)
-Plan: executed (no PLAN.md files on disk; from CONTEXT)
+Phase: 08 (launch-polish-legal-feeds-tags-performance)
+Plan: 5/5 complete
 Status: Executed — verification passed
-Last activity: 2026-06-09 -- 8 EN pilot articles adapted; homepage start-here; verify gate PASS
+Last activity: 2026-06-09 -- tags, RSS, legal, JSON-LD, deferred GA; verify gate PASS
 
-Progress: [███████░░░] 78% (7/9 phases complete)
+Progress: [████████░░] 89% (8/9 phases complete)
 
 ## Performance Metrics
 
@@ -50,6 +50,8 @@ Progress: [███████░░░] 78% (7/9 phases complete)
 - Phase 04: Deployment Protection on preview — browser UAT via logged-in Vercel session; curl gate needs bypass or public preview
 - Phase 6: cross-origin pairing via CONTENT_PAIRS manifest with resolveAlternate; no Astro i18n routing
 - Phase 6: x-default hreflang points to EN; canonical always self-referencing
+- Phase 8: GA4 via PUBLIC_GA_MEASUREMENT_ID; loads only after analytics cookie consent
+- Phase 8: EN tags in tags.ts; archive pages at /{tag}/
 
 ### Blockers/Concerns
 
@@ -58,5 +60,5 @@ Progress: [███████░░░] 78% (7/9 phases complete)
 ## Session Continuity
 
 Last session: 2026-06-09
-Stopped at: Completed Phase 7 content adaptation
+Stopped at: Completed Phase 8 launch polish
 Resume file: None

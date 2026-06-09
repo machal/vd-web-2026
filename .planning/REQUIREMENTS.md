@@ -31,8 +31,8 @@
 - [x] **EN-06**: English site avoids legacy bloat (no jQuery, no comment widgets); third-party scripts (e.g. GA) added pragmatically with deferred/async loading
 - [x] **EN-07**: Primary navigation: **Articles** (→ `/`) and **Martin** (→ `/martin`); legal links in footer only
 - [x] **EN-08**: Custom 404 page with helpful navigation back to homepage
-- [ ] **EN-09**: Tag taxonomy with tag archive pages (`/{tag}/`) filtering the unified article stream — same pattern as VD `categories.ts`
-- [ ] **EN-10**: Tags visible on article pages and usable for discovery (matching VD tag UX)
+- [x] **EN-09**: Tag taxonomy with tag archive pages (`/{tag}/`) filtering the unified article stream — same pattern as VD `categories.ts`
+- [x] **EN-10**: Tags visible on article pages and usable for discovery (matching VD tag UX)
 
 ### Content Adaptation
 
@@ -56,26 +56,26 @@
 
 ### SEO & Discovery
 
-- [ ] **SEO-01**: Unique `<title>` and meta description per page from front matter
-- [ ] **SEO-02**: Open Graph and Twitter Card metadata on all pages
-- [ ] **SEO-03**: XML sitemap for michalek.dev submitted-ready on launch
-- [ ] **SEO-04**: RSS feed at `/rss` aggregating unified blog + guide stream
-- [ ] **SEO-05**: `robots.txt` references sitemap; all public pages crawlable
-- [ ] **SEO-06**: `lang="en"` on all English pages
-- [ ] **SEO-07**: Person + Article JSON-LD schema with `sameAs` (LinkedIn, pagespeed.one)
+- [x] **SEO-01**: Unique `<title>` and meta description per page from front matter
+- [x] **SEO-02**: Open Graph and Twitter Card metadata on all pages
+- [x] **SEO-03**: XML sitemap for michalek.dev submitted-ready on launch
+- [x] **SEO-04**: RSS feed at `/rss` aggregating unified blog + guide stream
+- [x] **SEO-05**: `robots.txt` references sitemap; all public pages crawlable
+- [x] **SEO-06**: `lang="en"` on all English pages
+- [x] **SEO-07**: Person + Article JSON-LD schema with `sameAs` (LinkedIn, pagespeed.one)
 
 ### Legal & Compliance
 
-- [ ] **LEGAL-01**: English privacy policy page (GDPR-compliant; covers Vercel hosting)
-- [ ] **LEGAL-02**: Cookie policy and consent notice covering analytics cookies (GA) per GDPR/ePrivacy
-- [ ] **LEGAL-03**: Footer links to privacy and cookie pages
+- [x] **LEGAL-01**: English privacy policy page (GDPR-compliant; covers Vercel hosting)
+- [x] **LEGAL-02**: Cookie policy and consent notice covering analytics cookies (GA) per GDPR/ePrivacy
+- [x] **LEGAL-03**: Footer links to privacy and cookie pages
 
 ### Performance
 
 - [ ] **PERF-01**: michalek.dev maintains good Core Web Vitals on mobile (healthy LCP, CLS, INP) — high Lighthouse scores are aspirational, not hard launch gates
-- [ ] **PERF-02**: Third-party scripts (analytics, etc.) loaded async/deferred; no unnecessary widgets; performance impact reviewed before launch
-- [ ] **PERF-03**: Images optimized via shared Sharp pipeline (WebP where applicable)
-- [ ] **PERF-04**: Google Analytics (or equivalent) integrated without blocking critical rendering path
+- [x] **PERF-02**: Third-party scripts (analytics, etc.) loaded async/deferred; no unnecessary widgets; performance impact reviewed before launch
+- [x] **PERF-03**: Images optimized via shared Sharp pipeline (WebP where applicable)
+- [x] **PERF-04**: Google Analytics (or equivalent) integrated without blocking critical rendering path
 
 ### Deploy & Operations
 
@@ -132,8 +132,8 @@ Deferred to future release.
 | EN-06 | Phase 5 | Complete |
 | EN-07 | Phase 5 | Complete |
 | EN-08 | Phase 5 | Complete |
-| EN-09 | Phase 8 | Pending |
-| EN-10 | Phase 8 | Pending |
+| EN-09 | Phase 8 | Complete |
+| EN-10 | Phase 8 | Complete |
 | CONT-01 | Phase 7 | Complete |
 | CONT-02 | Phase 7 | Complete |
 | CONT-03 | Phase 7 | Complete |
@@ -148,20 +148,20 @@ Deferred to future release.
 | I18N-05 | Phase 6 | Complete |
 | I18N-06 | Phase 6 | Complete |
 | I18N-07 | Phase 6 | Complete |
-| SEO-01 | Phase 8 | Pending |
-| SEO-02 | Phase 8 | Pending |
-| SEO-03 | Phase 8 | Pending |
-| SEO-04 | Phase 8 | Pending |
-| SEO-05 | Phase 8 | Pending |
-| SEO-06 | Phase 8 | Pending |
-| SEO-07 | Phase 8 | Pending |
-| LEGAL-01 | Phase 8 | Pending |
-| LEGAL-02 | Phase 8 | Pending |
-| LEGAL-03 | Phase 8 | Pending |
+| SEO-01 | Phase 8 | Complete |
+| SEO-02 | Phase 8 | Complete |
+| SEO-03 | Phase 8 | Complete |
+| SEO-04 | Phase 8 | Complete |
+| SEO-05 | Phase 8 | Complete |
+| SEO-06 | Phase 8 | Complete |
+| SEO-07 | Phase 8 | Complete |
+| LEGAL-01 | Phase 8 | Complete |
+| LEGAL-02 | Phase 8 | Complete |
+| LEGAL-03 | Phase 8 | Complete |
 | PERF-01 | Phase 8 | Pending |
-| PERF-02 | Phase 8 | Pending |
-| PERF-03 | Phase 8 | Pending |
-| PERF-04 | Phase 8 | Pending |
+| PERF-02 | Phase 8 | Complete |
+| PERF-03 | Phase 8 | Complete |
+| PERF-04 | Phase 8 | Complete |
 | DEPLOY-01 | Phase 5 | Partial (EN dashboard human_needed) |
 | DEPLOY-02 | Phase 9 | Pending |
 | DEPLOY-03 | Phase 9 | Pending |

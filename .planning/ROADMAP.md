@@ -260,26 +260,14 @@ Plans:
   5. Privacy policy and cookie consent cover Vercel hosting and analytics cookies; footer links to both
   6. Site maintains good mobile Core Web Vitals; GA loads async/deferred without blocking render
 
-**Plans**: 6 plans
+**Plans**: 5 plans (executed from CONTEXT)
 
 Plans:
-**Wave 1**
-
-- [ ] 08-01-PLAN.md — JSON-LD builders + BaseLayout EN Twitter/RSS/schema slot (SEO-02, SEO-06, SEO-07 foundation)
-- [ ] 08-03-PLAN.md — EN tag taxonomy + /{tag}/ archive pages (EN-09)
-
-**Wave 2** *(blocked on Wave 1 completion)*
-
-- [ ] 08-02-PLAN.md — RSS, robots.txt, page SEO wiring, tag footer on articles (SEO-01, SEO-03–05, EN-10)
-- [ ] 08-04-PLAN.md — Privacy/cookie policy pages + consent banner (LEGAL-01–03)
-
-**Wave 3** *(blocked on Wave 2 plan 04 completion)*
-
-- [ ] 08-05-PLAN.md — Consent-gated deferred GA4 + performance review (PERF-01–04)
-
-**Wave 4** *(blocked on Wave 3 completion)*
-
-- [ ] 08-06-PLAN.md — verify-phase8-launch-polish.sh gate + CI (all requirements)
+- [x] 08-01 — EN tag taxonomy + `/{tag}/` archive pages (EN-09, EN-10)
+- [x] 08-02 — RSS `/rss` + robots.txt + sitemap (SEO-03, SEO-04, SEO-05)
+- [x] 08-03 — SEO metadata, Twitter Cards, JSON-LD (SEO-01, SEO-02, SEO-06, SEO-07)
+- [x] 08-04 — Privacy/cookie policies + consent banner (LEGAL-01, LEGAL-02, LEGAL-03)
+- [x] 08-05 — Deferred GA + verify gate + CI (PERF-02, PERF-04)
 
 **UI hint**: yes
 
@@ -311,5 +299,5 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8 →
 | 5. English App Scaffold | 5/5 | Complete   | 2026-06-08 |
 | 6. Content Pairing & i18n SEO | 5/5 | Complete   | 2026-06-09 |
 | 7. Content Adaptation — Pilot 8 + `/martin` | 6/6 | Complete   | 2026-06-09 |
-| 8. Launch Polish — Legal, Feeds, Tags, Performance | 0/6 | Not started | - |
+| 8. Launch Polish — Legal, Feeds, Tags, Performance | 5/5 | Complete   | 2026-06-09 |
 | 9. Production Cutover — michalek.dev + DNS | 0/TBD | Not started | - |
