@@ -15,8 +15,6 @@
     }
   ],
   "redirects": [
-    { "source": "/node_modules/:path*", "statusCode": 404 },
-
     { "source": "/kniha-rwd", "destination": "/css-layout", "permanent": true },
     { "source": "/ebook-responzivni/:path*", "destination": "/kniha-responzivni-design/:path*", "permanent": true },
     { "source": "/ebook-responzivni", "destination": "/kniha-responzivni-design", "permanent": true },

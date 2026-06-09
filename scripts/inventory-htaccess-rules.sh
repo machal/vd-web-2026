@@ -33,8 +33,8 @@ echo "Total redirect-eligible (301 family): ${TOTAL}"
 if [[ -f "$VERCEL_JSON" ]]; then
   VERCEL_COUNT=$(node -e "const v=require('./${VERCEL_JSON}'); process.stdout.write(String(Array.isArray(v.redirects)?v.redirects.length:0))")
   echo "vercel.json redirects:     ${VERCEL_COUNT}"
-  # Query-string css3 rules are handled by Vercel Routing Middleware, not vercel.json.
-  EXPECTED_VERCEL=$((TOTAL + REDIRECT_MATCH_404 - QUERY_REDIRECT))
+  # Query-string css3 and node_modules 404 block: Vercel Routing Middleware, not vercel.json redirects.
+  EXPECTED_VERCEL=$((TOTAL - QUERY_REDIRECT))
   if [[ "$VERCEL_COUNT" -ne "$EXPECTED_VERCEL" ]]; then
     echo "inventory-htaccess-rules: WARN — vercel.json count (${VERCEL_COUNT}) != expected (${EXPECTED_VERCEL}); review trailing-slash splits and middleware-handled rules" >&2
   fi
@@ -44,6 +44,6 @@ fi
 
 echo ""
 echo "Excluded from counts: mod_deflate, mod_expires, ETag, AddType, internal rewrites (index.html)"
-echo "Query-string css3?p= handled by apps/vzhurudolu/middleware.ts (not vercel.json)"
+echo "Query-string css3?p= and node_modules 404 handled by apps/vzhurudolu/middleware.ts (not vercel.json)"
 
 exit 0

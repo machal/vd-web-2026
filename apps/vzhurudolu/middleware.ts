@@ -9,6 +9,11 @@ export default function middleware(request: Request) {
       ? url.pathname.slice(0, -1)
       : url.pathname;
 
+  // Apache: RedirectMatch 404 ^/node_modules/ — vercel.json redirects require destination
+  if (pathname.startsWith('/node_modules')) {
+    return new Response('Not Found', { status: 404 });
+  }
+
   if (pathname === '/prirucka/css3') {
     const p = url.searchParams.get('p');
     if (p) {
@@ -21,5 +26,5 @@ export default function middleware(request: Request) {
 }
 
 export const config = {
-  matcher: ['/prirucka/css3', '/prirucka/css3/'],
+  matcher: ['/node_modules/:path*', '/prirucka/css3', '/prirucka/css3/'],
 };
