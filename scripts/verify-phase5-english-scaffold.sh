@@ -18,8 +18,8 @@ test -d "$EN_DIST"
 test -f "$EN_DIST/index.html"
 test -f "$EN_DIST/martin/index.html"
 test -f "$EN_DIST/404.html"
-test -f "$EN_DIST/blog/hello-blog/index.html"
-test -f "$EN_DIST/guide/hello-guide/index.html"
+test -f "$EN_DIST/blog/2025-year-in-review/index.html"
+test -f "$EN_DIST/guide/webp/index.html"
 
 if [[ -f "$EN_DIST/blog/index.html" || -f "$EN_DIST/guide/index.html" ]]; then
   echo "Phase 5 English scaffold gate: FAIL — listing pages must not exist at /blog/ or /guide/" >&2
