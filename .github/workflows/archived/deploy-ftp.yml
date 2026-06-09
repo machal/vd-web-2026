@@ -1,16 +1,12 @@
-# FTP production auto-deploy RETIRED — Phase 9 production cutover
-#
-# Vercel serves vzhurudolu.cz in production. This workflow runs MANUAL rollback deploys only.
-# Full auto-deploy (push to main/master) preserved at:
-#   .github/workflows/archived/deploy-ftp.yml
-# Rollback procedure: docs/ROLLBACK.md
-#
-# To restore automatic FTP on push: copy archived/deploy-ftp.yml over this file.
+# ARCHIVED Phase 9 — full FTP auto-deploy workflow (push to main/master)
+# Restore to .github/workflows/deploy-ftp.yml per docs/ROLLBACK.md §2
+# GitHub secrets required: FTP_SERVER, FTP_USERNAME, FTP_PASSWORD
 
-name: Deploy na FTP (manual rollback only)
+name: Deploy na FTP (archived auto-deploy)
 
 on:
-  workflow_dispatch:
+  push:
+    branches: [master, main]
 
 jobs:
   deploy:
