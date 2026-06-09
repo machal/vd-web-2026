@@ -4,6 +4,7 @@ title: v1.1 visual polish both blogs
 area: ui
 milestone: v1.1
 blocks: phase-9-dns-cutover
+resolves_phase: 10
 files:
   - apps/vzhurudolu/src/pages/index.astro
   - apps/vzhurudolu/src/site.config.ts
