@@ -24,6 +24,7 @@ jobs:
           test -f apps/michalek-dev/dist/martin/index.html
           bash scripts/verify-phase1-build.sh
           bash scripts/verify-phase5-english-scaffold.sh
+          bash scripts/verify-phase6-content-pairing-i18n-seo.sh
 
       # Optional Phase 3 link gate (D-08) — linkinator@7.6.1 via verify script --links-only; full gate local/merge (needs network)
       - name: Link check (Phase 3)
