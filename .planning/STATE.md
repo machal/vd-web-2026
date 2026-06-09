@@ -1,17 +1,16 @@
 ---
 gsd_state_version: 1.0
-milestone: v1.0
-milestone_name: milestone
-status: ready_for_verification
-stopped_at: Completed Phase 9 production cutover plans (DNS human_needed)
-last_updated: "2026-06-09T06:58:39.407Z"
-last_activity: 2026-06-09 -- captured v1.1 visual polish todo (both blogs)
+milestone: v1.1
+milestone_name: Visual Polish (pre-launch)
+status: planning
+last_updated: "2026-06-09T07:00:30.393Z"
+last_activity: 2026-06-09
 progress:
-  total_phases: 9
-  completed_phases: 8
-  total_plans: 41
-  completed_plans: 41
-  percent: 100
+  total_phases: 5
+  completed_phases: 0
+  total_plans: 0
+  completed_plans: 0
+  percent: 0
 ---
 
 # Project State
@@ -21,16 +20,14 @@ progress:
 See: .planning/PROJECT.md (updated 2026-06-06)
 
 **Core value:** Articles and `/martin` earn organic global trust; site reflects Web Perf expertise with pragmatic tradeoffs (GA OK; LH 100/100 secondary).
-**Current focus:** Phase 09 — production-cutover-michalek-dev-dns (human DNS gate)
+**Current focus:** Milestone v1.1 — Phase 10 CZ Nav & Homepage Restructure (planning)
 
 ## Current Position
 
-Phase: 09 (production-cutover-michalek-dev-dns)
-Plan: 3/3 complete
-Status: Executed — verification human_needed (DNS cutover)
-Last activity: 2026-06-09 -- ROLLBACK.md, verify-phase9-cutover.sh, FTP archived
-
-Progress: [█████████░] 100% plans executed (9/9 phases have plans; Phase 9 DNS pending human)
+Phase: 10 (cz-nav-homepage-restructure)
+Plan: —
+Status: Defining requirements — milestone v1.1 started
+Last activity: 2026-06-09 — Milestone v1.1 Visual Polish roadmap created
 
 ## Performance Metrics
 
@@ -69,4 +66,4 @@ Progress: [█████████░] 100% plans executed (9/9 phases have 
 
 Last session: 2026-06-09
 Stopped at: Completed Phase 9 production cutover plans (DNS human_needed)
-Resume file: .planning/phases/09-production-cutover-michalek-dev-dns/09-VERIFICATION.md
+Resume file: .planning/ROADMAP.md (Phase 10)

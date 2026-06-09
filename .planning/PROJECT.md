@@ -10,34 +10,47 @@ Both sites live in one monorepo (`apps/vzhurudolu`, `apps/michalek-dev`, `packag
 
 Articles and the `/martin` page must earn organic trust from the global tech community — shareable and technically credible. The site should still reflect Web Performance expertise (lean Astro SSG, sensible CWV), but Lighthouse 100/100 is a secondary aspiration, not a launch blocker — pragmatic use of analytics and other third-party scripts is acceptable.
 
+## Current Milestone: v1.1 Visual Polish (pre-launch)
+
+**Goal:** Align and polish visual layout on both Czech and English sites before production DNS cutover.
+
+**Target features:**
+- CZ nav restructure (Články, Knihy, Autor; Podcast+Video to footer)
+- CZ homepage cleanup (podcast/YouTube images; FrontKec block under e-books)
+- Shared author profile box on both homepages (inverse brown, replaces ebook.cz promo)
+- EN homepage layout parity with CS (featured article, author box, stream, green topic hub)
+- Article detail: language switch inline with author/date; remove adaptation footer line
+- **Phase 9 DNS cutover blocked** until v1.1 passes verify
+
+**Deferred to v1.2:** `/martin` page redesign
+
 ## Requirements
 
-### Validated
+### Validated (v1.0)
 
-- ✓ Astro 4 static site generation with content collections (blog, podcast, prirucka) — existing
-- ✓ Markdown pipeline with remark/rehype plugins, Zod front matter schemas — existing
-- ✓ File-based routing, layouts, shared components — existing
-- ✓ Custom sitemap, RSS feed, build-time validation — existing
-- ✓ Czech content at scale (blog, příručka, podcast) — existing
-- ✓ GitHub Actions → FTP deploy for vzhurudolu.cz — existing (to be replaced)
+- ✓ Monorepo, shared packages, CS parity, EN scaffold, content pairing, 8 pilot articles, legal/feeds/tags, cutover docs
+- ✓ Both Vercel preview deploys live (CS + EN)
 
-### Active
+### Active (v1.1)
 
-- [ ] Monorepo structure: `apps/vzhurudolu`, `apps/michalek-dev`, `packages/shared`
-- [ ] English site on `michalek.dev` with personal tech blog homepage
-- [ ] Unified article stream on homepage (blog + guide, VD-style); article URLs at `/blog/` and `/guide/`; nav: Articles + Martin
-- [ ] Tag taxonomy and tag archive pages (VD-style categories)
-- [ ] `/martin` page: bio, positioning, services, client logos, LinkedIn CTA, prominent **pagespeed.one** promotion
-- [ ] 8 pilot articles adapted to English (AI draft in Cursor + manual edit):
-  - Guide: `ai-saas`, `vibe-coding`, `email-inbox-zero`, `web-vitals`, `webp`
-  - Blog: `261-rok-2025`, `254-ne`, `244-usetrite-utratite`
-- [ ] Full language switch linking EN articles to Czech originals (and vice versa where applicable)
-- [ ] Site title: **Martin Michálek · Web & Performance**
-- [ ] Legal/technical minimum: privacy policy, cookies (GDPR), RSS, sitemap
-- [ ] Migrate **both** sites from FTP to Vercel (simultaneous)
-- [ ] Strong performance posture (good CWV, lean stack); GA/analytics allowed with pragmatic tradeoffs
+- [ ] CZ main nav: Články, Knihy, Autor only; Podcast+Video in footer
+- [ ] CZ homepage: podcast/YouTube blocks repositioned; FrontKec link under e-books
+- [ ] Both sites: author profile box on homepage (brown inverse band)
+- [ ] EN homepage: CS-equivalent layout (featured article, author, stream, topic hub)
+- [ ] Both sites: language switch row on article detail; no adaptation footer line
+- [ ] Visual verify on both previews; then unblock Phase 9 DNS
 
-### Out of Scope
+### Out of Scope (v1.1)
+
+- `/martin` page redesign — v1.2
+- New color system / full rebrand — layout polish within existing VD CSS
+- Phase 9 DNS until v1.1 verify passes
+
+### Pending (v1.0 cutover)
+
+- [ ] Production DNS cutover for both domains (Phase 9 — blocked by v1.1)
+
+### Out of Scope (project)
 
 - Podcast on English site — Czech-only for now
 - Courses (kurzy), e-books, newsletter/Mailchimp on michalek.dev — deferred; LinkedIn CTA only for MVP
@@ -82,6 +95,8 @@ Articles and the `/martin` page must earn organic trust from the global tech com
 | LinkedIn CTA, no EN newsletter in MVP | Simple contact path; Mailchimp deferred | — Pending |
 | Promote pagespeed.one on `/martin` | Primary business funnel for consulting | — Pending |
 | Pragmatic performance over LH 100/100 | GA and useful third-party scripts OK; CWV matter more than perfect scores | — Pending |
+| v1.1 blocks Phase 9 DNS | Visual polish must ship before production cutover | — Active |
+| `/martin` redesign deferred v1.2 | Out of v1.1 visual scope | — Pending |
 
 ## Evolution
 
@@ -101,4 +116,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state
 
 ---
-*Last updated: 2026-06-06 after initialization*
+*Last updated: 2026-06-09 — milestone v1.1 Visual Polish (pre-launch) started*
