@@ -1,3 +1,4 @@
-# Legacy archives — mirror FTP deploy exclude (.github/workflows/deploy-ftp.yml)
-data/
-files/
+# Legacy archives in public/ — mirror FTP deploy exclude (deploy-ftp.yml: **/data/**, **/files/**)
+# Do NOT use bare `data/` — that also excludes src/data/categories.ts and breaks the build.
+public/data/
+public/files/
