@@ -174,5 +174,90 @@ Deferred to future release.
 - Unmapped: 0
 
 ---
+
+## v1.1 Requirements — Visual Polish (pre-launch)
+
+**Defined:** 2026-06-09
+**Blocks:** Phase 9 DNS cutover until v1.1 verify passes
+
+### Czech Navigation
+
+- [ ] **CZNAV-01**: Main navigation shows only **Články**, **Knihy**, and **Autor**
+- [ ] **CZNAV-02**: **Podcast** and **Video** appear in footer navigation only (not header)
+
+### Czech Homepage
+
+- [ ] **CZHOME-01**: Podcast and YouTube channel image blocks removed from current homepage positions
+- [ ] **CZHOME-02**: Full-width podcast section placed under e-books with past-tense copy and link to **FrontKec**
+
+### Shared Homepage Author Box
+
+- [ ] **HOME-01**: Author profile box replaces ebook.cz promo area on both CS and EN homepages
+- [ ] **HOME-02**: Author box shows heading **Martin Michálek.**, portrait photo, one-sentence bio, and link to `/martin`
+- [ ] **HOME-03**: Author box uses inverse brown background band (existing VD styling)
+
+### English Homepage Parity
+
+- [ ] **ENHOME-01**: EN homepage shows featured main article at top (CS layout pattern)
+- [ ] **ENHOME-02**: Author box positioned in CS-equivalent layout (beside/adjacent to featured article)
+- [ ] **ENHOME-03**: Full unified article stream below featured/author section
+- [ ] **ENHOME-04**: Green topic hub box with same topic buttons as CS homepage
+- [ ] **ENHOME-05**: EN-specific “Start here” section removed or replaced with CS-equivalent structure
+
+### Article Detail UX
+
+- [ ] **ART-01**: Language switch on same row as author and date — author/date left, switch right (CS + EN)
+- [ ] **ART-02**: Footer line “Text adapted from the Czech article.” removed from article detail pages
+
+### Pre-launch Gate
+
+- [ ] **LAUNCH-01**: Visual polish verified on both Vercel previews (CS + EN) via UAT
+- [ ] **LAUNCH-02**: Phase 9 production DNS cutover resumes only after LAUNCH-01 passes
+
+## v1.2 Requirements
+
+Deferred to future release.
+
+### About Page
+
+- **MARTIN-V2-01**: Redesign `/martin` page (CS and EN)
+
+## Out of Scope (v1.1)
+
+| Feature | Reason |
+|---------|--------|
+| `/martin` page redesign | Explicitly deferred to v1.2 |
+| Full rebrand / new color system | Layout polish within existing VD CSS only |
+| Phase 9 DNS cutover | Blocked until v1.1 LAUNCH-01 passes |
+| New content or i18n pairs | Content scope closed in v1.0 |
+
+## Traceability (v1.1)
+
+| Requirement | Phase | Status |
+|-------------|-------|--------|
+| CZNAV-01 | Phase 10 | Pending |
+| CZNAV-02 | Phase 10 | Pending |
+| CZHOME-01 | Phase 10 | Pending |
+| CZHOME-02 | Phase 10 | Pending |
+| HOME-01 | Phase 11 | Pending |
+| HOME-02 | Phase 11 | Pending |
+| HOME-03 | Phase 11 | Pending |
+| ENHOME-01 | Phase 12 | Pending |
+| ENHOME-02 | Phase 12 | Pending |
+| ENHOME-03 | Phase 12 | Pending |
+| ENHOME-04 | Phase 12 | Pending |
+| ENHOME-05 | Phase 12 | Pending |
+| ART-01 | Phase 13 | Pending |
+| ART-02 | Phase 13 | Pending |
+| LAUNCH-01 | Phase 14 | Pending |
+| LAUNCH-02 | Phase 14 | Pending |
+
+**Coverage (v1.1):**
+
+- v1.1 requirements: 16 total
+- Mapped to phases: 16
+- Unmapped: 0
+
+---
 *Requirements defined: 2026-06-06*
-*Last updated: 2026-06-06 after nav/tags/v2 scope adjustment*
+*Last updated: 2026-06-09 — milestone v1.1 Visual Polish requirements added*
