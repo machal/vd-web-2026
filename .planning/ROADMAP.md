@@ -198,7 +198,26 @@ Plans:
   5. Build fails if pairing manifest has orphan or non-reciprocal pairs
   6. No automatic IP/browser language redirect occurs
 
-**Plans**: TBD
+**Plans**: 5 plans
+
+Plans:
+**Wave 1**
+
+- [ ] 06-01-PLAN.md — CONTENT_PAIRS manifest, resolve.ts, validate core, pairId schemas (I18N-01, I18N-02)
+
+**Wave 2** *(blocked on Wave 1 completion)*
+
+- [ ] 06-02-PLAN.md — hreflang/canonical helpers, LanguageSwitch, BaseLayout head injection (I18N-03, I18N-05, I18N-06)
+
+**Wave 3** *(blocked on Wave 2 completion)*
+
+- [ ] 06-03-PLAN.md — EN pilot stubs + page wiring (I18N-03, I18N-05, I18N-06, I18N-07)
+- [ ] 06-04-PLAN.md — CS pairId front matter + page wiring (VD-04, I18N-02, I18N-03, I18N-05, I18N-06)
+
+**Wave 4** *(blocked on Wave 3 completion)*
+
+- [ ] 06-05-PLAN.md — Build validator CLI, verify gate, PR CI (I18N-04, I18N-07)
+
 **UI hint**: yes
 
 ### Phase 7: Content Adaptation — Pilot 8 + `/martin`
