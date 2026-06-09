@@ -1,0 +1,71 @@
+---
+interface Props {
+  locale?: 'cs' | 'en';
+  className?: string;
+}
+
+const { locale = 'cs', className = '' } = Astro.props;
+
+const copy = {
+  cs: {
+    heading: 'Martin Michálek.',
+    bio: 'Konzultant rychlosti webu a tvůrce obsahu pro frontendové vývojáře.',
+    linkLabel: 'Více o autorovi',
+  },
+  en: {
+    heading: 'Martin Michálek.',
+    bio: 'Web performance consultant and content creator for frontend developers.',
+    linkLabel: 'About Martin',
+  },
+} as const;
+
+const t = copy[locale];
+---
+
+<aside
+  role="complementary"
+  id="author-profile"
+  aria-labelledby="author-profile-heading"
+  class:list={['author-profile brown-bg rounded p-1 ta-c', className]}
+>
+  <h2 class="h4 mb-05" id="author-profile-heading">{t.heading}</h2>
+  <p class="author-profile__photo mb-05">
+    <a href="/martin" class="avatar avatar--brown">
+      <img
+        src="/assets/img/content/lectors/shoulders-martin-michalek.png"
+        alt="Martin Michálek"
+        width="200"
+        height="200"
+        loading="lazy"
+        class="avatar__image"
+      />
+    </a>
+  </p>
+  <p class="f-sm mb-05">{t.bio}</p>
+  <p class="mb-0">
+    <a class="button button--inverted" href="/martin">{t.linkLabel}</a>
+  </p>
+</aside>
+
+<style>
+  .author-profile {
+    height: 100%;
+  }
+
+  .author-profile__photo .avatar {
+    display: inline-block;
+    max-width: 10rem;
+  }
+
+  .author-profile .button--inverted {
+    border-color: currentColor;
+    color: inherit;
+  }
+
+  .author-profile .button--inverted:hover,
+  .author-profile .button--inverted:focus,
+  .author-profile .button--inverted:active {
+    background: rgba(255, 255, 255, 0.15);
+    color: inherit;
+  }
+</style>

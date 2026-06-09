@@ -4,6 +4,8 @@ import BaseLayout from '@vd/shared/layouts/BaseLayout.astro';
 import Header from '@vd/shared/components/Header.astro';
 import Footer from '@vd/shared/components/Footer.astro';
 import ArticleListItem from '../components/ArticleListItem.astro';
+import AuthorProfileBox from '@vd/shared/components/AuthorProfileBox.astro';
+import TopicHubPrimary from '@vd/shared/components/TopicHubPrimary.astro';
 import { getCollection } from 'astro:content';
 import { isPublished } from '../utils/is-published';
 import { Fragment } from 'astro/jsx-runtime';
@@ -96,24 +98,9 @@ function getSlug(entry: any): string {
               </div>
             )}
 
-            <aside role="complementary" id="kurzy-top" aria-labelledby="promoTop-heading" class="col w-33-md">
-              <div class="rounded bg-highlight p-05 f-sm ta-c">
-                <h2 class="h4 ml-05 mt-05 mb-025" id="promoTop-heading">
-                  CSS: moderní layout
-                </h2>
-                <a class="course-icon course-icon--ebook p-r" href="/css-layout/">
-                  <span class="course-icon__image">
-                    <img src="/assets/img/content/handmade/ebooks/vdlayout/vdlayout-model-both__760.webp" alt="Kniha a e-book „CSS: moderní layout"" loading="lazy" width="1540" height="1270">
-                  </span>
-                </a>
-                <p class="ml-05 mt-05 mp-0">
-                  Floaty už šly spát, ale tahle kniha ve vás probudí nadšence do CSS.
-                </p>
-                <p>
-                  <a class="button" href="/css-layout/">Více informací</a>
-                </p>
-              </div>
-            </aside>
+            <div class="col w-33-md">
+              <AuthorProfileBox locale="cs" />
+            </div>
           </div>
         </div>
 
@@ -249,20 +236,10 @@ function getSlug(entry: any): string {
         </div>
       </div>
 
-      <div id="temata" class="section section-tall section-latest bg-highlight">
+      <TopicHubPrimary locale="cs" />
+
+      <div class="section section-tall">
         <div class="content-full ta-c">
-          <h2 class="section-heading heading-anchored">
-            <a href="#temata">Témata článků</a>
-          </h2>
-
-          <p>
-            <a href="/css" class="button m-025">CSS</a>
-            <a href="/rychlost-nacitani" class="button m-025">Rychlost načítání webu</a>
-            <a href="/ai" class="button m-025">AI</a>
-            <a href="/nastroje" class="button m-025">Nástroje</a>
-            <a href="/dovednosti" class="button m-025">Dovednosti</a>
-          </p>
-
           <p class="f-6 ta-c maxw-30em">
             Mimo hlavní témata jsem také psal o:
             <span><a href="/responzivni-design">Responzivní design</a>,&nbsp;</span>
