@@ -1,0 +1,41 @@
+---
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  post: CollectionEntry<'blog'> | CollectionEntry<'guide'>;
+}
+
+const { post } = Astro.props;
+
+function formatDate(date: Date | undefined): string {
+  if (!date) return '';
+  return new Intl.DateTimeFormat('en-GB', {
+    day: 'numeric',
+    month: 'short',
+    year: 'numeric',
+  }).format(date);
+}
+
+function getSlug(entry: CollectionEntry<'blog'> | CollectionEntry<'guide'>): string {
+  return `/${entry.collection}/${entry.slug}`;
+}
+
+const badgeLabel = post.collection === 'guide' ? 'Guide' : 'Blog';
+const badgeClass = post.collection === 'guide' ? 'badge badge--yellow' : 'badge';
+---
+
+<article role="article" class="mb-15">
+  <p class="mb-05">
+    <span class={badgeClass}>{badgeLabel}</span>
+  </p>
+  <h2 class="h4 mb-05">
+    <a href={getSlug(post)}>{post.data.title}</a>
+  </h2>
+  <p>
+    <span class="text-color-lightest">
+      {formatDate(post.data.date)}
+      {post.data.date && ' —'}
+    </span>
+    {post.data.description && ` ${post.data.description}`}
+  </p>
+</article>

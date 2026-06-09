@@ -1,8 +1,21 @@
 ---
+import { Fragment } from 'astro/jsx-runtime';
+import { getCollection } from 'astro:content';
 import BaseLayout from '@vd/shared/layouts/BaseLayout.astro';
 import Header from '@vd/shared/components/Header.astro';
 import Footer from '@vd/shared/components/Footer.astro';
+import ArticleListItem from '../components/ArticleListItem.astro';
 import { siteConfig } from '../site.config';
+import { isPublished } from '../utils/is-published';
+
+const blogPosts = await getCollection('blog', isPublished);
+const guidePosts = await getCollection('guide', isPublished);
+
+const allContent = [...blogPosts, ...guidePosts].sort((a, b) => {
+  const dateA = a.data.date || new Date(0);
+  const dateB = b.data.date || new Date(0);
+  return dateB.getTime() - dateA.getTime();
+});
 ---
 
 <BaseLayout
@@ -11,9 +24,38 @@ import { siteConfig } from '../site.config';
   siteConfig={siteConfig}
   bodyClass="section-home"
 >
+  <Fragment slot="styles">
+    <link rel="stylesheet" href="/assets/css/modules-standalone/min/page-head.min.css" />
+    <link rel="stylesheet" href="/assets/css/modules-standalone/min/list.min.css" />
+    <link rel="stylesheet" href="/assets/css/modules-standalone/min/badge.min.css" />
+  </Fragment>
+
   <Header slot="header" siteConfig={siteConfig} activeSection="home" />
-  <main id="main" class="content">
-    <p>Building…</p>
-  </main>
   <Footer slot="footer" siteConfig={siteConfig} />
+
+  <main role="main" id="main" aria-label="Main content">
+    <div class="page-head page-head--line"></div>
+
+    <div class="content-full pt-3-md">
+      <h1 class="h1 mb-05">Martin Michálek</h1>
+      <p class="f-4 mb-05"><strong>Web &amp; Performance</strong></p>
+      <p class="mb-1">Personal tech blog and web performance consulting.</p>
+      <p class="mb-0">
+        <a class="button" href="/martin">About Martin</a>
+      </p>
+    </div>
+
+    <hr class="hr hr--small hr--spaced" />
+
+    <div class="content">
+      {allContent.length > 0 ? (
+        allContent.map((post) => <ArticleListItem post={post} />)
+      ) : (
+        <>
+          <h2 class="h4">No articles yet</h2>
+          <p>New posts will appear here. Visit About Martin to learn more about this site.</p>
+        </>
+      )}
+    </div>
+  </main>
 </BaseLayout>

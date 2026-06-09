@@ -1,0 +1,29 @@
+---
+import { Fragment } from 'astro/jsx-runtime';
+import BaseLayout from '@vd/shared/layouts/BaseLayout.astro';
+import Header from '@vd/shared/components/Header.astro';
+import Footer from '@vd/shared/components/Footer.astro';
+import { siteConfig } from '../site.config';
+---
+
+<BaseLayout
+  title="Cookie Policy"
+  description="Cookie policy for michalek.dev."
+  siteConfig={siteConfig}
+  ogUrl="https://michalek.dev/cookies"
+>
+  <Fragment slot="styles">
+    <link rel="stylesheet" href="/assets/css/modules-standalone/min/page-head.min.css" />
+  </Fragment>
+
+  <Header slot="header" siteConfig={siteConfig} />
+  <Footer slot="footer" siteConfig={siteConfig} />
+
+  <main role="main" id="main" aria-label="Main content">
+    <div class="page-head page-head--line"></div>
+    <div class="content py-3-md">
+      <h1>Cookie Policy</h1>
+      <p>Full cookie policy is coming soon.</p>
+    </div>
+  </main>
+</BaseLayout>

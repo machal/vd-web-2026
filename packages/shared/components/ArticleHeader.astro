@@ -3,13 +3,14 @@ interface Props {
   title: string;
   author?: string;
   date?: Date;
+  locale?: 'cs' | 'en';
 }
 
-const { title, author = 'Martin Michálek', date } = Astro.props;
+const { title, author = 'Martin Michálek', date, locale = 'cs' } = Astro.props;
 
 function formatDate(date: Date | undefined): string {
   if (!date) return '';
-  return new Intl.DateTimeFormat('cs-CZ', {
+  return new Intl.DateTimeFormat(locale === 'en' ? 'en-GB' : 'cs-CZ', {
     day: 'numeric',
     month: 'numeric',
     year: 'numeric',

@@ -1,0 +1,57 @@
+---
+import { Fragment } from 'astro/jsx-runtime';
+import { getCollection } from 'astro:content';
+import BaseLayout from '@vd/shared/layouts/BaseLayout.astro';
+import Header from '@vd/shared/components/Header.astro';
+import Footer from '@vd/shared/components/Footer.astro';
+import ArticleHeader from '@vd/shared/components/ArticleHeader.astro';
+import ArticleFooter from '@vd/shared/components/ArticleFooter.astro';
+import { siteConfig } from '../../site.config';
+import { isPublished } from '../../utils/is-published';
+
+export async function getStaticPaths() {
+  const blogPosts = await getCollection('blog', isPublished);
+  return blogPosts.map((post) => ({
+    params: { slug: post.slug },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await post.render();
+---
+
+<BaseLayout
+  title={post.data.title}
+  description={post.data.description}
+  siteConfig={siteConfig}
+  ogType="article"
+  ogUrl={`https://michalek.dev/blog/${post.slug}`}
+  bodyClass="section-blog"
+>
+  <Header slot="header" siteConfig={siteConfig} activeSection="home" />
+  <Footer slot="footer" siteConfig={siteConfig} />
+
+  <Fragment slot="styles">
+    <link rel="stylesheet" href="/assets/css/modules-standalone/min/article.min.css" />
+    <link rel="stylesheet" href="/assets/css/modules-standalone/min/article-foot.min.css" />
+  </Fragment>
+
+  <main role="main" id="main" aria-label="Main content">
+    <!-- language-switch: Phase 6 -->
+    <ArticleHeader
+      title={post.data.title}
+      author={post.data.author}
+      date={post.data.date}
+      locale="en"
+    />
+
+    <div class="content">
+      <div class="article">
+        <Content />
+      </div>
+    </div>
+
+    <ArticleFooter post={post} categories={[]} relatedArticles={[]} />
+  </main>
+</BaseLayout>
