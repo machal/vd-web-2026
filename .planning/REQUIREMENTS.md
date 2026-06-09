@@ -11,7 +11,7 @@
 - [x] **MONO-02**: Turborepo orchestrates builds with per-app filter commands for CI and Vercel
 - [x] **MONO-03**: Shared markdown pipeline, Vite plugins, layouts, and SEO helpers live in packages — no duplicated plugin code
 - [x] **MONO-04**: Each app declares its own `astro` and `@astrojs/*` dependencies (no root-only hoisting)
-- [ ] **MONO-05**: PR CI builds both apps on every change to protected branch
+- [x] **MONO-05**: PR CI builds both apps on every change to protected branch
 
 ### Czech Site (vzhurudolu.cz)
 
@@ -23,14 +23,14 @@
 
 ### English Site (michalek.dev)
 
-- [ ] **EN-01**: English site builds from `apps/michalek-dev` as independent Astro 4 SSG app
-- [ ] **EN-02**: Site title and branding: **Martin Michálek · Web & Performance** (personal brand, not Vzhůru dolů)
-- [ ] **EN-03**: Homepage presents personal tech blog positioning with CTA to `/martin` and unified article stream (blog + guide chronologically, VD-style)
-- [ ] **EN-04**: Article URLs: `/blog/{slug}` for blog posts, `/guide/{slug}` for adapted příručka — no separate `/blog/` or `/guide/` listing pages
-- [ ] **EN-05**: `/martin` page includes bio, positioning, services, client logos, LinkedIn CTA, and prominent **pagespeed.one** promotion
-- [ ] **EN-06**: English site avoids legacy bloat (no jQuery, no comment widgets); third-party scripts (e.g. GA) added pragmatically with deferred/async loading
-- [ ] **EN-07**: Primary navigation: **Articles** (→ `/`) and **Martin** (→ `/martin`); legal links in footer only
-- [ ] **EN-08**: Custom 404 page with helpful navigation back to homepage
+- [x] **EN-01**: English site builds from `apps/michalek-dev` as independent Astro 4 SSG app
+- [x] **EN-02**: Site title and branding: **Martin Michálek · Web & Performance** (personal brand, not Vzhůru dolů)
+- [x] **EN-03**: Homepage presents personal tech blog positioning with CTA to `/martin` and unified article stream (blog + guide chronologically, VD-style)
+- [x] **EN-04**: Article URLs: `/blog/{slug}` for blog posts, `/guide/{slug}` for adapted příručka — no separate `/blog/` or `/guide/` listing pages
+- [x] **EN-05**: `/martin` page includes bio, positioning, services, client logos, LinkedIn CTA, and prominent **pagespeed.one** promotion
+- [x] **EN-06**: English site avoids legacy bloat (no jQuery, no comment widgets); third-party scripts (e.g. GA) added pragmatically with deferred/async loading
+- [x] **EN-07**: Primary navigation: **Articles** (→ `/`) and **Martin** (→ `/martin`); legal links in footer only
+- [x] **EN-08**: Custom 404 page with helpful navigation back to homepage
 - [ ] **EN-09**: Tag taxonomy with tag archive pages (`/{tag}/`) filtering the unified article stream — same pattern as VD `categories.ts`
 - [ ] **EN-10**: Tags visible on article pages and usable for discovery (matching VD tag UX)
 
@@ -79,7 +79,7 @@
 
 ### Deploy & Operations
 
-- [ ] **DEPLOY-01**: Two Vercel projects from one Git repo (Root Directory per app, monorepo settings enabled)
+- [ ] **DEPLOY-01**: Two Vercel projects from one Git repo (Root Directory per app, monorepo settings enabled) — EN config ready; dashboard connect human_needed
 - [ ] **DEPLOY-02**: Both domains (`vzhurudolu.cz`, `michalek.dev`) cut over to Vercel with staged DNS (TTL reduced before switch)
 - [ ] **DEPLOY-03**: FTP deploy workflow deprecated/removed after successful Vercel soak period
 - [ ] **DEPLOY-04**: Rollback path documented (revert DNS or redeploy previous Vercel build)
@@ -118,20 +118,20 @@ Deferred to future release.
 | MONO-02 | Phase 1 | Complete |
 | MONO-03 | Phase 2 | Complete |
 | MONO-04 | Phase 1 | Complete |
-| MONO-05 | Phase 5 | Pending |
+| MONO-05 | Phase 5 | Complete |
 | VD-01 | Phase 3 | Complete |
 | VD-02 | Phase 1 | Complete |
 | VD-03 | Phase 4 | Pending |
 | VD-04 | Phase 6 | Pending |
 | VD-05 | Phase 3 | Complete |
-| EN-01 | Phase 5 | Pending |
-| EN-02 | Phase 5 | Pending |
-| EN-03 | Phase 5 | Pending |
-| EN-04 | Phase 5 | Pending |
-| EN-05 | Phase 7 | Pending |
-| EN-06 | Phase 5 | Pending |
-| EN-07 | Phase 5 | Pending |
-| EN-08 | Phase 5 | Pending |
+| EN-01 | Phase 5 | Complete |
+| EN-02 | Phase 5 | Complete |
+| EN-03 | Phase 5 | Complete |
+| EN-04 | Phase 5 | Complete |
+| EN-05 | Phase 5 | Complete |
+| EN-06 | Phase 5 | Complete |
+| EN-07 | Phase 5 | Complete |
+| EN-08 | Phase 5 | Complete |
 | EN-09 | Phase 8 | Pending |
 | EN-10 | Phase 8 | Pending |
 | CONT-01 | Phase 7 | Pending |
@@ -162,7 +162,7 @@ Deferred to future release.
 | PERF-02 | Phase 8 | Pending |
 | PERF-03 | Phase 8 | Pending |
 | PERF-04 | Phase 8 | Pending |
-| DEPLOY-01 | Phase 5 | Pending |
+| DEPLOY-01 | Phase 5 | Partial (EN dashboard human_needed) |
 | DEPLOY-02 | Phase 9 | Pending |
 | DEPLOY-03 | Phase 9 | Pending |
 | DEPLOY-04 | Phase 9 | Pending |
