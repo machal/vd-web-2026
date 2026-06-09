@@ -1,0 +1,28 @@
+---
+interface Props {
+  currentLocale: 'cs' | 'en';
+  alternateUrl?: string;
+  className?: string;
+}
+
+const { currentLocale, alternateUrl, className = '' } = Astro.props;
+
+const labels = {
+  cs: { current: 'Česky', alternate: 'English' },
+  en: { current: 'English', alternate: 'Česky' },
+} as const;
+
+const localeLabels = labels[currentLocale];
+---
+
+{alternateUrl && (
+  <nav class={`language-switch ${className}`.trim()} aria-label="Language">
+    <p class="mb-0 page-subhead__meta">
+      <span class="language-switch__current">{localeLabels.current}</span>
+      {' · '}
+      <a href={alternateUrl} rel="alternate" hreflang={currentLocale === 'cs' ? 'en' : 'cs'}>
+        {localeLabels.alternate}
+      </a>
+    </p>
+  </nav>
+)}
