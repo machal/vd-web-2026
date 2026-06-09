@@ -5,3 +5,22 @@ export interface CategoryConfig {
   hasTOC: boolean;
   tags: string[];
 }
+
+export interface NavItem {
+  label: string;
+  href: string;
+  /** Path prefix or exact path; use '/' for homepage exact match only */
+  activeMatch: string | string[];
+  colorClass?: string;
+}
+
+export interface SiteConfig {
+  id: 'vzhurudolu' | 'michalek-dev';
+  siteName: string;
+  titleSuffix: string;
+  locale: 'cs' | 'en';
+  origin: string;
+  navItems: NavItem[];
+  showLogoSymbol: boolean;
+  footerMode: 'full' | 'minimal';
+}

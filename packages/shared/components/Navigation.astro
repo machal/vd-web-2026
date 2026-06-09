@@ -1,16 +1,16 @@
 ---
-// Univerzální navigační komponenta s automatickou detekcí aktivní sekce
+import type { NavItem, SiteConfig } from '@vd/shared/types';
+
 interface Props {
   activeSection?: 'home' | 'podcast' | 'ebook' | 'video' | null;
+  siteConfig?: SiteConfig;
 }
 
-const { activeSection: explicitActiveSection } = Astro.props;
+const { activeSection: explicitActiveSection, siteConfig } = Astro.props;
 
-// Automatická detekce aktivní sekce podle URL
 function detectActiveSection(url: URL): 'home' | 'podcast' | 'ebook' | 'video' | null {
   const pathname = url.pathname;
-  
-  // Info stránky bez aktivní sekce v navigaci
+
   const infoPages = [
     '/martin',
     '/o-webu',
@@ -20,22 +20,19 @@ function detectActiveSection(url: URL): 'home' | 'podcast' | 'ebook' | 'video' |
     '/email',
     '/404',
   ];
-  
+
   if (infoPages.includes(pathname)) {
     return null;
   }
-  
-  // Podcast sekce
+
   if (pathname.startsWith('/podcast')) {
     return 'podcast';
   }
-  
-  // Video sekce
+
   if (pathname.startsWith('/video')) {
     return 'video';
   }
-  
-  // E-booky sekce
+
   if (
     pathname.startsWith('/ebooky') ||
     pathname.startsWith('/css-layout') ||
@@ -45,21 +42,28 @@ function detectActiveSection(url: URL): 'home' | 'podcast' | 'ebook' | 'video' |
   ) {
     return 'ebook';
   }
-  
-  // Home sekce (články, blog, příručka, homepage)
-  // Toto je default, takže pokrývá:
-  // - / (homepage)
-  // - /blog/*
-  // - /prirucka/*
-  // - a všechny ostatní stránky
+
   return 'home';
 }
 
-// Použij explicitní hodnotu, pokud je poskytnuta, jinak automatická detekce
+function matchesActiveMatch(pathname: string, activeMatch: string | string[]): boolean {
+  const patterns = Array.isArray(activeMatch) ? activeMatch : [activeMatch];
+
+  return patterns.some((pattern) => {
+    if (pattern === '/') {
+      return pathname === '/';
+    }
+    return pathname === pattern || pathname.startsWith(`${pattern}/`);
+  });
+}
+
+function isNavItemActive(pathname: string, item: NavItem): boolean {
+  return matchesActiveMatch(pathname, item.activeMatch);
+}
+
 const activeSection = explicitActiveSection !== undefined ? explicitActiveSection : detectActiveSection(Astro.url);
 
-// Definice navigačních položek
-const navItems = [
+const csNavItems = [
   {
     id: 'home' as const,
     label: 'Články',
@@ -85,25 +89,44 @@ const navItems = [
     colorClass: 'color-video',
   },
 ];
+
+const useConfigNav = siteConfig && siteConfig.navItems.length > 0;
+const pathname = Astro.url.pathname;
+const navHeading = siteConfig?.locale === 'en' ? 'Main navigation' : 'Hlavní navigace';
 ---
 
 <nav class="nav nav--site p-r" aria-labelledby="nav-heading" role="navigation">
-  <h2 class="nav__heading sr-only" id="nav-heading">Hlavní navigace</h2>
+  <h2 class="nav__heading sr-only" id="nav-heading">{navHeading}</h2>
   <ul class="nav__list">
-    {navItems.map((item) => {
-      const isActive = activeSection === item.id;
-      return (
-        <li class={`nav__item ${isActive ? 'nav__item--active' : ''} f-6`}>
-          {/* Aktivní položka je stále klikatelná a vede na homepage sekce */}
-          <a 
-            class={`nav__item-in ${item.colorClass}`}
-            href={item.href}
-            aria-current={isActive ? 'page' : undefined}
-          >
-            {item.label}
-          </a>
-        </li>
-      );
-    })}
+    {useConfigNav
+      ? siteConfig!.navItems.map((item) => {
+          const isActive = isNavItemActive(pathname, item);
+          const colorClass = item.colorClass ?? 'color-home';
+          return (
+            <li class={`nav__item ${isActive ? 'nav__item--active' : ''} f-6`}>
+              <a
+                class={`nav__item-in ${colorClass}`}
+                href={item.href}
+                aria-current={isActive ? 'page' : undefined}
+              >
+                {item.label}
+              </a>
+            </li>
+          );
+        })
+      : csNavItems.map((item) => {
+          const isActive = activeSection === item.id;
+          return (
+            <li class={`nav__item ${isActive ? 'nav__item--active' : ''} f-6`}>
+              <a
+                class={`nav__item-in ${item.colorClass}`}
+                href={item.href}
+                aria-current={isActive ? 'page' : undefined}
+              >
+                {item.label}
+              </a>
+            </li>
+          );
+        })}
   </ul>
 </nav>
