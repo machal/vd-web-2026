@@ -9,6 +9,7 @@ import ArticleFooter from '@vd/shared/components/ArticleFooter.astro';
 import LanguageSwitch from '@vd/shared/components/LanguageSwitch.astro';
 import { resolveAlternate, resolveHreflangCluster } from '@vd/shared/content-pairing';
 import { buildAlternateLinks } from '@vd/shared/seo/hreflang';
+import { getTagsForArticle } from '../../data/tags';
 import { siteConfig } from '../../site.config';
 import { isPublished } from '../../utils/is-published';
 
@@ -27,6 +28,7 @@ const canonicalUrl = `https://michalek.dev/blog/${post.slug}`;
 const alternate = resolveAlternate('michalek-dev', 'blog', post.slug);
 const cluster = resolveHreflangCluster('michalek-dev', 'blog', post.slug);
 const alternateLinks = cluster ? buildAlternateLinks(cluster) : undefined;
+const categories = getTagsForArticle(post.data.tags || []);
 ---
 
 <BaseLayout
@@ -65,6 +67,6 @@ const alternateLinks = cluster ? buildAlternateLinks(cluster) : undefined;
       </div>
     </div>
 
-    <ArticleFooter post={post} categories={[]} relatedArticles={[]} siteConfig={siteConfig} />
+    <ArticleFooter post={post} categories={categories} relatedArticles={[]} siteConfig={siteConfig} />
   </main>
 </BaseLayout>

@@ -1,0 +1,81 @@
+---
+import { Fragment } from 'astro/jsx-runtime';
+import { getCollection } from 'astro:content';
+import BaseLayout from '@vd/shared/layouts/BaseLayout.astro';
+import Header from '@vd/shared/components/Header.astro';
+import Footer from '@vd/shared/components/Footer.astro';
+import ArticleListItem from '../components/ArticleListItem.astro';
+import { getTagBySlug, tags } from '../data/tags';
+import { siteConfig } from '../site.config';
+import { isPublished } from '../utils/is-published';
+
+export async function getStaticPaths() {
+  return tags.map((tag) => ({
+    params: { tag: tag.slug },
+  }));
+}
+
+const { tag } = Astro.params;
+
+if (!tag) {
+  return Astro.redirect('/404');
+}
+
+const tagConfig = getTagBySlug(tag);
+
+if (!tagConfig) {
+  return Astro.redirect('/404');
+}
+
+const blogPosts = await getCollection('blog', isPublished);
+const guidePosts = await getCollection('guide', isPublished);
+
+const allContent = [...blogPosts, ...guidePosts]
+  .filter((post) => {
+    const postTags = post.data.tags || [];
+    return tagConfig.tags.some((tagSlug) => postTags.includes(tagSlug));
+  })
+  .sort((a, b) => {
+    const dateA = a.data.date || new Date(0);
+    const dateB = b.data.date || new Date(0);
+    return dateB.getTime() - dateA.getTime();
+  });
+
+const canonicalUrl = `https://michalek.dev/${tag}`;
+---
+
+<BaseLayout
+  title={`${tagConfig.title} articles`}
+  description={tagConfig.description}
+  siteConfig={siteConfig}
+  ogUrl={canonicalUrl}
+  canonicalUrl={canonicalUrl}
+  bodyClass="section-home"
+>
+  <Fragment slot="styles">
+    <link rel="stylesheet" href="/assets/css/modules-standalone/min/page-head.min.css" />
+    <link rel="stylesheet" href="/assets/css/modules-standalone/min/list.min.css" />
+  </Fragment>
+
+  <Header slot="header" siteConfig={siteConfig} activeSection="home" />
+  <Footer slot="footer" siteConfig={siteConfig} />
+
+  <main role="main" id="main" aria-label="Main content">
+    <div class="page-head page-head--lower">
+      <h1>{tagConfig.title}</h1>
+      <div class="mb-0 maxw-30em">
+        <p>{tagConfig.description}</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="content">
+        {allContent.length > 0 ? (
+          allContent.map((post) => <ArticleListItem post={post} />)
+        ) : (
+          <p>No articles in this tag yet.</p>
+        )}
+      </div>
+    </div>
+  </main>
+</BaseLayout>
