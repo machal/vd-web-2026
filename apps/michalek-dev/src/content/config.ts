@@ -44,7 +44,7 @@ const guide = defineCollection({
     const title = data.title || (data.heading?.trim() ? data.heading : data.id) || '';
     const published = typeof data.published === 'boolean'
       ? data.published
-      : data.published === 'Publikováno' || data.published === true;
+      : data.published === 'Publikováno' || data.published === 'true' || data.published === true;
     return {
       ...data,
       title,
