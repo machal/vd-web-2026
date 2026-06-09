@@ -11,6 +11,7 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/rss": "^4.0.15",
     "@vd/shared": "*",
     "markdown-it": "^14.1.0",
     "remark-extract-frontmatter": "^3.2.0",

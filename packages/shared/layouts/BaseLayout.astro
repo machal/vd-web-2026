@@ -117,8 +117,10 @@ const finalOgDescription = ogDescription || description;
     <meta name="apple-mobile-web-app-title" content={config.siteName} />
     <meta name="theme-color" content="#3d6a0d" />
 
-    {isCs && (
+    {isCs ? (
       <link rel="alternate" type="application/rss+xml" title="Vzhůru dolů" href="/rss" />
+    ) : (
+      <link rel="alternate" type="application/rss+xml" title="Martin Michálek · Web &amp; Performance" href="/rss" />
     )}
 
     <!-- Scripts and styles -->
