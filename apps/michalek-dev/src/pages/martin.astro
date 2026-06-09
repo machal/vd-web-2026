@@ -1,0 +1,174 @@
+---
+import { Fragment } from 'astro/jsx-runtime';
+import BaseLayout from '@vd/shared/layouts/BaseLayout.astro';
+import Header from '@vd/shared/components/Header.astro';
+import Footer from '@vd/shared/components/Footer.astro';
+import { siteConfig } from '../site.config';
+
+const clientLogos = [
+  { src: '/assets/img/content/dest/logos/csob.svg', alt: 'ČSOB' },
+  { src: '/assets/img/content/dest/logos/heureka.svg', alt: 'Heureka' },
+  { src: '/assets/img/content/dest/logos/avast.svg', alt: 'Avast' },
+  { src: '/assets/img/content/dest/logos/ataccama.svg', alt: 'Ataccama' },
+];
+---
+
+<BaseLayout
+  title="About Martin"
+  description="Web performance consultant, author, and speaker. Founder of PageSpeed.ONE."
+  siteConfig={siteConfig}
+  ogType="profile"
+  ogUrl="https://michalek.dev/martin"
+  bodyClass="section-autor"
+>
+  <Fragment slot="styles">
+    <link rel="stylesheet" href="/assets/css/modules-standalone/min/pages/lector.min.css" />
+    <link rel="stylesheet" href="/assets/css/modules-standalone/min/accordion.min.css" />
+    <link rel="stylesheet" href="/assets/css/modules-standalone/min/emblem.min.css" />
+  </Fragment>
+
+  <Header slot="header" siteConfig={siteConfig} />
+  <Footer slot="footer" siteConfig={siteConfig} />
+
+  <div class="page-head lector__head">
+    <h1 class="lector__head-name">
+      Martin Michálek
+    </h1>
+    <p class="lector__head-image">
+      <picture>
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            /assets/img/content/lectors/martin-michalek_200.png 200w,
+            /assets/img/content/lectors/martin-michalek_500.png 500w,
+            /assets/img/content/lectors/martin-michalek_820.png 820w
+          "
+          sizes="calc((80vw - 4rem) * .5)"
+        />
+        <img
+          src="/assets/img/content/lectors/shoulders-martin-michalek.png"
+          alt="Martin Michálek"
+          height="200"
+        />
+      </picture>
+    </p>
+    <div class="lector__head-perex">
+      <p>
+        Hi! I am a <a href="#performance">web performance consultant</a>
+        and <a href="#publications">content creator</a> for frontend developers.
+        I have been writing about the web since 2002.
+      </p>
+
+      <p class="lector__head-links">
+        <a href="https://www.linkedin.com/in/martinmichalek">LinkedIn</a>
+      </p>
+    </div>
+  </div>
+
+  <main role="main" id="main" aria-label="Main content">
+    <div class="content">
+      <div class="article">
+        <h2 class="ta-c mb-2" id="performance">
+          <a href="#performance">Web Performance</a>
+        </h2>
+
+        <p class="f-6 ta-c maxw-30em">
+          Fast websites meet user and business goals more reliably.
+          After more than twenty years in frontend design and development,
+          I focus on web performance consulting.
+          Related services are offered with colleagues under
+          <a href="https://pagespeed.one/"><strong>PageSpeed.ONE</strong></a>.
+        </p>
+
+        <div class="raised accordion px-0 py-05 mt-15 mb-15">
+          <section class="accordion__item">
+            <input type="checkbox" id="acc1" class="accordion__item-toggle" />
+            <label class="accordion__item-title" for="acc1">
+              <h3>Training for developers</h3>
+            </label>
+            <div class="accordion__item-content">
+              <p>
+                We walk developers through our optimisation workflow — tools and practices
+                that help find root causes and ship effective fixes.
+                See <a href="https://pagespeed.one/workshops">workshops on PageSpeed.ONE</a>.
+              </p>
+            </div>
+          </section>
+
+          <section class="accordion__item">
+            <input type="checkbox" id="acc2" class="accordion__item-toggle" />
+            <label class="accordion__item-title" for="acc2">
+              <h3>Performance audit</h3>
+            </label>
+            <div class="accordion__item-content">
+              <p>
+                We analyse your site, benchmark competitors, set up long-term monitoring,
+                and deliver strategic recommendations plus actionable fixes for developers.
+                See the <a href="https://pagespeed.one/audit">PageSpeed.ONE audit</a>.
+              </p>
+            </div>
+          </section>
+
+          <section class="accordion__item">
+            <input type="checkbox" id="acc3" class="accordion__item-toggle" />
+            <label class="accordion__item-title" for="acc3">
+              <h3>Consulting and more</h3>
+            </label>
+            <div class="accordion__item-content">
+              <p>
+                Need help with Core Web Vitals, a specific bottleneck, or ongoing performance work?
+                We support teams of all sizes.
+                Browse <a href="https://pagespeed.one/services">services on PageSpeed.ONE</a>.
+              </p>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-full bg-dark py-3">
+      <div class="article ta-c py-3" id="clients">
+        <h2 class="ta-c mb-2">
+          <a href="#clients">Selected clients</a>
+        </h2>
+        <p class="f-6 maxw-30em mb-2">
+          Performance work for product teams, publishers, and enterprises — often via
+          <a href="https://pagespeed.one/">PageSpeed.ONE</a>.
+        </p>
+        <div class="row jc-c ai-c f-6">
+          {clientLogos.map((logo) => (
+            <div class="col w-25-sm mb-1">
+              <img src={logo.src} alt={logo.alt} width="160" height="60" loading="lazy" />
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="article" id="publications">
+        <h2 class="ta-c mb-2">
+          <a href="#publications">Publications &amp; writing</a>
+        </h2>
+        <p class="f-6 ta-c maxw-40em">
+          I publish articles on frontend craft and web performance.
+          The Czech community site <em>Vzhůru dolů</em> has been running since 2012;
+          this English site collects selected writing and consulting updates.
+          Browse the <a href="/">article archive</a> for recent posts.
+        </p>
+      </div>
+    </div>
+
+    <div class="content">
+      <h2 class="ta-c" id="contact">
+        <a href="#contact">Contact</a>
+      </h2>
+
+      <p class="ta-c hovered-anchors article mb-2">
+        <a href="mailto:martin@michalek.dev">martin@michalek.dev</a>
+        <br />
+        <a href="https://www.linkedin.com/in/martinmichalek">LinkedIn</a>
+      </p>
+    </div>
+  </main>
+</BaseLayout>
