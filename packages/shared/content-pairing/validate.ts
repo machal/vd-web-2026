@@ -27,11 +27,21 @@ export function validateContentPairs(
   const { checkContentFiles = false, frontmatterIndex } = options;
 
   const pairIds = new Set<string>();
+  const refKeys = new Set<string>();
   for (const pair of manifest) {
     if (pairIds.has(pair.pairId)) {
       errors.push(`Duplicate pairId in manifest: ${pair.pairId}`);
     }
     pairIds.add(pair.pairId);
+
+    for (const ref of [pair.cs, pair.en]) {
+      if (!ref) continue;
+      const key = refKey(ref);
+      if (refKeys.has(key)) {
+        errors.push(`Duplicate content ref in manifest: ${key}`);
+      }
+      refKeys.add(key);
+    }
 
     if (!pair.cs || !pair.en) {
       errors.push(`Orphan pair missing cs or en side: ${pair.pairId}`);
@@ -83,17 +93,6 @@ export function validateContentPairs(
         if (!matchesCs && !matchesEn) {
           errors.push(
             `Front matter pairId "${pairId}" mismatch for ${refKey(entry)} — expected manifest cs or en ref`,
-          );
-        }
-      }
-    }
-
-    for (const pair of manifest) {
-      const entries = frontmatterIndex.get(pair.pairId) ?? [];
-      for (const entry of entries) {
-        if (!pairRefMatches(entry, pair.cs) && !pairRefMatches(entry, pair.en)) {
-          errors.push(
-            `Front matter pairId "${pair.pairId}" mismatch for ${refKey(entry)}`,
           );
         }
       }

@@ -96,8 +96,10 @@ const finalOgDescription = ogDescription || description;
         <meta name="twitter:site" content="@vzhurudolu" />
         <meta name="twitter:dnt" content="on" />
 
-        <!-- English version -->
-        <link rel="alternate" hreflang="en-us" href="https://www.cssmine.com" />
+        {!alternateLinks && (
+          <!-- English version (legacy site-wide; suppressed when paired hreflang cluster is present) -->
+          <link rel="alternate" hreflang="en-us" href="https://www.cssmine.com" />
+        )}
       </>
     )}
 

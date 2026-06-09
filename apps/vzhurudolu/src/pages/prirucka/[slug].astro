@@ -208,9 +208,11 @@ const alternateLinks = cluster ? buildAlternateLinks(cluster) : undefined;
       title={displayTitle || enrichedData.heading || item.data.title}
       author={item.data.author || 'Martin Michálek'}
       date={item.data.date}
-    >
-      <LanguageSwitch slot="languageSwitch" currentLocale="cs" alternateUrl={alternate?.href} />
-    </ArticleHeader>
+    />
+
+    {alternate && (
+      <LanguageSwitch currentLocale="cs" alternateUrl={alternate.href} />
+    )}
 
     <div class="content">
       <div class="article">

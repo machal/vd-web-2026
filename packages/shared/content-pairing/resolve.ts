@@ -46,9 +46,13 @@ export function resolveAlternate(
   const pair = findPair(currentSite, collection, key);
   if (!pair) return undefined;
 
-  const target = currentSite === 'vzhurudolu' ? pair.en : pair.cs;
+  const onCsSide =
+    pair.cs.site === currentSite &&
+    pair.cs.collection === collection &&
+    pair.cs.key === key;
+  const target = onCsSide ? pair.en : pair.cs;
   return {
-    locale: currentSite === 'vzhurudolu' ? 'en' : 'cs',
+    locale: onCsSide ? 'en' : 'cs',
     href: resolveContentUrl(target),
     pairId: pair.pairId,
   };

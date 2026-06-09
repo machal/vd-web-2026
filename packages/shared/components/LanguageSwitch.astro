@@ -5,7 +5,7 @@ interface Props {
   className?: string;
 }
 
-const { currentLocale, alternateUrl, className = '' } = Astro.props;
+const { currentLocale, alternateUrl, className = 'ta-c mb-1' } = Astro.props;
 
 const labels = {
   cs: { current: 'Česky', alternate: 'English' },
@@ -13,14 +13,21 @@ const labels = {
 } as const;
 
 const localeLabels = labels[currentLocale];
+const alternateLocale = currentLocale === 'cs' ? 'en' : 'cs';
 ---
 
 {alternateUrl && (
   <nav class={`language-switch ${className}`.trim()} aria-label="Language">
-    <p class="mb-0 page-subhead__meta">
-      <span class="language-switch__current">{localeLabels.current}</span>
-      {' · '}
-      <a href={alternateUrl} rel="alternate" hreflang={currentLocale === 'cs' ? 'en' : 'cs'}>
+    <p class="language-switch__inner mb-0 f-6 text-color-lightest">
+      <span class="language-switch__current" lang={currentLocale}>{localeLabels.current}</span>
+      <span class="language-switch__sep" aria-hidden="true"> · </span>
+      <a
+        class="language-switch__link"
+        href={alternateUrl}
+        hreflang={alternateLocale}
+        lang={alternateLocale}
+        rel="alternate"
+      >
         {localeLabels.alternate}
       </a>
     </p>

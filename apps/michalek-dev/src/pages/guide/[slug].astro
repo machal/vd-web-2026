@@ -52,9 +52,11 @@ const alternateLinks = cluster ? buildAlternateLinks(cluster) : undefined;
       title={post.data.title}
       date={post.data.date}
       locale="en"
-    >
-      <LanguageSwitch slot="languageSwitch" currentLocale="en" alternateUrl={alternate?.href} />
-    </ArticleHeader>
+    />
+
+    {alternate && (
+      <LanguageSwitch currentLocale="en" alternateUrl={alternate.href} />
+    )}
 
     <div class="content">
       <div class="article">
