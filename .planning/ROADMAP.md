@@ -10,7 +10,7 @@ Brownfield Astro monorepo migration and English personal brand launch. Czech sit
 - [x] **Phase 2: Shared Packages Extraction** - Parameterized markdown pipeline, Vite plugins, layouts, SEO helpers in packages *(execution complete — ready for verification)* (completed 2026-06-07)
 - [x] **Phase 3: Czech Site Parity Verification** - Output parity vs production, public asset audit, link integrity (completed 2026-06-07)
 - [x] **Phase 4: Vercel Migration — Czech Site** - Czech hosting cutover with `.htaccess` → `vercel.json` redirect port
-- [ ] **Phase 5: English App Scaffold** - michalek.dev Astro app, homepage, nav, routing, dual Vercel project config
+- [x] **Phase 5: English App Scaffold** - michalek.dev Astro app, homepage, nav, routing, dual Vercel project config (EN Vercel dashboard: human_needed)
 - [ ] **Phase 6: Content Pairing & i18n SEO** - CONTENT_PAIRS manifest, language switch, hreflang, Czech mirror links
 - [ ] **Phase 7: Content Adaptation — Pilot 8 + `/martin`** - 8 adapted articles, native EN `/martin`, homepage "start here"
 - [ ] **Phase 8: Launch Polish — Legal, Feeds, Tags, Performance** - SEO metadata, RSS/sitemap, tags, legal, CWV review, GA
@@ -161,20 +161,20 @@ Plans:
 Plans:
 **Wave 1**
 
-- [ ] 05-01-PLAN.md — Shared siteConfig parameterization for EN branding (EN-02, EN-07)
+- [x] 05-01-PLAN.md — Shared siteConfig parameterization for EN branding (EN-02, EN-07)
 
 **Wave 2** *(blocked on Wave 1 completion)*
 
-- [ ] 05-02-PLAN.md — EN Astro app scaffold, collections, stub content (EN-01, EN-06)
+- [x] 05-02-PLAN.md — EN Astro app scaffold, collections, stub content (EN-01, EN-06)
 
 **Wave 3** *(blocked on Wave 2 completion)*
 
-- [ ] 05-03-PLAN.md — Homepage, article routes, 404, legal stubs (EN-03, EN-04, EN-06, EN-07, EN-08)
-- [ ] 05-04-PLAN.md — Full `/martin` page EN-05 pulled forward (EN-05)
+- [x] 05-03-PLAN.md — Homepage, article routes, 404, legal stubs (EN-03, EN-04, EN-06, EN-07, EN-08)
+- [x] 05-04-PLAN.md — Full `/martin` page EN-05 pulled forward (EN-05)
 
 **Wave 4** *(blocked on Wave 3 completion)*
 
-- [ ] 05-05-PLAN.md — Dual-app CI, EN vercel.json, verify gate, Vercel dashboard checkpoint (MONO-05, DEPLOY-01)
+- [x] 05-05-PLAN.md — Dual-app CI, EN vercel.json, verify gate, Vercel dashboard checkpoint (MONO-05, DEPLOY-01) — dashboard: human_needed
 
 **Cross-cutting constraints:**
 

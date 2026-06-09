@@ -3,15 +3,15 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: executing
-stopped_at: Phase 4 complete
-last_updated: "2026-06-09T04:25:40.736Z"
-last_activity: 2026-06-09 -- Phase 4 passed (Vercel build + browser UAT)
+stopped_at: Completed 05-05-PLAN.md (EN Vercel dashboard human_needed)
+last_updated: "2026-06-09T06:30:00.000Z"
+last_activity: 2026-06-09 -- Phase 5 plans 05-01..05-05 executed; verify gate PASS; Vercel EN connect pending
 progress:
   total_phases: 9
   completed_phases: 4
-  total_plans: 18
-  completed_plans: 18
-  percent: 50
+  total_plans: 23
+  completed_plans: 23
+  percent: 56
 ---
 
 # Project State
@@ -26,11 +26,11 @@ See: .planning/PROJECT.md (updated 2026-06-06)
 ## Current Position
 
 Phase: 05 (english-app-scaffold)
-Plan: 0 of TBD
-Status: Ready to execute
-Last activity: 2026-06-09 -- Phase 4 passed (Vercel build + browser UAT)
+Plan: 5 of 5
+Status: Executed — verification human_needed (EN Vercel dashboard)
+Last activity: 2026-06-09 -- Phase 5 scaffold complete; dual CI + verify PASS
 
-Progress: [█████░░░░░] 50% (4/9 phases complete)
+Progress: [█████░░░░░] 56% (4/9 phases complete; Phase 5 code complete)
 
 ## Performance Metrics
 
@@ -52,10 +52,10 @@ Progress: [█████░░░░░] 50% (4/9 phases complete)
 ### Blockers/Concerns
 
 - Pilot EN slug finalization needed before Phase 6 pairing manifest
-- `apps/michalek-dev` is placeholder only (`package.json` stub) — Phase 5 builds full Astro app
+- EN Vercel dashboard connect pending — see `05-VERIFICATION.md` (status: human_needed)
 
 ## Session Continuity
 
 Last session: 2026-06-09
-Stopped at: Phase 4 complete
+Stopped at: Completed 05-05-PLAN.md
 Resume file: None
