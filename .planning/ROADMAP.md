@@ -233,7 +233,16 @@ Plans:
   3. `/martin` page presents bio, positioning, services, client logos, LinkedIn CTA, and prominent **pagespeed.one** promotion in native English
   4. Homepage includes curated "start here" links to key pilot articles
 
-**Plans**: TBD
+**Plans**: 6 plans
+
+Plans:
+- [ ] 07-01-PLAN.md — EN content schema, AdaptationAttribution, author/attribution wiring (CONT-03, CONT-04, CONT-05)
+- [ ] 07-02-PLAN.md — Adapt guide pilots webp + web-vitals (CONT-01)
+- [ ] 07-03-PLAN.md — Adapt guide pilots ai-saas + email-inbox-zero (CONT-01)
+- [ ] 07-04-PLAN.md — Adapt guide pilot vibe-coding (CONT-01)
+- [ ] 07-05-PLAN.md — Adapt 3 blog pilots (CONT-02)
+- [ ] 07-06-PLAN.md — Homepage start-here, /martin EN-05 verify, phase 7 gate (CONT-06, CONT-07, EN-05)
+
 **UI hint**: yes
 
 ### Phase 8: Launch Polish — Legal, Feeds, Tags, Performance
@@ -281,6 +290,6 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8 →
 | 4. Vercel Migration — Czech Site | 4/4 | Complete   | 2026-06-07 |
 | 5. English App Scaffold | 0/TBD | Not started | - |
 | 6. Content Pairing & i18n SEO | 5/5 | Complete   | 2026-06-09 |
-| 7. Content Adaptation — Pilot 8 + `/martin` | 0/TBD | Not started | - |
+| 7. Content Adaptation — Pilot 8 + `/martin` | 0/6 | Planned | - |
 | 8. Launch Polish — Legal, Feeds, Tags, Performance | 0/TBD | Not started | - |
 | 9. Production Cutover — michalek.dev + DNS | 0/TBD | Not started | - |
