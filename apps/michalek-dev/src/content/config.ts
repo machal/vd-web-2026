@@ -42,6 +42,7 @@ const guide = defineCollection({
     heading: z.string().optional(),
     perex: z.string().optional(),
     pairId: z.string().optional(),
+    author: z.string().optional().default('Martin Michálek'),
   }).transform((data) => {
     const title = data.title || (data.heading?.trim() ? data.heading : data.id) || '';
     const published = typeof data.published === 'boolean'

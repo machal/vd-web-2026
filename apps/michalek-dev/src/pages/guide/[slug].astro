@@ -50,6 +50,7 @@ const alternateLinks = cluster ? buildAlternateLinks(cluster) : undefined;
   <main role="main" id="main" aria-label="Main content">
     <ArticleHeader
       title={post.data.title}
+      author={post.data.author}
       date={post.data.date}
       locale="en"
     />

@@ -16,6 +16,13 @@ const allContent = [...blogPosts, ...guidePosts].sort((a, b) => {
   const dateB = b.data.date || new Date(0);
   return dateB.getTime() - dateA.getTime();
 });
+
+const startHere = [
+  { href: '/guide/webp', label: 'WebP images for the modern web' },
+  { href: '/guide/web-vitals', label: 'Web Vitals in practice' },
+  { href: '/blog/2025-year-in-review', label: '2025 year in review' },
+  { href: '/guide/ai-saas', label: 'Will AI kill SaaS?' },
+];
 ---
 
 <BaseLayout
@@ -43,6 +50,20 @@ const allContent = [...blogPosts, ...guidePosts].sort((a, b) => {
       <p class="mb-0">
         <a class="button" href="/martin">About Martin</a>
       </p>
+    </div>
+
+    <hr class="hr hr--small hr--spaced" />
+
+    <div class="content">
+      <h2 class="h4 mb-05">Start here</h2>
+      <p class="f-6 mb-1">Selected English adaptations — good entry points into performance, AI, and how I work.</p>
+      <ul class="list-unstyled mb-2">
+        {startHere.map((item) => (
+          <li class="mb-05">
+            <a href={item.href}>{item.label}</a>
+          </li>
+        ))}
+      </ul>
     </div>
 
     <hr class="hr hr--small hr--spaced" />
