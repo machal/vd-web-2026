@@ -13,7 +13,7 @@ Brownfield Astro monorepo migration and English personal brand launch. Czech sit
 - [x] **Phase 5: English App Scaffold** - michalek.dev Astro app, homepage, nav, routing, dual Vercel project config (EN Vercel dashboard: human_needed)
 - [x] **Phase 6: Content Pairing & i18n SEO** - CONTENT_PAIRS manifest, language switch, hreflang, Czech mirror links (completed 2026-06-09)
 - [ ] **Phase 7: Content Adaptation — Pilot 8 + `/martin`** - 8 adapted articles, native EN `/martin`, homepage "start here"
-- [ ] **Phase 8: Launch Polish — Legal, Feeds, Tags, Performance** - SEO metadata, RSS/sitemap, tags, legal, CWV review, GA
+- [x] **Phase 8: Launch Polish — Legal, Feeds, Tags, Performance** - SEO metadata, RSS/sitemap, tags, legal, CWV review, GA (completed 2026-06-09)
 - [ ] **Phase 9: Production Cutover — michalek.dev + DNS** - Staged DNS for both domains, FTP retirement, rollback docs
 
 ## Phase Details
@@ -260,7 +260,27 @@ Plans:
   5. Privacy policy and cookie consent cover Vercel hosting and analytics cookies; footer links to both
   6. Site maintains good mobile Core Web Vitals; GA loads async/deferred without blocking render
 
-**Plans**: TBD
+**Plans**: 6 plans
+
+Plans:
+**Wave 1**
+
+- [ ] 08-01-PLAN.md — JSON-LD builders + BaseLayout EN Twitter/RSS/schema slot (SEO-02, SEO-06, SEO-07 foundation)
+- [ ] 08-03-PLAN.md — EN tag taxonomy + /{tag}/ archive pages (EN-09)
+
+**Wave 2** *(blocked on Wave 1 completion)*
+
+- [ ] 08-02-PLAN.md — RSS, robots.txt, page SEO wiring, tag footer on articles (SEO-01, SEO-03–05, EN-10)
+- [ ] 08-04-PLAN.md — Privacy/cookie policy pages + consent banner (LEGAL-01–03)
+
+**Wave 3** *(blocked on Wave 2 plan 04 completion)*
+
+- [ ] 08-05-PLAN.md — Consent-gated deferred GA4 + performance review (PERF-01–04)
+
+**Wave 4** *(blocked on Wave 3 completion)*
+
+- [ ] 08-06-PLAN.md — verify-phase8-launch-polish.sh gate + CI (all requirements)
+
 **UI hint**: yes
 
 ### Phase 9: Production Cutover — michalek.dev + DNS
@@ -291,5 +311,5 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8 →
 | 5. English App Scaffold | 5/5 | Complete   | 2026-06-08 |
 | 6. Content Pairing & i18n SEO | 5/5 | Complete   | 2026-06-09 |
 | 7. Content Adaptation — Pilot 8 + `/martin` | 6/6 | Complete   | 2026-06-09 |
-| 8. Launch Polish — Legal, Feeds, Tags, Performance | 0/TBD | Not started | - |
+| 8. Launch Polish — Legal, Feeds, Tags, Performance | 0/6 | Not started | - |
 | 9. Production Cutover — michalek.dev + DNS | 0/TBD | Not started | - |
