@@ -6,6 +6,9 @@ import Header from '@vd/shared/components/Header.astro';
 import Footer from '@vd/shared/components/Footer.astro';
 import ArticleHeader from '@vd/shared/components/ArticleHeader.astro';
 import ArticleFooter from '@vd/shared/components/ArticleFooter.astro';
+import LanguageSwitch from '@vd/shared/components/LanguageSwitch.astro';
+import { resolveAlternate, resolveHreflangCluster } from '@vd/shared/content-pairing';
+import { buildAlternateLinks } from '@vd/shared/seo/hreflang';
 import { siteConfig } from '../../site.config';
 import { isPublished } from '../../utils/is-published';
 
@@ -19,6 +22,11 @@ export async function getStaticPaths() {
 
 const { post } = Astro.props;
 const { Content } = await post.render();
+
+const canonicalUrl = `https://michalek.dev/guide/${post.slug}`;
+const alternate = resolveAlternate('michalek-dev', 'guide', post.slug);
+const cluster = resolveHreflangCluster('michalek-dev', 'guide', post.slug);
+const alternateLinks = cluster ? buildAlternateLinks(cluster) : undefined;
 ---
 
 <BaseLayout
@@ -26,7 +34,9 @@ const { Content } = await post.render();
   description={post.data.description}
   siteConfig={siteConfig}
   ogType="article"
-  ogUrl={`https://michalek.dev/guide/${post.slug}`}
+  ogUrl={canonicalUrl}
+  canonicalUrl={canonicalUrl}
+  alternateLinks={alternateLinks}
   bodyClass="section-guide"
 >
   <Header slot="header" siteConfig={siteConfig} activeSection="home" />
@@ -38,12 +48,13 @@ const { Content } = await post.render();
   </Fragment>
 
   <main role="main" id="main" aria-label="Main content">
-    <!-- language-switch: Phase 6 -->
     <ArticleHeader
       title={post.data.title}
       date={post.data.date}
       locale="en"
-    />
+    >
+      <LanguageSwitch slot="languageSwitch" currentLocale="en" alternateUrl={alternate?.href} />
+    </ArticleHeader>
 
     <div class="content">
       <div class="article">

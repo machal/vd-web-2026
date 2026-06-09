@@ -3,7 +3,15 @@ import { Fragment } from 'astro/jsx-runtime';
 import BaseLayout from '@vd/shared/layouts/BaseLayout.astro';
 import Header from '@vd/shared/components/Header.astro';
 import Footer from '@vd/shared/components/Footer.astro';
+import LanguageSwitch from '@vd/shared/components/LanguageSwitch.astro';
+import { resolveAlternate, resolveHreflangCluster } from '@vd/shared/content-pairing';
+import { buildAlternateLinks } from '@vd/shared/seo/hreflang';
 import { siteConfig } from '../site.config';
+
+const canonicalUrl = 'https://michalek.dev/martin';
+const alternate = resolveAlternate('michalek-dev', 'page', '/martin');
+const cluster = resolveHreflangCluster('michalek-dev', 'page', '/martin');
+const alternateLinks = cluster ? buildAlternateLinks(cluster) : undefined;
 
 const clientLogos = [
   { src: '/assets/img/content/dest/logos/csob.svg', alt: 'ČSOB' },
@@ -18,7 +26,9 @@ const clientLogos = [
   description="Web performance consultant, author, and speaker. Founder of PageSpeed.ONE."
   siteConfig={siteConfig}
   ogType="profile"
-  ogUrl="https://michalek.dev/martin"
+  ogUrl={canonicalUrl}
+  canonicalUrl={canonicalUrl}
+  alternateLinks={alternateLinks}
   bodyClass="section-autor"
 >
   <Fragment slot="styles">
@@ -64,6 +74,8 @@ const clientLogos = [
       </p>
     </div>
   </div>
+
+  <LanguageSwitch currentLocale="en" alternateUrl={alternate?.href} />
 
   <main role="main" id="main" aria-label="Main content">
     <div class="content">
