@@ -4,6 +4,8 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '@vd/shared/layouts/BaseLayout.astro';
 import Header from '@vd/shared/components/Header.astro';
 import Footer from '@vd/shared/components/Footer.astro';
+import AuthorProfileBox from '@vd/shared/components/AuthorProfileBox.astro';
+import TopicHubPrimary from '@vd/shared/components/TopicHubPrimary.astro';
 import ArticleListItem from '../components/ArticleListItem.astro';
 import { siteConfig } from '../site.config';
 import { isPublished } from '../utils/is-published';
@@ -17,20 +19,25 @@ const allContent = [...blogPosts, ...guidePosts].sort((a, b) => {
   return dateB.getTime() - dateA.getTime();
 });
 
-const startHereSlugs = [
-  { collection: 'guide' as const, slug: 'webp' },
-  { collection: 'guide' as const, slug: 'web-vitals' },
-  { collection: 'blog' as const, slug: '2025-year-in-review' },
-  { collection: 'guide' as const, slug: 'ai-saas' },
-];
+const currentPage = 1;
+const postsPerPage = 5;
+const startIndex = (currentPage - 1) * postsPerPage;
+const endIndex = startIndex + postsPerPage;
+const paginatedPosts = allContent.slice(startIndex, endIndex);
+const latestPost = paginatedPosts[0];
+const totalPages = Math.ceil(allContent.length / postsPerPage);
 
-const byKey = new Map(
-  [...blogPosts, ...guidePosts].map((post) => [`${post.collection}:${post.slug}`, post]),
-);
+function formatDate(date: Date): string {
+  return new Intl.DateTimeFormat('en-GB', {
+    day: 'numeric',
+    month: 'short',
+    year: 'numeric',
+  }).format(date);
+}
 
-const startHere = startHereSlugs
-  .map(({ collection, slug }) => byKey.get(`${collection}:${slug}`))
-  .filter((post): post is NonNullable<typeof post> => post !== undefined);
+function getSlug(entry: (typeof allContent)[number]): string {
+  return `/${entry.collection}/${entry.slug}`;
+}
 ---
 
 <BaseLayout
@@ -42,7 +49,9 @@ const startHere = startHereSlugs
   bodyClass="section-home"
 >
   <Fragment slot="styles">
-    <link rel="stylesheet" href="/assets/css/modules-standalone/min/page-head.min.css" />
+    <link rel="stylesheet" href="/assets/css/modules-standalone/min/topbar.min.css" />
+    <link rel="stylesheet" href="/assets/css/modules-standalone/min/course-avatar.min.css" />
+    <link rel="stylesheet" href="/assets/css/modules-standalone/min/avatar.min.css" />
     <link rel="stylesheet" href="/assets/css/modules-standalone/min/list.min.css" />
     <link rel="stylesheet" href="/assets/css/modules-standalone/min/badge.min.css" />
   </Fragment>
@@ -53,52 +62,55 @@ const startHere = startHereSlugs
   <main role="main" id="main" aria-label="Main content">
     <div class="page-head page-head--line"></div>
 
-    <div class="content-full pt-3-md">
-      <h1 class="h1 mb-05">Martin Michálek</h1>
-      <p class="f-4 mb-05"><strong>Web &amp; Performance</strong></p>
-      <p class="mb-1">Personal tech blog and web performance consulting.</p>
-      <p class="mb-0">
-        <a class="button" href="/martin">About Martin</a>
-      </p>
-    </div>
-
-    <hr class="hr hr--small hr--spaced" />
-
-    <div class="content">
-      <h2 class="h4 mb-05">Start here</h2>
-      <p class="f-6 mb-1">Selected English adaptations — good entry points into performance, AI, and how I work.</p>
-      <ul class="list-unstyled mb-2 start-here">
-        {startHere.map((post) => {
-          const badgeLabel = post.collection === 'guide' ? 'Guide' : 'Blog';
-          const badgeClass = post.collection === 'guide' ? 'badge badge--yellow' : 'badge';
-          return (
-            <li class="mb-1">
-              <p class="mb-05">
-                <span class={badgeClass}>{badgeLabel}</span>
+    <div class="section">
+      <div class="content-full pt-3-md">
+        <div class="row">
+          {latestPost && (
+            <div class="col mb-15 mb-0-md w-66-md">
+              <h2 class="mb-05 pb-0">
+                <a href={getSlug(latestPost)}>{latestPost.data.title}</a>
+              </h2>
+              <p>
+                <span class="article">
+                  <span class="text-color-lightest">
+                    {formatDate(latestPost.data.date)}
+                    —
+                  </span>
+                  {latestPost.data.description}
+                </span>
               </p>
-              <h3 class="h5 mb-05">
-                <a href={`/${post.collection}/${post.slug}`}>{post.data.title}</a>
-              </h3>
-              {post.data.description && (
-                <p class="f-6 text-color-lightest mb-0">{post.data.description}</p>
-              )}
-            </li>
-          );
-        })}
-      </ul>
+              <p class="mb-0 f-6">
+                <a class="button" href={getSlug(latestPost)}>Continue…</a>
+              </p>
+            </div>
+          )}
+
+          <div class="col w-33-md">
+            <AuthorProfileBox locale="en" />
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <hr class="hr--small hr--spaced" />
+
+        {paginatedPosts.length > 1 ? (
+          paginatedPosts.slice(1).map((post) => <ArticleListItem post={post} />)
+        ) : allContent.length === 0 ? (
+          <>
+            <h2 class="h4">No articles yet</h2>
+            <p>New posts will appear here. Visit About Martin to learn more about this site.</p>
+          </>
+        ) : null}
+
+        {totalPages > 1 && (
+          <p class="ta-c mt-3">
+            <a class="button" href="/p=2">More articles</a>
+          </p>
+        )}
+      </div>
     </div>
 
-    <hr class="hr hr--small hr--spaced" />
-
-    <div class="content">
-      {allContent.length > 0 ? (
-        allContent.map((post) => <ArticleListItem post={post} />)
-      ) : (
-        <>
-          <h2 class="h4">No articles yet</h2>
-          <p>New posts will appear here. Visit About Martin to learn more about this site.</p>
-        </>
-      )}
-    </div>
+    <TopicHubPrimary locale="en" />
   </main>
 </BaseLayout>
