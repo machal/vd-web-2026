@@ -1,34 +1,55 @@
 ---
 import type { CollectionEntry } from 'astro:content';
-import type { CategoryConfig } from '@vd/shared/types';
+import type { CategoryConfig, SiteConfig } from '@vd/shared/types';
 
-type ArticleEntry = CollectionEntry<'prirucka'> | CollectionEntry<'blog'> | CollectionEntry<'podcast'>;
+type ArticleEntry =
+  | CollectionEntry<'prirucka'>
+  | CollectionEntry<'blog'>
+  | CollectionEntry<'podcast'>
+  | CollectionEntry<'guide'>;
 
 interface Props {
-  post: CollectionEntry<'blog' | 'podcast' | 'prirucka'>;
+  post: CollectionEntry<'blog' | 'podcast' | 'prirucka' | 'guide'>;
   categories: CategoryConfig[];
   relatedArticles?: ArticleEntry[];
+  siteConfig?: SiteConfig;
 }
 
-const { post, categories, relatedArticles = [] } = Astro.props;
+const { post, categories, relatedArticles = [], siteConfig } = Astro.props;
+
+const locale = siteConfig?.locale ?? 'cs';
+const origin = siteConfig?.origin ?? 'https://www.vzhurudolu.cz';
+const showLogoSymbol = siteConfig?.showLogoSymbol ?? true;
 
 function formatDate(date: Date | undefined): string {
   if (!date) return '';
-  return new Intl.DateTimeFormat('cs-CZ', {
+  return new Intl.DateTimeFormat(locale === 'en' ? 'en-GB' : 'cs-CZ', {
     day: 'numeric',
-    month: 'numeric',
+    month: locale === 'en' ? 'short' : 'numeric',
     year: 'numeric',
   }).format(date);
 }
 
-function getArticleUrl(article: ArticleEntry): string {
+function getArticlePath(article: ArticleEntry): string {
   if (article.collection === 'prirucka') {
     return `/prirucka/${article.data.id}`;
   }
   if (article.collection === 'podcast') {
     return `/podcast/${article.data.postID}-${article.slug}`;
   }
+  if (article.collection === 'guide') {
+    return `/guide/${article.slug}`;
+  }
   return `/${article.collection}/${article.slug}`;
+}
+
+function getArticleShareUrl(article: ArticleEntry): string {
+  if (article.collection === 'blog') return `${origin}/blog/${article.slug}`;
+  if (article.collection === 'podcast') {
+    return `${origin}/podcast/${article.data.postID}-${article.slug}`;
+  }
+  if (article.collection === 'guide') return `${origin}/guide/${article.slug}`;
+  return `${origin}/prirucka/${article.data.id}`;
 }
 
 function truncateTitle(title: string, maxLength: number = 70): string {
@@ -36,35 +57,45 @@ function truncateTitle(title: string, maxLength: number = 70): string {
   return title.substring(0, maxLength).trim() + '…';
 }
 
-// URL článku pro sdílení
-const articleUrl = post.collection === 'blog' 
-  ? `https://www.vzhurudolu.cz/blog/${post.slug}`
-  : post.collection === 'podcast'
-  ? `https://www.vzhurudolu.cz/podcast/${post.data.postID}-${post.slug}`
-  : `https://www.vzhurudolu.cz/prirucka/${post.data.id}`;
+const labels =
+  locale === 'en'
+    ? {
+        relatedArticles: 'Related articles',
+        taggedIn: 'Tagged in:',
+        sharing: 'Share:',
+      }
+    : {
+        relatedArticles: 'Podobné články',
+        taggedIn: 'Zařazeno v tématech:',
+        sharing: 'Sdílení potěší:',
+      };
 
-// Debug: zobrazit kategorie i když jsou prázdné (pro testování)
-// console.log('ArticleFooter - categories:', categories);
-// console.log('ArticleFooter - post tags:', post.data.tags);
+const articleUrl = getArticleShareUrl(post);
+const twitterShareUrl =
+  locale === 'en'
+    ? `https://x.com/intent/post?url=${encodeURIComponent(articleUrl)}`
+    : `https://x.com/intent/post?url=${encodeURIComponent(articleUrl)}&via=vzhurudolu`;
 ---
 
 <div class="content-full">
   <div class="article-foot hidden-print f-6">
-    <svg class="vd-logo" viewBox="0 0 28 25" xmlns:xlink="http://www.w3.org/1999/xlink">
-      <use class="vd-logo-svg" xlink:href="#vd-symbol" x="0" y="0"></use>
-    </svg>
+    {showLogoSymbol && (
+      <svg class="vd-logo" viewBox="0 0 28 25" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <use class="vd-logo-svg" xlink:href="#vd-symbol" x="0" y="0"></use>
+      </svg>
+    )}
 
     {relatedArticles.length > 0 && (
       <div class="row jc-c">
         <div class="col w-50-sm">
           <aside role="complementary" aria-labelledby="clanky-heading" class="section hidden-print pt-0 mt-0">
             <h2 id="clanky-heading" class="ta-c pb-0 h3">
-              Podobné články
+              {labels.relatedArticles}
             </h2>
             <ul class="list list--bordered list--block-hover list--spaced">
               {relatedArticles.map(article => (
                 <li class="list__item">
-                  <a href={getArticleUrl(article)} class="list__item-link">
+                  <a href={getArticlePath(article)} class="list__item-link">
                     {truncateTitle(article.data.title || '')}
                     {article.data.date && (
                       <span class="text-color-lightest"> ({formatDate(article.data.date)})</span>
@@ -82,7 +113,7 @@ const articleUrl = post.collection === 'blog'
       <div class="row">
         <div class="col">
           <p class="ta-c f-sm mb-05">
-            Zařazeno v tématech:
+            {labels.taggedIn}
           </p>
           <p class="ta-c f-sm mb-0">
             {categories.map((category, index) => (
@@ -101,7 +132,7 @@ const articleUrl = post.collection === 'blog'
     <div class="row">
       <div class="col">
         <p class="share share--footer f-sm mt-1 mb-0">
-          <strong>Sdílení potěší:</strong>
+          <strong>{labels.sharing}</strong>
 
           <a href={`https://www.facebook.com/sharer.php?u=${encodeURIComponent(articleUrl)}`}>
             <svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" class="share__icon">
@@ -111,7 +142,7 @@ const articleUrl = post.collection === 'blog'
                 c-1.232,0-1.47,0.585-1.47,1.445v1.895H19.233z"></path>
             </svg>
           </a>
-          <a href={`https://x.com/intent/post?url=${encodeURIComponent(articleUrl)}&via=vzhurudolu`} class="share__icon">
+          <a href={twitterShareUrl} class="share__icon">
             <svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" class="share__icon">
               <title>X</title>
               <path d="M15,0C6.716,0,0,6.716,0,15c0,8.284,6.716,15,15,15s15-6.716,15-15C30,6.716,23.284,0,15,0z M18.56,8.5l2.19,0l-4.78,5.47l5.62,7.43h-4.08l-3.64-4.81l-4.09,4.81H7.59l5.11-5.85L7.37,8.5h4.19l3.29,4.35L18.56,8.5z M18.12,20.13l-8.44-10.35h1.46l8.44,10.35H18.12z"/>
