@@ -1,5 +1,6 @@
 ---
 id: web-vitals
+pairId: web-vitals
 tags: ['rychlost-nacitani']
 title: 'Web Vitals'
 heading: 'Web Vitals: Co jsou zač ty nové metriky rychlosti webu od Googlu?'

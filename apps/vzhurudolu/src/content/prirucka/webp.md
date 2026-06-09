@@ -1,5 +1,6 @@
 ---
 id: webp
+pairId: webp
 tags: ['rychlost-nacitani']
 title: 'WebP obrázky: datově úsporná alternativa k JPEG, PNG i GIF'
 heading: 'WebP obrázky: datově úsporná alternativa k JPEG, PNG i GIF'

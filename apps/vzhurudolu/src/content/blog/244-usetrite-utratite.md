@@ -2,6 +2,7 @@
 postID: 244
 postTitle: 'Čím více ušetříte za vývojáře, tím více utratíte za konzultanty'
 postUrlId: usetrite-utratite
+pairId: save-spend
 postDateTime: 2024-04-16
 excerpt: '„Na platformě ušetříme X, na vývojářích Y, ale počítáme s konzultacemi k UX, SEO, přístupnosti nebo rychlosti ve výši Z. Ty konzultanty radši najmeme na začátku projektu, aby to ohlídali.“ Asi tak nějak.'
 postStatus: Published

@@ -1,5 +1,6 @@
 ---
 id: ai-saas
+pairId: ai-saas
 title: 'AI prý zabije SaaS. Zamysleme se nad tím ještě jednou'
 heading: 'AI prý zabije SaaS. Zamysleme se nad tím ještě jednou'
 date: 2026-03-06

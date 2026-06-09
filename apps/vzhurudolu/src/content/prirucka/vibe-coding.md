@@ -1,5 +1,6 @@
 ---
 id: vibe-coding
+pairId: vibe-coding
 title: "Vibe Coding: Přes 25 let dělám weby, ale poslední dva měsíce úplně jinak"
 heading: "Vibe Coding: Přes 25 let dělám weby, ale poslední dva měsíce úplně jinak"
 date: 2026-02-10

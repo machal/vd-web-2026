@@ -1,5 +1,6 @@
 ---
 id: email-inbox-zero
+pairId: email-inbox-zero
 title: 'Inbox Zero: jak se zbavit e-mailového chaosu'
 category:
   - netechnicke
