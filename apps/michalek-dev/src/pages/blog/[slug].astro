@@ -8,7 +8,6 @@ import ArticleHeader from '@vd/shared/components/ArticleHeader.astro';
 import ArticleFooter from '@vd/shared/components/ArticleFooter.astro';
 import JsonLd from '@vd/shared/components/JsonLd.astro';
 import LanguageSwitch from '@vd/shared/components/LanguageSwitch.astro';
-import AdaptationAttribution from '@vd/shared/components/AdaptationAttribution.astro';
 import { buildArticleJsonLd } from '@vd/shared/seo/json-ld';
 import { resolveAlternate, resolveHreflangCluster } from '@vd/shared/content-pairing';
 import { buildAlternateLinks } from '@vd/shared/seo/hreflang';
@@ -66,19 +65,16 @@ const articleJsonLd = buildArticleJsonLd({
       author={post.data.author}
       date={post.data.date}
       locale="en"
-    />
-
-    {alternate && (
-      <LanguageSwitch currentLocale="en" alternateUrl={alternate.href} />
-    )}
+    >
+      {alternate && (
+        <LanguageSwitch slot="actions" currentLocale="en" alternateUrl={alternate.href} />
+      )}
+    </ArticleHeader>
 
     <div class="content">
       <div class="article">
         <Content />
       </div>
-      {post.data.adaptedFrom && (
-        <AdaptationAttribution adaptedFrom={post.data.adaptedFrom} />
-      )}
     </div>
 
     <ArticleFooter post={post} categories={categories} relatedArticles={[]} siteConfig={siteConfig} />

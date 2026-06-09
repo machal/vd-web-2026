@@ -5,7 +5,7 @@ interface Props {
   className?: string;
 }
 
-const { currentLocale, alternateUrl, className = 'ta-c mb-1' } = Astro.props;
+const { currentLocale, alternateUrl, className = '' } = Astro.props;
 
 const labels = {
   cs: { current: 'Česky', alternate: 'English' },

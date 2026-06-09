@@ -7,6 +7,7 @@ interface Props {
 }
 
 const { title, author = 'Martin Michálek', date, locale = 'cs' } = Astro.props;
+const hasActions = Astro.slots.has('actions');
 
 function formatDate(date: Date | undefined): string {
   if (!date) return '';
@@ -22,7 +23,7 @@ function formatDate(date: Date | undefined): string {
   <h1>{title}</h1>
 </div>
 
-<div class="page-subhead">
+<div class:list={['page-subhead', { 'page-subhead--split': hasActions }]}>
   <p class="mb-0 page-subhead__meta">
     <a class="page-subhead__author" href="/martin">
       <span class="avatar avatar--tiny avatar--inline mr-05">
@@ -37,4 +38,39 @@ function formatDate(date: Date | undefined): string {
       </span>
     )}
   </p>
+  {hasActions && (
+    <div class="page-subhead__actions">
+      <slot name="actions" />
+    </div>
+  )}
 </div>
+
+<style>
+  .page-subhead--split {
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .page-subhead--split .page-subhead__meta {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .page-subhead__actions {
+    flex-shrink: 0;
+    text-align: right;
+  }
+
+  .page-subhead__actions :global(.language-switch) {
+    margin: 0;
+  }
+
+  .page-subhead__actions :global(.language-switch__inner) {
+    color: inherit;
+    margin-bottom: 0;
+  }
+
+  .page-subhead__actions :global(.language-switch__link) {
+    color: #fff;
+  }
+</style>
