@@ -6,6 +6,9 @@ import Header from '@vd/shared/components/Header.astro';
 import Footer from '@vd/shared/components/Footer.astro';
 import ArticleHeader from '@vd/shared/components/ArticleHeader.astro';
 import ArticleFooter from '@vd/shared/components/ArticleFooter.astro';
+import LanguageSwitch from '@vd/shared/components/LanguageSwitch.astro';
+import { resolveAlternate, resolveHreflangCluster } from '@vd/shared/content-pairing';
+import { buildAlternateLinks } from '@vd/shared/seo/hreflang';
 import { categories, type CategoryConfig } from '../../data/categories';
 import { getRelatedArticles } from '../../utils/get-related-articles';
 import { isPublished } from '../../utils/is-published';
@@ -48,13 +51,20 @@ const relatedArticles = await getRelatedArticles(
   post.slug,
   'blog'
 );
+
+const canonicalUrl = `https://www.vzhurudolu.cz/blog/${post.slug}`;
+const alternate = resolveAlternate('vzhurudolu', 'blog', post.slug);
+const cluster = resolveHreflangCluster('vzhurudolu', 'blog', post.slug);
+const alternateLinks = cluster ? buildAlternateLinks(cluster) : undefined;
 ---
 
 <BaseLayout
   title={post.data.title}
   description={post.data.description}
   ogType="article"
-  ogUrl={`https://www.vzhurudolu.cz/blog/${post.slug}`}
+  ogUrl={canonicalUrl}
+  canonicalUrl={canonicalUrl}
+  alternateLinks={alternateLinks}
   bodyClass="section-blog"
 >
   <Header slot="header" />
@@ -149,7 +159,9 @@ const relatedArticles = await getRelatedArticles(
       title={post.data.title}
       author={post.data.author}
       date={post.data.date}
-    />
+    >
+      <LanguageSwitch slot="languageSwitch" currentLocale="cs" alternateUrl={alternate?.href} />
+    </ArticleHeader>
 
     <div class="content">
       <div class="article">
