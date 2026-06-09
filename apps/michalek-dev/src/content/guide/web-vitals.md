@@ -5,6 +5,9 @@ date: 2020-06-02
 published: true
 pairId: web-vitals
 author: Martin Michálek
+adaptedFrom:
+  title: "Web Vitals: Co jsou zač ty nové metriky rychlosti webu od Googlu?"
+  url: "https://www.vzhurudolu.cz/prirucka/web-vitals"
 tags:
   - performance
   - web-vitals
@@ -95,5 +98,3 @@ INP and FID require **real-user (RUM)** data. Synthetic tools such as Lighthouse
 Google says Core Web Vitals should change at most once a year — but they also admit the set is not final. This article will keep evolving.
 
 ---
-
-*Adapted from the Czech article [Web Vitals: Co jsou zač ty nové metriky rychlosti webu od Googlu?](https://www.vzhurudolu.cz/prirucka/web-vitals).*

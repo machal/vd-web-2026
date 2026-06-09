@@ -5,6 +5,9 @@ date: 2024-11-15
 published: true
 pairId: email-inbox-zero
 author: Martin Michálek
+adaptedFrom:
+  title: "Inbox Zero: jak se zbavit e-mailového chaosu"
+  url: "https://www.vzhurudolu.cz/prirucka/email-inbox-zero"
 tags:
   - productivity
   - email
@@ -145,5 +148,3 @@ I used to write novels (former developer habit). Now I prefer [Five.sentenc.es](
 Perfection is not the point. Progress is. Try Inbox Zero.
 
 ---
-
-*Adapted from the Czech article [Inbox Zero: jak se zbavit e-mailového chaosu](https://www.vzhurudolu.cz/prirucka/email-inbox-zero).*

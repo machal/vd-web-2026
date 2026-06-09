@@ -5,6 +5,9 @@ date: 2024-04-16
 published: true
 pairId: save-spend
 author: Martin Michálek
+adaptedFrom:
+  title: "Čím více ušetříte za vývojáře, tím více utratíte za konzultanty"
+  url: "https://www.vzhurudolu.cz/blog/244-usetrite-utratite"
 tags:
   - consulting
   - web-design
@@ -30,5 +33,3 @@ Or **WordPress**. A classic. Yes, WordPress can be done well. Often it is not: a
 At [PageSpeed.ONE](https://pagespeed.one/) we see this pattern in performance work. Audits and remediation on "budget" builds can cost more than doing it properly once. The project may still pencil out — but do the math upfront. Do not be surprised later. Consider yourself warned.
 
 ---
-
-*Adapted from the Czech article [Čím více ušetříte za vývojáře, tím více utratíte za konzultanty](https://www.vzhurudolu.cz/blog/244-usetrite-utratite).*

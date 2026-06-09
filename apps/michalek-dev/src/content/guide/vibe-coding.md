@@ -5,6 +5,9 @@ date: 2026-02-10
 published: true
 pairId: vibe-coding
 author: Martin Michálek
+adaptedFrom:
+  title: "Vibe Coding: Přes 25 let dělám weby, ale poslední dva měsíce úplně jinak"
+  url: "https://www.vzhurudolu.cz/prirucka/vibe-coding"
 tags:
   - ai
   - vibe-coding
@@ -174,5 +177,3 @@ AI multiplies; it does not replace accountability. Meetings, kitchen conversatio
 Vibe coding democratises building. Technical people have head start — if they use it.
 
 ---
-
-*Adapted from the Czech article [Vibe Coding: Přes 25 let dělám weby, ale poslední dva měsíce úplně jinak](https://www.vzhurudolu.cz/prirucka/vibe-coding).*

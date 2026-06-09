@@ -17,12 +17,20 @@ const allContent = [...blogPosts, ...guidePosts].sort((a, b) => {
   return dateB.getTime() - dateA.getTime();
 });
 
-const startHere = [
-  { href: '/guide/webp', label: 'WebP images for the modern web' },
-  { href: '/guide/web-vitals', label: 'Web Vitals in practice' },
-  { href: '/blog/2025-year-in-review', label: '2025 year in review' },
-  { href: '/guide/ai-saas', label: 'Will AI kill SaaS?' },
+const startHereSlugs = [
+  { collection: 'guide' as const, slug: 'webp' },
+  { collection: 'guide' as const, slug: 'web-vitals' },
+  { collection: 'blog' as const, slug: '2025-year-in-review' },
+  { collection: 'guide' as const, slug: 'ai-saas' },
 ];
+
+const byKey = new Map(
+  [...blogPosts, ...guidePosts].map((post) => [`${post.collection}:${post.slug}`, post]),
+);
+
+const startHere = startHereSlugs
+  .map(({ collection, slug }) => byKey.get(`${collection}:${slug}`))
+  .filter((post): post is NonNullable<typeof post> => post !== undefined);
 ---
 
 <BaseLayout
@@ -59,12 +67,24 @@ const startHere = [
     <div class="content">
       <h2 class="h4 mb-05">Start here</h2>
       <p class="f-6 mb-1">Selected English adaptations — good entry points into performance, AI, and how I work.</p>
-      <ul class="list-unstyled mb-2">
-        {startHere.map((item) => (
-          <li class="mb-05">
-            <a href={item.href}>{item.label}</a>
-          </li>
-        ))}
+      <ul class="list-unstyled mb-2 start-here">
+        {startHere.map((post) => {
+          const badgeLabel = post.collection === 'guide' ? 'Guide' : 'Blog';
+          const badgeClass = post.collection === 'guide' ? 'badge badge--yellow' : 'badge';
+          return (
+            <li class="mb-1">
+              <p class="mb-05">
+                <span class={badgeClass}>{badgeLabel}</span>
+              </p>
+              <h3 class="h5 mb-05">
+                <a href={`/${post.collection}/${post.slug}`}>{post.data.title}</a>
+              </h3>
+              {post.data.description && (
+                <p class="f-6 text-color-lightest mb-0">{post.data.description}</p>
+              )}
+            </li>
+          );
+        })}
       </ul>
     </div>
 

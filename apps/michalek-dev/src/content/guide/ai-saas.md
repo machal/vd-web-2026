@@ -5,6 +5,9 @@ date: 2026-03-06
 published: true
 pairId: ai-saas
 author: Martin Michálek
+adaptedFrom:
+  title: "AI prý zabije SaaS. Zamysleme se nad tím ještě jednou"
+  url: "https://www.vzhurudolu.cz/prirucka/ai-saas"
 tags:
   - ai
   - saas
@@ -96,5 +99,3 @@ The best AI does not sign the SLA.
 Programming is not typing. SaaS is not a weekend repo. Neither disappears because prompts got better.
 
 ---
-
-*Adapted from the Czech article [AI prý zabije SaaS. Zamysleme se nad tím ještě jednou](https://www.vzhurudolu.cz/prirucka/ai-saas).*

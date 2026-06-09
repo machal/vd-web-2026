@@ -5,6 +5,9 @@ date: 2025-03-10
 published: true
 pairId: saying-no
 author: Martin Michálek
+adaptedFrom:
+  title: "O umění říkat NE"
+  url: "https://www.vzhurudolu.cz/blog/254-ne"
 tags:
   - soft-skills
   - productivity
@@ -41,5 +44,3 @@ Over time a plain "no" with a little empathy works too: "Sorry — I'm fully boo
 Often, saying no to others is saying yes to yourself.
 
 ---
-
-*Adapted from the Czech article [O umění říkat NE](https://www.vzhurudolu.cz/blog/254-ne).*

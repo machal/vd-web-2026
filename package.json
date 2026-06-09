@@ -16,7 +16,8 @@
     "build:michalek-dev": "turbo run build --filter=@vd/michalek-dev",
     "dev:vzhurudolu": "turbo run dev --filter=@vd/vzhurudolu",
     "validate:pairs": "node scripts/validate-content-pairs.mjs",
-    "verify:phase6": "bash scripts/verify-phase6-content-pairing-i18n-seo.sh"
+    "verify:phase6": "bash scripts/verify-phase6-content-pairing-i18n-seo.sh",
+    "verify:phase7": "bash scripts/verify-phase7-content-adaptation.sh"
   },
   "devDependencies": {
     "turbo": "^2.9.16",

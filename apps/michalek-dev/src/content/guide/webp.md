@@ -5,6 +5,9 @@ date: 2024-07-07
 published: true
 pairId: webp
 author: Martin Michálek
+adaptedFrom:
+  title: "WebP obrázky: datově úsporná alternativa k JPEG, PNG i GIF"
+  url: "https://www.vzhurudolu.cz/prirucka/webp"
 tags:
   - images
   - webp
@@ -95,5 +98,3 @@ As of 2024 you have plenty of options:
 More pointers: [web.dev](https://web.dev/serve-images-webp/) and [images.guide](https://images.guide/#how-do-i-convert-to-webp).
 
 ---
-
-*Adapted from the Czech article [WebP obrázky: datově úsporná alternativa k JPEG, PNG i GIF](https://www.vzhurudolu.cz/prirucka/webp).*

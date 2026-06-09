@@ -1,5 +1,10 @@
 import { defineCollection, z } from 'astro:content';
 
+const adaptedFromSchema = z.object({
+  title: z.string(),
+  url: z.string().url(),
+}).optional();
+
 const blog = defineCollection({
   type: 'content',
   schema: z.object({
@@ -16,6 +21,7 @@ const blog = defineCollection({
     published: z.union([z.boolean(), z.string()]).optional().default(true),
     ogImage: z.string().optional(),
     pairId: z.string().optional(),
+    adaptedFrom: adaptedFromSchema,
   }).transform((data) => ({
     ...data,
     published: data.published !== false && data.published !== 'false',
@@ -43,6 +49,7 @@ const guide = defineCollection({
     perex: z.string().optional(),
     pairId: z.string().optional(),
     author: z.string().optional().default('Martin Michálek'),
+    adaptedFrom: adaptedFromSchema,
   }).transform((data) => {
     const title = data.title || (data.heading?.trim() ? data.heading : data.id) || '';
     const published = typeof data.published === 'boolean'

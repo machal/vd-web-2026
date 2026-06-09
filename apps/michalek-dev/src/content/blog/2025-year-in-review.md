@@ -5,6 +5,9 @@ date: 2026-01-06
 published: true
 pairId: rok-2025
 author: Martin Michálek
+adaptedFrom:
+  title: "Můj rok 2025: podnikatelský, strategický, úspěšný, ale taky úzkostný a hledající formu"
+  url: "https://www.vzhurudolu.cz/blog/261-rok-2025"
 tags:
   - year-in-review
   - business
@@ -60,5 +63,3 @@ Then he added: "...because I finally started drinking and smoking weed!"
 So — for 2026, may you chase **your** dreams, not everyone else's.
 
 ---
-
-*Adapted from the Czech article [Můj rok 2025: podnikatelský, strategický, úspěšný, ale taky úzkostný a hledající formu](https://www.vzhurudolu.cz/blog/261-rok-2025).*
