@@ -22,6 +22,6 @@ jobs:
           test -d apps/vzhurudolu/dist/_astro
           bash scripts/verify-phase1-build.sh
 
-      # Optional Phase 3 link gate (D-08) — full verify-phase3-parity.sh runs locally/merge (needs network)
+      # Optional Phase 3 link gate (D-08) — linkinator@7.6.1 via verify script --links-only; full gate local/merge (needs network)
       - name: Link check (Phase 3)
         run: bash scripts/verify-phase3-parity.sh --links-only
