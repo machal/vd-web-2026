@@ -11,6 +11,7 @@ interface Props {
   ogDescription?: string;
   ogImage?: string | string[];
   canonicalUrl?: string;
+  alternateLinks?: Array<{ hreflang: string; href: string }>;
   siteConfig?: SiteConfig;
 }
 
@@ -35,6 +36,7 @@ const {
   ogDescription,
   ogImage: ogImageProp,
   canonicalUrl,
+  alternateLinks,
   siteConfig: siteConfigProp,
 } = Astro.props;
 
@@ -63,6 +65,14 @@ const finalOgDescription = ogDescription || description;
     <title>{displayTitle}</title>
     <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, viewport-fit=cover" />
     <meta name="description" content={description} />
+
+    {finalCanonicalUrl && (
+      <link rel="canonical" href={finalCanonicalUrl} />
+    )}
+
+    {alternateLinks?.map((link) => (
+      <link rel="alternate" hreflang={link.hreflang} href={link.href} />
+    ))}
 
     <!-- Socials -->
     <meta property="og:title" content={finalOgTitle} />
