@@ -1,0 +1,49 @@
+---
+/** GA4 loader — deferred until analytics cookie consent. Set PUBLIC_GA_MEASUREMENT_ID in env. */
+const measurementId = import.meta.env.PUBLIC_GA_MEASUREMENT_ID;
+---
+
+{measurementId && (
+  <script define:vars={{ measurementId }}>
+    function loadGoogleAnalytics(id) {
+      if (window.__gaLoaded) return;
+      window.__gaLoaded = true;
+
+      const script = document.createElement('script');
+      script.src = `https://www.googletagmanager.com/gtag/js?id=${id}`;
+      script.async = true;
+      document.head.appendChild(script);
+
+      window.dataLayer = window.dataLayer || [];
+      function gtag(...args) {
+        window.dataLayer.push(args);
+      }
+      window.gtag = gtag;
+      gtag('js', new Date());
+      gtag('config', id, { anonymize_ip: true });
+    }
+
+    function maybeLoadAnalytics() {
+      try {
+        const consent = localStorage.getItem('michalek-cookie-consent');
+        if (consent === 'all') {
+          loadGoogleAnalytics(measurementId);
+        }
+      } catch {
+        // no storage — do not load analytics
+      }
+    }
+
+    document.addEventListener('cookie-consent', (event) => {
+      if (event.detail?.level === 'all') {
+        loadGoogleAnalytics(measurementId);
+      }
+    });
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', maybeLoadAnalytics);
+    } else {
+      maybeLoadAnalytics();
+    }
+  </script>
+)}
