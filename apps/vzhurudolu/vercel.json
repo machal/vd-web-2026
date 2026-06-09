@@ -5,23 +5,23 @@
   "trailingSlash": false,
   "headers": [
     {
-      "source": "/.*\\.ttf",
+      "source": "/:path*.woff2",
       "headers": [{ "key": "Access-Control-Allow-Origin", "value": "*" }]
     },
     {
-      "source": "/.*\\.otf",
+      "source": "/:path*.woff",
       "headers": [{ "key": "Access-Control-Allow-Origin", "value": "*" }]
     },
     {
-      "source": "/.*\\.eot",
+      "source": "/:path*.ttf",
       "headers": [{ "key": "Access-Control-Allow-Origin", "value": "*" }]
     },
     {
-      "source": "/.*\\.woff",
+      "source": "/:path*.otf",
       "headers": [{ "key": "Access-Control-Allow-Origin", "value": "*" }]
     },
     {
-      "source": "/.*\\.woff2",
+      "source": "/:path*.eot",
       "headers": [{ "key": "Access-Control-Allow-Origin", "value": "*" }]
     }
   ],
