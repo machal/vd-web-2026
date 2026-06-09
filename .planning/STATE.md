@@ -4,8 +4,8 @@ milestone: v1.0
 milestone_name: milestone
 status: ready_for_verification
 stopped_at: Completed Phase 9 production cutover plans (DNS human_needed)
-last_updated: "2026-06-09T12:00:00.000Z"
-last_activity: 2026-06-09 -- Phase 9 cutover docs, smoke script, FTP archive
+last_updated: "2026-06-09T06:58:39.407Z"
+last_activity: 2026-06-09 -- captured v1.1 visual polish todo (both blogs)
 progress:
   total_phases: 9
   completed_phases: 8
@@ -55,10 +55,15 @@ Progress: [█████████░] 100% plans executed (9/9 phases have 
 - Phase 9: FTP auto-deploy disabled; archived at `.github/workflows/archived/deploy-ftp.yml`
 - Phase 9: Simultaneous DNS cutover both domains; 09-VERIFICATION.md status human_needed until cutover
 
+### Pending Todos
+
+- **v1.1 visual polish both blogs** — `.planning/todos/pending/2026-06-09-v1-1-visual-polish-both-blogs.md` (blocks Phase 9 DNS until done; `/martin` → v1.2)
+
 ### Blockers/Concerns
 
-- Phase 9 DNS cutover and Vercel production domain attach — human steps in `09-VERIFICATION.md`
-- EN Vercel dashboard connect may still be pending — complete before attaching michalek.dev production domain
+- Phase 9 DNS cutover blocked until v1.1 visual polish complete
+- Phase 5 UAT in progress (2/10 passed) — resume `/gsd-verify-work 5` for functional gate
+- EN Vercel preview live at https://vd-web-2026-xco9.vercel.app/
 
 ## Session Continuity
 
