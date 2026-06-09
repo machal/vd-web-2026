@@ -10,7 +10,7 @@ cutover_date: null
 
 ## Status
 
-**human_needed** — Rollback runbook, production smoke script, and FTP workflow archive are in repo. **DNS cutover and Vercel production domain attach require human action** at registrar and Vercel dashboard.
+**human_needed** — Rollback runbook, production smoke script, and FTP workflow archive are in repo. **DNS cutover was blocked until v1.1 visual polish (Phases 10–14).** After Phase 14 `verify-phase14-v1-1-visual-polish.sh` passes and LAUNCH-01 UAT is signed off, DNS cutover and Vercel production domain attach may proceed (human action at registrar and Vercel dashboard).
 
 | Check | Status |
 |-------|--------|
