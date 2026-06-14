@@ -14,16 +14,14 @@ const locale: MartinIntroLocale = Astro.props.siteConfig?.locale ?? 'cs';
 const t = getMartinIntroCopy(locale);
 const { pageSpeed: pageSpeedLogo, community: communityLogo } = martinIntroLogos;
 const logoHeight = 88;
-const communityLogoHeight = Math.round(logoHeight * 0.7);
 ---
 
-<div class="content pt-3 martin-intro">
-  <div class="row fd-c fd-r-xs martin-intro__row">
-    <div class="col w-50-xs martin-intro__col">
-      <div class="martin-intro__logo">
+<div class="content pt-3">
+  <div class="row fd-c fd-r-xs">
+    <div class="col w-50-xs ta-c">
+      <p class="d-f ai-c jc-c mb-1 w-100 martin-intro__logo">
         <a href={pageSpeedLogo.href}>
           <img
-            class="martin-intro__logo-image"
             src={pageSpeedLogo.src}
             alt={pageSpeedLogo.alt}
             width={pageSpeedLogo.width}
@@ -31,130 +29,63 @@ const communityLogoHeight = Math.round(logoHeight * 0.7);
             loading="lazy"
           />
         </a>
-      </div>
-      <div class="f-6 ta-c maxw-30em martin-intro__copy">
-        <p class="mb-0">
-          {
-            locale === 'cs' ? (
-              <>
-                <span class="martin-intro__nowrap">V</span>{' '}
-                <a href={t.pageSpeed.brand.href}>{t.pageSpeed.brand.label}</a>
-                {' '}pomáháme firmám s rychlostí webu. Poskytujeme{' '}
-                <a href={t.pageSpeed.consulting.href}>{t.pageSpeed.consulting.label}</a>, které vede k rychlejšímu webu a lepším konverzím.{' '}
-                <span class="martin-intro__nowrap">Vyvíjíme vlastní</span>{' '}
-                <a href={t.pageSpeed.monitoring.href}>{t.pageSpeed.monitoring.label}</a>.
-              </>
-            ) : (
-              <>
-                At{' '}
-                <a href={t.pageSpeed.brand.href}>{t.pageSpeed.brand.label}</a>
-                {' '}we help companies with web speed. We provide{' '}
-                <a href={t.pageSpeed.consulting.href}>{t.pageSpeed.consulting.label}</a> that leads to faster websites and better conversions. We develop our own{' '}
-                <a href={t.pageSpeed.monitoring.href}>{t.pageSpeed.monitoring.label}</a>.
-              </>
-            )
-          }
-        </p>
-      </div>
+      </p>
+      <p class="f-6 maxw-30em mb-0">
+        {
+          locale === 'cs' ? (
+            <>
+              V{' '}
+              <a href={t.pageSpeed.brand.href}>{t.pageSpeed.brand.label}</a>
+              {' '}pomáháme firmám s rychlostí webu. Poskytujeme{' '}
+              <a href={t.pageSpeed.consulting.href}>{t.pageSpeed.consulting.label}</a>, které vede k rychlejšímu webu a lepším konverzím. Vyvíjíme vlastní{' '}
+              <a href={t.pageSpeed.monitoring.href}>{t.pageSpeed.monitoring.label}</a>.
+            </>
+          ) : (
+            <>
+              At{' '}
+              <a href={t.pageSpeed.brand.href}>{t.pageSpeed.brand.label}</a>
+              {' '}we help companies with web speed. We provide{' '}
+              <a href={t.pageSpeed.consulting.href}>{t.pageSpeed.consulting.label}</a> that leads to faster websites and better conversions. We develop our own{' '}
+              <a href={t.pageSpeed.monitoring.href}>{t.pageSpeed.monitoring.label}</a>.
+            </>
+          )
+        }
+      </p>
     </div>
 
-    <div class="col w-50-xs martin-intro__col">
-      <div class="martin-intro__logo">
+    <div class="col w-50-xs ta-c">
+      <p class="d-f ai-c jc-c mb-1 w-100 martin-intro__logo">
         <a href={communityLogo.href}>
           <img
-            class="martin-intro__logo-image martin-intro__logo-image--community"
             src={communityLogo.src}
             alt={communityLogo.alt}
             width={communityLogo.width}
-            height={communityLogoHeight}
+            height={logoHeight}
             loading="lazy"
           />
         </a>
-      </div>
-      <div class="f-6 ta-c maxw-30em martin-intro__copy">
-        <p class="mb-0">
-          {
-            locale === 'cs' ? (
-              <>
-                Spoluzaložil jsem a vedu jednu z největších českých IT komunit,{' '}
-                <a href={t.community.frontendisti.href}>{t.community.frontendisti.label}</a>.
-                <span class="martin-intro__nowrap"> V rámci této značky</span> pořádáme konferenci{' '}
-                <a href={t.community.frontkon.href}>{t.community.frontkon.label}</a> a natáčíme podcast{' '}
-                <a href={t.community.frontkec.href}>{t.community.frontkec.label}</a>.
-              </>
-            ) : (
-              <>
-                I co-founded and lead one of the largest Czech IT communities,{' '}
-                <a href={t.community.frontendisti.href}>{t.community.frontendisti.label}</a>.
-                Under that brand we run the{' '}
-                <a href={t.community.frontkon.href}>{t.community.frontkon.label}</a> conference and record the{' '}
-                <a href={t.community.frontkec.href}>{t.community.frontkec.label}</a> podcast.
-              </>
-            )
-          }
-        </p>
-      </div>
+      </p>
+      <p class="f-6 maxw-30em mb-0">
+        {
+          locale === 'cs' ? (
+            <>
+              Spoluzaložil jsem a vedu jednu z největších českých IT komunit,{' '}
+              <a href={t.community.frontendisti.href}>{t.community.frontendisti.label}</a>.
+              V rámci této značky pořádáme konferenci{' '}
+              <a href={t.community.frontkon.href}>{t.community.frontkon.label}</a> a natáčíme podcast{' '}
+              <a href={t.community.frontkec.href}>{t.community.frontkec.label}</a>.
+            </>
+          ) : (
+            <>
+              I co-founded and lead one of the largest Czech IT communities,{' '}
+              <a href={t.community.frontendisti.href}>{t.community.frontendisti.label}</a>.
+              Under that brand we run the{' '}
+              <a href={t.community.frontkon.href}>{t.community.frontkon.label}</a> conference and record the{' '}
+              <a href={t.community.frontkec.href}>{t.community.frontkec.label}</a> podcast.
+            </>
+          )
+        }
+      </p>
     </div>
   </div>
 </div>
-
-<style>
-  .martin-intro__row {
-    align-items: flex-start;
-  }
-
-  .martin-intro__col {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .martin-intro__logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    max-width: 20rem;
-    height: 5.5rem;
-    margin: 0 auto 1rem;
-  }
-
-  .martin-intro__logo a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-  }
-
-  .martin-intro__logo-image {
-    display: block;
-    height: 100%;
-    width: auto;
-    max-width: 100%;
-    object-fit: contain;
-    margin-inline: auto;
-  }
-
-  .martin-intro__logo-image--community {
-    height: 70%;
-    max-height: 3.85rem;
-  }
-
-  .martin-intro__copy {
-    width: 100%;
-    max-width: 30em;
-    text-align: center;
-    margin-inline: auto;
-  }
-
-  .martin-intro__copy p {
-    text-align: center;
-    margin-inline: auto;
-  }
-
-  .martin-intro__nowrap {
-    white-space: nowrap;
-  }
-</style>

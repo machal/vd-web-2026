@@ -209,3 +209,16 @@
     right: 0;
   }
 }
+
+.section-autor .martin-intro__logo {
+  box-sizing: border-box;
+  height: 5.5rem;
+  min-height: 5.5rem;
+}
+.section-autor .martin-intro__logo img {
+  display: block;
+  max-height: 100%;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
