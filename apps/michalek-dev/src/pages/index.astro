@@ -63,9 +63,9 @@ function getSlug(entry: (typeof allContent)[number]): string {
 
     <div class="section">
       <div class="content-full pt-3-md">
-        <div class="row">
+        <div class="row home-feature">
           {latestPost && (
-            <div class="col mb-15 mb-0-md w-66-md">
+            <div class="col home-feature__main mb-15">
               <h2 class="mb-05 pb-0">
                 <a href={getSlug(latestPost)}>{latestPost.data.title}</a>
               </h2>
@@ -84,11 +84,24 @@ function getSlug(entry: (typeof allContent)[number]): string {
             </div>
           )}
 
-          <div class="col w-33-md">
+          <div class="col home-feature__aside">
             <AuthorProfileBox siteConfig={siteConfig} />
           </div>
         </div>
       </div>
+
+      <style>
+        @media (min-width: 1000px) {
+          .home-feature__main {
+            width: 66.666%;
+            margin-bottom: 0;
+          }
+
+          .home-feature__aside {
+            width: 33.333%;
+          }
+        }
+      </style>
 
       <div class="content">
         <hr class="hr--small hr--spaced" />

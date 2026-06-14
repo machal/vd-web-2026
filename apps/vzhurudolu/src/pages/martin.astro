@@ -2,6 +2,7 @@
 import BaseLayout from '@vd/shared/layouts/BaseLayout.astro';
 import Header from '@vd/shared/components/Header.astro';
 import Footer from '@vd/shared/components/Footer.astro';
+import MartinHeroHead from '@vd/shared/components/MartinHeroHead.astro';
 import MartinIntro from '@vd/shared/components/MartinIntro.astro';
 import MartinHighlights from '@vd/shared/components/MartinHighlights.astro';
 import { resolveHreflangCluster } from '@vd/shared/content-pairing';
@@ -35,18 +36,7 @@ const alternateLinks = cluster ? buildAlternateLinks(cluster) : undefined;
   <Header slot="header" />
   <Footer slot="footer" />
 
-  <div class="page-head lector__head lector__head--photo-bg">
-    <h1 class="lector__head-name">
-      Martin Michálek
-    </h1>
-    <div class="lector__head-perex">
-      <p>
-        Mám rád web.<br />
-        Píšu o něm už více než 20 let.<br />
-        Nyní se zabývám hlavně rychlostí webů a konferencí FrontKon.
-      </p>
-    </div>
-  </div>
+  <MartinHeroHead />
 
   <MartinIntro />
 

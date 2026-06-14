@@ -3,6 +3,7 @@ import { Fragment } from 'astro/jsx-runtime';
 import BaseLayout from '@vd/shared/layouts/BaseLayout.astro';
 import Header from '@vd/shared/components/Header.astro';
 import Footer from '@vd/shared/components/Footer.astro';
+import MartinHeroHead from '@vd/shared/components/MartinHeroHead.astro';
 import MartinIntro from '@vd/shared/components/MartinIntro.astro';
 import MartinHighlights from '@vd/shared/components/MartinHighlights.astro';
 import JsonLd from '@vd/shared/components/JsonLd.astro';
@@ -80,18 +81,7 @@ const books = [
   <Header slot="header" siteConfig={siteConfig} />
   <Footer slot="footer" siteConfig={siteConfig} />
 
-  <div class="page-head lector__head lector__head--photo-bg">
-    <h1 class="lector__head-name">
-      Martin Michálek
-    </h1>
-    <div class="lector__head-perex">
-      <p>
-        I love the web.<br />
-        I've been writing about it for over 20 years.<br />
-        These days I focus mainly on web performance and the FrontKon conference.
-      </p>
-    </div>
-  </div>
+  <MartinHeroHead siteConfig={siteConfig} />
 
   <MartinIntro siteConfig={siteConfig} />
 
