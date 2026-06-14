@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "@types/mdast": "^4.0.4",
+    "@vercel/speed-insights": "^1.1.0",
     "chokidar": "^3.6.0",
     "hast-util-from-html": "^2.0.3",
     "hast-util-to-text": "^4.0.2",
