@@ -5,6 +5,7 @@ import Footer from '@vd/shared/components/Footer.astro';
 import MartinHeroHead from '@vd/shared/components/MartinHeroHead.astro';
 import MartinIntro from '@vd/shared/components/MartinIntro.astro';
 import MartinHighlights from '@vd/shared/components/MartinHighlights.astro';
+import MartinContact from '@vd/shared/components/MartinContact.astro';
 import { resolveHreflangCluster } from '@vd/shared/content-pairing';
 import { buildAlternateLinks } from '@vd/shared/seo/hreflang';
 import { Fragment } from 'astro/jsx-runtime';
@@ -167,59 +168,6 @@ const alternateLinks = cluster ? buildAlternateLinks(cluster) : undefined;
       </div>
     </div>
 
-    <div class="content">
-      <div class="article">
-        <p class="f-6 ta-c maxw-40em">
-          A články? Nějaký ten blog o webdesignu píšu od roku
-          <a href="/archiv/machal.creativity.cz/2002_11_03_archiv.php">2002</a>, v poslední době pod značkou
-          <a href="https://www.vzhurudolu.cz">Vzhůru dolů</a>. Občas publikuji
-          <a href="https://www.lupa.cz/autori/martin-michalek/">na Lupě</a>,
-          <a href="https://tyinternety.cz/author/martin-michalek/">TyInternety.cz</a>, kdysi hodně na
-          <a href="https://www.zdrojak.cz/autori/martin-michalek/">Zdrojáku</a> a
-          v pradávnu na
-          <a href="https://www.zive.cz/autori/sc-44/default.aspx?author=378&fname=Mich%u00e1lek+Martin">Živě.cz</a>.
-          Občas i v zahraničí, například pro
-          <a href="https://www.smashingmagazine.com/2016/10/how-to-poison-the-mobile-user/">Smashing Magazine</a>
-          nebo
-          <a href="https://uxdesign.cc/bootstraps-biggest-problem-missing-style-guide-b91e37e899cc">UX Collective</a>.
-        </p>
-      </div>
-    </div>
-
-    <div class="content-full bg-dark py-3">
-      <div class="article ta-c py-3" id="frontendisti">
-        <p class="mb-1-5">
-          <a href="https://www.frontendisti.cz/"><img src="/assets/img/content/dest/logos/frontendisti.svg" alt="Frontendisti" width="250" height="88" loading="lazy"></a>
-        </p>
-        <p class="f-6 maxw-30em">
-          Spoluzaložil jsem a vedu spolek
-          <a href="https://www.frontendisti.cz/">Frontendisti.cz</a>, který se
-          zaměřuje na vzdělávání frontendové komunity. S kolegy a kolegyněmi organizujeme srazy
-          v Praze a v Brně.
-        </p>
-      </div>
-    </div>
-
-    <div class="content">
-      <h2 class="ta-c" id="kontakt">
-        <a href="#kontakt">Kontakt</a>
-      </h2>
-
-      <p class="ta-c hovered-anchors article mb-2">
-        E <a href="mailto:martin@vzhurudolu.cz">martin@vzhurudolu.cz</a> –
-        T <a href="tel:724071700">724 071 700</a>
-        <br>
-        <a href="https://x.com/machal">X</a> –
-        <a href="http://www.linkedin.com/in/martinmichalek">LinkedIn</a>
-      </p>
-
-      <div class="small ta-c">
-        Fyzická osoba zapsaná v živnostenském rejstříku.<br>
-        Jurkovičova 988/26<br>
-        149 00, Praha 11<br>
-        IČ: 68168861<br>
-        DIČ: 7708304956
-      </div>
-    </div>
+    <MartinContact />
   </main>
 </BaseLayout>

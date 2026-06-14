@@ -6,6 +6,7 @@ import Footer from '@vd/shared/components/Footer.astro';
 import MartinHeroHead from '@vd/shared/components/MartinHeroHead.astro';
 import MartinIntro from '@vd/shared/components/MartinIntro.astro';
 import MartinHighlights from '@vd/shared/components/MartinHighlights.astro';
+import MartinContact from '@vd/shared/components/MartinContact.astro';
 import JsonLd from '@vd/shared/components/JsonLd.astro';
 import { buildPersonJsonLd } from '@vd/shared/seo/json-ld';
 import { resolveHreflangCluster } from '@vd/shared/content-pairing';
@@ -139,18 +140,6 @@ const books = [
       </div>
     </div>
 
-    <div class="content">
-      <h2 class="ta-c" id="contact">
-        <a href="#contact">Contact</a>
-      </h2>
-
-      <p class="ta-c hovered-anchors article mb-2">
-        <a href="mailto:martin@michalek.dev">martin@michalek.dev</a>
-        <br />
-        <a href="https://www.linkedin.com/in/martinmichalek">LinkedIn</a>
-        &ndash;
-        <a href="https://x.com/machal">X</a>
-      </p>
-    </div>
+    <MartinContact siteConfig={siteConfig} />
   </main>
 </BaseLayout>

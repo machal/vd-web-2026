@@ -13,22 +13,26 @@ export interface MartinHighlightItem {
 
 export const martinHighlightsCopy = {
   cs: {
-    heading: 'Vybrané přednášky a články',
+    heading: 'Pět vybraných přednášek a článků',
     kinds: {
       article: 'Článek',
       talk: 'Přednáška',
     },
+    youtubeLabel: 'Všechny přednášky na YouTube',
+    youtubeHref:
+      'https://www.youtube.com/watch?v=VgQL7CvR0F0&list=PLOs14ZGnaZuvmYRYnRd9qXXLQXTKPfOyj',
   },
   en: {
-    heading: 'Selected talks and articles',
+    heading: 'Five selected talks and articles',
     kinds: {
       article: 'Article',
       talk: 'Talk',
     },
+    youtubeLabel: null,
+    youtubeHref: null,
   },
 } as const;
 
-/** Placeholder highlights — replace with curated content later */
 export const martinHighlights: MartinHighlightItem[] = [
   {
     kind: 'article',
@@ -74,51 +78,6 @@ export const martinHighlights: MartinHighlightItem[] = [
       en: 'FrontKec podcast: the first 10 episodes in one place',
     },
     href: '/blog/262-frontkec-deset-dilu',
-  },
-  {
-    kind: 'article',
-    date: '2024-06-01',
-    title: {
-      cs: 'AI a vývojáři: keynote z FrontKonu',
-      en: 'AI and developers: FrontKon keynote',
-    },
-    href: '/blog/232-ai-vyvojari-frontkon',
-  },
-  {
-    kind: 'talk',
-    date: '2019-05-01',
-    title: {
-      cs: 'Blbosti kolem webové rychlosti',
-      en: 'Nonsense around web speed',
-    },
-    href: 'https://www.youtube.com/watch?v=u0UhPmLpZnc',
-  },
-  {
-    kind: 'talk',
-    date: '2019-04-01',
-    title: {
-      cs: 'Proč si myslím, že AMP je super?',
-      en: 'Why I think AMP is great',
-    },
-    href: 'https://www.youtube.com/watch?v=7p80_AJEb34',
-  },
-  {
-    kind: 'talk',
-    date: '2016-09-01',
-    title: {
-      cs: '10 praktických CSS3 a SVG řešení',
-      en: '10 practical CSS3 and SVG solutions',
-    },
-    href: 'https://webexpo.cz/praha2016/prednaska/10-praktickych-css3-a-svg-reseni/',
-  },
-  {
-    kind: 'article',
-    date: '2020-06-01',
-    title: {
-      cs: 'Jak rychlý je váš web? Spouštíme PageSpeed.ONE',
-      en: 'How fast is your website? Launching PageSpeed.ONE',
-    },
-    href: '/blog/171-pagespeed-cz',
   },
 ];
 

@@ -41,6 +41,14 @@ const sectionId = locale === 'en' ? 'highlights' : 'vybrane';
         ))
       }
     </ul>
+
+    {
+      t.youtubeHref && t.youtubeLabel && (
+        <p class="ta-c mb-0 f-6">
+          <a href={t.youtubeHref}>{t.youtubeLabel}</a>
+        </p>
+      )
+    }
   </div>
 </div>
 
