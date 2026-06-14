@@ -53,7 +53,6 @@ function getSlug(entry: (typeof allContent)[number]): string {
     <link rel="stylesheet" href="/assets/css/modules-standalone/min/course-avatar.min.css" />
     <link rel="stylesheet" href="/assets/css/modules-standalone/min/avatar.min.css" />
     <link rel="stylesheet" href="/assets/css/modules-standalone/min/list.min.css" />
-    <link rel="stylesheet" href="/assets/css/modules-standalone/min/badge.min.css" />
   </Fragment>
 
   <Header slot="header" siteConfig={siteConfig} activeSection="home" />
@@ -86,7 +85,7 @@ function getSlug(entry: (typeof allContent)[number]): string {
           )}
 
           <div class="col w-33-md">
-            <AuthorProfileBox locale="en" />
+            <AuthorProfileBox siteConfig={siteConfig} />
           </div>
         </div>
       </div>

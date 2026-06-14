@@ -14,6 +14,11 @@ export interface NavItem {
   colorClass?: string;
 }
 
+export interface SisterSiteLink {
+  href: string;
+  name: string;
+}
+
 export interface SiteConfig {
   id: 'vzhurudolu' | 'michalek-dev';
   siteName: string;
@@ -23,4 +28,5 @@ export interface SiteConfig {
   navItems: NavItem[];
   showLogoSymbol: boolean;
   footerMode: 'full' | 'minimal';
+  sisterSite?: SisterSiteLink;
 }

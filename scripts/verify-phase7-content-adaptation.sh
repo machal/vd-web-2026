@@ -59,13 +59,15 @@ done
 
 for path in "${PILOT_PATHS[@]}"; do
   assert_not_grep "$path" "placeholder" "stub placeholder text"
-  assert_grep "$path" "adaptation-attribution" "attribution component"
-  assert_grep "$path" "on Vzhůru dolů" "attribution wording"
 done
 
-assert_grep "$EN_DIST/index.html" "Start here" "homepage start-here heading"
-assert_grep "$EN_DIST/index.html" "/guide/webp" "homepage webp link"
+# Phase 13 removed AdaptationAttribution footer from article detail (ART-02).
+# adaptedFrom remains in content front matter; pairing gate covers hreflang/canonical.
+
 assert_grep "$EN_DIST/guide/webp/index.html" 'href="/martin"' "author byline link"
 assert_grep "$EN_DIST/martin/index.html" "pagespeed.one" "martin pagespeed CTA"
+
+# Homepage "Start here" (CONT-06) shipped in Phase 7; removed in Phase 12 CS parity.
+# Author box + topic hub layout covered by verify-phase14-v1-1-visual-polish.sh.
 
 echo "Phase 7 content adaptation gate: PASS"

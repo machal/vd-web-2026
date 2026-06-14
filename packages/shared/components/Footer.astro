@@ -1,5 +1,6 @@
 ---
-import type { SiteConfig } from '@vd/shared/types';
+import type { SiteConfig, SisterSiteLink } from '@vd/shared/types';
+import VdSymbolDef from './VdSymbolDef.astro';
 
 interface Props {
   siteConfig?: SiteConfig;
@@ -7,60 +8,84 @@ interface Props {
 
 const { siteConfig } = Astro.props;
 const footerMode = siteConfig?.footerMode ?? 'full';
+const locale = siteConfig?.locale ?? (footerMode === 'minimal' ? 'en' : 'cs');
+const showLogoSymbol = siteConfig?.showLogoSymbol ?? true;
+
+const defaultSisterSite: SisterSiteLink =
+  locale === 'cs'
+    ? { href: 'https://michalek.dev', name: 'Michalek.dev' }
+    : { href: 'https://www.vzhurudolu.cz', name: 'VzhuruDolu.cz' };
+
+const sisterSite = siteConfig?.sisterSite ?? defaultSisterSite;
+
+const footerTagline =
+  locale === 'cs'
+    ? 'Vytvořeno s láskou k webu a vibe-codingu.'
+    : 'Built with love for the web and vibe coding.';
 ---
 
-{footerMode === 'minimal' ? (
-  <div class="be-in-touch f-sm" id="touch">
-    <footer class="foot" role="contentinfo" aria-labelledby="foot-heading">
-      <h2 class="sr-only" id="foot-heading">Site footer</h2>
+<div class="be-in-touch f-sm" id="touch">
+  <footer class="foot" role="contentinfo" aria-labelledby="foot-heading">
+    <h2 class="sr-only" id="foot-heading">
+      {footerMode === 'minimal' ? 'Site footer' : 'Patička webu'}
+    </h2>
 
+    {footerMode === 'minimal' ? (
       <p>
-        <a href="/privacy">Privacy</a> – <a href="/cookies">Cookies</a>
+        <a href="/privacy">Privacy</a> – <a href="/cookies">Cookies</a> – <a href="/rss">RSS</a>
       </p>
+    ) : (
+      <>
+        <p>
+          <a href="/">Články</a> – <a href="/video">Videa</a> – <a href="/kurzy">Kurzy</a> – <a href="/ebooky">E-booky</a> – <a href="/podcast">Podcast</a>
+        </p>
 
-      <p>
-        Built by <a href="/martin">Martin&nbsp;Michálek</a>.
-      </p>
-    </footer>
-  </div>
-) : (
-  <div class="be-in-touch f-sm" id="touch">
-    <footer class="foot" role="contentinfo" aria-labelledby="foot-heading">
-      <h2 class="sr-only" id="foot-heading">Patička webu</h2>
+        <p>
+          <a href="/email">Novinky e-mailem</a> – <a href="/o-webu">O webu</a>
+          <br />
+          <a href="/podminky">Obchodní podmínky</a> – <a href="/osobni-udaje">Osobní údaje</a> – <a href="/cookies">Cookies</a>
+        </p>
 
-      <p>
-        <a href="/">Články</a> – <a href="/video">Videa</a> – <a href="/kurzy">Kurzy</a> – <a href="/ebooky">E-booky</a> – <a href="/podcast">Podcast</a>
-      </p>
+        <p>
+          <a href="mailto:martin&#64;vzhurudolu&#46;cz">martin&#64;vzhurudolu&#46;cz</a>
+        </p>
 
-      <p>
-        <a href="/email">Novinky e-mailem</a> – <a href="/o-webu">O webu</a>
-        <br />
-        <a href="/podminky">Obchodní podmínky</a> – <a href="/osobni-udaje">Osobní údaje</a> – <a href="/cookies">Cookies</a>
-      </p>
+        <p class="rss-socials">
+          <a href="https://www.facebook.com/VzhuruDolu">Facebook</a>
+          <span class="suppress">–</span>
+          <a href="https://x.com/vzhurudolu">X</a>
+          <span class="suppress">–</span>
+          <a href="https://instagram.com/vzhurudolu">Instagram</a>
+          <span class="suppress">–</span>
+          <a href="https://feeds.feedburner.com/vzhurudolu">RSS</a>
+          <br />
+          <a href="http://www.cssmine.com" hreflang="en" title="Also in English">CSS Mine</a>
+        </p>
+      </>
+    )}
 
-      <p>
-        Tvoří a provozuje <a href="/martin">Martin&nbsp;Michálek</a>.
-        <br>
-        <a href="mailto:martin&#64;vzhurudolu&#46;cz">martin&#64;vzhurudolu&#46;cz</a>
-      </p>
+    <p class="foot__meta mb-0">
+      {footerTagline}
+      <br />
+      {locale === 'cs' ? (
+        <>
+          Dostupné také v angličtině na{' '}
+          <a href={sisterSite.href} hreflang="en">{sisterSite.name}</a>.
+        </>
+      ) : (
+        <>
+          Also available in Czech at{' '}
+          <a href={sisterSite.href} hreflang="cs">{sisterSite.name}</a>.
+        </>
+      )}
+    </p>
 
-      <p class="rss-socials">
-        <a href="https://www.facebook.com/VzhuruDolu">Facebook</a>
-        <span class="suppress">–</span>
-        <a href="https://x.com/vzhurudolu">X</a>
-        <span class="suppress">–</span>
-        <a href="https://instagram.com/vzhurudolu">Instagram</a>
-        <span class="suppress">–</span>
-        <a href="https://feeds.feedburner.com/vzhurudolu">RSS</a>
-        <br />
-        <a href="http://www.cssmine.com" hreflang="en" title="Also in English">CSS Mine</a>
-      </p>
+    {!showLogoSymbol && <VdSymbolDef />}
 
-      <p>
-        <svg class="foot__symbol" viewBox="0 0 28 25" xmlns:xlink="http://www.w3.org/1999/xlink">
-          <use class="vd-symbol" xlink:href="#vd-symbol" x="0" y="0"></use>
-        </svg>
-      </p>
-    </footer>
-  </div>
-)}
+    <p class="mb-0">
+      <svg class="foot__symbol" viewBox="0 0 28 25" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true">
+        <use class="vd-symbol" xlink:href="#vd-symbol" x="0" y="0"></use>
+      </svg>
+    </p>
+  </footer>
+</div>

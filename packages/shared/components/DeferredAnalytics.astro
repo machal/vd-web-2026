@@ -1,5 +1,5 @@
 ---
-/** GA4 loader — deferred until analytics cookie consent. Set PUBLIC_GA_MEASUREMENT_ID in env. */
+/** GA4 loader — deferred after DOM ready. Set PUBLIC_GA_MEASUREMENT_ID in env. */
 const measurementId = import.meta.env.PUBLIC_GA_MEASUREMENT_ID;
 ---
 
@@ -23,27 +23,10 @@ const measurementId = import.meta.env.PUBLIC_GA_MEASUREMENT_ID;
       gtag('config', id, { anonymize_ip: true });
     }
 
-    function maybeLoadAnalytics() {
-      try {
-        const consent = localStorage.getItem('michalek-cookie-consent');
-        if (consent === 'all') {
-          loadGoogleAnalytics(measurementId);
-        }
-      } catch {
-        // no storage — do not load analytics
-      }
-    }
-
-    document.addEventListener('cookie-consent', (event) => {
-      if (event.detail?.level === 'all') {
-        loadGoogleAnalytics(measurementId);
-      }
-    });
-
     if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', maybeLoadAnalytics);
+      document.addEventListener('DOMContentLoaded', () => loadGoogleAnalytics(measurementId));
     } else {
-      maybeLoadAnalytics();
+      loadGoogleAnalytics(measurementId);
     }
   </script>
 )}

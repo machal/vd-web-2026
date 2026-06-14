@@ -8,6 +8,10 @@ export const siteConfig: SiteConfig = {
   origin: 'https://michalek.dev',
   showLogoSymbol: false,
   footerMode: 'minimal',
+  sisterSite: {
+    href: 'https://www.vzhurudolu.cz',
+    name: 'VzhuruDolu.cz',
+  },
   navItems: [
     {
       label: 'Articles',

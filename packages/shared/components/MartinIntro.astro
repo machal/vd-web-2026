@@ -1,0 +1,122 @@
+---
+import {
+  getMartinIntroCopy,
+  martinIntroLogos,
+  type MartinIntroLocale,
+} from '@vd/shared/content/martin-intro';
+import type { SiteConfig } from '@vd/shared/types';
+
+interface Props {
+  siteConfig?: SiteConfig;
+}
+
+const locale: MartinIntroLocale = Astro.props.siteConfig?.locale ?? 'cs';
+const t = getMartinIntroCopy(locale);
+const { pageSpeed: pageSpeedLogo, community: communityLogo } = martinIntroLogos;
+const logoHeight = 88;
+---
+
+<div class="content pt-3 martin-intro">
+  <div class="row fd-c fd-r-xs martin-intro__row">
+    <div class="col w-50-xs martin-intro__col">
+      <div class="martin-intro__logo">
+        <a href={pageSpeedLogo.href}>
+          <img
+            class="martin-intro__logo-image"
+            src={pageSpeedLogo.src}
+            alt={pageSpeedLogo.alt}
+            width={pageSpeedLogo.width}
+            height={logoHeight}
+            loading="lazy"
+          />
+        </a>
+      </div>
+      <div class="f-6 ta-c maxw-30em martin-intro__copy">
+        <p class="mb-0">
+          {t.pageSpeed.before}
+          <a href={t.pageSpeed.brand.href}>{t.pageSpeed.brand.label}</a>
+          {t.pageSpeed.middle}
+          <a href={t.pageSpeed.monitoring.href}>{t.pageSpeed.monitoring.label}</a>
+          {t.pageSpeed.afterMonitoring}
+          <a href={t.pageSpeed.consulting.href}>{t.pageSpeed.consulting.label}</a>
+          {t.pageSpeed.end}
+        </p>
+      </div>
+    </div>
+
+    <div class="col w-50-xs martin-intro__col">
+      <div class="martin-intro__logo">
+        <a href={communityLogo.href}>
+          <img
+            class="martin-intro__logo-image"
+            src={communityLogo.src}
+            alt={communityLogo.alt}
+            width={communityLogo.width}
+            height={logoHeight}
+            loading="lazy"
+          />
+        </a>
+      </div>
+      <div class="f-6 ta-c maxw-30em martin-intro__copy">
+        <p class="mb-0">
+          {t.community.before}
+          <a href={t.community.frontendisti.href}>{t.community.frontendisti.label}</a>
+          {t.community.middle}
+          <a href={t.community.frontkon.href}>{t.community.frontkon.label}</a>
+          {t.community.afterFrontkon}
+          <a href={t.community.frontkec.href}>{t.community.frontkec.label}</a>
+          {t.community.end}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .martin-intro__row {
+    align-items: flex-start;
+  }
+
+  .martin-intro__col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .martin-intro__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 5.5rem;
+    margin: 0 0 1rem;
+  }
+
+  .martin-intro__logo a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .martin-intro__logo-image {
+    display: block;
+    height: 100%;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+    margin-inline: auto;
+  }
+
+  .martin-intro__copy {
+    width: 100%;
+    text-align: center;
+    margin-inline: auto;
+  }
+
+  .martin-intro__copy p {
+    text-align: center;
+    margin-inline: auto;
+  }
+</style>

@@ -331,10 +331,10 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8 →
 ### Phases (v1.1)
 
 - [x] **Phase 10: CZ Nav & Homepage Restructure** - Header/footer nav, homepage podcast/YouTube/FrontKec layout *(executed — human_needed)*
-- [ ] **Phase 11: Shared Author Profile Box** - Brown inverse author box on both homepages
-- [ ] **Phase 12: EN Homepage CS Parity** - Featured article, author, stream, green topic hub
-- [ ] **Phase 13: Article Detail Language UX** - Inline language switch row; remove adaptation footer
-- [ ] **Phase 14: Pre-launch Verify & DNS Unblock** - Visual UAT both previews; resume Phase 9 cutover
+- [x] **Phase 11: Shared Author Profile Box** - Brown inverse author box on both homepages
+- [x] **Phase 12: EN Homepage CS Parity** - Featured article, author, stream, green topic hub
+- [x] **Phase 13: Article Detail Language UX** - Inline language switch row; remove adaptation footer
+- [x] **Phase 14: Pre-launch Verify & DNS Unblock** - Visual UAT both previews; resume Phase 9 cutover
 
 ### Phase 10: CZ Nav & Homepage Restructure
 

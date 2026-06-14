@@ -2,15 +2,15 @@
   --vd-text-color-rgb: 46, 44, 9;
   --vd-text-color: rgb(var(--vd-text-color-rgb));
   --vd-text-color-lighter: rgba(var(--vd-text-color-rgb), 0.8);
-  --vd-text-color-lightest: rgba(var(--vd-text-color-rgb), 0.5);
-  --vd-background-color: #e5e3df;
+  --vd-text-color-lightest: rgba(var(--vd-text-color-rgb), 0.7);
+  --vd-background-color: rgb(228.77325, 227.12085, 222.57675);
   --vd-content-bg-color: #fcfcf7;
   --vd-border-color: rgba(var(--vd-text-color-rgb));
   --vd-border-color-light: rgba(var(--vd-text-color-rgb), 0.5);
   --vd-highlight-bg-color: #d8f5b8;
-  --vd-highlight-neutral-bg-color: #f2f0ed;
+  --vd-highlight-neutral-bg-color: rgb(241.6186, 240.29668, 236.6614);
   --vd-link-color: #5fa316;
-  --vd-heading-color: #2b490a;
+  --vd-heading-color: rgb(42.6216216216, 73.1297297297, 9.8702702703);
   --vd-code-color: hsl(25, 74%, 23%);
   --vd-code-color-1: hsl(25, 74%, 32%);
   --vd-code-color-2: hsl(25, 74%, 37%);
@@ -25,11 +25,11 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --vd-text-color-rgb: 252, 252, 247;
-    --vd-background-color: #201f06;
-    --vd-content-bg-color: #171605;
+    --vd-background-color: rgb(32.2, 30.8, 6.3);
+    --vd-content-bg-color: rgb(23, 22, 4.5);
     --vd-highlight-bg-color: #3A3F26;
     --vd-highlight-neutral-bg-color: #3A3F26;
-    --vd-heading-color: #d1f4ab;
+    --vd-heading-color: rgb(208.5405405405, 243.6432432432, 170.8567567568);
     --vd-code-color: hsl(25, 74%, 83%);
     --vd-code-color-1: hsl(25, 74%, 82%);
     --vd-code-color-2: hsl(25, 74%, 77%);
@@ -55,6 +55,62 @@
   .lector__head {
     padding-top: 3rem;
     padding-bottom: 3rem;
+  }
+}
+
+.lector__head--photo-bg .lector__head-name,
+.lector__head--photo-bg .lector__head-perex {
+  position: relative;
+  z-index: 1;
+  max-width: 16em;
+  margin-left: 0;
+  margin-right: auto;
+}
+@media only screen and (min-width: 768px) {
+  .lector__head--photo-bg .lector__head-name,
+  .lector__head--photo-bg .lector__head-perex {
+    max-width: min(20em, 40%);
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .lector__head--photo-bg .lector__head-name {
+    margin-top: 0;
+  }
+}
+.lector__head--photo-bg .lector__head-image {
+  display: none;
+}
+.lector__head--photo-bg .lector__head-perex > p {
+  max-width: none;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.section-autor .page-head.lector__head--photo-bg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  background-color: #2e2c09;
+  background-image: url(/assets/img/content/lectors/martin-michalek-presenter.png);
+  background-size: cover;
+  background-position: 92% center;
+  background-repeat: no-repeat;
+  min-height: 14rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+@media only screen and (min-width: 768px) {
+  .section-autor .page-head.lector__head--photo-bg {
+    min-height: 18rem;
+  }
+}
+@media only screen and (min-width: 1100px) {
+  .section-autor .page-head.lector__head--photo-bg {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 }
 
@@ -110,7 +166,7 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .lector__head {
+  .lector__head:not(.lector__head--photo-bg) {
     padding-left: 50%;
   }
   .lector__head-image {
@@ -135,5 +191,3 @@
     right: 0;
   }
 }
-
-/*# sourceMappingURL=lector.css.map */

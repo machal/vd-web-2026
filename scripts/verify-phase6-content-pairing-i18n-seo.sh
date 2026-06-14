@@ -69,11 +69,13 @@ assert_grep "$EN_GUIDE" 'rel="canonical" href="https://michalek.dev/guide/webp"'
 assert_grep "$EN_GUIDE" 'vzhurudolu.cz/prirucka/webp' "EN webp Česky link target"
 assert_grep "$EN_GUIDE" 'Česky' "EN webp language switch"
 
-echo "Phase 6 content pairing gate: /martin language switch on both sites..."
+echo "Phase 6 content pairing gate: /martin cross-site footer link on both sites..."
 assert_file "$CS_DIST/martin/index.html" "CS /martin"
 assert_file "$EN_DIST/martin/index.html" "EN /martin"
-assert_grep "$CS_DIST/martin/index.html" 'michalek.dev/martin' "CS martin EN link"
-assert_grep "$EN_DIST/martin/index.html" 'vzhurudolu.cz/martin' "EN martin CS link"
+assert_not_grep "$CS_DIST/martin/index.html" 'language-switch' "CS martin no language switch"
+assert_not_grep "$EN_DIST/martin/index.html" 'language-switch' "EN martin no language switch"
+assert_grep "$CS_DIST/martin/index.html" 'michalek.dev' "CS martin EN footer link"
+assert_grep "$EN_DIST/martin/index.html" 'vzhurudolu.cz' "EN martin CS footer link"
 
 echo "Phase 6 content pairing gate: unpaired CS homepage lacks pairing hreflang cluster..."
 assert_not_grep "$CS_DIST/index.html" 'michalek.dev/guide/' "CS homepage guide pairing link"

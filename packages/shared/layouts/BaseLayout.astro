@@ -1,5 +1,4 @@
 ---
-import CookieConsent from '@vd/shared/components/CookieConsent.astro';
 import DeferredAnalytics from '@vd/shared/components/DeferredAnalytics.astro';
 import type { SiteConfig } from '@vd/shared/types';
 
@@ -172,11 +171,6 @@ const finalOgDescription = ogDescription || description;
       <slot name="footer" />
     </div>
 
-    {!isCs && (
-      <>
-        <CookieConsent />
-        <DeferredAnalytics />
-      </>
-    )}
+    {!isCs && <DeferredAnalytics />}
   </body>
 </html>

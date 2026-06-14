@@ -19,15 +19,9 @@ function formatDate(date: Date | undefined): string {
 function getSlug(entry: CollectionEntry<'blog'> | CollectionEntry<'guide'>): string {
   return `/${entry.collection}/${entry.slug}`;
 }
-
-const badgeLabel = post.collection === 'guide' ? 'Guide' : 'Blog';
-const badgeClass = post.collection === 'guide' ? 'badge badge--yellow' : 'badge';
 ---
 
 <article role="article" class="mb-15">
-  <p class="mb-05">
-    <span class={badgeClass}>{badgeLabel}</span>
-  </p>
   <h2 class="h4 mb-05">
     <a href={getSlug(post)}>{post.data.title}</a>
   </h2>

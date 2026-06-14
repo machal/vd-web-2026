@@ -2,20 +2,20 @@
 import BaseLayout from '@vd/shared/layouts/BaseLayout.astro';
 import Header from '@vd/shared/components/Header.astro';
 import Footer from '@vd/shared/components/Footer.astro';
-import LanguageSwitch from '@vd/shared/components/LanguageSwitch.astro';
-import { resolveAlternate, resolveHreflangCluster } from '@vd/shared/content-pairing';
+import MartinIntro from '@vd/shared/components/MartinIntro.astro';
+import MartinHighlights from '@vd/shared/components/MartinHighlights.astro';
+import { resolveHreflangCluster } from '@vd/shared/content-pairing';
 import { buildAlternateLinks } from '@vd/shared/seo/hreflang';
 import { Fragment } from 'astro/jsx-runtime';
 
 const canonicalUrl = 'https://www.vzhurudolu.cz/martin';
-const alternate = resolveAlternate('vzhurudolu', 'page', '/martin');
 const cluster = resolveHreflangCluster('vzhurudolu', 'page', '/martin');
 const alternateLinks = cluster ? buildAlternateLinks(cluster) : undefined;
 ---
 
 <BaseLayout
   title="Martin Michálek — optimalizace rychlosti webu"
-  description="Ahoj! Jsem konzultant rychlosti webu a tvůrce obsahu pro frontendové vývojáře. Vedu spolek Frontendisti.cz."
+  description="Konzultant webového výkonu, autor Vzhůru dolů, PageSpeed.ONE, Frontendisti.cz a FrontKon."
   ogType="profile"
   ogImage={[
     'https://www.vzhurudolu.cz/assets/img/content/dest/socials/vd-soc-uni-1.webp',
@@ -28,7 +28,6 @@ const alternateLinks = cluster ? buildAlternateLinks(cluster) : undefined;
 >
   <Fragment slot="styles">
     <link rel="stylesheet" href="/assets/css/modules-standalone/min/pages/lector.min.css" />
-    <link rel="stylesheet" href="/assets/css/modules-standalone/min/accordion.min.css" />
     <link rel="stylesheet" href="/assets/css/modules-standalone/min/course-icon.min.css" />
     <link rel="stylesheet" href="/assets/css/modules-standalone/min/emblem.min.css" />
   </Fragment>
@@ -36,114 +35,23 @@ const alternateLinks = cluster ? buildAlternateLinks(cluster) : undefined;
   <Header slot="header" />
   <Footer slot="footer" />
 
-  <div class="page-head lector__head">
+  <div class="page-head lector__head lector__head--photo-bg">
     <h1 class="lector__head-name">
       Martin Michálek
     </h1>
-    <p class="lector__head-image">
-      <picture>
-        <source media="(min-width: 768px)"
-         srcset="
-           /assets/img/content/lectors/martin-michalek_200.png 200w,
-           /assets/img/content/lectors/martin-michalek_500.png 500w,
-           /assets/img/content/lectors/martin-michalek_820.png 820w,
-          "
-         sizes="calc((80vw - 4rem) * .5)"
-         >
-        <img src="/assets/img/content/lectors/shoulders-martin-michalek.png"
-          alt="Martin Michálek" height="200">
-      </picture>
-    </p>
     <div class="lector__head-perex">
       <p>
-        Ahoj! Jsem <a href="#rychlost">konzultant</a> k rychlosti webu
-        a <a href="#publikace">tvůrce obsahu</a> pro frontendové vývojáře.
-        <a href="#frontendisti">Vedu spolek</a> Frontendisti.cz.
-      </p>
-
-      <p class="lector__head-links">
-        <a href="https://www.linkedin.com/in/martinmichalek">LinkedIn</a>
-        &ndash;
-        <a href="https://x.com/machal">X</a>
+        Mám rád web.<br />
+        Píšu o něm už více než 20 let.<br />
+        Nyní se zabývám hlavně rychlostí webů a konferencí FrontKon.
       </p>
     </div>
   </div>
 
-  <LanguageSwitch currentLocale="cs" alternateUrl={alternate?.href} className="ta-c mb-1" />
+  <MartinIntro />
 
   <main role="main" id="main" aria-label="Hlavní obsah" class="">
-    <div class="content">
-      <div class="article">
-        <h2 class="ta-c mb-2" id="rychlost">
-          <a href="#rychlost">Rychlost webu</a>
-        </h2>
-
-        <p class="f-6 ta-c maxw-30em">
-          Rychlé stránky
-          <a href="/prirucka/rychlost-nacitani-proc">plní lépe své cíle</a>.
-          I proto jsem se po více než dvacetileté praxi frontendového designéra
-          zaměřil na rychlost webu.
-          Souvistející služby nyní s kolegy nabízíme pod značkou <a href="https://pagespeed.one/">PageSpeed.ONE</a>.
-        </p>
-
-        <div class="raised accordion px-0 py-05 mt-15 mb-15">
-          <section class="accordion__item">
-            <input type="checkbox" id="acc1" class="accordion__item-toggle">
-            <label class="accordion__item-title" for="acc1">
-              <h3>
-                Školení pro vývojáře
-              </h3>
-            </label>
-            <div class="accordion__item-content">
-              <p>
-                Vývojářům ukážeme celý náš optimalizační proces.
-                Nástroje a postupy, které nám pomáhají najít příčinu problému
-                a přijít s efektivním řešením.
-                <br>
-                Viz naše <a href="https://pagespeed.one/workshops">školení a workshopy o rychlosti webu</a>
-                na PageSpeed.ONE.
-              </p>
-            </div>
-          </section>
-
-          <section class="accordion__item">
-            <input type="checkbox" id="acc2" class="accordion__item-toggle">
-            <label class="accordion__item-title" for="acc2">
-              <h3>
-                Audit rychlosti webu
-              </h3>
-            </label>
-            <div class="accordion__item-content">
-              <p>
-                Zanalyzujeme stav vašeho webu, změříme konkurenci, nastavíme dlouhodobá
-                měření a pravidelný reporting z nástrojů. Dostanete strategická doporučení
-                a vývojáři také popis konkrétních
-                příležitostí i s návodem na opravu. <br>
-                Viz <a href="https://pagespeed.one/audit">audit rychlosti webu</a> na PageSpeed.ONE.
-              </p>
-            </div>
-          </section>
-
-          <section class="accordion__item">
-            <input type="checkbox" id="acc3" class="accordion__item-toggle">
-            <label class="accordion__item-title" for="acc3">
-              <h3>
-                Konzultace a další služby
-              </h3>
-            </label>
-            <div class="accordion__item-content">
-              <p>
-                Máte konkrétní problém s rychlostí webu? Nebo stojíte o dlouhodobou spolupráci
-                či snad o pomoc s vyřešením konkrétního problému, například s metrikami Web Vitals?
-                S rychlostí pomáháme malým i velkým klientům.
-                <br>
-                Podívejte se na další <a href="https://pagespeed.one/services">služby na PageSpeed.ONE</a>.
-              </p>
-            </div>
-          </section>
-        </div>
-      </div>
-    </div>
+    <MartinHighlights />
 
     <div class="content">
       <div class="article" id="publikace">
@@ -288,89 +196,10 @@ const alternateLinks = cluster ? buildAlternateLinks(cluster) : undefined;
       </div>
     </div>
 
-    <div class="content">
-      <div class="article" id="prednasky">
-        <h2 class="ta-c mb-2">
-          <a href="#prednasky">Přednášky</a>
-        </h2>
-      </div>
-    </div>
-
-    <div class="content-full">
-      <div class="row f-6">
-        <div class="col w-33-sm">
-          <p class="rounded o-h rwd-media mb-05">
-            <a href="https://webexpo.cz/praha2016/prednaska/10-praktickych-css3-a-svg-reseni/">
-              <img src="/assets/img/content/lectors/talks/martin-3.jpg"
-                alt="10 praktických CSS3 a SVG řešení" loading="lazy">
-            </a>
-          </p>
-          <p>
-            <strong>
-              <a href="https://webexpo.cz/praha2016/prednaska/10-praktickych-css3-a-svg-reseni/">
-                10 praktických CSS3 a SVG řešení
-              </a>
-            </strong><br>
-            <span class="suppress">
-              WebExpo 2016
-            </span>
-          </p>
-        </div>
-
-        <div class="col w-33-sm">
-          <p class="rounded o-h rwd-media mb-05">
-            <a href="https://www.youtube.com/watch?v=7p80_AJEb34">
-              <img src="https://img.youtube.com/vi/7p80_AJEb34/maxresdefault.jpg"
-                alt="Proč si myslím, že AMP je super?" loading="lazy">
-            </a>
-          </p>
-          <p>
-            <strong>
-              <a href="https://www.youtube.com/watch?v=7p80_AJEb34">
-                Proč si myslím, že AMP je super?
-              </a>
-            </strong><br>
-            <span class="suppress">
-              WebElement&nbsp;2019
-            </span>
-          </p>
-        </div>
-
-        <div class="col w-33-sm">
-          <p class="rounded o-h rwd-media mb-05">
-            <a href="https://www.youtube.com/watch?v=u0UhPmLpZnc">
-              <img src="https://img.youtube.com/vi/u0UhPmLpZnc/maxresdefault.jpg"
-                alt="Blbosti kolem webové rychlosti" loading="lazy">
-            </a>
-          </p>
-          <p>
-            <strong>
-              <a href="https://www.youtube.com/watch?v=u0UhPmLpZnc">
-                Blbosti kolem webové rychlosti
-              </a>
-            </strong><br>
-            <span class="suppress">
-              Frontendisti.cz,&nbsp;2019
-            </span>
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="content mt-0">
-      <div class="article">
-        <p class="f-6 ta-c maxw-40em mb-3">
-          Další přednášky najdete na
-          <a href="https://www.slideshare.net/machal">SlideShare</a>, nebo na
-          <a href="https://www.youtube.com/playlist?list=PLOs14ZGnaZuvmYRYnRd9qXXLQXTKPfOyj">YouTube</a>.
-        </p>
-      </div>
-    </div>
-
     <div class="content-full bg-dark py-3">
       <div class="article ta-c py-3" id="frontendisti">
         <p class="mb-1-5">
-          <a href="https://www.frontendisti.cz/"><img src="/assets/img/content/dest/logos/frontendisti.svg" alt="Frontendisti" width="250" height="91" loading="lazy"></a>
+          <a href="https://www.frontendisti.cz/"><img src="/assets/img/content/dest/logos/frontendisti.svg" alt="Frontendisti" width="250" height="88" loading="lazy"></a>
         </p>
         <p class="f-6 maxw-30em">
           Spoluzaložil jsem a vedu spolek

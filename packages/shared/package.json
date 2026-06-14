@@ -13,6 +13,7 @@
     "./types": "./types/index.ts",
     "./content-pairing": "./content-pairing/index.ts",
     "./content-pairing/*": "./content-pairing/*",
+    "./content/*": "./content/*",
     "./seo/hreflang": "./seo/hreflang.ts",
     "./seo/json-ld": "./seo/json-ld.ts"
   },
