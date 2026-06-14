@@ -29,4 +29,6 @@ export interface SiteConfig {
   showLogoSymbol: boolean;
   footerMode: 'full' | 'minimal';
   sisterSite?: SisterSiteLink;
+  /** GA4 measurement ID (e.g. G-XXXXXXXXXX). EN site only. */
+  gaMeasurementId?: string;
 }

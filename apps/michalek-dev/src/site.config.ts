@@ -6,6 +6,7 @@ export const siteConfig: SiteConfig = {
   titleSuffix: 'Martin Michálek · Web & Performance',
   locale: 'en',
   origin: 'https://michalek.blog',
+  gaMeasurementId: 'G-DY5J0ZET7Z',
   showLogoSymbol: false,
   footerMode: 'minimal',
   sisterSite: {

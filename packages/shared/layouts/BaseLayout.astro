@@ -57,6 +57,8 @@ const finalOgImageArray = Array.isArray(finalOgImage) ? finalOgImage : [finalOgI
 const finalCanonicalUrl = canonicalUrl || ogUrl;
 const finalOgTitle = ogTitle || displayTitle;
 const finalOgDescription = ogDescription || description;
+const gaMeasurementId =
+  config.gaMeasurementId || import.meta.env.PUBLIC_GA_MEASUREMENT_ID;
 ---
 
 <!DOCTYPE html>
@@ -156,6 +158,8 @@ const finalOgDescription = ogDescription || description;
     </script>
 
     <link rel="author" href="/humans.txt" />
+
+    {!isCs && gaMeasurementId && <DeferredAnalytics measurementId={gaMeasurementId} />}
   </head>
 
   <body id="body" class={bodyClass}>
@@ -170,7 +174,5 @@ const finalOgDescription = ogDescription || description;
       
       <slot name="footer" />
     </div>
-
-    {!isCs && <DeferredAnalytics />}
   </body>
 </html>

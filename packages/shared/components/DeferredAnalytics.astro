@@ -1,32 +1,22 @@
 ---
-/** GA4 loader — deferred after DOM ready. Set PUBLIC_GA_MEASUREMENT_ID in env. */
-const measurementId = import.meta.env.PUBLIC_GA_MEASUREMENT_ID;
+interface Props {
+  measurementId?: string;
+}
+
+const { measurementId = import.meta.env.PUBLIC_GA_MEASUREMENT_ID } = Astro.props;
 ---
 
 {measurementId && (
-  <script define:vars={{ measurementId }}>
-    function loadGoogleAnalytics(id) {
-      if (window.__gaLoaded) return;
-      window.__gaLoaded = true;
-
-      const script = document.createElement('script');
-      script.src = `https://www.googletagmanager.com/gtag/js?id=${id}`;
-      script.async = true;
-      document.head.appendChild(script);
-
+  <>
+    <script async src={`https://www.googletagmanager.com/gtag/js?id=${measurementId}`}></script>
+    <script define:vars={{ measurementId }}>
       window.dataLayer = window.dataLayer || [];
       function gtag(...args) {
         window.dataLayer.push(args);
       }
       window.gtag = gtag;
       gtag('js', new Date());
-      gtag('config', id, { anonymize_ip: true });
-    }
-
-    if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', () => loadGoogleAnalytics(measurementId));
-    } else {
-      loadGoogleAnalytics(measurementId);
-    }
-  </script>
+      gtag('config', measurementId);
+    </script>
+  </>
 )}
