@@ -17,17 +17,19 @@ const { heading, bioLines } = getAuthorProfileCopy(locale);
 ---
 
 <div class="page-head lector__head lector__head--photo-bg">
-  <h1 class="lector__head-name">
-    {heading}
-  </h1>
-  <div class="lector__head-perex">
-    <p>
-      {bioLines.map((line, index) => (
-        <>
-          {index > 0 && <br />}
-          {line}
-        </>
-      ))}
-    </p>
+  <div class="lector__head-content">
+    <h1 class="lector__head-name">
+      {heading}
+    </h1>
+    <div class="lector__head-perex">
+      <p>
+        {bioLines.map((line, index) => (
+          <>
+            {index > 0 && <br />}
+            {line}
+          </>
+        ))}
+      </p>
+    </div>
   </div>
 </div>

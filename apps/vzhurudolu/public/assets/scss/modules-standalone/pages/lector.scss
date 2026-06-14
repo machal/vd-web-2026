@@ -29,25 +29,9 @@
 // -------------------------------------------
 
 .lector__head--photo-bg {
-  .lector__head-name,
-  .lector__head-perex {
+  .lector__head-content {
     position: relative;
     z-index: 1;
-    max-width: 16em;
-    margin-left: 0;
-    margin-right: auto;
-
-    @media #{core.$vd-screen-md-up} {
-      max-width: min(20em, 40%);
-      margin-left: auto;
-      margin-right: 0;
-    }
-  }
-
-  .lector__head-name {
-    @media #{core.$vd-screen-md-up} {
-      margin-top: 0;
-    }
   }
 
   .lector__head-image {
@@ -66,23 +50,66 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: left;
+  text-align: center;
   background-color: core.$vd-brown-color;
   background-image: url(/assets/img/content/lectors/martin-michalek-presenter.png);
   background-size: cover;
-  background-position: 92% center;
+  background-position: 42% center;
   background-repeat: no-repeat;
   min-height: 14rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
 
-  @media #{core.$vd-screen-md-up} {
-    min-height: 18rem;
+  .lector__head-content {
+    width: 100%;
+    margin-inline: auto;
   }
 
-  @media #{core.$vd-screen-lg-up} {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+  .lector__head-name,
+  .lector__head-perex {
+    max-width: none;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .lector__head-name {
+    margin-top: 0;
+  }
+
+  .lector__head-perex {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  @media #{core.$vd-screen-md-up} {
+    height: 440px;
+    min-height: 440px;
+    max-height: 440px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    text-align: left;
+    background-position: 92% center;
+    align-items: flex-end;
+
+    .lector__head-content {
+      width: 15rem;
+      margin-left: auto;
+      margin-right: 0;
+    }
+
+    .lector__head-name,
+    .lector__head-perex {
+      margin-left: 0;
+      margin-right: 0;
+      text-align: left;
+    }
+
+    .lector__head-perex {
+      margin-top: 1em;
+    }
   }
 }
 
