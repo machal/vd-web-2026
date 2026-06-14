@@ -1482,6 +1482,7 @@ Navigation
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 0;
   overflow: hidden;
 }
 
@@ -1492,7 +1493,6 @@ Navigation
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: 0.3rem;
   white-space: nowrap;
 }
 

@@ -19,13 +19,13 @@
 .page-subhead__meta {
   display: flex;
   align-items: center;
+  gap: 0;
   overflow: hidden;
 }
 
 .page-subhead__author {
   display: flex;
   align-items: center;
-  margin-right: 0.3rem;
   white-space: nowrap;
 }
 
