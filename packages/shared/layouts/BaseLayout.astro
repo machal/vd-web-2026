@@ -1,5 +1,6 @@
 ---
 import DeferredAnalytics from '@vd/shared/components/DeferredAnalytics.astro';
+import SpeedInsights from '@vercel/speed-insights/astro';
 import type { SiteConfig } from '@vd/shared/types';
 
 interface Props {
@@ -174,5 +175,7 @@ const gaMeasurementId =
       
       <slot name="footer" />
     </div>
+    
+    <SpeedInsights />
   </body>
 </html>
