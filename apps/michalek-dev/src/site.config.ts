@@ -5,7 +5,7 @@ export const siteConfig: SiteConfig = {
   siteName: 'Martin Michálek',
   titleSuffix: 'Martin Michálek · Web & Performance',
   locale: 'en',
-  origin: 'https://michalek.dev',
+  origin: 'https://michalek.blog',
   showLogoSymbol: false,
   footerMode: 'minimal',
   sisterSite: {

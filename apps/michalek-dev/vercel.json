@@ -24,5 +24,19 @@
       "source": "/:path*.eot",
       "headers": [{ "key": "Access-Control-Allow-Origin", "value": "*" }]
     }
+  ],
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "michalek.dev" }],
+      "destination": "https://michalek.blog/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.michalek.dev" }],
+      "destination": "https://michalek.blog/:path*",
+      "permanent": true
+    }
   ]
 }

@@ -13,7 +13,7 @@ import { resolveHreflangCluster } from '@vd/shared/content-pairing';
 import { buildAlternateLinks } from '@vd/shared/seo/hreflang';
 import { siteConfig } from '../site.config';
 
-const canonicalUrl = 'https://michalek.dev/martin';
+const canonicalUrl = `${siteConfig.origin}/martin`;
 const cluster = resolveHreflangCluster('michalek-dev', 'page', '/martin');
 const alternateLinks = cluster ? buildAlternateLinks(cluster) : undefined;
 

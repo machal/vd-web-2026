@@ -72,10 +72,10 @@ function vitePluginCopyPublicToDist() {
 
 export default defineConfig({
   output: 'static',
-  site: 'https://michalek.dev',
+  site: 'https://michalek.blog',
   trailingSlash: 'never',
   integrations: [
-    createCustomSitemap({ site: 'https://michalek.dev' }),
+    createCustomSitemap({ site: 'https://michalek.blog' }),
   ],
   markdown: createMarkdownConfig({
     contentPathPrefix: '/guide',

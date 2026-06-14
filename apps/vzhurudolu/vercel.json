@@ -90,6 +90,13 @@
     { "source": "/fagaras/:path*", "destination": "/data/fagaras/:path*", "permanent": true },
     { "source": "/historie/:path*", "destination": "/data/historie/:path*", "permanent": true },
     { "source": "/images/:path*", "destination": "/data/images-till-2012/:path*", "permanent": true },
-    { "source": "/tumblr/:path*", "destination": "/data/tumblr-till-2012/:path*", "permanent": true }
+    { "source": "/tumblr/:path*", "destination": "/data/tumblr-till-2012/:path*", "permanent": true },
+
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "vzhurudolu.cz" }],
+      "destination": "https://www.vzhurudolu.cz/:path*",
+      "permanent": true
+    }
   ]
 }

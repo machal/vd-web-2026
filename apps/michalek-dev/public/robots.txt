@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://michalek.dev/sitemap.xml
+Sitemap: https://michalek.blog/sitemap.xml

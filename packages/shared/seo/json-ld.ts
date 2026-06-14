@@ -1,3 +1,7 @@
+import { SITE_ORIGINS } from '../content-pairing/resolve.ts';
+
+const EN_MARTIN_URL = `${SITE_ORIGINS['michalek-dev']}/martin`;
+
 export const MARTIN_SAME_AS = [
   'https://www.linkedin.com/in/martinmichalek',
   'https://pagespeed.one/',
@@ -31,7 +35,7 @@ export interface ArticleJsonLdOptions {
 }
 
 export function buildArticleJsonLd(options: ArticleJsonLdOptions): Record<string, unknown> {
-  const author = buildPersonJsonLd({ url: 'https://michalek.dev/martin' });
+  const author = buildPersonJsonLd({ url: EN_MARTIN_URL });
 
   return {
     '@context': 'https://schema.org',
@@ -46,7 +50,7 @@ export function buildArticleJsonLd(options: ArticleJsonLdOptions): Record<string
     publisher: {
       '@type': 'Person',
       name: 'Martin Michálek',
-      url: 'https://michalek.dev/martin',
+      url: EN_MARTIN_URL,
       sameAs: [...MARTIN_SAME_AS],
     },
     ...(options.datePublished

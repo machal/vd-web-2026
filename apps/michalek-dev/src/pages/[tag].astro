@@ -41,7 +41,7 @@ const allContent = [...blogPosts, ...guidePosts]
     return dateB.getTime() - dateA.getTime();
   });
 
-const canonicalUrl = `https://michalek.dev/${tag}`;
+const canonicalUrl = `${siteConfig.origin}/${tag}`;
 ---
 
 <BaseLayout

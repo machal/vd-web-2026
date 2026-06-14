@@ -9,7 +9,7 @@ import type {
 
 export const SITE_ORIGINS: Record<SiteId, string> = {
   vzhurudolu: 'https://www.vzhurudolu.cz',
-  'michalek-dev': 'https://michalek.dev',
+  'michalek-dev': 'https://michalek.blog',
 };
 
 export function resolveContentUrl(ref: ContentRef): string {

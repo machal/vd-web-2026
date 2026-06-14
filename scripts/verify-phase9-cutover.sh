@@ -3,7 +3,7 @@
 #
 # Usage:
 #   bash scripts/verify-phase9-cutover.sh
-#   VZHURUDOLU_URL=https://www.vzhurudolu.cz MICHALEK_DEV_URL=https://michalek.dev bash scripts/verify-phase9-cutover.sh
+#   VZHURUDOLU_URL=https://www.vzhurudolu.cz MICHALEK_DEV_URL=https://michalek.blog bash scripts/verify-phase9-cutover.sh
 #
 # Override bases for preview/staging:
 #   VZHURUDOLU_URL=https://your-cs-preview.vercel.app \
@@ -15,7 +15,7 @@ ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$ROOT"
 
 VZHURUDOLU_URL="${VZHURUDOLU_URL:-https://www.vzhurudolu.cz}"
-MICHALEK_DEV_URL="${MICHALEK_DEV_URL:-https://michalek.dev}"
+MICHALEK_DEV_URL="${MICHALEK_DEV_URL:-https://michalek.blog}"
 REDIRECT_SAMPLES="scripts/redirect-samples.txt"
 
 CS_BASE="${VZHURUDOLU_URL%/}"

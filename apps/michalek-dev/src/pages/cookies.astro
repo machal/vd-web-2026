@@ -4,14 +4,16 @@ import BaseLayout from '@vd/shared/layouts/BaseLayout.astro';
 import Header from '@vd/shared/components/Header.astro';
 import Footer from '@vd/shared/components/Footer.astro';
 import { siteConfig } from '../site.config';
+
+const siteHostname = new URL(siteConfig.origin).hostname;
 ---
 
 <BaseLayout
   title="Cookie Policy"
-  description="How michalek.dev uses cookies, including optional Google Analytics."
+  description={`How ${siteHostname} uses cookies, including optional Google Analytics.`}
   siteConfig={siteConfig}
-  ogUrl="https://michalek.dev/cookies"
-  canonicalUrl="https://michalek.dev/cookies"
+  ogUrl={`${siteConfig.origin}/cookies`}
+  canonicalUrl={`${siteConfig.origin}/cookies`}
 >
   <Fragment slot="styles">
     <link rel="stylesheet" href="/assets/css/modules-standalone/min/page-head.min.css" />
@@ -28,7 +30,7 @@ import { siteConfig } from '../site.config';
       <p><em>Last updated: June 2026</em></p>
 
       <p>
-        This policy describes how <a href="https://michalek.dev/">michalek.dev</a> uses cookies and
+        This policy describes how <a href={siteConfig.origin}>{siteHostname}</a> uses cookies and
         similar technologies. For how we use personal data overall, see the
         <a href="/privacy">Privacy Policy</a>.
       </p>

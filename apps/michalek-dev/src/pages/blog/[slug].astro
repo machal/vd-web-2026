@@ -26,7 +26,7 @@ export async function getStaticPaths() {
 const { post } = Astro.props;
 const { Content } = await post.render();
 
-const canonicalUrl = `https://michalek.dev/blog/${post.slug}`;
+const canonicalUrl = `${siteConfig.origin}/blog/${post.slug}`;
 const alternate = resolveAlternate('michalek-dev', 'blog', post.slug);
 const cluster = resolveHreflangCluster('michalek-dev', 'blog', post.slug);
 const alternateLinks = cluster ? buildAlternateLinks(cluster) : undefined;

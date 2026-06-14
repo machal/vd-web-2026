@@ -1,6 +1,6 @@
 # Production Rollback Runbook
 
-Use this runbook if the Vercel production cutover (Phase 9) causes critical failures on `vzhurudolu.cz` or `michalek.dev`. Target recovery window: **within 48 hours** of DNS switch while old TTL caches expire.
+Use this runbook if the Vercel production cutover (Phase 9) causes critical failures on `www.vzhurudolu.cz` or `michalek.blog`. Target recovery window: **within 48 hours** of DNS switch while old TTL caches expire.
 
 ## When to rollback
 
@@ -23,10 +23,10 @@ Record restored values here after rollback:
 
 | Domain | Record type | Name | Value (restored) | TTL |
 |--------|-------------|------|------------------|-----|
-| vzhurudolu.cz | | | | |
+| vzhurudolu.cz | | | (redirects to www) | |
 | www.vzhurudolu.cz | | | | |
-| michalek.dev | | | | |
-| www.michalek.dev | | | | |
+| michalek.dev | | | (redirects to michalek.blog) | |
+| michalek.blog | | | | |
 
 Apache/FTP production continues to serve CS content from `www/project/` with `public/.htaccess` redirects until you cut over again.
 

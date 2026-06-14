@@ -44,8 +44,8 @@ function getSlug(entry: (typeof allContent)[number]): string {
   title=""
   description="Personal tech blog and web performance consulting."
   siteConfig={siteConfig}
-  ogUrl="https://michalek.dev/"
-  canonicalUrl="https://michalek.dev/"
+  ogUrl={`${siteConfig.origin}/`}
+  canonicalUrl={`${siteConfig.origin}/`}
   bodyClass="section-home"
 >
   <Fragment slot="styles">

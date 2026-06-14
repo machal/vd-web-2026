@@ -6,7 +6,7 @@ updated: 2026-06-09
 cutover_date: null
 ---
 
-# Phase 9 Verification: Production Cutover — michalek.dev + DNS
+# Phase 9 Verification: Production Cutover — michalek.blog + DNS
 
 ## Status
 
@@ -18,8 +18,8 @@ cutover_date: null
 | `scripts/verify-phase9-cutover.sh` | ✅ (run after DNS points to Vercel) |
 | FTP auto-deploy disabled; archive preserved | ✅ |
 | TTL reduced 24–48 h before switch | ⏳ **Human needed** |
-| `vzhurudolu.cz` production domain on Vercel | ⏳ **Human needed** |
-| `michalek.dev` production domain on Vercel | ⏳ **Human needed** |
+| `www.vzhurudolu.cz` production domain on Vercel | ⏳ **Human needed** |
+| `michalek.blog` production domain on Vercel | ⏳ **Human needed** |
 | Post-cutover smoke tests pass | ⏳ **Human needed** |
 | 48 h stable soak before deleting FTP secrets | ⏳ **Human needed** |
 
@@ -29,7 +29,7 @@ cutover_date: null
 
 ### Pre-cutover (T−48 h to T−24 h)
 
-1. At DNS registrar for **vzhurudolu.cz** and **michalek.dev**, reduce TTL on apex and `www` records to **300–600 seconds**.
+1. At DNS registrar for **vzhurudolu.cz** and **michalek.blog**, reduce TTL on apex and `www` records to **300–600 seconds**.
 2. Confirm both Vercel projects build green on production branch (`michalek-dev` or your chosen branch).
 3. Run preview smoke checks if Deployment Protection allows (browser) or temporarily use preview URLs:
    ```bash
@@ -42,7 +42,7 @@ cutover_date: null
 
 1. Attach production domains in Vercel (steps below).
 2. Update DNS at registrar to Vercel-provided records (paste exact values from dashboard — do not guess):
-3. Wait for propagation; verify with `dig +short vzhurudolu.cz` / `dig +short michalek.dev`.
+3. Wait for propagation; verify with `dig +short vzhurudolu.cz` / `dig +short www.vzhurudolu.cz` / `dig +short michalek.blog`.
 4. Run production smoke tests:
    ```bash
    bash scripts/verify-phase9-cutover.sh
@@ -50,7 +50,7 @@ cutover_date: null
    Override bases if needed:
    ```bash
    VZHURUDOLU_URL=https://www.vzhurudolu.cz \
-   MICHALEK_DEV_URL=https://michalek.dev \
+   MICHALEK_DEV_URL=https://michalek.blog \
    bash scripts/verify-phase9-cutover.sh
    ```
 5. Browser spot-check: CS homepage, `/prirucka/css-flexbox`, legacy redirect `/p/css-flexbox`; EN `/`, `/martin`, `/guide/webp`, language switch on paired article.
@@ -75,8 +75,8 @@ cutover_date: null
 
 **Domains → Add:**
 
-1. `vzhurudolu.cz` (apex)
-2. `www.vzhurudolu.cz` (redirect to apex or primary — match current canonical `https://www.vzhurudolu.cz`)
+1. `www.vzhurudolu.cz` (primary — canonical in HTML/sitemap)
+2. `vzhurudolu.cz` → redirect to `www.vzhurudolu.cz` (Vercel domain redirect + `vercel.json` host rule)
 
 **DNS records (copy from Vercel Domains UI — examples only):**
 
@@ -96,8 +96,9 @@ Prior state: production on **FTP/Apache**; Vercel preview connected Phase 4 — 
 
 **Domains → Add:**
 
-1. `michalek.dev` (apex)
-2. `www.michalek.dev` → redirect to apex (EN canonical uses bare domain)
+1. `michalek.blog` (primary — canonical in HTML/sitemap)
+2. `michalek.dev` → redirect to `michalek.blog` (attach when ready; `vercel.json` host rule prepared)
+3. `www.michalek.dev` → redirect to `michalek.blog` (optional)
 
 **DNS records (copy from Vercel Domains UI):**
 
@@ -124,7 +125,7 @@ See **`docs/ROLLBACK.md`** at repo root:
 
 ## ROADMAP success criteria
 
-- [ ] `vzhurudolu.cz` and `michalek.dev` serve from Vercel via staged DNS (TTL reduced before switch)
+- [ ] `www.vzhurudolu.cz` and `michalek.blog` serve from Vercel via staged DNS (TTL reduced before switch)
 - [ ] FTP deploy workflow removed/disabled after successful Vercel soak
 - [ ] Rollback path documented and verified readable (`docs/ROLLBACK.md`)
 
