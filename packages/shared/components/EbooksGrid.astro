@@ -1,0 +1,59 @@
+---
+import { ebooksCatalog } from '@vd/shared/content/ebooks-catalog';
+
+interface Props {
+  imageLoading?: 'lazy' | 'eager';
+}
+
+const { imageLoading = 'lazy' } = Astro.props;
+---
+
+<div class="row fd-c fd-r-xs ebooks-grid">
+  {
+    ebooksCatalog.map((book) => (
+      <article class="col w-50-xs ebooks-grid__item ta-c px-05">
+        <p class="ebooks-grid__cover mb-0">
+          <a class="course-icon course-icon--ebook p-r" href={book.href}>
+            <picture class="course-icon__image">
+              <source type="image/avif" srcset={book.image.avif} />
+              <img
+                src={book.image.webp}
+                alt={book.image.alt}
+                width={book.image.width}
+                height={book.image.height}
+                loading={imageLoading}
+              />
+            </picture>
+          </a>
+        </p>
+        <h3 class="h4 h-4 mb-05">
+          <a href={book.href}>{book.title}</a>
+        </h3>
+        <div class:list={['f-6', book.descriptionClass]}>
+          <p class="mb-05" set:html={book.descriptionHtml} />
+          <p class="mb-0">
+            <a class:list={['button', book.buttonClass]} href={book.href}>
+              Více informací
+            </a>
+          </p>
+        </div>
+      </article>
+    ))
+  }
+</div>
+
+<style>
+  .ebooks-grid__item {
+    text-align: center;
+  }
+
+  .ebooks-grid__cover {
+    max-width: 16rem;
+    margin-inline: auto;
+  }
+
+  .ebooks-grid__item :global(.button) {
+    display: inline-block;
+    width: auto;
+  }
+</style>

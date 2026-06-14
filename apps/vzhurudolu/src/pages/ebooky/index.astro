@@ -2,6 +2,7 @@
 import BaseLayout from '@vd/shared/layouts/BaseLayout.astro';
 import Header from '@vd/shared/components/Header.astro';
 import Footer from '@vd/shared/components/Footer.astro';
+import EbooksGrid from '@vd/shared/components/EbooksGrid.astro';
 ---
 
 <BaseLayout
@@ -26,103 +27,7 @@ import Footer from '@vd/shared/components/Footer.astro';
         <link rel="stylesheet" href="/assets/css/modules-standalone/min/course-icon.min.css" />
         <link rel="stylesheet" href="/assets/css/modules-standalone/min/emblem.min.css" />
         
-        <div class="row fd-c fd-r-xs">
-          <div class="col w-50-xs">
-            <p>
-              <a class="course-icon course-icon--ebook p-r" href="/css-layout">
-                <picture class="course-icon__image">
-                  <source type="image/avif" srcset="/assets/img/content/handmade/ebooks/vdlayout/vdlayout-front-both.avif">
-                  <img src="/assets/img/content/handmade/ebooks/vdlayout/vdlayout-front-both.webp"
-                       alt="CSS: moderní layout" width="130" height="130" loading="eager">
-                </picture>
-              </a>
-            </p>
-            <h3 class="h4 h-4 mb-05 d-f ai-fe">
-              <a href="/css-layout/">CSS: moderní layout</a>
-            </h3>
-            <div class="f-6">
-              <p class="mb-05">
-                Grid, flexbox a nové metody rozvržení webů v příkladech. E-book a tištěná kniha. Vydáno:&nbsp;2022.
-                <br>Cena: <strong>199-449&nbsp;Kč</strong>
-              </p>
-              <p>
-                <a class="button mx-1" href="/css-layout/">Více informací</a>
-              </p>
-            </div>
-          </div>
-
-          <div class="col w-50-xs">
-            <p>
-              <a class="course-icon course-icon--ebook p-r" href="/kniha-responzivni-design">
-                <picture class="course-icon__image">
-                  <source type="image/avif" srcset="/assets/img/content/handmade/ebooks/vdwd/vdwd-ebook.avif">
-                  <img src="/assets/img/content/handmade/ebooks/vdwd/vdwd-ebook.webp"
-                       alt="Vzhůru do (responzivního) webdesignu" width="130" height="130" loading="eager">
-                </picture>
-              </a>
-            </p>
-            <h3 class="h4 h-4 mb-05 d-f ai-fe">
-              <a href="/kniha-responzivni-design/">Vzhůru do (responzivního) webdesignu</a>
-            </h3>
-            <div class="f-6">
-              <p class="mb-05">
-                Kompletní průvodce návrhem a&nbsp;implementací responzivních webů. Vydáno:&nbsp;2017.
-                <br>Cena: <strong>199&nbsp;Kč</strong>
-              </p>
-              <p>
-                <a class="button mx-1" href="/kniha-responzivni-design/">Více informací</a>
-              </p>
-            </div>
-          </div>
-
-          <div class="col w-50-xs">
-            <p>
-              <a class="course-icon course-icon--ebook p-r" href="/ebook-amp">
-                <picture class="course-icon__image">
-                  <source type="image/avif" srcset="/assets/img/content/handmade/ebooks/vdamp/vdamp-ebook.avif">
-                  <img src="/assets/img/content/handmade/ebooks/vdamp/vdamp-ebook.webp"
-                       alt="Vzhůru do AMP" width="130" height="130" loading="eager">
-                </picture>
-              </a>
-            </p>
-            <h3 class="h4 h-4 mb-05 d-f ai-fe">
-              <a href="/ebook-amp/">Vzhůru do AMP</a>
-            </h3>
-            <div class="f-6 p-r">
-              <p class="mb-05">
-                Vše o technologii pro tvorbu bezkonkurenčně rychlých webů v jednom e-booku. Vydáno:&nbsp;2019.
-                <br>Cena:&nbsp;<strong>99&nbsp;Kč</strong>
-              </p>
-              <p>
-                <a class="button px-1" href="/ebook-amp/">Více informací</a>
-              </p>
-            </div>
-          </div>
-
-          <div class="col w-50-xs">
-            <p>
-              <a class="course-icon course-icon--ebook p-r" href="/ebook-css3">
-                <picture class="course-icon__image">
-                  <source type="image/avif" srcset="/assets/img/content/handmade/ebooks/vdcss3/vdcss3-ebook.avif">
-                  <img src="/assets/img/content/handmade/ebooks/vdcss3/vdcss3-ebook.webp"
-                       alt="Vzhůru do CSS3" width="130" height="130" loading="eager">
-                </picture>
-              </a>
-            </p>
-            <h3 class="h4 h-4 mb-05 d-f ai-fe">
-              <a href="/ebook-css3/">Vzhůru do CSS3</a>
-            </h3>
-            <div class="f-6">
-              <p class="mb-05">
-                Změny frontend kodéřiny, nástroje, postupy a &nbsp;nové CSS3 vlastnosti v&nbsp;jednom e-booku. Vydáno:&nbsp;2015.
-                <br><strong>Zdarma ke stažení</strong>
-              </p>
-              <p>
-                <a class="button mx-1" href="/ebook-css3/">Více informací</a>
-              </p>
-            </div>
-          </div>
-        </div>
+        <EbooksGrid imageLoading="eager" />
       </div>
 
       <div class="content">

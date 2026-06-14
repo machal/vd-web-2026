@@ -1,8 +1,8 @@
 ---
 import {
   formatMartinHighlightDate,
+  getMartinHighlights,
   getMartinHighlightsCopy,
-  martinHighlights,
   type MartinHighlightsLocale,
 } from '@vd/shared/content/martin-highlights';
 import type { SiteConfig } from '@vd/shared/types';
@@ -13,6 +13,7 @@ interface Props {
 
 const locale: MartinHighlightsLocale = Astro.props.siteConfig?.locale ?? 'cs';
 const t = getMartinHighlightsCopy(locale);
+const highlights = getMartinHighlights(locale);
 const sectionId = locale === 'en' ? 'highlights' : 'vybrane';
 ---
 
@@ -24,14 +25,14 @@ const sectionId = locale === 'en' ? 'highlights' : 'vybrane';
 
     <ul class="list list--bordered list--block-hover list--spaced martin-highlights f-6">
       {
-        martinHighlights.map((item) => (
+        highlights.map((item) => (
           <li class="list__item">
             <a href={item.href} class="list__item-link martin-highlights__link">
               <span class="martin-highlights__row">
                 <span class="text-color-lightest martin-highlights__kind">
                   {t.kinds[item.kind]}:
                 </span>
-                <span class="martin-highlights__title">{item.title[locale]}</span>
+                <span class="martin-highlights__title">{item.title}</span>
                 <span class="text-color-lightest martin-highlights__date">
                   ({formatMartinHighlightDate(item.date, locale)})
                 </span>
@@ -44,8 +45,8 @@ const sectionId = locale === 'en' ? 'highlights' : 'vybrane';
 
     {
       t.youtubeHref && t.youtubeLabel && (
-        <p class="ta-c mb-0 f-6">
-          <a href={t.youtubeHref}>{t.youtubeLabel}</a>
+        <p class="ta-c mb-0 martin-highlights__youtube">
+          <a class="button" href={t.youtubeHref}>{t.youtubeLabel}</a>
         </p>
       )
     }
@@ -78,5 +79,14 @@ const sectionId = locale === 'en' ? 'highlights' : 'vybrane';
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+  }
+
+  .martin-highlights__youtube {
+    margin-top: 1.5rem;
+  }
+
+  .martin-highlights__youtube .button {
+    display: inline-block;
+    width: auto;
   }
 </style>
