@@ -1,5 +1,6 @@
 ---
 id: css-display
+pairId: css-display
 tags: ['css']
 title: 'Vlastnost CSS display'
 heading: 'Vlastnost CSS display'

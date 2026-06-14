@@ -1,5 +1,6 @@
 ---
 id: psani
+pairId: writing
 title: "O psaní: jak začít a už se nezastavit"
 heading: "O psaní: jak začít a už se nezastavit"
 published: true

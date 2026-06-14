@@ -1,5 +1,6 @@
 ---
 id: css-selektory
+pairId: css-selectors
 tags: ['css']
 title: 'CSS selektory'
 heading: 'CSS selektory'

@@ -42,6 +42,41 @@ export const CONTENT_PAIRS: ContentPair[] = [
     en: { site: 'michalek-dev', collection: 'blog', key: 'save-on-devs-spend-on-consultants' },
   },
   {
+    pairId: 'rok-2024',
+    cs: { site: 'vzhurudolu', collection: 'blog', key: '253-2024' },
+    en: { site: 'michalek-dev', collection: 'blog', key: '2024-year-in-review' },
+  },
+  {
+    pairId: 'webexpo-2026',
+    cs: { site: 'vzhurudolu', collection: 'blog', key: '263-webexpo-2026' },
+    en: { site: 'michalek-dev', collection: 'blog', key: 'webexpo-2026' },
+  },
+  {
+    pairId: 'writing',
+    cs: { site: 'vzhurudolu', collection: 'prirucka', key: 'psani' },
+    en: { site: 'michalek-dev', collection: 'guide', key: 'writing' },
+  },
+  {
+    pairId: 'bem',
+    cs: { site: 'vzhurudolu', collection: 'prirucka', key: 'bem' },
+    en: { site: 'michalek-dev', collection: 'guide', key: 'bem' },
+  },
+  {
+    pairId: 'css-units',
+    cs: { site: 'vzhurudolu', collection: 'prirucka', key: 'jednotky' },
+    en: { site: 'michalek-dev', collection: 'guide', key: 'css-units' },
+  },
+  {
+    pairId: 'css-selectors',
+    cs: { site: 'vzhurudolu', collection: 'prirucka', key: 'css-selektory' },
+    en: { site: 'michalek-dev', collection: 'guide', key: 'css-selectors' },
+  },
+  {
+    pairId: 'css-display',
+    cs: { site: 'vzhurudolu', collection: 'prirucka', key: 'css-display' },
+    en: { site: 'michalek-dev', collection: 'guide', key: 'css-display' },
+  },
+  {
     pairId: 'martin',
     cs: { site: 'vzhurudolu', collection: 'page', key: '/martin' },
     en: { site: 'michalek-dev', collection: 'page', key: '/martin' },

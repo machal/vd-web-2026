@@ -1,5 +1,6 @@
 ---
 id: bem
+pairId: bem
 tags: ['organizace-css']
 title: 'BEM: Pojmenovávací konvence pro třídy v CSS'
 heading: 'BEM: Pojmenovávací konvence pro třídy v CSS'

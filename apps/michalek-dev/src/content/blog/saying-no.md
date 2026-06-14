@@ -1,6 +1,6 @@
 ---
 title: "The art of saying no"
-description: "Capable people attract more work until something breaks. Learning to say no — constructively — is a survival skill, not arrogance."
+description: "Capable people keep getting more work until something breaks. Learning to say no — constructively — is a survival skill, not arrogance."
 date: 2025-03-10
 published: true
 pairId: saying-no
@@ -11,36 +11,39 @@ adaptedFrom:
 tags:
   - soft-skills
   - productivity
+  - career
 ---
 
 # The art of saying no
 
-Feeling overloaded? I used to, all the time. I still wrestle with it. One thing I have learned reliably:
+Feeling buried? I used to be, all the time. I still fight it. But one thing I have learned for sure:
 
-**Competence without boundaries destroys capable people.**
+The talent of many talented people gets wrecked by never mastering the art of saying _no_.
 
 You are good? You get more work.
 
-You keep delivering? You get even more.
+Still keeping up? You get even more.
 
-Repeat until something snaps — usually quality, then energy, then the job you once loved.
+And on it goes — until you collapse under the weight of your own commitments.
 
-The exit ramp is learning to refuse, often and early.
+Or until you start refusing, in earnest.
 
 ![Yes and no signs in a forest](https://res.cloudinary.com/vzhurudolu-cz/image/upload/v1741590750/vzhurudolu-blog/ano-ne_l4q8ty.webp)
 
-Some people cannot say no to a boss. Others fail with colleagues, friends, partners, or their own ambitions. Some whip themselves with slogans like "Nothing is impossible" or "Never give up" — then trade depth for volume, burn out, or simply stop caring. They forgot they cannot do everything. They forgot how liberating **no** can be.
+## Why capable people drown {#why-capable-people-drown}
 
-You also need to say no to yourself — to ideas, side projects, shiny thoughts. Ideas feel like children; we love them. Killing ideas is what we politely call prioritisation.
+Some people cannot turn down their boss. Some cannot turn down colleagues. Some cannot refuse friends, a partner, their kids. And some braid the whip themselves. They tell themselves things like "Nothing is impossible" or "Never give up" — and in the end the only thing they give up is quality, traded for quantity. They burn out, or simply stop enjoying the work they once loved. They forgot they cannot do everything. They forgot how liberating _no_ can be.
 
-Refusal is hard. It can sound harsh. You may worry people will like you less. But being liked only because you never say no means others live at your expense. Whose life is it?
+You need to say _no_ to yourself too. To your own ideas, your own projects, your own pet thoughts. That is the hard part, because ideas are like children. We love them. But killing ideas has a polite name: prioritisation.
 
-**No** can feel arrogant. It does not have to. Learn **constructive no**:
+## No is not arrogance {#no-is-not-arrogance}
 
-> "I won't take this on, but I can point you to someone who might — or send materials that could help."
+Refusing is not easy, I know. It can sound harsh; you can come across as arrogant. That is why so many people fear that a _no_ will make others like them less. But being liked only because you never say _no_ means other people are living at your expense. Whose life is it — theirs or yours?
 
-Over time a plain "no" with a little empathy works too: "Sorry — I'm fully booked right now."
+To some, _no_ may sound too blunt. It does not have to be. You just have to learn the _constructive no:_
 
-Often, saying no to others is saying yes to yourself.
+> "I won't be doing this, but I can point you to someone — or send you materials that should help."
 
----
+In time you will learn the plain no as well; it only takes a little empathy: "Sorry, but I already have a lot on my plate right now."
+
+Because saying _no_ often means saying _yes_ to yourself.

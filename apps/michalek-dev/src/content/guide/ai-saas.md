@@ -1,6 +1,6 @@
 ---
-title: "Will AI kill SaaS? Look again"
-description: "Every AI wave brings apocalypse headlines for software subscriptions. SaaS is more than code you can vibe-generate in an afternoon — it is risk transfer."
+title: "Will AI Kill SaaS? Let's Think Again"
+description: "Every AI wave brings apocalypse headlines for software subscriptions. But SaaS is far more than code you can vibe-generate in an afternoon."
 date: 2026-03-06
 published: true
 pairId: ai-saas
@@ -12,90 +12,138 @@ tags:
   - ai
   - saas
   - business
+  - vibe-coding
 ---
 
-# Will AI kill SaaS? Look again
+# AI is supposedly going to kill SaaS. Let's think about that one more time
 
-We live in an era where dark AI predictions chase each other on social feeds. Humans are excellent at one thing: overconfidence in domains we do not understand — especially when doom gets clicks.
+We live in a world where one dark AI prediction is immediately replaced by the next. It's worth remembering that we humans are absolutely excellent at exactly one thing: overestimating how much we know about domains we don't actually understand.
 
-Let us talk concretely about the **SaaSpocalypse** — the idea that SaaS stocks crash because every team will roll their own apps with AI and cancel subscriptions.
+This particular brand of irrationality hits hardest among those of us who love the attention that doom-laden predictions reliably generate.
 
-## Irrational humans and AI catastrophes {#iracionalni-lide}
+So let's get concrete and talk about the **SaaSpocalypse** — the coming apocalypse of SaaS companies. Software stocks are sliding because SaaS apps (Software as a Service) supposedly won't be needed anymore. Everyone can just write their own with AI.
 
-Yes, AI changes the rules. Not every rule change ends the game.
+## We irrational humans and our AI catastrophes {#irrational-humans}
 
-Recent panics:
+Yes, AI is changing the rules of the game. But not every rule change means the game is over.
 
-- **"Juniors are finished."** Demand for juniors is down — but not only because of AI. Macro cycles and [deferred hiring](https://www.youtube.com/watch?v=_M_vM52bcxI) matter too. Productivity gains from AI tools are not infinite.
-- **"Mass layoffs — we are all unemployed!"** When Block cut thousands of jobs, headlines screamed apocalypse. [Reality was more mundane restructuring](https://www.facebook.com/patrick.zandl/posts/pfbid034oZikvMg74FSGKW714dAqtx6D7cNVN1GwuCZpFGBHeLWaSGW2U6w1pSAQCj3ssCLl) — classic [AI washing](https://en.wikipedia.org/wiki/AI_washing).
-- **"SaaS faces its biggest test in twenty years."** Sensational headlines about AI eating software from the inside. That is the thread I want to pull.
+Look at the pattern:
 
-How many "this industry dies in five years" forecasts have we survived in the last decade alone? EVs in every driveway, blockchain everything, crypto wages for factory workers…
+- **"Juniors won't be needed. Who'll look after them?!"**  
+Everyone says it, and demand for junior developers really is falling. Except it isn't falling because of AI alone — it's the broader economy too. And partly because it's [deferred demand](https://www.youtube.com/watch?v=_M_vM52bcxI). The productivity boost AI gives to existing employees won't grow forever.
 
-The world shifts. Usually not exactly as prophets sell it.
+- **"Jobs are vanishing. We're all out of work!"**  
+Like when Jack Dorsey, former owner of Twitter, cut thousands of people at Block. Catastrophe — we're all losing our jobs! Except the whole thing was a bit different: the company simply [needed to slim down](https://en.wikipedia.org/wiki/AI_washing). That's textbook [AI washing](https://en.wikipedia.org/wiki/AI_washing) — blaming (or crediting) AI for a decision that had other reasons entirely.
+
+- **"SaaS faces its biggest test in twenty years. And it probably won't survive!"**  
+…write others. It must be true. Some editor slapped a headline on it like "The age of digital cannibalism has arrived: AI has started eating software from the inside." Personally, I'd prefer AI to eat the editors who come up with headlines like that. But to the point — the SaaSpocalypse is exactly what I want to address here.
+
+How many of these "this whole industry dies in five years" catastrophes have we lived through in the last decade alone? An electric car in every driveway within five years. Blockchain changes everything. Factory workers paid in crypto. Energy breakthroughs.
+
+Let's meet in the Metaverse, where we'll watch the end of an entire continent brought on by whatever this year's policy panic happens to be.
+
+The world is changing and will keep changing — but perhaps a little differently than the evangelists proclaim.
 
 Back to SaaS.
 
 ## SaaSpocalypse {#saaspocalypse}
 
-We run a SaaS product, so I watch this closely. AI touches everything we build. We use it strategically. The hype is huge.
+We run a SaaS product, so this topic genuinely interests me. AI has an enormous influence on everything in this field. We use AI; we strategically track everything that's happening. It's a big deal.
 
-Investors, especially, behave irrationally. The trending chart of falling software stocks feeds the narrative that [vibe coding](../guide/vibe-coding.md) lets anyone replace subscriptions.
+But at the same time, I see that people aren't behaving rationally. Investors least of all. Let's illustrate it with a chart that's trending hard right now — the one showing software stocks falling off a cliff.
 
 <figure>
-<img src="/prirucka/images/saaspokalypse.jpg" alt="Chart showing decline in software company stock prices">
+<img src="/prirucka/images/saaspokalypse.jpg" alt="SaaSpocalypse. The fall of software company stock prices">
 <figcaption markdown="1">
-*Market sentiment about SaaS and AI — not a survey of practitioners.*
+*Here we see the result of a vote among experts on SaaS, AI, and the future.*
 </figcaption>
 </figure>
 
-Software development is shifting. Vibe coding opens building to non-developers. Every other CEO becomes a part-time programmer. Designers become "builders." My cat would launch a SaaS if we had a cat.
+The reasoning goes like this: software development is undergoing a tectonic shift. [Vibe coding](../guide/vibe-coding.md) has opened up software development to the masses.
 
-Consultants declare Cursor — a thin AI layer on [VS Code](https://code.visualstudio.com) — "the greatest software ever written." I get the excitement. I also see how little the hype understands shipping real products.
+Every other CEO is now a programmer.
 
-## Pepík and his invoicing app {#pepik}
+Designers are turning into "builders."
 
-Meet Pepík — fictional, for clarity. Marketer, part-time AI consultant. He paid for invoicing SaaS until yesterday, when a vibe-coded calculator thrilled him. Today he builds his own billing tool because the internet said [developers are obsolete](https://www.vzhurudolu.cz/blog/258-ai-programovani-psani).
+Our cat would be building its own SaaS by now. If we had a cat…
 
-### Day one — euphoria {#den-prvni}
+Plenty of AI consultants are shouting that Cursor — interface-wise, a fairly thin layer on top of the developer editor [VS Code](https://code.visualstudio.com) — is "the best software ever created."
 
-Pepík prompts Cursor, iterates, invoices in PDF prettier than the SaaS template. He posts: "Two hours of work replaced €120/year subscription. SaaS is dead!!!" Welcome to the beautiful new world.
+I understand the enthusiasm. But the enthusiasm, the dark predictions, and ultimately the stock price moves all point to the same thing: a lack of understanding of how software development actually works.
 
-### Day two — what is git? {#den-druhy}
+Let's illustrate it with a made-up example.
 
-New client, new fields. A prompt breaks existing invoices. Terminal errors. Git exists, but who has time? He hacks forward and loses hours meant for thought leadership posts.
+Somewhere around the twelfth LinkedIn post on the subject, I got annoyed. And invented Joe.
 
-### Day three — terminal whack-a-mole {#den-treti}
+## Joe and his invoicing software {#joe}
 
-He learns git because X said marketers must. Rollback works — mostly. Two hours gone; he is now a part-time developer because developers fix scary screen text.
+Once upon a time there was a guy named Joe. Joe is a marketer and a bit of an AI consultant. Joe is a fictional character, just to be clear.
 
-### Day four — invoice in euros {#den-ctvrty}
+Joe had been paying for an invoicing SaaS for years. But yesterday he "vibe-coded" a mortgage calculator, got swept up in the excitement, and today decided to stop paying for the SaaS and build his own little invoicing gadget instead. Because the internet told him [developers won't be needed anymore](https://www.vzhurudolu.cz/blog/258-ai-programovani-psani).
 
-Slovak client needs EUR, tax lines, reverse charge wording. Cursor adds fields; compliance does not. Client rejects the invoice. Pepík digs through the SaaS docs he cancelled and spends three hours learning VAT rules he never knew existed.
+### Day one — euphoria {#day-one}
 
-### Day five — "How dare you" {#den-paty}
+Joe opens Cursor, throws together some kind of spec, and after a few iterations he has a solution. He types in the data, gets an invoice — in PDF, no less, and prettier than the one his old service produced. He immediately runs off to post on X: "In two hours of work I built the same app I was paying $120 a year for. SaaS is dead!!!"
 
-A client emails: subject "How dare you?" Screenshot attached — Pepík's logo replaced with something NSFW after he shared invoices publicly. Welcome to security and abuse handling.
+Welcome to the beautiful new world, Joe, where everyone can program anything!
+
+### Day two — what is git? {#day-two}
+
+Different client. Different invoice. New fields are needed. So he just writes a prompt asking Cursor to tweak it. But something breaks in the process. Now even the original invoicing doesn't work anymore. Joe doesn't understand the messages in the terminal.
+
+He'd love to roll back to the previous version. He's heard there's this thing called git. But there's no time to study it. In the end he hacks his way through somehow, but he's lost two hours he'd meant to spend writing about how vibe coding is changing the world.
+
+Welcome to the world of version control, Joe.
+
+### Day three — weird messages in the terminal {#day-three}
+
+Joe spends the whole morning learning git. People on X said even marketers need to know it now. So he can version his work, and when something breaks he steps back. Which means he can finally tackle those weird messages in the terminal.
+
+After two hours he gets it working, though he doesn't really know how. He's lost all track of time and never did that analysis for his client — but he is now, in addition to a marketer, basically a programmer. After all, programmers are the people who deal with weird messages on a screen.
+
+Welcome to the world of developer fundamentals, Joe.
+
+### Day four — wait, the invoice is in euros? {#day-four}
+
+The next day he needs to send an invoice to a client in another country. Joe's stomach drops, because that means adding the option to invoice in a foreign currency. In Cursor that turns out to be trivial, but… hold on, how does the exchange rate and currency conversion actually work…? Joe goes off to study; an hour later he has it, results and all.
+
+In the end the client returns the invoice anyway — apparently because of incorrect handling of cross-border VAT and the reverse-charge mechanism. Joe is caught off guard and starts digging through the documentation of the SaaS app he stopped paying for a few days ago, hunting for the details. Three hours later he pulls it off and is finally ready to invoice across borders.
+
+Welcome to the world of managing know-how and product features that SaaS app authors handle for you, Joe.
+
+### Day five — "How dare you?" {#day-five}
+
+Joe is getting a little frustrated now, because he hasn't gotten much done over the last several days. But he's already drafting an X post in the genre of "what I learned building my own invoicing solution."
+
+Then an email from a client lands in his inbox — the one he sent his very first invoice to four days ago. The subject line reads "How dare you?" Joe's stomach drops, and it's about to get worse. The client attached a screenshot from his invoicing app. In place of the polished, AI-generated logo of Joe's consulting firm, there's just… uh… a porn image.
+
+After Joe showed off his invoices on X, someone had a little fun with them.
+
+Welcome to the world of online security, Joe!
 
 <figure>
-<img src="/prirucka/images/vibe-coder-depression.jpg" alt="Meme chart of vibe coder enthusiasm crashing into reality">
+<img src="/prirucka/images/vibe-coder-depression.jpg" alt="A vibe coder in euphoria and in deep depression">
 <figcaption markdown="1">
-*Pepík's arc.*
+*Joe's journey.*
 </figcaption>
 </figure>
 
-Day six? Pepík renews his SaaS subscription.
+And what happens on day six, dear readers?
 
-The story is exaggerated; the structure is not.
+Joe goes off to renew his SaaS subscription.
 
-### SaaS is paid responsibility transfer {#prevzeti-zodpovednosti}
+Whatever you think about how realistic the story is, it hopefully leaves you with at least a basic mental model of what most SaaS services actually provide.
 
-SaaS is not just software.
+### SaaS is paid transfer of responsibility {#responsibility-transfer}
 
-It is infrastructure — testing web performance at scale in [PageSpeed.ONE](https://pagespeed.one/) is its own universe. Domain knowledge. Product vision. Stability, security, speed. [Fakturoid](https://www.fakturoid.cz/) carries part of your billing risk. We carry part of your performance risk.
+Because SaaS isn't just software.
 
-The best AI does not sign the SLA.
+SaaS is often a deeply complex technical infrastructure (one day I'll try to sketch out everything that goes into testing web performance in [PageSpeed.ONE](https://pagespeed.one/)). SaaS is domain knowledge of the problem. SaaS is the know-how you accumulate as the author of an app. SaaS is product vision, communication with your audience, and discovering problems a vibe coder can't even imagine. SaaS is solving for stability, security, and speed.
 
-Programming is not typing. SaaS is not a weekend repo. Neither disappears because prompts got better.
+SaaS is taking responsibility for your problem. [Fakturoid](https://www.fakturoid.cz) takes on some responsibility for your invoicing and part of your financial management. We at [PageSpeed.ONE](https://pagespeed.one/) take on, through our SaaS, part of the responsibility for the performance of your websites.
 
----
+No matter how good it gets, AI won't take responsibility for anything.
+
+Programming isn't just writing code. That's why AI won't replace all programmers.
+
+SaaS isn't just a programmed app. That's why AI won't replace all SaaS.
