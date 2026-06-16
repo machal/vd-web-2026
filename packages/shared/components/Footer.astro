@@ -1,5 +1,6 @@
 ---
 import type { SiteConfig, SisterSiteLink } from '@vd/shared/types';
+import { getSiteOrigin } from '@vd/shared/content-pairing';
 import VdSymbolDef from './VdSymbolDef.astro';
 
 interface Props {
@@ -11,12 +12,16 @@ const footerMode = siteConfig?.footerMode ?? 'full';
 const locale = siteConfig?.locale ?? (footerMode === 'minimal' ? 'en' : 'cs');
 const showLogoSymbol = siteConfig?.showLogoSymbol ?? true;
 
-const defaultSisterSite: SisterSiteLink =
-  locale === 'cs'
-    ? { href: 'https://michalek.blog', name: 'Michalek.blog' }
-    : { href: 'https://www.vzhurudolu.cz', name: 'VzhuruDolu.cz' };
+const sisterSiteId = locale === 'cs' ? 'michalek-dev' : 'vzhurudolu';
+const defaultSisterSite: SisterSiteLink = {
+  href: getSiteOrigin(sisterSiteId),
+  name: locale === 'cs' ? 'Michalek.blog' : 'VzhuruDolu.cz',
+};
 
-const sisterSite = siteConfig?.sisterSite ?? defaultSisterSite;
+const sisterSite: SisterSiteLink = {
+  href: getSiteOrigin(sisterSiteId),
+  name: siteConfig?.sisterSite?.name ?? defaultSisterSite.name,
+};
 
 const footerTagline =
   locale === 'cs'

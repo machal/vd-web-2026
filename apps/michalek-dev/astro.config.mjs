@@ -74,6 +74,9 @@ export default defineConfig({
   output: 'static',
   site: 'https://michalek.blog',
   trailingSlash: 'never',
+  server: {
+    port: 4322,
+  },
   integrations: [
     createCustomSitemap({ site: 'https://michalek.blog' }),
   ],

@@ -1,5 +1,7 @@
 export { CONTENT_PAIRS } from './pairs.ts';
 export {
+  getSiteOrigin,
+  getSiteOrigins,
   resolveAlternate,
   resolveContentUrl,
   resolveHreflangCluster,

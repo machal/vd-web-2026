@@ -45,8 +45,14 @@ www/
 # Instalace závislostí
 npm install
 
-# Development server (http://localhost:4321)
+# Development server
 npm run dev
+
+# Monorepo: oba weby paralelně
+#   vzhurudolu.cz  → http://localhost:4321
+#   michalek.blog  → http://localhost:4322
+# V dev módu vlaječka / jazykový přepínač a odkazy na sesterský web
+# vedou na localhost (ne na produkci). Přepsání: VZHURUDOLU_URL, MICHALEK_DEV_URL.
 
 # Produkční build
 npm run build

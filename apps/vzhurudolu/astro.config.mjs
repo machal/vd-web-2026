@@ -94,6 +94,9 @@ export default defineConfig({
   output: 'static',
   site: 'https://www.vzhurudolu.cz',
   trailingSlash: 'never', // Generovat URL bez trailing slash (kromě root /)
+  server: {
+    port: 4321,
+  },
   integrations: [
     createCustomSitemap({ site: 'https://www.vzhurudolu.cz' }),
     changedFilesIntegration(),
