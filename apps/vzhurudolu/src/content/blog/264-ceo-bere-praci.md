@@ -4,7 +4,7 @@ postTitle: 'Vývojáři, víte, proč vám váš CEO bere práci, a proč je to 
 postUrlId: ceo-bere-praci
 pairId: ceo-takes-job
 postDateTime: 2026-06-15
-excerpt: 'Produkťáci, markeťáci nebo šéfové firem čím dál častěji lezou vývojářům přímo do kódu. Myslím, že z toho  vývojáři nakonec mohou těžit a pokusím se to v článku ukázat na svém příkladu.'
+excerpt: 'Produkťáci, markeťáci nebo šéfové firem čím dál častěji lezou vývojářům přímo do kódu. Myslím, že z toho vývojáři nakonec mohou těžit a pokusím se to v článku ukázat na svém příkladu.'
 postStatus: Published
 authorID: 1
 sectionID: 1
@@ -15,7 +15,7 @@ no_ads: true
 include_rss: true
 category_highlight: true
 og_title: 'Vývojáři, víte, proč vám váš CEO bere práci, a proč je to dobrá věc?'
-og_description: 'Produkťáci, markeťáci nebo šéfové firem čím dál častěji lezou vývojářům přímo do kódu. Proč to děláme a proč z toho vývojáři nakonec mohou těžit?'
+og_description: 'Produkťáci, markeťáci nebo šéfové firem čím dál častěji lezou vývojářům přímo do kódu. Myslím, že z toho vývojáři nakonec mohou těžit a pokusím se to v článku ukázat na svém příkladu.'
 og_type: article
 ---
 
@@ -25,17 +25,17 @@ Stále více se cpeme do vašeho kódu. My, markeťáci, produkťáci, šéfové
 
 V tomto textu jdu nastínit, co je naší motivací a proč vám můžeme být prospěšní.
 
-Jak už víte, k právě probíhající AI revoluci mám střízlivý přístup. Nemyslím si, že [zahubí SaaS](../prirucka/ai-saas.md). Nemyslím si, že [vývojáři skončili](232-ai-vyvojari-frontkon.md). Nemyslím si, že nastavá konec světa.
+Jak už víte, k právě probíhající AI revoluci mám střízlivý přístup. Nemyslím si, že [zahubí SaaS](../prirucka/ai-saas.md). Nemyslím si, že [vývojáři skončili](232-ai-vyvojari-frontkon.md). Nemyslím si, že nastává konec světa.
 
 Na meetupu [Frontendisti.cz](https://www.frontendisti.cz) jsem ukazoval, [proč vám váš CEO bere práci](https://www.youtube.com/watch?v=VgQL7CvR0F0). Nepadlo tam ale vše, co padnout mělo, takže to teď jdu článkem doplnit a obohatit o širší kontext.
 
-## Další hyperproduktivní vajbící manažer
+## Další hyperproduktivní vajbící manažer {#manazer}
 
 Jsem ten typ CEO, který chce chápat a umět to zásadní, co se ve firmě řeší. A když je potřeba pohnout, vyhrne si rukávy a jde makat. Navíc ještě donedávna aktivně weby vyvíjel.
 
 Pomocí vibe-codingu, nebo agentního vývoje chcete-li, jsem vytvořil několik aplikací, které můžu sám používat a šetří mi čas. Tohle je jasné.
 
-Nyní ale ve firmě máme za sebou první úspěšné pokusy pustit mě přímo do kódu našeho hlavního produktu v PageSpeed.ONE. 
+Nyní ale ve firmě máme za sebou první úspěšné pokusy pustit mě přímo do kódu našeho hlavního produktu v PageSpeed.ONE.
 
 V rekordním čase a s rozumnými náklady máme [nový web](https://pagespeed.one/changelog/monitoring-4-12), připravili jsme novou aplikaci na [měření rychlosti webu](https://pagespeed.one/app/insights) a tak dále. Není to dokonalé, ať už jde o výstupy navenek nebo v kódu a proces samotný, ale hlavní cíle to plní a extrémně to zrychluje iterace.
 
@@ -52,7 +52,7 @@ Ten hlavní argument je efektivita. Během času, který by mi zabralo vytvořen
 
 Ale jsou tady i další argumenty.
 
-## **Proč si myslím, že účast netechnických lidí v kódu je pro vývojáře dobrá věc?**
+## Proč si myslím, že účast netechnických lidí v kódu je pro vývojáře dobrá věc? {#proc-dobra-vec}
 
 Když vám CEO, produkťák, markeťák leze do kódu dobře, vývojářům to může přinést mnohé:
 
@@ -60,7 +60,7 @@ Když vám CEO, produkťák, markeťák leze do kódu dobře, vývojářům to m
 * Rychlejší rozhodnutí a méně komunikačního ping-pongu.  
 * Méně „překladů“ kontextu přes mnoho lidí.
 
-A pak je tu ještě jeden důvod. Jsou to přesahy. 
+A pak je tu ještě jeden důvod. Jsou to přesahy.
 
 Jako CEO bych měl vědět, co chtějí klienti, protože jsem s nimi v kontaktu. Vím, kde máme argumentační mezery, znám celý kontext našeho produktu. Mám povědomí nebo sám částečně dělám marketing, sales, account, finance, produkt, samotnou oblast rychlosti webu… To je kombinace, která mi umožní generovat kód prospěšný produktu.
 
@@ -68,7 +68,7 @@ Nejsem nejlepší, co se týká kvality kódu, to obstarají jiní a dobře nast
 
 Do velké míry to souvisí se specializací nebo jejím opakem, takže budováním znalostí spíše do šířky než do hloubky. Jako CEO musím být generalista.
 
-## **Hloubka vs. šířka znalostí lidí v týmech**
+## Hloubka vs. šířka znalostí lidí v týmech {#hloubka-vs-sirka}
 
 Na tomhle obrázku/grafu je jednoduchá [manažerská metafora](https://certibanks.com/KnowledgeArea.aspx?articleid=11) pro hloubku vs. šířku znalostí:
 
@@ -78,11 +78,11 @@ Co vidíte na obrázku?
 
 * Svisle je hloubka znalostí, takže jak moc jdete do detailu v jedné disciplíně.  
 * Vodorovně je šířka znalostí, takže kolika sousedním oblastem rozumíte natolik, že se v nich neztratíte a umíte je propojit do výsledku.  
-* Pokud jste „I-shaped“*,* rozumíme skvěle jedné věci, ale ty ostatní vám unikají. Pokud jste „T-Shaped“*,* rozumíte skvěle jedné věci, ale zároveň máte obecné povědomí i o těch ostatních. A tak dále.
+* Pokud jste „I-shaped“, rozumíte skvěle jedné věci, ale ty ostatní vám unikají. Pokud jste „T-shaped“, rozumíte skvěle jedné věci, ale zároveň máte obecné povědomí i o těch ostatních. A tak dále.
 
 V malých týmech se obvykle lépe uplatní lidé s více přesahy, ale obecně zde není žádná definice dobrého nebo špatného „tvaru dovedností“. Je úkolem každého člověka (a jeho manažera) své dovednosti znát nebo posunovat tak, aby dobře fungovaly v daném týmu.
 
-Extrémní příklad I-shape může být člověk specializovaný čistě jen na frontendový vývoj. Nebo ještě hůř – jen na [CSS](https://www.vzhurudolu.cz/css-layout), ehm… Nastínil jsem to na obrázku tady:
+Extrémní příklad I-shaped může být člověk specializovaný čistě jen na frontendový vývoj. Nebo ještě hůř – jen na [CSS](https://www.vzhurudolu.cz/css-layout), ehm… Nastínil jsem to na obrázku tady:
 
 <figure>
 <img src="/assets/img/content/dest/blog/skill-shaper-i-shaped.webp" alt="Graf dovedností I-shaped frontendisty v appce SkillShaper">
@@ -106,11 +106,11 @@ Všechny tyto dovednosti a kontexty musejí ve firmách probublat přímo k lide
 
 Obvykle se to děje pomocí různých zadání, dokumentací, firemních strategií, ale také schůzek nebo méně formálně, v hospodě či firemní kuchyňce.
 
-To, že celý ten kontext máte v hlavě, znamená, že když dostanete možnost snadno konkrétní věc vyrobit, budete velmi efektivní. 
+To, že celý ten kontext máte v hlavě, znamená, že když dostanete možnost snadno konkrétní věc vyrobit, budete velmi efektivní.
 
 No a tou možností se stala AI revoluce, která komoditizuje a tedy brutálně zlevňuje některé části vývojařiny.
 
-## **Produkt mám hotový v čase, který je nižší než čas na zadání a management…** 
+## Produkt mám hotový v čase, který je nižší než čas na zadání a management… {#cas-vs-management}
 
 Agentní vývoj je dneska tak daleko, že když se to udělá opatrně (a CEO je bývalý vývojář), funguje to velmi dobře. Tohle jsou přesně důvody, proč se kód začíná otevírat i lidem mimo engineering:
 
@@ -118,14 +118,14 @@ Agentní vývoj je dneska tak daleko, že když se to udělá opatrně (a CEO je
 * Zlevnila se realizace některých částí aplikací.  
 * Není potřeba tolik zadávání, handoffů a feedback koleček.
 
-## **…ale když se dobře nedomluvíme, můžu celý produkt zničit**
+## …ale když se dobře nedomluvíme, můžu celý produkt zničit {#riziko-zniceni}
 
-Ale jasně, vývojáři, slyším vás. Špatně nastavené procesy nebo jejich nedodržování těmito netechnickými lidmi, může přinést katastrofu:
+Ale jasně, vývojáři, slyším vás. Špatně nastavené procesy nebo jejich nedodržování těmito netechnickými lidmi může přinést katastrofu:
 
 * Obcházení procesů (PR bez code review).  
 * Změny bez znalosti architektury, které jdou proti ní.  
 * Sahání na místa, kde může vzniknout nebezpečná úprava.
 
-Tohle je jedna z výzev, které nyní čelí produktové, ale i agenturní týmy. Změna pracovních postupů a technologického stacku, která umožní, aby se ne-techničtí lidé mohli zapojovat do práce na produktech.
+Tohle je jedna z výzev, kterým nyní čelí produktové, ale i agenturní týmy. Změna pracovních postupů a technologického stacku, která umožní, aby se netechničtí lidé mohli zapojovat do práce na produktech.
 
-*Děje se vám to ve firmě taky? Jak to řešíte? Diskutujme na LinkedInu, Facebooku nebo na síti X.*
+<small>*Děje se vám to ve firmě taky? Jak to řešíte? Diskutujme na LinkedInu, Facebooku nebo na síti X.*</small>
