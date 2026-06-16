@@ -130,6 +130,6 @@ Ale jasně, vývojáři, slyším vás. Špatně nastavené procesy nebo jejich 
 
 Tohle je jedna z výzev, kterým nyní čelí produktové, ale i agenturní týmy. Změna pracovních postupů a technologického stacku, která umožní, aby se netechničtí lidé mohli zapojovat do práce na produktech.
 
-Myslím si, ale že pandořina skříňka je otevřená a zavřít ji už nemůžeme. Příspěvky netechnických lidí do kódu se dít budou a vývojáři se s tím budou muset vypořádat.
+Myslím si ale, že Pandořina skříňka je otevřená a zavřít ji už nemůžeme. Příspěvky netechnických lidí do kódu se dít budou a vývojáři se s tím budou muset vypořádat.
 
 <small>*Děje se vám to ve firmě taky? Jak to řešíte? Diskutujme na LinkedInu, Facebooku nebo na síti X.*</small>
