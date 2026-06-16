@@ -61,10 +61,22 @@ Pravidla odkazů (**en_only**):
 
 Vynechat z CS: `<!-- AdSnippet -->`, `.related` bloky s odkazy na nepřeložené články.
 
-Obrázky: stejné URL jako CS; alt text v EN.
+Obrázky: stejné URL jako CS; alt text v EN. Po adaptaci spusť synchronizaci assetů do michalek-dev (krok 5b).
 
 ### 5. Zapiš EN soubor
 Front matter dle [reference.md](reference.md). `adaptedFrom.url` = plná URL na `https://www.vzhurudolu.cz/...`
+
+### 5b. Synchronizuj obrázky do michalek-dev (povinné)
+
+Každá appka má vlastní `public/`. Obrázky z CS článku **nesdílí** automaticky — zkopíruj je:
+
+```bash
+node scripts/sync-translator-images.mjs apps/vzhurudolu/src/content/blog/{cs-file}.md
+```
+
+Skript z CS (nebo EN) markdownu najde cesty `/assets/img/content/dest/...` a `/prirucka/images/...`, zkopíruje zdrojové JPG do `apps/michalek-dev/src/assets/img/content/` a hotové WebP do `apps/michalek-dev/public/`. V dev módu **build nepotřebuješ** — stačí refresh na `http://localhost:4322`.
+
+Pokud skript selže (chybějící zdroj na vzhurudolu), doplň obrázek na CS straně a spusť znovu.
 
 ### 6. Párování
 - `pairId` v CS zdroji (sjednotit pokud starý slug neodpovídá)
@@ -107,6 +119,7 @@ VD Translator — hotovo
 - [ ] pairId shodný CS + EN
 - [ ] pairs.ts + link-map.md aktualizovány
 - [ ] Žádné inline vzhurudolu.cz v EN těle (kromě adaptedFrom)
+- [ ] Obrázky: sync-translator-images.mjs PASS
 - [ ] České kontexty u video/komunitních odkazů
 - [ ] Zpětné odkazy: N× EN + N× CS (uveď soubory)
 - [ ] validate-content-pairs.mjs PASS

@@ -112,6 +112,27 @@ Příručka — `pairId` optional but recommended; `id` must match `pairs.ts` cs
 - `<div class="related" markdown="1">` blocks linking only to untranslated articles (rebuild with EN links if pairs exist)
 - Czech-only footer CTAs to social discussion (unless user asks)
 
+## Shared images (both apps)
+
+CS and EN are separate Astro apps with separate `public/` folders. EN articles reuse the same image URLs as CS (`/assets/img/content/dest/...`, `/prirucka/images/...`), but files must exist in **both** apps.
+
+After writing the EN article, always run:
+
+```bash
+node scripts/sync-translator-images.mjs apps/vzhurudolu/src/content/blog/{cs-file}.md
+# or for příručka → guide:
+node scripts/sync-translator-images.mjs apps/vzhurudolu/src/content/prirucka/{cs-file}.md
+```
+
+What the script does:
+
+| CS path in markdown | Copied to michalek-dev |
+|---------------------|------------------------|
+| `/assets/img/content/dest/blog/foo.webp` | `src/assets/img/content/blog/foo.jpg` (source) + `public/assets/img/content/dest/blog/foo.webp` |
+| `/prirucka/images/foo.jpg` | `public/prirucka/images/foo.webp` (from vzhurudolu build output) |
+
+No `npm run build` needed for local preview — dev server serves `public/` directly. Refresh `http://localhost:4322`.
+
 ## Validation commands
 
 ```bash
