@@ -4,7 +4,7 @@ postTitle: 'Vývojáři, víte, proč vám váš CEO bere práci, a proč je to 
 postUrlId: ceo-bere-praci
 pairId: ceo-takes-job
 postDateTime: 2026-06-15
-excerpt: 'Produkťáci, markeťáci nebo šéfové firem čím dál častěji lezou vývojářům přímo do kódu. Proč to děláme a proč z toho vývojáři nakonec mohou těžit?'
+excerpt: 'Produkťáci, markeťáci nebo šéfové firem čím dál častěji lezou vývojářům přímo do kódu. Myslím, že z toho  vývojáři nakonec mohou těžit a pokusím se to v článku ukázat na svém příkladu.'
 postStatus: Published
 authorID: 1
 sectionID: 1
@@ -19,16 +19,17 @@ og_description: 'Produkťáci, markeťáci nebo šéfové firem čím dál čast
 og_type: article
 ---
 
+# Vývojáři, víte, proč vám váš CEO bere práci, a proč je to dobrá věc?
 
-Stále více se cpeme do vašeho kódu. My, markeťáci, produkťáci, šéfové firem. Občas z toho máte bolehlav, to je jasné. Ale nevyhnete se tomu.
+Stále více se cpeme do vašeho kódu. My, markeťáci, produkťáci, šéfové firem. Prostě netechničtí lidé. Občas z toho máte bolehlav, to je jasné. Ale nevyhnete se tomu.
 
-V tomto textu jdu nastínit, co je naší motivací a proč vám můžeme být prospěšní. Pokusím se také ukázat, v čem může být naše motivace a znalosti prospěšné vám, vývojářkám a vývojářům.
+V tomto textu jdu nastínit, co je naší motivací a proč vám můžeme být prospěšní.
 
 Jak už víte, k právě probíhající AI revoluci mám střízlivý přístup. Nemyslím si, že [zahubí SaaS](../prirucka/ai-saas.md). Nemyslím si, že [vývojáři skončili](232-ai-vyvojari-frontkon.md). Nemyslím si, že nastavá konec světa.
 
-Na meetupu [Frontendisti.cz](http://Frontendisti.cz) jsem na přednášce ukazoval, [proč vám váš CEO bere práci](https://www.youtube.com/watch?v=VgQL7CvR0F0). Nepadlo tam ale vše, co padnout mělo. Teď to jdu článkem doplnit a obohatit o širší kontext.
+Na meetupu [Frontendisti.cz](https://www.frontendisti.cz) jsem ukazoval, [proč vám váš CEO bere práci](https://www.youtube.com/watch?v=VgQL7CvR0F0). Nepadlo tam ale vše, co padnout mělo, takže to teď jdu článkem doplnit a obohatit o širší kontext.
 
-## **Další hyperproduktivní vajbící manažer**
+## Další hyperproduktivní vajbící manažer
 
 Jsem ten typ CEO, který chce chápat a umět to zásadní, co se ve firmě řeší. A když je potřeba pohnout, vyhrne si rukávy a jde makat. Navíc ještě donedávna aktivně weby vyvíjel.
 
