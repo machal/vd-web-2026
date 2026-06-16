@@ -56,7 +56,7 @@ I personally leaned hard into sales, and the numbers show it. What surprised me 
 
 We worked with an estimated 30–40 new clients, including names like Česká spořitelna (one of the largest Czech banks), and we also did more work for retailers like Heureka and Datart. Brilliant.
 
-At the same time we were building our [SaaS](../guide/ai-saas.md) [speed-monitoring service](https://pagespeed.one/monitoring-plus). We made nice progress on it, but we didn't have as much time for it as we'd have liked. We're not the first to discover, painfully, that time and attention are finite, and that the shift from agency mode to product mode is always very hard. This will be the main goal for 2026.
+At the same time we were building our [SaaS](../guide/ai-saas.md) [speed-monitoring service](https://pagespeed.one/monitoring-plus). We made nice progress on it, but we didn't have as much time for it as we'd have liked. We're not the first to discover, painfully, that time and attention are finite, and that the shift from agency mode to product mode is always very hard — I wrote more about [why a CEO ends up in the codebase](../blog/ceo-takes-your-job.md) when agentic development opens that door. This will be the main goal for 2026.
 
 ## FrontKon and Frontendisti.cz: from community to company thinking {#frontendisti}
 

@@ -144,7 +144,7 @@ The tinkerers who hand-built small websites are dead. Macaly, or something like 
 
 I love [writing](../guide/writing.md). I go to edit some copy in our help docs over at [PageSpeed.ONE](https://pagespeed.one/). Cursor understands the context exactly and can imitate a specific writing style. I just tell it roughly what I want to write and roughly where. It edits the Markdown, adds links, runs a check.
 
-As my colleague Michal Matuška puts it: "We all have to be full-stack." Including content authors. Including the company CEO.
+As my colleague Michal Matuška puts it: "We all have to be full-stack." Including content authors. Including [the company CEO](../blog/ceo-takes-your-job.md).
 
 <figure>
 <img src="../dist/images/original/vibe-coding-vd-writing.jpg" alt="Editing copy and writing with AI">
@@ -213,7 +213,7 @@ If you want to "vibe" products, sooner or later you have to become someone who u
 
 ### "Software is eating the world" {#software-eating-world}
 
-Yes, a large share of tiny applications will be built by CEOs, marketers, and clients themselves — the kind of apps engineers wouldn't want to build anyway.
+Yes, a large share of tiny applications will be built by [CEOs, marketers, and clients themselves](../blog/ceo-takes-your-job.md) — the kind of apps engineers wouldn't want to build anyway.
 
 But software is greedy; it's far from done eating the world. A huge wave of software is coming that previously couldn't exist because it was too expensive. This won't threaten developers.
 

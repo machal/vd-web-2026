@@ -21,6 +21,7 @@ Lookup table for **en_only** internal links. When translating, rewrite paired CS
 | css-units | `../prirucka/jednotky.md` | `../guide/css-units.md` |
 | css-selectors | `../prirucka/css-selektory.md` | `../guide/css-selectors.md` |
 | css-display | `../prirucka/css-display.md` | `../guide/css-display.md` |
+| ceo-takes-your-job | `../blog/264-ceo-bere-praci.md` | `../blog/ceo-takes-your-job.md` |
 
 ## Canonical URLs (hreflang / adaptedFrom only)
 

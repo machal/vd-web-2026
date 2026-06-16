@@ -148,7 +148,7 @@ Bastliči malých webů jsou mrtví. Macaly nebo něco takového zvládne kdokol
 
 Miluju [psaní](psani.md). Jdu dělat úpravy textů do naší nápovědy v [PageSpeed.ONE](https://pagespeed.one/). Cursor přesně chápe kontext, umí napodobit konkrétní styl psaní. Řeknu mu jen, co chci zhruba napsat a zhruba kam. Markdowny mi upraví, přidá odkazy, udělá kontrolu.
 
-Jak říká parťák Michal Matuška: „Všichni musíme být full-stack.“ I autoři obsahu. I CEO firmy.
+Jak říká parťák Michal Matuška: „Všichni musíme být full-stack.“ I autoři obsahu. I [CEO firmy](../blog/264-ceo-bere-praci.md).
 
 <figure>
 <img src="../dist/images/original/vibe-coding-vd-writing.jpg" alt="Úpravy textů a psaní s AI">
@@ -218,7 +218,7 @@ Pokud chcete „vajbit“produkty, dříve či později se musíte stát člově
 
 ### „Software is eating the world“{#software-eating-world}
 
-Ano, velkou část malinkých aplikací si sami udělají CEO's, markeťáci, samotní klienti… Těch aplikací, které by inženýři sami dělat nechtěli.
+Ano, velkou část malinkých aplikací si sami udělají [CEO's, markeťáci, samotní klienti…](../blog/264-ceo-bere-praci.md) Těch aplikací, které by inženýři sami dělat nechtěli.
 
 Ale software je nenažraný, celý svět ještě zdaleka nesežral. Přijde ohromná vlna softwaru, který dříve vzniknout nemohl, protože to bylo drahé. Tohle vývojáře neohrozí.
 

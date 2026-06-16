@@ -63,7 +63,7 @@ Ale zároveň vidím, že se lidé nechovají racionálně. Investoři už vůbe
 
 Vychází to z toho, že softwarový vývoj prochází tektonickou změnou. [Vibe-coding](vibe-coding.md) otevřel vývoj softwaru širokým masám.
 
-Každý druhý CEO je teď programátor.
+Každý druhý [CEO leze do kódu](../blog/264-ceo-bere-praci.md).
 
 Z designérů se stávají „builders“.
 

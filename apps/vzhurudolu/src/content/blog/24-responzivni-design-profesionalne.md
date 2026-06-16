@@ -41,7 +41,7 @@ Nezapomněl ani na argumentaci pro šéfy a klienty nebo svůj názor kam to pů
 
 S autorem si postupně v knize nakódujete stránku responzivního webu a nad pracovním postupem a výsledným kódem jen souhlasně pokyvuji hlavou.
 
-Kadlec si nevybral cestu do hloubky, ale do šířky. To znamená, že není tak technická, aby ji nemohl přečíst designér, produkťák nebo váš CEO. Na druhou stranu toho autor kolem těch netechnických znalostí zas tak moc nenakecá, takže od čtení neodradí ani největšího geeka ze čtenářů této recenze. 
+Kadlec si nevybral cestu do hloubky, ale do šířky. To znamená, že není tak technická, aby ji nemohl přečíst designér, produkťák nebo váš CEO — a právě [CEO dnes lezou do kódu](../blog/264-ceo-bere-praci.md) čím dál častěji. Na druhou stranu toho autor kolem těch netechnických znalostí zas tak moc nenakecá, takže od čtení neodradí ani největšího geeka ze čtenářů této recenze. 
 
 Kniha má kolem 250 stránek a proto nemůžete čekat detailní rozbor celé responzivní problematiky. Pokud vás třeba zajímají technikálie kolem mobilních prohlížečů a technologií pro ně, v druhé vlně čtení volte [Firtmana](http://shop.oreilly.com/product/0636920026259.do?cmp=af-code-book-product_cj_9781449335618_7037258). Pokud vás zaujme část o pracovních postupech, čtěte zase skvělého [Haye](http://responsivedesignworkflow.com/).
 

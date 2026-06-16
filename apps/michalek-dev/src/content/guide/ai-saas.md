@@ -61,7 +61,7 @@ But at the same time, I see that people aren't behaving rationally. Investors le
 
 The reasoning goes like this: software development is undergoing a tectonic shift. [Vibe coding](../guide/vibe-coding.md) has opened up software development to the masses.
 
-Every other CEO is now a programmer.
+Every other [CEO is getting into your code](../blog/ceo-takes-your-job.md) now.
 
 Designers are turning into "builders."
 

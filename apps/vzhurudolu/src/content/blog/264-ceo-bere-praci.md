@@ -2,7 +2,7 @@
 postID: 264
 postTitle: 'Vývojáři, víte, proč vám váš CEO bere práci, a proč je to dobrá věc?'
 postUrlId: ceo-bere-praci
-pairId: ceo-takes-job
+pairId: ceo-takes-your-job
 postDateTime: 2026-06-15
 excerpt: 'Produkťáci, markeťáci nebo šéfové firem čím dál častěji lezou vývojářům přímo do kódu. Myslím, že z toho vývojáři nakonec mohou těžit a pokusím se to v článku ukázat na svém příkladu.'
 postStatus: Published

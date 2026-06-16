@@ -81,4 +81,9 @@ export const CONTENT_PAIRS: ContentPair[] = [
     cs: { site: 'vzhurudolu', collection: 'page', key: '/martin' },
     en: { site: 'michalek-dev', collection: 'page', key: '/martin' },
   },
+  {
+    pairId: 'ceo-takes-your-job',
+    cs: { site: 'vzhurudolu', collection: 'blog', key: '264-ceo-bere-praci' },
+    en: { site: 'michalek-dev', collection: 'blog', key: 'ceo-takes-your-job' },
+  },
 ];
