@@ -26,7 +26,7 @@ const t = getAuthorProfileCopy(locale);
   role="complementary"
   id="author-profile"
   aria-labelledby="author-profile-heading"
-  class:list={['author-profile', 'bg-highlight-neutral', className]}
+  class:list={['author-profile', 'brown-bg', 'rounded', className]}
 >
   <h2 class="h4 mb-05" id="author-profile-heading">{t.heading}</h2>
   <p class="author-profile__photo mb-05">
@@ -43,7 +43,7 @@ const t = getAuthorProfileCopy(locale);
   </p>
   <p class="f-sm mb-05">{t.bio}</p>
   <p class="author-profile__cta mb-0 f-6">
-    <a class="button" href={AUTHOR_PROFILE_PATH}>{t.linkLabel}</a>
+    <a class="button button--inverted" href={AUTHOR_PROFILE_PATH}>{t.linkLabel}</a>
   </p>
 </aside>
 
@@ -53,10 +53,11 @@ const t = getAuthorProfileCopy(locale);
     padding: 1rem;
     text-align: center;
     box-sizing: border-box;
+    color-scheme: only light;
   }
 
-  .author-profile :where(h2) {
-    color: var(--vd-heading-color);
+  .author-profile :where(h2, p, a:not(.button)) {
+    color: inherit;
   }
 
   .author-profile__photo {

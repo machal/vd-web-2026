@@ -12575,12 +12575,5 @@ $(document).ready(function() {
 // https://learn.jquery.com/using-jquery-core/document-ready/
 
 $(window).on("load", function() {
-
-  // Install Service Worker
-  // ----------------------
-
-  if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.register("/sw.js");
-  }
-
-}); // $(window).on( "load", function()
+  // Legacy AMP service worker removed — see public/sw.js (network-only + cache purge).
+});

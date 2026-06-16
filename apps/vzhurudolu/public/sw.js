@@ -1,27 +1,21 @@
 /*
- Importing amp-sw
- https://amp.dev/documentation/guides-and-tutorials/optimize-and-measure/amp_to_pwa/
- https://github.com/ampproject/amp-sw
-*/
+ * Legacy AMP service worker retired (2026).
+ * Clears old CACHE_FIRST caches and serves everything from the network.
+ */
 
-importScripts("https://cdn.ampproject.org/sw/amp-sw.js");
+self.addEventListener('install', (event) => {
+  self.skipWaiting();
+});
 
-AMP_SW.init({
-  // Caching Assets
-  // https://github.com/ampproject/amp-sw/tree/master/src/modules/asset-caching
-  assetCachingOptions: [
-    {
-      regexp: /\.(png|jpg|woff2|woff|css|js)/,
-      cachingStrategy: "CACHE_FIRST"
-    }
-  ],
-  // Offline page for VD.cz
-  // https://github.com/ampproject/amp-sw/tree/master/src/modules/offline-page
-  offlinePageOptions: {
-    url: "/offline.html",
-    assets: []
-  },
-  // Link prefetch
-  // https://github.com/ampproject/amp-sw/tree/master/src/modules/link-prefetch
-  linkPrefetchOptions: {}
+self.addEventListener('activate', (event) => {
+  event.waitUntil(
+    caches
+      .keys()
+      .then((names) => Promise.all(names.map((name) => caches.delete(name))))
+      .then(() => self.clients.claim()),
+  );
+});
+
+self.addEventListener('fetch', (event) => {
+  event.respondWith(fetch(event.request));
 });

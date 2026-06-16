@@ -82,6 +82,11 @@ export default defineConfig({
     collections: ['blog', 'guide'],
   }),
   vite: {
+    define: {
+      'import.meta.env.PUBLIC_ASSET_VERSION': JSON.stringify(
+        process.env.VERCEL_GIT_COMMIT_SHA?.slice(0, 7) ?? 'dev',
+      ),
+    },
     ssr: {
       noExternal: ['@vd/shared'],
     },
