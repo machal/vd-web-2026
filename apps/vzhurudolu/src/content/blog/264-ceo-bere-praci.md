@@ -27,17 +27,19 @@ V tomto textu jdu nastínit, co je naší motivací a proč vám můžeme být p
 
 Jak už víte, k právě probíhající AI revoluci mám střízlivý přístup. Nemyslím si, že [zahubí SaaS](../prirucka/ai-saas.md). Nemyslím si, že [vývojáři skončili](232-ai-vyvojari-frontkon.md). Nemyslím si, že nastává konec světa.
 
+Některé věci se ale brutálně mění, například vývoj produktů.
+
 Na meetupu [Frontendisti.cz](https://www.frontendisti.cz) jsem ukazoval, [proč vám váš CEO bere práci](https://www.youtube.com/watch?v=VgQL7CvR0F0). Nepadlo tam ale vše, co padnout mělo, takže to teď jdu článkem doplnit a obohatit o širší kontext.
 
 ## Další hyperproduktivní vajbící manažer {#manazer}
 
-Jsem ten typ CEO, který chce chápat a umět to zásadní, co se ve firmě řeší. A když je potřeba pohnout, vyhrne si rukávy a jde makat. Navíc ještě donedávna aktivně weby vyvíjel.
+Jsem ten typ CEO, který chce chápat a umět to zásadní, co se ve firmě řeší. A když je potřeba pohnout, vyhrne si rukávy a jde makat. Myslím v kódu, více ode mě nečekejte. Navíc ještě donedávna aktivně weby vyvíjel.
 
-Pomocí vibe-codingu, nebo agentního vývoje chcete-li, jsem vytvořil několik aplikací, které můžu sám používat a šetří mi čas. Tohle je jasné.
+Pomocí [vibe-codingu](../prirucka/vibe-coding.md), nebo agentního vývoje chcete-li, jsem vytvořil několik aplikací, které můžu sám používat a šetří mi čas. Tohle je asi jasné.
 
 Nyní ale ve firmě máme za sebou první úspěšné pokusy pustit mě přímo do kódu našeho hlavního produktu v PageSpeed.ONE.
 
-V rekordním čase a s rozumnými náklady máme [nový web](https://pagespeed.one/changelog/monitoring-4-12), připravili jsme novou aplikaci na [měření rychlosti webu](https://pagespeed.one/app/insights) a tak dále. Není to dokonalé, ať už jde o výstupy navenek nebo v kódu a proces samotný, ale hlavní cíle to plní a extrémně to zrychluje iterace.
+V rekordním čase a s rozumnými náklady máme [nový web](https://pagespeed.one/), připravili jsme novou aplikaci na [měření rychlosti webu](https://pagespeed.one/app/insights) a tak dále. Není to dokonalé, ať už jde o výstupy navenek nebo v kódu a proces samotný, ale hlavní cíle to plní a extrémně to zrychluje iterace.
 
 <figure>
 <img src="/assets/img/content/dest/blog/ps-one-insights-amazon.webp" alt="Test rychlosti webu PageSpeed.ONE se skóre rychlosti u reálných uživatelů">
@@ -56,15 +58,15 @@ Ale jsou tady i další argumenty.
 
 Když vám CEO, produkťák, markeťák leze do kódu dobře, vývojářům to může přinést mnohé:
 
-* Hmatatelný prototyp místo dlouhého zadání.  
-* Rychlejší rozhodnutí a méně komunikačního ping-pongu.  
+* Hmatatelný prototyp místo dlouhého zadání.
+* Rychlejší rozhodnutí a méně komunikačního ping-pongu.
 * Méně „překladů“ kontextu přes mnoho lidí.
 
-A pak je tu ještě jeden důvod. Jsou to přesahy.
+A pak je tu ještě jeden důvod. Jsou to _přesahy_.
 
-Jako CEO bych měl vědět, co chtějí klienti, protože jsem s nimi v kontaktu. Vím, kde máme argumentační mezery, znám celý kontext našeho produktu. Mám povědomí nebo sám částečně dělám marketing, sales, account, finance, produkt, samotnou oblast rychlosti webu… To je kombinace, která mi umožní generovat kód prospěšný produktu.
+Jako CEO bych měl vědět, co chtějí klienti, protože jsem s nimi v kontaktu. Vím, kde máme argumentační mezery, znám celý kontext našeho produktu. Mám povědomí o marketingu nebo jej sám částečně dělám. Dělám sales, accounta, trošku finance, docela hodně produkt, musím umět naší specializaci, takže oblast rychlosti webu… A to je kombinace, která mi umožní generovat kód prospěšný produktu.
 
-Nejsem nejlepší, co se týká kvality kódu, to obstarají jiní a dobře nastavené procesy, ale do kódu předávám pohled, který tam předtím mohl chybět.
+Nejsem nejlepší, co se týká kvality kódu, to obstarají jiní (a dobře nastavené procesy), ale do kódu předávám pohled, který tam předtím mohl chybět.
 
 Do velké míry to souvisí se specializací nebo jejím opakem, takže budováním znalostí spíše do šířky než do hloubky. Jako CEO musím být generalista.
 
@@ -87,7 +89,7 @@ Extrémní příklad I-shaped může být člověk specializovaný čistě jen n
 <figure>
 <img src="/assets/img/content/dest/blog/skill-shaper-i-shaped.webp" alt="Graf dovedností I-shaped frontendisty v appce SkillShaper">
 <figcaption markdown="1">
-*I-shaped frontendista. Dneska docela rizikové portfolio dovedností. Zdroj grafu: appka SkillShaper.*
+*I-shaped frontendista. Dneska docela rizikové portfolio dovedností. Zdroj grafu: appka [SkillShaper](https://machal.github.io/skill-shaper-app/).*
 </figcaption>
 </figure>
 
@@ -96,7 +98,7 @@ CEO firmy je druhý extrémní příklad, protože ten by naopak neměl být spe
 <figure>
 <img src="/assets/img/content/dest/blog/skill-shaper-multi-skill.webp" alt="Graf dovedností CEO – multi-skill profil v appce SkillShaper">
 <figcaption markdown="1">
-*CEO musí být multi-skill. Zdroj grafu: appka SkillShaper.*
+*CEO musí být multi-skill. Zdroj grafu: appka [SkillShaper](https://machal.github.io/skill-shaper-app/).*
 </figcaption>
 </figure>
 
@@ -127,5 +129,7 @@ Ale jasně, vývojáři, slyším vás. Špatně nastavené procesy nebo jejich 
 * Sahání na místa, kde může vzniknout nebezpečná úprava.
 
 Tohle je jedna z výzev, kterým nyní čelí produktové, ale i agenturní týmy. Změna pracovních postupů a technologického stacku, která umožní, aby se netechničtí lidé mohli zapojovat do práce na produktech.
+
+Myslím si, ale že pandořina skříňka je otevřená a zavřít ji už nemůžeme. Příspěvky netechnických lidí do kódu se dít budou a vývojáři se s tím budou muset vypořádat.
 
 <small>*Děje se vám to ve firmě taky? Jak to řešíte? Diskutujme na LinkedInu, Facebooku nebo na síti X.*</small>
