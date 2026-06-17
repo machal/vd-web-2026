@@ -128,4 +128,4 @@ That is one of the challenges product and agency teams face now: changing workfl
 
 I still think Pandora's box is open and we cannot close it. Non-technical contributions to code _will_ happen, and developers will have to deal with it.
 
-<small>*Does this happen at your company too? How do you handle it? Let's discuss on LinkedIn, Facebook, or X.*</small>
+<small>*Does this happen at your company too? How do you handle it? [Join the discussion on Bluesky](https://bsky.app/profile/machal.bsky.social/post/3mohsiktubc2c).*</small>

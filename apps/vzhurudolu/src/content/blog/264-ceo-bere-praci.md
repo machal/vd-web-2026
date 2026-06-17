@@ -132,4 +132,4 @@ Tohle je jedna z výzev, kterým nyní čelí produktové, ale i agenturní tým
 
 Myslím si ale, že Pandořina skříňka je otevřená a zavřít ji už nemůžeme. Příspěvky netechnických lidí do kódu se dít budou a vývojáři se s tím budou muset vypořádat.
 
-<small>*Děje se vám to ve firmě taky? Jak to řešíte? Diskutujme na LinkedInu, Facebooku nebo na síti X.*</small>
+<small>*Děje se vám to ve firmě taky? Jak to řešíte? Diskutujme na [LinkedInu](https://www.linkedin.com/posts/martinmichalek_ceo-vaší-firmy-možná-brzy-udělá-fíčuru-dřív-share-7472913435719249920-zobM/), na [X](https://x.com/machal/status/2067149337428173151), na [Threads](https://www.threads.com/@absolutmachal/post/DZrcG61Db_V) nebo na [Facebooku](https://www.facebook.com/machal/posts/pfbid022oD15M7wduETJUQrRu6y5dcE9aKRB6FYmNZmVREuU4gjeVwQtmHmzCEdTRrqBTHUl).*</small>
