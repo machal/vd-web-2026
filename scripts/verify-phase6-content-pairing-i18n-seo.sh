@@ -9,8 +9,12 @@ echo "Phase 6 content pairing gate: validating CONTENT_PAIRS manifest..."
 node scripts/validate-content-pairs.mjs
 
 echo "Phase 6 content pairing gate: building both apps..."
-npm run build -w @vd/vzhurudolu
-npm run build -w @vd/michalek-dev
+if [[ "${VERIFY_SKIP_BUILD:-}" != "1" ]]; then
+  npm run build -w @vd/vzhurudolu
+  npm run build -w @vd/michalek-dev
+else
+  echo "Phase 6 content pairing gate: skipping build (VERIFY_SKIP_BUILD=1)"
+fi
 
 CS_DIST="apps/vzhurudolu/dist"
 EN_DIST="apps/michalek-dev/dist"

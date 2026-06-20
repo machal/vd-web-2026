@@ -6,7 +6,11 @@ ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$ROOT"
 
 echo "Phase 8 launch polish gate: building English app..."
-npm run build -w @vd/michalek-dev
+if [[ "${VERIFY_SKIP_BUILD:-}" != "1" ]]; then
+  npm run build -w @vd/michalek-dev
+else
+  echo "Phase 8 launch polish gate: skipping build (VERIFY_SKIP_BUILD=1)"
+fi
 
 EN_DIST="apps/michalek-dev/dist"
 

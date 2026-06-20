@@ -22,6 +22,11 @@ jobs:
           test -d apps/vzhurudolu/dist/_astro
           test -f apps/michalek-dev/dist/index.html
           test -f apps/michalek-dev/dist/martin/index.html
+
+      - name: Verify gates (reuse CI build output)
+        env:
+          VERIFY_SKIP_BUILD: "1"
+        run: |
           bash scripts/verify-phase1-build.sh
           bash scripts/verify-phase5-english-scaffold.sh
           bash scripts/verify-phase6-content-pairing-i18n-seo.sh

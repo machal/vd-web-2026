@@ -104,8 +104,16 @@ async function syncContentImage(publicPath) {
       await copyFileEnsuringDir(vzhWebp, enWebp);
       copied.push(`webp → public/.../dest/${relative}`);
     }
-  } else if (!source) {
+  } else if (source) {
+    return {
+      error: `webp missing on vzhurudolu public for ${publicPath} — run CS build first or copy from public/assets/img/content/dest/${relative}`,
+    };
+  } else {
     return { error: `content image not found on vzhurudolu: ${publicPath}` };
+  }
+
+  if (!(await fileExists(enWebp))) {
+    return { error: `EN webp still missing after sync: ${publicPath}` };
   }
 
   return copied.length ? { ok: publicPath, copied } : { unchanged: publicPath };
