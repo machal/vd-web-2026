@@ -17,7 +17,7 @@
 
 - [x] **VD-01**: Czech site builds from `apps/vzhurudolu` with output parity to current production (URLs, redirects, content)
 - [x] **VD-02**: Draft/unpublished blog posts are excluded from production build output and sitemap
-- [ ] **VD-03**: Czech site migrates from FTP to Vercel with `.htaccess` rules ported to `vercel.json`
+- [x] **VD-03**: Czech site migrates from FTP to Vercel with `.htaccess` rules ported to `vercel.json`
 - [x] **VD-04**: Czech originals of 8 pilot articles link to English counterparts via language switch
 - [x] **VD-05**: `public/` asset strategy preserves production behavior without build timeouts (685 MB audit applied)
 
@@ -67,7 +67,7 @@
 ### Legal & Compliance
 
 - [x] **LEGAL-01**: English privacy policy page (GDPR-compliant; covers Vercel hosting)
-- [x] **LEGAL-02**: Cookie policy and consent notice covering analytics cookies (GA) per GDPR/ePrivacy
+- [x] **LEGAL-02**: Cookie policy page covering analytics cookies (GA); no interactive consent banner (owner decision 2026-06-20)
 - [x] **LEGAL-03**: Footer links to privacy and cookie pages
 
 ### Performance
@@ -79,8 +79,8 @@
 
 ### Deploy & Operations
 
-- [ ] **DEPLOY-01**: Two Vercel projects from one Git repo (Root Directory per app, monorepo settings enabled) — EN config ready; dashboard connect human_needed
-- [ ] **DEPLOY-02**: Both domains (`vzhurudolu.cz`, `michalek.dev`) cut over to Vercel with staged DNS (TTL reduced before switch)
+- [x] **DEPLOY-01**: Two Vercel projects from one Git repo (Root Directory per app, monorepo settings enabled)
+- [x] **DEPLOY-02**: Both domains (`www.vzhurudolu.cz`, `michalek.blog`) live on Vercel (DNS cutover 2026-06-14)
 - [x] **DEPLOY-03**: FTP deploy workflow deprecated/removed after successful Vercel soak period — auto-deploy disabled Phase 9; manual rollback preserved; delete secrets after soak
 - [x] **DEPLOY-04**: Rollback path documented (revert DNS or redeploy previous Vercel build)
 
@@ -104,6 +104,7 @@ Deferred to future release.
 | Courses, e-books, kurzy on EN | Czech commercial products; no EN storefront |
 | Full příručka mirror / ebook TOCs | Hundreds of pages; guide articles only |
 | Comment systems | Moderation burden; deferred for MVP |
+| Cookie consent banner | Owner decision 2026-06-20; async GA without interactive gate |
 | Lighthouse 100/100 as launch blocker | Pragmatic tradeoffs preferred; CWV matter more than perfect scores |
 | Auto language redirect | Blocks Googlebot; explicit switcher only |
 | Machine translation widgets | Destroys expert positioning |
@@ -121,7 +122,7 @@ Deferred to future release.
 | MONO-05 | Phase 5 | Complete |
 | VD-01 | Phase 3 | Complete |
 | VD-02 | Phase 1 | Complete |
-| VD-03 | Phase 4 | Pending |
+| VD-03 | Phase 4 | Complete |
 | VD-04 | Phase 6 | Complete |
 | VD-05 | Phase 3 | Complete |
 | EN-01 | Phase 5 | Complete |
@@ -162,8 +163,8 @@ Deferred to future release.
 | PERF-02 | Phase 8 | Complete |
 | PERF-03 | Phase 8 | Complete |
 | PERF-04 | Phase 8 | Complete |
-| DEPLOY-01 | Phase 5 | Partial (EN dashboard human_needed) |
-| DEPLOY-02 | Phase 9 | Pending (human DNS cutover — see 09-VERIFICATION.md) |
+| DEPLOY-01 | Phase 5 | Complete |
+| DEPLOY-02 | Phase 9 | Complete |
 | DEPLOY-03 | Phase 9 | Complete (auto-deploy off; archived workflow) |
 | DEPLOY-04 | Phase 9 | Complete |
 
@@ -178,17 +179,17 @@ Deferred to future release.
 ## v1.1 Requirements — Visual Polish (pre-launch)
 
 **Defined:** 2026-06-09
-**Blocks:** Phase 9 DNS cutover until v1.1 verify passes
+**Status:** Complete (2026-06-20)
 
 ### Czech Navigation
 
-- [ ] **CZNAV-01**: Main navigation shows only **Články**, **Knihy**, and **Autor**
-- [ ] **CZNAV-02**: **Podcast** and **Video** appear in footer navigation only (not header)
+- [x] **CZNAV-01**: Main navigation shows only **Články**, **Knihy**, and **Autor**
+- [x] **CZNAV-02**: **Podcast** and **Video** appear in footer navigation only (not header)
 
 ### Czech Homepage
 
-- [ ] **CZHOME-01**: Podcast and YouTube channel image blocks removed from current homepage positions
-- [ ] **CZHOME-02**: Full-width podcast section placed under e-books with past-tense copy and link to **FrontKec**
+- [x] **CZHOME-01**: Podcast and YouTube channel image blocks removed from current homepage positions
+- [x] **CZHOME-02**: Full-width podcast section placed under e-books with past-tense copy and link to **FrontKec**
 
 ### Shared Homepage Author Box
 
@@ -228,17 +229,18 @@ Deferred to future release.
 |---------|--------|
 | `/martin` page redesign | Explicitly deferred to v1.2 |
 | Full rebrand / new color system | Layout polish within existing VD CSS only |
-| Phase 9 DNS cutover | Blocked until v1.1 LAUNCH-01 passes |
+| Phase 9 DNS cutover | Completed 2026-06-14 |
+| Cookie consent banner | Owner decision 2026-06-20 |
 | New content or i18n pairs | Content scope closed in v1.0 |
 
 ## Traceability (v1.1)
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| CZNAV-01 | Phase 10 | Pending |
-| CZNAV-02 | Phase 10 | Pending |
-| CZHOME-01 | Phase 10 | Pending |
-| CZHOME-02 | Phase 10 | Pending |
+| CZNAV-01 | Phase 10 | Complete |
+| CZNAV-02 | Phase 10 | Complete |
+| CZHOME-01 | Phase 10 | Complete |
+| CZHOME-02 | Phase 10 | Complete |
 | HOME-01 | Phase 11 | Complete |
 | HOME-02 | Phase 11 | Complete |
 | HOME-03 | Phase 11 | Complete |
@@ -260,4 +262,4 @@ Deferred to future release.
 
 ---
 *Requirements defined: 2026-06-06*
-*Last updated: 2026-06-09 — milestone v1.1 Visual Polish requirements added*
+*Last updated: 2026-06-20 — milestone v1.1 closed; no cookie banner*

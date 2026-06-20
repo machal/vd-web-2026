@@ -102,13 +102,11 @@ check_redirect_samples() {
 check_rss() {
   local base="$1"
   local label="$2"
-  local body
-  body=$(curl -sf --max-time 20 "${base}/rss" || true)
-  if [[ -z "$body" ]]; then
-    echo "Phase 9 cutover gate: FAIL — ${label} RSS: empty response" >&2
-    return 1
-  fi
-  if ! echo "$body" | head -5 | grep -qiE 'rss|<feed|<channel'; then
+  local snippet
+  set +o pipefail
+  snippet=$(curl -sfL --max-time 20 "${base}/rss" | head -c 500)
+  set -o pipefail
+  if ! echo "$snippet" | grep -qiE 'rss|<feed|<channel'; then
     echo "Phase 9 cutover gate: FAIL — ${label} RSS: unexpected body" >&2
     return 1
   fi

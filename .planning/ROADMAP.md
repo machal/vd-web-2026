@@ -12,13 +12,13 @@ Brownfield Astro monorepo migration and English personal brand launch. Czech sit
 - [x] **Phase 4: Vercel Migration — Czech Site** - Czech hosting cutover with `.htaccess` → `vercel.json` redirect port
 - [x] **Phase 5: English App Scaffold** - michalek.dev Astro app, homepage, nav, routing, dual Vercel project config (EN Vercel dashboard: human_needed)
 - [x] **Phase 6: Content Pairing & i18n SEO** - CONTENT_PAIRS manifest, language switch, hreflang, Czech mirror links (completed 2026-06-09)
-- [ ] **Phase 7: Content Adaptation — Pilot 8 + `/martin`** - 8 adapted articles, native EN `/martin`, homepage "start here"
+- [x] **Phase 7: Content Adaptation — Pilot 8 + `/martin`** - 8 adapted articles, native EN `/martin`, homepage "start here" (completed 2026-06-09)
 - [x] **Phase 8: Launch Polish — Legal, Feeds, Tags, Performance** - SEO metadata, RSS/sitemap, tags, legal, CWV review, GA (completed 2026-06-09)
-- [ ] **Phase 9: Production Cutover — michalek.dev + DNS** - Staged DNS for both domains, FTP retirement, rollback docs *(executed — DNS blocked by v1.1)*
+- [x] **Phase 9: Production Cutover — michalek.blog + DNS** - Staged DNS for both domains, FTP retirement, rollback docs (completed 2026-06-14)
 
 ### Milestone v1.1 — Visual Polish (pre-launch)
 
-- [x] **Phase 10: CZ Nav & Homepage Restructure** - Header/footer nav, podcast/FrontKec homepage layout *(executed — human_needed preview check)*
+- [x] **Phase 10: CZ Nav & Homepage Restructure** - Header/footer nav, podcast/FrontKec homepage layout (completed 2026-06-09)
 - [x] **Phase 11: Shared Author Profile Box** - Brown inverse author box on both homepages
 - [x] **Phase 12: EN Homepage CS Parity** - Featured article, author, stream, green topic hub
 - [x] **Phase 13: Article Detail Language UX** - Inline language switch; remove adaptation footer
@@ -274,8 +274,8 @@ Plans:
 - [x] 08-01 — EN tag taxonomy + `/{tag}/` archive pages (EN-09, EN-10)
 - [x] 08-02 — RSS `/rss` + robots.txt + sitemap (SEO-03, SEO-04, SEO-05)
 - [x] 08-03 — SEO metadata, Twitter Cards, JSON-LD (SEO-01, SEO-02, SEO-06, SEO-07)
-- [x] 08-04 — Privacy/cookie policies + consent banner (LEGAL-01, LEGAL-02, LEGAL-03)
-- [x] 08-05 — Deferred GA + verify gate + CI (PERF-02, PERF-04)
+- [x] 08-04 — Privacy/cookie policies + footer legal links (LEGAL-01, LEGAL-02, LEGAL-03; no cookie banner)
+- [x] 08-05 — Async GA + verify gate + CI (PERF-02, PERF-04)
 
 **UI hint**: yes
 
@@ -318,19 +318,19 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8 →
 | 6. Content Pairing & i18n SEO | 5/5 | Complete   | 2026-06-09 |
 | 7. Content Adaptation — Pilot 8 + `/martin` | 6/6 | Complete   | 2026-06-09 |
 | 8. Launch Polish — Legal, Feeds, Tags, Performance | 5/5 | Complete   | 2026-06-09 |
-| 9. Production Cutover — michalek.dev + DNS | 3/3 | Executed — verification human_needed | 2026-06-09 |
+| 9. Production Cutover — michalek.blog + DNS | 3/3 | Complete | 2026-06-14 |
 
 ---
 
 ## Milestone v1.1: Visual Polish (pre-launch)
 
 **Goal:** Align visual layout on CS and EN sites before production DNS cutover.
-**Blocks:** Phase 9 DNS until v1.1 verify passes.
-**Preview URLs:** CS https://vd-web-2026.vercel.app/ · EN https://vd-web-2026-xco9.vercel.app/
+**Status:** Complete (2026-06-20)
+**Production:** CS https://www.vzhurudolu.cz/ · EN https://michalek.blog/
 
 ### Phases (v1.1)
 
-- [x] **Phase 10: CZ Nav & Homepage Restructure** - Header/footer nav, homepage podcast/YouTube/FrontKec layout *(executed — human_needed)*
+- [x] **Phase 10: CZ Nav & Homepage Restructure** - Header/footer nav, homepage podcast/YouTube/FrontKec layout (completed 2026-06-09)
 - [x] **Phase 11: Shared Author Profile Box** - Brown inverse author box on both homepages
 - [x] **Phase 12: EN Homepage CS Parity** - Featured article, author, stream, green topic hub
 - [x] **Phase 13: Article Detail Language UX** - Inline language switch row; remove adaptation footer
@@ -414,8 +414,8 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8 →
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 10. CZ Nav & Homepage Restructure | 0/? | Not started | — |
-| 11. Shared Author Profile Box | 0/? | Not started | — |
-| 12. EN Homepage CS Parity | 0/? | Not started | — |
-| 13. Article Detail Language UX | 0/? | Not started | — |
-| 14. Pre-launch Verify & DNS Unblock | 0/? | Not started | — |
+| 10. CZ Nav & Homepage Restructure | 1/1 | Complete | 2026-06-09 |
+| 11. Shared Author Profile Box | 1/1 | Complete | 2026-06-09 |
+| 12. EN Homepage CS Parity | 1/1 | Complete | 2026-06-09 |
+| 13. Article Detail Language UX | 1/1 | Complete | 2026-06-09 |
+| 14. Pre-launch Verify & DNS Unblock | 1/1 | Complete | 2026-06-20 |

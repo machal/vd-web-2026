@@ -10,7 +10,7 @@ const siteHostname = new URL(siteConfig.origin).hostname;
 
 <BaseLayout
   title="Cookie Policy"
-  description={`How ${siteHostname} uses cookies, including optional Google Analytics.`}
+  description={`How ${siteHostname} uses cookies, including Google Analytics.`}
   siteConfig={siteConfig}
   ogUrl={`${siteConfig.origin}/cookies`}
   canonicalUrl={`${siteConfig.origin}/cookies`}
@@ -43,22 +43,11 @@ const siteHostname = new URL(siteConfig.origin).hostname;
 
       <h2 id="how-we-use">2. How we use cookies</h2>
 
-      <h3 id="essential">2.1 Essential / preference cookies</h3>
+      <h3 id="analytics">2.1 Analytics cookies</h3>
       <p>
-        We store your cookie consent choice in <code>localStorage</code> under the key
-        <code>michalek-cookie-consent</code> (<code>essential</code> or <code>all</code>).
-        This is not sent to our servers; it only controls whether analytics may load.
-      </p>
-
-      <h3 id="analytics">2.2 Analytics cookies (optional)</h3>
-      <p>
-        If you choose <strong>Accept analytics</strong>, we load Google Analytics 4 (GA4) asynchronously
-        after page load. GA4 may set cookies such as <code>_ga</code> to distinguish users and measure
-        traffic. We configure IP anonymisation where available.
-      </p>
-      <p>
-        Analytics cookies are <strong>not</strong> placed if you choose <strong>Essential only</strong>
-        or ignore the banner (no analytics load until you accept).
+        We use Google Analytics 4 (GA4), loaded asynchronously after page load. GA4 may set cookies
+        such as <code>_ga</code> to distinguish users and measure traffic. We configure IP
+        anonymisation where available.
       </p>
 
       <h2 id="third-parties">3. Third parties</h2>
@@ -69,9 +58,7 @@ const siteHostname = new URL(siteConfig.origin).hostname;
 
       <h2 id="manage">4. Managing cookies</h2>
       <ul>
-        <li>Use the cookie banner on first visit to accept or refuse analytics.</li>
-        <li>Clear site data in your browser to reset the choice and see the banner again.</li>
-        <li>Block third-party cookies in browser settings.</li>
+        <li>Block or delete cookies in your browser settings.</li>
         <li>Install a Google Analytics opt-out browser add-on from Google if you prefer.</li>
       </ul>
 
