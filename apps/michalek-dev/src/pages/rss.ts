@@ -1,11 +1,8 @@
 import rss from '@astrojs/rss';
 import { getCollection } from 'astro:content';
 import type { APIContext } from 'astro';
-import MarkdownIt from 'markdown-it';
-import sanitizeHtml from 'sanitize-html';
+import { renderMarkdownForRss } from '@vd/shared/markdown/render-for-rss';
 import { isPublished } from '../utils/is-published';
-
-const parser = new MarkdownIt();
 
 function getArticleUrl(entry: { collection: string; slug: string }): string {
   if (entry.collection === 'blog') {
@@ -15,6 +12,10 @@ function getArticleUrl(entry: { collection: string; slug: string }): string {
     return `/guide/${entry.slug}`;
   }
   return '/';
+}
+
+function getSourcePath(entry: { collection: string; slug: string }): string {
+  return `/content/${entry.collection}/${entry.slug}.md`;
 }
 
 export async function GET(context: APIContext) {
@@ -29,33 +30,38 @@ export async function GET(context: APIContext) {
     })
     .slice(0, 20);
 
-  const items = allContent.map((entry) => {
-    const url = getArticleUrl(entry);
-    const pubDate = entry.data.date
-      ? entry.data.date instanceof Date
-        ? entry.data.date
-        : new Date(entry.data.date)
-      : new Date();
+  const items = await Promise.all(
+    allContent.map(async (entry) => {
+      const url = getArticleUrl(entry);
+      const pubDate = entry.data.date
+        ? entry.data.date instanceof Date
+          ? entry.data.date
+          : new Date(entry.data.date)
+        : new Date();
 
-    let htmlContent = '';
-    try {
-      if (entry.body) {
-        htmlContent = sanitizeHtml(parser.render(entry.body), {
-          allowedTags: sanitizeHtml.defaults.allowedTags.concat(['img']),
-        });
+      let htmlContent = '';
+      try {
+        if (entry.body) {
+          htmlContent = await renderMarkdownForRss(entry.body, {
+            contentPathPrefix: '/guide',
+            guideImagesPrefix: '/prirucka/images',
+            collections: ['blog', 'guide'],
+            sourcePath: getSourcePath(entry),
+          });
+        }
+      } catch (error) {
+        console.error('Error rendering RSS content for', entry.slug, error);
       }
-    } catch (error) {
-      console.error('Error rendering RSS content for', entry.slug, error);
-    }
 
-    return {
-      title: entry.data.title || '',
-      link: url,
-      description: entry.data.description || '',
-      pubDate,
-      content: htmlContent,
-    };
-  });
+      return {
+        title: entry.data.title || '',
+        link: url,
+        description: entry.data.description || '',
+        pubDate,
+        content: htmlContent,
+      };
+    }),
+  );
 
   return rss({
     title: 'Martin Michálek · Web & Performance',
