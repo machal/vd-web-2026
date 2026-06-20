@@ -75,25 +75,18 @@ npm run preview
 
 ## Nasazení na produkci
 
-Deploy probíhá přes **GitHub Actions** na FTP. Používá se [FTP Deploy Action](https://github.com/SamKirkland/FTP-Deploy-Action) (SamKirkland): na GitHubu se spustí build, na server se nahrají jen **změněné soubory** (inkrementální sync podle state souboru na serveru).
+Oba weby běží na **Vercel** z monorepa:
 
-### Co je potřeba
+| Projekt | Root Directory | Doména |
+|---------|----------------|--------|
+| `vzhuru-dolu-2026` | `apps/vzhurudolu` | `www.vzhurudolu.cz` |
+| EN projekt | `apps/michalek-dev` | `michalek.blog` |
 
-- V repozitáři (**Settings → Secrets and variables → Actions**) nastavit tři secrets:
-  - `FTP_SERVER` – adresa FTP (např. `ftp.domena.cz`)
-  - `FTP_USERNAME` – FTP uživatel
-  - `FTP_PASSWORD` – FTP heslo
-- Workflow je v [.github/workflows/deploy-ftp.yml](.github/workflows/deploy-ftp.yml). V něm je nastaveno `server-dir: www/project/` (cíl na serveru) a `timeout: 60000` (60 s; při chybách 421 nebo „Server sent FIN packet“ lze hodnotu zvýšit). Složky `data/` a `files/` se při deployi vynechávají (jako v `.transmitignore`) – na serveru musí být už nahrané nebo je nahrajte zvlášť. Pro FTPS odkomentovat `protocol: ftps` a `port: 990`. Jako záloha při opakovaných pádech deploye existuje možnost přechodu na SFTP (např. [wlixcc/SFTP-Deploy-Action](https://github.com/wlixcc/SFTP-Deploy-Action)) s SSH klíčem v secrets.
+- Push/merge na production branch spustí deploy obou projektů (Vercel Git integration).
+- PR spouští preview deploye a CI (`.github/workflows/pr-build.yml`).
+- Rollback: Vercel Dashboard → Promote to Production, nebo postup v [`docs/ROLLBACK.md`](docs/ROLLBACK.md).
 
-### Jak deploy spustit
-
-Při každém pushu na větev `master` nebo `main` se spustí build a nahrání na FTP.
-
-Žádné přihlašovací údaje nejsou v repozitáři, pouze v GitHub Secrets.
-
-### Alternativa (bez GitHub Actions)
-
-Lokální build: `npm run build`, pak obsah složky `dist/` nahrajte na server vlastním FTP/SFTP klientem (např. Transmit).
+FTP deploy z repozitáře **není** — historický Apache hosting se neudržuje z tohoto repa.
 
 ## Konfigurace
 
