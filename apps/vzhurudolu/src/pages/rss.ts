@@ -97,6 +97,9 @@ export async function GET(context: APIContext) {
     description: 'Současný webový frontend.',
     site: context.site,
     items,
+    xmlns: {
+      atom: 'http://www.w3.org/2005/Atom',
+    },
     customData: buildRssCustomData('cs-CZ', siteOrigin),
   });
 }

@@ -75,6 +75,9 @@ export async function GET(context: APIContext) {
     description: 'Personal tech blog and web performance consulting.',
     site: context.site,
     items,
+    xmlns: {
+      atom: 'http://www.w3.org/2005/Atom',
+    },
     customData: buildRssCustomData('en-us', siteOrigin),
   });
 }
