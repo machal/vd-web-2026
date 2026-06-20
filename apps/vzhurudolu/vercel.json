@@ -23,6 +23,10 @@
     {
       "source": "/:path*.eot",
       "headers": [{ "key": "Access-Control-Allow-Origin", "value": "*" }]
+    },
+    {
+      "source": "/rss",
+      "headers": [{ "key": "Content-Type", "value": "application/rss+xml; charset=utf-8" }]
     }
   ],
   "redirects": [

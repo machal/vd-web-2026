@@ -101,4 +101,4 @@ Myslím si, že při prohlížení webu na jednom zařízení lidé očekávají
 
 ## A to ještě není všechno
 
-I po dnešních devíti krocích mobilní uživatel stále žije a škodí? Nebojte, [je tady ještě pokračování](/blog/48-znicit-mobilistu-2). Doražte ho zákazem zoomování, špatně načítanými webfonty a dalšími jedy. [Přihlaste se k RSS](http://feeds.feedburner.com/vzhurudolu), abyste o návod na definitivní záhubu nepřišli.
+I po dnešních devíti krocích mobilní uživatel stále žije a škodí? Nebojte, [je tady ještě pokračování](/blog/48-znicit-mobilistu-2). Doražte ho zákazem zoomování, špatně načítanými webfonty a dalšími jedy. [Přihlaste se k RSS](/rss), abyste o návod na definitivní záhubu nepřišli.
