@@ -40,7 +40,7 @@ Record restored values here after rollback:
 | michalek.dev | | | | |
 | michalek.blog | | | | |
 
-Legacy Apache/FTP hosting is **no longer maintained from this repo**. If you revert DNS, you need a separate backup of the old `www/project/` tree or a manual redeploy outside GitHub Actions.
+Legacy Apache/FTP hosting is **no longer maintained from this repo**. If you revert DNS, you need a separate backup of the old hosting tree or a manual redeploy outside this repository.
 
 ## 3. Verify recovery
 
@@ -65,4 +65,3 @@ Note rollback date, cause, and checks passed in your deploy log or PR/issue.
 | Production smoke tests | `scripts/verify-phase9-cutover.sh` |
 | CS Vercel config | `apps/vzhurudolu/vercel.json` |
 | EN Vercel config | `apps/michalek-dev/vercel.json` |
-| PR CI build | `.github/workflows/pr-build.yml` |

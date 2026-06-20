@@ -83,7 +83,7 @@ Oba weby běží na **Vercel** z monorepa:
 | EN projekt | `apps/michalek-dev` | `michalek.blog` |
 
 - Push/merge na production branch spustí deploy obou projektů (Vercel Git integration).
-- PR spouští preview deploye a CI (`.github/workflows/pr-build.yml`).
+- PR spouští Vercel Preview Deployments pro oba projekty.
 - Rollback: Vercel Dashboard → Promote to Production, nebo postup v [`docs/ROLLBACK.md`](docs/ROLLBACK.md).
 
 FTP deploy z repozitáře **není** — historický Apache hosting se neudržuje z tohoto repa.
