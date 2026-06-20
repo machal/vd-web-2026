@@ -408,4 +408,4 @@ Co budu dělat dál? Štěstí přeje připraveným, takže zde vidím i pár p�
 
 Tak to vidíte. Chtěl jsem si jen u příležitosti probíhající profesní transformace sepsat pár poznámek pro sebe — a nakonec jsou z toho paměti. Snad jsem vás inspiroval, motivoval, nakopl, odradil… nebo alespoň pobavil.
 
-Budu rád, když mi napíšete svůj pohled, buď do komentářů nebo na e-mail [martin@vzhurudolu.cz](mailto:martin@vzhurudolu.cz).
+Budu rád, když mi napíšete svůj pohled, buď do komentářů nebo na e-mail [martin@pagespeed.cz](mailto:martin@pagespeed.cz).

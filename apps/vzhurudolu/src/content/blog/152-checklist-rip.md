@@ -26,4 +26,4 @@ Návštěvnost této části Vzhůru dolů byla v posledním roce vskutku miniat
 
 Na oplátku od nás očekávejte velkou aktualizaci statické verze [kontrolního seznamu](https://www.vzhurudolu.cz/prirucka/checklist), která je v přípravě.
 
-Pokud jste si v appce udržovali své dlouhodobé checklisty a rádi byste z nás vydolovali vlastními silami přidané položky, neváhejte nám psát do komentářů nebo na [martin@vzhurudolu.cz](mailto:martin@vzhurudolu.cz).
+Pokud jste si v appce udržovali své dlouhodobé checklisty a rádi byste z nás vydolovali vlastními silami přidané položky, neváhejte nám psát do komentářů nebo na [martin@pagespeed.cz](mailto:martin@pagespeed.cz).

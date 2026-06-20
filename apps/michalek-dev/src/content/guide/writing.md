@@ -337,4 +337,4 @@ Here are some other resources on writing that I know well:
 - Ondřej Ilinčev wrote a nice piece on [how to write an article in 3 hours](https://www.ilincev.com/clanek-za-3h). Ondřej is a master of writing efficiency.
 - I once enjoyed an article from a [content agency](https://www.obsahova-agentura.cz/blog/jak-napsat-web-aby-ho-lide-precetli) that takes a more business-minded approach to writing. That'll come in handy if you want to squeeze some money out of writing.
 
-What did I forget? What helps you with writing? Write to me [by email](mailto:martin@vzhurudolu.cz) or on social media.
+What did I forget? What helps you with writing? Write to me [by email](mailto:martin@pagespeed.cz) or on social media.

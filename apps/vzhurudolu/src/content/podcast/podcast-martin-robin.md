@@ -53,6 +53,6 @@ Takže v první části vánočního dvojdílu dělá Martin rozhovor s Robinem 
 
 Děkujeme vám za každý odběr, hvězdičky nebo recenzi: [iTunes](https://itunes.apple.com/cz/podcast/vzhuru-dolu-podcast/id1176274658), [Spotify](https://open.spotify.com/show/1G2kH2YrIwD9BABg4L7xGC) a [TuneIn](https://tunein.com/podcasts/Technology-News/Vzhuru-dolu-podcast-p1177693/).
 
-Jak se vám epizoda líbila? Napište nám do komentářů, do e-mailu [martin@vzhurudolu.cz](mailto:martin@vzhurudolu.cz).
+Jak se vám epizoda líbila? Napište nám do komentářů, do e-mailu [martin@pagespeed.cz](mailto:martin@pagespeed.cz).
 
 Přejeme vám hezké svátky a díky, že nás posloucháte.

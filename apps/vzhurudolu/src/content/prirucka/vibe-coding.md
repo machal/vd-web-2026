@@ -301,4 +301,4 @@ Vibe-coding demokratizuje technologie. Vývojáři a technologicky zdatní lidé
 
 ---
 
-<small>*Na co jsem zapomněl, co mám špatně? Co u vibe-codingu pomáhá vám? Napište mi [e-mail](mailto:martin@vzhurudolu.cz) nebo komentujte na sociálních sítích: na [LinkedInu](), [X](https://x.com/machal/status/2021155215601263009).*</small>
+<small>*Na co jsem zapomněl, co mám špatně? Co u vibe-codingu pomáhá vám? Napište mi [e-mail](mailto:martin@pagespeed.cz) nebo komentujte na sociálních sítích: na [LinkedInu](), [X](https://x.com/machal/status/2021155215601263009).*</small>

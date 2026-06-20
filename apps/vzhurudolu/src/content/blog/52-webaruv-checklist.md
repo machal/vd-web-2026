@@ -52,6 +52,6 @@ PHP generuje statickou, roboty indexovatelnou stránku a poskytuje API. React je
 <a href="http://www.vzhurudolu.cz/checklist" class="button">Vyzkoušet checklist</a>
 </p>
 
-<small class="text-center">Nápady a připomínky k funkčnosti i obsahu velmi vítám: [martin@vzhurudolu.cz](mailto:martin@vzhurudolu.cz).</small>
+<small class="text-center">Nápady a připomínky k funkčnosti i obsahu velmi vítám: [martin@pagespeed.cz](mailto:martin@pagespeed.cz).</small>
 
 <small class="text-center">S Reactem pomohl [Martin Staněk](http://martinstanek.cz/). S Nette částí pak [Přemek Koch](https://www.linkedin.com/in/premekkoch). Díky, pánové!</small>

@@ -40,4 +40,4 @@ Tahle témata nejsou jediná, o kterých se na frontendu hodně mluví. Pochopit
 
 Nebojte se to zkusit, ani když jste zatím nepřednášeli. Každý jednou začíná – dobře informovaných technickým spíkrům publikum rádo odpouští občasné zakoktání. Je to skvělá zkušenost a pomůžete kolegům.
 
-Zaujalo? Výborná zpráva! Začněte tak, že pošlete krátký popis praktického použití zmíněných postupů nebo technologií na [martin@vzhurudolu.cz](mailto:martin@vzhurudolu.cz).
+Zaujalo? Výborná zpráva! Začněte tak, že pošlete krátký popis praktického použití zmíněných postupů nebo technologií na [martin@pagespeed.cz](mailto:martin@pagespeed.cz).

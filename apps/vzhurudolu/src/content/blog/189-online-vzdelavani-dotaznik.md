@@ -89,6 +89,6 @@ Dále se vyskytly tyto: Pluralsight, Michal Špaček, lwj.dev, Fireship.io, Fron
 
 Díky všem, kteří jste se zúčastnili, ale i těm kteří jste ochotní se podělit o názor i jinak – v dotaznících k našim školením, na sociálních sítích nebo e-mailem.
 
-Pokud k tomu chcete něco dodat, neváhejte se ozvat do komentářů nebo na [martin@vzhurudolu.cz](mailto:martin@vzhurudolu.cz).
+Pokud k tomu chcete něco dodat, neváhejte se ozvat do komentářů nebo na [martin@pagespeed.cz](mailto:martin@pagespeed.cz).
 
 <!-- AdSnippet -->

@@ -17,6 +17,6 @@ published: false
 - Requiem za mrtvé technologie: V e-booku už nepíšu o Internet Exploreru 10 a starších, prohlížeči Android Browser, nebo operačním systému Windows Phone.
 - Opravdu hodně drobných úprav, vylepšení a vyleštění.
 
-Hlášení případných chyb a náměty na vylepšení pro příští verze velmi vítám: [martin@vzhurudolu.cz](mailto:martin@vzhurudolu.cz).  
+Hlášení případných chyb a náměty na vylepšení pro příští verze velmi vítám: [martin@pagespeed.cz](mailto:martin@pagespeed.cz).  
 
 A teď už přeji příjemné čtení.

@@ -23,4 +23,4 @@ Pokud jste byli spokojeni, řekněte to ostatním. Budu vděčný za veřejnou p
 
 ### Našli jste chybu?
 
-I když jsem já i ostatní udělali všechno pro to, abychom se chybám vyhnuli, znáte to… Velmi pomůže, když na chyby nebo jiné problémy poukážete. V další verzi e-booku je opravím. Pište na [martin@vzhurudolu.cz](mailto:martin@vzhurudolu.cz).
+I když jsem já i ostatní udělali všechno pro to, abychom se chybám vyhnuli, znáte to… Velmi pomůže, když na chyby nebo jiné problémy poukážete. V další verzi e-booku je opravím. Pište na [martin@pagespeed.cz](mailto:martin@pagespeed.cz).

@@ -66,4 +66,4 @@ plus transparentní metodu hodnocení nabídek od [4E consulting](https://www.4e
 - Pod kolik nemá cenu dělat web dnes (**53:30**)
 - Co může a nemůže zadavatel outsourcovat (**55:00**)
 
-Těšíme se na vaše dotazy, připomínky, pochvaly i pokárání! :-) Do komentářů na vaší oblíbené platformě s nima nebo pište na martin@vzhurudolu.cz.
+Těšíme se na vaše dotazy, připomínky, pochvaly i pokárání! :-) Do komentářů na vaší oblíbené platformě s nima nebo pište na martin@pagespeed.cz.

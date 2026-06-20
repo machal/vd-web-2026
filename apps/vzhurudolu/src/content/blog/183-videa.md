@@ -55,7 +55,7 @@ Od prosince do půlky ledna si dáme webinářovou pauzu, ale už v příštím 
 
 [Celodenní školení](https://www.vzhurudolu.cz/kurzy/prezencni) v tuto chvíli obnovit nezvažujeme, snad až během jara 2021. Nicméně všechny naše lektory si můžete [pozvat do firmy](https://www.vzhurudolu.cz/kurzy/inhouse).
 
-Budu moc rád, když mi do komentářů nebo do e-mailu [martin@vzhurudolu.cz](mailto:martin@vzhurudolu.cz) napíšete:
+Budu moc rád, když mi do komentářů nebo do e-mailu [martin@pagespeed.cz](mailto:martin@pagespeed.cz) napíšete:
 
 - Jak se vám tento nový formát líbí?
 - Jaká témata máme jako webináře nebo videa zpracovat?

@@ -25,6 +25,6 @@ og_type: article
 - Lepší kontrast písma v Kindle čtečkách.
 - Drobné opravy a aktualizace (včetně odstranění pitomé chyby se špatným směrem `flex-direction` u [flexboxu](css3-flexbox-kontejner.md)).
 
-Hlášení případných chyb velmi vítám: [martin@vzhurudolu.cz](mailto:martin@vzhurudolu.cz).  
+Hlášení případných chyb velmi vítám: [martin@pagespeed.cz](mailto:martin@pagespeed.cz).  
 
 A teď už přeji příjemné čtení.

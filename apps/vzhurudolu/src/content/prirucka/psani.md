@@ -339,4 +339,4 @@ Odkazy na další zajímavé zdroje o psaní, které sám dobře znám:
 - Kdysi se mi zalíbil článek od [Obsahové agentury](https://www.obsahova-agentura.cz/blog/jak-napsat-web-aby-ho-lide-precetli), který k psaní přistupuje více byznysově. To se vám bude hodit, pokud chcete z psaní vymáčknout nějaký ten peníz.
 - Pokud jde o tvůrčí psaní, to skvěle učí [René Nekuda](https://www.renenekuda.cz/).
 
-Na co jsem zapomněl? Co u psaní pomáhá vám? Napište mi sem do komentářů, [do e-mailu](mailto:martin@vzhurudolu.cz) nebo na sociální sítě.
+Na co jsem zapomněl? Co u psaní pomáhá vám? Napište mi sem do komentářů, [do e-mailu](mailto:martin@pagespeed.cz) nebo na sociální sítě.

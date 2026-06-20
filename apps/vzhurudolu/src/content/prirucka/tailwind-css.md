@@ -310,6 +310,6 @@ V článku jsem se pokusil o úvod pro nezasvěcené. Kam dál pokračovat?
 - Pokud se Tailwind chcete naučit na videích a máte dost času: [kurz od Yablko](https://www.youtube.com/watch?v=5mgrioodze8) nebo [Tailwind from zero to production](https://www.youtube.com/playlist?list=PL5f_mz_zU5eXWYDXHUDOLBE0scnuJofO0).
 - [Tailwind Play](https://play.tailwindcss.com/), pískoviště, kde je možné framework zkoušet a to včetně nastavení konfigurace.
 
-Zapomněl jsem na něco? Napište mi do komentářů nebo [e-mailem](mailto:martin@vzhurudolu.cz?subject=%C4%8Cl%C3%A1nek%20%E2%80%9ETailwind%20CSS%E2%80%9C) o vašich zkušenostech s Tailwindem.
+Zapomněl jsem na něco? Napište mi do komentářů nebo [e-mailem](mailto:martin@pagespeed.cz?subject=%C4%8Cl%C3%A1nek%20%E2%80%9ETailwind%20CSS%E2%80%9C) o vašich zkušenostech s Tailwindem.
 
 <!-- AdSnippet -->

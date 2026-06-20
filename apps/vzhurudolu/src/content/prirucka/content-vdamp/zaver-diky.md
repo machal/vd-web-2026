@@ -27,4 +27,4 @@ Pokud jste byli spokojení, řekněte to ostatním. Budeme vděční za veřejno
 
 ### Našli jste chybu?
 
-I když celý tým udělal vše pro to, abychom se chybám vyhnuli, nezbývá než se smířit s tím, že ani naše knížka nebude dokonalá a nějaké chyby v ní zůstaly. Velmi nám pomůže, když na ně ukážete. V další verzi je opravíme. Pište na [martin@vzhurudolu.cz](mailto:martin@vzhurudolu.cz).
+I když celý tým udělal vše pro to, abychom se chybám vyhnuli, nezbývá než se smířit s tím, že ani naše knížka nebude dokonalá a nějaké chyby v ní zůstaly. Velmi nám pomůže, když na ně ukážete. V další verzi je opravíme. Pište na [martin@pagespeed.cz](mailto:martin@pagespeed.cz).

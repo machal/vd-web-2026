@@ -23,7 +23,7 @@ Pokud se k vám náhodou dostal jinou cestou, nebojte nic není ztraceno. Stále
 
 I když jsem udělal vše proto, abych se jim vyhnul, nezbývá než se smířit s tím, že i v tomto ebooku nějaké chyby zůstaly. Moc pomůže, když je nahlásíte. Všichni uživatelé dostanou jednou za čas aktualizovanou verzi.
 
-Moc rád si přečtu i obecnou zpětnou vazbu nebo rovnou recenze ebooku. Pište na [martin@vzhurudolu.cz](mailto:martin@vzhurudolu.cz).
+Moc rád si přečtu i obecnou zpětnou vazbu nebo rovnou recenze ebooku. Pište na [martin@pagespeed.cz](mailto:martin@pagespeed.cz).
 
 ## Proč a pro koho?
 

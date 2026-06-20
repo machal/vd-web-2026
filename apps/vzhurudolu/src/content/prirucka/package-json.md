@@ -35,7 +35,7 @@ Tenhle soubor může obsahovat různé meta informace o projektu:
 ```json
 {
   "name": "polaroid-example",
-  "author": "Martin Michálek <martin@vzhurudolu.cz> (https://vrdl.cz/martin)",
+  "author": "Martin Michálek <martin@pagespeed.cz> (https://vrdl.cz/martin)",
   "version": "1.0.0",
   "private": true,
   "repository": {
@@ -71,7 +71,7 @@ Nejprve ukázka:
 
 ```json
 "name": "polaroid-example",
-"author": "Martin Michálek <martin@vzhurudolu.cz> (https://vrdl.cz/martin)",
+"author": "Martin Michálek <martin@pagespeed.cz> (https://vrdl.cz/martin)",
 "version": "1.0.0",
 "private": true,
 "repository": {

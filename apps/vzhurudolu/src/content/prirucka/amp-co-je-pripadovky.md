@@ -82,7 +82,7 @@ _AMP verze Zillertaler Zeitung zvýšila počet zhlédnutých stránek o jednu d
 
 Čísla ze světových případových studií jsou působivá, že ano? Ale není se čemu divit. [Už dlouho víme](rychlost-nacitani-proc.md), že razantní zrychlení webu má vliv prakticky na všechny klíčové obchodní ukazatele. [AMP](amp.md) navíc ve zvyšování rychlosti načtení webu těžko hledá konkurenci.
 
-Máte už nasazení AMP za sebou a rádi byste se pochlubili čísly? Neváhejte napsat do komentářů nebo se zmínit [e-mailem](mailto:martin@vzhurudolu.cz).
+Máte už nasazení AMP za sebou a rádi byste se pochlubili čísly? Neváhejte napsat do komentářů nebo se zmínit [e-mailem](mailto:martin@pagespeed.cz).
 
 </div>
 
