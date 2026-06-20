@@ -1,0 +1,132 @@
+---
+import BaseLayout from '@vd/shared/layouts/BaseLayout.astro';
+import Header from '@vd/shared/components/Header.astro';
+import Footer from '@vd/shared/components/Footer.astro';
+import CategoryTOC from '../components/CategoryTOC.astro';
+import CategoryTOCResponzivniDesign from '../components/categories/CategoryTOCResponzivniDesign.astro';
+import CategoryTOCOrganizaceCSS from '../components/categories/CategoryTOCOrganizaceCSS.astro';
+import CategoryTOCNastroje from '../components/categories/CategoryTOCNastroje.astro';
+import CategoryTOCRychlostNacitani from '../components/categories/CategoryTOCRychlostNacitani.astro';
+import CategoryTOCCSS from '../components/categories/CategoryTOCCSS.astro';
+import ArticleListItem from '../components/ArticleListItem.astro';
+import { getCollection } from 'astro:content';
+import { getCategoryBySlug, categories } from '../data/categories';
+import { isPublished } from '../utils/is-published';
+import { Fragment } from 'astro/jsx-runtime';
+
+export async function getStaticPaths() {
+  return categories.map((category) => ({
+    params: { category: category.slug },
+  }));
+}
+
+const { category } = Astro.params;
+
+if (!category) {
+  return Astro.redirect('/404');
+}
+
+const categoryConfig = getCategoryBySlug(category);
+
+if (!categoryConfig) {
+  return Astro.redirect('/404');
+}
+
+// Načtení všech článků
+const blogPosts = await getCollection('blog', isPublished);
+const podcasts = await getCollection('podcast', isPublished);
+const priruckaPosts = await getCollection('prirucka', isPublished);
+
+const allContent = [...blogPosts, ...podcasts, ...priruckaPosts]
+  .filter(post => {
+    if (post.collection === 'prirucka' && post.data.title === post.data.id) return false;
+    if (!isPublished(post)) return false;
+    // Filtrování pouze podle tags
+    const tags = post.data.tags || [];
+    return categoryConfig.tags.some(catTag => tags.includes(catTag));
+  })
+  .sort((a, b) => {
+    const dateA = a.data.date || new Date(0);
+    const dateB = b.data.date || new Date(0);
+    return dateB.getTime() - dateA.getTime();
+  });
+
+const currentPage = 1;
+const postsPerPage = 10;
+const totalPages = Math.ceil(allContent.length / postsPerPage);
+const startIndex = (currentPage - 1) * postsPerPage;
+const endIndex = startIndex + postsPerPage;
+const paginatedPosts = allContent.slice(startIndex, endIndex);
+
+function getTOCComponent(categorySlug: string) {
+  switch (categorySlug) {
+    case 'responzivni-design':
+      return CategoryTOCResponzivniDesign;
+    case 'organizace-css':
+      return CategoryTOCOrganizaceCSS;
+    case 'nastroje':
+      return CategoryTOCNastroje;
+    case 'rychlost-nacitani':
+      return CategoryTOCRychlostNacitani;
+    case 'css':
+      return CategoryTOCCSS;
+    default:
+      return null;
+  }
+}
+
+const TOCComponent = getTOCComponent(category);
+---
+
+<BaseLayout
+  title={`Téma „${categoryConfig.title}" na Vzhůru dolů`}
+  description={categoryConfig.description}
+  bodyClass="section-home"
+  ogUrl={`https://www.vzhurudolu.cz/${category}`}
+>
+  <Fragment slot="styles">
+    <link rel="stylesheet" href="/assets/css/modules-standalone/min/topbar.min.css" />
+    <link rel="stylesheet" href="/assets/css/modules-standalone/min/toc.min.css" />
+  </Fragment>
+
+  <Header slot="header" />
+  <Footer slot="footer" />
+
+  <main role="main" id="main" aria-label="Hlavní obsah">
+    <div class="page-head page-head--lower">
+      <h1>{categoryConfig.title}</h1>
+      <div class="mb-0 maxw-30em">
+        <p>{categoryConfig.description}</p>
+      </div>
+    </div>
+
+    {categoryConfig.hasTOC && TOCComponent && (
+      <CategoryTOC category={category}>
+        <TOCComponent />
+      </CategoryTOC>
+    )}
+
+    <div class="section">
+      <div class="content">
+        {paginatedPosts.map((post) => (
+          <ArticleListItem post={post} />
+        ))}
+
+        {/* Navigace stránkování */}
+        {totalPages > 1 && (
+          <nav class="ta-c mt-3" aria-label="Stránkování">
+            <span class="mx-1 f-6">
+              Stránka {currentPage} z {totalPages}
+            </span>
+            
+            {currentPage < totalPages && (
+              <a class="button" href={`/${category}/p=${currentPage + 1}`}>
+                Další stránka →
+              </a>
+            )}
+          </nav>
+        )}
+      </div>
+    </div>
+  </main>
+</BaseLayout>

@@ -1,0 +1,42 @@
+/** @define badge
+
+Badge
+=====
+
+*/
+.badge {
+  white-space: nowrap;
+  font-size: 0.75em;
+  padding: 0.25em 0.5em;
+  font-weight: normal;
+  font-family: "foro extra bold", georgia, serif;
+  border-radius: 2px;
+  background: #002c3a;
+  color: #fff;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.badge--brown {
+  background: #2e2c09;
+}
+
+.badge--yellow {
+  background: #eecf6d;
+  color: #2e2c09;
+}
+
+.badge--sm {
+  padding: 0.175em;
+}
+
+.badge--white {
+  color: #fff;
+}
+
+.badge--inverted {
+  border: 1px solid white;
+  background: none;
+}
+
+/*# sourceMappingURL=badge.css.map */

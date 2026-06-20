@@ -1,0 +1,71 @@
+---
+import { Fragment } from 'astro/jsx-runtime';
+import BaseLayout from '@vd/shared/layouts/BaseLayout.astro';
+import Header from '@vd/shared/components/Header.astro';
+import Footer from '@vd/shared/components/Footer.astro';
+import { siteConfig } from '../site.config';
+
+const siteHostname = new URL(siteConfig.origin).hostname;
+---
+
+<BaseLayout
+  title="Cookie Policy"
+  description={`How ${siteHostname} uses cookies, including Google Analytics.`}
+  siteConfig={siteConfig}
+  ogUrl={`${siteConfig.origin}/cookies`}
+  canonicalUrl={`${siteConfig.origin}/cookies`}
+>
+  <Fragment slot="styles">
+    <link rel="stylesheet" href="/assets/css/modules-standalone/min/page-head.min.css" />
+    <link rel="stylesheet" href="/assets/css/modules-standalone/min/article.min.css" />
+  </Fragment>
+
+  <Header slot="header" siteConfig={siteConfig} />
+  <Footer slot="footer" siteConfig={siteConfig} />
+
+  <main role="main" id="main" aria-label="Main content">
+    <div class="page-head page-head--line"></div>
+    <div class="content py-3-md article">
+      <h1>Cookie Policy</h1>
+      <p><em>Last updated: June 2026</em></p>
+
+      <p>
+        This policy describes how <a href={siteConfig.origin}>{siteHostname}</a> uses cookies and
+        similar technologies. For how we use personal data overall, see the
+        <a href="/privacy">Privacy Policy</a>.
+      </p>
+
+      <h2 id="what-are-cookies">1. What are cookies?</h2>
+      <p>
+        Cookies are small text files stored on your device when you visit a website. They help the
+        site remember preferences or measure usage. Some cookies are set by third parties (e.g. analytics).
+      </p>
+
+      <h2 id="how-we-use">2. How we use cookies</h2>
+
+      <h3 id="analytics">2.1 Analytics cookies</h3>
+      <p>
+        We use Google Analytics 4 (GA4), loaded asynchronously after page load. GA4 may set cookies
+        such as <code>_ga</code> to distinguish users and measure traffic. We configure IP
+        anonymisation where available.
+      </p>
+
+      <h2 id="third-parties">3. Third parties</h2>
+      <ul>
+        <li><strong>Google Analytics</strong> — usage statistics. <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</li>
+        <li><strong>Vercel</strong> — hosting; may use cookies or similar tech for platform features and security on their edge network.</li>
+      </ul>
+
+      <h2 id="manage">4. Managing cookies</h2>
+      <ul>
+        <li>Block or delete cookies in your browser settings.</li>
+        <li>Install a Google Analytics opt-out browser add-on from Google if you prefer.</li>
+      </ul>
+
+      <h2 id="contact">5. Contact</h2>
+      <p>
+        Questions about cookies: <a href="mailto:martin@vzhurudolu.cz">martin@vzhurudolu.cz</a>
+      </p>
+    </div>
+  </main>
+</BaseLayout>

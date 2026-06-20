@@ -1,0 +1,16 @@
+---
+interface Props {
+  adaptedFrom: {
+    title: string;
+    url: string;
+  };
+}
+
+const { adaptedFrom } = Astro.props;
+---
+
+<p class="adaptation-attribution f-6 text-color-lightest mb-1 ta-c">
+  Adapted from the Czech article{' '}
+  <a href={adaptedFrom.url} class="adaptation-attribution__link">{adaptedFrom.title}</a>
+  {' '}on Vzhůru dolů.
+</p>

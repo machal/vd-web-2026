@@ -1,0 +1,38 @@
+/** @define grid
+
+Grid
+====
+
+Grid layout similar to flexbox layout: https://www.vzhurudolu.cz/style/helpers#layout
+
+TODO
+
+- not using this anywhere yet
+- usecase is here: /balicky-kurzu/rychlost-webu#obsah
+
+*/
+.grid {
+  display: grid;
+  gap: 1rem;
+  grid-auto-rows: auto;
+}
+
+.grid--2-col {
+  grid-template-columns: 1fr 1fr;
+}
+
+@media only screen and (min-width: 768px) {
+  .grid--2-col-md {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.grid--2-col-auto-1fr {
+  grid-template-columns: auto 1fr;
+}
+
+.gap-05 {
+  gap: 0.5rem;
+}
+
+/*# sourceMappingURL=grid.css.map */

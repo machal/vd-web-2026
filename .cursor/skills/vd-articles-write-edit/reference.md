@@ -123,7 +123,7 @@ published: false
 - **content-ceske-uvozovky.md** – české „ " jen v proze; ve front matter a v kódu vždy ASCII `"`.
 - **content-nadpisy-anchor-hashe.md** – u H2–H6 vždy `{#slug}` na konci řádku.
 - **content-obrazky-popisky.md** – figure + img + figcaption; figcaption s `markdown="1"`, popisek v kurzívě.
-- **content-odkazovani.md** – odkazy u prvního výskytu; ne do citací, figcaption, perexů.
+- **content-odkazovani.md** – odkazy u prvního výskytu; ne do citací a perexů. Ve figcaption povolené (zdroj obrázku/grafu).
 - **content-citace-blockquote.md** – blockquote + `– *<cite>...</cite>*`.
 - **content-tabulky-male.md** – tabulka v `<div class="rwd-scrollable f-6" markdown="1">`.
 - **content-vyzva-na-konci.md** – výzva v `<small>*…*</small>`.

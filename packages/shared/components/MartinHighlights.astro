@@ -1,0 +1,92 @@
+---
+import {
+  formatMartinHighlightDate,
+  getMartinHighlights,
+  getMartinHighlightsCopy,
+  type MartinHighlightsLocale,
+} from '@vd/shared/content/martin-highlights';
+import type { SiteConfig } from '@vd/shared/types';
+
+interface Props {
+  siteConfig?: SiteConfig;
+}
+
+const locale: MartinHighlightsLocale = Astro.props.siteConfig?.locale ?? 'cs';
+const t = getMartinHighlightsCopy(locale);
+const highlights = getMartinHighlights(locale);
+const sectionId = locale === 'en' ? 'highlights' : 'vybrane';
+---
+
+<div class="content">
+  <div class="article" id={sectionId}>
+    <h2 class="ta-c mb-2">
+      <a href={`#${sectionId}`}>{t.heading}</a>
+    </h2>
+
+    <ul class="list list--bordered list--block-hover list--spaced martin-highlights f-6">
+      {
+        highlights.map((item) => (
+          <li class="list__item">
+            <a href={item.href} class="list__item-link martin-highlights__link">
+              <span class="martin-highlights__row">
+                <span class="text-color-lightest martin-highlights__kind">
+                  {t.kinds[item.kind]}:
+                </span>
+                <span class="martin-highlights__title">{item.title}</span>
+                <span class="text-color-lightest martin-highlights__date">
+                  ({formatMartinHighlightDate(item.date, locale)})
+                </span>
+              </span>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+
+    {
+      t.youtubeHref && t.youtubeLabel && (
+        <p class="ta-c mb-0 martin-highlights__youtube">
+          <a class="button" href={t.youtubeHref}>{t.youtubeLabel}</a>
+        </p>
+      )
+    }
+  </div>
+</div>
+
+<style>
+  .martin-highlights__link {
+    display: block;
+    max-width: 100%;
+  }
+
+  .martin-highlights__row {
+    display: flex;
+    align-items: baseline;
+    gap: 0.35em;
+    min-width: 0;
+    max-width: 100%;
+    white-space: nowrap;
+  }
+
+  .martin-highlights__kind,
+  .martin-highlights__date {
+    flex-shrink: 0;
+  }
+
+  .martin-highlights__title {
+    flex: 1 1 auto;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .martin-highlights__youtube {
+    margin-top: 1.5rem;
+  }
+
+  .martin-highlights__youtube .button {
+    display: inline-block;
+    width: auto;
+  }
+</style>

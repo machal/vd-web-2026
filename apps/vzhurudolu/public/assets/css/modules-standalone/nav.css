@@ -1,0 +1,94 @@
+/** @define nav
+
+Navigation
+==========
+
+- Main navigation (/)
+- Innner tabs (/prirucka/css3-flexbox)
+
+*/
+.nav {
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #c1c0b5;
+}
+@media print {
+  .nav {
+    display: none;
+  }
+}
+
+.nav__list {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.nav__item {
+  text-align: center;
+  margin: 0 0.1rem 0 0;
+  padding: 0;
+}
+.nav__item:last-child {
+  margin-right: 0;
+}
+
+.nav__item-in {
+  display: block;
+  font-weight: normal;
+  padding: 0.5rem 1.25rem;
+  border-radius: 4px 4px 0 0;
+  border: 1px solid #c1c0b5;
+  border-bottom: 0;
+  margin-bottom: -1px;
+  transition: 0.15s;
+  text-decoration: none;
+}
+
+.nav__item-in:hover, .nav__item-in:focus, .nav__item-in:active {
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .nav__item-in {
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+  }
+}
+
+.nav__item--active .nav__item-in {
+  border-bottom: 1px solid white;
+}
+
+.nav--site {
+  margin-bottom: 0;
+  border-bottom: 0;
+}
+
+.nav--site .nav__item-in {
+  text-decoration: none;
+  background: #fff;
+}
+
+.nav--site .nav__item--active .nav__item-in {
+  color: #fff;
+  background-color: #174622;
+  border-color: #174622;
+  border-bottom: 1px solid #174622;
+}
+
+.section-ebooks .nav--site .nav__item--active .nav__item-in,
+.section-kurzy .nav--site .nav__item--active .nav__item-in,
+.section-video .nav--site .nav__item--active .nav__item-in {
+  background-color: #2e2c09;
+  border-color: #2e2c09;
+  border-bottom: 1px solid #2e2c09;
+}
+
+.nav--site .nav__item-in {
+  border-bottom: 0;
+  margin-bottom: 0;
+}
+
+/*# sourceMappingURL=nav.css.map */

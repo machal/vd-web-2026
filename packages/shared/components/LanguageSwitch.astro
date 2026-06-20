@@ -1,0 +1,64 @@
+---
+interface Props {
+  currentLocale: 'cs' | 'en';
+  alternateUrl?: string;
+  className?: string;
+}
+
+const { currentLocale, alternateUrl, className = '' } = Astro.props;
+
+const alternateLocale = currentLocale === 'cs' ? 'en' : 'cs';
+
+const flags = {
+  cs: '🇨🇿',
+  en: '🇬🇧',
+} as const;
+
+const titles = {
+  cs: 'K dispozici také anglicky.',
+  en: 'Also available in Czech.',
+} as const;
+
+const title = titles[currentLocale];
+---
+
+{alternateUrl && (
+  <nav class={`language-switch ${className}`.trim()} aria-label="Language">
+    <a
+      class="language-switch__link"
+      href={alternateUrl}
+      hreflang={alternateLocale}
+      lang={alternateLocale}
+      rel="alternate"
+      title={title}
+      aria-label={title}
+    >
+      <span class="language-switch__flag" aria-hidden="true">{flags[alternateLocale]}</span>
+    </a>
+  </nav>
+)}
+
+<style>
+  .language-switch {
+    display: flex;
+    align-items: center;
+  }
+
+  .language-switch__link {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.25rem;
+    line-height: 1;
+  }
+
+  .language-switch__link:hover,
+  .language-switch__link:focus,
+  .language-switch__link:active {
+    text-decoration: none;
+  }
+
+  .language-switch__flag {
+    display: block;
+  }
+</style>

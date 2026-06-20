@@ -1,0 +1,92 @@
+---
+// Homepage pagination – /p=2, /p=3, etc.
+import { getCollection } from 'astro:content';
+import BaseLayout from '@vd/shared/layouts/BaseLayout.astro';
+import Header from '@vd/shared/components/Header.astro';
+import Footer from '@vd/shared/components/Footer.astro';
+import ArticleListItem from '../components/ArticleListItem.astro';
+import { siteConfig } from '../site.config';
+import { isPublished } from '../utils/is-published';
+
+export async function getStaticPaths() {
+  const postsPerPage = 5;
+  const blogPosts = await getCollection('blog', isPublished);
+  const guidePosts = await getCollection('guide', isPublished);
+
+  const sorted = [...blogPosts, ...guidePosts].sort((a, b) => {
+    const dateA = a.data.date || new Date(0);
+    const dateB = b.data.date || new Date(0);
+    return dateB.getTime() - dateA.getTime();
+  });
+
+  const totalPages = Math.ceil(sorted.length / postsPerPage);
+  const paths: Array<{
+    params: { page: string };
+    props: {
+      currentPage: number;
+      totalPages: number;
+      paginatedPosts: typeof sorted;
+    };
+  }> = [];
+
+  for (let i = 2; i <= totalPages; i++) {
+    const startIndex = (i - 1) * postsPerPage;
+    const endIndex = startIndex + postsPerPage;
+    paths.push({
+      params: { page: `p=${i}` },
+      props: {
+        currentPage: i,
+        totalPages,
+        paginatedPosts: sorted.slice(startIndex, endIndex),
+      },
+    });
+  }
+
+  return paths;
+}
+
+const { currentPage, totalPages, paginatedPosts } = Astro.props;
+---
+
+<BaseLayout
+  title={`Articles – page ${currentPage}`}
+  description="Personal tech blog and web performance consulting."
+  siteConfig={siteConfig}
+  bodyClass="section-home"
+>
+  <Header slot="header" siteConfig={siteConfig} activeSection="home" />
+  <Footer slot="footer" siteConfig={siteConfig} />
+
+  <main role="main" id="main" aria-label="Main content">
+    <div class="page-head page-head--lower">
+      <h1>Articles</h1>
+    </div>
+
+    <div class="section">
+      <div class="content">
+        {paginatedPosts.map((post) => (
+          <ArticleListItem post={post} />
+        ))}
+
+        <nav class="ta-c mt-3" aria-label="Pagination">
+          <a
+            class="button"
+            href={currentPage === 2 ? '/' : `/p=${currentPage - 1}`}
+          >
+            ← Previous page
+          </a>
+
+          <span class="mx-1 f-6">
+            Page {currentPage} of {totalPages}
+          </span>
+
+          {currentPage < totalPages && (
+            <a class="button" href={`/p=${currentPage + 1}`}>
+              Next page →
+            </a>
+          )}
+        </nav>
+      </div>
+    </div>
+  </main>
+</BaseLayout>

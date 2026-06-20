@@ -1,0 +1,62 @@
+---
+import BaseLayout from '@vd/shared/layouts/BaseLayout.astro';
+import Header from '@vd/shared/components/Header.astro';
+import Footer from '@vd/shared/components/Footer.astro';
+import MartinHeroHead from '@vd/shared/components/MartinHeroHead.astro';
+import MartinIntro from '@vd/shared/components/MartinIntro.astro';
+import MartinHighlights from '@vd/shared/components/MartinHighlights.astro';
+import MartinContact from '@vd/shared/components/MartinContact.astro';
+import EbooksGrid from '@vd/shared/components/EbooksGrid.astro';
+import { resolveHreflangCluster } from '@vd/shared/content-pairing';
+import { buildAlternateLinks } from '@vd/shared/seo/hreflang';
+import { Fragment } from 'astro/jsx-runtime';
+
+const canonicalUrl = 'https://www.vzhurudolu.cz/martin';
+const cluster = resolveHreflangCluster('vzhurudolu', 'page', '/martin');
+const alternateLinks = cluster ? buildAlternateLinks(cluster) : undefined;
+---
+
+<BaseLayout
+  title="Martin Michálek — optimalizace rychlosti webu"
+  description="Konzultant webového výkonu, autor Vzhůru dolů, PageSpeed.ONE, Frontendisti.cz a FrontKon."
+  ogType="profile"
+  ogImage={[
+    'https://www.vzhurudolu.cz/assets/img/content/dest/socials/vd-soc-uni-1.webp',
+    'https://www.vzhurudolu.cz/assets/img/content/dest/socials/vd-soc-uni-2.webp',
+  ]}
+  ogUrl={canonicalUrl}
+  canonicalUrl={canonicalUrl}
+  alternateLinks={alternateLinks}
+  bodyClass="section-autor"
+>
+  <Fragment slot="styles">
+    <link rel="stylesheet" href="/assets/css/modules-standalone/min/pages/lector.min.css" />
+    <link rel="stylesheet" href="/assets/css/modules-standalone/min/course-icon.min.css" />
+    <link rel="stylesheet" href="/assets/css/modules-standalone/min/emblem.min.css" />
+  </Fragment>
+
+  <Header slot="header" />
+  <Footer slot="footer" />
+
+  <MartinHeroHead />
+
+  <MartinIntro />
+
+  <main role="main" id="main" aria-label="Hlavní obsah" class="">
+    <MartinHighlights />
+
+    <div class="content">
+      <div class="article" id="knihy">
+        <h2 class="ta-c">
+          <a href="#knihy">Knihy</a>
+        </h2>
+      </div>
+    </div>
+
+    <div class="content pt-3">
+      <EbooksGrid />
+    </div>
+
+    <MartinContact />
+  </main>
+</BaseLayout>

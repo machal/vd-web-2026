@@ -1,0 +1,98 @@
+---
+import BaseLayout from '@vd/shared/layouts/BaseLayout.astro';
+import Header from '@vd/shared/components/Header.astro';
+import Footer from '@vd/shared/components/Footer.astro';
+import EbooksGrid from '@vd/shared/components/EbooksGrid.astro';
+---
+
+<BaseLayout
+  title="Knihy a e-booky ze Vzhůru dolů"
+  description="Martin Michálek píše knihy a e-booky o CSS3, responzivním designu a moderní webové kodéřině."
+  ogImage="https://www.vzhurudolu.cz/assets/img/content/dest/socials/vd-soc-knihy.webp"
+  ogUrl="https://www.vzhurudolu.cz/ebooky"
+  bodyClass="section-ebooks"
+>
+  <Header slot="header" />
+  <Footer slot="footer" />
+
+  <div class="page-head">
+      <h1>Knihy a e-booky</h1>
+      <p class="mb-0 maxw-30em">
+        Technologie moderní webové kodéřiny v&nbsp;průvodcích od autora textů na Vzhůru&nbsp;dolů.
+      </p>
+    </div>
+
+    <main role="main" id="main" aria-label="Hlavní obsah">
+      <div class="content pt-3">
+        <link rel="stylesheet" href="/assets/css/modules-standalone/min/course-icon.min.css" />
+        <link rel="stylesheet" href="/assets/css/modules-standalone/min/emblem.min.css" />
+        
+        <EbooksGrid imageLoading="eager" />
+      </div>
+
+      <div class="content">
+        <div class="content" id="ohlasy">
+          <div class="section">
+            <div class="article">
+              <hr class="hr hr--small hr--spaced">
+
+              <h2 class="ta-c mb-2">
+                <a href="#ohlasy">Ohlasy &amp; recenze na knížky</a>
+              </h2>
+
+              <div class="row f-sm">
+                <link rel="stylesheet" href="/assets/css/modules-standalone/min/response.min.css" />
+                <article class="course-response response col w-50-xs mb-15 pt-0">
+                  <blockquote class="response__text">
+                    <p>Ze Vzhůru do (responzivního) webdesignu jsem opravdu nadšený.</p>
+                  </blockquote>
+                  <p class="mb-0 ml-2">
+                    Martin Pešout v&nbsp;recenzi knihy na
+                    <a href="https://www.zdrojak.cz/clanky/recenze-knihy-vzhuru-responzivniho-webdesignu/">
+                      Zdroják.cz
+                    </a>
+                  </p>
+                </article>
+                <article class="course-response response col w-50-xs mb-15 pt-0">
+                  <blockquote class="response__text">
+                    <p>Hodně se mi líbilo provázání výkladu s funkčními příklady, které jsem si mohl ihned upravit a vyzkoušet.</p>
+                  </blockquote>
+                  <p class="mb-0 ml-2">
+                    Petr Václavek ke „Vzhůru do&nbsp;CSS3" na
+                    <a href="http://petr.vaclavek.com/article/721/martin-michalek-vzhuru-do-css3">
+                      Vaclavek.com
+                    </a>
+                  </p>
+                </article>
+                <article class="course-response response col w-50-xs mb-15 pt-0">
+                  <blockquote class="response__text">
+                    <p>Když jsem četl knihu, říkal jsem si: ‚Kdybych toto četl před rokem…', ‚Kdybych to věděl před projektem XYZ…'</p>
+                  </blockquote>
+                  <p class="mb-0 ml-2">
+                    Michal Blažek, marketér ke „Vzhůru do (responzivního) webdesignu" na
+                    <a href="https://www.michalblazek.cz/konference-skoleni-novinky/recenze-knihy-vzhuru-responsivniho-webdesignu-od-martina-michalka">
+                      MichalBlažek.cz
+                    </a>
+                  </p>
+                </article>
+                <article class="course-response response col w-50-xs mb-15 pt-0">
+                  <blockquote class="response__text">
+                    <p>Tahle knížka je fakt skvělá a moc za ni děkuji!</p>
+                  </blockquote>
+                  <p class="mb-0 ml-2">
+                    David Grudl ke „Vzhůru do (responzivního) webdesignu"
+                    na
+                    <a href="https://x.com/geekovo/status/923139453849350144">
+                      X
+                    </a>
+                  </p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  
+  <script is:inline src="/assets/js/vrdl.min.js"></script>
+</BaseLayout>

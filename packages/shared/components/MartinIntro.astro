@@ -1,0 +1,91 @@
+---
+import {
+  getMartinIntroCopy,
+  martinIntroLogos,
+  type MartinIntroLocale,
+} from '@vd/shared/content/martin-intro';
+import type { SiteConfig } from '@vd/shared/types';
+
+interface Props {
+  siteConfig?: SiteConfig;
+}
+
+const locale: MartinIntroLocale = Astro.props.siteConfig?.locale ?? 'cs';
+const t = getMartinIntroCopy(locale);
+const { pageSpeed: pageSpeedLogo, community: communityLogo } = martinIntroLogos;
+const logoHeight = 88;
+---
+
+<div class="content">
+  <div class="row fd-c fd-r-xs">
+    <div class="col w-50-xs ta-c">
+      <p class="d-f ai-c jc-c mb-1 w-100 martin-intro__logo">
+        <a href={pageSpeedLogo.href}>
+          <img
+            src={pageSpeedLogo.src}
+            alt={pageSpeedLogo.alt}
+            width={pageSpeedLogo.width}
+            height={logoHeight}
+            loading="lazy"
+          />
+        </a>
+      </p>
+      <p class="f-6 maxw-30em mb-0">
+        {
+          locale === 'cs' ? (
+            <>
+              V{' '}
+              <a href={t.pageSpeed.brand.href}>{t.pageSpeed.brand.label}</a>
+              {' '}pomáháme firmám s rychlostí webu. Poskytujeme{' '}
+              <a href={t.pageSpeed.consulting.href}>{t.pageSpeed.consulting.label}</a>, které vede k lepším konverzím a vyvíjíme vlastní{' '}
+              <a href={t.pageSpeed.monitoring.href}>{t.pageSpeed.monitoring.label}</a>.
+            </>
+          ) : (
+            <>
+              At{' '}
+              <a href={t.pageSpeed.brand.href}>{t.pageSpeed.brand.label}</a>
+              {' '}we help companies with web speed. We provide{' '}
+              <a href={t.pageSpeed.consulting.href}>{t.pageSpeed.consulting.label}</a> that leads to faster websites and better conversions. We develop our own{' '}
+              <a href={t.pageSpeed.monitoring.href}>{t.pageSpeed.monitoring.label}</a>.
+            </>
+          )
+        }
+      </p>
+    </div>
+
+    <div class="col w-50-xs ta-c">
+      <p class="d-f ai-c jc-c mb-1 w-100 martin-intro__logo">
+        <a href={communityLogo.href}>
+          <img
+            src={communityLogo.src}
+            alt={communityLogo.alt}
+            width={communityLogo.width}
+            height={logoHeight}
+            loading="lazy"
+          />
+        </a>
+      </p>
+      <p class="f-6 maxw-30em mb-0">
+        {
+          locale === 'cs' ? (
+            <>
+              Spoluzaložil jsem a vedu jednu z největších českých IT komunit,{' '}
+              <a href={t.community.frontendisti.href}>{t.community.frontendisti.label}</a>.
+              V rámci této značky pořádáme konferenci{' '}
+              <a href={t.community.frontkon.href}>{t.community.frontkon.label}</a> a natáčíme podcast{' '}
+              <a href={t.community.frontkec.href}>{t.community.frontkec.label}</a>.
+            </>
+          ) : (
+            <>
+              I co-founded and lead one of the largest Czech IT communities,{' '}
+              <a href={t.community.frontendisti.href}>{t.community.frontendisti.label}</a>.
+              Under that brand we run the{' '}
+              <a href={t.community.frontkon.href}>{t.community.frontkon.label}</a> conference and record the{' '}
+              <a href={t.community.frontkec.href}>{t.community.frontkec.label}</a> podcast.
+            </>
+          )
+        }
+      </p>
+    </div>
+  </div>
+</div>

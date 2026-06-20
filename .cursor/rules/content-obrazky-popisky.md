@@ -30,6 +30,7 @@ Při přidávání nebo úpravě obrázků s popiskem v příručce (`src/conten
 - Piš v **kurzívě** (`*text*`).
 - Popisek může být krátký (jedna věta) nebo rozšířený (kontext, zdroj).
 - Není nutné uvádět „Obrázek:“ na začátku, pokud je z kontextu jasné, že jde o popis obrázku.
+- **Odkazy jsou ve figcaption povolené** – typicky pro uvedení zdroje obrázku, grafu nebo nástroje, např. `Zdroj grafu: appka [SkillShaper](https://…)`.
 
 ## Reference
 

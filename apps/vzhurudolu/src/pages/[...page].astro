@@ -1,0 +1,120 @@
+---
+// Stránkování - /p=2, /p=3, atd.
+import BaseLayout from '@vd/shared/layouts/BaseLayout.astro';
+import Header from '@vd/shared/components/Header.astro';
+import Footer from '@vd/shared/components/Footer.astro';
+import ArticleListItem from '../components/ArticleListItem.astro';
+import { getCollection } from 'astro:content';
+import { isPublished } from '../utils/is-published';
+import { Fragment } from 'astro/jsx-runtime';
+
+export async function getStaticPaths() {
+  const blogPosts = await getCollection('blog', isPublished);
+  const podcasts = await getCollection('podcast', isPublished);
+  const priruckaPosts = await getCollection('prirucka', isPublished);
+  
+  const allContent = [...blogPosts, ...podcasts, ...priruckaPosts]
+    .filter(post => {
+      if (post.collection === 'prirucka' && post.data.title === post.data.id) return false;
+      return true;
+    })
+    .sort((a, b) => {
+      const dateA = a.data.date || new Date(0);
+      const dateB = b.data.date || new Date(0);
+      return dateB.getTime() - dateA.getTime();
+    });
+  
+  const postsPerPage = 10;
+  const totalPages = Math.ceil(allContent.length / postsPerPage);
+  
+  // Vytvořit statické cesty pro všechny stránky
+  // Rest parametr vrací pole segmentů, takže pro `/p=2` bude page = ["p=2"]
+  return Array.from({ length: totalPages }, (_, i) => {
+    const pageNum = i + 1;
+    return {
+      params: { page: `p=${pageNum}` },
+      props: {
+        currentPage: pageNum,
+        totalPages,
+        allContent,
+        postsPerPage,
+      },
+    };
+  });
+}
+
+const { page } = Astro.params;
+const { currentPage, totalPages, allContent, postsPerPage } = Astro.props;
+
+const startIndex = (currentPage - 1) * postsPerPage;
+const endIndex = startIndex + postsPerPage;
+const paginatedPosts = allContent.slice(startIndex, endIndex);
+
+function formatDate(date: Date): string {
+  return new Intl.DateTimeFormat('cs-CZ', {
+    day: 'numeric',
+    month: 'numeric',
+    year: 'numeric',
+  }).format(date);
+}
+
+function getSlug(entry: any): string {
+  if (entry.collection === 'blog') {
+    return `/blog/${entry.slug}`;
+  } else if (entry.collection === 'podcast') {
+    return `/podcast/${entry.data.postID}-${entry.slug}`;
+  } else if (entry.collection === 'prirucka') {
+    // Use id from frontmatter instead of slug for prirucka
+    return `/prirucka/${entry.data.id}`;
+  }
+  return '#';
+}
+---
+
+<BaseLayout
+  title={`Stránka ${currentPage} – Vzhůru dolů`}
+  description="HTML5, CSS3, responzivní design v textech a na školeních Martina Michálka."
+  bodyClass="section-home"
+>
+  <Fragment slot="styles">
+    <link rel="stylesheet" href="/assets/css/modules-standalone/min/topbar.min.css" />
+  </Fragment>
+
+  <Header slot="header" />
+  <Footer slot="footer" />
+
+  <main role="main" id="main" aria-label="Hlavní obsah">
+    <div class="page-head page-head--line"></div>
+
+    <div class="section">
+      <div class="content">
+        <h1 class="sr-only">Články – stránka {currentPage}</h1>
+        
+        {paginatedPosts.map((post) => (
+          <ArticleListItem post={post} />
+        ))}
+
+        {/* Navigace stránkování */}
+        <nav class="ta-c mt-3" aria-label="Stránkování">
+          {currentPage > 1 && (
+            <a class="button" href={currentPage === 2 ? '/' : `/p=${currentPage - 1}`}>
+              ← Předchozí stránka
+            </a>
+          )}
+          
+          <span class="mx-1 f-6">
+            Stránka {currentPage} z {totalPages}
+          </span>
+          
+          {currentPage < totalPages && (
+            <a class="button" href={`/p=${currentPage + 1}`}>
+              Další stránka →
+            </a>
+          )}
+        </nav>
+      </div>
+    </div>
+  </main>
+  
+  <script is:inline src="/assets/js/vrdl.min.js"></script>
+</BaseLayout>

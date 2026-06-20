@@ -1,0 +1,54 @@
+---
+interface Topic {
+  label: string;
+  href: string;
+}
+
+interface Props {
+  locale?: 'cs' | 'en';
+  headingId?: string;
+}
+
+const { locale = 'cs', headingId = 'temata' } = Astro.props;
+
+const copy = {
+  cs: {
+    heading: 'Témata článků',
+    topics: [
+      { label: 'CSS', href: '/css' },
+      { label: 'Rychlost načítání webu', href: '/rychlost-nacitani' },
+      { label: 'AI', href: '/ai' },
+      { label: 'Nástroje', href: '/nastroje' },
+      { label: 'Dovednosti', href: '/dovednosti' },
+    ] satisfies Topic[],
+  },
+  en: {
+    heading: 'Article topics',
+    topics: [
+      { label: 'CSS', href: '/development' },
+      { label: 'Web performance', href: '/performance' },
+      { label: 'AI', href: '/ai' },
+      { label: 'Tools', href: '/development' },
+      { label: 'Skills', href: '/business' },
+    ] satisfies Topic[],
+  },
+} as const;
+
+const t = copy[locale];
+---
+
+<div id={headingId} class="section section-tall section-latest bg-highlight">
+  <div class="content-full ta-c">
+    <h2 class="section-heading heading-anchored">
+      <a href={`#${headingId}`}>{t.heading}</a>
+    </h2>
+
+    <p>
+      {t.topics.map((topic) => (
+        <a href={topic.href} class="button m-025">
+          {topic.label}
+        </a>
+      ))}
+    </p>
+  </div>
+</div>

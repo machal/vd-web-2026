@@ -1,0 +1,64 @@
+---
+import BaseLayout from '@vd/shared/layouts/BaseLayout.astro';
+import Header from '@vd/shared/components/Header.astro';
+import Footer from '@vd/shared/components/Footer.astro';
+import ArticleListItem from '../../components/ArticleListItem.astro';
+import { getCollection, type CollectionEntry } from 'astro:content';
+
+const postsPerPage = 10;
+
+const priruckaPosts = await getCollection('prirucka', (entry): entry is CollectionEntry<'prirucka'> & { data: { id: string } } => {
+  return !!entry.data.id && entry.data.published === true;
+});
+const sorted = priruckaPosts.sort((a, b) => {
+  const dateA = a.data.date || new Date(0);
+  const dateB = b.data.date || new Date(0);
+  return dateB.getTime() - dateA.getTime();
+});
+
+const totalPages = Math.ceil(sorted.length / postsPerPage);
+const currentPage = 1;
+const startIndex = 0;
+const endIndex = postsPerPage;
+const paginatedPosts = sorted.slice(startIndex, endIndex);
+---
+
+<BaseLayout
+  title="Příručka – Vzhůru dolů"
+  description="Trvale platný obsah o CSS, responzivním designu, rychlosti webu, nástrojích a souvisejících tématech."
+  bodyClass="section-prirucka"
+  ogUrl="https://www.vzhurudolu.cz/prirucka"
+>
+  <Header slot="header" />
+  <Footer slot="footer" />
+
+  <main role="main" id="main" aria-label="Hlavní obsah">
+    <div class="page-head page-head--lower">
+      <h1>Příručka</h1>
+      <div class="mb-0 maxw-30em">
+        <p>Trvale platný obsah o CSS, responzivním designu, rychlosti webu, nástrojích a souvisejících tématech.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="content">
+        {paginatedPosts.map((post) => (
+          <ArticleListItem post={post} />
+        ))}
+
+        {/* Navigace stránkování */}
+        <nav class="ta-c mt-3" aria-label="Stránkování">
+          <span class="mx-1 f-6">
+            Stránka {currentPage} z {totalPages}
+          </span>
+
+          {totalPages > 1 && (
+            <a class="button" href="/prirucka/p=2">
+              Další stránka →
+            </a>
+          )}
+        </nav>
+      </div>
+    </div>
+  </main>
+</BaseLayout>

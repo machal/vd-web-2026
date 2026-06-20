@@ -1,0 +1,114 @@
+@charset "UTF-8";
+/*
+  Component Accordion
+  ===================
+
+  - e.g. ebook TOC: /ebook-amp/
+  - inspired by https://codepen.io/vinsongrant/pen/qbGKed
+  - CSS only solution because of AMP/non-AMP versions
+  - but it is not accessible I think – need to rethink
+  - after AMP/Bento rewrite it to AMP
+*/
+:root {
+  --vd-text-color-rgb: 46, 44, 9;
+  --vd-text-color: rgb(var(--vd-text-color-rgb));
+  --vd-text-color-lighter: rgba(var(--vd-text-color-rgb), 0.8);
+  --vd-text-color-lightest: rgba(var(--vd-text-color-rgb), 0.5);
+  --vd-background-color: #e5e3df;
+  --vd-content-bg-color: #fcfcf7;
+  --vd-border-color: rgba(var(--vd-text-color-rgb));
+  --vd-border-color-light: rgba(var(--vd-text-color-rgb), 0.5);
+  --vd-highlight-bg-color: #d8f5b8;
+  --vd-highlight-neutral-bg-color: #f2f0ed;
+  --vd-link-color: #5fa316;
+  --vd-heading-color: #2b490a;
+  --vd-code-color: hsl(25, 74%, 23%);
+  --vd-code-color-1: hsl(25, 74%, 32%);
+  --vd-code-color-2: hsl(25, 74%, 37%);
+  --vd-code-color-3: hsl(25, 24%, 73%);
+  --vd-code-color-4: hsl(42, 16%, 32%);
+  --vd-bg-hover: rgba(var(--vd-text-color-rgb), 0.1);
+  --vd-box-bg-color: hsl(43, 21%, 94%);
+  --vd-interactive-bg-color: hsl(44, 81%, 94%);
+  --vd-badge-color: #002c3a;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --vd-text-color-rgb: 252, 252, 247;
+    --vd-background-color: #201f06;
+    --vd-content-bg-color: #171605;
+    --vd-highlight-bg-color: #3A3F26;
+    --vd-highlight-neutral-bg-color: #3A3F26;
+    --vd-heading-color: #d1f4ab;
+    --vd-code-color: hsl(25, 74%, 83%);
+    --vd-code-color-1: hsl(25, 74%, 82%);
+    --vd-code-color-2: hsl(25, 74%, 77%);
+    --vd-code-color-3: hsl(25, 24%, 93%);
+    --vd-code-color-4: hsl(42, 16%, 62%);
+    --vd-box-bg-color: hsl(43, 21%, 14%);
+    --vd-interactive-bg-color: hsl(44, 81%, 6%);
+    --vd-badge-color: hsl(194, 100%, 89%);
+  }
+}
+.accordion__item {
+  position: relative;
+}
+
+.accordion__item-title,
+.accordion__item-content {
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  transition: all 0.2s;
+}
+
+.accordion__item-title {
+  cursor: pointer;
+  display: block;
+  background: transparent;
+  padding: 0.75em 1em;
+}
+.accordion__item-title > * {
+  margin-bottom: 0;
+  font-weight: normal;
+  font-size: 1rem;
+}
+.accordion__item-title:hover > *, .accordion__item-title:focus > * {
+  color: var(--vd-link-color);
+}
+
+.accordion__item-title::after,
+.accordion__item-title::before {
+  content: "";
+  position: absolute;
+  right: 1.25em;
+  top: 1em;
+  width: 2px;
+  height: 0.75em;
+  background-color: var(--vd-text-color-lighter);
+  transition: all 0.2s;
+}
+
+.accordion__item-title::after {
+  transform: rotate(90deg);
+}
+
+.accordion__item-content {
+  max-height: 0;
+  overflow: hidden;
+  margin: 0 1.25rem 0 1rem;
+  font-size: 0.8rem;
+}
+
+.accordion__item-toggle {
+  display: none;
+}
+
+.accordion__item-toggle:checked + .accordion__item-title + .accordion__item-content {
+  max-height: 1000px;
+}
+.accordion__item-toggle:checked + .accordion__item-title::before {
+  transform: rotate(90deg);
+}
+
+/*# sourceMappingURL=accordion.css.map */

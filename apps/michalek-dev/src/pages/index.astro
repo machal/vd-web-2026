@@ -1,0 +1,128 @@
+---
+import { Fragment } from 'astro/jsx-runtime';
+import { getCollection } from 'astro:content';
+import BaseLayout from '@vd/shared/layouts/BaseLayout.astro';
+import Header from '@vd/shared/components/Header.astro';
+import Footer from '@vd/shared/components/Footer.astro';
+import AuthorProfileBox from '@vd/shared/components/AuthorProfileBox.astro';
+import TopicHubPrimary from '@vd/shared/components/TopicHubPrimary.astro';
+import ArticleListItem from '../components/ArticleListItem.astro';
+import { siteConfig } from '../site.config';
+import { isPublished } from '../utils/is-published';
+
+const blogPosts = await getCollection('blog', isPublished);
+const guidePosts = await getCollection('guide', isPublished);
+
+const allContent = [...blogPosts, ...guidePosts].sort((a, b) => {
+  const dateA = a.data.date || new Date(0);
+  const dateB = b.data.date || new Date(0);
+  return dateB.getTime() - dateA.getTime();
+});
+
+const currentPage = 1;
+const postsPerPage = 5;
+const startIndex = (currentPage - 1) * postsPerPage;
+const endIndex = startIndex + postsPerPage;
+const paginatedPosts = allContent.slice(startIndex, endIndex);
+const latestPost = paginatedPosts[0];
+const totalPages = Math.ceil(allContent.length / postsPerPage);
+
+function formatDate(date: Date): string {
+  return new Intl.DateTimeFormat('en-GB', {
+    day: 'numeric',
+    month: 'short',
+    year: 'numeric',
+  }).format(date);
+}
+
+function getSlug(entry: (typeof allContent)[number]): string {
+  return `/${entry.collection}/${entry.slug}`;
+}
+---
+
+<BaseLayout
+  title=""
+  description="Personal tech blog and web performance consulting."
+  siteConfig={siteConfig}
+  ogUrl={`${siteConfig.origin}/`}
+  canonicalUrl={`${siteConfig.origin}/`}
+  bodyClass="section-home"
+>
+  <Fragment slot="styles">
+    <link rel="stylesheet" href="/assets/css/modules-standalone/min/topbar.min.css" />
+    <link rel="stylesheet" href="/assets/css/modules-standalone/min/course-avatar.min.css" />
+    <link rel="stylesheet" href="/assets/css/modules-standalone/min/avatar.min.css" />
+    <link rel="stylesheet" href="/assets/css/modules-standalone/min/list.min.css" />
+  </Fragment>
+
+  <Header slot="header" siteConfig={siteConfig} activeSection="home" />
+  <Footer slot="footer" siteConfig={siteConfig} />
+
+  <main role="main" id="main" aria-label="Main content">
+    <div class="page-head page-head--line"></div>
+
+    <div class="section">
+      <div class="content-full pt-3-md">
+        <div class="row home-feature">
+          {latestPost && (
+            <div class="col home-feature__main mb-15">
+              <h2 class="mb-05 pb-0">
+                <a href={getSlug(latestPost)}>{latestPost.data.title}</a>
+              </h2>
+              <p>
+                <span class="article">
+                  <span class="text-color-lightest">
+                    {formatDate(latestPost.data.date)}
+                    —
+                  </span>
+                  {latestPost.data.description}
+                </span>
+              </p>
+              <p class="mb-0 f-6">
+                <a class="button" href={getSlug(latestPost)}>Continue…</a>
+              </p>
+            </div>
+          )}
+
+          <div class="col home-feature__aside">
+            <AuthorProfileBox siteConfig={siteConfig} />
+          </div>
+        </div>
+      </div>
+
+      <style>
+        @media (min-width: 1000px) {
+          .home-feature__main {
+            width: 66.666%;
+            margin-bottom: 0;
+          }
+
+          .home-feature__aside {
+            width: 33.333%;
+          }
+        }
+      </style>
+
+      <div class="content">
+        <hr class="hr--small hr--spaced" />
+
+        {paginatedPosts.length > 1 ? (
+          paginatedPosts.slice(1).map((post) => <ArticleListItem post={post} />)
+        ) : allContent.length === 0 ? (
+          <>
+            <h2 class="h4">No articles yet</h2>
+            <p>New posts will appear here. Visit About Martin to learn more about this site.</p>
+          </>
+        ) : null}
+
+        {totalPages > 1 && (
+          <p class="ta-c mt-3">
+            <a class="button" href="/p=2">More articles</a>
+          </p>
+        )}
+      </div>
+    </div>
+
+    <TopicHubPrimary locale="en" />
+  </main>
+</BaseLayout>

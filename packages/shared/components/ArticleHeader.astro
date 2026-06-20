@@ -1,0 +1,118 @@
+---
+import {
+  AUTHOR_PROFILE_PATH,
+  AUTHOR_PROFILE_PHOTO,
+} from '@vd/shared/content/author-profile';
+
+interface Props {
+  title: string;
+  author?: string;
+  date?: Date;
+  locale?: 'cs' | 'en';
+}
+
+const { title, author = 'Martin Michálek', date, locale = 'cs' } = Astro.props;
+const hasActions = Astro.slots.has('actions');
+
+function formatDate(date: Date | undefined): string {
+  if (!date) return '';
+  return new Intl.DateTimeFormat(locale === 'en' ? 'en-GB' : 'cs-CZ', {
+    day: 'numeric',
+    month: locale === 'en' ? 'short' : 'numeric',
+    year: 'numeric',
+  }).format(date);
+}
+---
+
+<div class="page-head page-head--subhead">
+  <h1>{title}</h1>
+</div>
+
+<div class:list={['page-subhead', { 'page-subhead--split': hasActions }]}>
+  <p class="mb-0 page-subhead__meta">
+    <a class="page-subhead__author" href={AUTHOR_PROFILE_PATH}>
+      <span class="avatar avatar--tiny avatar--inline mr-05">
+        <img
+          src={AUTHOR_PROFILE_PHOTO}
+          alt="Martin Michálek"
+          width="50"
+          height="50"
+          class="avatar__image avatar__image--profile"
+        />
+      </span>
+      {author}
+    </a>
+    {date && (
+      <span class="page-subhead__date">
+        <span class="page-subhead__sep" aria-hidden="true"> – </span>
+        {formatDate(date)}
+      </span>
+    )}
+  </p>
+  {hasActions && (
+    <div class="page-subhead__actions">
+      <slot name="actions" />
+    </div>
+  )}
+</div>
+
+<style>
+  .page-subhead--split {
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .page-subhead--split .page-subhead__meta {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .page-subhead__actions {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    text-align: right;
+  }
+
+  .page-subhead__actions :global(.language-switch) {
+    margin: 0;
+  }
+
+  .page-subhead__author :global(.avatar),
+  .page-subhead__author:hover :global(.avatar),
+  .page-subhead__author:focus :global(.avatar),
+  .page-subhead__author:active :global(.avatar) {
+    border-color: #fff;
+  }
+
+  .page-subhead__author :global(.avatar__image--profile) {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+    object-fit: cover;
+    object-position: center top;
+  }
+
+  .page-subhead :global(.page-subhead__meta) {
+    gap: 0;
+  }
+
+  .page-subhead :global(.page-subhead__author) {
+    margin-right: 0;
+  }
+
+  .page-subhead__actions :global(.language-switch__link) {
+    color: #fff;
+    text-decoration: none;
+    line-height: 1;
+  }
+
+  .page-subhead__actions :global(.language-switch__link:hover),
+  .page-subhead__actions :global(.language-switch__link:focus),
+  .page-subhead__actions :global(.language-switch__link:active) {
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.85;
+  }
+</style>

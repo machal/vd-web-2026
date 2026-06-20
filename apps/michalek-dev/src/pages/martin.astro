@@ -1,0 +1,130 @@
+---
+import { Fragment } from 'astro/jsx-runtime';
+import BaseLayout from '@vd/shared/layouts/BaseLayout.astro';
+import Header from '@vd/shared/components/Header.astro';
+import Footer from '@vd/shared/components/Footer.astro';
+import MartinHeroHead from '@vd/shared/components/MartinHeroHead.astro';
+import MartinIntro from '@vd/shared/components/MartinIntro.astro';
+import MartinHighlights from '@vd/shared/components/MartinHighlights.astro';
+import MartinContact from '@vd/shared/components/MartinContact.astro';
+import JsonLd from '@vd/shared/components/JsonLd.astro';
+import { buildPersonJsonLd } from '@vd/shared/seo/json-ld';
+import { resolveHreflangCluster } from '@vd/shared/content-pairing';
+import { buildAlternateLinks } from '@vd/shared/seo/hreflang';
+import { siteConfig } from '../site.config';
+
+const canonicalUrl = `${siteConfig.origin}/martin`;
+const cluster = resolveHreflangCluster('michalek-dev', 'page', '/martin');
+const alternateLinks = cluster ? buildAlternateLinks(cluster) : undefined;
+
+const personJsonLd = buildPersonJsonLd({
+  url: canonicalUrl,
+  description: 'Web performance consultant, author of Vzhuru dolu, PageSpeed.ONE, Frontendisti.cz, and FrontKon.',
+  jobTitle: 'Web Performance Consultant',
+});
+
+const czAsset = (path: string) => `https://www.vzhurudolu.cz${path}`;
+
+const books = [
+  {
+    href: 'https://www.vzhurudolu.cz/css-layout/',
+    title: 'CSS: Modern Layout',
+    summary: 'Grid, flexbox, and modern layout in examples. E-book and print edition (2022).',
+    imageAvif: czAsset('/assets/img/content/handmade/ebooks/vdlayout/vdlayout-front-both.avif'),
+    imageWebp: czAsset('/assets/img/content/handmade/ebooks/vdlayout/vdlayout-front-both.webp'),
+    alt: 'CSS: Modern Layout book cover',
+  },
+  {
+    href: 'https://www.vzhurudolu.cz/kniha-responzivni-design/',
+    title: 'Into Responsive Web Design',
+    summary: 'A complete guide to designing and building responsive websites (2017).',
+    imageAvif: czAsset('/assets/img/content/handmade/ebooks/vdwd/vdwd-ebook.avif'),
+    imageWebp: czAsset('/assets/img/content/handmade/ebooks/vdwd/vdwd-ebook.webp'),
+    alt: 'Into Responsive Web Design e-book cover',
+  },
+  {
+    href: 'https://www.vzhurudolu.cz/ebook-amp/',
+    title: 'Into AMP',
+    summary: 'Everything about building blazing-fast sites with AMP (2019).',
+    imageAvif: czAsset('/assets/img/content/handmade/ebooks/vdamp/vdamp-ebook.avif'),
+    imageWebp: czAsset('/assets/img/content/handmade/ebooks/vdamp/vdamp-ebook.webp'),
+    alt: 'Into AMP e-book cover',
+  },
+  {
+    href: 'https://www.vzhurudolu.cz/ebook-css3/',
+    title: 'Into CSS3',
+    summary: 'Frontend workflow, tools, and CSS3 features in one e-book (2015). Free download.',
+    imageAvif: czAsset('/assets/img/content/handmade/ebooks/vdcss3/vdcss3-ebook.avif'),
+    imageWebp: czAsset('/assets/img/content/handmade/ebooks/vdcss3/vdcss3-ebook.webp'),
+    alt: 'Into CSS3 e-book cover',
+  },
+];
+---
+
+<BaseLayout
+  title="About Martin"
+  description="Web performance consultant, author of Vzhuru dolu, PageSpeed.ONE, Frontendisti.cz, and FrontKon."
+  siteConfig={siteConfig}
+  ogType="profile"
+  ogUrl={canonicalUrl}
+  canonicalUrl={canonicalUrl}
+  alternateLinks={alternateLinks}
+  bodyClass="section-autor"
+>
+  <JsonLd slot="head" data={personJsonLd} />
+
+  <Fragment slot="styles">
+    <link rel="stylesheet" href="/assets/css/modules-standalone/min/pages/lector.min.css" />
+    <link rel="stylesheet" href="/assets/css/modules-standalone/min/course-icon.min.css" />
+    <link rel="stylesheet" href="/assets/css/modules-standalone/min/emblem.min.css" />
+  </Fragment>
+
+  <Header slot="header" siteConfig={siteConfig} />
+  <Footer slot="footer" siteConfig={siteConfig} />
+
+  <MartinHeroHead siteConfig={siteConfig} />
+
+  <MartinIntro siteConfig={siteConfig} />
+
+  <main role="main" id="main" aria-label="Main content">
+    <MartinHighlights siteConfig={siteConfig} />
+
+    <div class="content pt-3">
+      <div class="article" id="books">
+        <h2 class="ta-c mb-2">
+          <a href="#books">Books</a>
+        </h2>
+        <p class="f-6 ta-c maxw-30em">
+          Four books on CSS, layout, AMP, and responsive design — in Czech,
+          available from <a href="https://www.vzhurudolu.cz/ebooky">VzhuruDolu.cz</a>.
+        </p>
+      </div>
+
+      <div class="row fd-c fd-r-xs">
+        {books.map((book) => (
+          <div class="col w-50-xs">
+            <p>
+              <a class="course-icon course-icon--ebook p-r" href={book.href}>
+                <picture class="course-icon__image">
+                  <source type="image/avif" srcset={book.imageAvif} />
+                  <img src={book.imageWebp} alt={book.alt} width="130" height="130" loading="lazy" />
+                </picture>
+              </a>
+            </p>
+            <h3 class="h4 h-4 mb-05 d-f ai-fe">
+              <a href={book.href}>{book.title}</a>
+            </h3>
+            <div class="f-6">
+              <p class="mb-05">{book.summary}</p>
+              <p>
+                <a class="button mx-1" href={book.href}>Buy on VzhuruDolu.cz</a>
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <MartinContact siteConfig={siteConfig} />
+  </main>
+</BaseLayout>

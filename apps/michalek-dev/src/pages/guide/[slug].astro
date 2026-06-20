@@ -1,0 +1,82 @@
+---
+import { Fragment } from 'astro/jsx-runtime';
+import { getCollection } from 'astro:content';
+import BaseLayout from '@vd/shared/layouts/BaseLayout.astro';
+import Header from '@vd/shared/components/Header.astro';
+import Footer from '@vd/shared/components/Footer.astro';
+import ArticleHeader from '@vd/shared/components/ArticleHeader.astro';
+import ArticleFooter from '@vd/shared/components/ArticleFooter.astro';
+import JsonLd from '@vd/shared/components/JsonLd.astro';
+import LanguageSwitch from '@vd/shared/components/LanguageSwitch.astro';
+import { buildArticleJsonLd } from '@vd/shared/seo/json-ld';
+import { resolveAlternate, resolveHreflangCluster } from '@vd/shared/content-pairing';
+import { buildAlternateLinks } from '@vd/shared/seo/hreflang';
+import { getTagsForArticle } from '../../data/tags';
+import { siteConfig } from '../../site.config';
+import { isPublished } from '../../utils/is-published';
+
+export async function getStaticPaths() {
+  const guidePosts = await getCollection('guide', isPublished);
+  return guidePosts.map((post) => ({
+    params: { slug: post.slug },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await post.render();
+
+const canonicalUrl = `${siteConfig.origin}/guide/${post.slug}`;
+const alternate = resolveAlternate('michalek-dev', 'guide', post.slug);
+const cluster = resolveHreflangCluster('michalek-dev', 'guide', post.slug);
+const alternateLinks = cluster ? buildAlternateLinks(cluster) : undefined;
+const categories = getTagsForArticle(post.data.tags || []);
+const articleJsonLd = buildArticleJsonLd({
+  headline: post.data.title,
+  description: post.data.description,
+  url: canonicalUrl,
+  datePublished: post.data.date,
+});
+---
+
+<BaseLayout
+  title={post.data.title}
+  description={post.data.description}
+  siteConfig={siteConfig}
+  ogType="article"
+  ogUrl={canonicalUrl}
+  canonicalUrl={canonicalUrl}
+  alternateLinks={alternateLinks}
+  bodyClass="section-guide"
+>
+  <JsonLd slot="head" data={articleJsonLd} />
+
+  <Header slot="header" siteConfig={siteConfig} activeSection="home" />
+  <Footer slot="footer" siteConfig={siteConfig} />
+
+  <Fragment slot="styles">
+    <link rel="stylesheet" href="/assets/css/modules-standalone/min/article.min.css" />
+    <link rel="stylesheet" href="/assets/css/modules-standalone/min/article-foot.min.css" />
+  </Fragment>
+
+  <main role="main" id="main" aria-label="Main content">
+    <ArticleHeader
+      title={post.data.title}
+      author={post.data.author}
+      date={post.data.date}
+      locale="en"
+    >
+      {alternate && (
+        <LanguageSwitch slot="actions" currentLocale="en" alternateUrl={alternate.href} />
+      )}
+    </ArticleHeader>
+
+    <div class="content">
+      <div class="article">
+        <Content />
+      </div>
+    </div>
+
+    <ArticleFooter post={post} categories={categories} relatedArticles={[]} siteConfig={siteConfig} />
+  </main>
+</BaseLayout>

@@ -1,0 +1,129 @@
+---
+import type { NavItem, SiteConfig } from '@vd/shared/types';
+
+interface Props {
+  activeSection?: 'home' | 'podcast' | 'ebook' | 'video' | 'author' | null;
+  siteConfig?: SiteConfig;
+}
+
+const { activeSection: explicitActiveSection, siteConfig } = Astro.props;
+
+function detectActiveSection(url: URL): 'home' | 'podcast' | 'ebook' | 'video' | 'author' | null {
+  const pathname = url.pathname;
+
+  const infoPages = [
+    '/o-webu',
+    '/podminky',
+    '/osobni-udaje',
+    '/cookies',
+    '/email',
+    '/404',
+  ];
+
+  if (infoPages.includes(pathname)) {
+    return null;
+  }
+
+  if (pathname === '/martin' || pathname.startsWith('/martin/')) {
+    return 'author';
+  }
+
+  if (pathname.startsWith('/podcast')) {
+    return 'podcast';
+  }
+
+  if (pathname.startsWith('/video')) {
+    return 'video';
+  }
+
+  if (
+    pathname.startsWith('/ebooky') ||
+    pathname.startsWith('/css-layout') ||
+    pathname.startsWith('/kniha-responzivni-design') ||
+    pathname.startsWith('/ebook-amp') ||
+    pathname.startsWith('/ebook-css3')
+  ) {
+    return 'ebook';
+  }
+
+  return 'home';
+}
+
+function matchesActiveMatch(pathname: string, activeMatch: string | string[]): boolean {
+  const patterns = Array.isArray(activeMatch) ? activeMatch : [activeMatch];
+
+  return patterns.some((pattern) => {
+    if (pattern === '/') {
+      return pathname === '/';
+    }
+    return pathname === pattern || pathname.startsWith(`${pattern}/`);
+  });
+}
+
+function isNavItemActive(pathname: string, item: NavItem): boolean {
+  return matchesActiveMatch(pathname, item.activeMatch);
+}
+
+const activeSection = explicitActiveSection !== undefined ? explicitActiveSection : detectActiveSection(Astro.url);
+
+const csNavItems = [
+  {
+    id: 'home' as const,
+    label: 'Články',
+    href: '/',
+    colorClass: 'color-home',
+  },
+  {
+    id: 'ebook' as const,
+    label: 'Knihy',
+    href: '/ebooky',
+    colorClass: 'color-ebook',
+  },
+  {
+    id: 'author' as const,
+    label: 'Autor',
+    href: '/martin',
+    colorClass: 'color-home',
+  },
+];
+
+const useConfigNav = siteConfig && siteConfig.navItems.length > 0;
+const pathname = Astro.url.pathname;
+const navHeading = siteConfig?.locale === 'en' ? 'Main navigation' : 'Hlavní navigace';
+---
+
+<nav class="nav nav--site p-r" aria-labelledby="nav-heading" role="navigation">
+  <h2 class="nav__heading sr-only" id="nav-heading">{navHeading}</h2>
+  <ul class="nav__list">
+    {useConfigNav
+      ? siteConfig!.navItems.map((item) => {
+          const isActive = isNavItemActive(pathname, item);
+          const colorClass = item.colorClass ?? 'color-home';
+          return (
+            <li class={`nav__item ${isActive ? 'nav__item--active' : ''} f-6`}>
+              <a
+                class={`nav__item-in ${colorClass}`}
+                href={item.href}
+                aria-current={isActive ? 'page' : undefined}
+              >
+                {item.label}
+              </a>
+            </li>
+          );
+        })
+      : csNavItems.map((item) => {
+          const isActive = activeSection === item.id;
+          return (
+            <li class={`nav__item ${isActive ? 'nav__item--active' : ''} f-6`}>
+              <a
+                class={`nav__item-in ${item.colorClass}`}
+                href={item.href}
+                aria-current={isActive ? 'page' : undefined}
+              >
+                {item.label}
+              </a>
+            </li>
+          );
+        })}
+  </ul>
+</nav>

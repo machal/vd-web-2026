@@ -1,0 +1,33 @@
+# Dependencies & build output
+node_modules/
+.astro/
+dist/
+.output/
+build/
+
+# Git history (833 MB — agent nepotřebuje indexovat)
+.git/
+
+# Working / import scratch
+_working/
+_import/
+
+# Archivní testovací data v public/ (~stovky MB, tisíce souborů)
+apps/vzhurudolu/public/data/
+
+# Obrázky — agent je needituje, ale Cursor by je indexoval (3000+ souborů)
+apps/vzhurudolu/public/assets/img/
+apps/vzhurudolu/public/prirucka/images/
+apps/vzhurudolu/public/assets/fonts/
+
+# Binární assety obecně
+*.webp
+*.jpg
+*.jpeg
+*.JPG
+*.png
+*.gif
+*.woff
+*.woff2
+*.eot
+*.DS_Store

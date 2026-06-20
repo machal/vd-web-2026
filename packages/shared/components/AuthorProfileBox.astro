@@ -1,0 +1,86 @@
+---
+import {
+  AUTHOR_PROFILE_PATH,
+  AUTHOR_PROFILE_PHOTO,
+  getAuthorProfileCopy,
+  type AuthorProfileLocale,
+} from '@vd/shared/content/author-profile';
+import type { SiteConfig } from '@vd/shared/types';
+
+interface Props {
+  /** Prefer siteConfig.locale; explicit locale overrides when needed */
+  locale?: AuthorProfileLocale;
+  siteConfig?: SiteConfig;
+  className?: string;
+}
+
+const { locale: localeProp, siteConfig, className = '' } = Astro.props;
+
+const locale: AuthorProfileLocale =
+  localeProp ?? siteConfig?.locale ?? 'cs';
+
+const t = getAuthorProfileCopy(locale);
+---
+
+<aside
+  role="complementary"
+  id="author-profile"
+  aria-labelledby="author-profile-heading"
+  class:list={['author-profile', 'bg-highlight-neutral', className]}
+>
+  <h2 class="h4 mb-05" id="author-profile-heading">{t.heading}</h2>
+  <p class="author-profile__photo mb-05">
+    <a class="avatar author-profile__avatar" href={AUTHOR_PROFILE_PATH}>
+      <img
+        src={AUTHOR_PROFILE_PHOTO}
+        alt="Martin Michálek"
+        width="176"
+        height="176"
+        loading="lazy"
+        class="avatar__image"
+      />
+    </a>
+  </p>
+  <p class="f-sm mb-05">{t.bio}</p>
+  <p class="author-profile__cta mb-0 f-6">
+    <a class="button" href={AUTHOR_PROFILE_PATH}>{t.linkLabel}</a>
+  </p>
+</aside>
+
+<style>
+  .author-profile {
+    height: 100%;
+    padding: 1rem;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .author-profile :where(h2) {
+    color: var(--vd-heading-color);
+  }
+
+  .author-profile__photo {
+    margin: 0 0 0.5rem;
+  }
+
+  .author-profile__avatar {
+    width: 11rem;
+    height: 11rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .author-profile .avatar__image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+    object-fit: cover;
+    object-position: center top;
+  }
+
+  .author-profile__cta .button {
+    display: inline-block;
+    width: auto;
+  }
+</style>

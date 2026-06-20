@@ -1,0 +1,227 @@
+---
+import { Fragment } from 'astro/jsx-runtime';
+import { getCollection, type CollectionEntry } from 'astro:content';
+import BaseLayout from '@vd/shared/layouts/BaseLayout.astro';
+import Header from '@vd/shared/components/Header.astro';
+import Footer from '@vd/shared/components/Footer.astro';
+import ArticleHeader from '@vd/shared/components/ArticleHeader.astro';
+import ArticleFooter from '@vd/shared/components/ArticleFooter.astro';
+import LanguageSwitch from '@vd/shared/components/LanguageSwitch.astro';
+import { resolveAlternate, resolveHreflangCluster } from '@vd/shared/content-pairing';
+import { buildAlternateLinks } from '@vd/shared/seo/hreflang';
+import ValidationErrors from '../../components/ValidationErrors.astro';
+import { categories, type CategoryConfig } from '../../data/categories';
+import { enrichPriruckaEntry } from '../../utils/extract-content-fallback';
+import { getRelatedArticles } from '../../utils/get-related-articles';
+import { validateDuplicateIds, formatValidationErrorsForDisplay } from '../../utils/validate-prirucka';
+import { readFileSync } from 'fs';
+import { join } from 'path';
+
+export async function getStaticPaths() {
+  try {
+    // Načíst všechny soubory z kolekce s filtrem, který zachytí pouze validní soubory s front matter
+    // Soubory bez front matter budou automaticky vyfiltrovány, protože nemají povinné pole 'id'
+    const prirucka = await getCollection('prirucka', (entry): entry is CollectionEntry<'prirucka'> & { data: { id: string } } => {
+      // Pouze soubory s povinnými poli (id) a publikované
+      // Soubory bez front matter nemají 'id', takže budou vyfiltrovány
+      return !!entry.data.id && entry.data.published === true;
+    });
+    
+    // Validace duplicitních ID (pouze pro published soubory)
+    // Soubory s published: false jsou vyloučeny z validace, protože jsou součástí ebooků
+    const validationResult = validateDuplicateIds(prirucka);
+    
+    if (!validationResult.isValid) {
+      const errorMessage = formatValidationErrorsForDisplay(validationResult.errors);
+      
+      // Vypíšeme chybu do konzole pro lepší viditelnost
+      console.error(errorMessage);
+      
+      // Zastavíme build vyhozením chyby
+      throw new Error(errorMessage);
+    }
+    
+    return prirucka.map((item) => {
+      // Use id from frontmatter instead of slug (file name)
+      // This ensures URLs are based on id, not file name or frontmatter slug
+      const urlId = item.data.id;
+      return {
+        params: { slug: urlId },
+        props: { item },
+      };
+    });
+  } catch (error) {
+    // Pokud je to naše vlastní chyba o duplicitách, znovu ji vyhodíme
+    if (error instanceof Error && (error.message.includes('duplicitní ID') || error.message.includes('CHYBA'))) {
+      // Vypíšeme chybu do konzole pro lepší viditelnost
+      console.error(error.message);
+      throw error;
+    }
+    console.error('Error loading prirucka collection:', error);
+    return [];
+  }
+}
+
+interface Props {
+  item: CollectionEntry<'prirucka'> & { data: { id: string } };
+}
+
+const { item } = Astro.props as Props;
+
+// Načíst raw markdown obsah pro extrakci informací
+let enrichedData = item.data;
+try {
+  // Použít slug (název souboru) místo id pro nalezení souboru
+  const filePath = join(process.cwd(), 'src/content/prirucka', `${item.slug}.md`);
+  const rawContent = readFileSync(filePath, 'utf-8');
+  // Odstranit front matter z raw contentu
+  const frontMatterEnd = rawContent.indexOf('---', 3);
+  const markdownContent = frontMatterEnd !== -1 ? rawContent.substring(frontMatterEnd + 3) : rawContent;
+  
+  // Obohacení dat o extrahované informace z markdownu
+  enrichedData = await enrichPriruckaEntry(item, markdownContent);
+  
+  // Debug: zobrazit extrahované hodnoty
+  if (process.env.NODE_ENV === 'development') {
+    console.log(`[${item.slug}] Extracted H1:`, enrichedData.heading);
+    console.log(`[${item.slug}] Extracted perex:`, enrichedData.perex?.substring(0, 50));
+    console.log(`[${item.slug}] Final title:`, enrichedData.title);
+  }
+} catch (error) {
+  // Pokud se nepodaří načíst soubor, použijeme původní data
+  console.warn(`Could not enrich entry ${item.slug}:`, error);
+}
+
+const { Content } = await item.render();
+
+// Use id from frontmatter for URL
+const urlId = item.data.id; // TypeScript ví, že id existuje díky type guardu výše
+
+// Normalizace tagu (odstranění diakritiky pro porovnávání)
+function normalizeTag(tag: string): string {
+  return tag
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '');
+}
+
+// Najít kategorie, které odpovídají tagům článku
+function getCategoriesForPost(postTags: string[] = []): CategoryConfig[] {
+  const normalizedPostTags = postTags.map(normalizeTag);
+  return categories.filter(category => {
+    return category.tags.some(catTag => {
+      const normalizedCatTag = normalizeTag(catTag);
+      return normalizedPostTags.includes(normalizedCatTag);
+    });
+  });
+}
+
+const postCategories = getCategoriesForPost(item.data.tags || []);
+
+// Načíst podobné články podle tagů
+const relatedArticles = await getRelatedArticles(
+  item.data.tags || [],
+  item.data.id,
+  'prirucka'
+);
+
+// Použít obohacená data pro zobrazení
+// Priorita: enrichedData.heading > enrichedData.title > item.data.title
+const displayTitle = enrichedData.heading || enrichedData.title || item.data.title;
+const displayDescription = enrichedData.description || item.data.description || displayTitle;
+// Pro OG title použít heading nebo title (ne id jako fallback)
+const displayOgTitle = enrichedData.og_title || enrichedData.heading || enrichedData.title || displayTitle;
+const displayOgDescription = enrichedData.og_description || enrichedData.description || displayDescription;
+
+const canonicalUrl = `https://www.vzhurudolu.cz/prirucka/${urlId}`;
+const alternate = resolveAlternate('vzhurudolu', 'prirucka', urlId);
+const cluster = resolveHreflangCluster('vzhurudolu', 'prirucka', urlId);
+const alternateLinks = cluster ? buildAlternateLinks(cluster) : undefined;
+---
+
+<BaseLayout
+  title={displayTitle}
+  description={displayDescription}
+  ogType="article"
+  ogTitle={displayOgTitle}
+  ogDescription={displayOgDescription}
+  ogUrl={canonicalUrl}
+  canonicalUrl={canonicalUrl}
+  alternateLinks={alternateLinks}
+  bodyClass="section-prirucka"
+>
+  <Header slot="header" />
+  <Footer slot="footer" />
+
+  <Fragment slot="styles">
+    <link rel="stylesheet" href="/assets/css/modules-standalone/min/article-foot.min.css" />
+    <link rel="stylesheet" href="/assets/css/modules-standalone/min/inner-box.min.css" />
+    <style>
+      /* Anchor links in headings - show "#" on hover */
+      /* Anchor links in headings - show "#" on hover */
+      @media only screen and (min-width: 740px) {
+        .article h1[id] > a,
+        .article h2[id] > a,
+        .article h3[id] > a,
+        .article h4[id] > a,
+        .article h5[id] > a {
+          position: relative;
+        }
+        
+        .article h1[id] > a:hover::before,
+        .article h1[id] > a:focus::before,
+        .article h1[id] > a:active::before,
+        .article h2[id] > a:hover::before,
+        .article h2[id] > a:focus::before,
+        .article h2[id] > a:active::before,
+        .article h3[id] > a:hover::before,
+        .article h3[id] > a:focus::before,
+        .article h3[id] > a:active::before,
+        .article h4[id] > a:hover::before,
+        .article h4[id] > a:focus::before,
+        .article h4[id] > a:active::before,
+        .article h5[id] > a:hover::before,
+        .article h5[id] > a:focus::before,
+        .article h5[id] > a:active::before {
+          content: "#";
+          position: absolute;
+          left: -1.25rem;
+          color: rgba(53, 91, 12, 0.3);
+        }
+        
+        .article h1[id],
+        .article h2[id],
+        .article h3[id],
+        .article h4[id],
+        .article h5[id] {
+          padding-left: 1.5rem;
+          margin-left: -1.5rem;
+        }
+      }
+    </style>
+  </Fragment>
+
+  <main role="main" id="main" aria-label="Hlavní obsah">
+    <ValidationErrors />
+    
+    <ArticleHeader
+      title={displayTitle || enrichedData.heading || item.data.title}
+      author={item.data.author || 'Martin Michálek'}
+      date={item.data.date}
+    >
+      {alternate && (
+        <LanguageSwitch slot="actions" currentLocale="cs" alternateUrl={alternate.href} />
+      )}
+    </ArticleHeader>
+
+    <div class="content">
+      <div class="article">
+        <Content />
+      </div>
+    </div>
+
+    <ArticleFooter post={item} categories={postCategories} relatedArticles={relatedArticles} />
+  </main>
+  
+  <script is:inline src="/assets/js/vrdl.min.js"></script>
+</BaseLayout>
