@@ -1,7 +1,12 @@
 import rss from '@astrojs/rss';
 import { getCollection } from 'astro:content';
 import type { APIContext } from 'astro';
-import { renderMarkdownForRss } from '@vd/shared/markdown/render-for-rss';
+import { renderMarkdownForRss, buildRssCustomData } from '@vd/shared/markdown/render-for-rss';
+
+function getSiteOrigin(site: APIContext['site']): string {
+  if (!site) return 'https://michalek.blog';
+  return (typeof site === 'string' ? site : site.href).replace(/\/$/, '');
+}
 import { isPublished } from '../utils/is-published';
 
 function getArticleUrl(entry: { collection: string; slug: string }): string {
@@ -19,6 +24,7 @@ function getSourcePath(entry: { collection: string; slug: string }): string {
 }
 
 export async function GET(context: APIContext) {
+  const siteOrigin = getSiteOrigin(context.site);
   const blogPosts = await getCollection('blog', isPublished);
   const guidePosts = await getCollection('guide', isPublished);
 
@@ -47,6 +53,7 @@ export async function GET(context: APIContext) {
             guideImagesPrefix: '/prirucka/images',
             collections: ['blog', 'guide'],
             sourcePath: getSourcePath(entry),
+            siteOrigin,
           });
         }
       } catch (error) {
@@ -68,6 +75,6 @@ export async function GET(context: APIContext) {
     description: 'Personal tech blog and web performance consulting.',
     site: context.site,
     items,
-    customData: '<language>en-us</language>',
+    customData: buildRssCustomData('en-us', siteOrigin),
   });
 }

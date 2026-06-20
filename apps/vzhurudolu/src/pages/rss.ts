@@ -2,7 +2,12 @@ import rss from '@astrojs/rss';
 import { getCollection } from 'astro:content';
 import { isPublished } from '../utils/is-published';
 import type { APIContext } from 'astro';
-import { renderMarkdownForRss } from '@vd/shared/markdown/render-for-rss';
+import { renderMarkdownForRss, buildRssCustomData } from '@vd/shared/markdown/render-for-rss';
+
+function getSiteOrigin(site: APIContext['site']): string {
+  if (!site) return 'https://www.vzhurudolu.cz';
+  return (typeof site === 'string' ? site : site.href).replace(/\/$/, '');
+}
 
 function getArticleUrl(entry: { collection: string; slug: string; data: { id?: string } }): string {
   if (entry.collection === 'blog') {
@@ -32,6 +37,7 @@ function getSourcePath(entry: { collection: string; slug: string }): string {
 }
 
 export async function GET(context: APIContext) {
+  const siteOrigin = getSiteOrigin(context.site);
   const blogPosts = await getCollection('blog', isPublished);
   const podcasts = await getCollection('podcast', isPublished);
   const priruckaPosts = await getCollection('prirucka', isPublished);
@@ -69,6 +75,7 @@ export async function GET(context: APIContext) {
             guideImagesPrefix: '/prirucka/images',
             collections: ['prirucka', 'blog', 'podcast'],
             sourcePath: getSourcePath(entry),
+            siteOrigin,
           });
         }
       } catch (error) {
@@ -90,6 +97,6 @@ export async function GET(context: APIContext) {
     description: 'Současný webový frontend.',
     site: context.site,
     items,
-    customData: '<language>cs-cz</language>',
+    customData: buildRssCustomData('cs-CZ', siteOrigin),
   });
 }

@@ -39,6 +39,32 @@ const RSS_ALLOWED_TAGS = [
 export interface RenderMarkdownForRssOptions extends MarkdownConfigOptions {
   /** Virtual source path so relative .md links resolve like on the site. */
   sourcePath?: string;
+  /** Site origin, e.g. https://www.vzhurudolu.cz — absolutizes href/src in HTML. */
+  siteOrigin?: string;
+}
+
+const ABSOLUTE_URL_PREFIX = /^(?:https?:|mailto:|tel:|#|\/\/)/i;
+
+/** Make root-relative and path-only href/src absolute for RSS readers and validators. */
+export function absolutizeRssHtml(html: string, siteOrigin: string): string {
+  const base = siteOrigin.replace(/\/$/, '');
+  if (!base) return html;
+
+  return html.replace(
+    /\s(href|src)=(["'])([^"']*)\2/gi,
+    (match, attr, quote, url) => {
+      if (!url || ABSOLUTE_URL_PREFIX.test(url)) {
+        return match;
+      }
+      const absolute = url.startsWith('/') ? `${base}${url}` : `${base}/${url}`;
+      return ` ${attr}=${quote}${absolute}${quote}`;
+    },
+  );
+}
+
+export function buildRssCustomData(language: string, siteOrigin: string): string {
+  const feedUrl = `${siteOrigin.replace(/\/$/, '')}/rss`;
+  return `<language>${language}</language><atom:link href="${feedUrl}" rel="self" type="application/rss+xml" />`;
 }
 
 export async function renderMarkdownForRss(
@@ -84,7 +110,7 @@ export async function renderMarkdownForRss(
     .use(rehypeStringify, { allowDangerousHtml: true })
     .process(file);
 
-  return sanitizeHtml(String(result), {
+  const html = sanitizeHtml(String(result), {
     allowedTags: RSS_ALLOWED_TAGS,
     allowedAttributes: {
       ...sanitizeHtml.defaults.allowedAttributes,
@@ -94,4 +120,6 @@ export async function renderMarkdownForRss(
       th: ['colspan', 'rowspan'],
     },
   });
+
+  return options.siteOrigin ? absolutizeRssHtml(html, options.siteOrigin) : html;
 }
