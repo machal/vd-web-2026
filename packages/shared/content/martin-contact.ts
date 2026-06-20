@@ -27,12 +27,12 @@ export const martinContactSocials = {
     {
       id: 'facebook',
       label: 'Facebook',
-      href: 'https://www.facebook.com/VzhuruDolu',
+      href: 'https://www.facebook.com/machal',
     },
     {
       id: 'instagram',
       label: 'Instagram',
-      href: 'https://instagram.com/vzhurudolu',
+      href: 'https://www.instagram.com/absolutmachal',
     },
   ],
   en: [

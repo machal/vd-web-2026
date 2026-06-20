@@ -62,10 +62,13 @@ const socials = getMartinContactSocials(locale);
           )}
           {social.id === 'instagram' && (
             <svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" class="martin-contact__icon" aria-hidden="true">
-              <path d="M15,0C6.716,0,0,6.716,0,15s6.716,15,15,15s15-6.716,15-15S23.284,0,15,0z M21.6,8.4H8.4c-0.552,0-1,0.448-1,1v12.2
+              <path
+                fill-rule="evenodd"
+                d="M15,0C6.716,0,0,6.716,0,15s6.716,15,15,15s15-6.716,15-15S23.284,0,15,0z M21.6,8.4H8.4c-0.552,0-1,0.448-1,1v12.2
                 c0,0.552,0.448,1,1,1h13.2c0.552,0,1-0.448,1-1V9.4C22.6,8.848,22.152,8.4,21.6,8.4z M15,19.05c-2.238,0-4.05-1.812-4.05-4.05
                 s1.812-4.05,4.05-4.05s4.05,1.812,4.05,4.05S17.238,19.05,15,19.05z M21.75,10.95c-0.414,0-0.75-0.336-0.75-0.75
-                s0.336-0.75,0.75-0.75s0.75,0.336,0.75,0.75S22.164,10.95,21.75,10.95z" />
+                s0.336-0.75,0.75-0.75s0.75,0.336,0.75,0.75S22.164,10.95,21.75,10.95z"
+              />
             </svg>
           )}
           {social.id === 'bluesky' && (
@@ -134,15 +137,11 @@ const socials = getMartinContactSocials(locale);
     height: 2.5rem;
   }
 
-  .martin-contact__icon :is(path, circle) {
+  .martin-contact__icon :is(path:not(.martin-contact__icon-mark), circle) {
     fill: var(--vd-text-color-lighter);
   }
 
-  .martin-contact__icon-bg {
-    fill: var(--vd-text-color-lighter);
-  }
-
-  .martin-contact__icon-mark {
+  .martin-contact__icon .martin-contact__icon-mark {
     fill: var(--vd-content-bg-color);
   }
 </style>
