@@ -29,8 +29,6 @@ Apartmán číslo 303, hotel Diagoras, Rhodos. Je odpoledne, někdy v létě 201
 
 Já sedím u počítače. Nespal jsem celou noc. Ráno jsem ženu s kluky nechal jet samotnou na pláž. Vedro na Rhodosu je pekelné, všude samý šutr. Zbytek rodiny miluje moře. Jenže moře je slané a lepkavé. Moře je vlastně celkově hnus. Ale to není můj hlavní problém.
 
-***TODO obrázek***
-
 Znal jsem ten pocit z jiných dovolených, v jiných lokalitách. Celkově jsem se na vždy cítil labilně. Rozhodilo mě daleko víc věcí než normálně. Každý třetí den jsem měl krizičku. Proč se mi to sakra děje, když mám odpočívat?
 
 A přišla nespavost. Na dovolené. Docela psycho, vám řeknu. Proč sakra na dovolené nespím?
@@ -52,6 +50,11 @@ Nutkání koukat na e-maily přišlo až pátý den. Lehké, snadno ignorovateln
 Tato dovolená byla zaplněná aktivitami, i fyzickými. Kromě pohybu s rodinou jsem tam chodil běhat. Byl jsem unavený, vytížený a nezvládal myslet na práci.
 
 Došlo mi, že když má práce určitou intenzitu, a je jedno, jestli je to kreativní intenzita nebo manažerské vytížení, musí být nahrazená jinou, třeba fyzickou intenzitou.
+
+<figure>
+<img src="/prirucka/images/dovolena-prace-thajsko.jpg" alt="Práce a dovolená v Thajsku">
+<figcaption markdown="1">Pracovat z malého resortu v Thajsku? Boží! Nikdy mi to nefungovalo.</figcaption>
+</figure>
 
 ## 2023: Dobrodružné Thajsko a kdy práce náhle přestala existovat {#2023-thajsko}
 
@@ -113,6 +116,11 @@ Výjimku mám jen Gmail a Instagram, a i ty držím na uzdě.
 
 Na Instagram dávám storíčka pro rodinu a kamarády, to je fajn. Ke konzumaci je ale zrádný. Chci si třeba odpočinout od politiky a on mi ji stejně nacpe do feedu. Takže odhlašuju odběry těmto zdrojům a po dovolené si je zase postupně přidávám. S Instagramem je potíž v tom, že jej používá starší syn a i během dovolené občas přiběhne s další kauzou Filipa Turka. Šmarjá, exoty na dovolené fakt řešit nechci! Další krok tedy spočívá ve výchově syna.
 
+<figure>
+<img src="/prirucka/images/dovolena-snorchl.jpg" alt="Šnorchlování na Zanzibaru">
+<figcaption markdown="1">Hledání tátova počítače. Ne, kecám. Nikdo na něj nemá pomyšlení. Ani táta.</figcaption>
+</figure>
+
 Do Gmailu kouknu jednou za týden. Smažu nerelevantní, archivuju zbytek, něco odložím a pokud něco blokuju, přehodím to na kolegy, ať to nestojí. Občas odepíšu, ať to neblokuju. Toto se ale třeba letos týkalo přesně jednoho e-mailu. Má to velkou výhodu v tom, že mě po návratu nečeká velká darda mailů. Prostě jsem většinu z nich promazal už na dovolené.
 
 Ale je možné to udělat jen za předpokladu, že vás v mailu nečekají strašáci, průsery nebo jiné emoční pasti. To se u mě naštěstí nestává. Důležité je, že za většinu toho, co řídím, je zodpovědný někdo jiný.
@@ -155,6 +163,6 @@ Shrnutí pro netrpělivé workoholiky, kteří přeskočili rovnou na konec:
 
 Pracovat na dovolené mi nefunguje. Pasivní plácnutí těla na pláž mi nefunguje.
 
-Funguje mi chaos a fyzická nebo jiná únava. Funguje naladění rodiny na jednu věc, dobrý systém pro dovolenou a dobrý systém ve firmě, která vás na pár týdnů nepotřebuje.
+Funguje mi chaos a fyzická nebo jiná únava. Funguje naladění rodiny na jednu věc. Nejde to bez dobrého systému pro dovolenou a dobrého systému v práci.
 
-Jste taky ten typ, co si na dovolené „jen na chvíli" otevře pracovní mail? Napište mi to na LinkedIn, X nebo Facebook. Soudy nevynáším. Každému funguje něco jiného a rád si přečtu vaše příběhy.
+Jste taky ten typ, co si na dovolené „jen na chvíli“ otevře pracovní mail? Napište mi to na LinkedIn, X nebo Facebook. Soudy nevynáším. Každému funguje něco jiného a rád si přečtu vaše příběhy.
