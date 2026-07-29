@@ -7,6 +7,7 @@ perex: "Jak jsem přestal pracovat na dovolené (a proč mi to pomohlo v práci)
 published: true
 category:
   - dovednosti
+  - netechnicke
 category_highlight: true
 include_rss: true
 ---
@@ -92,9 +93,9 @@ Odpočinek vám dá jednu podstanou věc, energii. Z dobře pojatého odpočinku
 
 Nejsem výjimka. Popisuje to výzkum.
 
-Mozek potřebuje zhruba tři dny, než se přepne z pracovního režimu. Teorie se jmenuje [Attention Restoration Theory](https://www.sciencedirect.com/science/article/pii/0272494495900012) (Kaplan a Kaplan, 1989). Kreativní myšlení se vrátí až po úplném odpojení. Prodloužený víkend tedy nestačí.
+Mozek potřebuje zhruba tři dny, než se přepne z pracovního režimu. Teorie se jmenuje [Attention Restoration Theory](https://positivepsychology.com/attention-restoration-theory/) (Kaplanovi). Kreativní myšlení se vrátí až po úplném odpojení. Prodloužený víkend tedy nestačí.
 
-Ještě jedno zjištění, méně příjemné. Účinek dovolené vyprchá zhruba do dvou týdnů po návratu ([de Bloom a kol., 2009](https://pubmed.ncbi.nlm.nih.gov/19096200/)). Trošku depka? Nevadí, protože zážitky zůstanou a přeskládání hlavy vám už nikdo nevezme.
+Ještě jedno zjištění, méně příjemné. Účinek dovolené vyprchá zhruba do dvou týdnů po návratu (pěkně to shrnuje [The Cut o výzkumech Jessicy de Bloom](https://www.thecut.com/2014/05/your-vacation-is-about-to-disappoint-you.html)). Trošku depka? Nevadí, protože zážitky zůstanou a přeskládání hlavy vám už nikdo nevezme.
 
 ## Zní to hezky? A teď ještě, jak to uvést do praxe {#jak-to-uvest-do-praxe}
 
