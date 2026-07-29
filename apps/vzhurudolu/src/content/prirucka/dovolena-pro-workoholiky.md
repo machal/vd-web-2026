@@ -1,5 +1,6 @@
 ---
 id: dovolena-pro-workoholiky
+pairId: vacation-for-workaholics
 title: "Dovolená: průvodce pro workoholiky"
 heading: "Dovolená: průvodce pro workoholiky"
 date: 2026-07-29

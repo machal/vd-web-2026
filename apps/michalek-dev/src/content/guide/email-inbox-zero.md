@@ -114,7 +114,7 @@ So much for the wider context of how I communicate. Now, on to email and Inbox Z
 
 It's going to cost you time. There's no way around it. Make your peace with it. Emails in your inbox are waiting, and they don't have legs. They won't walk away and they won't resolve themselves unless you give them time. You have to set that time aside.
 
-Some methods recommend dealing with email as fast as possible, or maybe once an hour, but personally that would kill me. I give email attention only a few times a day. It works roughly like this:
+Some methods recommend dealing with email as fast as possible, or maybe once an hour, but personally that would kill me. I give email attention only a few times a day. On [vacation](vacation-for-workaholics.md), even less — typically once a week. It works roughly like this:
 
 * In the morning I don't look at the inbox at all. I'm deep in focused work, sorry.
 * After lunch I give email half an hour to forty-five minutes. That's my main Inbox Zero block.
