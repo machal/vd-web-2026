@@ -65,7 +65,7 @@ V podcastu Petr zmiňuje, jaké fáze odpočinku a objevování prožil, co mu p
    Na začátku si určete období – například půl roku – během kterého nebudete přijímat žádné pracovní nabídky, ani kdyby vypadaly lákavě. Zabráníte tím tomu, že skočíte do dalšího zaměstnání ze zvyku nebo strachu. Dejte si čas, aby mohly vzniknout nové nápady a směry.
 
 7. **Připravte se na návrat.**.  
-   Návrat do pracovního režimu není samozřejmost. I zkušený profík si musí znovu zvyknout na tempo, zodpovědnost, denní rutinu nebo práci v angličtině. Počítejte s tím, že budete „zarezlí“ — a dejte si čas na rozcvičení. Pomáhá vracet se postupně a ideálně do prostředí, kde si můžete sami určovat tempo.
+   Návrat do pracovního režimu není samozřejmost. I zkušený profík si musí znovu zvyknout na tempo, zodpovědnost, denní rutinu nebo práci v angličtině. Počítejte s tím, že budete „zarezlí“ — a dejte si čas na rozcvičení. Pomáhá vracet se postupně a ideálně do prostředí, kde si můžete sami určovat tempo. Mimochodem, stejný nárazník (fade-out) se mi osvědčil i u běžných dovolených – viz [průvodce pro workoholiky](../prirucka/dovolena-pro-workoholiky.md).
 
 Tentokrát máme k dispozici i [automatizovaný kompletní přepis podcastu](https://docs.google.com/document/d/1Ou-iBb9XHM34uRY1YZWZ-5i9A0h8i4-DMbg6_am58jc/edit?tab=t.0).
 

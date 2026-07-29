@@ -130,7 +130,7 @@ Osobně také občas nevím, o čem psát, ale mám nástroje. V poznámkách v 
 
 Když už nevím, co čem psát, mrknu se do poznámek. Následně vždy zjistím, že ve skutečnosti mám ohromný tvůrčí přetlak.
 
-Psát ale nemusíte jen o své práci. Každý den se vám něco děje, každý den se projevují vaše názory, každý den vás napadne něco vtipného. Každý den se vám stane něco zajímavého, i když necestujete do Brna.
+Psát ale nemusíte jen o své práci. Každý den se vám něco děje, každý den se projevují vaše názory, každý den vás napadne něco vtipného. Každý den se vám stane něco zajímavého, i když necestujete do Brna. Mně se například na dovolené často rozsvítí témata, která bych u stolu v Praze nevymyslel – o tom je [průvodce dovolenou pro workoholiky](dovolena-pro-workoholiky.md).
 
 Stačí se na svět dívat správným způsobem.
 

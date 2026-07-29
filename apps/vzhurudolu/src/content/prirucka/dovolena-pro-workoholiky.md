@@ -10,35 +10,39 @@ category:
   - netechnicke
 category_highlight: true
 include_rss: true
+no_ads: true
+og_title: "Dovolená: průvodce pro workoholiky"
+og_description: "Jak jsem přestal pracovat na dovolené (a proč mi to pomohlo v práci)."
+og_type: article
 ---
 
 # Dovolená: průvodce pro workoholiky
 
-Pracuju hodně a svojí práci mám rád. Vlastně ji docela miluju. Většinou. Myslím, že zhruba před dvaceti lety jsem o sobě mohl říkat, že jsem workoholik. Teď už jsem na workoholismus příliš starý.
+Pracuju hodně a svoji práci mám rád. Vlastně ji docela miluju. Většinou. Myslím, že zhruba před dvaceti lety jsem o sobě mohl říkat, že jsem workoholik. Teď už jsem na workoholismus příliš starý.
 
 Svou přehnanou lásku k práci jsem v čase cíleně krotil a ovládal, ale jednu věc jsem nikdy moc neuměl. Dovolenou.
 
 Ne, že bych na dovolené nejezdil, ne že bych se na ně netěšil. Ale skloubit delší dovolené, obzvlášť ty rodinné, s prací, to byla pro mě vždycky jedna z největších výzev každého roku.
 
-Nakonec jsem to dokázal vyřešit docela dobře. Myslím. Vlastně dokázali. Kredit zde patří i mojí ženě na našim synům.
+Nakonec jsem to dokázal vyřešit docela dobře. Myslím. Vlastně dokázali. Kredit zde patří i mojí ženě a našim synům.
 
 Máte podobné trable a jste zvědaví na příběh o krocení práce ve prospěch dovolených? Pojďme na to.
 
 ## 2018: Podělaná dovolená v Řecku {#2018-podelana-dovolena-v-recku}
 
-Apartmán číslo 303, hotel Diagoras, Rhodos. Je odpoledne, někdy v létě 2019. Zbytek rodiny je u moře.
+Apartmán číslo 303, hotel Diagoras, Rhodos. Je odpoledne, někdy v létě 2018. Zbytek rodiny je u moře.
 
 Já sedím u počítače. Nespal jsem celou noc. Ráno jsem ženu s kluky nechal jet samotnou na pláž. Vedro na Rhodosu je pekelné, všude samý šutr. Zbytek rodiny miluje moře. Jenže moře je slané a lepkavé. Moře je vlastně celkově hnus. Ale to není můj hlavní problém.
 
-Znal jsem ten pocit z jiných dovolených, v jiných lokalitách. Celkově jsem se na vždy cítil labilně. Rozhodilo mě daleko víc věcí než normálně. Každý třetí den jsem měl krizičku. Proč se mi to sakra děje, když mám odpočívat?
+Znal jsem ten pocit z jiných dovolených, v jiných lokalitách. Celkově jsem se tam vždy cítil labilně. Rozhodilo mě daleko víc věcí než normálně. Každý třetí den jsem měl krizičku. Proč se mi to sakra děje, když mám odpočívat?
 
 A přišla nespavost. Na dovolené. Docela psycho, vám řeknu. Proč sakra na dovolené nespím?
 
 Dneska už vím, že spánek si musím zasloužit. Únavou. Třeba z pohybu nebo jinak náročného dne. Za odvedenou námahu pak přichází odměna. Spánek.
 
-A taky už vím, že kde byl problém v tom Řecku. Byl jsem na dovolené, ale nebyl jsem přítomný. Nezastavil jsem hlavu. Jela mi tam práce. Plány, klienti, články, strategie… Tentokrát to začalo nevinným: „Pracovat nebudu, ale zkusím promyslet pár kapitol knížky.”
+A taky už vím, kde byl problém v tom Řecku. Byl jsem na dovolené, ale nebyl jsem přítomný. Nezastavil jsem hlavu. Jela mi tam práce. Plány, klienti, články, strategie… Tentokrát to začalo nevinným: „Pracovat nebudu, ale zkusím promyslet pár kapitol knížky.“
 
-Tělo leželo na Rhodosu u lepkavého moře, mysl byla v mé freelance firmičce. V Řecku mi došlo, pro věci jako pasivní rodinná dovolená, kde trochu pracuju, nebyla má mysl stvořena.
+Tělo leželo na Rhodosu u lepkavého moře, mysl byla v mé freelance firmičce. V Řecku mi došlo, že pro věci jako pasivní rodinná dovolená, kde trochu pracuju, nebyla má mysl stvořena.
 
 ## 2019: Únava v Toskánsku mi pomohla spát {#2019-unava-v-toskansku}
 
@@ -53,8 +57,8 @@ Tato dovolená byla zaplněná aktivitami, i fyzickými. Kromě pohybu s rodinou
 Došlo mi, že když má práce určitou intenzitu, a je jedno, jestli je to kreativní intenzita nebo manažerské vytížení, musí být nahrazená jinou, třeba fyzickou intenzitou.
 
 <figure>
-<img src="/prirucka/images/dovolena-prace-thajsko.jpg" alt="Práce a dovolená v Thajsku">
-<figcaption markdown="1">Pracovat z malého resortu v Thajsku? Boží! Nikdy mi to nefungovalo.</figcaption>
+<img src="/prirucka/images/dovolena-prace-thajsko.jpg" alt="Martin Michálek s notebookem v thajském resortu">
+<figcaption markdown="1">*Pracovat z malého resortu v Thajsku? Boží! Nikdy mi to nefungovalo.*</figcaption>
 </figure>
 
 ## 2023: Dobrodružné Thajsko a kdy práce náhle přestala existovat {#2023-thajsko}
@@ -73,13 +77,13 @@ Thajsko definitivně ukázalo, že problém je v nastavení té dovolené. Pasiv
 
 Aktivní cestování hlavu zaměstná jinak. Zjistil jsem, že se nemusím unavit fyzicky. To je ostatně zajímavé jen pro mě. Zjistil jsem, že se stačí jen vynechat plánování dovolené a dostat do mírného stresu sebe i celou rodinu. Budete se divit, ale vyhovuje nám to všem. Tmelí nás to a máme mrak rodinných historek.
 
-Jo a taky jsem v roce 2023 zjistil něco o delegaci a výhodách týmové práce. Naši lidi v PageSpeed.ONE to celé zvládli bez mě. Máme docela dobré procesy, role v týmu a systém na předávání dovedností. A taky jsou naši lidi skvělí.
+Jo a taky jsem v roce 2023 zjistil něco o delegaci a výhodách týmové práce. Naši lidi v [PageSpeed.ONE](https://www.pagespeed.one/) to celé zvládli bez mě. Máme docela dobré procesy, role v týmu a systém na předávání dovedností. A taky jsou naši lidi skvělí.
 
 Vrátil jsem se z Thajska ještě trochu roztřepaný, tím zdravým stresem. Ale hned druhý den jsem byl zpátky v tempu. Nadšeně jsem se pustil do práce.
 
 ## Proč vlastně vůbec jezdit na dovolenou? {#proc-jezdit-na-dovolenou}
 
-Občas slyším, že lidé s mou úrovní lásky k práci prostě na dovolené nejezdí. Já to dříve zkoušel, ale nefunguje mi to. Dovolené potřebuju.
+Občas slyším, že lidé s mou úrovní lásky k práci prostě na dovolené nejezdí. Já to dříve zkoušel, ale nefunguje mi to. Dovolené potřebuju. (A někdo potřebuje ještě delší pauzu – o tom je třeba [podcast se sabatiklem Petra Buriana](../podcast/podcast-petr-burian-sabatikl.md).)
 
 Je to trochu paradox, ale když pár týdnů nepracuju, v práci mi to pomůže.
 
@@ -87,9 +91,9 @@ Klíč je ve změně kontextu. To znáte všichni. Doma nebo v práci se nám v 
 
 Do hlavy naopak naskočí věci, na které jindy není prostor. Rodina. Plánování trasy. Focení a úpravy fotek. Večerní zápisky z toho, co jsme zažili. Nebo třeba upovídaní taxikáři, ty já miluju.
 
-Z toho odstupu přijdou myšlenky, které bych u pražského stolu nevymyslel. V Thajsku mi například došlo, že mi v práci začíná hodně chybě kreativní práce. Začal jsem zase víc psát. Od té doby si podle toho řídím čas. Pomohlo mi to.
+Z toho odstupu přijdou myšlenky, které bych u pražského stolu nevymyslel. V Thajsku mi například došlo, že mi v práci začíná hodně chybět kreativní práce. Začal jsem zase víc [psát](psani.md). Od té doby si podle toho řídím čas. Pomohlo mi to.
 
-Odpočinek vám dá jednu podstanou věc, energii. Z dobře pojatého odpočinku se vracím s energií a motivací, kterou jsem před odjezdem neměl.
+Odpočinek vám dá jednu podstatnou věc, energii. Z dobře pojatého odpočinku se vracím s energií a motivací, kterou jsem před odjezdem neměl.
 
 Nejsem výjimka. Popisuje to výzkum.
 
@@ -118,11 +122,11 @@ Výjimku mám jen Gmail a Instagram, a i ty držím na uzdě.
 Na Instagram dávám storíčka pro rodinu a kamarády, to je fajn. Ke konzumaci je ale zrádný. Chci si třeba odpočinout od politiky a on mi ji stejně nacpe do feedu. Takže odhlašuju odběry těmto zdrojům a po dovolené si je zase postupně přidávám. S Instagramem je potíž v tom, že jej používá starší syn a i během dovolené občas přiběhne s další kauzou Filipa Turka. Šmarjá, exoty na dovolené fakt řešit nechci! Další krok tedy spočívá ve výchově syna.
 
 <figure>
-<img src="/prirucka/images/dovolena-snorchl.jpg" alt="Šnorchlování na Zanzibaru">
-<figcaption markdown="1">Hledání tátova počítače. Ne, kecám. Nikdo na něj nemá pomyšlení. Ani táta.</figcaption>
+<img src="/prirucka/images/dovolena-snorchl.jpg" alt="Rodina při šnorchlování u Zanzibaru">
+<figcaption markdown="1">*Hledání tátova počítače. Ne, kecám. Nikdo na něj nemá pomyšlení. Ani táta.*</figcaption>
 </figure>
 
-Do Gmailu kouknu jednou za týden. Smažu nerelevantní, archivuju zbytek, něco odložím a pokud něco blokuju, přehodím to na kolegy, ať to nestojí. Občas odepíšu, ať to neblokuju. Toto se ale třeba letos týkalo přesně jednoho e-mailu. Má to velkou výhodu v tom, že mě po návratu nečeká velká darda mailů. Prostě jsem většinu z nich promazal už na dovolené.
+Do Gmailu kouknu jednou za týden. Smažu nerelevantní, archivuju zbytek, něco odložím a pokud něco blokuju, přehodím to na kolegy, ať to nestojí. Občas odepíšu, ať to neblokuju. Toto se ale třeba letos týkalo přesně jednoho e-mailu. Má to velkou výhodu v tom, že mě po návratu nečeká velká darda mailů. Prostě jsem většinu z nich promazal už na dovolené. (Běžný provoz mi drží [Inbox Zero](email-inbox-zero.md).)
 
 Ale je možné to udělat jen za předpokladu, že vás v mailu nečekají strašáci, průsery nebo jiné emoční pasti. To se u mě naštěstí nestává. Důležité je, že za většinu toho, co řídím, je zodpovědný někdo jiný.
 
@@ -130,7 +134,7 @@ Ale je možné to udělat jen za předpokladu, že vás v mailu nečekají stra�
 
 Dřív jsem si myslel, že delegování je o tom rozdat úkoly před odjezdem. Není. Je to o tom vybudovat tým, který mě nepotřebuje. To je rozdíl mezi „odjíždím, ale budu na příjmu“ a „odjíždím a nemusím řešit nic“.
 
-V [PageSpeed.ONE](http://pagespeed.one/) máme jasné role, docela funkční procesy a obstojný systém na předávání znalostí. Když jsem byl v Thajsku, firma běžela dál beze mě, tam mi to došlo. A právě tohle vědomí, že to bez vás pojede, je podmínka skutečného odpojení. Bez něj budete mít hlavu v práci, ať jste kdekoliv na světě.
+V PageSpeed.ONE máme jasné role, docela funkční procesy a obstojný systém na předávání znalostí. Když jsem byl v Thajsku, firma běžela dál beze mě, tam mi to došlo. A právě tohle vědomí, že to bez vás pojede, je podmínka skutečného odpojení. Bez něj budete mít hlavu v práci, ať jste kdekoliv na světě.
 
 ### Vybírám termín, kdy vypnou i klienti {#termin-kdy-vypnou-klienti}
 
@@ -144,7 +148,7 @@ Většina lidí před dovolenou zrychlí. Nabírají úkoly, zůstávají déle 
 
 Výsledek? Odjíždíme vyždímaní a první tři dny na dovolené a první tři dny po dovolené se jen vzpamatováváme. Dělám to jinak. Mentálně si dovolenou prodlužuju o pár dní předem i poté.
 
-Fade-in znamená práci před odjezdem naopak ubírat. Poslední dny před cestou jsou u mě nejklidnější, ne nejhektičtější. Udělám opravdu vše důležité, ale nevymýšlím nic navíc.
+Fade-in znamená práci před odjezdem naopak ubírat. Poslední dny před cestou jsou u mě nejklidnější, ne nejhektičtější. Udělám opravdu vše důležité, ale nevymýšlím nic navíc. Trochu to souvisí s [uměním říkat NE](../blog/254-ne.md) – hlavně sobě a vlastním nápadům „ještě to dodělám“.
 
 Fade-out je ta samá věc po návratu. První den doma je oficiálně pracovní, ale ještě v něm nepracuju. Vybalím, přerovnám fotky, projdu si kalendář, naladím se. Teprve druhý den se jdu ohlásit kolegům do Slacku naplno. Ten jeden nárazník mezi cestou a prací mi ušetří týden rozladěnosti.
 
@@ -154,7 +158,7 @@ S pomalým nájezdem po dovolené souvisí i to průběžné promazávání inbo
 
 Nejhorší je nechat si všechno na příjezd. Když se vrátíte a čeká vás pět set mailů, tři sta fotek a napůl napsané recenze na ubytko, odpočinek je rázem pryč.
 
-Totéž co pro Gmail výše platí pro i pro agendu z dovolené – fotky, recenze a zápisky. Dělám je už během dovolené. Kousek po kousku, ne naráz po dovolené.
+Totéž co pro Gmail výše platí i pro agendu z dovolené – fotky, recenze a zápisky. Dělám je už během dovolené. Kousek po kousku, ne naráz po dovolené.
 
 Návrat je pak měkký a po nájezdu pracovní agendy si s sebou netáhnu frustraci, že jsem nestihl dokončit fotky z dovolené.
 

@@ -117,7 +117,7 @@ Tolik k širšímu kontextu mého způsobu elektronické komunikace. A teď už 
 
 Bude vás to stát čas. Bez toho to nepůjde. Se s tim smiřte. E-maily v Inboxu čekají a nemají nožičky. Neodejdou a nevyřeší se samy, aniž byste jim věnovali čas. Ten si musíte vyhradit.  
 
-Některé metodiky doporučují věnovat se e-mailu co nejrychleji nebo třeba jednou za hodinu, ale mě osobně by to zabilo. E-mailu se věnuji jen párkrát denně. Funguje to asi takto:  
+Některé metodiky doporučují věnovat se e-mailu co nejrychleji nebo třeba jednou za hodinu, ale mě osobně by to zabilo. E-mailu se věnuji jen párkrát denně. Na [dovolené](dovolena-pro-workoholiky.md) ještě méně – typicky jednou za týden. Běžný provoz vypadá asi takto:  
 
 * Dopoledne do inboxu vůbec nekoukám. Jsem zahloubán v hluboké práci, sorry.
 * Po obědě věnuji e-mailu půl hodiny až tři čtvrtě. To je můj hlavní čas na Inbox zero.

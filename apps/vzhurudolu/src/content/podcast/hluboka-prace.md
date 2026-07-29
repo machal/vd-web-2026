@@ -48,7 +48,7 @@ Graham docela trefně tvůrcům doporučuje zřídit si pevné „úřední hodi
 
 Hezky to demostruje jeden z cílů Newporta – tvůrce nemá hledat v kalendáři časová okna, ve kterých se bude věnovat hluboké práci. Naopak! Cílem je vytvořit si manažerská okna uprostřed běžně prováděné práce hluboké.
 
-Také děláte „pořádnou“ práci po večerech, o víkendech nebo dovolených? Nesmiřte se s tím, přátelé.
+Také děláte „pořádnou“ práci po večerech, o víkendech nebo [dovolených](../prirucka/dovolena-pro-workoholiky.md)? Nesmiřte se s tím, přátelé.
 
 
 ## Je to jen pro ty co nechtějí být průměrní? Omyl, je to pro každého tvůrce
