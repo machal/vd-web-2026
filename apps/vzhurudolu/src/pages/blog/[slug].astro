@@ -56,12 +56,19 @@ const canonicalUrl = `https://www.vzhurudolu.cz/blog/${post.slug}`;
 const alternate = resolveAlternate('vzhurudolu', 'blog', post.slug);
 const cluster = resolveHreflangCluster('vzhurudolu', 'blog', post.slug);
 const alternateLinks = cluster ? buildAlternateLinks(cluster) : undefined;
+const rawOgImage = post.data.ogImage || post.data.og_image;
+const displayOgImage = rawOgImage
+  ? (rawOgImage.startsWith('http') ? rawOgImage : `https://www.vzhurudolu.cz${rawOgImage}`)
+  : undefined;
 ---
 
 <BaseLayout
   title={post.data.title}
   description={post.data.description}
   ogType="article"
+  ogTitle={post.data.og_title || post.data.title}
+  ogDescription={post.data.og_description || post.data.description}
+  ogImage={displayOgImage}
   ogUrl={canonicalUrl}
   canonicalUrl={canonicalUrl}
   alternateLinks={alternateLinks}

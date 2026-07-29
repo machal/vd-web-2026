@@ -7,7 +7,7 @@
 | postTitle | ano | string | Autorův titulek článku; mapuje se na `title`. **Neměnit** bez výslovné žádosti. SEO alternativy jen jako návrh v chatu. |
 | title | volitelné | string | Alternativa k postTitle |
 | postDateTime / date | doporučené | string/date | Pro řazení a zobrazení |
-| excerpt / description | doporučené | string | Perex / popis |
+| excerpt / description | doporučené | string | Homepage / RSS / OG – **2–3 věty** (cca 220–400 znaků) |
 | postStatus | volitelné | string | Např. Published, Draft |
 | postID, postUrlId | volitelné | number, string | Legacy z exportu |
 | category | volitelné | string[] | Default [] |
@@ -68,12 +68,13 @@ og_type: article
 | heading | doporučené | string | Zobrazený nadpis (obvykle = autorův titulek / H1). Neměnit bez žádosti. |
 | title | volitelné | string | Autorův titulek; fallback heading nebo id. Neměnit bez žádosti; SEO jen návrh v chatu. |
 | date | volitelné | string/date | |
-| perex / description | volitelné | string | Popis článku |
+| perex / description | volitelné | string | Homepage / RSS / OG – **2–3 věty** (cca 220–400 znaků), ne jedna krátká věta |
 | published | volitelné | bool/string | true = publikováno; u ebooků false |
 | category | volitelné | string[] | |
 | tags | volitelné | string[] | Mapuje se z category |
 | category_highlight, include_rss, no_ads | volitelné | bool | |
 | og_title, og_description, og_type | volitelné | string | |
+| og_image | doporučené u nových | string | Vlastní OG 1200×630, např. `/assets/img/content/dest/{slug}-og.webp` |
 
 ### Příklad (příručka – publikovaný článek)
 

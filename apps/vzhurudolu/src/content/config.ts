@@ -146,11 +146,13 @@ const prirucka = defineCollection({
     no_ads: z.union([z.boolean(), z.string()]).optional(),
     og_title: z.string().optional(),
     og_description: z.string().optional(),
+    og_image: z.string().optional(),
     og_type: z.string().optional(),
     // Pro zpětnou kompatibilitu
     title: z.string().optional(),
     description: z.string().optional(),
     tags: z.array(z.string()).optional(),
+    ogImage: z.string().optional(),
     pairId: z.string().optional(),
   }).transform((data) => {
     // Pokud je heading prázdný, použijeme id nebo title
@@ -162,6 +164,7 @@ const prirucka = defineCollection({
       description: data.description || (data.perex && data.perex.trim() !== '' ? data.perex : '') || '',
       tags: data.tags || data.category || [],
       published: published,
+      ogImage: data.ogImage || data.og_image,
     };
   }),
 });

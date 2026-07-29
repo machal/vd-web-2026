@@ -132,6 +132,10 @@ const displayDescription = enrichedData.description || item.data.description || 
 // Pro OG title použít heading nebo title (ne id jako fallback)
 const displayOgTitle = enrichedData.og_title || enrichedData.heading || enrichedData.title || displayTitle;
 const displayOgDescription = enrichedData.og_description || enrichedData.description || displayDescription;
+const rawOgImage = enrichedData.ogImage || enrichedData.og_image;
+const displayOgImage = rawOgImage
+  ? (rawOgImage.startsWith('http') ? rawOgImage : `https://www.vzhurudolu.cz${rawOgImage}`)
+  : undefined;
 
 const canonicalUrl = `https://www.vzhurudolu.cz/prirucka/${urlId}`;
 const alternate = resolveAlternate('vzhurudolu', 'prirucka', urlId);
@@ -145,6 +149,7 @@ const alternateLinks = cluster ? buildAlternateLinks(cluster) : undefined;
   ogType="article"
   ogTitle={displayOgTitle}
   ogDescription={displayOgDescription}
+  ogImage={displayOgImage}
   ogUrl={canonicalUrl}
   canonicalUrl={canonicalUrl}
   alternateLinks={alternateLinks}
