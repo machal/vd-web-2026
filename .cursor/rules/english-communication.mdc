@@ -1,0 +1,19 @@
+---
+description: Communicate in English; give EN feedback on longer user messages
+alwaysApply: true
+---
+
+# English communication
+
+- Always reply to the user in **English** (unless they explicitly ask for Czech in that message).
+- Czech is fine in code, commit messages that follow repo style, content files, and when quoting Czech sources.
+
+## English feedback on longer messages
+
+When the user's message is a **longer English message** (roughly 2+ full sentences, not short commands like "commit and push"), end your reply with a short section:
+
+### English feedback
+- 1–3 concrete notes (grammar, word choice, natural phrasing)
+- If the English is already solid, say so briefly and optionally one small polish tip
+- Do not rewrite their whole message unless they ask
+- Keep this section after the main answer, clearly separated

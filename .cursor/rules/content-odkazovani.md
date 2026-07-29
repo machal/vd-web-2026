@@ -11,8 +11,12 @@ Při psaní nebo větších úpravách článků v příručce, blogu a podcastu
    Odkazuj na důležité články (zobrazené na homepage, s `category_highlight`) a na články z posledních zhruba dvou let. Odkazy vkládej přirozeně do textu tam, kde to dává smysl.
 
 3. **Zpětné provázání**  
-   V ostatních článcích z posledních let přidej odkaz na nový/upravený článek buď přímo do věty, nebo jako tip ve formátu:
-   `→ *Související: [Název článku](/cesta).*`
+   Při novém článku **nejdřív drafty do chatu** (3–5 návrhů: soubor, okolí citace, navrhovaný text). Zapisuj až po výběru uživatele — **nikdy** neplň kvótu „3–5 odkazů“ zápisem naslepo.  
+   Cílové články: jen **delší** texty (cca 1+ A4). Krátké pečlivě rytmizované eseje neupravuj.  
+   Jen místa, kde téma **už v textu sedí** (stejný problém, stejná situace). Slabý nebo natažený vztah = odkaz **nepřidávej**.  
+   Preferuj prolinkování existujícího slova, případně **jednu** krátkou větu uprostřed souvisejícího odstavce.  
+   **Ne** umělé „→ Související:“ bloky.  
+   **Ne** na konec článku, shrnutí, výzvu („Zkuste…“, „Napište mi…“) ani závěrečný rytmický odstavec — ty nech čisté.
 
 ## Formát interních odkazů (povinně .md)
 
