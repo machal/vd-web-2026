@@ -34,7 +34,7 @@ Or until you start refusing, in earnest.
 
 Some people cannot turn down their boss. Some cannot turn down colleagues. Some cannot refuse friends, a partner, their kids. And some braid the whip themselves. They tell themselves things like "Nothing is impossible" or "Never give up" — and in the end the only thing they give up is quality, traded for quantity. They burn out, or simply stop enjoying the work they once loved. They forgot they cannot do everything. They forgot how liberating _no_ can be.
 
-You need to say _no_ to yourself too. To your own ideas, your own projects, your own pet thoughts. That is the hard part, because ideas are like children. We love them. But killing ideas has a polite name: prioritisation.
+You need to say _no_ to yourself too. To your own ideas, your own projects, your own pet thoughts — even to the "I'll just finish this" urge [before a vacation](../guide/vacation-for-workaholics.md). That is the hard part, because ideas are like children. We love them. But killing ideas has a polite name: prioritisation.
 
 ## No is not arrogance {#no-is-not-arrogance}
 

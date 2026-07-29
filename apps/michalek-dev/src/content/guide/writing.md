@@ -135,7 +135,7 @@ I sometimes don't know what to write about either, but I have tools. I keep a no
 
 When I'm stuck for a topic, I check my notes. And I always discover I actually have an enormous backlog of things I want to write.
 
-But you don't have to write only about your work. Something happens to you every day, your opinions surface every day, something funny pops into your head every day. Something interesting happens every day, even when you're not traveling anywhere.
+But you don't have to write only about your work. Something happens to you every day, your opinions surface every day, something funny pops into your head every day. Something interesting happens every day, even when you're not traveling anywhere. On vacation, for example, topics often light up for me that I would never come up with at my desk in Prague — that is what my [vacation guide for workaholics](vacation-for-workaholics.md) is about.
 
 You just have to look at the world the right way.
 

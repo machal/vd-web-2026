@@ -86,4 +86,9 @@ export const CONTENT_PAIRS: ContentPair[] = [
     cs: { site: 'vzhurudolu', collection: 'blog', key: '264-ceo-bere-praci' },
     en: { site: 'michalek-dev', collection: 'blog', key: 'ceo-takes-your-job' },
   },
+  {
+    pairId: 'vacation-for-workaholics',
+    cs: { site: 'vzhurudolu', collection: 'prirucka', key: 'dovolena-pro-workoholiky' },
+    en: { site: 'michalek-dev', collection: 'guide', key: 'vacation-for-workaholics' },
+  },
 ];
