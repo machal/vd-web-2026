@@ -4,7 +4,7 @@
 
 | Pole | Povinné | Typ | Poznámka |
 |------|---------|-----|----------|
-| postTitle | ano | string | SEO titulek (stručný); mapuje se na `title`. H1 v těle článku může být jiný — popisnější, vtipnější. |
+| postTitle | ano | string | Autorův titulek článku; mapuje se na `title`. **Neměnit** bez výslovné žádosti. SEO alternativy jen jako návrh v chatu. |
 | title | volitelné | string | Alternativa k postTitle |
 | postDateTime / date | doporučené | string/date | Pro řazení a zobrazení |
 | excerpt / description | doporučené | string | Perex / popis |
@@ -65,8 +65,8 @@ og_type: article
 | Pole | Povinné (published) | Typ | Poznámka |
 |------|----------------------|-----|----------|
 | id | ano | string | Unikátní v rámci published článků |
-| heading | doporučené | string | Zobrazený nadpis; může být odlišný od title |
-| title | volitelné | string | Fallback: heading nebo id |
+| heading | doporučené | string | Zobrazený nadpis (obvykle = autorův titulek / H1). Neměnit bez žádosti. |
+| title | volitelné | string | Autorův titulek; fallback heading nebo id. Neměnit bez žádosti; SEO jen návrh v chatu. |
 | date | volitelné | string/date | |
 | perex / description | volitelné | string | Popis článku |
 | published | volitelné | bool/string | true = publikováno; u ebooků false |
@@ -111,8 +111,8 @@ published: false
 
 | Aspekt | Blog | Podcast | Příručka |
 |--------|------|---------|----------|
-| Hlavní titulek (SEO) | postTitle, og_title | postTitle, og_title | title, og_title |
-| H1 v článku | volitelně jiný než postTitle | volitelně jiný | volitelně jiný než title |
+| Titulek článku | postTitle, og_title (autorův; SEO jen po souhlasu) | stejně | title, og_title (stejně) |
+| H1 / heading | obvykle = autorův titulek; neměnit bez žádosti | stejně | stejně |
 | Datum | postDateTime / date | postDateTime / date | date (volitelné) |
 | Popis | excerpt | excerpt | perex |
 | Unikátní id | ne | ne | ano (u published) |

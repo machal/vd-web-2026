@@ -87,15 +87,22 @@ Pokud skript selže (chybějící zdroj na vzhurudolu), doplň obrázek na CS st
 ### 7. Vlaječky (automatické)
 **Nepřidávej** vlaječky do Markdownu. Stačí krok 6 — šablony přidají `LanguageSwitch` + hreflang.
 
-### 8. Zpětné odkazy (povinné)
+### 8. Zpětné odkazy (draft → schválení)
 
-**A) EN (priorita):** Najdi 3–5 přirozených míst v `apps/michalek-dev/src/content/{blog,guide}/` a přidej odkaz na nový článek:
+Stejná pravidla jako [vd-articles-write-edit](../vd-articles-write-edit/SKILL.md) bod 11:
+
+- **Nejdřív drafty do chatu** (3–5 návrhů: soubor, okolí, navrhovaný text). Zapisuj až po výběru uživatele.
+- Jen **delší** cílové články (cca 1+ A4). Krátké pečlivě rytmizované eseje nech být.
+- Jen místa, kde jsi si jistý; jinak návrh s poznámkou „nejisté“ nebo vynech.
+- Žádné umělé „Related:“ / „Související:“ bloky.
+
+**A) EN (priorita):** kandidáti v `apps/michalek-dev/src/content/{blog,guide}/` → odkaz na nový EN článek  
 `[text](../blog/slug.md)` nebo `[text](../guide/slug.md)`
 
-**B) CS:** Najdi 3–5 míst v `apps/vzhurudolu/src/content/{blog,prirucka}/` a přidej odkaz na **český originál**:
-`[text](../blog/264-ceo-bere-praci.md)` — **ne** na michalek.blog
+**B) CS:** kandidáti v `apps/vzhurudolu/src/content/{blog,prirucka,podcast}/` → odkaz na **český originál**  
+`[text](../prirucka/….md)` atd. — **ne** na michalek.blog
 
-Žádné umělé „Related:“ bloky. Odkaz musí sedět do věty (stejně jako [vd-articles-write-edit](../vd-articles-write-edit/SKILL.md)).
+V checklistu uveď, které drafty uživatel schválil a zapsal.
 
 ### 9. Validace
 

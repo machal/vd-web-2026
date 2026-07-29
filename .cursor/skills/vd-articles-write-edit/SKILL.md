@@ -52,9 +52,15 @@ Při psaní nebo úpravách v `src/content/blog/` a `src/content/prirucka/` (a k
 6. **Výzva na konci** – obalit v `<small>*…*</small>` (kurzíva, malé písmo). Typicky jde o odkaz na komentování na sociálních sítích (LinkedIn, X apod.) – přidávat až po publikaci článku, když je k dispozici URL příspěvku na soc. síti.
 7. **Odkazování** – externí nástroje/služby odkazovat u prvního výskytu; vnitřní odkazy na důležité články přirozeně v textu. Odkazy nedávat do citací, perexů ani do meta částí. Ve `figcaption` jsou odkazy povolené (typicky pro uvedení zdroje obrázku/grafu). **Interní odkazy na články vždy jako .md:** v příručce `[Text](nazev.md)`; mezi sekcemi `[Text](../blog/nazev.md)`, `[Text](../prirucka/nazev.md)` nebo `[Text](../podcast/nazev.md)`. V Markdownu nikdy nepsat hotové URL typu `/blog/258-…` ani `/prirucka/nazev` – build přepisuje z .md cest. Na úvodní stránky sekcí lze `/blog`, `/podcast`.
 8. **Perex vs. text článku** – perex (`excerpt`/`perex`) je shrnutí pro RSS, náhledy a OG. Text článku by neměl perex opakovat doslova; první odstavce by měly čtenáře vtáhnout jinak než perex.
-9. **H1 vs. title (postTitle / title)** – **nemusí být stejné.** `postTitle` (blog/podcast) nebo `title` (příručka) a `og_title` piš **stručně a SEO** (klíčová slova, rok, jména speakerů). **H1** v těle článku piš **článkově**: popisnější, osobnější, klidně s vtipem — má lákat ke čtení, ne kopírovat meta titulek. Nesmí ale zavádět (jiné téma než článek).
+9. **Titulek článku je autorův – neměň ho.** `postTitle` / `title`, `heading`, H1 a `og_title` (pokud už je nastavený podle autorova názvu) **ponech** tak, jak je autor napsal. Agent je **nesmí přepisovat** na „lepší SEO“ bez výslovné žádosti. **SEO tipy** (alternativní meta titulek, `og_title` odlišný od H1) smíš **jen navrhnout v chatu** – zapsat do souboru až po souhlasu. Výchozí stav: title / heading / H1 / og_title drží stejný autorův název.
 10. **Anglicismy v českém textu** – nepoužívat anglický genitiv s apostrofem (např. ~~CEO's~~); místo toho český tvar (CEO, šéfové firem apod.).
-11. **Zpětné odkazy na nový článek** – při publikaci nového článku najdi v existujících článcích alespoň 3–5 míst pro odkaz na nový text. Nikdy nepřidávej umělé „→ Související:" bloky. Místo toho: (a) hledej výskyt klíčového slova odpovídajícího URL/id nového článku a prolinkuj ho, nebo (b) na vhodné místo přímo do textu připiš stručnou zmínku s odkazem, která tam čtenářsky sedí. Odkaz musí působit, jako by tam byl od začátku.
+11. **Zpětné odkazy na nový článek** – při publikaci navrhnout kandidáty, **needitovat cílové články hned**.
+    - **Jen delší cílové texty** – zhruba 1+ A4 (delší příručka / delší blog / delší podcast poznámky). **Krátké, pečlivě rytmizované eseje** (např. krátký soft-skills blog) **neupravuj** – jedna přidaná věta tam často kazí tón.
+    - **Jen když jsi si jistý** – téma už v odstavci sedí; slabý vztah = vynechat. Nekrm kvótu „3–5“ naslepo.
+    - **Výstup do chatu (povinné před zápisem):** 3–5 návrhů jako drafty. U každého: soubor, důvod, citace okolí, navrhovaná úprava (diff nebo celá věta). Uživatel vybere, co zapsat; teprve pak edituj soubory.
+    - Preferuj (a) prolinkovat existující klíčové slovo, (b) jen u delších textů krátkou zmínku uprostřed souvisejícího odstavce, jako by tam byla od začátku.
+    - **Ne** na konec článku, shrnutí, výzvu („Zkuste…“, „Napište mi…“) ani závěrečný rytmický odstavec.
+    - Nikdy umělé „→ Související:“ bloky.
 
 ## Obrázky – kam a jak
 
@@ -83,7 +89,7 @@ Skript `npm run fill-heading` doplní do front matter příručky pole odvozená
 |----|----------------|----------------------|
 | Front matter | Ano, vždy | Ano, vždy |
 | Unikátní id | — | Ano (`id`) |
-| postTitle / title | postTitle (nebo title), SEO; H1 může být jiný | title (SEO); H1 / heading může být jiný |
+| postTitle / title | autorův titulek – neměnit bez žádosti; SEO jen návrh v chatu | stejně |
 | published: false | pro koncepty | pouze v content-* (ebooky) |
 
 Pro detailní přehled polí a příklady front matter viz [reference.md](reference.md).

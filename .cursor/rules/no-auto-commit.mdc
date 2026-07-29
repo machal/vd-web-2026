@@ -1,0 +1,22 @@
+---
+description: Never commit or push unless the user explicitly asks; do not suggest commits
+alwaysApply: true
+---
+
+# No automatic commits
+
+Agent **must not** create git commits or push unless the user explicitly asks in the current message (e.g. “commit”, “commit and push”).
+
+## Do
+
+1. After finishing work, **just wait** for an explicit commit / push request.
+2. Only then run `git add` / `git commit` / `git push` as requested.
+3. Write the commit message only when committing (per project git rules) — **do not** recommend a commit or draft a message beforehand.
+
+## Do not
+
+- Commit or push without an explicit request
+- Offer / recommend a commit (“I recommend committing…”, “Should I commit?”)
+- Suggest a commit message before the user asks to commit
+- Amend / force-push without an explicit request
+- Treat “continue with the plan” as permission to commit
