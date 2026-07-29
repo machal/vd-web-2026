@@ -51,7 +51,7 @@ Při psaní nebo úpravách v `src/content/blog/` a `src/content/prirucka/` (a k
 5. **Tabulky** – obalit v `<div class="rwd-scrollable f-6" markdown="1">` s prázdným řádkem mezi divem a tabulkou.
 6. **Výzva na konci** – obalit v `<small>*…*</small>` (kurzíva, malé písmo). Typicky jde o odkaz na komentování na sociálních sítích (LinkedIn, X apod.) – přidávat až po publikaci článku, když je k dispozici URL příspěvku na soc. síti.
 7. **Odkazování** – externí nástroje/služby odkazovat u prvního výskytu; vnitřní odkazy na důležité články přirozeně v textu. Odkazy nedávat do citací, perexů ani do meta částí. Ve `figcaption` jsou odkazy povolené (typicky pro uvedení zdroje obrázku/grafu). **Interní odkazy na články vždy jako .md:** v příručce `[Text](nazev.md)`; mezi sekcemi `[Text](../blog/nazev.md)`, `[Text](../prirucka/nazev.md)` nebo `[Text](../podcast/nazev.md)`. V Markdownu nikdy nepsat hotové URL typu `/blog/258-…` ani `/prirucka/nazev` – build přepisuje z .md cest. Na úvodní stránky sekcí lze `/blog`, `/podcast`.
-8. **Perex vs. text článku** – perex (`excerpt`/`perex`) je shrnutí pro RSS, náhledy a OG. Text článku by neměl perex opakovat doslova; první odstavce by měly čtenáře vtáhnout jinak než perex.
+8. **Perex / excerpt (délka)** – `perex` (příručka) nebo `excerpt` (blog/podcast) je text pro homepage, RSS, náhledy a často i `og_description`. Piš **2–3 věty** (zhruba 220–400 znaků): dost konkrétní, aby článek na homepage nepůsobil jako drobná poznámka, ale ne esej. Jedna krátká věta nestačí. Text článku **neopakuj** perex doslova; první odstavce vtáhnou jinak.
 9. **Titulek článku je autorův – neměň ho.** `postTitle` / `title`, `heading`, H1 a `og_title` (pokud už je nastavený podle autorova názvu) **ponech** tak, jak je autor napsal. Agent je **nesmí přepisovat** na „lepší SEO“ bez výslovné žádosti. **SEO tipy** (alternativní meta titulek, `og_title` odlišný od H1) smíš **jen navrhnout v chatu** – zapsat do souboru až po souhlasu. Výchozí stav: title / heading / H1 / og_title drží stejný autorův název.
 10. **Anglicismy v českém textu** – nepoužívat anglický genitiv s apostrofem (např. ~~CEO's~~); místo toho český tvar (CEO, šéfové firem apod.).
 11. **Zpětné odkazy na nový článek** – při publikaci navrhnout kandidáty, **needitovat cílové články hned**.
@@ -61,6 +61,7 @@ Při psaní nebo úpravách v `src/content/blog/` a `src/content/prirucka/` (a k
     - Preferuj (a) prolinkovat existující klíčové slovo, (b) jen u delších textů krátkou zmínku uprostřed souvisejícího odstavce, jako by tam byla od začátku.
     - **Ne** na konec článku, shrnutí, výzvu („Zkuste…“, „Napište mi…“) ani závěrečný rytmický odstavec.
     - Nikdy umělé „→ Související:“ bloky.
+12. **OG obrázek** – u nových článků (blog i příručka) **preferuj vlastní `og_image`**, ne výchozí site-wide náhled. Typicky ořízni/uprav hlavní foto článku na **1200×630**, ulož JPG do `apps/vzhurudolu/src/assets/img/content/{slug}-og.jpg`, WebP do `public/assets/img/content/dest/{slug}-og.webp`, do front matter: `og_image: /assets/img/content/dest/{slug}-og.webp`. Stejný text jako perex dej i do `og_description`, pokud dává smysl.
 
 ## Obrázky – kam a jak
 

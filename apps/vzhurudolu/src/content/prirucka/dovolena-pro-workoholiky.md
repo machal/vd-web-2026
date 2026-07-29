@@ -4,7 +4,7 @@ pairId: vacation-for-workaholics
 title: "Dovolená: průvodce pro workoholiky"
 heading: "Dovolená: průvodce pro workoholiky"
 date: 2026-07-29
-perex: "Jak jsem přestal pracovat na dovolené (a proč mi to pomohlo v práci)."
+perex: "Jak jsem přestal pracovat na dovolené (a proč mi to pomohlo v práci). Tohle je můj průvodce, jak na dovolené fakt vypnout a příběh o tom, že to nebylo snadné."
 published: true
 category:
   - dovednosti
@@ -13,7 +13,8 @@ category_highlight: true
 include_rss: true
 no_ads: true
 og_title: "Dovolená: průvodce pro workoholiky"
-og_description: "Jak jsem přestal pracovat na dovolené (a proč mi to pomohlo v práci)."
+og_description: "Jak jsem přestal pracovat na dovolené (a proč mi to pomohlo v práci). Tohle je můj průvodce, jak na dovolené fakt vypnout a příběh o tom, že to nebylo snadné."
+og_image: /assets/img/content/dest/dovolena-pro-workoholiky-og.webp
 og_type: article
 ---
 

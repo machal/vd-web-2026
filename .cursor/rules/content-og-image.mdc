@@ -1,0 +1,22 @@
+---
+description: Prefer a dedicated OG image (1200×630) for new articles
+alwaysApply: true
+---
+
+# Dedicated OG images for new articles
+
+For **new** blog / příručka / podcast articles, prefer a **dedicated `og_image`**, not only the site-wide default social image.
+
+## Spec
+
+- Size: **1200×630** (Open Graph)
+- Source: usually crop/adapt the article’s main photo
+- Files:
+  - JPG: `apps/vzhurudolu/src/assets/img/content/{slug}-og.jpg`
+  - WebP: `apps/vzhurudolu/public/assets/img/content/dest/{slug}-og.webp`
+- Front matter: `og_image: /assets/img/content/dest/{slug}-og.webp`
+- Keep `og_description` aligned with a solid `perex` / `excerpt` (2–3 sentences)
+
+## Wiring
+
+`og_image` must be passed into `BaseLayout` as `ogImage` (absolute `https://www.vzhurudolu.cz…` URL is fine). Relative paths starting with `/` are absolutized in article templates.
