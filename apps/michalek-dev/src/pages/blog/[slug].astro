@@ -37,6 +37,10 @@ const articleJsonLd = buildArticleJsonLd({
   url: canonicalUrl,
   datePublished: post.data.date,
 });
+const rawOgImage = post.data.ogImage;
+const displayOgImage = rawOgImage
+  ? (rawOgImage.startsWith('http') ? rawOgImage : `${siteConfig.origin}${rawOgImage}`)
+  : undefined;
 ---
 
 <BaseLayout
@@ -44,6 +48,7 @@ const articleJsonLd = buildArticleJsonLd({
   description={post.data.description}
   siteConfig={siteConfig}
   ogType="article"
+  ogImage={displayOgImage}
   ogUrl={canonicalUrl}
   canonicalUrl={canonicalUrl}
   alternateLinks={alternateLinks}

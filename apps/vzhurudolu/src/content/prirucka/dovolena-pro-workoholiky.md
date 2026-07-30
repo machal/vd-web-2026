@@ -79,19 +79,19 @@ Thajsko definitivně ukázalo, že problém je v nastavení té dovolené. Pasiv
 
 Aktivní cestování hlavu zaměstná jinak. Zjistil jsem, že se nemusím unavit fyzicky. To je ostatně zajímavé jen pro mě. Zjistil jsem, že se stačí jen vynechat plánování dovolené a dostat do mírného stresu sebe i celou rodinu. Budete se divit, ale vyhovuje nám to všem. Tmelí nás to a máme mrak rodinných historek.
 
-Jo a taky jsem v roce 2023 zjistil něco o delegaci a výhodách týmové práce. Naši lidi v [PageSpeed.ONE](https://www.pagespeed.one/) to celé zvládli bez mě. Máme docela dobré procesy, role v týmu a systém na předávání dovedností. A taky jsou naši lidi skvělí.
+Jo a taky jsem v roce 2023 zjistil něco o delegaci a výhodách týmové práce. Naši lidi v [PageSpeed.ONE](https://pagespeed.one/) to celé zvládli bez mě. Máme docela dobré procesy, role v týmu a systém na předávání dovedností. A taky jsou naši lidi skvělí.
 
 Vrátil jsem se z Thajska ještě trochu roztřepaný, tím zdravým stresem. Ale hned druhý den jsem byl zpátky v tempu. Nadšeně jsem se pustil do práce.
 
 ## Proč vlastně vůbec jezdit na dovolenou? {#proc-jezdit-na-dovolenou}
 
-Občas slyším, že lidé s mou úrovní lásky k práci prostě na dovolené nejezdí. Já to dříve zkoušel, ale nefunguje mi to. Dovolené potřebuju. (A někdo potřebuje ještě delší pauzu – o tom je třeba [podcast se sabatiklem Petra Buriana](../podcast/podcast-petr-burian-sabatikl.md).)
+Občas slyším, že lidé s mou úrovní lásky k práci prostě na dovolené nejezdí. Já to dříve zkoušel, ale nefunguje mi to. Dovolené potřebuju. (A někdo potřebuje ještě delší pauzu – o tom je třeba [podcast se sabatiklem Petra Buriana](/podcast/257-podcast-petr-burian-sabatikl).)
 
 Je to trochu paradox, ale když pár týdnů nepracuju, v práci mi to pomůže.
 
 Klíč je ve změně kontextu. To znáte všichni. Doma nebo v práci se nám v hlavě melou pořád stejné věci. Praha, kolegové, zprávy, sítě… Na cestách se nám většinou daří většinu z toho vypnout.
 
-Do hlavy naopak naskočí věci, na které jindy není prostor. Rodina. Plánování trasy. Focení a úpravy fotek. Večerní zápisky z toho, co jsme zažili. Nebo třeba upovídaní taxikáři, ty já miluju.
+Původní agenda naší hlavy by měla být nahrazena co nejvíce rozdílným kontextem. Daleko více prostoru pro rodinu, například. Plánování trasy. Focení a úpravy fotek. Večerní zápisky z toho, co jsme zažili. Nebo třeba upovídaní taxikáři, ty já miluju.
 
 Z toho odstupu přijdou myšlenky, které bych u pražského stolu nevymyslel. V Thajsku mi například došlo, že mi v práci začíná hodně chybět kreativní práce. Začal jsem zase víc [psát](psani.md). Od té doby si podle toho řídím čas. Pomohlo mi to.
 
@@ -172,4 +172,6 @@ Pracovat na dovolené mi nefunguje. Pasivní plácnutí těla na pláž mi nefun
 
 Funguje mi chaos a fyzická nebo jiná únava. Funguje naladění rodiny na jednu věc. Nejde to bez dobrého systému pro dovolenou a dobrého systému v práci.
 
-Jste taky ten typ, co si na dovolené „jen na chvíli“ otevře pracovní mail? Napište mi to na LinkedIn, X nebo Facebook. Soudy nevynáším. Každému funguje něco jiného a rád si přečtu vaše příběhy.
+Jste taky ten typ, co si na dovolené „jen na chvíli“ otevře pracovní mail? Soudy nevynáším. Každému funguje něco jiného a rád si přečtu vaše příběhy.
+
+<small>*Napište mi to na [LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7488475260229558273/), [Facebook](https://www.facebook.com/machal/posts/pfbid036LSGG7BwdRZaJp7okB9ZChfVu97rpsvRL4ZgBWYao5SNJbiFof8kXiaJsNsN5bA1l), [X](https://x.com/machal/status/2082710365800943867) nebo [Threads](https://www.threads.com/@absolutmachal/post/DbaBBf2jTOC).*</small>

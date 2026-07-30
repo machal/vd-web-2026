@@ -1,0 +1,12 @@
+---
+description: Always link PageSpeed.ONE as https://pagespeed.one/ (no www)
+alwaysApply: true
+---
+
+# PageSpeed.ONE URL
+
+When linking to PageSpeed.ONE in articles or docs, always use:
+
+`https://pagespeed.one/`
+
+Do **not** use `https://www.pagespeed.one/` or other host variants.
