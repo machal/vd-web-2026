@@ -5,6 +5,7 @@ date: 2026-07-29
 published: true
 pairId: vacation-for-workaholics
 author: Martin Michálek
+ogImage: /assets/img/content/dest/dovolena-pro-workoholiky-og.webp
 adaptedFrom:
   title: "Dovolená: průvodce pro workoholiky"
   url: "https://www.vzhurudolu.cz/prirucka/dovolena-pro-workoholiky"
@@ -74,7 +75,7 @@ Thailand proved once and for all that the problem is in how the vacation is set 
 
 Active travel occupies the head differently. I found out I don't even have to exhaust myself physically — though that bit is interesting to nobody but me. It's enough to skip the vacation planning and get myself, and the whole family, into mild stress. You'd be surprised, but it suits all of us. It bonds us, and we have a ton of family stories.
 
-Oh, and in 2023 I also learned something about delegation and the benefits of teamwork. Our people at [PageSpeed.ONE](https://www.pagespeed.one/) handled the whole thing without me. We have pretty good processes, clear team roles, and a system for passing on skills. And our people are great.
+Oh, and in 2023 I also learned something about delegation and the benefits of teamwork. Our people at [PageSpeed.ONE](https://pagespeed.one/) handled the whole thing without me. We have pretty good processes, clear team roles, and a system for passing on skills. And our people are great.
 
 I came back from Thailand still a little rattled by all that healthy stress. But the very next day I was back up to speed. I threw myself into work with enthusiasm.
 
@@ -86,7 +87,7 @@ It's a bit of a paradox, but when I don't work for a few weeks, it helps me at w
 
 The key is the change of context. You all know this. At home or at work, the same things keep grinding through our heads. Prague, colleagues, news, social media… On the road, we usually manage to switch most of it off.
 
-Instead, things jump into your head that normally get no room. Family. Route planning. Taking and editing photos. Evening notes on what we experienced. Or chatty taxi drivers — I love those.
+The original agenda in our heads should be replaced by as different a context as possible. Far more room for family, for example. Route planning. Taking and editing photos. Evening notes on what we experienced. Or chatty taxi drivers — I love those.
 
 From that distance come thoughts I would never produce at my desk in Prague. In Thailand, for example, I realised how much I had started missing creative work. I began [writing](writing.md) more again. I've been managing my time around it ever since. It helped.
 
@@ -167,4 +168,6 @@ Working on vacation doesn't work for me. Passively dropping my body onto a beach
 
 What works is chaos, and physical — or other — tiredness. What works is tuning the whole family to one shared thing. And none of it happens without a good system for the vacation and a good system at work.
 
-Are you also the type who opens work email "just for a minute" on vacation? Tell me about it on LinkedIn, X, or Facebook. No judgement here. Different things work for different people, and I'd love to read your stories.
+Are you also the type who opens work email "just for a minute" on vacation? No judgement here. Different things work for different people, and I'd love to read your stories.
+
+<small>*[Join the discussion on Bluesky](https://bsky.app/profile/did:plc:h5rk3cszdyp54lfem4hfkk7f/post/3mrtrzfrip22p).*</small>
