@@ -95,7 +95,7 @@ Always `.md` paths — never `/blog/...` URLs in markdown.
 | `blog/foo.md` | `[text](../blog/264-ceo-bere-praci.md)` |
 | `prirucka/foo.md` | `[text](vibe-coding.md)` or `[text](../blog/...md)` |
 
-See [content-internal-links-md](../content-internal-links-md/SKILL.md).
+See [vd-editor](../vd-editor/SKILL.md) (interní odkazy).
 
 ## CS front matter: pairId
 

@@ -28,7 +28,7 @@ Při psaní nebo větších úpravách článků v příručce, blogu a podcastu
 
 Pravidlo platí pro odkazy z Markdownu i z HTML (`<a href="…">`). Externí odkazy (https://…) a odkazy na nečlánkové části webu (`/blog`, `/podcast`, `/kurzy`, `/martin` atd.) používej dál normálně – ty se nepřepisují.
 
-Kontrola: před commitem nebo na vyžádání použij skill **content-internal-links-md** (ověří, že interní odkazy na články jsou jen v .md formátu).
+Kontrola: před commitem nebo na vyžádání použij skill **vd-editor** (ověří, že interní odkazy na články jsou jen v .md formátu).
 
 Příručka: relativní cesty s příponou `.md`, např. `[text](psani.md)`. Blog a podcast: na články příručky `[text](../prirucka/nazev.md)`, na blog `[text](../blog/nazev.md)`, na podcast `[text](../podcast/nazev.md)`. Na vlastní sekce (úvodní stránky) lze použít absolutní cesty `/blog`, `/podcast`.
 

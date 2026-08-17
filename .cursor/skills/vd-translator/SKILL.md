@@ -89,7 +89,7 @@ Pokud skript selže (chybějící zdroj na vzhurudolu), doplň obrázek na CS st
 
 ### 8. Zpětné odkazy (draft → schválení)
 
-Stejná pravidla jako [vd-articles-write-edit](../vd-articles-write-edit/SKILL.md) bod 11:
+Stejná pravidla jako [vd-editor](../vd-editor/SKILL.md) (zpětné odkazy):
 
 - **Nejdřív drafty do chatu** (3–5 návrhů: soubor, okolí, navrhovaný text). Zapisuj až po výběru uživatele.
 - Jen **delší** cílové články (cca 1+ A4). Krátké pečlivě rytmizované eseje nech být.
