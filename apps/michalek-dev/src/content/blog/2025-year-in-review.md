@@ -40,7 +40,7 @@ In 2025 my self-perception around making money shifted. I spent [well over twent
 <figcaption markdown="1">*Evolution.*</figcaption>
 </figure>
 
-Being a solo freelancer and being an entrepreneur with your own company and people in it are completely different leagues. The mental and skill-based transformation from the first to the second took me roughly five years.
+Being a solo freelancer and being an entrepreneur with your own company and people in it are completely different leagues. The mental and skill-based [transformation](short-sighted-captain.md) from the first to the second took me roughly five years.
 
 Throughout that time I kept asking myself one question: *What will you do if your business fails, or if it simply stops being fun?*
 

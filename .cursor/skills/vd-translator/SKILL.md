@@ -92,6 +92,7 @@ Pokud skript selže (chybějící zdroj na vzhurudolu), doplň obrázek na CS st
 Stejná pravidla jako [vd-editor](../vd-editor/SKILL.md) (zpětné odkazy):
 
 - **Nejdřív drafty do chatu** (3–5 návrhů: soubor, okolí, navrhovaný text). Zapisuj až po výběru uživatele.
+- **Výjimka — EN zrcadlo:** pokud uživatel v téže session už schválil CS zpětný odkaz a cílový článek má EN pár v [link-map.md](link-map.md), zapiš EN zrcadlo hned (stejné místo v párovém EN článku, odkaz na nový EN slug). Nepiš druhou schvalovací rundu.
 - Jen **delší** cílové články (cca 1+ A4). Krátké pečlivě rytmizované eseje nech být.
 - Jen místa, kde jsi si jistý; jinak návrh s poznámkou „nejisté“ nebo vynech.
 - Žádné umělé „Related:“ / „Související:“ bloky.

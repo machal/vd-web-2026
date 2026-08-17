@@ -23,6 +23,7 @@ Lookup table for **en_only** internal links. When translating, rewrite paired CS
 | css-display | `../prirucka/css-display.md` | `../guide/css-display.md` |
 | ceo-takes-your-job | `../blog/264-ceo-bere-praci.md` | `../blog/ceo-takes-your-job.md` |
 | vacation-for-workaholics | `../prirucka/dovolena-pro-workoholiky.md` | `../guide/vacation-for-workaholics.md` |
+| short-sighted-captain | `../blog/265-kratkozraky-kapitan.md` | `../blog/short-sighted-captain.md` |
 
 ## Canonical URLs (hreflang / adaptedFrom only)
 

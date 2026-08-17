@@ -76,6 +76,12 @@ In `apps/michalek-dev/src/content/guide/vibe-coding.md`, natural sentence:
 …which is why I wrote more about [CEOs shipping code themselves](../blog/ceo-takes-your-job.md).
 ```
 
+Same-folder blog example (mirror of an already-approved CS backlink):
+
+```markdown
+The mental and skill-based [transformation](short-sighted-captain.md) from the first to the second took me roughly five years.
+```
+
 ---
 
 ## Backlink: CS article

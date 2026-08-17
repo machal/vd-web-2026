@@ -2,6 +2,7 @@
 postID: 265
 postTitle: 'Když něco vedete, jste kapitán. Krátkozraký kapitán'
 postUrlId: kratkozraky-kapitan
+pairId: short-sighted-captain
 postDateTime: 2026-08-17
 excerpt: 'Vedete tým, projekt nebo produkt? Začínající kapitán je krátkozraký. Nejdřív neví, že má loď, pak nevidí moře ani díry v trupu. Škola pomůže, ale víc naučí vlastní paluba. Když najdete díry dřív, než jdete ke dnu.'
 postStatus: Published

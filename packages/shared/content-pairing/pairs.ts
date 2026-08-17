@@ -91,4 +91,9 @@ export const CONTENT_PAIRS: ContentPair[] = [
     cs: { site: 'vzhurudolu', collection: 'prirucka', key: 'dovolena-pro-workoholiky' },
     en: { site: 'michalek-dev', collection: 'guide', key: 'vacation-for-workaholics' },
   },
+  {
+    pairId: 'short-sighted-captain',
+    cs: { site: 'vzhurudolu', collection: 'blog', key: '265-kratkozraky-kapitan' },
+    en: { site: 'michalek-dev', collection: 'blog', key: 'short-sighted-captain' },
+  },
 ];
