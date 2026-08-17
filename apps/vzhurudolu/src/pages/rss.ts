@@ -94,7 +94,7 @@ export async function GET(context: APIContext) {
 
   return rss({
     title: 'Vzhůru dolů',
-    description: 'Současný webový frontend.',
+    description: 'Texty Martina Michálka o webu a webdesignu. Mám rád web a píšu o něm už přes 20 let.',
     site: context.site,
     items,
     xmlns: {

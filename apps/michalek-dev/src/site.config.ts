@@ -3,7 +3,7 @@ import type { SiteConfig } from '@vd/shared/types';
 export const siteConfig: SiteConfig = {
   id: 'michalek-dev',
   siteName: 'Martin Michálek',
-  titleSuffix: 'Martin Michálek · Web & Performance',
+  titleSuffix: 'Martin Michálek',
   locale: 'en',
   origin: 'https://michalek.blog',
   gaMeasurementId: 'G-DY5J0ZET7Z',

@@ -71,8 +71,8 @@ export async function GET(context: APIContext) {
   );
 
   return rss({
-    title: 'Martin Michálek · Web & Performance',
-    description: 'Personal tech blog and web performance consulting.',
+    title: 'Martin Michálek – writing about the web',
+    description: 'Writing about the web and web design. I love the web and I’ve been writing about it for over 20 years.',
     site: context.site,
     items,
     xmlns: {
