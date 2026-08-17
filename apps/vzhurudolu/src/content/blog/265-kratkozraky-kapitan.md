@@ -4,7 +4,7 @@ postTitle: 'Když něco vedete, jste kapitán. Krátkozraký kapitán'
 postUrlId: kratkozraky-kapitan
 postDateTime: 2026-08-17
 excerpt: 'Vedete třeba tým, projekt nebo produkt? Škola pomůže, ale víc vás naučí vlastní paluba. Když najdete díry dřív, než jdete ke dnu.'
-postStatus: Draft
+postStatus: Published
 authorID: 1
 sectionID: 1
 category:
@@ -15,6 +15,7 @@ include_rss: true
 category_highlight: true
 og_title: 'Když něco vedete, jste kapitán. Krátkozraký kapitán'
 og_description: 'Vedete třeba tým, projekt nebo produkt? Škola pomůže, ale víc vás naučí vlastní paluba. Když najdete díry dřív, než jdete ke dnu.'
+og_image: /assets/img/content/dest/kratkozraky-kapitan-og.webp
 og_type: article
 ---
 
@@ -29,6 +30,13 @@ Byl jsem 25 let na volné noze, sám sobě pánem. Přechod do vedení je proto 
 Pro nás samouky fungují při učení různé příměry. Ale občas si je musíme přiohnout.
 
 Vezměme třeba kapitána lodi. Kapitán určuje, kam to celé pluje. Musí znát každého člena posádky, jeho klady a zápory. Sehnat na cestu prachy, cestou nějaké vydělat a nakonec skončit v plusu. Musí znát technický stav lodi. A tak dále… Nuda. Tohle pro vás nebude nic nového.
+
+<figure>
+<img src="/assets/img/content/dest/captain.webp" alt="Kapitán na palubě lodi">
+<figcaption markdown="1">
+*Kapitán se usilovně snaží celou tu věc pochopit. Jenže je krátkozraký.*
+</figcaption>
+</figure>
 
 ## Krátkozraký a dezorientovaný kapitán {#kratkozraky-dezorientovany}
 
