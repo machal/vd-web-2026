@@ -3,7 +3,7 @@ postID: 265
 postTitle: 'Když něco vedete, jste kapitán. Krátkozraký kapitán'
 postUrlId: kratkozraky-kapitan
 postDateTime: 2026-08-17
-excerpt: 'Vedete třeba tým, projekt nebo produkt? Škola pomůže, ale víc vás naučí vlastní paluba. Když najdete díry dřív, než jdete ke dnu.'
+excerpt: 'Vedete tým, projekt nebo produkt? Začínající kapitán je krátkozraký. Nejdřív neví, že má loď, pak nevidí moře ani díry v trupu. Škola pomůže, ale víc naučí vlastní paluba. Když najdete díry dřív, než jdete ke dnu.'
 postStatus: Published
 authorID: 1
 sectionID: 1
@@ -14,7 +14,7 @@ no_ads: true
 include_rss: true
 category_highlight: true
 og_title: 'Když něco vedete, jste kapitán. Krátkozraký kapitán'
-og_description: 'Vedete třeba tým, projekt nebo produkt? Škola pomůže, ale víc vás naučí vlastní paluba. Když najdete díry dřív, než jdete ke dnu.'
+og_description: 'Vedete tým, projekt nebo produkt? Začínající kapitán je krátkozraký. Nejdřív neví, že má loď, pak nevidí moře ani díry v trupu. Škola pomůže, ale víc naučí vlastní paluba. Když najdete díry dřív, než jdete ke dnu.'
 og_image: /assets/img/content/dest/kratkozraky-kapitan-og.webp
 og_type: article
 ---
@@ -25,7 +25,7 @@ Kapitánem je každý, kdo něco vede. Projekt, tým, produkt nebo firmu.
 
 Roky se sžívám s vedením týmů. Pochopit tu roli, naučit se ji.
 
-Byl jsem 25 let na volné noze, sám sobě pánem. Přechod do vedení je proto docela bolestivý. Ale zároveň je to velká zábava a příležitost hodně se toho naučit.
+Byl jsem 25 let na [volné noze](192-volna-noha-20.md), sám sobě pánem. [Přechod do vedení](261-rok-2025.md) je proto docela bolestivý. Ale zároveň je to velká zábava a příležitost hodně se toho naučit.
 
 Pro nás samouky fungují při učení různé příměry. Ale občas si je musíme přiohnout.
 
