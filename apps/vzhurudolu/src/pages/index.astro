@@ -6,34 +6,17 @@ import Footer from '@vd/shared/components/Footer.astro';
 import ArticleListItem from '../components/ArticleListItem.astro';
 import AuthorProfileBox from '@vd/shared/components/AuthorProfileBox.astro';
 import TopicHubPrimary from '@vd/shared/components/TopicHubPrimary.astro';
-import { getCollection } from 'astro:content';
-import { isPublished } from '../utils/is-published';
+import {
+  getHomepageFeed,
+  getHomepagePageSlice,
+  getHomepageTotalPages,
+} from '../utils/homepage-feed';
 import { Fragment } from 'astro/jsx-runtime';
 
-// Načtení článků z Markdown souborů - všechny tři entity
-const blogPosts = await getCollection('blog', isPublished);
-const podcasts = await getCollection('podcast', isPublished);
-const priruckaPosts = await getCollection('prirucka', isPublished);
-
-// Spojit všechny články a seřadit podle data od nejnovějšího
-const allContent = [...blogPosts, ...podcasts, ...priruckaPosts]
-  .filter(post => {
-    if (post.collection === 'prirucka' && post.data.title === post.data.id) return false;
-    return true;
-  })
-  .sort((a, b) => {
-    const dateA = a.data.date || new Date(0);
-    const dateB = b.data.date || new Date(0);
-    return dateB.getTime() - dateA.getTime();
-  });
-
-const currentPage = 1;
-const postsPerPage = 5; // Homepage zobrazí jen 5 článků
-const startIndex = (currentPage - 1) * postsPerPage;
-const endIndex = startIndex + postsPerPage;
-const paginatedPosts = allContent.slice(startIndex, endIndex);
+const allContent = await getHomepageFeed();
+const paginatedPosts = getHomepagePageSlice(allContent, 1);
 const latestPost = paginatedPosts[0];
-const totalPages = Math.ceil(allContent.length / postsPerPage);
+const totalPages = getHomepageTotalPages(allContent.length);
 
 function formatDate(date: Date): string {
   return new Intl.DateTimeFormat('cs-CZ', {

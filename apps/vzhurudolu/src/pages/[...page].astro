@@ -4,51 +4,35 @@ import BaseLayout from '@vd/shared/layouts/BaseLayout.astro';
 import Header from '@vd/shared/components/Header.astro';
 import Footer from '@vd/shared/components/Footer.astro';
 import ArticleListItem from '../components/ArticleListItem.astro';
-import { getCollection } from 'astro:content';
-import { isPublished } from '../utils/is-published';
+import {
+  getHomepageFeed,
+  getHomepagePageSlice,
+  getHomepageTotalPages,
+} from '../utils/homepage-feed';
 import { Fragment } from 'astro/jsx-runtime';
 
 export async function getStaticPaths() {
-  const blogPosts = await getCollection('blog', isPublished);
-  const podcasts = await getCollection('podcast', isPublished);
-  const priruckaPosts = await getCollection('prirucka', isPublished);
-  
-  const allContent = [...blogPosts, ...podcasts, ...priruckaPosts]
-    .filter(post => {
-      if (post.collection === 'prirucka' && post.data.title === post.data.id) return false;
-      return true;
-    })
-    .sort((a, b) => {
-      const dateA = a.data.date || new Date(0);
-      const dateB = b.data.date || new Date(0);
-      return dateB.getTime() - dateA.getTime();
-    });
-  
-  const postsPerPage = 10;
-  const totalPages = Math.ceil(allContent.length / postsPerPage);
-  
-  // Vytvořit statické cesty pro všechny stránky
-  // Rest parametr vrací pole segmentů, takže pro `/p=2` bude page = ["p=2"]
-  return Array.from({ length: totalPages }, (_, i) => {
-    const pageNum = i + 1;
+  const allContent = await getHomepageFeed();
+  const totalPages = getHomepageTotalPages(allContent.length);
+
+  if (totalPages <= 1) return [];
+
+  // Page 1 is `/`; generate only `/p=2`, `/p=3`, …
+  return Array.from({ length: totalPages - 1 }, (_, i) => {
+    const pageNum = i + 2;
     return {
       params: { page: `p=${pageNum}` },
       props: {
         currentPage: pageNum,
         totalPages,
         allContent,
-        postsPerPage,
       },
     };
   });
 }
 
-const { page } = Astro.params;
-const { currentPage, totalPages, allContent, postsPerPage } = Astro.props;
-
-const startIndex = (currentPage - 1) * postsPerPage;
-const endIndex = startIndex + postsPerPage;
-const paginatedPosts = allContent.slice(startIndex, endIndex);
+const { currentPage, totalPages, allContent } = Astro.props;
+const paginatedPosts = getHomepagePageSlice(allContent, currentPage);
 
 function formatDate(date: Date): string {
   return new Intl.DateTimeFormat('cs-CZ', {
