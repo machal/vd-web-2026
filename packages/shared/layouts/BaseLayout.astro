@@ -59,8 +59,11 @@ const finalOgImageArray = Array.isArray(finalOgImage) ? finalOgImage : [finalOgI
 const finalCanonicalUrl = canonicalUrl || ogUrl;
 const finalOgTitle = ogTitle || displayTitle;
 const finalOgDescription = ogDescription || description;
-const gaMeasurementId =
-  config.gaMeasurementId || import.meta.env.PUBLIC_GA_MEASUREMENT_ID;
+const vercelEnv = process.env.VERCEL_ENV;
+const allowAnalytics = vercelEnv ? vercelEnv === 'production' : Boolean(import.meta.env.PROD);
+const gaMeasurementId = allowAnalytics
+  ? config.gaMeasurementId || import.meta.env.PUBLIC_GA_MEASUREMENT_ID
+  : undefined;
 const cssVersion = import.meta.env.PUBLIC_ASSET_VERSION || 'dev';
 
 const globalStylesheets = [

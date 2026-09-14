@@ -59,6 +59,12 @@ assert_grep "$CS_DIST/index.html" 'href="/martin"' "CS author link"
 assert_not_grep "$CS_DIST/index.html" 'kurzy-top' "CS homepage ebook aside removed"
 assert_not_grep "$CS_DIST/index.html" 'promoTop-heading' "CS homepage ebook promo heading removed"
 
+echo "Phase 14 v1.1 gate: GA4 on both homepages..."
+assert_grep "$CS_DIST/index.html" 'G-FSNQ4SLBFL' "CS measurement ID present"
+assert_grep "$CS_DIST/index.html" 'dataLayer.push(arguments)' "CS gtag uses Arguments"
+assert_grep "$EN_DIST/index.html" 'G-DY5J0ZET7Z' "EN measurement ID present"
+assert_grep "$EN_DIST/index.html" 'dataLayer.push(arguments)' "EN gtag uses Arguments"
+
 echo "Phase 14 v1.1 gate: EN homepage CS parity..."
 assert_file "$EN_DIST/index.html" "EN homepage"
 assert_grep "$EN_DIST/index.html" 'id="author-profile"' "EN author profile box"
