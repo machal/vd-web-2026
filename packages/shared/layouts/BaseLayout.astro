@@ -23,6 +23,7 @@ const CS_DEFAULT: SiteConfig = {
   titleSuffix: '',
   locale: 'cs',
   origin: 'https://www.vzhurudolu.cz',
+  gaMeasurementId: 'G-FSNQ4SLBFL',
   navItems: [],
   showLogoSymbol: true,
   footerMode: 'full',
@@ -167,7 +168,7 @@ const globalStylesheets = [
 
     <link rel="author" href="/humans.txt" />
 
-    {!isCs && gaMeasurementId && <DeferredAnalytics measurementId={gaMeasurementId} />}
+    {gaMeasurementId && <DeferredAnalytics measurementId={gaMeasurementId} />}
   </head>
 
   <body id="body" class={bodyClass}>

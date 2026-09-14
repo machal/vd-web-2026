@@ -76,6 +76,8 @@ assert_grep "$EN_DIST/index.html" 'href="/cookies"' "footer cookies link"
 
 echo "Phase 8 launch polish gate: async GA (no cookie banner — owner decision)..."
 assert_grep "$EN_DIST/index.html" 'googletagmanager.com/gtag/js' "GA4 script present"
+assert_grep "$EN_DIST/index.html" 'G-DY5J0ZET7Z' "EN measurement ID present"
+assert_grep "$EN_DIST/index.html" 'dataLayer.push(arguments)' "gtag uses Arguments (not rest Array)"
 assert_grep "$EN_DIST/index.html" 'async' "GA loaded async"
 
 echo "Phase 8 launch polish gate: RSS content..."

@@ -8,11 +8,12 @@ const { measurementId = import.meta.env.PUBLIC_GA_MEASUREMENT_ID } = Astro.props
 
 {measurementId && (
   <>
-    <script async src={`https://www.googletagmanager.com/gtag/js?id=${measurementId}`}></script>
-    <script define:vars={{ measurementId }}>
+    {/* is:inline: keep gtag shim unbundled. Must push `arguments`, not a rest Array — gtag.js ignores Arrays. */}
+    <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${measurementId}`}></script>
+    <script is:inline define:vars={{ measurementId }}>
       window.dataLayer = window.dataLayer || [];
-      function gtag(...args) {
-        window.dataLayer.push(args);
+      function gtag() {
+        window.dataLayer.push(arguments);
       }
       window.gtag = gtag;
       gtag('js', new Date());
