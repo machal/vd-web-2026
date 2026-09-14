@@ -5,14 +5,16 @@ set -euo pipefail
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$ROOT"
 
-echo "Phase 8 launch polish gate: building English app..."
+echo "Phase 8 launch polish gate: building English and Czech apps..."
 if [[ "${VERIFY_SKIP_BUILD:-}" != "1" ]]; then
   npm run build -w @vd/michalek-dev
+  npm run build -w @vd/vzhurudolu
 else
   echo "Phase 8 launch polish gate: skipping build (VERIFY_SKIP_BUILD=1)"
 fi
 
 EN_DIST="apps/michalek-dev/dist"
+CS_DIST="apps/vzhurudolu/dist"
 
 assert_file() {
   local file="$1"
@@ -75,8 +77,13 @@ assert_grep "$EN_DIST/index.html" 'href="/privacy"' "footer privacy link"
 assert_grep "$EN_DIST/index.html" 'href="/cookies"' "footer cookies link"
 
 echo "Phase 8 launch polish gate: async GA (no cookie banner — owner decision)..."
-assert_grep "$EN_DIST/index.html" 'googletagmanager.com/gtag/js' "GA4 script present"
-assert_grep "$EN_DIST/index.html" 'async' "GA loaded async"
+assert_grep "$EN_DIST/index.html" 'googletagmanager.com/gtag/js' "EN GA4 script present"
+assert_grep "$EN_DIST/index.html" 'G-DY5J0ZET7Z' "EN measurement ID present"
+assert_grep "$EN_DIST/index.html" 'dataLayer.push(arguments)' "EN gtag uses Arguments (not rest Array)"
+assert_grep "$EN_DIST/index.html" 'async' "EN GA loaded async"
+assert_grep "$CS_DIST/index.html" 'googletagmanager.com/gtag/js' "CS GA4 script present"
+assert_grep "$CS_DIST/index.html" 'G-FSNQ4SLBFL' "CS measurement ID present"
+assert_grep "$CS_DIST/index.html" 'dataLayer.push(arguments)' "CS gtag uses Arguments (not rest Array)"
 
 echo "Phase 8 launch polish gate: RSS content..."
 assert_grep "$EN_DIST/rss" 'WebP images' "RSS includes pilot article"
