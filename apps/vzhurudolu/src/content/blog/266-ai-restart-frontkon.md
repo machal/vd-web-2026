@@ -24,13 +24,13 @@ og_type: article
 
 Softwarová vývojařina prožívá krizi. Na jedné straně přinesl agentický vývoj ohromné zefektivnění a daleko zábavnější možnosti práce.
 
-Na straně druhé vidíme úplně jiný přístup k vývoji, znásobení psychické zátěže, „vpád barbarů“, tedy nových, dříve vývojem nepolíbených lidí do našich repozitářů.
+Na straně druhé vidíme úplně jiný přístup k vývoji, znásobení psychické zátěže a „vpád barbarů“, tedy nových, dříve vývojem nepolíbených lidí do vývojářských repozitářů.
 
 No a taky tlak na pracovní místa, propouštění a úvahy o tom, zda vývojářská práce dává vůbec ještě smysl.
 
 Je to mazec, vážení.
 
-Když jsme začali připravovat program pro letošní FrontKon, přemýšleli jsme, jak to uchopit. Už není potřeba přemýšlet, zda AI používat. Řešíme, jak je používat.
+Když jsme začali připravovat program pro [letošní FrontKon](https://www.frontkon.tech/cs), přemýšleli jsme, jak to uchopit. Už není potřeba přemýšlet, zda AI používat. Řešíme, jak je používat.
 
 Vím, že vývojáři budou psát stále méně kódu, jestli vůbec nějaký.
 
@@ -52,7 +52,7 @@ Z toho nám vyplývají následující otázky:
 <figure>
 <img src="/assets/img/content/dest/ai-restart-frontkon-01.webp" alt="FrontKon 2025">
 <figcaption markdown="1">
-*Obrázek: FrontKon 2025. Letos chceme v debatě o tom, jak AI mění práci vývojářů, pokračovat přímo na [FrontKonu 2026](https://www.frontkon.tech/cs/events/frontkon-26/program).*
+*Obrázek: FrontKon 2025. Letos chceme v debatě o tom, jak AI mění práci vývojářů, pokračovat.*
 </figcaption>
 </figure>
 
@@ -82,7 +82,7 @@ Otázky zní:
 <figure>
 <img src="/assets/img/content/dest/ai-restart-frontkon-02.webp" alt="FrontKon 2025">
 <figcaption markdown="1">
-*Obrázek: FrontKon 2025. Tady na lidi žádný pull request nečeká. Snad.*
+*Obrázek: Tady na lidi žádný pull request od AI nečeká. Snad.*
 </figcaption>
 </figure>
 
@@ -104,7 +104,7 @@ Takže ty důležité z otázek zní:
 <figure>
 <img src="/assets/img/content/dest/ai-restart-frontkon-03.webp" alt="FrontKon 2025">
 <figcaption markdown="1">
-*Obrázek: FrontKon 2025. Řídit plný sál lidí možná bude brzy jednodušší než uhlídat deset agentů.*
+*Obrázek: Řídit konferenci plnou lidí možná bude brzy jednodušší než uhlídat deset agentů.*
 </figcaption>
 </figure>
 
@@ -127,7 +127,7 @@ Otázky tedy zní:
 <figure>
 <img src="/assets/img/content/dest/ai-restart-frontkon-04.webp" alt="FrontKon 2025">
 <figcaption markdown="1">
-*Obrázek: FrontKon 2025. Zatím není jisté, zda se publikum učí s AI, bez AI, nebo navzdory ní.*
+*Obrázek: Zatím není jisté, zda se publikum učí s AI, bez AI, nebo navzdory ní.*
 </figcaption>
 </figure>
 
@@ -158,7 +158,7 @@ Otázky zní:
 <figure>
 <img src="/assets/img/content/dest/ai-restart-frontkon-05.webp" alt="FrontKon 2025">
 <figcaption markdown="1">
-*Obrázek: FrontKon 2025. Vývojáři? Manažeři agentů? Vibe-barbaři?*
+*Obrázek: Vývojáři? Manažeři agentů? Vibe-barbaři?*
 </figcaption>
 </figure>
 
