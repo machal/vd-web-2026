@@ -10,7 +10,13 @@ Při psaní nebo větších úpravách článků v příručce, blogu a podcastu
 2. **Vnitřní odkazy na vlastní články**  
    Odkazuj na důležité články (zobrazené na homepage, s `category_highlight`) a na články z posledních zhruba dvou let. Odkazy vkládej přirozeně do textu tam, kde to dává smysl.
 
-3. **Zpětné provázání**  
+3. **Text odkazu (anchor)**  
+   Odkazuj na **celý název** věci, na kterou míříš: produkt, průzkum, článek, nástroj, koncept.  
+   **Správně:** `[JetBrains Developer Ecosystem 2026](url)`, `Simon Willison ve svém [článku o vibe-codingu a agentic engineeringu](url) píše…`  
+   **Špatně:** `[JetBrains](url) Developer Ecosystem 2026` (rozsekaný název), `[Simon Willison](url) ve svém článku…` (odkaz na jméno, když URL je článek).  
+   **Ne** meta odkazy typu „Psal jsem o tom už dříve“, „více v článku“, „podívejte se sem“ — prolinkuj významný název/koncept v běžné větě (např. `[CEO v kódu](…)`).
+
+4. **Zpětné provázání**  
    Při novém článku **nejdřív drafty do chatu** (3–5 návrhů: soubor, okolí citace, navrhovaný text). Zapisuj až po výběru uživatele — **nikdy** neplň kvótu „3–5 odkazů“ zápisem naslepo.  
    Cílové články: jen **delší** texty (cca 1+ A4). Krátké pečlivě rytmizované eseje neupravuj.  
    Jen místa, kde téma **už v textu sedí** (stejný problém, stejná situace). Slabý nebo natažený vztah = odkaz **nepřidávej**.  

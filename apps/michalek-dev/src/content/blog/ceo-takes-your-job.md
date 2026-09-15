@@ -110,7 +110,7 @@ And that opportunity is what the AI revolution opened — it commoditises and th
 
 ## The product is done in less time than briefing and management would take… {#time-vs-management}
 
-Agentic development is far enough along today that when done carefully (and the CEO is a former developer), it works very well. These are exactly the reasons code is opening up to people outside engineering:
+Agentic development is far enough along today that when done carefully (and the CEO is a former developer), it works very well. These are exactly the reasons code is opening up to [people outside engineering](ai-restart.md):
 
 * Prototyping is available to almost everyone now, and nearly for free.
 * Some parts of applications have become cheaper to build.
@@ -120,7 +120,7 @@ Agentic development is far enough along today that when done carefully (and the 
 
 Sure, developers — I hear you. Badly set processes, or non-technical people ignoring them, can bring disaster:
 
-* Bypassing process (PRs without code review).
+* Bypassing process (PRs without [code review](ai-restart.md#reading-all-the-code)).
 * Changes without architectural knowledge that fight the architecture.
 * Touching areas where a dangerous edit can slip through.
 

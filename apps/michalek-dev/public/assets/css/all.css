@@ -867,6 +867,7 @@ figure {
 figure > table,
 figure > img,
 figure > picture {
+  display: block;
   margin-bottom: 0;
 }
 
@@ -1595,7 +1596,8 @@ figcaption a:hover, figcaption a:focus, figcaption a:active {
 }
 
 figcaption p {
-  margin-top: 1rem;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .be-in-touch {
