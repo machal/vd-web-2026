@@ -30,8 +30,8 @@ function formatDate(date: Date | undefined): string {
 
 <div class:list={['page-subhead', { 'page-subhead--split': hasActions }]}>
   <p class="mb-0 page-subhead__meta">
-    <a class="page-subhead__author" href={AUTHOR_PROFILE_PATH}
-      ><span class="avatar avatar--tiny avatar--inline mr-05">
+    <a class="page-subhead__author" href={AUTHOR_PROFILE_PATH}>
+      <span class="avatar avatar--tiny avatar--inline mr-05">
         <img
           src={AUTHOR_PROFILE_PHOTO}
           alt="Martin Michálek"
@@ -39,12 +39,10 @@ function formatDate(date: Date | undefined): string {
           height="50"
           class="avatar__image avatar__image--profile"
         />
-      </span>{author}</a
-    >{date && (
-      <span class="page-subhead__date"
-        ><span class="page-subhead__sep" aria-hidden="true">–</span>{formatDate(date)}</span
-      >
-    )}
+      </span>
+      <span>{author}</span>
+    </a>
+    {date && <span class="page-subhead__date">{formatDate(date)}</span>}
   </p>
   {hasActions && (
     <div class="page-subhead__actions">
@@ -93,13 +91,22 @@ function formatDate(date: Date | undefined): string {
 
   .page-subhead :global(.page-subhead__meta) {
     gap: 0;
+    /* Pretty markup inserts whitespace text nodes; they become flex items. */
+    font-size: 0;
   }
 
   .page-subhead :global(.page-subhead__author) {
     margin-right: 0;
+    font-size: 0;
   }
 
-  .page-subhead__sep {
+  .page-subhead :global(.page-subhead__author) > :global(*),
+  .page-subhead__date {
+    font-size: 0.9rem;
+  }
+
+  .page-subhead__date::before {
+    content: '–';
     margin-inline: 0.35em;
   }
 
