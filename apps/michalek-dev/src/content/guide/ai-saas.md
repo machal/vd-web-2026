@@ -59,7 +59,7 @@ But at the same time, I see that people aren't behaving rationally. Investors le
 </figcaption>
 </figure>
 
-The reasoning goes like this: software development is undergoing a tectonic shift. [Vibe coding](../guide/vibe-coding.md) has opened up software development to the masses.
+The reasoning goes like this: software development is undergoing a tectonic shift. [Vibe coding](../guide/vibe-coding.md) has opened up software development [to the masses](../blog/ai-restart.md).
 
 Every other [CEO is getting into your code](../blog/ceo-takes-your-job.md) now.
 

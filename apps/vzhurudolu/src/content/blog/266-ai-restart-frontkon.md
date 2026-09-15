@@ -2,8 +2,9 @@
 postID: 266
 postTitle: 'AI restart. Pět z otázek, které musí dořešit vývojářská komunita'
 postUrlId: ai-restart-frontkon
+pairId: ai-restart
 postDateTime: 2026-09-14
-excerpt: 'Softwarová vývojařina prožívá krizi: agenti zrychlili práci, ale přinesli psychickou zátěž, nové lidi v repozitářích a tlak na pracovní místa. Už není otázka, zda AI používat. Řešíme, jak je používat — a pět otázek, které musí komunita dořešit.'
+excerpt: 'Softwarová vývojařina prožívá krizi: agenti zrychlili práci, ale přinesli psychickou zátěž, nové lidi v repozitářích a tlak na pracovní místa. Už není otázka, zda AI používat. Řešíme, jak ji používat — a pět otázek, které musí komunita dořešit.'
 postStatus: Published
 authorID: 1
 sectionID: 1
@@ -15,7 +16,7 @@ no_ads: true
 include_rss: true
 category_highlight: true
 og_title: 'AI restart. Pět z otázek, které musí dořešit vývojářská komunita'
-og_description: 'Softwarová vývojařina prožívá krizi: agenti zrychlili práci, ale přinesli psychickou zátěž, nové lidi v repozitářích a tlak na pracovní místa. Už není otázka, zda AI používat. Řešíme, jak je používat — a pět otázek, které musí komunita dořešit.'
+og_description: 'Softwarová vývojařina prožívá krizi: agenti zrychlili práci, ale přinesli psychickou zátěž, nové lidi v repozitářích a tlak na pracovní místa. Už není otázka, zda AI používat. Řešíme, jak ji používat — a pět otázek, které musí komunita dořešit.'
 og_image: /assets/img/content/dest/ai-restart-frontkon-og.webp
 og_type: article
 ---
@@ -30,7 +31,7 @@ No a taky tlak na pracovní místa, propouštění a úvahy o tom, zda vývojá�
 
 Je to mazec, vážení.
 
-Když jsme začali připravovat program pro [letošní FrontKon](https://www.frontkon.tech/cs), přemýšleli jsme, jak to uchopit. Už není potřeba přemýšlet, zda AI používat. Řešíme, jak je používat.
+Když jsme začali připravovat program pro [letošní FrontKon](https://www.frontkon.tech/cs), přemýšleli jsme, jak to uchopit. Už není potřeba váhat, zda AI používat. Řešíme, jak ji používat.
 
 Vím, že vývojáři budou psát stále méně kódu, jestli vůbec nějaký.
 
@@ -42,7 +43,7 @@ Je jich opravdu hodně, ale ty nejdůležitější z nich se pokouším v tomhle
 
 V průzkumu [JetBrains Developer Ecosystem 2026](https://blog.jetbrains.com/research/2026/08/how-much-code-do-developers-really-let-agents-write) mezi více než 15 000 profesionálními vývojáři uvedla více než polovina lidí, že ručně píše méně než 20 % svého kódu. Každý pátý už nenapsal bez pomoci AI vůbec nic. To bylo v první polovině letošního roku.
 
-JetBrains u svých dat schválně používá slovo „coders“. Měří totiž způsob vzniku kódu, nikoliv celý vývoj. Výsledek může navrhnout agent, ale někdo ještě musí vybrat problém, pochopit uživatele, rozhodnout o architektuře a dostat software bezpečně do provozu. Ať to nepadá a je to rychlé a bezpečné.
+JetBrains u svých dat schválně používá slovo „coders“. Měří totiž to, jak kód vzniká, nikoliv celý vývoj. Výsledek může navrhnout agent, ale někdo ještě musí vybrat problém, pochopit uživatele, rozhodnout o architektuře a dostat software bezpečně do provozu. Ať to nepadá a je to rychlé a bezpečné.
 
 Z toho nám vyplývají následující otázky:
 
@@ -50,9 +51,9 @@ Z toho nám vyplývají následující otázky:
 - Není čas přestat zaměňovat psaní kódu s tvorbou softwaru, když mluvíme o vývojářích?
 
 <figure>
-<img src="/assets/img/content/dest/ai-restart-frontkon-01.webp" alt="FrontKon 2025">
+<img src="/assets/img/content/dest/ai-restart-frontkon-01.webp" alt="Publikum na FrontKonu 2025">
 <figcaption markdown="1">
-*Obrázek: FrontKon 2025. Letos chceme v debatě o tom, jak AI mění práci vývojářů, pokračovat.*
+*Obrázek: Letos chceme v debatě o tom, jak AI mění práci vývojářů, pokračovat.*
 </figcaption>
 </figure>
 
@@ -60,7 +61,7 @@ Z toho nám vyplývají následující otázky:
 
 Průzkum [Sonar State of Code 2026](https://www.sonarsource.com/blog/state-of-code-developer-survey-report-the-current-reality-of-ai-coding/) došel k podobným závěrům jako ten předchozí. AI vytvořila nebo pomohla vytvořit 42 % commitovaného kódu. Zároveň ale 38 % respondentů uvedlo, že kontrola AI kódu vyžaduje více práce než kontrola kódu od kolegů.
 
-Tak jasně, známe to všichni. AI generovaný slop v pull requestech. Nová otravná povinná četba. Jenže… je to vlastně povinné?
+Tak jasně, známe to všichni. AI-generovaný slop v pull requestech. Nová otravná povinná četba. Jenže… je to vlastně povinné?
 
 Podle stejného průzkumu AI kódu plně nedůvěřuje 96 % vývojářů, jenže před commitem jej pokaždé ověřuje jen 48 %.
 
@@ -70,7 +71,7 @@ Addy Osmani to označuje jako [comprehension debt](https://addyosmani.com/blog/c
 
 V experimentu [Anthropic](https://www.anthropic.com/research/AI-assistance-coding-skills) dosáhli lidé používající AI podobné rychlosti jako kontrolní skupina, ale v testu porozumění získali 50 % místo 67 %.
 
-Data Faros AI od 22 000 vývojářů ve 4 000 týmech podle [Addyho Osmaniho](https://addyosmani.com/blog/agentic-code-review/) ukazují, že s vysokým využitím AI vzrostla mediánová délka review o 441,5 %. Ano, čtyřikrát. Podíl PR sloučených bez kontroly přitom stoupl o 31,3 %. Ano, o třetinu. Taky vám proběhl takový lehký mrazíček po zádech?
+Data Faros AI od 22 000 vývojářů ve 4 000 týmech podle [Addyho Osmaniho](https://addyosmani.com/blog/agentic-code-review/) ukazují, že s vysokým využitím AI vzrostla mediánová délka review o 441,5 %. Ano, zhruba pětkrát. Podíl PR sloučených bez kontroly přitom stoupl o 31,3 %. Ano, o třetinu. Taky vám proběhl takový lehký mrazíček po zádech?
 
 Otázky zní:
 
@@ -80,7 +81,7 @@ Otázky zní:
 - Co když nám AI neodstranila úzké místo vývoje, ale jen jej přesunula o jeden krok dál?
 
 <figure>
-<img src="/assets/img/content/dest/ai-restart-frontkon-02.webp" alt="FrontKon 2025">
+<img src="/assets/img/content/dest/ai-restart-frontkon-02.webp" alt="Lidé venku na FrontKonu 2025">
 <figcaption markdown="1">
 *Obrázek: Tady na lidi žádný pull request od AI nečeká. Snad.*
 </figcaption>
@@ -102,7 +103,7 @@ Takže ty důležité z otázek zní:
 - Je deset agentů desetinásobná produktivita, nebo jen deset nových míst, kam musíme přesouvat pozornost?
 
 <figure>
-<img src="/assets/img/content/dest/ai-restart-frontkon-03.webp" alt="FrontKon 2025">
+<img src="/assets/img/content/dest/ai-restart-frontkon-03.webp" alt="Plný sál na FrontKonu 2025">
 <figcaption markdown="1">
 *Obrázek: Řídit konferenci plnou lidí možná bude brzy jednodušší než uhlídat deset agentů.*
 </figcaption>
@@ -114,7 +115,7 @@ Addy Osmani mluví o cognitive outsourcing (takže delegování myšlení) a [co
 
 Bláznivé, ale reálné. My všichni, kteří LLMka používáme, jsme na hraně propasti hloupnutí. Nechtějte vědět, co to dělá s dnešními teenagery. Mám je doma. Nechte si to vyprávět někde v temném koutě na FrontKonu.
 
-Ale zpět k vývojářům. Ve třech experimentech s 1 372 účastníky lidé přijali chybnou odpověď AI. V 73 % případů přijali jako správnou odpověď, i když se model mýlil. Přítomnost AI v procesu uvažování přitom zvýšila jejich sebejistotu.
+Ale zpět k vývojářům. Ve třech experimentech s 1 372 účastníky lidé v 73 % případů přijali chybnou odpověď AI jako správnou, i když se model mýlil. Přítomnost AI v procesu uvažování přitom zvýšila jejich sebejistotu.
 
 Experiment Anthropic sledoval 52 vývojářů, kteří se učili novou knihovnu. Největší propad u skupiny používající AI nastal v debuggingu, menší také v pochopení konceptů a čtení kódu. Hůře dopadli hlavně lidé, kteří AI pasivně delegovali práci. Lépe ti, kteří se ptali na principy a souvislosti. Byli šťouraví.
 
@@ -125,7 +126,7 @@ Otázky tedy zní:
 - Blbneme?
 
 <figure>
-<img src="/assets/img/content/dest/ai-restart-frontkon-04.webp" alt="FrontKon 2025">
+<img src="/assets/img/content/dest/ai-restart-frontkon-04.webp" alt="Publikum při přednášce na FrontKonu 2025">
 <figcaption markdown="1">
 *Obrázek: Zatím není jisté, zda se publikum učí s AI, bez AI, nebo navzdory ní.*
 </figcaption>
@@ -135,11 +136,11 @@ Otázky tedy zní:
 
 Sám jsem aktivní vývojářskou kariéru ukončil už dávno. Dávno předtím, než mnozí ze čtenářek nebo čtenářů začali.
 
-Dnes jsem webperf expert, produktový člověk, vedu týmy, dělám byznys. Přesto díky agentům znovu zasahuju přímo do kódu [PageSpeed.ONE](https://pagespeed.one/). Jako [CEO v kódu](264-ceo-bere-praci.md) někdy vytvořím hotovou fíčuru rychleji, než bych připravil zadání.
+Dnes jsem webperf expert, produktový člověk, vedu týmy, dělám byznys. Přesto díky agentům znovu zasahuju přímo do kódu [PageSpeed.ONE](https://pagespeed.one/). Jako [CEO, který bere práci vývojářům](264-ceo-bere-praci.md), někdy vytvořím hotovou fíčuru rychleji, než bych připravil zadání.
 
 Osmani rozlišuje práci, kterou lze poslat agentům na pozadí, a práci vyžadující těsnou spolupráci člověka. Architektura, nejasné požadavky a produktové nuance podle něj stále potřebují zkušený úsudek. Zároveň ale někdo musí řídit celý proud agentní práce.
 
-Známý vývojář, spolutvůrce frameworku Django a dlouholetý komentátor vývoje kolem AI Simon Willison ve svém [článku o vibe-codingu a agentic engineeringu](https://simonwillison.net/2026/May/6/vibe-coding-and-agentic-engineering/) píše, že potřebné dovednosti nevypadají jako kurz promptování.
+Známý vývojář, spolutvůrce frameworku Django a dlouholetý komentátor vývoje kolem AI, Simon Willison, ve svém [článku o vibe-codingu a agentic engineeringu](https://simonwillison.net/2026/May/6/vibe-coding-and-agentic-engineering/) píše, že potřebné dovednosti nevypadají jako kurz promptování.
 
 Však posuďte sami: plánování, testování, dokumentace, verzování, manuální QA, výzkum, odhadování a schopnost poznat, co lze bezpečně delegovat.
 
@@ -151,12 +152,12 @@ Otázky zní:
 
 - Kdo všechno se dnes vlastně může stát vývojářem?
 - Co to udělá s lidmi, kteří si vývoj vybrali právě kvůli klidu, soustředění a jasně ohraničeným úkolům?
-- Budeme se ještě učit především syntax a frameworky, nebo spíš úsudek, komunikaci a práci s nejistotou?
+- Budeme se ještě učit především syntaxi a frameworky, nebo spíš úsudek, komunikaci a práci s nejistotou?
 - Vznikne jedna nová role vývojáře, nebo se profese rozdělí na široké orchestrátory a hluboké technické specialisty?
 - Přijdou „vibe-barbaři“ a nahradí „vývojáře“?
 
 <figure>
-<img src="/assets/img/content/dest/ai-restart-frontkon-05.webp" alt="FrontKon 2025">
+<img src="/assets/img/content/dest/ai-restart-frontkon-05.webp" alt="Účastníci FrontKonu 2025 v přestávce">
 <figcaption markdown="1">
 *Obrázek: Vývojáři? Manažeři agentů? Vibe-barbaři?*
 </figcaption>
@@ -168,8 +169,8 @@ Mohl bych pokračovat, trošku jsem se rozjel. Pardon, mám toho plnou hlavu.
 
 Můj názor je, že vývojář jako role nezmizí. Docela jistě ale změní patro v procesu vývoje softwaru. Zcela určitě změní dovednosti. Možná do vývoje přijdou noví lidé a někteří z těch současných, kteří se jen hrabou v kódu, prostě budou muset odejít.
 
-Vývojáři budou méně dělníci kódu, začnou držet více zodpovědnosti. Slovo „zodpovědnost“ je klíč. AIčko vám zodpovědnost nepřebere. [Za produkt](../prirucka/ai-saas.md), za web, za appku. Tu stále budou v lidských organizacích držet lidé.
+Vývojáři budou méně dělníci kódu, začnou držet více zodpovědnosti. Slovo „zodpovědnost“ je klíč. AIčko vám zodpovědnost nepřebere. [Zodpovědnost za produkt](../prirucka/ai-saas.md), za web, za appku. Tu stále budou v lidských organizacích držet lidé.
 
-Vývojařina nikdy takovou krizí neprocházela. Je to velké. Možná trochu děsivé, ale zároveň zajímavé a poskytující ohromné možnosti, pro ty s hlavou otevřenou.
+Vývojařina nikdy takovou krizí neprocházela. Je to velké. Možná trochu děsivé, ale zároveň zajímavé a poskytující ohromné možnosti pro ty s hlavou otevřenou.
 
-<small>*Pojďte o tom diskutovat: LinkedIn, Facebook, X nebo přímo na [FrontKonu](https://www.frontkon.tech/cs/events/frontkon-26/program).*</small>
+<small>*Pojďte o tom diskutovat na [LinkedInu](https://www.linkedin.com/posts/martinmichalek_softwarov%C3%BD-v%C3%BDvoj-je-v-ai-krizi-krize-activity-7505220544078835712-7qmb), na [X](https://x.com/machal/status/2099453209613930816) nebo přímo na [FrontKonu](https://www.frontkon.tech/cs/events/frontkon-26/program).*</small>
