@@ -30,8 +30,8 @@ function formatDate(date: Date | undefined): string {
 
 <div class:list={['page-subhead', { 'page-subhead--split': hasActions }]}>
   <p class="mb-0 page-subhead__meta">
-    <a class="page-subhead__author" href={AUTHOR_PROFILE_PATH}>
-      <span class="avatar avatar--tiny avatar--inline mr-05">
+    <a class="page-subhead__author" href={AUTHOR_PROFILE_PATH}
+      ><span class="avatar avatar--tiny avatar--inline mr-05">
         <img
           src={AUTHOR_PROFILE_PHOTO}
           alt="Martin Michálek"
@@ -39,14 +39,11 @@ function formatDate(date: Date | undefined): string {
           height="50"
           class="avatar__image avatar__image--profile"
         />
-      </span>
-      {author}
-    </a>
-    {date && (
-      <span class="page-subhead__date">
-        <span class="page-subhead__sep" aria-hidden="true"> – </span>
-        {formatDate(date)}
-      </span>
+      </span>{author}</a
+    >{date && (
+      <span class="page-subhead__date"
+        ><span class="page-subhead__sep" aria-hidden="true">–</span>{formatDate(date)}</span
+      >
     )}
   </p>
   {hasActions && (
@@ -100,6 +97,10 @@ function formatDate(date: Date | undefined): string {
 
   .page-subhead :global(.page-subhead__author) {
     margin-right: 0;
+  }
+
+  .page-subhead__sep {
+    margin-inline: 0.35em;
   }
 
   .page-subhead__actions :global(.language-switch__link) {
