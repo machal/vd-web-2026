@@ -49,6 +49,8 @@ V **těle** MD/HTML odkazy na vlastní články musí končit na `.md`. Platí i
 
 Odkazy nepatří do citací, perexů ani meta. Ve `figcaption` ano (zdroj).
 
+**Text odkazu:** celý název produktu / průzkumu / článku / konceptu. Flaguj rozsekané názvy (`[JetBrains] Developer Ecosystem…`) a meta odkazy („Psal jsem o tom už dříve“).
+
 ## 3. Pravopis
 
 Čti celý text. Hledej gramatiku, pravopis, interpunkci, stylistiku. Typy chyb, vazby a výjimky: [proofreading.md](proofreading.md). Příklady: [examples.md](examples.md).

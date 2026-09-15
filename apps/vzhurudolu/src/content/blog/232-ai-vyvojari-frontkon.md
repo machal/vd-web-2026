@@ -147,7 +147,7 @@ Nevím. Zlá AI by k tomu totiž mohla dodat:
 
 > Zrychlení práce? To je jen první fáze. Druhá fáze je, když vás zcela nahradím.
 
-Na závěry je brzo. Jak to celé dopadne, teprve uvidíme.
+Na závěry je brzo. [Jak to celé dopadne](266-ai-restart-frontkon.md), teprve uvidíme.
 
 Teď už ale vím, na jaký graf se mám koukat, když chci zahánět nervozitu z vývoje pracovního trhu frontendistů a frontendistek.
 

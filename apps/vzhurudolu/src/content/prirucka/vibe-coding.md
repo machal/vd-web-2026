@@ -109,7 +109,7 @@ Tohle je klíčový rozdíl mezi vibe-codingem a vibe-engineeringem. Vibe-coding
 * **Level 4** – interní nástroje
 * **Level 5** – produkční aplikace
 
-Čím vyšší level, tím víc potřebujete inženýrský přístup. Na Level 0–2 stačí vibe-coding. Od úrovně 4 a výš už musíte být vibe-inženýr.
+Čím vyšší level, tím víc potřebujete inženýrský přístup. Na Level 0–2 stačí vibe-coding. Od úrovně 4 a výš už musíte být [vibe-inženýr](../blog/266-ai-restart-frontkon.md#manazeri-agentu).
 
 Pro vývojáře skvělá zpráva. Pro laiky? Nepusťte se rovnou do přepsání vaší appky, která vám vydělává peníze. Prosím, nedělejte to.
 
