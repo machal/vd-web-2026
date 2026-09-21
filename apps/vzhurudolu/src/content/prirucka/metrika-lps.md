@@ -138,6 +138,8 @@ Je to trochu matoucí, že? A to není zdaleka konec zmatkům, které LPS mezi l
 
 Jedno číslo je výhodné, protože je jednoduché, zároveň je zrádné, protože pro správné vyhodnocení musíte znát kontext.
 
+A taky proto, že se dá poměrně snadno ošálit. Jak na to jdou některé optimalizační pluginy, popisuju v článku [Odkládání JavaScriptu není optimalizace, ale přesouvání problému](../blog/267-odkladani-javascriptu.md).
+
 ### Chcete mít 100 bodů ze sta? A proč? {#zavadejici-100}
 
 Dává například smysl usilovat o 100 bodů? U většiny webů nedává. Už jsem zodpověděl o dva odstavce výše, ale pro jistotu dodávám citaci z [příručky ke skóringu](https://web.dev/performance-scoring/) od autorů z Google:

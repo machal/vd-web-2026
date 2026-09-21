@@ -169,6 +169,8 @@ Zaměřit byste se tedy měli na optimalizaci metriky [TBT (Total Blocking Time)
 
 Obecně samozřejmě pomáhá mít ve stránce co nejméně JS, který něco provádí: odstraňovat nevyužitý kód, správně bundlovat, odkládat stahování a spouštění kódu, který v daném uživatelském kontextu není potřeba. Dávat pozor na [třetí strany](third-party.md).
 
+Pozor ale na plošné odkládání. Pluginy, které odloží veškerý JavaScript až na první interakci uživatele, metriku INP spíš zhorší, protože se všechen nahromaděný kód spustí právě ve chvíli prvního kliknutí. Píšu o tom v článku [Odkládání JavaScriptu není optimalizace](../blog/267-odkladani-javascriptu.md).
+
 Důležitá v případě INP může být také [volba JS frameworku](https://web.dev/inp-in-frameworks/). Např. weby běžící na Next.js na mobilu splňují metriku jen z 20 %. Lidé z Googlu sice deklarují, že s autory těchto knihoven budou pracovat na zlepšení, ale tipuji, že některé autory webů běžících na těchto frameworcích čekají zajímavé časy.
 
 Více o [optimalizaci INP](https://web.dev/optimize-inp/) najdete v materiálech přímo od Googlu. Praktické tipy k řešení dlouhých úloh jsme sepsali v článku [INP a setTimeout](https://pagespeed.one/znalosti/inp-a-settimeout) a podrobněji v nápovědě k [optimalizaci INP](https://pagespeed.one/znalosti/optimalizace-inp) na PageSpeed.ONE

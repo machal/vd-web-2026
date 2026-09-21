@@ -112,4 +112,6 @@ Nástroj Lighthouse s ohledem na optimalizaci Total Blocking Time radí:
 - Omezte dobu provádění JavaScriptu („Reduce JavaScript execution time“).
 - Minimalizuje práci v hlavním podprocesu („Minimize main thread work“).
 
+A jedna past nakonec. TBT umí z měření úplně zmizet, když web odloží veškerý JavaScript až na interakci uživatele. Tím se ale nic neopravilo, jen schovalo. Rozebírám to v článku [Odkládání JavaScriptu není optimalizace](../blog/267-odkladani-javascriptu.md).
+
 <!-- AdSnippet -->
