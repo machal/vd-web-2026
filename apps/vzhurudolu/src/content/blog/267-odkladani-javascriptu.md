@@ -2,6 +2,7 @@
 postID: 267
 postTitle: 'Odkládání JavaScriptu není optimalizace, ale přesouvání problému'
 postUrlId: odkladani-javascriptu
+pairId: delay-all-javascript
 postDateTime: 2026-09-21
 excerpt: 'Řada zrychlovacích pluginů nabízí zatržítko, které odloží spuštění veškerého JavaScriptu až na první interakci uživatele. Lighthouse skóre vyskočí o desítky bodů, ale pro návštěvníky se nezlepší nic.'
 postStatus: Published
