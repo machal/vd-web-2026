@@ -43,6 +43,12 @@ figcaption {
   font-style: italic;
 }
 
+// markdown="1" wraps caption text in <p>; zero its margins so spacing
+// comes only from figcaption (margin-top/bottom 0.5rem). Otherwise the
+// p's margin-top stacks above the text and margin-bottom collapses
+// outside the figure, leaving a large gap under the image and almost
+// none above the dotted border.
 figcaption p {
-  margin-top: 1rem;
+  margin-top: 0;
+  margin-bottom: 0;
 }

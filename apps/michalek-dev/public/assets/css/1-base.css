@@ -861,6 +861,7 @@ figure {
 figure > table,
 figure > img,
 figure > picture {
+  display: block;
   margin-bottom: 0;
 }
 

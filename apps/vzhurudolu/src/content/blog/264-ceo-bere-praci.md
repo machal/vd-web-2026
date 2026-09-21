@@ -114,7 +114,7 @@ No a tou možností se stala AI revoluce, která komoditizuje a tedy brutálně 
 
 ## Produkt mám hotový v čase, který je nižší než čas na zadání a management… {#cas-vs-management}
 
-Agentní vývoj je dneska tak daleko, že když se to udělá opatrně (a CEO je bývalý vývojář), funguje to velmi dobře. Tohle jsou přesně důvody, proč se kód začíná otevírat i lidem mimo engineering:
+Agentní vývoj je dneska tak daleko, že když se to udělá opatrně (a CEO je bývalý vývojář), funguje to velmi dobře. Tohle jsou přesně důvody, proč se kód začíná otevírat i [lidem mimo engineering](266-ai-restart-frontkon.md):
 
 * Prototypování je dneska dostupné prakticky všem a skoro zadarmo.  
 * Zlevnila se realizace některých částí aplikací.  
@@ -124,7 +124,7 @@ Agentní vývoj je dneska tak daleko, že když se to udělá opatrně (a CEO je
 
 Ale jasně, vývojáři, slyším vás. Špatně nastavené procesy nebo jejich nedodržování těmito netechnickými lidmi může přinést katastrofu:
 
-* Obcházení procesů (PR bez code review).  
+* Obcházení procesů (PR bez [code review](266-ai-restart-frontkon.md#musime-cist-kod)).  
 * Změny bez znalosti architektury, které jdou proti ní.  
 * Sahání na místa, kde může vzniknout nebezpečná úprava.
 

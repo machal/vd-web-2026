@@ -40,14 +40,9 @@ function formatDate(date: Date | undefined): string {
           class="avatar__image avatar__image--profile"
         />
       </span>
-      {author}
+      <span>{author}</span>
     </a>
-    {date && (
-      <span class="page-subhead__date">
-        <span class="page-subhead__sep" aria-hidden="true"> – </span>
-        {formatDate(date)}
-      </span>
-    )}
+    {date && <span class="page-subhead__date">{formatDate(date)}</span>}
   </p>
   {hasActions && (
     <div class="page-subhead__actions">
@@ -96,10 +91,23 @@ function formatDate(date: Date | undefined): string {
 
   .page-subhead :global(.page-subhead__meta) {
     gap: 0;
+    /* Pretty markup inserts whitespace text nodes; they become flex items. */
+    font-size: 0;
   }
 
   .page-subhead :global(.page-subhead__author) {
     margin-right: 0;
+    font-size: 0;
+  }
+
+  .page-subhead :global(.page-subhead__author) > :global(*),
+  .page-subhead__date {
+    font-size: 0.9rem;
+  }
+
+  .page-subhead__date::before {
+    content: '–';
+    margin-inline: 0.35em;
   }
 
   .page-subhead__actions :global(.language-switch__link) {

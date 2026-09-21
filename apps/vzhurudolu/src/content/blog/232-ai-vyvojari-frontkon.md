@@ -88,7 +88,7 @@ Co tedy budou frontendisti a frontendistky dělat, když jiní do rukou dostanou
 
 Kašlu na to, psát kód nemá cenu.
 
-Budou ještě vývojáři k něčemu? Čtu, že zaměstnance StackOverflow ovládla panika, protože po zveřejnění ChatGPT [začal prudce padat počet shlédnutých stránek](https://observablehq.com/@ayhanfuat/the-fall-of-stack-overflow) tohoto kdysi nepostradatelného webu:
+[Budou ještě vývojáři k něčemu](266-ai-restart-frontkon.md)? Čtu, že zaměstnance StackOverflow ovládla panika, protože po zveřejnění ChatGPT [začal prudce padat počet shlédnutých stránek](https://observablehq.com/@ayhanfuat/the-fall-of-stack-overflow) tohoto kdysi nepostradatelného webu:
 
 <figure>
 <img src="https://res.cloudinary.com/vzhurudolu-cz/image/upload/v1697440561/vzhurudolu-blog/ai-stack-overflow_acgmtj.jpg" width="1600" height="900" alt="StackOverflow snížil traffic o jednu třetinu">
@@ -147,7 +147,7 @@ Nevím. Zlá AI by k tomu totiž mohla dodat:
 
 > Zrychlení práce? To je jen první fáze. Druhá fáze je, když vás zcela nahradím.
 
-Na závěry je brzo. Jak to celé dopadne, teprve uvidíme.
+Na závěry je brzo. [Jak to celé dopadne](266-ai-restart-frontkon.md), teprve uvidíme.
 
 Teď už ale vím, na jaký graf se mám koukat, když chci zahánět nervozitu z vývoje pracovního trhu frontendistů a frontendistek.
 

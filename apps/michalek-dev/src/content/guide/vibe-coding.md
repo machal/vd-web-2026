@@ -105,7 +105,7 @@ This is the key difference between vibe coding and vibe engineering. You can man
 * **Level 4** — internal tools
 * **Level 5** — production applications
 
-The higher the level, the more you need an engineering approach. Levels 0–2 are fine with vibe coding. From level 4 up, you have to be a vibe engineer.
+The higher the level, the more you need an engineering approach. Levels 0–2 are fine with vibe coding. From level 4 up, you have to be a [vibe engineer](../blog/ai-restart.md#managers-of-agents).
 
 Great news for developers. For non-coders? Don't jump straight into rewriting the app that pays your bills. Please, don't do it.
 

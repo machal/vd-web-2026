@@ -96,4 +96,9 @@ export const CONTENT_PAIRS: ContentPair[] = [
     cs: { site: 'vzhurudolu', collection: 'blog', key: '265-kratkozraky-kapitan' },
     en: { site: 'michalek-dev', collection: 'blog', key: 'short-sighted-captain' },
   },
+  {
+    pairId: 'ai-restart',
+    cs: { site: 'vzhurudolu', collection: 'blog', key: '266-ai-restart-frontkon' },
+    en: { site: 'michalek-dev', collection: 'blog', key: 'ai-restart' },
+  },
 ];

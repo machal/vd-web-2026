@@ -58,10 +58,15 @@ export function createRehypeContentLinks(
 
       function processNode(node: any): void {
         if (node.type === 'element' && node.tagName === 'a' && node.properties?.href) {
-          const href = node.properties.href as string;
+          const rawHref = node.properties.href as string;
+          // Odkaz může nést fragment nebo query (`foo.md#anchor`) — přepisujeme jen cestu.
+          const suffixIndex = rawHref.search(/[#?]/);
+          const href = suffixIndex === -1 ? rawHref : rawHref.slice(0, suffixIndex);
+          const suffix = suffixIndex === -1 ? '' : rawHref.slice(suffixIndex);
 
           if (!href.endsWith('.md')) return;
-          if (href.startsWith('http') || href.startsWith('//')) return;
+          // Test na schéma, ne na prefix „http“ — jinak vypadne `http-2.md`, `https.md` apod.
+          if (/^[a-z][a-z0-9+.-]*:/i.test(href) || href.startsWith('//')) return;
 
           let newHref: string | null = null;
 
@@ -92,7 +97,7 @@ export function createRehypeContentLinks(
           }
 
           if (newHref) {
-            node.properties.href = newHref;
+            node.properties.href = `${newHref}${suffix}`;
           }
         }
 

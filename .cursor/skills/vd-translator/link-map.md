@@ -24,6 +24,7 @@ Lookup table for **en_only** internal links. When translating, rewrite paired CS
 | ceo-takes-your-job | `../blog/264-ceo-bere-praci.md` | `../blog/ceo-takes-your-job.md` |
 | vacation-for-workaholics | `../prirucka/dovolena-pro-workoholiky.md` | `../guide/vacation-for-workaholics.md` |
 | short-sighted-captain | `../blog/265-kratkozraky-kapitan.md` | `../blog/short-sighted-captain.md` |
+| ai-restart | `../blog/266-ai-restart-frontkon.md` | `../blog/ai-restart.md` |
 
 ## Canonical URLs (hreflang / adaptedFrom only)
 

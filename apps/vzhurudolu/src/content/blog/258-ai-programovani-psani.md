@@ -92,7 +92,7 @@ _Vidím zářnou budoucnost, ve které létající auta vozí programátory na s
 
 Tohle jsem napsal na různé [sociální](https://www.linkedin.com/posts/martinmichalek_ai-webdev-activity-7313147396157321217-c1_d?utm_source=share\&utm_medium=member_desktop\&rcm=ACoAAAIYHJYBZSP9siKk6AdjAqLpr14snue9t7g) [sítě](https://x.com/machal/status/1907381161241792865). Někde to mělo až stovky tisíc shlédnutí a stovky reakcí. Tak si pojďme říct, proč to není tak jednoduché.
 
-Platí tady to samé jako u psaní. Psaní kódu, které jistě AI velmi ovlivní, není celá vývojařina.
+Platí tady to samé jako u psaní. Psaní kódu, které jistě AI velmi ovlivní, [není celá vývojařina](266-ai-restart-frontkon.md).
 
 Pokud si myslíte, že programování je jen o psaní kódu, o programování toho moc nevíte.
 

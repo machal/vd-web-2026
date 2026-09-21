@@ -61,7 +61,7 @@ Ale zároveň vidím, že se lidé nechovají racionálně. Investoři už vůbe
 </figcaption>
 </figure>
 
-Vychází to z toho, že softwarový vývoj prochází tektonickou změnou. [Vibe-coding](vibe-coding.md) otevřel vývoj softwaru širokým masám.
+Vychází to z toho, že softwarový vývoj prochází tektonickou změnou. [Vibe-coding](vibe-coding.md) otevřel vývoj softwaru [širokým masám](../blog/266-ai-restart-frontkon.md).
 
 Každý druhý [CEO leze do kódu](../blog/264-ceo-bere-praci.md).
 
