@@ -265,6 +265,8 @@ Komponenty, které jsou v úvodním vykreslení schované a používají se až 
 * _Posun stránky_  
 Komponenty, které používáte v patičce (například vkládané komponenty od Facebooku), můžete stahovat, až na ně uživatel posune stránku. Využijte [Intersection Observer](intersection-observer.md).
 
+Dejte si pozor na rozdíl mezi odložením jedné konkrétní komponenty a odložením veškerého JavaScriptu na webu. To druhé nabízí řada zrychlovacích pluginů a je to spíš [podfuk na Lighthouse skóre než optimalizace](../blog/267-odkladani-javascriptu.md).
+
 A teď ten příklad s [Disqus](https://disqus.com/): Na Vzhůru dolů tuhle komentářovou službu vcelku spokojeně využívám už léta.
 
 Jenže – Disqus se s weby rozhodně nepáře. Dokáže na pozadí stáhnout klidně kolem 2,5 MB, aniž by přitom bylo jisté, že uživatel chce komentáře využít. Zároveň se Disqus na Vzhůru dolů používá až po rozkliknutí komentářové sekce, takže vůbec nemusí zatěžovat všechny uživatele.

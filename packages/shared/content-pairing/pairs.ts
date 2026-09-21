@@ -101,4 +101,9 @@ export const CONTENT_PAIRS: ContentPair[] = [
     cs: { site: 'vzhurudolu', collection: 'blog', key: '266-ai-restart-frontkon' },
     en: { site: 'michalek-dev', collection: 'blog', key: 'ai-restart' },
   },
+  {
+    pairId: 'delay-all-javascript',
+    cs: { site: 'vzhurudolu', collection: 'blog', key: '267-odkladani-javascriptu' },
+    en: { site: 'michalek-dev', collection: 'blog', key: 'delay-all-javascript' },
+  },
 ];
