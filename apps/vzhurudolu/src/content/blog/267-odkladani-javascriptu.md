@@ -22,17 +22,17 @@ og_type: article
 
 # Odkládání JavaScriptu není optimalizace, ale přesouvání problému
 
-Tohle mě štve. Velké množství dnešních „zrychlovacích“ pluginů má jedno zatržítko, které umí zvednout Lighthouse skóre mrknutím oka. 
+Tohle mě štve. Velké množství dnešních „zrychlovacích“ pluginů má jedno zatržítko, které umí zvednout Lighthouse skóre mrknutím oka.
 
-Odloží totiž spuštění veškerého JavaScriptu až na první interakci uživatele, takže na scroll, kliknutí nebo dotek.
+Odloží totiž spuštění veškerého JavaScriptu až na první interakci uživatele, tedy na scroll, kliknutí nebo dotek.
 
-Jenže na reálnou rychlost u reálných uživatelů to vliv nemá. Naopak to může rychlost zhoršit nebo poškodit analytiku. 
+Jenže na reálnou rychlost u reálných uživatelů to vliv nemá. Naopak to může rychlost zhoršit nebo poškodit analytiku.
 
 Je to takový malý podvůdek, který celý obor pořád tiše akceptuje.
 
 Tohle je rozšířená verze části článku [Falešně rychlé weby: jak se hackuje Lighthouse skóre](https://pagespeed.one/blog/lighthouse-score-hacking), který jsem vydal na blogu PageSpeed.ONE. Tady se dívám jen na tuhle jednu techniku a hlavně na konkrétní pluginy, které ji prodávají.
 
-Proč odkládat načtení všech JS, když v PageSpeed.ONE jsme zoptimalizovali stovky webů a tuhle techniku jsme klientům nikdy nedoporučili? 
+Proč odkládat načtení všech JS, když jsme v PageSpeed.ONE zoptimalizovali stovky webů a tuhle techniku jsme klientům nikdy nedoporučili?
 
 ## Proč je odložení JS špatně, ale na Lighthouse funguje tak spolehlivě? {#proc-funguje}
 
@@ -40,7 +40,7 @@ Proč odkládat načtení všech JS, když v PageSpeed.ONE jsme zoptimalizovali 
 
 Odložený JavaScript tedy v testu nikdy neproběhne. Z měření tím zmizí [Total Blocking Time](../prirucka/metrika-tbt.md), tedy metrika s největší váhou v Lighthouse skóre, celých třicet procent. Zlepší se také [rychlost načtení (LCP)](../prirucka/metrika-lcp.md), protože prohlížeč nemá co spouštět.
 
-Skóre vyskočí nahoru, přitom se na web nezrychlil. JavaScripty se přesunuly na později, často do nejhoršího možného momentu.
+Skóre vyskočí nahoru, přitom se web nezrychlil. JavaScripty se přesunuly na později, často do nejhoršího možného momentu.
 
 <figure>
 <img src="/assets/img/content/dest/odkladani-javascriptu.webp" alt="Srovnání běžného načtení JavaScriptu a načtení odloženého až na interakci uživatele">
@@ -49,7 +49,7 @@ Skóre vyskočí nahoru, přitom se na web nezrychlil. JavaScripty se přesunuly
 </figcaption>
 </figure>
 
-V tomhle názoru nejsem sám. Barry Pollard, který se rychlosti webu věnuje v Googlu, tenhle vzorec pojmenoval už dříve: 
+V tomhle názoru nejsem sám. Barry Pollard, který se rychlosti webu věnuje v Googlu, tenhle vzorec pojmenoval už dříve:
 
 > „A common pattern I see is to delay ALL JS until the user interacts with a page: Great for Lighthouse scores! Often terrible for users.“
 >
@@ -87,7 +87,7 @@ Prošli jsme nejznámější optimalizační pluginy pro WordPress a takzvané o
 
 </div>
 
-Poslední sloupec potřebuje vysvětlení. „Částečně“ znamená, že dokumentace varuje jen před tím, že se vám může rozbít web, ale o dopadu na Lighthouse skóre a na uživatele nepíše nic. 
+Poslední sloupec potřebuje vysvětlení. „Částečně“ znamená, že dokumentace varuje jen před tím, že se vám může rozbít web, ale o dopadu na Lighthouse skóre a na uživatele nepíše nic.
 
 Jediný plugin, SpeedyCache, upozorňuje i na to, že se vám rozbije analytika.
 
@@ -167,11 +167,11 @@ A nakonec se vždycky podívejte na [data od reálných uživatelů](../prirucka
 
 ## Jedno zatržítko nezastane inženýrskou práci {#zaver}
 
-Rozhodnout, co se má načíst kdy a v jakém pořadí, je inženýrská práce, která vyžaduje znalost konkrétního webu. 
+Rozhodnout, co se má načíst kdy a v jakém pořadí, je inženýrská práce, která vyžaduje znalost konkrétního webu.
 
 Jedno zatržítko, které odloží veškerý JavaScript, tuhle práci nezastane.
 
-Jak to vypadá, když se tímhle směrem vydá celý obor, popisujeme v článku [Falešně rychlé weby: jak se hackuje Lighthouse skóre](https://pagespeed.one/blog/lighthouse-score-hacking). 
+Jak to vypadá, když se tímhle směrem vydá celý obor, popisujeme v článku [Falešně rychlé weby: jak se hackuje Lighthouse skóre](https://pagespeed.one/blog/lighthouse-score-hacking).
 
 Najdete tam i naše pátrání kolem pluginu Website Speedy, u kterého jsme po vypnutí viděli propad skóre z 95 na 60 bodů, aniž by se u uživatelů změřila jakákoliv změna rychlosti.
 
