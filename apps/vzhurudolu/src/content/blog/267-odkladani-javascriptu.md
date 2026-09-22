@@ -27,13 +27,20 @@ Tohle mě štve. Velké množství dnešních „zrychlovacích“ pluginů má 
 
 Odloží totiž spuštění veškerého JavaScriptu až na první interakci uživatele, tedy na scroll, kliknutí nebo dotek.
 
+<figure>
+<img src="/assets/img/content/dest/odkladani-javascriptu-spatne.webp" alt="Zatržené nastavení Delay JavaScript execution s červeným razítkem This is wrong!">
+<figcaption markdown="1">
+*Tohle je špatně.*
+</figcaption>
+</figure>
+
 Jenže na reálnou rychlost u reálných uživatelů to vliv nemá. Naopak to může rychlost zhoršit nebo poškodit analytiku.
 
 Je to takový malý podvůdek, který celý obor pořád tiše akceptuje.
 
 Tohle je rozšířená verze části článku [Falešně rychlé weby: jak se hackuje Lighthouse skóre](https://pagespeed.one/blog/lighthouse-score-hacking), který jsem vydal na blogu PageSpeed.ONE. Tady se dívám jen na tuhle jednu techniku a hlavně na konkrétní pluginy, které ji prodávají.
 
-Proč odkládat načtení všech JS, když jsme v PageSpeed.ONE zoptimalizovali stovky webů a tuhle techniku jsme klientům nikdy nedoporučili?
+Odkládání všech JS zní jako fikaný tah, tak proč jsme v PageSpeed.ONE zoptimalizovali stovky webů a tuhle techniku jsme klientům nikdy nedoporučili?
 
 ## Proč je odložení JS špatně, ale na Lighthouse funguje tak spolehlivě? {#proc-funguje}
 
@@ -78,7 +85,7 @@ Prošli jsme nejznámější optimalizační pluginy pro WordPress a takzvané o
 | Plugin | Nastavení | Výchozí stav | Varuje? |
 |:-------|:----------|:-------------|:--------|
 | [WP Rocket](https://docs.wp-rocket.me/article/1349-delay-JavaScript-execution) | Delay JavaScript Execution | vypnuto | ne |
-| [LiteSpeed Cache](https://docs.litespeedtech.com/lscache/lscwp/general/) | Guest Optimization | **zapnuto** | ano |
+| [LiteSpeed Cache](https://docs.litespeedtech.com/lscache/lscwp/pageopt/) | Load JS Deferred → Delayed | vypnuto | ano |
 | [WP-Optimize](https://teamupdraft.com/blog/wp-optimize-release-v4-0-0/) | Delay JS | vypnuto | částečně |
 | [Perfmatters](https://perfmatters.io/docs/delay-javascript/) | Delay all scripts | vypnuto | ne |
 | [NitroPack](https://nitropack.io/) | Delay non-critical resources | zapnuto v Ludicrous | částečně |
@@ -94,11 +101,11 @@ Jediný plugin, SpeedyCache, upozorňuje i na to, že se vám rozbije analytika.
 
 Dva řádky si pak zaslouží komentář.
 
-**LiteSpeed Cache je ten největší případ.** Má přes sedm milionů instalací a funkci Guest Optimization zapnutou ve výchozím stavu. Navíc má [otevřenou chybu](https://github.com/litespeedtech/lscache_wp/issues/997), kdy Guest Optimization přebije to, co jste si nastavili u odkládání JavaScriptu, a ignoruje váš seznam výjimek. Autor hlášení dodává, že na hostingu Hostinger je tohle nastavení výchozí. Hodně majitelů webů tedy tuhle techniku používá, aniž by ji kdy zapnuli.
+**LiteSpeed Cache má dvě cesty ke stejnému výsledku.** Přímá je Load JS Deferred nastavené na Delayed: skripty počkají na interakci, ve výchozím stavu je to vypnuté a [dokumentace](https://docs.litespeedtech.com/lscache/lscwp/pageopt/) na rizika upozorňuje. Druhá je [Guest Optimization](https://docs.litespeedtech.com/lscache/lscwp/general/) — balík maximálních optimalizací pro první návštěvu a boty. Guest Mode, bez kterého Guest Optimization nic nedělá, startuje vypnutý, takže čerstvá instalace tuhle techniku sama nepouští. Jakmile ale Guest Mode zapnete (nebo vám ho zapne hostingový preset), Guest Optimization umí [tiše vynutit režim Delayed](https://github.com/litespeedtech/lscache_wp/issues/997), i když máte Load JS Deferred na OFF. Autor hlášení tvrdí, že na Hostingeru je to výchozí; Hostinger to ve své dokumentaci nepotvrzuje, takže to berte jako signál, ne jako fakt.
 
 **WP Rocket změnil pravidla hry ve verzi 3.9.** Do té doby jste museli vyjmenovat skripty, které se mají odložit. Od 3.9 se odloží všechny a vy máte vyjmenovat výjimky. Pro nové uživatele zůstává seznam výjimek prázdný, takže jakmile funkci zapnete, odkládá se úplně vše. Buďme fér: riziko zhoršení INP WP Rocket zmiňuje, ale na jiné, mnohem méně navštěvované stránce nápovědy. Na stránce samotné funkce o něm není ani slovo.
 
-Dobrým ukazatelem poctivosti je **timeout**. Pluginy, které vynucují časový limit, skript nakonec spustí i bez interakce, takže ho Lighthouse uvidí. Produkty, které timeout nemají nebo dovolí nastavit nulu, čekají na interakci navždy. A přesně ty v testu zmizí.
+Dobrým ukazatelem poctivosti je **timeout**. Pluginy, které vynucují časový limit, skript nakonec spustí i bez interakce, takže ho Lighthouse uvidí. Produkty, které timeout nemají nebo dovolí nastavit nulu, čekají na interakci navždy. A přesně to trošku zapáchá optimalizací jen pro test.
 
 ## Výrobci to vědí. Někteří to i napsali {#vyrobci}
 

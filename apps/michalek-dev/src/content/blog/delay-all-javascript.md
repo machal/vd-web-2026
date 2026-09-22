@@ -21,13 +21,20 @@ This one annoys me. A lot of today's "speed up your site" plugins ship a single 
 
 What it does is delay the execution of _all_ JavaScript until the first user interaction — a scroll, a click, a tap.
 
+<figure>
+<img src="/assets/img/content/dest/odkladani-javascriptu-spatne.webp" alt="Checked Delay JavaScript execution setting stamped with This is wrong! in red">
+<figcaption markdown="1">
+*This is wrong.*
+</figcaption>
+</figure>
+
 For real users, though, nothing gets faster. It can make things slower, and it can quietly break your analytics.
 
 It is a small con trick that our whole industry keeps tacitly accepting.
 
 This is an expanded version of one section from [Fake fast websites: how Lighthouse scores get hacked](https://pagespeed.one/en/blog/lighthouse-score-hacking), which I published on the PageSpeed.ONE blog. Here I look at this one technique only, and mostly at the specific plugins that sell it.
 
-So why delay all your JavaScript, when at PageSpeed.ONE we have optimised hundreds of sites and never once recommended it to a client?
+Delaying all JavaScript sounds like a clever move — so why have we at PageSpeed.ONE optimised hundreds of sites and never once recommended this technique to a client?
 
 ## Why it is wrong, yet works on Lighthouse so reliably {#why-it-works}
 
@@ -72,7 +79,7 @@ We went through the best-known WordPress optimisation plugins and the so-called 
 | Plugin | Setting | Default | Warns? |
 |:-------|:--------|:--------|:-------|
 | [WP Rocket](https://docs.wp-rocket.me/article/1349-delay-JavaScript-execution) | Delay JavaScript Execution | off | no |
-| [LiteSpeed Cache](https://docs.litespeedtech.com/lscache/lscwp/general/) | Guest Optimization | **on** | yes |
+| [LiteSpeed Cache](https://docs.litespeedtech.com/lscache/lscwp/pageopt/) | Load JS Deferred → Delayed | off | yes |
 | [WP-Optimize](https://teamupdraft.com/blog/wp-optimize-release-v4-0-0/) | Delay JS | off | partly |
 | [Perfmatters](https://perfmatters.io/docs/delay-javascript/) | Delay all scripts | off | no |
 | [NitroPack](https://nitropack.io/) | Delay non-critical resources | on in Ludicrous | partly |
@@ -88,11 +95,11 @@ Only one plugin, SpeedyCache, also warns you that your analytics will break.
 
 Two rows deserve a comment.
 
-**LiteSpeed Cache is the big one.** It has over seven million installations and ships Guest Optimization enabled by default. On top of that it has an [open bug](https://github.com/litespeedtech/lscache_wp/issues/997) where Guest Optimization overrides whatever you configured for JavaScript delay and ignores your exclusion list. The reporter adds that on Hostinger this setting is the default. So a lot of site owners are running this technique without ever having turned it on.
+**LiteSpeed Cache has two paths to the same result.** The direct one is Load JS Deferred set to Delayed: scripts wait for interaction, it is off by default, and the [docs](https://docs.litespeedtech.com/lscache/lscwp/pageopt/) warn about the risks. The other is [Guest Optimization](https://docs.litespeedtech.com/lscache/lscwp/general/) — a bundle of maximum optimisations for first visits and bots. Guest Mode, without which Guest Optimization does nothing, starts off, so a fresh install does not ship this technique on its own. But once Guest Mode is on (or a hosting preset turns it on for you), Guest Optimization can [silently force Delayed mode](https://github.com/litespeedtech/lscache_wp/issues/997), even if Load JS Deferred is set to OFF. The bug report claims that is the default on Hostinger; Hostinger does not confirm it in its own docs, so treat that as a signal, not a fact.
 
 **WP Rocket changed the rules in version 3.9.** Until then you had to list the scripts you wanted delayed. From 3.9 on, everything is delayed and you list the exceptions instead. For new users that exception list starts empty, so the moment you enable the feature, absolutely everything gets delayed. To be fair: WP Rocket does mention the INP risk, but on a different and far less visited help page. On the page for the feature itself, there is not a word about it.
 
-A good honesty indicator is the **timeout**. Plugins that enforce a time limit will eventually run the script even without interaction, so Lighthouse sees it. Products with no timeout, or that let you set it to zero, wait for an interaction forever. Those are exactly the ones that vanish from the test.
+A good honesty indicator is the **timeout**. Plugins that enforce a time limit will eventually run the script even without interaction, so Lighthouse sees it. Products with no timeout, or that let you set it to zero, wait for an interaction forever. That smells a bit like optimisation for the test alone.
 
 ## The vendors know. Some even wrote it down {#vendors}
 
