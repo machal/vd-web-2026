@@ -177,4 +177,4 @@ What it looks like when a whole industry heads in this direction is what we desc
 
 You will also find our investigation of the Website Speedy plugin there. After switching it off we watched the score drop from 95 to 60 points, without a single measurable change in user-perceived speed.
 
-<small>*Have you run into this checkbox on a client site or your own? How did you deal with it? Come and discuss it on Bluesky.*</small>
+<small>*Have you run into this checkbox on a client site or your own? How did you deal with it? Come and discuss it on [Bluesky](https://bsky.app/profile/machal.bsky.social/post/3mw4t5hlwts2a) or [X](https://x.com/machal/status/2102461103821431122).*</small>
