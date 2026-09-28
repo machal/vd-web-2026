@@ -26,7 +26,7 @@ And then there is the pressure on jobs, the layoffs, and the nagging question of
 
 It is wild out there, folks.
 
-When we started putting the programme together for this year's [FrontKon](https://www.frontkon.tech/), a Czech frontend conference I help curate, we kept asking how to frame all of it. There is no need to hesitate about _whether_ to use AI any more. What we are dealing with is _how_ to use it.
+When we started putting the programme together for this year's [FrontKon](https://www.frontkon.tech/), a Czech frontend conference I help curate, we kept asking how to frame all of it. There is no need to hesitate about _whether_ to use AI any more. What we are dealing with is _how_ to use it. What came out of all that thinking is in [FrontKon 2026: what not to miss](frontkon-2026.md).
 
 I know developers will write less and less code, if any at all.
 

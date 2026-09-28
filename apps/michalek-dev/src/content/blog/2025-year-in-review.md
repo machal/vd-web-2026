@@ -62,7 +62,7 @@ At the same time we were building our [SaaS](../guide/ai-saas.md) [speed-monitor
 
 Another big mental shift happened with [Frontendisti.cz](https://www.frontendisti.cz/), the Czech frontend community. We spent a lot of time figuring out how to secure the future of both the community and the [FrontKon](https://www.frontkon.cz/) conference, which until now rested on the large volunteer investment of me, Tomáš, Břetík, and many others. I'll be honest: in the first quarter I had one foot out the door, at least from organising FrontKon. But what was needed here was a change of mindset.
 
-I think we got a new drive — at least I did — especially for the coming editions of FrontKon, which in 2025 essentially became bigger than the entire Frontendisti community. It's an event that's already outgrowing its community. We have ideas in our heads that should make that increasingly clear in the years ahead. At least I hope so!
+I think we got a new drive — at least I did — especially for the coming editions of FrontKon, which in 2025 essentially became bigger than the entire Frontendisti community. It's an event that's already outgrowing its community. What the next edition looks like is in [FrontKon 2026: what not to miss](frontkon-2026.md). We have ideas in our heads that should make that increasingly clear in the years ahead. At least I hope so!
 
 Under Frontendisti, Robin and I also moved our [podcast](https://www.vzhurudolu.cz/podcast) over, under a new name, [FrontKec](https://www.frontendisti.cz/frontkec). Thematically and strategically it belongs to the community, while I'm gradually winding down the Vzhůru dolů project — as you've surely already noticed.
 

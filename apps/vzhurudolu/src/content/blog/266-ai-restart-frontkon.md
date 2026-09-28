@@ -31,7 +31,7 @@ No a taky tlak na pracovní místa, propouštění a úvahy o tom, zda vývojá�
 
 Je to mazec, vážení.
 
-Když jsme začali připravovat program pro [letošní FrontKon](https://www.frontkon.tech/cs), přemýšleli jsme, jak to uchopit. Už není potřeba váhat, zda AI používat. Řešíme, jak ji používat.
+Když jsme začali připravovat program pro [letošní FrontKon](https://www.frontkon.tech/cs), přemýšleli jsme, jak to uchopit. Už není potřeba váhat, zda AI používat. Řešíme, jak ji používat. Co z těch úvah nakonec vzniklo, shrnuju v článku [FrontKon 2026: Co si nenechat ujít](268-frontkon-2026.md).
 
 Vím, že vývojáři budou psát stále méně kódu, jestli vůbec nějaký.
 
