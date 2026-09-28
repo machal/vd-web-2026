@@ -106,4 +106,9 @@ export const CONTENT_PAIRS: ContentPair[] = [
     cs: { site: 'vzhurudolu', collection: 'blog', key: '267-odkladani-javascriptu' },
     en: { site: 'michalek-dev', collection: 'blog', key: 'delay-all-javascript' },
   },
+  {
+    pairId: 'frontkon-2026',
+    cs: { site: 'vzhurudolu', collection: 'blog', key: '268-frontkon-2026' },
+    en: { site: 'michalek-dev', collection: 'blog', key: 'frontkon-2026' },
+  },
 ];
