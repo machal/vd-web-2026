@@ -4,35 +4,33 @@ postTitle: 'Pro rychlejší web nestačí jen umět zrychlovat. Můj report z ko
 postUrlId: performance-now-2026
 pairId: performance-now-2026
 postDateTime: 2026-11-24
-excerpt: 'V Amsterodamu na performance.now() jsem mluvil o prodeji rychlosti webu. Tady je shrnutí přednášky, tři tipy z programu a pár poznámek k atmosféře.'
+excerpt: 'V Amsterodamu na performance.now() jsem mluvil o prodeji rychlosti webu. Tady je shrnutí přednášky, tři tipy z programu a pár poznámek k tomu, proč tahle komunita funguje jinak než běžné konference.'
 postStatus: Published
 authorID: 1
 sectionID: 1
 category:
   - rychlost-nacitani
-  - netechnicke
+  - netechnické
 no_ads: true
 include_rss: true
 category_highlight: true
 og_title: 'Pro rychlejší web nestačí jen umět zrychlovat. Můj report z konference performance.now() 2026'
-og_description: 'V Amsterodamu na performance.now() jsem mluvil o prodeji rychlosti webu. Tady je shrnutí přednášky, tři tipy z programu a pár poznámek k atmosféře.'
+og_description: 'V Amsterodamu na performance.now() jsem mluvil o prodeji rychlosti webu. Tady je shrnutí přednášky, tři tipy z programu a pár poznámek k tomu, proč tahle komunita funguje jinak než běžné konference.'
 og_image: /assets/img/content/dest/performance-now-2026-og.webp
 og_type: article
 ---
 
 # Pro rychlejší web nestačí jen umět zrychlovat. Můj report z konference performance.now() 2026
 
-Minulý týden jsem byl v Amsterdamu na konferenci [performance.now()](https://www.perfnow.nl/), kam mě pozvali nasdílet zkušenosti se zrychlováním webů v PageSpeed.ONE. 
+Minulý týden jsem byl v Amsterodamu na konferenci [performance.now()](https://www.perfnow.nl/), kam mě pozvali nasdílet zkušenosti se zrychlováním webů ve [PageSpeed.ONE](https://pagespeed.one/).
 
 Bylo mi ctí, bylo mi potěšením. Vyklepaný jsem z toho přednášení byl jako ratlík, vždyť jde o nejlepší konferenci našeho oboru na celičkém světě.
 
-Po pár hodinách jsem si tady ale cítil jako doma, jako na větším meetupu v Praze, kde se tak nějak všichni známe. Komunita kolem webperformance je malá, velmi přátelská a já zjistil, že to, co ve firmě děláme, je na naprosté špičce, a to jak odborně, 
-
-tak byznysově. Mám z toho výletu fakt radost, úplně po všech směrech.
+Po pár hodinách jsem se tady ale cítil jako doma, jako na větším meetupu v Praze, kde se tak nějak všichni známe. Komunita kolem webperformance je malá, velmi přátelská a já jsem zjistil, že to, co ve firmě děláme, je na naprosté špičce, a to jak odborně, tak byznysově. Mám z toho výletu fakt radost, úplně po všech směrech.
 
 ## Moje přednáška: Proč se rychlost tak těžko prodává? {#prednaska}
 
-Na Performance Now jsem mluvil o tom, jak ve [PageSpeed.ONE](https://pagespeed.one/) přesvědčujeme firmy, aby se věnovaly rychlosti webu. Ono to totiž je těžký. A je to základ, bez kterého my nemůžeme fungovat.
+Na performance.now() jsem mluvil o tom, jak ve PageSpeed.ONE přesvědčujeme firmy, aby se věnovaly rychlosti webu. Ono to totiž je těžké. A je to základ, bez kterého my nemůžeme fungovat.
 
 Nestačí web zrychlit. Nejdřív musíme získat podporu lidí, kteří o něm rozhodují. Místo hromady čísel někdy lépe funguje ukázat pomalý web na skutečném telefonu.
 
@@ -49,7 +47,6 @@ Mluvil jsem i o tom, že prodej není tlačení nabídky. Je to hledání potře
 
 Materiály k přednášce jsou na [webu PageSpeed.ONE](https://pagespeed.one/en/perfnow), včetně [slidů](https://docs.google.com/presentation/d/1SHA0xy27RFABVPZzyLpd6LoZRmbGV6E_nvQ5vT8jc1k/edit). Později přibude i plnohodnotný článek.
 
-
 <figure>
 <img src="/assets/img/content/dest/performance-now-2026-funnel.webp" alt="Osm kroků funnelu: od povědomí o rychlosti po dlouhodobou spolupráci">
 <figcaption markdown="1">
@@ -59,7 +56,7 @@ Materiály k přednášce jsou na [webu PageSpeed.ONE](https://pagespeed.one/en/
 
 Měl jsem radost, jak lidi zaujalo, že se specializujeme jen na rychlost webů a za poslední rok jsme obsloužili kolem 90 klientů. Otevřelo to hodně diskuzí během networkingu, které byly velmi zajímavé.
 
-## Při nejzajímavější přednášky z Performance Now 2026 {#tri-prednasky}
+## Tři nejzajímavější přednášky z performance.now() 2026 {#tri-prednasky}
 
 Z mého pohledu byly nejlepší tyhle tři přednášky:
 
@@ -96,9 +93,9 @@ A pokud se v číslech trochu ztrácíte, mám na Vzhůru dolů průvodce [metri
 
 Tohle se těžko předává, ale je podstatné. Zde je silná a přátelská komunita. Místo rozdávání vizitek si tu lidé raději vyměňují zkušenosti a technické nápady.
 
-A do toho ten Amsterdam!
+A do toho ten Amsterodam!
 
-I'be back!
+I'll be back!
 
 <figure>
 <img src="/assets/img/content/dest/performance-now-2026-amsterdam.webp" alt="Koláž z Amsterodamu: pohled z letadla, podzimní kanál a přístav s lodí">

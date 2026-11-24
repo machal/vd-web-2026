@@ -56,6 +56,8 @@ Thresholds from [Google's documentation](https://web.dev/defining-core-web-vital
 
 For a single score per URL, Google recommends the **75th percentile** across mobile and desktop field data. The worst metric wins — that is how [PageSpeed Insights](https://pagespeed.web.dev/) reports pass/fail today.
 
+Green Core Web Vitals still do not mean the site is fast enough — Google's thresholds are a floor, not a goal. More on that in my [performance.now() 2026 report](../blog/performance-now-2026.md).
+
 <figure>
 <img src="/prirucka/images/web-vitals.jpg" alt="Diagram of Core Web Vitals metrics LCP, INP, and CLS">
 <figcaption markdown="1">

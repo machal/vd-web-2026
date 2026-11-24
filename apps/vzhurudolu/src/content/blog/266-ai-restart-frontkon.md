@@ -146,7 +146,7 @@ Však posuďte sami: plánování, testování, dokumentace, verzování, manuá
 
 Nejsou to náhodou schopnosti zkušených vývojářů, tech leadů, prostě těch, co mají manažerské dovednosti?
 
-Willison odděluje nezávazný vibe-coding od agentic engineeringu. U produkčního softwaru podle něj nestačí, že výsledek vypadá funkčně. Vývojář pořád odpovídá za bezpečnost, provoz, výkon a dopad na cizí data. AI zrychluje realizaci, ale tuto část práce za člověka nepřebírá.
+Willison odděluje nezávazný vibe-coding od agentic engineeringu. U produkčního softwaru podle něj nestačí, že výsledek vypadá funkčně. Vývojář pořád odpovídá za bezpečnost, provoz, výkon a dopad na cizí data. AI zrychluje realizaci, ale tuto část práce za člověka nepřebírá. Annie Sullivan na performance.now() 2026 navíc ukázala, že v datech Android CrUX má u živých „vibe-coded“ webů dobré všechny Core Web Vitals jen **18,8 %** (oproti **52,1 %** u srovnatelně populárních běžných webů) — víc v [mém reportu z konference](269-performance-now-2026.md).
 
 Otázky zní:
 

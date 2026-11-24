@@ -72,6 +72,8 @@ Pokud si chcete stav jednotlivých metrik u vašeho webu převést do jediného 
 
 No a pokud byste chtěli jen jeden stav, jedno vysvědčení pro měřenou stránku, ze všech metrik musíte vzít tu nejhorší. Zdá se totiž, že přesně tak to zobrazují aktuální [PageSpeed Insights](pagespeed-insights.md).
 
+Zelené Core Web Vitals ještě nemusí znamenat, že je web dost rychlý — limity Googlu jsou práh, ne cíl. Víc k tomu v [reportu z performance.now() 2026](../blog/269-performance-now-2026.md).
+
 <figure>
 <img src="../dist/images/original/web-vitals.png" alt="Jednotlivé metriky Web Vitals">
 <figcaption markdown="1">

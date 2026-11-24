@@ -111,4 +111,9 @@ export const CONTENT_PAIRS: ContentPair[] = [
     cs: { site: 'vzhurudolu', collection: 'blog', key: '268-frontkon-2026' },
     en: { site: 'michalek-dev', collection: 'blog', key: 'frontkon-2026' },
   },
+  {
+    pairId: 'performance-now-2026',
+    cs: { site: 'vzhurudolu', collection: 'blog', key: '269-performance-now-2026' },
+    en: { site: 'michalek-dev', collection: 'blog', key: 'performance-now-2026' },
+  },
 ];
