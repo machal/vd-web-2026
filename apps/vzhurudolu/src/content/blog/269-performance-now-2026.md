@@ -4,18 +4,18 @@ postTitle: 'Pro rychlejší web nestačí jen umět zrychlovat. Můj report z ko
 postUrlId: performance-now-2026
 pairId: performance-now-2026
 postDateTime: 2026-11-24
-excerpt: 'TODO: 2–3 věty po dopsání úvodu. Zatím: V Amsterodamu na performance.now() jsem mluvil o prodeji rychlosti webu. Tady je shrnutí přednášky, tři tipy z programu a pár poznámek k atmosféře.'
+excerpt: 'V Amsterodamu na performance.now() jsem mluvil o prodeji rychlosti webu. Tady je shrnutí přednášky, tři tipy z programu a pár poznámek k atmosféře.'
 postStatus: Published
 authorID: 1
 sectionID: 1
 category:
   - rychlost-nacitani
-  - skoleni
+  - netechnicke
 no_ads: true
 include_rss: true
 category_highlight: true
 og_title: 'Pro rychlejší web nestačí jen umět zrychlovat. Můj report z konference performance.now() 2026'
-og_description: 'TODO: 2–3 věty po dopsání úvodu. Zatím: V Amsterodamu na performance.now() jsem mluvil o prodeji rychlosti webu. Tady je shrnutí přednášky, tři tipy z programu a pár poznámek k atmosféře.'
+og_description: 'V Amsterodamu na performance.now() jsem mluvil o prodeji rychlosti webu. Tady je shrnutí přednášky, tři tipy z programu a pár poznámek k atmosféře.'
 og_image: /assets/img/content/dest/performance-now-2026-og.webp
 og_type: article
 ---
@@ -24,7 +24,7 @@ og_type: article
 
 Minulý týden jsem byl v Amsterdamu na konferenci [performance.now()](https://www.perfnow.nl/), kam mě pozvali nasdílet zkušenosti se zrychlováním webů v PageSpeed.ONE. 
 
-Bylo mi ctí, bylo mi potěšením. Vyklepaný jsem z toho byl jako ratlík, vždyť jde o nejlepší konferenci našeho oboru na celičkém světě.
+Bylo mi ctí, bylo mi potěšením. Vyklepaný jsem z toho přednášení byl jako ratlík, vždyť jde o nejlepší konferenci našeho oboru na celičkém světě.
 
 Po pár hodinách jsem si tady ale cítil jako doma, jako na větším meetupu v Praze, kde se tak nějak všichni známe. Komunita kolem webperformance je malá, velmi přátelská a já zjistil, že to, co ve firmě děláme, je na naprosté špičce, a to jak odborně, 
 
@@ -57,8 +57,17 @@ Materiály k přednášce jsou na [webu PageSpeed.ONE](https://pagespeed.one/en/
 </figcaption>
 </figure>
 
+Měl jsem radost, jak lidi zaujalo, že se specializujeme jen na rychlost webů a za poslední rok jsme obsloužili kolem 90 klientů. Otevřelo to hodně diskuzí během networkingu, které byly velmi zajímavé.
 
-## Moje tři nejzajímavější přednášky {#tri-prednasky}
+## Při nejzajímavější přednášky z Performance Now 2026 {#tri-prednasky}
+
+Z mého pohledu byly nejlepší tyhle tři přednášky:
+
+**[Harry Roberts](https://speakerdeck.com/csswizardry/well-thats-weird)** ukazoval, jak pátrá po příčinách změn v datech — a jak snadno nás jedno číslo oklame. V jednom příkladu vypadal web pomalejší, dokud klient neprozradil agresivní kampaň ve frankofonních zemích: změnila se skladba návštěvníků, ne stránka. Jinde zase 75. percentil skoro nehnul, ale na [CDF grafu](https://fzakaria.com/2026/07/27/the-mean-means-nothing) bylo u 90. percentilu vidět zrychlení o 1,5 s. Harryho rada: nehodnoťte úspěch jedním percentilem a při before/after srovnávejte násobky sedmi dnů (a den nasazení vynechte).
+
+**[Tammy Everts](https://speakerdeck.com/tammyeverts/performance-is-a-journey-perfnow-2026)** připomněla dva paradoxy, které webovou rychlost drží na místě. **Jevonsův paradox:** když se výkon zlevní, spotřebujeme úsporu na další funkce a složitost. **Wirthův zákon:** software bobtná rychleji, než zrychluje hardware, takže uživatelé zrychlení často vůbec nepocítí. A zelené [Core Web Vitals](../prirucka/web-vitals.md) ještě nemusí znamenat, že je web dost rychlý — limity Googlu jsou práh, ne cíl.
+
+**[Annie Sullivan](https://docs.google.com/presentation/d/1lU6jNl1M4rO2ZK-jSH0Obt7knzNvoZQTKqUNWJ66D-k/edit)** změřila přes 90 000 živých „vibe-coded“ webů. V Android CrUX jich mělo dobré všechny Core Web Vitals jen **18,8 %**, zatímco u srovnatelně populárních běžných webů to bylo **52,1 %**. Funkční web za pár minut ještě nemusí být rychlý web.
 
 <figure>
 <img src="/assets/img/content/dest/performance-now-2026-talks.webp" alt="Koláž tří přednášek z performance.now(): Tammy Everts, Harry Roberts a přednáška Performance is cultural">
@@ -67,37 +76,14 @@ Materiály k přednášce jsou na [webu PageSpeed.ONE](https://pagespeed.one/en/
 </figcaption>
 </figure>
 
-**[Harry Roberts](https://speakerdeck.com/csswizardry/well-thats-weird)** ukazoval, jak pátrá po příčinách změn v datech. Skvělé připomenutí, že jedno číslo nestačí. Zaujaly mě hlavně [CDF grafy](https://fzakaria.com/2026/07/27/the-mean-means-nothing), které ukazují celou distribuci.
-
-**[Tammy Everts](https://speakerdeck.com/tammyeverts/performance-is-a-journey-perfnow-2026)** se ohlédla za vývojem rychlosti webů. Hardware a sítě zrychlují, ale my si za ušetřený výkon pořizujeme složitější weby. A zelené [Core Web Vitals](../prirucka/web-vitals.md) ještě nemusí znamenat, že je web dost rychlý.
-
-**[Annie Sullivan](https://docs.google.com/presentation/d/1lU6jNl1M4rO2ZK-jSH0Obt7knzNvoZQTKqUNWJ66D-k/edit)** ukázala data o webech vytvořených pomocí AI. Zatím to s jejich rychlostí nevypadá moc slavně. Funkční web za pár minut ještě nemusí být rychlý web.
-
 ## Co dalšího mě zaujalo {#dalsi}
 
-**Risko Ruus** ukázal performance očima testera. I [Lighthouse](../prirucka/lighthouse.md) může být užitečný, když pomáhá týmu včas zachytit zhoršení.
+- **[Risko Ruus](https://nullp2ike.github.io/perf-now-slides/)** ukázal performance očima testera. I [Lighthouse](../prirucka/lighthouse.md) může být užitečný, když pomáhá týmu včas zachytit zhoršení.
+- **Tim Vereecke** dlouhodobě ladí svůj web. Jeho cíl? Dobré Core Web Vitals pro 99 % uživatelů. Geekovina, ale moc zajímavá a vtipná!
+- **Stéphanie Walter** přemýšlí o rychlosti jako designérka. Co uživatel uvidí během čekání? A co když se něco nepovede? Má k tomu i [praktické materiály](https://shop.stephaniewalter.design/b/tools-to-design-performance).
+- **[Max Inden](https://mxinden-bot.github.io/slides/15-perfnow/)** mluvil moc hezky a názorně o síťových roundtripech. K tématu doporučuji nástroj [Save a Round Trip](https://savearoundtrip.com/?d=cloudflare.com).
 
-**Tim Vereecke** dlouhodobě ladí svůj web. Jeho cíl? Dobré Core Web Vitals pro 99 % uživatelů. Geekovina, ale moc zajímavá.
-
-**Stéphanie Walter** přemýšlí o rychlosti jako designérka. Co uživatel uvidí během čekání? A co když se něco nepovede? Má k tomu i [praktické materiály](https://shop.stephaniewalter.design/b/tools-to-design-performance).
-
-**Max Inden** mluvil o síťových roundtripech. K tématu doporučuji nástroj [Save a Round Trip](https://savearoundtrip.com/?d=cloudflare.com).
-
-A pokud se v číslech trochu ztrácíte, mám na Vzhůru dolů průvodce [metrikami rychlosti](../prirucka/metriky-rychlosti.md) a [PageSpeed Insights](../prirucka/pagespeed-insights.md).
-
-## PageSpeed.ONE ve světě {#pagespeed-one}
-
-[PageSpeed.ONE jsme spustili v roce 2020](171-pagespeed-cz.md). Dnes se věnujeme monitoringu a konzultacím rychlosti pro velké i menší klienty.
-
-Měl jsem radost, jak lidi zaujalo, že se specializujeme jen na rychlost webů a za poslední rok jsme obsloužili kolem 90 klientů.
-
-U Harryho jsem navíc viděl, že podobně jako my řeší nejen čísla, ale i jejich interpretaci a práci s lidmi. Taky věříme, že rychlost není jednorázový projekt, ale součást [firemní kultury](https://pagespeed.one/znalosti/performance-culture).
-
-Bavili jsme se i s lidmi ze SpeedKitu o možné spolupráci. My bychom mohli jejich produkt nabídnout větším klientům, oni nás případně doporučit pro konzultace. Zatím je to ale jen možnost.
-
-Konference mi potvrdila, že máme mezinárodní komunitě co nabídnout. Jestli z toho budou i zahraniční klienti a partnerství, to teprve uvidíme. Mimochodem, Michal psal už [report z ročníku 2024](https://pagespeed.one/blog/konference-performance-now-2024).
-
-## Atmosféra {#atmosfera}
+A pokud se v číslech trochu ztrácíte, mám na Vzhůru dolů průvodce [metrikami rychlosti](../prirucka/metriky-rychlosti.md) a [PageSpeed Insights](../prirucka/pagespeed-insights.md). Na PageSpeed.ONE je k tomu [slovník metrik](https://pagespeed.one/metriky) a [postup měření rychlosti](https://pagespeed.one/znalosti/mereni-rychlosti).
 
 <figure>
 <img src="/assets/img/content/dest/performance-now-2026-hall.webp" alt="Sál performance.now() s publikem a prezentací o CrUX a HTTP Archive">
@@ -106,9 +92,13 @@ Konference mi potvrdila, že máme mezinárodní komunitě co nabídnout. Jestli
 </figcaption>
 </figure>
 
-Tohle je silná a přátelská komunita. Místo rozdávání vizitek si tu lidé raději vyměňují zkušenosti a technické nápady.
+## Atmosféra: miluju #perfnow a #amsterdam {#atmosfera}
 
-S Michalem jsme dokonce usoudili, že firemní trička necháme raději v kufru. Tady se prostě na nic nehraje.
+Tohle se těžko předává, ale je podstatné. Zde je silná a přátelská komunita. Místo rozdávání vizitek si tu lidé raději vyměňují zkušenosti a technické nápady.
+
+A do toho ten Amsterdam!
+
+I'be back!
 
 <figure>
 <img src="/assets/img/content/dest/performance-now-2026-amsterdam.webp" alt="Koláž z Amsterodamu: pohled z letadla, podzimní kanál a přístav s lodí">
@@ -117,4 +107,4 @@ S Michalem jsme dokonce usoudili, že firemní trička necháme raději v kufru.
 </figcaption>
 </figure>
 
-<small>*Byli jste na performance.now(), nebo řešíte u sebe podobné věci kolem prodeje rychlosti? Napište mi [e-mail](mailto:martin@pagespeed.cz) — nebo se ozvěte na sítích, až článek vyjde.*</small>
+<small>*Byli jste na performance.now(), nebo řešíte u sebe podobné věci kolem argumentace ohledně rychlosti? Napište mi [e-mail](mailto:martin@pagespeed.cz)*</small>
