@@ -27,6 +27,7 @@ Lookup table for **en_only** internal links. When translating, rewrite paired CS
 | ai-restart | `../blog/266-ai-restart-frontkon.md` | `../blog/ai-restart.md` |
 | delay-all-javascript | `../blog/267-odkladani-javascriptu.md` | `../blog/delay-all-javascript.md` |
 | frontkon-2026 | `../blog/268-frontkon-2026.md` | `../blog/frontkon-2026.md` |
+| performance-now-2026 | `../blog/269-performance-now-2026.md` | `../blog/performance-now-2026.md` |
 
 ## Canonical URLs (hreflang / adaptedFrom only)
 

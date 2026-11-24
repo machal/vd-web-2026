@@ -192,6 +192,8 @@ Kromě vlastního řešení postaveného na příkazové řádce tady máme něk
 - Řešení pomocí CI (Continuous integration) – například pomocí [Lighthouse CI](https://github.com/ebidel/lighthouse-ci).
 - Hotové vizualizační nástroje jako [SpeedCurve](speedcurve.md), [Calibre](https://calibreapp.com/), [Treo](https://treo.sh/) a jim podobné.
 
+I Lighthouse může být užitečný, když pomáhá týmu včas zachytit zhoršení — o tom mluvil Risko Ruus na [performance.now() 2026](../blog/269-performance-now-2026.md).
+
 ## Shrnutí
 
 - Používejte Lighthouse. Určitě!
